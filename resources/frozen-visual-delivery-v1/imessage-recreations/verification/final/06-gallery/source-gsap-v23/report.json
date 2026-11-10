@@ -1,0 +1,1284 @@
+{
+  "version": 1,
+  "reference": {
+    "path": "/workspace/imessage-recreations/references/06-gallery/source.mp4",
+    "sha256": "fcbc98fa2f1697da5c947ed59b952128acd1c8f6194ce982c60133a423f1ddaf",
+    "width": 1920,
+    "height": 1080,
+    "fps": 29.99998197116468,
+    "nominal_fps": 30.0,
+    "duration": 55.4667,
+    "frame_count": 1664,
+    "codec": "h264",
+    "pixel_format": "yuv420p",
+    "raw": {
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+          "profile": "High",
+          "codec_type": "video",
+          "codec_tag_string": "avc1",
+          "codec_tag": "0x31637661",
+          "width": 1920,
+          "height": 1080,
+          "coded_width": 1920,
+          "coded_height": 1080,
+          "closed_captions": 0,
+          "film_grain": 0,
+          "has_b_frames": 2,
+          "sample_aspect_ratio": "1:1",
+          "display_aspect_ratio": "16:9",
+          "pix_fmt": "yuv420p",
+          "level": 50,
+          "chroma_location": "left",
+          "field_order": "progressive",
+          "refs": 1,
+          "is_avc": "true",
+          "nal_length_size": "4",
+          "id": "0x1",
+          "r_frame_rate": "30/1",
+          "avg_frame_rate": "16640000/554667",
+          "time_base": "1/9000000",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 499200300,
+          "duration": "55.466700",
+          "bit_rate": "1806596",
+          "bits_per_raw_sample": "8",
+          "nb_frames": "1664",
+          "extradata_size": 44,
+          "disposition": {
+            "default": 1,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0,
+            "non_diegetic": 0,
+            "captions": 0,
+            "descriptions": 0,
+            "metadata": 0,
+            "dependent": 0,
+            "still_image": 0,
+            "multilayer": 0
+          },
+          "tags": {
+            "language": "und",
+            "handler_name": "Twitter-vork muxer",
+            "vendor_id": "[0][0][0][0]"
+          }
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_long_name": "AAC (Advanced Audio Coding)",
+          "profile": "LC",
+          "codec_type": "audio",
+          "codec_tag_string": "mp4a",
+          "codec_tag": "0x6134706d",
+          "sample_fmt": "fltp",
+          "sample_rate": "48000",
+          "channels": 2,
+          "channel_layout": "stereo",
+          "bits_per_sample": 0,
+          "initial_padding": 0,
+          "id": "0x2",
+          "r_frame_rate": "0/0",
+          "avg_frame_rate": "0/0",
+          "time_base": "1/480000",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 26644480,
+          "duration": "55.509333",
+          "bit_rate": "128000",
+          "nb_frames": "2602",
+          "extradata_size": 2,
+          "disposition": {
+            "default": 1,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0,
+            "non_diegetic": 0,
+            "captions": 0,
+            "descriptions": 0,
+            "metadata": 0,
+            "dependent": 0,
+            "still_image": 0,
+            "multilayer": 0
+          },
+          "tags": {
+            "language": "und",
+            "handler_name": "Twitter-vork muxer",
+            "vendor_id": "[0][0][0][0]"
+          }
+        }
+      ],
+      "format": {
+        "filename": "references/06-gallery/source.mp4",
+        "nb_streams": 2,
+        "nb_programs": 0,
+        "nb_stream_groups": 0,
+        "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+        "format_long_name": "QuickTime / MOV",
+        "start_time": "0.000000",
+        "duration": "55.509333",
+        "size": "13476446",
+        "bit_rate": "1942224",
+        "probe_score": 100,
+        "tags": {
+          "major_brand": "isom",
+          "minor_version": "1",
+          "compatible_brands": "isomiso4",
+          "creation_time": "2026-09-16T18:19:45.000000Z"
+        }
+      }
+    }
+  },
+  "candidate": {
+    "path": "/workspace/imessage-recreations/outputs/06-gallery/gsap.mp4",
+    "sha256": "55dad2c7be7be1b5cfcb438926363817f9cfdaeedc85f4b37908fe0d6331f1c4",
+    "width": 1920,
+    "height": 1080,
+    "fps": 30.0,
+    "nominal_fps": 30.0,
+    "duration": 49.433333,
+    "frame_count": 1483,
+    "codec": "h264",
+    "pixel_format": "yuvj420p",
+    "raw": {
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+          "profile": "High",
+          "codec_type": "video",
+          "codec_tag_string": "avc1",
+          "codec_tag": "0x31637661",
+          "width": 1920,
+          "height": 1080,
+          "coded_width": 1920,
+          "coded_height": 1080,
+          "closed_captions": 0,
+          "film_grain": 0,
+          "has_b_frames": 2,
+          "pix_fmt": "yuvj420p",
+          "level": 40,
+          "color_range": "pc",
+          "color_space": "bt709",
+          "color_transfer": "bt709",
+          "color_primaries": "bt709",
+          "chroma_location": "left",
+          "field_order": "progressive",
+          "refs": 1,
+          "is_avc": "true",
+          "nal_length_size": "4",
+          "id": "0x1",
+          "r_frame_rate": "30/1",
+          "avg_frame_rate": "30/1",
+          "time_base": "1/15360",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 759296,
+          "duration": "49.433333",
+          "bit_rate": "1098116",
+          "bits_per_raw_sample": "8",
+          "nb_frames": "1483",
+          "extradata_size": 50,
+          "disposition": {
+            "default": 1,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0,
+            "non_diegetic": 0,
+            "captions": 0,
+            "descriptions": 0,
+            "metadata": 0,
+            "dependent": 0,
+            "still_image": 0,
+            "multilayer": 0
+          },
+          "tags": {
+            "language": "und",
+            "handler_name": "VideoHandler",
+            "vendor_id": "[0][0][0][0]",
+            "encoder": "Lavc61.19.101 libx264"
+          }
+        }
+      ],
+      "format": {
+        "filename": "outputs/06-gallery/gsap.mp4",
+        "nb_streams": 1,
+        "nb_programs": 0,
+        "nb_stream_groups": 0,
+        "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+        "format_long_name": "QuickTime / MOV",
+        "start_time": "0.000000",
+        "duration": "49.433333",
+        "size": "6802734",
+        "bit_rate": "1100914",
+        "probe_score": 100,
+        "tags": {
+          "major_brand": "isom",
+          "minor_version": "512",
+          "compatible_brands": "isomiso2avc1mp41",
+          "encoder": "Lavf61.7.103"
+        }
+      }
+    }
+  },
+  "segments": [
+    {
+      "name": "frame-1",
+      "reference_start": 0.03333333333333333,
+      "candidate_start": 0.03333333333333333,
+      "duration": 0.03333333333333333
+    },
+    {
+      "name": "frame-16",
+      "reference_start": 0.5333333333333333,
+      "candidate_start": 0.5333333333333333,
+      "duration": 0.03333333333333333
+    },
+    {
+      "name": "frame-31",
+      "reference_start": 1.0333333333333334,
+      "candidate_start": 1.0333333333333334,
+      "duration": 0.03333333333333333
+    },
+    {
+      "name": "frame-53",
+      "reference_start": 1.7666666666666666,
+      "candidate_start": 1.7666666666666666,
+      "duration": 0.03333333333333333
+    },
+    {
+      "name": "frame-75",
+      "reference_start": 2.5,
+      "candidate_start": 2.5,
+      "duration": 0.03333333333333333
+    },
+    {
+      "name": "frame-92",
+      "reference_start": 3.066666666666667,
+      "candidate_start": 3.066666666666667,
+      "duration": 0.03333333333333333
+    },
+    {
+      "name": "frame-111",
+      "reference_start": 3.7,
+      "candidate_start": 3.7,
+      "duration": 0.03333333333333333
+    },
+    {
+      "name": "frame-161",
+      "reference_start": 5.366666666666666,
+      "candidate_start": 5.366666666666666,
+      "duration": 0.03333333333333333
+    },
+    {
+      "name": "frame-177",
+      "reference_start": 5.9,
+      "candidate_start": 5.9,
+      "duration": 0.03333333333333333
+    },
+    {
+      "name": "frame-201",
+      "reference_start": 6.7,
+      "candidate_start": 6.7,
+      "duration": 0.03333333333333333
+    },
+    {
+      "name": "frame-230",
+      "reference_start": 7.666666666666667,
+      "candidate_start": 7.666666666666667,
+      "duration": 0.03333333333333333
+    },
+    {
+      "name": "frame-257",
+      "reference_start": 8.566666666666666,
+      "candidate_start": 8.566666666666666,
+      "duration": 0.03333333333333333
+    },
+    {
+      "name": "frame-416",
+      "reference_start": 13.866666666666667,
+      "candidate_start": 13.866666666666667,
+      "duration": 0.03333333333333333
+    },
+    {
+      "name": "frame-434",
+      "reference_start": 14.466666666666667,
+      "candidate_start": 14.466666666666667,
+      "duration": 0.03333333333333333
+    },
+    {
+      "name": "frame-460",
+      "reference_start": 15.333333333333334,
+      "candidate_start": 15.333333333333334,
+      "duration": 0.03333333333333333
+    },
+    {
+      "name": "frame-528",
+      "reference_start": 17.6,
+      "candidate_start": 17.6,
+      "duration": 0.03333333333333333
+    },
+    {
+      "name": "frame-552",
+      "reference_start": 18.4,
+      "candidate_start": 18.4,
+      "duration": 0.03333333333333333
+    },
+    {
+      "name": "frame-610",
+      "reference_start": 20.333333333333332,
+      "candidate_start": 20.333333333333332,
+      "duration": 0.03333333333333333
+    },
+    {
+      "name": "frame-635",
+      "reference_start": 21.166666666666668,
+      "candidate_start": 21.166666666666668,
+      "duration": 0.03333333333333333
+    },
+    {
+      "name": "frame-656",
+      "reference_start": 21.866666666666667,
+      "candidate_start": 21.866666666666667,
+      "duration": 0.03333333333333333
+    },
+    {
+      "name": "frame-683",
+      "reference_start": 22.766666666666666,
+      "candidate_start": 22.766666666666666,
+      "duration": 0.03333333333333333
+    },
+    {
+      "name": "frame-818",
+      "reference_start": 27.266666666666666,
+      "candidate_start": 27.266666666666666,
+      "duration": 0.03333333333333333
+    },
+    {
+      "name": "frame-969",
+      "reference_start": 32.3,
+      "candidate_start": 32.3,
+      "duration": 0.03333333333333333
+    },
+    {
+      "name": "frame-1115",
+      "reference_start": 43.2,
+      "candidate_start": 37.166666666666664,
+      "duration": 0.03333333333333333
+    }
+  ],
+  "settings": {
+    "reference": "references/06-gallery/source.mp4",
+    "candidate": "outputs/06-gallery/gsap.mp4",
+    "out": "verification/final/06-gallery/source-gsap-v23",
+    "reference_start": 0,
+    "candidate_start": 0,
+    "duration": null,
+    "fps": 1,
+    "all_frames": false,
+    "times": "0",
+    "batch_native": true,
+    "segments": "verification/timeline-scans/06-gallery-v23/peak-segments.json",
+    "width": null,
+    "background": null,
+    "foreground_threshold": 12,
+    "changed_threshold": 8
+  },
+  "summary": {
+    "frames_sampled": 24,
+    "sample_fps": 1,
+    "all_reference_frames_requested": false,
+    "global": {
+      "pixels_compared": 49766400,
+      "mae": 2.6053124933020406,
+      "rmse": 13.056895951013374,
+      "psnr_db": 25.81400474305874,
+      "psnr_infinite": false,
+      "changed_pixel_percent": 6.265004099151234,
+      "mean_ssim_luma": 0.9693022078215457
+    },
+    "foreground_union": {
+      "pixels_compared": 10990497,
+      "mae": 10.115001502358508,
+      "rmse": 27.66353641308534,
+      "psnr_db": 19.2926496474317,
+      "psnr_infinite": false,
+      "changed_pixel_percent": 26.421989833580774,
+      "mean_ssim_luma": 0.8862329683875435
+    },
+    "sampled_frames_pixel_identical": false
+  },
+  "limitations": "Metrics cover selected sampled frames and mapped graphic excerpts only. They do not certify whole-video identity, audio, editable layers, or perceptual perfection. Foreground uses the union of both images differing from a reported border-median background; inspect that mask assumption for complex scenes. SSIM is luma, valid uniform 11\u00d711 windows (population variance). Infinite PSNR is represented by null plus psnr_infinite=true. Difference previews amplify absolute channel differences \u00d74.",
+  "frames": [
+    {
+      "segment": "frame-1",
+      "offset": 0.0,
+      "reference_time": 0.03333333333333333,
+      "candidate_time": 0.03333333333333333,
+      "reference_frame": 1,
+      "candidate_frame": 1,
+      "metrics": {
+        "global": {
+          "pixels": 2073600,
+          "mae": 1.4336890753600824,
+          "rmse": 2.6353069317904505,
+          "psnr_db": 39.71417952116117,
+          "psnr_infinite": false,
+          "changed_pixel_percent": 0.7278645833333333,
+          "ssim_luma": 0.9962819887125041
+        },
+        "foreground_union": {
+          "pixels": 82496,
+          "mae": 5.693177042927334,
+          "rmse": 8.638149449106237,
+          "psnr_db": 29.402389338087623,
+          "psnr_infinite": false,
+          "changed_pixel_percent": 17.820257951900697,
+          "ssim_luma": 0.9793960155857325
+        },
+        "background_rgb": [
+          255.0,
+          255.0,
+          255.0
+        ],
+        "foreground_percent": 3.978395061728395
+      },
+      "preview": "frames/00000.jpg"
+    },
+    {
+      "segment": "frame-16",
+      "offset": 0.0,
+      "reference_time": 0.5333333333333333,
+      "candidate_time": 0.5333333333333333,
+      "reference_frame": 16,
+      "candidate_frame": 16,
+      "metrics": {
+        "global": {
+          "pixels": 2073600,
+          "mae": 1.2787028999485597,
+          "rmse": 6.7712414525623865,
+          "psnr_db": 31.51743760109316,
+          "psnr_infinite": false,
+          "changed_pixel_percent": 1.3010223765432098,
+          "ssim_luma": 0.992498539650212
+        },
+        "foreground_union": {
+          "pixels": 300708,
+          "mae": 4.555827136845933,
+          "rmse": 17.44155362752958,
+          "psnr_db": 23.299100256139354,
+          "psnr_infinite": false,
+          "changed_pixel_percent": 8.969498649853014,
+          "ssim_luma": 0.9597095789549727
+        },
+        "background_rgb": [
+          255.0,
+          255.0,
+          255.0
+        ],
+        "foreground_percent": 14.50173611111111
+      },
+      "preview": "frames/00001.jpg"
+    },
+    {
+      "segment": "frame-31",
+      "offset": 0.0,
+      "reference_time": 1.0333333333333334,
+      "candidate_time": 1.0333333333333334,
+      "reference_frame": 31,
+      "candidate_frame": 31,
+      "metrics": {
+        "global": {
+          "pixels": 2073600,
+          "mae": 4.103194444444444,
+          "rmse": 13.805453367980107,
+          "psnr_db": 25.329790141829747,
+          "psnr_infinite": false,
+          "changed_pixel_percent": 8.129726080246913,
+          "ssim_luma": 0.9658222811449899
+        },
+        "foreground_union": {
+          "pixels": 392703,
+          "mae": 17.574085250176342,
+          "rmse": 31.5477470159917,
+          "psnr_db": 18.15143661819181,
+          "psnr_infinite": false,
+          "changed_pixel_percent": 42.071234495280144,
+          "ssim_luma": 0.8635099666131665
+        },
+        "background_rgb": [
+          253.0,
+          253.0,
+          253.0
+        ],
+        "foreground_percent": 18.93822337962963
+      },
+      "preview": "frames/00002.jpg"
+    },
+    {
+      "segment": "frame-53",
+      "offset": 0.0,
+      "reference_time": 1.7666666666666666,
+      "candidate_time": 1.7666666666666666,
+      "reference_frame": 53,
+      "candidate_frame": 53,
+      "metrics": {
+        "global": {
+          "pixels": 2073600,
+          "mae": 3.6317957497427984,
+          "rmse": 11.442873106853785,
+          "psnr_db": 26.960101969552717,
+          "psnr_infinite": false,
+          "changed_pixel_percent": 9.939766589506172,
+          "ssim_luma": 0.9688719511505183
+        },
+        "foreground_union": {
+          "pixels": 451829,
+          "mae": 13.415088451604479,
+          "rmse": 24.278684889322413,
+          "psnr_db": 20.42630043901568,
+          "psnr_infinite": false,
+          "changed_pixel_percent": 42.87794718798483,
+          "ssim_luma": 0.8949476949102441
+        },
+        "background_rgb": [
+          255.0,
+          255.0,
+          255.0
+        ],
+        "foreground_percent": 21.78959297839506
+      },
+      "preview": "frames/00003.jpg"
+    },
+    {
+      "segment": "frame-75",
+      "offset": 0.0,
+      "reference_time": 2.5,
+      "candidate_time": 2.5,
+      "reference_frame": 75,
+      "candidate_frame": 75,
+      "metrics": {
+        "global": {
+          "pixels": 2073600,
+          "mae": 1.4271305941358026,
+          "rmse": 8.16949139388577,
+          "psnr_db": 29.886903216597545,
+          "psnr_infinite": false,
+          "changed_pixel_percent": 3.416425540123457,
+          "ssim_luma": 0.9886756799536444
+        },
+        "foreground_union": {
+          "pixels": 365088,
+          "mae": 6.431658485990592,
+          "rmse": 19.23548492612037,
+          "psnr_db": 22.44874082198975,
+          "psnr_infinite": false,
+          "changed_pixel_percent": 15.170041195547373,
+          "ssim_luma": 0.9588322551976568
+        },
+        "background_rgb": [
+          255.0,
+          255.0,
+          255.0
+        ],
+        "foreground_percent": 17.60648148148148
+      },
+      "preview": "frames/00004.jpg"
+    },
+    {
+      "segment": "frame-92",
+      "offset": 0.0,
+      "reference_time": 3.066666666666667,
+      "candidate_time": 3.066666666666667,
+      "reference_frame": 92,
+      "candidate_frame": 92,
+      "metrics": {
+        "global": {
+          "pixels": 2073600,
+          "mae": 2.2978944830246912,
+          "rmse": 11.694150868906775,
+          "psnr_db": 26.771429759288235,
+          "psnr_infinite": false,
+          "changed_pixel_percent": 5.2551601080246915,
+          "ssim_luma": 0.9782580349619484
+        },
+        "foreground_union": {
+          "pixels": 393310,
+          "mae": 10.758533980829371,
+          "rmse": 26.714596782513443,
+          "psnr_db": 19.595831138020586,
+          "psnr_infinite": false,
+          "changed_pixel_percent": 23.821667387048386,
+          "ssim_luma": 0.9145691664604602
+        },
+        "background_rgb": [
+          255.0,
+          255.0,
+          255.0
+        ],
+        "foreground_percent": 18.96749614197531
+      },
+      "preview": "frames/00005.jpg"
+    },
+    {
+      "segment": "frame-111",
+      "offset": 0.0,
+      "reference_time": 3.7,
+      "candidate_time": 3.7,
+      "reference_frame": 111,
+      "candidate_frame": 111,
+      "metrics": {
+        "global": {
+          "pixels": 2073600,
+          "mae": 2.5353247170781894,
+          "rmse": 11.417580432815651,
+          "psnr_db": 26.979322013862586,
+          "psnr_infinite": false,
+          "changed_pixel_percent": 6.956548996913581,
+          "ssim_luma": 0.9720639740842564
+        },
+        "foreground_union": {
+          "pixels": 629205,
+          "mae": 6.162518310142693,
+          "rmse": 20.415531663046927,
+          "psnr_db": 21.931589721861805,
+          "psnr_infinite": false,
+          "changed_pixel_percent": 15.973808218307228,
+          "ssim_luma": 0.9392776388182159
+        },
+        "background_rgb": [
+          255.0,
+          255.0,
+          255.0
+        ],
+        "foreground_percent": 30.343605324074076
+      },
+      "preview": "frames/00006.jpg"
+    },
+    {
+      "segment": "frame-161",
+      "offset": 0.0,
+      "reference_time": 5.366666666666666,
+      "candidate_time": 5.366666666666666,
+      "reference_frame": 161,
+      "candidate_frame": 161,
+      "metrics": {
+        "global": {
+          "pixels": 2073600,
+          "mae": 2.401507683899177,
+          "rmse": 13.979207287985359,
+          "psnr_db": 25.221152712981848,
+          "psnr_infinite": false,
+          "changed_pixel_percent": 3.733555169753086,
+          "ssim_luma": 0.9709030421339163
+        },
+        "foreground_union": {
+          "pixels": 634399,
+          "mae": 6.808333556641798,
+          "rmse": 25.174705274846144,
+          "psnr_db": 20.111515710964195,
+          "psnr_infinite": false,
+          "changed_pixel_percent": 10.088288285448117,
+          "ssim_luma": 0.9183650666295631
+        },
+        "background_rgb": [
+          255.0,
+          255.0,
+          255.0
+        ],
+        "foreground_percent": 30.594087577160494
+      },
+      "preview": "frames/00007.jpg"
+    },
+    {
+      "segment": "frame-177",
+      "offset": 0.0,
+      "reference_time": 5.9,
+      "candidate_time": 5.9,
+      "reference_frame": 177,
+      "candidate_frame": 177,
+      "metrics": {
+        "global": {
+          "pixels": 2073600,
+          "mae": 2.5353959297839506,
+          "rmse": 14.631836509076487,
+          "psnr_db": 24.82482681180315,
+          "psnr_infinite": false,
+          "changed_pixel_percent": 3.592206790123457,
+          "ssim_luma": 0.9672357750731492
+        },
+        "foreground_union": {
+          "pixels": 645384,
+          "mae": 7.3631471082848865,
+          "rmse": 26.176640755137782,
+          "psnr_db": 19.7725253519423,
+          "psnr_infinite": false,
+          "changed_pixel_percent": 11.241834318793153,
+          "ssim_luma": 0.9067933201339532
+        },
+        "background_rgb": [
+          255.0,
+          255.0,
+          255.0
+        ],
+        "foreground_percent": 31.12384259259259
+      },
+      "preview": "frames/00008.jpg"
+    },
+    {
+      "segment": "frame-201",
+      "offset": 0.0,
+      "reference_time": 6.7,
+      "candidate_time": 6.7,
+      "reference_frame": 201,
+      "candidate_frame": 201,
+      "metrics": {
+        "global": {
+          "pixels": 2073600,
+          "mae": 1.9779382073045269,
+          "rmse": 12.439100621822922,
+          "psnr_db": 26.235023990489225,
+          "psnr_infinite": false,
+          "changed_pixel_percent": 3.0244984567901234,
+          "ssim_luma": 0.9749273585073431
+        },
+        "foreground_union": {
+          "pixels": 631330,
+          "mae": 5.732229314832708,
+          "rmse": 22.483668931323255,
+          "psnr_db": 21.093459973750885,
+          "psnr_infinite": false,
+          "changed_pixel_percent": 9.406491058558915,
+          "ssim_luma": 0.9304205144900838
+        },
+        "background_rgb": [
+          255.0,
+          255.0,
+          255.0
+        ],
+        "foreground_percent": 30.44608410493827
+      },
+      "preview": "frames/00009.jpg"
+    },
+    {
+      "segment": "frame-230",
+      "offset": 0.0,
+      "reference_time": 7.666666666666667,
+      "candidate_time": 7.666666666666667,
+      "reference_frame": 230,
+      "candidate_frame": 230,
+      "metrics": {
+        "global": {
+          "pixels": 2073600,
+          "mae": 1.811712962962963,
+          "rmse": 8.985070994244005,
+          "psnr_db": 29.060373349202493,
+          "psnr_infinite": false,
+          "changed_pixel_percent": 4.646026234567902,
+          "ssim_luma": 0.9813363049369164
+        },
+        "foreground_union": {
+          "pixels": 565029,
+          "mae": 5.552213544201566,
+          "rmse": 17.10373711012836,
+          "psnr_db": 23.468983355241484,
+          "psnr_infinite": false,
+          "changed_pixel_percent": 16.689762826332807,
+          "ssim_luma": 0.9520243289549543
+        },
+        "background_rgb": [
+          255.0,
+          255.0,
+          255.0
+        ],
+        "foreground_percent": 27.248697916666664
+      },
+      "preview": "frames/00010.jpg"
+    },
+    {
+      "segment": "frame-257",
+      "offset": 0.0,
+      "reference_time": 8.566666666666666,
+      "candidate_time": 8.566666666666666,
+      "reference_frame": 257,
+      "candidate_frame": 257,
+      "metrics": {
+        "global": {
+          "pixels": 2073600,
+          "mae": 1.5886265432098765,
+          "rmse": 16.43780362227213,
+          "psnr_db": 23.813927853663817,
+          "psnr_infinite": false,
+          "changed_pixel_percent": 1.4505208333333333,
+          "ssim_luma": 0.9835859219871091
+        },
+        "foreground_union": {
+          "pixels": 37976,
+          "mae": 86.25223825574047,
+          "rmse": 121.4561626989431,
+          "psnr_db": 6.442412491686928,
+          "psnr_infinite": false,
+          "changed_pixel_percent": 78.53907731198652,
+          "ssim_luma": 0.29048720639747916
+        },
+        "background_rgb": [
+          255.0,
+          255.0,
+          255.0
+        ],
+        "foreground_percent": 1.8314043209876543
+      },
+      "preview": "frames/00011.jpg"
+    },
+    {
+      "segment": "frame-416",
+      "offset": 0.0,
+      "reference_time": 13.866666666666667,
+      "candidate_time": 13.866666666666667,
+      "reference_frame": 416,
+      "candidate_frame": 416,
+      "metrics": {
+        "global": {
+          "pixels": 2073600,
+          "mae": 3.4790171682098765,
+          "rmse": 26.442518962687313,
+          "psnr_db": 19.684747119270366,
+          "psnr_infinite": false,
+          "changed_pixel_percent": 2.285252700617284,
+          "ssim_luma": 0.979631395971419
+        },
+        "foreground_union": {
+          "pixels": 109772,
+          "mae": 65.5039779421589,
+          "rmse": 114.92365755596153,
+          "psnr_db": 6.922614821088077,
+          "psnr_infinite": false,
+          "changed_pixel_percent": 43.07018183143242,
+          "ssim_luma": 0.6615108880204921
+        },
+        "background_rgb": [
+          255.0,
+          255.0,
+          255.0
+        ],
+        "foreground_percent": 5.293788580246914
+      },
+      "preview": "frames/00012.jpg"
+    },
+    {
+      "segment": "frame-434",
+      "offset": 0.0,
+      "reference_time": 14.466666666666667,
+      "candidate_time": 14.466666666666667,
+      "reference_frame": 434,
+      "candidate_frame": 434,
+      "metrics": {
+        "global": {
+          "pixels": 2073600,
+          "mae": 2.9064953060699588,
+          "rmse": 15.394639721768932,
+          "psnr_db": 24.38341301596826,
+          "psnr_infinite": false,
+          "changed_pixel_percent": 5.149064429012346,
+          "ssim_luma": 0.9466683443547906
+        },
+        "foreground_union": {
+          "pixels": 1056470,
+          "mae": 5.696680454721856,
+          "rmse": 21.567156578418306,
+          "psnr_db": 21.454945781920497,
+          "psnr_infinite": false,
+          "changed_pixel_percent": 10.10298446714057,
+          "ssim_luma": 0.8974826675924591
+        },
+        "background_rgb": [
+          255.0,
+          255.0,
+          255.0
+        ],
+        "foreground_percent": 50.94859182098765
+      },
+      "preview": "frames/00013.jpg"
+    },
+    {
+      "segment": "frame-460",
+      "offset": 0.0,
+      "reference_time": 15.333333333333334,
+      "candidate_time": 15.333333333333334,
+      "reference_frame": 460,
+      "candidate_frame": 460,
+      "metrics": {
+        "global": {
+          "pixels": 2073600,
+          "mae": 3.204153002829218,
+          "rmse": 16.855744429538547,
+          "psnr_db": 23.595844853026815,
+          "psnr_infinite": false,
+          "changed_pixel_percent": 4.846739969135803,
+          "ssim_luma": 0.9473094140319163
+        },
+        "foreground_union": {
+          "pixels": 1149459,
+          "mae": 5.770201749982673,
+          "rmse": 22.638785060976737,
+          "psnr_db": 21.03374128509618,
+          "psnr_infinite": false,
+          "changed_pixel_percent": 8.741155621905609,
+          "ssim_luma": 0.9066787257430161
+        },
+        "background_rgb": [
+          255.0,
+          255.0,
+          255.0
+        ],
+        "foreground_percent": 55.4330150462963
+      },
+      "preview": "frames/00014.jpg"
+    },
+    {
+      "segment": "frame-528",
+      "offset": 0.0,
+      "reference_time": 17.6,
+      "candidate_time": 17.6,
+      "reference_frame": 528,
+      "candidate_frame": 528,
+      "metrics": {
+        "global": {
+          "pixels": 2073600,
+          "mae": 2.0754157021604938,
+          "rmse": 6.638641567142775,
+          "psnr_db": 31.689219190746826,
+          "psnr_infinite": false,
+          "changed_pixel_percent": 5.738136574074074,
+          "ssim_luma": 0.9519495664177507
+        },
+        "foreground_union": {
+          "pixels": 489350,
+          "mae": 6.460756786213004,
+          "rmse": 13.444348165636578,
+          "psnr_db": 25.560008593044415,
+          "psnr_infinite": false,
+          "changed_pixel_percent": 24.065801573515888,
+          "ssim_luma": 0.8526344585512584
+        },
+        "background_rgb": [
+          255.0,
+          255.0,
+          255.0
+        ],
+        "foreground_percent": 23.599054783950617
+      },
+      "preview": "frames/00015.jpg"
+    },
+    {
+      "segment": "frame-552",
+      "offset": 0.0,
+      "reference_time": 18.4,
+      "candidate_time": 18.4,
+      "reference_frame": 552,
+      "candidate_frame": 552,
+      "metrics": {
+        "global": {
+          "pixels": 2073600,
+          "mae": 3.6882490997942385,
+          "rmse": 10.378875010770557,
+          "psnr_db": 27.807797970207858,
+          "psnr_infinite": false,
+          "changed_pixel_percent": 11.450086805555555,
+          "ssim_luma": 0.887375190683148
+        },
+        "foreground_union": {
+          "pixels": 580727,
+          "mae": 10.458377746055088,
+          "rmse": 19.408962605947714,
+          "psnr_db": 22.370757142594087,
+          "psnr_infinite": false,
+          "changed_pixel_percent": 39.95698495162098,
+          "ssim_luma": 0.6901682871363439
+        },
+        "background_rgb": [
+          255.0,
+          253.0,
+          253.0
+        ],
+        "foreground_percent": 28.005738811728392
+      },
+      "preview": "frames/00016.jpg"
+    },
+    {
+      "segment": "frame-610",
+      "offset": 0.0,
+      "reference_time": 20.333333333333332,
+      "candidate_time": 20.333333333333332,
+      "reference_frame": 610,
+      "candidate_frame": 610,
+      "metrics": {
+        "global": {
+          "pixels": 2073600,
+          "mae": 4.787767971965021,
+          "rmse": 12.564654621188073,
+          "psnr_db": 26.14779250565631,
+          "psnr_infinite": false,
+          "changed_pixel_percent": 20.169511959876544,
+          "ssim_luma": 0.9834808350482743
+        },
+        "foreground_union": {
+          "pixels": 523706,
+          "mae": 17.163747726141512,
+          "rmse": 24.831115980694136,
+          "psnr_db": 20.230878840329567,
+          "psnr_infinite": false,
+          "changed_pixel_percent": 77.0311968929132,
+          "ssim_luma": 0.945294460184128
+        },
+        "background_rgb": [
+          255.0,
+          255.0,
+          255.0
+        ],
+        "foreground_percent": 25.255883487654323
+      },
+      "preview": "frames/00017.jpg"
+    },
+    {
+      "segment": "frame-635",
+      "offset": 0.0,
+      "reference_time": 21.166666666666668,
+      "candidate_time": 21.166666666666668,
+      "reference_frame": 635,
+      "candidate_frame": 635,
+      "metrics": {
+        "global": {
+          "pixels": 2073600,
+          "mae": 3.1189207175925926,
+          "rmse": 13.174136967481513,
+          "psnr_db": 25.736360121555997,
+          "psnr_infinite": false,
+          "changed_pixel_percent": 10.809992283950617,
+          "ssim_luma": 0.9676676772213664
+        },
+        "foreground_union": {
+          "pixels": 395339,
+          "mae": 14.620008819435135,
+          "rmse": 29.99266133517854,
+          "psnr_db": 18.590503535301067,
+          "psnr_infinite": false,
+          "changed_pixel_percent": 50.87001282443675,
+          "ssim_luma": 0.8445499946260587
+        },
+        "background_rgb": [
+          255.0,
+          255.0,
+          255.0
+        ],
+        "foreground_percent": 19.065345293209877
+      },
+      "preview": "frames/00018.jpg"
+    },
+    {
+      "segment": "frame-656",
+      "offset": 0.0,
+      "reference_time": 21.866666666666667,
+      "candidate_time": 21.866666666666667,
+      "reference_frame": 656,
+      "candidate_frame": 656,
+      "metrics": {
+        "global": {
+          "pixels": 2073600,
+          "mae": 3.783632973251029,
+          "rmse": 11.863270306115725,
+          "psnr_db": 26.64671508929304,
+          "psnr_infinite": false,
+          "changed_pixel_percent": 14.26953125,
+          "ssim_luma": 0.9562552141914666
+        },
+        "foreground_union": {
+          "pixels": 447328,
+          "mae": 15.015047124257816,
+          "rmse": 25.279445032213523,
+          "psnr_db": 20.075452898507656,
+          "psnr_infinite": false,
+          "changed_pixel_percent": 60.12187924744259,
+          "ssim_luma": 0.8172856205983617
+        },
+        "background_rgb": [
+          255.0,
+          255.0,
+          255.0
+        ],
+        "foreground_percent": 21.57253086419753
+      },
+      "preview": "frames/00019.jpg"
+    },
+    {
+      "segment": "frame-683",
+      "offset": 0.0,
+      "reference_time": 22.766666666666666,
+      "candidate_time": 22.766666666666666,
+      "reference_frame": 683,
+      "candidate_frame": 683,
+      "metrics": {
+        "global": {
+          "pixels": 2073600,
+          "mae": 3.834596032664609,
+          "rmse": 11.174341332916988,
+          "psnr_db": 27.1663649438034,
+          "psnr_infinite": false,
+          "changed_pixel_percent": 16.47222222222222,
+          "ssim_luma": 0.9624285683475375
+        },
+        "foreground_union": {
+          "pixels": 427051,
+          "mae": 16.801981496355236,
+          "rmse": 24.405799652625525,
+          "psnr_db": 20.380942772201976,
+          "psnr_infinite": false,
+          "changed_pixel_percent": 74.70864135665295,
+          "ssim_luma": 0.8479091880806339
+        },
+        "background_rgb": [
+          255.0,
+          255.0,
+          255.0
+        ],
+        "foreground_percent": 20.594666280864196
+      },
+      "preview": "frames/00020.jpg"
+    },
+    {
+      "segment": "frame-818",
+      "offset": 0.0,
+      "reference_time": 27.266666666666666,
+      "candidate_time": 27.266666666666666,
+      "reference_frame": 818,
+      "candidate_frame": 818,
+      "metrics": {
+        "global": {
+          "pixels": 2073600,
+          "mae": 1.3206704925411523,
+          "rmse": 8.575102102071835,
+          "psnr_db": 29.466017612569765,
+          "psnr_infinite": false,
+          "changed_pixel_percent": 2.783613040123457,
+          "ssim_luma": 0.9854352313594692
+        },
+        "foreground_union": {
+          "pixels": 339957,
+          "mae": 6.638015984374494,
+          "rmse": 21.027977504377358,
+          "psnr_db": 21.67485353386663,
+          "psnr_infinite": false,
+          "changed_pixel_percent": 14.577137696826364,
+          "ssim_luma": 0.9404158361643657
+        },
+        "background_rgb": [
+          255.0,
+          255.0,
+          255.0
+        ],
+        "foreground_percent": 16.39453125
+      },
+      "preview": "frames/00021.jpg"
+    },
+    {
+      "segment": "frame-969",
+      "offset": 0.0,
+      "reference_time": 32.3,
+      "candidate_time": 32.3,
+      "reference_frame": 969,
+      "candidate_frame": 969,
+      "metrics": {
+        "global": {
+          "pixels": 2073600,
+          "mae": 1.8503044624485596,
+          "rmse": 17.097799411835613,
+          "psnr_db": 23.471999254399112,
+          "psnr_infinite": false,
+          "changed_pixel_percent": 1.8861400462962963,
+          "ssim_luma": 0.9744883664070879
+        },
+        "foreground_union": {
+          "pixels": 276539,
+          "mae": 13.851255458844262,
+          "rmse": 46.81864235020978,
+          "psnr_db": 14.722427291762202,
+          "psnr_infinite": false,
+          "changed_pixel_percent": 14.140500978162212,
+          "ssim_luma": 0.8193746036835399
+        },
+        "background_rgb": [
+          255.0,
+          255.0,
+          255.0
+        ],
+        "foreground_percent": 13.33617862654321
+      },
+      "preview": "frames/00022.jpg"
+    },
+    {
+      "segment": "frame-1115",
+      "offset": 0.0,
+      "reference_time": 43.2,
+      "candidate_time": 37.166666666666664,
+      "reference_frame": 1296,
+      "candidate_frame": 1115,
+      "metrics": {
+        "global": {
+          "pixels": 2073600,
+          "mae": 1.4553636188271606,
+          "rmse": 11.542067838550938,
+          "psnr_db": 26.885131157724317,
+          "psnr_infinite": false,
+          "changed_pixel_percent": 2.326485339506173,
+          "ssim_luma": 0.9801023313863644
+        },
+        "foreground_union": {
+          "pixels": 65342,
+          "mae": 45.64416965096467,
+          "rmse": 65.00730497836322,
+          "psnr_db": 11.871560373195319,
+          "psnr_infinite": false,
+          "changed_pixel_percent": 73.7106302225215,
+          "ssim_luma": 0.5876044010597566
+        },
+        "background_rgb": [
+          9.0,
+          9.0,
+          9.0
+        ],
+        "foreground_percent": 3.1511381172839505
+      },
+      "preview": "frames/00023.jpg"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "status": "pass",
+  "scope": "Read-only source analysis, no audio generation/export/source mutation",
+  "checks": [
+    {
+      "id": "01-photonhq",
+      "stats_sha256": "6dc836e9eb4f2f83e083346d01abe9f6e1d0e26ef2bc3e65107800b34bc55c4f",
+      "target_duration_seconds": 21.833333333,
+      "status": "pass"
+    },
+    {
+      "id": "02-danieltian",
+      "stats_sha256": "88b21507e598fbb836f467039dbc7069fbd88a129538e666181ac41d5a5946a4",
+      "target_duration_seconds": 45.333333333,
+      "status": "pass"
+    },
+    {
+      "id": "03-photon-mini",
+      "stats_sha256": "e6d1640649a2dc704bf1eb44428648054c446acba5551502a2fb983e96311f57",
+      "target_duration_seconds": 42.0,
+      "status": "pass"
+    },
+    {
+      "id": "04-poke",
+      "stats_sha256": "e53d673ee1a74e7a4ff6e67b45d3fbb5e07bd17b1578a6e4dd36b5141b2ff6b9",
+      "target_duration_seconds": 42.809433333,
+      "status": "pass"
+    },
+    {
+      "id": "05-linq",
+      "stats_sha256": "1443c3305e282e5e5cc156d4f75fa5fca5043479a37b820aaf1504764e4f0595",
+      "target_duration_seconds": 48.6,
+      "status": "pass"
+    },
+    {
+      "id": "06-gallery",
+      "stats_sha256": "89b600246ec9f991e130410889c4a72176495417ebb30c8f44762979ade72ae1",
+      "target_duration_seconds": 49.433333333,
+      "status": "pass"
+    }
+  ],
+  "rene_cut_frame_count": 181,
+  "rene_target_frame_count": 1483,
+  "scratch_audio_files_created": 0,
+  "paid_calls": 0,
+  "listening_performed": false,
+  "measurement_script_sha256_verified": true,
+  "notes": [
+    "Exploratory AAC-tail correction is recorded in music-briefs.md.",
+    "Signal analysis did not classify vocals; all six separately attributed content models report no intelligible words, and 04/06 identify nonlexical vocal-like chops.",
+    "Model tempo/end-timing contradictions are preserved; independent signal stats remain unchanged."
+  ],
+  "model_summary_validation": {
+    "saved_results": 6,
+    "raw_result_hashes_verified": true,
+    "request_ids_present": true,
+    "model_nonlexical_vocal_like_sources": [
+      "04-poke",
+      "06-gallery"
+    ],
+    "independent_signal_stats_all6_hashes_unchanged": true,
+    "brief_requires_synthesized_formant_pulses_instead_of_voices": true
+  },
+  "new_score_01_validation": {
+    "rhythm_compatible_with_requested_109bpm": true,
+    "three_segment_periods_agree": true,
+    "human_listening_performed": false,
+    "subjective_feel_or_vocal_exclusion_certified": false,
+    "source_or_draft_audio_modified": false,
+    "qualification": "music-newscore-01-qualification.md"
+  }
+}

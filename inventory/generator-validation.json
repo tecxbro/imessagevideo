@@ -1,0 +1,16 @@
+{
+  "generated_utc": "2026-11-10T09:25:55+00:00",
+  "generator_sha256": "8461789a759a5402650a47ef60b4865fbd015c270197e4d2f158374ffa50e2dd",
+  "stdlib_fixture_tests": "pass",
+  "checks": [
+    "All authored file flags and whole-file SHA match fixture inputs",
+    "Whole-folder relocation retains verification validity through relative paths",
+    "Changed and added files are detected",
+    "Git internals, dependency caches and credential contents are not inventoried",
+    "External symlink targets are not read",
+    "All eleven generated index artifacts exist",
+    "Embedded JSON parses and inline JavaScript controller passes syntax check",
+    "No external src/href dependencies in offline inventory HTML"
+  ],
+  "scope_limit": "No interactive browser execution claimed. Root must rerun the generator after restoration and final edits stop."
+}

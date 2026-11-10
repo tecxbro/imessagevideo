@@ -1,0 +1,569 @@
+{
+  "purpose": "New instrumental score generation; no copied original audio",
+  "listening_performed": false,
+  "briefs": [
+    {
+      "id": "01-photonhq",
+      "target_picture_duration_seconds": 21.833333333,
+      "measured_evidence": {
+        "mixed_audio_broadband_tempo_candidates_bpm": [
+          {
+            "bpm": 109.34,
+            "normalized_autocorrelation": 0.60712,
+            "lag_seconds": 0.54875
+          },
+          {
+            "bpm": 73.34,
+            "normalized_autocorrelation": 0.56589,
+            "lag_seconds": 0.81814
+          },
+          {
+            "bpm": 146.67,
+            "normalized_autocorrelation": 0.54064,
+            "lag_seconds": 0.40907
+          }
+        ],
+        "bass_energy_below_250hz_percent": 47.96,
+        "active_frame_spectral_centroid_median_hz": 892.7,
+        "quarter_rms_dbfs_on_target_timeline": [
+          -12.51,
+          -10.68,
+          -10.62,
+          -12.03
+        ],
+        "candidate_tempo_confidence": "Moderate for recurring onset periods; unresolved for musical meter or exact downbeat.",
+        "palette_inference_limit": "Low-frequency weighting and spectral center are measured; exact instruments are not established."
+      },
+      "vocal_presence": {
+        "established": false,
+        "confidence": "unresolved",
+        "reason": "No perceptual listening, source separation, or speech/singing model was used. Harmonic energy and onsets cannot identify vocals reliably."
+      },
+      "proposed_new_instrumental": {
+        "working_bpm_editorial_choice": 109,
+        "rhythm": "Compact syncopated electronic pulse; keep the strong approximately 0.55 s recurring accent, with occasional dotted figures rather than a dense fill at every UI move.",
+        "suggested_timbral_palette_not_source_identification": [
+          "syncopated rounded synth bass",
+          "crisp kick and snare/clap",
+          "short bright synth chord stabs",
+          "small original percussive detail"
+        ],
+        "energy_arc": "Start clean and immediately legible; add body around 5 s, sustain the lift through 19 s, resolve around 19.8\u201320 s and let the tail fade to 21.833 s.",
+        "optional_transient_sync_windows_output_seconds": [
+          1.869,
+          4.8622,
+          8.1348,
+          13.5924,
+          17.4037,
+          18.2318
+        ],
+        "timing_tolerance_note": "Analysis hop is 9.977 ms; spectral window is 46.44 ms. Round anchors to nearby picture frames and place new musical gestures by ear after generation.",
+        "generation_brief": "Compose a NEW 21.833-second instrumental electronic product-launch cue at approximately 109 BPM. Use a new syncopated synth-bass idea, crisp compact kick and snare/clap, short bright chord stabs and small original percussive details. Bright, nimble and controlled is the requested creative direction. Build gently after 5 s, keep the strongest momentum in the middle, then resolve around 20 s with a short clean tail. Leave room for separate UI sound effects. No voice, humming, lyrics, recognizable borrowed tune or reference-audio sampling."
+      },
+      "provenance": {
+        "measurement_file": "music-01-photonhq.json",
+        "source_sha256": "df7c9df08910e22599c2c5954f27c4ec7fc57882066347723f8589e7a6654c83",
+        "listening_performed": false,
+        "paid_calls": 0
+      },
+      "separately_attributed_content_model_summary": {
+        "id": "01-photonhq",
+        "model_endpoint": "fal-ai/audio-understanding",
+        "request_id": "01a1c17e-3189-7d22-b9f2-6b3f3b494ade",
+        "evidence_kind": "Saved content-aware model description; text inspected directly, no human auditory listening pass",
+        "raw_result_file": "audio-recreation/analysis/model-01-photonhq.json",
+        "raw_result_file_sha256": "84114255793da6c15c440c49b74c7abace076aecdd5a35da31248f502c0fcb43",
+        "raw_output_text_sha256": "45ae10fd7ac833fbef310ed1ff3556ffd16a766a27cc4b0e3d33bc9ed98147ff",
+        "direct_raw_model_result_reviewed_by_this_agent": true,
+        "human_listening_performed": false,
+        "source_path": "references/01-photonhq/source.mp4",
+        "model_style_description": "Upbeat modern funk-pop / nu-disco.",
+        "model_timbre_description": "Funky slap or emulated synth bass; crisp four-floor electronic drums and snare/clap; sparse bright synthesizer stabs.",
+        "model_tempo_description": "Approximately 125 BPM, described as confident by the model.",
+        "working_tempo_decision": "Working 109 BPM follows the independent 109.34 BPM onset period, strongest in every 8-second window. The model tempo guess is retained as a contradiction, not silently accepted.",
+        "model_reported_intelligible_words": false,
+        "model_reported_nonlexical_vocal_like_texture": false,
+        "vocal_presence_qualification": "The model reports no intelligible speech or sung words; this is not an independently verified absence of all vocal-like sound.",
+        "new_instrumental_voice_policy": "Generate an instrumental score with no speech, singing, humming or vocal samples.",
+        "timing_or_identity_qualification": "The model describes constant high energy and a clean ending, while measured RMS shows a modest middle lift and a substantial 20\u201321.833 s fade. Retain the measured timing envelope.",
+        "source_audio_reused": false,
+        "paid_calls_by_this_agent": 0
+      }
+    },
+    {
+      "id": "02-danieltian",
+      "target_picture_duration_seconds": 45.333333333,
+      "measured_evidence": {
+        "mixed_audio_broadband_tempo_candidates_bpm": [
+          {
+            "bpm": 81.27,
+            "normalized_autocorrelation": 0.66992,
+            "lag_seconds": 0.73832
+          },
+          {
+            "bpm": 122.73,
+            "normalized_autocorrelation": 0.56409,
+            "lag_seconds": 0.48889
+          },
+          {
+            "bpm": 60.74,
+            "normalized_autocorrelation": 0.51255,
+            "lag_seconds": 0.98776
+          }
+        ],
+        "bass_energy_below_250hz_percent": 75.52,
+        "active_frame_spectral_centroid_median_hz": 1076.9,
+        "quarter_rms_dbfs_on_target_timeline": [
+          -19.11,
+          -12.32,
+          -10.29,
+          -13.39
+        ],
+        "candidate_tempo_confidence": "Moderate for recurring onset periods; unresolved for musical meter or exact downbeat.",
+        "palette_inference_limit": "Low-frequency weighting and spectral center are measured; exact instruments are not established."
+      },
+      "vocal_presence": {
+        "established": false,
+        "confidence": "unresolved",
+        "reason": "No perceptual listening, source separation, or speech/singing model was used. Harmonic energy and onsets cannot identify vocals reliably."
+      },
+      "proposed_new_instrumental": {
+        "working_bpm_editorial_choice": 123,
+        "rhythm": "A 123 BPM grid with some dotted-quarter accents produces an approximately 82 BPM accent stream, near the measured 81.27 BPM period; preserve that metrical ambiguity as a spacious groove rather than declaring an exact source meter.",
+        "suggested_timbral_palette_not_source_identification": [
+          "deep pulsing synth bass",
+          "punchy electronic kick",
+          "sharp snare/clap and crisp hi-hat",
+          "short original non-tonal percussive motif",
+          "sparse synth harmony"
+        ],
+        "energy_arc": "Keep 0\u201311 s restrained, build 11\u201322 s, use the fullest body 22\u201334 s, then thin out after 40\u201341 s and decay to 45.333 s.",
+        "optional_transient_sync_windows_output_seconds": [
+          2.6173,
+          6.7978,
+          13.9316,
+          20.3271,
+          24.2581,
+          32.6191,
+          38.2763,
+          40.2418
+        ],
+        "timing_tolerance_note": "Analysis hop is 9.977 ms; spectral window is 46.44 ms. Round anchors to nearby picture frames and place new musical gestures by ear after generation.",
+        "generation_brief": "Compose a NEW 45.333-second instrumental technology-demo cue on an approximately 123 BPM grid with spacious dotted-quarter accents. Start with a sparse filtered pulse and deep controlled bass, gradually add a punchy kick, sharp snare/clap, crisp hats and a new non-tonal percussive motif, reach a fuller middle around 22\u201334 s, then strip the rhythm near 41 s and resolve into a clean tail. Make a new motif and harmonic form. Keep melody subordinate to the motion and allow separate UI effects. No voice, lyrics, humming or reference-audio samples."
+      },
+      "provenance": {
+        "measurement_file": "music-02-danieltian.json",
+        "source_sha256": "2c591738ac81b72d62ed51209c21820dc5a5d30e5197a732529ce833424830b2",
+        "listening_performed": false,
+        "paid_calls": 0
+      },
+      "separately_attributed_content_model_summary": {
+        "id": "02-danieltian",
+        "model_endpoint": "fal-ai/audio-understanding",
+        "request_id": "01a1c182-26b6-7551-8f3f-e58af4f19ba4",
+        "evidence_kind": "Saved content-aware model description; text inspected directly, no human auditory listening pass",
+        "raw_result_file": "audio-recreation/analysis/model-analyses.json",
+        "raw_result_file_sha256": "e20106c7b1135f428cda0b5bc74b7a801793942c6d2b516b5c2051870b20e4f5",
+        "raw_output_text_sha256": "9e92ddd4898899ebea748e773b761181b27306cf281e104bf756a12fd32c5142",
+        "direct_raw_model_result_reviewed_by_this_agent": true,
+        "human_listening_performed": false,
+        "source_path": "references/02-danieltian/source.mp4",
+        "model_style_description": "Upbeat minimalist electronic / clean technology-ad music.",
+        "model_timbre_description": "Punchy drum-machine kick, sharp snare/clap, slightly open hi-hat pattern and a low pulsing synth-bass root.",
+        "model_tempo_description": "Approximately 125 \u00b15 BPM.",
+        "working_tempo_decision": "Working 123 BPM is close to measured 122.73 BPM and within the model range; the strongest 81.27 BPM onset stream can be represented by dotted-quarter accents on that grid.",
+        "model_reported_intelligible_words": false,
+        "model_reported_nonlexical_vocal_like_texture": false,
+        "vocal_presence_qualification": "The model reports no intelligible speech or sung words; this is not an independently verified absence of all vocal-like sound.",
+        "new_instrumental_voice_policy": "Generate an instrumental score with no speech, singing, humming or vocal samples.",
+        "timing_or_identity_qualification": "The model reports constant energy and an abrupt stop around 40 s. Measurements instead show a strong first-to-middle energy rise and a diminishing tail after approximately 41 s. Use the measured arc and exact picture duration.",
+        "source_audio_reused": false,
+        "paid_calls_by_this_agent": 0
+      }
+    },
+    {
+      "id": "03-photon-mini",
+      "target_picture_duration_seconds": 42.0,
+      "measured_evidence": {
+        "mixed_audio_broadband_tempo_candidates_bpm": [
+          {
+            "bpm": 117.91,
+            "normalized_autocorrelation": 0.65193,
+            "lag_seconds": 0.50884
+          },
+          {
+            "bpm": 79.13,
+            "normalized_autocorrelation": 0.60658,
+            "lag_seconds": 0.75828
+          },
+          {
+            "bpm": 158.25,
+            "normalized_autocorrelation": 0.52176,
+            "lag_seconds": 0.37914
+          }
+        ],
+        "bass_energy_below_250hz_percent": 58.7,
+        "active_frame_spectral_centroid_median_hz": 926.6,
+        "quarter_rms_dbfs_on_target_timeline": [
+          -19.08,
+          -16.22,
+          -16.88,
+          -17.17
+        ],
+        "candidate_tempo_confidence": "Moderate for recurring onset periods; unresolved for musical meter or exact downbeat.",
+        "palette_inference_limit": "Low-frequency weighting and spectral center are measured; exact instruments are not established."
+      },
+      "vocal_presence": {
+        "established": false,
+        "confidence": "unresolved",
+        "reason": "No perceptual listening, source separation, or speech/singing model was used. Harmonic energy and onsets cannot identify vocals reliably."
+      },
+      "proposed_new_instrumental": {
+        "working_bpm_editorial_choice": 118,
+        "rhythm": "A clear approximately 118 BPM pulse with light syncopation and occasional three-against-two/dotted accents; this is the strongest bass-and-broadband agreement of the six measurements.",
+        "suggested_timbral_palette_not_source_identification": [
+          "tight rounded synth bass",
+          "crisp electronic drums and shaker-like percussion",
+          "small staccato pluck motif",
+          "airy synthetic chords",
+          "brief original transition fills"
+        ],
+        "energy_arc": "Introduce lightly, lift after 8\u201310 s, maintain an active middle through 36 s, resolve 37\u201339 s and reserve 39\u201342 s for a very quiet tail or final hold.",
+        "optional_transient_sync_windows_output_seconds": [
+          4.4332,
+          8.0849,
+          16.1566,
+          20.5665,
+          27.9697,
+          30.7434,
+          34.7842,
+          36.3008
+        ],
+        "timing_tolerance_note": "Analysis hop is 9.977 ms; spectral window is 46.44 ms. Round anchors to nearby picture frames and place new musical gestures by ear after generation.",
+        "generation_brief": "Compose a NEW 42-second instrumental mini-app launch cue around 118 BPM. Use tight rounded bass, short tactile percussion, a playful original bell/pluck idea and soft synthetic chords. Keep it buoyant but uncluttered. Lift after 8 s, maintain an active pulse through the demonstrations, resolve around 38 s and leave a very quiet tail for the final 39\u201342 s hold. All notes and sound design must be newly created. No voice, singing, humming, lyrics or borrowed source samples."
+      },
+      "provenance": {
+        "measurement_file": "music-03-photon-mini.json",
+        "source_sha256": "886405a53b2ce053749c17cb37b3f4870f09db0c6079dbcf3b3ffa9dbba859c9",
+        "listening_performed": false,
+        "paid_calls": 0
+      },
+      "separately_attributed_content_model_summary": {
+        "id": "03-photon-mini",
+        "model_endpoint": "fal-ai/audio-understanding",
+        "request_id": "01a1c182-2659-7af1-936f-ede697a374d5",
+        "evidence_kind": "Saved content-aware model description; text inspected directly, no human auditory listening pass",
+        "raw_result_file": "audio-recreation/analysis/model-analyses.json",
+        "raw_result_file_sha256": "e20106c7b1135f428cda0b5bc74b7a801793942c6d2b516b5c2051870b20e4f5",
+        "raw_output_text_sha256": "0d546cbfaeebc7f4016198a6c0025a56626cdb7a12943d2f22d8962010ade3c8",
+        "direct_raw_model_result_reviewed_by_this_agent": true,
+        "human_listening_performed": false,
+        "source_path": "references/03-photon-mini/source.mp4",
+        "model_style_description": "Modern upbeat electronic / technology-demo or nu-disco.",
+        "model_timbre_description": "Crisp drum-machine kick and clap/snare, steady hats and shaker-like percussion, driving synth bass, a melodic pluck synth and atmospheric pads.",
+        "model_tempo_description": "Approximately 125 \u00b15 BPM.",
+        "working_tempo_decision": "Working 118 BPM follows the 117.91 BPM signal period and bass/broadband agreement; the model tempo guess is approximate and does not replace the measurements.",
+        "model_reported_intelligible_words": false,
+        "model_reported_nonlexical_vocal_like_texture": false,
+        "vocal_presence_qualification": "The model reports no intelligible speech or sung words; this is not an independently verified absence of all vocal-like sound.",
+        "new_instrumental_voice_policy": "Generate an instrumental score with no speech, singing, humming or vocal samples.",
+        "timing_or_identity_qualification": "The model claims an abrupt end around 36 s; measured mixed audio remains active later and is near-silent across the 39\u201342 s hold. Retain the measured ending window.",
+        "source_audio_reused": false,
+        "paid_calls_by_this_agent": 0
+      }
+    },
+    {
+      "id": "04-poke",
+      "target_picture_duration_seconds": 42.809433333,
+      "measured_evidence": {
+        "mixed_audio_broadband_tempo_candidates_bpm": [
+          {
+            "bpm": 122.73,
+            "normalized_autocorrelation": 0.66469,
+            "lag_seconds": 0.48889
+          },
+          {
+            "bpm": 60.74,
+            "normalized_autocorrelation": 0.65862,
+            "lag_seconds": 0.98776
+          },
+          {
+            "bpm": 81.27,
+            "normalized_autocorrelation": 0.56828,
+            "lag_seconds": 0.73832
+          }
+        ],
+        "bass_energy_below_250hz_percent": 88.17,
+        "active_frame_spectral_centroid_median_hz": 206.4,
+        "quarter_rms_dbfs_on_target_timeline": [
+          -18.67,
+          -18.14,
+          -17.6,
+          -19.09
+        ],
+        "candidate_tempo_confidence": "Moderate for recurring onset periods; unresolved for musical meter or exact downbeat.",
+        "palette_inference_limit": "Low-frequency weighting and spectral center are measured; exact instruments are not established."
+      },
+      "vocal_presence": {
+        "established": false,
+        "confidence": "unresolved",
+        "reason": "No perceptual listening, source separation, or speech/singing model was used. Harmonic energy and onsets cannot identify vocals reliably."
+      },
+      "proposed_new_instrumental": {
+        "working_bpm_editorial_choice": 123,
+        "rhythm": "A 123 BPM electronic grid with a relaxed half-time 61.5 BPM weight; both periodicities are strong, so do not force a busy fast beat.",
+        "suggested_timbral_palette_not_source_identification": [
+          "bouncy rounded synth bass",
+          "compact electronic kick and clap",
+          "light shaker/hi-hat",
+          "short synth plucks",
+          "new formant-filtered oscillator pulses with no voice source"
+        ],
+        "energy_arc": "Keep a steady understated bed across 0\u201332 s, allow a small late lift around 32\u201338 s, then soften 41\u201342.809 s.",
+        "optional_transient_sync_windows_output_seconds": [
+          8.1448,
+          12.0758,
+          19.9479,
+          27.82,
+          31.8708,
+          38.1466,
+          40.1121
+        ],
+        "timing_tolerance_note": "Analysis hop is 9.977 ms; spectral window is 46.44 ms. Round anchors to nearby picture frames and place new musical gestures by ear after generation.",
+        "generation_brief": "Compose a NEW 42.809-second instrumental launch cue around 123 BPM with a relaxed half-time feel. Favor bouncy rounded synth bass, compact electronic kick and clap, a light shaker/hat pattern and short synth plucks. Add a few newly synthesized formant-filtered oscillator pulses for rhythmic color, using no voice or vocal sample. Understated, friendly and precise is the requested creative direction. Keep the groove consistent rather than building to a cinematic drop; add only a modest late lift, then taper over the last 2 s. Leave space for message and interface sounds. No voice, humming, lyrics, recognizable tune or reference-audio samples."
+      },
+      "provenance": {
+        "measurement_file": "music-04-poke.json",
+        "source_sha256": "a3d5dd064dc4482813a332d7e3821a43d557c015c5cbb5be6ff09b29874db50f",
+        "listening_performed": false,
+        "paid_calls": 0
+      },
+      "separately_attributed_content_model_summary": {
+        "id": "04-poke",
+        "model_endpoint": "fal-ai/audio-understanding",
+        "request_id": "01a1c182-268b-7b31-a943-f81b546c60ae",
+        "evidence_kind": "Saved content-aware model description; text inspected directly, no human auditory listening pass",
+        "raw_result_file": "audio-recreation/analysis/model-analyses.json",
+        "raw_result_file_sha256": "e20106c7b1135f428cda0b5bc74b7a801793942c6d2b516b5c2051870b20e4f5",
+        "raw_output_text_sha256": "136cabbb9aec4b1e08e593b9bfa1fc0a9e3a46e98d44feef6ddb15a9d17a9601",
+        "direct_raw_model_result_reviewed_by_this_agent": true,
+        "human_listening_performed": false,
+        "source_path": "references/04-poke/source.mp4",
+        "model_style_description": "Minimal electronic / technology-house or clean dance-pop.",
+        "model_timbre_description": "Four-floor kick, shaker/hi-hat texture, bouncy synth bass, short percussive plucks and heavily processed nonlexical vocal-like chops.",
+        "model_tempo_description": "Approximately 120\u2013125 BPM.",
+        "working_tempo_decision": "Working 123 BPM agrees with the 122.73 BPM measured period and model range; retain half-time weight suggested by the competing 60.74 BPM period.",
+        "model_reported_intelligible_words": false,
+        "model_reported_nonlexical_vocal_like_texture": true,
+        "vocal_presence_qualification": "The model reports no intelligible speech or sung words; this is not an independently verified absence of all vocal-like sound.",
+        "new_instrumental_voice_policy": "Use only newly synthesized formant-filtered pulses, not any voice or vocal sample, to supply a similar rhythmic texture.",
+        "timing_or_identity_qualification": "The model reports a rapid fade beginning around 41 s, consistent with the measured late decline. Its instrument and chop identities remain model interpretations, not a human audition.",
+        "source_audio_reused": false,
+        "paid_calls_by_this_agent": 0
+      }
+    },
+    {
+      "id": "05-linq",
+      "target_picture_duration_seconds": 48.6,
+      "measured_evidence": {
+        "mixed_audio_broadband_tempo_candidates_bpm": [
+          {
+            "bpm": 95.45,
+            "normalized_autocorrelation": 0.50829,
+            "lag_seconds": 0.62857
+          },
+          {
+            "bpm": 63.97,
+            "normalized_autocorrelation": 0.47006,
+            "lag_seconds": 0.93787
+          },
+          {
+            "bpm": 127.95,
+            "normalized_autocorrelation": 0.18456,
+            "lag_seconds": 0.46893
+          }
+        ],
+        "bass_energy_below_250hz_percent": 79.4,
+        "active_frame_spectral_centroid_median_hz": 424.5,
+        "quarter_rms_dbfs_on_target_timeline": [
+          -15.91,
+          -14.63,
+          -14.86,
+          -16.8
+        ],
+        "candidate_tempo_confidence": "Moderate for recurring onset periods; unresolved for musical meter or exact downbeat.",
+        "palette_inference_limit": "Low-frequency weighting and spectral center are measured; exact instruments are not established."
+      },
+      "vocal_presence": {
+        "established": false,
+        "confidence": "unresolved",
+        "reason": "No perceptual listening, source separation, or speech/singing model was used. Harmonic energy and onsets cannot identify vocals reliably."
+      },
+      "proposed_new_instrumental": {
+        "working_bpm_editorial_choice": 96,
+        "rhythm": "A relaxed approximately 96 BPM pulse with gentle syncopation; approximately 64 BPM dotted/metric alternative remains plausible from the mixed audio.",
+        "suggested_timbral_palette_not_source_identification": [
+          "rounded low synth bass",
+          "dry soft kick/snare",
+          "mellow keyboard chords",
+          "brief light pluck detail",
+          "subtle stereo texture"
+        ],
+        "energy_arc": "Establish the pulse quickly, keep a modest middle lift around 12\u201336 s, then reduce density after 43\u201344 s and fade to 48.6 s.",
+        "optional_transient_sync_windows_output_seconds": [
+          6.1693,
+          13.0736,
+          18.0722,
+          26.8223,
+          32.7588,
+          39.3239,
+          42.7561
+        ],
+        "timing_tolerance_note": "Analysis hop is 9.977 ms; spectral window is 46.44 ms. Round anchors to nearby picture frames and place new musical gestures by ear after generation.",
+        "generation_brief": "Compose a NEW 48.6-second instrumental product-demo cue around 96 BPM. Use rounded low synth bass, restrained dry drums, mellow keyboard chords and a small original pluck detail. Make the creative feel confident, warm and lightly syncopated. Maintain a smooth middle lift without a huge drop, begin reducing layers near 44 s, and end with a clean fading cadence at 48.6 s. Keep upper frequencies restrained and leave space for UI effects. Entirely new motif and harmony; no voice, lyrics, humming or reference-audio samples."
+      },
+      "provenance": {
+        "measurement_file": "music-05-linq.json",
+        "source_sha256": "86e22e698e141c5c2a161977289be1335bb0c0a1dd98769c4c146fcd57bbf2eb",
+        "listening_performed": false,
+        "paid_calls": 0
+      },
+      "separately_attributed_content_model_summary": {
+        "id": "05-linq",
+        "model_endpoint": "fal-ai/audio-understanding",
+        "request_id": "01a1c182-26d3-7cb1-8493-b26adb09044a",
+        "evidence_kind": "Saved content-aware model description; text inspected directly, no human auditory listening pass",
+        "raw_result_file": "audio-recreation/analysis/model-analyses.json",
+        "raw_result_file_sha256": "e20106c7b1135f428cda0b5bc74b7a801793942c6d2b516b5c2051870b20e4f5",
+        "raw_output_text_sha256": "ba2f4bf079dcb7d1dc70386fdfa7dafb2df15ddb12d4c3ecf2834a8b90efb944",
+        "direct_raw_model_result_reviewed_by_this_agent": true,
+        "human_listening_performed": false,
+        "source_path": "references/05-linq/source.mp4",
+        "model_style_description": "Relaxed chill-hop / low-fidelity electronic pop.",
+        "model_timbre_description": "Processed drums with clap/snap-like snare and shaker-like hats; rounded synth bass; warm pad or electric-piano-style chords; a short-decay plinky synth lead.",
+        "model_tempo_description": "Approximately 95\u2013105 BPM.",
+        "working_tempo_decision": "Working 96 BPM agrees with the measured 95.45 BPM dominant period and model range; the approximately 64 BPM metrical alternative remains recorded.",
+        "model_reported_intelligible_words": false,
+        "model_reported_nonlexical_vocal_like_texture": false,
+        "vocal_presence_qualification": "The model reports no intelligible speech or sung words; this is not an independently verified absence of all vocal-like sound.",
+        "new_instrumental_voice_policy": "Generate an instrumental score with no speech, singing, humming or vocal samples.",
+        "timing_or_identity_qualification": "The model describes a fade around 43 s followed by an ambient logo-like sting. The measured late decrease supports the fade timing but does not independently identify the sting or instrument.",
+        "source_audio_reused": false,
+        "paid_calls_by_this_agent": 0
+      }
+    },
+    {
+      "id": "06-gallery",
+      "target_picture_duration_seconds": 49.433333333,
+      "measured_evidence": {
+        "mixed_audio_broadband_tempo_candidates_bpm": [
+          {
+            "bpm": 66.82,
+            "normalized_autocorrelation": 0.82294,
+            "lag_seconds": 0.89796
+          },
+          {
+            "bpm": 133.64,
+            "normalized_autocorrelation": 0.82156,
+            "lag_seconds": 0.44898
+          },
+          {
+            "bpm": 89.76,
+            "normalized_autocorrelation": 0.74115,
+            "lag_seconds": 0.66848
+          }
+        ],
+        "bass_energy_below_250hz_percent": 81.76,
+        "active_frame_spectral_centroid_median_hz": 369.5,
+        "quarter_rms_dbfs_on_target_timeline": [
+          -22.21,
+          -17.57,
+          -21.05,
+          -25.8
+        ],
+        "candidate_tempo_confidence": "Moderate for recurring onset periods; unresolved for musical meter or exact downbeat.",
+        "palette_inference_limit": "Low-frequency weighting and spectral center are measured; exact instruments are not established."
+      },
+      "vocal_presence": {
+        "established": false,
+        "confidence": "unresolved",
+        "reason": "No perceptual listening, source separation, or speech/singing model was used. Harmonic energy and onsets cannot identify vocals reliably."
+      },
+      "proposed_new_instrumental": {
+        "working_bpm_editorial_choice": 134,
+        "rhythm": "A 134 BPM light pulse with a spacious 67 BPM half-time feel; the approximately 0.45 s and 0.90 s periodicities are both strongly measured.",
+        "suggested_timbral_palette_not_source_identification": [
+          "rounded rhythmic synth bass",
+          "clean drum-machine kick and snare/clap",
+          "bright original plucked arpeggio",
+          "filtered airy pads",
+          "new formant-filtered oscillator pulses with no voice source"
+        ],
+        "energy_arc": "For the cut 49.433 s picture, build gently through 12 s, use the fullest body 12\u201330 s, simplify 30\u201344 s, then resolve and decay 44\u201349.433 s. Compose continuously across output 34.9667 s; do not insert a gap for the removed source section.",
+        "optional_transient_sync_windows_output_seconds": [
+          9.4019,
+          13.4327,
+          21.4944,
+          28.6581,
+          30.4541,
+          36.0643,
+          39.4067,
+          43.8965
+        ],
+        "timing_tolerance_note": "Analysis hop is 9.977 ms; spectral window is 46.44 ms. Round anchors to nearby picture frames and place new musical gestures by ear after generation.",
+        "generation_brief": "Compose a NEW 49.433-second instrumental product-story cue around 134 BPM with a spacious 67 BPM half-time feel. Use rounded rhythmic synth bass, clean drum-machine kick and snare/clap, a new bright plucked arpeggio and filtered airy pads. Replace any vocal-chop character with newly synthesized formant-filtered oscillator pulses, using no voices or vocal samples. A warm, considered and lightly optimistic character is the creative direction. Grow into 12\u201330 s, simplify after 30 s, and resolve with a taper over 44\u201349.433 s. Keep it one continuous composition; the picture has already removed a 6.033 s live-action segment. No voice, humming, lyrics, borrowed melody or source-audio samples."
+      },
+      "provenance": {
+        "measurement_file": "music-06-gallery.json",
+        "source_sha256": "fcbc98fa2f1697da5c947ed59b952128acd1c8f6194ce982c60133a423f1ddaf",
+        "listening_performed": false,
+        "paid_calls": 0
+      },
+      "separately_attributed_content_model_summary": {
+        "id": "06-gallery",
+        "model_endpoint": "fal-ai/audio-understanding",
+        "request_id": "01a1c182-2697-7d10-bd84-55956c591029",
+        "evidence_kind": "Saved content-aware model description; text inspected directly, no human auditory listening pass",
+        "raw_result_file": "audio-recreation/analysis/model-analyses.json",
+        "raw_result_file_sha256": "e20106c7b1135f428cda0b5bc74b7a801793942c6d2b516b5c2051870b20e4f5",
+        "raw_output_text_sha256": "851632f39ef7f9d39fe8b35bdb93276eed2de2be337a5c7cce4ac0ef4435dce3",
+        "direct_raw_model_result_reviewed_by_this_agent": true,
+        "human_listening_performed": false,
+        "source_path": "references/06-gallery/source.mp4",
+        "model_style_description": "Upbeat electronic pop / lounge.",
+        "model_timbre_description": "Four-floor drum machine, crisp snare/clap, rhythmic clean synth bass, bright plucked arpeggios, filtered pads and processed nonlexical vocal-like chops.",
+        "model_tempo_description": "Approximately 125 \u00b15 BPM.",
+        "working_tempo_decision": "Working 134 BPM with a 67 BPM half-time feel follows the strong 133.64 / 66.82 BPM measured periods. The model tempo guess conflicts; exact source meter is not certified.",
+        "model_reported_intelligible_words": false,
+        "model_reported_nonlexical_vocal_like_texture": true,
+        "vocal_presence_qualification": "The model reports no intelligible speech or sung words; this is not an independently verified absence of all vocal-like sound.",
+        "new_instrumental_voice_policy": "Use only newly synthesized formant-filtered pulses, not any voice or vocal sample, to supply a similar rhythmic texture.",
+        "timing_or_identity_qualification": "The model describes a quick source fade around 51 s, which maps to output approximately 44.967 s after the specified 6.033 s cut. Source-to-output mapping and measured energy take priority over an approximate model timestamp.",
+        "source_audio_reused": false,
+        "paid_calls_by_this_agent": 0
+      },
+      "source_to_output_time_map": {
+        "omitted_source_seconds": [
+          34.96666666666667,
+          41
+        ],
+        "omitted_source_frames_inclusive": [
+          1049,
+          1229
+        ],
+        "omitted_duration_seconds": 6.033333333333333,
+        "rule": "source t <1049/30 => output t;1049/30 <=t <41 => omitted; t >=41 => output t\u2212181/30.",
+        "post_cut_anchor_source_seconds": [
+          42.0976,
+          45.44,
+          49.9298
+        ],
+        "post_cut_anchor_output_seconds": [
+          36.0643,
+          39.4067,
+          43.8965
+        ]
+      }
+    }
+  ]
+}

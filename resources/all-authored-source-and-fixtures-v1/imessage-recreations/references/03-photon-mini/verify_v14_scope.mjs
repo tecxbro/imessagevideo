@@ -1,0 +1,9 @@
+import path from 'node:path';import fs from 'node:fs';import crypto from 'node:crypto';
+import {loadScene} from '../../engines/scene-loader.mjs';import {svgMarkup} from '../../engines/common.mjs';
+const dir=path.resolve('references/03-photon-mini');const baseline=process.argv[2]??'final-v13.scene.json';const candidate=process.argv[3]??'final-v14.scene.json';const ranges=JSON.parse(process.argv[4]??'[[414,429],[467,471],[495,799],[891,974]]');const report=process.argv[5]??'final-v14-scope-v13.json';const a=loadScene(path.join(dir,baseline));const b=loadScene(path.join(dir,candidate));const changed=[],outside=[];
+// A dormant global gradient definition cannot change a pixel. Preserve active
+// clip/filter definitions, remove only unused linear/radial gradient definitions.
+function canonical(markup){const body=markup.replace(/<(linearGradient|radialGradient)\b[\s\S]*?<\/\1>/g,'');const refs=new Set([...body.matchAll(/url\(#([^)]*)\)/g)].map(x=>x[1]));return markup.replace(/<(linearGradient|radialGradient)\b[^>]*id="([^"]+)"[\s\S]*?<\/\1>/g,(all,type,id)=>refs.has(id)?all:'');}
+for(let f=0;f<1260;f++){const aa=canonical(svgMarkup(a,f/30,undefined,false));const bb=canonical(svgMarkup(b,f/30,undefined,false));if(aa!==bb){changed.push(f);if(!ranges.some(([lo,hi])=>f>=lo&&f<=hi))outside.push(f);}if(f%300===0)console.log('checked',f);}
+let intervals=[];for(const f of changed){const p=intervals.at(-1);if(p&&f===p[1]+1)p[1]=f;else intervals.push([f,f]);}
+const result={baseline,candidate,total_frames:1260,changed_frames:changed.length,observed_intervals:intervals,declared_patch:ranges,outside_declared:outside,normalization:'Unused global linear/radial gradients removed; active clips, filters, geometry, text and image data retained.'};fs.writeFileSync(path.join(dir,report),JSON.stringify(result,null,2));console.log(result);if(outside.length)process.exit(1);

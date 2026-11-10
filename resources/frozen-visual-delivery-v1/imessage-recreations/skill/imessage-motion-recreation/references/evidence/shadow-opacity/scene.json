@@ -1,0 +1,50 @@
+{
+  "title": "Native opacity after the complete shadowed component",
+  "width": 360,
+  "height": 240,
+  "fps": 10,
+  "duration": 0.3,
+  "background": "#ffffff",
+  "layers": [
+    {
+      "id": "fading-shadowed-component",
+      "type": "group",
+      "x": 70,
+      "y": 60,
+      "shadow": {
+        "x": 0,
+        "y": 0,
+        "blur": 5,
+        "color": "#00000066"
+      },
+      "keyframes": {
+        "opacity": [
+          {
+            "t": 0,
+            "value": 0.45,
+            "ease": "hold"
+          },
+          {
+            "t": 0.1,
+            "value": 1,
+            "ease": "hold"
+          },
+          {
+            "t": 0.2,
+            "value": 0.45,
+            "ease": "hold"
+          }
+        ]
+      },
+      "children": [
+        {
+          "id": "solid-card",
+          "type": "rect",
+          "width": 220,
+          "height": 120,
+          "fill": "#4060a0"
+        }
+      ]
+    }
+  ]
+}

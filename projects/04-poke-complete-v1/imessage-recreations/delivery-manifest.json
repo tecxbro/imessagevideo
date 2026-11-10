@@ -1,0 +1,2279 @@
+{
+  "videos": [
+    {
+      "id": "01-photonhq",
+      "title": "Photon 2.0",
+      "source": "references/01-photonhq/source.mp4",
+      "source_meta": {
+        "width": 1920,
+        "height": 1080,
+        "r_frame_rate": "30/1",
+        "duration": "21.833333",
+        "nb_frames": "655"
+      },
+      "candidates": [
+        {
+          "path": "deliverables/01-photonhq/remotion.mp4",
+          "label": "remotion \u00b7 reference audio",
+          "meta": {
+            "width": 1920,
+            "height": 1080,
+            "r_frame_rate": "30/1",
+            "duration": "21.833333",
+            "nb_frames": "655"
+          },
+          "reference_audio": true,
+          "provenance": {
+            "video": "/workspace/imessage-recreations/outputs/01-photonhq/remotion.mp4",
+            "picture_sha256": "fa0602c33c7140487226a9f82f5dc46ba5ed8db570c8548a8c83ff29d643efe2",
+            "sceneSHA256": "2bbda2bf71ac43fa73d5004af01ad57fc1f5fd487ed5a697b2722571a1c16d19",
+            "method": "remotion",
+            "reference_soundtrack": "/workspace/imessage-recreations/references/01-photonhq/source.mp4",
+            "duration": 21.833333,
+            "segments": null,
+            "audio_encoding": "Original AAC packet copy",
+            "note": "Independent reconstructed picture; audio reused from the user-supplied reference."
+          }
+        },
+        {
+          "path": "deliverables/01-photonhq/gsap.mp4",
+          "label": "gsap \u00b7 reference audio",
+          "meta": {
+            "width": 1920,
+            "height": 1080,
+            "r_frame_rate": "30/1",
+            "duration": "21.833333",
+            "nb_frames": "655"
+          },
+          "reference_audio": true,
+          "provenance": {
+            "video": "/workspace/imessage-recreations/outputs/01-photonhq/gsap.mp4",
+            "picture_sha256": "20e51ab31d724910bf85f5e2c209a151aae5881e62cfdd681cbfa0dcbe98650e",
+            "sceneSHA256": "2bbda2bf71ac43fa73d5004af01ad57fc1f5fd487ed5a697b2722571a1c16d19",
+            "method": "gsap",
+            "reference_soundtrack": "/workspace/imessage-recreations/references/01-photonhq/source.mp4",
+            "duration": 21.833333,
+            "segments": null,
+            "audio_encoding": "Original AAC packet copy",
+            "note": "Independent reconstructed picture; audio reused from the user-supplied reference."
+          }
+        },
+        {
+          "path": "deliverables/01-photonhq/html.mp4",
+          "label": "html \u00b7 reference audio",
+          "meta": {
+            "width": 1920,
+            "height": 1080,
+            "r_frame_rate": "30/1",
+            "duration": "21.833333",
+            "nb_frames": "655"
+          },
+          "reference_audio": true,
+          "provenance": {
+            "video": "/workspace/imessage-recreations/outputs/01-photonhq/html.mp4",
+            "picture_sha256": "fa0602c33c7140487226a9f82f5dc46ba5ed8db570c8548a8c83ff29d643efe2",
+            "sceneSHA256": "2bbda2bf71ac43fa73d5004af01ad57fc1f5fd487ed5a697b2722571a1c16d19",
+            "method": "html",
+            "reference_soundtrack": "/workspace/imessage-recreations/references/01-photonhq/source.mp4",
+            "duration": 21.833333,
+            "segments": null,
+            "audio_encoding": "Original AAC packet copy",
+            "note": "Independent reconstructed picture; audio reused from the user-supplied reference."
+          }
+        },
+        {
+          "path": "deliverables/01-photonhq/motion-canvas.mp4",
+          "label": "motion-canvas \u00b7 reference audio",
+          "meta": {
+            "width": 1920,
+            "height": 1080,
+            "r_frame_rate": "30/1",
+            "duration": "21.833333",
+            "nb_frames": "655"
+          },
+          "reference_audio": true,
+          "provenance": {
+            "video": "/workspace/imessage-recreations/outputs/01-photonhq/motion-canvas.mp4",
+            "picture_sha256": "384d779a17be93552f23b7ec6270e7d4654073cd5b600d807c78ed72a632ef1e",
+            "sceneSHA256": "2bbda2bf71ac43fa73d5004af01ad57fc1f5fd487ed5a697b2722571a1c16d19",
+            "method": "motion-canvas",
+            "reference_soundtrack": "/workspace/imessage-recreations/references/01-photonhq/source.mp4",
+            "duration": 21.833333,
+            "segments": null,
+            "audio_encoding": "Original AAC packet copy",
+            "note": "Independent reconstructed picture; audio reused from the user-supplied reference."
+          }
+        },
+        {
+          "path": "deliverables/01-photonhq/pillow.mp4",
+          "label": "pillow \u00b7 reference audio",
+          "meta": {
+            "width": 1920,
+            "height": 1080,
+            "r_frame_rate": "30/1",
+            "duration": "21.833333",
+            "nb_frames": "655"
+          },
+          "reference_audio": true,
+          "provenance": {
+            "video": "/workspace/imessage-recreations/outputs/01-photonhq/pillow.mp4",
+            "picture_sha256": "59d60fe3d06b0e892357e5c2192e62f7d577f84e797475eb050a95a22b93b646",
+            "sceneSHA256": "2bbda2bf71ac43fa73d5004af01ad57fc1f5fd487ed5a697b2722571a1c16d19",
+            "method": "pillow",
+            "reference_soundtrack": "/workspace/imessage-recreations/references/01-photonhq/source.mp4",
+            "duration": 21.833333,
+            "segments": null,
+            "audio_encoding": "Original AAC packet copy",
+            "note": "Independent reconstructed picture; audio reused from the user-supplied reference."
+          }
+        }
+      ],
+      "reports": [
+        {
+          "label": "source-gsap-v10",
+          "path": "verification/final/01-photonhq/source-gsap-v10/index.html",
+          "summary": {
+            "frames_sampled": 24,
+            "sample_fps": 1,
+            "all_reference_frames_requested": false,
+            "global": {
+              "pixels_compared": 49766400,
+              "mae": 1.9758492878729423,
+              "rmse": 15.21074763492451,
+              "psnr_db": 24.487792390416733,
+              "psnr_infinite": false,
+              "changed_pixel_percent": 4.00342600630144,
+              "mean_ssim_luma": 0.9757160419998838
+            },
+            "foreground_union": {
+              "pixels_compared": 15364734,
+              "mae": 6.295746154798384,
+              "rmse": 27.370451611807518,
+              "psnr_db": 19.38516434231962,
+              "psnr_infinite": false,
+              "changed_pixel_percent": 12.929699921912087,
+              "mean_ssim_luma": 0.9364611890901854
+            },
+            "sampled_frames_pixel_identical": false
+          }
+        }
+      ],
+      "segments": [],
+      "analysis": "references/01-photonhq/analysis.md",
+      "sceneSHA256": "2bbda2bf71ac43fa73d5004af01ad57fc1f5fd487ed5a697b2722571a1c16d19",
+      "timeline_scan": {
+        "reference": "references/01-photonhq/source.mp4",
+        "candidate": "outputs/01-photonhq/gsap.mp4",
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "referenceSHA256": "df7c9df08910e22599c2c5954f27c4ec7fc57882066347723f8589e7a6654c83",
+        "candidateSHA256": "20e51ab31d724910bf85f5e2c209a151aae5881e62cfdd681cbfa0dcbe98650e",
+        "fps": 30.0,
+        "frames_scanned": 655,
+        "mean_native_mae": 1.0234717760460843,
+        "maximum_native_mae": 5.294258616255144,
+        "peaks": [
+          {
+            "candidate_frame": 406,
+            "reference_frame": 406,
+            "candidate_time": 13.533333333333333,
+            "reference_time": 13.533333333333333,
+            "mae": 5.294258616255144,
+            "max_channel_error": 255
+          },
+          {
+            "candidate_frame": 435,
+            "reference_frame": 435,
+            "candidate_time": 14.5,
+            "reference_time": 14.5,
+            "mae": 4.495344007201646,
+            "max_channel_error": 255
+          },
+          {
+            "candidate_frame": 343,
+            "reference_frame": 343,
+            "candidate_time": 11.433333333333334,
+            "reference_time": 11.433333333333334,
+            "mae": 4.12634034207819,
+            "max_channel_error": 255
+          },
+          {
+            "candidate_frame": 269,
+            "reference_frame": 269,
+            "candidate_time": 8.966666666666667,
+            "reference_time": 8.966666666666667,
+            "mae": 3.968630401234568,
+            "max_channel_error": 252
+          },
+          {
+            "candidate_frame": 368,
+            "reference_frame": 368,
+            "candidate_time": 12.266666666666667,
+            "reference_time": 12.266666666666667,
+            "mae": 3.759723990483539,
+            "max_channel_error": 247
+          },
+          {
+            "candidate_frame": 158,
+            "reference_frame": 158,
+            "candidate_time": 5.266666666666667,
+            "reference_time": 5.266666666666667,
+            "mae": 3.5122397440843622,
+            "max_channel_error": 255
+          },
+          {
+            "candidate_frame": 388,
+            "reference_frame": 388,
+            "candidate_time": 12.933333333333334,
+            "reference_time": 12.933333333333334,
+            "mae": 2.940453157150206,
+            "max_channel_error": 248
+          },
+          {
+            "candidate_frame": 248,
+            "reference_frame": 248,
+            "candidate_time": 8.266666666666667,
+            "reference_time": 8.266666666666667,
+            "mae": 2.8654361175411522,
+            "max_channel_error": 255
+          },
+          {
+            "candidate_frame": 459,
+            "reference_frame": 459,
+            "candidate_time": 15.3,
+            "reference_time": 15.3,
+            "mae": 2.5311292759773663,
+            "max_channel_error": 255
+          },
+          {
+            "candidate_frame": 284,
+            "reference_frame": 284,
+            "candidate_time": 9.466666666666667,
+            "reference_time": 9.466666666666667,
+            "mae": 2.4965314750514405,
+            "max_channel_error": 255
+          },
+          {
+            "candidate_frame": 143,
+            "reference_frame": 143,
+            "candidate_time": 4.766666666666667,
+            "reference_time": 4.766666666666667,
+            "mae": 1.8684066358024691,
+            "max_channel_error": 255
+          },
+          {
+            "candidate_frame": 313,
+            "reference_frame": 313,
+            "candidate_time": 10.433333333333334,
+            "reference_time": 10.433333333333334,
+            "mae": 1.8647596772119341,
+            "max_channel_error": 255
+          },
+          {
+            "candidate_frame": 589,
+            "reference_frame": 589,
+            "candidate_time": 19.633333333333333,
+            "reference_time": 19.633333333333333,
+            "mae": 1.591574234825103,
+            "max_channel_error": 255
+          },
+          {
+            "candidate_frame": 328,
+            "reference_frame": 328,
+            "candidate_time": 10.933333333333334,
+            "reference_time": 10.933333333333334,
+            "mae": 1.0565272955246914,
+            "max_channel_error": 255
+          },
+          {
+            "candidate_frame": 574,
+            "reference_frame": 574,
+            "candidate_time": 19.133333333333333,
+            "reference_time": 19.133333333333333,
+            "mae": 1.0410625643004114,
+            "max_channel_error": 255
+          },
+          {
+            "candidate_frame": 174,
+            "reference_frame": 174,
+            "candidate_time": 5.8,
+            "reference_time": 5.8,
+            "mae": 0.972631333590535,
+            "max_channel_error": 255
+          },
+          {
+            "candidate_frame": 49,
+            "reference_frame": 49,
+            "candidate_time": 1.6333333333333333,
+            "reference_time": 1.6333333333333333,
+            "mae": 0.5463896926440329,
+            "max_channel_error": 255
+          },
+          {
+            "candidate_frame": 70,
+            "reference_frame": 70,
+            "candidate_time": 2.3333333333333335,
+            "reference_time": 2.3333333333333335,
+            "mae": 0.4231695280349794,
+            "max_channel_error": 186
+          },
+          {
+            "candidate_frame": 90,
+            "reference_frame": 90,
+            "candidate_time": 3.0,
+            "reference_time": 3.0,
+            "mae": 0.39436181841563783,
+            "max_channel_error": 232
+          },
+          {
+            "candidate_frame": 105,
+            "reference_frame": 105,
+            "candidate_time": 3.5,
+            "reference_time": 3.5,
+            "mae": 0.3855534657921811,
+            "max_channel_error": 240
+          },
+          {
+            "candidate_frame": 517,
+            "reference_frame": 517,
+            "candidate_time": 17.233333333333334,
+            "reference_time": 17.233333333333334,
+            "mae": 0.38185587062757204,
+            "max_channel_error": 255
+          },
+          {
+            "candidate_frame": 33,
+            "reference_frame": 33,
+            "candidate_time": 1.1,
+            "reference_time": 1.1,
+            "mae": 0.33113650977366255,
+            "max_channel_error": 254
+          },
+          {
+            "candidate_frame": 220,
+            "reference_frame": 220,
+            "candidate_time": 7.333333333333333,
+            "reference_time": 7.333333333333333,
+            "mae": 0.3072485853909465,
+            "max_channel_error": 231
+          },
+          {
+            "candidate_frame": 559,
+            "reference_frame": 559,
+            "candidate_time": 18.633333333333333,
+            "reference_time": 18.633333333333333,
+            "mae": 0.26561856995884775,
+            "max_channel_error": 255
+          }
+        ],
+        "notice": "Every aligned native picture frame was measured. Error peaks require visual and foreground diagnosis; this is not a perfection percentage.",
+        "sceneSHA256": "2bbda2bf71ac43fa73d5004af01ad57fc1f5fd487ed5a697b2722571a1c16d19"
+      }
+    },
+    {
+      "id": "02-danieltian",
+      "title": "Photon Agent to Agent",
+      "source": "references/02-danieltian/source.mp4",
+      "source_meta": {
+        "width": 1920,
+        "height": 1080,
+        "r_frame_rate": "30/1",
+        "duration": "45.333333",
+        "nb_frames": "1360"
+      },
+      "candidates": [
+        {
+          "path": "deliverables/02-danieltian/remotion.mp4",
+          "label": "remotion \u00b7 reference audio",
+          "meta": {
+            "width": 1920,
+            "height": 1080,
+            "r_frame_rate": "30/1",
+            "duration": "45.333333",
+            "nb_frames": "1360"
+          },
+          "reference_audio": true,
+          "provenance": {
+            "video": "/workspace/imessage-recreations/outputs/02-danieltian/remotion.mp4",
+            "picture_sha256": "6224160ca255af38af16500f0ca69ae136e9c5ccb91e01ea0718ee1619abcb5f",
+            "sceneSHA256": "729c783aa3a13f87c2e61d9a409a492adff9d27208ae6e092c3edfc2c2e8abee",
+            "method": "remotion",
+            "reference_soundtrack": "/workspace/imessage-recreations/references/02-danieltian/source.mp4",
+            "duration": 45.333333,
+            "segments": null,
+            "audio_encoding": "Original AAC packet copy",
+            "note": "Independent reconstructed picture; audio reused from the user-supplied reference."
+          }
+        },
+        {
+          "path": "deliverables/02-danieltian/gsap.mp4",
+          "label": "gsap \u00b7 reference audio",
+          "meta": {
+            "width": 1920,
+            "height": 1080,
+            "r_frame_rate": "30/1",
+            "duration": "45.333333",
+            "nb_frames": "1360"
+          },
+          "reference_audio": true,
+          "provenance": {
+            "video": "/workspace/imessage-recreations/outputs/02-danieltian/gsap.mp4",
+            "picture_sha256": "59740a0f1161f75dccf50d1d7f1a30e09192d7b573b17a9675fd76870858c72b",
+            "sceneSHA256": "729c783aa3a13f87c2e61d9a409a492adff9d27208ae6e092c3edfc2c2e8abee",
+            "method": "gsap",
+            "reference_soundtrack": "/workspace/imessage-recreations/references/02-danieltian/source.mp4",
+            "duration": 45.333333,
+            "segments": null,
+            "audio_encoding": "Original AAC packet copy",
+            "note": "Independent reconstructed picture; audio reused from the user-supplied reference."
+          }
+        },
+        {
+          "path": "deliverables/02-danieltian/html.mp4",
+          "label": "html \u00b7 reference audio",
+          "meta": {
+            "width": 1920,
+            "height": 1080,
+            "r_frame_rate": "30/1",
+            "duration": "45.333333",
+            "nb_frames": "1360"
+          },
+          "reference_audio": true,
+          "provenance": {
+            "video": "/workspace/imessage-recreations/outputs/02-danieltian/html.mp4",
+            "picture_sha256": "69764d6be2fea1b830f26c5928e8b7f5a269e39f5544e47de5c1ca00c2828913",
+            "sceneSHA256": "729c783aa3a13f87c2e61d9a409a492adff9d27208ae6e092c3edfc2c2e8abee",
+            "method": "html",
+            "reference_soundtrack": "/workspace/imessage-recreations/references/02-danieltian/source.mp4",
+            "duration": 45.333333,
+            "segments": null,
+            "audio_encoding": "Original AAC packet copy",
+            "note": "Independent reconstructed picture; audio reused from the user-supplied reference."
+          }
+        },
+        {
+          "path": "deliverables/02-danieltian/motion-canvas.mp4",
+          "label": "motion-canvas \u00b7 reference audio",
+          "meta": {
+            "width": 1920,
+            "height": 1080,
+            "r_frame_rate": "30/1",
+            "duration": "45.333333",
+            "nb_frames": "1360"
+          },
+          "reference_audio": true,
+          "provenance": {
+            "video": "/workspace/imessage-recreations/outputs/02-danieltian/motion-canvas.mp4",
+            "picture_sha256": "147673a32fb9e5ab21067f688663210defa4e7c79680ff52e282f45bc0a9a7e5",
+            "sceneSHA256": "729c783aa3a13f87c2e61d9a409a492adff9d27208ae6e092c3edfc2c2e8abee",
+            "method": "motion-canvas",
+            "reference_soundtrack": "/workspace/imessage-recreations/references/02-danieltian/source.mp4",
+            "duration": 45.333333,
+            "segments": null,
+            "audio_encoding": "Original AAC packet copy",
+            "note": "Independent reconstructed picture; audio reused from the user-supplied reference."
+          }
+        },
+        {
+          "path": "deliverables/02-danieltian/pillow.mp4",
+          "label": "pillow \u00b7 reference audio",
+          "meta": {
+            "width": 1920,
+            "height": 1080,
+            "r_frame_rate": "30/1",
+            "duration": "45.333333",
+            "nb_frames": "1360"
+          },
+          "reference_audio": true,
+          "provenance": {
+            "video": "/workspace/imessage-recreations/outputs/02-danieltian/pillow.mp4",
+            "picture_sha256": "8412a16362bd0ca1c40a5fed699230d502a337d137379725a48088e3913e2dde",
+            "sceneSHA256": "729c783aa3a13f87c2e61d9a409a492adff9d27208ae6e092c3edfc2c2e8abee",
+            "method": "pillow",
+            "reference_soundtrack": "/workspace/imessage-recreations/references/02-danieltian/source.mp4",
+            "duration": 45.333333,
+            "segments": null,
+            "audio_encoding": "Original AAC packet copy",
+            "note": "Independent reconstructed picture; audio reused from the user-supplied reference."
+          }
+        }
+      ],
+      "reports": [
+        {
+          "label": "source-gsap-v19",
+          "path": "verification/final/02-danieltian/source-gsap-v19/index.html",
+          "summary": {
+            "frames_sampled": 24,
+            "sample_fps": 1.0,
+            "all_reference_frames_requested": false,
+            "global": {
+              "pixels_compared": 49766400,
+              "mae": 2.088690930694873,
+              "rmse": 13.26941520359145,
+              "psnr_db": 25.673767938805057,
+              "psnr_infinite": false,
+              "changed_pixel_percent": 4.388159481095679,
+              "mean_ssim_luma": 0.9695473096073354
+            },
+            "foreground_union": {
+              "pixels_compared": 9059581,
+              "mae": 10.310772025034417,
+              "rmse": 31.020178226667095,
+              "psnr_db": 18.29791783413983,
+              "psnr_infinite": false,
+              "changed_pixel_percent": 21.54229870012752,
+              "mean_ssim_luma": 0.8594832974056714
+            },
+            "sampled_frames_pixel_identical": false
+          }
+        }
+      ],
+      "segments": [],
+      "analysis": "references/02-danieltian/analysis.md",
+      "sceneSHA256": "729c783aa3a13f87c2e61d9a409a492adff9d27208ae6e092c3edfc2c2e8abee",
+      "timeline_scan": {
+        "reference": "/workspace/imessage-recreations/references/02-danieltian/source.mp4",
+        "candidate": "/workspace/imessage-recreations/outputs/02-danieltian/gsap.mp4",
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "referenceSHA256": "2c591738ac81b72d62ed51209c21820dc5a5d30e5197a732529ce833424830b2",
+        "candidateSHA256": "59740a0f1161f75dccf50d1d7f1a30e09192d7b573b17a9675fd76870858c72b",
+        "fps": 30.0,
+        "frames_scanned": 1360,
+        "mean_native_mae": 0.7569323304360325,
+        "maximum_native_mae": 3.058292181069959,
+        "peaks": [
+          {
+            "candidate_frame": 705,
+            "reference_frame": 705,
+            "candidate_time": 23.5,
+            "reference_time": 23.5,
+            "mae": 3.058292181069959,
+            "max_channel_error": 254
+          },
+          {
+            "candidate_frame": 240,
+            "reference_frame": 240,
+            "candidate_time": 8.0,
+            "reference_time": 8.0,
+            "mae": 2.8955459104938273,
+            "max_channel_error": 255
+          },
+          {
+            "candidate_frame": 642,
+            "reference_frame": 642,
+            "candidate_time": 21.4,
+            "reference_time": 21.4,
+            "mae": 2.7811541923868313,
+            "max_channel_error": 255
+          },
+          {
+            "candidate_frame": 817,
+            "reference_frame": 817,
+            "candidate_time": 27.233333333333334,
+            "reference_time": 27.233333333333334,
+            "mae": 2.7730354616769546,
+            "max_channel_error": 255
+          },
+          {
+            "candidate_frame": 883,
+            "reference_frame": 883,
+            "candidate_time": 29.433333333333334,
+            "reference_time": 29.433333333333334,
+            "mae": 2.68490708590535,
+            "max_channel_error": 255
+          },
+          {
+            "candidate_frame": 957,
+            "reference_frame": 957,
+            "candidate_time": 31.9,
+            "reference_time": 31.9,
+            "mae": 2.3663618827160495,
+            "max_channel_error": 255
+          },
+          {
+            "candidate_frame": 687,
+            "reference_frame": 687,
+            "candidate_time": 22.9,
+            "reference_time": 22.9,
+            "mae": 2.3593097350823045,
+            "max_channel_error": 254
+          },
+          {
+            "candidate_frame": 837,
+            "reference_frame": 837,
+            "candidate_time": 27.9,
+            "reference_time": 27.9,
+            "mae": 2.2698249421296297,
+            "max_channel_error": 246
+          },
+          {
+            "candidate_frame": 755,
+            "reference_frame": 755,
+            "candidate_time": 25.166666666666668,
+            "reference_time": 25.166666666666668,
+            "mae": 2.2671490805041152,
+            "max_channel_error": 243
+          },
+          {
+            "candidate_frame": 257,
+            "reference_frame": 257,
+            "candidate_time": 8.566666666666666,
+            "reference_time": 8.566666666666666,
+            "mae": 2.258489744084362,
+            "max_channel_error": 246
+          },
+          {
+            "candidate_frame": 733,
+            "reference_frame": 733,
+            "candidate_time": 24.433333333333334,
+            "reference_time": 24.433333333333334,
+            "mae": 2.183752250514403,
+            "max_channel_error": 252
+          },
+          {
+            "candidate_frame": 901,
+            "reference_frame": 901,
+            "candidate_time": 30.033333333333335,
+            "reference_time": 30.033333333333335,
+            "mae": 2.1638872813786008,
+            "max_channel_error": 255
+          },
+          {
+            "candidate_frame": 985,
+            "reference_frame": 985,
+            "candidate_time": 32.833333333333336,
+            "reference_time": 32.833333333333336,
+            "mae": 2.131454475308642,
+            "max_channel_error": 253
+          },
+          {
+            "candidate_frame": 865,
+            "reference_frame": 865,
+            "candidate_time": 28.833333333333332,
+            "reference_time": 28.833333333333332,
+            "mae": 1.9954171489197532,
+            "max_channel_error": 247
+          },
+          {
+            "candidate_frame": 920,
+            "reference_frame": 920,
+            "candidate_time": 30.666666666666668,
+            "reference_time": 30.666666666666668,
+            "mae": 1.897746913580247,
+            "max_channel_error": 252
+          },
+          {
+            "candidate_frame": 938,
+            "reference_frame": 938,
+            "candidate_time": 31.266666666666666,
+            "reference_time": 31.266666666666666,
+            "mae": 1.8861509773662553,
+            "max_channel_error": 254
+          },
+          {
+            "candidate_frame": 799,
+            "reference_frame": 799,
+            "candidate_time": 26.633333333333333,
+            "reference_time": 26.633333333333333,
+            "mae": 1.840265078446502,
+            "max_channel_error": 254
+          },
+          {
+            "candidate_frame": 668,
+            "reference_frame": 668,
+            "candidate_time": 22.266666666666666,
+            "reference_time": 22.266666666666666,
+            "mae": 1.8278883744855967,
+            "max_channel_error": 246
+          },
+          {
+            "candidate_frame": 772,
+            "reference_frame": 772,
+            "candidate_time": 25.733333333333334,
+            "reference_time": 25.733333333333334,
+            "mae": 1.8218023405349795,
+            "max_channel_error": 255
+          },
+          {
+            "candidate_frame": 477,
+            "reference_frame": 477,
+            "candidate_time": 15.9,
+            "reference_time": 15.9,
+            "mae": 1.4324564364711934,
+            "max_channel_error": 205
+          },
+          {
+            "candidate_frame": 1002,
+            "reference_frame": 1002,
+            "candidate_time": 33.4,
+            "reference_time": 33.4,
+            "mae": 1.4276912937242798,
+            "max_channel_error": 253
+          },
+          {
+            "candidate_frame": 357,
+            "reference_frame": 357,
+            "candidate_time": 11.9,
+            "reference_time": 11.9,
+            "mae": 1.3007074652777777,
+            "max_channel_error": 73
+          },
+          {
+            "candidate_frame": 201,
+            "reference_frame": 201,
+            "candidate_time": 6.7,
+            "reference_time": 6.7,
+            "mae": 1.2809477880658435,
+            "max_channel_error": 217
+          },
+          {
+            "candidate_frame": 186,
+            "reference_frame": 186,
+            "candidate_time": 6.2,
+            "reference_time": 6.2,
+            "mae": 1.2243442965534979,
+            "max_channel_error": 231
+          }
+        ],
+        "notice": "Every aligned native picture frame was measured. Error peaks require visual and foreground diagnosis; this is not a perfection percentage.",
+        "sceneSHA256": "729c783aa3a13f87c2e61d9a409a492adff9d27208ae6e092c3edfc2c2e8abee"
+      }
+    },
+    {
+      "id": "03-photon-mini",
+      "title": "Photon Mini Apps",
+      "source": "references/03-photon-mini/source.mp4",
+      "source_meta": {
+        "width": 1920,
+        "height": 1080,
+        "r_frame_rate": "30/1",
+        "duration": "42.000000",
+        "nb_frames": "1260"
+      },
+      "candidates": [
+        {
+          "path": "deliverables/03-photon-mini/remotion.mp4",
+          "label": "remotion \u00b7 reference audio",
+          "meta": {
+            "width": 1920,
+            "height": 1080,
+            "r_frame_rate": "30/1",
+            "duration": "42.000000",
+            "nb_frames": "1260"
+          },
+          "reference_audio": true,
+          "provenance": {
+            "video": "/workspace/imessage-recreations/outputs/03-photon-mini/remotion.mp4",
+            "picture_sha256": "4ab42e74d37da5e85da1d1c2bc6849a72846c0d3525a1603a4271bdacfa857a2",
+            "sceneSHA256": "b720b3a955688bd464e8fbdd2662e5119575ba9f80c8b00e61919caf07c9e646",
+            "method": "remotion",
+            "reference_soundtrack": "/workspace/imessage-recreations/references/03-photon-mini/source.mp4",
+            "duration": 42.0,
+            "segments": null,
+            "audio_encoding": "Original AAC packet copy",
+            "note": "Independent reconstructed picture; audio reused from the user-supplied reference."
+          }
+        },
+        {
+          "path": "deliverables/03-photon-mini/gsap.mp4",
+          "label": "gsap \u00b7 reference audio",
+          "meta": {
+            "width": 1920,
+            "height": 1080,
+            "r_frame_rate": "30/1",
+            "duration": "42.000000",
+            "nb_frames": "1260"
+          },
+          "reference_audio": true,
+          "provenance": {
+            "video": "/workspace/imessage-recreations/outputs/03-photon-mini/gsap.mp4",
+            "picture_sha256": "323c1b4bb0f19bbc3559e7a4163de5f94878246c460d5d2894b69ee4106a57b2",
+            "sceneSHA256": "b720b3a955688bd464e8fbdd2662e5119575ba9f80c8b00e61919caf07c9e646",
+            "method": "gsap",
+            "reference_soundtrack": "/workspace/imessage-recreations/references/03-photon-mini/source.mp4",
+            "duration": 42.0,
+            "segments": null,
+            "audio_encoding": "Original AAC packet copy",
+            "note": "Independent reconstructed picture; audio reused from the user-supplied reference."
+          }
+        },
+        {
+          "path": "deliverables/03-photon-mini/html.mp4",
+          "label": "html \u00b7 reference audio",
+          "meta": {
+            "width": 1920,
+            "height": 1080,
+            "r_frame_rate": "30/1",
+            "duration": "42.000000",
+            "nb_frames": "1260"
+          },
+          "reference_audio": true,
+          "provenance": {
+            "video": "/workspace/imessage-recreations/outputs/03-photon-mini/html.mp4",
+            "picture_sha256": "e95a57c001dd1022be780333c4315c316972ee4ecf43def6381baceaf9b347db",
+            "sceneSHA256": "b720b3a955688bd464e8fbdd2662e5119575ba9f80c8b00e61919caf07c9e646",
+            "method": "html",
+            "reference_soundtrack": "/workspace/imessage-recreations/references/03-photon-mini/source.mp4",
+            "duration": 42.0,
+            "segments": null,
+            "audio_encoding": "Original AAC packet copy",
+            "note": "Independent reconstructed picture; audio reused from the user-supplied reference."
+          }
+        },
+        {
+          "path": "deliverables/03-photon-mini/motion-canvas.mp4",
+          "label": "motion-canvas \u00b7 reference audio",
+          "meta": {
+            "width": 1920,
+            "height": 1080,
+            "r_frame_rate": "30/1",
+            "duration": "42.000000",
+            "nb_frames": "1260"
+          },
+          "reference_audio": true,
+          "provenance": {
+            "video": "/workspace/imessage-recreations/outputs/03-photon-mini/motion-canvas.mp4",
+            "picture_sha256": "44aa40f7cc013d809c3614d94cd838cc81c6d28bf4d3d13f7b6dbcddb8d96ad7",
+            "sceneSHA256": "b720b3a955688bd464e8fbdd2662e5119575ba9f80c8b00e61919caf07c9e646",
+            "method": "motion-canvas",
+            "reference_soundtrack": "/workspace/imessage-recreations/references/03-photon-mini/source.mp4",
+            "duration": 42.0,
+            "segments": null,
+            "audio_encoding": "Original AAC packet copy",
+            "note": "Independent reconstructed picture; audio reused from the user-supplied reference."
+          }
+        },
+        {
+          "path": "deliverables/03-photon-mini/pillow.mp4",
+          "label": "pillow \u00b7 reference audio",
+          "meta": {
+            "width": 1920,
+            "height": 1080,
+            "r_frame_rate": "30/1",
+            "duration": "42.000000",
+            "nb_frames": "1260"
+          },
+          "reference_audio": true,
+          "provenance": {
+            "video": "/workspace/imessage-recreations/outputs/03-photon-mini/pillow.mp4",
+            "picture_sha256": "654db5fc2281fa63d99a32dd3bb46ddba9f0361ca75e36a75f64ecff13d4e446",
+            "sceneSHA256": "b720b3a955688bd464e8fbdd2662e5119575ba9f80c8b00e61919caf07c9e646",
+            "method": "pillow",
+            "reference_soundtrack": "/workspace/imessage-recreations/references/03-photon-mini/source.mp4",
+            "duration": 42.0,
+            "segments": null,
+            "audio_encoding": "Original AAC packet copy",
+            "note": "Independent reconstructed picture; audio reused from the user-supplied reference."
+          }
+        }
+      ],
+      "reports": [
+        {
+          "label": "source-gsap-v18-pc709",
+          "path": "verification/final/03-photon-mini/source-gsap-v18-pc709/index.html",
+          "summary": {
+            "frames_sampled": 24,
+            "sample_fps": 1,
+            "all_reference_frames_requested": false,
+            "global": {
+              "pixels_compared": 49766400,
+              "mae": 3.308529998821159,
+              "rmse": 18.294285925571884,
+              "psnr_db": 22.884494358885334,
+              "psnr_infinite": false,
+              "changed_pixel_percent": 7.112951710390947,
+              "mean_ssim_luma": 0.9496403397367784
+            },
+            "foreground_union": {
+              "pixels_compared": 12276380,
+              "mae": 12.408414098184208,
+              "rmse": 36.77703702713085,
+              "psnr_db": 16.819268868442105,
+              "psnr_infinite": false,
+              "changed_pixel_percent": 26.164023922361476,
+              "mean_ssim_luma": 0.8385381610374882
+            },
+            "sampled_frames_pixel_identical": false
+          }
+        }
+      ],
+      "segments": [],
+      "analysis": "references/03-photon-mini/analysis.md",
+      "sceneSHA256": "b720b3a955688bd464e8fbdd2662e5119575ba9f80c8b00e61919caf07c9e646",
+      "timeline_scan": {
+        "reference": "references/03-photon-mini/source.mp4",
+        "candidate": "outputs/03-photon-mini/gsap.mp4",
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "referenceSHA256": "886405a53b2ce053749c17cb37b3f4870f09db0c6079dbcf3b3ffa9dbba859c9",
+        "candidateSHA256": "323c1b4bb0f19bbc3559e7a4163de5f94878246c460d5d2894b69ee4106a57b2",
+        "fps": 30.0,
+        "frames_scanned": 1260,
+        "mean_native_mae": 1.5264641518826751,
+        "maximum_native_mae": 4.473161490483539,
+        "peaks": [
+          {
+            "candidate_frame": 730,
+            "reference_frame": 730,
+            "candidate_time": 24.333333333333332,
+            "reference_time": 24.333333333333332,
+            "mae": 4.473161490483539,
+            "max_channel_error": 255
+          },
+          {
+            "candidate_frame": 909,
+            "reference_frame": 909,
+            "candidate_time": 30.3,
+            "reference_time": 30.3,
+            "mae": 4.176028645833333,
+            "max_channel_error": 255
+          },
+          {
+            "candidate_frame": 61,
+            "reference_frame": 61,
+            "candidate_time": 2.033333333333333,
+            "reference_time": 2.033333333333333,
+            "mae": 4.139524016203704,
+            "max_channel_error": 255
+          },
+          {
+            "candidate_frame": 535,
+            "reference_frame": 535,
+            "candidate_time": 17.833333333333332,
+            "reference_time": 17.833333333333332,
+            "mae": 3.9420788323045266,
+            "max_channel_error": 253
+          },
+          {
+            "candidate_frame": 616,
+            "reference_frame": 616,
+            "candidate_time": 20.533333333333335,
+            "reference_time": 20.533333333333335,
+            "mae": 3.91834185313786,
+            "max_channel_error": 255
+          },
+          {
+            "candidate_frame": 97,
+            "reference_frame": 97,
+            "candidate_time": 3.2333333333333334,
+            "reference_time": 3.2333333333333334,
+            "mae": 3.6872701260288068,
+            "max_channel_error": 255
+          },
+          {
+            "candidate_frame": 865,
+            "reference_frame": 865,
+            "candidate_time": 28.833333333333332,
+            "reference_time": 28.833333333333332,
+            "mae": 3.6307343106995886,
+            "max_channel_error": 252
+          },
+          {
+            "candidate_frame": 177,
+            "reference_frame": 177,
+            "candidate_time": 5.9,
+            "reference_time": 5.9,
+            "mae": 3.625416988168724,
+            "max_channel_error": 255
+          },
+          {
+            "candidate_frame": 517,
+            "reference_frame": 517,
+            "candidate_time": 17.233333333333334,
+            "reference_time": 17.233333333333334,
+            "mae": 3.4211596579218106,
+            "max_channel_error": 255
+          },
+          {
+            "candidate_frame": 597,
+            "reference_frame": 597,
+            "candidate_time": 19.9,
+            "reference_time": 19.9,
+            "mae": 3.409148823302469,
+            "max_channel_error": 255
+          },
+          {
+            "candidate_frame": 214,
+            "reference_frame": 214,
+            "candidate_time": 7.133333333333334,
+            "reference_time": 7.133333333333334,
+            "mae": 3.3592012281378603,
+            "max_channel_error": 255
+          },
+          {
+            "candidate_frame": 436,
+            "reference_frame": 436,
+            "candidate_time": 14.533333333333333,
+            "reference_time": 14.533333333333333,
+            "mae": 3.305317483281893,
+            "max_channel_error": 255
+          },
+          {
+            "candidate_frame": 692,
+            "reference_frame": 692,
+            "candidate_time": 23.066666666666666,
+            "reference_time": 23.066666666666666,
+            "mae": 3.2002771347736627,
+            "max_channel_error": 255
+          },
+          {
+            "candidate_frame": 946,
+            "reference_frame": 946,
+            "candidate_time": 31.533333333333335,
+            "reference_time": 31.533333333333335,
+            "mae": 3.1424064429012346,
+            "max_channel_error": 255
+          },
+          {
+            "candidate_frame": 567,
+            "reference_frame": 567,
+            "candidate_time": 18.9,
+            "reference_time": 18.9,
+            "mae": 3.109010255915638,
+            "max_channel_error": 253
+          },
+          {
+            "candidate_frame": 477,
+            "reference_frame": 477,
+            "candidate_time": 15.9,
+            "reference_time": 15.9,
+            "mae": 3.088115033436214,
+            "max_channel_error": 255
+          },
+          {
+            "candidate_frame": 357,
+            "reference_frame": 357,
+            "candidate_time": 11.9,
+            "reference_time": 11.9,
+            "mae": 2.9341719714506174,
+            "max_channel_error": 208
+          },
+          {
+            "candidate_frame": 582,
+            "reference_frame": 582,
+            "candidate_time": 19.4,
+            "reference_time": 19.4,
+            "mae": 2.854166505915638,
+            "max_channel_error": 249
+          },
+          {
+            "candidate_frame": 494,
+            "reference_frame": 494,
+            "candidate_time": 16.466666666666665,
+            "reference_time": 16.466666666666665,
+            "mae": 2.7973524305555557,
+            "max_channel_error": 253
+          },
+          {
+            "candidate_frame": 925,
+            "reference_frame": 925,
+            "candidate_time": 30.833333333333332,
+            "reference_time": 30.833333333333332,
+            "mae": 2.7787246013374487,
+            "max_channel_error": 255
+          },
+          {
+            "candidate_frame": 120,
+            "reference_frame": 120,
+            "candidate_time": 4.0,
+            "reference_time": 4.0,
+            "mae": 2.7183749678497944,
+            "max_channel_error": 255
+          },
+          {
+            "candidate_frame": 649,
+            "reference_frame": 649,
+            "candidate_time": 21.633333333333333,
+            "reference_time": 21.633333333333333,
+            "mae": 2.62437098122428,
+            "max_channel_error": 255
+          },
+          {
+            "candidate_frame": 237,
+            "reference_frame": 237,
+            "candidate_time": 7.9,
+            "reference_time": 7.9,
+            "mae": 2.55580680941358,
+            "max_channel_error": 255
+          },
+          {
+            "candidate_frame": 850,
+            "reference_frame": 850,
+            "candidate_time": 28.333333333333332,
+            "reference_time": 28.333333333333332,
+            "mae": 2.514559381430041,
+            "max_channel_error": 245
+          }
+        ],
+        "notice": "Every aligned native picture frame was measured. Error peaks require visual and foreground diagnosis; this is not a perfection percentage.",
+        "sceneSHA256": "b720b3a955688bd464e8fbdd2662e5119575ba9f80c8b00e61919caf07c9e646"
+      }
+    },
+    {
+      "id": "04-poke",
+      "title": "Poke Apple Messages",
+      "source": "references/04-poke/source.mp4",
+      "source_meta": {
+        "width": 1440,
+        "height": 1080,
+        "r_frame_rate": "30000/1001",
+        "duration": "42.809433",
+        "nb_frames": "1283"
+      },
+      "candidates": [
+        {
+          "path": "deliverables/04-poke/remotion.mp4",
+          "label": "remotion \u00b7 reference audio",
+          "meta": {
+            "width": 1440,
+            "height": 1080,
+            "r_frame_rate": "30000/1001",
+            "duration": "42.809433",
+            "nb_frames": "1283"
+          },
+          "reference_audio": true,
+          "provenance": {
+            "video": "/workspace/imessage-recreations/outputs/04-poke/remotion.mp4",
+            "picture_sha256": "6d8dfa224e05bfb797cf0cfa7fff93511d84ba36640c35dfdef99b6f97e47c1d",
+            "sceneSHA256": "bf46102ecdc578cdadac244ba85dec7e5ab19fe07b80277a2fdcdb4c2b191df1",
+            "method": "remotion",
+            "reference_soundtrack": "/workspace/imessage-recreations/references/04-poke/source.mp4",
+            "duration": 42.809433,
+            "segments": null,
+            "audio_encoding": "Original AAC packet copy",
+            "note": "Independent reconstructed picture; audio reused from the user-supplied reference."
+          }
+        },
+        {
+          "path": "deliverables/04-poke/gsap.mp4",
+          "label": "gsap \u00b7 reference audio",
+          "meta": {
+            "width": 1440,
+            "height": 1080,
+            "r_frame_rate": "30000/1001",
+            "duration": "42.809433",
+            "nb_frames": "1283"
+          },
+          "reference_audio": true,
+          "provenance": {
+            "video": "/workspace/imessage-recreations/outputs/04-poke/gsap.mp4",
+            "picture_sha256": "61286445805216b985028595c7e3f0f8dd01c2da44695b658a867145eef0d772",
+            "sceneSHA256": "bf46102ecdc578cdadac244ba85dec7e5ab19fe07b80277a2fdcdb4c2b191df1",
+            "method": "gsap",
+            "reference_soundtrack": "/workspace/imessage-recreations/references/04-poke/source.mp4",
+            "duration": 42.809433,
+            "segments": null,
+            "audio_encoding": "Original AAC packet copy",
+            "note": "Independent reconstructed picture; audio reused from the user-supplied reference."
+          }
+        },
+        {
+          "path": "deliverables/04-poke/html.mp4",
+          "label": "html \u00b7 reference audio",
+          "meta": {
+            "width": 1440,
+            "height": 1080,
+            "r_frame_rate": "30000/1001",
+            "duration": "42.809433",
+            "nb_frames": "1283"
+          },
+          "reference_audio": true,
+          "provenance": {
+            "video": "/workspace/imessage-recreations/outputs/04-poke/html.mp4",
+            "picture_sha256": "08ddbaafc83b26895b38d857f59a5ff0aaf75efd9f35f8f1ae2b2ac11999da0e",
+            "sceneSHA256": "bf46102ecdc578cdadac244ba85dec7e5ab19fe07b80277a2fdcdb4c2b191df1",
+            "method": "html",
+            "reference_soundtrack": "/workspace/imessage-recreations/references/04-poke/source.mp4",
+            "duration": 42.809433,
+            "segments": null,
+            "audio_encoding": "Original AAC packet copy",
+            "note": "Independent reconstructed picture; audio reused from the user-supplied reference."
+          }
+        },
+        {
+          "path": "deliverables/04-poke/motion-canvas.mp4",
+          "label": "motion-canvas \u00b7 reference audio",
+          "meta": {
+            "width": 1440,
+            "height": 1080,
+            "r_frame_rate": "30000/1001",
+            "duration": "42.809433",
+            "nb_frames": "1283"
+          },
+          "reference_audio": true,
+          "provenance": {
+            "video": "/workspace/imessage-recreations/outputs/04-poke/motion-canvas.mp4",
+            "picture_sha256": "156d75a329089acdfd1fc5a435fbe9122e814a5ee4d5e40d8613c3b632268e06",
+            "sceneSHA256": "bf46102ecdc578cdadac244ba85dec7e5ab19fe07b80277a2fdcdb4c2b191df1",
+            "method": "motion-canvas",
+            "reference_soundtrack": "/workspace/imessage-recreations/references/04-poke/source.mp4",
+            "duration": 42.809433,
+            "segments": null,
+            "audio_encoding": "Original AAC packet copy",
+            "note": "Independent reconstructed picture; audio reused from the user-supplied reference."
+          }
+        },
+        {
+          "path": "deliverables/04-poke/pillow.mp4",
+          "label": "pillow \u00b7 reference audio",
+          "meta": {
+            "width": 1440,
+            "height": 1080,
+            "r_frame_rate": "30000/1001",
+            "duration": "42.809433",
+            "nb_frames": "1283"
+          },
+          "reference_audio": true,
+          "provenance": {
+            "video": "/workspace/imessage-recreations/outputs/04-poke/pillow.mp4",
+            "picture_sha256": "3b2e0e8be9ee2ffdd13127e1d3e4495eec53d5e40ef8fdd039a7f395b693445c",
+            "sceneSHA256": "bf46102ecdc578cdadac244ba85dec7e5ab19fe07b80277a2fdcdb4c2b191df1",
+            "method": "pillow",
+            "reference_soundtrack": "/workspace/imessage-recreations/references/04-poke/source.mp4",
+            "duration": 42.809433,
+            "segments": null,
+            "audio_encoding": "Original AAC packet copy",
+            "note": "Independent reconstructed picture; audio reused from the user-supplied reference."
+          }
+        }
+      ],
+      "reports": [
+        {
+          "label": "source-gsap-v19",
+          "path": "verification/final/04-poke/source-gsap-v19/index.html",
+          "summary": {
+            "frames_sampled": 24,
+            "sample_fps": 1,
+            "all_reference_frames_requested": false,
+            "global": {
+              "pixels_compared": 37324800,
+              "mae": 4.792248603252172,
+              "rmse": 19.572205448075604,
+              "psnr_db": 22.29800829126479,
+              "psnr_infinite": false,
+              "changed_pixel_percent": 10.659065822187928,
+              "mean_ssim_luma": 0.9227386396989459
+            },
+            "foreground_union": {
+              "pixels_compared": 17537869,
+              "mae": 9.069589602552815,
+              "rmse": 28.44190295387285,
+              "psnr_db": 19.051630603868823,
+              "psnr_infinite": false,
+              "changed_pixel_percent": 20.252528970309903,
+              "mean_ssim_luma": 0.8628345132732331
+            },
+            "sampled_frames_pixel_identical": false
+          }
+        }
+      ],
+      "segments": [],
+      "analysis": "references/04-poke/analysis.md",
+      "sceneSHA256": "bf46102ecdc578cdadac244ba85dec7e5ab19fe07b80277a2fdcdb4c2b191df1",
+      "timeline_scan": {
+        "reference": "references/04-poke/source.mp4",
+        "candidate": "outputs/04-poke/gsap.mp4",
+        "dimensions": [
+          1440,
+          1080
+        ],
+        "referenceSHA256": "a3d5dd064dc4482813a332d7e3821a43d557c015c5cbb5be6ff09b29874db50f",
+        "candidateSHA256": "61286445805216b985028595c7e3f0f8dd01c2da44695b658a867145eef0d772",
+        "fps": 29.97002997002997,
+        "frames_scanned": 1283,
+        "mean_native_mae": 2.6103077276698987,
+        "maximum_native_mae": 6.0337403549382715,
+        "peaks": [
+          {
+            "candidate_frame": 793,
+            "reference_frame": 793,
+            "candidate_time": 26.459766666666667,
+            "reference_time": 26.459766666666667,
+            "mae": 6.0337403549382715,
+            "max_channel_error": 255
+          },
+          {
+            "candidate_frame": 766,
+            "reference_frame": 766,
+            "candidate_time": 25.558866666666667,
+            "reference_time": 25.558866666666667,
+            "mae": 5.9819778806584365,
+            "max_channel_error": 255
+          },
+          {
+            "candidate_frame": 1158,
+            "reference_frame": 1158,
+            "candidate_time": 38.638600000000004,
+            "reference_time": 38.638600000000004,
+            "mae": 5.810697445130316,
+            "max_channel_error": 255
+          },
+          {
+            "candidate_frame": 729,
+            "reference_frame": 729,
+            "candidate_time": 24.3243,
+            "reference_time": 24.3243,
+            "mae": 5.766316658093278,
+            "max_channel_error": 255
+          },
+          {
+            "candidate_frame": 750,
+            "reference_frame": 750,
+            "candidate_time": 25.025000000000002,
+            "reference_time": 25.025000000000002,
+            "mae": 5.555007501714678,
+            "max_channel_error": 255
+          },
+          {
+            "candidate_frame": 211,
+            "reference_frame": 211,
+            "candidate_time": 7.040366666666666,
+            "reference_time": 7.040366666666666,
+            "mae": 5.279169453017833,
+            "max_channel_error": 255
+          },
+          {
+            "candidate_frame": 137,
+            "reference_frame": 137,
+            "candidate_time": 4.571233333333334,
+            "reference_time": 4.571233333333334,
+            "mae": 5.222383187585734,
+            "max_channel_error": 255
+          },
+          {
+            "candidate_frame": 111,
+            "reference_frame": 111,
+            "candidate_time": 3.7037,
+            "reference_time": 3.7037,
+            "mae": 5.200560270919067,
+            "max_channel_error": 255
+          },
+          {
+            "candidate_frame": 834,
+            "reference_frame": 834,
+            "candidate_time": 27.8278,
+            "reference_time": 27.8278,
+            "mae": 5.1906144975994515,
+            "max_channel_error": 255
+          },
+          {
+            "candidate_frame": 179,
+            "reference_frame": 179,
+            "candidate_time": 5.9726333333333335,
+            "reference_time": 5.9726333333333335,
+            "mae": 5.156442258230452,
+            "max_channel_error": 255
+          },
+          {
+            "candidate_frame": 853,
+            "reference_frame": 853,
+            "candidate_time": 28.461766666666666,
+            "reference_time": 28.461766666666666,
+            "mae": 4.856968878600823,
+            "max_channel_error": 255
+          },
+          {
+            "candidate_frame": 196,
+            "reference_frame": 196,
+            "candidate_time": 6.539866666666667,
+            "reference_time": 6.539866666666667,
+            "mae": 4.812389617626886,
+            "max_channel_error": 255
+          },
+          {
+            "candidate_frame": 368,
+            "reference_frame": 368,
+            "candidate_time": 12.278933333333333,
+            "reference_time": 12.278933333333333,
+            "mae": 4.774981781550069,
+            "max_channel_error": 253
+          },
+          {
+            "candidate_frame": 714,
+            "reference_frame": 714,
+            "candidate_time": 23.823800000000002,
+            "reference_time": 23.823800000000002,
+            "mae": 4.669266975308642,
+            "max_channel_error": 207
+          },
+          {
+            "candidate_frame": 810,
+            "reference_frame": 810,
+            "candidate_time": 27.027,
+            "reference_time": 27.027,
+            "mae": 4.603985553840878,
+            "max_channel_error": 255
+          },
+          {
+            "candidate_frame": 239,
+            "reference_frame": 239,
+            "candidate_time": 7.974633333333333,
+            "reference_time": 7.974633333333333,
+            "mae": 4.559419581618656,
+            "max_channel_error": 255
+          },
+          {
+            "candidate_frame": 459,
+            "reference_frame": 459,
+            "candidate_time": 15.3153,
+            "reference_time": 15.3153,
+            "mae": 4.498312757201646,
+            "max_channel_error": 255
+          },
+          {
+            "candidate_frame": 872,
+            "reference_frame": 872,
+            "candidate_time": 29.095733333333335,
+            "reference_time": 29.095733333333335,
+            "mae": 4.113242455418382,
+            "max_channel_error": 255
+          },
+          {
+            "candidate_frame": 254,
+            "reference_frame": 254,
+            "candidate_time": 8.475133333333334,
+            "reference_time": 8.475133333333334,
+            "mae": 4.094934199245542,
+            "max_channel_error": 255
+          },
+          {
+            "candidate_frame": 39,
+            "reference_frame": 39,
+            "candidate_time": 1.3013000000000001,
+            "reference_time": 1.3013000000000001,
+            "mae": 3.964906335733882,
+            "max_channel_error": 252
+          },
+          {
+            "candidate_frame": 476,
+            "reference_frame": 476,
+            "candidate_time": 15.882533333333333,
+            "reference_time": 15.882533333333333,
+            "mae": 3.9009765089163237,
+            "max_channel_error": 255
+          },
+          {
+            "candidate_frame": 1182,
+            "reference_frame": 1182,
+            "candidate_time": 39.4394,
+            "reference_time": 39.4394,
+            "mae": 3.807903377914952,
+            "max_channel_error": 255
+          },
+          {
+            "candidate_frame": 74,
+            "reference_frame": 74,
+            "candidate_time": 2.469133333333333,
+            "reference_time": 2.469133333333333,
+            "mae": 3.638743355624143,
+            "max_channel_error": 224
+          },
+          {
+            "candidate_frame": 1201,
+            "reference_frame": 1201,
+            "candidate_time": 40.073366666666665,
+            "reference_time": 40.073366666666665,
+            "mae": 3.521025591563786,
+            "max_channel_error": 255
+          }
+        ],
+        "notice": "Every aligned native picture frame was measured. Error peaks require visual and foreground diagnosis; this is not a perfection percentage.",
+        "sceneSHA256": "bf46102ecdc578cdadac244ba85dec7e5ab19fe07b80277a2fdcdb4c2b191df1"
+      }
+    },
+    {
+      "id": "05-linq",
+      "title": "Linq iMessage Apps",
+      "source": "references/05-linq/source.mp4",
+      "source_meta": {
+        "width": 960,
+        "height": 720,
+        "r_frame_rate": "30/1",
+        "duration": "48.600000",
+        "nb_frames": "1458"
+      },
+      "candidates": [
+        {
+          "path": "deliverables/05-linq/remotion.mp4",
+          "label": "remotion \u00b7 reference audio",
+          "meta": {
+            "width": 960,
+            "height": 720,
+            "r_frame_rate": "30/1",
+            "duration": "48.600000",
+            "nb_frames": "1458"
+          },
+          "reference_audio": true,
+          "provenance": {
+            "video": "/workspace/imessage-recreations/outputs/05-linq/remotion.mp4",
+            "picture_sha256": "c0dede4d3d46a051f709b5cd3d08bb925dc23c4c15aefc3c85ea2f0edde86a1b",
+            "sceneSHA256": "658184bb8d05c50633f37fa0ef0bfd8a943773076f249c7e0dbf02991e6e93c6",
+            "method": "remotion",
+            "reference_soundtrack": "/workspace/imessage-recreations/references/05-linq/source.mp4",
+            "duration": 48.6,
+            "segments": null,
+            "audio_encoding": "Original AAC packet copy",
+            "note": "Independent reconstructed picture; audio reused from the user-supplied reference."
+          }
+        },
+        {
+          "path": "deliverables/05-linq/gsap.mp4",
+          "label": "gsap \u00b7 reference audio",
+          "meta": {
+            "width": 960,
+            "height": 720,
+            "r_frame_rate": "30/1",
+            "duration": "48.600000",
+            "nb_frames": "1458"
+          },
+          "reference_audio": true,
+          "provenance": {
+            "video": "/workspace/imessage-recreations/outputs/05-linq/gsap.mp4",
+            "picture_sha256": "0b3879942d580da67b1bbcc548d14f9c78cdf84b5a00dfba3d4307ca26a912cd",
+            "sceneSHA256": "658184bb8d05c50633f37fa0ef0bfd8a943773076f249c7e0dbf02991e6e93c6",
+            "method": "gsap",
+            "reference_soundtrack": "/workspace/imessage-recreations/references/05-linq/source.mp4",
+            "duration": 48.6,
+            "segments": null,
+            "audio_encoding": "Original AAC packet copy",
+            "note": "Independent reconstructed picture; audio reused from the user-supplied reference."
+          }
+        },
+        {
+          "path": "deliverables/05-linq/html.mp4",
+          "label": "html \u00b7 reference audio",
+          "meta": {
+            "width": 960,
+            "height": 720,
+            "r_frame_rate": "30/1",
+            "duration": "48.600000",
+            "nb_frames": "1458"
+          },
+          "reference_audio": true,
+          "provenance": {
+            "video": "/workspace/imessage-recreations/outputs/05-linq/html.mp4",
+            "picture_sha256": "ba0389a7d6e03bbb6ab3191584e6e41eb108baeed2152b40d93d61b58df76ebc",
+            "sceneSHA256": "658184bb8d05c50633f37fa0ef0bfd8a943773076f249c7e0dbf02991e6e93c6",
+            "method": "html",
+            "reference_soundtrack": "/workspace/imessage-recreations/references/05-linq/source.mp4",
+            "duration": 48.6,
+            "segments": null,
+            "audio_encoding": "Original AAC packet copy",
+            "note": "Independent reconstructed picture; audio reused from the user-supplied reference."
+          }
+        },
+        {
+          "path": "deliverables/05-linq/motion-canvas.mp4",
+          "label": "motion-canvas \u00b7 reference audio",
+          "meta": {
+            "width": 960,
+            "height": 720,
+            "r_frame_rate": "30/1",
+            "duration": "48.600000",
+            "nb_frames": "1458"
+          },
+          "reference_audio": true,
+          "provenance": {
+            "video": "/workspace/imessage-recreations/outputs/05-linq/motion-canvas.mp4",
+            "picture_sha256": "c40b868f3997580623330534adf3a69be3e71eedd4ce0bca1c0e126e11e122fd",
+            "sceneSHA256": "658184bb8d05c50633f37fa0ef0bfd8a943773076f249c7e0dbf02991e6e93c6",
+            "method": "motion-canvas",
+            "reference_soundtrack": "/workspace/imessage-recreations/references/05-linq/source.mp4",
+            "duration": 48.6,
+            "segments": null,
+            "audio_encoding": "Original AAC packet copy",
+            "note": "Independent reconstructed picture; audio reused from the user-supplied reference."
+          }
+        },
+        {
+          "path": "deliverables/05-linq/pillow.mp4",
+          "label": "pillow \u00b7 reference audio",
+          "meta": {
+            "width": 960,
+            "height": 720,
+            "r_frame_rate": "30/1",
+            "duration": "48.600000",
+            "nb_frames": "1458"
+          },
+          "reference_audio": true,
+          "provenance": {
+            "video": "/workspace/imessage-recreations/outputs/05-linq/pillow.mp4",
+            "picture_sha256": "34143aa92f1179e6231e0e8126a4ca2a9c20c888650df994e95a3569deadb504",
+            "sceneSHA256": "658184bb8d05c50633f37fa0ef0bfd8a943773076f249c7e0dbf02991e6e93c6",
+            "method": "pillow",
+            "reference_soundtrack": "/workspace/imessage-recreations/references/05-linq/source.mp4",
+            "duration": 48.6,
+            "segments": null,
+            "audio_encoding": "Original AAC packet copy",
+            "note": "Independent reconstructed picture; audio reused from the user-supplied reference."
+          }
+        }
+      ],
+      "reports": [
+        {
+          "label": "source-gsap-v20-pc709",
+          "path": "verification/final/05-linq/source-gsap-v20-pc709/index.html",
+          "summary": {
+            "frames_sampled": 24,
+            "sample_fps": 1,
+            "all_reference_frames_requested": false,
+            "global": {
+              "pixels_compared": 16588800,
+              "mae": 3.4890553465792182,
+              "rmse": 13.134487675928995,
+              "psnr_db": 25.762540861602893,
+              "psnr_infinite": false,
+              "changed_pixel_percent": 13.196698977623457,
+              "mean_ssim_luma": 0.9499391431927664
+            },
+            "foreground_union": {
+              "pixels_compared": 7928959,
+              "mae": 7.014744894842647,
+              "rmse": 18.9773141710814,
+              "psnr_db": 22.56610865993796,
+              "psnr_infinite": false,
+              "changed_pixel_percent": 27.500180036244355,
+              "mean_ssim_luma": 0.9154056815282049
+            },
+            "sampled_frames_pixel_identical": false
+          }
+        }
+      ],
+      "segments": [],
+      "analysis": "references/05-linq/analysis.md",
+      "sceneSHA256": "658184bb8d05c50633f37fa0ef0bfd8a943773076f249c7e0dbf02991e6e93c6",
+      "timeline_scan": {
+        "reference": "references/05-linq/source.mp4",
+        "candidate": "outputs/05-linq/gsap.mp4",
+        "dimensions": [
+          960,
+          720
+        ],
+        "referenceSHA256": "86e22e698e141c5c2a161977289be1335bb0c0a1dd98769c4c146fcd57bbf2eb",
+        "candidateSHA256": "0b3879942d580da67b1bbcc548d14f9c78cdf84b5a00dfba3d4307ca26a912cd",
+        "fps": 30.0,
+        "frames_scanned": 1458,
+        "mean_native_mae": 1.3109509809252697,
+        "maximum_native_mae": 5.212960069444445,
+        "peaks": [
+          {
+            "candidate_frame": 1100,
+            "reference_frame": 1100,
+            "candidate_time": 36.666666666666664,
+            "reference_time": 36.666666666666664,
+            "mae": 5.212960069444445,
+            "max_channel_error": 248
+          },
+          {
+            "candidate_frame": 1267,
+            "reference_frame": 1267,
+            "candidate_time": 42.233333333333334,
+            "reference_time": 42.233333333333334,
+            "mae": 4.988772665895062,
+            "max_channel_error": 208
+          },
+          {
+            "candidate_frame": 1223,
+            "reference_frame": 1223,
+            "candidate_time": 40.766666666666666,
+            "reference_time": 40.766666666666666,
+            "mae": 4.313234471450618,
+            "max_channel_error": 255
+          },
+          {
+            "candidate_frame": 1123,
+            "reference_frame": 1123,
+            "candidate_time": 37.43333333333333,
+            "reference_time": 37.43333333333333,
+            "mae": 4.271804108796296,
+            "max_channel_error": 234
+          },
+          {
+            "candidate_frame": 1079,
+            "reference_frame": 1079,
+            "candidate_time": 35.96666666666667,
+            "reference_time": 35.96666666666667,
+            "mae": 4.132079475308642,
+            "max_channel_error": 246
+          },
+          {
+            "candidate_frame": 1207,
+            "reference_frame": 1207,
+            "candidate_time": 40.233333333333334,
+            "reference_time": 40.233333333333334,
+            "mae": 4.03819637345679,
+            "max_channel_error": 170
+          },
+          {
+            "candidate_frame": 1145,
+            "reference_frame": 1145,
+            "candidate_time": 38.166666666666664,
+            "reference_time": 38.166666666666664,
+            "mae": 3.8170225694444446,
+            "max_channel_error": 163
+          },
+          {
+            "candidate_frame": 1020,
+            "reference_frame": 1020,
+            "candidate_time": 34.0,
+            "reference_time": 34.0,
+            "mae": 3.735085841049383,
+            "max_channel_error": 255
+          },
+          {
+            "candidate_frame": 373,
+            "reference_frame": 373,
+            "candidate_time": 12.433333333333334,
+            "reference_time": 12.433333333333334,
+            "mae": 3.5883555169753087,
+            "max_channel_error": 251
+          },
+          {
+            "candidate_frame": 861,
+            "reference_frame": 861,
+            "candidate_time": 28.7,
+            "reference_time": 28.7,
+            "mae": 3.438829089506173,
+            "max_channel_error": 255
+          },
+          {
+            "candidate_frame": 941,
+            "reference_frame": 941,
+            "candidate_time": 31.366666666666667,
+            "reference_time": 31.366666666666667,
+            "mae": 3.4274937307098767,
+            "max_channel_error": 255
+          },
+          {
+            "candidate_frame": 117,
+            "reference_frame": 117,
+            "candidate_time": 3.9,
+            "reference_time": 3.9,
+            "mae": 3.3822463348765432,
+            "max_channel_error": 224
+          },
+          {
+            "candidate_frame": 258,
+            "reference_frame": 258,
+            "candidate_time": 8.6,
+            "reference_time": 8.6,
+            "mae": 3.3814019097222223,
+            "max_channel_error": 116
+          },
+          {
+            "candidate_frame": 418,
+            "reference_frame": 418,
+            "candidate_time": 13.933333333333334,
+            "reference_time": 13.933333333333334,
+            "mae": 3.2931163194444446,
+            "max_channel_error": 254
+          },
+          {
+            "candidate_frame": 227,
+            "reference_frame": 227,
+            "candidate_time": 7.566666666666666,
+            "reference_time": 7.566666666666666,
+            "mae": 3.227720389660494,
+            "max_channel_error": 198
+          },
+          {
+            "candidate_frame": 1000,
+            "reference_frame": 1000,
+            "candidate_time": 33.333333333333336,
+            "reference_time": 33.333333333333336,
+            "mae": 3.2245341435185186,
+            "max_channel_error": 255
+          },
+          {
+            "candidate_frame": 820,
+            "reference_frame": 820,
+            "candidate_time": 27.333333333333332,
+            "reference_time": 27.333333333333332,
+            "mae": 3.132516878858025,
+            "max_channel_error": 255
+          },
+          {
+            "candidate_frame": 468,
+            "reference_frame": 468,
+            "candidate_time": 15.6,
+            "reference_time": 15.6,
+            "mae": 2.953299575617284,
+            "max_channel_error": 197
+          },
+          {
+            "candidate_frame": 1191,
+            "reference_frame": 1191,
+            "candidate_time": 39.7,
+            "reference_time": 39.7,
+            "mae": 2.880504436728395,
+            "max_channel_error": 165
+          },
+          {
+            "candidate_frame": 189,
+            "reference_frame": 189,
+            "candidate_time": 6.3,
+            "reference_time": 6.3,
+            "mae": 2.8595249807098764,
+            "max_channel_error": 193
+          },
+          {
+            "candidate_frame": 211,
+            "reference_frame": 211,
+            "candidate_time": 7.033333333333333,
+            "reference_time": 7.033333333333333,
+            "mae": 2.7757672646604936,
+            "max_channel_error": 221
+          },
+          {
+            "candidate_frame": 926,
+            "reference_frame": 926,
+            "candidate_time": 30.866666666666667,
+            "reference_time": 30.866666666666667,
+            "mae": 2.7454388503086418,
+            "max_channel_error": 255
+          },
+          {
+            "candidate_frame": 896,
+            "reference_frame": 896,
+            "candidate_time": 29.866666666666667,
+            "reference_time": 29.866666666666667,
+            "mae": 2.5356240354938273,
+            "max_channel_error": 166
+          },
+          {
+            "candidate_frame": 438,
+            "reference_frame": 438,
+            "candidate_time": 14.6,
+            "reference_time": 14.6,
+            "mae": 2.3817992862654322,
+            "max_channel_error": 255
+          }
+        ],
+        "notice": "Every aligned native picture frame was measured. Error peaks require visual and foreground diagnosis; this is not a perfection percentage.",
+        "sceneSHA256": "658184bb8d05c50633f37fa0ef0bfd8a943773076f249c7e0dbf02991e6e93c6"
+      }
+    },
+    {
+      "id": "06-gallery",
+      "title": "Rene",
+      "source": "references/06-gallery/source.mp4",
+      "source_meta": {
+        "width": 1920,
+        "height": 1080,
+        "r_frame_rate": "30/1",
+        "duration": "55.466700",
+        "nb_frames": "1664"
+      },
+      "candidates": [
+        {
+          "path": "deliverables/06-gallery/remotion.mp4",
+          "label": "remotion \u00b7 reference audio",
+          "meta": {
+            "width": 1920,
+            "height": 1080,
+            "r_frame_rate": "30/1",
+            "duration": "49.433333",
+            "nb_frames": "1483"
+          },
+          "reference_audio": true,
+          "provenance": {
+            "video": "/workspace/imessage-recreations/outputs/06-gallery/remotion.mp4",
+            "picture_sha256": "a161e29d30b78339fdea08866be625535601c53c4760988220b5bf95a99baa69",
+            "sceneSHA256": "abc87b6e69314e5df3ef75a81efd216011fa1604872aec66c1eb2a39f69658b2",
+            "method": "remotion",
+            "reference_soundtrack": "/workspace/imessage-recreations/references/06-gallery/source.mp4",
+            "duration": 49.433333,
+            "segments": "/workspace/imessage-recreations/references/06-gallery/segments.json",
+            "audio_encoding": "AAC encode after explicit cuts",
+            "note": "Independent reconstructed picture; audio reused from the user-supplied reference."
+          }
+        },
+        {
+          "path": "deliverables/06-gallery/gsap.mp4",
+          "label": "gsap \u00b7 reference audio",
+          "meta": {
+            "width": 1920,
+            "height": 1080,
+            "r_frame_rate": "30/1",
+            "duration": "49.433333",
+            "nb_frames": "1483"
+          },
+          "reference_audio": true,
+          "provenance": {
+            "video": "/workspace/imessage-recreations/outputs/06-gallery/gsap.mp4",
+            "picture_sha256": "55dad2c7be7be1b5cfcb438926363817f9cfdaeedc85f4b37908fe0d6331f1c4",
+            "sceneSHA256": "abc87b6e69314e5df3ef75a81efd216011fa1604872aec66c1eb2a39f69658b2",
+            "method": "gsap",
+            "reference_soundtrack": "/workspace/imessage-recreations/references/06-gallery/source.mp4",
+            "duration": 49.433333,
+            "segments": "/workspace/imessage-recreations/references/06-gallery/segments.json",
+            "audio_encoding": "AAC encode after explicit cuts",
+            "note": "Independent reconstructed picture; audio reused from the user-supplied reference."
+          }
+        },
+        {
+          "path": "deliverables/06-gallery/html.mp4",
+          "label": "html \u00b7 reference audio",
+          "meta": {
+            "width": 1920,
+            "height": 1080,
+            "r_frame_rate": "30/1",
+            "duration": "49.433333",
+            "nb_frames": "1483"
+          },
+          "reference_audio": true,
+          "provenance": {
+            "video": "/workspace/imessage-recreations/outputs/06-gallery/html.mp4",
+            "picture_sha256": "a161e29d30b78339fdea08866be625535601c53c4760988220b5bf95a99baa69",
+            "sceneSHA256": "abc87b6e69314e5df3ef75a81efd216011fa1604872aec66c1eb2a39f69658b2",
+            "method": "html",
+            "reference_soundtrack": "/workspace/imessage-recreations/references/06-gallery/source.mp4",
+            "duration": 49.433333,
+            "segments": "/workspace/imessage-recreations/references/06-gallery/segments.json",
+            "audio_encoding": "AAC encode after explicit cuts",
+            "note": "Independent reconstructed picture; audio reused from the user-supplied reference."
+          }
+        },
+        {
+          "path": "deliverables/06-gallery/motion-canvas.mp4",
+          "label": "motion-canvas \u00b7 reference audio",
+          "meta": {
+            "width": 1920,
+            "height": 1080,
+            "r_frame_rate": "30/1",
+            "duration": "49.433333",
+            "nb_frames": "1483"
+          },
+          "reference_audio": true,
+          "provenance": {
+            "video": "/workspace/imessage-recreations/outputs/06-gallery/motion-canvas.mp4",
+            "picture_sha256": "78d2217665f11699ed7324e14dace7344f19437714e8b683ec92bb382af5bc71",
+            "sceneSHA256": "abc87b6e69314e5df3ef75a81efd216011fa1604872aec66c1eb2a39f69658b2",
+            "method": "motion-canvas",
+            "reference_soundtrack": "/workspace/imessage-recreations/references/06-gallery/source.mp4",
+            "duration": 49.433333,
+            "segments": "/workspace/imessage-recreations/references/06-gallery/segments.json",
+            "audio_encoding": "AAC encode after explicit cuts",
+            "note": "Independent reconstructed picture; audio reused from the user-supplied reference."
+          }
+        },
+        {
+          "path": "deliverables/06-gallery/pillow.mp4",
+          "label": "pillow \u00b7 reference audio",
+          "meta": {
+            "width": 1920,
+            "height": 1080,
+            "r_frame_rate": "30/1",
+            "duration": "49.433333",
+            "nb_frames": "1483"
+          },
+          "reference_audio": true,
+          "provenance": {
+            "video": "/workspace/imessage-recreations/outputs/06-gallery/pillow.mp4",
+            "picture_sha256": "50e440a5e0b56d8d9182f79cb21461331235bc9723e0958af2a19a03a8524605",
+            "sceneSHA256": "abc87b6e69314e5df3ef75a81efd216011fa1604872aec66c1eb2a39f69658b2",
+            "method": "pillow",
+            "reference_soundtrack": "/workspace/imessage-recreations/references/06-gallery/source.mp4",
+            "duration": 49.433333,
+            "segments": "/workspace/imessage-recreations/references/06-gallery/segments.json",
+            "audio_encoding": "AAC encode after explicit cuts",
+            "note": "Independent reconstructed picture; audio reused from the user-supplied reference."
+          }
+        }
+      ],
+      "reports": [
+        {
+          "label": "source-gsap-v23",
+          "path": "verification/final/06-gallery/source-gsap-v23/index.html",
+          "summary": {
+            "frames_sampled": 24,
+            "sample_fps": 1,
+            "all_reference_frames_requested": false,
+            "global": {
+              "pixels_compared": 49766400,
+              "mae": 2.6053124933020406,
+              "rmse": 13.056895951013374,
+              "psnr_db": 25.81400474305874,
+              "psnr_infinite": false,
+              "changed_pixel_percent": 6.265004099151234,
+              "mean_ssim_luma": 0.9693022078215457
+            },
+            "foreground_union": {
+              "pixels_compared": 10990497,
+              "mae": 10.115001502358508,
+              "rmse": 27.66353641308534,
+              "psnr_db": 19.2926496474317,
+              "psnr_infinite": false,
+              "changed_pixel_percent": 26.421989833580774,
+              "mean_ssim_luma": 0.8862329683875435
+            },
+            "sampled_frames_pixel_identical": false
+          }
+        }
+      ],
+      "segments": [
+        {
+          "name": "graphics-before-live-action",
+          "reference_start": 0,
+          "candidate_start": 0,
+          "duration": 34.96666666666667
+        },
+        {
+          "name": "graphics-after-live-action",
+          "reference_start": 41,
+          "candidate_start": 34.96666666666667,
+          "duration": 14.466666666666667
+        }
+      ],
+      "analysis": "references/06-gallery/analysis.md",
+      "sceneSHA256": "abc87b6e69314e5df3ef75a81efd216011fa1604872aec66c1eb2a39f69658b2",
+      "timeline_scan": {
+        "reference": "references/06-gallery/source.mp4",
+        "candidate": "outputs/06-gallery/gsap.mp4",
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "referenceSHA256": "fcbc98fa2f1697da5c947ed59b952128acd1c8f6194ce982c60133a423f1ddaf",
+        "candidateSHA256": "55dad2c7be7be1b5cfcb438926363817f9cfdaeedc85f4b37908fe0d6331f1c4",
+        "fps": 30.0,
+        "frames_scanned": 1483,
+        "mean_native_mae": 0.9304256018440473,
+        "maximum_native_mae": 4.787767971965021,
+        "peaks": [
+          {
+            "candidate_frame": 610,
+            "reference_frame": 610,
+            "candidate_time": 20.333333333333332,
+            "reference_time": 20.333333333333332,
+            "mae": 4.787767971965021,
+            "max_channel_error": 255
+          },
+          {
+            "candidate_frame": 31,
+            "reference_frame": 31,
+            "candidate_time": 1.0333333333333334,
+            "reference_time": 1.0333333333333334,
+            "mae": 4.103194444444444,
+            "max_channel_error": 219
+          },
+          {
+            "candidate_frame": 683,
+            "reference_frame": 683,
+            "candidate_time": 22.766666666666666,
+            "reference_time": 22.766666666666666,
+            "mae": 3.834596032664609,
+            "max_channel_error": 232
+          },
+          {
+            "candidate_frame": 656,
+            "reference_frame": 656,
+            "candidate_time": 21.866666666666667,
+            "reference_time": 21.866666666666667,
+            "mae": 3.783632973251029,
+            "max_channel_error": 243
+          },
+          {
+            "candidate_frame": 552,
+            "reference_frame": 552,
+            "candidate_time": 18.4,
+            "reference_time": 18.4,
+            "mae": 3.6882490997942385,
+            "max_channel_error": 168
+          },
+          {
+            "candidate_frame": 53,
+            "reference_frame": 53,
+            "candidate_time": 1.7666666666666666,
+            "reference_time": 1.7666666666666666,
+            "mae": 3.6317957497427984,
+            "max_channel_error": 214
+          },
+          {
+            "candidate_frame": 416,
+            "reference_frame": 416,
+            "candidate_time": 13.866666666666667,
+            "reference_time": 13.866666666666667,
+            "mae": 3.4790171682098765,
+            "max_channel_error": 255
+          },
+          {
+            "candidate_frame": 460,
+            "reference_frame": 460,
+            "candidate_time": 15.333333333333334,
+            "reference_time": 15.333333333333334,
+            "mae": 3.204153002829218,
+            "max_channel_error": 255
+          },
+          {
+            "candidate_frame": 635,
+            "reference_frame": 635,
+            "candidate_time": 21.166666666666668,
+            "reference_time": 21.166666666666668,
+            "mae": 3.1189207175925926,
+            "max_channel_error": 247
+          },
+          {
+            "candidate_frame": 434,
+            "reference_frame": 434,
+            "candidate_time": 14.466666666666667,
+            "reference_time": 14.466666666666667,
+            "mae": 2.9064953060699588,
+            "max_channel_error": 255
+          },
+          {
+            "candidate_frame": 177,
+            "reference_frame": 177,
+            "candidate_time": 5.9,
+            "reference_time": 5.9,
+            "mae": 2.5353959297839506,
+            "max_channel_error": 248
+          },
+          {
+            "candidate_frame": 111,
+            "reference_frame": 111,
+            "candidate_time": 3.7,
+            "reference_time": 3.7,
+            "mae": 2.5353247170781894,
+            "max_channel_error": 255
+          },
+          {
+            "candidate_frame": 161,
+            "reference_frame": 161,
+            "candidate_time": 5.366666666666666,
+            "reference_time": 5.366666666666666,
+            "mae": 2.401507683899177,
+            "max_channel_error": 255
+          },
+          {
+            "candidate_frame": 92,
+            "reference_frame": 92,
+            "candidate_time": 3.066666666666667,
+            "reference_time": 3.066666666666667,
+            "mae": 2.2978944830246912,
+            "max_channel_error": 250
+          },
+          {
+            "candidate_frame": 528,
+            "reference_frame": 528,
+            "candidate_time": 17.6,
+            "reference_time": 17.6,
+            "mae": 2.0754157021604938,
+            "max_channel_error": 153
+          },
+          {
+            "candidate_frame": 201,
+            "reference_frame": 201,
+            "candidate_time": 6.7,
+            "reference_time": 6.7,
+            "mae": 1.9779382073045269,
+            "max_channel_error": 255
+          },
+          {
+            "candidate_frame": 969,
+            "reference_frame": 969,
+            "candidate_time": 32.3,
+            "reference_time": 32.3,
+            "mae": 1.8503044624485596,
+            "max_channel_error": 244
+          },
+          {
+            "candidate_frame": 230,
+            "reference_frame": 230,
+            "candidate_time": 7.666666666666667,
+            "reference_time": 7.666666666666667,
+            "mae": 1.811712962962963,
+            "max_channel_error": 255
+          },
+          {
+            "candidate_frame": 257,
+            "reference_frame": 257,
+            "candidate_time": 8.566666666666666,
+            "reference_time": 8.566666666666666,
+            "mae": 1.5886265432098765,
+            "max_channel_error": 255
+          },
+          {
+            "candidate_frame": 1115,
+            "reference_frame": 1296,
+            "candidate_time": 37.166666666666664,
+            "reference_time": 43.2,
+            "mae": 1.4553636188271606,
+            "max_channel_error": 231
+          },
+          {
+            "candidate_frame": 1,
+            "reference_frame": 1,
+            "candidate_time": 0.03333333333333333,
+            "reference_time": 0.03333333333333333,
+            "mae": 1.4336890753600824,
+            "max_channel_error": 60
+          },
+          {
+            "candidate_frame": 75,
+            "reference_frame": 75,
+            "candidate_time": 2.5,
+            "reference_time": 2.5,
+            "mae": 1.4271305941358026,
+            "max_channel_error": 252
+          },
+          {
+            "candidate_frame": 818,
+            "reference_frame": 818,
+            "candidate_time": 27.266666666666666,
+            "reference_time": 27.266666666666666,
+            "mae": 1.3206704925411523,
+            "max_channel_error": 208
+          },
+          {
+            "candidate_frame": 16,
+            "reference_frame": 16,
+            "candidate_time": 0.5333333333333333,
+            "reference_time": 0.5333333333333333,
+            "mae": 1.2787028999485597,
+            "max_channel_error": 199
+          }
+        ],
+        "notice": "Every aligned native picture frame was measured. Error peaks require visual and foreground diagnosis; this is not a perfection percentage.",
+        "sceneSHA256": "abc87b6e69314e5df3ef75a81efd216011fa1604872aec66c1eb2a39f69658b2"
+      }
+    }
+  ],
+  "figma": {
+    "method": "Figma Motion",
+    "state": "blocked_before_file_creation",
+    "diagnostic": {
+      "operation": "figma_whoami",
+      "outcome": "no_response_within_25000ms",
+      "bounded_retry_reason": "The previous parent request had stalled without a response. This one read-only diagnostic bounded the same request to avoid blocking local recreation work.",
+      "conclusion": "No authenticated identity, plan key, or file destination was established. This is not proof of an authentication failure or of disabled Motion APIs."
+    },
+    "file_created": false,
+    "motion_api_probed": false,
+    "video_exported": false,
+    "local_converter": "prepare-figma.mjs",
+    "converter_execution": "Not executed in Figma; generated scripts require a successful account/session/capability check and visual export validation.",
+    "local_smoke_preparation": {
+      "layers": 5,
+      "feature_blockers": 0,
+      "warnings": 5,
+      "syntax": "parsed",
+      "figma_execution": "not_executed"
+    },
+    "browser_fallback": {
+      "operation": "cua.getBrowser({url: https://www.figma.com})",
+      "outcome": "startup_failed",
+      "error": "the gaas-browser node_repl sandbox cannot be disabled",
+      "observed_limit": "No browser, Figma session, or file state was reached."
+    }
+  },
+  "fidelity": "Independent native reconstructions. Consult comparisons for remaining differences; no 100% equivalence claim.",
+  "audio": "Silent graphic masters and explicitly labeled versions with the reference soundtrack are separate artifacts."
+}

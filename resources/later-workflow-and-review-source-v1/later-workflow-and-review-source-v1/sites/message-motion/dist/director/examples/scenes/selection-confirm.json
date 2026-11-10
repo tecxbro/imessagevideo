@@ -1,0 +1,132 @@
+{
+  "width": 960,
+  "height": 540,
+  "fps": 30,
+  "duration": 4,
+  "background": "#f7f7f5",
+  "title": "selection-confirm",
+  "source": {
+    "notes": "New reusable starter, not an exact reference recreation. Arial fallback; replace and remeasure typography for production."
+  },
+  "layers": [
+    {
+      "id": "selection-card",
+      "type": "group",
+      "x": 300,
+      "y": 124,
+      "children": [
+        {
+          "id": "selection-card-surface",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 360,
+          "height": 280,
+          "fill": "#ffffff",
+          "radius": 22,
+          "stroke": "#d8dbe0",
+          "strokeWidth": 1
+        },
+        {
+          "id": "selection-card-art",
+          "type": "rect",
+          "x": 12,
+          "y": 12,
+          "width": 336,
+          "height": 100.8,
+          "fill": "#edf0e6",
+          "radius": 14
+        },
+        {
+          "id": "selection-card-title",
+          "type": "text",
+          "text": "Friday dinner",
+          "x": 20,
+          "y": 128.8,
+          "fontSize": 23,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#17191d",
+          "fontWeight": 600
+        },
+        {
+          "id": "selection-card-detail",
+          "type": "text",
+          "text": "For two · Friday",
+          "x": 20,
+          "y": 161.8,
+          "fontSize": 16,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#777b84"
+        },
+        {
+          "id": "selection-card-action",
+          "type": "group",
+          "x": 20,
+          "y": 222,
+          "children": [
+            {
+              "id": "selection-card-action-shape",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 320,
+              "height": 42,
+              "fill": "#1688fa",
+              "radius": 21,
+              "keyframes": {
+                "fill": [
+                  {
+                    "t": 0,
+                    "value": "#1688fa",
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 1.84,
+                    "value": "#1688fa",
+                    "ease": "hold"
+                  },
+                  {
+                    "t": 2,
+                    "value": "#193627",
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 2.28,
+                    "value": "#3f8057",
+                    "ease": "easeInOut"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "selection-card-action-label",
+              "type": "text",
+              "text": "Confirm",
+              "x": 160,
+              "y": 11,
+              "fontSize": 16,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#ffffff",
+              "textAnchor": "middle",
+              "fontWeight": 600,
+              "keyframes": {
+                "text": [
+                  {
+                    "t": 0,
+                    "value": "Confirm",
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 2.28,
+                    "value": "Confirmed",
+                    "ease": "hold"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

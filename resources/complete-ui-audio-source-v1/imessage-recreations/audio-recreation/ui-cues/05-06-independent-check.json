@@ -1,0 +1,40 @@
+{
+  "checks": [
+    {
+      "file": "05-linq-ui-cues.json",
+      "sha256": "263b49818ec8374d38ca795625249e4a2b91c0bb468b631b3d6671b7a497b2d8",
+      "events": 41,
+      "keypress_csv_rows": 23,
+      "output_frame_bounds_pass": true,
+      "kinds_and_times_pass": true
+    },
+    {
+      "file": "06-gallery-ui-cues.json",
+      "sha256": "5471d0d34fafc4513abfc737771f0bc181ef9112e3e35de6ec99ee0a972d5cd4",
+      "events": 18,
+      "keypress_csv_rows": 0,
+      "output_frame_bounds_pass": true,
+      "kinds_and_times_pass": true
+    }
+  ],
+  "no_delete_events": true,
+  "no_typing_burst_invented": true,
+  "no_source_audio_transient_basis": true,
+  "independent_evidence_checks": [
+    {
+      "reference": "05-linq",
+      "evidence_json_pointers_resolved": 71,
+      "canonical_hash_matches": true,
+      "source_frame_mapping_pass": true,
+      "confidence_bounds_pass": true
+    },
+    {
+      "reference": "06-gallery",
+      "evidence_json_pointers_resolved": 21,
+      "canonical_hash_matches": true,
+      "source_frame_mapping_pass": true,
+      "confidence_bounds_pass": true
+    }
+  ],
+  "all_evidence_json_pointers_resolved": 92
+}

@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "testsRun": 12,
+  "seconds": 1.3685401270049624,
+  "packageScript": "scripts/package_delivery.py",
+  "packageScriptSHA256": "8208d484eee96b18ed3f48885191f7aebb9d4884e0af249fa189fe9a782a575c",
+  "testFile": "verification/test_package_delivery.py",
+  "testFileSHA256": "8411bac24f1ab1729575b4c2479f284829f25b144e229a4e4c046f3bcfcdab55",
+  "syntaxCheckPassed": true,
+  "actualFinalPackageBuilt": false,
+  "scope": "Temporary isolated staging only. Actual04canonical bytes/assets, current06visual gate and released03picture/audio/capture identities exercise copy/link modes and guards. Actual root delivery-state remains byte-identical after linked generated-state replacement. Tiny fixtureZIP extraction yields an independent regular file. Visual gate is copied as exactly one file and missing gates reject.",
+  "output": "test_actual_canonical_bytes_both_copy_modes (__main__.PackageSafety.test_actual_canonical_bytes_both_copy_modes) ... ok\ntest_actual_capture_and_master_guards (__main__.PackageSafety.test_actual_capture_and_master_guards) ... ok\ntest_default_copy_is_independent (__main__.PackageSafety.test_default_copy_is_independent) ... ok\ntest_existing_wrong_asset_is_rejected (__main__.PackageSafety.test_existing_wrong_asset_is_rejected) ... ok\ntest_fresh_stage_required (__main__.PackageSafety.test_fresh_stage_required) ... ok\ntest_generated_atomic_replace_preserves_live_state (__main__.PackageSafety.test_generated_atomic_replace_preserves_live_state) ... ok\ntest_license_header (__main__.PackageSafety.test_license_header) ... ok\ntest_linked_stage_extracts_as_independent_regular_files (__main__.PackageSafety.test_linked_stage_extracts_as_independent_regular_files) ... ok\ntest_manifest_audio_coverage_and_provenance (__main__.PackageSafety.test_manifest_audio_coverage_and_provenance) ... ok\ntest_state_evidence_is_independent_of_manifest (__main__.PackageSafety.test_state_evidence_is_independent_of_manifest) ... ok\ntest_thirty_number_cannot_replace_actual_coverage (__main__.PackageSafety.test_thirty_number_cannot_replace_actual_coverage) ... ok\ntest_visual_gate_is_required_and_copied_as_one_file (__main__.PackageSafety.test_visual_gate_is_required_and_copied_as_one_file) ... ok\n\n----------------------------------------------------------------------\nRan 12 tests in 1.066s\n\nOK\n",
+  "rootFinalInclusionChange": "Current browser SHA/coverage guards, resolved-hold evidence, sampling plan and nested checksum coverage are included. Final package invocation additionally exercises the live30-video positive gate."
+}

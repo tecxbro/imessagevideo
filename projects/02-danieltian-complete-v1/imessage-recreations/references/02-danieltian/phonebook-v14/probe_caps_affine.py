@@ -1,0 +1,16 @@
+from pathlib import Path
+import sys,json,math
+sys.path.insert(0,'/tmp/imessage-food-cv')
+import cv2,numpy as np
+from PIL import Image
+R=Path(__file__).resolve().parent;cv2.setNumThreads(1);cv2.setRNGSeed(486);sift=cv2.SIFT_create(contrastThreshold=.01,edgeThreshold=12);full=cv2.imread(str(R/'local-template-check/16.200.png'));src=cv2.imread(str(R/'source-native/000486.png'));sk,sd=sift.detectAndCompute(cv2.cvtColor(src,cv2.COLOR_BGR2GRAY),None);out=[];C=Image.new('RGB',(1280,4*230),'white')
+for j,id in enumerate(json.loads((R/'template-order.json').read_text())):
+ temp=full[:,j*640:(j+1)*640].copy();cv2.imwrite(str(R/(id+'-local-template.png')),temp);kp,desc=sift.detectAndCompute(cv2.cvtColor(temp,cv2.COLOR_BGR2GRAY),None)
+ if desc is None:out.append(dict(id=id,error='No template features'));continue
+ matches=cv2.BFMatcher().knnMatch(desc,sd,k=2);good=[m for m,z in matches if m.distance<.78*z.distance and m.distance<270]
+ if len(good)<4:out.append(dict(id=id,error='Too few matches',good=len(good)));continue
+ a=np.float32([kp[m.queryIdx].pt for m in good]);b=np.float32([sk[m.trainIdx].pt for m in good]);M,ins=cv2.estimateAffine2D(a,b,method=cv2.RANSAC,ransacReprojThreshold=2,maxIters=6000,confidence=.999,refineIters=20);inside=np.flatnonzero(ins.ravel())
+ if M is None:out.append(dict(id=id,error='No valid affine'));continue
+ # Convert padded measurement coordinates to original native capsule-local coordinates.
+ bodyM=M.copy();bodyM[:,2]+=bodyM[:,:2]@np.array([16,20]);W,H=(598,120) if id=='pb-uber-eats' else(604,117);corn=cv2.transform(np.float32([[[0,0],[W,0],[W,H],[0,H]]]),bodyM)[0];l=max(0,int(corn[:,0].min())-6);t=max(0,int(corn[:,1].min())-6);r=min(1920,int(corn[:,0].max())+7);bot=min(1080,int(corn[:,1].max())+7);local=M.copy();local[:,2]-=[l,t];delta=253-temp.astype(float);warp=cv2.warpAffine(delta,local,(r-l,bot-t));target=253-src[t:bot,l:r].astype(float);mask=np.max(np.abs(warp),2)>5;opacity=float(np.clip(np.sum(warp[mask]*target[mask])/np.sum(warp[mask]**2),0,1));err=float(np.mean(np.abs(warp[mask]*opacity-target[mask])));pred=np.clip(253-warp*opacity,0,255).astype('uint8');cv2.imwrite(str(R/(id+'-486-affine-pred.png')),pred);reference=src[t:bot,l:r];Image.fromarray(cv2.cvtColor(reference,cv2.COLOR_BGR2RGB)).resize((640,200)).save(R/(id+'-486-source-detail.jpg'));Image.fromarray(cv2.cvtColor(pred,cv2.COLOR_BGR2RGB)).resize((640,200)).save(R/(id+'-486-pred-detail.jpg'));C.paste(Image.fromarray(cv2.cvtColor(reference,cv2.COLOR_BGR2RGB)).resize((640,200)),(0,j*230+20));C.paste(Image.fromarray(cv2.cvtColor(pred,cv2.COLOR_BGR2RGB)).resize((640,200)),(640,j*230+20));row=dict(id=id,frame=486,paddedTemplateMatrix=M.tolist(),bodyLocalMatrix=bodyM.tolist(),inliers=len(inside),matches=len(good),landmarkRMS=float(np.sqrt(np.mean((cv2.transform(a[inside,None,:],M)[:,0]-b[inside])**2))),cameraSingularValues=np.linalg.svd(M[:,:2])[1].tolist(),opacity=opacity,foregroundFitMAE=err,worldBounds=[l,t,r,bot],nativeLocalSize=[W,H],notice='Measured full affine camera of existing original UI art; no new font/art substitution. Predicted PNG is measurement only, final renderer must use native affine groups.');out.append(row);print({k:v for k,v in row.items() if k not in ['notice','paddedTemplateMatrix']},flush=True)
+(R/'caps-affine-probe.json').write_text(json.dumps(out,indent=2));C.save(R/'caps-affine-probe-contact.jpg')

@@ -1,0 +1,463 @@
+{
+  "records": [
+    {
+      "id": "01-photonhq",
+      "variant": "ui",
+      "video_sha256": "20e51ab31d724910bf85f5e2c209a151aae5881e62cfdd681cbfa0dcbe98650e",
+      "audio_sha256": "b09f4233060c7954cf9cdfdba67cccabfb049e1fac732280579e29a5a8886dca",
+      "output_sha256": "cdb3ff458181be4439b86c8c1597b79661a13385c15c180e8b7c38f2c3f79a4d",
+      "video_packet_sha256": "SHA256=6ef047965d87edc7b893b45c540e3f8d0f1fc57061dc25d1e5519b4eda44752c",
+      "aac_packet_sha256": "SHA256=53808ec155eb54e52c8669899a646e2ab4767c6a3e19a23ee98123cd79a8166c",
+      "picture_and_aac_packets_unchanged": true,
+      "reference_audio_reused": false,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "time_base": "1/15360",
+            "duration_ts": 335360,
+            "nb_read_packets": "655"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "time_base": "1/48000",
+            "duration_ts": 1048000,
+            "nb_read_packets": "1025"
+          }
+        ],
+        "format": {
+          "duration": "21.833333"
+        }
+      },
+      "ui_report_sha256": "1a45c9bdbcaed957532e4205cae0b34e7fdc2ef126d063b0dbfdfe16297864b5",
+      "visual_cues": 1,
+      "audible_cues": 1,
+      "audio_audition_boost": true
+    },
+    {
+      "id": "01-photonhq",
+      "variant": "recreated",
+      "video_sha256": "20e51ab31d724910bf85f5e2c209a151aae5881e62cfdd681cbfa0dcbe98650e",
+      "audio_sha256": "a508bef68c1a6684849faa0646766a2704dd53dbfb67c9c5e447db4d44250d76",
+      "output_sha256": "ed59fb71f1f3ce5f00c1d6662296129e0ef5d64f4a41f52cd8000cae91494fe0",
+      "video_packet_sha256": "SHA256=6ef047965d87edc7b893b45c540e3f8d0f1fc57061dc25d1e5519b4eda44752c",
+      "aac_packet_sha256": "SHA256=73f1c169604a3eeadeb927b04d475a6a15393d34a7c0bb9f8fef72a9d3407dd2",
+      "picture_and_aac_packets_unchanged": true,
+      "reference_audio_reused": false,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "time_base": "1/15360",
+            "duration_ts": 335360,
+            "nb_read_packets": "655"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "time_base": "1/48000",
+            "duration_ts": 1048000,
+            "nb_read_packets": "1025"
+          }
+        ],
+        "format": {
+          "duration": "21.833333"
+        }
+      },
+      "ui_report_sha256": "1a45c9bdbcaed957532e4205cae0b34e7fdc2ef126d063b0dbfdfe16297864b5",
+      "visual_cues": 1,
+      "audible_cues": 1,
+      "audio_audition_boost": false
+    },
+    {
+      "id": "02-danieltian",
+      "variant": "ui",
+      "video_sha256": "59740a0f1161f75dccf50d1d7f1a30e09192d7b573b17a9675fd76870858c72b",
+      "audio_sha256": "22543c0a1ff601ecc702b95d548169a8be98216817abe2ea9153c420499cb2db",
+      "output_sha256": "c790c78a2e6148f4c8651cfd7c8e5d52bd81261d60b93c3d142cf0cdfd4917ec",
+      "video_packet_sha256": "SHA256=ce67be4e63720de594be7689529af9879083e6b91943aca8050f546125641d8d",
+      "aac_packet_sha256": "SHA256=9b288ef35ea77282a0c21129059ce2c5146a69122970c99e236a7f7527774d4d",
+      "picture_and_aac_packets_unchanged": true,
+      "reference_audio_reused": false,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "time_base": "1/15360",
+            "duration_ts": 696320,
+            "nb_read_packets": "1360"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "time_base": "1/48000",
+            "duration_ts": 2176000,
+            "nb_read_packets": "2126"
+          }
+        ],
+        "format": {
+          "duration": "45.333333"
+        }
+      },
+      "ui_report_sha256": "f0c674e1334f19118391da4808f4f32edfe6d16f89a18b18ad216f7948ca25e2",
+      "visual_cues": 45,
+      "audible_cues": 45,
+      "audio_audition_boost": true
+    },
+    {
+      "id": "02-danieltian",
+      "variant": "recreated",
+      "video_sha256": "59740a0f1161f75dccf50d1d7f1a30e09192d7b573b17a9675fd76870858c72b",
+      "audio_sha256": "30e4f80ddf4aa49fd9ee9db6f66c8a343bf7d359aaad85893f2cb82ce6c67be8",
+      "output_sha256": "ba237e51661a2f042caac4468b86041d0c1597dec2990cbe69b71c42015ae67f",
+      "video_packet_sha256": "SHA256=ce67be4e63720de594be7689529af9879083e6b91943aca8050f546125641d8d",
+      "aac_packet_sha256": "SHA256=7219d65bf5fd660d6468bd37101dff2074ec82e2fe05fb097a15c1737084f8ec",
+      "picture_and_aac_packets_unchanged": true,
+      "reference_audio_reused": false,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "time_base": "1/15360",
+            "duration_ts": 696320,
+            "nb_read_packets": "1360"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "time_base": "1/48000",
+            "duration_ts": 2176000,
+            "nb_read_packets": "2126"
+          }
+        ],
+        "format": {
+          "duration": "45.333333"
+        }
+      },
+      "ui_report_sha256": "f0c674e1334f19118391da4808f4f32edfe6d16f89a18b18ad216f7948ca25e2",
+      "visual_cues": 45,
+      "audible_cues": 45,
+      "audio_audition_boost": false
+    },
+    {
+      "id": "03-photon-mini",
+      "variant": "ui",
+      "video_sha256": "323c1b4bb0f19bbc3559e7a4163de5f94878246c460d5d2894b69ee4106a57b2",
+      "audio_sha256": "a8a8acfb1df44af04881535d500d89936e103788887465f4c3f98a3702d73b08",
+      "output_sha256": "4e592db3c568bbe13d89f0dca24e779d3832980f1c557e26001af2777d794330",
+      "video_packet_sha256": "SHA256=1c01fb0d33e07d542fe1608e77ca8042261af219c88880fe121e6509cbda0543",
+      "aac_packet_sha256": "SHA256=1eee9d6deecedae7b3f46f9bc103ce0f8fdb18ba5af45c9e91813a444a4222ca",
+      "picture_and_aac_packets_unchanged": true,
+      "reference_audio_reused": false,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "time_base": "1/15360",
+            "duration_ts": 645120,
+            "nb_read_packets": "1260"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "time_base": "1/48000",
+            "duration_ts": 2016000,
+            "nb_read_packets": "1970"
+          }
+        ],
+        "format": {
+          "duration": "42.000000"
+        }
+      },
+      "ui_report_sha256": "8c7f03a07636dcf744a3f0025242a4506bf1c497444427c37cee3036db396228",
+      "visual_cues": 45,
+      "audible_cues": 44,
+      "audio_audition_boost": true
+    },
+    {
+      "id": "03-photon-mini",
+      "variant": "recreated",
+      "video_sha256": "323c1b4bb0f19bbc3559e7a4163de5f94878246c460d5d2894b69ee4106a57b2",
+      "audio_sha256": "9455d2d4a2aaaa0fbdf31057937efad0aea583210eb0a3fd71dae24ad0ddca23",
+      "output_sha256": "b4481a9c5e908b6515b0f35c0b5ca920cf765b3fa8eb948b811c091ffd1a64c0",
+      "video_packet_sha256": "SHA256=1c01fb0d33e07d542fe1608e77ca8042261af219c88880fe121e6509cbda0543",
+      "aac_packet_sha256": "SHA256=49bc7a07bf076b964dee368c6ecfea366c2646daa374640d3f44be745de73c2f",
+      "picture_and_aac_packets_unchanged": true,
+      "reference_audio_reused": false,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "time_base": "1/15360",
+            "duration_ts": 645120,
+            "nb_read_packets": "1260"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "time_base": "1/48000",
+            "duration_ts": 2016000,
+            "nb_read_packets": "1970"
+          }
+        ],
+        "format": {
+          "duration": "42.000000"
+        }
+      },
+      "ui_report_sha256": "8c7f03a07636dcf744a3f0025242a4506bf1c497444427c37cee3036db396228",
+      "visual_cues": 45,
+      "audible_cues": 44,
+      "audio_audition_boost": false
+    },
+    {
+      "id": "04-poke",
+      "variant": "ui",
+      "video_sha256": "61286445805216b985028595c7e3f0f8dd01c2da44695b658a867145eef0d772",
+      "audio_sha256": "db17e5f7d6d4f051e086b66a56f7baf81ba73180a1b660b8400688691718d3a3",
+      "output_sha256": "ff84fd86efa6220dbe716b9d9e327fb6de3b755d27e5c03a5054c442fde8c987",
+      "video_packet_sha256": "SHA256=fef5481d8bbb13c16a14d05ad846cdb72112ca876913b9f0c27d871dc393d62b",
+      "aac_packet_sha256": "SHA256=0a63da5404b47fa7aa4565288ed837f9c847124deae83ebe506046bde932f1c8",
+      "picture_and_aac_packets_unchanged": true,
+      "reference_audio_reused": false,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "time_base": "1/30000",
+            "duration_ts": 1284283,
+            "nb_read_packets": "1283"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "time_base": "1/48000",
+            "duration_ts": 2054853,
+            "nb_read_packets": "2008"
+          }
+        ],
+        "format": {
+          "duration": "42.809438"
+        }
+      },
+      "ui_report_sha256": "0b98f978e2adeba2d20fe1def14bad9663c024fe47329ff40789dfdd605295b3",
+      "visual_cues": 35,
+      "audible_cues": 34,
+      "audio_audition_boost": true
+    },
+    {
+      "id": "04-poke",
+      "variant": "recreated",
+      "video_sha256": "61286445805216b985028595c7e3f0f8dd01c2da44695b658a867145eef0d772",
+      "audio_sha256": "92544d42460ec105b419e58af5f44f10a412a0b4071a7a044bbb7d6d2e0f467a",
+      "output_sha256": "9e52835e564c4bc705eb411f165fa734da90d8ef0317a0514cdf2607334ac8b4",
+      "video_packet_sha256": "SHA256=fef5481d8bbb13c16a14d05ad846cdb72112ca876913b9f0c27d871dc393d62b",
+      "aac_packet_sha256": "SHA256=16c34fa8c1540ebc83cf521552911c6345c0c58210f22a8335400d40360519c8",
+      "picture_and_aac_packets_unchanged": true,
+      "reference_audio_reused": false,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "time_base": "1/30000",
+            "duration_ts": 1284283,
+            "nb_read_packets": "1283"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "time_base": "1/48000",
+            "duration_ts": 2054853,
+            "nb_read_packets": "2008"
+          }
+        ],
+        "format": {
+          "duration": "42.809438"
+        }
+      },
+      "ui_report_sha256": "0b98f978e2adeba2d20fe1def14bad9663c024fe47329ff40789dfdd605295b3",
+      "visual_cues": 35,
+      "audible_cues": 34,
+      "audio_audition_boost": false
+    },
+    {
+      "id": "05-linq",
+      "variant": "ui",
+      "video_sha256": "0b3879942d580da67b1bbcc548d14f9c78cdf84b5a00dfba3d4307ca26a912cd",
+      "audio_sha256": "d0bca13f137d1b2b3907beec186e184967e424dd79c27b547b470f25f7a86b0c",
+      "output_sha256": "d4f91880827f91adb2feb2dfd934ff58a4a064a75df3639bafdb674535603929",
+      "video_packet_sha256": "SHA256=ee383193493c5be34243aabc2be7ef3c24b003a3a6429af1e3704a13cb9ec939",
+      "aac_packet_sha256": "SHA256=494c7a3488a2500660c1f180350b34a82a880baae2423ac485d9374fe40ea8f5",
+      "picture_and_aac_packets_unchanged": true,
+      "reference_audio_reused": false,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "time_base": "1/15360",
+            "duration_ts": 746496,
+            "nb_read_packets": "1458"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "time_base": "1/48000",
+            "duration_ts": 2332800,
+            "nb_read_packets": "2280"
+          }
+        ],
+        "format": {
+          "duration": "48.600000"
+        }
+      },
+      "ui_report_sha256": "ea7854a9314cb1709a5153ebcc0eaa7b379f2724f817970249a991182d61383d",
+      "visual_cues": 41,
+      "audible_cues": 41,
+      "audio_audition_boost": true
+    },
+    {
+      "id": "05-linq",
+      "variant": "recreated",
+      "video_sha256": "0b3879942d580da67b1bbcc548d14f9c78cdf84b5a00dfba3d4307ca26a912cd",
+      "audio_sha256": "62d8cadb14f2cc25b85b14ca93c7f1dbccd754f48150718038ff6121df83271e",
+      "output_sha256": "1d727904beed0ace8b379fb30d5c8843c95d99c5c7072d78a3f2edc3ca46e0c8",
+      "video_packet_sha256": "SHA256=ee383193493c5be34243aabc2be7ef3c24b003a3a6429af1e3704a13cb9ec939",
+      "aac_packet_sha256": "SHA256=d92da0e6ed573e72dc5ae7feb846037d91b8e30a3cb6fe58d20dcb912ead2246",
+      "picture_and_aac_packets_unchanged": true,
+      "reference_audio_reused": false,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "time_base": "1/15360",
+            "duration_ts": 746496,
+            "nb_read_packets": "1458"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "time_base": "1/48000",
+            "duration_ts": 2332800,
+            "nb_read_packets": "2280"
+          }
+        ],
+        "format": {
+          "duration": "48.600000"
+        }
+      },
+      "ui_report_sha256": "ea7854a9314cb1709a5153ebcc0eaa7b379f2724f817970249a991182d61383d",
+      "visual_cues": 41,
+      "audible_cues": 41,
+      "audio_audition_boost": false
+    },
+    {
+      "id": "06-gallery",
+      "variant": "ui",
+      "video_sha256": "55dad2c7be7be1b5cfcb438926363817f9cfdaeedc85f4b37908fe0d6331f1c4",
+      "audio_sha256": "80561d4e82ca23ab218c3793b458f2a5f75928619fa7e6ed5d07525538145cce",
+      "output_sha256": "cfa22be137be849046dab84af4e3f708906c109047f9c9deba196a8b7a69ec92",
+      "video_packet_sha256": "SHA256=d72c2743790370fab291fc65f68da1f99bce47d44f06e0a2922d01dbf09b6e78",
+      "aac_packet_sha256": "SHA256=b425efb2a215380b1f58b1d4989ff046b257de357e2f01e3d5d23adc79628069",
+      "picture_and_aac_packets_unchanged": true,
+      "reference_audio_reused": false,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "time_base": "1/15360",
+            "duration_ts": 759296,
+            "nb_read_packets": "1483"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "time_base": "1/48000",
+            "duration_ts": 2372800,
+            "nb_read_packets": "2319"
+          }
+        ],
+        "format": {
+          "duration": "49.433333"
+        }
+      },
+      "ui_report_sha256": "cce5b81e8a759972304ce5a24523e2fa64f331b8f87cb2c7c1e95b0261431b5a",
+      "visual_cues": 18,
+      "audible_cues": 18,
+      "audio_audition_boost": true
+    },
+    {
+      "id": "06-gallery",
+      "variant": "recreated",
+      "video_sha256": "55dad2c7be7be1b5cfcb438926363817f9cfdaeedc85f4b37908fe0d6331f1c4",
+      "audio_sha256": "a1ac446d9380ec93fdd8eace81cee434c26296f76f00f3d1508dbd8622631d9e",
+      "output_sha256": "fd784d80792f4769cfc8b687ded2e3e11c8a24388f7faeaf5da0c96fc96c180d",
+      "video_packet_sha256": "SHA256=d72c2743790370fab291fc65f68da1f99bce47d44f06e0a2922d01dbf09b6e78",
+      "aac_packet_sha256": "SHA256=61a346fc97c94491c1df6ceb7bbd12036af130c3bbeabd60f8af5151b7ec22df",
+      "picture_and_aac_packets_unchanged": true,
+      "reference_audio_reused": false,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "time_base": "1/15360",
+            "duration_ts": 759296,
+            "nb_read_packets": "1483"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "time_base": "1/48000",
+            "duration_ts": 2372800,
+            "nb_read_packets": "2319"
+          }
+        ],
+        "format": {
+          "duration": "49.433333"
+        }
+      },
+      "ui_report_sha256": "cce5b81e8a759972304ce5a24523e2fa64f331b8f87cb2c7c1e95b0261431b5a",
+      "visual_cues": 18,
+      "audible_cues": 18,
+      "audio_audition_boost": false
+    }
+  ],
+  "completed": 12,
+  "total": 12,
+  "complete": true
+}

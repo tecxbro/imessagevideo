@@ -1,0 +1,10 @@
+import fs from 'node:fs';
+import {loadScene} from '../../engines/scene-loader.mjs';
+import {build} from '../../engines/node_modules/esbuild/lib/main.js';
+import {chromium} from '../../engines/node_modules/playwright/index.mjs';
+const base='/workspace/imessage-recreations';const dir=base+'/outputs/04-poke/checkpoints';fs.mkdirSync(dir,{recursive:true});
+await build({entryPoints:[base+'/engines/web-runtime.mjs'],bundle:true,format:'iife',globalName:'MeasuredRuntime',platform:'browser',outfile:dir+'/runtime.js'});
+const browser=await chromium.launch({executablePath:'/usr/bin/chromium',headless:true,args:['--no-sandbox']});const page=await browser.newPage({viewport:{width:1440,height:1080},deviceScaleFactor:1});
+await page.setContent('<!doctype html><style>body{margin:0;overflow:hidden;}svg{display:block;}</style><div id="stage"></div>');await page.addScriptTag({path:dir+'/runtime.js'});
+const scene=loadScene(base+'/references/04-poke/scene.json');await page.evaluate(scene=>window.MeasuredRuntime.setup(scene,'gsap'),scene);await page.evaluate(()=>document.fonts.ready);
+for(const t of (process.argv[2]?process.argv[2].split(',').map(Number):[0,.5,2,3,4,5,7,8,9,10,11,12,13,14,15,16,17,18,20,21,22,23,24,25,27,29,31,32,34,35,36,37,39,41])){await page.evaluate(t=>window.MeasuredRuntime.seek(t),t);await page.screenshot({path:dir+'/'+t.toFixed(1).padStart(4,'0')+'.png'});}await browser.close();

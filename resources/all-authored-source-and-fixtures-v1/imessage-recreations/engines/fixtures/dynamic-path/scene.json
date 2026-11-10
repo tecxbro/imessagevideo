@@ -1,0 +1,74 @@
+{
+  "title": "Native changing Path.data geometry and bbox gradient fixture",
+  "width": 160,
+  "height": 140,
+  "fps": 10,
+  "duration": 1.6,
+  "background": "#f0f0f0",
+  "gradients": [
+    {
+      "id": "red-blue",
+      "x1": "0%",
+      "y1": "0%",
+      "x2": "100%",
+      "y2": "0%",
+      "stops": [
+        {
+          "offset": 0,
+          "color": "#ff0000"
+        },
+        {
+          "offset": 1,
+          "color": "#0000ff"
+        }
+      ]
+    }
+  ],
+  "layers": [
+    {
+      "id": "solid-changing-d",
+      "type": "path",
+      "d": "M10 10 H40 V40 H10 Z",
+      "fill": "#ff0044",
+      "keyframes": {
+        "d": [
+          {
+            "t": 0,
+            "value": "M10 10 H40 V40 H10 Z"
+          },
+          {
+            "t": 0.6,
+            "value": "M75 10 H115 V60 H75 Z"
+          },
+          {
+            "t": 1.2,
+            "value": "M20 10 L110 60 L20 60 Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "gradient-changing-d",
+      "type": "path",
+      "d": "M10 10 H40 V40 H10 Z",
+      "fill": "url(#red-blue)",
+      "y": 70,
+      "keyframes": {
+        "d": [
+          {
+            "t": 0,
+            "value": "M10 10 H40 V40 H10 Z"
+          },
+          {
+            "t": 0.6,
+            "value": "M75 10 H115 V60 H75 Z"
+          },
+          {
+            "t": 1.2,
+            "value": "M20 10 L110 60 L20 60 Z"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,847 @@
+{
+  "format_version": 1,
+  "id": "05-linq",
+  "source_samples_reused": false,
+  "audio_inputs": [
+    {
+      "kind": "new_AI_music_text_only",
+      "path": "audio-recreation/ai/05-linq/music.mp3",
+      "sha256": "d90f9b1715b65d9cbf7b45bf28bd1fa6e924d1751838ab80dc17f9ff39f5ac59",
+      "provenance": {
+        "source_kind": "new_AI_music_text_only",
+        "provider": "fal",
+        "endpoint_id": "elevenlabs/music/v2.5",
+        "request_id": "01a1c185-da61-7b02-95ea-7afda820599c",
+        "submission_key": "imessage-new-score-05-linq-v1-20261109",
+        "input": {
+          "prompt": "Compose an original48.6-second instrumental chill-hop / clean lo-fi electronic pop cue at96 BPM. Warm Rhodes-style electric piano chords and a soft analog pad, smooth rounded synth bass, relaxed but precise kick, crisp layered clap/snap snare, delicate closed-hi-hat shaker patterns. A gentle short-decay plinky synth motif enters intermittently; spacious, optimistic and sophisticated, small natural swing, no vinyl noise. Start with keys and beat, introduce a few tasteful layers through the middle, stay relaxed and understated. Near43 seconds let the drums and bass fade away into a simple ambient warm pad and two or three soft original closing notes, ending naturally by48.6 seconds. No vocals, no speech, no sampled music, no interface sounds. New harmony and melody.",
+          "music_length_ms": 48600,
+          "force_instrumental": true,
+          "output_format": "mp3_48000_320"
+        },
+        "output_url": "https://v3b.fal.media/files/b/0ab1ce2e/yjVJvjUsXxonrRBaHCuAO_music_generated.mp3",
+        "sha256": "d90f9b1715b65d9cbf7b45bf28bd1fa6e924d1751838ab80dc17f9ff39f5ac59",
+        "bytes": 1945004,
+        "reference_audio_used_as_generation_input": false
+      },
+      "provenance_sha256": "396f880ec274c5d0032d01b0af95c09fcf8f0b1b88dd36dc4a8357f533cb5760"
+    }
+  ],
+  "synthesis": {
+    "kind": "original code oscillators/modal tones/seeded filtered noise",
+    "code": "audio-recreation/synthesis/ui_synth.py",
+    "sha256": "4797a0e736e8115975398a7c4acf5289a89d23bb0222420d7dc7d89a2f40f23c"
+  },
+  "mixer_sha256": "411a2a5586d329a0ced74e3cf921231ce4be4d86e9362533ee19728160be03e2",
+  "config_sha256": "1e9776fe0901be63d7858b71e8fe525178e81b4190aca5b7e01accc4744ea85e",
+  "reproducibility_artifacts": {
+    "config": "mix-config.snapshot.json",
+    "mixer_source": "render_mix.source.py.txt"
+  },
+  "videos_metadata_sha256": "76a94926f735547239ec12a7e624ef349057f5301019fe86223392f053256e53",
+  "cue_metadata": {
+    "file": "audio-recreation/analysis/sfx-05-linq-cues.json",
+    "usage": "Timing metadata only; no reference samples read",
+    "available": true,
+    "sha256": "fa48d9c9057e5d54a6d7516d9b3a950ded86eb5892b508205630bc705279cc1c",
+    "recipe_freeze_sha256": "71c17777209af9c8b78898eaf81ccc06cfbfc610f895cf8a2df2eb68469b5fff",
+    "byte_hash_matches_freeze": false,
+    "selected_event_fields_verified": true
+  },
+  "picture": {
+    "frames": 1458,
+    "fps_numerator": 30,
+    "fps_denominator": 1,
+    "exact_duration_fraction": "243/5",
+    "sample_rate": 48000,
+    "channels": 2,
+    "sample_count": 2332800,
+    "rendered_duration_s": 48.6,
+    "sample_rounding_error_s": 0.0
+  },
+  "music_edit": {
+    "decoded_input_samples": 2333952,
+    "trimmed_samples": 1152,
+    "padded_silent_samples": 0,
+    "looped": false,
+    "fade_start_s": 44,
+    "fade_end_sample": 2332800,
+    "silence_deadline_s": 48.6,
+    "remainder_silent": false
+  },
+  "selected_events": [
+    {
+      "cue_index": 1,
+      "output_time": 3.2,
+      "category": "ui_click",
+      "omit_by_default": false,
+      "context": "Plus/app drawer interaction",
+      "selection_reason": "Restrained accent for a send, selection, confirmation or major visual change; optional new sound design, not certification of an isolated original effect.",
+      "timing_status": "visual_only_proposal",
+      "timing_confidence": 0.24,
+      "sample_offset": 153600,
+      "parameters": {
+        "effect": "touch_click",
+        "duration": 0.035,
+        "pitch": 1,
+        "energy": 0.75,
+        "gain_db": -15,
+        "duck_db": 0.6,
+        "seed": 20266110,
+        "pan": 0.08106
+      }
+    },
+    {
+      "cue_index": 3,
+      "output_time": 4.325,
+      "category": "card_open",
+      "omit_by_default": false,
+      "context": "Games drawer opens",
+      "selection_reason": "Restrained accent for a send, selection, confirmation or major visual change; optional new sound design, not certification of an isolated original effect.",
+      "timing_status": "mixed_transient_candidate",
+      "timing_confidence": 0.3,
+      "sample_offset": 207600,
+      "parameters": {
+        "effect": "card_swoosh",
+        "duration": 0.32,
+        "pitch": 1,
+        "energy": 0.75,
+        "gain_db": -22,
+        "duck_db": 0.6,
+        "seed": 20266112,
+        "pan": 0.09523
+      }
+    },
+    {
+      "cue_index": 4,
+      "output_time": 4.915,
+      "category": "message_pop",
+      "omit_by_default": false,
+      "context": "Chess rich preview",
+      "selection_reason": "Restrained accent for a send, selection, confirmation or major visual change; optional new sound design, not certification of an isolated original effect.",
+      "timing_status": "mixed_transient_candidate",
+      "timing_confidence": 0.46,
+      "sample_offset": 235920,
+      "parameters": {
+        "effect": "bubble_pop",
+        "duration": 0.12,
+        "pitch": 1,
+        "energy": 0.75,
+        "gain_db": -17,
+        "duck_db": 0.6,
+        "seed": 20266113,
+        "pan": -0.0209
+      }
+    },
+    {
+      "cue_index": 6,
+      "output_time": 7.2,
+      "category": "game_piece_tick",
+      "omit_by_default": false,
+      "context": "Chess pawn move",
+      "selection_reason": "Restrained accent for a send, selection, confirmation or major visual change; optional new sound design, not certification of an isolated original effect.",
+      "timing_status": "visual_only_proposal",
+      "timing_confidence": 0.24,
+      "sample_offset": 345600,
+      "parameters": {
+        "effect": "key_tap",
+        "duration": 0.055,
+        "pitch": 0.85,
+        "energy": 0.75,
+        "gain_db": -16,
+        "duck_db": 0.6,
+        "seed": 20266115,
+        "pan": 0.11589
+      }
+    },
+    {
+      "cue_index": 7,
+      "output_time": 8.665,
+      "category": "ui_send",
+      "omit_by_default": false,
+      "context": "Flight request",
+      "selection_reason": "Restrained accent for a send, selection, confirmation or major visual change; optional new sound design, not certification of an isolated original effect.",
+      "timing_status": "mixed_transient_candidate",
+      "timing_confidence": 0.46,
+      "sample_offset": 415920,
+      "parameters": {
+        "effect": "bubble_pop",
+        "duration": 0.14,
+        "pitch": 1.2,
+        "energy": 0.75,
+        "gain_db": -14,
+        "duck_db": 1,
+        "seed": 20266116,
+        "pan": -0.10649
+      }
+    },
+    {
+      "cue_index": 9,
+      "output_time": 11.825,
+      "category": "card_open",
+      "omit_by_default": false,
+      "context": "Flight Details app entrance",
+      "selection_reason": "Restrained accent for a send, selection, confirmation or major visual change; optional new sound design, not certification of an isolated original effect.",
+      "timing_status": "mixed_transient_candidate",
+      "timing_confidence": 0.3,
+      "sample_offset": 567600,
+      "parameters": {
+        "effect": "card_swoosh",
+        "duration": 0.32,
+        "pitch": 1,
+        "energy": 0.75,
+        "gain_db": -22,
+        "duck_db": 0.6,
+        "seed": 20266118,
+        "pan": 0.04579
+      }
+    },
+    {
+      "cue_index": 12,
+      "output_time": 14.815,
+      "category": "ui_click",
+      "omit_by_default": false,
+      "context": "Book seat interaction",
+      "selection_reason": "Restrained accent for a send, selection, confirmation or major visual change; optional new sound design, not certification of an isolated original effect.",
+      "timing_status": "mixed_transient_candidate",
+      "timing_confidence": 0.3,
+      "sample_offset": 711120,
+      "parameters": {
+        "effect": "touch_click",
+        "duration": 0.035,
+        "pitch": 1,
+        "energy": 0.75,
+        "gain_db": -15,
+        "duck_db": 0.6,
+        "seed": 20266121,
+        "pan": -0.06017
+      }
+    },
+    {
+      "cue_index": 13,
+      "output_time": 15.88,
+      "category": "confirm_tick",
+      "omit_by_default": false,
+      "context": "Flight booked reply",
+      "selection_reason": "Restrained accent for a send, selection, confirmation or major visual change; optional new sound design, not certification of an isolated original effect.",
+      "timing_status": "mixed_transient_candidate",
+      "timing_confidence": 0.3,
+      "sample_offset": 762240,
+      "parameters": {
+        "effect": "glass_confirm",
+        "duration": 0.42,
+        "pitch": 1,
+        "energy": 0.75,
+        "gain_db": -17,
+        "duck_db": 1.2,
+        "seed": 20266122,
+        "pan": -0.02577
+      }
+    },
+    {
+      "cue_index": 14,
+      "output_time": 17.13,
+      "category": "ui_send",
+      "omit_by_default": false,
+      "context": "Jewelry request",
+      "selection_reason": "Restrained accent for a send, selection, confirmation or major visual change; optional new sound design, not certification of an isolated original effect.",
+      "timing_status": "mixed_transient_candidate",
+      "timing_confidence": 0.3,
+      "sample_offset": 822240,
+      "parameters": {
+        "effect": "bubble_pop",
+        "duration": 0.14,
+        "pitch": 1.2,
+        "energy": 0.75,
+        "gain_db": -14,
+        "duck_db": 1,
+        "seed": 20266123,
+        "pan": 0.09817
+      }
+    },
+    {
+      "cue_index": 15,
+      "output_time": 19.32,
+      "category": "card_open",
+      "omit_by_default": false,
+      "context": "Jewelry product grid opens",
+      "selection_reason": "Restrained accent for a send, selection, confirmation or major visual change; optional new sound design, not certification of an isolated original effect.",
+      "timing_status": "mixed_transient_candidate",
+      "timing_confidence": 0.3,
+      "sample_offset": 927360,
+      "parameters": {
+        "effect": "card_swoosh",
+        "duration": 0.32,
+        "pitch": 1,
+        "energy": 0.75,
+        "gain_db": -22,
+        "duck_db": 0.6,
+        "seed": 20266124,
+        "pan": -0.119
+      }
+    },
+    {
+      "cue_index": 17,
+      "output_time": 21.69,
+      "category": "confirm_tick",
+      "omit_by_default": false,
+      "context": "Jewelry order confirmation",
+      "selection_reason": "Restrained accent for a send, selection, confirmation or major visual change; optional new sound design, not certification of an isolated original effect.",
+      "timing_status": "mixed_transient_candidate",
+      "timing_confidence": 0.3,
+      "sample_offset": 1041120,
+      "parameters": {
+        "effect": "glass_confirm",
+        "duration": 0.42,
+        "pitch": 1,
+        "energy": 0.75,
+        "gain_db": -17,
+        "duck_db": 1.2,
+        "seed": 20266126,
+        "pan": 0.00496
+      }
+    },
+    {
+      "cue_index": 18,
+      "output_time": 23.07,
+      "category": "ui_send",
+      "omit_by_default": false,
+      "context": "Groceries request",
+      "selection_reason": "Restrained accent for a send, selection, confirmation or major visual change; optional new sound design, not certification of an isolated original effect.",
+      "timing_status": "mixed_transient_candidate",
+      "timing_confidence": 0.3,
+      "sample_offset": 1107360,
+      "parameters": {
+        "effect": "bubble_pop",
+        "duration": 0.14,
+        "pitch": 1.2,
+        "energy": 0.75,
+        "gain_db": -14,
+        "duck_db": 1,
+        "seed": 20266127,
+        "pan": -0.08465
+      }
+    },
+    {
+      "cue_index": 19,
+      "output_time": 24.005,
+      "category": "card_open",
+      "omit_by_default": false,
+      "context": "Apple Cash request card",
+      "selection_reason": "Restrained accent for a send, selection, confirmation or major visual change; optional new sound design, not certification of an isolated original effect.",
+      "timing_status": "mixed_transient_candidate",
+      "timing_confidence": 0.3,
+      "sample_offset": 1152240,
+      "parameters": {
+        "effect": "card_swoosh",
+        "duration": 0.32,
+        "pitch": 1,
+        "energy": 0.75,
+        "gain_db": -22,
+        "duck_db": 0.6,
+        "seed": 20266128,
+        "pan": 0.11987
+      }
+    },
+    {
+      "cue_index": 21,
+      "output_time": 27.445,
+      "category": "confirm_tick",
+      "omit_by_default": false,
+      "context": "Cash send/ordering confirmation",
+      "selection_reason": "Restrained accent for a send, selection, confirmation or major visual change; optional new sound design, not certification of an isolated original effect.",
+      "timing_status": "mixed_transient_candidate",
+      "timing_confidence": 0.3,
+      "sample_offset": 1317360,
+      "parameters": {
+        "effect": "glass_confirm",
+        "duration": 0.42,
+        "pitch": 1,
+        "energy": 0.75,
+        "gain_db": -17,
+        "duck_db": 1.2,
+        "seed": 20266130,
+        "pan": 0.016
+      }
+    },
+    {
+      "cue_index": 23,
+      "output_time": 29.63,
+      "category": "game_piece_tick",
+      "omit_by_default": false,
+      "context": "Queen move",
+      "selection_reason": "Restrained accent for a send, selection, confirmation or major visual change; optional new sound design, not certification of an isolated original effect.",
+      "timing_status": "mixed_transient_candidate",
+      "timing_confidence": 0.3,
+      "sample_offset": 1422240,
+      "parameters": {
+        "effect": "key_tap",
+        "duration": 0.055,
+        "pitch": 0.85,
+        "energy": 0.75,
+        "gain_db": -16,
+        "duck_db": 0.6,
+        "seed": 20266132,
+        "pan": -0.11707
+      }
+    },
+    {
+      "cue_index": 24,
+      "output_time": 30.255,
+      "category": "celebration_short",
+      "omit_by_default": false,
+      "context": "Chess win and confetti",
+      "selection_reason": "Restrained accent for a send, selection, confirmation or major visual change; optional new sound design, not certification of an isolated original effect.",
+      "timing_status": "mixed_transient_candidate",
+      "timing_confidence": 0.3,
+      "sample_offset": 1452240,
+      "parameters": {
+        "effect": "digital_sparkle",
+        "duration": 0.4,
+        "pitch": 1,
+        "energy": 0.75,
+        "gain_db": -19,
+        "duck_db": 1,
+        "seed": 20266133,
+        "pan": 0.10412
+      }
+    },
+    {
+      "cue_index": 26,
+      "output_time": 31.82,
+      "category": "game_piece_tick",
+      "omit_by_default": false,
+      "context": "Counter drop",
+      "selection_reason": "Restrained accent for a send, selection, confirmation or major visual change; optional new sound design, not certification of an isolated original effect.",
+      "timing_status": "mixed_transient_candidate",
+      "timing_confidence": 0.3,
+      "sample_offset": 1527360,
+      "parameters": {
+        "effect": "key_tap",
+        "duration": 0.055,
+        "pitch": 0.85,
+        "energy": 0.75,
+        "gain_db": -16,
+        "duck_db": 0.6,
+        "seed": 20266135,
+        "pan": -0.05033
+      }
+    },
+    {
+      "cue_index": 27,
+      "output_time": 33.385,
+      "category": "card_open",
+      "omit_by_default": false,
+      "context": "Foodash group order opens",
+      "selection_reason": "Restrained accent for a send, selection, confirmation or major visual change; optional new sound design, not certification of an isolated original effect.",
+      "timing_status": "mixed_transient_candidate",
+      "timing_confidence": 0.3,
+      "sample_offset": 1602480,
+      "parameters": {
+        "effect": "card_swoosh",
+        "duration": 0.32,
+        "pitch": 1,
+        "energy": 0.75,
+        "gain_db": -22,
+        "duck_db": 0.6,
+        "seed": 20266136,
+        "pan": 0.1107
+      }
+    },
+    {
+      "cue_index": 29,
+      "output_time": 35.885,
+      "category": "card_open",
+      "omit_by_default": false,
+      "context": "Restaurant business card",
+      "selection_reason": "Restrained accent for a send, selection, confirmation or major visual change; optional new sound design, not certification of an isolated original effect.",
+      "timing_status": "mixed_transient_candidate",
+      "timing_confidence": 0.3,
+      "sample_offset": 1722480,
+      "parameters": {
+        "effect": "card_swoosh",
+        "duration": 0.32,
+        "pitch": 1,
+        "energy": 0.75,
+        "gain_db": -22,
+        "duck_db": 0.6,
+        "seed": 20266138,
+        "pan": 0.05583
+      }
+    },
+    {
+      "cue_index": 31,
+      "output_time": 38.385,
+      "category": "message_pop",
+      "omit_by_default": false,
+      "context": "Check-in notification",
+      "selection_reason": "Restrained accent for a send, selection, confirmation or major visual change; optional new sound design, not certification of an isolated original effect.",
+      "timing_status": "mixed_transient_candidate",
+      "timing_confidence": 0.3,
+      "sample_offset": 1842480,
+      "parameters": {
+        "effect": "bubble_pop",
+        "duration": 0.12,
+        "pitch": 1,
+        "energy": 0.75,
+        "gain_db": -17,
+        "duck_db": 0.6,
+        "seed": 20266140,
+        "pan": -0.10094
+      }
+    },
+    {
+      "cue_index": 32,
+      "output_time": 39.32,
+      "category": "card_open",
+      "omit_by_default": false,
+      "context": "Boarding pass expands",
+      "selection_reason": "Restrained accent for a send, selection, confirmation or major visual change; optional new sound design, not certification of an isolated original effect.",
+      "timing_status": "mixed_transient_candidate",
+      "timing_confidence": 0.3,
+      "sample_offset": 1887360,
+      "parameters": {
+        "effect": "card_swoosh",
+        "duration": 0.32,
+        "pitch": 1,
+        "energy": 0.75,
+        "gain_db": -22,
+        "duck_db": 0.6,
+        "seed": 20266141,
+        "pan": 0.11827
+      }
+    },
+    {
+      "cue_index": 34,
+      "output_time": 42.29,
+      "category": "title_tick",
+      "omit_by_default": false,
+      "context": "iMessage Apps headline",
+      "selection_reason": "Restrained accent for a send, selection, confirmation or major visual change; optional new sound design, not certification of an isolated original effect.",
+      "timing_status": "mixed_transient_candidate",
+      "timing_confidence": 0.3,
+      "sample_offset": 2029920,
+      "parameters": {
+        "effect": "touch_click",
+        "duration": 0.045,
+        "pitch": 1.1,
+        "energy": 0.75,
+        "gain_db": -20,
+        "duck_db": 0,
+        "seed": 20266143,
+        "pan": -0.00991
+      }
+    },
+    {
+      "cue_index": 36,
+      "output_time": 46.0,
+      "category": "logo_resolve",
+      "omit_by_default": false,
+      "context": "Linq wordmark",
+      "selection_reason": "Restrained accent for a send, selection, confirmation or major visual change; optional new sound design, not certification of an isolated original effect.",
+      "timing_status": "visual_only_proposal",
+      "timing_confidence": 0.24,
+      "sample_offset": 2208000,
+      "parameters": {
+        "effect": "glass_confirm",
+        "duration": 0.6,
+        "pitch": 0.92,
+        "energy": 0.75,
+        "gain_db": -18,
+        "duck_db": 1,
+        "seed": 20266145,
+        "pan": -0.12
+      }
+    }
+  ],
+  "selected_count": 23,
+  "ducking": {
+    "maximum_depth_db": 1.2,
+    "ceiling_db": 2.0,
+    "overlap_rule": "maximum, never sum",
+    "attack_s": 0.075,
+    "release_s": 0.24
+  },
+  "normalization": {
+    "method": "FFmpeg loudnorm measured common gain, with optional linked oversampled lookahead peak control",
+    "music_before_premix": {
+      "integrated_lufs": -17.19,
+      "true_peak_dbtp": -0.41,
+      "lra_lu": 14.4,
+      "threshold_lufs": -28.83,
+      "silent": false
+    },
+    "music_premix_gain_db": -0.8099999999999987,
+    "raw_stems": {
+      "music": {
+        "samples_per_channel": 2332800,
+        "duration_s": 48.6,
+        "sample_peak": 0.858359196098784,
+        "sample_peak_dbfs": -1.3266187129747213,
+        "rms": 0.09500717495586945,
+        "finite": true,
+        "clipped_samples": 0,
+        "endpoints_zero": true
+      },
+      "sfx": {
+        "samples_per_channel": 2332800,
+        "duration_s": 48.6,
+        "sample_peak": 0.1059403270483017,
+        "sample_peak_dbfs": -19.498773813763847,
+        "rms": 0.004178304877282786,
+        "finite": true,
+        "clipped_samples": 0,
+        "endpoints_zero": true
+      }
+    },
+    "raw_mix": {
+      "samples_per_channel": 2332800,
+      "duration_s": 48.6,
+      "sample_peak": 0.858359196098784,
+      "sample_peak_dbfs": -1.3266187129747213,
+      "rms": 0.09509741879104464,
+      "finite": true,
+      "clipped_samples": 0,
+      "endpoints_zero": true,
+      "loudness": {
+        "integrated_lufs": -18.18,
+        "true_peak_dbtp": -1.33,
+        "lra_lu": 14.3,
+        "threshold_lufs": -29.76,
+        "silent": false
+      }
+    },
+    "target_lufs": -16.0,
+    "true_peak_ceiling_dbtp": -1.5,
+    "master_gain_db": 2.1799999999999997,
+    "static_gain_would_be_true_peak_limited": true,
+    "linked_peak_control": {
+      "applied": true,
+      "filter": "aresample=192000,alimiter=limit=0.776247116629:attack=5:release=80:level=false:latency=true,aresample=48000",
+      "oversample_rate": 192000,
+      "shared_channel_order": [
+        "musicL",
+        "musicR",
+        "sfxL",
+        "sfxR",
+        "sumL",
+        "sumR"
+      ],
+      "lookahead_ms": 5,
+      "release_ms": 80,
+      "auto_makeup_gain": false,
+      "latency_compensated": true,
+      "stem_sum_max_error_before_quantization": 1.1213252548714081e-14,
+      "input_common_gain_db": 2.1799999999999997,
+      "output_common_gain_db": 0.0,
+      "measured_before_post_gain": {
+        "integrated_lufs": -16.63,
+        "true_peak_dbtp": -2.2,
+        "lra_lu": 13.8,
+        "threshold_lufs": -28.14,
+        "silent": false
+      }
+    }
+  },
+  "toolchain": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "ffmpeg": "ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers"
+  },
+  "exports": {
+    "music.flac": {
+      "samples_per_channel": 2332800,
+      "duration_s": 48.6,
+      "sample_peak": 0.7763696908950806,
+      "sample_peak_dbfs": -2.198628552071093,
+      "rms": 0.11638666671236157,
+      "finite": true,
+      "clipped_samples": 0,
+      "endpoints_zero": true,
+      "raw_decoded_samples": 2332800,
+      "loudness": {
+        "integrated_lufs": -16.66,
+        "true_peak_dbtp": -2.2,
+        "lra_lu": 13.8,
+        "threshold_lufs": -28.16,
+        "silent": false
+      },
+      "stream": {
+        "codec_name": "flac",
+        "sample_rate": "48000",
+        "channels": 2,
+        "time_base": "1/48000",
+        "duration_ts": 2332800,
+        "bits_per_raw_sample": "24"
+      },
+      "file": "music.flac",
+      "bytes": 8323840,
+      "sha256": "b3f75cb03cc9782d540bb1a45a29cde4c39cc93797dcc77b1a0d1698ee82baf5"
+    },
+    "sfx.flac": {
+      "samples_per_channel": 2332800,
+      "duration_s": 48.6,
+      "sample_peak": 0.13616633415222168,
+      "sample_peak_dbfs": -17.318605087702398,
+      "rms": 0.005360384892357563,
+      "finite": true,
+      "clipped_samples": 0,
+      "endpoints_zero": true,
+      "raw_decoded_samples": 2332800,
+      "loudness": {
+        "integrated_lufs": -35.7,
+        "true_peak_dbtp": -17.3,
+        "lra_lu": 10.1,
+        "threshold_lufs": -46.55,
+        "silent": false
+      },
+      "stream": {
+        "codec_name": "flac",
+        "sample_rate": "48000",
+        "channels": 2,
+        "time_base": "1/48000",
+        "duration_ts": 2332800,
+        "bits_per_raw_sample": "24"
+      },
+      "file": "sfx.flac",
+      "bytes": 642325,
+      "sha256": "2e780b8db7def7f1b7d76a1d8aa8ceb52facb878f937659118e5a1570bc31b9d"
+    },
+    "full_mix.flac": {
+      "samples_per_channel": 2332800,
+      "duration_s": 48.6,
+      "sample_peak": 0.7763696908950806,
+      "sample_peak_dbfs": -2.198628552071093,
+      "rms": 0.11650798174402016,
+      "finite": true,
+      "clipped_samples": 0,
+      "endpoints_zero": true,
+      "raw_decoded_samples": 2332800,
+      "loudness": {
+        "integrated_lufs": -16.63,
+        "true_peak_dbtp": -2.2,
+        "lra_lu": 13.8,
+        "threshold_lufs": -28.14,
+        "silent": false
+      },
+      "stream": {
+        "codec_name": "flac",
+        "sample_rate": "48000",
+        "channels": 2,
+        "time_base": "1/48000",
+        "duration_ts": 2332800,
+        "bits_per_raw_sample": "24"
+      },
+      "file": "full_mix.flac",
+      "bytes": 8360779,
+      "sha256": "25671a4087ed4125ac30cd265b835a23734fd39a39472e01640c8e8893487113"
+    },
+    "music.m4a": {
+      "samples_per_channel": 2332800,
+      "duration_s": 48.6,
+      "sample_peak": 0.8007331490516663,
+      "sample_peak_dbfs": -1.9302438406916163,
+      "rms": 0.1162318153493893,
+      "finite": true,
+      "clipped_samples": 0,
+      "endpoints_zero": false,
+      "raw_decoded_samples": 2333696,
+      "loudness": {
+        "integrated_lufs": -16.65,
+        "true_peak_dbtp": -1.82,
+        "lra_lu": 13.9,
+        "threshold_lufs": -28.18,
+        "silent": false
+      },
+      "stream": {
+        "codec_name": "aac",
+        "sample_rate": "48000",
+        "channels": 2,
+        "time_base": "1/48000",
+        "duration_ts": 2332800
+      },
+      "file": "music.m4a",
+      "bytes": 1574133,
+      "sha256": "5e5d3b8e69560fc32b3a78d01dae81f526efc8df33032f646064f92bdec5732d"
+    },
+    "sfx.m4a": {
+      "samples_per_channel": 2332800,
+      "duration_s": 48.6,
+      "sample_peak": 0.1366569995880127,
+      "sample_peak_dbfs": -17.2873623757167,
+      "rms": 0.005336729605459908,
+      "finite": true,
+      "clipped_samples": 0,
+      "endpoints_zero": true,
+      "raw_decoded_samples": 2333696,
+      "loudness": {
+        "integrated_lufs": -35.75,
+        "true_peak_dbtp": -17.29,
+        "lra_lu": 10.3,
+        "threshold_lufs": -46.6,
+        "silent": false
+      },
+      "stream": {
+        "codec_name": "aac",
+        "sample_rate": "48000",
+        "channels": 2,
+        "time_base": "1/48000",
+        "duration_ts": 2332800
+      },
+      "file": "sfx.m4a",
+      "bytes": 110208,
+      "sha256": "0eba9999bc99bf9e57ba85c7469854d81e3ae540419b08d1ac1b0bc89cf0d983"
+    },
+    "full_mix.m4a": {
+      "samples_per_channel": 2332800,
+      "duration_s": 48.6,
+      "sample_peak": 0.805142879486084,
+      "sample_peak_dbfs": -1.8825408704997968,
+      "rms": 0.1163493069881536,
+      "finite": true,
+      "clipped_samples": 0,
+      "endpoints_zero": false,
+      "raw_decoded_samples": 2333696,
+      "loudness": {
+        "integrated_lufs": -16.69,
+        "true_peak_dbtp": -1.88,
+        "lra_lu": 13.8,
+        "threshold_lufs": -28.17,
+        "silent": false
+      },
+      "stream": {
+        "codec_name": "aac",
+        "sample_rate": "48000",
+        "channels": 2,
+        "time_base": "1/48000",
+        "duration_ts": 2332800
+      },
+      "file": "full_mix.m4a",
+      "bytes": 1572263,
+      "sha256": "e2105bf9937abd01c0cac8b59a578187a9233118188963563554b2c3310b3736"
+    }
+  },
+  "listening_codec": {
+    "music_full_aac_bitrate": "256k",
+    "sfx_aac_bitrate": "112k",
+    "common_additional_gain_db": 0.0,
+    "first_pass": null,
+    "reason": "No extra attenuation needed"
+  },
+  "validation": {
+    "status": "pass",
+    "lossless_stem_sum_max_error": 2.384185791015625e-07,
+    "no_clipping": true,
+    "finite_stereo": true,
+    "exact_lossless_sample_counts": true,
+    "silence_tails_preserved": true,
+    "loudness_target_error_lu": -0.629999999999999,
+    "normalization_actual": {
+      "integrated_lufs": -16.63,
+      "true_peak_dbtp": -2.2,
+      "lra_lu": 13.8,
+      "threshold_lufs": -28.14,
+      "silent": false
+    }
+  }
+}

@@ -1,0 +1,1 @@
+import fs from'node:fs';const P='references/02-danieltian/final-midstate-fix/',s=JSON.parse(fs.readFileSync(P+'candidate-probe.scene.json'));function walk(n){if(n.id.startsWith('post-v14-interior-copy-'))n.opacity=0;for(const c of n.children??[])walk(c)}for(const n of s.layers)walk(n);fs.writeFileSync(P+'letter-base.scene.json',JSON.stringify(s));

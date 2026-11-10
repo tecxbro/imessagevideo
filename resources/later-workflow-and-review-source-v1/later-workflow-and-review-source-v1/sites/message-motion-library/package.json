@@ -1,0 +1,1 @@
+{"name":"message-motion-library","private":true,"type":"module","scripts":{"build":"node --check worker/index.js && mkdir -p dist/server && cp worker/index.js dist/server/index.js","check":"node --test tests/*.test.mjs"}}

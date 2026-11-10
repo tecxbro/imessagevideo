@@ -1,0 +1,45 @@
+{
+  "scene": "/workspace/imessage-recreations/engines/smoke-scene.json",
+  "width": 640,
+  "height": 360,
+  "fps": 30,
+  "duration": 1,
+  "layer_count": 5,
+  "image_count": 0,
+  "blockers": [],
+  "warnings": [
+    "UNEXECUTED: no Figma account, file, Motion capability, rasterization, or export was established in this run.",
+    "Native text metrics, SVG origin/pivot wrapping, clipping, and fractional frame cadence require exported-frame validation.",
+    "Generated absolute layer placement preserves a measured graphic composition; it is not a responsive UI layout.",
+    "layers[0]: family list must resolve to one exact available Figma font family",
+    "layers[1].children[1]: family list must resolve to one exact available Figma font family"
+  ],
+  "execution_status": "unexecuted",
+  "layers": [
+    {
+      "id": "notice",
+      "type": "text",
+      "location": "layers[0]"
+    },
+    {
+      "id": "bubble",
+      "type": "group",
+      "location": "layers[1]"
+    },
+    {
+      "id": "bubble-shape",
+      "type": "rect",
+      "location": "layers[1].children[0]"
+    },
+    {
+      "id": "bubble-text",
+      "type": "text",
+      "location": "layers[1].children[1]"
+    },
+    {
+      "id": "dot",
+      "type": "circle",
+      "location": "layers[2]"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "notice": "Actual neutral capability renders only, not reconstructions and not source fidelity certification.",
+  "engines": [
+    {
+      "method": "remotion",
+      "output": "/workspace/imessage-recreations/engines/smoke-calibrated-remotion-shared-encoder.mp4",
+      "available": true,
+      "probe": {
+        "width": 640,
+        "height": 360,
+        "color_range": "tv",
+        "color_space": "bt709",
+        "r_frame_rate": "30/1",
+        "duration": "1.000000",
+        "nb_frames": "30"
+      }
+    },
+    {
+      "method": "gsap",
+      "output": "/workspace/imessage-recreations/engines/smoke-calibrated-gsap.mp4",
+      "available": true,
+      "probe": {
+        "width": 640,
+        "height": 360,
+        "color_range": "tv",
+        "color_space": "bt709",
+        "r_frame_rate": "30/1",
+        "duration": "1.000000",
+        "nb_frames": "30"
+      }
+    },
+    {
+      "method": "html",
+      "output": "/workspace/imessage-recreations/engines/smoke-calibrated-html.mp4",
+      "available": true,
+      "probe": {
+        "width": 640,
+        "height": 360,
+        "color_range": "tv",
+        "color_space": "bt709",
+        "r_frame_rate": "30/1",
+        "duration": "1.000000",
+        "nb_frames": "30"
+      }
+    },
+    {
+      "method": "motion-canvas",
+      "output": "/workspace/imessage-recreations/engines/smoke-calibrated-motion-canvas.mp4",
+      "available": true,
+      "probe": {
+        "width": 640,
+        "height": 360,
+        "color_range": "tv",
+        "color_space": "bt709",
+        "r_frame_rate": "30/1",
+        "duration": "1.000000",
+        "nb_frames": "30"
+      }
+    },
+    {
+      "method": "pillow",
+      "output": "/workspace/imessage-recreations/engines/smoke-calibrated-pillow.mp4",
+      "available": true,
+      "probe": {
+        "width": 640,
+        "height": 360,
+        "color_range": "tv",
+        "color_space": "bt709",
+        "r_frame_rate": "30/1",
+        "duration": "1.000000",
+        "nb_frames": "30"
+      }
+    }
+  ],
+  "native_png_parity": "smoke-native-png-parity.json",
+  "encoded_parity": "smoke-parity-shared-encoder-remotion/report.json"
+}

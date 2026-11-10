@@ -1,0 +1,39 @@
+{
+  "status": "pass",
+  "id": "02-danieltian",
+  "source_samples_reused": false,
+  "source_snapshot_matches_actual_execution": true,
+  "config_snapshot_matches_actual_execution": true,
+  "synthesis_source_matches_current": true,
+  "all_six_export_hashes_verified": {
+    "music.flac": "ac24a106d317b87272169e2bd1f19fb026926066f79349ff71c9801d126b4d40",
+    "sfx.flac": "ad6323795a5b15ccfd1822c9cd9c0c71bc908d943a3e443511d407a892d1f82b",
+    "full_mix.flac": "acba93f12f3ede1279b50d793d8cd0cc00c202ddcb5e544b3dd9060a60382f43",
+    "music.m4a": "6b43a54e7d3dfb4e297d18782e4543b8b92fc9ab27c575dae28ca87fd3f2129f",
+    "sfx.m4a": "e4600667539ea3644499cc11e4b5609624845159ef142dcd65b617a581a76b8f",
+    "full_mix.m4a": "161401faaedbfa7e7c62dc0a2b30b5c4518133f8d06f0cc67e66ddea6ef6ed53"
+  },
+  "execution_mixer_sha256": "e09bae5eef28ded721d6ff5f7302d666fcc6bab16390718783c57149d1ba0094",
+  "current_mixer_sha256": "411a2a5586d329a0ced74e3cf921231ce4be4d86e9362533ee19728160be03e2",
+  "history_policy": "Actual older executions remain truthfully pinned to their preserved exact source/config; no relabelling. Current optional peak-control branch was used only for Linq.",
+  "signal_validation": {
+    "status": "pass",
+    "lossless_stem_sum_max_error": 2.384185791015625e-07,
+    "no_clipping": true,
+    "finite_stereo": true,
+    "exact_lossless_sample_counts": true,
+    "silence_tails_preserved": true,
+    "normalization_actual": {
+      "integrated_lufs": -16.0,
+      "true_peak_dbtp": -4.01,
+      "lra_lu": 0.5,
+      "threshold_lufs": -26.08,
+      "silent": false
+    }
+  },
+  "synthesis_environment": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "reference_audio_inputs": []
+}

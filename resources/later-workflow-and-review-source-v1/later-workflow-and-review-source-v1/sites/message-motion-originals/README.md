@@ -1,0 +1,5 @@
+Companion public static media origin for the six user-supplied comparison videos. Needed because the Sites connector input limit is 256 MiB, including source-only fallback snapshots. The main gallery retains all 30 full-quality reconstructions; this origin hosts only the originals and a small attribution index.
+
+`bridge.html` is an origin/window/film-allowlisted public loader for the main gallery. It fetches one original from this origin and transfers its ArrayBuffer to the gallery, which uses a local Blob video URL. This avoids depending on this static gateway’s CORS/Range behavior. Run `node --test tests/bridge.test.mjs` to verify authorization checks, exact transfers, type rejection and cancellation.
+
+The companion also hosts six newly produced quiet-music UI previews, six UI-only previews, and the CC0/custom UI sound kit. The bridge accepts fixed `recreated` and `ui` variants as well as the original-reference default; every route stays on the strict six-film allowlist. New previews contain no reference-film audio and preserve the accepted GSAP video packet streams.

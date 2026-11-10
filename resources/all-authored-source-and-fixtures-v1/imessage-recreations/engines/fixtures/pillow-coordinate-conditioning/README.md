@@ -1,0 +1,11 @@
+# Native Pillow coordinate conditioning
+
+The Mini53-state repair is a renderer fix; the frozen source18 tree and the other four methods stay unchanged. A10000× clipped group contains opposing tiny camera scales. Rasterizing that intermediate coordinate system at one pixel per local unit collapsed correct photographs to1×1 and then enlarged the result. Fresh441 and436→441 reproduce the same defect, so retained cache history alone is not the cause.
+
+The renderer now rebases such bounded clipped group coordinates before drawing. It composes the exact affine translation/origins, adjusts child transforms, scales local clip/blur/shadow lengths and handles direct unit-sized native primitives. The first group-only prototype left a1×1 circle as a gray veil; primitive rebasing closes that residual too. Numerical noise within1e−8 of a half pixel is snapped during rebasing so a physical1.5pixel shadow offset does not become1.4999999999999998 and round differently. The source tree is untouched. Unchanged branches retain their original objects and previous raster operations.
+
+Neutral physical references test rotation/nonzero origins, rounded clip, Gaussian, shadow, group opacity, circle/stroke, bitmap, native text/path and camera-unit changes. Both0°/20° fixtures and same-processunit changes are pixel-exact. Run `engines/.venv/bin/python engines/fixtures/pillow-coordinate-conditioning/neutral.py`.
+
+All53Mini states436–479/486–494 improve with the existingAA2capture option: mean nativeG/PMAE18.7238→.60066. Outside controls435/480/485/495/536 remain byte-identical atAA1. Allother actualreferences trigger0 and representative original cache frames remain byte-identical. Exact compatibility/correction tuples retain their true old1223capture fingerprints; no unrelated master is recaptured or relabeled. See release-report.json, affected-scope-audit.json, unaffected-controls.json and diagnostic-metrics.json.
+
+AA applies to the last capture; previousAA1states are recorded in captureHistory. From a fresh completeAA1render, reproduce the measured higher-quality interval with `--aa 2 --frames-dir CACHE --ranges 436:479,486:494`. Native text/edge sampling remains distinct from Chromium. No full-source-frame or video playback layer is introduced.

@@ -1,0 +1,39 @@
+{
+  "title": "Native local-space Gaussian under anisotropic parent transform",
+  "width": 360,
+  "height": 260,
+  "fps": 10,
+  "duration": 0.2,
+  "background": "#888888",
+  "layers": [
+    {
+      "id": "ellipse-blur-wrapper",
+      "type": "group",
+      "x": 180,
+      "y": 130,
+      "rotation": 30,
+      "scaleX": 4,
+      "scaleY": 0.25,
+      "blur": 3,
+      "children": [
+        {
+          "id": "inverse-body",
+          "type": "group",
+          "scaleX": 0.25,
+          "scaleY": 4,
+          "children": [
+            {
+              "id": "neutral-square",
+              "type": "rect",
+              "x": -30,
+              "y": -30,
+              "width": 60,
+              "height": 60,
+              "fill": "#ffffff"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

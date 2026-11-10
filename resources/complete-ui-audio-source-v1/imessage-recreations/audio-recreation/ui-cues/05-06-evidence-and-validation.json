@@ -1,0 +1,72 @@
+{
+  "canonical_inputs_unchanged": true,
+  "only_visual_states_used": true,
+  "audio_transient_analysis_used": false,
+  "outputs_are_output_native_frames": true,
+  "rene_cut_checks": {
+    "output1048_source": 1048,
+    "output1049_source": 1230,
+    "output1482_source": 1663
+  },
+  "glyph_schedule_checks": {
+    "visible_glyphs": 23,
+    "reconstructed_full_draft": "Yo i'm bored, chess battle?",
+    "whitespace_has_no_fake_keyframes": true,
+    "starts": [
+      23,
+      25,
+      30,
+      31,
+      34,
+      39,
+      40,
+      43,
+      45,
+      48,
+      50,
+      54,
+      56,
+      59,
+      61,
+      64,
+      69,
+      70,
+      73,
+      75,
+      78,
+      80,
+      83
+    ]
+  },
+  "evidence_sources": [
+    {
+      "path": "outputs/05-linq/final-v20/scene.json",
+      "sha256": "658184bb8d05c50633f37fa0ef0bfd8a943773076f249c7e0dbf02991e6e93c6"
+    },
+    {
+      "path": "outputs/06-gallery/final-v23/scene.json",
+      "sha256": "abc87b6e69314e5df3ef75a81efd216011fa1604872aec66c1eb2a39f69658b2"
+    },
+    {
+      "path": "references/05-linq/refine_composers_v19.py",
+      "sha256": "70f75e92dd2879eb79b046c6051f7126e7b61357cd133d51c4c7320ece6f4455"
+    },
+    {
+      "path": "references/05-linq/composer-v19-frozen-elements.json",
+      "sha256": "b7d9d68318a6e3f8778722d5fc8479164494fe743274a31509e2759898485c1a"
+    },
+    {
+      "path": "references/05-linq/build_transition_v10.py",
+      "sha256": "571794b770b779edc23c2254737722d00582c435e3df6dd3ed22d25130f8b668"
+    },
+    {
+      "path": "outputs/06-gallery/final-v23/build-birthday-birth-v23.py",
+      "sha256": "22e56e82a485bc9cfebb37f886dcc9d0ff1a2dbf1ccbc11f53308b9eafe186a5"
+    }
+  ],
+  "generator": {
+    "path": "audio-recreation/ui-cues/05-06-build-cues.py",
+    "sha256": "b2a9098b31b924b855b8de0b5ddc71e81c6420699d7820cdc4ba282b88447916"
+  },
+  "notice": "Cue sheets only. No source/scene/media/cache/library/Git/site/publishing/paid calls edited or used. Optional inferred events are not UI/audio ground truth."
+}

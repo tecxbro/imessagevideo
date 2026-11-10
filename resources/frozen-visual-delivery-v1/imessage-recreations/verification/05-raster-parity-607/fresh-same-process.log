@@ -1,0 +1,15 @@
+Unable to close browser tab ProtocolError: Protocol error (Target.closeTarget): No target with given id found
+    at createProtocolError (file:///workspace/imessage-recreations/engines/node_modules/@remotion/renderer/dist/esm/index.mjs:1881:23)
+    at #onMessage (file:///workspace/imessage-recreations/engines/node_modules/@remotion/renderer/dist/esm/index.mjs:1765:27)
+    at WebSocket.<anonymous> (file:///workspace/imessage-recreations/engines/node_modules/@remotion/renderer/dist/esm/index.mjs:3896:24)
+    at callListener (/workspace/imessage-recreations/engines/node_modules/ws/lib/event-target.js:290:14)
+    at WebSocket.onMessage (/workspace/imessage-recreations/engines/node_modules/ws/lib/event-target.js:209:9)
+    at WebSocket.emit (node:events:514:28)
+    at Receiver.receiverOnMessage (/workspace/imessage-recreations/engines/node_modules/ws/lib/websocket.js:1239:20)
+    at Receiver.emit (node:events:514:28)
+    at Receiver.dataMessage (/workspace/imessage-recreations/engines/node_modules/ws/lib/receiver.js:650:14)
+    at Receiver.getData (/workspace/imessage-recreations/engines/node_modules/ws/lib/receiver.js:534:10) {
+  code: undefined,
+  originalMessage: 'No target with given id found'
+}
+{"frames":[606,608,607],"output":"/workspace/imessage-recreations/verification/05-raster-parity-607/fresh-same-process","runtimeChunk":{"first":0,"last":623,"frames":174,"bytes":5885710}}

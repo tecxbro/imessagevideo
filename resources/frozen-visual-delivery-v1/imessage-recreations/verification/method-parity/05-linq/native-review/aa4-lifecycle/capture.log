@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/workspace/imessage-recreations/references/05-linq/quarantine_menu_aa4_v20.py", line 30, in <module>
+    image=engine.render(scene,frame/scene['fps'],str(scene_path.parent),aa)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/imessage-recreations/engines/render_pillow.py", line 324, in render
+    r=raster(layer)
+      ^^^^^^^^^^^^^
+  File "/workspace/imessage-recreations/engines/render_pillow.py", line 247, in raster
+    result=raster(c)
+           ^^^^^^^^^
+  File "/workspace/imessage-recreations/engines/render_pillow.py", line 247, in raster
+    result=raster(c)
+           ^^^^^^^^^
+  File "/workspace/imessage-recreations/engines/render_pillow.py", line 299, in raster
+    import cairosvg
+ModuleNotFoundError: No module named 'cairosvg'

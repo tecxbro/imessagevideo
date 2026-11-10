@@ -1,0 +1,533 @@
+{
+  "format_version": 1,
+  "id": "01-photonhq",
+  "source_samples_reused": false,
+  "audio_inputs": [
+    {
+      "kind": "new_AI_music_text_only",
+      "path": "audio-recreation/ai/01-photonhq/music.mp3",
+      "sha256": "bf30bc60ebe17dde7db9f1d75727cc50273bac49083ae7620cc38e8556662f92",
+      "provenance": {
+        "source_kind": "new_AI_music_text_only",
+        "provider": "fal",
+        "endpoint_id": "elevenlabs/music/v2.5",
+        "request_id": "01a1c182-4303-7c21-b88b-a58d24846c26",
+        "submission_key": "imessage-new-score-01-photonhq-v1-20261109",
+        "output_url": "https://v3b.fal.media/files/b/0ab1ce16/Wc2BtHuQitrf1wuuDCgUc_music_generated.mp3",
+        "sha256": "bf30bc60ebe17dde7db9f1d75727cc50273bac49083ae7620cc38e8556662f92",
+        "bytes": 874604,
+        "reference_audio_used_as_generation_input": false
+      },
+      "provenance_sha256": "46dd9a68521870ecd5641384913673975c15ca51c33ba0cca26c738d867d3b40"
+    }
+  ],
+  "synthesis": {
+    "kind": "original code oscillators/modal tones/seeded filtered noise",
+    "code": "audio-recreation/synthesis/ui_synth.py",
+    "sha256": "4797a0e736e8115975398a7c4acf5289a89d23bb0222420d7dc7d89a2f40f23c"
+  },
+  "mixer_sha256": "681ceff5461497c496e4360062230c49dede335f33144d40f9a5e4eab4055070",
+  "config_sha256": "473e6ca3ede798adef54a6890e9efb27c82355e5d5f41cd42585074fe0e94ed0",
+  "videos_metadata_sha256": "76a94926f735547239ec12a7e624ef349057f5301019fe86223392f053256e53",
+  "cue_metadata": {
+    "file": "audio-recreation/analysis/sfx-01-photonhq-cues.json",
+    "usage": "Timing metadata only; no reference samples read",
+    "available": true,
+    "sha256": "3e5507106b9c83b59ea549fae16d17d7da74f7d4896a7c3df0f2cd9998424cf6"
+  },
+  "picture": {
+    "frames": 655,
+    "fps_numerator": 30,
+    "fps_denominator": 1,
+    "exact_duration_fraction": "131/6",
+    "sample_rate": 48000,
+    "channels": 2,
+    "sample_count": 1048000,
+    "rendered_duration_s": 21.833333333333332,
+    "sample_rounding_error_s": 0.0
+  },
+  "music_edit": {
+    "decoded_input_samples": 1049472,
+    "trimmed_samples": 1472,
+    "padded_silent_samples": 0,
+    "looped": false,
+    "fade_start_s": 20,
+    "fade_end_sample": 1048000,
+    "silence_deadline_s": 21.833333333333332,
+    "remainder_silent": false
+  },
+  "selected_events": [
+    {
+      "cue_index": 0,
+      "output_time": 0.085,
+      "category": "title_tick",
+      "omit_by_default": false,
+      "context": "Introducing title reveal",
+      "selection_reason": "Restrained accent for a send, selection, confirmation or major visual change; optional new sound design, not certification of an isolated original effect.",
+      "timing_status": "model_reported_initial_digital_stutter_exact_attack_unverified",
+      "timing_confidence": 0.3,
+      "sample_offset": 4080,
+      "parameters": {
+        "effect": "touch_click",
+        "duration": 0.045,
+        "pitch": 1.1,
+        "energy": 0.75,
+        "gain_db": -20,
+        "duck_db": 0,
+        "seed": 20262109,
+        "pan": 0.0
+      }
+    },
+    {
+      "cue_index": 1,
+      "output_time": 1.87,
+      "category": "ui_click",
+      "omit_by_default": false,
+      "context": "Cursor/pill click and phrase entrance",
+      "selection_reason": "Restrained accent for a send, selection, confirmation or major visual change; optional new sound design, not certification of an isolated original effect.",
+      "timing_status": "model_reported_click_in_approximate_passage_exact_attack_unverified",
+      "timing_confidence": 0.3,
+      "sample_offset": 89760,
+      "parameters": {
+        "effect": "touch_click",
+        "duration": 0.035,
+        "pitch": 1,
+        "energy": 0.75,
+        "gain_db": -15,
+        "duck_db": 0.6,
+        "seed": 20262110,
+        "pan": 0.08106
+      }
+    },
+    {
+      "cue_index": 2,
+      "output_time": 4.03,
+      "category": "soft_transition",
+      "omit_by_default": false,
+      "context": "Your agent phrase entrance",
+      "selection_reason": "Restrained accent for a send, selection, confirmation or major visual change; optional new sound design, not certification of an isolated original effect.",
+      "timing_status": "mixed_transient_candidate",
+      "timing_confidence": 0.3,
+      "sample_offset": 193440,
+      "parameters": {
+        "effect": "air_whoosh",
+        "duration": 0.22,
+        "pitch": 1,
+        "energy": 0.75,
+        "gain_db": -22,
+        "duck_db": 0.4,
+        "seed": 20262111,
+        "pan": -0.11954
+      }
+    },
+    {
+      "cue_index": 4,
+      "output_time": 6.36,
+      "category": "soft_transition",
+      "omit_by_default": false,
+      "context": "Free for everyone line",
+      "selection_reason": "Restrained accent for a send, selection, confirmation or major visual change; optional new sound design, not certification of an isolated original effect.",
+      "timing_status": "mixed_transient_candidate",
+      "timing_confidence": 0.3,
+      "sample_offset": 305280,
+      "parameters": {
+        "effect": "air_whoosh",
+        "duration": 0.22,
+        "pitch": 1,
+        "energy": 0.75,
+        "gain_db": -22,
+        "duck_db": 0.4,
+        "seed": 20262113,
+        "pan": -0.0209
+      }
+    },
+    {
+      "cue_index": 5,
+      "output_time": 8.265,
+      "category": "soft_transition",
+      "omit_by_default": false,
+      "context": "SMS wall entrance",
+      "selection_reason": "Restrained accent for a send, selection, confirmation or major visual change; optional new sound design, not certification of an isolated original effect.",
+      "timing_status": "mixed_transient_candidate",
+      "timing_confidence": 0.3,
+      "sample_offset": 396720,
+      "parameters": {
+        "effect": "air_whoosh",
+        "duration": 0.22,
+        "pitch": 1,
+        "energy": 0.75,
+        "gain_db": -22,
+        "duck_db": 0.4,
+        "seed": 20262114,
+        "pan": -0.06441
+      }
+    },
+    {
+      "cue_index": 8,
+      "output_time": 11.68,
+      "category": "soft_transition",
+      "omit_by_default": false,
+      "context": "iMessage wall transition",
+      "selection_reason": "Restrained accent for a send, selection, confirmation or major visual change; optional new sound design, not certification of an isolated original effect.",
+      "timing_status": "mixed_transient_candidate",
+      "timing_confidence": 0.3,
+      "sample_offset": 560640,
+      "parameters": {
+        "effect": "air_whoosh",
+        "duration": 0.22,
+        "pitch": 1,
+        "energy": 0.75,
+        "gain_db": -22,
+        "duck_db": 0.4,
+        "seed": 20262117,
+        "pan": 0.04116
+      }
+    },
+    {
+      "cue_index": 11,
+      "output_time": 15.765,
+      "category": "confirm_tick",
+      "omit_by_default": false,
+      "context": "Registration badge/title",
+      "selection_reason": "Restrained accent for a send, selection, confirmation or major visual change; optional new sound design, not certification of an isolated original effect.",
+      "timing_status": "mixed_transient_candidate",
+      "timing_confidence": 0.3,
+      "sample_offset": 756720,
+      "parameters": {
+        "effect": "glass_confirm",
+        "duration": 0.42,
+        "pitch": 1,
+        "energy": 0.75,
+        "gain_db": -17,
+        "duck_db": 1.2,
+        "seed": 20262120,
+        "pan": 0.1145
+      }
+    },
+    {
+      "cue_index": 13,
+      "output_time": 17.27,
+      "category": "soft_transition",
+      "omit_by_default": false,
+      "context": "Try it today title",
+      "selection_reason": "Restrained accent for a send, selection, confirmation or major visual change; optional new sound design, not certification of an isolated original effect.",
+      "timing_status": "mixed_transient_candidate",
+      "timing_confidence": 0.3,
+      "sample_offset": 828960,
+      "parameters": {
+        "effect": "air_whoosh",
+        "duration": 0.22,
+        "pitch": 1,
+        "energy": 0.75,
+        "gain_db": -22,
+        "duck_db": 0.4,
+        "seed": 20262122,
+        "pan": -0.02577
+      }
+    },
+    {
+      "cue_index": 14,
+      "output_time": 17.955,
+      "category": "shimmer_short",
+      "omit_by_default": false,
+      "context": "URL letter reveal",
+      "selection_reason": "Restrained accent for a send, selection, confirmation or major visual change; optional new sound design, not certification of an isolated original effect.",
+      "timing_status": "mixed_transient_candidate",
+      "timing_confidence": 0.3,
+      "sample_offset": 861840,
+      "parameters": {
+        "effect": "digital_sparkle",
+        "duration": 0.32,
+        "pitch": 1,
+        "energy": 0.75,
+        "gain_db": -21,
+        "duck_db": 0.5,
+        "seed": 20262123,
+        "pan": 0.09817
+      }
+    },
+    {
+      "cue_index": 15,
+      "output_time": 19.725,
+      "category": "logo_resolve",
+      "omit_by_default": false,
+      "context": "Photon mark entrance",
+      "selection_reason": "Restrained accent for a send, selection, confirmation or major visual change; optional new sound design, not certification of an isolated original effect.",
+      "timing_status": "mixed_transient_candidate",
+      "timing_confidence": 0.3,
+      "sample_offset": 946800,
+      "parameters": {
+        "effect": "glass_confirm",
+        "duration": 0.6,
+        "pitch": 0.92,
+        "energy": 0.75,
+        "gain_db": -18,
+        "duck_db": 1,
+        "seed": 20262124,
+        "pan": -0.119
+      }
+    }
+  ],
+  "selected_count": 10,
+  "ducking": {
+    "maximum_depth_db": 1.2,
+    "ceiling_db": 2.0,
+    "overlap_rule": "maximum, never sum",
+    "attack_s": 0.075,
+    "release_s": 0.24
+  },
+  "normalization": {
+    "method": "FFmpeg loudnorm measured common static gain; no dynamics/limiter",
+    "music_before_premix": {
+      "integrated_lufs": -13.73,
+      "true_peak_dbtp": -0.43,
+      "lra_lu": 13.4,
+      "threshold_lufs": -24.53,
+      "silent": false
+    },
+    "music_premix_gain_db": -4.27,
+    "raw_stems": {
+      "music": {
+        "samples_per_channel": 1048000,
+        "duration_s": 21.833333333333332,
+        "sample_peak": 0.5652225680508507,
+        "sample_peak_dbfs": -4.955610121739228,
+        "rms": 0.1040008192870991,
+        "finite": true,
+        "clipped_samples": 0,
+        "endpoints_zero": true
+      },
+      "sfx": {
+        "samples_per_channel": 1048000,
+        "duration_s": 21.833333333333332,
+        "sample_peak": 0.09441941231489182,
+        "sample_peak_dbfs": -20.498774140623105,
+        "rms": 0.0038475230203959903,
+        "finite": true,
+        "clipped_samples": 0,
+        "endpoints_zero": true
+      }
+    },
+    "raw_mix": {
+      "samples_per_channel": 1048000,
+      "duration_s": 21.833333333333332,
+      "sample_peak": 0.5652225680508507,
+      "sample_peak_dbfs": -4.955610121739228,
+      "rms": 0.10407855194835605,
+      "finite": true,
+      "clipped_samples": 0,
+      "endpoints_zero": true,
+      "loudness": {
+        "integrated_lufs": -18.14,
+        "true_peak_dbtp": -4.7,
+        "lra_lu": 13.0,
+        "threshold_lufs": -28.82,
+        "silent": false
+      }
+    },
+    "target_lufs": -16.0,
+    "true_peak_ceiling_dbtp": -1.5,
+    "master_gain_db": 2.1400000000000006,
+    "true_peak_limited": false
+  },
+  "toolchain": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "ffmpeg": "ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers"
+  },
+  "exports": {
+    "music.flac": {
+      "samples_per_channel": 1048000,
+      "duration_s": 21.833333333333332,
+      "sample_peak": 0.723135232925415,
+      "sample_peak_dbfs": -2.8156095611266134,
+      "rms": 0.1330567037891486,
+      "finite": true,
+      "clipped_samples": 0,
+      "endpoints_zero": true,
+      "raw_decoded_samples": 1048000,
+      "loudness": {
+        "integrated_lufs": -15.93,
+        "true_peak_dbtp": -2.56,
+        "lra_lu": 13.4,
+        "threshold_lufs": -26.69,
+        "silent": false
+      },
+      "stream": {
+        "codec_name": "flac",
+        "sample_rate": "48000",
+        "channels": 2,
+        "time_base": "1/48000",
+        "duration_ts": 1048000,
+        "bits_per_raw_sample": "24"
+      },
+      "file": "music.flac",
+      "bytes": 3959537,
+      "sha256": "387bbcba6bb77f9e34532a5d291c945b81512a7b5f89450ef3b3afd922f7abf1"
+    },
+    "sfx.flac": {
+      "samples_per_channel": 1048000,
+      "duration_s": 21.833333333333332,
+      "sample_peak": 0.12079834938049316,
+      "sample_peak_dbfs": -18.358779999701905,
+      "rms": 0.004922449014698701,
+      "finite": true,
+      "clipped_samples": 0,
+      "endpoints_zero": true,
+      "raw_decoded_samples": 1048000,
+      "loudness": {
+        "integrated_lufs": -35.41,
+        "true_peak_dbtp": -18.24,
+        "lra_lu": 11.0,
+        "threshold_lufs": -46.36,
+        "silent": false
+      },
+      "stream": {
+        "codec_name": "flac",
+        "sample_rate": "48000",
+        "channels": 2,
+        "time_base": "1/48000",
+        "duration_ts": 1048000,
+        "bits_per_raw_sample": "24"
+      },
+      "file": "sfx.flac",
+      "bytes": 316070,
+      "sha256": "dc5a123bb16ce987ead4fa0e6be7a89d790391902840b544f979cca5676d132d"
+    },
+    "full_mix.flac": {
+      "samples_per_channel": 1048000,
+      "duration_s": 21.833333333333332,
+      "sample_peak": 0.723135232925415,
+      "sample_peak_dbfs": -2.8156095611266134,
+      "rms": 0.1331561535025321,
+      "finite": true,
+      "clipped_samples": 0,
+      "endpoints_zero": true,
+      "raw_decoded_samples": 1048000,
+      "loudness": {
+        "integrated_lufs": -16.01,
+        "true_peak_dbtp": -2.56,
+        "lra_lu": 13.0,
+        "threshold_lufs": -26.68,
+        "silent": false
+      },
+      "stream": {
+        "codec_name": "flac",
+        "sample_rate": "48000",
+        "channels": 2,
+        "time_base": "1/48000",
+        "duration_ts": 1048000,
+        "bits_per_raw_sample": "24"
+      },
+      "file": "full_mix.flac",
+      "bytes": 3979949,
+      "sha256": "9bd42885aed1b8f75faa578e47dae11aef821aeef13c969cc8bdd19fb97c51af"
+    },
+    "music.m4a": {
+      "samples_per_channel": 1048000,
+      "duration_s": 21.833333333333332,
+      "sample_peak": 0.7541390061378479,
+      "sample_peak_dbfs": -2.45097191458106,
+      "rms": 0.132656714541016,
+      "finite": true,
+      "clipped_samples": 0,
+      "endpoints_zero": false,
+      "raw_decoded_samples": 1048576,
+      "loudness": {
+        "integrated_lufs": -15.97,
+        "true_peak_dbtp": -2.39,
+        "lra_lu": 13.5,
+        "threshold_lufs": -26.73,
+        "silent": false
+      },
+      "stream": {
+        "codec_name": "aac",
+        "sample_rate": "48000",
+        "channels": 2,
+        "time_base": "1/48000",
+        "duration_ts": 1048000
+      },
+      "file": "music.m4a",
+      "bytes": 717596,
+      "sha256": "cd089fb053cd5a4f94ecb670c2c22fc2b227a988c8023e7c82dbced969cb8605"
+    },
+    "sfx.m4a": {
+      "samples_per_channel": 1048000,
+      "duration_s": 21.833333333333332,
+      "sample_peak": 0.12107498943805695,
+      "sample_peak_dbfs": -18.338911203339595,
+      "rms": 0.004881157589089573,
+      "finite": true,
+      "clipped_samples": 0,
+      "endpoints_zero": true,
+      "raw_decoded_samples": 1048576,
+      "loudness": {
+        "integrated_lufs": -35.48,
+        "true_peak_dbtp": -18.27,
+        "lra_lu": 11.2,
+        "threshold_lufs": -46.43,
+        "silent": false
+      },
+      "stream": {
+        "codec_name": "aac",
+        "sample_rate": "48000",
+        "channels": 2,
+        "time_base": "1/48000",
+        "duration_ts": 1048000
+      },
+      "file": "sfx.m4a",
+      "bytes": 52517,
+      "sha256": "fcef3ec5526857abd0328e5db0bdcbbb58ec0d5c0b1c9e6e9139e0e54c4c7df7"
+    },
+    "full_mix.m4a": {
+      "samples_per_channel": 1048000,
+      "duration_s": 21.833333333333332,
+      "sample_peak": 0.7457444667816162,
+      "sample_peak_dbfs": -2.54819920598581,
+      "rms": 0.1328010562143549,
+      "finite": true,
+      "clipped_samples": 0,
+      "endpoints_zero": false,
+      "raw_decoded_samples": 1048576,
+      "loudness": {
+        "integrated_lufs": -16.04,
+        "true_peak_dbtp": -2.54,
+        "lra_lu": 13.1,
+        "threshold_lufs": -26.72,
+        "silent": false
+      },
+      "stream": {
+        "codec_name": "aac",
+        "sample_rate": "48000",
+        "channels": 2,
+        "time_base": "1/48000",
+        "duration_ts": 1048000
+      },
+      "file": "full_mix.m4a",
+      "bytes": 720012,
+      "sha256": "e3bdd6daf89f5b2e64e892d55555014d4a535c352649d60fcec1bde18543d1a7"
+    }
+  },
+  "listening_codec": {
+    "music_full_aac_bitrate": "256k",
+    "sfx_aac_bitrate": "112k",
+    "common_additional_gain_db": 0.0,
+    "first_pass": null,
+    "reason": "No extra attenuation needed"
+  },
+  "validation": {
+    "status": "pass",
+    "lossless_stem_sum_max_error": 2.384185791015625e-07,
+    "no_clipping": true,
+    "finite_stereo": true,
+    "exact_lossless_sample_counts": true,
+    "silence_tails_preserved": true,
+    "normalization_actual": {
+      "integrated_lufs": -16.01,
+      "true_peak_dbtp": -2.56,
+      "lra_lu": 13.0,
+      "threshold_lufs": -26.68,
+      "silent": false
+    }
+  }
+}

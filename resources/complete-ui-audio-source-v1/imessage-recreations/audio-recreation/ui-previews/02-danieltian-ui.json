@@ -1,0 +1,38 @@
+{
+  "id": "02-danieltian",
+  "variant": "ui",
+  "video_sha256": "59740a0f1161f75dccf50d1d7f1a30e09192d7b573b17a9675fd76870858c72b",
+  "audio_sha256": "22543c0a1ff601ecc702b95d548169a8be98216817abe2ea9153c420499cb2db",
+  "output_sha256": "c790c78a2e6148f4c8651cfd7c8e5d52bd81261d60b93c3d142cf0cdfd4917ec",
+  "video_packet_sha256": "SHA256=ce67be4e63720de594be7689529af9879083e6b91943aca8050f546125641d8d",
+  "aac_packet_sha256": "SHA256=9b288ef35ea77282a0c21129059ce2c5146a69122970c99e236a7f7527774d4d",
+  "picture_and_aac_packets_unchanged": true,
+  "reference_audio_reused": false,
+  "probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "codec_type": "video",
+        "time_base": "1/15360",
+        "duration_ts": 696320,
+        "nb_read_packets": "1360"
+      },
+      {
+        "codec_name": "aac",
+        "codec_type": "audio",
+        "time_base": "1/48000",
+        "duration_ts": 2176000,
+        "nb_read_packets": "2126"
+      }
+    ],
+    "format": {
+      "duration": "45.333333"
+    }
+  },
+  "ui_report_sha256": "f0c674e1334f19118391da4808f4f32edfe6d16f89a18b18ad216f7948ca25e2",
+  "visual_cues": 45,
+  "audible_cues": 45,
+  "audio_audition_boost": true
+}

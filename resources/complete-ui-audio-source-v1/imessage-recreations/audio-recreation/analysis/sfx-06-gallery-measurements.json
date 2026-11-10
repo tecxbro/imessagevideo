@@ -1,0 +1,3314 @@
+{
+  "reference": "06-gallery",
+  "source_sha256": "fcbc98fa2f1697da5c947ed59b952128acd1c8f6194ce982c60133a423f1ddaf",
+  "source_audio": {
+    "codec_name": "aac",
+    "sample_rate": "48000",
+    "channels": 2,
+    "start_time": "0.000000",
+    "duration": "55.509333"
+  },
+  "source_video_duration": 55.4667,
+  "output_video_duration": 49.433333,
+  "measurement": {
+    "sample_rate": 24000,
+    "hop_s": 0.005,
+    "window_s": 0.042666666666666665,
+    "waveform_saved": false,
+    "auditioned": false,
+    "listening_limitation": "No local audition/listening endpoint was available; these are signal measurements correlated with visual scene context.",
+    "timing_uncertainty_s": 0.03,
+    "duration_limit": "Estimated decay includes overlapping music; not an isolated SFX tail.",
+    "beat_grid": {
+      "period_s": 0.895,
+      "phase_s": 0.01,
+      "alternatives": [
+        {
+          "period_s": 0.895,
+          "bpm": 67.04,
+          "relative_autocorrelation": 0.8421
+        },
+        {
+          "period_s": 0.45,
+          "bpm": 133.33,
+          "relative_autocorrelation": 0.8076
+        },
+        {
+          "period_s": 0.67,
+          "bpm": 89.55,
+          "relative_autocorrelation": 0.7972
+        },
+        {
+          "period_s": 1.12,
+          "bpm": 53.57,
+          "relative_autocorrelation": 0.7882
+        },
+        {
+          "period_s": 1.345,
+          "bpm": 44.61,
+          "relative_autocorrelation": 0.7681
+        },
+        {
+          "period_s": 1.46,
+          "bpm": 41.1,
+          "relative_autocorrelation": 0.1543
+        },
+        {
+          "period_s": 0.37,
+          "bpm": 162.16,
+          "relative_autocorrelation": 0.1524
+        },
+        {
+          "period_s": 1.235,
+          "bpm": 48.58,
+          "relative_autocorrelation": 0.1494
+        }
+      ]
+    },
+    "rms_dbfs": -20.96,
+    "peak_dbfs": -6.15,
+    "stereo_correlation": 0.8702
+  },
+  "onset_candidates": [
+    {
+      "source_time": 0.225,
+      "output_time": 0.225,
+      "onset_score": 11.366,
+      "strength_relative": 0.864,
+      "duration_estimate": 0.26,
+      "band_energy_fraction": {
+        "low_0_180": 0.0,
+        "low_mid_180_1200": 0.7692999839782715,
+        "mid_1200_5000": 0.04439999908208847,
+        "high_5000_12000": 0.18619999289512634
+      },
+      "centroid_hz": 1901.2,
+      "spectral_flatness": 0.504,
+      "percussive_mask_fraction": 0.241,
+      "distance_to_recurring_attack_grid_s": 0.215,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 0.445,
+      "output_time": 0.445,
+      "onset_score": 8.591,
+      "strength_relative": 0.653,
+      "duration_estimate": 0.045,
+      "band_energy_fraction": {
+        "low_0_180": 0.0019000000320374966,
+        "low_mid_180_1200": 0.7124999761581421,
+        "mid_1200_5000": 0.12439999729394913,
+        "high_5000_12000": 0.16130000352859497
+      },
+      "centroid_hz": 1820.8,
+      "spectral_flatness": 0.3201,
+      "percussive_mask_fraction": 0.179,
+      "distance_to_recurring_attack_grid_s": 0.435,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 0.67,
+      "output_time": 0.67,
+      "onset_score": 10.941,
+      "strength_relative": 0.832,
+      "duration_estimate": 0.07,
+      "band_energy_fraction": {
+        "low_0_180": 0.0005000000237487257,
+        "low_mid_180_1200": 0.007000000216066837,
+        "mid_1200_5000": 0.19709999859333038,
+        "high_5000_12000": 0.7954999804496765
+      },
+      "centroid_hz": 6919.6,
+      "spectral_flatness": 0.534,
+      "percussive_mask_fraction": 0.723,
+      "distance_to_recurring_attack_grid_s": 0.235,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 0.895,
+      "output_time": 0.895,
+      "onset_score": 11.86,
+      "strength_relative": 0.902,
+      "duration_estimate": 0.045,
+      "band_energy_fraction": {
+        "low_0_180": 0.0013000000035390258,
+        "low_mid_180_1200": 0.03460000082850456,
+        "mid_1200_5000": 0.5830000042915344,
+        "high_5000_12000": 0.38109999895095825
+      },
+      "centroid_hz": 4577.7,
+      "spectral_flatness": 0.4851,
+      "percussive_mask_fraction": 0.661,
+      "distance_to_recurring_attack_grid_s": 0.01,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 1.12,
+      "output_time": 1.12,
+      "onset_score": 8.438,
+      "strength_relative": 0.642,
+      "duration_estimate": 0.055,
+      "band_energy_fraction": {
+        "low_0_180": 0.0031999999191612005,
+        "low_mid_180_1200": 0.11469999700784683,
+        "mid_1200_5000": 0.2184000015258789,
+        "high_5000_12000": 0.6636999845504761
+      },
+      "centroid_hz": 5978.4,
+      "spectral_flatness": 0.6156,
+      "percussive_mask_fraction": 0.642,
+      "distance_to_recurring_attack_grid_s": 0.215,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 1.345,
+      "output_time": 1.345,
+      "onset_score": 8.502,
+      "strength_relative": 0.646,
+      "duration_estimate": 0.14,
+      "band_energy_fraction": {
+        "low_0_180": 0.00019999999494757503,
+        "low_mid_180_1200": 0.9427000284194946,
+        "mid_1200_5000": 0.03370000049471855,
+        "high_5000_12000": 0.023399999365210533
+      },
+      "centroid_hz": 609.6,
+      "spectral_flatness": 0.344,
+      "percussive_mask_fraction": 0.047,
+      "distance_to_recurring_attack_grid_s": 0.44,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 1.565,
+      "output_time": 1.565,
+      "onset_score": 7.13,
+      "strength_relative": 0.542,
+      "duration_estimate": 0.055,
+      "band_energy_fraction": {
+        "low_0_180": 0.010700000450015068,
+        "low_mid_180_1200": 0.16529999673366547,
+        "mid_1200_5000": 0.26080000400543213,
+        "high_5000_12000": 0.5631999969482422
+      },
+      "centroid_hz": 5365.7,
+      "spectral_flatness": 0.6442,
+      "percussive_mask_fraction": 0.56,
+      "distance_to_recurring_attack_grid_s": 0.235,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 1.685,
+      "output_time": 1.685,
+      "onset_score": 4.634,
+      "strength_relative": 0.352,
+      "duration_estimate": 0.025,
+      "band_energy_fraction": {
+        "low_0_180": 0.19789999723434448,
+        "low_mid_180_1200": 0.25690001249313354,
+        "mid_1200_5000": 0.17649999260902405,
+        "high_5000_12000": 0.3686999976634979
+      },
+      "centroid_hz": 3786.5,
+      "spectral_flatness": 0.6525,
+      "percussive_mask_fraction": 0.435,
+      "distance_to_recurring_attack_grid_s": 0.115,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 1.79,
+      "output_time": 1.79,
+      "onset_score": 10.06,
+      "strength_relative": 0.765,
+      "duration_estimate": 0.05,
+      "band_energy_fraction": {
+        "low_0_180": 0.01730000041425228,
+        "low_mid_180_1200": 0.044199999421834946,
+        "mid_1200_5000": 0.5159000158309937,
+        "high_5000_12000": 0.42260000109672546
+      },
+      "centroid_hz": 4724.9,
+      "spectral_flatness": 0.5098,
+      "percussive_mask_fraction": 0.734,
+      "distance_to_recurring_attack_grid_s": 0.01,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 1.915,
+      "output_time": 1.915,
+      "onset_score": 3.883,
+      "strength_relative": 0.295,
+      "duration_estimate": 0.025,
+      "band_energy_fraction": {
+        "low_0_180": 0.0010000000474974513,
+        "low_mid_180_1200": 0.3806000053882599,
+        "mid_1200_5000": 0.414000004529953,
+        "high_5000_12000": 0.20430000126361847
+      },
+      "centroid_hz": 3006.5,
+      "spectral_flatness": 0.592,
+      "percussive_mask_fraction": 0.506,
+      "distance_to_recurring_attack_grid_s": 0.115,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 2.015,
+      "output_time": 2.015,
+      "onset_score": 6.14,
+      "strength_relative": 0.467,
+      "duration_estimate": 0.045,
+      "band_energy_fraction": {
+        "low_0_180": 0.0006000000284984708,
+        "low_mid_180_1200": 0.39100000262260437,
+        "mid_1200_5000": 0.15940000116825104,
+        "high_5000_12000": 0.44909998774528503
+      },
+      "centroid_hz": 4423.2,
+      "spectral_flatness": 0.653,
+      "percussive_mask_fraction": 0.691,
+      "distance_to_recurring_attack_grid_s": 0.215,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 2.47,
+      "output_time": 2.47,
+      "onset_score": 2.6,
+      "strength_relative": 0.198,
+      "duration_estimate": 0.7,
+      "band_energy_fraction": {
+        "low_0_180": 0.5995000004768372,
+        "low_mid_180_1200": 0.32600000500679016,
+        "mid_1200_5000": 0.054499998688697815,
+        "high_5000_12000": 0.020099999383091927
+      },
+      "centroid_hz": 462.7,
+      "spectral_flatness": 0.457,
+      "percussive_mask_fraction": 0.082,
+      "distance_to_recurring_attack_grid_s": 0.225,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 2.58,
+      "output_time": 2.58,
+      "onset_score": 2.819,
+      "strength_relative": 0.214,
+      "duration_estimate": 0.7,
+      "band_energy_fraction": {
+        "low_0_180": 0.6406000256538391,
+        "low_mid_180_1200": 0.29249998927116394,
+        "mid_1200_5000": 0.04569999873638153,
+        "high_5000_12000": 0.021199999377131462
+      },
+      "centroid_hz": 455.2,
+      "spectral_flatness": 0.4371,
+      "percussive_mask_fraction": 0.089,
+      "distance_to_recurring_attack_grid_s": 0.115,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 2.69,
+      "output_time": 2.69,
+      "onset_score": 5.684,
+      "strength_relative": 0.432,
+      "duration_estimate": 0.07,
+      "band_energy_fraction": {
+        "low_0_180": 0.5080999732017517,
+        "low_mid_180_1200": 0.3296000063419342,
+        "mid_1200_5000": 0.11980000138282776,
+        "high_5000_12000": 0.04259999841451645
+      },
+      "centroid_hz": 836.0,
+      "spectral_flatness": 0.511,
+      "percussive_mask_fraction": 0.265,
+      "distance_to_recurring_attack_grid_s": 0.005,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 3.025,
+      "output_time": 3.025,
+      "onset_score": 3.89,
+      "strength_relative": 0.296,
+      "duration_estimate": 0.14,
+      "band_energy_fraction": {
+        "low_0_180": 0.3107999861240387,
+        "low_mid_180_1200": 0.6327000260353088,
+        "mid_1200_5000": 0.04280000180006027,
+        "high_5000_12000": 0.013799999840557575
+      },
+      "centroid_hz": 483.8,
+      "spectral_flatness": 0.4037,
+      "percussive_mask_fraction": 0.324,
+      "distance_to_recurring_attack_grid_s": 0.33,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 3.14,
+      "output_time": 3.14,
+      "onset_score": 4.978,
+      "strength_relative": 0.378,
+      "duration_estimate": 0.08,
+      "band_energy_fraction": {
+        "low_0_180": 0.4636000096797943,
+        "low_mid_180_1200": 0.44519999623298645,
+        "mid_1200_5000": 0.05719999969005585,
+        "high_5000_12000": 0.033900000154972076
+      },
+      "centroid_hz": 626.0,
+      "spectral_flatness": 0.4683,
+      "percussive_mask_fraction": 0.277,
+      "distance_to_recurring_attack_grid_s": 0.445,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 3.585,
+      "output_time": 3.585,
+      "onset_score": 4.3,
+      "strength_relative": 0.327,
+      "duration_estimate": 0.07,
+      "band_energy_fraction": {
+        "low_0_180": 0.3959999978542328,
+        "low_mid_180_1200": 0.35339999198913574,
+        "mid_1200_5000": 0.179299995303154,
+        "high_5000_12000": 0.0714000016450882
+      },
+      "centroid_hz": 1174.1,
+      "spectral_flatness": 0.5329,
+      "percussive_mask_fraction": 0.325,
+      "distance_to_recurring_attack_grid_s": 0.005,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 3.815,
+      "output_time": 3.815,
+      "onset_score": 2.816,
+      "strength_relative": 0.214,
+      "duration_estimate": 0.28,
+      "band_energy_fraction": {
+        "low_0_180": 0.42879998683929443,
+        "low_mid_180_1200": 0.520799994468689,
+        "mid_1200_5000": 0.036400001496076584,
+        "high_5000_12000": 0.014100000262260437
+      },
+      "centroid_hz": 439.4,
+      "spectral_flatness": 0.4343,
+      "percussive_mask_fraction": 0.155,
+      "distance_to_recurring_attack_grid_s": 0.225,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 3.92,
+      "output_time": 3.92,
+      "onset_score": 4.025,
+      "strength_relative": 0.306,
+      "duration_estimate": 0.065,
+      "band_energy_fraction": {
+        "low_0_180": 0.32109999656677246,
+        "low_mid_180_1200": 0.6342999935150146,
+        "mid_1200_5000": 0.030799999833106995,
+        "high_5000_12000": 0.013899999670684338
+      },
+      "centroid_hz": 451.1,
+      "spectral_flatness": 0.3881,
+      "percussive_mask_fraction": 0.327,
+      "distance_to_recurring_attack_grid_s": 0.33,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 4.255,
+      "output_time": 4.255,
+      "onset_score": 5.093,
+      "strength_relative": 0.387,
+      "duration_estimate": 0.03,
+      "band_energy_fraction": {
+        "low_0_180": 0.6550999879837036,
+        "low_mid_180_1200": 0.24060000479221344,
+        "mid_1200_5000": 0.06340000033378601,
+        "high_5000_12000": 0.040800001472234726
+      },
+      "centroid_hz": 635.0,
+      "spectral_flatness": 0.4596,
+      "percussive_mask_fraction": 0.116,
+      "distance_to_recurring_attack_grid_s": 0.23,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 4.375,
+      "output_time": 4.375,
+      "onset_score": 2.362,
+      "strength_relative": 0.18,
+      "duration_estimate": 0.02,
+      "band_energy_fraction": {
+        "low_0_180": 0.6978999972343445,
+        "low_mid_180_1200": 0.24369999766349792,
+        "mid_1200_5000": 0.03999999910593033,
+        "high_5000_12000": 0.018400000408291817
+      },
+      "centroid_hz": 410.7,
+      "spectral_flatness": 0.4557,
+      "percussive_mask_fraction": 0.09,
+      "distance_to_recurring_attack_grid_s": 0.11,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 4.48,
+      "output_time": 4.48,
+      "onset_score": 5.1,
+      "strength_relative": 0.388,
+      "duration_estimate": 0.05,
+      "band_energy_fraction": {
+        "low_0_180": 0.5180000066757202,
+        "low_mid_180_1200": 0.2800000011920929,
+        "mid_1200_5000": 0.14790000021457672,
+        "high_5000_12000": 0.054099999368190765
+      },
+      "centroid_hz": 967.3,
+      "spectral_flatness": 0.5226,
+      "percussive_mask_fraction": 0.268,
+      "distance_to_recurring_attack_grid_s": 0.005,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 4.82,
+      "output_time": 4.82,
+      "onset_score": 4.879,
+      "strength_relative": 0.371,
+      "duration_estimate": 0.06,
+      "band_energy_fraction": {
+        "low_0_180": 0.6007999777793884,
+        "low_mid_180_1200": 0.31119999289512634,
+        "mid_1200_5000": 0.05889999866485596,
+        "high_5000_12000": 0.029100000858306885
+      },
+      "centroid_hz": 563.7,
+      "spectral_flatness": 0.4622,
+      "percussive_mask_fraction": 0.162,
+      "distance_to_recurring_attack_grid_s": 0.335,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 4.93,
+      "output_time": 4.93,
+      "onset_score": 5.431,
+      "strength_relative": 0.413,
+      "duration_estimate": 0.035,
+      "band_energy_fraction": {
+        "low_0_180": 0.6793000102043152,
+        "low_mid_180_1200": 0.21199999749660492,
+        "mid_1200_5000": 0.06769999861717224,
+        "high_5000_12000": 0.04100000113248825
+      },
+      "centroid_hz": 666.5,
+      "spectral_flatness": 0.4897,
+      "percussive_mask_fraction": 0.129,
+      "distance_to_recurring_attack_grid_s": 0.445,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 5.15,
+      "output_time": 5.15,
+      "onset_score": 2.818,
+      "strength_relative": 0.214,
+      "duration_estimate": 0.17,
+      "band_energy_fraction": {
+        "low_0_180": 0.334199994802475,
+        "low_mid_180_1200": 0.6294000148773193,
+        "mid_1200_5000": 0.02410000003874302,
+        "high_5000_12000": 0.012199999764561653
+      },
+      "centroid_hz": 421.8,
+      "spectral_flatness": 0.4182,
+      "percussive_mask_fraction": 0.324,
+      "distance_to_recurring_attack_grid_s": 0.23,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 5.375,
+      "output_time": 5.375,
+      "onset_score": 4.709,
+      "strength_relative": 0.358,
+      "duration_estimate": 0.055,
+      "band_energy_fraction": {
+        "low_0_180": 0.474700003862381,
+        "low_mid_180_1200": 0.3336000144481659,
+        "mid_1200_5000": 0.1421000063419342,
+        "high_5000_12000": 0.04960000142455101
+      },
+      "centroid_hz": 941.4,
+      "spectral_flatness": 0.5019,
+      "percussive_mask_fraction": 0.327,
+      "distance_to_recurring_attack_grid_s": 0.005,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 5.6,
+      "output_time": 5.6,
+      "onset_score": 4.461,
+      "strength_relative": 0.339,
+      "duration_estimate": 0.045,
+      "band_energy_fraction": {
+        "low_0_180": 0.6032000184059143,
+        "low_mid_180_1200": 0.30570000410079956,
+        "mid_1200_5000": 0.05860000103712082,
+        "high_5000_12000": 0.032499998807907104
+      },
+      "centroid_hz": 585.6,
+      "spectral_flatness": 0.4592,
+      "percussive_mask_fraction": 0.145,
+      "distance_to_recurring_attack_grid_s": 0.22,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 5.72,
+      "output_time": 5.72,
+      "onset_score": 2.952,
+      "strength_relative": 0.224,
+      "duration_estimate": 0.035,
+      "band_energy_fraction": {
+        "low_0_180": 0.5408999919891357,
+        "low_mid_180_1200": 0.3808000087738037,
+        "mid_1200_5000": 0.05550000071525574,
+        "high_5000_12000": 0.02280000038444996
+      },
+      "centroid_hz": 540.7,
+      "spectral_flatness": 0.4306,
+      "percussive_mask_fraction": 0.186,
+      "distance_to_recurring_attack_grid_s": 0.34,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 6.05,
+      "output_time": 6.05,
+      "onset_score": 4.76,
+      "strength_relative": 0.362,
+      "duration_estimate": 0.05,
+      "band_energy_fraction": {
+        "low_0_180": 0.4934999942779541,
+        "low_mid_180_1200": 0.3531999886035919,
+        "mid_1200_5000": 0.09809999912977219,
+        "high_5000_12000": 0.05530000105500221
+      },
+      "centroid_hz": 883.7,
+      "spectral_flatness": 0.4778,
+      "percussive_mask_fraction": 0.2,
+      "distance_to_recurring_attack_grid_s": 0.225,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 6.165,
+      "output_time": 6.165,
+      "onset_score": 2.623,
+      "strength_relative": 0.199,
+      "duration_estimate": 0.3,
+      "band_energy_fraction": {
+        "low_0_180": 0.38659998774528503,
+        "low_mid_180_1200": 0.5404999852180481,
+        "mid_1200_5000": 0.05339999869465828,
+        "high_5000_12000": 0.019500000402331352
+      },
+      "centroid_hz": 540.4,
+      "spectral_flatness": 0.4142,
+      "percussive_mask_fraction": 0.227,
+      "distance_to_recurring_attack_grid_s": 0.11,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 6.27,
+      "output_time": 6.27,
+      "onset_score": 5.421,
+      "strength_relative": 0.412,
+      "duration_estimate": 0.06,
+      "band_energy_fraction": {
+        "low_0_180": 0.2093999981880188,
+        "low_mid_180_1200": 0.6740000247955322,
+        "mid_1200_5000": 0.08340000361204147,
+        "high_5000_12000": 0.03310000151395798
+      },
+      "centroid_hz": 775.9,
+      "spectral_flatness": 0.4628,
+      "percussive_mask_fraction": 0.381,
+      "distance_to_recurring_attack_grid_s": 0.005,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 6.61,
+      "output_time": 6.61,
+      "onset_score": 5.365,
+      "strength_relative": 0.408,
+      "duration_estimate": 0.05,
+      "band_energy_fraction": {
+        "low_0_180": 0.42649999260902405,
+        "low_mid_180_1200": 0.43529999256134033,
+        "mid_1200_5000": 0.08980000019073486,
+        "high_5000_12000": 0.04839999973773956
+      },
+      "centroid_hz": 835.8,
+      "spectral_flatness": 0.4581,
+      "percussive_mask_fraction": 0.266,
+      "distance_to_recurring_attack_grid_s": 0.335,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 6.72,
+      "output_time": 6.72,
+      "onset_score": 4.841,
+      "strength_relative": 0.368,
+      "duration_estimate": 0.04,
+      "band_energy_fraction": {
+        "low_0_180": 0.5130000114440918,
+        "low_mid_180_1200": 0.33009999990463257,
+        "mid_1200_5000": 0.10329999774694443,
+        "high_5000_12000": 0.05350000038743019
+      },
+      "centroid_hz": 893.6,
+      "spectral_flatness": 0.4858,
+      "percussive_mask_fraction": 0.19,
+      "distance_to_recurring_attack_grid_s": 0.445,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 6.835,
+      "output_time": 6.835,
+      "onset_score": 4.313,
+      "strength_relative": 0.328,
+      "duration_estimate": 0.095,
+      "band_energy_fraction": {
+        "low_0_180": 0.4496000111103058,
+        "low_mid_180_1200": 0.44519999623298645,
+        "mid_1200_5000": 0.0737999975681305,
+        "high_5000_12000": 0.031300000846385956
+      },
+      "centroid_hz": 650.8,
+      "spectral_flatness": 0.4379,
+      "percussive_mask_fraction": 0.267,
+      "distance_to_recurring_attack_grid_s": 0.335,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 7.06,
+      "output_time": 7.06,
+      "onset_score": 2.378,
+      "strength_relative": 0.181,
+      "duration_estimate": 0.04,
+      "band_energy_fraction": {
+        "low_0_180": 0.5752999782562256,
+        "low_mid_180_1200": 0.3483000099658966,
+        "mid_1200_5000": 0.0502999983727932,
+        "high_5000_12000": 0.026200000196695328
+      },
+      "centroid_hz": 528.4,
+      "spectral_flatness": 0.4672,
+      "percussive_mask_fraction": 0.192,
+      "distance_to_recurring_attack_grid_s": 0.11,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 7.17,
+      "output_time": 7.17,
+      "onset_score": 5.55,
+      "strength_relative": 0.422,
+      "duration_estimate": 0.08,
+      "band_energy_fraction": {
+        "low_0_180": 0.25290000438690186,
+        "low_mid_180_1200": 0.6430000066757202,
+        "mid_1200_5000": 0.07259999960660934,
+        "high_5000_12000": 0.03150000050663948
+      },
+      "centroid_hz": 690.3,
+      "spectral_flatness": 0.4891,
+      "percussive_mask_fraction": 0.352,
+      "distance_to_recurring_attack_grid_s": 0.0,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 7.39,
+      "output_time": 7.39,
+      "onset_score": 3.042,
+      "strength_relative": 0.231,
+      "duration_estimate": 0.025,
+      "band_energy_fraction": {
+        "low_0_180": 0.5587999820709229,
+        "low_mid_180_1200": 0.35510000586509705,
+        "mid_1200_5000": 0.05700000002980232,
+        "high_5000_12000": 0.029100000858306885
+      },
+      "centroid_hz": 555.3,
+      "spectral_flatness": 0.4832,
+      "percussive_mask_fraction": 0.185,
+      "distance_to_recurring_attack_grid_s": 0.22,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 7.505,
+      "output_time": 7.505,
+      "onset_score": 5.378,
+      "strength_relative": 0.409,
+      "duration_estimate": 0.035,
+      "band_energy_fraction": {
+        "low_0_180": 0.546500027179718,
+        "low_mid_180_1200": 0.36059999465942383,
+        "mid_1200_5000": 0.05480000004172325,
+        "high_5000_12000": 0.038100000470876694
+      },
+      "centroid_hz": 640.5,
+      "spectral_flatness": 0.4526,
+      "percussive_mask_fraction": 0.213,
+      "distance_to_recurring_attack_grid_s": 0.335,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 7.84,
+      "output_time": 7.84,
+      "onset_score": 4.544,
+      "strength_relative": 0.345,
+      "duration_estimate": 0.06,
+      "band_energy_fraction": {
+        "low_0_180": 0.6026999950408936,
+        "low_mid_180_1200": 0.25760000944137573,
+        "mid_1200_5000": 0.08560000360012054,
+        "high_5000_12000": 0.054099999368190765
+      },
+      "centroid_hz": 801.5,
+      "spectral_flatness": 0.5073,
+      "percussive_mask_fraction": 0.232,
+      "distance_to_recurring_attack_grid_s": 0.225,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 7.95,
+      "output_time": 7.95,
+      "onset_score": 2.706,
+      "strength_relative": 0.206,
+      "duration_estimate": 0.02,
+      "band_energy_fraction": {
+        "low_0_180": 0.5619000196456909,
+        "low_mid_180_1200": 0.3248000144958496,
+        "mid_1200_5000": 0.08290000259876251,
+        "high_5000_12000": 0.030400000512599945
+      },
+      "centroid_hz": 635.9,
+      "spectral_flatness": 0.4622,
+      "percussive_mask_fraction": 0.232,
+      "distance_to_recurring_attack_grid_s": 0.115,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 8.065,
+      "output_time": 8.065,
+      "onset_score": 4.279,
+      "strength_relative": 0.325,
+      "duration_estimate": 0.06,
+      "band_energy_fraction": {
+        "low_0_180": 0.3982999920845032,
+        "low_mid_180_1200": 0.36410000920295715,
+        "mid_1200_5000": 0.16899999976158142,
+        "high_5000_12000": 0.06859999895095825
+      },
+      "centroid_hz": 1139.1,
+      "spectral_flatness": 0.5334,
+      "percussive_mask_fraction": 0.357,
+      "distance_to_recurring_attack_grid_s": 0.0,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 8.4,
+      "output_time": 8.4,
+      "onset_score": 5.161,
+      "strength_relative": 0.392,
+      "duration_estimate": 0.155,
+      "band_energy_fraction": {
+        "low_0_180": 0.5235000252723694,
+        "low_mid_180_1200": 0.3244999945163727,
+        "mid_1200_5000": 0.10289999842643738,
+        "high_5000_12000": 0.04910000041127205
+      },
+      "centroid_hz": 827.9,
+      "spectral_flatness": 0.4846,
+      "percussive_mask_fraction": 0.238,
+      "distance_to_recurring_attack_grid_s": 0.335,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 8.51,
+      "output_time": 8.51,
+      "onset_score": 5.716,
+      "strength_relative": 0.435,
+      "duration_estimate": 0.05,
+      "band_energy_fraction": {
+        "low_0_180": 0.5770000219345093,
+        "low_mid_180_1200": 0.1468999981880188,
+        "mid_1200_5000": 0.16290000081062317,
+        "high_5000_12000": 0.11320000141859055
+      },
+      "centroid_hz": 1429.9,
+      "spectral_flatness": 0.5201,
+      "percussive_mask_fraction": 0.311,
+      "distance_to_recurring_attack_grid_s": 0.445,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 8.625,
+      "output_time": 8.625,
+      "onset_score": 5.385,
+      "strength_relative": 0.409,
+      "duration_estimate": 0.085,
+      "band_energy_fraction": {
+        "low_0_180": 0.028999999165534973,
+        "low_mid_180_1200": 0.6863999962806702,
+        "mid_1200_5000": 0.2004999965429306,
+        "high_5000_12000": 0.08410000056028366
+      },
+      "centroid_hz": 1434.6,
+      "spectral_flatness": 0.4406,
+      "percussive_mask_fraction": 0.52,
+      "distance_to_recurring_attack_grid_s": 0.335,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 8.735,
+      "output_time": 8.735,
+      "onset_score": 3.462,
+      "strength_relative": 0.263,
+      "duration_estimate": 0.055,
+      "band_energy_fraction": {
+        "low_0_180": 0.10450000315904617,
+        "low_mid_180_1200": 0.6269000172615051,
+        "mid_1200_5000": 0.1387999951839447,
+        "high_5000_12000": 0.1298000067472458
+      },
+      "centroid_hz": 1635.9,
+      "spectral_flatness": 0.5551,
+      "percussive_mask_fraction": 0.482,
+      "distance_to_recurring_attack_grid_s": 0.225,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 8.845,
+      "output_time": 8.845,
+      "onset_score": 4.362,
+      "strength_relative": 0.332,
+      "duration_estimate": 0.05,
+      "band_energy_fraction": {
+        "low_0_180": 0.026599999517202377,
+        "low_mid_180_1200": 0.29409998655319214,
+        "mid_1200_5000": 0.14800000190734863,
+        "high_5000_12000": 0.5313000082969666
+      },
+      "centroid_hz": 4451.0,
+      "spectral_flatness": 0.5268,
+      "percussive_mask_fraction": 0.383,
+      "distance_to_recurring_attack_grid_s": 0.115,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 8.955,
+      "output_time": 8.955,
+      "onset_score": 7.969,
+      "strength_relative": 0.606,
+      "duration_estimate": 0.08,
+      "band_energy_fraction": {
+        "low_0_180": 0.0012000000569969416,
+        "low_mid_180_1200": 0.41990000009536743,
+        "mid_1200_5000": 0.41280001401901245,
+        "high_5000_12000": 0.16599999368190765
+      },
+      "centroid_hz": 2487.0,
+      "spectral_flatness": 0.5327,
+      "percussive_mask_fraction": 0.694,
+      "distance_to_recurring_attack_grid_s": 0.005,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 9.4,
+      "output_time": 9.4,
+      "onset_score": 14.78,
+      "strength_relative": 1.0,
+      "duration_estimate": 0.145,
+      "band_energy_fraction": {
+        "low_0_180": 0.9440000057220459,
+        "low_mid_180_1200": 0.05009999871253967,
+        "mid_1200_5000": 0.005400000140070915,
+        "high_5000_12000": 0.0005000000237487257
+      },
+      "centroid_hz": 108.6,
+      "spectral_flatness": 0.0695,
+      "percussive_mask_fraction": 0.391,
+      "distance_to_recurring_attack_grid_s": 0.44,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 9.625,
+      "output_time": 9.625,
+      "onset_score": 10.584,
+      "strength_relative": 0.805,
+      "duration_estimate": 0.04,
+      "band_energy_fraction": {
+        "low_0_180": 0.7641000151634216,
+        "low_mid_180_1200": 0.17569999396800995,
+        "mid_1200_5000": 0.014600000344216824,
+        "high_5000_12000": 0.04560000076889992
+      },
+      "centroid_hz": 534.8,
+      "spectral_flatness": 0.4048,
+      "percussive_mask_fraction": 0.138,
+      "distance_to_recurring_attack_grid_s": 0.23,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 9.85,
+      "output_time": 9.85,
+      "onset_score": 13.201,
+      "strength_relative": 1.0,
+      "duration_estimate": 0.135,
+      "band_energy_fraction": {
+        "low_0_180": 0.9442999958992004,
+        "low_mid_180_1200": 0.04430000111460686,
+        "mid_1200_5000": 0.008799999952316284,
+        "high_5000_12000": 0.0026000000070780516
+      },
+      "centroid_hz": 131.2,
+      "spectral_flatness": 0.2096,
+      "percussive_mask_fraction": 0.173,
+      "distance_to_recurring_attack_grid_s": 0.005,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 10.075,
+      "output_time": 10.075,
+      "onset_score": 10.767,
+      "strength_relative": 0.819,
+      "duration_estimate": 0.125,
+      "band_energy_fraction": {
+        "low_0_180": 0.8748999834060669,
+        "low_mid_180_1200": 0.08959999680519104,
+        "mid_1200_5000": 0.008500000461935997,
+        "high_5000_12000": 0.027000000700354576
+      },
+      "centroid_hz": 358.3,
+      "spectral_flatness": 0.3294,
+      "percussive_mask_fraction": 0.195,
+      "distance_to_recurring_attack_grid_s": 0.22,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 10.295,
+      "output_time": 10.295,
+      "onset_score": 10.9,
+      "strength_relative": 0.829,
+      "duration_estimate": 0.14,
+      "band_energy_fraction": {
+        "low_0_180": 0.9580000042915344,
+        "low_mid_180_1200": 0.03759999945759773,
+        "mid_1200_5000": 0.003800000064074993,
+        "high_5000_12000": 0.0006000000284984708
+      },
+      "centroid_hz": 101.5,
+      "spectral_flatness": 0.086,
+      "percussive_mask_fraction": 0.212,
+      "distance_to_recurring_attack_grid_s": 0.44,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 10.52,
+      "output_time": 10.52,
+      "onset_score": 12.793,
+      "strength_relative": 0.973,
+      "duration_estimate": 0.06,
+      "band_energy_fraction": {
+        "low_0_180": 0.7563999891281128,
+        "low_mid_180_1200": 0.16200000047683716,
+        "mid_1200_5000": 0.02710000053048134,
+        "high_5000_12000": 0.05460000038146973
+      },
+      "centroid_hz": 656.0,
+      "spectral_flatness": 0.3854,
+      "percussive_mask_fraction": 0.201,
+      "distance_to_recurring_attack_grid_s": 0.23,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 10.745,
+      "output_time": 10.745,
+      "onset_score": 13.888,
+      "strength_relative": 1.0,
+      "duration_estimate": 0.14,
+      "band_energy_fraction": {
+        "low_0_180": 0.9413999915122986,
+        "low_mid_180_1200": 0.04699999839067459,
+        "mid_1200_5000": 0.009100000374019146,
+        "high_5000_12000": 0.0024999999441206455
+      },
+      "centroid_hz": 132.0,
+      "spectral_flatness": 0.2033,
+      "percussive_mask_fraction": 0.221,
+      "distance_to_recurring_attack_grid_s": 0.005,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 10.85,
+      "output_time": 10.85,
+      "onset_score": 2.562,
+      "strength_relative": 0.195,
+      "duration_estimate": 0.035,
+      "band_energy_fraction": {
+        "low_0_180": 0.96670001745224,
+        "low_mid_180_1200": 0.03180000185966492,
+        "mid_1200_5000": 0.0010000000474974513,
+        "high_5000_12000": 0.0005000000237487257
+      },
+      "centroid_hz": 83.0,
+      "spectral_flatness": 0.104,
+      "percussive_mask_fraction": 0.134,
+      "distance_to_recurring_attack_grid_s": 0.1,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 10.97,
+      "output_time": 10.97,
+      "onset_score": 8.236,
+      "strength_relative": 0.626,
+      "duration_estimate": 0.11,
+      "band_energy_fraction": {
+        "low_0_180": 0.8652999997138977,
+        "low_mid_180_1200": 0.08290000259876251,
+        "mid_1200_5000": 0.015300000086426735,
+        "high_5000_12000": 0.0364999994635582
+      },
+      "centroid_hz": 437.6,
+      "spectral_flatness": 0.4401,
+      "percussive_mask_fraction": 0.151,
+      "distance_to_recurring_attack_grid_s": 0.22,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 11.195,
+      "output_time": 11.195,
+      "onset_score": 9.756,
+      "strength_relative": 0.742,
+      "duration_estimate": 0.135,
+      "band_energy_fraction": {
+        "low_0_180": 0.9545999765396118,
+        "low_mid_180_1200": 0.041200000792741776,
+        "mid_1200_5000": 0.003599999938160181,
+        "high_5000_12000": 0.0006000000284984708
+      },
+      "centroid_hz": 101.5,
+      "spectral_flatness": 0.083,
+      "percussive_mask_fraction": 0.185,
+      "distance_to_recurring_attack_grid_s": 0.445,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 11.415,
+      "output_time": 11.415,
+      "onset_score": 12.397,
+      "strength_relative": 0.942,
+      "duration_estimate": 0.04,
+      "band_energy_fraction": {
+        "low_0_180": 0.7908999919891357,
+        "low_mid_180_1200": 0.15039999783039093,
+        "mid_1200_5000": 0.016300000250339508,
+        "high_5000_12000": 0.042399998754262924
+      },
+      "centroid_hz": 500.2,
+      "spectral_flatness": 0.3715,
+      "percussive_mask_fraction": 0.217,
+      "distance_to_recurring_attack_grid_s": 0.23,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 11.64,
+      "output_time": 11.64,
+      "onset_score": 13.541,
+      "strength_relative": 1.0,
+      "duration_estimate": 0.135,
+      "band_energy_fraction": {
+        "low_0_180": 0.9455999732017517,
+        "low_mid_180_1200": 0.0430000014603138,
+        "mid_1200_5000": 0.008899999782443047,
+        "high_5000_12000": 0.0024999999441206455
+      },
+      "centroid_hz": 131.5,
+      "spectral_flatness": 0.2059,
+      "percussive_mask_fraction": 0.169,
+      "distance_to_recurring_attack_grid_s": 0.005,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 11.865,
+      "output_time": 11.865,
+      "onset_score": 10.992,
+      "strength_relative": 0.836,
+      "duration_estimate": 0.035,
+      "band_energy_fraction": {
+        "low_0_180": 0.7991999983787537,
+        "low_mid_180_1200": 0.11159999668598175,
+        "mid_1200_5000": 0.02539999969303608,
+        "high_5000_12000": 0.06379999965429306
+      },
+      "centroid_hz": 695.7,
+      "spectral_flatness": 0.3949,
+      "percussive_mask_fraction": 0.22,
+      "distance_to_recurring_attack_grid_s": 0.22,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 12.09,
+      "output_time": 12.09,
+      "onset_score": 10.718,
+      "strength_relative": 0.815,
+      "duration_estimate": 0.135,
+      "band_energy_fraction": {
+        "low_0_180": 0.9578999876976013,
+        "low_mid_180_1200": 0.03709999844431877,
+        "mid_1200_5000": 0.00419999985024333,
+        "high_5000_12000": 0.000699999975040555
+      },
+      "centroid_hz": 103.7,
+      "spectral_flatness": 0.0875,
+      "percussive_mask_fraction": 0.161,
+      "distance_to_recurring_attack_grid_s": 0.445,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 12.31,
+      "output_time": 12.31,
+      "onset_score": 12.06,
+      "strength_relative": 0.917,
+      "duration_estimate": 0.075,
+      "band_energy_fraction": {
+        "low_0_180": 0.9050999879837036,
+        "low_mid_180_1200": 0.05429999902844429,
+        "mid_1200_5000": 0.009999999776482582,
+        "high_5000_12000": 0.03060000017285347
+      },
+      "centroid_hz": 407.5,
+      "spectral_flatness": 0.3655,
+      "percussive_mask_fraction": 0.129,
+      "distance_to_recurring_attack_grid_s": 0.23,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 12.535,
+      "output_time": 12.535,
+      "onset_score": 14.395,
+      "strength_relative": 1.0,
+      "duration_estimate": 0.13,
+      "band_energy_fraction": {
+        "low_0_180": 0.9430000185966492,
+        "low_mid_180_1200": 0.04390000179409981,
+        "mid_1200_5000": 0.010999999940395355,
+        "high_5000_12000": 0.002099999925121665
+      },
+      "centroid_hz": 129.0,
+      "spectral_flatness": 0.196,
+      "percussive_mask_fraction": 0.203,
+      "distance_to_recurring_attack_grid_s": 0.005,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 12.76,
+      "output_time": 12.76,
+      "onset_score": 11.89,
+      "strength_relative": 0.904,
+      "duration_estimate": 0.115,
+      "band_energy_fraction": {
+        "low_0_180": 0.8917999863624573,
+        "low_mid_180_1200": 0.07090000063180923,
+        "mid_1200_5000": 0.010400000028312206,
+        "high_5000_12000": 0.026900000870227814
+      },
+      "centroid_hz": 369.9,
+      "spectral_flatness": 0.362,
+      "percussive_mask_fraction": 0.155,
+      "distance_to_recurring_attack_grid_s": 0.22,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 12.985,
+      "output_time": 12.985,
+      "onset_score": 9.633,
+      "strength_relative": 0.732,
+      "duration_estimate": 0.135,
+      "band_energy_fraction": {
+        "low_0_180": 0.95660001039505,
+        "low_mid_180_1200": 0.03920000046491623,
+        "mid_1200_5000": 0.003700000001117587,
+        "high_5000_12000": 0.0005000000237487257
+      },
+      "centroid_hz": 100.3,
+      "spectral_flatness": 0.0812,
+      "percussive_mask_fraction": 0.206,
+      "distance_to_recurring_attack_grid_s": 0.445,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 13.21,
+      "output_time": 13.21,
+      "onset_score": 11.589,
+      "strength_relative": 0.881,
+      "duration_estimate": 0.045,
+      "band_energy_fraction": {
+        "low_0_180": 0.756600022315979,
+        "low_mid_180_1200": 0.18770000338554382,
+        "mid_1200_5000": 0.015799999237060547,
+        "high_5000_12000": 0.039900001138448715
+      },
+      "centroid_hz": 503.5,
+      "spectral_flatness": 0.4039,
+      "percussive_mask_fraction": 0.121,
+      "distance_to_recurring_attack_grid_s": 0.225,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 13.43,
+      "output_time": 13.43,
+      "onset_score": 13.153,
+      "strength_relative": 1.0,
+      "duration_estimate": 0.14,
+      "band_energy_fraction": {
+        "low_0_180": 0.9226999878883362,
+        "low_mid_180_1200": 0.06650000065565109,
+        "mid_1200_5000": 0.008799999952316284,
+        "high_5000_12000": 0.0020000000949949026
+      },
+      "centroid_hz": 131.2,
+      "spectral_flatness": 0.1864,
+      "percussive_mask_fraction": 0.218,
+      "distance_to_recurring_attack_grid_s": 0.005,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 13.655,
+      "output_time": 13.655,
+      "onset_score": 10.479,
+      "strength_relative": 0.797,
+      "duration_estimate": 0.105,
+      "band_energy_fraction": {
+        "low_0_180": 0.822700023651123,
+        "low_mid_180_1200": 0.14149999618530273,
+        "mid_1200_5000": 0.00860000029206276,
+        "high_5000_12000": 0.0272000003606081
+      },
+      "centroid_hz": 376.8,
+      "spectral_flatness": 0.3149,
+      "percussive_mask_fraction": 0.216,
+      "distance_to_recurring_attack_grid_s": 0.22,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 13.88,
+      "output_time": 13.88,
+      "onset_score": 9.833,
+      "strength_relative": 0.747,
+      "duration_estimate": 0.135,
+      "band_energy_fraction": {
+        "low_0_180": 0.9563999772071838,
+        "low_mid_180_1200": 0.03959999978542328,
+        "mid_1200_5000": 0.0034000000450760126,
+        "high_5000_12000": 0.0005000000237487257
+      },
+      "centroid_hz": 100.8,
+      "spectral_flatness": 0.0838,
+      "percussive_mask_fraction": 0.198,
+      "distance_to_recurring_attack_grid_s": 0.445,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 14.1,
+      "output_time": 14.1,
+      "onset_score": 12.318,
+      "strength_relative": 0.936,
+      "duration_estimate": 0.045,
+      "band_energy_fraction": {
+        "low_0_180": 0.588699996471405,
+        "low_mid_180_1200": 0.2709999978542328,
+        "mid_1200_5000": 0.03660000115633011,
+        "high_5000_12000": 0.10369999706745148
+      },
+      "centroid_hz": 1088.3,
+      "spectral_flatness": 0.4423,
+      "percussive_mask_fraction": 0.29,
+      "distance_to_recurring_attack_grid_s": 0.23,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 14.33,
+      "output_time": 14.33,
+      "onset_score": 10.259,
+      "strength_relative": 0.78,
+      "duration_estimate": 0.135,
+      "band_energy_fraction": {
+        "low_0_180": 0.9433000087738037,
+        "low_mid_180_1200": 0.04470000043511391,
+        "mid_1200_5000": 0.009700000286102295,
+        "high_5000_12000": 0.002300000051036477
+      },
+      "centroid_hz": 130.5,
+      "spectral_flatness": 0.2533,
+      "percussive_mask_fraction": 0.179,
+      "distance_to_recurring_attack_grid_s": 0.0,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 14.555,
+      "output_time": 14.555,
+      "onset_score": 9.239,
+      "strength_relative": 0.702,
+      "duration_estimate": 0.105,
+      "band_energy_fraction": {
+        "low_0_180": 0.8672999739646912,
+        "low_mid_180_1200": 0.07890000194311142,
+        "mid_1200_5000": 0.022199999541044235,
+        "high_5000_12000": 0.031599998474121094
+      },
+      "centroid_hz": 421.6,
+      "spectral_flatness": 0.4263,
+      "percussive_mask_fraction": 0.1,
+      "distance_to_recurring_attack_grid_s": 0.225,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 14.775,
+      "output_time": 14.775,
+      "onset_score": 10.811,
+      "strength_relative": 0.822,
+      "duration_estimate": 0.135,
+      "band_energy_fraction": {
+        "low_0_180": 0.9545000195503235,
+        "low_mid_180_1200": 0.03970000147819519,
+        "mid_1200_5000": 0.005100000184029341,
+        "high_5000_12000": 0.0006000000284984708
+      },
+      "centroid_hz": 104.3,
+      "spectral_flatness": 0.083,
+      "percussive_mask_fraction": 0.196,
+      "distance_to_recurring_attack_grid_s": 0.445,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 14.995,
+      "output_time": 14.995,
+      "onset_score": 11.67,
+      "strength_relative": 0.887,
+      "duration_estimate": 0.075,
+      "band_energy_fraction": {
+        "low_0_180": 0.7506999969482422,
+        "low_mid_180_1200": 0.18389999866485596,
+        "mid_1200_5000": 0.021400000900030136,
+        "high_5000_12000": 0.04390000179409981
+      },
+      "centroid_hz": 556.1,
+      "spectral_flatness": 0.3698,
+      "percussive_mask_fraction": 0.16,
+      "distance_to_recurring_attack_grid_s": 0.23,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 15.225,
+      "output_time": 15.225,
+      "onset_score": 11.585,
+      "strength_relative": 0.881,
+      "duration_estimate": 0.135,
+      "band_energy_fraction": {
+        "low_0_180": 0.9430000185966492,
+        "low_mid_180_1200": 0.044599998742341995,
+        "mid_1200_5000": 0.010099999606609344,
+        "high_5000_12000": 0.002300000051036477
+      },
+      "centroid_hz": 131.4,
+      "spectral_flatness": 0.2269,
+      "percussive_mask_fraction": 0.187,
+      "distance_to_recurring_attack_grid_s": 0.0,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 15.45,
+      "output_time": 15.45,
+      "onset_score": 9.873,
+      "strength_relative": 0.751,
+      "duration_estimate": 0.02,
+      "band_energy_fraction": {
+        "low_0_180": 0.7645999789237976,
+        "low_mid_180_1200": 0.1362999975681305,
+        "mid_1200_5000": 0.045499999076128006,
+        "high_5000_12000": 0.053599998354911804
+      },
+      "centroid_hz": 662.5,
+      "spectral_flatness": 0.4639,
+      "percussive_mask_fraction": 0.291,
+      "distance_to_recurring_attack_grid_s": 0.225,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 15.67,
+      "output_time": 15.67,
+      "onset_score": 10.942,
+      "strength_relative": 0.832,
+      "duration_estimate": 0.135,
+      "band_energy_fraction": {
+        "low_0_180": 0.9545000195503235,
+        "low_mid_180_1200": 0.040300000458955765,
+        "mid_1200_5000": 0.0044999998062849045,
+        "high_5000_12000": 0.0006000000284984708
+      },
+      "centroid_hz": 104.3,
+      "spectral_flatness": 0.0861,
+      "percussive_mask_fraction": 0.184,
+      "distance_to_recurring_attack_grid_s": 0.445,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 15.885,
+      "output_time": 15.885,
+      "onset_score": 10.025,
+      "strength_relative": 0.762,
+      "duration_estimate": 0.095,
+      "band_energy_fraction": {
+        "low_0_180": 0.8515999913215637,
+        "low_mid_180_1200": 0.10540000349283218,
+        "mid_1200_5000": 0.012799999676644802,
+        "high_5000_12000": 0.03020000085234642
+      },
+      "centroid_hz": 401.6,
+      "spectral_flatness": 0.3631,
+      "percussive_mask_fraction": 0.099,
+      "distance_to_recurring_attack_grid_s": 0.235,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 16.115,
+      "output_time": 16.115,
+      "onset_score": 13.166,
+      "strength_relative": 1.0,
+      "duration_estimate": 0.14,
+      "band_energy_fraction": {
+        "low_0_180": 0.9272000193595886,
+        "low_mid_180_1200": 0.05530000105500221,
+        "mid_1200_5000": 0.013100000098347664,
+        "high_5000_12000": 0.004399999976158142
+      },
+      "centroid_hz": 157.4,
+      "spectral_flatness": 0.2325,
+      "percussive_mask_fraction": 0.214,
+      "distance_to_recurring_attack_grid_s": 0.005,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 16.25,
+      "output_time": 16.25,
+      "onset_score": 6.524,
+      "strength_relative": 0.496,
+      "duration_estimate": 0.02,
+      "band_energy_fraction": {
+        "low_0_180": 0.8754000067710876,
+        "low_mid_180_1200": 0.08380000293254852,
+        "mid_1200_5000": 0.022600000724196434,
+        "high_5000_12000": 0.01810000091791153
+      },
+      "centroid_hz": 288.8,
+      "spectral_flatness": 0.4084,
+      "percussive_mask_fraction": 0.328,
+      "distance_to_recurring_attack_grid_s": 0.13,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 16.34,
+      "output_time": 16.34,
+      "onset_score": 9.743,
+      "strength_relative": 0.741,
+      "duration_estimate": 0.035,
+      "band_energy_fraction": {
+        "low_0_180": 0.025100000202655792,
+        "low_mid_180_1200": 0.5076000094413757,
+        "mid_1200_5000": 0.16599999368190765,
+        "high_5000_12000": 0.3012000024318695
+      },
+      "centroid_hz": 3095.8,
+      "spectral_flatness": 0.595,
+      "percussive_mask_fraction": 0.547,
+      "distance_to_recurring_attack_grid_s": 0.22,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 16.475,
+      "output_time": 16.475,
+      "onset_score": 5.328,
+      "strength_relative": 0.405,
+      "duration_estimate": 0.05,
+      "band_energy_fraction": {
+        "low_0_180": 0.5849999785423279,
+        "low_mid_180_1200": 0.2971999943256378,
+        "mid_1200_5000": 0.0723000019788742,
+        "high_5000_12000": 0.045499999076128006
+      },
+      "centroid_hz": 710.6,
+      "spectral_flatness": 0.4725,
+      "percussive_mask_fraction": 0.291,
+      "distance_to_recurring_attack_grid_s": 0.355,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 16.57,
+      "output_time": 16.57,
+      "onset_score": 6.716,
+      "strength_relative": 0.511,
+      "duration_estimate": 0.13,
+      "band_energy_fraction": {
+        "low_0_180": 0.9589999914169312,
+        "low_mid_180_1200": 0.03669999912381172,
+        "mid_1200_5000": 0.0035000001080334187,
+        "high_5000_12000": 0.0008999999845400453
+      },
+      "centroid_hz": 103.2,
+      "spectral_flatness": 0.1696,
+      "percussive_mask_fraction": 0.27,
+      "distance_to_recurring_attack_grid_s": 0.445,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 16.79,
+      "output_time": 16.79,
+      "onset_score": 10.479,
+      "strength_relative": 0.797,
+      "duration_estimate": 0.115,
+      "band_energy_fraction": {
+        "low_0_180": 0.8776999711990356,
+        "low_mid_180_1200": 0.07339999824762344,
+        "mid_1200_5000": 0.015699999406933784,
+        "high_5000_12000": 0.03319999948143959
+      },
+      "centroid_hz": 438.3,
+      "spectral_flatness": 0.3949,
+      "percussive_mask_fraction": 0.138,
+      "distance_to_recurring_attack_grid_s": 0.225,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 17.02,
+      "output_time": 17.02,
+      "onset_score": 5.23,
+      "strength_relative": 0.398,
+      "duration_estimate": 0.13,
+      "band_energy_fraction": {
+        "low_0_180": 0.9240000247955322,
+        "low_mid_180_1200": 0.05869999900460243,
+        "mid_1200_5000": 0.012600000016391277,
+        "high_5000_12000": 0.004600000102072954
+      },
+      "centroid_hz": 160.9,
+      "spectral_flatness": 0.3437,
+      "percussive_mask_fraction": 0.226,
+      "distance_to_recurring_attack_grid_s": 0.005,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 17.24,
+      "output_time": 17.24,
+      "onset_score": 7.099,
+      "strength_relative": 0.54,
+      "duration_estimate": 0.045,
+      "band_energy_fraction": {
+        "low_0_180": 0.7971000075340271,
+        "low_mid_180_1200": 0.133200004696846,
+        "mid_1200_5000": 0.02199999988079071,
+        "high_5000_12000": 0.04769999906420708
+      },
+      "centroid_hz": 592.2,
+      "spectral_flatness": 0.4484,
+      "percussive_mask_fraction": 0.201,
+      "distance_to_recurring_attack_grid_s": 0.225,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 17.46,
+      "output_time": 17.46,
+      "onset_score": 8.3,
+      "strength_relative": 0.631,
+      "duration_estimate": 0.13,
+      "band_energy_fraction": {
+        "low_0_180": 0.9451000094413757,
+        "low_mid_180_1200": 0.048900000751018524,
+        "mid_1200_5000": 0.005100000184029341,
+        "high_5000_12000": 0.0008999999845400453
+      },
+      "centroid_hz": 108.9,
+      "spectral_flatness": 0.1801,
+      "percussive_mask_fraction": 0.195,
+      "distance_to_recurring_attack_grid_s": 0.445,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 17.58,
+      "output_time": 17.58,
+      "onset_score": 4.156,
+      "strength_relative": 0.316,
+      "duration_estimate": 0.02,
+      "band_energy_fraction": {
+        "low_0_180": 0.9650999903678894,
+        "low_mid_180_1200": 0.031300000846385956,
+        "mid_1200_5000": 0.001500000013038516,
+        "high_5000_12000": 0.0020000000949949026
+      },
+      "centroid_hz": 103.7,
+      "spectral_flatness": 0.2258,
+      "percussive_mask_fraction": 0.137,
+      "distance_to_recurring_attack_grid_s": 0.33,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 17.69,
+      "output_time": 17.69,
+      "onset_score": 9.944,
+      "strength_relative": 0.756,
+      "duration_estimate": 0.035,
+      "band_energy_fraction": {
+        "low_0_180": 0.8665000200271606,
+        "low_mid_180_1200": 0.06449999660253525,
+        "mid_1200_5000": 0.020099999383091927,
+        "high_5000_12000": 0.048900000751018524
+      },
+      "centroid_hz": 550.4,
+      "spectral_flatness": 0.4727,
+      "percussive_mask_fraction": 0.153,
+      "distance_to_recurring_attack_grid_s": 0.22,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 17.82,
+      "output_time": 17.82,
+      "onset_score": 3.274,
+      "strength_relative": 0.249,
+      "duration_estimate": 0.065,
+      "band_energy_fraction": {
+        "low_0_180": 0.8553000092506409,
+        "low_mid_180_1200": 0.12479999661445618,
+        "mid_1200_5000": 0.016200000420212746,
+        "high_5000_12000": 0.003700000001117587
+      },
+      "centroid_hz": 199.5,
+      "spectral_flatness": 0.2395,
+      "percussive_mask_fraction": 0.174,
+      "distance_to_recurring_attack_grid_s": 0.09,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 17.91,
+      "output_time": 17.91,
+      "onset_score": 11.699,
+      "strength_relative": 0.889,
+      "duration_estimate": 0.13,
+      "band_energy_fraction": {
+        "low_0_180": 0.9434999823570251,
+        "low_mid_180_1200": 0.04149999842047691,
+        "mid_1200_5000": 0.012500000186264515,
+        "high_5000_12000": 0.0024999999441206455
+      },
+      "centroid_hz": 136.4,
+      "spectral_flatness": 0.2472,
+      "percussive_mask_fraction": 0.197,
+      "distance_to_recurring_attack_grid_s": 0.0,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 18.135,
+      "output_time": 18.135,
+      "onset_score": 10.827,
+      "strength_relative": 0.823,
+      "duration_estimate": 0.05,
+      "band_energy_fraction": {
+        "low_0_180": 0.8716999888420105,
+        "low_mid_180_1200": 0.07680000364780426,
+        "mid_1200_5000": 0.013899999670684338,
+        "high_5000_12000": 0.03759999945759773
+      },
+      "centroid_hz": 450.9,
+      "spectral_flatness": 0.3841,
+      "percussive_mask_fraction": 0.152,
+      "distance_to_recurring_attack_grid_s": 0.225,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 18.36,
+      "output_time": 18.36,
+      "onset_score": 8.006,
+      "strength_relative": 0.609,
+      "duration_estimate": 0.13,
+      "band_energy_fraction": {
+        "low_0_180": 0.9613999724388123,
+        "low_mid_180_1200": 0.03440000116825104,
+        "mid_1200_5000": 0.003700000001117587,
+        "high_5000_12000": 0.0005000000237487257
+      },
+      "centroid_hz": 101.4,
+      "spectral_flatness": 0.1404,
+      "percussive_mask_fraction": 0.144,
+      "distance_to_recurring_attack_grid_s": 0.445,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 18.585,
+      "output_time": 18.585,
+      "onset_score": 6.856,
+      "strength_relative": 0.521,
+      "duration_estimate": 0.07,
+      "band_energy_fraction": {
+        "low_0_180": 0.7831000089645386,
+        "low_mid_180_1200": 0.12080000340938568,
+        "mid_1200_5000": 0.04390000179409981,
+        "high_5000_12000": 0.052299998700618744
+      },
+      "centroid_hz": 651.7,
+      "spectral_flatness": 0.5262,
+      "percussive_mask_fraction": 0.219,
+      "distance_to_recurring_attack_grid_s": 0.22,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 18.71,
+      "output_time": 18.71,
+      "onset_score": 2.937,
+      "strength_relative": 0.223,
+      "duration_estimate": 0.02,
+      "band_energy_fraction": {
+        "low_0_180": 0.8282999992370605,
+        "low_mid_180_1200": 0.13169999420642853,
+        "mid_1200_5000": 0.03370000049471855,
+        "high_5000_12000": 0.006300000008195639
+      },
+      "centroid_hz": 275.2,
+      "spectral_flatness": 0.3964,
+      "percussive_mask_fraction": 0.193,
+      "distance_to_recurring_attack_grid_s": 0.095,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 18.81,
+      "output_time": 18.81,
+      "onset_score": 6.63,
+      "strength_relative": 0.504,
+      "duration_estimate": 0.13,
+      "band_energy_fraction": {
+        "low_0_180": 0.9455000162124634,
+        "low_mid_180_1200": 0.04039999842643738,
+        "mid_1200_5000": 0.011800000444054604,
+        "high_5000_12000": 0.002300000051036477
+      },
+      "centroid_hz": 134.9,
+      "spectral_flatness": 0.2812,
+      "percussive_mask_fraction": 0.169,
+      "distance_to_recurring_attack_grid_s": 0.005,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 19.03,
+      "output_time": 19.03,
+      "onset_score": 9.751,
+      "strength_relative": 0.741,
+      "duration_estimate": 0.14,
+      "band_energy_fraction": {
+        "low_0_180": 0.9330000281333923,
+        "low_mid_180_1200": 0.03720000013709068,
+        "mid_1200_5000": 0.009499999694526196,
+        "high_5000_12000": 0.0203000009059906
+      },
+      "centroid_hz": 306.7,
+      "spectral_flatness": 0.3568,
+      "percussive_mask_fraction": 0.105,
+      "distance_to_recurring_attack_grid_s": 0.225,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 19.25,
+      "output_time": 19.25,
+      "onset_score": 10.001,
+      "strength_relative": 0.76,
+      "duration_estimate": 0.135,
+      "band_energy_fraction": {
+        "low_0_180": 0.9555000066757202,
+        "low_mid_180_1200": 0.04019999876618385,
+        "mid_1200_5000": 0.003700000001117587,
+        "high_5000_12000": 0.0006000000284984708
+      },
+      "centroid_hz": 100.5,
+      "spectral_flatness": 0.0882,
+      "percussive_mask_fraction": 0.193,
+      "distance_to_recurring_attack_grid_s": 0.445,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 19.475,
+      "output_time": 19.475,
+      "onset_score": 11.552,
+      "strength_relative": 0.878,
+      "duration_estimate": 0.155,
+      "band_energy_fraction": {
+        "low_0_180": 0.8525000214576721,
+        "low_mid_180_1200": 0.07450000196695328,
+        "mid_1200_5000": 0.018799999728798866,
+        "high_5000_12000": 0.05429999902844429
+      },
+      "centroid_hz": 627.6,
+      "spectral_flatness": 0.427,
+      "percussive_mask_fraction": 0.168,
+      "distance_to_recurring_attack_grid_s": 0.225,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 19.7,
+      "output_time": 19.7,
+      "onset_score": 13.2,
+      "strength_relative": 1.0,
+      "duration_estimate": 0.135,
+      "band_energy_fraction": {
+        "low_0_180": 0.9477999806404114,
+        "low_mid_180_1200": 0.040800001472234726,
+        "mid_1200_5000": 0.009399999864399433,
+        "high_5000_12000": 0.0020000000949949026
+      },
+      "centroid_hz": 125.3,
+      "spectral_flatness": 0.2088,
+      "percussive_mask_fraction": 0.215,
+      "distance_to_recurring_attack_grid_s": 0.0,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 19.925,
+      "output_time": 19.925,
+      "onset_score": 10.933,
+      "strength_relative": 0.831,
+      "duration_estimate": 0.06,
+      "band_energy_fraction": {
+        "low_0_180": 0.9154999852180481,
+        "low_mid_180_1200": 0.05119999870657921,
+        "mid_1200_5000": 0.009200000204145908,
+        "high_5000_12000": 0.02410000003874302
+      },
+      "centroid_hz": 318.2,
+      "spectral_flatness": 0.3645,
+      "percussive_mask_fraction": 0.111,
+      "distance_to_recurring_attack_grid_s": 0.225,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 20.15,
+      "output_time": 20.15,
+      "onset_score": 9.234,
+      "strength_relative": 0.702,
+      "duration_estimate": 0.125,
+      "band_energy_fraction": {
+        "low_0_180": 0.9578999876976013,
+        "low_mid_180_1200": 0.038100000470876694,
+        "mid_1200_5000": 0.0035000001080334187,
+        "high_5000_12000": 0.0006000000284984708
+      },
+      "centroid_hz": 99.5,
+      "spectral_flatness": 0.0839,
+      "percussive_mask_fraction": 0.173,
+      "distance_to_recurring_attack_grid_s": 0.445,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 20.375,
+      "output_time": 20.375,
+      "onset_score": 10.748,
+      "strength_relative": 0.817,
+      "duration_estimate": 0.075,
+      "band_energy_fraction": {
+        "low_0_180": 0.7846999764442444,
+        "low_mid_180_1200": 0.13979999721050262,
+        "mid_1200_5000": 0.01940000057220459,
+        "high_5000_12000": 0.05609999969601631
+      },
+      "centroid_hz": 622.8,
+      "spectral_flatness": 0.4064,
+      "percussive_mask_fraction": 0.152,
+      "distance_to_recurring_attack_grid_s": 0.22,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 20.595,
+      "output_time": 20.595,
+      "onset_score": 13.086,
+      "strength_relative": 0.995,
+      "duration_estimate": 0.135,
+      "band_energy_fraction": {
+        "low_0_180": 0.9440000057220459,
+        "low_mid_180_1200": 0.04349999874830246,
+        "mid_1200_5000": 0.009499999694526196,
+        "high_5000_12000": 0.003000000026077032
+      },
+      "centroid_hz": 135.5,
+      "spectral_flatness": 0.228,
+      "percussive_mask_fraction": 0.21,
+      "distance_to_recurring_attack_grid_s": 0.0,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 20.825,
+      "output_time": 20.825,
+      "onset_score": 8.769,
+      "strength_relative": 0.667,
+      "duration_estimate": 0.07,
+      "band_energy_fraction": {
+        "low_0_180": 0.8237000107765198,
+        "low_mid_180_1200": 0.12729999423027039,
+        "mid_1200_5000": 0.016599999740719795,
+        "high_5000_12000": 0.03240000084042549
+      },
+      "centroid_hz": 432.5,
+      "spectral_flatness": 0.4268,
+      "percussive_mask_fraction": 0.101,
+      "distance_to_recurring_attack_grid_s": 0.23,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 21.045,
+      "output_time": 21.045,
+      "onset_score": 8.904,
+      "strength_relative": 0.677,
+      "duration_estimate": 0.13,
+      "band_energy_fraction": {
+        "low_0_180": 0.9559999704360962,
+        "low_mid_180_1200": 0.039500001817941666,
+        "mid_1200_5000": 0.003800000064074993,
+        "high_5000_12000": 0.0007999999797903001
+      },
+      "centroid_hz": 102.9,
+      "spectral_flatness": 0.1575,
+      "percussive_mask_fraction": 0.167,
+      "distance_to_recurring_attack_grid_s": 0.445,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 21.265,
+      "output_time": 21.265,
+      "onset_score": 9.796,
+      "strength_relative": 0.745,
+      "duration_estimate": 0.04,
+      "band_energy_fraction": {
+        "low_0_180": 0.8159999847412109,
+        "low_mid_180_1200": 0.11379999667406082,
+        "mid_1200_5000": 0.018300000578165054,
+        "high_5000_12000": 0.051899999380111694
+      },
+      "centroid_hz": 583.6,
+      "spectral_flatness": 0.4146,
+      "percussive_mask_fraction": 0.166,
+      "distance_to_recurring_attack_grid_s": 0.225,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 21.49,
+      "output_time": 21.49,
+      "onset_score": 14.483,
+      "strength_relative": 1.0,
+      "duration_estimate": 0.13,
+      "band_energy_fraction": {
+        "low_0_180": 0.9444000124931335,
+        "low_mid_180_1200": 0.04360000044107437,
+        "mid_1200_5000": 0.009800000116229057,
+        "high_5000_12000": 0.002099999925121665
+      },
+      "centroid_hz": 127.9,
+      "spectral_flatness": 0.1951,
+      "percussive_mask_fraction": 0.156,
+      "distance_to_recurring_attack_grid_s": 0.0,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 21.715,
+      "output_time": 21.715,
+      "onset_score": 12.083,
+      "strength_relative": 0.919,
+      "duration_estimate": 0.085,
+      "band_energy_fraction": {
+        "low_0_180": 0.8208000063896179,
+        "low_mid_180_1200": 0.14339999854564667,
+        "mid_1200_5000": 0.009399999864399433,
+        "high_5000_12000": 0.026399999856948853
+      },
+      "centroid_hz": 370.8,
+      "spectral_flatness": 0.3465,
+      "percussive_mask_fraction": 0.118,
+      "distance_to_recurring_attack_grid_s": 0.225,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 21.94,
+      "output_time": 21.94,
+      "onset_score": 10.439,
+      "strength_relative": 0.794,
+      "duration_estimate": 0.13,
+      "band_energy_fraction": {
+        "low_0_180": 0.9559000134468079,
+        "low_mid_180_1200": 0.03790000081062317,
+        "mid_1200_5000": 0.0052999998442828655,
+        "high_5000_12000": 0.0008999999845400453
+      },
+      "centroid_hz": 105.6,
+      "spectral_flatness": 0.0993,
+      "percussive_mask_fraction": 0.181,
+      "distance_to_recurring_attack_grid_s": 0.445,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 22.16,
+      "output_time": 22.16,
+      "onset_score": 10.958,
+      "strength_relative": 0.833,
+      "duration_estimate": 0.05,
+      "band_energy_fraction": {
+        "low_0_180": 0.8220999836921692,
+        "low_mid_180_1200": 0.12520000338554382,
+        "mid_1200_5000": 0.017400000244379044,
+        "high_5000_12000": 0.03530000150203705
+      },
+      "centroid_hz": 453.8,
+      "spectral_flatness": 0.3683,
+      "percussive_mask_fraction": 0.122,
+      "distance_to_recurring_attack_grid_s": 0.225,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 22.385,
+      "output_time": 22.385,
+      "onset_score": 12.763,
+      "strength_relative": 0.97,
+      "duration_estimate": 0.135,
+      "band_energy_fraction": {
+        "low_0_180": 0.9459999799728394,
+        "low_mid_180_1200": 0.0430000014603138,
+        "mid_1200_5000": 0.008999999612569809,
+        "high_5000_12000": 0.0020000000949949026
+      },
+      "centroid_hz": 129.2,
+      "spectral_flatness": 0.1889,
+      "percussive_mask_fraction": 0.151,
+      "distance_to_recurring_attack_grid_s": 0.0,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 22.61,
+      "output_time": 22.61,
+      "onset_score": 12.978,
+      "strength_relative": 0.987,
+      "duration_estimate": 0.065,
+      "band_energy_fraction": {
+        "low_0_180": 0.7997000217437744,
+        "low_mid_180_1200": 0.12780000269412994,
+        "mid_1200_5000": 0.020500000566244125,
+        "high_5000_12000": 0.051899999380111694
+      },
+      "centroid_hz": 604.3,
+      "spectral_flatness": 0.3798,
+      "percussive_mask_fraction": 0.14,
+      "distance_to_recurring_attack_grid_s": 0.225,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 22.835,
+      "output_time": 22.835,
+      "onset_score": 10.287,
+      "strength_relative": 0.782,
+      "duration_estimate": 0.135,
+      "band_energy_fraction": {
+        "low_0_180": 0.9531999826431274,
+        "low_mid_180_1200": 0.042399998754262924,
+        "mid_1200_5000": 0.0038999998942017555,
+        "high_5000_12000": 0.0005000000237487257
+      },
+      "centroid_hz": 102.0,
+      "spectral_flatness": 0.0943,
+      "percussive_mask_fraction": 0.211,
+      "distance_to_recurring_attack_grid_s": 0.445,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 23.055,
+      "output_time": 23.055,
+      "onset_score": 8.462,
+      "strength_relative": 0.643,
+      "duration_estimate": 0.06,
+      "band_energy_fraction": {
+        "low_0_180": 0.803600013256073,
+        "low_mid_180_1200": 0.14020000398159027,
+        "mid_1200_5000": 0.01720000058412552,
+        "high_5000_12000": 0.039000000804662704
+      },
+      "centroid_hz": 492.9,
+      "spectral_flatness": 0.4363,
+      "percussive_mask_fraction": 0.129,
+      "distance_to_recurring_attack_grid_s": 0.225,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 23.285,
+      "output_time": 23.285,
+      "onset_score": 8.227,
+      "strength_relative": 0.625,
+      "duration_estimate": 0.13,
+      "band_energy_fraction": {
+        "low_0_180": 0.9282000064849854,
+        "low_mid_180_1200": 0.05860000103712082,
+        "mid_1200_5000": 0.01119999960064888,
+        "high_5000_12000": 0.0020000000949949026
+      },
+      "centroid_hz": 134.6,
+      "spectral_flatness": 0.244,
+      "percussive_mask_fraction": 0.215,
+      "distance_to_recurring_attack_grid_s": 0.005,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 23.505,
+      "output_time": 23.505,
+      "onset_score": 9.953,
+      "strength_relative": 0.757,
+      "duration_estimate": 0.03,
+      "band_energy_fraction": {
+        "low_0_180": 0.7391999959945679,
+        "low_mid_180_1200": 0.17720000445842743,
+        "mid_1200_5000": 0.02459999918937683,
+        "high_5000_12000": 0.05900000035762787
+      },
+      "centroid_hz": 673.0,
+      "spectral_flatness": 0.4118,
+      "percussive_mask_fraction": 0.184,
+      "distance_to_recurring_attack_grid_s": 0.225,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 23.73,
+      "output_time": 23.73,
+      "onset_score": 10.321,
+      "strength_relative": 0.785,
+      "duration_estimate": 0.135,
+      "band_energy_fraction": {
+        "low_0_180": 0.9555000066757202,
+        "low_mid_180_1200": 0.04039999842643738,
+        "mid_1200_5000": 0.003599999938160181,
+        "high_5000_12000": 0.00039999998989515007
+      },
+      "centroid_hz": 102.0,
+      "spectral_flatness": 0.0779,
+      "percussive_mask_fraction": 0.158,
+      "distance_to_recurring_attack_grid_s": 0.445,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 23.955,
+      "output_time": 23.955,
+      "onset_score": 9.458,
+      "strength_relative": 0.719,
+      "duration_estimate": 0.02,
+      "band_energy_fraction": {
+        "low_0_180": 0.4860999882221222,
+        "low_mid_180_1200": 0.4000999927520752,
+        "mid_1200_5000": 0.032999999821186066,
+        "high_5000_12000": 0.08089999854564667
+      },
+      "centroid_hz": 920.9,
+      "spectral_flatness": 0.4609,
+      "percussive_mask_fraction": 0.233,
+      "distance_to_recurring_attack_grid_s": 0.22,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 24.18,
+      "output_time": 24.18,
+      "onset_score": 11.725,
+      "strength_relative": 0.891,
+      "duration_estimate": 0.135,
+      "band_energy_fraction": {
+        "low_0_180": 0.925000011920929,
+        "low_mid_180_1200": 0.06469999998807907,
+        "mid_1200_5000": 0.00860000029206276,
+        "high_5000_12000": 0.0017000000225380063
+      },
+      "centroid_hz": 127.8,
+      "spectral_flatness": 0.1903,
+      "percussive_mask_fraction": 0.215,
+      "distance_to_recurring_attack_grid_s": 0.005,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 24.4,
+      "output_time": 24.4,
+      "onset_score": 10.079,
+      "strength_relative": 0.766,
+      "duration_estimate": 0.125,
+      "band_energy_fraction": {
+        "low_0_180": 0.8871999979019165,
+        "low_mid_180_1200": 0.08269999921321869,
+        "mid_1200_5000": 0.007600000128149986,
+        "high_5000_12000": 0.022600000724196434
+      },
+      "centroid_hz": 315.3,
+      "spectral_flatness": 0.32,
+      "percussive_mask_fraction": 0.196,
+      "distance_to_recurring_attack_grid_s": 0.225,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 24.625,
+      "output_time": 24.625,
+      "onset_score": 11.129,
+      "strength_relative": 0.846,
+      "duration_estimate": 0.135,
+      "band_energy_fraction": {
+        "low_0_180": 0.9585000276565552,
+        "low_mid_180_1200": 0.03720000013709068,
+        "mid_1200_5000": 0.003800000064074993,
+        "high_5000_12000": 0.0005000000237487257
+      },
+      "centroid_hz": 101.2,
+      "spectral_flatness": 0.0949,
+      "percussive_mask_fraction": 0.18,
+      "distance_to_recurring_attack_grid_s": 0.445,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 24.85,
+      "output_time": 24.85,
+      "onset_score": 11.184,
+      "strength_relative": 0.85,
+      "duration_estimate": 0.035,
+      "band_energy_fraction": {
+        "low_0_180": 0.7408999800682068,
+        "low_mid_180_1200": 0.17579999566078186,
+        "mid_1200_5000": 0.018699999898672104,
+        "high_5000_12000": 0.06459999829530716
+      },
+      "centroid_hz": 700.2,
+      "spectral_flatness": 0.4158,
+      "percussive_mask_fraction": 0.25,
+      "distance_to_recurring_attack_grid_s": 0.22,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 25.075,
+      "output_time": 25.075,
+      "onset_score": 12.978,
+      "strength_relative": 0.987,
+      "duration_estimate": 0.14,
+      "band_energy_fraction": {
+        "low_0_180": 0.9207000136375427,
+        "low_mid_180_1200": 0.06840000301599503,
+        "mid_1200_5000": 0.00860000029206276,
+        "high_5000_12000": 0.002300000051036477
+      },
+      "centroid_hz": 133.6,
+      "spectral_flatness": 0.1997,
+      "percussive_mask_fraction": 0.233,
+      "distance_to_recurring_attack_grid_s": 0.005,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 25.3,
+      "output_time": 25.3,
+      "onset_score": 10.849,
+      "strength_relative": 0.825,
+      "duration_estimate": 0.075,
+      "band_energy_fraction": {
+        "low_0_180": 0.879800021648407,
+        "low_mid_180_1200": 0.08110000193119049,
+        "mid_1200_5000": 0.008500000461935997,
+        "high_5000_12000": 0.03060000017285347
+      },
+      "centroid_hz": 368.5,
+      "spectral_flatness": 0.3659,
+      "percussive_mask_fraction": 0.154,
+      "distance_to_recurring_attack_grid_s": 0.23,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 25.52,
+      "output_time": 25.52,
+      "onset_score": 11.218,
+      "strength_relative": 0.853,
+      "duration_estimate": 0.135,
+      "band_energy_fraction": {
+        "low_0_180": 0.9562000036239624,
+        "low_mid_180_1200": 0.039000000804662704,
+        "mid_1200_5000": 0.00419999985024333,
+        "high_5000_12000": 0.0006000000284984708
+      },
+      "centroid_hz": 102.5,
+      "spectral_flatness": 0.0818,
+      "percussive_mask_fraction": 0.173,
+      "distance_to_recurring_attack_grid_s": 0.445,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 25.745,
+      "output_time": 25.745,
+      "onset_score": 12.452,
+      "strength_relative": 0.947,
+      "duration_estimate": 0.04,
+      "band_energy_fraction": {
+        "low_0_180": 0.8141999840736389,
+        "low_mid_180_1200": 0.1177000030875206,
+        "mid_1200_5000": 0.020400000736117363,
+        "high_5000_12000": 0.047600001096725464
+      },
+      "centroid_hz": 558.7,
+      "spectral_flatness": 0.3896,
+      "percussive_mask_fraction": 0.198,
+      "distance_to_recurring_attack_grid_s": 0.22,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 25.97,
+      "output_time": 25.97,
+      "onset_score": 12.76,
+      "strength_relative": 0.97,
+      "duration_estimate": 0.13,
+      "band_energy_fraction": {
+        "low_0_180": 0.899399995803833,
+        "low_mid_180_1200": 0.08889999985694885,
+        "mid_1200_5000": 0.009100000374019146,
+        "high_5000_12000": 0.0026000000070780516
+      },
+      "centroid_hz": 145.3,
+      "spectral_flatness": 0.1929,
+      "percussive_mask_fraction": 0.164,
+      "distance_to_recurring_attack_grid_s": 0.005,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 26.195,
+      "output_time": 26.195,
+      "onset_score": 11.259,
+      "strength_relative": 0.856,
+      "duration_estimate": 0.055,
+      "band_energy_fraction": {
+        "low_0_180": 0.8026000261306763,
+        "low_mid_180_1200": 0.1256999969482422,
+        "mid_1200_5000": 0.018699999898672104,
+        "high_5000_12000": 0.05299999937415123
+      },
+      "centroid_hz": 608.7,
+      "spectral_flatness": 0.3703,
+      "percussive_mask_fraction": 0.207,
+      "distance_to_recurring_attack_grid_s": 0.23,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 26.415,
+      "output_time": 26.415,
+      "onset_score": 10.808,
+      "strength_relative": 0.822,
+      "duration_estimate": 0.13,
+      "band_energy_fraction": {
+        "low_0_180": 0.933899998664856,
+        "low_mid_180_1200": 0.060499999672174454,
+        "mid_1200_5000": 0.004699999932199717,
+        "high_5000_12000": 0.0008999999845400453
+      },
+      "centroid_hz": 110.0,
+      "spectral_flatness": 0.0893,
+      "percussive_mask_fraction": 0.27,
+      "distance_to_recurring_attack_grid_s": 0.445,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 26.64,
+      "output_time": 26.64,
+      "onset_score": 9.869,
+      "strength_relative": 0.75,
+      "duration_estimate": 0.075,
+      "band_energy_fraction": {
+        "low_0_180": 0.9151999950408936,
+        "low_mid_180_1200": 0.046799998730421066,
+        "mid_1200_5000": 0.010900000110268593,
+        "high_5000_12000": 0.02710000053048134
+      },
+      "centroid_hz": 381.0,
+      "spectral_flatness": 0.3798,
+      "percussive_mask_fraction": 0.113,
+      "distance_to_recurring_attack_grid_s": 0.22,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 26.865,
+      "output_time": 26.865,
+      "onset_score": 12.953,
+      "strength_relative": 0.985,
+      "duration_estimate": 0.13,
+      "band_energy_fraction": {
+        "low_0_180": 0.945900022983551,
+        "low_mid_180_1200": 0.041600000113248825,
+        "mid_1200_5000": 0.010400000028312206,
+        "high_5000_12000": 0.002199999988079071
+      },
+      "centroid_hz": 127.3,
+      "spectral_flatness": 0.2023,
+      "percussive_mask_fraction": 0.202,
+      "distance_to_recurring_attack_grid_s": 0.005,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 27.09,
+      "output_time": 27.09,
+      "onset_score": 11.728,
+      "strength_relative": 0.892,
+      "duration_estimate": 0.145,
+      "band_energy_fraction": {
+        "low_0_180": 0.8741999864578247,
+        "low_mid_180_1200": 0.06279999762773514,
+        "mid_1200_5000": 0.016699999570846558,
+        "high_5000_12000": 0.046300001442432404
+      },
+      "centroid_hz": 521.4,
+      "spectral_flatness": 0.3832,
+      "percussive_mask_fraction": 0.162,
+      "distance_to_recurring_attack_grid_s": 0.23,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 27.315,
+      "output_time": 27.315,
+      "onset_score": 6.033,
+      "strength_relative": 0.459,
+      "duration_estimate": 0.02,
+      "band_energy_fraction": {
+        "low_0_180": 0.7753000259399414,
+        "low_mid_180_1200": 0.18700000643730164,
+        "mid_1200_5000": 0.01860000006854534,
+        "high_5000_12000": 0.019200000911951065
+      },
+      "centroid_hz": 353.7,
+      "spectral_flatness": 0.3153,
+      "percussive_mask_fraction": 0.289,
+      "distance_to_recurring_attack_grid_s": 0.44,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 27.54,
+      "output_time": 27.54,
+      "onset_score": 9.696,
+      "strength_relative": 0.737,
+      "duration_estimate": 0.25,
+      "band_energy_fraction": {
+        "low_0_180": 0.7811999917030334,
+        "low_mid_180_1200": 0.14090000092983246,
+        "mid_1200_5000": 0.02329999953508377,
+        "high_5000_12000": 0.05469999834895134
+      },
+      "centroid_hz": 629.7,
+      "spectral_flatness": 0.4749,
+      "percussive_mask_fraction": 0.137,
+      "distance_to_recurring_attack_grid_s": 0.215,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 27.76,
+      "output_time": 27.76,
+      "onset_score": 11.768,
+      "strength_relative": 0.895,
+      "duration_estimate": 0.02,
+      "band_energy_fraction": {
+        "low_0_180": 0.7437000274658203,
+        "low_mid_180_1200": 0.10660000145435333,
+        "mid_1200_5000": 0.12160000205039978,
+        "high_5000_12000": 0.02800000086426735
+      },
+      "centroid_hz": 617.6,
+      "spectral_flatness": 0.411,
+      "percussive_mask_fraction": 0.571,
+      "distance_to_recurring_attack_grid_s": 0.005,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 27.985,
+      "output_time": 27.985,
+      "onset_score": 11.116,
+      "strength_relative": 0.845,
+      "duration_estimate": 0.235,
+      "band_energy_fraction": {
+        "low_0_180": 0.8553000092506409,
+        "low_mid_180_1200": 0.09650000184774399,
+        "mid_1200_5000": 0.012199999764561653,
+        "high_5000_12000": 0.035999998450279236
+      },
+      "centroid_hz": 437.0,
+      "spectral_flatness": 0.3617,
+      "percussive_mask_fraction": 0.197,
+      "distance_to_recurring_attack_grid_s": 0.23,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 28.21,
+      "output_time": 28.21,
+      "onset_score": 6.753,
+      "strength_relative": 0.513,
+      "duration_estimate": 0.02,
+      "band_energy_fraction": {
+        "low_0_180": 0.8546000123023987,
+        "low_mid_180_1200": 0.11710000038146973,
+        "mid_1200_5000": 0.013199999928474426,
+        "high_5000_12000": 0.015200000256299973
+      },
+      "centroid_hz": 280.4,
+      "spectral_flatness": 0.2535,
+      "percussive_mask_fraction": 0.203,
+      "distance_to_recurring_attack_grid_s": 0.44,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 28.43,
+      "output_time": 28.43,
+      "onset_score": 11.813,
+      "strength_relative": 0.898,
+      "duration_estimate": 0.255,
+      "band_energy_fraction": {
+        "low_0_180": 0.6823999881744385,
+        "low_mid_180_1200": 0.1891999989748001,
+        "mid_1200_5000": 0.0340999998152256,
+        "high_5000_12000": 0.09430000185966492
+      },
+      "centroid_hz": 992.9,
+      "spectral_flatness": 0.4471,
+      "percussive_mask_fraction": 0.189,
+      "distance_to_recurring_attack_grid_s": 0.22,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 28.655,
+      "output_time": 28.655,
+      "onset_score": 14.788,
+      "strength_relative": 1.0,
+      "duration_estimate": 0.02,
+      "band_energy_fraction": {
+        "low_0_180": 0.6101999878883362,
+        "low_mid_180_1200": 0.20229999721050262,
+        "mid_1200_5000": 0.14480000734329224,
+        "high_5000_12000": 0.04270000010728836
+      },
+      "centroid_hz": 816.0,
+      "spectral_flatness": 0.3901,
+      "percussive_mask_fraction": 0.593,
+      "distance_to_recurring_attack_grid_s": 0.005,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 28.88,
+      "output_time": 28.88,
+      "onset_score": 12.77,
+      "strength_relative": 0.971,
+      "duration_estimate": 0.25,
+      "band_energy_fraction": {
+        "low_0_180": 0.8551999926567078,
+        "low_mid_180_1200": 0.08990000188350677,
+        "mid_1200_5000": 0.016699999570846558,
+        "high_5000_12000": 0.03819999843835831
+      },
+      "centroid_hz": 460.4,
+      "spectral_flatness": 0.397,
+      "percussive_mask_fraction": 0.149,
+      "distance_to_recurring_attack_grid_s": 0.23,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 29.11,
+      "output_time": 29.11,
+      "onset_score": 7.1,
+      "strength_relative": 0.54,
+      "duration_estimate": 0.02,
+      "band_energy_fraction": {
+        "low_0_180": 0.5310999751091003,
+        "low_mid_180_1200": 0.30000001192092896,
+        "mid_1200_5000": 0.09969999641180038,
+        "high_5000_12000": 0.06920000165700912
+      },
+      "centroid_hz": 972.7,
+      "spectral_flatness": 0.4667,
+      "percussive_mask_fraction": 0.481,
+      "distance_to_recurring_attack_grid_s": 0.435,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 29.325,
+      "output_time": 29.325,
+      "onset_score": 10.104,
+      "strength_relative": 0.768,
+      "duration_estimate": 0.255,
+      "band_energy_fraction": {
+        "low_0_180": 0.7876999974250793,
+        "low_mid_180_1200": 0.13510000705718994,
+        "mid_1200_5000": 0.024299999698996544,
+        "high_5000_12000": 0.05290000140666962
+      },
+      "centroid_hz": 626.4,
+      "spectral_flatness": 0.4264,
+      "percussive_mask_fraction": 0.139,
+      "distance_to_recurring_attack_grid_s": 0.22,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 29.46,
+      "output_time": 29.46,
+      "onset_score": 6.626,
+      "strength_relative": 0.504,
+      "duration_estimate": 0.11,
+      "band_energy_fraction": {
+        "low_0_180": 0.7827000021934509,
+        "low_mid_180_1200": 0.15289999544620514,
+        "mid_1200_5000": 0.0364999994635582,
+        "high_5000_12000": 0.027899999171495438
+      },
+      "centroid_hz": 452.4,
+      "spectral_flatness": 0.4101,
+      "percussive_mask_fraction": 0.204,
+      "distance_to_recurring_attack_grid_s": 0.085,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 29.555,
+      "output_time": 29.555,
+      "onset_score": 9.57,
+      "strength_relative": 0.728,
+      "duration_estimate": 0.02,
+      "band_energy_fraction": {
+        "low_0_180": 0.519599974155426,
+        "low_mid_180_1200": 0.18970000743865967,
+        "mid_1200_5000": 0.21930000185966492,
+        "high_5000_12000": 0.0714000016450882
+      },
+      "centroid_hz": 1197.1,
+      "spectral_flatness": 0.456,
+      "percussive_mask_fraction": 0.555,
+      "distance_to_recurring_attack_grid_s": 0.01,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 29.775,
+      "output_time": 29.775,
+      "onset_score": 11.148,
+      "strength_relative": 0.847,
+      "duration_estimate": 0.24,
+      "band_energy_fraction": {
+        "low_0_180": 0.7613000273704529,
+        "low_mid_180_1200": 0.13850000500679016,
+        "mid_1200_5000": 0.037300001829862595,
+        "high_5000_12000": 0.06289999932050705
+      },
+      "centroid_hz": 729.6,
+      "spectral_flatness": 0.4457,
+      "percussive_mask_fraction": 0.31,
+      "distance_to_recurring_attack_grid_s": 0.23,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 30.005,
+      "output_time": 30.005,
+      "onset_score": 5.819,
+      "strength_relative": 0.442,
+      "duration_estimate": 0.02,
+      "band_energy_fraction": {
+        "low_0_180": 0.7694000005722046,
+        "low_mid_180_1200": 0.19589999318122864,
+        "mid_1200_5000": 0.020899999886751175,
+        "high_5000_12000": 0.013799999840557575
+      },
+      "centroid_hz": 315.7,
+      "spectral_flatness": 0.2733,
+      "percussive_mask_fraction": 0.172,
+      "distance_to_recurring_attack_grid_s": 0.435,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 30.125,
+      "output_time": 30.125,
+      "onset_score": 9.633,
+      "strength_relative": 0.732,
+      "duration_estimate": 0.355,
+      "band_energy_fraction": {
+        "low_0_180": 0.7610999941825867,
+        "low_mid_180_1200": 0.17520000040531158,
+        "mid_1200_5000": 0.03830000013113022,
+        "high_5000_12000": 0.02539999969303608
+      },
+      "centroid_hz": 436.5,
+      "spectral_flatness": 0.3421,
+      "percussive_mask_fraction": 0.213,
+      "distance_to_recurring_attack_grid_s": 0.315,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 30.215,
+      "output_time": 30.215,
+      "onset_score": 9.001,
+      "strength_relative": 0.684,
+      "duration_estimate": 0.27,
+      "band_energy_fraction": {
+        "low_0_180": 0.838699996471405,
+        "low_mid_180_1200": 0.07590000331401825,
+        "mid_1200_5000": 0.0272000003606081,
+        "high_5000_12000": 0.05820000171661377
+      },
+      "centroid_hz": 644.5,
+      "spectral_flatness": 0.4585,
+      "percussive_mask_fraction": 0.137,
+      "distance_to_recurring_attack_grid_s": 0.225,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 30.355,
+      "output_time": 30.355,
+      "onset_score": 4.54,
+      "strength_relative": 0.345,
+      "duration_estimate": 0.125,
+      "band_energy_fraction": {
+        "low_0_180": 0.8123999834060669,
+        "low_mid_180_1200": 0.1599999964237213,
+        "mid_1200_5000": 0.016100000590085983,
+        "high_5000_12000": 0.011500000022351742
+      },
+      "centroid_hz": 268.0,
+      "spectral_flatness": 0.3343,
+      "percussive_mask_fraction": 0.186,
+      "distance_to_recurring_attack_grid_s": 0.085,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 30.445,
+      "output_time": 30.445,
+      "onset_score": 12.301,
+      "strength_relative": 0.935,
+      "duration_estimate": 0.045,
+      "band_energy_fraction": {
+        "low_0_180": 0.5407999753952026,
+        "low_mid_180_1200": 0.21870000660419464,
+        "mid_1200_5000": 0.15520000457763672,
+        "high_5000_12000": 0.08529999852180481
+      },
+      "centroid_hz": 1188.3,
+      "spectral_flatness": 0.4484,
+      "percussive_mask_fraction": 0.472,
+      "distance_to_recurring_attack_grid_s": 0.005,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 30.575,
+      "output_time": 30.575,
+      "onset_score": 7.647,
+      "strength_relative": 0.581,
+      "duration_estimate": 0.08,
+      "band_energy_fraction": {
+        "low_0_180": 0.24050000309944153,
+        "low_mid_180_1200": 0.4648999869823456,
+        "mid_1200_5000": 0.1720999926328659,
+        "high_5000_12000": 0.1225999966263771
+      },
+      "centroid_hz": 1625.0,
+      "spectral_flatness": 0.4895,
+      "percussive_mask_fraction": 0.619,
+      "distance_to_recurring_attack_grid_s": 0.135,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 30.67,
+      "output_time": 30.67,
+      "onset_score": 9.579,
+      "strength_relative": 0.728,
+      "duration_estimate": 0.05,
+      "band_energy_fraction": {
+        "low_0_180": 0.012600000016391277,
+        "low_mid_180_1200": 0.2651999890804291,
+        "mid_1200_5000": 0.2782000005245209,
+        "high_5000_12000": 0.4440000057220459
+      },
+      "centroid_hz": 4402.3,
+      "spectral_flatness": 0.6071,
+      "percussive_mask_fraction": 0.554,
+      "distance_to_recurring_attack_grid_s": 0.23,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 30.805,
+      "output_time": 30.805,
+      "onset_score": 6.278,
+      "strength_relative": 0.477,
+      "duration_estimate": 0.04,
+      "band_energy_fraction": {
+        "low_0_180": 0.010999999940395355,
+        "low_mid_180_1200": 0.513700008392334,
+        "mid_1200_5000": 0.3009999990463257,
+        "high_5000_12000": 0.17430000007152557
+      },
+      "centroid_hz": 2377.4,
+      "spectral_flatness": 0.5224,
+      "percussive_mask_fraction": 0.426,
+      "distance_to_recurring_attack_grid_s": 0.365,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 30.9,
+      "output_time": 30.9,
+      "onset_score": 4.844,
+      "strength_relative": 0.368,
+      "duration_estimate": 0.215,
+      "band_energy_fraction": {
+        "low_0_180": 0.774399995803833,
+        "low_mid_180_1200": 0.1745000034570694,
+        "mid_1200_5000": 0.04450000077486038,
+        "high_5000_12000": 0.006599999964237213
+      },
+      "centroid_hz": 289.5,
+      "spectral_flatness": 0.3735,
+      "percussive_mask_fraction": 0.353,
+      "distance_to_recurring_attack_grid_s": 0.435,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 33.89,
+      "output_time": 33.89,
+      "onset_score": 3.013,
+      "strength_relative": 0.229,
+      "duration_estimate": 0.02,
+      "band_energy_fraction": {
+        "low_0_180": 0.28360000252723694,
+        "low_mid_180_1200": 0.6672999858856201,
+        "mid_1200_5000": 0.045099999755620956,
+        "high_5000_12000": 0.004000000189989805
+      },
+      "centroid_hz": 522.3,
+      "spectral_flatness": 0.2393,
+      "percussive_mask_fraction": 0.203,
+      "distance_to_recurring_attack_grid_s": 0.13,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 34.27,
+      "output_time": 34.27,
+      "onset_score": 3.111,
+      "strength_relative": 0.237,
+      "duration_estimate": 0.035,
+      "band_energy_fraction": {
+        "low_0_180": 0.28130000829696655,
+        "low_mid_180_1200": 0.6585000157356262,
+        "mid_1200_5000": 0.05530000105500221,
+        "high_5000_12000": 0.004900000058114529
+      },
+      "centroid_hz": 636.1,
+      "spectral_flatness": 0.2157,
+      "percussive_mask_fraction": 0.243,
+      "distance_to_recurring_attack_grid_s": 0.25,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 39.71,
+      "output_time": null,
+      "onset_score": 2.483,
+      "strength_relative": 0.189,
+      "duration_estimate": 0.02,
+      "band_energy_fraction": {
+        "low_0_180": 0.2754000127315521,
+        "low_mid_180_1200": 0.5576000213623047,
+        "mid_1200_5000": 0.1639000028371811,
+        "high_5000_12000": 0.0031999999191612005
+      },
+      "centroid_hz": 667.1,
+      "spectral_flatness": 0.2508,
+      "percussive_mask_fraction": 0.301,
+      "distance_to_recurring_attack_grid_s": 0.32,
+      "excluded_live_action": true
+    },
+    {
+      "source_time": 41.315,
+      "output_time": 35.2817,
+      "onset_score": 4.01,
+      "strength_relative": 0.305,
+      "duration_estimate": 0.045,
+      "band_energy_fraction": {
+        "low_0_180": 0.13570000231266022,
+        "low_mid_180_1200": 0.6577000021934509,
+        "mid_1200_5000": 0.1988999992609024,
+        "high_5000_12000": 0.007699999958276749
+      },
+      "centroid_hz": 848.3,
+      "spectral_flatness": 0.2812,
+      "percussive_mask_fraction": 0.231,
+      "distance_to_recurring_attack_grid_s": 0.135,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 41.415,
+      "output_time": 35.3817,
+      "onset_score": 3.714,
+      "strength_relative": 0.282,
+      "duration_estimate": 0.08,
+      "band_energy_fraction": {
+        "low_0_180": 0.12110000103712082,
+        "low_mid_180_1200": 0.7001000046730042,
+        "mid_1200_5000": 0.1736000031232834,
+        "high_5000_12000": 0.005200000014156103
+      },
+      "centroid_hz": 790.1,
+      "spectral_flatness": 0.2363,
+      "percussive_mask_fraction": 0.269,
+      "distance_to_recurring_attack_grid_s": 0.235,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 42.095,
+      "output_time": 36.0617,
+      "onset_score": 3.701,
+      "strength_relative": 0.281,
+      "duration_estimate": 0.05,
+      "band_energy_fraction": {
+        "low_0_180": 0.040800001472234726,
+        "low_mid_180_1200": 0.7940000295639038,
+        "mid_1200_5000": 0.16030000150203705,
+        "high_5000_12000": 0.004900000058114529
+      },
+      "centroid_hz": 809.8,
+      "spectral_flatness": 0.2335,
+      "percussive_mask_fraction": 0.436,
+      "distance_to_recurring_attack_grid_s": 0.02,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 42.28,
+      "output_time": 36.2467,
+      "onset_score": 3.568,
+      "strength_relative": 0.271,
+      "duration_estimate": 0.045,
+      "band_energy_fraction": {
+        "low_0_180": 0.07259999960660934,
+        "low_mid_180_1200": 0.6079999804496765,
+        "mid_1200_5000": 0.31619998812675476,
+        "high_5000_12000": 0.0031999999191612005
+      },
+      "centroid_hz": 902.4,
+      "spectral_flatness": 0.2394,
+      "percussive_mask_fraction": 0.247,
+      "distance_to_recurring_attack_grid_s": 0.205,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 42.77,
+      "output_time": 36.7367,
+      "onset_score": 4.853,
+      "strength_relative": 0.369,
+      "duration_estimate": 0.1,
+      "band_energy_fraction": {
+        "low_0_180": 0.039500001817941666,
+        "low_mid_180_1200": 0.8424999713897705,
+        "mid_1200_5000": 0.11429999768733978,
+        "high_5000_12000": 0.003700000001117587
+      },
+      "centroid_hz": 736.5,
+      "spectral_flatness": 0.1613,
+      "percussive_mask_fraction": 0.365,
+      "distance_to_recurring_attack_grid_s": 0.2,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 43.085,
+      "output_time": 37.0517,
+      "onset_score": 2.414,
+      "strength_relative": 0.184,
+      "duration_estimate": 0.045,
+      "band_energy_fraction": {
+        "low_0_180": 0.05590000003576279,
+        "low_mid_180_1200": 0.683899998664856,
+        "mid_1200_5000": 0.25870001316070557,
+        "high_5000_12000": 0.001500000013038516
+      },
+      "centroid_hz": 901.9,
+      "spectral_flatness": 0.1832,
+      "percussive_mask_fraction": 0.253,
+      "distance_to_recurring_attack_grid_s": 0.115,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 44.43,
+      "output_time": 38.3967,
+      "onset_score": 3.215,
+      "strength_relative": 0.244,
+      "duration_estimate": 0.06,
+      "band_energy_fraction": {
+        "low_0_180": 0.0364999994635582,
+        "low_mid_180_1200": 0.7804999947547913,
+        "mid_1200_5000": 0.17890000343322754,
+        "high_5000_12000": 0.004100000020116568
+      },
+      "centroid_hz": 764.3,
+      "spectral_flatness": 0.2457,
+      "percussive_mask_fraction": 0.342,
+      "distance_to_recurring_attack_grid_s": 0.33,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 45.44,
+      "output_time": 39.4067,
+      "onset_score": 4.788,
+      "strength_relative": 0.364,
+      "duration_estimate": 0.095,
+      "band_energy_fraction": {
+        "low_0_180": 0.39489999413490295,
+        "low_mid_180_1200": 0.5356000065803528,
+        "mid_1200_5000": 0.06880000233650208,
+        "high_5000_12000": 0.000699999975040555
+      },
+      "centroid_hz": 475.4,
+      "spectral_flatness": 0.1431,
+      "percussive_mask_fraction": 0.241,
+      "distance_to_recurring_attack_grid_s": 0.215,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 48.135,
+      "output_time": 42.1017,
+      "onset_score": 2.965,
+      "strength_relative": 0.225,
+      "duration_estimate": 0.06,
+      "band_energy_fraction": {
+        "low_0_180": 0.621399998664856,
+        "low_mid_180_1200": 0.3467999994754791,
+        "mid_1200_5000": 0.03060000017285347,
+        "high_5000_12000": 0.0012000000569969416
+      },
+      "centroid_hz": 293.6,
+      "spectral_flatness": 0.1759,
+      "percussive_mask_fraction": 0.232,
+      "distance_to_recurring_attack_grid_s": 0.205,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 48.365,
+      "output_time": 42.3317,
+      "onset_score": 3.204,
+      "strength_relative": 0.244,
+      "duration_estimate": 0.05,
+      "band_energy_fraction": {
+        "low_0_180": 0.567300021648407,
+        "low_mid_180_1200": 0.41839998960494995,
+        "mid_1200_5000": 0.013399999588727951,
+        "high_5000_12000": 0.0008999999845400453
+      },
+      "centroid_hz": 289.7,
+      "spectral_flatness": 0.1375,
+      "percussive_mask_fraction": 0.242,
+      "distance_to_recurring_attack_grid_s": 0.025,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 48.585,
+      "output_time": 42.5517,
+      "onset_score": 4.495,
+      "strength_relative": 0.342,
+      "duration_estimate": 0.075,
+      "band_energy_fraction": {
+        "low_0_180": 0.49810001254081726,
+        "low_mid_180_1200": 0.47909998893737793,
+        "mid_1200_5000": 0.018400000408291817,
+        "high_5000_12000": 0.004399999976158142
+      },
+      "centroid_hz": 357.4,
+      "spectral_flatness": 0.2203,
+      "percussive_mask_fraction": 0.215,
+      "distance_to_recurring_attack_grid_s": 0.245,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 48.81,
+      "output_time": 42.7767,
+      "onset_score": 3.839,
+      "strength_relative": 0.292,
+      "duration_estimate": 0.085,
+      "band_energy_fraction": {
+        "low_0_180": 0.6014000177383423,
+        "low_mid_180_1200": 0.3750999867916107,
+        "mid_1200_5000": 0.021299999207258224,
+        "high_5000_12000": 0.002099999925121665
+      },
+      "centroid_hz": 285.2,
+      "spectral_flatness": 0.1494,
+      "percussive_mask_fraction": 0.288,
+      "distance_to_recurring_attack_grid_s": 0.425,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 49.03,
+      "output_time": 42.9967,
+      "onset_score": 6.356,
+      "strength_relative": 0.483,
+      "duration_estimate": 0.06,
+      "band_energy_fraction": {
+        "low_0_180": 0.4009999930858612,
+        "low_mid_180_1200": 0.565500020980835,
+        "mid_1200_5000": 0.02250000089406967,
+        "high_5000_12000": 0.010999999940395355
+      },
+      "centroid_hz": 457.8,
+      "spectral_flatness": 0.2768,
+      "percussive_mask_fraction": 0.321,
+      "distance_to_recurring_attack_grid_s": 0.205,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 49.26,
+      "output_time": 43.2267,
+      "onset_score": 5.394,
+      "strength_relative": 0.41,
+      "duration_estimate": 0.055,
+      "band_energy_fraction": {
+        "low_0_180": 0.3995000123977661,
+        "low_mid_180_1200": 0.5652999877929688,
+        "mid_1200_5000": 0.02969999983906746,
+        "high_5000_12000": 0.005400000140070915
+      },
+      "centroid_hz": 427.7,
+      "spectral_flatness": 0.2533,
+      "percussive_mask_fraction": 0.286,
+      "distance_to_recurring_attack_grid_s": 0.025,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 49.48,
+      "output_time": 43.4467,
+      "onset_score": 4.151,
+      "strength_relative": 0.316,
+      "duration_estimate": 0.05,
+      "band_energy_fraction": {
+        "low_0_180": 0.48170000314712524,
+        "low_mid_180_1200": 0.4578000009059906,
+        "mid_1200_5000": 0.04780000075697899,
+        "high_5000_12000": 0.012600000016391277
+      },
+      "centroid_hz": 440.2,
+      "spectral_flatness": 0.3232,
+      "percussive_mask_fraction": 0.264,
+      "distance_to_recurring_attack_grid_s": 0.245,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 49.705,
+      "output_time": 43.6717,
+      "onset_score": 3.539,
+      "strength_relative": 0.269,
+      "duration_estimate": 0.06,
+      "band_energy_fraction": {
+        "low_0_180": 0.5457000136375427,
+        "low_mid_180_1200": 0.438400000333786,
+        "mid_1200_5000": 0.012900000438094139,
+        "high_5000_12000": 0.003000000026077032
+      },
+      "centroid_hz": 309.8,
+      "spectral_flatness": 0.1714,
+      "percussive_mask_fraction": 0.273,
+      "distance_to_recurring_attack_grid_s": 0.425,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 49.925,
+      "output_time": 43.8917,
+      "onset_score": 6.09,
+      "strength_relative": 0.463,
+      "duration_estimate": 0.07,
+      "band_energy_fraction": {
+        "low_0_180": 0.535099983215332,
+        "low_mid_180_1200": 0.42829999327659607,
+        "mid_1200_5000": 0.024399999529123306,
+        "high_5000_12000": 0.012199999764561653
+      },
+      "centroid_hz": 403.6,
+      "spectral_flatness": 0.3067,
+      "percussive_mask_fraction": 0.236,
+      "distance_to_recurring_attack_grid_s": 0.205,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 50.15,
+      "output_time": 44.1167,
+      "onset_score": 4.346,
+      "strength_relative": 0.33,
+      "duration_estimate": 0.06,
+      "band_energy_fraction": {
+        "low_0_180": 0.5497000217437744,
+        "low_mid_180_1200": 0.4246000051498413,
+        "mid_1200_5000": 0.02280000038444996,
+        "high_5000_12000": 0.00279999990016222
+      },
+      "centroid_hz": 327.1,
+      "spectral_flatness": 0.2025,
+      "percussive_mask_fraction": 0.263,
+      "distance_to_recurring_attack_grid_s": 0.02,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 50.375,
+      "output_time": 44.3417,
+      "onset_score": 4.354,
+      "strength_relative": 0.331,
+      "duration_estimate": 0.165,
+      "band_energy_fraction": {
+        "low_0_180": 0.5968000292778015,
+        "low_mid_180_1200": 0.3528999984264374,
+        "mid_1200_5000": 0.039500001817941666,
+        "high_5000_12000": 0.01080000028014183
+      },
+      "centroid_hz": 371.3,
+      "spectral_flatness": 0.2908,
+      "percussive_mask_fraction": 0.266,
+      "distance_to_recurring_attack_grid_s": 0.245,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 50.605,
+      "output_time": 44.5717,
+      "onset_score": 2.504,
+      "strength_relative": 0.19,
+      "duration_estimate": 0.09,
+      "band_energy_fraction": {
+        "low_0_180": 0.5996000170707703,
+        "low_mid_180_1200": 0.3862000107765198,
+        "mid_1200_5000": 0.011599999852478504,
+        "high_5000_12000": 0.0024999999441206455
+      },
+      "centroid_hz": 297.0,
+      "spectral_flatness": 0.1883,
+      "percussive_mask_fraction": 0.261,
+      "distance_to_recurring_attack_grid_s": 0.42,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 50.825,
+      "output_time": 44.7917,
+      "onset_score": 3.75,
+      "strength_relative": 0.285,
+      "duration_estimate": 0.055,
+      "band_energy_fraction": {
+        "low_0_180": 0.5072000026702881,
+        "low_mid_180_1200": 0.4691999852657318,
+        "mid_1200_5000": 0.013700000010430813,
+        "high_5000_12000": 0.009800000116229057
+      },
+      "centroid_hz": 384.9,
+      "spectral_flatness": 0.3063,
+      "percussive_mask_fraction": 0.282,
+      "distance_to_recurring_attack_grid_s": 0.2,
+      "excluded_live_action": false
+    },
+    {
+      "source_time": 51.05,
+      "output_time": 45.0167,
+      "onset_score": 2.437,
+      "strength_relative": 0.185,
+      "duration_estimate": 0.045,
+      "band_energy_fraction": {
+        "low_0_180": 0.5297999978065491,
+        "low_mid_180_1200": 0.4472000002861023,
+        "mid_1200_5000": 0.020099999383091927,
+        "high_5000_12000": 0.003000000026077032
+      },
+      "centroid_hz": 342.7,
+      "spectral_flatness": 0.2383,
+      "percussive_mask_fraction": 0.266,
+      "distance_to_recurring_attack_grid_s": 0.025,
+      "excluded_live_action": false
+    }
+  ]
+}

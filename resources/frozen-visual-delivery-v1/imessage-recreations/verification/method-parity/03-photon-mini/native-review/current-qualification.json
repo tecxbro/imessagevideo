@@ -1,0 +1,96 @@
+{
+  "status": "current_post_kerning_dense_qualification_with_retained_native441",
+  "sceneSHA256": "b720b3a955688bd464e8fbdd2662e5119575ba9f80c8b00e61919caf07c9e646",
+  "currentMotionCanvasPictureSHA256": "44aa40f7cc013d809c3614d94cd838cc81c6d28bf4d3d13f7b6dbcddb8d96ad7",
+  "currentMotionCanvasMeanSSIM": 0.9989859539682541,
+  "currentMotionCanvasMinimumSSIM": 0.992172,
+  "currentMotionCanvasWorstFrame": 441,
+  "currentComparisons": [
+    {
+      "method": "remotion",
+      "report": "../remotion.json",
+      "reportSHA256": "b2830244e9b679d6fc18a29ffefbc2022c2b5f81afe00756a2c1ab8383690519",
+      "pictureSHA256": "4ab42e74d37da5e85da1d1c2bc6849a72846c0d3525a1603a4271bdacfa857a2",
+      "meanSSIM": 0.9992843412698412,
+      "minimumSSIM": 0.992354,
+      "frames": 1260,
+      "requiresDiagnosis": false
+    },
+    {
+      "method": "html",
+      "report": "../html.json",
+      "reportSHA256": "5ea7cb656550b0f9dc92b22099bbc01dc5aa0ffce73d63326ae40c80cf013901",
+      "pictureSHA256": "e95a57c001dd1022be780333c4315c316972ee4ecf43def6381baceaf9b347db",
+      "meanSSIM": 0.9993067658730159,
+      "minimumSSIM": 0.992354,
+      "frames": 1260,
+      "requiresDiagnosis": false
+    },
+    {
+      "method": "pillow",
+      "report": "../pillow.json",
+      "reportSHA256": "0611691ab3d79538b060cdc5ff932a2f6d3bea1cc0612503a2d99c5f928fe23d",
+      "pictureSHA256": "654db5fc2281fa63d99a32dd3bb46ddba9f0361ca75e36a75f64ecff13d4e446",
+      "meanSSIM": 0.9931197928571428,
+      "minimumSSIM": 0.97948,
+      "frames": 1260,
+      "requiresDiagnosis": false
+    },
+    {
+      "method": "motion-canvas",
+      "report": "../motion-canvas.json",
+      "reportSHA256": "90a510b6921f08105ec698a02e36d6d868da5fca99737d62b21dda5ee55ab423",
+      "pictureSHA256": "44aa40f7cc013d809c3614d94cd838cc81c6d28bf4d3d13f7b6dbcddb8d96ad7",
+      "meanSSIM": 0.9989859539682541,
+      "minimumSSIM": 0.992172,
+      "frames": 1260,
+      "requiresDiagnosis": false
+    }
+  ],
+  "native441": {
+    "newCapture": false,
+    "retainedUnchanged": true,
+    "sha256": "dd612a189ea5704ea0c0b317e1e596c9c52099e064a63736bbef71935ba42555",
+    "inodeAtProof": 1578930,
+    "outsideKerningPatchScope": true,
+    "kerningPatchFrames": 59,
+    "outsideUnchangedFrames": 1201,
+    "proof": "motion-canvas-kerning-cache-proof.json",
+    "proofSHA256": "75d8171c4ba2c836cba84654ea1ff6dec2c3b05d5be68f498e06947b0d34e880",
+    "priorRMSProof": "motion-canvas-rms-cache-proof.json",
+    "earlierReviewMetrics": "rhm-worst441-native-metrics.json",
+    "earlierReviewMetricsSHA256": "1a433c2122f77c8d6642a0b44498ae336097aa1d385602ea6fbd5e372a43d909"
+  },
+  "earlierHTMLSummary": {
+    "path": "review-time-before-rms.html",
+    "sha256": "a988fcd1f35a19b11e5c353fe6bc8267bc51a3b97631f45d2d4e4182a7055841",
+    "status": "review-time evidence before finalRMSdenseupdate"
+  },
+  "notice": "Final post-kerning MC hash/stats are current. Prior955/7080 qualification and RMS proof remain review-time evidence. Native441 is unchanged outside59scope, not newly captured; only4PNGfiles have changed bytes in903\u2013961. No source/media/cache/script write.",
+  "currentMotionCanvasEngineSHA256": "d0c75ab68fa1ef3fe6e5e58427180f622da40834f7cebd20658111d034f9d15f",
+  "postKerningUpdate": {
+    "scope": [
+      [
+        903,
+        961
+      ]
+    ],
+    "patchFrames": 59,
+    "outsideUnchangedFrames": 1201,
+    "proof": "motion-canvas-kerning-cache-proof.json",
+    "proofSHA256": "75d8171c4ba2c836cba84654ea1ff6dec2c3b05d5be68f498e06947b0d34e880",
+    "previousPictureSHA256": "95561ebdf8d493c8911cf3f07f9c388695130eddfeb05dce8a3c5c427f010d6e",
+    "previousEngineSHA256": "7080c58ce151d1966b44671dc9db0801f81cb514200a3e8ed8a6cd1401777195",
+    "previousMeanSSIM": 0.9989862896825398,
+    "encodedMeanSSIMDelta": -3.35714285704114e-07,
+    "notice": "Tiny encoded mean difference retained transparently; no new native441 capture and no source-scene change.",
+    "nativePNGsWithChangedBytes": 4
+  },
+  "priorRMSQualification": {
+    "path": "review-time-rms-qualification.json",
+    "sha256": "c4e9d227cae3a6b86a566f604052254a0a34f94af29f652bd721431cdc931366",
+    "HTML": "review-time-before-kerning.html",
+    "HTMLSHA256": "114a0e55befcc169b0c2fb90d72486ad330a1f8413f33d216a38d41013d7dd69",
+    "status": "review-time evidence for95561ebd picture/7080c58c engine before finalkerning pass"
+  }
+}

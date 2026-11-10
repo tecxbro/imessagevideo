@@ -1,0 +1,10 @@
+# Source02 UI-cue analysis steps
+
+1. Read canonical V19 using a line filter that discards dense vector path strings. Retained about10.5MB of metadata instead of duplicating the395MB scene. Scene hash is recorded in02-scene-ui-inventory.json. Source01 V10 was also inventoried separately.
+2. Inspected native source contact frames and source-owner composer/send/chat helpers. The old composer-v5 character schedule was interpolated; it is not accepted as actual keystroke evidence. Root-copy95–174 is frame-specific but stores a full-sentence semantic label for partial glyph contours, so source pixels must establish each prefix.
+3. First OCR script failed to parse because a compact conditional joined `else` and `1`. No decoder ran. Corrected the spacing and checked syntax before retry.
+4. The next OCR attempt reached an incomplete final frame. Diagnosis: FFmpeg crop on the YUV420 source rounded requested275-pixel height to274. Fixed-size reads then used incorrect frame boundaries. The entire attempt was discarded; no OCR evidence file from it was accepted. A two-case byte-count proof is in02-crop-diagnosis.json. Convert toRGB24 before cropping so the requested odd-height ROI is exact, then retry.
+
+5. Corrected native RGB crop/OCR producer completed all85 source90–174 states. Manual contact-sheet review fixed caret-related OCR artifacts and checked the exact visible prefixes. Recovered32 changes/51 normalized characters; three spaces use observed caret advances, and multi-character jumps retain burst counts without fictitious internal times.
+6. Derived sends/arrivals from canonical native lifecycles and accepted source-owner visual measurements, including actual770/920 hard reveals. Excluded AI reasoning/search/title reveals and three-dot status loops. Optional green-check confirmations remain explicitly inferred gestures.
+7. Validated all event frames/times, prefix concatenation, pause, zero deletes and unchanged canonical hashes; no scene, media, audio or library edits. Final lists are01-events.json and02-events.json.

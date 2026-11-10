@@ -1,0 +1,21 @@
+{
+  "requested_roi": [
+    260,
+    400,
+    1540,
+    675
+  ],
+  "checks": [
+    {
+      "case": "subsampled_default",
+      "bytes": 1052160,
+      "implied_height": 274
+    },
+    {
+      "case": "rgb_before_crop",
+      "bytes": 1056000,
+      "implied_height": 275
+    }
+  ],
+  "cause": "YUV420 crop rounds odd height275 to274 by default. Explicit RGB conversion before crop preserves the requested275 rows. Earlier OCR stream had wrong frame boundaries and was discarded."
+}

@@ -1,0 +1,58 @@
+{
+  "id": "01-photonhq",
+  "fps": 30,
+  "frames": 655,
+  "duration": 21.833333333333332,
+  "frame_numbering": "Zero-based native frames; time=frame/30.",
+  "canonical_scene": "outputs/01-photonhq/final-v10/scene.json",
+  "canonical_scene_sha256": "2bbda2bf71ac43fa73d5004af01ad57fc1f5fd487ed5a697b2722571a1c16d19",
+  "events": [
+    {
+      "frame": 70,
+      "time": 2.333333333,
+      "kind": "tap",
+      "group": "blue-pill",
+      "confidence": 0.99,
+      "evidence_layer_or_source": {
+        "canonical_layer_ids": [
+          "group-6-source-pill",
+          "intro-pill-pressed",
+          "group-8-source-cursor"
+        ],
+        "source": "references/01-photonhq/source.mp4",
+        "native_source_frames": [
+          69,
+          70,
+          71,
+          72,
+          73
+        ],
+        "source_owner_helper": "references/01-photonhq/refine-intro-cursor-press.py",
+        "measurement_file": "references/01-photonhq/intro-review-elements.json",
+        "measurement_key": "measurements.pill-press-weights"
+      },
+      "observed_or_inferred": "observed_cursor_press_state",
+      "description": "Cursor rests on the blue pill; pressed-state blend jumps 0 at 69 to 0.954 at 70, with deepest press at 73. One click cue at first pressed frame; no second click on release.",
+      "gesture_visible": true
+    }
+  ],
+  "typing_events": 0,
+  "delete_events": 0,
+  "excluded_visuals": [
+    "Intro Photon2.0 title letter reveal is promotional title animation, not human typing.",
+    "With just one click words are promotional title animation.",
+    "SMS/email/call/iMessage/WhatsApp/Telegram wall motion is background promotional montage, not individual user sends or arrivals.",
+    "Final URL/logo presentation has no observed pointer tap or human typing."
+  ],
+  "evidence_files": [
+    {
+      "path": "audio-recreation/ui-cues/01-source-ui-contact.jpg",
+      "sha256": "900167f17123c90a972c4f538af945f0b33db5a36f82577efce60692dee08e8a"
+    },
+    {
+      "path": "references/01-photonhq/intro-review-elements.json",
+      "sha256": "3fcd359c4efd7754706c699a4cfd79363d24aecacc0636f89147840975998395"
+    }
+  ],
+  "policy": "Only direct UI action evidence is cued. No original audio or music-transient timing is used."
+}

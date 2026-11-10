@@ -1,0 +1,3 @@
+This authored neutral fixture verifies native animated SVG path geometry. At frame6, only d changes: the red30pxsquare moves/resizes into a40×50pxrectangle, and the second path’s gradient must follow its new bbox. Frame12 changes to a triangle. Position/fill do not change, so a stale dirty detector cannot pass accidentally.
+
+Before the fix, frames0/7 were identical. After the fix, the16-frame native cache contains exactly3 states. At frame6,20,20 becomesbackground240;90,20 becomesred255,0,68; the gradient at95,100 becomes125,0,131. First-state bytes remain identical. Actual Linq105 and Daniel Tian175 static-path PNGs are also byte-identical. See report.json; these are capability/parity tests, not source-video fidelity certification.

@@ -1,0 +1,14 @@
+from pathlib import Path
+from PIL import Image,ImageDraw
+from scipy import ndimage
+import numpy as np,json,importlib.util,copy
+P=Path(__file__).parent;sp=importlib.util.spec_from_file_location('trace',P.parent/'02-danieltian/trace_glyphs.py');tr=importlib.util.module_from_spec(sp);sp.loader.exec_module(tr)
+s=json.loads((P/'joint-v14-provisional.scene.json').read_text());root=next(x for x in s['layers'] if x['id']=='root-backplane-black-display')
+def sample(track,t):
+ if t<=track[0]['t']:return track[0]['value']
+ for a,b in zip(track,track[1:]):
+  if t<=b['t']:
+   u=(t-a['t'])/(b['t']-a['t']);return a['value']+(b['value']-a['value'])*u
+ return track[-1]['value']
+f=729;t=f/30;cam={k:sample(root['keyframes'][k],t) for k in ['x','y','scaleX','scaleY']};mask=Image.new('L',(800,1658));ImageDraw.Draw(mask).rounded_rectangle((36,38,764,1622),radius=112,fill=255);mask=mask.transform((1920,1080),Image.Transform.AFFINE,(1/cam['scaleX'],0,-cam['x']/cam['scaleX'],0,1/cam['scaleY'],-cam['y']/cam['scaleY']),resample=Image.Resampling.NEAREST);inside=np.array(mask)>0;a=np.array(Image.open(P/'lunch-native'/f'{f-609:03}.png').convert('RGB'));g=a.mean(2);neutral=(a.max(2).astype('int16')-a.min(2)<10)&inside;roi=np.zeros(inside.shape,bool);roi[700:]=1;vals=g[neutral&roi&(g>100)&(g<240)].astype('uint8');mode=int(np.bincount(vals,minlength=256).argmax());m=neutral&roi&(abs(g-mode)<8);m=ndimage.binary_closing(m,structure=np.ones((3,3)));lab,n=ndimage.label(m);areas=np.bincount(lab.ravel());areas[0]=0;chosen=int(areas.argmax());body=ndimage.binary_fill_holes(lab==chosen);yy,xx=np.where(body);box=[int(xx.min()),int(yy.min()),int(xx.max()+1),int(yy.max()+1)];x,y,x2,y2=box;d,meta=tr.trace_alpha(body[y:y2,x:x2].astype('float32'),x0=x,y0=y,threshold=.5);material={'id':'demo-visible-gray-material-729','type':'path','d':d,'fill':'#'+f'{mode:02x}'*3,'start':f/30,'end':(f+1)/30,'semanticText':'Visible portion of projected Messages page behind menu'}
+ink=body&(abs(g-mode)>5);rgba=np.zeros((*g.shape,4),'uint8');rgba[:,:,:3]=a;rgba[:,:,3]=np.where(ink,255,0).astype('uint8');asset=P/'assets/visible-gray729-demo.png';Image.fromarray(rgba[y:y2,x:x2]).save(asset);image={'id':'demo-visible-gray-ui-729','type':'image','src':str(asset),'x':x,'y':y,'width':x2-x,'height':y2-y,'start':f/30,'end':(f+1)/30,'provenance':{'kind':'bounded exposed Messages UI/control ink','source_frame':f,'source_box':box,'notice':'Native flat material is separate; foreground sheet/rows, physicalhardware, actors excluded. Static UI internals are bitmap ink.'}};ix=next(i for i,l in enumerate(s['layers']) if l['id']=='measured-lunch-bezel-overlay-v13');s['layers'][ix:ix]=[material,image];(P/'demo-visible-gray-v14.scene.json').write_text(json.dumps(s,indent=2));print({'frame':f,'page_gray':mode,'native_contour':meta,'box':box,'native_material_pixels':int(body.sum()),'ink_pixels':int(ink.sum()),'camera':cam})

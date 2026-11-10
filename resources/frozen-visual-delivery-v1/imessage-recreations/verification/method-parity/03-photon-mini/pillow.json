@@ -1,0 +1,77 @@
+{
+  "reference": "03-photon-mini",
+  "method": "pillow",
+  "toolSHA256": "457c02cfee4f068e81d2352b3477c306db76d783b712bcb83e839c4cb4fe38b1",
+  "sceneSHA256": "b720b3a955688bd464e8fbdd2662e5119575ba9f80c8b00e61919caf07c9e646",
+  "gsapSHA256": "323c1b4bb0f19bbc3559e7a4163de5f94878246c460d5d2894b69ee4106a57b2",
+  "candidateSHA256": "654db5fc2281fa63d99a32dd3bb46ddba9f0361ca75e36a75f64ecff13d4e446",
+  "frames": 1260,
+  "meanSSIM": 0.9931197928571428,
+  "minimumSSIM": 0.97948,
+  "percentile1SSIM": 0.98319106,
+  "peaks": [
+    {
+      "frame": 539,
+      "time": 17.966666666666665,
+      "ssim": 0.97948
+    },
+    {
+      "frame": 540,
+      "time": 18.0,
+      "ssim": 0.979597
+    },
+    {
+      "frame": 536,
+      "time": 17.866666666666667,
+      "ssim": 0.979853
+    },
+    {
+      "frame": 538,
+      "time": 17.933333333333334,
+      "ssim": 0.979877
+    },
+    {
+      "frame": 537,
+      "time": 17.9,
+      "ssim": 0.979993
+    },
+    {
+      "frame": 535,
+      "time": 17.833333333333332,
+      "ssim": 0.980553
+    },
+    {
+      "frame": 590,
+      "time": 19.666666666666668,
+      "ssim": 0.982583
+    },
+    {
+      "frame": 567,
+      "time": 18.9,
+      "ssim": 0.982777
+    },
+    {
+      "frame": 579,
+      "time": 19.3,
+      "ssim": 0.982809
+    },
+    {
+      "frame": 576,
+      "time": 19.2,
+      "ssim": 0.982894
+    },
+    {
+      "frame": 582,
+      "time": 19.4,
+      "ssim": 0.983048
+    },
+    {
+      "frame": 573,
+      "time": 19.1,
+      "ssim": 0.983136
+    }
+  ],
+  "requiresDiagnosis": false,
+  "diagnosisReasons": [],
+  "notice": "Every aligned decoded picture frame compared to GSAP. Absolute and relative outlier flags are review heuristics, not a fidelity certificate. This does not establish source fidelity; use the corresponding all-frame source scan and optical/foreground review."
+}

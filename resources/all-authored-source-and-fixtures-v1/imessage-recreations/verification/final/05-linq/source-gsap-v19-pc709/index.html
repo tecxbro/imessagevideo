@@ -1,0 +1,99 @@
+<!doctype html><html><meta charset="utf-8"><title>Recreation comparison</title><style>
+    body{background:#161616;color:#eee;font:15px system-ui;max-width:1500px;margin:32px auto;padding:0 24px}h1{font-size:28px}h2{font-size:17px}p{line-height:1.6}article{border-top:1px solid #444;padding:20px 0}img{width:100%;height:auto}pre{white-space:pre-wrap}a{color:#91caff}</style>
+    <h1>Reference / recreation / difference ×4</h1><p>Metrics cover selected sampled frames and mapped graphic excerpts only. They do not certify whole-video identity, audio, editable layers, or perceptual perfection. Foreground uses the union of both images differing from a reported border-median background; inspect that mask assumption for complex scenes. SSIM is luma, valid uniform 11×11 windows (population variance). Infinite PSNR is represented by null plus psnr_infinite=true. Difference previews amplify absolute channel differences ×4.</p><p><a href="report.json">Full JSON report</a> · <a href="metrics.csv">Per-frame CSV</a></p>
+    <pre>{
+  &quot;frames_sampled&quot;: 24,
+  &quot;sample_fps&quot;: 1,
+  &quot;all_reference_frames_requested&quot;: false,
+  &quot;global&quot;: {
+    &quot;pixels_compared&quot;: 16588800,
+    &quot;mae&quot;: 3.51813203285751,
+    &quot;rmse&quot;: 12.783608436267643,
+    &quot;psnr_db&quot;: 25.99773441523297,
+    &quot;psnr_infinite&quot;: false,
+    &quot;changed_pixel_percent&quot;: 13.20361930941358,
+    &quot;mean_ssim_luma&quot;: 0.950491113258618
+  },
+  &quot;foreground_union&quot;: {
+    &quot;pixels_compared&quot;: 7881867,
+    &quot;mae&quot;: 7.1241777276035405,
+    &quot;rmse&quot;: 18.524975390434747,
+    &quot;psnr_db&quot;: 22.77565081444314,
+    &quot;psnr_infinite&quot;: false,
+    &quot;changed_pixel_percent&quot;: 27.689594356261022,
+    &quot;mean_ssim_luma&quot;: 0.9157754261978197
+  },
+  &quot;sampled_frames_pixel_identical&quot;: false
+}</pre><article><h2>frame-117: source 3.9000s → render 3.9000s</h2>
+        <p>Global MAE 3.382 · SSIM 0.91317 · changed pixels 11.44%<br>
+        Foreground MAE 18.464 · foreground coverage 17.23%</p>
+        <img loading="lazy" src="frames/00000.jpg" alt="Reference, recreation, amplified absolute difference"></article><article><h2>frame-189: source 6.3000s → render 6.3000s</h2>
+        <p>Global MAE 2.860 · SSIM 0.97388 · changed pixels 15.34%<br>
+        Foreground MAE 7.463 · foreground coverage 37.67%</p>
+        <img loading="lazy" src="frames/00001.jpg" alt="Reference, recreation, amplified absolute difference"></article><article><h2>frame-211: source 7.0333s → render 7.0333s</h2>
+        <p>Global MAE 2.776 · SSIM 0.98520 · changed pixels 17.10%<br>
+        Foreground MAE 3.97 · foreground coverage 68.73%</p>
+        <img loading="lazy" src="frames/00002.jpg" alt="Reference, recreation, amplified absolute difference"></article><article><h2>frame-227: source 7.5667s → render 7.5667s</h2>
+        <p>Global MAE 3.228 · SSIM 0.97979 · changed pixels 18.90%<br>
+        Foreground MAE 4.625 · foreground coverage 68.77%</p>
+        <img loading="lazy" src="frames/00003.jpg" alt="Reference, recreation, amplified absolute difference"></article><article><h2>frame-258: source 8.6000s → render 8.6000s</h2>
+        <p>Global MAE 3.381 · SSIM 0.97910 · changed pixels 17.62%<br>
+        Foreground MAE 4.645 · foreground coverage 72.09%</p>
+        <img loading="lazy" src="frames/00004.jpg" alt="Reference, recreation, amplified absolute difference"></article><article><h2>frame-373: source 12.4333s → render 12.4333s</h2>
+        <p>Global MAE 3.588 · SSIM 0.93045 · changed pixels 22.49%<br>
+        Foreground MAE 6.967 · foreground coverage 47.28%</p>
+        <img loading="lazy" src="frames/00005.jpg" alt="Reference, recreation, amplified absolute difference"></article><article><h2>frame-418: source 13.9333s → render 13.9333s</h2>
+        <p>Global MAE 3.293 · SSIM 0.95737 · changed pixels 15.23%<br>
+        Foreground MAE 5.766 · foreground coverage 54.91%</p>
+        <img loading="lazy" src="frames/00006.jpg" alt="Reference, recreation, amplified absolute difference"></article><article><h2>frame-438: source 14.6000s → render 14.6000s</h2>
+        <p>Global MAE 2.382 · SSIM 0.95759 · changed pixels 6.74%<br>
+        Foreground MAE 3.842 · foreground coverage 59.26%</p>
+        <img loading="lazy" src="frames/00007.jpg" alt="Reference, recreation, amplified absolute difference"></article><article><h2>frame-468: source 15.6000s → render 15.6000s</h2>
+        <p>Global MAE 2.953 · SSIM 0.94014 · changed pixels 9.91%<br>
+        Foreground MAE 6.083 · foreground coverage 46.97%</p>
+        <img loading="lazy" src="frames/00008.jpg" alt="Reference, recreation, amplified absolute difference"></article><article><h2>frame-828: source 27.6000s → render 27.6000s</h2>
+        <p>Global MAE 3.188 · SSIM 0.96162 · changed pixels 3.32%<br>
+        Foreground MAE 9.506 · foreground coverage 33.40%</p>
+        <img loading="lazy" src="frames/00009.jpg" alt="Reference, recreation, amplified absolute difference"></article><article><h2>frame-861: source 28.7000s → render 28.7000s</h2>
+        <p>Global MAE 3.439 · SSIM 0.93994 · changed pixels 7.10%<br>
+        Foreground MAE 24.167 · foreground coverage 14.21%</p>
+        <img loading="lazy" src="frames/00010.jpg" alt="Reference, recreation, amplified absolute difference"></article><article><h2>frame-896: source 29.8667s → render 29.8667s</h2>
+        <p>Global MAE 2.536 · SSIM 0.98489 · changed pixels 14.73%<br>
+        Foreground MAE 4.935 · foreground coverage 50.77%</p>
+        <img loading="lazy" src="frames/00011.jpg" alt="Reference, recreation, amplified absolute difference"></article><article><h2>frame-926: source 30.8667s → render 30.8667s</h2>
+        <p>Global MAE 2.745 · SSIM 0.97035 · changed pixels 13.65%<br>
+        Foreground MAE 5.187 · foreground coverage 52.16%</p>
+        <img loading="lazy" src="frames/00012.jpg" alt="Reference, recreation, amplified absolute difference"></article><article><h2>frame-941: source 31.3667s → render 31.3667s</h2>
+        <p>Global MAE 3.427 · SSIM 0.95482 · changed pixels 14.89%<br>
+        Foreground MAE 3.427 · foreground coverage 99.87%</p>
+        <img loading="lazy" src="frames/00013.jpg" alt="Reference, recreation, amplified absolute difference"></article><article><h2>frame-1000: source 33.3333s → render 33.3333s</h2>
+        <p>Global MAE 3.225 · SSIM 0.93216 · changed pixels 3.89%<br>
+        Foreground MAE 40.456 · foreground coverage 7.30%</p>
+        <img loading="lazy" src="frames/00014.jpg" alt="Reference, recreation, amplified absolute difference"></article><article><h2>frame-1020: source 34.0000s → render 34.0000s</h2>
+        <p>Global MAE 3.735 · SSIM 0.91195 · changed pixels 4.84%<br>
+        Foreground MAE 47.162 · foreground coverage 7.43%</p>
+        <img loading="lazy" src="frames/00015.jpg" alt="Reference, recreation, amplified absolute difference"></article><article><h2>frame-1079: source 35.9667s → render 35.9667s</h2>
+        <p>Global MAE 4.132 · SSIM 0.93801 · changed pixels 14.66%<br>
+        Foreground MAE 11.428 · foreground coverage 35.63%</p>
+        <img loading="lazy" src="frames/00016.jpg" alt="Reference, recreation, amplified absolute difference"></article><article><h2>frame-1100: source 36.6667s → render 36.6667s</h2>
+        <p>Global MAE 5.213 · SSIM 0.89959 · changed pixels 15.36%<br>
+        Foreground MAE 15.042 · foreground coverage 34.38%</p>
+        <img loading="lazy" src="frames/00017.jpg" alt="Reference, recreation, amplified absolute difference"></article><article><h2>frame-1123: source 37.4333s → render 37.4333s</h2>
+        <p>Global MAE 4.269 · SSIM 0.92288 · changed pixels 12.20%<br>
+        Foreground MAE 11.963 · foreground coverage 35.35%</p>
+        <img loading="lazy" src="frames/00018.jpg" alt="Reference, recreation, amplified absolute difference"></article><article><h2>frame-1145: source 38.1667s → render 38.1667s</h2>
+        <p>Global MAE 4.462 · SSIM 0.90982 · changed pixels 23.57%<br>
+        Foreground MAE 13.808 · foreground coverage 31.58%</p>
+        <img loading="lazy" src="frames/00019.jpg" alt="Reference, recreation, amplified absolute difference"></article><article><h2>frame-1191: source 39.7000s → render 39.7000s</h2>
+        <p>Global MAE 2.881 · SSIM 0.97752 · changed pixels 8.54%<br>
+        Foreground MAE 3.196 · foreground coverage 80.47%</p>
+        <img loading="lazy" src="frames/00020.jpg" alt="Reference, recreation, amplified absolute difference"></article><article><h2>frame-1207: source 40.2333s → render 40.2333s</h2>
+        <p>Global MAE 4.038 · SSIM 0.95463 · changed pixels 12.80%<br>
+        Foreground MAE 4.731 · foreground coverage 84.20%</p>
+        <img loading="lazy" src="frames/00021.jpg" alt="Reference, recreation, amplified absolute difference"></article><article><h2>frame-1223: source 40.7667s → render 40.7667s</h2>
+        <p>Global MAE 4.313 · SSIM 0.96448 · changed pixels 11.39%<br>
+        Foreground MAE 7.835 · foreground coverage 53.26%</p>
+        <img loading="lazy" src="frames/00022.jpg" alt="Reference, recreation, amplified absolute difference"></article><article><h2>frame-1267: source 42.2333s → render 42.2333s</h2>
+        <p>Global MAE 4.989 · SSIM 0.97244 · changed pixels 21.19%<br>
+        Foreground MAE 8.722 · foreground coverage 47.40%</p>
+        <img loading="lazy" src="frames/00023.jpg" alt="Reference, recreation, amplified absolute difference"></article></html>

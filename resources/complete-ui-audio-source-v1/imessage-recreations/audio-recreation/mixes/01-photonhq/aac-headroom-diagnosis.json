@@ -1,0 +1,86 @@
+{
+  "cause": "AAC lossy reconstruction overshoot: safe lossless music TP -2.56 dBTP becomes +0.80 dBTP at112kbps. No source samples or new mix recipe used in this codec-only comparison.",
+  "candidates": {
+    "112k": {
+      "statistics": {
+        "samples_per_channel": 1048576,
+        "duration_s": 21.845333333333333,
+        "sample_peak": 1.0630476474761963,
+        "sample_peak_dbfs": 0.5310546144966867,
+        "rms": 0.13255407869654634,
+        "finite": true,
+        "clipped_samples": 2,
+        "endpoints_zero": false
+      },
+      "loudness": {
+        "integrated_lufs": -15.95,
+        "true_peak_dbtp": 0.8,
+        "lra_lu": 13.5,
+        "threshold_lufs": -26.71,
+        "silent": false
+      },
+      "peak_time_s": 11.586666666666666,
+      "bytes": 321066
+    },
+    "192k": {
+      "statistics": {
+        "samples_per_channel": 1048576,
+        "duration_s": 21.845333333333333,
+        "sample_peak": 0.8935340046882629,
+        "sample_peak_dbfs": -0.9777783031788603,
+        "rms": 0.13258209295092163,
+        "finite": true,
+        "clipped_samples": 0,
+        "endpoints_zero": false
+      },
+      "loudness": {
+        "integrated_lufs": -15.98,
+        "true_peak_dbtp": -0.98,
+        "lra_lu": 13.5,
+        "threshold_lufs": -26.74,
+        "silent": false
+      },
+      "peak_time_s": 1.6758541666666666,
+      "bytes": 553348
+    },
+    "256k": {
+      "statistics": {
+        "samples_per_channel": 1048576,
+        "duration_s": 21.845333333333333,
+        "sample_peak": 0.745452344417572,
+        "sample_peak_dbfs": -2.5516023015776197,
+        "rms": 0.13266478439222631,
+        "finite": true,
+        "clipped_samples": 0,
+        "endpoints_zero": false
+      },
+      "loudness": {
+        "integrated_lufs": -15.97,
+        "true_peak_dbtp": -2.47,
+        "lra_lu": 13.5,
+        "threshold_lufs": -26.73,
+        "silent": false
+      },
+      "peak_time_s": 1.6758333333333333,
+      "bytes": 719174
+    }
+  },
+  "discarded_codec_only_diagnostic_files": [
+    {
+      "file": "music-aac-192k-diagnostic.m4a",
+      "sha256": "2b909304de8f8b4932eb3e6a79593eddf07b030080446f6062f0d43973f0414e",
+      "bytes": 553348
+    },
+    {
+      "file": "music-aac-256k-diagnostic.m4a",
+      "sha256": "138d6e12652d5d3cf97a0ef37bba6eff7cd3dae486523282a16f79d083be71af",
+      "bytes": 719174
+    },
+    {
+      "file": "music-timescale-diagnostic.m4a",
+      "sha256": "a243349cabcd987522bf657f2e758a752b6988781e3c8eb5c05fd15db84481af",
+      "bytes": 719174
+    }
+  ],
+  "disposal_reason": "Regenerable codec-only probes removed after metrics/hashes preserved; accepted six stem/listening exports remain."
+}

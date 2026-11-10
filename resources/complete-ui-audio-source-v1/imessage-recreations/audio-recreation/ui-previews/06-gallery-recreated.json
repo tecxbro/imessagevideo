@@ -1,0 +1,38 @@
+{
+  "id": "06-gallery",
+  "variant": "recreated",
+  "video_sha256": "55dad2c7be7be1b5cfcb438926363817f9cfdaeedc85f4b37908fe0d6331f1c4",
+  "audio_sha256": "a1ac446d9380ec93fdd8eace81cee434c26296f76f00f3d1508dbd8622631d9e",
+  "output_sha256": "fd784d80792f4769cfc8b687ded2e3e11c8a24388f7faeaf5da0c96fc96c180d",
+  "video_packet_sha256": "SHA256=d72c2743790370fab291fc65f68da1f99bce47d44f06e0a2922d01dbf09b6e78",
+  "aac_packet_sha256": "SHA256=61a346fc97c94491c1df6ceb7bbd12036af130c3bbeabd60f8af5151b7ec22df",
+  "picture_and_aac_packets_unchanged": true,
+  "reference_audio_reused": false,
+  "probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "codec_type": "video",
+        "time_base": "1/15360",
+        "duration_ts": 759296,
+        "nb_read_packets": "1483"
+      },
+      {
+        "codec_name": "aac",
+        "codec_type": "audio",
+        "time_base": "1/48000",
+        "duration_ts": 2372800,
+        "nb_read_packets": "2319"
+      }
+    ],
+    "format": {
+      "duration": "49.433333"
+    }
+  },
+  "ui_report_sha256": "cce5b81e8a759972304ce5a24523e2fa64f331b8f87cb2c7c1e95b0261431b5a",
+  "visual_cues": 18,
+  "audible_cues": 18,
+  "audio_audition_boost": false
+}

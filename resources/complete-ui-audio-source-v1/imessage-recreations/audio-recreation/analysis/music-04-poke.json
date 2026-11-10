@@ -1,0 +1,840 @@
+{
+  "id": "04-poke",
+  "source_path": "references/04-poke/source.mp4",
+  "source_sha256": "a3d5dd064dc4482813a332d7e3821a43d557c015c5cbb5be6ff09b29874db50f",
+  "source_file_bytes": 5254350,
+  "format_duration_seconds": 42.858667,
+  "audio_stream": {
+    "index": 1,
+    "codec_name": "aac",
+    "sample_rate": "48000",
+    "channels": 2,
+    "channel_layout": "stereo",
+    "duration": "42.858667",
+    "bit_rate": "128093"
+  },
+  "decoded_audio_duration_seconds": 42.858685,
+  "analyzed_audio_duration_seconds": 42.809433,
+  "native_picture_duration_seconds": 42.809433333,
+  "native_picture_frames": 1283,
+  "native_picture_frame_rate": "30000/1001",
+  "target_duration_seconds": 42.809433333,
+  "target_audio_timing_note": "Unchanged source timeline; final score must use exact final visual duration.",
+  "measured_mix": {
+    "rms_dbfs": -18.34,
+    "peak_dbfs": -1.28,
+    "crest_factor_db": 15.09,
+    "active_frame_fraction": 0.95988,
+    "stereo_correlation": 0.84115,
+    "quarter_rms_dbfs": [
+      -18.67,
+      -18.14,
+      -17.6,
+      -19.09
+    ],
+    "frequency_band_energy_fractions": {
+      "sub_20_80": 0.41042,
+      "bass_80_250": 0.47125,
+      "low_mid_250_1000": 0.08771,
+      "mid_1000_4000": 0.02233,
+      "high_4000_11025": 0.00497
+    },
+    "active_frame_spectral_centroid_hz_median": 206.4,
+    "active_frame_85_percent_rolloff_hz_median": 215.3,
+    "active_frame_spectral_flatness_median": 0.00212,
+    "hpss_harmonic_energy_proxy_fraction": 0.709
+  },
+  "tempo": {
+    "method": "Normalized autocorrelation of positive log-spectral flux; 60\u2013180 BPM search; unseparated soundtrack, aliases and speech/UI contamination unresolved.",
+    "broadband_candidates": [
+      {
+        "bpm": 122.73,
+        "normalized_autocorrelation": 0.66469,
+        "lag_seconds": 0.48889
+      },
+      {
+        "bpm": 60.74,
+        "normalized_autocorrelation": 0.65862,
+        "lag_seconds": 0.98776
+      },
+      {
+        "bpm": 81.27,
+        "normalized_autocorrelation": 0.56828,
+        "lag_seconds": 0.73832
+      },
+      {
+        "bpm": 162.53,
+        "normalized_autocorrelation": 0.26262,
+        "lag_seconds": 0.36916
+      },
+      {
+        "bpm": 98.58,
+        "normalized_autocorrelation": 0.1986,
+        "lag_seconds": 0.60862
+      }
+    ],
+    "bass_candidates": [
+      {
+        "bpm": 60.74,
+        "normalized_autocorrelation": 0.39408,
+        "lag_seconds": 0.98776
+      },
+      {
+        "bpm": 122.73,
+        "normalized_autocorrelation": 0.3435,
+        "lag_seconds": 0.48889
+      },
+      {
+        "bpm": 81.27,
+        "normalized_autocorrelation": 0.22433,
+        "lag_seconds": 0.73832
+      },
+      {
+        "bpm": 158.25,
+        "normalized_autocorrelation": 0.08218,
+        "lag_seconds": 0.37914
+      },
+      {
+        "bpm": 98.58,
+        "normalized_autocorrelation": 0.01102,
+        "lag_seconds": 0.60862
+      }
+    ],
+    "segments": [
+      {
+        "source_start": 0,
+        "source_end": 8,
+        "broadband_candidates": [
+          {
+            "bpm": 122.73,
+            "normalized_autocorrelation": 0.4829,
+            "lag_seconds": 0.48889
+          },
+          {
+            "bpm": 60.74,
+            "normalized_autocorrelation": 0.43332,
+            "lag_seconds": 0.98776
+          }
+        ],
+        "bass_candidates": [
+          {
+            "bpm": 60.74,
+            "normalized_autocorrelation": 0.35436,
+            "lag_seconds": 0.98776
+          },
+          {
+            "bpm": 122.73,
+            "normalized_autocorrelation": 0.2936,
+            "lag_seconds": 0.48889
+          }
+        ]
+      },
+      {
+        "source_start": 6,
+        "source_end": 14,
+        "broadband_candidates": [
+          {
+            "bpm": 60.74,
+            "normalized_autocorrelation": 0.61553,
+            "lag_seconds": 0.98776
+          },
+          {
+            "bpm": 122.73,
+            "normalized_autocorrelation": 0.60511,
+            "lag_seconds": 0.48889
+          }
+        ],
+        "bass_candidates": [
+          {
+            "bpm": 60.74,
+            "normalized_autocorrelation": 0.33399,
+            "lag_seconds": 0.98776
+          },
+          {
+            "bpm": 122.73,
+            "normalized_autocorrelation": 0.20979,
+            "lag_seconds": 0.48889
+          }
+        ]
+      },
+      {
+        "source_start": 12,
+        "source_end": 20,
+        "broadband_candidates": [
+          {
+            "bpm": 122.73,
+            "normalized_autocorrelation": 0.70896,
+            "lag_seconds": 0.48889
+          },
+          {
+            "bpm": 60.74,
+            "normalized_autocorrelation": 0.68686,
+            "lag_seconds": 0.98776
+          }
+        ],
+        "bass_candidates": [
+          {
+            "bpm": 61.36,
+            "normalized_autocorrelation": 0.36736,
+            "lag_seconds": 0.97778
+          },
+          {
+            "bpm": 122.73,
+            "normalized_autocorrelation": 0.35763,
+            "lag_seconds": 0.48889
+          }
+        ]
+      },
+      {
+        "source_start": 18,
+        "source_end": 26,
+        "broadband_candidates": [
+          {
+            "bpm": 60.74,
+            "normalized_autocorrelation": 0.76059,
+            "lag_seconds": 0.98776
+          },
+          {
+            "bpm": 122.73,
+            "normalized_autocorrelation": 0.74997,
+            "lag_seconds": 0.48889
+          }
+        ],
+        "bass_candidates": [
+          {
+            "bpm": 122.73,
+            "normalized_autocorrelation": 0.49455,
+            "lag_seconds": 0.48889
+          },
+          {
+            "bpm": 60.74,
+            "normalized_autocorrelation": 0.48241,
+            "lag_seconds": 0.98776
+          }
+        ]
+      },
+      {
+        "source_start": 24,
+        "source_end": 32,
+        "broadband_candidates": [
+          {
+            "bpm": 122.73,
+            "normalized_autocorrelation": 0.72918,
+            "lag_seconds": 0.48889
+          },
+          {
+            "bpm": 60.74,
+            "normalized_autocorrelation": 0.71571,
+            "lag_seconds": 0.98776
+          }
+        ],
+        "bass_candidates": [
+          {
+            "bpm": 60.74,
+            "normalized_autocorrelation": 0.49839,
+            "lag_seconds": 0.98776
+          },
+          {
+            "bpm": 122.73,
+            "normalized_autocorrelation": 0.45578,
+            "lag_seconds": 0.48889
+          }
+        ]
+      },
+      {
+        "source_start": 30,
+        "source_end": 38,
+        "broadband_candidates": [
+          {
+            "bpm": 60.74,
+            "normalized_autocorrelation": 0.59295,
+            "lag_seconds": 0.98776
+          },
+          {
+            "bpm": 122.73,
+            "normalized_autocorrelation": 0.5738,
+            "lag_seconds": 0.48889
+          }
+        ],
+        "bass_candidates": [
+          {
+            "bpm": 60.74,
+            "normalized_autocorrelation": 0.34526,
+            "lag_seconds": 0.98776
+          },
+          {
+            "bpm": 122.73,
+            "normalized_autocorrelation": 0.22813,
+            "lag_seconds": 0.48889
+          }
+        ]
+      }
+    ]
+  },
+  "target_timeline_mix": {
+    "quarter_rms_dbfs": [
+      -18.67,
+      -18.14,
+      -17.6,
+      -19.09
+    ],
+    "rms_dbfs": -18.34,
+    "purpose": "Energy map only; this source audio must not be reused in the new score."
+  },
+  "distributed_detected_transients": [
+    {
+      "source_start": 0,
+      "source_end": 8,
+      "representative_transients": [
+        {
+          "source_time": 4.4532,
+          "output_time": 4.4532,
+          "prominence": 0.35987
+        },
+        {
+          "source_time": 5.9298,
+          "output_time": 5.9298,
+          "prominence": 0.33604
+        },
+        {
+          "source_time": 7.7756,
+          "output_time": 7.7756,
+          "prominence": 0.46753
+        }
+      ]
+    },
+    {
+      "source_start": 8,
+      "source_end": 16,
+      "representative_transients": [
+        {
+          "source_time": 10.1103,
+          "output_time": 10.1103,
+          "prominence": 0.50879
+        },
+        {
+          "source_time": 12.0758,
+          "output_time": 12.0758,
+          "prominence": 0.51846
+        },
+        {
+          "source_time": 14.0513,
+          "output_time": 14.0513,
+          "prominence": 0.54284
+        }
+      ]
+    },
+    {
+      "source_start": 16,
+      "source_end": 24,
+      "representative_transients": [
+        {
+          "source_time": 17.9824,
+          "output_time": 17.9824,
+          "prominence": 0.50187
+        },
+        {
+          "source_time": 19.2096,
+          "output_time": 19.2096,
+          "prominence": 0.45459
+        },
+        {
+          "source_time": 19.9479,
+          "output_time": 19.9479,
+          "prominence": 0.53654
+        }
+      ]
+    },
+    {
+      "source_start": 24,
+      "source_end": 32,
+      "representative_transients": [
+        {
+          "source_time": 26.3434,
+          "output_time": 26.3434,
+          "prominence": 0.41389
+        },
+        {
+          "source_time": 27.82,
+          "output_time": 27.82,
+          "prominence": 0.45568
+        },
+        {
+          "source_time": 31.8708,
+          "output_time": 31.8708,
+          "prominence": 0.55508
+        }
+      ]
+    },
+    {
+      "source_start": 32,
+      "source_end": 40,
+      "representative_transients": [
+        {
+          "source_time": 32.24,
+          "output_time": 32.24,
+          "prominence": 0.52403
+        },
+        {
+          "source_time": 34.2155,
+          "output_time": 34.2155,
+          "prominence": 0.51847
+        },
+        {
+          "source_time": 38.1466,
+          "output_time": 38.1466,
+          "prominence": 0.57435
+        }
+      ]
+    },
+    {
+      "source_start": 40,
+      "source_end": 42.8094,
+      "representative_transients": [
+        {
+          "source_time": 40.1121,
+          "output_time": 40.1121,
+          "prominence": 0.43105
+        },
+        {
+          "source_time": 41.5888,
+          "output_time": 41.5888,
+          "prominence": 0.31269
+        },
+        {
+          "source_time": 42.3271,
+          "output_time": 42.3271,
+          "prominence": 0.18189
+        }
+      ]
+    }
+  ],
+  "onset_density_per_second": 6.494,
+  "major_detected_transients": [
+    {
+      "source_time": 8.1448,
+      "output_time": 8.1448,
+      "spectral_flux": 0.50806,
+      "prominence": 0.50713,
+      "local_rms_dbfs": -19.29,
+      "classification": "unseparated broadband transient; may be percussion, speech consonant, UI sound or mix change"
+    },
+    {
+      "source_time": 10.1103,
+      "output_time": 10.1103,
+      "spectral_flux": 0.50972,
+      "prominence": 0.50879,
+      "local_rms_dbfs": -21.92,
+      "classification": "unseparated broadband transient; may be percussion, speech consonant, UI sound or mix change"
+    },
+    {
+      "source_time": 11.3375,
+      "output_time": 11.3375,
+      "spectral_flux": 0.46378,
+      "prominence": 0.4624,
+      "local_rms_dbfs": -19.66,
+      "classification": "unseparated broadband transient; may be percussion, speech consonant, UI sound or mix change"
+    },
+    {
+      "source_time": 12.0758,
+      "output_time": 12.0758,
+      "spectral_flux": 0.52228,
+      "prominence": 0.51846,
+      "local_rms_dbfs": -20.39,
+      "classification": "unseparated broadband transient; may be percussion, speech consonant, UI sound or mix change"
+    },
+    {
+      "source_time": 14.0513,
+      "output_time": 14.0513,
+      "spectral_flux": 0.5429,
+      "prominence": 0.54284,
+      "local_rms_dbfs": -16.37,
+      "classification": "unseparated broadband transient; may be percussion, speech consonant, UI sound or mix change"
+    },
+    {
+      "source_time": 17.9824,
+      "output_time": 17.9824,
+      "spectral_flux": 0.50602,
+      "prominence": 0.50187,
+      "local_rms_dbfs": -20.15,
+      "classification": "unseparated broadband transient; may be percussion, speech consonant, UI sound or mix change"
+    },
+    {
+      "source_time": 19.2096,
+      "output_time": 19.2096,
+      "spectral_flux": 0.45956,
+      "prominence": 0.45459,
+      "local_rms_dbfs": -16.39,
+      "classification": "unseparated broadband transient; may be percussion, speech consonant, UI sound or mix change"
+    },
+    {
+      "source_time": 19.9479,
+      "output_time": 19.9479,
+      "spectral_flux": 0.53819,
+      "prominence": 0.53654,
+      "local_rms_dbfs": -20.38,
+      "classification": "unseparated broadband transient; may be percussion, speech consonant, UI sound or mix change"
+    },
+    {
+      "source_time": 23.879,
+      "output_time": 23.879,
+      "spectral_flux": 0.45958,
+      "prominence": 0.45251,
+      "local_rms_dbfs": -21.28,
+      "classification": "unseparated broadband transient; may be percussion, speech consonant, UI sound or mix change"
+    },
+    {
+      "source_time": 27.82,
+      "output_time": 27.82,
+      "spectral_flux": 0.46055,
+      "prominence": 0.45568,
+      "local_rms_dbfs": -18.12,
+      "classification": "unseparated broadband transient; may be percussion, speech consonant, UI sound or mix change"
+    },
+    {
+      "source_time": 31.8708,
+      "output_time": 31.8708,
+      "spectral_flux": 0.55508,
+      "prominence": 0.55508,
+      "local_rms_dbfs": -19.68,
+      "classification": "unseparated broadband transient; may be percussion, speech consonant, UI sound or mix change"
+    },
+    {
+      "source_time": 34.2155,
+      "output_time": 34.2155,
+      "spectral_flux": 0.51997,
+      "prominence": 0.51847,
+      "local_rms_dbfs": -19.65,
+      "classification": "unseparated broadband transient; may be percussion, speech consonant, UI sound or mix change"
+    },
+    {
+      "source_time": 36.1711,
+      "output_time": 36.1711,
+      "spectral_flux": 0.46884,
+      "prominence": 0.46408,
+      "local_rms_dbfs": -22.29,
+      "classification": "unseparated broadband transient; may be percussion, speech consonant, UI sound or mix change"
+    },
+    {
+      "source_time": 38.1466,
+      "output_time": 38.1466,
+      "spectral_flux": 0.57618,
+      "prominence": 0.57435,
+      "local_rms_dbfs": -20.36,
+      "classification": "unseparated broadband transient; may be percussion, speech consonant, UI sound or mix change"
+    }
+  ],
+  "one_second_energy": [
+    {
+      "source_start": 0,
+      "source_end": 1.0,
+      "output_start": 0.0,
+      "rms_dbfs": -39.45,
+      "peak_dbfs": -18
+    },
+    {
+      "source_start": 1,
+      "source_end": 2.0,
+      "output_start": 1.0,
+      "rms_dbfs": -21.28,
+      "peak_dbfs": -8
+    },
+    {
+      "source_start": 2,
+      "source_end": 3.0,
+      "output_start": 2.0,
+      "rms_dbfs": -17.49,
+      "peak_dbfs": -7
+    },
+    {
+      "source_start": 3,
+      "source_end": 4.0,
+      "output_start": 3.0,
+      "rms_dbfs": -17.01,
+      "peak_dbfs": -6
+    },
+    {
+      "source_start": 4,
+      "source_end": 5.0,
+      "output_start": 4.0,
+      "rms_dbfs": -17.99,
+      "peak_dbfs": -6
+    },
+    {
+      "source_start": 5,
+      "source_end": 6.0,
+      "output_start": 5.0,
+      "rms_dbfs": -19.47,
+      "peak_dbfs": -8
+    },
+    {
+      "source_start": 6,
+      "source_end": 7.0,
+      "output_start": 6.0,
+      "rms_dbfs": -18.22,
+      "peak_dbfs": -8
+    },
+    {
+      "source_start": 7,
+      "source_end": 8.0,
+      "output_start": 7.0,
+      "rms_dbfs": -18.74,
+      "peak_dbfs": -8
+    },
+    {
+      "source_start": 8,
+      "source_end": 9.0,
+      "output_start": 8.0,
+      "rms_dbfs": -18.22,
+      "peak_dbfs": -8
+    },
+    {
+      "source_start": 9,
+      "source_end": 10.0,
+      "output_start": 9.0,
+      "rms_dbfs": -18.33,
+      "peak_dbfs": -6
+    },
+    {
+      "source_start": 10,
+      "source_end": 11.0,
+      "output_start": 10.0,
+      "rms_dbfs": -18.29,
+      "peak_dbfs": -6
+    },
+    {
+      "source_start": 11,
+      "source_end": 12.0,
+      "output_start": 11.0,
+      "rms_dbfs": -18.21,
+      "peak_dbfs": -8
+    },
+    {
+      "source_start": 12,
+      "source_end": 13.0,
+      "output_start": 12.0,
+      "rms_dbfs": -17.82,
+      "peak_dbfs": -6
+    },
+    {
+      "source_start": 13,
+      "source_end": 14.0,
+      "output_start": 13.0,
+      "rms_dbfs": -18.8,
+      "peak_dbfs": -8
+    },
+    {
+      "source_start": 14,
+      "source_end": 15.0,
+      "output_start": 14.0,
+      "rms_dbfs": -18.4,
+      "peak_dbfs": -7
+    },
+    {
+      "source_start": 15,
+      "source_end": 16.0,
+      "output_start": 15.0,
+      "rms_dbfs": -18.29,
+      "peak_dbfs": -8
+    },
+    {
+      "source_start": 16,
+      "source_end": 17.0,
+      "output_start": 16.0,
+      "rms_dbfs": -18.13,
+      "peak_dbfs": -8
+    },
+    {
+      "source_start": 17,
+      "source_end": 18.0,
+      "output_start": 17.0,
+      "rms_dbfs": -18.89,
+      "peak_dbfs": -8
+    },
+    {
+      "source_start": 18,
+      "source_end": 19.0,
+      "output_start": 18.0,
+      "rms_dbfs": -17.06,
+      "peak_dbfs": -7
+    },
+    {
+      "source_start": 19,
+      "source_end": 20.0,
+      "output_start": 19.0,
+      "rms_dbfs": -17.62,
+      "peak_dbfs": -5
+    },
+    {
+      "source_start": 20,
+      "source_end": 21.0,
+      "output_start": 20.0,
+      "rms_dbfs": -17.41,
+      "peak_dbfs": -8
+    },
+    {
+      "source_start": 21,
+      "source_end": 22.0,
+      "output_start": 21.0,
+      "rms_dbfs": -18.22,
+      "peak_dbfs": -8
+    },
+    {
+      "source_start": 22,
+      "source_end": 23.0,
+      "output_start": 22.0,
+      "rms_dbfs": -17.88,
+      "peak_dbfs": -8
+    },
+    {
+      "source_start": 23,
+      "source_end": 24.0,
+      "output_start": 23.0,
+      "rms_dbfs": -17.1,
+      "peak_dbfs": -8
+    },
+    {
+      "source_start": 24,
+      "source_end": 25.0,
+      "output_start": 24.0,
+      "rms_dbfs": -19.0,
+      "peak_dbfs": -6
+    },
+    {
+      "source_start": 25,
+      "source_end": 26.0,
+      "output_start": 25.0,
+      "rms_dbfs": -17.68,
+      "peak_dbfs": -8
+    },
+    {
+      "source_start": 26,
+      "source_end": 27.0,
+      "output_start": 26.0,
+      "rms_dbfs": -18.2,
+      "peak_dbfs": -8
+    },
+    {
+      "source_start": 27,
+      "source_end": 28.0,
+      "output_start": 27.0,
+      "rms_dbfs": -16.74,
+      "peak_dbfs": -8
+    },
+    {
+      "source_start": 28,
+      "source_end": 29.0,
+      "output_start": 28.0,
+      "rms_dbfs": -18.53,
+      "peak_dbfs": -6
+    },
+    {
+      "source_start": 29,
+      "source_end": 30.0,
+      "output_start": 29.0,
+      "rms_dbfs": -16.43,
+      "peak_dbfs": -5
+    },
+    {
+      "source_start": 30,
+      "source_end": 31.0,
+      "output_start": 30.0,
+      "rms_dbfs": -16.04,
+      "peak_dbfs": -3
+    },
+    {
+      "source_start": 31,
+      "source_end": 32.0,
+      "output_start": 31.0,
+      "rms_dbfs": -19.74,
+      "peak_dbfs": -8
+    },
+    {
+      "source_start": 32,
+      "source_end": 33.0,
+      "output_start": 32.0,
+      "rms_dbfs": -17.48,
+      "peak_dbfs": -8
+    },
+    {
+      "source_start": 33,
+      "source_end": 34.0,
+      "output_start": 33.0,
+      "rms_dbfs": -20.17,
+      "peak_dbfs": -8
+    },
+    {
+      "source_start": 34,
+      "source_end": 35.0,
+      "output_start": 34.0,
+      "rms_dbfs": -17.8,
+      "peak_dbfs": -8
+    },
+    {
+      "source_start": 35,
+      "source_end": 36.0,
+      "output_start": 35.0,
+      "rms_dbfs": -18.87,
+      "peak_dbfs": -7
+    },
+    {
+      "source_start": 36,
+      "source_end": 37.0,
+      "output_start": 36.0,
+      "rms_dbfs": -17.55,
+      "peak_dbfs": -8
+    },
+    {
+      "source_start": 37,
+      "source_end": 38.0,
+      "output_start": 37.0,
+      "rms_dbfs": -19.31,
+      "peak_dbfs": -8
+    },
+    {
+      "source_start": 38,
+      "source_end": 39.0,
+      "output_start": 38.0,
+      "rms_dbfs": -18.4,
+      "peak_dbfs": -8
+    },
+    {
+      "source_start": 39,
+      "source_end": 40.0,
+      "output_start": 39.0,
+      "rms_dbfs": -18.42,
+      "peak_dbfs": -8
+    },
+    {
+      "source_start": 40,
+      "source_end": 41.0,
+      "output_start": 40.0,
+      "rms_dbfs": -18.13,
+      "peak_dbfs": -8
+    },
+    {
+      "source_start": 41,
+      "source_end": 42.0,
+      "output_start": 41.0,
+      "rms_dbfs": -24.38,
+      "peak_dbfs": -11
+    },
+    {
+      "source_start": 42,
+      "source_end": 42.8094,
+      "output_start": 42.0,
+      "rms_dbfs": -28.53,
+      "peak_dbfs": -17
+    }
+  ],
+  "vocal_presence": {
+    "established": false,
+    "confidence": "unresolved",
+    "reason": "No perceptual listening, source separation, or speech/singing model was used. Harmonic energy and onsets cannot identify vocals reliably."
+  },
+  "observational_limits": [
+    "Measurements describe the original mixed soundtrack, not a separated music stem.",
+    "No exact instrument, chord progression, melody, key, emotion, vocal language or sound-effect identity is established.",
+    "Suggested new-score timbres and BPM are editorial choices guided by these measurements, not assertions of an exact source match."
+  ]
+}

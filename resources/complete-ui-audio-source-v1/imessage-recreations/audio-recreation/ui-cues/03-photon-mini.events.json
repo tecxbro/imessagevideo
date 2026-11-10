@@ -1,0 +1,844 @@
+{
+  "schema": "message-motion-ui-cues/1",
+  "id": "03-photon-mini",
+  "fps": 30,
+  "fps_rational": "30/1",
+  "frames": 1260,
+  "duration": 42,
+  "frame_indexing": "zero-based",
+  "scheduling_picture": "accepted GSAP render; events.frame is preview_frame",
+  "canonical_scene": {
+    "path": "outputs/03-photon-mini/final-v18/scene.json",
+    "sha256": "b720b3a955688bd464e8fbdd2662e5119575ba9f80c8b00e61919caf07c9e646"
+  },
+  "accepted_preview": {
+    "path": "outputs/03-photon-mini/gsap.mp4",
+    "sha256": "323c1b4bb0f19bbc3559e7a4163de5f94878246c460d5d2894b69ee4106a57b2"
+  },
+  "source_video": {
+    "path": "references/03-photon-mini/source.mp4",
+    "sha256": "886405a53b2ce053749c17cb37b3f4870f09db0c6079dbcf3b3ffa9dbba859c9"
+  },
+  "method": "Native visual layer states and source-observation helpers only; no waveform/transient analysis.",
+  "mixing_note": "Use quiet key taps for typing; one action per observed frame delta. Do not invent timing for coalesced characters. Card/panel cues are optional and quieter than direct actions.",
+  "confidence_meaning": "Confidence in visible state/timing, not proof of a physical finger/pointer gesture.",
+  "events": [
+    {
+      "frame": 98,
+      "time": 3.266666667,
+      "kind": "message_send",
+      "group": "email-request",
+      "confidence": 0.95,
+      "description": "Outgoing request begins its independent flight: Draft an email to Alice about our dinner.",
+      "evidence_layer_or_source": "outputs/03-photon-mini/final-v18/scene.json #p03-27",
+      "preview_frame": 98,
+      "priority": "primary",
+      "text": "Draft an email to Alice about our dinner.",
+      "timing_basis": "First accepted visible bounded outgoing-message state; static bitmap copy is not a typing sequence."
+    },
+    {
+      "frame": 142,
+      "time": 4.733333333,
+      "kind": "message_arrival",
+      "group": "email-working",
+      "confidence": 0.95,
+      "description": "Working on it. incoming bubble begins revealing.",
+      "evidence_layer_or_source": "outputs/03-photon-mini/final-v18/scene.json #p03-35",
+      "preview_frame": 142,
+      "priority": "secondary",
+      "text": "Working on it."
+    },
+    {
+      "frame": 176,
+      "time": 5.866666667,
+      "kind": "message_arrival",
+      "group": "email-rich-card",
+      "confidence": 0.95,
+      "description": "Mail rich card begins its accepted independent reveal.",
+      "evidence_layer_or_source": "outputs/03-photon-mini/final-v18/scene.json #p03-50",
+      "preview_frame": 176,
+      "priority": "secondary",
+      "timing_basis": "Accepted original-card root starts176; static internal copy does not expose per-character typing."
+    },
+    {
+      "frame": 205,
+      "time": 6.833333333,
+      "kind": "tap",
+      "group": "email-card-open",
+      "confidence": 0.97,
+      "description": "Mail rich card enters its measured pressed state.",
+      "evidence_layer_or_source": "outputs/03-photon-mini/final-v18/scene.json #early-mail-pressed-skin-v13",
+      "preview_frame": 205,
+      "priority": "primary",
+      "end_frame": 213,
+      "release_frame": 209,
+      "action_inference": "Visible pressed-card material; no finger or pointer is shown.",
+      "helper": "references/03-photon-mini/refine_early_v13.py: mail-pressed skin205–213"
+    },
+    {
+      "frame": 214,
+      "time": 7.133333333,
+      "kind": "panel_open",
+      "group": "email-editor",
+      "confidence": 0.9,
+      "description": "Mail editor begins the measured visible sheet presentation.",
+      "evidence_layer_or_source": "outputs/03-photon-mini/final-v18/scene.json #p03-77",
+      "preview_frame": 214,
+      "priority": "secondary",
+      "timing_basis": "Observed sheet birth214; root212 starts with offstage paper and is not used as the audible action.",
+      "helper": "references/03-photon-mini/refine_early_v13.py: pane trajectory"
+    },
+    {
+      "frame": 242,
+      "time": 8.066666667,
+      "kind": "text_select",
+      "group": "email-availability-edit",
+      "confidence": 0.99,
+      "description": "Blue selection fill and handles first appear on the original availability phrase.",
+      "evidence_layer_or_source": "outputs/03-photon-mini/final-v18/scene.json #mail-edit-selection-fill-242-v17",
+      "preview_frame": 242,
+      "priority": "primary",
+      "end_frame": 267,
+      "helper": "references/03-photon-mini/mail-edit-v17-elements.json selections",
+      "timing_basis": "Visible selection onset only; no invented double tap/long-press preparation."
+    },
+    {
+      "frame": 268,
+      "time": 8.933333333,
+      "kind": "delete",
+      "group": "email-availability-edit",
+      "confidence": 0.99,
+      "description": "Selected availability phrase disappears in one observed edit state.",
+      "evidence_layer_or_source": "outputs/03-photon-mini/final-v18/scene.json #mail-edit-secondline-268-v17",
+      "preview_frame": 268,
+      "priority": "primary",
+      "character_or_delta": {
+        "deleted_text": "Thursday or Friday evening.",
+        "deleted_count": 27,
+        "before": "Thursday or Friday evening.",
+        "after": ""
+      },
+      "helper": "references/03-photon-mini/mail-edit-v17-elements.json edit_states[0]",
+      "timing_basis": "One observed selection deletion; not 26 repeated backspace events."
+    },
+    {
+      "frame": 270,
+      "time": 9.0,
+      "kind": "typing",
+      "group": "email-availability-edit",
+      "confidence": 0.99,
+      "description": "Observed visible availability-prefix change.",
+      "evidence_layer_or_source": "outputs/03-photon-mini/final-v18/scene.json #mail-edit-secondline-270-v17",
+      "preview_frame": 270,
+      "priority": "primary",
+      "character_or_delta": {
+        "added_text": "Satu",
+        "added_count": 4,
+        "before": "",
+        "after": "Satu"
+      },
+      "source_frame": 270,
+      "helper": "references/03-photon-mini/mail-edit-v17-elements.json edit_states",
+      "timing_basis": "Source-observed semantic native glyph outline state; multiple new characters in one frame remain coalesced."
+    },
+    {
+      "frame": 271,
+      "time": 9.033333333,
+      "kind": "typing",
+      "group": "email-availability-edit",
+      "confidence": 0.99,
+      "description": "Observed visible availability-prefix change.",
+      "evidence_layer_or_source": "outputs/03-photon-mini/final-v18/scene.json #mail-edit-secondline-271-v17",
+      "preview_frame": 271,
+      "priority": "primary",
+      "character_or_delta": {
+        "added_text": "rd",
+        "added_count": 2,
+        "before": "Satu",
+        "after": "Saturd"
+      },
+      "source_frame": 271,
+      "helper": "references/03-photon-mini/mail-edit-v17-elements.json edit_states",
+      "timing_basis": "Source-observed semantic native glyph outline state; multiple new characters in one frame remain coalesced."
+    },
+    {
+      "frame": 272,
+      "time": 9.066666667,
+      "kind": "typing",
+      "group": "email-availability-edit",
+      "confidence": 0.99,
+      "description": "Observed visible availability-prefix change.",
+      "evidence_layer_or_source": "outputs/03-photon-mini/final-v18/scene.json #mail-edit-secondline-272-v17",
+      "preview_frame": 272,
+      "priority": "primary",
+      "character_or_delta": {
+        "added_text": "a",
+        "added_count": 1,
+        "before": "Saturd",
+        "after": "Saturda"
+      },
+      "source_frame": 272,
+      "helper": "references/03-photon-mini/mail-edit-v17-elements.json edit_states",
+      "timing_basis": "Source-observed semantic native glyph outline state; multiple new characters in one frame remain coalesced."
+    },
+    {
+      "frame": 273,
+      "time": 9.1,
+      "kind": "typing",
+      "group": "email-availability-edit",
+      "confidence": 0.99,
+      "description": "Observed visible availability-prefix change.",
+      "evidence_layer_or_source": "outputs/03-photon-mini/final-v18/scene.json #mail-edit-secondline-273-v17",
+      "preview_frame": 273,
+      "priority": "primary",
+      "character_or_delta": {
+        "added_text": "y",
+        "added_count": 1,
+        "before": "Saturda",
+        "after": "Saturday"
+      },
+      "source_frame": 273,
+      "helper": "references/03-photon-mini/mail-edit-v17-elements.json edit_states",
+      "timing_basis": "Source-observed semantic native glyph outline state; multiple new characters in one frame remain coalesced."
+    },
+    {
+      "frame": 277,
+      "time": 9.233333333,
+      "kind": "typing",
+      "group": "email-availability-edit",
+      "confidence": 0.99,
+      "description": "Observed visible availability-prefix change.",
+      "evidence_layer_or_source": "outputs/03-photon-mini/final-v18/scene.json #mail-edit-secondline-277-v17",
+      "preview_frame": 277,
+      "priority": "primary",
+      "character_or_delta": {
+        "added_text": " ",
+        "added_count": 1,
+        "before": "Saturday",
+        "after": "Saturday "
+      },
+      "source_frame": 277,
+      "helper": "references/03-photon-mini/mail-edit-v17-elements.json edit_states",
+      "timing_basis": "Source-observed semantic native glyph outline state; multiple new characters in one frame remain coalesced."
+    },
+    {
+      "frame": 279,
+      "time": 9.3,
+      "kind": "typing",
+      "group": "email-availability-edit",
+      "confidence": 0.99,
+      "description": "Observed visible availability-prefix change.",
+      "evidence_layer_or_source": "outputs/03-photon-mini/final-v18/scene.json #mail-edit-secondline-279-v17",
+      "preview_frame": 279,
+      "priority": "primary",
+      "character_or_delta": {
+        "added_text": "o",
+        "added_count": 1,
+        "before": "Saturday ",
+        "after": "Saturday o"
+      },
+      "source_frame": 279,
+      "helper": "references/03-photon-mini/mail-edit-v17-elements.json edit_states",
+      "timing_basis": "Source-observed semantic native glyph outline state; multiple new characters in one frame remain coalesced."
+    },
+    {
+      "frame": 281,
+      "time": 9.366666667,
+      "kind": "typing",
+      "group": "email-availability-edit",
+      "confidence": 0.99,
+      "description": "Observed visible availability-prefix change.",
+      "evidence_layer_or_source": "outputs/03-photon-mini/final-v18/scene.json #mail-edit-secondline-281-v17",
+      "preview_frame": 281,
+      "priority": "primary",
+      "character_or_delta": {
+        "added_text": "r",
+        "added_count": 1,
+        "before": "Saturday o",
+        "after": "Saturday or"
+      },
+      "source_frame": 281,
+      "helper": "references/03-photon-mini/mail-edit-v17-elements.json edit_states",
+      "timing_basis": "Source-observed semantic native glyph outline state; multiple new characters in one frame remain coalesced."
+    },
+    {
+      "frame": 283,
+      "time": 9.433333333,
+      "kind": "typing",
+      "group": "email-availability-edit",
+      "confidence": 0.99,
+      "description": "Observed visible availability-prefix change.",
+      "evidence_layer_or_source": "outputs/03-photon-mini/final-v18/scene.json #mail-edit-secondline-283-v17",
+      "preview_frame": 283,
+      "priority": "primary",
+      "character_or_delta": {
+        "added_text": " ",
+        "added_count": 1,
+        "before": "Saturday or",
+        "after": "Saturday or "
+      },
+      "source_frame": 283,
+      "helper": "references/03-photon-mini/mail-edit-v17-elements.json edit_states",
+      "timing_basis": "Source-observed semantic native glyph outline state; multiple new characters in one frame remain coalesced."
+    },
+    {
+      "frame": 284,
+      "time": 9.466666667,
+      "kind": "typing",
+      "group": "email-availability-edit",
+      "confidence": 0.99,
+      "description": "Observed visible availability-prefix change.",
+      "evidence_layer_or_source": "outputs/03-photon-mini/final-v18/scene.json #mail-edit-secondline-284-v17",
+      "preview_frame": 284,
+      "priority": "primary",
+      "character_or_delta": {
+        "added_text": "S",
+        "added_count": 1,
+        "before": "Saturday or ",
+        "after": "Saturday or S"
+      },
+      "source_frame": 284,
+      "helper": "references/03-photon-mini/mail-edit-v17-elements.json edit_states",
+      "timing_basis": "Source-observed semantic native glyph outline state; multiple new characters in one frame remain coalesced."
+    },
+    {
+      "frame": 285,
+      "time": 9.5,
+      "kind": "typing",
+      "group": "email-availability-edit",
+      "confidence": 0.99,
+      "description": "Observed visible availability-prefix change.",
+      "evidence_layer_or_source": "outputs/03-photon-mini/final-v18/scene.json #mail-edit-secondline-285-v17",
+      "preview_frame": 285,
+      "priority": "primary",
+      "character_or_delta": {
+        "added_text": "u",
+        "added_count": 1,
+        "before": "Saturday or S",
+        "after": "Saturday or Su"
+      },
+      "source_frame": 285,
+      "helper": "references/03-photon-mini/mail-edit-v17-elements.json edit_states",
+      "timing_basis": "Source-observed semantic native glyph outline state; multiple new characters in one frame remain coalesced."
+    },
+    {
+      "frame": 287,
+      "time": 9.566666667,
+      "kind": "typing",
+      "group": "email-availability-edit",
+      "confidence": 0.99,
+      "description": "Observed visible availability-prefix change.",
+      "evidence_layer_or_source": "outputs/03-photon-mini/final-v18/scene.json #mail-edit-secondline-287-v17",
+      "preview_frame": 287,
+      "priority": "primary",
+      "character_or_delta": {
+        "added_text": "n",
+        "added_count": 1,
+        "before": "Saturday or Su",
+        "after": "Saturday or Sun"
+      },
+      "source_frame": 287,
+      "helper": "references/03-photon-mini/mail-edit-v17-elements.json edit_states",
+      "timing_basis": "Source-observed semantic native glyph outline state; multiple new characters in one frame remain coalesced."
+    },
+    {
+      "frame": 288,
+      "time": 9.6,
+      "kind": "typing",
+      "group": "email-availability-edit",
+      "confidence": 0.99,
+      "description": "Observed visible availability-prefix change.",
+      "evidence_layer_or_source": "outputs/03-photon-mini/final-v18/scene.json #mail-edit-secondline-288-v17",
+      "preview_frame": 288,
+      "priority": "primary",
+      "character_or_delta": {
+        "added_text": "d",
+        "added_count": 1,
+        "before": "Saturday or Sun",
+        "after": "Saturday or Sund"
+      },
+      "source_frame": 288,
+      "helper": "references/03-photon-mini/mail-edit-v17-elements.json edit_states",
+      "timing_basis": "Source-observed semantic native glyph outline state; multiple new characters in one frame remain coalesced."
+    },
+    {
+      "frame": 289,
+      "time": 9.633333333,
+      "kind": "typing",
+      "group": "email-availability-edit",
+      "confidence": 0.99,
+      "description": "Observed visible availability-prefix change.",
+      "evidence_layer_or_source": "outputs/03-photon-mini/final-v18/scene.json #mail-edit-secondline-289-v17",
+      "preview_frame": 289,
+      "priority": "primary",
+      "character_or_delta": {
+        "added_text": "a",
+        "added_count": 1,
+        "before": "Saturday or Sund",
+        "after": "Saturday or Sunda"
+      },
+      "source_frame": 289,
+      "helper": "references/03-photon-mini/mail-edit-v17-elements.json edit_states",
+      "timing_basis": "Source-observed semantic native glyph outline state; multiple new characters in one frame remain coalesced."
+    },
+    {
+      "frame": 290,
+      "time": 9.666666667,
+      "kind": "typing",
+      "group": "email-availability-edit",
+      "confidence": 0.99,
+      "description": "Observed visible availability-prefix change.",
+      "evidence_layer_or_source": "outputs/03-photon-mini/final-v18/scene.json #mail-edit-secondline-290-v17",
+      "preview_frame": 290,
+      "priority": "primary",
+      "character_or_delta": {
+        "added_text": "y",
+        "added_count": 1,
+        "before": "Saturday or Sunda",
+        "after": "Saturday or Sunday"
+      },
+      "source_frame": 290,
+      "helper": "references/03-photon-mini/mail-edit-v17-elements.json edit_states",
+      "timing_basis": "Source-observed semantic native glyph outline state; multiple new characters in one frame remain coalesced."
+    },
+    {
+      "frame": 291,
+      "time": 9.7,
+      "kind": "typing",
+      "group": "email-availability-edit",
+      "confidence": 0.99,
+      "description": "Observed visible availability-prefix change.",
+      "evidence_layer_or_source": "outputs/03-photon-mini/final-v18/scene.json #mail-edit-secondline-291-v17",
+      "preview_frame": 291,
+      "priority": "primary",
+      "character_or_delta": {
+        "added_text": " ",
+        "added_count": 1,
+        "before": "Saturday or Sunday",
+        "after": "Saturday or Sunday "
+      },
+      "source_frame": 291,
+      "helper": "references/03-photon-mini/mail-edit-v17-elements.json edit_states",
+      "timing_basis": "Source-observed semantic native glyph outline state; multiple new characters in one frame remain coalesced."
+    },
+    {
+      "frame": 294,
+      "time": 9.8,
+      "kind": "typing",
+      "group": "email-availability-edit",
+      "confidence": 0.99,
+      "description": "Observed visible availability-prefix change.",
+      "evidence_layer_or_source": "outputs/03-photon-mini/final-v18/scene.json #mail-edit-secondline-294-v17",
+      "preview_frame": 294,
+      "priority": "primary",
+      "character_or_delta": {
+        "added_text": "e",
+        "added_count": 1,
+        "before": "Saturday or Sunday ",
+        "after": "Saturday or Sunday e"
+      },
+      "source_frame": 294,
+      "helper": "references/03-photon-mini/mail-edit-v17-elements.json edit_states",
+      "timing_basis": "Source-observed semantic native glyph outline state; multiple new characters in one frame remain coalesced."
+    },
+    {
+      "frame": 295,
+      "time": 9.833333333,
+      "kind": "typing",
+      "group": "email-availability-edit",
+      "confidence": 0.99,
+      "description": "Observed visible availability-prefix change.",
+      "evidence_layer_or_source": "outputs/03-photon-mini/final-v18/scene.json #mail-edit-secondline-295-v17",
+      "preview_frame": 295,
+      "priority": "primary",
+      "character_or_delta": {
+        "added_text": "v",
+        "added_count": 1,
+        "before": "Saturday or Sunday e",
+        "after": "Saturday or Sunday ev"
+      },
+      "source_frame": 295,
+      "helper": "references/03-photon-mini/mail-edit-v17-elements.json edit_states",
+      "timing_basis": "Source-observed semantic native glyph outline state; multiple new characters in one frame remain coalesced."
+    },
+    {
+      "frame": 296,
+      "time": 9.866666667,
+      "kind": "typing",
+      "group": "email-availability-edit",
+      "confidence": 0.99,
+      "description": "Observed visible availability-prefix change.",
+      "evidence_layer_or_source": "outputs/03-photon-mini/final-v18/scene.json #mail-edit-secondline-296-v17",
+      "preview_frame": 296,
+      "priority": "primary",
+      "character_or_delta": {
+        "added_text": "e",
+        "added_count": 1,
+        "before": "Saturday or Sunday ev",
+        "after": "Saturday or Sunday eve"
+      },
+      "source_frame": 296,
+      "helper": "references/03-photon-mini/mail-edit-v17-elements.json edit_states",
+      "timing_basis": "Source-observed semantic native glyph outline state; multiple new characters in one frame remain coalesced."
+    },
+    {
+      "frame": 297,
+      "time": 9.9,
+      "kind": "typing",
+      "group": "email-availability-edit",
+      "confidence": 0.99,
+      "description": "Observed visible availability-prefix change.",
+      "evidence_layer_or_source": "outputs/03-photon-mini/final-v18/scene.json #mail-edit-secondline-297-v17",
+      "preview_frame": 297,
+      "priority": "primary",
+      "character_or_delta": {
+        "added_text": "n",
+        "added_count": 1,
+        "before": "Saturday or Sunday eve",
+        "after": "Saturday or Sunday even"
+      },
+      "source_frame": 297,
+      "helper": "references/03-photon-mini/mail-edit-v17-elements.json edit_states",
+      "timing_basis": "Source-observed semantic native glyph outline state; multiple new characters in one frame remain coalesced."
+    },
+    {
+      "frame": 298,
+      "time": 9.933333333,
+      "kind": "typing",
+      "group": "email-availability-edit",
+      "confidence": 0.99,
+      "description": "Observed visible availability-prefix change.",
+      "evidence_layer_or_source": "outputs/03-photon-mini/final-v18/scene.json #mail-edit-secondline-298-v17",
+      "preview_frame": 298,
+      "priority": "primary",
+      "character_or_delta": {
+        "added_text": "i",
+        "added_count": 1,
+        "before": "Saturday or Sunday even",
+        "after": "Saturday or Sunday eveni"
+      },
+      "source_frame": 298,
+      "helper": "references/03-photon-mini/mail-edit-v17-elements.json edit_states",
+      "timing_basis": "Source-observed semantic native glyph outline state; multiple new characters in one frame remain coalesced."
+    },
+    {
+      "frame": 299,
+      "time": 9.966666667,
+      "kind": "typing",
+      "group": "email-availability-edit",
+      "confidence": 0.99,
+      "description": "Observed visible availability-prefix change.",
+      "evidence_layer_or_source": "outputs/03-photon-mini/final-v18/scene.json #mail-edit-secondline-299-v17",
+      "preview_frame": 299,
+      "priority": "primary",
+      "character_or_delta": {
+        "added_text": "n",
+        "added_count": 1,
+        "before": "Saturday or Sunday eveni",
+        "after": "Saturday or Sunday evenin"
+      },
+      "source_frame": 299,
+      "helper": "references/03-photon-mini/mail-edit-v17-elements.json edit_states",
+      "timing_basis": "Source-observed semantic native glyph outline state; multiple new characters in one frame remain coalesced."
+    },
+    {
+      "frame": 300,
+      "time": 10.0,
+      "kind": "typing",
+      "group": "email-availability-edit",
+      "confidence": 0.99,
+      "description": "Observed visible availability-prefix change.",
+      "evidence_layer_or_source": "outputs/03-photon-mini/final-v18/scene.json #mail-edit-secondline-300-v17",
+      "preview_frame": 300,
+      "priority": "primary",
+      "character_or_delta": {
+        "added_text": "g",
+        "added_count": 1,
+        "before": "Saturday or Sunday evenin",
+        "after": "Saturday or Sunday evening"
+      },
+      "source_frame": 300,
+      "helper": "references/03-photon-mini/mail-edit-v17-elements.json edit_states",
+      "timing_basis": "Source-observed semantic native glyph outline state; multiple new characters in one frame remain coalesced."
+    },
+    {
+      "frame": 302,
+      "time": 10.066666667,
+      "kind": "typing",
+      "group": "email-availability-edit",
+      "confidence": 0.99,
+      "description": "Observed visible availability-prefix change.",
+      "evidence_layer_or_source": "outputs/03-photon-mini/final-v18/scene.json #mail-edit-secondline-302-v17",
+      "preview_frame": 302,
+      "priority": "primary",
+      "character_or_delta": {
+        "added_text": ".",
+        "added_count": 1,
+        "before": "Saturday or Sunday evening",
+        "after": "Saturday or Sunday evening."
+      },
+      "source_frame": 302,
+      "helper": "references/03-photon-mini/mail-edit-v17-elements.json edit_states",
+      "timing_basis": "Source-observed semantic native glyph outline state; multiple new characters in one frame remain coalesced."
+    },
+    {
+      "frame": 354,
+      "time": 11.8,
+      "kind": "message_send",
+      "group": "email-send",
+      "confidence": 0.82,
+      "description": "Mail editor dismisses toward the sent card; no separate arrow-press state is exposed.",
+      "evidence_layer_or_source": "references/03-photon-mini/refine_early_v13.py: mail-post starts354; accepted early-email-perspective-v13-354 pose; 03-send-dismiss-contact.jpg",
+      "preview_frame": 354,
+      "priority": "primary",
+      "action_inference": "Send outcome inferred from editor dismissal and following Sent. bubble; no physical tap frame is claimed."
+    },
+    {
+      "frame": 357,
+      "time": 11.9,
+      "kind": "message_arrival",
+      "group": "email-sent-status",
+      "confidence": 0.95,
+      "description": "Sent. bubble starts its opacity/scale reveal.",
+      "evidence_layer_or_source": "outputs/03-photon-mini/final-v18/scene.json #p03-81",
+      "preview_frame": 357,
+      "priority": "secondary",
+      "text": "Sent."
+    },
+    {
+      "frame": 373,
+      "time": 12.433333333,
+      "kind": "message_arrival",
+      "group": "email-reply-status",
+      "confidence": 0.95,
+      "description": "Follow-up status bubble starts revealing.",
+      "evidence_layer_or_source": "outputs/03-photon-mini/final-v18/scene.json #p03-85",
+      "preview_frame": 373,
+      "priority": "secondary",
+      "text": "I'll let you know when she replies."
+    },
+    {
+      "frame": 478,
+      "time": 15.933333333,
+      "kind": "message_arrival",
+      "group": "lunch-alice",
+      "confidence": 0.95,
+      "description": "Alice incoming message first appears.",
+      "evidence_layer_or_source": "outputs/03-photon-mini/final-v18/scene.json #entrance-p03-118",
+      "preview_frame": 478,
+      "priority": "secondary",
+      "text": "Can someone order lunch for us?"
+    },
+    {
+      "frame": 493,
+      "time": 16.433333333,
+      "kind": "message_arrival",
+      "group": "lunch-bob",
+      "confidence": 0.95,
+      "description": "Bob incoming message first appears.",
+      "evidence_layer_or_source": "outputs/03-photon-mini/final-v18/scene.json #entrance-p03-124",
+      "preview_frame": 493,
+      "priority": "secondary",
+      "text": "Vegetarian for me."
+    },
+    {
+      "frame": 509,
+      "time": 16.966666667,
+      "kind": "message_send",
+      "group": "lunch-user",
+      "confidence": 0.95,
+      "description": "Something light. outgoing message starts its independent flight.",
+      "evidence_layer_or_source": "outputs/03-photon-mini/final-v18/scene.json #p03-128",
+      "preview_frame": 509,
+      "priority": "primary",
+      "text": "Something light."
+    },
+    {
+      "frame": 535,
+      "time": 17.833333333,
+      "kind": "message_arrival",
+      "group": "lunch-agent",
+      "confidence": 0.95,
+      "description": "Agent preference paragraph starts revealing as one message.",
+      "evidence_layer_or_source": "outputs/03-photon-mini/final-v18/scene.json #p03-133",
+      "preview_frame": 535,
+      "priority": "secondary",
+      "text": "Taking everyone’s preferences into account, I found a few good options.",
+      "timing_basis": "Whole-message reveal; static paragraph copy is not simulated keyboard typing."
+    },
+    {
+      "frame": 546,
+      "time": 18.2,
+      "kind": "message_arrival",
+      "group": "lunch-rich-card",
+      "confidence": 0.86,
+      "description": "First tiny accepted rich-app artwork appears; independent source-observed affine arrival.",
+      "evidence_layer_or_source": "outputs/03-photon-mini/final-v18/scene.json #measured-preview-inner-affine-v14",
+      "preview_frame": 546,
+      "priority": "secondary",
+      "helper": "references/03-photon-mini/food-preview-native-measure/preview-arrival-affine-measurements.json",
+      "timing_basis": "Tiny optical-fit first state546;547+ image-feature fits are stronger. No exact tap is inferred."
+    },
+    {
+      "frame": 605,
+      "time": 20.166666667,
+      "kind": "tap",
+      "group": "lunch-card-open",
+      "confidence": 0.99,
+      "description": "Uber Eats card receives measured independent dark pressed material.",
+      "evidence_layer_or_source": "outputs/03-photon-mini/final-v18/scene.json #card-press-material-v16",
+      "preview_frame": 605,
+      "priority": "primary",
+      "end_frame": 614,
+      "peak_frame": 605,
+      "release_frame": 609,
+      "action_inference": "Visible card press and release material, not a guessed click from a camera movement.",
+      "helper": "references/03-photon-mini/lunch-material-copy-v16-elements.json press"
+    },
+    {
+      "frame": 618,
+      "time": 20.6,
+      "kind": "panel_open",
+      "group": "lunch-menu",
+      "confidence": 0.97,
+      "description": "Rich-app food menu begins presentation.",
+      "evidence_layer_or_source": "outputs/03-photon-mini/final-v18/scene.json #measured-menu-surface-v13",
+      "preview_frame": 618,
+      "priority": "secondary"
+    },
+    {
+      "frame": 668,
+      "time": 22.266666667,
+      "kind": "control_appear",
+      "group": "lunch-cart",
+      "confidence": 0.94,
+      "description": "Measured compact cart control first appears in accepted picture.",
+      "evidence_layer_or_source": "outputs/03-photon-mini/final-v18/scene.json #measured-cart-frame-668-v14",
+      "preview_frame": 668,
+      "priority": "secondary",
+      "timing_basis": "Legacy tiny 666–667 source birth is not modeled in accepted picture; cue follows accepted 668 control."
+    },
+    {
+      "frame": 674,
+      "time": 22.466666667,
+      "kind": "cart_update",
+      "group": "lunch-cart",
+      "confidence": 0.99,
+      "description": "Visible cart numeral changes to 1.",
+      "evidence_layer_or_source": "outputs/03-photon-mini/final-v18/scene.json #cart14-674-item-count",
+      "preview_frame": 674,
+      "priority": "primary",
+      "character_or_delta": {
+        "before": 0,
+        "after": 1,
+        "added_count": 1
+      },
+      "action_inference": "Observed cart confirmation, not an invented earlier plus-button/finger frame.",
+      "helper": "references/03-photon-mini/cart-v14-components.json semantic item-count paths"
+    },
+    {
+      "frame": 682,
+      "time": 22.733333333,
+      "kind": "cart_update",
+      "group": "lunch-cart",
+      "confidence": 0.99,
+      "description": "Visible cart numeral changes to 2.",
+      "evidence_layer_or_source": "outputs/03-photon-mini/final-v18/scene.json #cart14-682-item-count",
+      "preview_frame": 682,
+      "priority": "primary",
+      "character_or_delta": {
+        "before": 1,
+        "after": 2,
+        "added_count": 1
+      },
+      "action_inference": "Observed cart confirmation, not an invented earlier plus-button/finger frame.",
+      "helper": "references/03-photon-mini/cart-v14-components.json semantic item-count paths"
+    },
+    {
+      "frame": 711,
+      "time": 23.7,
+      "kind": "cart_update",
+      "group": "lunch-cart",
+      "confidence": 0.99,
+      "description": "Visible cart numeral changes to 3.",
+      "evidence_layer_or_source": "outputs/03-photon-mini/final-v18/scene.json #cart14-711-item-count",
+      "preview_frame": 711,
+      "priority": "primary",
+      "character_or_delta": {
+        "before": 2,
+        "after": 3,
+        "added_count": 1
+      },
+      "action_inference": "Observed cart confirmation, not an invented earlier plus-button/finger frame.",
+      "helper": "references/03-photon-mini/cart-v14-components.json semantic item-count paths"
+    },
+    {
+      "frame": 730,
+      "time": 24.333333333,
+      "kind": "panel_close",
+      "group": "lunch-menu",
+      "confidence": 0.9,
+      "description": "Food sheet begins its return/closing phase.",
+      "evidence_layer_or_source": "outputs/03-photon-mini/final-v18/scene.json #measured-menu-clip-v13",
+      "preview_frame": 730,
+      "priority": "secondary",
+      "timing_basis": "Measured730–734 closing foreground; flying Order! labels are decorative copies, not new sends or typing."
+    }
+  ],
+  "typing_spans": [
+    {
+      "group": "email-availability-edit",
+      "first_frame": 270,
+      "last_change_frame": 302,
+      "hold_through_frame": 308,
+      "final_text": "Saturday or Sunday evening.",
+      "individual_key_times": "Unavailable within a frame containing several newly visible characters."
+    }
+  ],
+  "exclusions": [
+    "Intro/title/closing word reveals, all camera cuts, collage panels and flying Order! labels are motion graphics, not keyboard/input events.",
+    "Initial draft, fixed Mail prose and incoming paragraphs use static bitmaps/outlines/whole-message reveals; no unseen keystroke sequence is generated.",
+    "Typing-indicator dots and the visible keyboard/composer placeholder do not prove typing or individual key presses.",
+    "Game/Uber/Google/collage demo cuts after800 are not treated as user taps: no measured physical/control press state is exposed.",
+    "Only the measured availability replacement supplies per-prefix typing; caret blink/removal309 creates no extra key sound."
+  ],
+  "counts": {
+    "message_send": 3,
+    "message_arrival": 8,
+    "tap": 2,
+    "panel_open": 2,
+    "text_select": 1,
+    "delete": 1,
+    "typing": 23,
+    "control_appear": 1,
+    "cart_update": 3,
+    "panel_close": 1
+  },
+  "typing_added_characters": 27,
+  "source_inputs": [
+    {
+      "path": "audio-recreation/ui-cues/03-04-extract.py",
+      "sha256": "3d35f26df6e301ba34e11ac6cb03ca12622740570dcc20ca31ccb3281f6a31ac"
+    },
+    {
+      "path": "audio-recreation/ui-cues/03-04-encoded-action-check.json",
+      "sha256": "257fbffa9acf1183ae50f59d88a849b720095483a63fc959c3fc4da2b7d339e8"
+    },
+    {
+      "path": "references/03-photon-mini/mail-edit-v17-elements.json",
+      "sha256": "5513ba636d0a72362d3994119982ab49d096fab78b372d83d3f90c48f2e7fab1"
+    },
+    {
+      "path": "references/03-photon-mini/cart-v14-components.json",
+      "sha256": "c8e85ec0428afc27835ad2284688e875ba8be3b65dd5b282f4cfcf2768403e76"
+    },
+    {
+      "path": "references/03-photon-mini/lunch-material-copy-v16-elements.json",
+      "sha256": "bb9e144458b98643eafea5742b0f71216026897c845f292cd9eb50a8f0ea3587"
+    },
+    {
+      "path": "references/03-photon-mini/refine_early_v13.py",
+      "sha256": "79743e62c4482595465ad2d00df730f7b62ec49a9f373e6034fbe9a6e6f532a7"
+    }
+  ]
+}

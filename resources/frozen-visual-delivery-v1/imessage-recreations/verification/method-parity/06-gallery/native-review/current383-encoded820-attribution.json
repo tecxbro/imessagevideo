@@ -1,0 +1,19 @@
+{
+  "frame": 820,
+  "nativeGvsMCMae": 0.0010624035493827161,
+  "nativeCurrentVsBefore": 0,
+  "encodedGvsMCMae": 0.12078462577160494,
+  "ownNativeErrors": [
+    {
+      "method": "gsap",
+      "decodedVsOwnNativeMAE": 0.09814895190329218,
+      "changedPixels": 98276
+    },
+    {
+      "method": "motion-canvas",
+      "decodedVsOwnNativeMAE": 0.08968380272633746,
+      "changedPixels": 88520
+    }
+  ],
+  "notice": "Actual encoded difference at the new worstSSIM state is separate from native layout: native frames are nearly identical and MC is unchanged from before. These measures show the contribution of each independently encoded picture, without assigning all error to a single quantization mechanism."
+}

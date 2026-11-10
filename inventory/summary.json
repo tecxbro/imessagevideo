@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "generated_utc": "2026-11-10T09:55:48+00:00",
+  "root_at_generation": "/workspace/imessagevideo",
+  "portable_path_authority": "relative_path",
+  "indexed_rows": 14856,
+  "hashed_regular_files": 14845,
+  "hashed_bytes": 6450875949,
+  "category_counts": {
+    "analysis-and-evidence": 836,
+    "archive": 19,
+    "archive-part": 78,
+    "audio": 234,
+    "complete-scene-data": 65,
+    "data-and-configuration": 774,
+    "documentation-and-license": 303,
+    "font": 140,
+    "generated-inventory-index": 11,
+    "image-and-vector-asset": 10073,
+    "other-library-file": 46,
+    "source-code-and-runtime-config": 2159,
+    "video": 118
+  },
+  "role_counts": {
+    "code": 2512,
+    "video": 118,
+    "analysis": 1557,
+    "audio": 234,
+    "asset": 10213
+  },
+  "generated_metadata_only_files": [
+    "inventory/ALL-FILES.csv",
+    "inventory/ALL-FILES.json",
+    "inventory/ALL-FILES.json.gz",
+    "inventory/CODE.csv",
+    "inventory/VIDEOS.csv",
+    "inventory/ANALYSIS.csv",
+    "inventory/AUDIO.csv",
+    "inventory/ASSETS.csv",
+    "inventory/index.html",
+    "inventory/README.md",
+    "inventory/summary.json"
+  ],
+  "excluded_paths": [
+    {
+      "relative_path": ".git/",
+      "reason": "version-control, installed dependency, cache or credential directory"
+    },
+    {
+      "relative_path": "resources/frozen-visual-delivery-v1/imessage-recreations/verification/method-parity/02-danieltian/native-review/__pycache__/",
+      "reason": "version-control, installed dependency, cache or credential directory"
+    },
+    {
+      "relative_path": "skill/imessage-motion-recreation/library/__pycache__/",
+      "reason": "version-control, installed dependency, cache or credential directory"
+    },
+    {
+      "relative_path": "tools/__pycache__/",
+      "reason": "version-control, installed dependency, cache or credential directory"
+    }
+  ],
+  "unstable_files_not_indexed": [],
+  "symlinks_not_followed": 0,
+  "inventory_rules": [
+    "Actual stable files in this library are inventoried; all file hashing streams at most 1 MiB per read.",
+    "Generated inventory artifacts list their own paths but omit bytes/hashes to avoid recursive self-checksums.",
+    "Installed dependencies/caches, version-control internals and credential filenames are excluded, not authored source.",
+    "Archive parts and assembled ZIPs both remain listed; their bytes duplicate archive payload.",
+    "Category is one label; is_code/is_video/is_analysis/is_audio/is_asset can overlap. Filtered CSVs use these flags.",
+    "Absolute paths are current-machine conveniences, not dependencies. Relative paths remain valid after moving the folder.",
+    "Re-run after all downloads/writers finish, and after adding, removing or editing files."
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "status": "pass",
+  "id": "03-photon-mini",
+  "source_samples_reused": false,
+  "source_snapshot_matches_actual_execution": true,
+  "config_snapshot_matches_actual_execution": true,
+  "synthesis_source_matches_current": true,
+  "all_six_export_hashes_verified": {
+    "music.flac": "82ea93e537be6bbb4db0477f6467ddaf3b600d5260b0be15cdabc57ef7e06e73",
+    "sfx.flac": "879f842a293cc148b08492da943320d6efeb6431f4630e80df48f8d21aca853f",
+    "full_mix.flac": "d67738dd0e0c40ef902129cfe001744ca83ec0343eebbe7a7bc75cc5841f2ff0",
+    "music.m4a": "21ba59cebfa5e19234b5ab0ee43a77a7d08efa3bcea76e00cb70fd1eaca7f387",
+    "sfx.m4a": "fece28c498587d826a3088937cda580f93950a2276c62ba1cfa736884d0ec765",
+    "full_mix.m4a": "5a97982d140e28ca486ab7419083ba93b0be627327d41c72c555afbb6653b685"
+  },
+  "execution_mixer_sha256": "e09bae5eef28ded721d6ff5f7302d666fcc6bab16390718783c57149d1ba0094",
+  "current_mixer_sha256": "411a2a5586d329a0ced74e3cf921231ce4be4d86e9362533ee19728160be03e2",
+  "history_policy": "Actual older executions remain truthfully pinned to their preserved exact source/config; no relabelling. Current optional peak-control branch was used only for Linq.",
+  "signal_validation": {
+    "status": "pass",
+    "lossless_stem_sum_max_error": 2.384185791015625e-07,
+    "no_clipping": true,
+    "finite_stereo": true,
+    "exact_lossless_sample_counts": true,
+    "silence_tails_preserved": true,
+    "normalization_actual": {
+      "integrated_lufs": -15.99,
+      "true_peak_dbtp": -2.9,
+      "lra_lu": 4.5,
+      "threshold_lufs": -26.6,
+      "silent": false
+    }
+  },
+  "synthesis_environment": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "reference_audio_inputs": []
+}

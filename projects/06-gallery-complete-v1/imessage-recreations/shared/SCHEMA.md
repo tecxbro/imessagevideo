@@ -1,0 +1,13 @@
+# Shared measured scene contract
+
+One JSON file describes a measured graphic sequence. Schema: `scene-schema.json`.
+
+Required root: `width`, `height`, `fps`, `duration`, `layers`; optional `background`, `title`, `source: {path, sourceStart, sourceEnd, notes}`. Coordinates are source pixels and time is OUTPUT seconds. `sourceStart` maps output t=0 back to the reference. All scene layers are editable geometry or text; raster assets must be declared as raster assets.
+
+Layer types: `rect`, `circle`, `text`, `image`, `path`, `group`. Common: `id,x,y,width,height,fill,stroke,strokeWidth,opacity,rotation,scaleX,scaleY,originX,originY,start,end`. Transform order is translate(x,y), translate(origin), rotate(degrees), scale, translate(-origin). `circle` is an ellipse inside width/height, or diameter=`radius*2`. `rect.radius` is corner radius. Text x/y is top-left (or top-middle/top-right per textAnchor), with fontFamily,fontSize,fontWeight,lineHeight (pixels), letterSpacing, and newline support. `path.d` is SVG path data. `image.src` resolves relative to manifest directory. Groups have `children`.
+
+Animate via `keyframes: {y:[{t:0,value:500},{t:0.4,value:200,ease:"easeOut"}],opacity:[...]}`. Times are global OUTPUT seconds, including child layers. Destination `ease` = linear, hold, easeIn, easeOut, easeInOut, or cubic-bezier(x1,y1,x2,y2). Before the first keyframe hold its value; after the last hold its value. Layers exist only on [start,end). Numeric properties interpolate; fill/stroke interpolate RGB hex. No guessed motion: use measured points and record uncertainty in source.notes.
+
+Engines will consume this SAME manifest: `node engines/render.mjs --method remotion|gsap|html --scene path.json --out out.mp4`; Python: `python3 engines/render_pillow.py --scene path.json --out out.mp4`. Methods' availability is established by actual smoke renders. Native fonts/assets must be available locally. Outputs have no source video overlay and no source frames unless explicitly declared image assets.
+
+Browser SVG engines also support root `gradients:[{id,type:"linear",x1:"0%",y1:"0%",x2:"0%",y2:"100%",stops:[{offset:"0%",color:"#189fff"},{offset:"100%",color:"#0877eb"}]}]` and layers with `fill:"url(#id)"`. Radial gradients support cx/cy/r. Layers may have `shadow:{x,y,blur,color}` and `textDecoration:"underline"`. Verified native Motion Canvas and Pillow adapters now support gradients, shadows, custom fonts, clipping, blur, tracking, text anchors and underline. See engines/alternative-capabilities.json for actual limits and parity evidence. Unsupported properties must still fail explicitly rather than silently downgrade.

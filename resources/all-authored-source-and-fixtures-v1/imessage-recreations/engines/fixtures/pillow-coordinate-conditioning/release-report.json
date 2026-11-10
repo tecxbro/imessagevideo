@@ -1,0 +1,29 @@
+{
+  "status": "released bounded nativePillow coordinate-conditioning fix",
+  "fromEngineSha256": "1223a148e9f7328baf5daaac7bd84ab5716301846cbfb0b7817e3bf24c4ad4f3",
+  "toEngineSha256": "5c7e3477e1ab9872df9fad4edc0622c14c44ced74f0671ee18f04d517b6ae33c",
+  "affectedReference": "03-photon-mini",
+  "sceneSha256": "b720b3a955688bd464e8fbdd2662e5119575ba9f80c8b00e61919caf07c9e646",
+  "ranges": [
+    [
+      436,
+      479
+    ],
+    [
+      486,
+      494
+    ]
+  ],
+  "frames": 53,
+  "antialias": 2,
+  "beforeMeanMae": 18.723788058564327,
+  "afterMeanMae": 0.6006593916210498,
+  "minimumSsim480": 0.9878806375556258,
+  "regressions": [],
+  "outsideControlsByteIdentical": true,
+  "neutralPixelExact": true,
+  "otherActualSourceControlsByteIdentical": true,
+  "sourceAndOtherRenderersUnchanged": true,
+  "newDependencies": [],
+  "limitations": "Native text/edge sampling remains distinct fromChromium. HigherAAappliesonlythislast53-framecapture; previousAA1states remaindeclaredin captureHistory. No whole-source-frame/video layer."
+}

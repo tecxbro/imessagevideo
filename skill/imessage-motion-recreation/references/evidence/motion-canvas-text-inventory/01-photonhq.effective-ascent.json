@@ -1,0 +1,12 @@
+{
+  "reference": "01-photonhq",
+  "sceneSha256": "2bbda2bf71ac43fa73d5004af01ad57fc1f5fd487ed5a697b2722571a1c16d19",
+  "status": "Metric candidates only. No runtime promotion; private native/blur/rotation controls still required.",
+  "rule": "extra=(Canvas alphabetic ascent at computedFontSize*worldSY)/worldSY − localCanvas alphabetic ascent. WorldSY is authored world-space Y gain, not offscreen cache density. Abs<1e-9 numerical noise is zero.",
+  "allActiveInkNodeRuns": 0,
+  "measurements": [],
+  "candidateNodes": [],
+  "extraCandidateRanges": [],
+  "extraCandidateFrames": 0,
+  "previousDOMCandidateRanges": []
+}

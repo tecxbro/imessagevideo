@@ -1,0 +1,22 @@
+{
+  "status": "CURRENT7080_NATIVE_REVIEW_WITH_QUALIFICATIONS",
+  "sceneSHA256": "abc87b6e69314e5df3ef75a81efd216011fa1604872aec66c1eb2a39f69658b2",
+  "engineSHA256": "7080c58ce151d1966b44671dc9db0801f81cb514200a3e8ed8a6cd1401777195",
+  "currentPictureSHA256": "78d2217665f11699ed7324e14dace7344f19437714e8b683ec92bb382af5bc71",
+  "framesReviewed": [
+    820,
+    552,
+    682,
+    1067,
+    1106
+  ],
+  "findings": [
+    "1067/1106 are nativeGSAPpixel-identical after RMS font shaping.",
+    "820/552/682 native images are unchanged from preserved383; no new semantic or camera omission.",
+    "820nativeMAE.001062 versusG, with encoded contribution independently measured previously.",
+    "Remaining image sampling/material/filter-raster differences are explicit; no100%claim."
+  ],
+  "denseEvidence": "verification/method-parity/06-gallery/motion-canvas.json",
+  "completion": "verification/final/06-gallery/v23/mc-rms-release/completion.json",
+  "before383": "before7080/review.json"
+}

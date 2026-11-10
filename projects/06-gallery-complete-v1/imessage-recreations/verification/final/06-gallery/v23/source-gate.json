@@ -1,0 +1,182 @@
+{
+  "status": "PASS",
+  "qualification": "Source-state/semantic release with disclosed visible optical/material/AA residuals; not100% or pixel-identical certification.",
+  "sceneSHA256": "abc87b6e69314e5df3ef75a81efd216011fa1604872aec66c1eb2a39f69658b2",
+  "pictureSHA256": "55dad2c7be7be1b5cfcb438926363817f9cfdaeedc85f4b37908fe0d6331f1c4",
+  "framesCompared": 1483,
+  "peakFramesCompared": 24,
+  "meanNativeMAE": 0.9304256018440473,
+  "maximumNativeMAE": 4.787767971965021,
+  "maximumFrame": 610,
+  "scan": "verification/timeline-scans/06-gallery-v23/scan.json",
+  "peakReport": "verification/final/06-gallery/source-gsap-v23/index.html",
+  "sourcePatchVerified": [
+    "verification/final/06-gallery/v21/source-scope.json",
+    "verification/final/06-gallery/v22/native-release.json",
+    "verification/final/06-gallery/v23/native-release.json"
+  ],
+  "cumulative20Delta109": "verification/final/06-gallery/v23/cumulative20-scope.json",
+  "nativeActualChangedSourceFrames": 109,
+  "everyOutsideNativeSourceStateIdentical": true,
+  "freshSourceAndIndexEvidence": [
+    "verification/final/06-gallery/v23/source-decode-proof.json",
+    "verification/native-cadence-rounding-parity.json"
+  ],
+  "independentSampledReview": [
+    "verification/final/06-gallery/v22/independent-review.json",
+    "verification/final/06-gallery/v23/independent-review.json"
+  ],
+  "all24VisualAnnotations": [
+    {
+      "candidateFrame": 1,
+      "referenceFrame": 1,
+      "finding": "Intro and phone conversation: correct source copy and states; remaining hardware/photo texture, haze, small geometric registration and glyphAA.",
+      "semanticStateOmissionObserved": false
+    },
+    {
+      "candidateFrame": 16,
+      "referenceFrame": 16,
+      "finding": "Intro and phone conversation: correct source copy and states; remaining hardware/photo texture, haze, small geometric registration and glyphAA.",
+      "semanticStateOmissionObserved": false
+    },
+    {
+      "candidateFrame": 31,
+      "referenceFrame": 31,
+      "finding": "Intro and phone conversation: correct source copy and states; remaining hardware/photo texture, haze, small geometric registration and glyphAA.",
+      "semanticStateOmissionObserved": false
+    },
+    {
+      "candidateFrame": 53,
+      "referenceFrame": 53,
+      "finding": "Intro and phone conversation: correct source copy and states; remaining hardware/photo texture, haze, small geometric registration and glyphAA.",
+      "semanticStateOmissionObserved": false
+    },
+    {
+      "candidateFrame": 75,
+      "referenceFrame": 75,
+      "finding": "Intro and phone conversation: correct source copy and states; remaining hardware/photo texture, haze, small geometric registration and glyphAA.",
+      "semanticStateOmissionObserved": false
+    },
+    {
+      "candidateFrame": 92,
+      "referenceFrame": 92,
+      "finding": "Intro and phone conversation: correct source copy and states; remaining hardware/photo texture, haze, small geometric registration and glyphAA.",
+      "semanticStateOmissionObserved": false
+    },
+    {
+      "candidateFrame": 111,
+      "referenceFrame": 111,
+      "finding": "Lower-thread scroll and message states: correct copy/order, including preserved/verified Done fade; small bitmap/glyph edges and glass/composer optics remain.",
+      "semanticStateOmissionObserved": false
+    },
+    {
+      "candidateFrame": 161,
+      "referenceFrame": 161,
+      "finding": "Lower-thread scroll and message states: correct copy/order, including preserved/verified Done fade; small bitmap/glyph edges and glass/composer optics remain.",
+      "semanticStateOmissionObserved": false
+    },
+    {
+      "candidateFrame": 177,
+      "referenceFrame": 177,
+      "finding": "Lower-thread scroll and message states: correct copy/order, including preserved/verified Done fade; small bitmap/glyph edges and glass/composer optics remain.",
+      "semanticStateOmissionObserved": false
+    },
+    {
+      "candidateFrame": 201,
+      "referenceFrame": 201,
+      "finding": "Lower-thread scroll and message states: correct copy/order, including preserved/verified Done fade; small bitmap/glyph edges and glass/composer optics remain.",
+      "semanticStateOmissionObserved": false
+    },
+    {
+      "candidateFrame": 230,
+      "referenceFrame": 230,
+      "finding": "Lower-thread scroll and message states: correct copy/order, including preserved/verified Done fade; small bitmap/glyph edges and glass/composer optics remain.",
+      "semanticStateOmissionObserved": false
+    },
+    {
+      "candidateFrame": 257,
+      "referenceFrame": 257,
+      "finding": "Introducing/Watches title copy and icon states correct. Partial-glyph blur/reveal softness and icon optical material differ.",
+      "semanticStateOmissionObserved": false
+    },
+    {
+      "candidateFrame": 416,
+      "referenceFrame": 416,
+      "finding": "Introducing/Watches title copy and icon states correct. Partial-glyph blur/reveal softness and icon optical material differ.",
+      "semanticStateOmissionObserved": false
+    },
+    {
+      "candidateFrame": 434,
+      "referenceFrame": 434,
+      "finding": "Lockscreen product/banner states correct; bounded static UI/internal texture and phone material/registration differences remain.",
+      "semanticStateOmissionObserved": false
+    },
+    {
+      "candidateFrame": 460,
+      "referenceFrame": 460,
+      "finding": "Lockscreen product/banner states correct; bounded static UI/internal texture and phone material/registration differences remain.",
+      "semanticStateOmissionObserved": false
+    },
+    {
+      "candidateFrame": 528,
+      "referenceFrame": 528,
+      "finding": "Email/chat states and visible copy preserved. Background pane reprojection/registration, blur and edges differ.",
+      "semanticStateOmissionObserved": false
+    },
+    {
+      "candidateFrame": 552,
+      "referenceFrame": 552,
+      "finding": "Email/chat states and visible copy preserved. Background pane reprojection/registration, blur and edges differ.",
+      "semanticStateOmissionObserved": false
+    },
+    {
+      "candidateFrame": 610,
+      "referenceFrame": 610,
+      "finding": "Birthday portrait actors/notification present with source ordering/copy. Photographed RGB/UV, blur, alpha/shadow and glass refraction differ;610 is largest remaining fullframe error. These are visible material/optical limits, not pixel identity.",
+      "semanticStateOmissionObserved": false
+    },
+    {
+      "candidateFrame": 635,
+      "referenceFrame": 635,
+      "finding": "Birthday portrait actors/notification present with source ordering/copy. Photographed RGB/UV, blur, alpha/shadow and glass refraction differ;610 is largest remaining fullframe error. These are visible material/optical limits, not pixel identity.",
+      "semanticStateOmissionObserved": false
+    },
+    {
+      "candidateFrame": 656,
+      "referenceFrame": 656,
+      "finding": "Birthday portrait actors/notification present with source ordering/copy. Photographed RGB/UV, blur, alpha/shadow and glass refraction differ;610 is largest remaining fullframe error. These are visible material/optical limits, not pixel identity.",
+      "semanticStateOmissionObserved": false
+    },
+    {
+      "candidateFrame": 683,
+      "referenceFrame": 683,
+      "finding": "Birthday portrait actors/notification present with source ordering/copy. Photographed RGB/UV, blur, alpha/shadow and glass refraction differ;610 is largest remaining fullframe error. These are visible material/optical limits, not pixel identity.",
+      "semanticStateOmissionObserved": false
+    },
+    {
+      "candidateFrame": 818,
+      "referenceFrame": 818,
+      "finding": "Tracks what headline and outgoing phone have matching semantic/clip state; small glyph/hardware edge differences remain.",
+      "semanticStateOmissionObserved": false
+    },
+    {
+      "candidateFrame": 969,
+      "referenceFrame": 969,
+      "finding": "Football alert copy and genuine red siren are correct; native enlarged siren separately verified after a false tiny difference-pane hue reading.",
+      "semanticStateOmissionObserved": false
+    },
+    {
+      "candidateFrame": 1115,
+      "referenceFrame": 1296,
+      "finding": "Outgoing Does the work for you line has correct words/icon. Source glyph blur/fade material remains softer. Independent1298 two-line handoff is corrected and native-gated.",
+      "semanticStateOmissionObserved": false
+    }
+  ],
+  "remainingDisclosedLimits": [
+    "Genuine static UI/photo internals retain bitmap editability limits. Native actor geometry/lifecycles/cameras remain separate.",
+    "Portrait texture/UV/blur/shadow and glass-refraction differences remain visible, especially610/635/656/683.",
+    "Small glyphAA, per-letter optical blur/reveal softness, static asset edge/fringe and hardware/pane registration differences remain.",
+    "Encoding contribution is separate; current picture uses validated full-rangePC709 and unchanged native-cache inventory."
+  ],
+  "nextAuthorizedAction": "Release nativeMC114 reserved browser window and nativeP109 subject to its controller renderer audit; then serialR/H109. Preserve all earlier masters/sidecars and snapshot23. No further source changes absent actual new semantic/state evidence."
+}

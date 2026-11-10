@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fefdfb">
+  <meta name="description" content="Message sends, clicks, and typing. UI sound studies aligned to the recreated films, with music optional.">
+  <meta property="og:title" content="sound lab — message studies">
+  <meta property="og:description" content="The small sounds matter. Six UI sound studies to hear without music, then in context.">
+  <title>sound lab — message studies</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="sound-lab.css">
+  <script type="module" src="sound-lab.js"></script>
+</head>
+<body class="sound-page">
+  <a class="skip" href="#listen">Skip to the listening room</a>
+  <header class="site-nav sound-nav">
+    <a class="identity" href="index.html" aria-label="Message studies home"><svg viewBox="0 0 32 32" width="30" height="30" aria-hidden="true"><path d="M16 2.5 19 8l6-1-1 6 5.5 3-5.5 3 1 6-6-1-3 5.5L13 24l-6 1 1-6-5.5-3L8 13 7 7l6 1Z" fill="none" stroke="currentColor" stroke-width="1.15"/><path d="M11 15h.1m9.8 0h.1" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/><path d="M11.5 19q4.5 4 9 0" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg><span>message studies</span></a>
+    <nav aria-label="Main navigation"><a href="index.html#films">the films <span>(06)</span></a><a href="sound.html" aria-current="page">sound lab</a><a class="pill dark" href="#listen">have a listen <span aria-hidden="true">↘</span></a></nav>
+  </header>
+  <main id="sound-lab">
+    <section class="sound-hero ruled" aria-labelledby="sound-title">
+      <div class="sound-hero-copy"><span class="eyebrow mono"><span class="sound-dot" aria-hidden="true"></span> a collection, with the sound on</span><h1 id="sound-title">the little things.<br><em>make it feel real.</em></h1><p>Message sends. Taps. Keystrokes.<br>Placed on the action, with the music out of the way.</p><a class="pill dark" href="#listen">step into the sound lab <span aria-hidden="true">↓</span></a></div>
+      <div class="sound-orbit" aria-hidden="true"><svg viewBox="0 0 300 300"><defs><linearGradient id="sound-metal" x1="0" y1="0" x2=".4" y2="1"><stop stop-color="#fff"/><stop offset=".25" stop-color="#c5c6c1"/><stop offset=".43" stop-color="#f8f8f5"/><stop offset=".58" stop-color="#8b8d86"/><stop offset=".78" stop-color="#ecece7"/><stop offset="1" stop-color="#c8c9c1"/></linearGradient></defs><circle cx="150" cy="150" r="132" fill="none" stroke="#aaa799" stroke-width=".6"/><circle cx="150" cy="150" r="109" fill="url(#sound-metal)" stroke="#b9b9af"/><circle cx="150" cy="150" r="90" fill="#f9f9f4"/><g stroke="#36372e" stroke-width="3.5" stroke-linecap="round"><path d="M75 142v16m13-29v42m13-62v82m13-52v22m13-79v136m13-104v72m13-105v138m13-94v50m13-79v108m13-85v62m13-44v26m13-37v48"/></g><circle cx="246" cy="83" r="17" fill="#bdff00"/><path d="m240 83 4 4 8-9" fill="none" stroke="#36372e" stroke-width="1.6"/></svg><span class="mono">UI sounds / familiar motion</span></div>
+      <div class="sound-hero-bottom mono"><span>sound lab / six studies</span><span>clicks, typing &amp; message sends</span></div>
+    </section>
+
+    <section class="sound-section ruled" id="listen" aria-labelledby="listen-title">
+      <div class="section-heading sound-section-heading"><div><span class="eyebrow mono">the listening room</span><h2 id="listen-title">find your <em>frequency.</em></h2></div><p>Choose a film.<br>Then change the feeling.</p></div>
+      <div id="sound-data-status" class="sound-notice" role="status" aria-live="polite">Getting the collection ready…</div><button id="retry-data" class="text-link" type="button" hidden>try loading the collection again ↺</button>
+      <div id="film-selector" class="sound-film-strip" role="tablist" aria-label="Choose one of six films"></div>
+      <div id="listening-panel" class="sound-listening-panel" role="tabpanel" aria-labelledby="selected-film-title" hidden>
+        <div class="sound-player-heading"><div><span id="selected-film-number" class="eyebrow mono">film 01 / 06</span><h3 id="selected-film-title">Photon 2.0</h3><p id="sound-description" class="sound-description"></p></div><span class="sound-draft-badge mono">new sound studies</span></div>
+        <div class="sound-listening-grid">
+          <div class="sound-screen-column">
+            <div class="sound-video-frame" id="sound-video-frame" aria-busy="false"><video id="sound-video" controls playsinline webkit-playsinline preload="none" aria-label="Soundtrack comparison video"></video><div class="sound-loading" id="video-loading" hidden aria-hidden="true"><span></span></div></div>
+            <div class="sound-video-foot mono"><span id="video-mode-label">recreated sound / new draft</span><span id="sound-time">0:00 / 0:00</span><a id="download-sound-video" aria-disabled="true" tabindex="-1" download>download this video ↗</a></div>
+            <div id="sound-status" class="sound-notice" role="status" aria-live="polite"></div><div class="sound-recovery"><button id="retry-video" class="text-link" type="button" hidden>try this soundtrack again ↺</button><a id="open-video-file" class="text-link" target="_blank" rel="noopener noreferrer" hidden>open MP4 separately ↗</a></div>
+          </div>
+          <aside class="sound-mode-panel" aria-label="Compare soundtracks">
+            <span class="eyebrow mono">one picture. hear the small things.</span>
+            <div class="sound-mode-switch" role="group" aria-label="Soundtrack">
+              <button type="button" class="sound-mode-option" data-sound-mode="ui" aria-pressed="true"><span class="sound-mode-number mono">01</span><span><strong>UI sounds only</strong><small>Message sends, clicks &amp; keystrokes</small></span><span class="sound-mode-check" aria-hidden="true">↗</span></button>
+              <button type="button" class="sound-mode-option" data-sound-mode="recreated" aria-pressed="false"><span class="sound-mode-number mono">02</span><span><strong>With music</strong><small>The effects, with a quiet music bed</small></span><span class="sound-mode-check" aria-hidden="true">↗</span></button>
+              <button type="button" class="sound-mode-option" data-sound-mode="reference" aria-pressed="false"><span class="sound-mode-number mono">03</span><span><strong>Reference sound</strong><small>The supplied film’s soundtrack</small></span><span class="sound-mode-check" aria-hidden="true">↗</span></button>
+            </div>
+            <p class="sound-mode-caption"><span id="levels-note" class="sound-levels-note mono" hidden>Playback levels matched</span>Switch at the same moment. UI-only mode brings the details forward; With music puts them in context.</p><div class="sound-provenance"><span class="sound-dot" aria-hidden="true"></span><p id="sound-provenance">Stock UI and keyboard effects, with custom accents for the gaps. No reference audio in this mix.</p></div><p id="audio-status-note" class="sound-evidence-note"></p>
+          </aside>
+        </div>
+      </div>
+      <noscript><p class="sound-notice">JavaScript is needed to prepare these films for playback and compare soundtracks. The <a href="index.html#films">film collection</a> also has direct video links.</p></noscript>
+    </section>
+
+    <section class="sound-stems-section" id="stems" aria-labelledby="stems-title" hidden>
+      <div class="section-heading sound-section-heading"><div><span class="eyebrow mono">the ingredients</span><h2 id="stems-title">pull it <em>apart.</em></h2></div><p>Listen to the layers.<br>One at a time.</p></div>
+      <div class="sound-stem-grid">
+        <article class="sound-stem" data-stem="mix"><span class="mono sound-stem-index">(01) / together</span><h3>The full mix</h3><p>The new score and effects,<br>without the picture.</p><button type="button" class="pill" data-stem-listen>listen to the mix <span aria-hidden="true">▶</span></button><audio controls preload="none" aria-label="Full recreated audio mix" hidden></audio><p class="sound-stem-status" role="status" aria-live="polite"></p><a class="text-link" data-stem-download download>download M4A ↗</a></article>
+        <article class="sound-stem" data-stem="music"><span class="mono sound-stem-index">(02) / the mood</span><h3>Just the music</h3><p>The instrumental score,<br>with room to breathe.</p><button type="button" class="pill" data-stem-listen>listen to the music <span aria-hidden="true">▶</span></button><audio controls preload="none" aria-label="New instrumental music stem" hidden></audio><p class="sound-stem-status" role="status" aria-live="polite"></p><a class="text-link" data-stem-download download>download M4A ↗</a></article>
+        <article class="sound-stem" data-stem="sfx"><span class="mono sound-stem-index">(03) / the detail</span><h3>Small sounds</h3><p>The taps, sends and keystrokes.<br>Downloaded and custom UI effects.</p><button type="button" class="pill" data-stem-listen>listen to the effects <span aria-hidden="true">▶</span></button><audio controls preload="none" aria-label="Downloaded and custom UI sound effects stem" hidden></audio><p class="sound-stem-status" role="status" aria-live="polite"></p><a class="text-link" data-stem-download download>download M4A ↗</a></article>
+      </div>
+    </section>
+
+    <section class="sound-notes ruled" aria-labelledby="sound-notes-title"><span class="eyebrow mono">a note on the study</span><h2 id="sound-notes-title">new sound.<br><em>same conversation.</em></h2><div><p>These studies focus on the small interface sounds. Effects follow visible clicks, message changes and typed input; titles and AI responses do not become keyboard noise. They are not identical reproductions of the reference recordings.</p><p>UI effects come from <a href="https://kenney.nl/assets/interface-sounds" target="_blank" rel="noopener">Kenney’s CC0 Interface Sounds</a> and <a href="https://opengameart.org/content/keyboard-soundpack-1-typing-and-single-keystrokes" target="_blank" rel="noopener">unicae games’ CC0 keyboard recordings</a>. Custom synthesis fills gaps such as message movement. Music is an optional background layer.</p><p><a class="text-link" href="https://message-motion-originals.orchidhq.chatgpt.site/audio-previews/ui-sound-kit.zip">download the UI sound kit ↗</a> · <a class="text-link" href="imessage-motion-recreation-skill.zip?v=2">get the reusable workflow ↗</a></p><p>All three sound modes use the same independent picture recreation. Rene keeps the graphic sequences and skips the live-action interval in every mode.</p><a class="text-link" href="index.html#films">back to the motion collection ↗</a></div></section>
+  </main>
+  <footer class="sound-footer"><a href="index.html" class="footer-wordmark">message studies</a><div class="footer-line mono"><span>a little click makes a difference.</span><a href="#">back to the top ↑</a></div></footer>
+</body>
+</html>
