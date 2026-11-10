@@ -1,6 +1,6 @@
 # Working in this video library
 
-Start with `PROJECT-HANDOFF.md`, `skill/imessage-motion-recreation/SKILL.md` and `LOCAL-LIBRARY.json`.
+Start with `FINAL-PRODUCTION.md`, `PROJECT-HANDOFF.md`, `skill/imessage-motion-recreation/SKILL.md` and `LOCAL-LIBRARY.json`.
 The complete projects, movies, source clips, fonts, audio and evidence are in
 this checkout after `python3 tools/sync_library.py` finishes. Use the local files first. Drive
 IDs retained in historical manifests are recovery provenance, not a normal-use

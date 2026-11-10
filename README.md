@@ -2,7 +2,18 @@
 
 This private repository contains the skill **and all the production bytes it references**: six measured example projects, authored code, assets, original and reconstructed videos, UI-audio sources, visual motion studies, and analysis. Everything is stored in ordinary Git, including verified chunks for files too large to store as single GitHub files. **Clone, then run the one-time local assembly command below to recreate every canonical file.** No Git LFS, GitHub Release, GitHub CLI, Google Drive or Notion connection is required for normal use.
 
-Start with [the local video/code catalogue](catalog/index.html), [the full location guide](LOCATIONS.md), or [the skill instructions](skill/imessage-motion-recreation/SKILL.md). For a detailed account of what is taught and what remains unfinished, read [Skill contents and gaps](reports/SKILL-CONTENTS-AND-GAPS.md).
+Start with [the final production code and keyframes](FINAL-PRODUCTION.md), [the local video/code catalogue](catalog/index.html), [the full location guide](LOCATIONS.md), or [the skill instructions](skill/imessage-motion-recreation/SKILL.md). For a detailed account of what is taught and what remains unfinished, read [Skill contents and gaps](reports/SKILL-CONTENTS-AND-GAPS.md).
+
+## Final-code completeness
+
+[The new independent audit](reports/completeness-audit/README.md) confirms the
+six accepted scene/keyframe files, all 4,632 declared assets, current five-engine
+source and all thirty final videos. The originals/results fully decoded with
+zero errors. [FINAL-PRODUCTION.md](FINAL-PRODUCTION.md) identifies exactly which
+code to edit or run; [FAILURES-AND-FIXES.md](FAILURES-AND-FIXES.md) explains the
+measured failures and accepted improvements. Older builders are optional history,
+not required steps in the final render route. Temporary full-frame PNG caches
+are outside this final-working-set claim.
 
 ## Get every file onto your computer
 

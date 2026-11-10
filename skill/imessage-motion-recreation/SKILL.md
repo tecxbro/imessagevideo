@@ -21,6 +21,18 @@ For a new company or product, start with [RESEARCH-FIRST.md](library/RESEARCH-FI
 
 For recreation, catalogue recipes help decompose the source; never replace its motion with a starter preset. For new direction, catalogue options carry tradeoffs; never claim a new starter is source-exact.
 
+## Final working set and failure lessons
+
+For the accepted code, keyframes, required assets and finished videos, read
+[FINAL-PRODUCTION.md](../../FINAL-PRODUCTION.md) and
+[the independent completeness audit](../../reports/completeness-audit/README.md).
+Use the current scene plus current adapters; older builders and temporary frame
+caches are not required to replay the final accepted animation. Before retrying
+an observed defect, consult [FAILURES-AND-FIXES.md](../../FAILURES-AND-FIXES.md): it
+records concrete causes, accepted changes, measured controls and unresolved
+limits. Do not present a historical improvement as a fresh test or a remaining
+issue as solved.
+
 ## Use the complete local library
 
 The canonical local registry is [LOCAL-LIBRARY.json](../../LOCAL-LIBRARY.json), two directories above this skill folder. It resolves the six full projects and all supporting resources using portable paths relative to the checkout root. Open the [offline full-code/video viewer](../../catalog/index.html) and [every-file browser](../../inventory/index.html). The [location guide](../../LOCATIONS.md) and [exact skill/gap audit](../../reports/SKILL-CONTENTS-AND-GAPS.md) explain every layer. The original frozen skill/archive snapshots remain under `archives/`.

@@ -1,0 +1,587 @@
+{
+  "audit_version": 1,
+  "generated_utc": "2026-11-10T21:01:09+00:00",
+  "scope": "Independent local-content crosscheck; no network, GitHub API, commits or uploads. Root separately verifies the remote GitHub tree.",
+  "status": "pass-known-local-library",
+  "repository_root": "/workspace/imessagevideo",
+  "pre_repo_staging_root": "/workspace/imessage-motion-local",
+  "local_git_head_observed": "874471fc269d792c2c5e17e285367404b83d28b6",
+  "staging_to_repository": {
+    "staging_stable_regular_files": 14838,
+    "repository_stable_regular_files_before_this_report": 14859,
+    "same_content_paths": 14828,
+    "same_inode_paths": 14827,
+    "missing_staging_paths": [],
+    "differing_current_paths": [
+      {
+        "relative_path": "inventory/ALL-FILES.csv",
+        "staging": {
+          "bytes": 6585607,
+          "sha256": "a6c07cda54bcaf8b7869ef93955663849a897d344bfc8bdc977cf0ae1e03f964",
+          "crc32": "5a03814d"
+        },
+        "repository": {
+          "bytes": 7580465,
+          "sha256": "4ea4aeeaa1367712f4c34c387b8643fca0ac118ccc72dcb664392f092483fb5f",
+          "crc32": "674a9c73"
+        },
+        "classification": "repo-specific regenerated index/path metadata"
+      },
+      {
+        "relative_path": "inventory/ALL-FILES.json",
+        "staging": {
+          "bytes": 11021768,
+          "sha256": "9072fec6aae06dc14257c5b3e34de1fd29beff9e3738e6fd9a9d9968b6df19a9",
+          "crc32": "5d7b0ab5"
+        },
+        "repository": {
+          "bytes": 12869594,
+          "sha256": "74df085fd88f0c3ba091999000c51d846920ec9a7edf5a7ff93fb65c9262d09b",
+          "crc32": "a6c7ff8b"
+        },
+        "classification": "repo-specific regenerated index/path metadata"
+      },
+      {
+        "relative_path": "inventory/ALL-FILES.json.gz",
+        "staging": {
+          "bytes": 780670,
+          "sha256": "08ab77a1ffa064f784532b532ccab42829edf2ac7de84880b610134f77908d94",
+          "crc32": "2e81c2b3"
+        },
+        "repository": {
+          "bytes": 922125,
+          "sha256": "4c7f96eca4e6da66c8e3d7da7d599a1582c804f5c83010bc9e56eadfbc33cfba",
+          "crc32": "e1d87227"
+        },
+        "classification": "repo-specific regenerated index/path metadata"
+      },
+      {
+        "relative_path": "inventory/ANALYSIS.csv",
+        "staging": {
+          "bytes": 538299,
+          "sha256": "962425e9c20cb3e031cfa0492128c87d23aaecaadf1ac3f3a5e4194699bbb515",
+          "crc32": "f4db6361"
+        },
+        "repository": {
+          "bytes": 720304,
+          "sha256": "7535b81ac10931dec6155767adf4a04069667e83634886171bbb2044b0d93306",
+          "crc32": "cea71cb4"
+        },
+        "classification": "repo-specific regenerated index/path metadata"
+      },
+      {
+        "relative_path": "inventory/ASSETS.csv",
+        "staging": {
+          "bytes": 5525461,
+          "sha256": "42ca9d6506710052b09d9e0c8cd8307c4a44a22b5bfd15c76cf7988bde88e4b5",
+          "crc32": "ba37be2a"
+        },
+        "repository": {
+          "bytes": 5578041,
+          "sha256": "39adea51618222054b2fa7a2154be4d4b4bb172daf2b44b2a0801e76980d48fc",
+          "crc32": "a9f530c2"
+        },
+        "classification": "repo-specific regenerated index/path metadata"
+      },
+      {
+        "relative_path": "inventory/AUDIO.csv",
+        "staging": {
+          "bytes": 164,
+          "sha256": "dbc2bfd37816275c8bc271c35b86dcdf6411691d16196e251476c86b4b9c6664",
+          "crc32": "8bbfaa95"
+        },
+        "repository": {
+          "bytes": 101165,
+          "sha256": "73a9dad4aae338d989c9e7bf56fb6f9de0f0a0425250c056ffa6d694af92a85b",
+          "crc32": "0ab29a0c"
+        },
+        "classification": "repo-specific regenerated index/path metadata"
+      },
+      {
+        "relative_path": "inventory/CODE.csv",
+        "staging": {
+          "bytes": 499934,
+          "sha256": "eb16430245288ea5e33adc171f08f589e3157654d2cffd7cd0d3524667dc4db1",
+          "crc32": "ef8fa84d"
+        },
+        "repository": {
+          "bytes": 1102034,
+          "sha256": "e3ca8a9f2b7f1043d9340ec9b8608aeec390a27ae5fe7e5c660431714b46063b",
+          "crc32": "7f048184"
+        },
+        "classification": "repo-specific regenerated index/path metadata"
+      },
+      {
+        "relative_path": "inventory/VIDEOS.csv",
+        "staging": {
+          "bytes": 29628,
+          "sha256": "ad0aaed33be8490d1055149b17f77b2cf7a7bbd9421baf6120b413ba4850c59d",
+          "crc32": "93c64f1a"
+        },
+        "repository": {
+          "bytes": 48217,
+          "sha256": "7e5d213e3735a85d99d275b15c978ed8bf93b2345ad4bfb5fe951d38bed46b1d",
+          "crc32": "ec29c74b"
+        },
+        "classification": "repo-specific regenerated index/path metadata"
+      },
+      {
+        "relative_path": "inventory/index.html",
+        "staging": {
+          "bytes": 3661128,
+          "sha256": "f01eb5c6dce3ed02a00d4673989cd411f4e4e17ae1bfd34869dbb82cc1917077",
+          "crc32": "4becc077"
+        },
+        "repository": {
+          "bytes": 4275974,
+          "sha256": "cc58746753188b4d9394abc8ad5f1bc76f9c1af3d2c6fc50f5a3362779ecfdc1",
+          "crc32": "f959ed47"
+        },
+        "classification": "repo-specific regenerated index/path metadata"
+      },
+      {
+        "relative_path": "inventory/summary.json",
+        "staging": {
+          "bytes": 2589,
+          "sha256": "dbff201b3713e8832a001c430b1b5bd766e10f89f86002bb4de8bc84b078613e",
+          "crc32": "1ea7317d"
+        },
+        "repository": {
+          "bytes": 2768,
+          "sha256": "f9a7c5f965aa2efe011cc7f58dc63216df3fc9e6444629015b0f4d564cdfd3fb",
+          "crc32": "5be1ec3f"
+        },
+        "classification": "repo-specific regenerated index/path metadata"
+      }
+    ],
+    "repository_additions": [
+      ".gitattributes",
+      ".gitignore",
+      "LOCATIONS.md",
+      "PROJECT-HANDOFF.md",
+      "STORAGE.json",
+      "archives/README.md",
+      "reports/FRESH-CHECKOUT-VERIFICATION.json",
+      "reports/GITHUB-MIGRATION.md",
+      "reports/GITHUB-SYNC.md",
+      "reports/MAC-COMPATIBILITY.json",
+      "reports/MIGRATION-CONTENT-CHECK.json",
+      "reports/completeness-audit/PRIOR-GITHUB-TRANSFER-VERIFICATION.json",
+      "reports/completeness-audit/UPLOAD-INTEGRITY.json",
+      "reports/migration-source/GITHUB-RELEASE-DRAFT.md",
+      "reports/migration-source/GITHUB-RELEASE-SYNC-ATTEMPT.md",
+      "reports/migration-source/README.md",
+      "reports/migration-source/github-release-plan.unpublished.json",
+      "reports/migration-source/publish_github_assets.py",
+      "reports/migration-source/push_chunk_batches.py",
+      "reports/migration-source/sync_github_release.py",
+      "tools/sync_library.py"
+    ],
+    "staging_excluded_cache_credential_paths": [
+      "tools/__pycache__",
+      "resources/frozen-visual-delivery-v1/imessage-recreations/verification/method-parity/02-danieltian/native-review/__pycache__",
+      "skill/imessage-motion-recreation/library/__pycache__"
+    ],
+    "repository_excluded_cache_credential_paths": [
+      ".git",
+      "tools/__pycache__",
+      "resources/frozen-visual-delivery-v1/imessage-recreations/verification/method-parity/02-danieltian/native-review/__pycache__",
+      "skill/imessage-motion-recreation/library/__pycache__"
+    ]
+  },
+  "all_archive_members": {
+    "listed_total": 14161,
+    "checked_extracted_total": 14161,
+    "supplied_sha256_checked_total": 8206,
+    "archives": [
+      {
+        "archive_id": "01-photonhq-complete-v1",
+        "listed_members": 1382,
+        "native_members": 1382,
+        "member_names_match": true,
+        "members_with_extracted_size_crc_checked": 1382,
+        "members_with_supplied_sha256_checked": 1381,
+        "checksum_maps_intentionally_relocated": 1,
+        "whole_archive_sha256_verified": true,
+        "extracted_path": "projects/01-photonhq-complete-v1"
+      },
+      {
+        "archive_id": "02-danieltian-complete-v1",
+        "listed_members": 968,
+        "native_members": 968,
+        "member_names_match": true,
+        "members_with_extracted_size_crc_checked": 968,
+        "members_with_supplied_sha256_checked": 967,
+        "checksum_maps_intentionally_relocated": 1,
+        "whole_archive_sha256_verified": true,
+        "extracted_path": "projects/02-danieltian-complete-v1"
+      },
+      {
+        "archive_id": "03-photon-mini-complete-v1",
+        "listed_members": 1931,
+        "native_members": 1931,
+        "member_names_match": true,
+        "members_with_extracted_size_crc_checked": 1931,
+        "members_with_supplied_sha256_checked": 1930,
+        "checksum_maps_intentionally_relocated": 1,
+        "whole_archive_sha256_verified": true,
+        "extracted_path": "projects/03-photon-mini-complete-v1"
+      },
+      {
+        "archive_id": "04-poke-complete-v1",
+        "listed_members": 326,
+        "native_members": 326,
+        "member_names_match": true,
+        "members_with_extracted_size_crc_checked": 326,
+        "members_with_supplied_sha256_checked": 325,
+        "checksum_maps_intentionally_relocated": 1,
+        "whole_archive_sha256_verified": true,
+        "extracted_path": "projects/04-poke-complete-v1"
+      },
+      {
+        "archive_id": "05-linq-complete-v1",
+        "listed_members": 598,
+        "native_members": 598,
+        "member_names_match": true,
+        "members_with_extracted_size_crc_checked": 598,
+        "members_with_supplied_sha256_checked": 597,
+        "checksum_maps_intentionally_relocated": 1,
+        "whole_archive_sha256_verified": true,
+        "extracted_path": "projects/05-linq-complete-v1"
+      },
+      {
+        "archive_id": "06-gallery-complete-v1",
+        "listed_members": 877,
+        "native_members": 877,
+        "member_names_match": true,
+        "members_with_extracted_size_crc_checked": 877,
+        "members_with_supplied_sha256_checked": 876,
+        "checksum_maps_intentionally_relocated": 1,
+        "whole_archive_sha256_verified": true,
+        "extracted_path": "projects/06-gallery-complete-v1"
+      },
+      {
+        "archive_id": "frozen-visual-delivery-v1",
+        "listed_members": 5765,
+        "native_members": 5765,
+        "member_names_match": true,
+        "members_with_extracted_size_crc_checked": 5765,
+        "members_with_supplied_sha256_checked": 0,
+        "checksum_maps_intentionally_relocated": 0,
+        "whole_archive_sha256_verified": true,
+        "extracted_path": "resources/frozen-visual-delivery-v1"
+      },
+      {
+        "archive_id": "silent-picture-masters-v1",
+        "listed_members": 61,
+        "native_members": 61,
+        "member_names_match": true,
+        "members_with_extracted_size_crc_checked": 61,
+        "members_with_supplied_sha256_checked": 60,
+        "checksum_maps_intentionally_relocated": 1,
+        "whole_archive_sha256_verified": true,
+        "extracted_path": "resources/silent-picture-masters-v1"
+      },
+      {
+        "archive_id": "all-authored-source-and-fixtures-v1",
+        "listed_members": 1477,
+        "native_members": 1477,
+        "member_names_match": true,
+        "members_with_extracted_size_crc_checked": 1477,
+        "members_with_supplied_sha256_checked": 1476,
+        "checksum_maps_intentionally_relocated": 1,
+        "whole_archive_sha256_verified": true,
+        "extracted_path": "resources/all-authored-source-and-fixtures-v1"
+      },
+      {
+        "archive_id": "complete-ui-audio-source-v1",
+        "listed_members": 497,
+        "native_members": 497,
+        "member_names_match": true,
+        "members_with_extracted_size_crc_checked": 497,
+        "members_with_supplied_sha256_checked": 496,
+        "checksum_maps_intentionally_relocated": 1,
+        "whole_archive_sha256_verified": true,
+        "extracted_path": "resources/complete-ui-audio-source-v1"
+      },
+      {
+        "archive_id": "font-inputs-and-linux-fallbacks-v1",
+        "listed_members": 99,
+        "native_members": 99,
+        "member_names_match": true,
+        "members_with_extracted_size_crc_checked": 99,
+        "members_with_supplied_sha256_checked": 98,
+        "checksum_maps_intentionally_relocated": 1,
+        "whole_archive_sha256_verified": true,
+        "extracted_path": "resources/font-inputs-and-linux-fallbacks-v1"
+      },
+      {
+        "archive_id": "later-workflow-and-review-source-v1",
+        "listed_members": 180,
+        "native_members": 180,
+        "member_names_match": true,
+        "members_with_extracted_size_crc_checked": 180,
+        "members_with_supplied_sha256_checked": 0,
+        "checksum_maps_intentionally_relocated": 0,
+        "whole_archive_sha256_verified": true,
+        "extracted_path": "resources/later-workflow-and-review-source-v1"
+      }
+    ],
+    "intentional_checksum_receipt_relocations": [
+      {
+        "archive": "01-photonhq-complete-v1",
+        "original_member": "imessage-recreations/PACK-CHECKSUMS.json",
+        "actual_local_path": "projects/01-photonhq-complete-v1/.library-receipts/ded6a6dca73e25850bf87ac5f95d603e83052172914e3f96716624cae9625c23-PACK-CHECKSUMS.json",
+        "reason": "materializer preserves each pack checksum map as a separate receipt"
+      },
+      {
+        "archive": "02-danieltian-complete-v1",
+        "original_member": "imessage-recreations/PACK-CHECKSUMS.json",
+        "actual_local_path": "projects/02-danieltian-complete-v1/.library-receipts/bf9ffb243002e62e74b33c5bb2c9a8262fe8ff009aa708a468799d4d86f553b2-PACK-CHECKSUMS.json",
+        "reason": "materializer preserves each pack checksum map as a separate receipt"
+      },
+      {
+        "archive": "03-photon-mini-complete-v1",
+        "original_member": "imessage-recreations/PACK-CHECKSUMS.json",
+        "actual_local_path": "projects/03-photon-mini-complete-v1/.library-receipts/0b01b89fa4e9302fdad3d877d47f088399a2187272b14aeda9477cb1c001ece2-PACK-CHECKSUMS.json",
+        "reason": "materializer preserves each pack checksum map as a separate receipt"
+      },
+      {
+        "archive": "04-poke-complete-v1",
+        "original_member": "imessage-recreations/PACK-CHECKSUMS.json",
+        "actual_local_path": "projects/04-poke-complete-v1/.library-receipts/9d293ee3356d19f3428e62d0ffc227b42d131a8f11f00128463beaad38ba1401-PACK-CHECKSUMS.json",
+        "reason": "materializer preserves each pack checksum map as a separate receipt"
+      },
+      {
+        "archive": "05-linq-complete-v1",
+        "original_member": "imessage-recreations/PACK-CHECKSUMS.json",
+        "actual_local_path": "projects/05-linq-complete-v1/.library-receipts/a6aaa38ce8930f70ef9f4246571320e5a82cf2019c3705a61e1eb10c92174bc8-PACK-CHECKSUMS.json",
+        "reason": "materializer preserves each pack checksum map as a separate receipt"
+      },
+      {
+        "archive": "06-gallery-complete-v1",
+        "original_member": "imessage-recreations/PACK-CHECKSUMS.json",
+        "actual_local_path": "projects/06-gallery-complete-v1/.library-receipts/5aa035ae66431d5123143a885b355774f9ec4cfec57ec52178d87babf5db5c11-PACK-CHECKSUMS.json",
+        "reason": "materializer preserves each pack checksum map as a separate receipt"
+      },
+      {
+        "archive": "silent-picture-masters-v1",
+        "original_member": "imessage-recreations/PACK-CHECKSUMS.json",
+        "actual_local_path": "resources/silent-picture-masters-v1/.library-receipts/efa5736b05552a6e48666b089255328a6aa65131dda5ae792fc993f448721b0e-PACK-CHECKSUMS.json",
+        "reason": "materializer preserves each pack checksum map as a separate receipt"
+      },
+      {
+        "archive": "all-authored-source-and-fixtures-v1",
+        "original_member": "imessage-recreations/PACK-CHECKSUMS.json",
+        "actual_local_path": "resources/all-authored-source-and-fixtures-v1/.library-receipts/6a4a263fcf58bd0608a945b1e1159568569ba71ecaebeef04180a57fb8746ca3-PACK-CHECKSUMS.json",
+        "reason": "materializer preserves each pack checksum map as a separate receipt"
+      },
+      {
+        "archive": "complete-ui-audio-source-v1",
+        "original_member": "imessage-recreations/PACK-CHECKSUMS.json",
+        "actual_local_path": "resources/complete-ui-audio-source-v1/.library-receipts/cc0bcfd45f642eb9366d48b882df677dc879a543b8e9c2fba6082384379d0073-PACK-CHECKSUMS.json",
+        "reason": "materializer preserves each pack checksum map as a separate receipt"
+      },
+      {
+        "archive": "font-inputs-and-linux-fallbacks-v1",
+        "original_member": "imessage-recreations/PACK-CHECKSUMS.json",
+        "actual_local_path": "resources/font-inputs-and-linux-fallbacks-v1/.library-receipts/61d5167577ba74a9c542bc328222519baa80269680592ddfe1ccd445686a7657-PACK-CHECKSUMS.json",
+        "reason": "materializer preserves each pack checksum map as a separate receipt"
+      }
+    ],
+    "exceptions": []
+  },
+  "git_representation": {
+    "tracked_paths_observed": 14843,
+    "local_files_not_independent_tracked_paths": [
+      "archives/01-photonhq-complete-v1.zip",
+      "archives/02-danieltian-complete-v1.zip",
+      "archives/03-photon-mini-complete-v1.zip",
+      "archives/04-poke-complete-v1.zip",
+      "archives/05-linq-complete-v1.zip",
+      "archives/06-gallery-complete-v1.zip",
+      "archives/all-authored-source-and-fixtures-v1.zip",
+      "archives/complete-ui-audio-source-v1.zip",
+      "archives/font-inputs-and-linux-fallbacks-v1.zip",
+      "archives/frozen-visual-delivery-v1.zip",
+      "archives/later-workflow-and-review-source-v1.zip",
+      "archives/silent-picture-masters-v1.zip",
+      "projects/02-danieltian-complete-v1/imessage-recreations/scenes/02-danieltian/scene.json",
+      "reports/completeness-audit/PRIOR-GITHUB-TRANSFER-VERIFICATION.json",
+      "reports/completeness-audit/UPLOAD-INTEGRITY.json",
+      "resources/frozen-visual-delivery-v1/imessage-recreations/scenes/02-danieltian/scene.json"
+    ],
+    "expected_derived_paths": [
+      {
+        "path": "archives/01-photonhq-complete-v1.zip",
+        "present": true,
+        "sha256_matches": true,
+        "source": "registered tracked archive parts"
+      },
+      {
+        "path": "archives/02-danieltian-complete-v1.zip",
+        "present": true,
+        "sha256_matches": true,
+        "source": "registered tracked archive parts"
+      },
+      {
+        "path": "archives/03-photon-mini-complete-v1.zip",
+        "present": true,
+        "sha256_matches": true,
+        "source": "registered tracked archive parts"
+      },
+      {
+        "path": "archives/04-poke-complete-v1.zip",
+        "present": true,
+        "sha256_matches": true,
+        "source": "registered tracked archive parts"
+      },
+      {
+        "path": "archives/05-linq-complete-v1.zip",
+        "present": true,
+        "sha256_matches": true,
+        "source": "registered tracked archive parts"
+      },
+      {
+        "path": "archives/06-gallery-complete-v1.zip",
+        "present": true,
+        "sha256_matches": true,
+        "source": "registered tracked archive parts"
+      },
+      {
+        "path": "archives/frozen-visual-delivery-v1.zip",
+        "present": true,
+        "sha256_matches": true,
+        "source": "registered tracked archive parts"
+      },
+      {
+        "path": "archives/silent-picture-masters-v1.zip",
+        "present": true,
+        "sha256_matches": true,
+        "source": "registered tracked archive parts"
+      },
+      {
+        "path": "archives/all-authored-source-and-fixtures-v1.zip",
+        "present": true,
+        "sha256_matches": true,
+        "source": "registered tracked archive parts"
+      },
+      {
+        "path": "archives/complete-ui-audio-source-v1.zip",
+        "present": true,
+        "sha256_matches": true,
+        "source": "registered tracked archive parts"
+      },
+      {
+        "path": "archives/font-inputs-and-linux-fallbacks-v1.zip",
+        "present": true,
+        "sha256_matches": true,
+        "source": "registered tracked archive parts"
+      },
+      {
+        "path": "archives/later-workflow-and-review-source-v1.zip",
+        "present": true,
+        "sha256_matches": true,
+        "source": "registered tracked archive parts"
+      },
+      {
+        "path": "projects/02-danieltian-complete-v1/imessage-recreations/scenes/02-danieltian/scene.json",
+        "present": true,
+        "sha256_matches": true,
+        "source": "exact full scene in corresponding complete archive"
+      },
+      {
+        "path": "resources/frozen-visual-delivery-v1/imessage-recreations/scenes/02-danieltian/scene.json",
+        "present": true,
+        "sha256_matches": true,
+        "source": "exact full scene in corresponding complete archive"
+      }
+    ],
+    "unexpected_untracked_local_files_before_this_report": [],
+    "note": "The 12 assembled ZIPs and 2 over-100MB raw scene copies are not separate Git blobs. Their registered tracked parts losslessly restore them offline; all14 are present and independently hash-checked here."
+  },
+  "outside_repository": {
+    "directories_examined": [
+      {
+        "path": "/workspace/attachments",
+        "classification": "authenticated transport materializations",
+        "regular_files_seen": 2
+      },
+      {
+        "path": "/workspace/imessagevideo-cold-check",
+        "classification": "separate fresh-checkout verification duplicate",
+        "files_seen": 14856,
+        "content_claim": "Excluded from authoring-gap candidates as the requested duplicate checkout; not a second source corpus."
+      },
+      {
+        "path": "/workspace/library-files",
+        "regular_files_seen": 0,
+        "credential_cache_paths_excluded": []
+      },
+      {
+        "path": "/workspace/scratch",
+        "regular_files_seen": 0,
+        "credential_cache_paths_excluded": []
+      },
+      {
+        "path": "/workspace/shared",
+        "regular_files_seen": 0,
+        "credential_cache_paths_excluded": []
+      }
+    ],
+    "transport_readback_files": [
+      {
+        "path": "/workspace/attachments/3fc8d6f0-4f3c-4b42-88ef-29b974e34802/imessage-motion-complete-skill-v3.zip",
+        "bytes": 8588186,
+        "matches_repository_file_hash": true
+      },
+      {
+        "path": "/workspace/attachments/c0b0ec40-261b-41ee-b7f1-c15f5a2b29cc/release-verification-v3.zip",
+        "bytes": 29931,
+        "matches_repository_file_hash": true
+      }
+    ],
+    "byte_identical_repository_duplicates": [
+      {
+        "path": "/workspace/github-imessagevideo-final-verification.json",
+        "bytes": 535,
+        "sha256": "0254dee0d3439bd2bbb1c3f422cb45c3ed3f7a61d722a61fc81f7141ac590cf0",
+        "crc32": "808c2292"
+      }
+    ],
+    "existing_files_not_matched_to_repository_content": [],
+    "delivery_receipt_preservation_correction": {
+      "original_path": "/workspace/github-imessagevideo-final-verification.json",
+      "repository_path": "reports/completeness-audit/PRIOR-GITHUB-TRANSFER-VERIFICATION.json",
+      "classification": "omitted delivery verification receipt, corrected during independent audit; not a production source/video omission",
+      "bytes": 535,
+      "byte_identical_copy_verified": true
+    }
+  },
+  "retained_authoring_scope": {
+    "definition": "All retained authored executable code under the enumerated project areas, real engine fixtures/provenance and the completeness audits. Accepted scene/data/assets are in complete example packs and frozen delivery.",
+    "areas": [
+      "engines",
+      "scripts",
+      "references",
+      "verification",
+      "figma",
+      "shared",
+      "outputs",
+      "audio-recreation",
+      "skill-upgrade",
+      "complete-library"
+    ],
+    "code_files": 1475,
+    "excluded": "Installed dependencies/venvs, third-party font installer resources, caches and duplicate staging trees. Historical programs may require old measurement data; the accepted cold-build path is the case scene plus genuine adapters."
+  },
+  "unstable_files_during_read": [],
+  "limits": [
+    "This verifies every retained member of the 12 registered archive snapshots and every stable staging file present now.",
+    "The prior execution workspace disappeared. No audit of this new workspace can prove that every historical temporary file, deleted version or never-archived render cache was retained.",
+    "SOURCE-SCOPE.json promises retained authored executable code in enumerated areas, not every file ever created on a vanished machine.",
+    "Installed third-party packages/virtualenvs, browser binaries, font installer resources and reproducible caches were deliberately outside retained authored source; their locks/setup guidance are retained.",
+    "This report does not independently establish the remote GitHub tree/upload result or universal visual perfection; the root agent owns remote verification.",
+    "Files created after this snapshot, including these two report files, must be indexed/committed by the root agent."
+  ]
+}
