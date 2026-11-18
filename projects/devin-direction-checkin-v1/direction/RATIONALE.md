@@ -16,3 +16,8 @@ Cost: 24 s -> 28 s, arrival moved f510 -> f580.
 
 ## v2 -> v3 (sound/edit exchange)
 Sound specialist's one picture revision, accepted: walk v2 f210-419 retimed to v3 f210-299 in scene keyframes (endpoints kept, ETA/clock still paired); later timing shifts -120 frames (frame-map.json). Opening camera reframed so the + tap is on screen at f90. Ledger now lists only visible, soundable actions (35). Final: 720 frames, 24 s, arrival f460.
+
+## Outcome
+- Observer v3 recheck: picture pass. D2/D3/D4/D6 fixed; D1 retracted (contact-sheet tile boundary, not in the film).
+- Sound: scored mux on unchanged v3 picture lives in the sound PR (film-trials/devin-bot-sound, trials/sound-editing/checkin-v3/).
+- Fresh-agent trial (observer-written brief "Tally", unseen by this worker, skill at 1ddf469): coherent 23 s film, verdict pass. Story and structure are different; house style converged (single centred phone, flat warm ground, green completed state, wordmark end card), and its phone was small (~1/3 frame width). Reading: the skill produces distinct ideas but defaults a visual language. A follow-up check could ask directors to choose framing/scale and end-card form per brief.
