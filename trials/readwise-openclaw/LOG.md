@@ -50,6 +50,8 @@ Times are wall clock, America/Los_Angeles (PST). Builder session: https://app.de
 | 03:38 | 03:46 | R3–R6 + native fixes / checkpoints | one camera-fit correction pass; measured state transitions; all14 tests OK |
 | 03:47 | 04:05 | Revised full4K export | 1109.70s; native4K,1110frames; AAC−16.67LUFS/−1.52dBTP |
 | 04:05 | 04:06 | Revised verification | full decode, frame cache/black tail, PCM silence and frozen-first hashes all OK |
+| 04:07 | 04:09 | Separate JSON edit proof | 100.38s;72fresh S3 captures,1038validated unchanged PNGs reused; fresh4K MP4 |
+| 04:09 | 04:10 | Edit proof verification | full decode/hashes/black tail/silence OK; f198 visibly shows changed copy + delayed spinner |
 
 ## Phase 2 attempts and retries
 
@@ -124,3 +126,16 @@ Review evidence: `/Users/devin/attachments/91ba0e70-7171-48f3-8cd1-7388cb47ccac/
   - 04:05 PST → 04:05 PST — Explicit mastered-audio mux OK; observed failure: none; elapsed 0.71 s.
 - 03:47 PST → 04:05 PST — REVISED-EXPORT published once: /Users/devin/work/rw/exports/readwise-revised-export.mp4; SHA256 fdf221bf1d70f62ad323f482401ed613dee1856007004ea957c4f075d3d3d721; encoded AAC -16.67 LUFS / -1.52 dBTP; pipeline 1109.7 s.
 - 04:07 PST — Revised verification PASS: complete decode, 1110native4K cached frames, ten RGB-zero tail PNGs, exact master-PCM silence from1100, scene/output SHA256, first movie and all FIRST-EXPORT receipt hashes unchanged. Source −16.40LUFS/−3.89dBTP; first −38.68/−18.89; revised encoded AAC −16.67/−1.52 (−0.27LU error). Full pipeline external1109.79s/internal1109.70s; picture1102.90s; no full-render failure/retry. Final bot checkpoints MAE f64510.036→8.169, f89010.136→9.170; all12 comparisons at ~/work/rw/cmp/phase2-*.png. No requested native fix skipped; artwork, 2D perspective, microcopy, timing gaps remain approximations as documented.
+- 04:07 PST — Separate editability proof begins AFTER revised publication and commit b6f17cb. Observed requirement: demonstrate editability without Python/shared-engine edits. Changed variables (JSON only): article line7 kubernetes→containers; browser resolve186→201 (+15), all relative badge/toolbar/toast/check/progress events follow. Tests14 OK; git project diff contains exactly copy.json and timing.json. Reuse only unchanged frame PNGs outside139–210 after strict scene comparison; fresh4K re-encode. No prior edit export exists.
+- 04:07 PST → pending — Complete scene build. Changed variable: S2/S3/S4 enabled; all copy/timing read from JSON.
+  - 04:07 PST → 04:07 PST — Complete scene build OK; observed failure: none; elapsed 0.07 s.
+- 04:07 PST → pending — 1110-frame HTML picture render. Changed variable: Phase 2 source-measured fidelity fixes; project-only global output scale; unchanged shared engine; browser-only re-capture with validated unchanged-layer cache reuse.
+  - 04:07 PST → 04:09 PST — 1110-frame HTML picture render OK; observed failure: none; elapsed 92.05 s.
+- 04:09 PST → pending — Independent UI + original music render. Changed variable: CC0 keys/clicks, declared original synthesis-bank send/pop, original seeded music; no source audio input.
+  - 04:09 PST → 04:09 PST — Independent UI + original music render OK; observed failure: none; elapsed 1.07 s.
+- 04:09 PST → pending — Source-matched two-pass delivery mastering. Changed variable: measure reference only; independently authored mix mastered to source LUFS with −2 dBTP ceiling.
+  - 04:09 PST → 04:09 PST — Source-matched two-pass delivery mastering OK; observed failure: none; elapsed 4.86 s.
+- 04:09 PST → pending — Explicit mastered-audio mux. Changed variable: only rendered picture video and newly mastered independent audio selected.
+  - 04:09 PST → 04:09 PST — Explicit mastered-audio mux OK; observed failure: none; elapsed 0.86 s.
+- 04:07 PST → 04:09 PST — EDIT-EXPORT published once: /Users/devin/work/rw/exports/readwise-edit-export.mp4; SHA256 669950ab9b0e0f3d088a757b3a07c56b8f41f03bc94b8d714459c465ded531ba; encoded AAC -16.67 LUFS / -1.52 dBTP; pipeline 100.38 s.
+- 04:11 PST — Edit verification PASS: 14 tests in0.720s; full video/audio decode;1110frames/native4K/37s/AAC48k stereo; final encoded AAC−16.67LUFS/−1.52dBTP. First MP4, FIRST-EXPORT receipts and revised MP4 hashes unchanged.72S3 frames newly captured and1038outside-S3 frame PNGs hard-linked only after unchanged-layer comparison. Exact PCM tail silence and ten black PNG tail frames retained. Proof viewed at ~/work/rw/cmp/phase2-edit-proof-full.png and phase2-edit-proof-copy.png: f198 revised check vs edited spinner, kubernetes vs containers. No edit-render failure/retry; external100.43s/internal100.38s. Authored project changes remain exactly two JSON lines; second commit also carries generated EDIT-EXPORT receipts and this audit log, no Python/shared-engine changes. Full requested diff deliverable: ~/work/rw/phase2-editability.diff (git diff HEAD~1 -- trials/); filtered authored diff: ~/work/rw/phase2-json-edit.diff.
