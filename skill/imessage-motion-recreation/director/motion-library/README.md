@@ -20,7 +20,7 @@ Open the MP4 in a media player. For a measured film, extract its original interv
 | Inline card to expanded sheet | [Photon Mini](https://github.com/tecxbro/imessagevideo/blob/c49482aec7b8ed0b840f97c61a5e5b860c4077b6/projects/03-photon-mini-complete-v1/imessage-recreations/references/03-photon-mini/source.mp4) frames 211–240 | [MP4](previews/inline-card-expand.mp4) |
 | Portrait ring | [Gallery](https://github.com/tecxbro/imessagevideo/blob/c49482aec7b8ed0b840f97c61a5e5b860c4077b6/projects/06-gallery-complete-v1/imessage-recreations/references/06-gallery/source.mp4) frames 603–653 | [MP4](previews/avatar-ring-assemble.mp4) |
 
-The strip moves as one clipped row. The stack moves and promotes individual overlapping attachments. The Apple guide describes grouped attachments and swiping after opening a stack. The preview stages an authored gesture in a stylized conversation.
+The strip moves as one clipped row. The stack moves and promotes individual overlapping attachments. The Apple guide describes grouped attachments and swiping after opening a stack. The preview stages an authored gesture in a stylized conversation. The UI trial records which details lack a matched native capture. [UI attachment evidence](https://github.com/tecxbro/imessagevideo/blob/ef83db187d7291a5d70f6dedb1f436f55b5abba3/skill/imessage-motion-recreation/director/ui-trial/ATTACHMENT-EVIDENCE.md)
 
 ## Replace and render
 
