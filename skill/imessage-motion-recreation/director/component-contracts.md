@@ -31,6 +31,47 @@ AppCard separates surface, artwork, heading, detail and action child IDs. Bottom
 
 The neutral Avatar uses initials. The neutral PhoneFrame is a conversation viewport, not an exact iPhone hardware model. AppCard artwork is a simple editable color field. Source photographs, hardware reflections, maps and image-based card interiors have separate asset contracts and are not magically reproduced by these builders.
 
+## Moving conversations
+
+Import the conversation builder and standalone media surfaces from [`conversation.mjs`](conversation.mjs). They return layers in the existing scene contract. Use [Lantern](ui-trial/demo.mjs) for a reflow, send, scroll and camera test, and [Ferry lunch](ui-trial/fresh/README.md) for a full assembly with local images.
+
+```js
+import {buildConversation, PhotoStrip, NativePhotoCollage,
+  NativeAttachmentStack, InlineAppCard} from './conversation.mjs';
+
+const context = document.createElement('canvas').getContext('2d');
+const {scene, events} = buildConversation({
+  id: 'reservations',
+  duration: 6,
+  phone: {width: 320, height: 500},
+  participant: {name: 'Nora Reyes', initials: 'NR'},
+  messages: [
+    {id: 'welcome', side: 'incoming', text: 'The evening workshop still has seats.'},
+    {id: 'request', side: 'outgoing', text: 'Could you hold two by the window? ✨',
+      typingFrom: 0.6, at: 2.6, reaction: {at: 3.1, type: 'heart'}},
+    {id: 'reply', side: 'incoming', text: 'You’re all set for seven.', at: 3.8},
+  ],
+  measureText(value, {fontFamily, fontSize, fontWeight}) {
+    context.font = `${fontWeight} ${fontSize}px ${fontFamily}`;
+    return context.measureText(value).width;
+  },
+});
+```
+
+- **People and layout.** `participant.avatar` takes a local image path relative to the generated scene. The header uses supplied initials or derives them from the name. The measurer must use the export font, including emoji fallbacks. Wait for any custom fonts before measuring. The [Node build helper](ui-trial/measure-text.mjs) uses installed fonts in Chromium. It accepts the same JSON-safe options and supplies the measurer.
+- **Message clock.** `at` defaults to zero for existing messages. `typingFrom` starts an outgoing draft and `at` sends it. Use unique simple IDs, `side` of `incoming` or `outgoing`, and text, an attachment or both. An optional `edit: {at, text}` changes a row after arrival. The composer shows the latest two measured lines, types complete graphemes, and clears on the first native frame at or after the send time. Incoming messages arrive whole. Events are visible action hooks for cue review.
+- **Ownership.** The `<message-id>-tapback` stays under `<message-id>`. The screen clips the phone, and the transcript viewport clips the scroll group. Use `scroll: [{at, offset, duration}]` for choreography. A positive pixel offset moves toward older content from the latest scroll position and clamps to the available transcript. `camera: {x, y, originX, originY, keyframes}` takes scene-contract keyframes in output seconds and moves the whole phone. Composer, transcript and camera retain independent controls.
+- **Check motion.** Inspect consecutive decoded frames around a wrap, send and scroll while the camera acts. A single frame can miss a stale draft or a reaction that slips during reflow. See [the evidence](ui-trial/ATTACHMENT-EVIDENCE.md) and [the regression](ui-trial/test-conversation.mjs).
+
+| Attachment `kind` | Builder | Editable inputs |
+| --- | --- | --- |
+| `photo-strip` | `PhotoStrip` | `images: [{src}]`, `swipes: [{at, duration}]`, optional `width` and `height`. Only its clipped horizontal rail moves. It can sit in a venue document or a message row. |
+| `native-collage` | `NativePhotoCollage` | Two or three `images` in a grouped preview. |
+| `native-stack` | `NativeAttachmentStack` | Four or more `images` in a grouped preview, optional authored `swipes`. The inline motion is illustrative. Apple's documented interaction opens the stack before swiping. |
+| `app-card` | `InlineAppCard` | `title`, optional `detail`, `action`, `image: {src}`, `width` and `height`. The inline preview stays on its message. Use a separate bottom-origin sheet timeline when showing an open app. |
+
+Put local artwork paths in the generated scene's coordinate system for file resolution. HTML/SVG and GSAP use the same scene and asset paths. A conversation includes an illustrative phone shell and authored timing. For a matched recreation, establish the actual host, device, OS, gesture and frame evidence separately.
+
 ## Render and adapt
 
 ```bash

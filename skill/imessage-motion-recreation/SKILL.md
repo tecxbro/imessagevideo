@@ -84,6 +84,10 @@ Keep this private repository's current visibility unless the user explicitly cha
 
 `director/components.mjs` provides nine editable builders: MessageBubble, Composer, AppIcon, AppCard, BottomSheet, PhoneFrame, ActionButton, Avatar and CameraRig. They emit the same scene contract used by the real renderers. Preserve stable child IDs, explicit copy/line breaks, independent camera/content groups and correct clipping. Replace the disclosed Arial fallback with verified production typography and remeasure it.
 
+For an editable conversation that needs to survive new copy, people, media and camera, start with [`buildConversation`](director/conversation.mjs) and its [moving conversation contract](director/component-contracts.md#moving-conversations). Set message text and arrival times, then render through the send and a scroll with camera motion. Verify the idle composer on the first sent frame, the Tapback on its own row after reflow, and the transcript clip at the fixed header and composer. Use the [Lantern regression](director/ui-trial/demo.mjs) and [Ferry lunch assembly](director/ui-trial/fresh/README.md) as runnable examples.
+
+Choose the attachment surface using [the source comparisons](director/ui-trial/ATTACHMENT-EVIDENCE.md). A venue photo rail scrolls inside its own viewport. A grouped message keeps all its photos on one row. An app card provides a preview whose app sheet can follow its own presentation and readiness timeline.
+
 Open `director/index.html` for a standalone visual explorer. It works from the extracted folder without an account/server, displays the starters and component anatomy, scrubs by frame, suggests motifs from a brief and exports scene, cue and SVG files. It contains no AI model and does not automatically finish a film, export video or create a Figma file.
 
 ```bash
