@@ -35,8 +35,8 @@ export function wrapText(value, width, measure, size=17, weight=400) {
 
 export function Message({id, copy, outgoing, maxWidth=274, measure}) {
   if (/^[\p{Extended_Pictographic}\p{Emoji_Component}\s\u200d\ufe0f]+$/u.test(copy) && /\p{Extended_Pictographic}/u.test(copy)) {
-    const lines=wrapText(copy,maxWidth,measure,38);
-    return {width:Math.max(...lines.map(line=>measure(line,38))),height:lines.length*48+6,lines,layer:group(id,0,0,[label(id+'-copy',lines.join('\n'),0,0,38,{lineHeight:48})])};
+    const lines=wrapText(copy,maxWidth,measure,48);
+    return {width:Math.max(...lines.map(line=>measure(line,48))),height:lines.length*58+6,lines,layer:group(id,0,0,[label(id+'-copy',lines.join('\n'),0,0,48,{lineHeight:58})])};
   }
   const lines = wrapText(copy, maxWidth-32, measure);
   const width = Math.max(54, ...lines.map(line => measure(line) + 32));
@@ -51,14 +51,13 @@ export function Message({id, copy, outgoing, maxWidth=274, measure}) {
 }
 
 export function Reaction({id, reaction, owner, outgoing, measure}) {
-  const copy = `${owner.name} ${reaction.emoji}`;
-  const lines = wrapText(copy,220,measure,12,600);
-  const width = Math.max(...lines.map(line => measure(line,12,600)))+20;
-  const height = lines.length*17+10;
+  const width=Math.max(44,measure(owner.initials,9,600)+34), height=34;
   return {width,height,layer:group(id,0,0,[
-    rect(id+'-pill',0,0,width,height,outgoing?'#dcecff':'#ffffff',14,{stroke:'#cbd4e0',strokeWidth:1}),
-    label(id+'-owner',lines.join('\n'),10,4,12,{lineHeight:17,fontWeight:600,fill:'#23425f'})
-  ])};
+    {id:id+'-anchor',type:'circle',x:width/2-4,y:height-5,width:8,height:8,fill:outgoing?'#dcecff':'#eff0f3'},
+    rect(id+'-pill',0,0,width,height,outgoing?'#dcecff':'#eff0f3',17,{stroke:'#ffffff',strokeWidth:2}),
+    label(id+'-emoji',reaction.emoji,6,4,21),
+    label(id+'-owner',owner.initials,29,19,9,{fontWeight:600,fill:'#23425f'})
+  ],{ownerId:owner.id,ownerName:owner.name})};
 }
 
 export function AttachmentStack({id, cards, switches=[], measure, duration}) {
@@ -113,16 +112,19 @@ export function PhotoStack({id, photos, caption, measure}) {
   const width=274, nodes=[];
   for (const [index,photo] of [...photos].entries()) {
     fail(positive(photo.aspectRatio) && /^#[0-9a-f]{6}$/i.test(photo.color),'Photo needs a positive aspect ratio and hex placeholder color');
-    const height=Math.min(190,242/photo.aspectRatio), w=height*photo.aspectRatio;
+    const height=Math.min(150,186/photo.aspectRatio), w=height*photo.aspectRatio;
     fail(w<=258,'Photo ratio is too wide for this stack');
-    nodes.push(group(`${id}-photo-${index}`,16+(index%2)*5,16+index*8,[
+    const column=index%3, row=Math.floor(index/3);
+    nodes.push(group(`${id}-photo-${index}`,7+column*36,12+column*46+row*210,[
       rect(`${id}-photo-${index}-border`,-3,-3,w+6,height+6,'#ffffff',10),
-      rect(`${id}-photo-${index}-image`,0,0,w,height,photo.color,8)
+      rect(`${id}-photo-${index}-image`,0,0,w,height,photo.color,8),
+      label(`${id}-photo-${index}-ratio`,photo.aspectRatio.toFixed(2),6,8,10,{fill:'#ffffff',fontWeight:600})
     ],{rotation:(index%2?1:-1)*3}));
   }
   const captionLines=wrapText(caption ?? '',width-20,measure,14);
-  const height=230+captionLines.length*19;
-  return {width,height,layer:group(id,0,0,[...nodes,label(id+'-photo-count',`${photos.length} photos`,width,211,12,{textAnchor:'end',fill:'#6b7280'}),label(id+'-caption',captionLines.join('\n'),10,233,14,{lineHeight:19})])};
+  const artworkHeight=Math.ceil(photos.length/3)*230;
+  const height=artworkHeight+30+captionLines.length*19;
+  return {width,height,layer:group(id,0,0,[...nodes,label(id+'-photo-count',`${photos.length} photos`,width,artworkHeight,12,{textAnchor:'end',fill:'#6b7280'}),label(id+'-caption',captionLines.join('\n'),10,artworkHeight+23,14,{lineHeight:19})])};
 }
 
 export function ComposerState({id, copy='', attachment, start, end, measure, phoneWidth=390}) {
@@ -147,7 +149,7 @@ export function validateConversation(config) {
   fail(Array.isArray(participants) && participants.length>=2,'At least two participants are required');
   const ids=new Set();
   for (const actor of participants) {
-    fail(/^[-a-zA-Z0-9_]+$/.test(actor.id) && !ids.has(actor.id),'Participant IDs must be unique simple identifiers');
+    fail(typeof actor.id==='string' && /^[-a-zA-Z0-9_]+$/.test(actor.id) && !ids.has(actor.id),'Participant IDs must be unique simple identifiers');
     fail(typeof actor.name==='string' && actor.name.trim() && typeof actor.initials==='string','Participant needs a name and initials');
     ids.add(actor.id);
   }
@@ -156,7 +158,7 @@ export function validateConversation(config) {
   const messageIds=new Set();
   let previous=-1;
   for (const message of messages) {
-    fail(/^[-a-zA-Z0-9_]+$/.test(message.id) && !messageIds.has(message.id),'Message IDs must be unique simple identifiers');
+    fail(typeof message.id==='string' && /^[-a-zA-Z0-9_]+$/.test(message.id) && !messageIds.has(message.id),'Message IDs must be unique simple identifiers');
     fail(ids.has(message.senderId),'Unknown message sender');
     fail(Number.isFinite(message.at) && message.at>=previous && message.at>=0 && message.at<duration,'Message times must increase within duration');
     fail((typeof message.copy==='string' && message.copy.trim()) || message.cards?.length || message.photos?.length,'Message needs copy or attachments');
@@ -192,25 +194,28 @@ export function buildConversation(config, measure) {
   fail(typeof measure==='function','A font measurement function is required');
   const {participants,messages,composer,duration,fps=30}=config;
   const actors=new Map(participants.map(actor=>[actor.id,actor]));
+  const stageWidth=config.stageWidth ?? 540, stageHeight=stageWidth*16/9;
+  fail(positive(stageWidth),'Stage width must be positive');
   const rows=[], audit=[], scroll=[{t:0,value:0}];
   let cursor=12;
   for (const message of messages) {
     const sender=actors.get(message.senderId), outgoing=Boolean(sender.self), id='msg-'+message.id;
-    let built=message.cards ? AttachmentStack({id,cards:message.cards,switches:message.switches,measure,duration}) : message.photos ? PhotoStack({id,photos:message.photos,caption:message.caption,measure}) : Message({id,copy:message.copy,outgoing,measure});
+    const displayCopy=message.link ? message.copy.replace(message.link.url,'').trimEnd() : message.copy;
+    let built=message.cards ? AttachmentStack({id,cards:message.cards,switches:message.switches,measure,duration}) : message.photos ? PhotoStack({id,photos:message.photos,caption:message.caption,measure}) : Message({id,copy:displayCopy,outgoing,measure});
     if (message.link) {
       const preview=LinkPreview({id:id+'-link',...message.link,measure});
       built={...built,width:Math.max(built.width,preview.width),height:built.height+8+preview.height,layer:group(id+'-with-link',0,0,[built.layer,{...preview.layer,y:built.height+8}])};
     }
     const reactions=(message.reactions ?? []).map((reaction,index)=>({reaction,...Reaction({id:`${id}-reaction-${index}`,reaction,owner:actors.get(reaction.ownerId),outgoing:actors.get(reaction.ownerId).self,measure})}));
-    const reactionHeight=reactions.reduce((sum,reaction)=>sum+reaction.height+3,0);
+    const reactionHeight=reactions.length?25:0;
     const y=cursor+reactionHeight+(outgoing?0:19), x=outgoing?370-built.width:55;
     const rowChildren=[];
     if (!outgoing) rowChildren.push(Avatar({id:id+'-avatar',x:16,y:Math.max(20,built.height-28),size:27,initials:sender.initials,fill:sender.color ?? '#d9e6e4'}),label(id+'-sender',sender.name,55,-19,12,{fill:'#72757c'}));
     rowChildren.push({...built.layer,x});
-    let reactionY=-reactionHeight-(outgoing?0:21);
+    let reactionX=outgoing?x:x+built.width-reactions.reduce((sum,reaction)=>sum+reaction.width+3,0);
     for (const reaction of reactions) {
-      rowChildren.push({...reaction.layer,x:outgoing?Math.max(55,370-reaction.width):55,y:reactionY,start:reaction.reaction.at});
-      reactionY+=reaction.height+3;
+      rowChildren.push({...reaction.layer,x:reactionX,y:-24,start:reaction.reaction.at});
+      reactionX+=reaction.width+3;
     }
     rows.push(group(id+'-row',0,y,rowChildren,{start:message.at,keyframes:{y:[{t:message.at,value:y+14},{t:message.at+.24,value:y,ease:'easeOut'}],opacity:[{t:message.at,value:0},{t:message.at+.16,value:1,ease:'easeOut'}]}}));
     cursor=y+built.height+19;
@@ -221,7 +226,7 @@ export function buildConversation(config, measure) {
   const drafts=composer.map((state,index)=>({...ComposerState({id:'draft-'+index,copy:state.copy,attachment:state.attachment,start:state.at,end:composer[index+1]?.at ?? duration,measure}),at:state.at,copy:state.copy}));
   const titleLines=wrapText(config.title ?? 'A conversation',250,measure,16,600);
   fail(titleLines.length<=2,'Conversation title exceeds two lines');
-  const phone=group('phone',75,58,[
+  const phone=group('phone',stageWidth/2-195,stageHeight/2-422,[
     rect('phone-shell',-6,-6,402,856,'#1d2228',49),rect('phone-paper',0,0,390,844,'#ffffff',44),
     group('phone-screen',0,0,[
       group('transcript-viewport',0,112,[group('transcript-scroll',0,0,rows,{keyframes:{y:scroll}})],{clip:{x:8,y:0,width:374,height:594}}),
@@ -237,9 +242,9 @@ export function buildConversation(config, measure) {
   const tracks=property=>camera.map(pose=>({t:pose.at,value:pose[property],ease:'easeInOut'}));
   const width=config.width ?? 1080,height=config.height ?? 1920;
   fail(Number.isInteger(width) && Number.isInteger(height) && width>0 && height>0,'Output dimensions must be positive integers');
-  const fit=Math.min(width/540,height/960);
+  const fit=Math.min(width/stageWidth,height/stageHeight);
   const scene={width,height,fps,duration,background:'#edf2f4',title:config.title,
     source:{notes:'Authored Messages-inspired UI, not a measured iOS recreation. 390×844 logical-point iPhone 13-class proportions; desktop Chromium/macOS render. No native device/OS gesture fidelity claimed. Arial and Apple Color Emoji require remeasurement when replaced.'},
-    layers:[group('output-fit',(width-540*fit)/2,(height-960*fit)/2,[CameraRig({id:'conversation-camera',originX:270,originY:480,children:[phone],keyframes:{x:tracks('x'),y:tracks('y'),scaleX:tracks('scale'),scaleY:tracks('scale')}})],{scaleX:fit,scaleY:fit})]};
+    layers:[group('output-fit',(width-stageWidth*fit)/2,(height-stageHeight*fit)/2,[CameraRig({id:'conversation-camera',originX:stageWidth/2,originY:stageHeight/2,children:[phone],keyframes:{x:tracks('x'),y:tracks('y'),scaleX:tracks('scale'),scaleY:tracks('scale')}})],{scaleX:fit,scaleY:fit})]};
   return {scene,audit:{messages:audit,composer:drafts.map(({at,copy,enabled,height,lines})=>({at,copy,enabled,height,lines})),font:FONT,measurement:'CanvasRenderingContext2D.measureText',nativeGestureClaims:false}};
 }

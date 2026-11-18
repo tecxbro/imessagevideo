@@ -18,14 +18,28 @@ test('wrapping preserves explicit paragraphs, long tokens and whole emoji cluste
 });
 test('emoji-only messages are large text without a bubble surface',()=>{
   const message=Message({id:'emoji',copy:'👩🏽‍🔬🧑🏿‍🎨🏳️‍🌈',measure});
-  assert.equal(message.layer.children.length,1);assert.equal(message.layer.children[0].fontSize,38);
+  assert.equal(message.layer.children.length,1);assert.equal(message.layer.children[0].fontSize,48);
 });
 test('reactions retain explicit owner and message independently from message side',()=>{
   const {scene,audit}=buildConversation(trial,measure);
   assert.deepEqual(audit.messages[0].reactions.map(r=>r.ownerId),['jo','self']);
   const layers=flatten(scene.layers);
-  assert.equal(layers.find(layer=>layer.id==='msg-invite-reaction-0-owner').text,'Jo Rivera ❤️');
-  assert.equal(layers.find(layer=>layer.id==='msg-invite-reaction-1-owner').text,'Nico 👍');
+  assert.equal(layers.find(layer=>layer.id==='msg-invite-reaction-0').ownerId,'jo');
+  assert.equal(layers.find(layer=>layer.id==='msg-invite-reaction-1').ownerId,'self');
+  assert.equal(layers.find(layer=>layer.id==='msg-invite-reaction-0-owner').text,'JR');
+  assert.equal(layers.find(layer=>layer.id==='msg-invite-reaction-1-emoji').text,'👍');
+  for(const reaction of layers.filter(layer=>/^msg-invite-reaction-\d$/.test(layer.id))){
+    assert.equal(reaction.y,-24);assert.ok(reaction.y+34>0,'Badge touches its bubble, not a floating sender-label row');
+  }
+});
+test('link URL is retained in input but displayed once as a preview',()=>{
+  const config=clone();const url='https://example.com/a-very-long-link';
+  config.messages[0].copy='read this → '+url;
+  config.messages[0].link={url,title:'Read this',color:'#c4a484'};
+  const {scene}=buildConversation(config,measure),layers=flatten(scene.layers);
+  assert.equal(config.messages[0].copy,'read this → '+url);
+  assert.equal(layers.find(layer=>layer.id==='msg-invite-copy').text,'read this →');
+  assert.equal(layers.find(layer=>layer.id==='msg-invite-link-domain').text,'example.com');
 });
 test('composer grows, transfers once, clears and disables empty send',()=>{
   const {scene,audit}=buildConversation(trial,measure);

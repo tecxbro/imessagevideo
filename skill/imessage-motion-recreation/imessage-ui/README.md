@@ -45,15 +45,17 @@ The JSON input contains:
 - `messages`: stable ID, `senderId`, arrival time `at`, editable `copy`, optional
   `link: {title,url,color}`, `cards`, or `photos: [{color,aspectRatio}]` + `caption`.
 - `reactions`: on the target message, each with `ownerId`, `emoji`, and `at`.
-  Visible named pills deliberately disambiguate multiple reactors. Color follows
-  the reactor, **not** the message sender. These named pills are a film design,
-  not a claim about native Tapback presentation.
+  Compact emoji + initials badges touch the target bubble's top corner. Full
+  owner identity is retained in the layer and audit. Color follows the reactor,
+  **not** the message sender. Initials are a film ownership aid, not a claim
+  about native Tapback presentation.
 - `composer`: strictly increasing `{at,copy}` states, beginning at zero. A send
   state has empty copy and `sendMessageId`; the referenced self message must
   arrive at that exact time and equal the previous complete draft. Unmarked
   outgoing messages are allowed as earlier conversation history.
 - `camera`: increasing `{at,x,y,scale}` poses in a 540×960 logical stage; the
-  whole hierarchy transforms together. Push-ins may intentionally crop the
+  whole hierarchy transforms together. Optional `stageWidth` changes the
+  framing aperture (height remains 16:9 portrait). Push-ins may intentionally crop the
   device, while transcript and attachment clips remain in local coordinates.
 - `width`, `height`, `fps`, `duration`: output framing and frame-indexed timing.
 
@@ -78,7 +80,7 @@ content: four participants, long URL preview, emoji-only message, unbreakable
 word, three photo ratios, five owned reactions, a typed multiline send and a
 1.6× camera push. Timing is newly authored because the observer supplied none.
 
-`evidence/` preserves first exports, their scenes and layout audits. These films
+`evidence/` preserves first exports, revised exports, their scenes and layout audits. These films
 are intentionally silent: UI behavior is this assignment's boundary, not an
 unscored claim of a finished audiovisual launch. Re-render commands above produce
 new outputs without modifying that evidence.
