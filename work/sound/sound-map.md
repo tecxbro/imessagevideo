@@ -133,6 +133,15 @@ prepared 48 kHz stems in `library/prepared/` with original+prepared sha256.
 | `LOCAL-LIBRARY.json` deliverables (`deliverables/*/{remotion,gsap,html,motion-canvas,pillow}.mp4`) | n/a | **not synced** — only source.mp4 files are on disk (6 files total under projects/) |
 | silent masters | none — every export with a stream has signal; `control_appear` events are intentional per-cue silences inside stems | — |
 
+### Spectrogram evidence (seen, not heard)
+
+`work/sound/analysis/frames/spec-04-{source,uistem,fullmix}.png`: the
+source shows continuous broadband music energy 0–15 kHz for all 42.8 s
+with a regular beat-stripe grid; the recreated UI stem is a black field
+with ~21 isolated vertical stripes exactly at cue times (wider typing
+block at 3.6–4.2 s). The two designs are visibly different programs:
+bed-led vs event-driven.
+
 ## 4. Known limits carried forward (from the library's own audits)
 
 - The canonical schedules describe the *recreated* picture's frames, which are

@@ -58,6 +58,15 @@ at 21.5 s reads `beep`/`telephone` (Kenney confirm tone — plausible);
 silent regions sit at low-confidence mush. No stray music or voice labels.
 `analysis/classify-score-04-demo.txt`.
 
+Side-by-side vs the library production stem (`classify-04-prod-ui.txt`):
+identical texture except the f645 selection — production's plain click
+registers only weak `click`/`writing` labels around 21 s, while my
+`kenney_confirmation_001` registers `beep:0.77`/`telephone:0.64` at
+20.25–21.75. The classifier heard the editorial upgrade: the payoff
+selection now *sounds* like a confirm, not a tick. Both files share the
+odd 15.75 s `gunshot` misread (send-whoosh edge bleed into the window —
+kept as honest classifier noise, not a cue claim).
+
 ## Files
 
 `cue-sheet-04-poke-demo.json` (UI events), `cue-sheet-design.json`,
