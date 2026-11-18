@@ -85,6 +85,10 @@ Keep this private repository's current visibility unless the user explicitly cha
 
 `director/components.mjs` exports `Conversation` for editable threads. Supply participants, messages, draft states, reactions and scroll cues, then wrap the phone in `CameraRig`. The thread lays out bubbles and clips to the moving phone. Choose the [media surface](director/component-contracts.md#choose-the-media-surface) from visible evidence before building a photo strip, collection or app card. The nine original starter builders remain available for direct layer authoring. Replace the disclosed Arial fallback with verified production typography and remeasure it.
 
+Use [`buildConversation`](director/conversation.mjs) when you need a complete scene with measured font widths, timed row edits and event hooks. The [moving conversation contract](director/component-contracts.md#moving-conversations) includes the [Lantern regression](director/ui-trial/demo.mjs) and [Ferry Lunch assembly](director/ui-trial/fresh/README.md). For either import, render through the send and a scroll with camera motion. Check the idle composer on the first sent frame, the Tapback on its own row after reflow and the transcript clip at the header and composer.
+
+Choose the attachment surface using [the source comparisons](director/ui-trial/ATTACHMENT-EVIDENCE.md). A venue photo rail scrolls inside its own viewport. A grouped message keeps all its photos on one row. An app card provides a preview whose app sheet can follow its own presentation and readiness timeline.
+
 Open `director/index.html` for a standalone visual explorer. It works from the extracted folder without an account/server, displays the starters and component anatomy, scrubs by frame, suggests motifs from a brief and exports scene, cue and SVG files. It contains no AI model and does not automatically finish a film, export video or create a Figma file.
 
 ```bash
