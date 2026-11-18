@@ -41,3 +41,28 @@ U5 improved; composer passes. Two new defects were reported before retry:
 - R2: the photo reaction badge overlapped the end of the sender name.
   Reserve a separate sender-label line above badges for reacted incoming rows;
   verify vertical separation and recheck the decoded photo interval.
+
+The final movie and paired scene/audit are `observer-final.*`. Independent
+observer recheck of `e5cd1fe` passed R1/R2 and confirmed U1–U5 still hold:
+"pass for authored Messages-like rendering." Native gesture fidelity remains
+unverified. Source geometry and runtime at that reviewed commit are the render
+inputs; later ledger/editor-test documentation does not change the movie.
+
+## Automated edge-case review
+
+Review of `e5cd1fe` identified three input-contract defects, separate from the
+passed observer copy. Regression cases are recorded before repair:
+
+- All history messages arrive at zero and overflow: newest rows never scroll
+  into view. Seed the initial scroll track with the final zero-time offset.
+- Three full-width draft lines followed by a space: wrapping creates a fourth
+  empty line and rejects the draft. Ignore trailing spaces when shaping lines,
+  while retaining explicit newlines and original composer input.
+- Message IDs `hello` and `hello-row`: a derived row ID collides with the other
+  message's content ID. Length-prefix each message namespace so IDs cannot
+  collide with generated suffixes, without changing the shared ID contract.
+
+All three regressions were reproduced before fixing and now pass in the
+21-test component suite. `observer-review-validated.*` is regenerated from
+the repaired runtime `8aec5d6`; its audit is identical to `observer-final` and
+its scene is identical after normalizing the length-prefixed message IDs.
