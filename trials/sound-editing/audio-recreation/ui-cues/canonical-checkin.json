@@ -1,0 +1,370 @@
+{
+  "schema": "message-motion-ui-events/1",
+  "id": "checkin",
+  "frames": 720,
+  "fps_numerator": 30,
+  "fps_denominator": 1,
+  "sample_count": 1152000,
+  "duration": 24.0,
+  "scheduling_picture": "director first export; zero-based native frames",
+  "picture_file_sha256": "47a3cd6678980f33788726fd5784d23d20317ce8df7b75c0a28a7f0642e49c81",
+  "picture_file_hash_method": "SHA-256 of all original MP4 file bytes including container; not video packets or decoded frames",
+  "picture_packet_sha256": "SHA256=782119ce82a1cb231fa9d1ea0576174d36108d374cbefd40f3ab1d5fd4197799",
+  "picture_packet_hash_method": "SHA-256 of concatenated first-video-stream encoded packet payloads; ffmpeg -map 0:v:0 -c copy -f hash -hash sha256; excludes container metadata and audio; not decoded frames",
+  "events": [
+    {
+      "frame": 13,
+      "kind": "message_arrival",
+      "time": 0.43333333333333335,
+      "sample_offset_48000": 20800,
+      "event_id": "checkin:message_arrival:13",
+      "evidence": "evidence/frame-013.png",
+      "observation": "First faint Sam ask fade at13, blank12; clearly legible14. Impact uses visible fade onset.",
+      "audio": {
+        "target_peak_dbfs": -18
+      }
+    },
+    {
+      "frame": 103,
+      "kind": "panel_open",
+      "time": 3.433333333333333,
+      "sample_offset_48000": 164800,
+      "event_id": "checkin:panel_open:103",
+      "evidence": "evidence/frame-103.png",
+      "observation": "Plus tap at90 is offscreen. Composer/ring is camera-revealed97\u201399; actual menu begins rising103. Sound menu movement, not inferred tap.",
+      "audio": {
+        "target_peak_dbfs": -26
+      }
+    },
+    {
+      "frame": 132,
+      "kind": "tap",
+      "time": 4.4,
+      "sample_offset_48000": 211200,
+      "event_id": "checkin:tap:132",
+      "evidence": "evidence/frame-132.png",
+      "observation": "Check In row highlights and tap ring appears132; no highlight131.",
+      "audio": {
+        "target_peak_dbfs": -21
+      }
+    },
+    {
+      "frame": 145,
+      "kind": "control_appear",
+      "time": 4.833333333333333,
+      "sample_offset_48000": 232000,
+      "event_id": "checkin:control_appear:145",
+      "evidence": "evidence/frame-145.png",
+      "observation": "First draft-card edge at bottom145;140 is empty composer and old ring. Mere appearance stays silent."
+    },
+    {
+      "frame": 186,
+      "kind": "message_send",
+      "time": 6.2,
+      "sample_offset_48000": 297600,
+      "event_id": "checkin:message_send:186",
+      "evidence": "evidence/frame-186.png",
+      "observation": "Visible send-button ring186, absent185; one combined send accent, not tap plus send or backspace.",
+      "audio": {
+        "target_peak_dbfs": -17
+      }
+    },
+    {
+      "frame": 435,
+      "kind": "control_appear",
+      "time": 14.5,
+      "sample_offset_48000": 696000,
+      "event_id": "checkin:control_appear:435",
+      "evidence": "evidence/frame-435.png",
+      "observation": "First card sliver camera-revealed435;432 shows phone edge only. Existing card is not a new receipt; silent."
+    },
+    {
+      "frame": 445,
+      "kind": "typing",
+      "time": 14.833333333333334,
+      "sample_offset_48000": 712000,
+      "event_id": "checkin:typing:445",
+      "evidence": "evidence/frame-445.png",
+      "observation": "Visible glyph change to 'a'; one observed glyph accent.",
+      "audio": {
+        "target_peak_dbfs": -24
+      },
+      "role": "human",
+      "delta_count": 1
+    },
+    {
+      "frame": 451,
+      "kind": "typing",
+      "time": 15.033333333333333,
+      "sample_offset_48000": 721600,
+      "event_id": "checkin:typing:451",
+      "evidence": "evidence/frame-451.png",
+      "observation": "Visible glyph change to 'ar'; one observed glyph accent.",
+      "audio": {
+        "target_peak_dbfs": -24
+      },
+      "role": "human",
+      "delta_count": 1
+    },
+    {
+      "frame": 457,
+      "kind": "typing",
+      "time": 15.233333333333333,
+      "sample_offset_48000": 731200,
+      "event_id": "checkin:typing:457",
+      "evidence": "evidence/frame-457.png",
+      "observation": "Visible glyph change to 'are'; one observed glyph accent.",
+      "audio": {
+        "target_peak_dbfs": -24
+      },
+      "role": "human",
+      "delta_count": 1
+    },
+    {
+      "frame": 469,
+      "kind": "typing",
+      "time": 15.633333333333333,
+      "sample_offset_48000": 750400,
+      "event_id": "checkin:typing:469",
+      "evidence": "evidence/frame-469.png",
+      "observation": "Visible glyph change to 'are y'; one observed glyph accent.",
+      "audio": {
+        "target_peak_dbfs": -24
+      },
+      "role": "human",
+      "delta_count": 1
+    },
+    {
+      "frame": 474,
+      "kind": "typing",
+      "time": 15.8,
+      "sample_offset_48000": 758400,
+      "event_id": "checkin:typing:474",
+      "evidence": "evidence/frame-474.png",
+      "observation": "Visible glyph change to 'are yo'; one observed glyph accent.",
+      "audio": {
+        "target_peak_dbfs": -24
+      },
+      "role": "human",
+      "delta_count": 1
+    },
+    {
+      "frame": 480,
+      "kind": "typing",
+      "time": 16.0,
+      "sample_offset_48000": 768000,
+      "event_id": "checkin:typing:480",
+      "evidence": "evidence/frame-480.png",
+      "observation": "Visible glyph change to 'are you'; one observed glyph accent.",
+      "audio": {
+        "target_peak_dbfs": -24
+      },
+      "role": "human",
+      "delta_count": 1
+    },
+    {
+      "frame": 492,
+      "kind": "typing",
+      "time": 16.4,
+      "sample_offset_48000": 787200,
+      "event_id": "checkin:typing:492",
+      "evidence": "evidence/frame-492.png",
+      "observation": "Visible glyph change to 'are you h'; one observed glyph accent.",
+      "audio": {
+        "target_peak_dbfs": -24
+      },
+      "role": "human",
+      "delta_count": 1
+    },
+    {
+      "frame": 505,
+      "kind": "control_appear",
+      "time": 16.833333333333332,
+      "sample_offset_48000": 808000,
+      "event_id": "checkin:control_appear:505",
+      "evidence": "evidence/frame-505.png",
+      "observation": "Location marker is over home around504\u2013505 and clock changes505; no UI confirmation yet. Avoid duplicate arrival accent."
+    },
+    {
+      "frame": 510,
+      "kind": "cart_update",
+      "time": 17.0,
+      "sample_offset_48000": 816000,
+      "event_id": "checkin:cart_update:510",
+      "evidence": "evidence/frame-510.png",
+      "observation": "Both cards turn green Arrived and moving marker disappears510; one shared confirmation tick, no duplicated phone hits.",
+      "audio": {
+        "target_peak_dbfs": -19
+      }
+    },
+    {
+      "frame": 522,
+      "kind": "delete",
+      "time": 17.4,
+      "sample_offset_48000": 835200,
+      "event_id": "checkin:delete:522",
+      "evidence": "evidence/frame-522.png",
+      "observation": "Visible composer deletion to 'are you'; not inferred physical-key timing.",
+      "audio": {
+        "target_peak_dbfs": -25
+      },
+      "role": "human",
+      "delta_count": 1
+    },
+    {
+      "frame": 529,
+      "kind": "delete",
+      "time": 17.633333333333333,
+      "sample_offset_48000": 846400,
+      "event_id": "checkin:delete:529",
+      "evidence": "evidence/frame-529.png",
+      "observation": "Visible composer deletion to 'are yo'; not inferred physical-key timing.",
+      "audio": {
+        "target_peak_dbfs": -25
+      },
+      "role": "human",
+      "delta_count": 1
+    },
+    {
+      "frame": 532,
+      "kind": "delete",
+      "time": 17.733333333333334,
+      "sample_offset_48000": 851200,
+      "event_id": "checkin:delete:532",
+      "evidence": "evidence/frame-532.png",
+      "observation": "Visible composer deletion to 'are y'; not inferred physical-key timing.",
+      "audio": {
+        "target_peak_dbfs": -25
+      },
+      "role": "human",
+      "delta_count": 1
+    },
+    {
+      "frame": 535,
+      "kind": "delete",
+      "time": 17.833333333333332,
+      "sample_offset_48000": 856000,
+      "event_id": "checkin:delete:535",
+      "evidence": "evidence/frame-535.png",
+      "observation": "Visible composer deletion to 'are'; not inferred physical-key timing.",
+      "audio": {
+        "target_peak_dbfs": -25
+      },
+      "role": "human",
+      "delta_count": 1
+    },
+    {
+      "frame": 542,
+      "kind": "delete",
+      "time": 18.066666666666666,
+      "sample_offset_48000": 867200,
+      "event_id": "checkin:delete:542",
+      "evidence": "evidence/frame-542.png",
+      "observation": "Visible composer deletion to 'ar'; not inferred physical-key timing.",
+      "audio": {
+        "target_peak_dbfs": -25
+      },
+      "role": "human",
+      "delta_count": 1
+    },
+    {
+      "frame": 545,
+      "kind": "delete",
+      "time": 18.166666666666668,
+      "sample_offset_48000": 872000,
+      "event_id": "checkin:delete:545",
+      "evidence": "evidence/frame-545.png",
+      "observation": "Visible composer deletion to 'a'; not inferred physical-key timing.",
+      "audio": {
+        "target_peak_dbfs": -25
+      },
+      "role": "human",
+      "delta_count": 1
+    },
+    {
+      "frame": 548,
+      "kind": "delete",
+      "time": 18.266666666666666,
+      "sample_offset_48000": 876800,
+      "event_id": "checkin:delete:548",
+      "evidence": "evidence/frame-548.png",
+      "observation": "Visible composer deletion to 'iMessage placeholder'; not inferred physical-key timing.",
+      "audio": {
+        "target_peak_dbfs": -25
+      },
+      "role": "human",
+      "delta_count": 1
+    },
+    {
+      "frame": 575,
+      "kind": "message_send",
+      "time": 19.166666666666668,
+      "sample_offset_48000": 920000,
+      "event_id": "checkin:message_send:575",
+      "evidence": "evidence/frame-575.png",
+      "observation": "Heart bubble first appears at right composer edge575 and send ring; one send accent.",
+      "audio": {
+        "target_peak_dbfs": -17
+      }
+    },
+    {
+      "frame": 590,
+      "kind": "message_arrival",
+      "time": 19.666666666666668,
+      "sample_offset_48000": 944000,
+      "event_id": "checkin:message_arrival:590",
+      "evidence": "evidence/frame-590.png",
+      "observation": "Heart bubble first appears at first-phone composer edge590; absent589.",
+      "audio": {
+        "target_peak_dbfs": -18
+      }
+    }
+  ],
+  "exclusions": [
+    {
+      "frames": [
+        90
+      ],
+      "reason": "Plus tap itself offscreen; menu movement103 is sounded instead."
+    },
+    {
+      "frames": [
+        432
+      ],
+      "reason": "Existing card arrives via camera, not a visible new incoming bubble."
+    },
+    {
+      "frames": [
+        463,
+        486
+      ],
+      "reason": "Trailing spaces produce no visible glyph/caret change; do not infer keyboard sounds."
+    },
+    {
+      "frames": [
+        525,
+        538
+      ],
+      "reason": "Deleting trailing spaces produces no visible glyph/caret change."
+    },
+    {
+      "range_inclusive": [
+        210,
+        419
+      ],
+      "reason": "No UI event. Location/camera motion only; optional declared motion texture is separate from UI."
+    },
+    {
+      "frames": [
+        145,
+        435,
+        505
+      ],
+      "reason": "Silent visual states retained as control_appear receipts."
+    }
+  ],
+  "reference_audio_samples_used": false,
+  "hardware_keypress_timing_claimed": false,
+  "one_key_per_visible_batch": true,
+  "verification_notes": "Native before/at/after crops visually inspected. Invisible spaces omitted; animation starts and camera reveals distinguished."
+}

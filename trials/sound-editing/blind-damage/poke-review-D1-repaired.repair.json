@@ -1,0 +1,139 @@
+{
+  "input_mp4_sha256": "2851f9ccebf82ffbdc03ae4aa7ec469837a2109db6d594e7547c961cbe40e179",
+  "receipt_sha256": "53a0f4ac7acba6ff6af1efb76db59a2d6de551ade28f48262a89656bd446da74",
+  "findings_sha256": "adeeb52bb308b37ab39d547fe53f8a002e7ce309f935abda658a145b15995263",
+  "key_read": false,
+  "clean_stem_read": false,
+  "actions": [
+    {
+      "ordinal": 19,
+      "flags": [
+        "early"
+      ],
+      "scheduled_start": 482069,
+      "observed_offset_samples": -4805,
+      "action": "Replace scheduled and confidently observed regions with all expected overlapping references; do not erase a low-confidence missing-cue candidate elsewhere"
+    },
+    {
+      "ordinal": 20,
+      "flags": [
+        "damaged"
+      ],
+      "scheduled_start": 542887,
+      "observed_offset_samples": 0,
+      "action": "Replace scheduled and confidently observed regions with all expected overlapping references; do not erase a low-confidence missing-cue candidate elsewhere"
+    },
+    {
+      "ordinal": 21,
+      "flags": [
+        "damaged"
+      ],
+      "scheduled_start": 578178,
+      "observed_offset_samples": 62,
+      "action": "Replace scheduled and confidently observed regions with all expected overlapping references; do not erase a low-confidence missing-cue candidate elsewhere"
+    },
+    {
+      "ordinal": 23,
+      "flags": [
+        "late"
+      ],
+      "scheduled_start": 661448,
+      "observed_offset_samples": 1602,
+      "action": "Replace scheduled and confidently observed regions with all expected overlapping references; do not erase a low-confidence missing-cue candidate elsewhere"
+    },
+    {
+      "ordinal": 25,
+      "flags": [
+        "late"
+      ],
+      "scheduled_start": 821621,
+      "observed_offset_samples": 6406,
+      "action": "Replace scheduled and confidently observed regions with all expected overlapping references; do not erase a low-confidence missing-cue candidate elsewhere"
+    },
+    {
+      "ordinal": 28,
+      "flags": [
+        "late"
+      ],
+      "scheduled_start": 1032977,
+      "observed_offset_samples": 12813,
+      "action": "Replace scheduled and confidently observed regions with all expected overlapping references; do not erase a low-confidence missing-cue candidate elsewhere"
+    },
+    {
+      "ordinal": 29,
+      "flags": [
+        "missing"
+      ],
+      "scheduled_start": 1063449,
+      "observed_offset_samples": -16718,
+      "action": "Replace scheduled and confidently observed regions with all expected overlapping references; do not erase a low-confidence missing-cue candidate elsewhere"
+    },
+    {
+      "ordinal": 31,
+      "flags": [
+        "late"
+      ],
+      "scheduled_start": 1165952,
+      "observed_offset_samples": 3203,
+      "action": "Replace scheduled and confidently observed regions with all expected overlapping references; do not erase a low-confidence missing-cue candidate elsewhere"
+    },
+    {
+      "extra_sample": 1596000,
+      "residual_region": [
+        1595040,
+        1597680
+      ],
+      "action": "Remove transient by restoring expected PCM over detected residual extent"
+    }
+  ],
+  "replaced_regions_samples": [
+    [
+      476304,
+      488923
+    ],
+    [
+      541927,
+      546376
+    ],
+    [
+      577218,
+      585920
+    ],
+    [
+      660488,
+      669904
+    ],
+    [
+      820661,
+      835707
+    ],
+    [
+      1032017,
+      1036466
+    ],
+    [
+      1044830,
+      1049279
+    ],
+    [
+      1062489,
+      1070303
+    ],
+    [
+      1164992,
+      1176009
+    ],
+    [
+      1595040,
+      1597680
+    ]
+  ],
+  "crossfade_samples": 240,
+  "outside_regions_policy": "Preserve original decoded AAC PCM; no whole-track replacement",
+  "reference_policy": "All scheduled reference cues are included inside repaired regions to preserve overlaps",
+  "picture_packet_sha256": "SHA256=fef5481d8bbb13c16a14d05ad846cdb72112ca876913b9f0c27d871dc393d62b",
+  "output_picture_packet_sha256": "SHA256=fef5481d8bbb13c16a14d05ad846cdb72112ca876913b9f0c27d871dc393d62b",
+  "repair_flac_sha256": "dec6abfa2b370d2f91285665b46cc1ea4b647b09cba8e8e477dbf1dee5b04107",
+  "output_mp4_sha256": "07bbfe336da31c5e39f4ee5a1dee8d71f9990ef2bc715bfd7d24d5450c25dc78",
+  "build_source_sha256": "603fa9682eed8c98a967a4a45319c94969bd693752eb183d3370fe79ef726d57"
+}

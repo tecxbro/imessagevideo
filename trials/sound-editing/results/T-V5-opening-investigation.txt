@@ -1,0 +1,110 @@
+[
+  {
+    "mode": "production",
+    "delivery_sha256": "6b05ad3446da6ea0cc8ada6820fc71cc7bbad5db5536f321cf7a430cea973f68",
+    "receipt_sha256": "fcfa357a5b716da0146d6f920f4ec0350cf8f750dfae8595d6344ce80ecd95f9",
+    "frame": 109,
+    "fps_numerator": 30000,
+    "fps_denominator": 1001,
+    "expected_impact_sample": 174574,
+    "expected_impact_seconds": 3.6369583333333333,
+    "template_start_sample": 172700,
+    "template_end_exclusive": 184700,
+    "overlapping_cues": [
+      {
+        "ordinal": 4,
+        "frame": 113,
+        "clip_start_sample": 178228,
+        "clip_samples": 12000
+      },
+      {
+        "ordinal": 6,
+        "frame": 116,
+        "clip_start_sample": 183912,
+        "clip_samples": 12000
+      }
+    ],
+    "raw_single_template_at_scheduled_start": {
+      "correlation": 0.5057317771131784,
+      "gain_delta_db": -0.13906795037755562
+    },
+    "after_subtracting_FIXED_expected_neighbors_no_gain_or_time_fitting": {
+      "correlation": 0.9982916897820894,
+      "gain_delta_db": -0.029206496960796705
+    },
+    "previous_checker_opening": {
+      "ordinal": 0,
+      "frame": 109,
+      "expected_sample": 174574,
+      "timestamp": "00:03.637 f109",
+      "offset_samples": 0,
+      "offset_ms": 0.0,
+      "offset_frames": 0.0,
+      "correlation": 0.9983083354577815,
+      "level_delta_db": -0.029634883298024196,
+      "flags": []
+    },
+    "all_checker_level_deltas_db": [
+      -0.30860749489679995,
+      0.009100293333695208
+    ],
+    "checker_gain_span_db": 0.31770778823049517,
+    "expected_reference_rms_span_db": 15.940245395298767,
+    "all_expected_mix_vs_decoded_correlation": 0.9958941606847642,
+    "threshold_changed": false
+  },
+  {
+    "mode": "comparison",
+    "delivery_sha256": "5a86b97d5e63c3ae3076b7d7652a4850258df1b20a49a3d5c90a647a50f0f9cb",
+    "receipt_sha256": "477da30ede5963cab8fd403a804b4f83c14cfda71f6adcb80faaa28eecf0c6f6",
+    "frame": 109,
+    "fps_numerator": 30000,
+    "fps_denominator": 1001,
+    "expected_impact_sample": 174574,
+    "expected_impact_seconds": 3.6369583333333333,
+    "template_start_sample": 172700,
+    "template_end_exclusive": 184700,
+    "overlapping_cues": [
+      {
+        "ordinal": 4,
+        "frame": 113,
+        "clip_start_sample": 178228,
+        "clip_samples": 12000
+      },
+      {
+        "ordinal": 6,
+        "frame": 116,
+        "clip_start_sample": 183912,
+        "clip_samples": 12000
+      }
+    ],
+    "raw_single_template_at_scheduled_start": {
+      "correlation": 0.5063825571794246,
+      "gain_delta_db": -0.15401110908481686
+    },
+    "after_subtracting_FIXED_expected_neighbors_no_gain_or_time_fitting": {
+      "correlation": 0.9982403474471567,
+      "gain_delta_db": -0.04396168125648173
+    },
+    "previous_checker_opening": {
+      "ordinal": 0,
+      "frame": 109,
+      "expected_sample": 174574,
+      "timestamp": "00:03.637 f109",
+      "offset_samples": 0,
+      "offset_ms": 0.0,
+      "offset_frames": 0.0,
+      "correlation": 0.9983078837271394,
+      "level_delta_db": -0.04475805798528251,
+      "flags": []
+    },
+    "all_checker_level_deltas_db": [
+      -0.2920392074521201,
+      0.0024722332390599887
+    ],
+    "checker_gain_span_db": 0.29451144069118007,
+    "expected_reference_rms_span_db": 15.94024539529876,
+    "all_expected_mix_vs_decoded_correlation": 0.9956338318708869,
+    "threshold_changed": false
+  }
+]
