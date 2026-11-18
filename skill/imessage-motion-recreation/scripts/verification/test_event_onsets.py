@@ -14,6 +14,69 @@ spec.loader.exec_module(onsets)
 
 
 class EventOnsets(unittest.TestCase):
+    def test_coalesce(self):
+        def event(box, frame=12):
+            return {'frame':frame,'time':frame/30,'bbox':box,'kind':'local-onset','magnitude':10}
+        a=event([0,0,.4,.4])
+        b=event([.3,.3,.6,.6])
+        c=event([.6,.4,.8,.6])
+        self.assertEqual(onsets.coalesce([]),[])
+        merged=onsets.coalesce([a,c,b,a,event([0,0,.4,.4],13)])
+        self.assertEqual(len(merged),2)
+        self.assertEqual(merged[0]['bbox'],[0,0,.8,.6])
+        self.assertEqual(a['bbox'],[0,0,.4,.4])
+
+    def test_spatial_signed_match_and_nearest_tie(self):
+        source=np.zeros((30,32,32,3),np.uint8)
+        source[12:,8:16,24:32]=[20,120,240]
+        candidate=np.zeros_like(source)
+        candidate[8,8:16,0:8]=[20,120,240]
+        candidate[14:,8:16,24:32]=[20,120,240]
+        meta={'fps':30}
+        event={'frame':12,'time':.4,'bbox':[0,0,1,1],'kind':'local-onset','magnitude':10}
+        rows=onsets.compare_frames(source,candidate,meta,meta,[event,event])
+        self.assertEqual(len(rows),1)
+        self.assertEqual(rows[0]['candidate_frame'],14)
+        candidate[8]=source[12]
+        candidate[12]=source[12]
+        self.assertEqual(onsets.compare_frames(source,candidate,meta,meta,[event])[0]['candidate_frame'],12)
+
+    def test_sheets(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp)
+            source,sm=self.clip(root/'source.mp4',12)
+            candidate,cm=self.clip(root/'candidate.mp4',18)
+            events=[e for e in onsets.scan_frames(source,sm) if e['frame']==12]
+            rows=onsets.compare_frames(source,candidate,sm,cm,events)
+            onsets.write_sheets(root/'sheets',root/'source.mp4',root/'candidate.mp4',rows)
+            self.assertEqual(len(list((root/'sheets').glob('*.jpg'))),2)
+            self.assertTrue((root/'sheets/source/frame-000012.png').is_file())
+            self.assertTrue((root/'sheets/candidate/frame-000018.png').is_file())
+            onsets.write_sheets(root/'empty',root/'source.mp4',root/'candidate.mp4',[])
+            self.assertEqual(list((root/'empty').glob('*.jpg')),[])
+            with self.assertRaises(subprocess.CalledProcessError):
+                onsets.write_sheets(root/'bad',root/'missing.mp4',root/'candidate.mp4',rows)
+
+    def test_joint_region_support(self):
+        source=np.zeros((30,32,32,3),np.uint8)
+        source[12:,0:8,0:8]=100
+        source[12:,24:32,24:32]=100
+        candidate=np.zeros_like(source)
+        candidate[8:,0:8,0:8]=100
+        candidate[14:,0:8,0:8]=120
+        candidate[14:,24:32,24:32]=100
+        def event(frame,box):
+            return {'frame':frame,'time':frame/30,'bbox':box,'kind':'local-onset','magnitude':10}
+        left,right=[0,0,.25,.25],[.75,.75,1,1]
+        source_events=[event(12,left),event(12,right)]
+        candidate_events=[event(8,left),event(14,left),event(14,right)]
+        rows=onsets.compare_frames(source,candidate,{'fps':30},{'fps':30},source_events,candidate_events=candidate_events)
+        self.assertEqual([r['candidate_frame'] for r in rows],[14,14])
+        candidate[:]=100
+        candidate[14:,0:8,0:8]=0
+        rows=onsets.compare_frames(source,candidate,{'fps':30},{'fps':30},source_events[:1],candidate_events=[event(14,left)])
+        self.assertEqual(rows[0]['status'],'missing')
+
     def test_cadence_option_fallback_and_cache(self):
         for help_text,expected in [('-vsync sync_method', '-vsync'), ('-fps_mode fps_mode', '-fps_mode'), ('-fps_mode[:<stream_spec>]  set framerate mode', '-fps_mode')]:
             onsets.cadence_option.cache_clear()
