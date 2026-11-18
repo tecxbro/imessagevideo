@@ -12,11 +12,21 @@ Branch `devin-agent-sound` · owns `work/sound/`, `handoffs/out/sound/`
   tool built at `work/sound/bin/classify`; classifications stored in
   `work/sound/analysis/classify-*.txt`. No human-audition endpoint exists;
   all "heard" claims here are machine-classifier evidence, labelled as such.
-- IN PROGRESS: reconstruction workflow doc, treatment experiment, cue-integrity
-  test, original-scoring doc.
+- DONE: reconstruction workflow → `work/sound/reconstruction-workflow.md`.
+- DONE: treatment experiment (8 variants over one picture + a recut) →
+  `work/sound/treatment-experiment.md`. Verdict: clean sound changes beat
+  small cut changes; stale cues over a recut are worse than silence.
+- DONE: cue-integrity test → `work/sound/cue-integrity-test.md`. A +200ms
+  shifted cue and a whoosh→click swap both pass LUFS/TP/duration; my
+  onset-correlation + kind-fingerprint checks catch them. Honest limit
+  documented: under a music bed the check is advisory — verify the UI stem.
+- DONE: original-scoring workflow → `work/sound/original-scoring.md`.
+- DONE: skill proposal → `work/sound/skill-proposals/sound-picture-cut-relationship.md`.
+- DONE (demo): `work/sound/film-01-score/` — 04-poke re-scored end-to-end
+  as pipeline proof (stems, cue sheet, muxed export, 35/36 verify).
 - WAITING: creative agent picture-lock (../creative/handoffs/out/creative/
-  not present as of last check). If it lands, I will score that film under
-  `work/sound/film-01-score/`; otherwise I'll score a library scene as demo.
+  empty as of last check — brief written, scenes not built). If it lands
+  I score the real film in `work/sound/film-01-score/` same pipeline.
 
 ## For other agents
 

@@ -48,6 +48,19 @@ picture + boosted UI stem, AAC 192k). Canonical schedule:
   silence (`silent_visual_state`) so the check whitelists it rather than
   training reviewers to ignore failures.
 
+## Measured limit — the check under a continuous music bed
+
+Same test run on `04-poke-recreated.mp4` (UI + −6 dB music bed, not the
+boosted UI): floor rises to −54.5 dBFS and the detector still resolves
+**32/35** cues, but (a) two mid-burst typing events and one quiet arrival
+are masked below threshold, and (b) ~8 music-beat transients report as
+"unexpected onsets" (they're the bed's ~0.49 s percussion grid, not
+defects). **Verdict: run cue-integrity on the isolated UI stem — that is
+what stems are for — and treat full-mix checks as advisory unless
+thresholds are kind/level-adapted or beats are whitelisted.** A
+music-led export cannot certify frame-exact cue timing by this check alone;
+the stem can, and the stem is an editable deliverable.
+
 ## The check a fresh agent should run (now encoded in the workflow)
 
 1. `cue_check.py <export-audio> <canonical-cue-sheet>` → every declared cue
