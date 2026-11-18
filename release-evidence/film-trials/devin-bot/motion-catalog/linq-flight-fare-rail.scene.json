@@ -1,0 +1,301 @@
+{
+  "width": 960,
+  "height": 720,
+  "fps": 30,
+  "duration": 1.4666666666666666,
+  "title": "Fare options slide below a held flight summary",
+  "background": "#f0ede6",
+  "source": {
+    "notes": "New artwork and layout around fitted source motion; not a source-exact render.",
+    "evidence": {
+      "url": "https://www.linkedin.com/posts/elliottpotter_your-users-never-have-to-leave-imessage-again-activity-7477784121293950976-Dlap",
+      "sha256": "86e22e698e141c5c2a161977289be1335bb0c0a1dd98769c4c146fcd57bbf2eb",
+      "citedFrames": [
+        384,
+        397
+      ],
+      "fittedFrames": [
+        384,
+        397
+      ],
+      "outputLeadFrames": 12
+    }
+  },
+  "layers": [
+    {
+      "id": "fare-sheet",
+      "type": "rect",
+      "x": 188,
+      "y": 38,
+      "width": 584,
+      "height": 644,
+      "fill": "#c8dffa",
+      "radius": 36
+    },
+    {
+      "id": "flight-summary",
+      "type": "rect",
+      "x": 212,
+      "y": 62,
+      "width": 536,
+      "height": 112,
+      "fill": "#ffffff",
+      "radius": 25
+    },
+    {
+      "id": "flight-title",
+      "type": "text",
+      "text": "SEA to PDX",
+      "x": 235,
+      "y": 87,
+      "fontSize": 31,
+      "fontFamily": "Arial, sans-serif",
+      "fill": "#17191d",
+      "fontWeight": 700
+    },
+    {
+      "id": "flight-subtitle",
+      "type": "text",
+      "text": "Choose your fare",
+      "x": 235,
+      "y": 127,
+      "fontSize": 21,
+      "fontFamily": "Arial, sans-serif",
+      "fill": "#17191d"
+    },
+    {
+      "id": "fare-rail-viewport",
+      "type": "group",
+      "x": 188,
+      "y": 222,
+      "children": [
+        {
+          "id": "fare-rail",
+          "type": "group",
+          "x": 0,
+          "y": 0,
+          "children": [
+            {
+              "id": "fare-0",
+              "type": "group",
+              "x": 24,
+              "y": 0,
+              "children": [
+                {
+                  "id": "fare-0-card",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 338,
+                  "height": 392,
+                  "fill": "#ffffff",
+                  "radius": 30
+                },
+                {
+                  "id": "fare-0-title",
+                  "type": "text",
+                  "text": "Standard",
+                  "x": 20,
+                  "y": 28,
+                  "fontSize": 34,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#17191d",
+                  "fontWeight": 700
+                },
+                {
+                  "id": "fare-0-details",
+                  "type": "text",
+                  "text": "1 carry-on\nStandard boarding\nChange fee applies",
+                  "x": 20,
+                  "y": 120,
+                  "fontSize": 26,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#2c3955",
+                  "lineHeight": 49
+                },
+                {
+                  "id": "fare-0-action",
+                  "type": "group",
+                  "x": 20,
+                  "y": 309,
+                  "children": [
+                    {
+                      "id": "fare-0-action-shape",
+                      "type": "rect",
+                      "x": 0,
+                      "y": 0,
+                      "width": 298,
+                      "height": 42,
+                      "fill": "#245bc0",
+                      "radius": 21
+                    },
+                    {
+                      "id": "fare-0-action-label",
+                      "type": "text",
+                      "text": "Select",
+                      "x": 149,
+                      "y": 11,
+                      "fontSize": 16,
+                      "fontFamily": "Arial, sans-serif",
+                      "fill": "#ffffff",
+                      "textAnchor": "middle",
+                      "fontWeight": 600
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "fare-1",
+              "type": "group",
+              "x": 383,
+              "y": 0,
+              "children": [
+                {
+                  "id": "fare-1-card",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 338,
+                  "height": 392,
+                  "fill": "#ffffff",
+                  "radius": 30
+                },
+                {
+                  "id": "fare-1-title",
+                  "type": "text",
+                  "text": "Flex",
+                  "x": 20,
+                  "y": 28,
+                  "fontSize": 34,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#17191d",
+                  "fontWeight": 700
+                },
+                {
+                  "id": "fare-1-details",
+                  "type": "text",
+                  "text": "Priority boarding\n2 carry-ons\nFree changes",
+                  "x": 20,
+                  "y": 120,
+                  "fontSize": 26,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#2c3955",
+                  "lineHeight": 49
+                },
+                {
+                  "id": "fare-1-action",
+                  "type": "group",
+                  "x": 20,
+                  "y": 309,
+                  "children": [
+                    {
+                      "id": "fare-1-action-shape",
+                      "type": "rect",
+                      "x": 0,
+                      "y": 0,
+                      "width": 298,
+                      "height": 42,
+                      "fill": "#245bc0",
+                      "radius": 21
+                    },
+                    {
+                      "id": "fare-1-action-label",
+                      "type": "text",
+                      "text": "Select",
+                      "x": 149,
+                      "y": 11,
+                      "fontSize": 16,
+                      "fontFamily": "Arial, sans-serif",
+                      "fill": "#ffffff",
+                      "textAnchor": "middle",
+                      "fontWeight": 600
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "keyframes": {
+            "x": [
+              {
+                "t": 0.4,
+                "value": 0.8,
+                "ease": "linear"
+              },
+              {
+                "t": 0.43333333333333335,
+                "value": 0.8,
+                "ease": "linear"
+              },
+              {
+                "t": 0.4666666666666667,
+                "value": 0.8,
+                "ease": "linear"
+              },
+              {
+                "t": 0.5,
+                "value": -8.2,
+                "ease": "linear"
+              },
+              {
+                "t": 0.5333333333333333,
+                "value": -31.5,
+                "ease": "linear"
+              },
+              {
+                "t": 0.5666666666666667,
+                "value": -63.3,
+                "ease": "linear"
+              },
+              {
+                "t": 0.6,
+                "value": -98,
+                "ease": "linear"
+              },
+              {
+                "t": 0.6333333333333333,
+                "value": -98,
+                "ease": "linear"
+              },
+              {
+                "t": 0.6666666666666666,
+                "value": -129.8,
+                "ease": "linear"
+              },
+              {
+                "t": 0.7,
+                "value": -153,
+                "ease": "linear"
+              },
+              {
+                "t": 0.7333333333333333,
+                "value": -162,
+                "ease": "linear"
+              },
+              {
+                "t": 0.7666666666666667,
+                "value": -162,
+                "ease": "linear"
+              },
+              {
+                "t": 0.8,
+                "value": -162,
+                "ease": "linear"
+              },
+              {
+                "t": 0.8333333333333334,
+                "value": -162,
+                "ease": "linear"
+              }
+            ]
+          }
+        }
+      ],
+      "clip": {
+        "width": 584,
+        "height": 404
+      }
+    }
+  ]
+}

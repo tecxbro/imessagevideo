@@ -34,6 +34,10 @@ node --test director/test_toolkit.mjs
 
 See component-contracts.md and ../RUNNING.md before video rendering. The visual viewer does not automatically assemble the full shot plan, export video, mix sound or build an editable Figma file.
 
+## Find a motion in footage
+
+Use the [searchable motion catalog](motion-catalog.md) when a brief names the motion mechanics rather than a storytelling goal. Search returns the observed moving and fixed actors, inclusive source frames, an editable scene command, and a playable preview. A result labeled contrast is a warning, not a preset.
+
 ## Concrete interpretation examples
 
 Photon's message field is taught as ordered independent actors plus parent camera/channel handoffs, not “fly some messages in.” Linq's embedded app separates the host context, a clipped document and a horizontally moving fare rail. Poke's source64–80 changes rounded surface geometry, material and a palm-tree mark, with a separate badge and square handoff81; a generic border-radius tween is insufficient.

@@ -1,0 +1,608 @@
+{
+  "width": 960,
+  "height": 720,
+  "fps": 30,
+  "duration": 1.8333333333333333,
+  "title": "Amount's ones digit rolls under a pulsing plus",
+  "background": "#f0ede6",
+  "source": {
+    "notes": "New artwork and layout around fitted source motion; not a source-exact render.",
+    "evidence": {
+      "url": "https://www.linkedin.com/posts/elliottpotter_your-users-never-have-to-leave-imessage-again-activity-7477784121293950976-Dlap",
+      "sha256": "86e22e698e141c5c2a161977289be1335bb0c0a1dd98769c4c146fcd57bbf2eb",
+      "citedFrames": [
+        786,
+        810
+      ],
+      "fittedFrames": [
+        786,
+        810
+      ],
+      "outputLeadFrames": 12
+    }
+  },
+  "layers": [
+    {
+      "id": "amount-panel",
+      "type": "rect",
+      "x": 187,
+      "y": 138,
+      "width": 586,
+      "height": 444,
+      "fill": "#19252e",
+      "radius": 53
+    },
+    {
+      "id": "amount-title",
+      "type": "text",
+      "text": "Add to your balance",
+      "x": 480,
+      "y": 210,
+      "fontSize": 29,
+      "fontFamily": "Arial, sans-serif",
+      "fill": "#ffffff",
+      "textAnchor": "middle"
+    },
+    {
+      "id": "amount-prefix",
+      "type": "text",
+      "text": "$1",
+      "x": 423,
+      "y": 316,
+      "fontSize": 68,
+      "fontFamily": "Arial, sans-serif",
+      "fill": "#ffffff",
+      "textAnchor": "end"
+    },
+    {
+      "id": "units-viewport",
+      "type": "group",
+      "x": 423,
+      "y": 311,
+      "children": [
+        {
+          "id": "units-rail",
+          "type": "group",
+          "x": 0,
+          "y": 0,
+          "children": [
+            {
+              "id": "units-0",
+              "type": "text",
+              "text": "2",
+              "x": 27,
+              "y": 5,
+              "fontSize": 68,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#ffffff",
+              "textAnchor": "middle"
+            },
+            {
+              "id": "units-1",
+              "type": "text",
+              "text": "3",
+              "x": 27,
+              "y": 99,
+              "fontSize": 68,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#ffffff",
+              "textAnchor": "middle"
+            },
+            {
+              "id": "units-2",
+              "type": "text",
+              "text": "4",
+              "x": 27,
+              "y": 193,
+              "fontSize": 68,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#ffffff",
+              "textAnchor": "middle"
+            },
+            {
+              "id": "units-3",
+              "type": "text",
+              "text": "5",
+              "x": 27,
+              "y": 287,
+              "fontSize": 68,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#ffffff",
+              "textAnchor": "middle"
+            },
+            {
+              "id": "units-4",
+              "type": "text",
+              "text": "6",
+              "x": 27,
+              "y": 381,
+              "fontSize": 68,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#ffffff",
+              "textAnchor": "middle"
+            }
+          ],
+          "keyframes": {
+            "y": [
+              {
+                "t": 0.4,
+                "value": -0.53,
+                "ease": "linear"
+              },
+              {
+                "t": 0.43333333333333335,
+                "value": -93.64,
+                "ease": "linear"
+              },
+              {
+                "t": 0.4666666666666667,
+                "value": -93.95,
+                "ease": "linear"
+              },
+              {
+                "t": 0.5,
+                "value": -94,
+                "ease": "linear"
+              },
+              {
+                "t": 0.5333333333333333,
+                "value": -94.05,
+                "ease": "linear"
+              },
+              {
+                "t": 0.5666666666666667,
+                "value": -94.17,
+                "ease": "linear"
+              },
+              {
+                "t": 0.6,
+                "value": -188,
+                "ease": "linear"
+              },
+              {
+                "t": 0.6333333333333333,
+                "value": -188,
+                "ease": "linear"
+              },
+              {
+                "t": 0.6666666666666666,
+                "value": -188,
+                "ease": "linear"
+              },
+              {
+                "t": 0.7,
+                "value": -188,
+                "ease": "linear"
+              },
+              {
+                "t": 0.7333333333333333,
+                "value": -188,
+                "ease": "linear"
+              },
+              {
+                "t": 0.7666666666666667,
+                "value": -282,
+                "ease": "linear"
+              },
+              {
+                "t": 0.8,
+                "value": -281.99,
+                "ease": "linear"
+              },
+              {
+                "t": 0.8333333333333334,
+                "value": -282,
+                "ease": "linear"
+              },
+              {
+                "t": 0.8666666666666667,
+                "value": -282,
+                "ease": "linear"
+              },
+              {
+                "t": 0.9,
+                "value": -282,
+                "ease": "linear"
+              },
+              {
+                "t": 0.9333333333333333,
+                "value": -282.17,
+                "ease": "linear"
+              },
+              {
+                "t": 0.9666666666666667,
+                "value": -376,
+                "ease": "linear"
+              },
+              {
+                "t": 1,
+                "value": -376,
+                "ease": "linear"
+              },
+              {
+                "t": 1.0333333333333334,
+                "value": -376,
+                "ease": "linear"
+              },
+              {
+                "t": 1.0666666666666667,
+                "value": -376,
+                "ease": "linear"
+              },
+              {
+                "t": 1.1,
+                "value": -376,
+                "ease": "linear"
+              },
+              {
+                "t": 1.1333333333333333,
+                "value": -376,
+                "ease": "linear"
+              },
+              {
+                "t": 1.1666666666666667,
+                "value": -376,
+                "ease": "linear"
+              },
+              {
+                "t": 1.2,
+                "value": -376,
+                "ease": "linear"
+              }
+            ]
+          }
+        }
+      ],
+      "clip": {
+        "width": 54,
+        "height": 94
+      }
+    },
+    {
+      "id": "amount-suffix",
+      "type": "text",
+      "text": ".50",
+      "x": 477,
+      "y": 316,
+      "fontSize": 68,
+      "fontFamily": "Arial, sans-serif",
+      "fill": "#ffffff"
+    },
+    {
+      "id": "amount-plus",
+      "type": "group",
+      "x": 617,
+      "y": 325,
+      "children": [
+        {
+          "id": "amount-plus-disc",
+          "type": "circle",
+          "x": 0,
+          "y": 0,
+          "width": 62,
+          "height": 62,
+          "fill": "#38515f"
+        },
+        {
+          "id": "amount-plus-mark",
+          "type": "text",
+          "text": "+",
+          "x": 31,
+          "y": 7,
+          "fontSize": 39,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#ffffff",
+          "textAnchor": "middle"
+        }
+      ],
+      "originX": 31,
+      "originY": 31,
+      "keyframes": {
+        "scaleX": [
+          {
+            "t": 0.4,
+            "value": 1.1,
+            "ease": "linear"
+          },
+          {
+            "t": 0.43333333333333335,
+            "value": 1.28,
+            "ease": "linear"
+          },
+          {
+            "t": 0.4666666666666667,
+            "value": 1.28,
+            "ease": "linear"
+          },
+          {
+            "t": 0.5,
+            "value": 1.28,
+            "ease": "linear"
+          },
+          {
+            "t": 0.5333333333333333,
+            "value": 1.16,
+            "ease": "linear"
+          },
+          {
+            "t": 0.5666666666666667,
+            "value": 1.12,
+            "ease": "linear"
+          },
+          {
+            "t": 0.6,
+            "value": 1.22,
+            "ease": "linear"
+          },
+          {
+            "t": 0.6333333333333333,
+            "value": 1.25,
+            "ease": "linear"
+          },
+          {
+            "t": 0.6666666666666666,
+            "value": 1.25,
+            "ease": "linear"
+          },
+          {
+            "t": 0.7,
+            "value": 1.17,
+            "ease": "linear"
+          },
+          {
+            "t": 0.7333333333333333,
+            "value": 1.14,
+            "ease": "linear"
+          },
+          {
+            "t": 0.7666666666666667,
+            "value": 1.25,
+            "ease": "linear"
+          },
+          {
+            "t": 0.8,
+            "value": 1.31,
+            "ease": "linear"
+          },
+          {
+            "t": 0.8333333333333334,
+            "value": 1.31,
+            "ease": "linear"
+          },
+          {
+            "t": 0.8666666666666667,
+            "value": 1.22,
+            "ease": "linear"
+          },
+          {
+            "t": 0.9,
+            "value": 1.14,
+            "ease": "linear"
+          },
+          {
+            "t": 0.9333333333333333,
+            "value": 1.08,
+            "ease": "linear"
+          },
+          {
+            "t": 0.9666666666666667,
+            "value": 1.23,
+            "ease": "linear"
+          },
+          {
+            "t": 1,
+            "value": 1.23,
+            "ease": "linear"
+          },
+          {
+            "t": 1.0333333333333334,
+            "value": 1.31,
+            "ease": "linear"
+          },
+          {
+            "t": 1.0666666666666667,
+            "value": 1.27,
+            "ease": "linear"
+          },
+          {
+            "t": 1.1,
+            "value": 1.17,
+            "ease": "linear"
+          },
+          {
+            "t": 1.1333333333333333,
+            "value": 1.06,
+            "ease": "linear"
+          },
+          {
+            "t": 1.1666666666666667,
+            "value": 1.06,
+            "ease": "linear"
+          },
+          {
+            "t": 1.2,
+            "value": 1,
+            "ease": "linear"
+          }
+        ],
+        "scaleY": [
+          {
+            "t": 0.4,
+            "value": 1.1,
+            "ease": "linear"
+          },
+          {
+            "t": 0.43333333333333335,
+            "value": 1.28,
+            "ease": "linear"
+          },
+          {
+            "t": 0.4666666666666667,
+            "value": 1.28,
+            "ease": "linear"
+          },
+          {
+            "t": 0.5,
+            "value": 1.28,
+            "ease": "linear"
+          },
+          {
+            "t": 0.5333333333333333,
+            "value": 1.16,
+            "ease": "linear"
+          },
+          {
+            "t": 0.5666666666666667,
+            "value": 1.12,
+            "ease": "linear"
+          },
+          {
+            "t": 0.6,
+            "value": 1.22,
+            "ease": "linear"
+          },
+          {
+            "t": 0.6333333333333333,
+            "value": 1.25,
+            "ease": "linear"
+          },
+          {
+            "t": 0.6666666666666666,
+            "value": 1.25,
+            "ease": "linear"
+          },
+          {
+            "t": 0.7,
+            "value": 1.17,
+            "ease": "linear"
+          },
+          {
+            "t": 0.7333333333333333,
+            "value": 1.14,
+            "ease": "linear"
+          },
+          {
+            "t": 0.7666666666666667,
+            "value": 1.25,
+            "ease": "linear"
+          },
+          {
+            "t": 0.8,
+            "value": 1.31,
+            "ease": "linear"
+          },
+          {
+            "t": 0.8333333333333334,
+            "value": 1.31,
+            "ease": "linear"
+          },
+          {
+            "t": 0.8666666666666667,
+            "value": 1.22,
+            "ease": "linear"
+          },
+          {
+            "t": 0.9,
+            "value": 1.14,
+            "ease": "linear"
+          },
+          {
+            "t": 0.9333333333333333,
+            "value": 1.08,
+            "ease": "linear"
+          },
+          {
+            "t": 0.9666666666666667,
+            "value": 1.23,
+            "ease": "linear"
+          },
+          {
+            "t": 1,
+            "value": 1.23,
+            "ease": "linear"
+          },
+          {
+            "t": 1.0333333333333334,
+            "value": 1.31,
+            "ease": "linear"
+          },
+          {
+            "t": 1.0666666666666667,
+            "value": 1.27,
+            "ease": "linear"
+          },
+          {
+            "t": 1.1,
+            "value": 1.17,
+            "ease": "linear"
+          },
+          {
+            "t": 1.1333333333333333,
+            "value": 1.06,
+            "ease": "linear"
+          },
+          {
+            "t": 1.1666666666666667,
+            "value": 1.06,
+            "ease": "linear"
+          },
+          {
+            "t": 1.2,
+            "value": 1,
+            "ease": "linear"
+          }
+        ]
+      }
+    },
+    {
+      "id": "amount-minus-disc",
+      "type": "circle",
+      "x": 281,
+      "y": 325,
+      "width": 62,
+      "height": 62,
+      "fill": "#38515f"
+    },
+    {
+      "id": "amount-minus-mark",
+      "type": "text",
+      "text": "−",
+      "x": 312,
+      "y": 332,
+      "fontSize": 39,
+      "fontFamily": "Arial, sans-serif",
+      "fill": "#ffffff",
+      "textAnchor": "middle"
+    },
+    {
+      "id": "amount-submit",
+      "type": "group",
+      "x": 330,
+      "y": 477,
+      "children": [
+        {
+          "id": "amount-submit-shape",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 300,
+          "height": 42,
+          "fill": "#35566d",
+          "radius": 21
+        },
+        {
+          "id": "amount-submit-label",
+          "type": "text",
+          "text": "Review",
+          "x": 150,
+          "y": 11,
+          "fontSize": 16,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#ffffff",
+          "textAnchor": "middle",
+          "fontWeight": 600
+        }
+      ]
+    }
+  ]
+}
