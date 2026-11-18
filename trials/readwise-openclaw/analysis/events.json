@@ -1,0 +1,8312 @@
+{
+  "schema_version": 1,
+  "scope": "Source analysis only; not authored film choreography. Bounded inventory with explicit unresolved items; not an assertion of exhaustive frame-exact coverage.",
+  "source": {
+    "path": "~/work/rw/source.mp4",
+    "width": 3840,
+    "height": 2160,
+    "fps": 30,
+    "frames": 1110,
+    "duration_seconds": 37,
+    "audio_sample_rate": 44100,
+    "audio_channels": 2
+  },
+  "conventions": {
+    "frame_index": "0-based; frame f is visible at f/30 seconds",
+    "intervals": "inclusive last_frame unless named exclusive",
+    "coordinates": "source 3840x2160 pixels, top-left origin; measurements made at 1920 or 480 width and scaled up",
+    "precision": "Exact discrete visual changes are integers. Geometry is estimated; do not interpret coordinate precision as source-design precision. Whitespace has no glyph. OS event timing is not recoverable from a rendered film."
+  },
+  "evidence": {
+    "frames": "~/work/rw/analysis-frames/0000.jpg..1109.jpg",
+    "low_resolution_frames": "~/work/rw/f/0001.png..1110.png; filename = source frame + 1",
+    "method": [
+      "adjacent frame differencing",
+      "1920x1080 targeted crops/contact sheets",
+      "Vision OCR with manual transcription of principal copy",
+      "thresholded foreground/rail geometry",
+      "source-audio listening description and spectral flux"
+    ],
+    "temporary_assets_outside_repo": true
+  },
+  "shots": [
+    {
+      "id": "S1",
+      "first_frame": 0,
+      "last_frame": 67,
+      "description": "Gradient/title"
+    },
+    {
+      "id": "S2",
+      "first_frame": 68,
+      "last_frame": 138,
+      "description": "Tilted Twitter/X bookmark close-up"
+    },
+    {
+      "id": "S3",
+      "first_frame": 139,
+      "last_frame": 210,
+      "description": "Tilted browser/Reader save"
+    },
+    {
+      "id": "S4",
+      "first_frame": 211,
+      "last_frame": 333,
+      "description": "YouTube share sheet, Reader saved screen, phone zoom-out"
+    },
+    {
+      "id": "S5",
+      "first_frame": 334,
+      "last_frame": 403,
+      "description": "Gradient-only lead-in 334–342, typed title 343–402, gradient-only frame 403"
+    },
+    {
+      "id": "S6",
+      "first_frame": 404,
+      "last_frame": 990,
+      "description": "Ghosty chat"
+    },
+    {
+      "id": "S7",
+      "first_frame": 991,
+      "last_frame": 1099,
+      "description": "Readwise icon fades in; command types; large faint arc"
+    },
+    {
+      "id": "black_tail",
+      "first_frame": 1100,
+      "last_frame": 1109,
+      "description": "Abrupt black; codec residual at 1100, exact zero from 1101"
+    }
+  ],
+  "transitions": [
+    {
+      "frame": 68,
+      "type": "hard_cut",
+      "from": "S1",
+      "to": "S2"
+    },
+    {
+      "frame": 139,
+      "type": "hard_cut",
+      "from": "S2",
+      "to": "S3"
+    },
+    {
+      "frame": 211,
+      "type": "hard_cut",
+      "from": "S3",
+      "to": "S4"
+    },
+    {
+      "frame": 334,
+      "type": "hard_cut",
+      "from": "phone",
+      "to": "gradient-only"
+    },
+    {
+      "frame": 403,
+      "type": "title_removed_in_one_frame",
+      "from": "S5 title",
+      "to": "gradient-only"
+    },
+    {
+      "frame": 404,
+      "type": "hard_cut",
+      "from": "gradient-only",
+      "to": "chat phone"
+    },
+    {
+      "frame": 991,
+      "type": "hard_cut",
+      "from": "chat phone",
+      "to": "end-card background/arc"
+    },
+    {
+      "first_changed_frame": 994,
+      "last_ramp_frame": 1023,
+      "settled_by_frame": 1024,
+      "type": "element_fade_in",
+      "element": "Readwise end-card icon",
+      "precision": "Measured at interior R pixel; other antialiased icon-edge pixels may differ by one frame, see sample track",
+      "pixel_samples": [
+        {
+          "frame": 991,
+          "sample_rgb_1920x1080_at_938_443": [
+            34,
+            38,
+            63
+          ]
+        },
+        {
+          "frame": 992,
+          "sample_rgb_1920x1080_at_938_443": [
+            34,
+            38,
+            63
+          ]
+        },
+        {
+          "frame": 993,
+          "sample_rgb_1920x1080_at_938_443": [
+            34,
+            38,
+            63
+          ]
+        },
+        {
+          "frame": 994,
+          "sample_rgb_1920x1080_at_938_443": [
+            43,
+            45,
+            70
+          ]
+        },
+        {
+          "frame": 995,
+          "sample_rgb_1920x1080_at_938_443": [
+            43,
+            45,
+            70
+          ]
+        },
+        {
+          "frame": 996,
+          "sample_rgb_1920x1080_at_938_443": [
+            49,
+            51,
+            76
+          ]
+        },
+        {
+          "frame": 997,
+          "sample_rgb_1920x1080_at_938_443": [
+            57,
+            59,
+            84
+          ]
+        },
+        {
+          "frame": 998,
+          "sample_rgb_1920x1080_at_938_443": [
+            62,
+            67,
+            89
+          ]
+        },
+        {
+          "frame": 999,
+          "sample_rgb_1920x1080_at_938_443": [
+            69,
+            74,
+            96
+          ]
+        },
+        {
+          "frame": 1000,
+          "sample_rgb_1920x1080_at_938_443": [
+            76,
+            78,
+            101
+          ]
+        },
+        {
+          "frame": 1001,
+          "sample_rgb_1920x1080_at_938_443": [
+            84,
+            84,
+            108
+          ]
+        },
+        {
+          "frame": 1002,
+          "sample_rgb_1920x1080_at_938_443": [
+            90,
+            92,
+            113
+          ]
+        },
+        {
+          "frame": 1003,
+          "sample_rgb_1920x1080_at_938_443": [
+            97,
+            99,
+            120
+          ]
+        },
+        {
+          "frame": 1004,
+          "sample_rgb_1920x1080_at_938_443": [
+            104,
+            107,
+            126
+          ]
+        },
+        {
+          "frame": 1005,
+          "sample_rgb_1920x1080_at_938_443": [
+            111,
+            114,
+            133
+          ]
+        },
+        {
+          "frame": 1006,
+          "sample_rgb_1920x1080_at_938_443": [
+            118,
+            121,
+            138
+          ]
+        },
+        {
+          "frame": 1007,
+          "sample_rgb_1920x1080_at_938_443": [
+            125,
+            128,
+            145
+          ]
+        },
+        {
+          "frame": 1008,
+          "sample_rgb_1920x1080_at_938_443": [
+            132,
+            135,
+            152
+          ]
+        },
+        {
+          "frame": 1009,
+          "sample_rgb_1920x1080_at_938_443": [
+            139,
+            142,
+            159
+          ]
+        },
+        {
+          "frame": 1010,
+          "sample_rgb_1920x1080_at_938_443": [
+            145,
+            149,
+            161
+          ]
+        },
+        {
+          "frame": 1011,
+          "sample_rgb_1920x1080_at_938_443": [
+            153,
+            155,
+            168
+          ]
+        },
+        {
+          "frame": 1012,
+          "sample_rgb_1920x1080_at_938_443": [
+            160,
+            162,
+            175
+          ]
+        },
+        {
+          "frame": 1013,
+          "sample_rgb_1920x1080_at_938_443": [
+            166,
+            170,
+            182
+          ]
+        },
+        {
+          "frame": 1014,
+          "sample_rgb_1920x1080_at_938_443": [
+            173,
+            177,
+            188
+          ]
+        },
+        {
+          "frame": 1015,
+          "sample_rgb_1920x1080_at_938_443": [
+            181,
+            183,
+            195
+          ]
+        },
+        {
+          "frame": 1016,
+          "sample_rgb_1920x1080_at_938_443": [
+            188,
+            191,
+            200
+          ]
+        },
+        {
+          "frame": 1017,
+          "sample_rgb_1920x1080_at_938_443": [
+            193,
+            197,
+            206
+          ]
+        },
+        {
+          "frame": 1018,
+          "sample_rgb_1920x1080_at_938_443": [
+            200,
+            205,
+            211
+          ]
+        },
+        {
+          "frame": 1019,
+          "sample_rgb_1920x1080_at_938_443": [
+            208,
+            211,
+            218
+          ]
+        },
+        {
+          "frame": 1020,
+          "sample_rgb_1920x1080_at_938_443": [
+            215,
+            218,
+            225
+          ]
+        },
+        {
+          "frame": 1021,
+          "sample_rgb_1920x1080_at_938_443": [
+            222,
+            225,
+            232
+          ]
+        },
+        {
+          "frame": 1022,
+          "sample_rgb_1920x1080_at_938_443": [
+            229,
+            232,
+            237
+          ]
+        },
+        {
+          "frame": 1023,
+          "sample_rgb_1920x1080_at_938_443": [
+            236,
+            239,
+            244
+          ]
+        },
+        {
+          "frame": 1024,
+          "sample_rgb_1920x1080_at_938_443": [
+            242,
+            245,
+            250
+          ]
+        },
+        {
+          "frame": 1025,
+          "sample_rgb_1920x1080_at_938_443": [
+            242,
+            245,
+            250
+          ]
+        },
+        {
+          "frame": 1026,
+          "sample_rgb_1920x1080_at_938_443": [
+            242,
+            245,
+            250
+          ]
+        },
+        {
+          "frame": 1027,
+          "sample_rgb_1920x1080_at_938_443": [
+            242,
+            245,
+            250
+          ]
+        },
+        {
+          "frame": 1028,
+          "sample_rgb_1920x1080_at_938_443": [
+            242,
+            245,
+            250
+          ]
+        },
+        {
+          "frame": 1029,
+          "sample_rgb_1920x1080_at_938_443": [
+            242,
+            245,
+            250
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 1100,
+      "type": "hard_cut_to_black",
+      "note": "Not a multi-frame fade: mean RGB approximately 51.77 at 1099, 0.01 at 1100 and 0 at 1101. No preceding dimming."
+    }
+  ],
+  "typing": [
+    {
+      "id": "S1.title",
+      "final_text": "Save from anywhere.",
+      "final_display_lines": [
+        "Save from anywhere."
+      ],
+      "first_frame": 9,
+      "last_frame": 67,
+      "reveal": "typed; multiple characters sometimes appear in one source frame",
+      "states": [
+        {
+          "frame": 9,
+          "text": "S"
+        },
+        {
+          "frame": 10,
+          "text": "Sa"
+        },
+        {
+          "frame": 11,
+          "text": "Sav"
+        },
+        {
+          "frame": 12,
+          "text": "Save"
+        },
+        {
+          "frame": 14,
+          "text": "Save f"
+        },
+        {
+          "frame": 15,
+          "text": "Save fr"
+        },
+        {
+          "frame": 16,
+          "text": "Save fro"
+        },
+        {
+          "frame": 17,
+          "text": "Save from"
+        },
+        {
+          "frame": 19,
+          "text": "Save from a"
+        },
+        {
+          "frame": 20,
+          "text": "Save from an"
+        },
+        {
+          "frame": 21,
+          "text": "Save from any"
+        },
+        {
+          "frame": 22,
+          "text": "Save from anyw"
+        },
+        {
+          "frame": 23,
+          "text": "Save from anywh"
+        },
+        {
+          "frame": 24,
+          "text": "Save from anywhe"
+        },
+        {
+          "frame": 25,
+          "text": "Save from anywher"
+        },
+        {
+          "frame": 26,
+          "text": "Save from anywhere"
+        },
+        {
+          "frame": 27,
+          "text": "Save from anywhere."
+        }
+      ],
+      "characters": [
+        {
+          "index": 0,
+          "character": "S",
+          "first_visible_frame": 9
+        },
+        {
+          "index": 1,
+          "character": "a",
+          "first_visible_frame": 10
+        },
+        {
+          "index": 2,
+          "character": "v",
+          "first_visible_frame": 11
+        },
+        {
+          "index": 3,
+          "character": "e",
+          "first_visible_frame": 12
+        },
+        {
+          "index": 4,
+          "character": " ",
+          "first_visible_frame": null,
+          "space_present_by_frame": 14,
+          "note": "Whitespace has no visible glyph; not a measured key-down."
+        },
+        {
+          "index": 5,
+          "character": "f",
+          "first_visible_frame": 14
+        },
+        {
+          "index": 6,
+          "character": "r",
+          "first_visible_frame": 15
+        },
+        {
+          "index": 7,
+          "character": "o",
+          "first_visible_frame": 16
+        },
+        {
+          "index": 8,
+          "character": "m",
+          "first_visible_frame": 17
+        },
+        {
+          "index": 9,
+          "character": " ",
+          "first_visible_frame": null,
+          "space_present_by_frame": 19,
+          "note": "Whitespace has no visible glyph; not a measured key-down."
+        },
+        {
+          "index": 10,
+          "character": "a",
+          "first_visible_frame": 19
+        },
+        {
+          "index": 11,
+          "character": "n",
+          "first_visible_frame": 20
+        },
+        {
+          "index": 12,
+          "character": "y",
+          "first_visible_frame": 21
+        },
+        {
+          "index": 13,
+          "character": "w",
+          "first_visible_frame": 22
+        },
+        {
+          "index": 14,
+          "character": "h",
+          "first_visible_frame": 23
+        },
+        {
+          "index": 15,
+          "character": "e",
+          "first_visible_frame": 24
+        },
+        {
+          "index": 16,
+          "character": "r",
+          "first_visible_frame": 25
+        },
+        {
+          "index": 17,
+          "character": "e",
+          "first_visible_frame": 26
+        },
+        {
+          "index": 18,
+          "character": ".",
+          "first_visible_frame": 27
+        }
+      ],
+      "accent_text": "anywhere.",
+      "timing_basis": "Adjacent 1920x1080 source-frame crops, visually read; frame means first visible glyph, not OS key-down."
+    },
+    {
+      "id": "S5.title",
+      "final_text": "Your OpenClaw already knows.",
+      "final_display_lines": [
+        "Your OpenClaw already knows."
+      ],
+      "first_frame": 343,
+      "last_frame": 402,
+      "reveal": "typed; multiple characters sometimes appear in one source frame",
+      "states": [
+        {
+          "frame": 343,
+          "text": "Y"
+        },
+        {
+          "frame": 344,
+          "text": "Yo"
+        },
+        {
+          "frame": 345,
+          "text": "Your"
+        },
+        {
+          "frame": 347,
+          "text": "Your O"
+        },
+        {
+          "frame": 348,
+          "text": "Your Ope"
+        },
+        {
+          "frame": 349,
+          "text": "Your Open"
+        },
+        {
+          "frame": 350,
+          "text": "Your OpenCl"
+        },
+        {
+          "frame": 351,
+          "text": "Your OpenCla"
+        },
+        {
+          "frame": 352,
+          "text": "Your OpenClaw"
+        },
+        {
+          "frame": 353,
+          "text": "Your OpenClaw a"
+        },
+        {
+          "frame": 354,
+          "text": "Your OpenClaw al"
+        },
+        {
+          "frame": 355,
+          "text": "Your OpenClaw alr"
+        },
+        {
+          "frame": 356,
+          "text": "Your OpenClaw alrea"
+        },
+        {
+          "frame": 357,
+          "text": "Your OpenClaw alread"
+        },
+        {
+          "frame": 358,
+          "text": "Your OpenClaw already"
+        },
+        {
+          "frame": 359,
+          "text": "Your OpenClaw already k"
+        },
+        {
+          "frame": 360,
+          "text": "Your OpenClaw already kn"
+        },
+        {
+          "frame": 361,
+          "text": "Your OpenClaw already know"
+        },
+        {
+          "frame": 362,
+          "text": "Your OpenClaw already knows"
+        },
+        {
+          "frame": 363,
+          "text": "Your OpenClaw already knows."
+        }
+      ],
+      "characters": [
+        {
+          "index": 0,
+          "character": "Y",
+          "first_visible_frame": 343
+        },
+        {
+          "index": 1,
+          "character": "o",
+          "first_visible_frame": 344
+        },
+        {
+          "index": 2,
+          "character": "u",
+          "first_visible_frame": 345
+        },
+        {
+          "index": 3,
+          "character": "r",
+          "first_visible_frame": 345
+        },
+        {
+          "index": 4,
+          "character": " ",
+          "first_visible_frame": null,
+          "space_present_by_frame": 347,
+          "note": "Whitespace has no visible glyph; not a measured key-down."
+        },
+        {
+          "index": 5,
+          "character": "O",
+          "first_visible_frame": 347
+        },
+        {
+          "index": 6,
+          "character": "p",
+          "first_visible_frame": 348
+        },
+        {
+          "index": 7,
+          "character": "e",
+          "first_visible_frame": 348
+        },
+        {
+          "index": 8,
+          "character": "n",
+          "first_visible_frame": 349
+        },
+        {
+          "index": 9,
+          "character": "C",
+          "first_visible_frame": 350
+        },
+        {
+          "index": 10,
+          "character": "l",
+          "first_visible_frame": 350
+        },
+        {
+          "index": 11,
+          "character": "a",
+          "first_visible_frame": 351
+        },
+        {
+          "index": 12,
+          "character": "w",
+          "first_visible_frame": 352
+        },
+        {
+          "index": 13,
+          "character": " ",
+          "first_visible_frame": null,
+          "space_present_by_frame": 353,
+          "note": "Whitespace has no visible glyph; not a measured key-down."
+        },
+        {
+          "index": 14,
+          "character": "a",
+          "first_visible_frame": 353
+        },
+        {
+          "index": 15,
+          "character": "l",
+          "first_visible_frame": 354
+        },
+        {
+          "index": 16,
+          "character": "r",
+          "first_visible_frame": 355
+        },
+        {
+          "index": 17,
+          "character": "e",
+          "first_visible_frame": 356
+        },
+        {
+          "index": 18,
+          "character": "a",
+          "first_visible_frame": 356
+        },
+        {
+          "index": 19,
+          "character": "d",
+          "first_visible_frame": 357
+        },
+        {
+          "index": 20,
+          "character": "y",
+          "first_visible_frame": 358
+        },
+        {
+          "index": 21,
+          "character": " ",
+          "first_visible_frame": null,
+          "space_present_by_frame": 359,
+          "note": "Whitespace has no visible glyph; not a measured key-down."
+        },
+        {
+          "index": 22,
+          "character": "k",
+          "first_visible_frame": 359
+        },
+        {
+          "index": 23,
+          "character": "n",
+          "first_visible_frame": 360
+        },
+        {
+          "index": 24,
+          "character": "o",
+          "first_visible_frame": 361
+        },
+        {
+          "index": 25,
+          "character": "w",
+          "first_visible_frame": 361
+        },
+        {
+          "index": 26,
+          "character": "s",
+          "first_visible_frame": 362
+        },
+        {
+          "index": 27,
+          "character": ".",
+          "first_visible_frame": 363
+        }
+      ],
+      "accent_text": "already knows.",
+      "timing_basis": "Adjacent 1920x1080 source-frame crops, visually read; frame means first visible glyph, not OS key-down."
+    },
+    {
+      "id": "S6.user1.composer",
+      "final_text": "What did I save today? Give me a brief summary on each.",
+      "final_display_lines": [
+        "What did I save today?",
+        "Give me a brief summary",
+        "on each."
+      ],
+      "first_frame": 456,
+      "last_frame": 568,
+      "reveal": "typed; multiple characters sometimes appear in one source frame",
+      "states": [
+        {
+          "frame": 456,
+          "text": "W"
+        },
+        {
+          "frame": 457,
+          "text": "Wh"
+        },
+        {
+          "frame": 458,
+          "text": "Wha"
+        },
+        {
+          "frame": 459,
+          "text": "What"
+        },
+        {
+          "frame": 462,
+          "text": "What d"
+        },
+        {
+          "frame": 463,
+          "text": "What di"
+        },
+        {
+          "frame": 464,
+          "text": "What did"
+        },
+        {
+          "frame": 468,
+          "text": "What did I"
+        },
+        {
+          "frame": 473,
+          "text": "What did I s"
+        },
+        {
+          "frame": 475,
+          "text": "What did I sa"
+        },
+        {
+          "frame": 477,
+          "text": "What did I save"
+        },
+        {
+          "frame": 479,
+          "text": "What did I save t"
+        },
+        {
+          "frame": 480,
+          "text": "What did I save to"
+        },
+        {
+          "frame": 482,
+          "text": "What did I save tod"
+        },
+        {
+          "frame": 483,
+          "text": "What did I save toda"
+        },
+        {
+          "frame": 484,
+          "text": "What did I save today"
+        },
+        {
+          "frame": 488,
+          "text": "What did I save today?"
+        },
+        {
+          "frame": 494,
+          "text": "What did I save today? G"
+        },
+        {
+          "frame": 496,
+          "text": "What did I save today? Gi"
+        },
+        {
+          "frame": 498,
+          "text": "What did I save today? Giv"
+        },
+        {
+          "frame": 499,
+          "text": "What did I save today? Give"
+        },
+        {
+          "frame": 501,
+          "text": "What did I save today? Give me"
+        },
+        {
+          "frame": 504,
+          "text": "What did I save today? Give me a"
+        },
+        {
+          "frame": 512,
+          "text": "What did I save today? Give me a b"
+        },
+        {
+          "frame": 513,
+          "text": "What did I save today? Give me a br"
+        },
+        {
+          "frame": 514,
+          "text": "What did I save today? Give me a bri"
+        },
+        {
+          "frame": 515,
+          "text": "What did I save today? Give me a brie"
+        },
+        {
+          "frame": 516,
+          "text": "What did I save today? Give me a brief"
+        },
+        {
+          "frame": 518,
+          "text": "What did I save today? Give me a brief s"
+        },
+        {
+          "frame": 519,
+          "text": "What did I save today? Give me a brief su"
+        },
+        {
+          "frame": 521,
+          "text": "What did I save today? Give me a brief sum"
+        },
+        {
+          "frame": 522,
+          "text": "What did I save today? Give me a brief summ"
+        },
+        {
+          "frame": 523,
+          "text": "What did I save today? Give me a brief summa"
+        },
+        {
+          "frame": 524,
+          "text": "What did I save today? Give me a brief summar"
+        },
+        {
+          "frame": 525,
+          "text": "What did I save today? Give me a brief summary"
+        },
+        {
+          "frame": 529,
+          "text": "What did I save today? Give me a brief summary o"
+        },
+        {
+          "frame": 531,
+          "text": "What did I save today? Give me a brief summary on"
+        },
+        {
+          "frame": 533,
+          "text": "What did I save today? Give me a brief summary on e"
+        },
+        {
+          "frame": 535,
+          "text": "What did I save today? Give me a brief summary on ea"
+        },
+        {
+          "frame": 537,
+          "text": "What did I save today? Give me a brief summary on eac"
+        },
+        {
+          "frame": 538,
+          "text": "What did I save today? Give me a brief summary on each"
+        },
+        {
+          "frame": 541,
+          "text": "What did I save today? Give me a brief summary on each."
+        }
+      ],
+      "characters": [
+        {
+          "index": 0,
+          "character": "W",
+          "first_visible_frame": 456
+        },
+        {
+          "index": 1,
+          "character": "h",
+          "first_visible_frame": 457
+        },
+        {
+          "index": 2,
+          "character": "a",
+          "first_visible_frame": 458
+        },
+        {
+          "index": 3,
+          "character": "t",
+          "first_visible_frame": 459
+        },
+        {
+          "index": 4,
+          "character": " ",
+          "first_visible_frame": null,
+          "space_present_by_frame": 462,
+          "note": "Whitespace has no visible glyph; not a measured key-down."
+        },
+        {
+          "index": 5,
+          "character": "d",
+          "first_visible_frame": 462
+        },
+        {
+          "index": 6,
+          "character": "i",
+          "first_visible_frame": 463
+        },
+        {
+          "index": 7,
+          "character": "d",
+          "first_visible_frame": 464
+        },
+        {
+          "index": 8,
+          "character": " ",
+          "first_visible_frame": null,
+          "space_present_by_frame": 468,
+          "note": "Whitespace has no visible glyph; not a measured key-down."
+        },
+        {
+          "index": 9,
+          "character": "I",
+          "first_visible_frame": 468
+        },
+        {
+          "index": 10,
+          "character": " ",
+          "first_visible_frame": null,
+          "space_present_by_frame": 473,
+          "note": "Whitespace has no visible glyph; not a measured key-down."
+        },
+        {
+          "index": 11,
+          "character": "s",
+          "first_visible_frame": 473
+        },
+        {
+          "index": 12,
+          "character": "a",
+          "first_visible_frame": 475
+        },
+        {
+          "index": 13,
+          "character": "v",
+          "first_visible_frame": 477
+        },
+        {
+          "index": 14,
+          "character": "e",
+          "first_visible_frame": 477
+        },
+        {
+          "index": 15,
+          "character": " ",
+          "first_visible_frame": null,
+          "space_present_by_frame": 479,
+          "note": "Whitespace has no visible glyph; not a measured key-down."
+        },
+        {
+          "index": 16,
+          "character": "t",
+          "first_visible_frame": 479
+        },
+        {
+          "index": 17,
+          "character": "o",
+          "first_visible_frame": 480
+        },
+        {
+          "index": 18,
+          "character": "d",
+          "first_visible_frame": 482
+        },
+        {
+          "index": 19,
+          "character": "a",
+          "first_visible_frame": 483
+        },
+        {
+          "index": 20,
+          "character": "y",
+          "first_visible_frame": 484
+        },
+        {
+          "index": 21,
+          "character": "?",
+          "first_visible_frame": 488
+        },
+        {
+          "index": 22,
+          "character": " ",
+          "first_visible_frame": null,
+          "space_present_by_frame": 494,
+          "note": "Whitespace has no visible glyph; not a measured key-down."
+        },
+        {
+          "index": 23,
+          "character": "G",
+          "first_visible_frame": 494
+        },
+        {
+          "index": 24,
+          "character": "i",
+          "first_visible_frame": 496
+        },
+        {
+          "index": 25,
+          "character": "v",
+          "first_visible_frame": 498
+        },
+        {
+          "index": 26,
+          "character": "e",
+          "first_visible_frame": 499
+        },
+        {
+          "index": 27,
+          "character": " ",
+          "first_visible_frame": null,
+          "space_present_by_frame": 501,
+          "note": "Whitespace has no visible glyph; not a measured key-down."
+        },
+        {
+          "index": 28,
+          "character": "m",
+          "first_visible_frame": 501
+        },
+        {
+          "index": 29,
+          "character": "e",
+          "first_visible_frame": 501
+        },
+        {
+          "index": 30,
+          "character": " ",
+          "first_visible_frame": null,
+          "space_present_by_frame": 504,
+          "note": "Whitespace has no visible glyph; not a measured key-down."
+        },
+        {
+          "index": 31,
+          "character": "a",
+          "first_visible_frame": 504
+        },
+        {
+          "index": 32,
+          "character": " ",
+          "first_visible_frame": null,
+          "space_present_by_frame": 512,
+          "note": "Whitespace has no visible glyph; not a measured key-down."
+        },
+        {
+          "index": 33,
+          "character": "b",
+          "first_visible_frame": 512
+        },
+        {
+          "index": 34,
+          "character": "r",
+          "first_visible_frame": 513
+        },
+        {
+          "index": 35,
+          "character": "i",
+          "first_visible_frame": 514
+        },
+        {
+          "index": 36,
+          "character": "e",
+          "first_visible_frame": 515
+        },
+        {
+          "index": 37,
+          "character": "f",
+          "first_visible_frame": 516
+        },
+        {
+          "index": 38,
+          "character": " ",
+          "first_visible_frame": null,
+          "space_present_by_frame": 518,
+          "note": "Whitespace has no visible glyph; not a measured key-down."
+        },
+        {
+          "index": 39,
+          "character": "s",
+          "first_visible_frame": 518
+        },
+        {
+          "index": 40,
+          "character": "u",
+          "first_visible_frame": 519
+        },
+        {
+          "index": 41,
+          "character": "m",
+          "first_visible_frame": 521
+        },
+        {
+          "index": 42,
+          "character": "m",
+          "first_visible_frame": 522
+        },
+        {
+          "index": 43,
+          "character": "a",
+          "first_visible_frame": 523
+        },
+        {
+          "index": 44,
+          "character": "r",
+          "first_visible_frame": 524
+        },
+        {
+          "index": 45,
+          "character": "y",
+          "first_visible_frame": 525
+        },
+        {
+          "index": 46,
+          "character": " ",
+          "first_visible_frame": null,
+          "space_present_by_frame": 529,
+          "note": "Whitespace has no visible glyph; not a measured key-down."
+        },
+        {
+          "index": 47,
+          "character": "o",
+          "first_visible_frame": 529
+        },
+        {
+          "index": 48,
+          "character": "n",
+          "first_visible_frame": 531
+        },
+        {
+          "index": 49,
+          "character": " ",
+          "first_visible_frame": null,
+          "space_present_by_frame": 533,
+          "note": "Whitespace has no visible glyph; not a measured key-down."
+        },
+        {
+          "index": 50,
+          "character": "e",
+          "first_visible_frame": 533
+        },
+        {
+          "index": 51,
+          "character": "a",
+          "first_visible_frame": 535
+        },
+        {
+          "index": 52,
+          "character": "c",
+          "first_visible_frame": 537
+        },
+        {
+          "index": 53,
+          "character": "h",
+          "first_visible_frame": 538
+        },
+        {
+          "index": 54,
+          "character": ".",
+          "first_visible_frame": 541
+        }
+      ],
+      "accent_text": null,
+      "timing_basis": "Adjacent 1920x1080 source-frame crops, visually read; frame means first visible glyph, not OS key-down.",
+      "display_wrap_events": [
+        {
+          "frame": 496,
+          "lines": [
+            "What did I save today?",
+            "Gi"
+          ]
+        },
+        {
+          "frame": 529,
+          "lines": [
+            "What did I save today?",
+            "Give me a brief summary",
+            "o"
+          ]
+        }
+      ],
+      "ambiguities": [
+        {
+          "indices": [
+            28,
+            29
+          ],
+          "frames": [
+            501,
+            502
+          ],
+          "note": "The two glyphs in “me” are already visible at 501 during the caret/inline prediction transition; acceptance/caret completion is 502."
+        }
+      ]
+    },
+    {
+      "id": "S6.user2.composer",
+      "final_text": "Which one should I read first?",
+      "final_display_lines": [
+        "Which one should I read",
+        "first?"
+      ],
+      "first_frame": 757,
+      "last_frame": 829,
+      "reveal": "typed; multiple characters sometimes appear in one source frame",
+      "states": [
+        {
+          "frame": 757,
+          "text": "W"
+        },
+        {
+          "frame": 759,
+          "text": "Wh"
+        },
+        {
+          "frame": 761,
+          "text": "Whi"
+        },
+        {
+          "frame": 763,
+          "text": "Whic"
+        },
+        {
+          "frame": 764,
+          "text": "Which"
+        },
+        {
+          "frame": 767,
+          "text": "Which o"
+        },
+        {
+          "frame": 769,
+          "text": "Which one"
+        },
+        {
+          "frame": 772,
+          "text": "Which one s"
+        },
+        {
+          "frame": 773,
+          "text": "Which one sh"
+        },
+        {
+          "frame": 775,
+          "text": "Which one sho"
+        },
+        {
+          "frame": 776,
+          "text": "Which one shou"
+        },
+        {
+          "frame": 778,
+          "text": "Which one shoul"
+        },
+        {
+          "frame": 779,
+          "text": "Which one should"
+        },
+        {
+          "frame": 781,
+          "text": "Which one should I"
+        },
+        {
+          "frame": 785,
+          "text": "Which one should I r"
+        },
+        {
+          "frame": 787,
+          "text": "Which one should I re"
+        },
+        {
+          "frame": 789,
+          "text": "Which one should I rea"
+        },
+        {
+          "frame": 790,
+          "text": "Which one should I read"
+        },
+        {
+          "frame": 793,
+          "text": "Which one should I read f"
+        },
+        {
+          "frame": 794,
+          "text": "Which one should I read fir"
+        },
+        {
+          "frame": 796,
+          "text": "Which one should I read first"
+        },
+        {
+          "frame": 802,
+          "text": "Which one should I read first?"
+        }
+      ],
+      "characters": [
+        {
+          "index": 0,
+          "character": "W",
+          "first_visible_frame": 757
+        },
+        {
+          "index": 1,
+          "character": "h",
+          "first_visible_frame": 759
+        },
+        {
+          "index": 2,
+          "character": "i",
+          "first_visible_frame": 761
+        },
+        {
+          "index": 3,
+          "character": "c",
+          "first_visible_frame": 763
+        },
+        {
+          "index": 4,
+          "character": "h",
+          "first_visible_frame": 764
+        },
+        {
+          "index": 5,
+          "character": " ",
+          "first_visible_frame": null,
+          "space_present_by_frame": 767,
+          "note": "Whitespace has no visible glyph; not a measured key-down."
+        },
+        {
+          "index": 6,
+          "character": "o",
+          "first_visible_frame": 767
+        },
+        {
+          "index": 7,
+          "character": "n",
+          "first_visible_frame": 769
+        },
+        {
+          "index": 8,
+          "character": "e",
+          "first_visible_frame": 769
+        },
+        {
+          "index": 9,
+          "character": " ",
+          "first_visible_frame": null,
+          "space_present_by_frame": 772,
+          "note": "Whitespace has no visible glyph; not a measured key-down."
+        },
+        {
+          "index": 10,
+          "character": "s",
+          "first_visible_frame": 772
+        },
+        {
+          "index": 11,
+          "character": "h",
+          "first_visible_frame": 773
+        },
+        {
+          "index": 12,
+          "character": "o",
+          "first_visible_frame": 775
+        },
+        {
+          "index": 13,
+          "character": "u",
+          "first_visible_frame": 776
+        },
+        {
+          "index": 14,
+          "character": "l",
+          "first_visible_frame": 778
+        },
+        {
+          "index": 15,
+          "character": "d",
+          "first_visible_frame": 779
+        },
+        {
+          "index": 16,
+          "character": " ",
+          "first_visible_frame": null,
+          "space_present_by_frame": 781,
+          "note": "Whitespace has no visible glyph; not a measured key-down."
+        },
+        {
+          "index": 17,
+          "character": "I",
+          "first_visible_frame": 781
+        },
+        {
+          "index": 18,
+          "character": " ",
+          "first_visible_frame": null,
+          "space_present_by_frame": 785,
+          "note": "Whitespace has no visible glyph; not a measured key-down."
+        },
+        {
+          "index": 19,
+          "character": "r",
+          "first_visible_frame": 785
+        },
+        {
+          "index": 20,
+          "character": "e",
+          "first_visible_frame": 787
+        },
+        {
+          "index": 21,
+          "character": "a",
+          "first_visible_frame": 789
+        },
+        {
+          "index": 22,
+          "character": "d",
+          "first_visible_frame": 790
+        },
+        {
+          "index": 23,
+          "character": " ",
+          "first_visible_frame": null,
+          "space_present_by_frame": 793,
+          "note": "Whitespace has no visible glyph; not a measured key-down."
+        },
+        {
+          "index": 24,
+          "character": "f",
+          "first_visible_frame": 793
+        },
+        {
+          "index": 25,
+          "character": "i",
+          "first_visible_frame": 794
+        },
+        {
+          "index": 26,
+          "character": "r",
+          "first_visible_frame": 794
+        },
+        {
+          "index": 27,
+          "character": "s",
+          "first_visible_frame": 796
+        },
+        {
+          "index": 28,
+          "character": "t",
+          "first_visible_frame": 796
+        },
+        {
+          "index": 29,
+          "character": "?",
+          "first_visible_frame": 802
+        }
+      ],
+      "accent_text": null,
+      "timing_basis": "Adjacent 1920x1080 source-frame crops, visually read; frame means first visible glyph, not OS key-down.",
+      "display_wrap_events": [
+        {
+          "frame": 793,
+          "lines": [
+            "Which one should I read",
+            "f"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S7.command",
+      "final_text": "npx clawhub install readwise-official",
+      "final_display_lines": [
+        "npx clawhub install readwise-official"
+      ],
+      "first_frame": 997,
+      "last_frame": 1099,
+      "reveal": "typed; multiple characters sometimes appear in one source frame",
+      "states": [
+        {
+          "frame": 997,
+          "text": "n"
+        },
+        {
+          "frame": 998,
+          "text": "npx"
+        },
+        {
+          "frame": 999,
+          "text": "npx c"
+        },
+        {
+          "frame": 1000,
+          "text": "npx cla"
+        },
+        {
+          "frame": 1001,
+          "text": "npx clawh"
+        },
+        {
+          "frame": 1002,
+          "text": "npx clawhu"
+        },
+        {
+          "frame": 1003,
+          "text": "npx clawhub"
+        },
+        {
+          "frame": 1004,
+          "text": "npx clawhub in"
+        },
+        {
+          "frame": 1005,
+          "text": "npx clawhub inst"
+        },
+        {
+          "frame": 1006,
+          "text": "npx clawhub instal"
+        },
+        {
+          "frame": 1007,
+          "text": "npx clawhub install"
+        },
+        {
+          "frame": 1008,
+          "text": "npx clawhub install r"
+        },
+        {
+          "frame": 1009,
+          "text": "npx clawhub install rea"
+        },
+        {
+          "frame": 1010,
+          "text": "npx clawhub install readw"
+        },
+        {
+          "frame": 1011,
+          "text": "npx clawhub install readwis"
+        },
+        {
+          "frame": 1012,
+          "text": "npx clawhub install readwise"
+        },
+        {
+          "frame": 1013,
+          "text": "npx clawhub install readwise-off"
+        },
+        {
+          "frame": 1014,
+          "text": "npx clawhub install readwise-offic"
+        },
+        {
+          "frame": 1015,
+          "text": "npx clawhub install readwise-offic"
+        },
+        {
+          "frame": 1016,
+          "text": "npx clawhub install readwise-officia"
+        },
+        {
+          "frame": 1017,
+          "text": "npx clawhub install readwise-official"
+        }
+      ],
+      "characters": [
+        {
+          "index": 0,
+          "character": "n",
+          "first_visible_frame": 997
+        },
+        {
+          "index": 1,
+          "character": "p",
+          "first_visible_frame": 998
+        },
+        {
+          "index": 2,
+          "character": "x",
+          "first_visible_frame": 998
+        },
+        {
+          "index": 3,
+          "character": " ",
+          "first_visible_frame": null,
+          "space_present_by_frame": 999,
+          "note": "Whitespace has no visible glyph; not a measured key-down."
+        },
+        {
+          "index": 4,
+          "character": "c",
+          "first_visible_frame": 999
+        },
+        {
+          "index": 5,
+          "character": "l",
+          "first_visible_frame": 1000
+        },
+        {
+          "index": 6,
+          "character": "a",
+          "first_visible_frame": 1000
+        },
+        {
+          "index": 7,
+          "character": "w",
+          "first_visible_frame": 1001
+        },
+        {
+          "index": 8,
+          "character": "h",
+          "first_visible_frame": 1001
+        },
+        {
+          "index": 9,
+          "character": "u",
+          "first_visible_frame": 1002
+        },
+        {
+          "index": 10,
+          "character": "b",
+          "first_visible_frame": 1003
+        },
+        {
+          "index": 11,
+          "character": " ",
+          "first_visible_frame": null,
+          "space_present_by_frame": 1004,
+          "note": "Whitespace has no visible glyph; not a measured key-down."
+        },
+        {
+          "index": 12,
+          "character": "i",
+          "first_visible_frame": 1004
+        },
+        {
+          "index": 13,
+          "character": "n",
+          "first_visible_frame": 1004
+        },
+        {
+          "index": 14,
+          "character": "s",
+          "first_visible_frame": 1005
+        },
+        {
+          "index": 15,
+          "character": "t",
+          "first_visible_frame": 1005
+        },
+        {
+          "index": 16,
+          "character": "a",
+          "first_visible_frame": 1006
+        },
+        {
+          "index": 17,
+          "character": "l",
+          "first_visible_frame": 1006
+        },
+        {
+          "index": 18,
+          "character": "l",
+          "first_visible_frame": 1007
+        },
+        {
+          "index": 19,
+          "character": " ",
+          "first_visible_frame": null,
+          "space_present_by_frame": 1008,
+          "note": "Whitespace has no visible glyph; not a measured key-down."
+        },
+        {
+          "index": 20,
+          "character": "r",
+          "first_visible_frame": 1008
+        },
+        {
+          "index": 21,
+          "character": "e",
+          "first_visible_frame": 1009
+        },
+        {
+          "index": 22,
+          "character": "a",
+          "first_visible_frame": 1009
+        },
+        {
+          "index": 23,
+          "character": "d",
+          "first_visible_frame": 1010
+        },
+        {
+          "index": 24,
+          "character": "w",
+          "first_visible_frame": 1010
+        },
+        {
+          "index": 25,
+          "character": "i",
+          "first_visible_frame": 1011
+        },
+        {
+          "index": 26,
+          "character": "s",
+          "first_visible_frame": 1011
+        },
+        {
+          "index": 27,
+          "character": "e",
+          "first_visible_frame": 1012
+        },
+        {
+          "index": 28,
+          "character": "-",
+          "first_visible_frame": 1013
+        },
+        {
+          "index": 29,
+          "character": "o",
+          "first_visible_frame": 1013
+        },
+        {
+          "index": 30,
+          "character": "f",
+          "first_visible_frame": 1013
+        },
+        {
+          "index": 31,
+          "character": "f",
+          "first_visible_frame": 1013
+        },
+        {
+          "index": 32,
+          "character": "i",
+          "first_visible_frame": 1014
+        },
+        {
+          "index": 33,
+          "character": "c",
+          "first_visible_frame": 1014
+        },
+        {
+          "index": 34,
+          "character": "i",
+          "first_visible_frame": 1016
+        },
+        {
+          "index": 35,
+          "character": "a",
+          "first_visible_frame": 1016
+        },
+        {
+          "index": 36,
+          "character": "l",
+          "first_visible_frame": 1017
+        }
+      ],
+      "accent_text": null,
+      "timing_basis": "Adjacent 1920x1080 source-frame crops, visually read; frame means first visible glyph, not OS key-down."
+    }
+  ],
+  "text_blocks": [
+    {
+      "id": "S2.post.visible_fragments",
+      "lines": [
+        "/schedule - create scheduled jobs for claude in the cloud",
+        "… PM · Mar 23, 2026 · 100K Views",
+        "73",
+        "118",
+        "1.4K",
+        "932 → 933",
+        "View quotes >",
+        "Post your reply",
+        "Reply",
+        "Trending in Canada",
+        "Toronto",
+        "Sports · Trending",
+        "Odegaard",
+        "Sports · Trending",
+        "Vancouver",
+        "Show more",
+        "Terms of Service",
+        "Accessibility"
+      ],
+      "status": "Clipped UI: ellipsis denotes off-screen text, not a source glyph. Exact left-clipped time/date prefix and partially off-screen footer wording unresolved. Stats 118, 1.4K, 932/933 visually checked; 73 partly clipped."
+    },
+    {
+      "id": "S2.tooltip.before",
+      "text": "Bookmark",
+      "first_frame": 99,
+      "last_frame": 106
+    },
+    {
+      "id": "S2.tooltip.after",
+      "text": "Remove from Bookmarks",
+      "first_frame": 107,
+      "last_frame": 131,
+      "first_absent_frame": 132
+    },
+    {
+      "id": "S2.toast",
+      "text": "Added to your Bookmarks    Add to Folder",
+      "display_lines": [
+        "Added to your Bookmarks",
+        "Add to Folder"
+      ],
+      "layout": "single horizontal row, not two source lines",
+      "first_frame": 120,
+      "last_frame": 138
+    },
+    {
+      "id": "S3.url",
+      "text": "…-the-compounding-teams",
+      "status": "left clipped; OCR at 139 reads ave-seen-the-compounding-teams"
+    },
+    {
+      "id": "S3.article",
+      "status": "Serif italic body is clipped at left and bottom. Below are observed line fragments, not completed invented sentences; exact full transcription unresolved.",
+      "visible_line_fragments": [
+        "…at are compounding aren’t writing code at all. The each have built a",
+        "…ce the Amplifier framework) around a model. They will have some",
+        "…to Claude Code or Codex - something that has callback hooks, tool",
+        "…control, but then the system they build will be much more proactive.",
+        "…s of strategies, tools, opinions and behaviors that let it run more",
+        "…of the teams I’ve seen doing this so far are making extensive use",
+        "…ing tools to give the system access to itself. All are heavily",
+        "…t, use markdown, kubernetes, xml and other common tools. I",
+        "…e of software at scale will be built on these programmer tools,",
+        "…the same way models will sometimes privately write code",
+        "…asked by a non-coder. It’s fairly clear that these are good"
+      ]
+    },
+    {
+      "id": "S3.toolbar",
+      "lines": [
+        "Auto highlighting",
+        "Ink"
+      ],
+      "first_frame": 171,
+      "readable_by_frame": 172,
+      "last_frame": 210,
+      "status": "Additional small toolbar labels are partially clipped/unresolved."
+    },
+    {
+      "id": "S3.toast",
+      "text": "Saved to Reader",
+      "first_frame": 175,
+      "last_frame": 210,
+      "style": "dark rounded pill, green progress underline"
+    },
+    {
+      "id": "S4.youtube.actions",
+      "lines": [
+        "Share",
+        "Ask",
+        "Remix",
+        "Thanks",
+        "Clip",
+        "Report"
+      ],
+      "first_frame": 211,
+      "last_frame": 234,
+      "status": "Visible left-side action strip; other cropped video text is unresolved."
+    },
+    {
+      "id": "S4.share_sheet",
+      "lines": [
+        "The collapse of modern a...",
+        "youtube.com",
+        "SharePlay",
+        "AirDrop",
+        "Reader",
+        "Slack",
+        "Messages",
+        "Copy",
+        "Add to New Quick Note",
+        "Save Document to Reader",
+        "Find products on Amazon"
+      ],
+      "first_frame": 235,
+      "last_frame": 272,
+      "status": "Sheet slides upward 235–240. Header title/thumbnail finish loading after first appearance. Header truncation punctuation transcribed visually; final row cropped at some camera positions."
+    },
+    {
+      "id": "S4.saved",
+      "lines": [
+        "R",
+        "Saved to Reader",
+        "Read Now",
+        "Tap anywhere to dismiss"
+      ],
+      "first_frame": 278,
+      "last_frame": 333,
+      "other_content": "Five round action icons, no additional readable labels."
+    },
+    {
+      "id": "S6.chrome",
+      "lines": [
+        "9:41",
+        "Ghosty",
+        "bot",
+        "No messages here yet...",
+        "Message",
+        "Today",
+        "Unread Messages"
+      ],
+      "status": "Persistent and conditional chrome. Header changes to animated dots + typing while bot waits; exact typing-indicator boundary frames unresolved."
+    },
+    {
+      "id": "S6.user1.bubble",
+      "text": "What did I save today? Give me a brief summary on each.",
+      "display_lines": [
+        "What did I save today? Give me a brief",
+        "summary on each."
+      ],
+      "timestamp": "7:31 PM",
+      "first_frame": 569,
+      "settled_by_frame": 573,
+      "delivery_visual": "double check marks"
+    },
+    {
+      "id": "S6.bot1",
+      "text_with_display_linebreaks": "Same 3 saves today:\n\n1. Noah Zweben tweet — Claude added /\nschedule for recurring cloud jobs from\nthe terminal. Useful for CI fixes, doc\nupdates, automations that run while your\nlaptop's closed.\n2. Cal Newport video — AI \"workslop\" is\ncreating more noise, not less work. Talks\nabout reclaiming focus, deep work\nstrategies, and whether AI tools have\nactually delivered.\n3. Sam Schillace article —\n\"Compounding teams\" that go beyond\nvibe coding — teams integrating AI deeply\nto multiply their output over time.",
+      "bold_runs": [
+        "Noah Zweben tweet",
+        "Cal Newport video",
+        "Sam Schillace article"
+      ],
+      "timestamp": "7:32 PM",
+      "first_frame": 644,
+      "complete_readable_by_frame": 692,
+      "status": "Intro scrolls out of viewport as bubble grows. Display linebreaks correspond to settled chat-width layout, not composer."
+    },
+    {
+      "id": "S6.user2.bubble",
+      "text": "Which one should I read first?",
+      "display_lines": [
+        "Which one should I read first?"
+      ],
+      "timestamp": "7:32 PM",
+      "first_frame": 830,
+      "settled_by_frame": 835,
+      "delivery_visual": "double check marks"
+    },
+    {
+      "id": "S6.bot2",
+      "text_with_display_linebreaks": "The Sam Schillace article — it's a quick\n4-min read and the most relevant to you\nas a product designer working on a tool\npeople use daily. Understanding how\n\"compounding teams\" work with AI could\ndirectly inform how you think about\nReader's design.\n\nThe Cal Newport video is good but it's a\nlong watch — save it for when you have\ntime. The tweet is just a feature\nannouncement, low priority.",
+      "bold_runs": [
+        "Sam Schillace article"
+      ],
+      "timestamp": "7:32 PM",
+      "first_frame": 889,
+      "complete_readable_by_frame": 942
+    },
+    {
+      "id": "S7.icon",
+      "text": "R",
+      "note": "Readwise icon is editable geometry to reconstruct later; no source image included."
+    }
+  ],
+  "interactions": [
+    {
+      "id": "S2.bookmark",
+      "hover_blue_halo_by_frame": 94,
+      "tooltip_first_frame": 99,
+      "tooltip_first_absent_frame": 132,
+      "cursor_press_visual_range": [
+        100,
+        112
+      ],
+      "cursor_minimum_size_frame": 104,
+      "bookmark_filled_frame": 107,
+      "count_scroll_first_frame": 111,
+      "count_933_settled_frame": 112,
+      "physical_click_frame": null,
+      "note": "Visible response is exact 107; OS click is inferred, not observable as an event log."
+    },
+    {
+      "id": "S2.toast_motion",
+      "first_frame": 120,
+      "last_frame": 138,
+      "motion": "Enters from below/right with tilt matching UI plane; most of slide occurs between 119 and 120. At 120 blue visible bbox in full-source px [730,1780,3020,2160], clipped by bottom. No exit before cut.",
+      "precision": "Exact first blue frame measured; full transformed toast bounds unresolved."
+    },
+    {
+      "id": "S3.extension",
+      "cursor_press_visual_range": [
+        150,
+        160
+      ],
+      "cursor_minimum_size_frame_estimate": 154,
+      "response_toolbar_first_frame": 171,
+      "response_toolbar_readable_frame": 172,
+      "toast_first_frame": 175,
+      "toast_slide_settled_by_frame": 180,
+      "physical_click_frame": null,
+      "note": "Cursor visibly shrinks then rebounds; no separately logged physical mouse event. Blue badge/check is visible later. Toast grows/slides leftward out from right, not a cut."
+    },
+    {
+      "id": "S4.share",
+      "sheet_first_visible_frame": 235,
+      "sheet_slide_settled_by_frame": 240,
+      "share_tap_frame": null,
+      "note": "YouTube actions visible through 234; no clearly isolated finger/tap marker recovered."
+    },
+    {
+      "id": "S4.reader",
+      "highlight_first_frame": 268,
+      "highlight_last_frame": 268,
+      "release_frame": 269,
+      "reader_panel_slide_first_frame": 272,
+      "spinner_first_frame": 274,
+      "spinner_last_frame": 277,
+      "saved_screen_first_frame": 278,
+      "note": "Reader icon darkens for one sampled frame 268; no finger marker. 272 split sliding screen, 273 blank Reader panel, 274–277 spinner."
+    },
+    {
+      "id": "S6.send1",
+      "last_composer_only_frame": 568,
+      "first_outgoing_bubble_frame": 569,
+      "composer_empty_by_frame": 571,
+      "bubble_settled_by_frame": 573,
+      "send_press_frame": null,
+      "note": "569 is observed send animation start; physical tap frame not separately visible."
+    },
+    {
+      "id": "S6.bot1.stream",
+      "mode": "streamed chunks with animated bubble growth/scroll; not instant and not strictly one line per update",
+      "first_frame": 644,
+      "chunks": [
+        {
+          "first_frame": 644,
+          "readable_by_frame": 646,
+          "ends_with": "schedule for"
+        },
+        {
+          "first_frame": 659,
+          "readable_by_frame": 661,
+          "ends_with": "updates, automations that run while"
+        },
+        {
+          "first_frame": 674,
+          "readable_by_frame": 678,
+          "ends_with": "actually delivered"
+        },
+        {
+          "first_frame": 689,
+          "readable_by_frame": 692,
+          "ends_with": "to multiply their output over time."
+        }
+      ],
+      "note": "Chunk additions every 15 frames; intervening frames show layout/scroll interpolation. Exact sub-frame source text insertion is not recoverable."
+    },
+    {
+      "id": "S6.send2",
+      "last_composer_only_frame": 829,
+      "first_outgoing_bubble_frame": 830,
+      "composer_empty_by_frame": 833,
+      "bubble_settled_by_frame": 835,
+      "send_press_frame": null
+    },
+    {
+      "id": "S6.bot2.stream",
+      "mode": "streamed chunks with animated bubble growth/scroll",
+      "first_frame": 889,
+      "chunks": [
+        {
+          "first_frame": 889,
+          "readable_by_frame": 891,
+          "ends_with": "4-min"
+        },
+        {
+          "first_frame": 905,
+          "readable_by_frame": 907,
+          "ends_with": "as a product designer working"
+        },
+        {
+          "first_frame": 922,
+          "readable_by_frame": 926,
+          "ends_with": "long"
+        },
+        {
+          "first_frame": 939,
+          "readable_by_frame": 942,
+          "ends_with": "announcement, low priority."
+        }
+      ],
+      "precision": "First readable new glyph in inspected adjacent frames; low-opacity/layout onset may precede the readable state by one frame."
+    }
+  ],
+  "cursor": {
+    "coordinates": "source px; tip = topmost white contour pixel; bbox scaled from 1920 analysis frame",
+    "accuracy_px": 6,
+    "keyframes": [
+      {
+        "frame": 90,
+        "tip_px": [
+          2512,
+          1292
+        ],
+        "bbox_px": [
+          2512,
+          1292,
+          2770,
+          1680
+        ]
+      },
+      {
+        "frame": 92,
+        "tip_px": [
+          2440,
+          1234
+        ],
+        "bbox_px": [
+          2440,
+          1234,
+          2704,
+          1630
+        ]
+      },
+      {
+        "frame": 93,
+        "tip_px": [
+          2416,
+          1216
+        ],
+        "bbox_px": [
+          2416,
+          1216,
+          2682,
+          1614
+        ]
+      },
+      {
+        "frame": 94,
+        "tip_px": [
+          2384,
+          1190
+        ],
+        "bbox_px": [
+          2384,
+          1190,
+          2650,
+          1592
+        ]
+      },
+      {
+        "frame": 96,
+        "tip_px": [
+          2352,
+          1166
+        ],
+        "bbox_px": [
+          2352,
+          1166,
+          2618,
+          1570
+        ]
+      },
+      {
+        "frame": 98,
+        "tip_px": [
+          2332,
+          1150
+        ],
+        "bbox_px": [
+          2332,
+          1150,
+          2606,
+          1558
+        ]
+      },
+      {
+        "frame": 100,
+        "tip_px": [
+          2324,
+          1144
+        ],
+        "bbox_px": [
+          2324,
+          1144,
+          2592,
+          1548
+        ]
+      },
+      {
+        "frame": 103,
+        "tip_px": [
+          2322,
+          1140
+        ],
+        "bbox_px": [
+          2322,
+          1140,
+          2552,
+          1488
+        ]
+      },
+      {
+        "frame": 104,
+        "tip_px": [
+          2322,
+          1140
+        ],
+        "bbox_px": [
+          2322,
+          1140,
+          2546,
+          1480
+        ]
+      },
+      {
+        "frame": 108,
+        "tip_px": [
+          2324,
+          1146
+        ],
+        "bbox_px": [
+          2324,
+          1146,
+          2572,
+          1518
+        ]
+      },
+      {
+        "frame": 109,
+        "tip_px": [
+          2324,
+          1146
+        ],
+        "bbox_px": [
+          2324,
+          1146,
+          2580,
+          1534
+        ]
+      },
+      {
+        "frame": 110,
+        "tip_px": [
+          2324,
+          1146
+        ],
+        "bbox_px": [
+          2324,
+          1146,
+          2586,
+          1540
+        ]
+      },
+      {
+        "frame": 111,
+        "tip_px": [
+          2324,
+          1146
+        ],
+        "bbox_px": [
+          2324,
+          1146,
+          2590,
+          1546
+        ]
+      },
+      {
+        "frame": 112,
+        "tip_px": [
+          2324,
+          1146
+        ],
+        "bbox_px": [
+          2324,
+          1146,
+          2592,
+          1550
+        ]
+      },
+      {
+        "frame": 113,
+        "tip_px": [
+          2324,
+          1146
+        ],
+        "bbox_px": [
+          2324,
+          1146,
+          2592,
+          1550
+        ]
+      },
+      {
+        "frame": 118,
+        "tip_px": [
+          2326,
+          1146
+        ],
+        "bbox_px": [
+          2324,
+          1146,
+          2594,
+          1554
+        ]
+      },
+      {
+        "frame": 119,
+        "tip_px": [
+          2326,
+          1146
+        ],
+        "bbox_px": [
+          2324,
+          1146,
+          2594,
+          1554
+        ]
+      },
+      {
+        "frame": 120,
+        "tip_px": [
+          2326,
+          1146
+        ],
+        "bbox_px": [
+          2324,
+          1146,
+          2594,
+          1554
+        ]
+      },
+      {
+        "frame": 121,
+        "tip_px": [
+          2326,
+          1146
+        ],
+        "bbox_px": [
+          2324,
+          1146,
+          2594,
+          1554
+        ]
+      },
+      {
+        "frame": 123,
+        "tip_px": [
+          2326,
+          1146
+        ],
+        "bbox_px": [
+          2324,
+          1146,
+          2594,
+          1554
+        ]
+      },
+      {
+        "frame": 128,
+        "tip_px": [
+          2336,
+          1174
+        ],
+        "bbox_px": [
+          2336,
+          1174,
+          2608,
+          1580
+        ]
+      },
+      {
+        "frame": 133,
+        "tip_px": [
+          2384,
+          1250
+        ],
+        "bbox_px": [
+          2384,
+          1250,
+          2648,
+          1656
+        ]
+      },
+      {
+        "frame": 138,
+        "tip_px": [
+          2480,
+          1392
+        ],
+        "bbox_px": [
+          2480,
+          1392,
+          2744,
+          1798
+        ]
+      },
+      {
+        "frame": 149,
+        "tip_px": [
+          3060,
+          332
+        ],
+        "bbox_px": [
+          3010,
+          332,
+          3228,
+          634
+        ]
+      },
+      {
+        "frame": 150,
+        "tip_px": [
+          3066,
+          336
+        ],
+        "bbox_px": [
+          3020,
+          336,
+          3228,
+          624
+        ]
+      },
+      {
+        "frame": 154,
+        "tip_px": [
+          3072,
+          346
+        ],
+        "bbox_px": [
+          3034,
+          346,
+          3214,
+          596
+        ]
+      },
+      {
+        "frame": 155,
+        "tip_px": [
+          3074,
+          348
+        ],
+        "bbox_px": [
+          3034,
+          348,
+          3216,
+          600
+        ]
+      },
+      {
+        "frame": 159,
+        "tip_px": [
+          3076,
+          344
+        ],
+        "bbox_px": [
+          3026,
+          344,
+          3240,
+          642
+        ]
+      },
+      {
+        "frame": 160,
+        "tip_px": [
+          3076,
+          344
+        ],
+        "bbox_px": [
+          3026,
+          344,
+          3242,
+          646
+        ]
+      },
+      {
+        "frame": 164,
+        "tip_px": [
+          3076,
+          344
+        ],
+        "bbox_px": [
+          3024,
+          344,
+          3246,
+          652
+        ]
+      },
+      {
+        "frame": 165,
+        "tip_px": [
+          3076,
+          344
+        ],
+        "bbox_px": [
+          3024,
+          344,
+          3246,
+          652
+        ]
+      },
+      {
+        "frame": 169,
+        "tip_px": [
+          3076,
+          344
+        ],
+        "bbox_px": [
+          3024,
+          344,
+          3246,
+          652
+        ]
+      },
+      {
+        "frame": 170,
+        "tip_px": [
+          3102,
+          336
+        ],
+        "bbox_px": [
+          3024,
+          336,
+          3248,
+          652
+        ]
+      },
+      {
+        "frame": 171,
+        "tip_px": [
+          3102,
+          336
+        ],
+        "bbox_px": [
+          3024,
+          336,
+          3248,
+          652
+        ]
+      },
+      {
+        "frame": 172,
+        "tip_px": [
+          3106,
+          334
+        ],
+        "bbox_px": [
+          3024,
+          334,
+          3248,
+          652
+        ]
+      },
+      {
+        "frame": 173,
+        "tip_px": [
+          3076,
+          344
+        ],
+        "bbox_px": [
+          3024,
+          344,
+          3248,
+          652
+        ]
+      },
+      {
+        "frame": 174,
+        "tip_px": [
+          3076,
+          344
+        ],
+        "bbox_px": [
+          3024,
+          344,
+          3248,
+          652
+        ]
+      },
+      {
+        "frame": 175,
+        "tip_px": [
+          3076,
+          344
+        ],
+        "bbox_px": [
+          3024,
+          344,
+          3248,
+          652
+        ]
+      },
+      {
+        "frame": 179,
+        "tip_px": [
+          3076,
+          344
+        ],
+        "bbox_px": [
+          3024,
+          344,
+          3248,
+          652
+        ]
+      },
+      {
+        "frame": 180,
+        "tip_px": [
+          3096,
+          344
+        ],
+        "bbox_px": [
+          3024,
+          344,
+          3246,
+          652
+        ]
+      },
+      {
+        "frame": 184,
+        "tip_px": [
+          3096,
+          344
+        ],
+        "bbox_px": [
+          3024,
+          344,
+          3246,
+          652
+        ]
+      }
+    ],
+    "gaps": [
+      "S2 cursor before frame 90: partly off-screen and blurred; no reliable tip recovered.",
+      "S3 cursor before 149 and after 184 not fully tracked.",
+      "At S3 frames 170–172 the badge touches the cursor mask; use stable tip [3076,344] rather than apparent component top [3102,336]."
+    ],
+    "motion_blur": "Moving pointer outline has blur/ghosting; press animation changes scale at nearly fixed tip."
+  },
+  "keyboard": {
+    "layouts": {
+      "letters_lower": [
+        "q w e r t y u i o p",
+        "a s d f g h j k l",
+        "shift z x c v b n m delete",
+        "123 emoji space return microphone"
+      ],
+      "letters_upper": [
+        "Q W E R T Y U I O P",
+        "A S D F G H J K L",
+        "shift Z X C V B N M delete",
+        "123 emoji space return microphone"
+      ],
+      "numbers_symbols": [
+        "1 2 3 4 5 6 7 8 9 0",
+        "- / : ; ( ) $ & @ \"",
+        "#+= . , ? ! ’ delete",
+        "ABC emoji space return microphone"
+      ]
+    },
+    "mode_observations": [
+      {
+        "frame": 450,
+        "mode": "letters_lower"
+      },
+      {
+        "frame": 455,
+        "mode": "letters_upper",
+        "note": "Shift/key animation around first W; exact transition not measured."
+      },
+      {
+        "frame": 456,
+        "mode": "letters_lower"
+      },
+      {
+        "frame": 485,
+        "mode": "numbers_symbols"
+      },
+      {
+        "frame": 490,
+        "mode": "letters_lower"
+      },
+      {
+        "frame": 494,
+        "mode": "letters_lower",
+        "note": "Capital G typed after question mark; transient shift state not fully inventoried."
+      },
+      {
+        "frame": 539,
+        "mode": "numbers_symbols"
+      },
+      {
+        "frame": 710,
+        "mode": "numbers_symbols"
+      },
+      {
+        "frame": 740,
+        "mode": "letters_lower"
+      },
+      {
+        "frame": 756,
+        "mode": "letters_upper"
+      },
+      {
+        "frame": 757,
+        "mode": "letters_lower"
+      },
+      {
+        "frame": 799,
+        "mode": "numbers_symbols"
+      },
+      {
+        "frame": 950,
+        "mode": "numbers_symbols"
+      }
+    ],
+    "suggestions_status": "Partial machine observations, NOT exact ground truth or a complete change list. OCR frequently misses left prediction and mixes overlapping animated labels. Adjacent visual crops used for composer glyphs; prediction transitions remain unresolved.",
+    "suggestion_observations": [
+      {
+        "frame": 450,
+        "labels_ocr": [
+          "the",
+          "i'm"
+        ],
+        "confidence": [
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 451,
+        "labels_ocr": [
+          "the",
+          "i'm"
+        ],
+        "confidence": [
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 452,
+        "labels_ocr": [
+          "the",
+          "i'm"
+        ],
+        "confidence": [
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 453,
+        "labels_ocr": [
+          "the",
+          "i'm"
+        ],
+        "confidence": [
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 454,
+        "labels_ocr": [
+          "the",
+          "i'm"
+        ],
+        "confidence": [
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 456,
+        "labels_ocr": [
+          "\"W\""
+        ],
+        "confidence": [
+          1
+        ]
+      },
+      {
+        "frame": 457,
+        "labels_ocr": [
+          "\"W\""
+        ],
+        "confidence": [
+          1
+        ]
+      },
+      {
+        "frame": 458,
+        "labels_ocr": [
+          "\"Wha'",
+          "What",
+          "Whatever"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 459,
+        "labels_ocr": [
+          "\"Wha\"",
+          "What",
+          "Whatever"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 460,
+        "labels_ocr": [
+          "\"Wha\"",
+          "What",
+          "Whatever"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 462,
+        "labels_ocr": [
+          "\"d\""
+        ],
+        "confidence": [
+          1
+        ]
+      },
+      {
+        "frame": 463,
+        "labels_ocr": [
+          "\"d\""
+        ],
+        "confidence": [
+          1
+        ]
+      },
+      {
+        "frame": 464,
+        "labels_ocr": [
+          "\"d\""
+        ],
+        "confidence": [
+          1
+        ]
+      },
+      {
+        "frame": 474,
+        "labels_ocr": [
+          "\"s\""
+        ],
+        "confidence": [
+          1
+        ]
+      },
+      {
+        "frame": 475,
+        "labels_ocr": [
+          "\"s\""
+        ],
+        "confidence": [
+          1
+        ]
+      },
+      {
+        "frame": 476,
+        "labels_ocr": [
+          "\"s\""
+        ],
+        "confidence": [
+          1
+        ]
+      },
+      {
+        "frame": 477,
+        "labels_ocr": [
+          "\"sa",
+          "da",
+          "Sav"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 478,
+        "labels_ocr": [
+          "\"sav\"",
+          "dab",
+          "save"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 479,
+        "labels_ocr": [
+          "\"+!!"
+        ],
+        "confidence": [
+          0.30000001192092896
+        ]
+      },
+      {
+        "frame": 480,
+        "labels_ocr": [
+          "\"+\"!"
+        ],
+        "confidence": [
+          0.5
+        ]
+      },
+      {
+        "frame": 481,
+        "labels_ocr": [
+          "\"+\"'"
+        ],
+        "confidence": [
+          0.5
+        ]
+      },
+      {
+        "frame": 482,
+        "labels_ocr": [
+          "\"tod'",
+          "told",
+          "today"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 483,
+        "labels_ocr": [
+          "\"tod\"",
+          "told",
+          "today"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 484,
+        "labels_ocr": [
+          "\"today\"",
+          "today's",
+          "todays"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 485,
+        "labels_ocr": [
+          "\"today\"",
+          "today's",
+          "todays"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 486,
+        "labels_ocr": [
+          "\"today\"",
+          "today's",
+          "todays"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 487,
+        "labels_ocr": [
+          "\"today\"",
+          "today's",
+          "todays"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 488,
+        "labels_ocr": [
+          "\"today",
+          "today",
+          "todays"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 496,
+        "labels_ocr": [
+          "\"G\""
+        ],
+        "confidence": [
+          1
+        ]
+      },
+      {
+        "frame": 497,
+        "labels_ocr": [
+          "\"G\""
+        ],
+        "confidence": [
+          1
+        ]
+      },
+      {
+        "frame": 498,
+        "labels_ocr": [
+          "\"G"
+        ],
+        "confidence": [
+          1
+        ]
+      },
+      {
+        "frame": 499,
+        "labels_ocr": [
+          "\"Giv\"",
+          "Go",
+          "Give"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 500,
+        "labels_ocr": [
+          "\"Gi",
+          "Gi"
+        ],
+        "confidence": [
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 501,
+        "labels_ocr": [
+          "me",
+          "it",
+          "us"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 502,
+        "labels_ocr": [
+          "it",
+          "uS"
+        ],
+        "confidence": [
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 503,
+        "labels_ocr": [
+          "\"те\"",
+          "me",
+          "mer"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 504,
+        "labels_ocr": [
+          "a",
+          "some",
+          "the"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 505,
+        "labels_ocr": [
+          "a",
+          "some",
+          "the"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 506,
+        "labels_ocr": [
+          "call",
+          "omew",
+          "treak"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 507,
+        "labels_ocr": [
+          "call",
+          "few",
+          "break"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 508,
+        "labels_ocr": [
+          "call",
+          "few",
+          "break"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 509,
+        "labels_ocr": [
+          "call",
+          "few",
+          "break"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 510,
+        "labels_ocr": [
+          "call",
+          "few",
+          "break"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 511,
+        "labels_ocr": [
+          "call",
+          "few",
+          "break"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 512,
+        "labels_ocr": [
+          "call",
+          "few",
+          "break"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 513,
+        "labels_ocr": [
+          "cal",
+          "rea",
+          "brea"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 514,
+        "labels_ocr": [
+          "\"b",
+          "break",
+          "bit"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 515,
+        "labels_ocr": [
+          "\"brle",
+          "briea",
+          "briet"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 516,
+        "labels_ocr": [
+          "\"brie\"",
+          "brief",
+          "briefing"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 517,
+        "labels_ocr": [
+          "\"brie\"",
+          "brief",
+          "briefing"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 518,
+        "labels_ocr": [
+          "summary",
+          "overview",
+          "description"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 519,
+        "labels_ocr": [
+          "summary",
+          "overview",
+          "description"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 520,
+        "labels_ocr": [
+          "summary",
+          "overview",
+          "description"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 521,
+        "labels_ocr": [
+          "\"su mar",
+          "ovarvie",
+          "desu riptio"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 522,
+        "labels_ocr": [
+          "\"sum\"",
+          "ummary",
+          "summrized"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 523,
+        "labels_ocr": [
+          "\"sum\"",
+          "summary",
+          "summarized"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 524,
+        "labels_ocr": [
+          "\"summa",
+          "jummary",
+          "summarized"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 525,
+        "labels_ocr": [
+          "\"summa\"",
+          "sun",
+          "summarized"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 526,
+        "labels_ocr": [
+          "\"summary",
+          "summary",
+          "summarized"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 527,
+        "labels_ocr": [
+          "\"summary\"",
+          "summary's",
+          "sum"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 528,
+        "labels_ocr": [
+          "of",
+          "and",
+          "on"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 529,
+        "labels_ocr": [
+          "of",
+          "and"
+        ],
+        "confidence": [
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 530,
+        "labels_ocr": [
+          "\"О\"",
+          "of",
+          "on"
+        ],
+        "confidence": [
+          0.30000001192092896,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 531,
+        "labels_ocr": [
+          "\"о\"",
+          "of",
+          "on"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 532,
+        "labels_ocr": [
+          "\"о\"",
+          "of",
+          "on"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 533,
+        "labels_ocr": [
+          "th",
+          "how",
+          "what"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 534,
+        "labels_ocr": [
+          "the",
+          "how",
+          "what"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 535,
+        "labels_ocr": [
+          "the",
+          "how",
+          "what"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 536,
+        "labels_ocr": [
+          "hea\"",
+          "eacho",
+          "hating"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 537,
+        "labels_ocr": [
+          "\"еа\"",
+          "each",
+          "eating"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 538,
+        "labels_ocr": [
+          "\"eа\"",
+          "each",
+          "eating"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 539,
+        "labels_ocr": [
+          "\"ea\"",
+          "each",
+          "eating"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 540,
+        "labels_ocr": [
+          "\"ead",
+          "each",
+          "eating"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 541,
+        "labels_ocr": [
+          "\"eacK\""
+        ],
+        "confidence": [
+          1
+        ]
+      },
+      {
+        "frame": 542,
+        "labels_ocr": [
+          "thank",
+          "thanks"
+        ],
+        "confidence": [
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 543,
+        "labels_ocr": [
+          "thank",
+          "thanks"
+        ],
+        "confidence": [
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 544,
+        "labels_ocr": [
+          "thank",
+          "thanks"
+        ],
+        "confidence": [
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 545,
+        "labels_ocr": [
+          "thank",
+          "thanks"
+        ],
+        "confidence": [
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 546,
+        "labels_ocr": [
+          "thank",
+          "thanks"
+        ],
+        "confidence": [
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 547,
+        "labels_ocr": [
+          "thank",
+          "thanks"
+        ],
+        "confidence": [
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 548,
+        "labels_ocr": [
+          "thank",
+          "thanks"
+        ],
+        "confidence": [
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 549,
+        "labels_ocr": [
+          "thank",
+          "thanks"
+        ],
+        "confidence": [
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 550,
+        "labels_ocr": [
+          "thank",
+          "thanks"
+        ],
+        "confidence": [
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 551,
+        "labels_ocr": [
+          "thank",
+          "thanks"
+        ],
+        "confidence": [
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 552,
+        "labels_ocr": [
+          "thank",
+          "thanks"
+        ],
+        "confidence": [
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 553,
+        "labels_ocr": [
+          "thank",
+          "thanks"
+        ],
+        "confidence": [
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 554,
+        "labels_ocr": [
+          "thank",
+          "thanks"
+        ],
+        "confidence": [
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 555,
+        "labels_ocr": [
+          "thank",
+          "thanks"
+        ],
+        "confidence": [
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 556,
+        "labels_ocr": [
+          "thank",
+          "thanks"
+        ],
+        "confidence": [
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 557,
+        "labels_ocr": [
+          "thank",
+          "thanks"
+        ],
+        "confidence": [
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 558,
+        "labels_ocr": [
+          "thank",
+          "thanks"
+        ],
+        "confidence": [
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 559,
+        "labels_ocr": [
+          "thank",
+          "thanks"
+        ],
+        "confidence": [
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 560,
+        "labels_ocr": [
+          "thank",
+          "thanks"
+        ],
+        "confidence": [
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 561,
+        "labels_ocr": [
+          "thank",
+          "thanks"
+        ],
+        "confidence": [
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 562,
+        "labels_ocr": [
+          "thank",
+          "thanks"
+        ],
+        "confidence": [
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 563,
+        "labels_ocr": [
+          "thank",
+          "thanks"
+        ],
+        "confidence": [
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 564,
+        "labels_ocr": [
+          "thank",
+          "thanks"
+        ],
+        "confidence": [
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 565,
+        "labels_ocr": [
+          "thank",
+          "thanks"
+        ],
+        "confidence": [
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 566,
+        "labels_ocr": [
+          "thank",
+          "thanks"
+        ],
+        "confidence": [
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 567,
+        "labels_ocr": [
+          "thank",
+          "thanks"
+        ],
+        "confidence": [
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 568,
+        "labels_ocr": [
+          "thank",
+          "thanks"
+        ],
+        "confidence": [
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 750,
+        "labels_ocr": [
+          "the",
+          "i'm"
+        ],
+        "confidence": [
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 751,
+        "labels_ocr": [
+          "the",
+          "i'm"
+        ],
+        "confidence": [
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 752,
+        "labels_ocr": [
+          "the",
+          "i'm"
+        ],
+        "confidence": [
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 753,
+        "labels_ocr": [
+          "the",
+          "i'm"
+        ],
+        "confidence": [
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 754,
+        "labels_ocr": [
+          "the",
+          "i'm"
+        ],
+        "confidence": [
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 755,
+        "labels_ocr": [
+          "The",
+          "I'm"
+        ],
+        "confidence": [
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 756,
+        "labels_ocr": [
+          "The",
+          "I'm"
+        ],
+        "confidence": [
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 757,
+        "labels_ocr": [
+          "The",
+          "I'm"
+        ],
+        "confidence": [
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 758,
+        "labels_ocr": [
+          "\"W",
+          "Wha",
+          "W"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 759,
+        "labels_ocr": [
+          "\"W\"",
+          "What",
+          "We"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 760,
+        "labels_ocr": [
+          "\"Wh\"",
+          "Eh",
+          "Wha"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 761,
+        "labels_ocr": [
+          "\"Wh\"",
+          "Eh",
+          "hat"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 762,
+        "labels_ocr": [
+          "\"Wh\"",
+          "Eh",
+          "What"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 763,
+        "labels_ocr": [
+          "\"Whid",
+          "ich",
+          "Which"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 764,
+        "labels_ocr": [
+          "\"Whic\"",
+          "Which",
+          "Whichever"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 765,
+        "labels_ocr": [
+          "\"Whic\"",
+          "Which",
+          "Whichever"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 766,
+        "labels_ocr": [
+          "of"
+        ],
+        "confidence": [
+          1
+        ]
+      },
+      {
+        "frame": 767,
+        "labels_ocr": [
+          "of",
+          "is"
+        ],
+        "confidence": [
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 768,
+        "labels_ocr": [
+          "of",
+          "is",
+          "one"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 769,
+        "labels_ocr": [
+          "on",
+          "ones"
+        ],
+        "confidence": [
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 770,
+        "labels_ocr": [
+          "\"on",
+          "one",
+          "ones"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 771,
+        "labels_ocr": [
+          "of",
+          "do"
+        ],
+        "confidence": [
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 772,
+        "labels_ocr": [
+          "is",
+          "of",
+          "do"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 773,
+        "labels_ocr": [
+          "of",
+          "do"
+        ],
+        "confidence": [
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 774,
+        "labels_ocr": [
+          "\"sh\"",
+          "should",
+          "O"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 775,
+        "labels_ocr": [
+          "\"sh\"",
+          "should",
+          "shall"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 776,
+        "labels_ocr": [
+          "\"sh\"",
+          "should",
+          "shall"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 777,
+        "labels_ocr": [
+          "\"sho\"",
+          "should",
+          "shold"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 778,
+        "labels_ocr": [
+          "\"shou\"",
+          "should",
+          "shoud've"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 779,
+        "labels_ocr": [
+          "\"shou\"",
+          "should",
+          "should've"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 780,
+        "labels_ocr": [
+          "\"sh",
+          "shou",
+          "Id've"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 781,
+        "labels_ocr": [
+          "We",
+          "Yo"
+        ],
+        "confidence": [
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 782,
+        "labels_ocr": [
+          "We",
+          "You"
+        ],
+        "confidence": [
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 783,
+        "labels_ocr": [
+          "We",
+          "You"
+        ],
+        "confidence": [
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 784,
+        "labels_ocr": [
+          "ge",
+          "bu",
+          "pia"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 785,
+        "labels_ocr": [
+          "get",
+          "buy",
+          "pick"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 786,
+        "labels_ocr": [
+          "ge",
+          "e",
+          "buy",
+          "pick"
+        ],
+        "confidence": [
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 787,
+        "labels_ocr": [
+          "re\"",
+          "rely",
+          "replce"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 788,
+        "labels_ocr": [
+          "\"re\"",
+          "read",
+          "replace"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 789,
+        "labels_ocr": [
+          "\"red",
+          "tead",
+          "repace"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 790,
+        "labels_ocr": [
+          "\"rea\"",
+          "tea",
+          "read"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 791,
+        "labels_ocr": [
+          "\"rea\"",
+          "tea",
+          "read"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 792,
+        "labels_ocr": [
+          "first",
+          "next",
+          "to"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 793,
+        "labels_ocr": [
+          "first",
+          "next",
+          "to"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 794,
+        "labels_ocr": [
+          "first",
+          "next",
+          "to"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 795,
+        "labels_ocr": [
+          "\"fir\"",
+          "firxt",
+          "fire"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 796,
+        "labels_ocr": [
+          "\"fir\"",
+          "first",
+          "fire"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 797,
+        "labels_ocr": [
+          "\"fir\"",
+          "t",
+          "fire"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 798,
+        "labels_ocr": [
+          "\"first\"",
+          "firsthand",
+          "first"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 799,
+        "labels_ocr": [
+          "\"first\"",
+          "firsthand",
+          "firstly"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 800,
+        "labels_ocr": [
+          "\"first\"",
+          "firsthand",
+          "firstly"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 801,
+        "labels_ocr": [
+          "\"first\"",
+          "firsthand",
+          "firstly"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 802,
+        "labels_ocr": [
+          "\"first\"",
+          "firsthan",
+          "fira tly"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 803,
+        "labels_ocr": [
+          "i",
+          "tha",
+          "what"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 804,
+        "labels_ocr": [
+          "i",
+          "the",
+          "what"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 805,
+        "labels_ocr": [
+          "the",
+          "what"
+        ],
+        "confidence": [
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 806,
+        "labels_ocr": [
+          "i",
+          "the",
+          "what"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 807,
+        "labels_ocr": [
+          "i",
+          "the",
+          "what"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 808,
+        "labels_ocr": [
+          "i",
+          "the",
+          "what"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 809,
+        "labels_ocr": [
+          "i",
+          "the",
+          "what"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 810,
+        "labels_ocr": [
+          "i",
+          "the",
+          "what"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 811,
+        "labels_ocr": [
+          "i",
+          "the",
+          "what"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 812,
+        "labels_ocr": [
+          "i",
+          "the",
+          "what"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 813,
+        "labels_ocr": [
+          "i",
+          "the",
+          "what"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 814,
+        "labels_ocr": [
+          "i",
+          "the",
+          "what"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 815,
+        "labels_ocr": [
+          "i",
+          "the",
+          "what"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 816,
+        "labels_ocr": [
+          "i",
+          "the",
+          "what"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 817,
+        "labels_ocr": [
+          "i",
+          "the",
+          "what"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 818,
+        "labels_ocr": [
+          "i",
+          "the",
+          "what"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 819,
+        "labels_ocr": [
+          "i",
+          "the",
+          "what"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 820,
+        "labels_ocr": [
+          "i",
+          "the",
+          "what"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 821,
+        "labels_ocr": [
+          "i",
+          "the",
+          "what"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 822,
+        "labels_ocr": [
+          "i",
+          "the",
+          "what"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 823,
+        "labels_ocr": [
+          "i",
+          "the",
+          "what"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 824,
+        "labels_ocr": [
+          "i",
+          "the",
+          "what"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 825,
+        "labels_ocr": [
+          "i",
+          "the",
+          "what"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 826,
+        "labels_ocr": [
+          "i",
+          "the",
+          "what"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 827,
+        "labels_ocr": [
+          "i",
+          "the",
+          "what"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 828,
+        "labels_ocr": [
+          "i",
+          "the",
+          "what"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 829,
+        "labels_ocr": [
+          "i",
+          "the",
+          "what"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 830,
+        "labels_ocr": [
+          "the",
+          "what"
+        ],
+        "confidence": [
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 831,
+        "labels_ocr": [
+          "i",
+          "the",
+          "vilm"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 832,
+        "labels_ocr": [
+          "i",
+          "the",
+          "vi'm"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 833,
+        "labels_ocr": [
+          "i",
+          "the",
+          "i'm"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 834,
+        "labels_ocr": [
+          "i",
+          "the",
+          "i'm"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "frame": 835,
+        "labels_ocr": [
+          "i",
+          "the",
+          "i'm"
+        ],
+        "confidence": [
+          1,
+          1,
+          1
+        ]
+      }
+    ],
+    "verified_prediction_examples": [
+      {
+        "frame": 450,
+        "middle": "the",
+        "right": "i’m"
+      },
+      {
+        "frame": 478,
+        "middle": "dab"
+      },
+      {
+        "frame": 484,
+        "middle": "today’s"
+      },
+      {
+        "frame": 516,
+        "middle": "brief"
+      },
+      {
+        "frame": 523,
+        "middle": "summary"
+      },
+      {
+        "frame": 538,
+        "middle": "each"
+      },
+      {
+        "frame": 542,
+        "middle": "thank"
+      },
+      {
+        "frame": 750,
+        "middle": "the",
+        "right": "i’m"
+      },
+      {
+        "frame": 760,
+        "middle": "Eh"
+      },
+      {
+        "frame": 769,
+        "middle": "on"
+      },
+      {
+        "frame": 789,
+        "middle": "read"
+      },
+      {
+        "frame": 795,
+        "middle": "firxt"
+      },
+      {
+        "frame": 796,
+        "middle": "first"
+      },
+      {
+        "frame": 804,
+        "middle": "the"
+      }
+    ]
+  },
+  "camera": {
+    "phone_measurement_method": "Foreground mask versus gradient-only frame 340, RGB max difference >27 at 480x270. Largest connected-component visible bbox; central scanline estimates phone rails. All coordinates scaled 8x. Shadows excluded approximately, rails can be 8–16px uncertain. Visible bbox is clipped, not extrapolated full phone bounds.",
+    "phone_samples": [
+      {
+        "frame": 211,
+        "visible_foreground_bbox": [
+          1096,
+          0,
+          2792,
+          2160
+        ],
+        "rail_scan_y": 1200,
+        "rail_left_right": [
+          1152,
+          2752
+        ],
+        "width": 1600,
+        "visible_bbox_center": [
+          1944.0,
+          1080.0
+        ],
+        "rail_center_x": 1952.0,
+        "scale_vs_904px_reference_phone": 1.76991,
+        "clipped_by_frame": true
+      },
+      {
+        "frame": 221,
+        "visible_foreground_bbox": [
+          1144,
+          0,
+          2768,
+          2160
+        ],
+        "rail_scan_y": 1200,
+        "rail_left_right": [
+          1168,
+          2752
+        ],
+        "width": 1584,
+        "visible_bbox_center": [
+          1956.0,
+          1080.0
+        ],
+        "rail_center_x": 1960.0,
+        "scale_vs_904px_reference_phone": 1.75221,
+        "clipped_by_frame": true
+      },
+      {
+        "frame": 230,
+        "visible_foreground_bbox": [
+          1168,
+          0,
+          2768,
+          2160
+        ],
+        "rail_scan_y": 1200,
+        "rail_left_right": [
+          1176,
+          2752
+        ],
+        "width": 1576,
+        "visible_bbox_center": [
+          1968.0,
+          1080.0
+        ],
+        "rail_center_x": 1964.0,
+        "scale_vs_904px_reference_phone": 1.74336,
+        "clipped_by_frame": true
+      },
+      {
+        "frame": 231,
+        "visible_foreground_bbox": [
+          1168,
+          0,
+          2768,
+          2160
+        ],
+        "rail_scan_y": 1200,
+        "rail_left_right": [
+          1176,
+          2752
+        ],
+        "width": 1576,
+        "visible_bbox_center": [
+          1968.0,
+          1080.0
+        ],
+        "rail_center_x": 1964.0,
+        "scale_vs_904px_reference_phone": 1.74336,
+        "clipped_by_frame": true
+      },
+      {
+        "frame": 240,
+        "visible_foreground_bbox": [
+          1168,
+          0,
+          2768,
+          2160
+        ],
+        "rail_scan_y": 1200,
+        "rail_left_right": [
+          1176,
+          2752
+        ],
+        "width": 1576,
+        "visible_bbox_center": [
+          1968.0,
+          1080.0
+        ],
+        "rail_center_x": 1964.0,
+        "scale_vs_904px_reference_phone": 1.74336,
+        "clipped_by_frame": true
+      },
+      {
+        "frame": 241,
+        "visible_foreground_bbox": [
+          1168,
+          0,
+          2768,
+          2160
+        ],
+        "rail_scan_y": 1200,
+        "rail_left_right": [
+          1176,
+          2752
+        ],
+        "width": 1576,
+        "visible_bbox_center": [
+          1968.0,
+          1080.0
+        ],
+        "rail_center_x": 1964.0,
+        "scale_vs_904px_reference_phone": 1.74336,
+        "clipped_by_frame": true
+      },
+      {
+        "frame": 251,
+        "visible_foreground_bbox": [
+          1168,
+          0,
+          2768,
+          2160
+        ],
+        "rail_scan_y": 1200,
+        "rail_left_right": [
+          1176,
+          2752
+        ],
+        "width": 1576,
+        "visible_bbox_center": [
+          1968.0,
+          1080.0
+        ],
+        "rail_center_x": 1964.0,
+        "scale_vs_904px_reference_phone": 1.74336,
+        "clipped_by_frame": true
+      },
+      {
+        "frame": 261,
+        "visible_foreground_bbox": [
+          1168,
+          0,
+          2768,
+          2160
+        ],
+        "rail_scan_y": 1200,
+        "rail_left_right": [
+          1176,
+          2752
+        ],
+        "width": 1576,
+        "visible_bbox_center": [
+          1968.0,
+          1080.0
+        ],
+        "rail_center_x": 1964.0,
+        "scale_vs_904px_reference_phone": 1.74336,
+        "clipped_by_frame": true
+      },
+      {
+        "frame": 270,
+        "visible_foreground_bbox": [
+          1168,
+          0,
+          2768,
+          2160
+        ],
+        "rail_scan_y": 1200,
+        "rail_left_right": [
+          1176,
+          2752
+        ],
+        "width": 1576,
+        "visible_bbox_center": [
+          1968.0,
+          1080.0
+        ],
+        "rail_center_x": 1964.0,
+        "scale_vs_904px_reference_phone": 1.74336,
+        "clipped_by_frame": true
+      },
+      {
+        "frame": 271,
+        "visible_foreground_bbox": [
+          1168,
+          0,
+          2768,
+          2160
+        ],
+        "rail_scan_y": 1200,
+        "rail_left_right": [
+          1176,
+          2752
+        ],
+        "width": 1576,
+        "visible_bbox_center": [
+          1968.0,
+          1080.0
+        ],
+        "rail_center_x": 1964.0,
+        "scale_vs_904px_reference_phone": 1.74336,
+        "clipped_by_frame": true
+      },
+      {
+        "frame": 280,
+        "visible_foreground_bbox": [
+          1168,
+          0,
+          2768,
+          2160
+        ],
+        "rail_scan_y": 1200,
+        "rail_left_right": [
+          1176,
+          2752
+        ],
+        "width": 1576,
+        "visible_bbox_center": [
+          1968.0,
+          1080.0
+        ],
+        "rail_center_x": 1964.0,
+        "scale_vs_904px_reference_phone": 1.74336,
+        "clipped_by_frame": true
+      },
+      {
+        "frame": 281,
+        "visible_foreground_bbox": [
+          1168,
+          0,
+          2768,
+          2160
+        ],
+        "rail_scan_y": 1200,
+        "rail_left_right": [
+          1176,
+          2752
+        ],
+        "width": 1576,
+        "visible_bbox_center": [
+          1968.0,
+          1080.0
+        ],
+        "rail_center_x": 1964.0,
+        "scale_vs_904px_reference_phone": 1.74336,
+        "clipped_by_frame": true
+      },
+      {
+        "frame": 290,
+        "visible_foreground_bbox": [
+          1216,
+          0,
+          2736,
+          2160
+        ],
+        "rail_scan_y": 1200,
+        "rail_left_right": [
+          1208,
+          2728
+        ],
+        "width": 1520,
+        "visible_bbox_center": [
+          1976.0,
+          1080.0
+        ],
+        "rail_center_x": 1968.0,
+        "scale_vs_904px_reference_phone": 1.68142,
+        "clipped_by_frame": true
+      },
+      {
+        "frame": 291,
+        "visible_foreground_bbox": [
+          1224,
+          0,
+          2720,
+          2160
+        ],
+        "rail_scan_y": 1200,
+        "rail_left_right": [
+          1216,
+          2712
+        ],
+        "width": 1496,
+        "visible_bbox_center": [
+          1972.0,
+          1080.0
+        ],
+        "rail_center_x": 1964.0,
+        "scale_vs_904px_reference_phone": 1.65487,
+        "clipped_by_frame": true
+      },
+      {
+        "frame": 300,
+        "visible_foreground_bbox": [
+          1328,
+          0,
+          2608,
+          2160
+        ],
+        "rail_scan_y": 1200,
+        "rail_left_right": [
+          1328,
+          2592
+        ],
+        "width": 1264,
+        "visible_bbox_center": [
+          1968.0,
+          1080.0
+        ],
+        "rail_center_x": 1960.0,
+        "scale_vs_904px_reference_phone": 1.39823,
+        "clipped_by_frame": true
+      },
+      {
+        "frame": 301,
+        "visible_foreground_bbox": [
+          1336,
+          0,
+          2592,
+          2160
+        ],
+        "rail_scan_y": 1200,
+        "rail_left_right": [
+          1336,
+          2584
+        ],
+        "width": 1248,
+        "visible_bbox_center": [
+          1964.0,
+          1080.0
+        ],
+        "rail_center_x": 1960.0,
+        "scale_vs_904px_reference_phone": 1.38053,
+        "clipped_by_frame": true
+      },
+      {
+        "frame": 310,
+        "visible_foreground_bbox": [
+          1392,
+          0,
+          2536,
+          2160
+        ],
+        "rail_scan_y": 1200,
+        "rail_left_right": [
+          1392,
+          2520
+        ],
+        "width": 1128,
+        "visible_bbox_center": [
+          1964.0,
+          1080.0
+        ],
+        "rail_center_x": 1956.0,
+        "scale_vs_904px_reference_phone": 1.24779,
+        "clipped_by_frame": true
+      },
+      {
+        "frame": 311,
+        "visible_foreground_bbox": [
+          1400,
+          0,
+          2520,
+          2160
+        ],
+        "rail_scan_y": 1200,
+        "rail_left_right": [
+          1392,
+          2520
+        ],
+        "width": 1128,
+        "visible_bbox_center": [
+          1960.0,
+          1080.0
+        ],
+        "rail_center_x": 1956.0,
+        "scale_vs_904px_reference_phone": 1.24779,
+        "clipped_by_frame": true
+      },
+      {
+        "frame": 320,
+        "visible_foreground_bbox": [
+          1408,
+          16,
+          2496,
+          2152
+        ],
+        "rail_scan_y": 1200,
+        "rail_left_right": [
+          1416,
+          2480
+        ],
+        "width": 1064,
+        "visible_bbox_center": [
+          1952.0,
+          1084.0
+        ],
+        "rail_center_x": 1948.0,
+        "scale_vs_904px_reference_phone": 1.17699,
+        "clipped_by_frame": false
+      },
+      {
+        "frame": 321,
+        "visible_foreground_bbox": [
+          1424,
+          16,
+          2496,
+          2152
+        ],
+        "rail_scan_y": 1200,
+        "rail_left_right": [
+          1416,
+          2480
+        ],
+        "width": 1064,
+        "visible_bbox_center": [
+          1960.0,
+          1084.0
+        ],
+        "rail_center_x": 1948.0,
+        "scale_vs_904px_reference_phone": 1.17699,
+        "clipped_by_frame": false
+      },
+      {
+        "frame": 330,
+        "visible_foreground_bbox": [
+          1432,
+          48,
+          2488,
+          2144
+        ],
+        "rail_scan_y": 1200,
+        "rail_left_right": [
+          1424,
+          2472
+        ],
+        "width": 1048,
+        "visible_bbox_center": [
+          1960.0,
+          1096.0
+        ],
+        "rail_center_x": 1948.0,
+        "scale_vs_904px_reference_phone": 1.15929,
+        "clipped_by_frame": false
+      },
+      {
+        "frame": 331,
+        "visible_foreground_bbox": [
+          1432,
+          56,
+          2488,
+          2152
+        ],
+        "rail_scan_y": 1200,
+        "rail_left_right": [
+          1424,
+          2472
+        ],
+        "width": 1048,
+        "visible_bbox_center": [
+          1960.0,
+          1104.0
+        ],
+        "rail_center_x": 1948.0,
+        "scale_vs_904px_reference_phone": 1.15929,
+        "clipped_by_frame": false
+      },
+      {
+        "frame": 333,
+        "visible_foreground_bbox": [
+          1432,
+          56,
+          2488,
+          2144
+        ],
+        "rail_scan_y": 1200,
+        "rail_left_right": [
+          1456,
+          2472
+        ],
+        "width": 1016,
+        "visible_bbox_center": [
+          1960.0,
+          1100.0
+        ],
+        "rail_center_x": 1964.0,
+        "scale_vs_904px_reference_phone": 1.12389,
+        "clipped_by_frame": false
+      },
+      {
+        "frame": 404,
+        "visible_foreground_bbox": [
+          1464,
+          128,
+          2384,
+          2056
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1480,
+          2384
+        ],
+        "width": 904,
+        "visible_bbox_center": [
+          1924.0,
+          1092.0
+        ],
+        "rail_center_x": 1932.0,
+        "scale_vs_904px_reference_phone": 1.0,
+        "clipped_by_frame": false
+      },
+      {
+        "frame": 414,
+        "visible_foreground_bbox": [
+          1464,
+          128,
+          2384,
+          2056
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1480,
+          2384
+        ],
+        "width": 904,
+        "visible_bbox_center": [
+          1924.0,
+          1092.0
+        ],
+        "rail_center_x": 1932.0,
+        "scale_vs_904px_reference_phone": 1.0,
+        "clipped_by_frame": false
+      },
+      {
+        "frame": 420,
+        "visible_foreground_bbox": [
+          1464,
+          128,
+          2384,
+          2056
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1480,
+          2384
+        ],
+        "width": 904,
+        "visible_bbox_center": [
+          1924.0,
+          1092.0
+        ],
+        "rail_center_x": 1932.0,
+        "scale_vs_904px_reference_phone": 1.0,
+        "clipped_by_frame": false
+      },
+      {
+        "frame": 424,
+        "visible_foreground_bbox": [
+          1416,
+          64,
+          2432,
+          2160
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1432,
+          2432
+        ],
+        "width": 1000,
+        "visible_bbox_center": [
+          1924.0,
+          1112.0
+        ],
+        "rail_center_x": 1932.0,
+        "scale_vs_904px_reference_phone": 1.10619,
+        "clipped_by_frame": true
+      },
+      {
+        "frame": 425,
+        "visible_foreground_bbox": [
+          1376,
+          8,
+          2480,
+          2160
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1400,
+          2464
+        ],
+        "width": 1064,
+        "visible_bbox_center": [
+          1928.0,
+          1084.0
+        ],
+        "rail_center_x": 1932.0,
+        "scale_vs_904px_reference_phone": 1.17699,
+        "clipped_by_frame": true
+      },
+      {
+        "frame": 430,
+        "visible_foreground_bbox": [
+          1232,
+          0,
+          2688,
+          2160
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1240,
+          2608
+        ],
+        "width": 1368,
+        "visible_bbox_center": [
+          1960.0,
+          1080.0
+        ],
+        "rail_center_x": 1924.0,
+        "scale_vs_904px_reference_phone": 1.51327,
+        "clipped_by_frame": true
+      },
+      {
+        "frame": 434,
+        "visible_foreground_bbox": [
+          1184,
+          0,
+          2736,
+          2160
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1200,
+          2664
+        ],
+        "width": 1464,
+        "visible_bbox_center": [
+          1960.0,
+          1080.0
+        ],
+        "rail_center_x": 1932.0,
+        "scale_vs_904px_reference_phone": 1.61947,
+        "clipped_by_frame": true
+      },
+      {
+        "frame": 435,
+        "visible_foreground_bbox": [
+          1184,
+          0,
+          2736,
+          2160
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1192,
+          2664
+        ],
+        "width": 1472,
+        "visible_bbox_center": [
+          1960.0,
+          1080.0
+        ],
+        "rail_center_x": 1928.0,
+        "scale_vs_904px_reference_phone": 1.62832,
+        "clipped_by_frame": true
+      },
+      {
+        "frame": 440,
+        "visible_foreground_bbox": [
+          1168,
+          0,
+          2752,
+          2160
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1184,
+          2680
+        ],
+        "width": 1496,
+        "visible_bbox_center": [
+          1960.0,
+          1080.0
+        ],
+        "rail_center_x": 1932.0,
+        "scale_vs_904px_reference_phone": 1.65487,
+        "clipped_by_frame": true
+      },
+      {
+        "frame": 444,
+        "visible_foreground_bbox": [
+          1168,
+          0,
+          2744,
+          2160
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1176,
+          2680
+        ],
+        "width": 1504,
+        "visible_bbox_center": [
+          1956.0,
+          1080.0
+        ],
+        "rail_center_x": 1928.0,
+        "scale_vs_904px_reference_phone": 1.66372,
+        "clipped_by_frame": true
+      },
+      {
+        "frame": 445,
+        "visible_foreground_bbox": [
+          1168,
+          0,
+          2744,
+          2160
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1176,
+          2680
+        ],
+        "width": 1504,
+        "visible_bbox_center": [
+          1956.0,
+          1080.0
+        ],
+        "rail_center_x": 1928.0,
+        "scale_vs_904px_reference_phone": 1.66372,
+        "clipped_by_frame": true
+      },
+      {
+        "frame": 450,
+        "visible_foreground_bbox": [
+          1168,
+          0,
+          2768,
+          2160
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1176,
+          2688
+        ],
+        "width": 1512,
+        "visible_bbox_center": [
+          1968.0,
+          1080.0
+        ],
+        "rail_center_x": 1932.0,
+        "scale_vs_904px_reference_phone": 1.67257,
+        "clipped_by_frame": true
+      },
+      {
+        "frame": 454,
+        "visible_foreground_bbox": [
+          1168,
+          0,
+          2768,
+          2160
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1176,
+          2688
+        ],
+        "width": 1512,
+        "visible_bbox_center": [
+          1968.0,
+          1080.0
+        ],
+        "rail_center_x": 1932.0,
+        "scale_vs_904px_reference_phone": 1.67257,
+        "clipped_by_frame": true
+      },
+      {
+        "frame": 464,
+        "visible_foreground_bbox": [
+          1168,
+          0,
+          2768,
+          2160
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1176,
+          2688
+        ],
+        "width": 1512,
+        "visible_bbox_center": [
+          1968.0,
+          1080.0
+        ],
+        "rail_center_x": 1932.0,
+        "scale_vs_904px_reference_phone": 1.67257,
+        "clipped_by_frame": true
+      },
+      {
+        "frame": 474,
+        "visible_foreground_bbox": [
+          1168,
+          0,
+          2768,
+          2160
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1176,
+          2688
+        ],
+        "width": 1512,
+        "visible_bbox_center": [
+          1968.0,
+          1080.0
+        ],
+        "rail_center_x": 1932.0,
+        "scale_vs_904px_reference_phone": 1.67257,
+        "clipped_by_frame": true
+      },
+      {
+        "frame": 484,
+        "visible_foreground_bbox": [
+          1168,
+          0,
+          2784,
+          2160
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1176,
+          2688
+        ],
+        "width": 1512,
+        "visible_bbox_center": [
+          1976.0,
+          1080.0
+        ],
+        "rail_center_x": 1932.0,
+        "scale_vs_904px_reference_phone": 1.67257,
+        "clipped_by_frame": true
+      },
+      {
+        "frame": 494,
+        "visible_foreground_bbox": [
+          1168,
+          0,
+          2784,
+          2160
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1176,
+          2688
+        ],
+        "width": 1512,
+        "visible_bbox_center": [
+          1976.0,
+          1080.0
+        ],
+        "rail_center_x": 1932.0,
+        "scale_vs_904px_reference_phone": 1.67257,
+        "clipped_by_frame": true
+      },
+      {
+        "frame": 504,
+        "visible_foreground_bbox": [
+          1168,
+          0,
+          2784,
+          2160
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1176,
+          2688
+        ],
+        "width": 1512,
+        "visible_bbox_center": [
+          1976.0,
+          1080.0
+        ],
+        "rail_center_x": 1932.0,
+        "scale_vs_904px_reference_phone": 1.67257,
+        "clipped_by_frame": true
+      },
+      {
+        "frame": 514,
+        "visible_foreground_bbox": [
+          1168,
+          0,
+          2784,
+          2160
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1176,
+          2688
+        ],
+        "width": 1512,
+        "visible_bbox_center": [
+          1976.0,
+          1080.0
+        ],
+        "rail_center_x": 1932.0,
+        "scale_vs_904px_reference_phone": 1.67257,
+        "clipped_by_frame": true
+      },
+      {
+        "frame": 524,
+        "visible_foreground_bbox": [
+          1168,
+          0,
+          2784,
+          2160
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1176,
+          2688
+        ],
+        "width": 1512,
+        "visible_bbox_center": [
+          1976.0,
+          1080.0
+        ],
+        "rail_center_x": 1932.0,
+        "scale_vs_904px_reference_phone": 1.67257,
+        "clipped_by_frame": true
+      },
+      {
+        "frame": 534,
+        "visible_foreground_bbox": [
+          1168,
+          0,
+          2784,
+          2160
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1176,
+          2688
+        ],
+        "width": 1512,
+        "visible_bbox_center": [
+          1976.0,
+          1080.0
+        ],
+        "rail_center_x": 1932.0,
+        "scale_vs_904px_reference_phone": 1.67257,
+        "clipped_by_frame": true
+      },
+      {
+        "frame": 544,
+        "visible_foreground_bbox": [
+          1168,
+          0,
+          2752,
+          2160
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1176,
+          2680
+        ],
+        "width": 1504,
+        "visible_bbox_center": [
+          1960.0,
+          1080.0
+        ],
+        "rail_center_x": 1928.0,
+        "scale_vs_904px_reference_phone": 1.66372,
+        "clipped_by_frame": true
+      },
+      {
+        "frame": 554,
+        "visible_foreground_bbox": [
+          1168,
+          0,
+          2752,
+          2160
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1176,
+          2680
+        ],
+        "width": 1504,
+        "visible_bbox_center": [
+          1960.0,
+          1080.0
+        ],
+        "rail_center_x": 1928.0,
+        "scale_vs_904px_reference_phone": 1.66372,
+        "clipped_by_frame": true
+      },
+      {
+        "frame": 564,
+        "visible_foreground_bbox": [
+          1168,
+          0,
+          2768,
+          2160
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1176,
+          2680
+        ],
+        "width": 1504,
+        "visible_bbox_center": [
+          1968.0,
+          1080.0
+        ],
+        "rail_center_x": 1928.0,
+        "scale_vs_904px_reference_phone": 1.66372,
+        "clipped_by_frame": true
+      },
+      {
+        "frame": 574,
+        "visible_foreground_bbox": [
+          1168,
+          0,
+          2768,
+          2160
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1176,
+          2680
+        ],
+        "width": 1504,
+        "visible_bbox_center": [
+          1968.0,
+          1080.0
+        ],
+        "rail_center_x": 1928.0,
+        "scale_vs_904px_reference_phone": 1.66372,
+        "clipped_by_frame": true
+      },
+      {
+        "frame": 584,
+        "visible_foreground_bbox": [
+          1168,
+          0,
+          2768,
+          2160
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1176,
+          2680
+        ],
+        "width": 1504,
+        "visible_bbox_center": [
+          1968.0,
+          1080.0
+        ],
+        "rail_center_x": 1928.0,
+        "scale_vs_904px_reference_phone": 1.66372,
+        "clipped_by_frame": true
+      },
+      {
+        "frame": 590,
+        "visible_foreground_bbox": [
+          1168,
+          0,
+          2768,
+          2160
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1176,
+          2680
+        ],
+        "width": 1504,
+        "visible_bbox_center": [
+          1968.0,
+          1080.0
+        ],
+        "rail_center_x": 1928.0,
+        "scale_vs_904px_reference_phone": 1.66372,
+        "clipped_by_frame": true
+      },
+      {
+        "frame": 594,
+        "visible_foreground_bbox": [
+          1168,
+          0,
+          2768,
+          2160
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1176,
+          2680
+        ],
+        "width": 1504,
+        "visible_bbox_center": [
+          1968.0,
+          1080.0
+        ],
+        "rail_center_x": 1928.0,
+        "scale_vs_904px_reference_phone": 1.66372,
+        "clipped_by_frame": true
+      },
+      {
+        "frame": 595,
+        "visible_foreground_bbox": [
+          1168,
+          0,
+          2768,
+          2160
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1176,
+          2680
+        ],
+        "width": 1504,
+        "visible_bbox_center": [
+          1968.0,
+          1080.0
+        ],
+        "rail_center_x": 1928.0,
+        "scale_vs_904px_reference_phone": 1.66372,
+        "clipped_by_frame": true
+      },
+      {
+        "frame": 600,
+        "visible_foreground_bbox": [
+          1168,
+          0,
+          2768,
+          2160
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1176,
+          2680
+        ],
+        "width": 1504,
+        "visible_bbox_center": [
+          1968.0,
+          1080.0
+        ],
+        "rail_center_x": 1928.0,
+        "scale_vs_904px_reference_phone": 1.66372,
+        "clipped_by_frame": true
+      },
+      {
+        "frame": 604,
+        "visible_foreground_bbox": [
+          1280,
+          0,
+          2640,
+          2160
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1296,
+          2576
+        ],
+        "width": 1280,
+        "visible_bbox_center": [
+          1960.0,
+          1080.0
+        ],
+        "rail_center_x": 1936.0,
+        "scale_vs_904px_reference_phone": 1.41593,
+        "clipped_by_frame": true
+      },
+      {
+        "frame": 605,
+        "visible_foreground_bbox": [
+          1312,
+          0,
+          2584,
+          2160
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1336,
+          2528
+        ],
+        "width": 1192,
+        "visible_bbox_center": [
+          1948.0,
+          1080.0
+        ],
+        "rail_center_x": 1932.0,
+        "scale_vs_904px_reference_phone": 1.31858,
+        "clipped_by_frame": true
+      },
+      {
+        "frame": 610,
+        "visible_foreground_bbox": [
+          1424,
+          72,
+          2424,
+          2160
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1432,
+          2424
+        ],
+        "width": 992,
+        "visible_bbox_center": [
+          1924.0,
+          1116.0
+        ],
+        "rail_center_x": 1928.0,
+        "scale_vs_904px_reference_phone": 1.09735,
+        "clipped_by_frame": true
+      },
+      {
+        "frame": 614,
+        "visible_foreground_bbox": [
+          1456,
+          112,
+          2400,
+          2080
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1456,
+          2392
+        ],
+        "width": 936,
+        "visible_bbox_center": [
+          1928.0,
+          1096.0
+        ],
+        "rail_center_x": 1924.0,
+        "scale_vs_904px_reference_phone": 1.0354,
+        "clipped_by_frame": false
+      },
+      {
+        "frame": 615,
+        "visible_foreground_bbox": [
+          1456,
+          120,
+          2400,
+          2072
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1472,
+          2384
+        ],
+        "width": 912,
+        "visible_bbox_center": [
+          1928.0,
+          1096.0
+        ],
+        "rail_center_x": 1928.0,
+        "scale_vs_904px_reference_phone": 1.00885,
+        "clipped_by_frame": false
+      },
+      {
+        "frame": 620,
+        "visible_foreground_bbox": [
+          1464,
+          128,
+          2384,
+          2056
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1480,
+          2384
+        ],
+        "width": 904,
+        "visible_bbox_center": [
+          1924.0,
+          1092.0
+        ],
+        "rail_center_x": 1932.0,
+        "scale_vs_904px_reference_phone": 1.0,
+        "clipped_by_frame": false
+      },
+      {
+        "frame": 624,
+        "visible_foreground_bbox": [
+          1464,
+          128,
+          2384,
+          2056
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1480,
+          2384
+        ],
+        "width": 904,
+        "visible_bbox_center": [
+          1924.0,
+          1092.0
+        ],
+        "rail_center_x": 1932.0,
+        "scale_vs_904px_reference_phone": 1.0,
+        "clipped_by_frame": false
+      },
+      {
+        "frame": 625,
+        "visible_foreground_bbox": [
+          1464,
+          128,
+          2384,
+          2056
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1480,
+          2384
+        ],
+        "width": 904,
+        "visible_bbox_center": [
+          1924.0,
+          1092.0
+        ],
+        "rail_center_x": 1932.0,
+        "scale_vs_904px_reference_phone": 1.0,
+        "clipped_by_frame": false
+      },
+      {
+        "frame": 630,
+        "visible_foreground_bbox": [
+          1464,
+          128,
+          2384,
+          2056
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1480,
+          2384
+        ],
+        "width": 904,
+        "visible_bbox_center": [
+          1924.0,
+          1092.0
+        ],
+        "rail_center_x": 1932.0,
+        "scale_vs_904px_reference_phone": 1.0,
+        "clipped_by_frame": false
+      },
+      {
+        "frame": 634,
+        "visible_foreground_bbox": [
+          1464,
+          128,
+          2384,
+          2056
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1480,
+          2384
+        ],
+        "width": 904,
+        "visible_bbox_center": [
+          1924.0,
+          1092.0
+        ],
+        "rail_center_x": 1932.0,
+        "scale_vs_904px_reference_phone": 1.0,
+        "clipped_by_frame": false
+      },
+      {
+        "frame": 644,
+        "visible_foreground_bbox": [
+          1464,
+          128,
+          2384,
+          2056
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1480,
+          2384
+        ],
+        "width": 904,
+        "visible_bbox_center": [
+          1924.0,
+          1092.0
+        ],
+        "rail_center_x": 1932.0,
+        "scale_vs_904px_reference_phone": 1.0,
+        "clipped_by_frame": false
+      },
+      {
+        "frame": 654,
+        "visible_foreground_bbox": [
+          1464,
+          128,
+          2384,
+          2056
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1480,
+          2384
+        ],
+        "width": 904,
+        "visible_bbox_center": [
+          1924.0,
+          1092.0
+        ],
+        "rail_center_x": 1932.0,
+        "scale_vs_904px_reference_phone": 1.0,
+        "clipped_by_frame": false
+      },
+      {
+        "frame": 664,
+        "visible_foreground_bbox": [
+          1464,
+          128,
+          2384,
+          2056
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1480,
+          2384
+        ],
+        "width": 904,
+        "visible_bbox_center": [
+          1924.0,
+          1092.0
+        ],
+        "rail_center_x": 1932.0,
+        "scale_vs_904px_reference_phone": 1.0,
+        "clipped_by_frame": false
+      },
+      {
+        "frame": 674,
+        "visible_foreground_bbox": [
+          1464,
+          128,
+          2384,
+          2056
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1480,
+          2384
+        ],
+        "width": 904,
+        "visible_bbox_center": [
+          1924.0,
+          1092.0
+        ],
+        "rail_center_x": 1932.0,
+        "scale_vs_904px_reference_phone": 1.0,
+        "clipped_by_frame": false
+      },
+      {
+        "frame": 684,
+        "visible_foreground_bbox": [
+          1464,
+          128,
+          2384,
+          2056
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1480,
+          2384
+        ],
+        "width": 904,
+        "visible_bbox_center": [
+          1924.0,
+          1092.0
+        ],
+        "rail_center_x": 1932.0,
+        "scale_vs_904px_reference_phone": 1.0,
+        "clipped_by_frame": false
+      },
+      {
+        "frame": 694,
+        "visible_foreground_bbox": [
+          1464,
+          128,
+          2384,
+          2056
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1480,
+          2384
+        ],
+        "width": 904,
+        "visible_bbox_center": [
+          1924.0,
+          1092.0
+        ],
+        "rail_center_x": 1932.0,
+        "scale_vs_904px_reference_phone": 1.0,
+        "clipped_by_frame": false
+      },
+      {
+        "frame": 704,
+        "visible_foreground_bbox": [
+          1464,
+          128,
+          2384,
+          2056
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1480,
+          2384
+        ],
+        "width": 904,
+        "visible_bbox_center": [
+          1924.0,
+          1092.0
+        ],
+        "rail_center_x": 1932.0,
+        "scale_vs_904px_reference_phone": 1.0,
+        "clipped_by_frame": false
+      },
+      {
+        "frame": 714,
+        "visible_foreground_bbox": [
+          1464,
+          128,
+          2384,
+          2056
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1480,
+          2384
+        ],
+        "width": 904,
+        "visible_bbox_center": [
+          1924.0,
+          1092.0
+        ],
+        "rail_center_x": 1932.0,
+        "scale_vs_904px_reference_phone": 1.0,
+        "clipped_by_frame": false
+      },
+      {
+        "frame": 724,
+        "visible_foreground_bbox": [
+          1464,
+          128,
+          2384,
+          2056
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1480,
+          2384
+        ],
+        "width": 904,
+        "visible_bbox_center": [
+          1924.0,
+          1092.0
+        ],
+        "rail_center_x": 1932.0,
+        "scale_vs_904px_reference_phone": 1.0,
+        "clipped_by_frame": false
+      },
+      {
+        "frame": 730,
+        "visible_foreground_bbox": [
+          1464,
+          128,
+          2384,
+          2056
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1480,
+          2384
+        ],
+        "width": 904,
+        "visible_bbox_center": [
+          1924.0,
+          1092.0
+        ],
+        "rail_center_x": 1932.0,
+        "scale_vs_904px_reference_phone": 1.0,
+        "clipped_by_frame": false
+      },
+      {
+        "frame": 734,
+        "visible_foreground_bbox": [
+          1440,
+          96,
+          2400,
+          2088
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1464,
+          2400
+        ],
+        "width": 936,
+        "visible_bbox_center": [
+          1920.0,
+          1092.0
+        ],
+        "rail_center_x": 1932.0,
+        "scale_vs_904px_reference_phone": 1.0354,
+        "clipped_by_frame": false
+      },
+      {
+        "frame": 735,
+        "visible_foreground_bbox": [
+          1416,
+          40,
+          2432,
+          2160
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1432,
+          2432
+        ],
+        "width": 1000,
+        "visible_bbox_center": [
+          1924.0,
+          1100.0
+        ],
+        "rail_center_x": 1932.0,
+        "scale_vs_904px_reference_phone": 1.10619,
+        "clipped_by_frame": true
+      },
+      {
+        "frame": 740,
+        "visible_foreground_bbox": [
+          1248,
+          0,
+          2656,
+          2160
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1264,
+          2592
+        ],
+        "width": 1328,
+        "visible_bbox_center": [
+          1952.0,
+          1080.0
+        ],
+        "rail_center_x": 1928.0,
+        "scale_vs_904px_reference_phone": 1.46903,
+        "clipped_by_frame": true
+      },
+      {
+        "frame": 744,
+        "visible_foreground_bbox": [
+          1192,
+          0,
+          2720,
+          2160
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1200,
+          2656
+        ],
+        "width": 1456,
+        "visible_bbox_center": [
+          1956.0,
+          1080.0
+        ],
+        "rail_center_x": 1928.0,
+        "scale_vs_904px_reference_phone": 1.61062,
+        "clipped_by_frame": true
+      },
+      {
+        "frame": 745,
+        "visible_foreground_bbox": [
+          1184,
+          0,
+          2728,
+          2160
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1200,
+          2656
+        ],
+        "width": 1456,
+        "visible_bbox_center": [
+          1956.0,
+          1080.0
+        ],
+        "rail_center_x": 1928.0,
+        "scale_vs_904px_reference_phone": 1.61062,
+        "clipped_by_frame": true
+      },
+      {
+        "frame": 750,
+        "visible_foreground_bbox": [
+          1176,
+          0,
+          2744,
+          2160
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1184,
+          2680
+        ],
+        "width": 1496,
+        "visible_bbox_center": [
+          1960.0,
+          1080.0
+        ],
+        "rail_center_x": 1932.0,
+        "scale_vs_904px_reference_phone": 1.65487,
+        "clipped_by_frame": true
+      },
+      {
+        "frame": 754,
+        "visible_foreground_bbox": [
+          1168,
+          0,
+          2744,
+          2160
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1176,
+          2680
+        ],
+        "width": 1504,
+        "visible_bbox_center": [
+          1956.0,
+          1080.0
+        ],
+        "rail_center_x": 1928.0,
+        "scale_vs_904px_reference_phone": 1.66372,
+        "clipped_by_frame": true
+      },
+      {
+        "frame": 764,
+        "visible_foreground_bbox": [
+          1168,
+          0,
+          2776,
+          2160
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1176,
+          2680
+        ],
+        "width": 1504,
+        "visible_bbox_center": [
+          1972.0,
+          1080.0
+        ],
+        "rail_center_x": 1928.0,
+        "scale_vs_904px_reference_phone": 1.66372,
+        "clipped_by_frame": true
+      },
+      {
+        "frame": 774,
+        "visible_foreground_bbox": [
+          1168,
+          0,
+          2776,
+          2160
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1176,
+          2688
+        ],
+        "width": 1512,
+        "visible_bbox_center": [
+          1972.0,
+          1080.0
+        ],
+        "rail_center_x": 1932.0,
+        "scale_vs_904px_reference_phone": 1.67257,
+        "clipped_by_frame": true
+      },
+      {
+        "frame": 784,
+        "visible_foreground_bbox": [
+          1168,
+          0,
+          2776,
+          2160
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1176,
+          2680
+        ],
+        "width": 1504,
+        "visible_bbox_center": [
+          1972.0,
+          1080.0
+        ],
+        "rail_center_x": 1928.0,
+        "scale_vs_904px_reference_phone": 1.66372,
+        "clipped_by_frame": true
+      },
+      {
+        "frame": 794,
+        "visible_foreground_bbox": [
+          1168,
+          0,
+          2776,
+          2160
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1176,
+          2680
+        ],
+        "width": 1504,
+        "visible_bbox_center": [
+          1972.0,
+          1080.0
+        ],
+        "rail_center_x": 1928.0,
+        "scale_vs_904px_reference_phone": 1.66372,
+        "clipped_by_frame": true
+      },
+      {
+        "frame": 804,
+        "visible_foreground_bbox": [
+          1168,
+          0,
+          2776,
+          2160
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1176,
+          2680
+        ],
+        "width": 1504,
+        "visible_bbox_center": [
+          1972.0,
+          1080.0
+        ],
+        "rail_center_x": 1928.0,
+        "scale_vs_904px_reference_phone": 1.66372,
+        "clipped_by_frame": true
+      },
+      {
+        "frame": 814,
+        "visible_foreground_bbox": [
+          1168,
+          0,
+          2768,
+          2160
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1176,
+          2688
+        ],
+        "width": 1512,
+        "visible_bbox_center": [
+          1968.0,
+          1080.0
+        ],
+        "rail_center_x": 1932.0,
+        "scale_vs_904px_reference_phone": 1.67257,
+        "clipped_by_frame": true
+      },
+      {
+        "frame": 824,
+        "visible_foreground_bbox": [
+          1168,
+          0,
+          2768,
+          2160
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1176,
+          2680
+        ],
+        "width": 1504,
+        "visible_bbox_center": [
+          1968.0,
+          1080.0
+        ],
+        "rail_center_x": 1928.0,
+        "scale_vs_904px_reference_phone": 1.66372,
+        "clipped_by_frame": true
+      },
+      {
+        "frame": 834,
+        "visible_foreground_bbox": [
+          1168,
+          0,
+          2768,
+          2160
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1176,
+          2680
+        ],
+        "width": 1504,
+        "visible_bbox_center": [
+          1968.0,
+          1080.0
+        ],
+        "rail_center_x": 1928.0,
+        "scale_vs_904px_reference_phone": 1.66372,
+        "clipped_by_frame": true
+      },
+      {
+        "frame": 844,
+        "visible_foreground_bbox": [
+          1168,
+          0,
+          2768,
+          2160
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1176,
+          2680
+        ],
+        "width": 1504,
+        "visible_bbox_center": [
+          1968.0,
+          1080.0
+        ],
+        "rail_center_x": 1928.0,
+        "scale_vs_904px_reference_phone": 1.66372,
+        "clipped_by_frame": true
+      },
+      {
+        "frame": 845,
+        "visible_foreground_bbox": [
+          1168,
+          0,
+          2768,
+          2160
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1176,
+          2680
+        ],
+        "width": 1504,
+        "visible_bbox_center": [
+          1968.0,
+          1080.0
+        ],
+        "rail_center_x": 1928.0,
+        "scale_vs_904px_reference_phone": 1.66372,
+        "clipped_by_frame": true
+      },
+      {
+        "frame": 850,
+        "visible_foreground_bbox": [
+          1168,
+          0,
+          2768,
+          2160
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1176,
+          2680
+        ],
+        "width": 1504,
+        "visible_bbox_center": [
+          1968.0,
+          1080.0
+        ],
+        "rail_center_x": 1928.0,
+        "scale_vs_904px_reference_phone": 1.66372,
+        "clipped_by_frame": true
+      },
+      {
+        "frame": 854,
+        "visible_foreground_bbox": [
+          1168,
+          0,
+          2768,
+          2160
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1184,
+          2680
+        ],
+        "width": 1496,
+        "visible_bbox_center": [
+          1968.0,
+          1080.0
+        ],
+        "rail_center_x": 1932.0,
+        "scale_vs_904px_reference_phone": 1.65487,
+        "clipped_by_frame": true
+      },
+      {
+        "frame": 855,
+        "visible_foreground_bbox": [
+          1184,
+          0,
+          2744,
+          2160
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1200,
+          2664
+        ],
+        "width": 1464,
+        "visible_bbox_center": [
+          1964.0,
+          1080.0
+        ],
+        "rail_center_x": 1932.0,
+        "scale_vs_904px_reference_phone": 1.61947,
+        "clipped_by_frame": true
+      },
+      {
+        "frame": 860,
+        "visible_foreground_bbox": [
+          1352,
+          0,
+          2504,
+          2160
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1376,
+          2496
+        ],
+        "width": 1120,
+        "visible_bbox_center": [
+          1928.0,
+          1080.0
+        ],
+        "rail_center_x": 1936.0,
+        "scale_vs_904px_reference_phone": 1.23894,
+        "clipped_by_frame": true
+      },
+      {
+        "frame": 864,
+        "visible_foreground_bbox": [
+          1424,
+          56,
+          2424,
+          2128
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1448,
+          2416
+        ],
+        "width": 968,
+        "visible_bbox_center": [
+          1924.0,
+          1092.0
+        ],
+        "rail_center_x": 1932.0,
+        "scale_vs_904px_reference_phone": 1.0708,
+        "clipped_by_frame": false
+      },
+      {
+        "frame": 865,
+        "visible_foreground_bbox": [
+          1432,
+          72,
+          2416,
+          2112
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1456,
+          2408
+        ],
+        "width": 952,
+        "visible_bbox_center": [
+          1924.0,
+          1092.0
+        ],
+        "rail_center_x": 1932.0,
+        "scale_vs_904px_reference_phone": 1.0531,
+        "clipped_by_frame": false
+      },
+      {
+        "frame": 870,
+        "visible_foreground_bbox": [
+          1456,
+          120,
+          2392,
+          2064
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1464,
+          2384
+        ],
+        "width": 920,
+        "visible_bbox_center": [
+          1924.0,
+          1092.0
+        ],
+        "rail_center_x": 1924.0,
+        "scale_vs_904px_reference_phone": 1.0177,
+        "clipped_by_frame": false
+      },
+      {
+        "frame": 874,
+        "visible_foreground_bbox": [
+          1464,
+          128,
+          2384,
+          2056
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1480,
+          2384
+        ],
+        "width": 904,
+        "visible_bbox_center": [
+          1924.0,
+          1092.0
+        ],
+        "rail_center_x": 1932.0,
+        "scale_vs_904px_reference_phone": 1.0,
+        "clipped_by_frame": false
+      },
+      {
+        "frame": 875,
+        "visible_foreground_bbox": [
+          1464,
+          128,
+          2384,
+          2056
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1480,
+          2384
+        ],
+        "width": 904,
+        "visible_bbox_center": [
+          1924.0,
+          1092.0
+        ],
+        "rail_center_x": 1932.0,
+        "scale_vs_904px_reference_phone": 1.0,
+        "clipped_by_frame": false
+      },
+      {
+        "frame": 884,
+        "visible_foreground_bbox": [
+          1464,
+          128,
+          2384,
+          2056
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1480,
+          2384
+        ],
+        "width": 904,
+        "visible_bbox_center": [
+          1924.0,
+          1092.0
+        ],
+        "rail_center_x": 1932.0,
+        "scale_vs_904px_reference_phone": 1.0,
+        "clipped_by_frame": false
+      },
+      {
+        "frame": 894,
+        "visible_foreground_bbox": [
+          1464,
+          128,
+          2384,
+          2056
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1480,
+          2384
+        ],
+        "width": 904,
+        "visible_bbox_center": [
+          1924.0,
+          1092.0
+        ],
+        "rail_center_x": 1932.0,
+        "scale_vs_904px_reference_phone": 1.0,
+        "clipped_by_frame": false
+      },
+      {
+        "frame": 904,
+        "visible_foreground_bbox": [
+          1464,
+          128,
+          2384,
+          2056
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1480,
+          2384
+        ],
+        "width": 904,
+        "visible_bbox_center": [
+          1924.0,
+          1092.0
+        ],
+        "rail_center_x": 1932.0,
+        "scale_vs_904px_reference_phone": 1.0,
+        "clipped_by_frame": false
+      },
+      {
+        "frame": 914,
+        "visible_foreground_bbox": [
+          1464,
+          128,
+          2384,
+          2056
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1480,
+          2384
+        ],
+        "width": 904,
+        "visible_bbox_center": [
+          1924.0,
+          1092.0
+        ],
+        "rail_center_x": 1932.0,
+        "scale_vs_904px_reference_phone": 1.0,
+        "clipped_by_frame": false
+      },
+      {
+        "frame": 924,
+        "visible_foreground_bbox": [
+          1464,
+          128,
+          2384,
+          2056
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1480,
+          2384
+        ],
+        "width": 904,
+        "visible_bbox_center": [
+          1924.0,
+          1092.0
+        ],
+        "rail_center_x": 1932.0,
+        "scale_vs_904px_reference_phone": 1.0,
+        "clipped_by_frame": false
+      },
+      {
+        "frame": 934,
+        "visible_foreground_bbox": [
+          1464,
+          128,
+          2384,
+          2056
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1480,
+          2384
+        ],
+        "width": 904,
+        "visible_bbox_center": [
+          1924.0,
+          1092.0
+        ],
+        "rail_center_x": 1932.0,
+        "scale_vs_904px_reference_phone": 1.0,
+        "clipped_by_frame": false
+      },
+      {
+        "frame": 944,
+        "visible_foreground_bbox": [
+          1464,
+          128,
+          2384,
+          2056
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1480,
+          2384
+        ],
+        "width": 904,
+        "visible_bbox_center": [
+          1924.0,
+          1092.0
+        ],
+        "rail_center_x": 1932.0,
+        "scale_vs_904px_reference_phone": 1.0,
+        "clipped_by_frame": false
+      },
+      {
+        "frame": 954,
+        "visible_foreground_bbox": [
+          1464,
+          128,
+          2384,
+          2056
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1480,
+          2384
+        ],
+        "width": 904,
+        "visible_bbox_center": [
+          1924.0,
+          1092.0
+        ],
+        "rail_center_x": 1932.0,
+        "scale_vs_904px_reference_phone": 1.0,
+        "clipped_by_frame": false
+      },
+      {
+        "frame": 964,
+        "visible_foreground_bbox": [
+          1464,
+          128,
+          2384,
+          2056
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1480,
+          2384
+        ],
+        "width": 904,
+        "visible_bbox_center": [
+          1924.0,
+          1092.0
+        ],
+        "rail_center_x": 1932.0,
+        "scale_vs_904px_reference_phone": 1.0,
+        "clipped_by_frame": false
+      },
+      {
+        "frame": 974,
+        "visible_foreground_bbox": [
+          1464,
+          128,
+          2384,
+          2056
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1480,
+          2384
+        ],
+        "width": 904,
+        "visible_bbox_center": [
+          1924.0,
+          1092.0
+        ],
+        "rail_center_x": 1932.0,
+        "scale_vs_904px_reference_phone": 1.0,
+        "clipped_by_frame": false
+      },
+      {
+        "frame": 980,
+        "visible_foreground_bbox": [
+          1464,
+          128,
+          2384,
+          2056
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1480,
+          2384
+        ],
+        "width": 904,
+        "visible_bbox_center": [
+          1924.0,
+          1092.0
+        ],
+        "rail_center_x": 1932.0,
+        "scale_vs_904px_reference_phone": 1.0,
+        "clipped_by_frame": false
+      },
+      {
+        "frame": 984,
+        "visible_foreground_bbox": [
+          1464,
+          128,
+          2384,
+          2056
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1480,
+          2384
+        ],
+        "width": 904,
+        "visible_bbox_center": [
+          1924.0,
+          1092.0
+        ],
+        "rail_center_x": 1932.0,
+        "scale_vs_904px_reference_phone": 1.0,
+        "clipped_by_frame": false
+      },
+      {
+        "frame": 985,
+        "visible_foreground_bbox": [
+          1464,
+          128,
+          2384,
+          2056
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1480,
+          2384
+        ],
+        "width": 904,
+        "visible_bbox_center": [
+          1924.0,
+          1092.0
+        ],
+        "rail_center_x": 1932.0,
+        "scale_vs_904px_reference_phone": 1.0,
+        "clipped_by_frame": false
+      },
+      {
+        "frame": 990,
+        "visible_foreground_bbox": [
+          1464,
+          128,
+          2384,
+          2056
+        ],
+        "rail_scan_y": 1120,
+        "rail_left_right": [
+          1480,
+          2384
+        ],
+        "width": 904,
+        "visible_bbox_center": [
+          1924.0,
+          1092.0
+        ],
+        "rail_center_x": 1932.0,
+        "scale_vs_904px_reference_phone": 1.0,
+        "clipped_by_frame": false
+      }
+    ],
+    "phone_rotation": "Approximately front-on, negligible in-plane rotation; camera reframing dominates.",
+    "phone_zoom_summary": [
+      {
+        "frames": [
+          211,
+          270
+        ],
+        "description": "Tight, cropped phone; about 1600px wide decreasing slightly."
+      },
+      {
+        "frames": [
+          280,
+          320
+        ],
+        "description": "Zoom out to about 900px phone width."
+      },
+      {
+        "frames": [
+          404,
+          424
+        ],
+        "description": "Whole phone about 904px width."
+      },
+      {
+        "frames": [
+          425,
+          445
+        ],
+        "description": "Zoom to composer; about 1504px phone width."
+      },
+      {
+        "frames": [
+          445,
+          584
+        ],
+        "description": "Close typing hold."
+      },
+      {
+        "frames": [
+          590,
+          625
+        ],
+        "description": "Zoom back to whole phone."
+      },
+      {
+        "frames": [
+          625,
+          730
+        ],
+        "description": "Whole-phone chat/reply."
+      },
+      {
+        "frames": [
+          735,
+          764
+        ],
+        "description": "Zoom to reply/composer; close hold through about 845."
+      },
+      {
+        "frames": [
+          845,
+          875
+        ],
+        "description": "Zoom back to whole phone."
+      },
+      {
+        "frames": [
+          875,
+          990
+        ],
+        "description": "Whole-phone second reply hold."
+      }
+    ],
+    "ui_plane_samples": [
+      {
+        "frame": 68,
+        "visible_plane_bbox_px": [
+          0,
+          0,
+          3840,
+          2160
+        ],
+        "bbox_clipped": true,
+        "landmark": "tweet white attachment lower edge",
+        "line_y_at_x0_px": 1153.5,
+        "line_slope": -0.03336,
+        "screen_rotation_deg": -1.91
+      },
+      {
+        "frame": 78,
+        "visible_plane_bbox_px": [
+          0,
+          0,
+          3840,
+          2160
+        ],
+        "bbox_clipped": true,
+        "landmark": "tweet white attachment lower edge",
+        "line_y_at_x0_px": 848.7,
+        "line_slope": -0.03305,
+        "screen_rotation_deg": -1.89
+      },
+      {
+        "frame": 88,
+        "visible_plane_bbox_px": [
+          0,
+          0,
+          3840,
+          2160
+        ],
+        "bbox_clipped": true,
+        "landmark": "tweet white attachment lower edge",
+        "line_y_at_x0_px": 696.4,
+        "line_slope": -0.02669,
+        "screen_rotation_deg": -1.53
+      },
+      {
+        "frame": 98,
+        "visible_plane_bbox_px": [
+          0,
+          0,
+          3840,
+          2160
+        ],
+        "bbox_clipped": true,
+        "landmark": "tweet white attachment lower edge",
+        "line_y_at_x0_px": 652.2,
+        "line_slope": -0.02475,
+        "screen_rotation_deg": -1.42
+      },
+      {
+        "frame": 108,
+        "visible_plane_bbox_px": [
+          0,
+          0,
+          3840,
+          2160
+        ],
+        "bbox_clipped": true,
+        "landmark": "tweet white attachment lower edge",
+        "line_y_at_x0_px": 652.1,
+        "line_slope": -0.02475,
+        "screen_rotation_deg": -1.42
+      },
+      {
+        "frame": 118,
+        "visible_plane_bbox_px": [
+          0,
+          0,
+          3840,
+          2160
+        ],
+        "bbox_clipped": true,
+        "landmark": "tweet white attachment lower edge",
+        "line_y_at_x0_px": 652.1,
+        "line_slope": -0.02474,
+        "screen_rotation_deg": -1.42
+      },
+      {
+        "frame": 128,
+        "visible_plane_bbox_px": [
+          0,
+          0,
+          3840,
+          2160
+        ],
+        "bbox_clipped": true,
+        "landmark": "tweet white attachment lower edge",
+        "line_y_at_x0_px": 652.1,
+        "line_slope": -0.02475,
+        "screen_rotation_deg": -1.42
+      },
+      {
+        "frame": 138,
+        "visible_plane_bbox_px": [
+          0,
+          0,
+          3840,
+          2160
+        ],
+        "bbox_clipped": true,
+        "landmark": "tweet white attachment lower edge",
+        "line_y_at_x0_px": 652.1,
+        "line_slope": -0.02475,
+        "screen_rotation_deg": -1.42
+      },
+      {
+        "frame": 139,
+        "visible_plane_bbox_px": [
+          0,
+          0,
+          3840,
+          2160
+        ],
+        "bbox_clipped": true,
+        "landmark": "browser chrome to white document boundary",
+        "line_y_at_x0_px": 329.5,
+        "line_slope": 0.03426,
+        "screen_rotation_deg": 1.96
+      },
+      {
+        "frame": 149,
+        "visible_plane_bbox_px": [
+          0,
+          0,
+          3840,
+          2160
+        ],
+        "bbox_clipped": true,
+        "landmark": "browser chrome to white document boundary",
+        "line_y_at_x0_px": 415.5,
+        "line_slope": 0.04148,
+        "screen_rotation_deg": 2.38
+      },
+      {
+        "frame": 159,
+        "visible_plane_bbox_px": [
+          0,
+          0,
+          3840,
+          2160
+        ],
+        "bbox_clipped": true,
+        "landmark": "browser chrome to white document boundary",
+        "line_y_at_x0_px": 431.2,
+        "line_slope": 0.04365,
+        "screen_rotation_deg": 2.5
+      },
+      {
+        "frame": 169,
+        "visible_plane_bbox_px": [
+          0,
+          0,
+          3840,
+          2160
+        ],
+        "bbox_clipped": true,
+        "landmark": "browser chrome to white document boundary",
+        "line_y_at_x0_px": 430.7,
+        "line_slope": 0.04413,
+        "screen_rotation_deg": 2.53
+      },
+      {
+        "frame": 179,
+        "visible_plane_bbox_px": [
+          0,
+          0,
+          3840,
+          2160
+        ],
+        "bbox_clipped": true,
+        "landmark": "browser chrome to white document boundary",
+        "line_y_at_x0_px": 430.8,
+        "line_slope": 0.04379,
+        "screen_rotation_deg": 2.51
+      },
+      {
+        "frame": 189,
+        "visible_plane_bbox_px": [
+          0,
+          0,
+          3840,
+          2160
+        ],
+        "bbox_clipped": true,
+        "landmark": "browser chrome to white document boundary",
+        "line_y_at_x0_px": 418.9,
+        "line_slope": 0.05271,
+        "screen_rotation_deg": 3.02
+      },
+      {
+        "frame": 199,
+        "visible_plane_bbox_px": [
+          0,
+          0,
+          3840,
+          2160
+        ],
+        "bbox_clipped": true,
+        "landmark": "browser chrome to white document boundary",
+        "line_y_at_x0_px": 418.8,
+        "line_slope": 0.05274,
+        "screen_rotation_deg": 3.02
+      },
+      {
+        "frame": 209,
+        "visible_plane_bbox_px": [
+          0,
+          0,
+          3840,
+          2160
+        ],
+        "bbox_clipped": true,
+        "landmark": "browser chrome to white document boundary",
+        "line_y_at_x0_px": 418.8,
+        "line_slope": 0.05274,
+        "screen_rotation_deg": 3.02
+      },
+      {
+        "frame": 210,
+        "visible_plane_bbox_px": [
+          0,
+          0,
+          3840,
+          2160
+        ],
+        "bbox_clipped": true,
+        "landmark": "browser chrome to white document boundary",
+        "line_y_at_x0_px": 418.8,
+        "line_slope": 0.05274,
+        "screen_rotation_deg": 3.02
+      }
+    ],
+    "perspective_notes": {
+      "S2": "White attachment horizontal edge slopes upward right; verticals lean right downwards. Approximate skewX +6 to +10 degrees; true 3D rotateY and full offscreen bounds cannot be identified from one clipped plane. Camera moves rapidly early 68–98 then holds. Fit landmark line, not a fabricated full rectangle.",
+      "S3": "Browser horizontal edge slopes downward right, roughly +3 to +4 degrees. Strong perspective/italic slant; approximate skewX -8 to -12 degrees, not a calibrated 3D solve."
+    },
+    "static_shots": [
+      {
+        "shot": "S1",
+        "bbox_px": [
+          0,
+          0,
+          3840,
+          2160
+        ],
+        "camera": "locked background; text changes"
+      },
+      {
+        "shot": "S5",
+        "bbox_px": [
+          0,
+          0,
+          3840,
+          2160
+        ],
+        "camera": "locked background; text changes"
+      },
+      {
+        "shot": "S7",
+        "bbox_px": [
+          0,
+          0,
+          3840,
+          2160
+        ],
+        "camera": "locked composition; icon opacity ramp and command reveal; arc static/very subtle drift not quantified"
+      }
+    ],
+    "motion_blur": "UI planes and phone edges soften/ghost during fast reframing, especially S2 entry and phone zooms. Stationary text remains sharp. No shutter angle or per-frame blur kernel fitted."
+  },
+  "colors": {
+    "status": "Display-referred source samples/estimates, not original design tokens; H.264/YUV and antialiasing alter values.",
+    "samples": [
+      {
+        "name": "gradient top left",
+        "hex": "#000000",
+        "frame": 340,
+        "source_xy": [
+          80,
+          80
+        ]
+      },
+      {
+        "name": "gradient top right",
+        "hex": "#3B3B68",
+        "frame": 340,
+        "source_xy": [
+          3760,
+          80
+        ]
+      },
+      {
+        "name": "gradient bottom left",
+        "hex": "#12101F",
+        "frame": 340,
+        "source_xy": [
+          80,
+          2080
+        ]
+      },
+      {
+        "name": "gradient bottom right",
+        "hex": "#8D2C7E",
+        "frame": 340,
+        "source_xy": [
+          3760,
+          2080
+        ]
+      },
+      {
+        "name": "gradient center",
+        "hex": "#292544",
+        "frame": 340,
+        "source_xy": [
+          1920,
+          1080
+        ]
+      },
+      {
+        "name": "title pink median",
+        "hex": "#DC8C91",
+        "frame": 40,
+        "method": "median title-colored pixels R>180, R>1.25G, R>1.1B, G>90 at 1920 frame"
+      },
+      {
+        "name": "X toast blue",
+        "hex": "#26A1E9",
+        "frame": 120,
+        "source_xy": [
+          2000,
+          1944
+        ]
+      },
+      {
+        "name": "Reader toast",
+        "hex": "#111A20",
+        "frame": 190,
+        "source_xy": [
+          3360,
+          864
+        ]
+      },
+      {
+        "name": "Telegram outgoing purple",
+        "hex": "#8B36F6",
+        "frame": 620,
+        "method": "median saturated-purple pixels, B>180, 90<R<190, G<100"
+      },
+      {
+        "name": "Telegram incoming dark plum",
+        "hex": "#302332",
+        "frame": 950,
+        "method": "median crop [1600,980,2000,1020] includes some glyphs"
+      },
+      {
+        "name": "composer",
+        "hex": "#181619",
+        "frame": 541,
+        "source_xy": [
+          2000,
+          1440
+        ]
+      },
+      {
+        "name": "Telegram blue",
+        "hex": "#4D8CF5",
+        "method": "visual estimate of menu/send buttons"
+      },
+      {
+        "name": "Reader progress green",
+        "hex": "#71C36C",
+        "method": "visual estimate"
+      },
+      {
+        "name": "body white",
+        "hex": "#FFFFFF",
+        "method": "highlight/text interior estimate"
+      }
+    ]
+  },
+  "fonts": [
+    {
+      "usage": "titles/end-card",
+      "guess": "Inter Bold or close sans-serif; end command looks proportional sans, not a terminal monospace",
+      "certainty": "visual guess; no font metadata recovered"
+    },
+    {
+      "usage": "iOS/Telegram/share sheet",
+      "guess": "SF Pro / SF Pro Text"
+    },
+    {
+      "usage": "article",
+      "guess": "serif italic, Georgia/Times-like; exact family unresolved"
+    },
+    {
+      "usage": "X/browser",
+      "guess": "platform sans-serif, SF/Arial-like"
+    },
+    {
+      "usage": "Readwise R",
+      "guess": "custom serif brand mark, not plain system text"
+    }
+  ],
+  "audio": {
+    "duration_seconds": 37.059048,
+    "music": {
+      "present": true,
+      "first_source_frame": 0,
+      "last_source_frame": 1109,
+      "description": "Continuous sustained electronic instrumental music; recurring rhythmic accents. No speech."
+    },
+    "distinct_ui_sfx": [],
+    "ui_sfx_conclusion": "No distinct clicks, typing, taps, send/whoosh or pop could be isolated audibly. Do not mistake musical transients for UI actions; absence of separable effects is not proof the mix contains none.",
+    "music_transient_candidate_frames": [
+      16,
+      31,
+      46,
+      61,
+      75,
+      90,
+      105,
+      119,
+      134,
+      149,
+      164,
+      179,
+      193,
+      208,
+      223,
+      238,
+      252,
+      267,
+      282,
+      296,
+      311,
+      326,
+      341,
+      356,
+      370,
+      385,
+      400,
+      415,
+      429,
+      444,
+      459,
+      474,
+      488,
+      503,
+      518,
+      533,
+      548,
+      562,
+      577,
+      592,
+      606,
+      621,
+      636,
+      651,
+      665,
+      680,
+      695,
+      710,
+      725,
+      739,
+      754,
+      769,
+      783,
+      798,
+      813,
+      828,
+      842,
+      857,
+      872,
+      887,
+      902,
+      916,
+      935,
+      946,
+      960,
+      975,
+      990,
+      1005,
+      1019,
+      1034,
+      1049,
+      1064,
+      1078,
+      1093,
+      1108
+    ],
+    "candidate_method": "Positive spectral flux, 2048-sample Hann window, 441-sample hop, min peak spacing 0.35s, prominence at 65th percentile. Rounded to source frames; musical candidates only, not click cues.",
+    "source_audio_exported_into_repo": false
+  },
+  "unresolved": [
+    "Not exhaustive exact coverage of the keyboard prediction bar: partial OCR observations and selected visually checked states only; transient letter case/key-popup frames not fully mapped.",
+    "Every principal typed glyph is mapped, but whitespace/key-down timing and inline-prediction acceptance cannot be inferred exactly from visible pixels.",
+    "Full clipped tweet/browser/article/video microcopy remains incomplete; uncertain fragments are labeled rather than completed from outside knowledge.",
+    "S2 cursor track before frame 90, S3 before 149/after 184, exact physical click/tap times and subframe press behavior are not recovered.",
+    "End-icon fade at the sampled interior pixel changes 994–1023 and settles at 1024; exact low-opacity antialiased fringe onset is not recovered. No final multi-frame fade found.",
+    "Phone bboxes every ~10 frames are threshold estimates, with denser zoom samples. Offscreen bounds, true 3D perspective transforms, blur kernels and exact toast trajectories remain unfitted.",
+    "Bot response chunks are measured at visible/readable boundaries; clipping/scroll interpolation prevents a definitive first-visible frame for every individual bot word.",
+    "Source-derived temporary evidence stays outside repo and is not bundled; only textual analysis artifacts are delivered."
+  ]
+}
