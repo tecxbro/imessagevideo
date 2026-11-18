@@ -1,0 +1,4769 @@
+{
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "duration": 28,
+  "background": "#F1F0ED",
+  "title": "Check In — One thread, one walk (v2)",
+  "source": {
+    "notes": "Authored v2 revision: readable worry draft, outgoing card, closer walking composition and live authored end mark. Arial fallback; no Apple artwork or SF Symbols. Silent picture."
+  },
+  "layers": [
+    {
+      "id": "world",
+      "type": "group",
+      "x": 0,
+      "y": 0,
+      "children": [
+        {
+          "id": "camera",
+          "type": "group",
+          "x": 0,
+          "y": 0,
+          "children": [
+            {
+              "id": "route",
+              "type": "group",
+              "x": 0,
+              "y": 0,
+              "children": [
+                {
+                  "id": "route-dot-0",
+                  "type": "circle",
+                  "x": 1060,
+                  "y": 650,
+                  "width": 8,
+                  "height": 8,
+                  "fill": "#A7B8AB",
+                  "keyframes": {
+                    "x": [
+                      {
+                        "t": 13.966666666666667,
+                        "value": 1060,
+                        "ease": "easeInOut"
+                      },
+                      {
+                        "t": 14.8,
+                        "value": 1060,
+                        "ease": "easeInOut"
+                      }
+                    ]
+                  },
+                  "start": 7.666666666666667
+                },
+                {
+                  "id": "route-dot-1",
+                  "type": "circle",
+                  "x": 1075.1063829787233,
+                  "y": 639.4848839505854,
+                  "width": 8,
+                  "height": 8,
+                  "fill": "#A7B8AB",
+                  "keyframes": {
+                    "x": [
+                      {
+                        "t": 13.966666666666667,
+                        "value": 1075.1063829787233,
+                        "ease": "easeInOut"
+                      },
+                      {
+                        "t": 14.8,
+                        "value": 1075.1063829787233,
+                        "ease": "easeInOut"
+                      }
+                    ]
+                  },
+                  "start": 7.8
+                },
+                {
+                  "id": "route-dot-2",
+                  "type": "circle",
+                  "x": 1090.212765957447,
+                  "y": 629.0055653551466,
+                  "width": 8,
+                  "height": 8,
+                  "fill": "#A7B8AB",
+                  "keyframes": {
+                    "x": [
+                      {
+                        "t": 13.966666666666667,
+                        "value": 1090.212765957447,
+                        "ease": "easeInOut"
+                      },
+                      {
+                        "t": 14.8,
+                        "value": 1090.212765957447,
+                        "ease": "easeInOut"
+                      }
+                    ]
+                  },
+                  "start": 7.9
+                },
+                {
+                  "id": "route-dot-3",
+                  "type": "circle",
+                  "x": 1105.3191489361702,
+                  "y": 618.5976817875397,
+                  "width": 8,
+                  "height": 8,
+                  "fill": "#A7B8AB",
+                  "keyframes": {
+                    "x": [
+                      {
+                        "t": 13.966666666666667,
+                        "value": 1105.3191489361702,
+                        "ease": "easeInOut"
+                      },
+                      {
+                        "t": 14.8,
+                        "value": 1105.3191489361702,
+                        "ease": "easeInOut"
+                      }
+                    ]
+                  },
+                  "start": 8.033333333333333
+                },
+                {
+                  "id": "route-dot-4",
+                  "type": "circle",
+                  "x": 1120.4255319148936,
+                  "y": 608.2965517754457,
+                  "width": 8,
+                  "height": 8,
+                  "fill": "#A7B8AB",
+                  "keyframes": {
+                    "x": [
+                      {
+                        "t": 13.966666666666667,
+                        "value": 1120.4255319148936,
+                        "ease": "easeInOut"
+                      },
+                      {
+                        "t": 14.8,
+                        "value": 1120.4255319148936,
+                        "ease": "easeInOut"
+                      }
+                    ]
+                  },
+                  "start": 8.166666666666666
+                },
+                {
+                  "id": "route-dot-5",
+                  "type": "circle",
+                  "x": 1135.531914893617,
+                  "y": 598.1370170592517,
+                  "width": 8,
+                  "height": 8,
+                  "fill": "#A7B8AB",
+                  "keyframes": {
+                    "x": [
+                      {
+                        "t": 13.966666666666667,
+                        "value": 1135.531914893617,
+                        "ease": "easeInOut"
+                      },
+                      {
+                        "t": 14.8,
+                        "value": 1135.531914893617,
+                        "ease": "easeInOut"
+                      }
+                    ]
+                  },
+                  "start": 8.3
+                },
+                {
+                  "id": "route-dot-6",
+                  "type": "circle",
+                  "x": 1150.6382978723404,
+                  "y": 588.1532869803806,
+                  "width": 8,
+                  "height": 8,
+                  "fill": "#A7B8AB",
+                  "keyframes": {
+                    "x": [
+                      {
+                        "t": 13.966666666666667,
+                        "value": 1150.6382978723404,
+                        "ease": "easeInOut"
+                      },
+                      {
+                        "t": 14.8,
+                        "value": 1150.6382978723404,
+                        "ease": "easeInOut"
+                      }
+                    ]
+                  },
+                  "start": 8.4
+                },
+                {
+                  "id": "route-dot-7",
+                  "type": "circle",
+                  "x": 1165.7446808510638,
+                  "y": 578.3787856940678,
+                  "width": 8,
+                  "height": 8,
+                  "fill": "#A7B8AB",
+                  "keyframes": {
+                    "x": [
+                      {
+                        "t": 13.966666666666667,
+                        "value": 1165.7446808510638,
+                        "ease": "easeInOut"
+                      },
+                      {
+                        "t": 14.8,
+                        "value": 1165.7446808510638,
+                        "ease": "easeInOut"
+                      }
+                    ]
+                  },
+                  "start": 8.533333333333333
+                },
+                {
+                  "id": "route-dot-8",
+                  "type": "circle",
+                  "x": 1180.8510638297873,
+                  "y": 568.8460028889699,
+                  "width": 8,
+                  "height": 8,
+                  "fill": "#A7B8AB",
+                  "keyframes": {
+                    "x": [
+                      {
+                        "t": 13.966666666666667,
+                        "value": 1180.8510638297873,
+                        "ease": "easeInOut"
+                      },
+                      {
+                        "t": 14.8,
+                        "value": 1180.8510638297873,
+                        "ease": "easeInOut"
+                      }
+                    ]
+                  },
+                  "start": 8.666666666666666
+                },
+                {
+                  "id": "route-dot-9",
+                  "type": "circle",
+                  "x": 1195.9574468085107,
+                  "y": 559.5863486803286,
+                  "width": 8,
+                  "height": 8,
+                  "fill": "#A7B8AB",
+                  "keyframes": {
+                    "x": [
+                      {
+                        "t": 13.966666666666667,
+                        "value": 1195.9574468085107,
+                        "ease": "easeInOut"
+                      },
+                      {
+                        "t": 14.8,
+                        "value": 1195.9574468085107,
+                        "ease": "easeInOut"
+                      }
+                    ]
+                  },
+                  "start": 8.8
+                },
+                {
+                  "id": "route-dot-10",
+                  "type": "circle",
+                  "x": 1211.063829787234,
+                  "y": 550.6300133247706,
+                  "width": 8,
+                  "height": 8,
+                  "fill": "#A7B8AB",
+                  "keyframes": {
+                    "x": [
+                      {
+                        "t": 13.966666666666667,
+                        "value": 1211.063829787234,
+                        "ease": "easeInOut"
+                      },
+                      {
+                        "t": 14.8,
+                        "value": 1211.063829787234,
+                        "ease": "easeInOut"
+                      }
+                    ]
+                  },
+                  "start": 8.9
+                },
+                {
+                  "id": "route-dot-11",
+                  "type": "circle",
+                  "x": 1226.1702127659573,
+                  "y": 542.0058323832932,
+                  "width": 8,
+                  "height": 8,
+                  "fill": "#A7B8AB",
+                  "keyframes": {
+                    "x": [
+                      {
+                        "t": 13.966666666666667,
+                        "value": 1226.1702127659573,
+                        "ease": "easeInOut"
+                      },
+                      {
+                        "t": 14.8,
+                        "value": 1226.1702127659573,
+                        "ease": "easeInOut"
+                      }
+                    ]
+                  },
+                  "start": 9.033333333333333
+                },
+                {
+                  "id": "route-dot-12",
+                  "type": "circle",
+                  "x": 1241.276595744681,
+                  "y": 533.7411579346485,
+                  "width": 8,
+                  "height": 8,
+                  "fill": "#A7B8AB",
+                  "keyframes": {
+                    "x": [
+                      {
+                        "t": 13.966666666666667,
+                        "value": 1241.276595744681,
+                        "ease": "easeInOut"
+                      },
+                      {
+                        "t": 14.8,
+                        "value": 1241.276595744681,
+                        "ease": "easeInOut"
+                      }
+                    ]
+                  },
+                  "start": 9.166666666666666
+                },
+                {
+                  "id": "route-dot-13",
+                  "type": "circle",
+                  "x": 1256.3829787234042,
+                  "y": 525.8617364143201,
+                  "width": 8,
+                  "height": 8,
+                  "fill": "#A7B8AB",
+                  "keyframes": {
+                    "x": [
+                      {
+                        "t": 13.966666666666667,
+                        "value": 1256.3829787234042,
+                        "ease": "easeInOut"
+                      },
+                      {
+                        "t": 14.8,
+                        "value": 1256.3829787234042,
+                        "ease": "easeInOut"
+                      }
+                    ]
+                  },
+                  "start": 9.266666666666667
+                },
+                {
+                  "id": "route-dot-14",
+                  "type": "circle",
+                  "x": 1271.4893617021276,
+                  "y": 518.3915936246924,
+                  "width": 8,
+                  "height": 8,
+                  "fill": "#A7B8AB",
+                  "keyframes": {
+                    "x": [
+                      {
+                        "t": 13.966666666666667,
+                        "value": 1271.4893617021276,
+                        "ease": "easeInOut"
+                      },
+                      {
+                        "t": 14.8,
+                        "value": 1271.4893617021276,
+                        "ease": "easeInOut"
+                      }
+                    ]
+                  },
+                  "start": 9.4
+                },
+                {
+                  "id": "route-dot-15",
+                  "type": "circle",
+                  "x": 1286.595744680851,
+                  "y": 511.35292742998433,
+                  "width": 8,
+                  "height": 8,
+                  "fill": "#A7B8AB",
+                  "keyframes": {
+                    "x": [
+                      {
+                        "t": 13.966666666666667,
+                        "value": 1286.595744680851,
+                        "ease": "easeInOut"
+                      },
+                      {
+                        "t": 14.8,
+                        "value": 1286.595744680851,
+                        "ease": "easeInOut"
+                      }
+                    ]
+                  },
+                  "start": 9.533333333333333
+                },
+                {
+                  "id": "route-dot-16",
+                  "type": "circle",
+                  "x": 1301.7021276595744,
+                  "y": 504.76600861519944,
+                  "width": 8,
+                  "height": 8,
+                  "fill": "#A7B8AB",
+                  "keyframes": {
+                    "x": [
+                      {
+                        "t": 13.966666666666667,
+                        "value": 1301.7021276595744,
+                        "ease": "easeInOut"
+                      },
+                      {
+                        "t": 14.8,
+                        "value": 1301.7021276595744,
+                        "ease": "easeInOut"
+                      }
+                    ]
+                  },
+                  "start": 9.666666666666666
+                },
+                {
+                  "id": "route-dot-17",
+                  "type": "circle",
+                  "x": 1316.8085106382978,
+                  "y": 498.64909035187907,
+                  "width": 8,
+                  "height": 8,
+                  "fill": "#A7B8AB",
+                  "keyframes": {
+                    "x": [
+                      {
+                        "t": 13.966666666666667,
+                        "value": 1316.8085106382978,
+                        "ease": "easeInOut"
+                      },
+                      {
+                        "t": 14.8,
+                        "value": 1316.8085106382978,
+                        "ease": "easeInOut"
+                      }
+                    ]
+                  },
+                  "start": 9.766666666666667
+                },
+                {
+                  "id": "route-dot-18",
+                  "type": "circle",
+                  "x": 1331.9148936170213,
+                  "y": 493.01832667500776,
+                  "width": 8,
+                  "height": 8,
+                  "fill": "#A7B8AB",
+                  "keyframes": {
+                    "x": [
+                      {
+                        "t": 13.966666666666667,
+                        "value": 1331.9148936170213,
+                        "ease": "easeInOut"
+                      },
+                      {
+                        "t": 14.8,
+                        "value": 1331.9148936170213,
+                        "ease": "easeInOut"
+                      }
+                    ]
+                  },
+                  "start": 9.9
+                },
+                {
+                  "id": "route-dot-19",
+                  "type": "circle",
+                  "x": 1347.0212765957447,
+                  "y": 487.8877003351705,
+                  "width": 8,
+                  "height": 8,
+                  "fill": "#A7B8AB",
+                  "keyframes": {
+                    "x": [
+                      {
+                        "t": 13.966666666666667,
+                        "value": 1347.0212765957447,
+                        "ease": "easeInOut"
+                      },
+                      {
+                        "t": 14.8,
+                        "value": 1347.0212765957447,
+                        "ease": "easeInOut"
+                      }
+                    ]
+                  },
+                  "start": 10.033333333333333
+                },
+                {
+                  "id": "route-dot-20",
+                  "type": "circle",
+                  "x": 1362.127659574468,
+                  "y": 483.2689603481955,
+                  "width": 8,
+                  "height": 8,
+                  "fill": "#A7B8AB",
+                  "keyframes": {
+                    "x": [
+                      {
+                        "t": 13.966666666666667,
+                        "value": 1362.127659574468,
+                        "ease": "easeInOut"
+                      },
+                      {
+                        "t": 14.8,
+                        "value": 1362.127659574468,
+                        "ease": "easeInOut"
+                      }
+                    ]
+                  },
+                  "start": 10.133333333333333
+                },
+                {
+                  "id": "route-dot-21",
+                  "type": "circle",
+                  "x": 1377.2340425531916,
+                  "y": 479.1715695211966,
+                  "width": 8,
+                  "height": 8,
+                  "fill": "#A7B8AB",
+                  "keyframes": {
+                    "x": [
+                      {
+                        "t": 13.966666666666667,
+                        "value": 1377.2340425531916,
+                        "ease": "easeInOut"
+                      },
+                      {
+                        "t": 14.8,
+                        "value": 1377.2340425531916,
+                        "ease": "easeInOut"
+                      }
+                    ]
+                  },
+                  "start": 10.266666666666667
+                },
+                {
+                  "id": "route-dot-22",
+                  "type": "circle",
+                  "x": 1392.340425531915,
+                  "y": 475.60266218937954,
+                  "width": 8,
+                  "height": 8,
+                  "fill": "#A7B8AB",
+                  "keyframes": {
+                    "x": [
+                      {
+                        "t": 13.966666666666667,
+                        "value": 1392.340425531915,
+                        "ease": "easeInOut"
+                      },
+                      {
+                        "t": 14.8,
+                        "value": 1392.340425531915,
+                        "ease": "easeInOut"
+                      }
+                    ]
+                  },
+                  "start": 10.4
+                },
+                {
+                  "id": "route-dot-23",
+                  "type": "circle",
+                  "x": 1407.4468085106382,
+                  "y": 472.5670123523695,
+                  "width": 8,
+                  "height": 8,
+                  "fill": "#A7B8AB",
+                  "keyframes": {
+                    "x": [
+                      {
+                        "t": 13.966666666666667,
+                        "value": 1407.4468085106382,
+                        "ease": "easeInOut"
+                      },
+                      {
+                        "t": 14.8,
+                        "value": 1407.4468085106382,
+                        "ease": "easeInOut"
+                      }
+                    ]
+                  },
+                  "start": 10.533333333333333
+                },
+                {
+                  "id": "route-dot-24",
+                  "type": "circle",
+                  "x": 1422.5531914893618,
+                  "y": 470.0670123523695,
+                  "width": 8,
+                  "height": 8,
+                  "fill": "#A7B8AB",
+                  "keyframes": {
+                    "x": [
+                      {
+                        "t": 13.966666666666667,
+                        "value": 1422.5531914893618,
+                        "ease": "easeInOut"
+                      },
+                      {
+                        "t": 14.8,
+                        "value": 1422.5531914893618,
+                        "ease": "easeInOut"
+                      }
+                    ]
+                  },
+                  "start": 10.633333333333333
+                },
+                {
+                  "id": "route-dot-25",
+                  "type": "circle",
+                  "x": 1437.659574468085,
+                  "y": 468.10266218937954,
+                  "width": 8,
+                  "height": 8,
+                  "fill": "#A7B8AB",
+                  "keyframes": {
+                    "x": [
+                      {
+                        "t": 13.966666666666667,
+                        "value": 1437.659574468085,
+                        "ease": "easeInOut"
+                      },
+                      {
+                        "t": 14.8,
+                        "value": 1437.659574468085,
+                        "ease": "easeInOut"
+                      }
+                    ]
+                  },
+                  "start": 10.766666666666667
+                },
+                {
+                  "id": "route-dot-26",
+                  "type": "circle",
+                  "x": 1452.7659574468084,
+                  "y": 466.6715695211966,
+                  "width": 8,
+                  "height": 8,
+                  "fill": "#A7B8AB",
+                  "keyframes": {
+                    "x": [
+                      {
+                        "t": 13.966666666666667,
+                        "value": 1452.7659574468084,
+                        "ease": "easeInOut"
+                      },
+                      {
+                        "t": 14.8,
+                        "value": 1452.7659574468084,
+                        "ease": "easeInOut"
+                      }
+                    ]
+                  },
+                  "start": 10.9
+                },
+                {
+                  "id": "route-dot-27",
+                  "type": "circle",
+                  "x": 1467.872340425532,
+                  "y": 465.7689603481955,
+                  "width": 8,
+                  "height": 8,
+                  "fill": "#A7B8AB",
+                  "keyframes": {
+                    "x": [
+                      {
+                        "t": 13.966666666666667,
+                        "value": 1467.872340425532,
+                        "ease": "easeInOut"
+                      },
+                      {
+                        "t": 14.8,
+                        "value": 1467.872340425532,
+                        "ease": "easeInOut"
+                      }
+                    ]
+                  },
+                  "start": 11.033333333333333
+                },
+                {
+                  "id": "route-dot-28",
+                  "type": "circle",
+                  "x": 1482.9787234042553,
+                  "y": 465.3877003351705,
+                  "width": 8,
+                  "height": 8,
+                  "fill": "#A7B8AB",
+                  "keyframes": {
+                    "x": [
+                      {
+                        "t": 13.966666666666667,
+                        "value": 1482.9787234042553,
+                        "ease": "easeInOut"
+                      },
+                      {
+                        "t": 14.8,
+                        "value": 1482.9787234042553,
+                        "ease": "easeInOut"
+                      }
+                    ]
+                  },
+                  "start": 11.133333333333333
+                },
+                {
+                  "id": "route-dot-29",
+                  "type": "circle",
+                  "x": 1498.0851063829787,
+                  "y": 465.51832667500764,
+                  "width": 8,
+                  "height": 8,
+                  "fill": "#A7B8AB",
+                  "keyframes": {
+                    "x": [
+                      {
+                        "t": 13.966666666666667,
+                        "value": 1498.0851063829787,
+                        "ease": "easeInOut"
+                      },
+                      {
+                        "t": 14.8,
+                        "value": 1498.0851063829787,
+                        "ease": "easeInOut"
+                      }
+                    ]
+                  },
+                  "start": 11.266666666666667
+                },
+                {
+                  "id": "route-dot-30",
+                  "type": "circle",
+                  "x": 1513.1914893617022,
+                  "y": 466.14909035187907,
+                  "width": 8,
+                  "height": 8,
+                  "fill": "#A7B8AB",
+                  "keyframes": {
+                    "x": [
+                      {
+                        "t": 13.966666666666667,
+                        "value": 1513.1914893617022,
+                        "ease": "easeInOut"
+                      },
+                      {
+                        "t": 14.8,
+                        "value": 1513.1914893617022,
+                        "ease": "easeInOut"
+                      }
+                    ]
+                  },
+                  "start": 11.4
+                },
+                {
+                  "id": "route-dot-31",
+                  "type": "circle",
+                  "x": 1528.2978723404256,
+                  "y": 467.26600861519944,
+                  "width": 8,
+                  "height": 8,
+                  "fill": "#A7B8AB",
+                  "keyframes": {
+                    "x": [
+                      {
+                        "t": 13.966666666666667,
+                        "value": 1528.2978723404256,
+                        "ease": "easeInOut"
+                      },
+                      {
+                        "t": 14.8,
+                        "value": 1528.2978723404256,
+                        "ease": "easeInOut"
+                      }
+                    ]
+                  },
+                  "start": 11.5
+                },
+                {
+                  "id": "route-dot-32",
+                  "type": "circle",
+                  "x": 1543.404255319149,
+                  "y": 468.85292742998433,
+                  "width": 8,
+                  "height": 8,
+                  "fill": "#A7B8AB",
+                  "keyframes": {
+                    "x": [
+                      {
+                        "t": 13.966666666666667,
+                        "value": 1543.404255319149,
+                        "ease": "easeInOut"
+                      },
+                      {
+                        "t": 14.8,
+                        "value": 1543.404255319149,
+                        "ease": "easeInOut"
+                      }
+                    ]
+                  },
+                  "start": 11.633333333333333
+                },
+                {
+                  "id": "route-dot-33",
+                  "type": "circle",
+                  "x": 1558.5106382978724,
+                  "y": 470.8915936246924,
+                  "width": 8,
+                  "height": 8,
+                  "fill": "#A7B8AB",
+                  "keyframes": {
+                    "x": [
+                      {
+                        "t": 13.966666666666667,
+                        "value": 1558.5106382978724,
+                        "ease": "easeInOut"
+                      },
+                      {
+                        "t": 14.8,
+                        "value": 1558.5106382978724,
+                        "ease": "easeInOut"
+                      }
+                    ]
+                  },
+                  "start": 11.766666666666667
+                },
+                {
+                  "id": "route-dot-34",
+                  "type": "circle",
+                  "x": 1573.6170212765958,
+                  "y": 473.36173641432015,
+                  "width": 8,
+                  "height": 8,
+                  "fill": "#A7B8AB",
+                  "keyframes": {
+                    "x": [
+                      {
+                        "t": 13.966666666666667,
+                        "value": 1573.6170212765958,
+                        "ease": "easeInOut"
+                      },
+                      {
+                        "t": 14.8,
+                        "value": 1573.6170212765958,
+                        "ease": "easeInOut"
+                      }
+                    ]
+                  },
+                  "start": 11.9
+                },
+                {
+                  "id": "route-dot-35",
+                  "type": "circle",
+                  "x": 1588.723404255319,
+                  "y": 476.2411579346485,
+                  "width": 8,
+                  "height": 8,
+                  "fill": "#A7B8AB",
+                  "keyframes": {
+                    "x": [
+                      {
+                        "t": 13.966666666666667,
+                        "value": 1588.723404255319,
+                        "ease": "easeInOut"
+                      },
+                      {
+                        "t": 14.8,
+                        "value": 1588.723404255319,
+                        "ease": "easeInOut"
+                      }
+                    ]
+                  },
+                  "start": 12
+                },
+                {
+                  "id": "route-dot-36",
+                  "type": "circle",
+                  "x": 1603.8297872340427,
+                  "y": 479.5058323832932,
+                  "width": 8,
+                  "height": 8,
+                  "fill": "#A7B8AB",
+                  "keyframes": {
+                    "x": [
+                      {
+                        "t": 13.966666666666667,
+                        "value": 1603.8297872340427,
+                        "ease": "easeInOut"
+                      },
+                      {
+                        "t": 14.8,
+                        "value": 1603.8297872340427,
+                        "ease": "easeInOut"
+                      }
+                    ]
+                  },
+                  "start": 12.133333333333333
+                },
+                {
+                  "id": "route-dot-37",
+                  "type": "circle",
+                  "x": 1618.936170212766,
+                  "y": 483.13001332477063,
+                  "width": 8,
+                  "height": 8,
+                  "fill": "#A7B8AB",
+                  "keyframes": {
+                    "x": [
+                      {
+                        "t": 13.966666666666667,
+                        "value": 1618.936170212766,
+                        "ease": "easeInOut"
+                      },
+                      {
+                        "t": 14.8,
+                        "value": 1618.936170212766,
+                        "ease": "easeInOut"
+                      }
+                    ]
+                  },
+                  "start": 12.266666666666667
+                },
+                {
+                  "id": "route-dot-38",
+                  "type": "circle",
+                  "x": 1634.0425531914893,
+                  "y": 487.08634868032857,
+                  "width": 8,
+                  "height": 8,
+                  "fill": "#A7B8AB",
+                  "keyframes": {
+                    "x": [
+                      {
+                        "t": 13.966666666666667,
+                        "value": 1634.0425531914893,
+                        "ease": "easeInOut"
+                      },
+                      {
+                        "t": 14.8,
+                        "value": 1634.0425531914893,
+                        "ease": "easeInOut"
+                      }
+                    ]
+                  },
+                  "start": 12.366666666666667
+                },
+                {
+                  "id": "route-dot-39",
+                  "type": "circle",
+                  "x": 1649.148936170213,
+                  "y": 491.3460028889699,
+                  "width": 8,
+                  "height": 8,
+                  "fill": "#A7B8AB",
+                  "keyframes": {
+                    "x": [
+                      {
+                        "t": 13.966666666666667,
+                        "value": 1649.148936170213,
+                        "ease": "easeInOut"
+                      },
+                      {
+                        "t": 14.8,
+                        "value": 1649.148936170213,
+                        "ease": "easeInOut"
+                      }
+                    ]
+                  },
+                  "start": 12.5
+                },
+                {
+                  "id": "route-dot-40",
+                  "type": "circle",
+                  "x": 1664.2553191489362,
+                  "y": 495.8787856940678,
+                  "width": 8,
+                  "height": 8,
+                  "fill": "#A7B8AB",
+                  "keyframes": {
+                    "x": [
+                      {
+                        "t": 13.966666666666667,
+                        "value": 1664.2553191489362,
+                        "ease": "easeInOut"
+                      },
+                      {
+                        "t": 14.8,
+                        "value": 1664.2553191489362,
+                        "ease": "easeInOut"
+                      }
+                    ]
+                  },
+                  "start": 12.633333333333333
+                },
+                {
+                  "id": "route-dot-41",
+                  "type": "circle",
+                  "x": 1679.3617021276596,
+                  "y": 500.6532869803807,
+                  "width": 8,
+                  "height": 8,
+                  "fill": "#A7B8AB",
+                  "keyframes": {
+                    "x": [
+                      {
+                        "t": 13.966666666666667,
+                        "value": 1679.3617021276596,
+                        "ease": "easeInOut"
+                      },
+                      {
+                        "t": 14.8,
+                        "value": 1679.3617021276596,
+                        "ease": "easeInOut"
+                      }
+                    ]
+                  },
+                  "start": 12.766666666666667
+                },
+                {
+                  "id": "route-dot-42",
+                  "type": "circle",
+                  "x": 1694.4680851063831,
+                  "y": 505.63701705925166,
+                  "width": 8,
+                  "height": 8,
+                  "fill": "#A7B8AB",
+                  "keyframes": {
+                    "x": [
+                      {
+                        "t": 13.966666666666667,
+                        "value": 1694.4680851063831,
+                        "ease": "easeInOut"
+                      },
+                      {
+                        "t": 14.8,
+                        "value": 1694.4680851063831,
+                        "ease": "easeInOut"
+                      }
+                    ]
+                  },
+                  "start": 12.866666666666667
+                },
+                {
+                  "id": "route-dot-43",
+                  "type": "circle",
+                  "x": 1709.5744680851062,
+                  "y": 510.79655177544566,
+                  "width": 8,
+                  "height": 8,
+                  "fill": "#A7B8AB",
+                  "keyframes": {
+                    "x": [
+                      {
+                        "t": 13.966666666666667,
+                        "value": 1709.5744680851062,
+                        "ease": "easeInOut"
+                      },
+                      {
+                        "t": 14.8,
+                        "value": 1709.5744680851062,
+                        "ease": "easeInOut"
+                      }
+                    ]
+                  },
+                  "start": 13
+                },
+                {
+                  "id": "route-dot-44",
+                  "type": "circle",
+                  "x": 1724.6808510638298,
+                  "y": 516.0976817875396,
+                  "width": 8,
+                  "height": 8,
+                  "fill": "#A7B8AB",
+                  "keyframes": {
+                    "x": [
+                      {
+                        "t": 13.966666666666667,
+                        "value": 1724.6808510638298,
+                        "ease": "easeInOut"
+                      },
+                      {
+                        "t": 14.8,
+                        "value": 1724.6808510638298,
+                        "ease": "easeInOut"
+                      }
+                    ]
+                  },
+                  "start": 13.133333333333333
+                },
+                {
+                  "id": "route-dot-45",
+                  "type": "circle",
+                  "x": 1739.7872340425533,
+                  "y": 521.5055653551465,
+                  "width": 8,
+                  "height": 8,
+                  "fill": "#A7B8AB",
+                  "keyframes": {
+                    "x": [
+                      {
+                        "t": 13.966666666666667,
+                        "value": 1739.7872340425533,
+                        "ease": "easeInOut"
+                      },
+                      {
+                        "t": 14.8,
+                        "value": 1739.7872340425533,
+                        "ease": "easeInOut"
+                      }
+                    ]
+                  },
+                  "start": 13.266666666666667
+                },
+                {
+                  "id": "route-dot-46",
+                  "type": "circle",
+                  "x": 1754.8936170212764,
+                  "y": 526.9848839505854,
+                  "width": 8,
+                  "height": 8,
+                  "fill": "#A7B8AB",
+                  "keyframes": {
+                    "x": [
+                      {
+                        "t": 13.966666666666667,
+                        "value": 1754.8936170212764,
+                        "ease": "easeInOut"
+                      },
+                      {
+                        "t": 14.8,
+                        "value": 1754.8936170212764,
+                        "ease": "easeInOut"
+                      }
+                    ]
+                  },
+                  "start": 13.366666666666667
+                },
+                {
+                  "id": "route-dot-47",
+                  "type": "circle",
+                  "x": 1770,
+                  "y": 532.5,
+                  "width": 8,
+                  "height": 8,
+                  "fill": "#A7B8AB",
+                  "keyframes": {
+                    "x": [
+                      {
+                        "t": 13.966666666666667,
+                        "value": 1770,
+                        "ease": "easeInOut"
+                      },
+                      {
+                        "t": 14.8,
+                        "value": 1770,
+                        "ease": "easeInOut"
+                      }
+                    ]
+                  },
+                  "start": 13.5
+                }
+              ]
+            },
+            {
+              "id": "homePin",
+              "type": "group",
+              "x": 1737,
+              "y": 499.5,
+              "children": [
+                {
+                  "id": "home-disc",
+                  "type": "circle",
+                  "x": 0,
+                  "y": 0,
+                  "width": 66,
+                  "height": 66,
+                  "fill": "#FFFFFF",
+                  "stroke": "#DCE4DC",
+                  "strokeWidth": 2
+                },
+                {
+                  "id": "home-roof",
+                  "type": "path",
+                  "d": "M 15 31 L 33 15 L 51 31",
+                  "fill": "none",
+                  "stroke": "#24834B",
+                  "strokeWidth": 4
+                },
+                {
+                  "id": "home-walls",
+                  "type": "path",
+                  "d": "M 20 28 L 20 48 L 46 48 L 46 28 M 30 48 L 30 36 L 37 36 L 37 48",
+                  "fill": "none",
+                  "stroke": "#24834B",
+                  "strokeWidth": 3
+                },
+                {
+                  "id": "home-label",
+                  "type": "text",
+                  "text": "Home",
+                  "x": 33,
+                  "y": -43,
+                  "fontSize": 28,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#24834B",
+                  "textAnchor": "middle",
+                  "fontWeight": 600
+                }
+              ],
+              "start": 7.666666666666667
+            },
+            {
+              "id": "walker",
+              "type": "group",
+              "x": 0,
+              "y": 0,
+              "children": [
+                {
+                  "id": "walker-halo",
+                  "type": "circle",
+                  "x": -32,
+                  "y": -32,
+                  "width": 64,
+                  "height": 64,
+                  "fill": "#FFFFFF"
+                },
+                {
+                  "id": "walker-core",
+                  "type": "circle",
+                  "x": -21,
+                  "y": -21,
+                  "width": 42,
+                  "height": 42,
+                  "fill": "#0A84FF"
+                }
+              ],
+              "start": 7.666666666666667,
+              "end": 19.333333333333332,
+              "keyframes": {
+                "x": [
+                  {
+                    "t": 7.666666666666667,
+                    "value": 1060,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 7.9,
+                    "value": 1075.1063829787233,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 8.166666666666666,
+                    "value": 1090.212765957447,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 8.4,
+                    "value": 1105.3191489361702,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 8.633333333333333,
+                    "value": 1120.4255319148936,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 8.9,
+                    "value": 1135.531914893617,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 9.133333333333333,
+                    "value": 1150.6382978723404,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 9.366666666666667,
+                    "value": 1165.7446808510638,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 9.633333333333333,
+                    "value": 1180.8510638297873,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 9.866666666666667,
+                    "value": 1195.9574468085107,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 10.1,
+                    "value": 1211.063829787234,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 10.366666666666667,
+                    "value": 1226.1702127659573,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 10.6,
+                    "value": 1241.276595744681,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 10.833333333333334,
+                    "value": 1256.3829787234042,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 11.1,
+                    "value": 1271.4893617021276,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 11.333333333333334,
+                    "value": 1286.595744680851,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 11.566666666666666,
+                    "value": 1301.7021276595744,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 11.833333333333334,
+                    "value": 1316.8085106382978,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 12.066666666666666,
+                    "value": 1331.9148936170213,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 12.3,
+                    "value": 1347.0212765957447,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 12.566666666666666,
+                    "value": 1362.127659574468,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 12.8,
+                    "value": 1377.2340425531916,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 13.033333333333333,
+                    "value": 1392.340425531915,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 13.3,
+                    "value": 1407.4468085106382,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 13.533333333333333,
+                    "value": 1422.5531914893618,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 13.8,
+                    "value": 1437.659574468085,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 14.033333333333333,
+                    "value": 1452.7659574468084,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 14.266666666666667,
+                    "value": 1467.872340425532,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 14.533333333333333,
+                    "value": 1482.9787234042553,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 14.766666666666667,
+                    "value": 1498.0851063829787,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 15,
+                    "value": 1513.1914893617022,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 15.266666666666667,
+                    "value": 1528.2978723404256,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 15.5,
+                    "value": 1543.404255319149,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 15.733333333333333,
+                    "value": 1558.5106382978724,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 16,
+                    "value": 1573.6170212765958,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 16.233333333333334,
+                    "value": 1588.723404255319,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 16.466666666666665,
+                    "value": 1603.8297872340427,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 16.733333333333334,
+                    "value": 1618.936170212766,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 16.966666666666665,
+                    "value": 1634.0425531914893,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 17.2,
+                    "value": 1649.148936170213,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 17.466666666666665,
+                    "value": 1664.2553191489362,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 17.7,
+                    "value": 1679.3617021276596,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 17.933333333333334,
+                    "value": 1694.4680851063831,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 18.2,
+                    "value": 1709.5744680851062,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 18.433333333333334,
+                    "value": 1724.6808510638298,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 18.666666666666668,
+                    "value": 1739.7872340425533,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 18.933333333333334,
+                    "value": 1754.8936170212764,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 19.166666666666668,
+                    "value": 1770,
+                    "ease": "easeInOut"
+                  }
+                ],
+                "y": [
+                  {
+                    "t": 7.666666666666667,
+                    "value": 650,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 7.9,
+                    "value": 639.4848839505854,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 8.166666666666666,
+                    "value": 629.0055653551466,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 8.4,
+                    "value": 618.5976817875397,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 8.633333333333333,
+                    "value": 608.2965517754457,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 8.9,
+                    "value": 598.1370170592517,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 9.133333333333333,
+                    "value": 588.1532869803806,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 9.366666666666667,
+                    "value": 578.3787856940678,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 9.633333333333333,
+                    "value": 568.8460028889699,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 9.866666666666667,
+                    "value": 559.5863486803286,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 10.1,
+                    "value": 550.6300133247706,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 10.366666666666667,
+                    "value": 542.0058323832932,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 10.6,
+                    "value": 533.7411579346485,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 10.833333333333334,
+                    "value": 525.8617364143201,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 11.1,
+                    "value": 518.3915936246924,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 11.333333333333334,
+                    "value": 511.35292742998433,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 11.566666666666666,
+                    "value": 504.76600861519944,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 11.833333333333334,
+                    "value": 498.64909035187907,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 12.066666666666666,
+                    "value": 493.01832667500776,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 12.3,
+                    "value": 487.8877003351705,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 12.566666666666666,
+                    "value": 483.2689603481955,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 12.8,
+                    "value": 479.1715695211966,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 13.033333333333333,
+                    "value": 475.60266218937954,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 13.3,
+                    "value": 472.5670123523695,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 13.533333333333333,
+                    "value": 470.0670123523695,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 13.8,
+                    "value": 468.10266218937954,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 14.033333333333333,
+                    "value": 466.6715695211966,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 14.266666666666667,
+                    "value": 465.7689603481955,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 14.533333333333333,
+                    "value": 465.3877003351705,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 14.766666666666667,
+                    "value": 465.51832667500764,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 15,
+                    "value": 466.14909035187907,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 15.266666666666667,
+                    "value": 467.26600861519944,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 15.5,
+                    "value": 468.85292742998433,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 15.733333333333333,
+                    "value": 470.8915936246924,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 16,
+                    "value": 473.36173641432015,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 16.233333333333334,
+                    "value": 476.2411579346485,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 16.466666666666665,
+                    "value": 479.5058323832932,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 16.733333333333334,
+                    "value": 483.13001332477063,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 16.966666666666665,
+                    "value": 487.08634868032857,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 17.2,
+                    "value": 491.3460028889699,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 17.466666666666665,
+                    "value": 495.8787856940678,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 17.7,
+                    "value": 500.6532869803807,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 17.933333333333334,
+                    "value": 505.63701705925166,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 18.2,
+                    "value": 510.79655177544566,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 18.433333333333334,
+                    "value": 516.0976817875396,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 18.666666666666668,
+                    "value": 521.5055653551465,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 18.933333333333334,
+                    "value": 526.9848839505854,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 19.166666666666668,
+                    "value": 532.5,
+                    "ease": "easeInOut"
+                  }
+                ]
+              },
+              "events": [
+                {
+                  "frame": 575,
+                  "action": "arrival",
+                  "target": "homePin"
+                }
+              ]
+            },
+            {
+              "id": "phoneMaya",
+              "type": "group",
+              "x": 520,
+              "y": 80,
+              "children": [
+                {
+                  "id": "phoneMaya-rim",
+                  "type": "rect",
+                  "x": -14,
+                  "y": -14,
+                  "width": 540,
+                  "height": 944,
+                  "fill": "#424349",
+                  "radius": 62,
+                  "stroke": "#9B9CA1",
+                  "strokeWidth": 2,
+                  "shadow": {
+                    "x": 0,
+                    "y": 22,
+                    "blur": 30,
+                    "color": "#00000025"
+                  }
+                },
+                {
+                  "id": "phoneMaya-bezel",
+                  "type": "rect",
+                  "x": -9,
+                  "y": -9,
+                  "width": 530,
+                  "height": 934,
+                  "fill": "#18191D",
+                  "radius": 58
+                },
+                {
+                  "id": "phoneMaya-screen",
+                  "type": "group",
+                  "x": 0,
+                  "y": 0,
+                  "children": [
+                    {
+                      "id": "phoneMaya-screen-paper",
+                      "type": "rect",
+                      "x": 0,
+                      "y": 0,
+                      "width": 512,
+                      "height": 916,
+                      "fill": "#FFFFFF",
+                      "radius": 48
+                    },
+                    {
+                      "id": "clockMaya",
+                      "type": "text",
+                      "text": "11:42",
+                      "x": 36,
+                      "y": 22,
+                      "fontSize": 23,
+                      "fontFamily": "Arial, sans-serif",
+                      "fill": "#17181C",
+                      "fontWeight": 700,
+                      "keyframes": {
+                        "text": [
+                          {
+                            "t": 6.8,
+                            "value": "11:42",
+                            "ease": "hold"
+                          },
+                          {
+                            "t": 8.333333333333334,
+                            "value": "11:45",
+                            "ease": "hold"
+                          },
+                          {
+                            "t": 9.333333333333334,
+                            "value": "11:48",
+                            "ease": "hold"
+                          },
+                          {
+                            "t": 10.333333333333334,
+                            "value": "11:51",
+                            "ease": "hold"
+                          },
+                          {
+                            "t": 11.333333333333334,
+                            "value": "11:54",
+                            "ease": "hold"
+                          },
+                          {
+                            "t": 12.333333333333334,
+                            "value": "11:57",
+                            "ease": "hold"
+                          },
+                          {
+                            "t": 13.333333333333334,
+                            "value": "11:59",
+                            "ease": "hold"
+                          },
+                          {
+                            "t": 19.166666666666668,
+                            "value": "12:00",
+                            "ease": "hold"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "id": "phoneMaya-island",
+                      "type": "rect",
+                      "x": 179,
+                      "y": 12,
+                      "width": 154,
+                      "height": 35,
+                      "fill": "#101115",
+                      "radius": 18
+                    },
+                    {
+                      "id": "phoneMaya-signal-0",
+                      "type": "rect",
+                      "x": 405,
+                      "y": 37,
+                      "width": 4,
+                      "height": 6,
+                      "fill": "#17181C",
+                      "radius": 1
+                    },
+                    {
+                      "id": "phoneMaya-signal-1",
+                      "type": "rect",
+                      "x": 411,
+                      "y": 33,
+                      "width": 4,
+                      "height": 10,
+                      "fill": "#17181C",
+                      "radius": 1
+                    },
+                    {
+                      "id": "phoneMaya-signal-2",
+                      "type": "rect",
+                      "x": 417,
+                      "y": 29,
+                      "width": 4,
+                      "height": 14,
+                      "fill": "#17181C",
+                      "radius": 1
+                    },
+                    {
+                      "id": "phoneMaya-signal-3",
+                      "type": "rect",
+                      "x": 423,
+                      "y": 25,
+                      "width": 4,
+                      "height": 18,
+                      "fill": "#17181C",
+                      "radius": 1
+                    },
+                    {
+                      "id": "phoneMaya-battery",
+                      "type": "rect",
+                      "x": 442,
+                      "y": 25,
+                      "width": 30,
+                      "height": 15,
+                      "fill": "none",
+                      "radius": 4,
+                      "stroke": "#17181C",
+                      "strokeWidth": 1.5
+                    },
+                    {
+                      "id": "phoneMaya-charge",
+                      "type": "rect",
+                      "x": 445,
+                      "y": 28,
+                      "width": 23,
+                      "height": 9,
+                      "fill": "#17181C",
+                      "radius": 2
+                    },
+                    {
+                      "id": "phoneMaya-back",
+                      "type": "text",
+                      "text": "‹",
+                      "x": 22,
+                      "y": 75,
+                      "fontSize": 50,
+                      "fontFamily": "Arial, sans-serif",
+                      "fill": "#0A84FF"
+                    },
+                    {
+                      "id": "phoneMaya-avatar",
+                      "type": "group",
+                      "x": 231,
+                      "y": 66,
+                      "children": [
+                        {
+                          "id": "phoneMaya-avatar-disc",
+                          "type": "circle",
+                          "width": 50,
+                          "height": 50,
+                          "fill": "#BABCC4"
+                        },
+                        {
+                          "id": "phoneMaya-avatar-initials",
+                          "type": "text",
+                          "text": "S",
+                          "x": 25,
+                          "y": 13.5,
+                          "fontSize": 16,
+                          "fontFamily": "Arial, sans-serif",
+                          "fill": "#17191d",
+                          "textAnchor": "middle",
+                          "fontWeight": 600
+                        }
+                      ]
+                    },
+                    {
+                      "id": "phoneMaya-name",
+                      "type": "text",
+                      "text": "Sam",
+                      "x": 256,
+                      "y": 123,
+                      "fontSize": 23,
+                      "fontFamily": "Arial, sans-serif",
+                      "fill": "#17181C",
+                      "textAnchor": "middle",
+                      "fontWeight": 600
+                    },
+                    {
+                      "id": "phoneMaya-name-arrow",
+                      "type": "text",
+                      "text": "›",
+                      "x": 292,
+                      "y": 122,
+                      "fontSize": 23,
+                      "fontFamily": "Arial, sans-serif",
+                      "fill": "#85858B"
+                    },
+                    {
+                      "id": "phoneMaya-header-line",
+                      "type": "rect",
+                      "x": 0,
+                      "y": 163,
+                      "width": 512,
+                      "height": 1,
+                      "fill": "#EEEEF0",
+                      "radius": 0
+                    },
+                    {
+                      "id": "phoneMaya-date",
+                      "type": "text",
+                      "text": "Today 11:42 PM",
+                      "x": 256,
+                      "y": 190,
+                      "fontSize": 18,
+                      "fontFamily": "Arial, sans-serif",
+                      "fill": "#85858B",
+                      "textAnchor": "middle"
+                    },
+                    {
+                      "id": "threadMaya",
+                      "type": "group",
+                      "x": 0,
+                      "y": 0,
+                      "children": [
+                        {
+                          "id": "bubbleAsk",
+                          "type": "group",
+                          "x": 26,
+                          "y": 240,
+                          "children": [
+                            {
+                              "id": "bubbleAsk-body",
+                              "type": "rect",
+                              "x": 0,
+                              "y": 0,
+                              "width": 371,
+                              "height": 64,
+                              "fill": "#E9E9EB",
+                              "radius": 20
+                            },
+                            {
+                              "id": "bubbleAsk-tail",
+                              "type": "path",
+                              "d": "M 16 46 Q 3 65 -7 62 Q 3 58 2 44 Z",
+                              "fill": "#E9E9EB"
+                            },
+                            {
+                              "id": "bubbleAsk-copy",
+                              "type": "text",
+                              "text": "Text me when you're home?",
+                              "x": 17,
+                              "y": 14,
+                              "fontSize": 26,
+                              "fontFamily": "Arial, sans-serif",
+                              "fill": "#17191d",
+                              "lineHeight": 24
+                            }
+                          ],
+                          "start": 0.4,
+                          "keyframes": {
+                            "y": [
+                              {
+                                "t": 0.4,
+                                "value": 275,
+                                "ease": "easeInOut"
+                              },
+                              {
+                                "t": 0.8,
+                                "value": 240,
+                                "ease": "easeInOut"
+                              }
+                            ],
+                            "opacity": [
+                              {
+                                "t": 0.4,
+                                "value": 0,
+                                "ease": "easeInOut"
+                              },
+                              {
+                                "t": 0.6333333333333333,
+                                "value": 1,
+                                "ease": "easeInOut"
+                              }
+                            ]
+                          },
+                          "events": [
+                            {
+                              "frame": 12,
+                              "action": "receive",
+                              "target": "bubbleAsk"
+                            }
+                          ]
+                        },
+                        {
+                          "id": "cardMaya",
+                          "type": "group",
+                          "x": 144,
+                          "y": 580,
+                          "children": [
+                            {
+                              "id": "cardMaya-surface",
+                              "type": "rect",
+                              "x": 0,
+                              "y": 0,
+                              "width": 340,
+                              "height": 222,
+                              "fill": "#F2F5FA",
+                              "radius": 25,
+                              "stroke": "#D9E1EC",
+                              "strokeWidth": 1.5,
+                              "keyframes": {
+                                "fill": [
+                                  {
+                                    "t": 0,
+                                    "value": "#F2F5FA",
+                                    "ease": "hold"
+                                  },
+                                  {
+                                    "t": 19.333333333333332,
+                                    "value": "#E9F6ED",
+                                    "ease": "hold"
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "id": "cardMaya-icon",
+                              "type": "circle",
+                              "x": 20,
+                              "y": 20,
+                              "width": 40,
+                              "height": 40,
+                              "fill": "#0A84FF",
+                              "keyframes": {
+                                "fill": [
+                                  {
+                                    "t": 0,
+                                    "value": "#0A84FF",
+                                    "ease": "hold"
+                                  },
+                                  {
+                                    "t": 19.333333333333332,
+                                    "value": "#24834B",
+                                    "ease": "hold"
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "id": "cardMaya-check",
+                              "type": "path",
+                              "d": "M 31 40 L 38 47 L 50 32",
+                              "fill": "none",
+                              "stroke": "#FFFFFF",
+                              "strokeWidth": 3
+                            },
+                            {
+                              "id": "cardMaya-title",
+                              "type": "text",
+                              "text": "Check In",
+                              "x": 72,
+                              "y": 26,
+                              "fontSize": 28,
+                              "fontFamily": "Arial, sans-serif",
+                              "fill": "#17181C",
+                              "fontWeight": 700
+                            },
+                            {
+                              "id": "cardMaya-mode",
+                              "type": "text",
+                              "text": "When I Arrive",
+                              "x": 22,
+                              "y": 82,
+                              "fontSize": 29,
+                              "fontFamily": "Arial, sans-serif",
+                              "fill": "#17181C",
+                              "fontWeight": 700,
+                              "keyframes": {
+                                "text": [
+                                  {
+                                    "t": 0,
+                                    "value": "When I Arrive",
+                                    "ease": "hold"
+                                  },
+                                  {
+                                    "t": 19.333333333333332,
+                                    "value": "Arrived",
+                                    "ease": "hold"
+                                  }
+                                ],
+                                "fill": [
+                                  {
+                                    "t": 0,
+                                    "value": "#17181C",
+                                    "ease": "hold"
+                                  },
+                                  {
+                                    "t": 19.333333333333332,
+                                    "value": "#24834B",
+                                    "ease": "hold"
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "id": "cardMaya-destination",
+                              "type": "text",
+                              "text": "Home · Walking",
+                              "x": 22,
+                              "y": 125,
+                              "fontSize": 24,
+                              "fontFamily": "Arial, sans-serif",
+                              "fill": "#555C66",
+                              "keyframes": {
+                                "text": [
+                                  {
+                                    "t": 0,
+                                    "value": "Home · Walking",
+                                    "ease": "hold"
+                                  },
+                                  {
+                                    "t": 19.333333333333332,
+                                    "value": "Maya has arrived · 12:00",
+                                    "ease": "hold"
+                                  }
+                                ],
+                                "fontSize": [
+                                  {
+                                    "t": 0,
+                                    "value": 24,
+                                    "ease": "hold"
+                                  },
+                                  {
+                                    "t": 19.333333333333332,
+                                    "value": 23,
+                                    "ease": "hold"
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "id": "cardMaya-eta",
+                              "type": "text",
+                              "text": "About 18 min",
+                              "x": 22,
+                              "y": 174,
+                              "fontSize": 25,
+                              "fontFamily": "Arial, sans-serif",
+                              "fill": "#0A84FF",
+                              "keyframes": {
+                                "text": [
+                                  {
+                                    "t": 6.8,
+                                    "value": "About 18 min",
+                                    "ease": "hold"
+                                  },
+                                  {
+                                    "t": 8.333333333333334,
+                                    "value": "About 15 min",
+                                    "ease": "hold"
+                                  },
+                                  {
+                                    "t": 9.333333333333334,
+                                    "value": "About 12 min",
+                                    "ease": "hold"
+                                  },
+                                  {
+                                    "t": 10.333333333333334,
+                                    "value": "About 9 min",
+                                    "ease": "hold"
+                                  },
+                                  {
+                                    "t": 11.333333333333334,
+                                    "value": "About 6 min",
+                                    "ease": "hold"
+                                  },
+                                  {
+                                    "t": 12.333333333333334,
+                                    "value": "About 3 min",
+                                    "ease": "hold"
+                                  },
+                                  {
+                                    "t": 13.333333333333334,
+                                    "value": "About 1 min",
+                                    "ease": "hold"
+                                  },
+                                  {
+                                    "t": 19.166666666666668,
+                                    "value": "About 1 min",
+                                    "ease": "hold"
+                                  },
+                                  {
+                                    "t": 19.333333333333332,
+                                    "value": "✓  Completed",
+                                    "ease": "hold"
+                                  }
+                                ],
+                                "fill": [
+                                  {
+                                    "t": 0,
+                                    "value": "#0A84FF",
+                                    "ease": "hold"
+                                  },
+                                  {
+                                    "t": 19.333333333333332,
+                                    "value": "#24834B",
+                                    "ease": "hold"
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "id": "cardMaya-chevron",
+                              "type": "text",
+                              "text": "›",
+                              "x": 300,
+                              "y": 175,
+                              "fontSize": 27,
+                              "fontFamily": "Arial, sans-serif",
+                              "fill": "#85858B"
+                            }
+                          ],
+                          "start": 4.666666666666667,
+                          "keyframes": {
+                            "x": [
+                              {
+                                "t": 4.666666666666667,
+                                "value": 144,
+                                "ease": "easeInOut"
+                              },
+                              {
+                                "t": 6.2,
+                                "value": 144,
+                                "ease": "easeInOut"
+                              },
+                              {
+                                "t": 6.8,
+                                "value": 144,
+                                "ease": "easeInOut"
+                              }
+                            ],
+                            "y": [
+                              {
+                                "t": 4.666666666666667,
+                                "value": 925,
+                                "ease": "easeInOut"
+                              },
+                              {
+                                "t": 5.5,
+                                "value": 580,
+                                "ease": "easeInOut"
+                              },
+                              {
+                                "t": 6.2,
+                                "value": 580,
+                                "ease": "easeInOut"
+                              },
+                              {
+                                "t": 6.8,
+                                "value": 320,
+                                "ease": "easeInOut"
+                              }
+                            ],
+                            "scaleX": [
+                              {
+                                "t": 4.666666666666667,
+                                "value": 0.93,
+                                "ease": "easeInOut"
+                              },
+                              {
+                                "t": 5.5,
+                                "value": 1,
+                                "ease": "easeInOut"
+                              }
+                            ],
+                            "scaleY": [
+                              {
+                                "t": 4.666666666666667,
+                                "value": 0.93,
+                                "ease": "easeInOut"
+                              },
+                              {
+                                "t": 5.5,
+                                "value": 1,
+                                "ease": "easeInOut"
+                              }
+                            ]
+                          },
+                          "events": [
+                            {
+                              "frame": 140,
+                              "action": "draft appears",
+                              "target": "cardMaya"
+                            },
+                            {
+                              "frame": 186,
+                              "action": "send",
+                              "target": "cardMaya"
+                            },
+                            {
+                              "frame": 580,
+                              "action": "arrival",
+                              "target": "cardMaya"
+                            }
+                          ]
+                        },
+                        {
+                          "id": "bubbleHeart",
+                          "type": "group",
+                          "x": 28,
+                          "y": 665,
+                          "children": [
+                            {
+                              "id": "bubbleHeart-body",
+                              "type": "rect",
+                              "x": 0,
+                              "y": 0,
+                              "width": 158,
+                              "height": 116,
+                              "fill": "#E9E9EB",
+                              "radius": 20
+                            },
+                            {
+                              "id": "bubbleHeart-tail",
+                              "type": "path",
+                              "d": "M 16 98 Q 3 117 -7 114 Q 3 110 2 96 Z",
+                              "fill": "#E9E9EB"
+                            },
+                            {
+                              "id": "bubbleHeart-copy",
+                              "type": "text",
+                              "text": "",
+                              "x": 17,
+                              "y": 14,
+                              "fontSize": 19,
+                              "fontFamily": "Arial, sans-serif",
+                              "fill": "#17191d",
+                              "lineHeight": 24
+                            },
+                            {
+                              "id": "bubbleHeart-glyph",
+                              "type": "text",
+                              "text": "❤️",
+                              "x": 39,
+                              "y": 9,
+                              "fontSize": 76,
+                              "fontFamily": "Arial, Apple Color Emoji, sans-serif",
+                              "fill": "#17181C"
+                            }
+                          ],
+                          "start": 24.5,
+                          "keyframes": {
+                            "y": [
+                              {
+                                "t": 24.5,
+                                "value": 730,
+                                "ease": "easeInOut"
+                              },
+                              {
+                                "t": 25,
+                                "value": 665,
+                                "ease": "easeInOut"
+                              }
+                            ]
+                          },
+                          "events": [
+                            {
+                              "frame": 735,
+                              "action": "receive",
+                              "target": "bubbleHeart"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "phoneMaya-composer",
+                      "type": "group",
+                      "x": 88,
+                      "y": 846,
+                      "children": [
+                        {
+                          "id": "phoneMaya-composer-field",
+                          "type": "rect",
+                          "x": 0,
+                          "y": 0,
+                          "width": 394,
+                          "height": 48,
+                          "fill": "#ffffff",
+                          "radius": 24,
+                          "stroke": "#d8dbe0",
+                          "strokeWidth": 1
+                        },
+                        {
+                          "id": "phoneMaya-composer-input",
+                          "type": "text",
+                          "text": "iMessage",
+                          "x": 18,
+                          "y": 10,
+                          "fontSize": 24,
+                          "fontFamily": "Arial, sans-serif",
+                          "fill": "#777b84"
+                        },
+                        {
+                          "id": "phoneMaya-composer-send",
+                          "type": "circle",
+                          "x": 354,
+                          "y": 8,
+                          "width": 32,
+                          "height": 32,
+                          "fill": "#1688fa"
+                        },
+                        {
+                          "id": "phoneMaya-composer-arrow",
+                          "type": "path",
+                          "d": "M 370 33 L 370 16 M 363 23 L 370 16 L 377 23",
+                          "fill": "none",
+                          "stroke": "#ffffff",
+                          "strokeWidth": 2
+                        }
+                      ]
+                    },
+                    {
+                      "id": "phoneMaya-plus",
+                      "type": "group",
+                      "x": 34,
+                      "y": 850,
+                      "children": [
+                        {
+                          "id": "phoneMaya-plus-bg",
+                          "type": "circle",
+                          "x": 0,
+                          "y": 0,
+                          "width": 40,
+                          "height": 40,
+                          "fill": "#EDEDF0"
+                        },
+                        {
+                          "id": "phoneMaya-plus-label",
+                          "type": "text",
+                          "text": "+",
+                          "x": 20,
+                          "y": -1,
+                          "fontSize": 35,
+                          "fontFamily": "Arial, sans-serif",
+                          "fill": "#77777D",
+                          "textAnchor": "middle"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "phoneMaya-home-indicator",
+                      "type": "rect",
+                      "x": 162,
+                      "y": 898,
+                      "width": 188,
+                      "height": 6,
+                      "fill": "#111216",
+                      "radius": 3
+                    },
+                    {
+                      "id": "sheetApps",
+                      "type": "group",
+                      "x": 12,
+                      "y": 920,
+                      "children": [
+                        {
+                          "id": "sheetApps-surface",
+                          "type": "rect",
+                          "x": 0,
+                          "y": 0,
+                          "width": 488,
+                          "height": 378,
+                          "fill": "#f5f5f7",
+                          "radius": 25
+                        },
+                        {
+                          "id": "sheetApps-handle",
+                          "type": "rect",
+                          "x": 225,
+                          "y": 10,
+                          "width": 38,
+                          "height": 4,
+                          "fill": "#c4c7cc",
+                          "radius": 2
+                        },
+                        {
+                          "id": "row-0",
+                          "type": "group",
+                          "x": 18,
+                          "y": 38,
+                          "children": [
+                            {
+                              "id": "row-bg-0",
+                              "type": "rect",
+                              "x": 0,
+                              "y": 0,
+                              "width": 452,
+                              "height": 74,
+                              "fill": "#F5F5F7",
+                              "radius": 16,
+                              "keyframes": {}
+                            },
+                            {
+                              "id": "row-icon-0",
+                              "type": "circle",
+                              "x": 12,
+                              "y": 12,
+                              "width": 49,
+                              "height": 49,
+                              "fill": "#0A84FF"
+                            },
+                            {
+                              "id": "row-mark-0",
+                              "type": "text",
+                              "text": "✿",
+                              "x": 36,
+                              "y": 17,
+                              "fontSize": 28,
+                              "fontFamily": "Arial, sans-serif",
+                              "fill": "#FFFFFF",
+                              "textAnchor": "middle"
+                            },
+                            {
+                              "id": "row-label-0",
+                              "type": "text",
+                              "text": "Photos",
+                              "x": 82,
+                              "y": 21,
+                              "fontSize": 27,
+                              "fontFamily": "Arial, sans-serif",
+                              "fill": "#17181C",
+                              "fontWeight": 600
+                            }
+                          ]
+                        },
+                        {
+                          "id": "row-1",
+                          "type": "group",
+                          "x": 18,
+                          "y": 116,
+                          "children": [
+                            {
+                              "id": "row-bg-1",
+                              "type": "rect",
+                              "x": 0,
+                              "y": 0,
+                              "width": 452,
+                              "height": 74,
+                              "fill": "#F5F5F7",
+                              "radius": 16,
+                              "keyframes": {}
+                            },
+                            {
+                              "id": "row-icon-1",
+                              "type": "circle",
+                              "x": 12,
+                              "y": 12,
+                              "width": 49,
+                              "height": 49,
+                              "fill": "#66686E"
+                            },
+                            {
+                              "id": "row-mark-1",
+                              "type": "text",
+                              "text": "●",
+                              "x": 36,
+                              "y": 17,
+                              "fontSize": 28,
+                              "fontFamily": "Arial, sans-serif",
+                              "fill": "#FFFFFF",
+                              "textAnchor": "middle"
+                            },
+                            {
+                              "id": "row-label-1",
+                              "type": "text",
+                              "text": "Camera",
+                              "x": 82,
+                              "y": 21,
+                              "fontSize": 27,
+                              "fontFamily": "Arial, sans-serif",
+                              "fill": "#17181C",
+                              "fontWeight": 600
+                            }
+                          ]
+                        },
+                        {
+                          "id": "row-2",
+                          "type": "group",
+                          "x": 18,
+                          "y": 194,
+                          "children": [
+                            {
+                              "id": "row-bg-2",
+                              "type": "rect",
+                              "x": 0,
+                              "y": 0,
+                              "width": 452,
+                              "height": 74,
+                              "fill": "#F5F5F7",
+                              "radius": 16,
+                              "keyframes": {}
+                            },
+                            {
+                              "id": "row-icon-2",
+                              "type": "circle",
+                              "x": 12,
+                              "y": 12,
+                              "width": 49,
+                              "height": 49,
+                              "fill": "#35A56B"
+                            },
+                            {
+                              "id": "row-mark-2",
+                              "type": "text",
+                              "text": "↗",
+                              "x": 36,
+                              "y": 17,
+                              "fontSize": 28,
+                              "fontFamily": "Arial, sans-serif",
+                              "fill": "#FFFFFF",
+                              "textAnchor": "middle"
+                            },
+                            {
+                              "id": "row-label-2",
+                              "type": "text",
+                              "text": "Location",
+                              "x": 82,
+                              "y": 21,
+                              "fontSize": 27,
+                              "fontFamily": "Arial, sans-serif",
+                              "fill": "#17181C",
+                              "fontWeight": 600
+                            }
+                          ]
+                        },
+                        {
+                          "id": "rowCheckIn",
+                          "type": "group",
+                          "x": 18,
+                          "y": 272,
+                          "children": [
+                            {
+                              "id": "row-bg-3",
+                              "type": "rect",
+                              "x": 0,
+                              "y": 0,
+                              "width": 452,
+                              "height": 74,
+                              "fill": "#F5F5F7",
+                              "radius": 16,
+                              "keyframes": {
+                                "fill": [
+                                  {
+                                    "t": 4.366666666666666,
+                                    "value": "#F5F5F7",
+                                    "ease": "hold"
+                                  },
+                                  {
+                                    "t": 4.4,
+                                    "value": "#D9DBDF",
+                                    "ease": "hold"
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "id": "row-icon-3",
+                              "type": "circle",
+                              "x": 12,
+                              "y": 12,
+                              "width": 49,
+                              "height": 49,
+                              "fill": "#E8A229"
+                            },
+                            {
+                              "id": "row-mark-3",
+                              "type": "text",
+                              "text": "✓",
+                              "x": 36,
+                              "y": 17,
+                              "fontSize": 28,
+                              "fontFamily": "Arial, sans-serif",
+                              "fill": "#FFFFFF",
+                              "textAnchor": "middle"
+                            },
+                            {
+                              "id": "row-label-3",
+                              "type": "text",
+                              "text": "Check In",
+                              "x": 82,
+                              "y": 21,
+                              "fontSize": 27,
+                              "fontFamily": "Arial, sans-serif",
+                              "fill": "#17181C",
+                              "fontWeight": 600
+                            }
+                          ]
+                        }
+                      ],
+                      "clip": {
+                        "x": 0,
+                        "y": 0,
+                        "width": 488,
+                        "height": 378,
+                        "radius": 25
+                      },
+                      "start": 3.2,
+                      "end": 4.666666666666667,
+                      "keyframes": {
+                        "y": [
+                          {
+                            "t": 3.2,
+                            "value": 920,
+                            "ease": "easeInOut"
+                          },
+                          {
+                            "t": 4,
+                            "value": 454,
+                            "ease": "easeInOut"
+                          },
+                          {
+                            "t": 4.4,
+                            "value": 454,
+                            "ease": "easeInOut"
+                          },
+                          {
+                            "t": 4.666666666666667,
+                            "value": 920,
+                            "ease": "easeInOut"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "id": "tapPlus",
+                      "type": "group",
+                      "x": 54,
+                      "y": 870,
+                      "children": [
+                        {
+                          "id": "tapPlus-ring",
+                          "type": "circle",
+                          "x": -27,
+                          "y": -27,
+                          "width": 54,
+                          "height": 54,
+                          "fill": "none",
+                          "stroke": "#0A84FF",
+                          "strokeWidth": 3
+                        }
+                      ],
+                      "start": 3,
+                      "end": 3.4,
+                      "originX": 0,
+                      "originY": 0,
+                      "keyframes": {
+                        "scaleX": [
+                          {
+                            "t": 3,
+                            "value": 0.7,
+                            "ease": "easeInOut"
+                          },
+                          {
+                            "t": 3.4,
+                            "value": 1.5,
+                            "ease": "easeInOut"
+                          }
+                        ],
+                        "scaleY": [
+                          {
+                            "t": 3,
+                            "value": 0.7,
+                            "ease": "easeInOut"
+                          },
+                          {
+                            "t": 3.4,
+                            "value": 1.5,
+                            "ease": "easeInOut"
+                          }
+                        ],
+                        "opacity": [
+                          {
+                            "t": 3,
+                            "value": 0.75,
+                            "ease": "easeInOut"
+                          },
+                          {
+                            "t": 3.4,
+                            "value": 0,
+                            "ease": "easeInOut"
+                          }
+                        ]
+                      },
+                      "events": [
+                        {
+                          "frame": 90,
+                          "action": "tap",
+                          "target": "tapPlus"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "tapCheckIn",
+                      "type": "group",
+                      "x": 244,
+                      "y": 762,
+                      "children": [
+                        {
+                          "id": "tapCheckIn-ring",
+                          "type": "circle",
+                          "x": -27,
+                          "y": -27,
+                          "width": 54,
+                          "height": 54,
+                          "fill": "none",
+                          "stroke": "#0A84FF",
+                          "strokeWidth": 3
+                        }
+                      ],
+                      "start": 4.4,
+                      "end": 4.8,
+                      "originX": 0,
+                      "originY": 0,
+                      "keyframes": {
+                        "scaleX": [
+                          {
+                            "t": 4.4,
+                            "value": 0.7,
+                            "ease": "easeInOut"
+                          },
+                          {
+                            "t": 4.8,
+                            "value": 1.5,
+                            "ease": "easeInOut"
+                          }
+                        ],
+                        "scaleY": [
+                          {
+                            "t": 4.4,
+                            "value": 0.7,
+                            "ease": "easeInOut"
+                          },
+                          {
+                            "t": 4.8,
+                            "value": 1.5,
+                            "ease": "easeInOut"
+                          }
+                        ],
+                        "opacity": [
+                          {
+                            "t": 4.4,
+                            "value": 0.75,
+                            "ease": "easeInOut"
+                          },
+                          {
+                            "t": 4.8,
+                            "value": 0,
+                            "ease": "easeInOut"
+                          }
+                        ]
+                      },
+                      "events": [
+                        {
+                          "frame": 132,
+                          "action": "tap",
+                          "target": "tapCheckIn"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "tapSend",
+                      "type": "group",
+                      "x": 458,
+                      "y": 870,
+                      "children": [
+                        {
+                          "id": "tapSend-ring",
+                          "type": "circle",
+                          "x": -27,
+                          "y": -27,
+                          "width": 54,
+                          "height": 54,
+                          "fill": "none",
+                          "stroke": "#0A84FF",
+                          "strokeWidth": 3
+                        }
+                      ],
+                      "start": 6.2,
+                      "end": 6.6,
+                      "originX": 0,
+                      "originY": 0,
+                      "keyframes": {
+                        "scaleX": [
+                          {
+                            "t": 6.2,
+                            "value": 0.7,
+                            "ease": "easeInOut"
+                          },
+                          {
+                            "t": 6.6,
+                            "value": 1.5,
+                            "ease": "easeInOut"
+                          }
+                        ],
+                        "scaleY": [
+                          {
+                            "t": 6.2,
+                            "value": 0.7,
+                            "ease": "easeInOut"
+                          },
+                          {
+                            "t": 6.6,
+                            "value": 1.5,
+                            "ease": "easeInOut"
+                          }
+                        ],
+                        "opacity": [
+                          {
+                            "t": 6.2,
+                            "value": 0.75,
+                            "ease": "easeInOut"
+                          },
+                          {
+                            "t": 6.6,
+                            "value": 0,
+                            "ease": "easeInOut"
+                          }
+                        ]
+                      },
+                      "events": [
+                        {
+                          "frame": 186,
+                          "action": "tap",
+                          "target": "tapSend"
+                        }
+                      ]
+                    }
+                  ],
+                  "clip": {
+                    "x": 0,
+                    "y": 0,
+                    "width": 512,
+                    "height": 916,
+                    "radius": 48
+                  }
+                }
+              ],
+              "keyframes": {
+                "x": [
+                  {
+                    "t": 0,
+                    "value": 520,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 7,
+                    "value": 520,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 8.833333333333334,
+                    "value": 520,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 13.966666666666667,
+                    "value": 520,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 14.8,
+                    "value": 520,
+                    "ease": "easeInOut"
+                  }
+                ],
+                "opacity": [
+                  {
+                    "t": 0,
+                    "value": 1,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 14,
+                    "value": 1,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 14.133333333333333,
+                    "value": 0,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 24.266666666666666,
+                    "value": 0,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 24.5,
+                    "value": 1,
+                    "ease": "easeInOut"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "phoneSam",
+              "type": "group",
+              "x": 1900,
+              "y": 80,
+              "children": [
+                {
+                  "id": "phoneSam-rim",
+                  "type": "rect",
+                  "x": -14,
+                  "y": -14,
+                  "width": 540,
+                  "height": 944,
+                  "fill": "#424349",
+                  "radius": 62,
+                  "stroke": "#9B9CA1",
+                  "strokeWidth": 2,
+                  "shadow": {
+                    "x": 0,
+                    "y": 22,
+                    "blur": 30,
+                    "color": "#00000025"
+                  }
+                },
+                {
+                  "id": "phoneSam-bezel",
+                  "type": "rect",
+                  "x": -9,
+                  "y": -9,
+                  "width": 530,
+                  "height": 934,
+                  "fill": "#18191D",
+                  "radius": 58
+                },
+                {
+                  "id": "phoneSam-screen",
+                  "type": "group",
+                  "x": 0,
+                  "y": 0,
+                  "children": [
+                    {
+                      "id": "phoneSam-screen-paper",
+                      "type": "rect",
+                      "x": 0,
+                      "y": 0,
+                      "width": 512,
+                      "height": 916,
+                      "fill": "#FFFFFF",
+                      "radius": 48
+                    },
+                    {
+                      "id": "clockSam",
+                      "type": "text",
+                      "text": "11:42",
+                      "x": 36,
+                      "y": 22,
+                      "fontSize": 23,
+                      "fontFamily": "Arial, sans-serif",
+                      "fill": "#17181C",
+                      "fontWeight": 700,
+                      "keyframes": {
+                        "text": [
+                          {
+                            "t": 6.8,
+                            "value": "11:42",
+                            "ease": "hold"
+                          },
+                          {
+                            "t": 8.333333333333334,
+                            "value": "11:45",
+                            "ease": "hold"
+                          },
+                          {
+                            "t": 9.333333333333334,
+                            "value": "11:48",
+                            "ease": "hold"
+                          },
+                          {
+                            "t": 10.333333333333334,
+                            "value": "11:51",
+                            "ease": "hold"
+                          },
+                          {
+                            "t": 11.333333333333334,
+                            "value": "11:54",
+                            "ease": "hold"
+                          },
+                          {
+                            "t": 12.333333333333334,
+                            "value": "11:57",
+                            "ease": "hold"
+                          },
+                          {
+                            "t": 13.333333333333334,
+                            "value": "11:59",
+                            "ease": "hold"
+                          },
+                          {
+                            "t": 19.166666666666668,
+                            "value": "12:00",
+                            "ease": "hold"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "id": "phoneSam-island",
+                      "type": "rect",
+                      "x": 179,
+                      "y": 12,
+                      "width": 154,
+                      "height": 35,
+                      "fill": "#101115",
+                      "radius": 18
+                    },
+                    {
+                      "id": "phoneSam-signal-0",
+                      "type": "rect",
+                      "x": 405,
+                      "y": 37,
+                      "width": 4,
+                      "height": 6,
+                      "fill": "#17181C",
+                      "radius": 1
+                    },
+                    {
+                      "id": "phoneSam-signal-1",
+                      "type": "rect",
+                      "x": 411,
+                      "y": 33,
+                      "width": 4,
+                      "height": 10,
+                      "fill": "#17181C",
+                      "radius": 1
+                    },
+                    {
+                      "id": "phoneSam-signal-2",
+                      "type": "rect",
+                      "x": 417,
+                      "y": 29,
+                      "width": 4,
+                      "height": 14,
+                      "fill": "#17181C",
+                      "radius": 1
+                    },
+                    {
+                      "id": "phoneSam-signal-3",
+                      "type": "rect",
+                      "x": 423,
+                      "y": 25,
+                      "width": 4,
+                      "height": 18,
+                      "fill": "#17181C",
+                      "radius": 1
+                    },
+                    {
+                      "id": "phoneSam-battery",
+                      "type": "rect",
+                      "x": 442,
+                      "y": 25,
+                      "width": 30,
+                      "height": 15,
+                      "fill": "none",
+                      "radius": 4,
+                      "stroke": "#17181C",
+                      "strokeWidth": 1.5
+                    },
+                    {
+                      "id": "phoneSam-charge",
+                      "type": "rect",
+                      "x": 445,
+                      "y": 28,
+                      "width": 23,
+                      "height": 9,
+                      "fill": "#17181C",
+                      "radius": 2
+                    },
+                    {
+                      "id": "phoneSam-back",
+                      "type": "text",
+                      "text": "‹",
+                      "x": 22,
+                      "y": 75,
+                      "fontSize": 50,
+                      "fontFamily": "Arial, sans-serif",
+                      "fill": "#0A84FF"
+                    },
+                    {
+                      "id": "phoneSam-avatar",
+                      "type": "group",
+                      "x": 231,
+                      "y": 66,
+                      "children": [
+                        {
+                          "id": "phoneSam-avatar-disc",
+                          "type": "circle",
+                          "width": 50,
+                          "height": 50,
+                          "fill": "#BABCC4"
+                        },
+                        {
+                          "id": "phoneSam-avatar-initials",
+                          "type": "text",
+                          "text": "M",
+                          "x": 25,
+                          "y": 13.5,
+                          "fontSize": 16,
+                          "fontFamily": "Arial, sans-serif",
+                          "fill": "#17191d",
+                          "textAnchor": "middle",
+                          "fontWeight": 600
+                        }
+                      ]
+                    },
+                    {
+                      "id": "phoneSam-name",
+                      "type": "text",
+                      "text": "Maya",
+                      "x": 256,
+                      "y": 123,
+                      "fontSize": 23,
+                      "fontFamily": "Arial, sans-serif",
+                      "fill": "#17181C",
+                      "textAnchor": "middle",
+                      "fontWeight": 600
+                    },
+                    {
+                      "id": "phoneSam-name-arrow",
+                      "type": "text",
+                      "text": "›",
+                      "x": 292,
+                      "y": 122,
+                      "fontSize": 23,
+                      "fontFamily": "Arial, sans-serif",
+                      "fill": "#85858B"
+                    },
+                    {
+                      "id": "phoneSam-header-line",
+                      "type": "rect",
+                      "x": 0,
+                      "y": 163,
+                      "width": 512,
+                      "height": 1,
+                      "fill": "#EEEEF0",
+                      "radius": 0
+                    },
+                    {
+                      "id": "phoneSam-date",
+                      "type": "text",
+                      "text": "Today 11:42 PM",
+                      "x": 256,
+                      "y": 190,
+                      "fontSize": 18,
+                      "fontFamily": "Arial, sans-serif",
+                      "fill": "#85858B",
+                      "textAnchor": "middle"
+                    },
+                    {
+                      "id": "threadSam",
+                      "type": "group",
+                      "x": 0,
+                      "y": 0,
+                      "children": [
+                        {
+                          "id": "bubbleAskSam",
+                          "type": "group",
+                          "x": 114,
+                          "y": 240,
+                          "children": [
+                            {
+                              "id": "bubbleAskSam-body",
+                              "type": "rect",
+                              "x": 0,
+                              "y": 0,
+                              "width": 371,
+                              "height": 64,
+                              "fill": "#0A84FF",
+                              "radius": 20
+                            },
+                            {
+                              "id": "bubbleAskSam-tail",
+                              "type": "path",
+                              "d": "M 355 46 Q 368 65 378 62 Q 368 58 369 44 Z",
+                              "fill": "#0A84FF"
+                            },
+                            {
+                              "id": "bubbleAskSam-copy",
+                              "type": "text",
+                              "text": "Text me when you're home?",
+                              "x": 17,
+                              "y": 14,
+                              "fontSize": 26,
+                              "fontFamily": "Arial, sans-serif",
+                              "fill": "#ffffff",
+                              "lineHeight": 24
+                            }
+                          ],
+                          "keyframes": {
+                            "y": [
+                              {
+                                "t": 14,
+                                "value": 240,
+                                "ease": "easeInOut"
+                              },
+                              {
+                                "t": 14.8,
+                                "value": 160,
+                                "ease": "easeInOut"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "id": "cardSam",
+                          "type": "group",
+                          "x": 32,
+                          "y": 320,
+                          "children": [
+                            {
+                              "id": "cardSam-surface",
+                              "type": "rect",
+                              "x": 0,
+                              "y": 0,
+                              "width": 390,
+                              "height": 222,
+                              "fill": "#F2F5FA",
+                              "radius": 25,
+                              "stroke": "#D9E1EC",
+                              "strokeWidth": 1.5,
+                              "keyframes": {
+                                "fill": [
+                                  {
+                                    "t": 0,
+                                    "value": "#F2F5FA",
+                                    "ease": "hold"
+                                  },
+                                  {
+                                    "t": 19.333333333333332,
+                                    "value": "#E9F6ED",
+                                    "ease": "hold"
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "id": "cardSam-icon",
+                              "type": "circle",
+                              "x": 20,
+                              "y": 20,
+                              "width": 40,
+                              "height": 40,
+                              "fill": "#0A84FF",
+                              "keyframes": {
+                                "fill": [
+                                  {
+                                    "t": 0,
+                                    "value": "#0A84FF",
+                                    "ease": "hold"
+                                  },
+                                  {
+                                    "t": 19.333333333333332,
+                                    "value": "#24834B",
+                                    "ease": "hold"
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "id": "cardSam-check",
+                              "type": "path",
+                              "d": "M 31 40 L 38 47 L 50 32",
+                              "fill": "none",
+                              "stroke": "#FFFFFF",
+                              "strokeWidth": 3
+                            },
+                            {
+                              "id": "cardSam-title",
+                              "type": "text",
+                              "text": "Check In · Maya · Home",
+                              "x": 72,
+                              "y": 26,
+                              "fontSize": 23,
+                              "fontFamily": "Arial, sans-serif",
+                              "fill": "#17181C",
+                              "fontWeight": 700
+                            },
+                            {
+                              "id": "cardSam-mode",
+                              "type": "text",
+                              "text": "When I Arrive",
+                              "x": 22,
+                              "y": 82,
+                              "fontSize": 29,
+                              "fontFamily": "Arial, sans-serif",
+                              "fill": "#17181C",
+                              "fontWeight": 700,
+                              "keyframes": {
+                                "text": [
+                                  {
+                                    "t": 0,
+                                    "value": "When I Arrive",
+                                    "ease": "hold"
+                                  },
+                                  {
+                                    "t": 19.333333333333332,
+                                    "value": "Arrived",
+                                    "ease": "hold"
+                                  }
+                                ],
+                                "fill": [
+                                  {
+                                    "t": 0,
+                                    "value": "#17181C",
+                                    "ease": "hold"
+                                  },
+                                  {
+                                    "t": 19.333333333333332,
+                                    "value": "#24834B",
+                                    "ease": "hold"
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "id": "cardSam-destination",
+                              "type": "text",
+                              "text": "Home · Walking",
+                              "x": 22,
+                              "y": 125,
+                              "fontSize": 24,
+                              "fontFamily": "Arial, sans-serif",
+                              "fill": "#555C66",
+                              "keyframes": {
+                                "text": [
+                                  {
+                                    "t": 0,
+                                    "value": "Home · Walking",
+                                    "ease": "hold"
+                                  },
+                                  {
+                                    "t": 19.333333333333332,
+                                    "value": "Maya has arrived · 12:00",
+                                    "ease": "hold"
+                                  }
+                                ],
+                                "fontSize": [
+                                  {
+                                    "t": 0,
+                                    "value": 24,
+                                    "ease": "hold"
+                                  },
+                                  {
+                                    "t": 19.333333333333332,
+                                    "value": 23,
+                                    "ease": "hold"
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "id": "cardSam-eta",
+                              "type": "text",
+                              "text": "About 18 min",
+                              "x": 22,
+                              "y": 174,
+                              "fontSize": 25,
+                              "fontFamily": "Arial, sans-serif",
+                              "fill": "#0A84FF",
+                              "keyframes": {
+                                "text": [
+                                  {
+                                    "t": 6.8,
+                                    "value": "About 18 min",
+                                    "ease": "hold"
+                                  },
+                                  {
+                                    "t": 8.333333333333334,
+                                    "value": "About 15 min",
+                                    "ease": "hold"
+                                  },
+                                  {
+                                    "t": 9.333333333333334,
+                                    "value": "About 12 min",
+                                    "ease": "hold"
+                                  },
+                                  {
+                                    "t": 10.333333333333334,
+                                    "value": "About 9 min",
+                                    "ease": "hold"
+                                  },
+                                  {
+                                    "t": 11.333333333333334,
+                                    "value": "About 6 min",
+                                    "ease": "hold"
+                                  },
+                                  {
+                                    "t": 12.333333333333334,
+                                    "value": "About 3 min",
+                                    "ease": "hold"
+                                  },
+                                  {
+                                    "t": 13.333333333333334,
+                                    "value": "About 1 min",
+                                    "ease": "hold"
+                                  },
+                                  {
+                                    "t": 19.166666666666668,
+                                    "value": "About 1 min",
+                                    "ease": "hold"
+                                  },
+                                  {
+                                    "t": 19.333333333333332,
+                                    "value": "✓  Completed",
+                                    "ease": "hold"
+                                  }
+                                ],
+                                "fill": [
+                                  {
+                                    "t": 0,
+                                    "value": "#0A84FF",
+                                    "ease": "hold"
+                                  },
+                                  {
+                                    "t": 19.333333333333332,
+                                    "value": "#24834B",
+                                    "ease": "hold"
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "id": "cardSam-chevron",
+                              "type": "text",
+                              "text": "›",
+                              "x": 350,
+                              "y": 175,
+                              "fontSize": 27,
+                              "fontFamily": "Arial, sans-serif",
+                              "fill": "#85858B"
+                            }
+                          ],
+                          "keyframes": {
+                            "y": [
+                              {
+                                "t": 14,
+                                "value": 320,
+                                "ease": "easeInOut"
+                              },
+                              {
+                                "t": 14.8,
+                                "value": 400,
+                                "ease": "easeInOut"
+                              }
+                            ]
+                          },
+                          "events": [
+                            {
+                              "frame": 420,
+                              "action": "receive",
+                              "target": "cardSam"
+                            },
+                            {
+                              "frame": 580,
+                              "action": "arrival",
+                              "target": "cardSam"
+                            }
+                          ]
+                        },
+                        {
+                          "id": "bubbleHeartSam",
+                          "type": "group",
+                          "x": 326,
+                          "y": 665,
+                          "children": [
+                            {
+                              "id": "bubbleHeartSam-body",
+                              "type": "rect",
+                              "x": 0,
+                              "y": 0,
+                              "width": 158,
+                              "height": 116,
+                              "fill": "#0A84FF",
+                              "radius": 20
+                            },
+                            {
+                              "id": "bubbleHeartSam-tail",
+                              "type": "path",
+                              "d": "M 142 98 Q 155 117 165 114 Q 155 110 156 96 Z",
+                              "fill": "#0A84FF"
+                            },
+                            {
+                              "id": "bubbleHeartSam-copy",
+                              "type": "text",
+                              "text": "",
+                              "x": 17,
+                              "y": 14,
+                              "fontSize": 19,
+                              "fontFamily": "Arial, sans-serif",
+                              "fill": "#ffffff",
+                              "lineHeight": 24
+                            },
+                            {
+                              "id": "bubbleHeartSam-glyph",
+                              "type": "text",
+                              "text": "❤️",
+                              "x": 39,
+                              "y": 9,
+                              "fontSize": 76,
+                              "fontFamily": "Arial, Apple Color Emoji, sans-serif",
+                              "fill": "#17181C"
+                            }
+                          ],
+                          "start": 23,
+                          "keyframes": {
+                            "y": [
+                              {
+                                "t": 23,
+                                "value": 730,
+                                "ease": "easeInOut"
+                              },
+                              {
+                                "t": 23.5,
+                                "value": 665,
+                                "ease": "easeInOut"
+                              }
+                            ]
+                          },
+                          "events": [
+                            {
+                              "frame": 690,
+                              "action": "send",
+                              "target": "bubbleHeartSam"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "phoneSam-composer",
+                      "type": "group",
+                      "x": 88,
+                      "y": 846,
+                      "children": [
+                        {
+                          "id": "phoneSam-composer-field",
+                          "type": "rect",
+                          "x": 0,
+                          "y": 0,
+                          "width": 394,
+                          "height": 48,
+                          "fill": "#ffffff",
+                          "radius": 24,
+                          "stroke": "#d8dbe0",
+                          "strokeWidth": 1
+                        },
+                        {
+                          "id": "phoneSam-composer-input",
+                          "type": "text",
+                          "text": "iMessage",
+                          "x": 18,
+                          "y": 10,
+                          "fontSize": 24,
+                          "fontFamily": "Arial, sans-serif",
+                          "fill": "#777b84",
+                          "keyframes": {
+                            "opacity": [
+                              {
+                                "t": 0,
+                                "value": 1,
+                                "ease": "hold"
+                              },
+                              {
+                                "t": 14.833333333333334,
+                                "value": 0,
+                                "ease": "hold"
+                              },
+                              {
+                                "t": 22.033333333333335,
+                                "value": 1,
+                                "ease": "hold"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "id": "phoneSam-composer-send",
+                          "type": "circle",
+                          "x": 354,
+                          "y": 8,
+                          "width": 32,
+                          "height": 32,
+                          "fill": "#1688fa"
+                        },
+                        {
+                          "id": "phoneSam-composer-arrow",
+                          "type": "path",
+                          "d": "M 370 33 L 370 16 M 363 23 L 370 16 L 377 23",
+                          "fill": "none",
+                          "stroke": "#ffffff",
+                          "strokeWidth": 2
+                        }
+                      ]
+                    },
+                    {
+                      "id": "phoneSam-plus",
+                      "type": "group",
+                      "x": 34,
+                      "y": 850,
+                      "children": [
+                        {
+                          "id": "phoneSam-plus-bg",
+                          "type": "circle",
+                          "x": 0,
+                          "y": 0,
+                          "width": 40,
+                          "height": 40,
+                          "fill": "#EDEDF0"
+                        },
+                        {
+                          "id": "phoneSam-plus-label",
+                          "type": "text",
+                          "text": "+",
+                          "x": 20,
+                          "y": -1,
+                          "fontSize": 35,
+                          "fontFamily": "Arial, sans-serif",
+                          "fill": "#77777D",
+                          "textAnchor": "middle"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "phoneSam-home-indicator",
+                      "type": "rect",
+                      "x": 162,
+                      "y": 898,
+                      "width": 188,
+                      "height": 6,
+                      "fill": "#111216",
+                      "radius": 3
+                    },
+                    {
+                      "id": "draftSam",
+                      "type": "text",
+                      "text": "",
+                      "x": 106,
+                      "y": 853,
+                      "fontSize": 32,
+                      "fontFamily": "Arial, sans-serif",
+                      "fill": "#17181C",
+                      "keyframes": {
+                        "text": [
+                          {
+                            "t": 0,
+                            "value": "",
+                            "ease": "hold"
+                          },
+                          {
+                            "t": 14.833333333333334,
+                            "value": "a",
+                            "ease": "hold"
+                          },
+                          {
+                            "t": 15.033333333333333,
+                            "value": "ar",
+                            "ease": "hold"
+                          },
+                          {
+                            "t": 15.3,
+                            "value": "are",
+                            "ease": "hold"
+                          },
+                          {
+                            "t": 15.466666666666667,
+                            "value": "are ",
+                            "ease": "hold"
+                          },
+                          {
+                            "t": 15.866666666666667,
+                            "value": "are y",
+                            "ease": "hold"
+                          },
+                          {
+                            "t": 16.066666666666666,
+                            "value": "are yo",
+                            "ease": "hold"
+                          },
+                          {
+                            "t": 16.3,
+                            "value": "are you",
+                            "ease": "hold"
+                          },
+                          {
+                            "t": 16.633333333333333,
+                            "value": "are you ",
+                            "ease": "hold"
+                          },
+                          {
+                            "t": 16.8,
+                            "value": "are you h",
+                            "ease": "hold"
+                          },
+                          {
+                            "t": 17.033333333333335,
+                            "value": "are you ho",
+                            "ease": "hold"
+                          },
+                          {
+                            "t": 17.233333333333334,
+                            "value": "are you hom",
+                            "ease": "hold"
+                          },
+                          {
+                            "t": 17.533333333333335,
+                            "value": "are you home",
+                            "ease": "hold"
+                          },
+                          {
+                            "t": 17.7,
+                            "value": "are you home ",
+                            "ease": "hold"
+                          },
+                          {
+                            "t": 17.966666666666665,
+                            "value": "are you home y",
+                            "ease": "hold"
+                          },
+                          {
+                            "t": 18.166666666666668,
+                            "value": "are you home ye",
+                            "ease": "hold"
+                          },
+                          {
+                            "t": 18.4,
+                            "value": "are you home yet",
+                            "ease": "hold"
+                          },
+                          {
+                            "t": 18.666666666666668,
+                            "value": "are you home yet?",
+                            "ease": "hold"
+                          },
+                          {
+                            "t": 20.266666666666666,
+                            "value": "are you home yet",
+                            "ease": "hold"
+                          },
+                          {
+                            "t": 20.366666666666667,
+                            "value": "are you home ye",
+                            "ease": "hold"
+                          },
+                          {
+                            "t": 20.5,
+                            "value": "are you home y",
+                            "ease": "hold"
+                          },
+                          {
+                            "t": 20.6,
+                            "value": "are you home ",
+                            "ease": "hold"
+                          },
+                          {
+                            "t": 20.7,
+                            "value": "are you home",
+                            "ease": "hold"
+                          },
+                          {
+                            "t": 20.833333333333332,
+                            "value": "are you hom",
+                            "ease": "hold"
+                          },
+                          {
+                            "t": 20.933333333333334,
+                            "value": "are you ho",
+                            "ease": "hold"
+                          },
+                          {
+                            "t": 21.033333333333335,
+                            "value": "are you h",
+                            "ease": "hold"
+                          },
+                          {
+                            "t": 21.166666666666668,
+                            "value": "are you ",
+                            "ease": "hold"
+                          },
+                          {
+                            "t": 21.266666666666666,
+                            "value": "are you",
+                            "ease": "hold"
+                          },
+                          {
+                            "t": 21.366666666666667,
+                            "value": "are yo",
+                            "ease": "hold"
+                          },
+                          {
+                            "t": 21.466666666666665,
+                            "value": "are y",
+                            "ease": "hold"
+                          },
+                          {
+                            "t": 21.6,
+                            "value": "are ",
+                            "ease": "hold"
+                          },
+                          {
+                            "t": 21.7,
+                            "value": "are",
+                            "ease": "hold"
+                          },
+                          {
+                            "t": 21.8,
+                            "value": "ar",
+                            "ease": "hold"
+                          },
+                          {
+                            "t": 21.933333333333334,
+                            "value": "a",
+                            "ease": "hold"
+                          },
+                          {
+                            "t": 22.033333333333335,
+                            "value": "",
+                            "ease": "hold"
+                          }
+                        ]
+                      },
+                      "events": [
+                        {
+                          "frame": 445,
+                          "action": "type char",
+                          "char": "a",
+                          "target": "draftSam"
+                        },
+                        {
+                          "frame": 451,
+                          "action": "type char",
+                          "char": "r",
+                          "target": "draftSam"
+                        },
+                        {
+                          "frame": 459,
+                          "action": "type char",
+                          "char": "e",
+                          "target": "draftSam"
+                        },
+                        {
+                          "frame": 464,
+                          "action": "type char",
+                          "char": " ",
+                          "target": "draftSam"
+                        },
+                        {
+                          "frame": 476,
+                          "action": "type char",
+                          "char": "y",
+                          "target": "draftSam"
+                        },
+                        {
+                          "frame": 482,
+                          "action": "type char",
+                          "char": "o",
+                          "target": "draftSam"
+                        },
+                        {
+                          "frame": 489,
+                          "action": "type char",
+                          "char": "u",
+                          "target": "draftSam"
+                        },
+                        {
+                          "frame": 499,
+                          "action": "type char",
+                          "char": " ",
+                          "target": "draftSam"
+                        },
+                        {
+                          "frame": 504,
+                          "action": "type char",
+                          "char": "h",
+                          "target": "draftSam"
+                        },
+                        {
+                          "frame": 511,
+                          "action": "type char",
+                          "char": "o",
+                          "target": "draftSam"
+                        },
+                        {
+                          "frame": 517,
+                          "action": "type char",
+                          "char": "m",
+                          "target": "draftSam"
+                        },
+                        {
+                          "frame": 526,
+                          "action": "type char",
+                          "char": "e",
+                          "target": "draftSam"
+                        },
+                        {
+                          "frame": 531,
+                          "action": "type char",
+                          "char": " ",
+                          "target": "draftSam"
+                        },
+                        {
+                          "frame": 539,
+                          "action": "type char",
+                          "char": "y",
+                          "target": "draftSam"
+                        },
+                        {
+                          "frame": 545,
+                          "action": "type char",
+                          "char": "e",
+                          "target": "draftSam"
+                        },
+                        {
+                          "frame": 552,
+                          "action": "type char",
+                          "char": "t",
+                          "target": "draftSam"
+                        },
+                        {
+                          "frame": 560,
+                          "action": "type char",
+                          "char": "?",
+                          "target": "draftSam"
+                        },
+                        {
+                          "frame": 608,
+                          "action": "backspace",
+                          "char": "?",
+                          "target": "draftSam"
+                        },
+                        {
+                          "frame": 611,
+                          "action": "backspace",
+                          "char": "t",
+                          "target": "draftSam"
+                        },
+                        {
+                          "frame": 615,
+                          "action": "backspace",
+                          "char": "e",
+                          "target": "draftSam"
+                        },
+                        {
+                          "frame": 618,
+                          "action": "backspace",
+                          "char": "y",
+                          "target": "draftSam"
+                        },
+                        {
+                          "frame": 621,
+                          "action": "backspace",
+                          "char": " ",
+                          "target": "draftSam"
+                        },
+                        {
+                          "frame": 625,
+                          "action": "backspace",
+                          "char": "e",
+                          "target": "draftSam"
+                        },
+                        {
+                          "frame": 628,
+                          "action": "backspace",
+                          "char": "m",
+                          "target": "draftSam"
+                        },
+                        {
+                          "frame": 631,
+                          "action": "backspace",
+                          "char": "o",
+                          "target": "draftSam"
+                        },
+                        {
+                          "frame": 635,
+                          "action": "backspace",
+                          "char": "h",
+                          "target": "draftSam"
+                        },
+                        {
+                          "frame": 638,
+                          "action": "backspace",
+                          "char": " ",
+                          "target": "draftSam"
+                        },
+                        {
+                          "frame": 641,
+                          "action": "backspace",
+                          "char": "u",
+                          "target": "draftSam"
+                        },
+                        {
+                          "frame": 644,
+                          "action": "backspace",
+                          "char": "o",
+                          "target": "draftSam"
+                        },
+                        {
+                          "frame": 648,
+                          "action": "backspace",
+                          "char": "y",
+                          "target": "draftSam"
+                        },
+                        {
+                          "frame": 651,
+                          "action": "backspace",
+                          "char": " ",
+                          "target": "draftSam"
+                        },
+                        {
+                          "frame": 654,
+                          "action": "backspace",
+                          "char": "e",
+                          "target": "draftSam"
+                        },
+                        {
+                          "frame": 658,
+                          "action": "backspace",
+                          "char": "r",
+                          "target": "draftSam"
+                        },
+                        {
+                          "frame": 661,
+                          "action": "backspace",
+                          "char": "a",
+                          "target": "draftSam"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "tapHeartSend",
+                      "type": "group",
+                      "x": 458,
+                      "y": 870,
+                      "children": [
+                        {
+                          "id": "tapHeartSend-ring",
+                          "type": "circle",
+                          "x": -27,
+                          "y": -27,
+                          "width": 54,
+                          "height": 54,
+                          "fill": "none",
+                          "stroke": "#0A84FF",
+                          "strokeWidth": 3
+                        }
+                      ],
+                      "start": 23,
+                      "end": 23.4,
+                      "originX": 0,
+                      "originY": 0,
+                      "keyframes": {
+                        "scaleX": [
+                          {
+                            "t": 23,
+                            "value": 0.7,
+                            "ease": "easeInOut"
+                          },
+                          {
+                            "t": 23.4,
+                            "value": 1.5,
+                            "ease": "easeInOut"
+                          }
+                        ],
+                        "scaleY": [
+                          {
+                            "t": 23,
+                            "value": 0.7,
+                            "ease": "easeInOut"
+                          },
+                          {
+                            "t": 23.4,
+                            "value": 1.5,
+                            "ease": "easeInOut"
+                          }
+                        ],
+                        "opacity": [
+                          {
+                            "t": 23,
+                            "value": 0.75,
+                            "ease": "easeInOut"
+                          },
+                          {
+                            "t": 23.4,
+                            "value": 0,
+                            "ease": "easeInOut"
+                          }
+                        ]
+                      },
+                      "events": [
+                        {
+                          "frame": 690,
+                          "action": "tap",
+                          "target": "tapHeartSend"
+                        }
+                      ]
+                    }
+                  ],
+                  "clip": {
+                    "x": 0,
+                    "y": 0,
+                    "width": 512,
+                    "height": 916,
+                    "radius": 48
+                  }
+                }
+              ],
+              "keyframes": {
+                "opacity": [
+                  {
+                    "t": 0,
+                    "value": 0,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 14,
+                    "value": 0,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 14.4,
+                    "value": 1,
+                    "ease": "easeInOut"
+                  }
+                ]
+              }
+            }
+          ],
+          "originX": 0,
+          "originY": 0,
+          "keyframes": {
+            "x": [
+              {
+                "t": 0,
+                "value": -304,
+                "ease": "easeInOut"
+              },
+              {
+                "t": 2.466666666666667,
+                "value": -304,
+                "ease": "easeInOut"
+              },
+              {
+                "t": 4,
+                "value": -146,
+                "ease": "easeInOut"
+              },
+              {
+                "t": 6.2,
+                "value": -146,
+                "ease": "easeInOut"
+              },
+              {
+                "t": 6.966666666666667,
+                "value": -146,
+                "ease": "easeInOut"
+              },
+              {
+                "t": 8.833333333333334,
+                "value": -240,
+                "ease": "easeInOut"
+              },
+              {
+                "t": 13.966666666666667,
+                "value": -252,
+                "ease": "easeInOut"
+              },
+              {
+                "t": 14.8,
+                "value": -1950.6,
+                "ease": "easeInOut"
+              },
+              {
+                "t": 18.666666666666668,
+                "value": -1950.6,
+                "ease": "easeInOut"
+              },
+              {
+                "t": 20.266666666666666,
+                "value": -1950.6,
+                "ease": "easeInOut"
+              },
+              {
+                "t": 23.5,
+                "value": -1950.6,
+                "ease": "easeInOut"
+              },
+              {
+                "t": 24.5,
+                "value": -175,
+                "ease": "easeInOut"
+              },
+              {
+                "t": 26,
+                "value": -175,
+                "ease": "easeInOut"
+              },
+              {
+                "t": 27.966666666666665,
+                "value": -194,
+                "ease": "easeInOut"
+              }
+            ],
+            "y": [
+              {
+                "t": 0,
+                "value": -75,
+                "ease": "easeInOut"
+              },
+              {
+                "t": 2.466666666666667,
+                "value": -105,
+                "ease": "easeInOut"
+              },
+              {
+                "t": 4,
+                "value": -550,
+                "ease": "easeInOut"
+              },
+              {
+                "t": 6.2,
+                "value": -535,
+                "ease": "easeInOut"
+              },
+              {
+                "t": 6.966666666666667,
+                "value": -220,
+                "ease": "easeInOut"
+              },
+              {
+                "t": 8.833333333333334,
+                "value": 70,
+                "ease": "easeInOut"
+              },
+              {
+                "t": 13.966666666666667,
+                "value": 58,
+                "ease": "easeInOut"
+              },
+              {
+                "t": 14.8,
+                "value": -470,
+                "ease": "easeInOut"
+              },
+              {
+                "t": 18.666666666666668,
+                "value": -470,
+                "ease": "easeInOut"
+              },
+              {
+                "t": 20.266666666666666,
+                "value": -468,
+                "ease": "easeInOut"
+              },
+              {
+                "t": 23.5,
+                "value": -466,
+                "ease": "easeInOut"
+              },
+              {
+                "t": 24.5,
+                "value": 0,
+                "ease": "easeInOut"
+              },
+              {
+                "t": 26,
+                "value": 0,
+                "ease": "easeInOut"
+              },
+              {
+                "t": 27.966666666666665,
+                "value": -8,
+                "ease": "easeInOut"
+              }
+            ],
+            "scaleX": [
+              {
+                "t": 0,
+                "value": 1.6,
+                "ease": "easeInOut"
+              },
+              {
+                "t": 2.466666666666667,
+                "value": 1.6,
+                "ease": "easeInOut"
+              },
+              {
+                "t": 4,
+                "value": 1.4,
+                "ease": "easeInOut"
+              },
+              {
+                "t": 6.2,
+                "value": 1.4,
+                "ease": "easeInOut"
+              },
+              {
+                "t": 6.966666666666667,
+                "value": 1.4,
+                "ease": "easeInOut"
+              },
+              {
+                "t": 8.833333333333334,
+                "value": 0.82,
+                "ease": "easeInOut"
+              },
+              {
+                "t": 13.966666666666667,
+                "value": 0.84,
+                "ease": "easeInOut"
+              },
+              {
+                "t": 14.8,
+                "value": 1.35,
+                "ease": "easeInOut"
+              },
+              {
+                "t": 18.666666666666668,
+                "value": 1.35,
+                "ease": "easeInOut"
+              },
+              {
+                "t": 20.266666666666666,
+                "value": 1.35,
+                "ease": "easeInOut"
+              },
+              {
+                "t": 23.5,
+                "value": 1.35,
+                "ease": "easeInOut"
+              },
+              {
+                "t": 24.5,
+                "value": 0.8,
+                "ease": "easeInOut"
+              },
+              {
+                "t": 26,
+                "value": 0.8,
+                "ease": "easeInOut"
+              },
+              {
+                "t": 27.966666666666665,
+                "value": 0.81,
+                "ease": "easeInOut"
+              }
+            ],
+            "scaleY": [
+              {
+                "t": 0,
+                "value": 1.6,
+                "ease": "easeInOut"
+              },
+              {
+                "t": 2.466666666666667,
+                "value": 1.6,
+                "ease": "easeInOut"
+              },
+              {
+                "t": 4,
+                "value": 1.4,
+                "ease": "easeInOut"
+              },
+              {
+                "t": 6.2,
+                "value": 1.4,
+                "ease": "easeInOut"
+              },
+              {
+                "t": 6.966666666666667,
+                "value": 1.4,
+                "ease": "easeInOut"
+              },
+              {
+                "t": 8.833333333333334,
+                "value": 0.82,
+                "ease": "easeInOut"
+              },
+              {
+                "t": 13.966666666666667,
+                "value": 0.84,
+                "ease": "easeInOut"
+              },
+              {
+                "t": 14.8,
+                "value": 1.35,
+                "ease": "easeInOut"
+              },
+              {
+                "t": 18.666666666666668,
+                "value": 1.35,
+                "ease": "easeInOut"
+              },
+              {
+                "t": 20.266666666666666,
+                "value": 1.35,
+                "ease": "easeInOut"
+              },
+              {
+                "t": 23.5,
+                "value": 1.35,
+                "ease": "easeInOut"
+              },
+              {
+                "t": 24.5,
+                "value": 0.8,
+                "ease": "easeInOut"
+              },
+              {
+                "t": 26,
+                "value": 0.8,
+                "ease": "easeInOut"
+              },
+              {
+                "t": 27.966666666666665,
+                "value": 0.81,
+                "ease": "easeInOut"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "endLine",
+      "type": "text",
+      "text": "Check In. Right in Messages.",
+      "x": 960,
+      "y": 936,
+      "fontSize": 66,
+      "fontFamily": "Arial, sans-serif",
+      "fill": "#17181C",
+      "textAnchor": "middle",
+      "fontWeight": 600,
+      "keyframes": {
+        "opacity": [
+          {
+            "t": 25,
+            "value": 0,
+            "ease": "easeInOut"
+          },
+          {
+            "t": 25.5,
+            "value": 1,
+            "ease": "easeInOut"
+          }
+        ]
+      },
+      "start": 25
+    },
+    {
+      "id": "endMark",
+      "type": "group",
+      "x": 960,
+      "y": 490,
+      "children": [
+        {
+          "id": "mark-green",
+          "type": "rect",
+          "x": -70,
+          "y": -70,
+          "width": 140,
+          "height": 140,
+          "fill": "#24834B",
+          "radius": 36
+        },
+        {
+          "id": "mark-bubble",
+          "type": "path",
+          "d": "M -38 -30 H 38 Q 46 -30 46 -22 V 20 Q 46 30 36 30 H -12 L -36 47 L -31 30 H -38 Q -46 30 -46 20 V -22 Q -46 -30 -38 -30 Z",
+          "fill": "#FFFFFF"
+        },
+        {
+          "id": "mark-dot-0",
+          "type": "circle",
+          "x": -25,
+          "y": -5,
+          "width": 10,
+          "height": 10,
+          "fill": "#24834B"
+        },
+        {
+          "id": "mark-dot-1",
+          "type": "circle",
+          "x": -5,
+          "y": -5,
+          "width": 10,
+          "height": 10,
+          "fill": "#24834B"
+        },
+        {
+          "id": "mark-dot-2",
+          "type": "circle",
+          "x": 15,
+          "y": -5,
+          "width": 10,
+          "height": 10,
+          "fill": "#24834B"
+        }
+      ],
+      "keyframes": {
+        "opacity": [
+          {
+            "t": 25,
+            "value": 0,
+            "ease": "easeInOut"
+          },
+          {
+            "t": 25.5,
+            "value": 1,
+            "ease": "easeInOut"
+          }
+        ],
+        "scaleX": [
+          {
+            "t": 25,
+            "value": 1.16,
+            "ease": "easeInOut"
+          },
+          {
+            "t": 27.966666666666665,
+            "value": 1,
+            "ease": "easeInOut"
+          }
+        ],
+        "scaleY": [
+          {
+            "t": 25,
+            "value": 1.16,
+            "ease": "easeInOut"
+          },
+          {
+            "t": 27.966666666666665,
+            "value": 1,
+            "ease": "easeInOut"
+          }
+        ],
+        "rotation": [
+          {
+            "t": 25,
+            "value": -6,
+            "ease": "easeInOut"
+          },
+          {
+            "t": 27.966666666666665,
+            "value": 0,
+            "ease": "easeInOut"
+          }
+        ],
+        "y": [
+          {
+            "t": 25,
+            "value": 510,
+            "ease": "easeInOut"
+          },
+          {
+            "t": 27.966666666666665,
+            "value": 490,
+            "ease": "easeInOut"
+          }
+        ]
+      },
+      "start": 25
+    }
+  ]
+}
