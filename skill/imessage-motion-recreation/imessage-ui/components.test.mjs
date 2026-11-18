@@ -24,11 +24,11 @@ test('reactions retain explicit owner and message independently from message sid
   const {scene,audit}=buildConversation(trial,measure);
   assert.deepEqual(audit.messages[0].reactions.map(r=>r.ownerId),['jo','self']);
   const layers=flatten(scene.layers);
-  assert.equal(layers.find(layer=>layer.id==='msg-invite-reaction-0').ownerId,'jo');
-  assert.equal(layers.find(layer=>layer.id==='msg-invite-reaction-1').ownerId,'self');
-  assert.equal(layers.find(layer=>layer.id==='msg-invite-reaction-0-owner').text,'JR');
-  assert.equal(layers.find(layer=>layer.id==='msg-invite-reaction-1-emoji').text,'👍');
-  for(const reaction of layers.filter(layer=>/^msg-invite-reaction-\d$/.test(layer.id))){
+  assert.equal(layers.find(layer=>layer.id==='msg-6-invite-reaction-0').ownerId,'jo');
+  assert.equal(layers.find(layer=>layer.id==='msg-6-invite-reaction-1').ownerId,'self');
+  assert.equal(layers.find(layer=>layer.id==='msg-6-invite-reaction-0-owner').text,'JR');
+  assert.equal(layers.find(layer=>layer.id==='msg-6-invite-reaction-1-emoji').text,'👍');
+  for(const reaction of layers.filter(layer=>/^msg-6-invite-reaction-\d$/.test(layer.id))){
     assert.equal(reaction.y,-24);assert.ok(reaction.y+34>0,'Badge touches its bubble, not a floating sender-label row');
   }
 });
@@ -38,8 +38,8 @@ test('link URL is retained in input but displayed once as a preview',()=>{
   config.messages[0].link={url,title:'Read this',color:'#c4a484'};
   const {scene}=buildConversation(config,measure),layers=flatten(scene.layers);
   assert.equal(config.messages[0].copy,'read this → '+url);
-  assert.equal(layers.find(layer=>layer.id==='msg-invite-copy').text,'read this →');
-  assert.equal(layers.find(layer=>layer.id==='msg-invite-link-domain').text,'example.com');
+  assert.equal(layers.find(layer=>layer.id==='msg-6-invite-copy').text,'read this →');
+  assert.equal(layers.find(layer=>layer.id==='msg-6-invite-link-domain').text,'example.com');
 });
 test('composer grows, transfers once, clears and disables empty send',()=>{
   const {scene,audit}=buildConversation(trial,measure);
@@ -47,8 +47,8 @@ test('composer grows, transfers once, clears and disables empty send',()=>{
   assert.ok(audit.composer.at(-2).height>audit.composer[0].height);
   assert.equal(audit.composer.at(-1).copy,'');assert.equal(audit.composer.at(-1).enabled,false);
   const before=svgMarkup(scene,11.9), after=svgMarkup(scene,12.3);
-  assert.match(before,/draft-3-input/);assert.doesNotMatch(before,/data-layer="msg-send-row"/);
-  assert.doesNotMatch(after,/draft-3-input/);assert.match(after,/data-layer="msg-send-row"/);
+  assert.match(before,/draft-3-input/);assert.doesNotMatch(before,/data-layer="msg-4-send-row"/);
+  assert.doesNotMatch(after,/draft-3-input/);assert.match(after,/data-layer="msg-4-send-row"/);
 });
 test('attachment-only composer enables send and reserves attachment height',()=>{
   const draft=ComposerState({id:'draft',copy:'',attachment:'1 photo',measure,start:0,end:1});
@@ -65,8 +65,8 @@ test('photo geometry retains different original aspect ratios',()=>{
 });
 test('incoming sender name stays above corner reaction badges',()=>{
   const layers=flatten(buildConversation(trial,measure).scene.layers);
-  const sender=layers.find(layer=>layer.id==='msg-invite-sender');
-  const badge=layers.find(layer=>layer.id==='msg-invite-reaction-0');
+  const sender=layers.find(layer=>layer.id==='msg-6-invite-sender');
+  const badge=layers.find(layer=>layer.id==='msg-6-invite-reaction-0');
   assert.ok(sender.y+sender.fontSize<badge.y);
 });
 test('overflowing initial history opens at the newest message',()=>{
@@ -103,6 +103,13 @@ test('scene IDs are unique, finite at every native frame, deterministic and esca
     for(const key of ['x','y','scaleX','scaleY','opacity'])assert.ok(Number.isFinite(state[key]));
   }
   assert.match(svgMarkup(scene,.4),/&lt;script&gt;/);assert.doesNotMatch(svgMarkup(scene,.4),/<script>/);
+});
+test('message IDs cannot collide with derived layer suffixes',()=>{
+  const config=clone();config.composer=[{at:0,copy:''}];
+  const suffixes=['','-row','-copy','-surface','-reaction-0'];
+  config.messages=suffixes.map((suffix,index)=>({...config.messages[0],id:'hello'+suffix,at:index,reactions:config.messages[0].reactions.map(reaction=>({...reaction,at:index+.5}))}));
+  const layers=flatten(buildConversation(config,measure).scene.layers);
+  assert.equal(new Set(layers.map(layer=>layer.id)).size,layers.length);
 });
 for(const [name,mutate,pattern] of [
   ['unknown reaction owner',c=>c.messages[0].reactions[0].ownerId='ghost',/reaction owner/],

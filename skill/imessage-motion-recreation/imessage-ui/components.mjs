@@ -199,7 +199,8 @@ export function buildConversation(config, measure) {
   const rows=[], audit=[], scroll=[{t:0,value:0}];
   let cursor=12;
   for (const message of messages) {
-    const sender=actors.get(message.senderId), outgoing=Boolean(sender.self), id='msg-'+message.id;
+    const sender=actors.get(message.senderId), outgoing=Boolean(sender.self);
+    const id=`msg-${message.id.length}-${message.id}`;
     const displayCopy=message.link ? message.copy.replace(message.link.url,'').trimEnd() : message.copy;
     let built=message.cards ? AttachmentStack({id,cards:message.cards,switches:message.switches,measure,duration}) : message.photos ? PhotoStack({id,photos:message.photos,caption:message.caption,measure}) : Message({id,copy:displayCopy,outgoing,measure});
     if (message.link) {
