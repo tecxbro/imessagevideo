@@ -125,6 +125,12 @@ Useful diagnoses observed during this project:
 - Verify color transport in the actual player as well as FFmpeg extraction. Gray253 became252 in one limited-range extraction while Chrome displayed253. Plain full-range with incomplete color tags instead displayed255 in Chrome. Coherent full-range BT.709 primaries/transfer/matrix tags corrected the measured case; range alone was insufficient. Preserve capture fingerprints and hash retained PNGs before/after any encode-only correction. Player drops under CPU contention and picture corruption are separate observations.
 - Use immutable scene snapshots and completion sidecars. Write output to a temporary MP4, atomically replace it after encoding, then publish metadata. Remove old completion metadata before replacing a master.
 
+### Local event-onset acceptance
+
+Build the shot plan's event list early with `python scripts/verification/event_onsets.py scan SOURCE.mp4 --out events.json`. Compare every export before acceptance with `python scripts/verification/event_onsets.py compare SOURCE.mp4 EXPORT.mp4 --events events.json --tolerance 2 --out report.json`. Supply `--frame-map` for changed timelines and `--roi-events` for important events the automatic scan misses. Review failures and candidate-only events against native frames; broad camera motion and repeated controls can produce heuristic false matches. Full-frame MAE peaks alone do not validate event timing.
+
+Poke's small restaurant selection was twelve frames late despite unremarkable full-frame error. Its blue/check overlays retained `start: 21.5`; the separate trial moves both to native frame633 and the automatically discovered event changes from645 (+12, late) to633 (0, pass). Other review flags remain; frozen films and audio are unchanged. See [the trial and reports](../../../trials/poke-selection-onset/).
+
 ## 7. Deliver concrete artifacts and truthful status
 
 Provide the videos, editable scenes/source, review gallery, comparison data and this skill. Distinguish completed methods, unavailable methods, and unverified access. State material fidelity gaps clearly. Never label an approximate rebuild 100% perfect because it renders successfully or because the user requested perfection.

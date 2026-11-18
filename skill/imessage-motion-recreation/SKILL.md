@@ -96,6 +96,8 @@ Read [RUNNING.md](RUNNING.md) for dependencies. Remotion, GSAP, HTML/SVG, Pillow
 
 ## Frame and sound discipline
 
+Run `python scripts/verification/event_onsets.py scan SOURCE.mp4 --out events.json` early and use the source event list in the shot plan. Before accepting every export, run `python scripts/verification/event_onsets.py compare SOURCE.mp4 EXPORT.mp4 --events events.json --tolerance 2 --out report.json`; inspect failures and candidate-only events, resolving heuristic matches with native-frame evidence. Full-frame MAE ranking alone is not an acceptance gate for timing. Keep explicit source/output frame maps when cuts change the timeline.
+
 Read `director/analysis/index.json`: bundled historical CSVs cover all 7,499 aligned native output frames across the six accepted GSAP comparisons, with source mapping and residual error. These are not a fresh all-five-method scan. Atlas images show selected teaching phases, not every frame. Canonical trajectory samples describe reconstructed states; pixel comparisons independently measure visual differences. Neither certifies perceptual perfection.
 
 For exact work, scan every aligned frame numerically, rank separated error peaks and inspect source, reconstruction and foreground differences near those peaks. Verify dimensions, rational cadence, lifecycle boundaries, transform composition, blur, materials, masks and editability. Preserve canonical hashes and outside-range proofs. Use `scripts/shared/SCHEMA.md`, verification tools and the reconstruction playbook.
