@@ -69,6 +69,15 @@ test('incoming sender name stays above corner reaction badges',()=>{
   const badge=layers.find(layer=>layer.id==='msg-invite-reaction-0');
   assert.ok(sender.y+sender.fontSize<badge.y);
 });
+test('overflowing initial history opens at the newest message',()=>{
+  const config=clone();config.composer=[{at:0,copy:''}];
+  config.messages.forEach(message=>{message.at=0;});
+  const {scene,audit}=buildConversation(config,measure);
+  const scroll=flatten(scene.layers).find(layer=>layer.id==='transcript-scroll');
+  assert.ok(audit.messages.at(-1).scroll<0);
+  assert.equal(stateAt(scroll,0).y,audit.messages.at(-1).scroll);
+  assert.equal(stateAt(scroll,5).y,audit.messages.at(-1).scroll);
+});
 test('camera moves one clipped hierarchy, not local message geometry',()=>{
   const first=buildConversation(trial,measure);const changed=clone();changed.camera[1].scale=1.6;
   const second=buildConversation(changed,measure);

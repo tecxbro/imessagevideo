@@ -221,6 +221,7 @@ export function buildConversation(config, measure) {
     cursor=y+built.height+19;
     const offset=-Math.max(0,cursor-574);
     if (message.at>0) scroll.push({t:message.at,value:scroll.at(-1).value,ease:'hold'},{t:message.at+.3,value:offset,ease:'easeOut'});
+    else scroll[0].value=offset;
     audit.push({id:message.id,senderId:sender.id,x,y,width:built.width,height:built.height,lines:built.lines,reactions:reactions.map(r=>({ownerId:r.reaction.ownerId,messageId:message.id,at:r.reaction.at})),scroll:offset});
   }
   const drafts=composer.map((state,index)=>({...ComposerState({id:'draft-'+index,copy:state.copy,attachment:state.attachment,start:state.at,end:composer[index+1]?.at ?? duration,measure}),at:state.at,copy:state.copy}));
