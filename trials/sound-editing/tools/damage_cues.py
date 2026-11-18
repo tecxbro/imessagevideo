@@ -16,6 +16,8 @@ def main():
     a = p.parse_args()
     if a.output.exists() or a.key.exists():
         p.error('Refusing to overwrite an existing intervention or key')
+    a.output.parent.mkdir(parents=True, exist_ok=True)
+    a.key.parent.mkdir(parents=True, exist_ok=True)
     receipt = json.loads(a.receipt.read_text()); base = a.receipt.parent.parent
     x = decode(a.stem)
     rng = np.random.default_rng(a.seed)

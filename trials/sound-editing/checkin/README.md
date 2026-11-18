@@ -25,7 +25,7 @@ Packet method: `ffmpeg -map 0:v:0 -c copy -f hash -hash sha256`. This excludes a
 
 ## Reproduction and review
 
-From repo root, using the existing isolated NumPy/SciPy/Pillow environment:
+First follow the parent README's environment, library sync and kit bootstrap. From repo root, using that isolated NumPy/SciPy/Pillow environment:
 
 ```sh
 .sound-survey-venv/bin/python trials/sound-editing/checkin/tools/inspect_frames.py
@@ -33,10 +33,10 @@ From repo root, using the existing isolated NumPy/SciPy/Pillow environment:
 .sound-survey-venv/bin/python trials/sound-editing/checkin/tools/transition_sheets.py
 .sound-survey-venv/bin/python trials/sound-editing/checkin/tools/author_schedule.py
 .sound-survey-venv/bin/python trials/sound-editing/audio-recreation/scripts/render_ui.py --id checkin --no-music
-.sound-survey-venv/bin/python trials/sound-editing/checkin/tools/build_scores.py
+.sound-survey-venv/bin/python trials/sound-editing/tools/restore_outputs.py
 ```
 
-Builder refuses to overwrite its key or scored outputs. Existing render result and snapshots: `../audio-recreation/ui-mixes/checkin/no-music/`; production render output: `results/ui-render.txt`. The boosted renderer preview was **not** used for these deliveries.
+The receipt-based restorer preserves committed labels and keys and recreates missing media. The original random-label `build_scores.py` deliberately refuses committed keys and is not a fresh-checkout reproduction route. Existing render result and snapshots: `../audio-recreation/ui-mixes/checkin/no-music/`; production render output: `results/ui-render.txt`. The boosted renderer preview was **not** used for these deliveries.
 
 For either label and either `production` or `comparison`:
 

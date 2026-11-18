@@ -17,10 +17,12 @@ from render_mix import encode, loudness, sha256
 
 
 def write(path, data):
+    path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(data, indent=2)+'\n')
 
 
 def mux(picture, audio, output):
+    output.parent.mkdir(parents=True, exist_ok=True)
     subprocess.run(['ffmpeg', '-v', 'error', '-i', str(picture), '-i', str(audio), '-map', '0:v:0',
                     '-map', '1:a:0', '-c', 'copy', '-movflags', '+faststart', '-movie_timescale', '48000',
                     '-n', str(output)], check=True)

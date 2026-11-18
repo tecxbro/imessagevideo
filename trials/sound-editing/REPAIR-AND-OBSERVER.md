@@ -1,5 +1,14 @@
 # D1 repair and opening-cue observer follow-up
 
+## Observer results
+
+Unchanged independent reports are archived in `observer/audio-d1-repaired-recheck.md`, `observer/audio-checkin-treatments.md` and `observer/audio-v5-overlap.md`.
+
+- Repaired D1 passes **8/9 windows**. The cue at12.046s correlates at**0.9895**, but the old extra-click window at33.247s retains low-frequency residue, maximum**1.4e-3**. That fails the observer's strict absence test: a known limitation of this repair despite our threshold-based checker pass below. The repair algorithm is unchanged.
+- The observer finds **7 small residual regions**, possibly from re-encoding; that attribution is not established as the sole cause.
+- For Check In, the observer ranks **T-V2 above T-M8**.
+- The observer **withdrew the V5 opening objection**: low raw correlation was an overlap artifact, not evidence of a damaged retained key. Its source-assisted isolated correlation is0.999206; decoded-reference residual cancellation gives0.979917. Its broader all-class gain comparison differs from our own-reference metric, as detailed in the report.
+
 ## D1: delivery-only repair inputs
 
 Delivered: `blind-damage/poke-review-D1-repaired.mp4`, with independent repaired UI PCM in `.flac` and `.repair.json` beside it.

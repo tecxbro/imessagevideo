@@ -209,6 +209,7 @@ def linked_peak_control(music: np.ndarray, sfx: np.ndarray, ceiling_db: float) -
 def encode(path: Path, samples: np.ndarray, *, aac: bool, bitrate: str = '256k') -> None:
     if not np.isfinite(samples).all() or np.max(np.abs(samples)) >= 1:
         raise ValueError('Refusing to export nonfinite or clipped samples')
+    path.parent.mkdir(parents=True, exist_ok=True)
     temporary = path.with_name(path.stem + '.tmp' + path.suffix)
     options = (['-c:a', 'aac', '-b:a', bitrate, '-movie_timescale', str(SAMPLE_RATE), '-movflags', '+faststart'] if aac else
                ['-c:a', 'flac', '-sample_fmt', 's32', '-bits_per_raw_sample', '24', '-compression_level', '8'])

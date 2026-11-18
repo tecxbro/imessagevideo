@@ -53,6 +53,7 @@ def canonical(supplied,picture_hash):
 
 def main():
     if (BASE/'final.mp4').exists():raise SystemExit('Refusing to overwrite completed v3 score')
+    (BASE/'references').mkdir(parents=True,exist_ok=True)
     picture=BASE/'v3-final.mp4'
     actual=sha256(picture)
     if actual!=EXPECTED:raise ValueError('Director picture whole-file SHA mismatch')

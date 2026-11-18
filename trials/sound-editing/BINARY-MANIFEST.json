@@ -2,8 +2,8 @@
   "policy": "Ordinary Git, no LFS. Generated review/audio/NPY payloads collectively exceed50MB, so omitted; no new library archive registration.",
   "included_binary_source": "checkin/v1-first-export.mp4; original director input, not reproducible from audio tools",
   "included_evidence": "Contact and transition sheets PNG; individual decoded frames omitted",
-  "omitted_count": 1041,
-  "omitted_bytes": 357466949,
+  "omitted_count": 1080,
+  "omitted_bytes": 385161822,
   "files": [
     {
       "path": "04-poke-damaged-192k.m4a",
@@ -5744,6 +5744,279 @@
       "sha256": "aae73adf45614e13090f9be822bcc5cc545c766e2d685d63d50e106908553e24",
       "reproduction": "README.md: named outputs, Poke damage/repair, or Check In damage commands",
       "note": "Historical failed/first attempts may be evidence-only; see results and logs"
+    },
+    {
+      "path": "checkin-v3/delivery/master.flac",
+      "bytes": 1177378,
+      "sha256": "5e126454a362ff2cfa8d668f22954647a05c289206420ceff48a4a2326711b9e",
+      "reproduction": "checkin-v3/README.md then checkin-v3/delivery/README.md: python trials/sound-editing/checkin-v3/tools/build_delivery.py",
+      "note": null
+    },
+    {
+      "path": "checkin-v3/delivery/master.m4a",
+      "bytes": 240347,
+      "sha256": "4c2dd2d2930239ca4c15e2a8b439fa3963c939bbdbe606a200adcccbb7cef0fb",
+      "reproduction": "checkin-v3/README.md then checkin-v3/delivery/README.md: python trials/sound-editing/checkin-v3/tools/build_delivery.py",
+      "note": null
+    },
+    {
+      "path": "checkin-v3/delivery/master.mp4",
+      "bytes": 2089548,
+      "sha256": "467aa6447505a7521335831f2ceb0e1e0b68dbe406bb4c007810b3fd7082f2c5",
+      "reproduction": "checkin-v3/README.md then checkin-v3/delivery/README.md: python trials/sound-editing/checkin-v3/tools/build_delivery.py",
+      "note": null
+    },
+    {
+      "path": "checkin-v3/delivery/references/cue-00.npy",
+      "bytes": 94432,
+      "sha256": "51d14bfd20949f107139ab6b824edaba6342bd337e0da799b28fb7741ad944f6",
+      "reproduction": "checkin-v3/README.md then checkin-v3/delivery/README.md: python trials/sound-editing/checkin-v3/tools/build_delivery.py",
+      "note": null
+    },
+    {
+      "path": "checkin-v3/delivery/references/cue-01.npy",
+      "bytes": 40592,
+      "sha256": "bdf1d189ece3d4ca691508eb4c7135ddad9a5cc79cf22a4dc1e4a892c5ac0c05",
+      "reproduction": "checkin-v3/README.md then checkin-v3/delivery/README.md: python trials/sound-editing/checkin-v3/tools/build_delivery.py",
+      "note": null
+    },
+    {
+      "path": "checkin-v3/delivery/references/cue-02.npy",
+      "bytes": 40592,
+      "sha256": "bdf1d189ece3d4ca691508eb4c7135ddad9a5cc79cf22a4dc1e4a892c5ac0c05",
+      "reproduction": "checkin-v3/README.md then checkin-v3/delivery/README.md: python trials/sound-editing/checkin-v3/tools/build_delivery.py",
+      "note": null
+    },
+    {
+      "path": "checkin-v3/delivery/references/cue-03.npy",
+      "bytes": 107648,
+      "sha256": "cbc7246ea55975d710affe55eb0564e797779901d41cd5d2310e82c5301b3ea8",
+      "reproduction": "checkin-v3/README.md then checkin-v3/delivery/README.md: python trials/sound-editing/checkin-v3/tools/build_delivery.py",
+      "note": null
+    },
+    {
+      "path": "checkin-v3/delivery/references/cue-04.npy",
+      "bytes": 183440,
+      "sha256": "4289da5f4da621201b8152510b234478a0daa941f9d34d68fe07184f3fd0a692",
+      "reproduction": "checkin-v3/README.md then checkin-v3/delivery/README.md: python trials/sound-editing/checkin-v3/tools/build_delivery.py",
+      "note": null
+    },
+    {
+      "path": "checkin-v3/delivery/references/cue-05.npy",
+      "bytes": 183440,
+      "sha256": "4289da5f4da621201b8152510b234478a0daa941f9d34d68fe07184f3fd0a692",
+      "reproduction": "checkin-v3/README.md then checkin-v3/delivery/README.md: python trials/sound-editing/checkin-v3/tools/build_delivery.py",
+      "note": null
+    },
+    {
+      "path": "checkin-v3/delivery/references/cue-06.npy",
+      "bytes": 188208,
+      "sha256": "2830fa574e6df79e86f4b882c75e83b8b33c46f81021106a69ce4e8c1355c9da",
+      "reproduction": "checkin-v3/README.md then checkin-v3/delivery/README.md: python trials/sound-editing/checkin-v3/tools/build_delivery.py",
+      "note": null
+    },
+    {
+      "path": "checkin-v3/delivery/references/cue-07.npy",
+      "bytes": 188208,
+      "sha256": "2830fa574e6df79e86f4b882c75e83b8b33c46f81021106a69ce4e8c1355c9da",
+      "reproduction": "checkin-v3/README.md then checkin-v3/delivery/README.md: python trials/sound-editing/checkin-v3/tools/build_delivery.py",
+      "note": null
+    },
+    {
+      "path": "checkin-v3/delivery/references/cue-08.npy",
+      "bytes": 192128,
+      "sha256": "d2b98465eab20f95cd9a825a25d926bdea3b218e1148f849815e30eb154a637e",
+      "reproduction": "checkin-v3/README.md then checkin-v3/delivery/README.md: python trials/sound-editing/checkin-v3/tools/build_delivery.py",
+      "note": null
+    },
+    {
+      "path": "checkin-v3/delivery/references/cue-09.npy",
+      "bytes": 183440,
+      "sha256": "4289da5f4da621201b8152510b234478a0daa941f9d34d68fe07184f3fd0a692",
+      "reproduction": "checkin-v3/README.md then checkin-v3/delivery/README.md: python trials/sound-editing/checkin-v3/tools/build_delivery.py",
+      "note": null
+    },
+    {
+      "path": "checkin-v3/delivery/references/cue-10.npy",
+      "bytes": 192128,
+      "sha256": "cc322092a76433bbfebb4e3eb6ac1011e2adebd1d0120e1c515b7bcd45423830",
+      "reproduction": "checkin-v3/README.md then checkin-v3/delivery/README.md: python trials/sound-editing/checkin-v3/tools/build_delivery.py",
+      "note": null
+    },
+    {
+      "path": "checkin-v3/delivery/references/cue-11.npy",
+      "bytes": 188208,
+      "sha256": "2830fa574e6df79e86f4b882c75e83b8b33c46f81021106a69ce4e8c1355c9da",
+      "reproduction": "checkin-v3/README.md then checkin-v3/delivery/README.md: python trials/sound-editing/checkin-v3/tools/build_delivery.py",
+      "note": null
+    },
+    {
+      "path": "checkin-v3/delivery/references/cue-12.npy",
+      "bytes": 189600,
+      "sha256": "37b9016b951c14b4df3e08edca7263aa9c73af2fb4a3b47c7a6df1262f26fa3d",
+      "reproduction": "checkin-v3/README.md then checkin-v3/delivery/README.md: python trials/sound-editing/checkin-v3/tools/build_delivery.py",
+      "note": null
+    },
+    {
+      "path": "checkin-v3/delivery/references/cue-13.npy",
+      "bytes": 192128,
+      "sha256": "72f8045d7234bb6042454423b2cb19f1d8beeb30acea98b9a41371945d34fb92",
+      "reproduction": "checkin-v3/README.md then checkin-v3/delivery/README.md: python trials/sound-editing/checkin-v3/tools/build_delivery.py",
+      "note": null
+    },
+    {
+      "path": "checkin-v3/delivery/references/cue-14.npy",
+      "bytes": 192128,
+      "sha256": "cc322092a76433bbfebb4e3eb6ac1011e2adebd1d0120e1c515b7bcd45423830",
+      "reproduction": "checkin-v3/README.md then checkin-v3/delivery/README.md: python trials/sound-editing/checkin-v3/tools/build_delivery.py",
+      "note": null
+    },
+    {
+      "path": "checkin-v3/delivery/references/cue-15.npy",
+      "bytes": 183440,
+      "sha256": "4289da5f4da621201b8152510b234478a0daa941f9d34d68fe07184f3fd0a692",
+      "reproduction": "checkin-v3/README.md then checkin-v3/delivery/README.md: python trials/sound-editing/checkin-v3/tools/build_delivery.py",
+      "note": null
+    },
+    {
+      "path": "checkin-v3/delivery/references/cue-16.npy",
+      "bytes": 192128,
+      "sha256": "3010d3cd70de75aa7f060bf0fa928608b327ee82c417bae2901337019ff502d9",
+      "reproduction": "checkin-v3/README.md then checkin-v3/delivery/README.md: python trials/sound-editing/checkin-v3/tools/build_delivery.py",
+      "note": null
+    },
+    {
+      "path": "checkin-v3/delivery/references/cue-17.npy",
+      "bytes": 192128,
+      "sha256": "784e5f4bcb58e12d9ab2c2ea57e6dcb9618fb06836d6e4d14b186a1cbb4c1b6b",
+      "reproduction": "checkin-v3/README.md then checkin-v3/delivery/README.md: python trials/sound-editing/checkin-v3/tools/build_delivery.py",
+      "note": null
+    },
+    {
+      "path": "checkin-v3/delivery/references/cue-18.npy",
+      "bytes": 18096,
+      "sha256": "d3927bbf40d3de84f4074a911e15845da617856eb6bd958dafb7de46cfc6b28b",
+      "reproduction": "checkin-v3/README.md then checkin-v3/delivery/README.md: python trials/sound-editing/checkin-v3/tools/build_delivery.py",
+      "note": null
+    },
+    {
+      "path": "checkin-v3/delivery/references/cue-19.npy",
+      "bytes": 192128,
+      "sha256": "35295eeb697b1a94f2789f7327c3682c63a74a766ad7a2c8e2203bf17e333659",
+      "reproduction": "checkin-v3/README.md then checkin-v3/delivery/README.md: python trials/sound-editing/checkin-v3/tools/build_delivery.py",
+      "note": null
+    },
+    {
+      "path": "checkin-v3/delivery/references/cue-20.npy",
+      "bytes": 189600,
+      "sha256": "d4849efb9a1ff88d616d138ba2be827bfaa6997b0fbe12187a05dbcb3567dbf1",
+      "reproduction": "checkin-v3/README.md then checkin-v3/delivery/README.md: python trials/sound-editing/checkin-v3/tools/build_delivery.py",
+      "note": null
+    },
+    {
+      "path": "checkin-v3/delivery/references/cue-21.npy",
+      "bytes": 192128,
+      "sha256": "afd66607239d7d4bb4d5559f3f4100af6ab4a2715871b6b6960dbf5fcb21ee9c",
+      "reproduction": "checkin-v3/README.md then checkin-v3/delivery/README.md: python trials/sound-editing/checkin-v3/tools/build_delivery.py",
+      "note": null
+    },
+    {
+      "path": "checkin-v3/delivery/references/cue-22.npy",
+      "bytes": 192128,
+      "sha256": "709406c1963d4fc207c0d4232d26dcda832c7220d3c76a2a4d2723b83bc4dfb2",
+      "reproduction": "checkin-v3/README.md then checkin-v3/delivery/README.md: python trials/sound-editing/checkin-v3/tools/build_delivery.py",
+      "note": null
+    },
+    {
+      "path": "checkin-v3/delivery/references/cue-23.npy",
+      "bytes": 192128,
+      "sha256": "07882694a56351d39b81e04c93c477fb790519530286ca9fa045d9f1c3d37320",
+      "reproduction": "checkin-v3/README.md then checkin-v3/delivery/README.md: python trials/sound-editing/checkin-v3/tools/build_delivery.py",
+      "note": null
+    },
+    {
+      "path": "checkin-v3/delivery/references/cue-24.npy",
+      "bytes": 159744,
+      "sha256": "5f172faef4010da7372fa057133bce48ced0d97c776a4986a1af3c0f7954c303",
+      "reproduction": "checkin-v3/README.md then checkin-v3/delivery/README.md: python trials/sound-editing/checkin-v3/tools/build_delivery.py",
+      "note": null
+    },
+    {
+      "path": "checkin-v3/delivery/references/cue-25.npy",
+      "bytes": 192128,
+      "sha256": "35295eeb697b1a94f2789f7327c3682c63a74a766ad7a2c8e2203bf17e333659",
+      "reproduction": "checkin-v3/README.md then checkin-v3/delivery/README.md: python trials/sound-editing/checkin-v3/tools/build_delivery.py",
+      "note": null
+    },
+    {
+      "path": "checkin-v3/delivery/references/cue-26.npy",
+      "bytes": 192128,
+      "sha256": "ae2ae94c96c5158a8f9bc3fa683a8bb33e8838019ef429476979b8e5305f3c6f",
+      "reproduction": "checkin-v3/README.md then checkin-v3/delivery/README.md: python trials/sound-editing/checkin-v3/tools/build_delivery.py",
+      "note": null
+    },
+    {
+      "path": "checkin-v3/delivery/references/cue-27.npy",
+      "bytes": 159744,
+      "sha256": "5f172faef4010da7372fa057133bce48ced0d97c776a4986a1af3c0f7954c303",
+      "reproduction": "checkin-v3/README.md then checkin-v3/delivery/README.md: python trials/sound-editing/checkin-v3/tools/build_delivery.py",
+      "note": null
+    },
+    {
+      "path": "checkin-v3/delivery/references/cue-28.npy",
+      "bytes": 183440,
+      "sha256": "75bf5cd1c07715ea45f8c61b2f49396f918f1ef413c1aca2f449f8c36f3e63a6",
+      "reproduction": "checkin-v3/README.md then checkin-v3/delivery/README.md: python trials/sound-editing/checkin-v3/tools/build_delivery.py",
+      "note": null
+    },
+    {
+      "path": "checkin-v3/delivery/references/cue-29.npy",
+      "bytes": 192128,
+      "sha256": "ae2ae94c96c5158a8f9bc3fa683a8bb33e8838019ef429476979b8e5305f3c6f",
+      "reproduction": "checkin-v3/README.md then checkin-v3/delivery/README.md: python trials/sound-editing/checkin-v3/tools/build_delivery.py",
+      "note": null
+    },
+    {
+      "path": "checkin-v3/delivery/references/cue-30.npy",
+      "bytes": 192128,
+      "sha256": "afd66607239d7d4bb4d5559f3f4100af6ab4a2715871b6b6960dbf5fcb21ee9c",
+      "reproduction": "checkin-v3/README.md then checkin-v3/delivery/README.md: python trials/sound-editing/checkin-v3/tools/build_delivery.py",
+      "note": null
+    },
+    {
+      "path": "checkin-v3/delivery/references/cue-31.npy",
+      "bytes": 192128,
+      "sha256": "ae2ae94c96c5158a8f9bc3fa683a8bb33e8838019ef429476979b8e5305f3c6f",
+      "reproduction": "checkin-v3/README.md then checkin-v3/delivery/README.md: python trials/sound-editing/checkin-v3/tools/build_delivery.py",
+      "note": null
+    },
+    {
+      "path": "checkin-v3/delivery/references/cue-32.npy",
+      "bytes": 189600,
+      "sha256": "d4849efb9a1ff88d616d138ba2be827bfaa6997b0fbe12187a05dbcb3567dbf1",
+      "reproduction": "checkin-v3/README.md then checkin-v3/delivery/README.md: python trials/sound-editing/checkin-v3/tools/build_delivery.py",
+      "note": null
+    },
+    {
+      "path": "checkin-v3/delivery/references/cue-33.npy",
+      "bytes": 107648,
+      "sha256": "7b3cc793303215ec4290acf1d3ac95e46095c7370a3f916732051c0d7b40fa19",
+      "reproduction": "checkin-v3/README.md then checkin-v3/delivery/README.md: python trials/sound-editing/checkin-v3/tools/build_delivery.py",
+      "note": null
+    },
+    {
+      "path": "checkin-v3/delivery/references/cue-34.npy",
+      "bytes": 94432,
+      "sha256": "51d14bfd20949f107139ab6b824edaba6342bd337e0da799b28fb7741ad944f6",
+      "reproduction": "checkin-v3/README.md then checkin-v3/delivery/README.md: python trials/sound-editing/checkin-v3/tools/build_delivery.py",
+      "note": null
+    },
+    {
+      "path": "checkin-v3/delivery/references/motion.npy",
+      "bytes": 18432128,
+      "sha256": "acbead804eb4b6b6331a75420559d5eb936974b8b10ac75c1817f8db197d70a1",
+      "reproduction": "checkin-v3/README.md then checkin-v3/delivery/README.md: python trials/sound-editing/checkin-v3/tools/build_delivery.py",
+      "note": null
     },
     {
       "path": "checkin-v3/evidence/frame-000.png",

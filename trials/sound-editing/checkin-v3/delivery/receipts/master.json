@@ -1,0 +1,1766 @@
+{
+  "picture_file_sha256": "9dc4a812480d778c4b453f1eeb8d87e19569683ea2f4d78e8015b9f2f9952d9e",
+  "picture_file_hash_method": "SHA256 of every byte of director input MP4; container included, not decoded frames",
+  "picture_packet_sha256": "SHA256=3bc70fbb7856ef3e8c988509caa5f90e8377316845367f54842322417c9d3fd6",
+  "picture_packet_hash_method": "SHA-256 of concatenated first-video-stream encoded packet payloads; ffmpeg -map 0:v:0 -c copy -f hash -hash sha256; excludes container metadata and audio; not decoded frames",
+  "schedule_sha256": "0c360aacf118a31383c6eefe54eb06c9fc281cc8510f659f9b94f067b0fa5ef1",
+  "fps": 30,
+  "fps_numerator": 30,
+  "fps_denominator": 1,
+  "samples": 1152000,
+  "sample_rate": 48000,
+  "cues": [
+    {
+      "canonical_event": {
+        "frame": 13,
+        "kind": "message_arrival",
+        "time": 0.43333333333333335,
+        "sample_offset_48000": 20800,
+        "event_id": "checkin-v3:message_arrival:13",
+        "audio": {
+          "target_peak_dbfs": -18
+        },
+        "director_action": {
+          "frame": 13,
+          "action": "receive",
+          "target": "bubbleAsk",
+          "actor": "bubbleAsk"
+        },
+        "evidence": [
+          "evidence/frame-012.png",
+          "evidence/frame-013.png",
+          "evidence/frame-014.png"
+        ],
+        "verification": "Native before/at/after frames visually inspected; listed impact confirmed"
+      },
+      "ordinal": 0,
+      "source": {
+        "kind": "licensed_library_ui_effect",
+        "asset_id": "kenney_drop_001",
+        "license": "CC0-1.0",
+        "original_sha256": "692ee3a6f1821402ca649ff735bee9591dc4846c8098fc7d6a90fd15fa57c1af",
+        "prepared_sha256": "5536fb305fbce91643f485fc784cce11051975708d8407421fa2f409ad172fa7",
+        "source_collection": "kenney",
+        "asset_gain_db": -12.0,
+        "routing_limit": "Filename/category-based original sound design; not a proprietary-sound equivalence claim"
+      },
+      "target_peak_dbfs": -18.0,
+      "pitch": 1.0,
+      "pan": 0.0,
+      "alignment": "dominant_early_attack_peak",
+      "event_sample": 20800,
+      "clip_alignment_offset_samples": 13,
+      "clip_start_sample_unclipped": 20787,
+      "boundary_adjustment_samples": 0,
+      "clip_samples": 5894,
+      "batch_policy": "one effect for one canonical event",
+      "reference": "references/cue-00.npy",
+      "reference_sha256": "51d14bfd20949f107139ab6b824edaba6342bd337e0da799b28fb7741ad944f6"
+    },
+    {
+      "canonical_event": {
+        "frame": 90,
+        "kind": "tap",
+        "time": 3.0,
+        "sample_offset_48000": 144000,
+        "event_id": "checkin-v3:tap:90",
+        "audio": {
+          "target_peak_dbfs": -21
+        },
+        "director_action": {
+          "frame": 90,
+          "action": "tap",
+          "target": "tapPlus",
+          "actor": "tapPlus"
+        },
+        "evidence": [
+          "evidence/frame-089.png",
+          "evidence/frame-090.png",
+          "evidence/frame-091.png"
+        ],
+        "verification": "Native before/at/after frames visually inspected; listed impact confirmed"
+      },
+      "ordinal": 1,
+      "source": {
+        "kind": "licensed_library_ui_effect",
+        "asset_id": "kenney_click_001",
+        "license": "CC0-1.0",
+        "original_sha256": "ccfb7fa0cccdd9faec0eb16033c732b1e308d139d80f799161495d58f7adcdb9",
+        "prepared_sha256": "3cdcdd0a7dd41eded18064a7e36b4d320dc2c478b5aa126ec75ec6c639822ccf",
+        "source_collection": "kenney",
+        "asset_gain_db": -15.0,
+        "routing_limit": "Filename/category-based original sound design; not a proprietary-sound equivalence claim"
+      },
+      "target_peak_dbfs": -21.0,
+      "pitch": 1.0,
+      "pan": 0.0,
+      "alignment": "dominant_early_attack_peak",
+      "event_sample": 144000,
+      "clip_alignment_offset_samples": 55,
+      "clip_start_sample_unclipped": 143945,
+      "boundary_adjustment_samples": 0,
+      "clip_samples": 2529,
+      "batch_policy": "one effect for one canonical event",
+      "reference": "references/cue-01.npy",
+      "reference_sha256": "bdf1d189ece3d4ca691508eb4c7135ddad9a5cc79cf22a4dc1e4a892c5ac0c05"
+    },
+    {
+      "canonical_event": {
+        "frame": 132,
+        "kind": "tap",
+        "time": 4.4,
+        "sample_offset_48000": 211200,
+        "event_id": "checkin-v3:tap:132",
+        "audio": {
+          "target_peak_dbfs": -21
+        },
+        "director_action": {
+          "frame": 132,
+          "action": "tap",
+          "target": "tapCheckIn",
+          "actor": "tapCheckIn"
+        },
+        "evidence": [
+          "evidence/frame-131.png",
+          "evidence/frame-132.png",
+          "evidence/frame-133.png"
+        ],
+        "verification": "Native before/at/after frames visually inspected; listed impact confirmed"
+      },
+      "ordinal": 2,
+      "source": {
+        "kind": "licensed_library_ui_effect",
+        "asset_id": "kenney_click_001",
+        "license": "CC0-1.0",
+        "original_sha256": "ccfb7fa0cccdd9faec0eb16033c732b1e308d139d80f799161495d58f7adcdb9",
+        "prepared_sha256": "3cdcdd0a7dd41eded18064a7e36b4d320dc2c478b5aa126ec75ec6c639822ccf",
+        "source_collection": "kenney",
+        "asset_gain_db": -15.0,
+        "routing_limit": "Filename/category-based original sound design; not a proprietary-sound equivalence claim"
+      },
+      "target_peak_dbfs": -21.0,
+      "pitch": 1.0,
+      "pan": 0.0,
+      "alignment": "dominant_early_attack_peak",
+      "event_sample": 211200,
+      "clip_alignment_offset_samples": 55,
+      "clip_start_sample_unclipped": 211145,
+      "boundary_adjustment_samples": 0,
+      "clip_samples": 2529,
+      "batch_policy": "one effect for one canonical event",
+      "reference": "references/cue-02.npy",
+      "reference_sha256": "bdf1d189ece3d4ca691508eb4c7135ddad9a5cc79cf22a4dc1e4a892c5ac0c05"
+    },
+    {
+      "canonical_event": {
+        "frame": 186,
+        "kind": "message_send",
+        "time": 6.2,
+        "sample_offset_48000": 297600,
+        "event_id": "checkin-v3:message_send:186",
+        "audio": {
+          "target_peak_dbfs": -17
+        },
+        "director_action": {
+          "frame": 186,
+          "action": "send",
+          "target": "cardMaya",
+          "actor": "cardMaya"
+        },
+        "evidence": [
+          "evidence/frame-185.png",
+          "evidence/frame-186.png",
+          "evidence/frame-187.png"
+        ],
+        "verification": "Native before/at/after frames visually inspected; listed impact confirmed"
+      },
+      "ordinal": 3,
+      "source": {
+        "kind": "original_procedural_fallback",
+        "effect": "air_whoosh",
+        "seed": 1860567755,
+        "parameters": {
+          "pitch": 1.12,
+          "duration": 0.14,
+          "energy": 0.75,
+          "pan": 0.0
+        },
+        "code_sha256": "4797a0e736e8115975398a7c4acf5289a89d23bb0222420d7dc7d89a2f40f23c",
+        "recorded_samples_used": false
+      },
+      "target_peak_dbfs": -17.0,
+      "pitch": 1.12,
+      "pan": 0.0,
+      "alignment": "onset",
+      "event_sample": 297600,
+      "clip_alignment_offset_samples": 0,
+      "clip_start_sample_unclipped": 297600,
+      "boundary_adjustment_samples": 0,
+      "clip_samples": 6720,
+      "batch_policy": "one effect for one canonical event",
+      "reference": "references/cue-03.npy",
+      "reference_sha256": "cbc7246ea55975d710affe55eb0564e797779901d41cd5d2310e82c5301b3ea8"
+    },
+    {
+      "canonical_event": {
+        "frame": 325,
+        "kind": "typing",
+        "time": 10.833333333333334,
+        "sample_offset_48000": 520000,
+        "event_id": "checkin-v3:typing:325",
+        "audio": {
+          "target_peak_dbfs": -24
+        },
+        "director_action": {
+          "frame": 325,
+          "action": "type char",
+          "target": "draftSam",
+          "actor": "draftSam",
+          "char": "a"
+        },
+        "evidence": [
+          "evidence/frame-324.png",
+          "evidence/frame-325.png",
+          "evidence/frame-326.png"
+        ],
+        "verification": "Native before/at/after frames visually inspected; listed impact confirmed",
+        "role": "human",
+        "delta_count": 1
+      },
+      "ordinal": 4,
+      "source": {
+        "kind": "licensed_real_single_key_recording",
+        "asset_id": "key_003",
+        "license": "CC0-1.0",
+        "original_sha256": "d67cf9547d99fc65c815c4c68fa9181e0af71419761cbb1d1f0a10eb8491a8d2",
+        "prepared_sha256": "87daffcdfd03aaf9a4720099ed5c61003281138b1ff70709010cf378c3b0371e",
+        "source_collection": "keyboard",
+        "asset_gain_db": -18.0,
+        "routing_limit": "Filename/category-based original sound design; not a proprietary-sound equivalence claim"
+      },
+      "target_peak_dbfs": -24.0,
+      "pitch": 1.0,
+      "pan": 0.0,
+      "alignment": "dominant_early_attack_peak",
+      "event_sample": 520000,
+      "clip_alignment_offset_samples": 787,
+      "clip_start_sample_unclipped": 519213,
+      "boundary_adjustment_samples": 0,
+      "clip_samples": 11457,
+      "batch_policy": "one effect for one canonical event",
+      "reference": "references/cue-04.npy",
+      "reference_sha256": "4289da5f4da621201b8152510b234478a0daa941f9d34d68fe07184f3fd0a692"
+    },
+    {
+      "canonical_event": {
+        "frame": 331,
+        "kind": "typing",
+        "time": 11.033333333333333,
+        "sample_offset_48000": 529600,
+        "event_id": "checkin-v3:typing:331",
+        "audio": {
+          "target_peak_dbfs": -24
+        },
+        "director_action": {
+          "frame": 331,
+          "action": "type char",
+          "target": "draftSam",
+          "actor": "draftSam",
+          "char": "r"
+        },
+        "evidence": [
+          "evidence/frame-330.png",
+          "evidence/frame-331.png",
+          "evidence/frame-332.png"
+        ],
+        "verification": "Native before/at/after frames visually inspected; listed impact confirmed",
+        "role": "human",
+        "delta_count": 1
+      },
+      "ordinal": 5,
+      "source": {
+        "kind": "licensed_real_single_key_recording",
+        "asset_id": "key_003",
+        "license": "CC0-1.0",
+        "original_sha256": "d67cf9547d99fc65c815c4c68fa9181e0af71419761cbb1d1f0a10eb8491a8d2",
+        "prepared_sha256": "87daffcdfd03aaf9a4720099ed5c61003281138b1ff70709010cf378c3b0371e",
+        "source_collection": "keyboard",
+        "asset_gain_db": -18.0,
+        "routing_limit": "Filename/category-based original sound design; not a proprietary-sound equivalence claim"
+      },
+      "target_peak_dbfs": -24.0,
+      "pitch": 1.0,
+      "pan": 0.0,
+      "alignment": "dominant_early_attack_peak",
+      "event_sample": 529600,
+      "clip_alignment_offset_samples": 787,
+      "clip_start_sample_unclipped": 528813,
+      "boundary_adjustment_samples": 0,
+      "clip_samples": 11457,
+      "batch_policy": "one effect for one canonical event",
+      "reference": "references/cue-05.npy",
+      "reference_sha256": "4289da5f4da621201b8152510b234478a0daa941f9d34d68fe07184f3fd0a692"
+    },
+    {
+      "canonical_event": {
+        "frame": 339,
+        "kind": "typing",
+        "time": 11.3,
+        "sample_offset_48000": 542400,
+        "event_id": "checkin-v3:typing:339",
+        "audio": {
+          "target_peak_dbfs": -24
+        },
+        "director_action": {
+          "frame": 339,
+          "action": "type char",
+          "target": "draftSam",
+          "actor": "draftSam",
+          "char": "e"
+        },
+        "evidence": [
+          "evidence/frame-338.png",
+          "evidence/frame-339.png",
+          "evidence/frame-340.png"
+        ],
+        "verification": "Native before/at/after frames visually inspected; listed impact confirmed",
+        "role": "human",
+        "delta_count": 1
+      },
+      "ordinal": 6,
+      "source": {
+        "kind": "licensed_real_single_key_recording",
+        "asset_id": "key_014",
+        "license": "CC0-1.0",
+        "original_sha256": "b2069e29be488a7e55b151ef458e3314ec8f138f6d5a34fe19189f4810cba098",
+        "prepared_sha256": "7bfb2af145952e6f009175c5faf1bdd69c29aa2c1ae4d733e1f464825e1e0d18",
+        "source_collection": "keyboard",
+        "asset_gain_db": -18.0,
+        "routing_limit": "Filename/category-based original sound design; not a proprietary-sound equivalence claim"
+      },
+      "target_peak_dbfs": -24.0,
+      "pitch": 1.0,
+      "pan": 0.0,
+      "alignment": "dominant_early_attack_peak",
+      "event_sample": 542400,
+      "clip_alignment_offset_samples": 950,
+      "clip_start_sample_unclipped": 541450,
+      "boundary_adjustment_samples": 0,
+      "clip_samples": 11755,
+      "batch_policy": "one effect for one canonical event",
+      "reference": "references/cue-06.npy",
+      "reference_sha256": "2830fa574e6df79e86f4b882c75e83b8b33c46f81021106a69ce4e8c1355c9da"
+    },
+    {
+      "canonical_event": {
+        "frame": 356,
+        "kind": "typing",
+        "time": 11.866666666666667,
+        "sample_offset_48000": 569600,
+        "event_id": "checkin-v3:typing:356",
+        "audio": {
+          "target_peak_dbfs": -24
+        },
+        "director_action": {
+          "frame": 356,
+          "action": "type char",
+          "target": "draftSam",
+          "actor": "draftSam",
+          "char": "y"
+        },
+        "evidence": [
+          "evidence/frame-355.png",
+          "evidence/frame-356.png",
+          "evidence/frame-357.png"
+        ],
+        "verification": "Native before/at/after frames visually inspected; listed impact confirmed",
+        "role": "human",
+        "delta_count": 1
+      },
+      "ordinal": 7,
+      "source": {
+        "kind": "licensed_real_single_key_recording",
+        "asset_id": "key_014",
+        "license": "CC0-1.0",
+        "original_sha256": "b2069e29be488a7e55b151ef458e3314ec8f138f6d5a34fe19189f4810cba098",
+        "prepared_sha256": "7bfb2af145952e6f009175c5faf1bdd69c29aa2c1ae4d733e1f464825e1e0d18",
+        "source_collection": "keyboard",
+        "asset_gain_db": -18.0,
+        "routing_limit": "Filename/category-based original sound design; not a proprietary-sound equivalence claim"
+      },
+      "target_peak_dbfs": -24.0,
+      "pitch": 1.0,
+      "pan": 0.0,
+      "alignment": "dominant_early_attack_peak",
+      "event_sample": 569600,
+      "clip_alignment_offset_samples": 950,
+      "clip_start_sample_unclipped": 568650,
+      "boundary_adjustment_samples": 0,
+      "clip_samples": 11755,
+      "batch_policy": "one effect for one canonical event",
+      "reference": "references/cue-07.npy",
+      "reference_sha256": "2830fa574e6df79e86f4b882c75e83b8b33c46f81021106a69ce4e8c1355c9da"
+    },
+    {
+      "canonical_event": {
+        "frame": 362,
+        "kind": "typing",
+        "time": 12.066666666666666,
+        "sample_offset_48000": 579200,
+        "event_id": "checkin-v3:typing:362",
+        "audio": {
+          "target_peak_dbfs": -24
+        },
+        "director_action": {
+          "frame": 362,
+          "action": "type char",
+          "target": "draftSam",
+          "actor": "draftSam",
+          "char": "o"
+        },
+        "evidence": [
+          "evidence/frame-361.png",
+          "evidence/frame-362.png",
+          "evidence/frame-363.png"
+        ],
+        "verification": "Native before/at/after frames visually inspected; listed impact confirmed",
+        "role": "human",
+        "delta_count": 1
+      },
+      "ordinal": 8,
+      "source": {
+        "kind": "licensed_real_single_key_recording",
+        "asset_id": "key_005",
+        "license": "CC0-1.0",
+        "original_sha256": "619eb7e26571657b76fc9e1e3d99e85c3fc2259fa91c4c45f57384a85774ac24",
+        "prepared_sha256": "d9bff161250eae8ebf1098d582ddaad8bd81975127c29a65cf1a1a140795e8aa",
+        "source_collection": "keyboard",
+        "asset_gain_db": -18.0,
+        "routing_limit": "Filename/category-based original sound design; not a proprietary-sound equivalence claim"
+      },
+      "target_peak_dbfs": -24.0,
+      "pitch": 1.0,
+      "pan": 0.0,
+      "alignment": "dominant_early_attack_peak",
+      "event_sample": 579200,
+      "clip_alignment_offset_samples": 1536,
+      "clip_start_sample_unclipped": 577664,
+      "boundary_adjustment_samples": 0,
+      "clip_samples": 12000,
+      "batch_policy": "one effect for one canonical event",
+      "reference": "references/cue-08.npy",
+      "reference_sha256": "d2b98465eab20f95cd9a825a25d926bdea3b218e1148f849815e30eb154a637e"
+    },
+    {
+      "canonical_event": {
+        "frame": 369,
+        "kind": "typing",
+        "time": 12.3,
+        "sample_offset_48000": 590400,
+        "event_id": "checkin-v3:typing:369",
+        "audio": {
+          "target_peak_dbfs": -24
+        },
+        "director_action": {
+          "frame": 369,
+          "action": "type char",
+          "target": "draftSam",
+          "actor": "draftSam",
+          "char": "u"
+        },
+        "evidence": [
+          "evidence/frame-368.png",
+          "evidence/frame-369.png",
+          "evidence/frame-370.png"
+        ],
+        "verification": "Native before/at/after frames visually inspected; listed impact confirmed",
+        "role": "human",
+        "delta_count": 1
+      },
+      "ordinal": 9,
+      "source": {
+        "kind": "licensed_real_single_key_recording",
+        "asset_id": "key_003",
+        "license": "CC0-1.0",
+        "original_sha256": "d67cf9547d99fc65c815c4c68fa9181e0af71419761cbb1d1f0a10eb8491a8d2",
+        "prepared_sha256": "87daffcdfd03aaf9a4720099ed5c61003281138b1ff70709010cf378c3b0371e",
+        "source_collection": "keyboard",
+        "asset_gain_db": -18.0,
+        "routing_limit": "Filename/category-based original sound design; not a proprietary-sound equivalence claim"
+      },
+      "target_peak_dbfs": -24.0,
+      "pitch": 1.0,
+      "pan": 0.0,
+      "alignment": "dominant_early_attack_peak",
+      "event_sample": 590400,
+      "clip_alignment_offset_samples": 787,
+      "clip_start_sample_unclipped": 589613,
+      "boundary_adjustment_samples": 0,
+      "clip_samples": 11457,
+      "batch_policy": "one effect for one canonical event",
+      "reference": "references/cue-09.npy",
+      "reference_sha256": "4289da5f4da621201b8152510b234478a0daa941f9d34d68fe07184f3fd0a692"
+    },
+    {
+      "canonical_event": {
+        "frame": 384,
+        "kind": "typing",
+        "time": 12.8,
+        "sample_offset_48000": 614400,
+        "event_id": "checkin-v3:typing:384",
+        "audio": {
+          "target_peak_dbfs": -24
+        },
+        "director_action": {
+          "frame": 384,
+          "action": "type char",
+          "target": "draftSam",
+          "actor": "draftSam",
+          "char": "h"
+        },
+        "evidence": [
+          "evidence/frame-383.png",
+          "evidence/frame-384.png",
+          "evidence/frame-385.png"
+        ],
+        "verification": "Native before/at/after frames visually inspected; listed impact confirmed",
+        "role": "human",
+        "delta_count": 1
+      },
+      "ordinal": 10,
+      "source": {
+        "kind": "licensed_real_single_key_recording",
+        "asset_id": "key_020",
+        "license": "CC0-1.0",
+        "original_sha256": "056b14dea2cc590e817851d93f910b0ba918cd9179bbb4d2b39b4db92c0d505f",
+        "prepared_sha256": "048d952a6ee7e2483143653eb50b37caf656b94f48fdc25bc584b8694114af23",
+        "source_collection": "keyboard",
+        "asset_gain_db": -18.0,
+        "routing_limit": "Filename/category-based original sound design; not a proprietary-sound equivalence claim"
+      },
+      "target_peak_dbfs": -24.0,
+      "pitch": 1.0,
+      "pan": 0.0,
+      "alignment": "dominant_early_attack_peak",
+      "event_sample": 614400,
+      "clip_alignment_offset_samples": 1203,
+      "clip_start_sample_unclipped": 613197,
+      "boundary_adjustment_samples": 0,
+      "clip_samples": 12000,
+      "batch_policy": "one effect for one canonical event",
+      "reference": "references/cue-10.npy",
+      "reference_sha256": "cc322092a76433bbfebb4e3eb6ac1011e2adebd1d0120e1c515b7bcd45423830"
+    },
+    {
+      "canonical_event": {
+        "frame": 391,
+        "kind": "typing",
+        "time": 13.033333333333333,
+        "sample_offset_48000": 625600,
+        "event_id": "checkin-v3:typing:391",
+        "audio": {
+          "target_peak_dbfs": -24
+        },
+        "director_action": {
+          "frame": 391,
+          "action": "type char",
+          "target": "draftSam",
+          "actor": "draftSam",
+          "char": "o"
+        },
+        "evidence": [
+          "evidence/frame-390.png",
+          "evidence/frame-391.png",
+          "evidence/frame-392.png"
+        ],
+        "verification": "Native before/at/after frames visually inspected; listed impact confirmed",
+        "role": "human",
+        "delta_count": 1
+      },
+      "ordinal": 11,
+      "source": {
+        "kind": "licensed_real_single_key_recording",
+        "asset_id": "key_014",
+        "license": "CC0-1.0",
+        "original_sha256": "b2069e29be488a7e55b151ef458e3314ec8f138f6d5a34fe19189f4810cba098",
+        "prepared_sha256": "7bfb2af145952e6f009175c5faf1bdd69c29aa2c1ae4d733e1f464825e1e0d18",
+        "source_collection": "keyboard",
+        "asset_gain_db": -18.0,
+        "routing_limit": "Filename/category-based original sound design; not a proprietary-sound equivalence claim"
+      },
+      "target_peak_dbfs": -24.0,
+      "pitch": 1.0,
+      "pan": 0.0,
+      "alignment": "dominant_early_attack_peak",
+      "event_sample": 625600,
+      "clip_alignment_offset_samples": 950,
+      "clip_start_sample_unclipped": 624650,
+      "boundary_adjustment_samples": 0,
+      "clip_samples": 11755,
+      "batch_policy": "one effect for one canonical event",
+      "reference": "references/cue-11.npy",
+      "reference_sha256": "2830fa574e6df79e86f4b882c75e83b8b33c46f81021106a69ce4e8c1355c9da"
+    },
+    {
+      "canonical_event": {
+        "frame": 397,
+        "kind": "typing",
+        "time": 13.233333333333333,
+        "sample_offset_48000": 635200,
+        "event_id": "checkin-v3:typing:397",
+        "audio": {
+          "target_peak_dbfs": -24
+        },
+        "director_action": {
+          "frame": 397,
+          "action": "type char",
+          "target": "draftSam",
+          "actor": "draftSam",
+          "char": "m"
+        },
+        "evidence": [
+          "evidence/frame-396.png",
+          "evidence/frame-397.png",
+          "evidence/frame-398.png"
+        ],
+        "verification": "Native before/at/after frames visually inspected; listed impact confirmed",
+        "role": "human",
+        "delta_count": 1
+      },
+      "ordinal": 12,
+      "source": {
+        "kind": "licensed_real_single_key_recording",
+        "asset_id": "key_029",
+        "license": "CC0-1.0",
+        "original_sha256": "248b459e92dce812858aab2498546887957828007978fa29f481ac16d799a14b",
+        "prepared_sha256": "4a7d5ca583f4be1772caf4297afd65b557da20dd4f6f22431712b4681d0939ba",
+        "source_collection": "keyboard",
+        "asset_gain_db": -18.0,
+        "routing_limit": "Filename/category-based original sound design; not a proprietary-sound equivalence claim"
+      },
+      "target_peak_dbfs": -24.0,
+      "pitch": 1.0,
+      "pan": 0.0,
+      "alignment": "dominant_early_attack_peak",
+      "event_sample": 635200,
+      "clip_alignment_offset_samples": 2753,
+      "clip_start_sample_unclipped": 632447,
+      "boundary_adjustment_samples": 0,
+      "clip_samples": 11842,
+      "batch_policy": "one effect for one canonical event",
+      "reference": "references/cue-12.npy",
+      "reference_sha256": "37b9016b951c14b4df3e08edca7263aa9c73af2fb4a3b47c7a6df1262f26fa3d"
+    },
+    {
+      "canonical_event": {
+        "frame": 406,
+        "kind": "typing",
+        "time": 13.533333333333333,
+        "sample_offset_48000": 649600,
+        "event_id": "checkin-v3:typing:406",
+        "audio": {
+          "target_peak_dbfs": -24
+        },
+        "director_action": {
+          "frame": 406,
+          "action": "type char",
+          "target": "draftSam",
+          "actor": "draftSam",
+          "char": "e"
+        },
+        "evidence": [
+          "evidence/frame-405.png",
+          "evidence/frame-406.png",
+          "evidence/frame-407.png"
+        ],
+        "verification": "Native before/at/after frames visually inspected; listed impact confirmed",
+        "role": "human",
+        "delta_count": 1
+      },
+      "ordinal": 13,
+      "source": {
+        "kind": "licensed_real_single_key_recording",
+        "asset_id": "key_032",
+        "license": "CC0-1.0",
+        "original_sha256": "569648b47017747070b6d2a6d640449030b1b70da717c1f774c76a32dd75fb6c",
+        "prepared_sha256": "537091a5b9c078d0a77c251b0138f4ea2923ed977e609ec76904ac627e9cf747",
+        "source_collection": "keyboard",
+        "asset_gain_db": -18.0,
+        "routing_limit": "Filename/category-based original sound design; not a proprietary-sound equivalence claim"
+      },
+      "target_peak_dbfs": -24.0,
+      "pitch": 1.0,
+      "pan": 0.0,
+      "alignment": "dominant_early_attack_peak",
+      "event_sample": 649600,
+      "clip_alignment_offset_samples": 2893,
+      "clip_start_sample_unclipped": 646707,
+      "boundary_adjustment_samples": 0,
+      "clip_samples": 12000,
+      "batch_policy": "one effect for one canonical event",
+      "reference": "references/cue-13.npy",
+      "reference_sha256": "72f8045d7234bb6042454423b2cb19f1d8beeb30acea98b9a41371945d34fb92"
+    },
+    {
+      "canonical_event": {
+        "frame": 419,
+        "kind": "typing",
+        "time": 13.966666666666667,
+        "sample_offset_48000": 670400,
+        "event_id": "checkin-v3:typing:419",
+        "audio": {
+          "target_peak_dbfs": -24
+        },
+        "director_action": {
+          "frame": 419,
+          "action": "type char",
+          "target": "draftSam",
+          "actor": "draftSam",
+          "char": "y"
+        },
+        "evidence": [
+          "evidence/frame-418.png",
+          "evidence/frame-419.png",
+          "evidence/frame-420.png"
+        ],
+        "verification": "Native before/at/after frames visually inspected; listed impact confirmed",
+        "role": "human",
+        "delta_count": 1
+      },
+      "ordinal": 14,
+      "source": {
+        "kind": "licensed_real_single_key_recording",
+        "asset_id": "key_020",
+        "license": "CC0-1.0",
+        "original_sha256": "056b14dea2cc590e817851d93f910b0ba918cd9179bbb4d2b39b4db92c0d505f",
+        "prepared_sha256": "048d952a6ee7e2483143653eb50b37caf656b94f48fdc25bc584b8694114af23",
+        "source_collection": "keyboard",
+        "asset_gain_db": -18.0,
+        "routing_limit": "Filename/category-based original sound design; not a proprietary-sound equivalence claim"
+      },
+      "target_peak_dbfs": -24.0,
+      "pitch": 1.0,
+      "pan": 0.0,
+      "alignment": "dominant_early_attack_peak",
+      "event_sample": 670400,
+      "clip_alignment_offset_samples": 1203,
+      "clip_start_sample_unclipped": 669197,
+      "boundary_adjustment_samples": 0,
+      "clip_samples": 12000,
+      "batch_policy": "one effect for one canonical event",
+      "reference": "references/cue-14.npy",
+      "reference_sha256": "cc322092a76433bbfebb4e3eb6ac1011e2adebd1d0120e1c515b7bcd45423830"
+    },
+    {
+      "canonical_event": {
+        "frame": 425,
+        "kind": "typing",
+        "time": 14.166666666666666,
+        "sample_offset_48000": 680000,
+        "event_id": "checkin-v3:typing:425",
+        "audio": {
+          "target_peak_dbfs": -24
+        },
+        "director_action": {
+          "frame": 425,
+          "action": "type char",
+          "target": "draftSam",
+          "actor": "draftSam",
+          "char": "e"
+        },
+        "evidence": [
+          "evidence/frame-424.png",
+          "evidence/frame-425.png",
+          "evidence/frame-426.png"
+        ],
+        "verification": "Native before/at/after frames visually inspected; listed impact confirmed",
+        "role": "human",
+        "delta_count": 1
+      },
+      "ordinal": 15,
+      "source": {
+        "kind": "licensed_real_single_key_recording",
+        "asset_id": "key_003",
+        "license": "CC0-1.0",
+        "original_sha256": "d67cf9547d99fc65c815c4c68fa9181e0af71419761cbb1d1f0a10eb8491a8d2",
+        "prepared_sha256": "87daffcdfd03aaf9a4720099ed5c61003281138b1ff70709010cf378c3b0371e",
+        "source_collection": "keyboard",
+        "asset_gain_db": -18.0,
+        "routing_limit": "Filename/category-based original sound design; not a proprietary-sound equivalence claim"
+      },
+      "target_peak_dbfs": -24.0,
+      "pitch": 1.0,
+      "pan": 0.0,
+      "alignment": "dominant_early_attack_peak",
+      "event_sample": 680000,
+      "clip_alignment_offset_samples": 787,
+      "clip_start_sample_unclipped": 679213,
+      "boundary_adjustment_samples": 0,
+      "clip_samples": 11457,
+      "batch_policy": "one effect for one canonical event",
+      "reference": "references/cue-15.npy",
+      "reference_sha256": "4289da5f4da621201b8152510b234478a0daa941f9d34d68fe07184f3fd0a692"
+    },
+    {
+      "canonical_event": {
+        "frame": 432,
+        "kind": "typing",
+        "time": 14.4,
+        "sample_offset_48000": 691200,
+        "event_id": "checkin-v3:typing:432",
+        "audio": {
+          "target_peak_dbfs": -24
+        },
+        "director_action": {
+          "frame": 432,
+          "action": "type char",
+          "target": "draftSam",
+          "actor": "draftSam",
+          "char": "t"
+        },
+        "evidence": [
+          "evidence/frame-431.png",
+          "evidence/frame-432.png",
+          "evidence/frame-433.png"
+        ],
+        "verification": "Native before/at/after frames visually inspected; listed impact confirmed",
+        "role": "human",
+        "delta_count": 1
+      },
+      "ordinal": 16,
+      "source": {
+        "kind": "licensed_real_single_key_recording",
+        "asset_id": "key_001",
+        "license": "CC0-1.0",
+        "original_sha256": "7b873548c399b9aa0efbe63052fe1344c5317a9b23455b8be3523f47d434daf1",
+        "prepared_sha256": "b991e0ef9b337d8a6c9da0e8653fee550a40387f5340aefa02cebf3edd210c3c",
+        "source_collection": "keyboard",
+        "asset_gain_db": -18.0,
+        "routing_limit": "Filename/category-based original sound design; not a proprietary-sound equivalence claim"
+      },
+      "target_peak_dbfs": -24.0,
+      "pitch": 1.0,
+      "pan": 0.0,
+      "alignment": "dominant_early_attack_peak",
+      "event_sample": 691200,
+      "clip_alignment_offset_samples": 1874,
+      "clip_start_sample_unclipped": 689326,
+      "boundary_adjustment_samples": 0,
+      "clip_samples": 12000,
+      "batch_policy": "one effect for one canonical event",
+      "reference": "references/cue-16.npy",
+      "reference_sha256": "3010d3cd70de75aa7f060bf0fa928608b327ee82c417bae2901337019ff502d9"
+    },
+    {
+      "canonical_event": {
+        "frame": 440,
+        "kind": "typing",
+        "time": 14.666666666666666,
+        "sample_offset_48000": 704000,
+        "event_id": "checkin-v3:typing:440",
+        "audio": {
+          "target_peak_dbfs": -24
+        },
+        "director_action": {
+          "frame": 440,
+          "action": "type char",
+          "target": "draftSam",
+          "actor": "draftSam",
+          "char": "?"
+        },
+        "evidence": [
+          "evidence/frame-439.png",
+          "evidence/frame-440.png",
+          "evidence/frame-441.png"
+        ],
+        "verification": "Native before/at/after frames visually inspected; listed impact confirmed",
+        "role": "human",
+        "delta_count": 1
+      },
+      "ordinal": 17,
+      "source": {
+        "kind": "licensed_real_single_key_recording",
+        "asset_id": "key_011",
+        "license": "CC0-1.0",
+        "original_sha256": "72e79b249040bff166be863dd75f5c50d6e22bf904bd7e0adab1b30941e19968",
+        "prepared_sha256": "e0a4ea04e982ad4140d38724811d275a963318934bb4902c955d9f2bfc7bd525",
+        "source_collection": "keyboard",
+        "asset_gain_db": -18.0,
+        "routing_limit": "Filename/category-based original sound design; not a proprietary-sound equivalence claim"
+      },
+      "target_peak_dbfs": -24.0,
+      "pitch": 1.0,
+      "pan": 0.0,
+      "alignment": "dominant_early_attack_peak",
+      "event_sample": 704000,
+      "clip_alignment_offset_samples": 2283,
+      "clip_start_sample_unclipped": 701717,
+      "boundary_adjustment_samples": 0,
+      "clip_samples": 12000,
+      "batch_policy": "one effect for one canonical event",
+      "reference": "references/cue-17.npy",
+      "reference_sha256": "784e5f4bcb58e12d9ab2c2ea57e6dcb9618fb06836d6e4d14b186a1cbb4c1b6b"
+    },
+    {
+      "canonical_event": {
+        "frame": 460,
+        "kind": "cart_update",
+        "time": 15.333333333333334,
+        "sample_offset_48000": 736000,
+        "event_id": "checkin-v3:cart_update:460",
+        "audio": {
+          "target_peak_dbfs": -19
+        },
+        "director_action": {
+          "frame": 460,
+          "action": "arrival",
+          "target": "cardSam",
+          "actor": "cardSam",
+          "targets": [
+            "cardMaya",
+            "cardSam"
+          ]
+        },
+        "evidence": [
+          "evidence/frame-459.png",
+          "evidence/frame-460.png",
+          "evidence/frame-461.png"
+        ],
+        "verification": "Native before/at/after frames visually inspected; listed impact confirmed"
+      },
+      "ordinal": 18,
+      "source": {
+        "kind": "licensed_library_ui_effect",
+        "asset_id": "kenney_tick_001",
+        "license": "CC0-1.0",
+        "original_sha256": "9d057b918024c787bbe6c00beed13a7ef72a3fa0c259add3cef36582792f4230",
+        "prepared_sha256": "d665d6e126ded580b46085f4f75f5c1b17e6e74598e3288b1b5099a6364fd9c7",
+        "source_collection": "kenney",
+        "asset_gain_db": -13.0,
+        "routing_limit": "Filename/category-based original sound design; not a proprietary-sound equivalence claim"
+      },
+      "target_peak_dbfs": -19.0,
+      "pitch": 1.0,
+      "pan": 0.0,
+      "alignment": "dominant_early_attack_peak",
+      "event_sample": 736000,
+      "clip_alignment_offset_samples": 28,
+      "clip_start_sample_unclipped": 735972,
+      "boundary_adjustment_samples": 0,
+      "clip_samples": 1123,
+      "batch_policy": "one effect for one canonical event",
+      "reference": "references/cue-18.npy",
+      "reference_sha256": "d3927bbf40d3de84f4074a911e15845da617856eb6bd958dafb7de46cfc6b28b"
+    },
+    {
+      "canonical_event": {
+        "frame": 488,
+        "kind": "delete",
+        "time": 16.266666666666666,
+        "sample_offset_48000": 780800,
+        "event_id": "checkin-v3:delete:488",
+        "audio": {
+          "target_peak_dbfs": -25
+        },
+        "director_action": {
+          "frame": 488,
+          "action": "backspace",
+          "target": "draftSam",
+          "actor": "draftSam",
+          "char": "?"
+        },
+        "evidence": [
+          "evidence/frame-487.png",
+          "evidence/frame-488.png",
+          "evidence/frame-489.png"
+        ],
+        "verification": "Native before/at/after frames visually inspected; listed impact confirmed",
+        "role": "human",
+        "delta_count": 1
+      },
+      "ordinal": 19,
+      "source": {
+        "kind": "licensed_real_single_key_recording",
+        "asset_id": "key_023",
+        "license": "CC0-1.0",
+        "original_sha256": "b7395018288bc4842af0983a97d790e9db84ab65dc8ae57629dc6a9ba31ff62c",
+        "prepared_sha256": "08456f9ecaadc8c01d0f652277a5c5acb00bcf3255486fc5cc91a35f6f33ad50",
+        "source_collection": "keyboard",
+        "asset_gain_db": -19.0,
+        "routing_limit": "Filename/category-based original sound design; not a proprietary-sound equivalence claim"
+      },
+      "target_peak_dbfs": -25.0,
+      "pitch": 1.0,
+      "pan": 0.0,
+      "alignment": "dominant_early_attack_peak",
+      "event_sample": 780800,
+      "clip_alignment_offset_samples": 3419,
+      "clip_start_sample_unclipped": 777381,
+      "boundary_adjustment_samples": 0,
+      "clip_samples": 12000,
+      "batch_policy": "one effect for one canonical event",
+      "reference": "references/cue-19.npy",
+      "reference_sha256": "35295eeb697b1a94f2789f7327c3682c63a74a766ad7a2c8e2203bf17e333659"
+    },
+    {
+      "canonical_event": {
+        "frame": 491,
+        "kind": "delete",
+        "time": 16.366666666666667,
+        "sample_offset_48000": 785600,
+        "event_id": "checkin-v3:delete:491",
+        "audio": {
+          "target_peak_dbfs": -25
+        },
+        "director_action": {
+          "frame": 491,
+          "action": "backspace",
+          "target": "draftSam",
+          "actor": "draftSam",
+          "char": "t"
+        },
+        "evidence": [
+          "evidence/frame-490.png",
+          "evidence/frame-491.png",
+          "evidence/frame-492.png"
+        ],
+        "verification": "Native before/at/after frames visually inspected; listed impact confirmed",
+        "role": "human",
+        "delta_count": 1
+      },
+      "ordinal": 20,
+      "source": {
+        "kind": "licensed_real_single_key_recording",
+        "asset_id": "key_029",
+        "license": "CC0-1.0",
+        "original_sha256": "248b459e92dce812858aab2498546887957828007978fa29f481ac16d799a14b",
+        "prepared_sha256": "4a7d5ca583f4be1772caf4297afd65b557da20dd4f6f22431712b4681d0939ba",
+        "source_collection": "keyboard",
+        "asset_gain_db": -19.0,
+        "routing_limit": "Filename/category-based original sound design; not a proprietary-sound equivalence claim"
+      },
+      "target_peak_dbfs": -25.0,
+      "pitch": 1.0,
+      "pan": 0.0,
+      "alignment": "dominant_early_attack_peak",
+      "event_sample": 785600,
+      "clip_alignment_offset_samples": 2753,
+      "clip_start_sample_unclipped": 782847,
+      "boundary_adjustment_samples": 0,
+      "clip_samples": 11842,
+      "batch_policy": "one effect for one canonical event",
+      "reference": "references/cue-20.npy",
+      "reference_sha256": "d4849efb9a1ff88d616d138ba2be827bfaa6997b0fbe12187a05dbcb3567dbf1"
+    },
+    {
+      "canonical_event": {
+        "frame": 495,
+        "kind": "delete",
+        "time": 16.5,
+        "sample_offset_48000": 792000,
+        "event_id": "checkin-v3:delete:495",
+        "audio": {
+          "target_peak_dbfs": -25
+        },
+        "director_action": {
+          "frame": 495,
+          "action": "backspace",
+          "target": "draftSam",
+          "actor": "draftSam",
+          "char": "e"
+        },
+        "evidence": [
+          "evidence/frame-494.png",
+          "evidence/frame-495.png",
+          "evidence/frame-496.png"
+        ],
+        "verification": "Native before/at/after frames visually inspected; listed impact confirmed",
+        "role": "human",
+        "delta_count": 1
+      },
+      "ordinal": 21,
+      "source": {
+        "kind": "licensed_real_single_key_recording",
+        "asset_id": "key_032",
+        "license": "CC0-1.0",
+        "original_sha256": "569648b47017747070b6d2a6d640449030b1b70da717c1f774c76a32dd75fb6c",
+        "prepared_sha256": "537091a5b9c078d0a77c251b0138f4ea2923ed977e609ec76904ac627e9cf747",
+        "source_collection": "keyboard",
+        "asset_gain_db": -19.0,
+        "routing_limit": "Filename/category-based original sound design; not a proprietary-sound equivalence claim"
+      },
+      "target_peak_dbfs": -25.0,
+      "pitch": 1.0,
+      "pan": 0.0,
+      "alignment": "dominant_early_attack_peak",
+      "event_sample": 792000,
+      "clip_alignment_offset_samples": 2893,
+      "clip_start_sample_unclipped": 789107,
+      "boundary_adjustment_samples": 0,
+      "clip_samples": 12000,
+      "batch_policy": "one effect for one canonical event",
+      "reference": "references/cue-21.npy",
+      "reference_sha256": "afd66607239d7d4bb4d5559f3f4100af6ab4a2715871b6b6960dbf5fcb21ee9c"
+    },
+    {
+      "canonical_event": {
+        "frame": 498,
+        "kind": "delete",
+        "time": 16.6,
+        "sample_offset_48000": 796800,
+        "event_id": "checkin-v3:delete:498",
+        "audio": {
+          "target_peak_dbfs": -25
+        },
+        "director_action": {
+          "frame": 498,
+          "action": "backspace",
+          "target": "draftSam",
+          "actor": "draftSam",
+          "char": "y"
+        },
+        "evidence": [
+          "evidence/frame-497.png",
+          "evidence/frame-498.png",
+          "evidence/frame-499.png"
+        ],
+        "verification": "Native before/at/after frames visually inspected; listed impact confirmed",
+        "role": "human",
+        "delta_count": 1
+      },
+      "ordinal": 22,
+      "source": {
+        "kind": "licensed_real_single_key_recording",
+        "asset_id": "key_020",
+        "license": "CC0-1.0",
+        "original_sha256": "056b14dea2cc590e817851d93f910b0ba918cd9179bbb4d2b39b4db92c0d505f",
+        "prepared_sha256": "048d952a6ee7e2483143653eb50b37caf656b94f48fdc25bc584b8694114af23",
+        "source_collection": "keyboard",
+        "asset_gain_db": -19.0,
+        "routing_limit": "Filename/category-based original sound design; not a proprietary-sound equivalence claim"
+      },
+      "target_peak_dbfs": -25.0,
+      "pitch": 1.0,
+      "pan": 0.0,
+      "alignment": "dominant_early_attack_peak",
+      "event_sample": 796800,
+      "clip_alignment_offset_samples": 1203,
+      "clip_start_sample_unclipped": 795597,
+      "boundary_adjustment_samples": 0,
+      "clip_samples": 12000,
+      "batch_policy": "one effect for one canonical event",
+      "reference": "references/cue-22.npy",
+      "reference_sha256": "709406c1963d4fc207c0d4232d26dcda832c7220d3c76a2a4d2723b83bc4dfb2"
+    },
+    {
+      "canonical_event": {
+        "frame": 505,
+        "kind": "delete",
+        "time": 16.833333333333332,
+        "sample_offset_48000": 808000,
+        "event_id": "checkin-v3:delete:505",
+        "audio": {
+          "target_peak_dbfs": -25
+        },
+        "director_action": {
+          "frame": 505,
+          "action": "backspace",
+          "target": "draftSam",
+          "actor": "draftSam",
+          "char": "e"
+        },
+        "evidence": [
+          "evidence/frame-504.png",
+          "evidence/frame-505.png",
+          "evidence/frame-506.png"
+        ],
+        "verification": "Native before/at/after frames visually inspected; listed impact confirmed",
+        "role": "human",
+        "delta_count": 1
+      },
+      "ordinal": 23,
+      "source": {
+        "kind": "licensed_real_single_key_recording",
+        "asset_id": "key_011",
+        "license": "CC0-1.0",
+        "original_sha256": "72e79b249040bff166be863dd75f5c50d6e22bf904bd7e0adab1b30941e19968",
+        "prepared_sha256": "e0a4ea04e982ad4140d38724811d275a963318934bb4902c955d9f2bfc7bd525",
+        "source_collection": "keyboard",
+        "asset_gain_db": -19.0,
+        "routing_limit": "Filename/category-based original sound design; not a proprietary-sound equivalence claim"
+      },
+      "target_peak_dbfs": -25.0,
+      "pitch": 1.0,
+      "pan": 0.0,
+      "alignment": "dominant_early_attack_peak",
+      "event_sample": 808000,
+      "clip_alignment_offset_samples": 2283,
+      "clip_start_sample_unclipped": 805717,
+      "boundary_adjustment_samples": 0,
+      "clip_samples": 12000,
+      "batch_policy": "one effect for one canonical event",
+      "reference": "references/cue-23.npy",
+      "reference_sha256": "07882694a56351d39b81e04c93c477fb790519530286ca9fa045d9f1c3d37320"
+    },
+    {
+      "canonical_event": {
+        "frame": 508,
+        "kind": "delete",
+        "time": 16.933333333333334,
+        "sample_offset_48000": 812800,
+        "event_id": "checkin-v3:delete:508",
+        "audio": {
+          "target_peak_dbfs": -25
+        },
+        "director_action": {
+          "frame": 508,
+          "action": "backspace",
+          "target": "draftSam",
+          "actor": "draftSam",
+          "char": "m"
+        },
+        "evidence": [
+          "evidence/frame-507.png",
+          "evidence/frame-508.png",
+          "evidence/frame-509.png"
+        ],
+        "verification": "Native before/at/after frames visually inspected; listed impact confirmed",
+        "role": "human",
+        "delta_count": 1
+      },
+      "ordinal": 24,
+      "source": {
+        "kind": "licensed_real_single_key_recording",
+        "asset_id": "key_017",
+        "license": "CC0-1.0",
+        "original_sha256": "0f8d80d3f64328936bb699eade15cc89de12b7464833459e539bcf001101e431",
+        "prepared_sha256": "c9c59e16fe97e589cde29bf385019427427e100e41505da879df887ce1871f69",
+        "source_collection": "keyboard",
+        "asset_gain_db": -19.0,
+        "routing_limit": "Filename/category-based original sound design; not a proprietary-sound equivalence claim"
+      },
+      "target_peak_dbfs": -25.0,
+      "pitch": 1.0,
+      "pan": 0.0,
+      "alignment": "dominant_early_attack_peak",
+      "event_sample": 812800,
+      "clip_alignment_offset_samples": 482,
+      "clip_start_sample_unclipped": 812318,
+      "boundary_adjustment_samples": 0,
+      "clip_samples": 9976,
+      "batch_policy": "one effect for one canonical event",
+      "reference": "references/cue-24.npy",
+      "reference_sha256": "5f172faef4010da7372fa057133bce48ced0d97c776a4986a1af3c0f7954c303"
+    },
+    {
+      "canonical_event": {
+        "frame": 511,
+        "kind": "delete",
+        "time": 17.033333333333335,
+        "sample_offset_48000": 817600,
+        "event_id": "checkin-v3:delete:511",
+        "audio": {
+          "target_peak_dbfs": -25
+        },
+        "director_action": {
+          "frame": 511,
+          "action": "backspace",
+          "target": "draftSam",
+          "actor": "draftSam",
+          "char": "o"
+        },
+        "evidence": [
+          "evidence/frame-510.png",
+          "evidence/frame-511.png",
+          "evidence/frame-512.png"
+        ],
+        "verification": "Native before/at/after frames visually inspected; listed impact confirmed",
+        "role": "human",
+        "delta_count": 1
+      },
+      "ordinal": 25,
+      "source": {
+        "kind": "licensed_real_single_key_recording",
+        "asset_id": "key_023",
+        "license": "CC0-1.0",
+        "original_sha256": "b7395018288bc4842af0983a97d790e9db84ab65dc8ae57629dc6a9ba31ff62c",
+        "prepared_sha256": "08456f9ecaadc8c01d0f652277a5c5acb00bcf3255486fc5cc91a35f6f33ad50",
+        "source_collection": "keyboard",
+        "asset_gain_db": -19.0,
+        "routing_limit": "Filename/category-based original sound design; not a proprietary-sound equivalence claim"
+      },
+      "target_peak_dbfs": -25.0,
+      "pitch": 1.0,
+      "pan": 0.0,
+      "alignment": "dominant_early_attack_peak",
+      "event_sample": 817600,
+      "clip_alignment_offset_samples": 3419,
+      "clip_start_sample_unclipped": 814181,
+      "boundary_adjustment_samples": 0,
+      "clip_samples": 12000,
+      "batch_policy": "one effect for one canonical event",
+      "reference": "references/cue-25.npy",
+      "reference_sha256": "35295eeb697b1a94f2789f7327c3682c63a74a766ad7a2c8e2203bf17e333659"
+    },
+    {
+      "canonical_event": {
+        "frame": 515,
+        "kind": "delete",
+        "time": 17.166666666666668,
+        "sample_offset_48000": 824000,
+        "event_id": "checkin-v3:delete:515",
+        "audio": {
+          "target_peak_dbfs": -25
+        },
+        "director_action": {
+          "frame": 515,
+          "action": "backspace",
+          "target": "draftSam",
+          "actor": "draftSam",
+          "char": "h"
+        },
+        "evidence": [
+          "evidence/frame-514.png",
+          "evidence/frame-515.png",
+          "evidence/frame-516.png"
+        ],
+        "verification": "Native before/at/after frames visually inspected; listed impact confirmed",
+        "role": "human",
+        "delta_count": 1
+      },
+      "ordinal": 26,
+      "source": {
+        "kind": "licensed_real_single_key_recording",
+        "asset_id": "key_008",
+        "license": "CC0-1.0",
+        "original_sha256": "c2ab8722a81a2f1cab66cd863a09a9ec00392e2ede61362b3707a7bcc0eee506",
+        "prepared_sha256": "3a577465b37ee37130e5f28db6ca496f94b2922b1fc08673b4f7ba08cb599d1b",
+        "source_collection": "keyboard",
+        "asset_gain_db": -19.0,
+        "routing_limit": "Filename/category-based original sound design; not a proprietary-sound equivalence claim"
+      },
+      "target_peak_dbfs": -25.0,
+      "pitch": 1.0,
+      "pan": 0.0,
+      "alignment": "dominant_early_attack_peak",
+      "event_sample": 824000,
+      "clip_alignment_offset_samples": 2753,
+      "clip_start_sample_unclipped": 821247,
+      "boundary_adjustment_samples": 0,
+      "clip_samples": 12000,
+      "batch_policy": "one effect for one canonical event",
+      "reference": "references/cue-26.npy",
+      "reference_sha256": "ae2ae94c96c5158a8f9bc3fa683a8bb33e8838019ef429476979b8e5305f3c6f"
+    },
+    {
+      "canonical_event": {
+        "frame": 521,
+        "kind": "delete",
+        "time": 17.366666666666667,
+        "sample_offset_48000": 833600,
+        "event_id": "checkin-v3:delete:521",
+        "audio": {
+          "target_peak_dbfs": -25
+        },
+        "director_action": {
+          "frame": 521,
+          "action": "backspace",
+          "target": "draftSam",
+          "actor": "draftSam",
+          "char": "u"
+        },
+        "evidence": [
+          "evidence/frame-520.png",
+          "evidence/frame-521.png",
+          "evidence/frame-522.png"
+        ],
+        "verification": "Native before/at/after frames visually inspected; listed impact confirmed",
+        "role": "human",
+        "delta_count": 1
+      },
+      "ordinal": 27,
+      "source": {
+        "kind": "licensed_real_single_key_recording",
+        "asset_id": "key_017",
+        "license": "CC0-1.0",
+        "original_sha256": "0f8d80d3f64328936bb699eade15cc89de12b7464833459e539bcf001101e431",
+        "prepared_sha256": "c9c59e16fe97e589cde29bf385019427427e100e41505da879df887ce1871f69",
+        "source_collection": "keyboard",
+        "asset_gain_db": -19.0,
+        "routing_limit": "Filename/category-based original sound design; not a proprietary-sound equivalence claim"
+      },
+      "target_peak_dbfs": -25.0,
+      "pitch": 1.0,
+      "pan": 0.0,
+      "alignment": "dominant_early_attack_peak",
+      "event_sample": 833600,
+      "clip_alignment_offset_samples": 482,
+      "clip_start_sample_unclipped": 833118,
+      "boundary_adjustment_samples": 0,
+      "clip_samples": 9976,
+      "batch_policy": "one effect for one canonical event",
+      "reference": "references/cue-27.npy",
+      "reference_sha256": "5f172faef4010da7372fa057133bce48ced0d97c776a4986a1af3c0f7954c303"
+    },
+    {
+      "canonical_event": {
+        "frame": 524,
+        "kind": "delete",
+        "time": 17.466666666666665,
+        "sample_offset_48000": 838400,
+        "event_id": "checkin-v3:delete:524",
+        "audio": {
+          "target_peak_dbfs": -25
+        },
+        "director_action": {
+          "frame": 524,
+          "action": "backspace",
+          "target": "draftSam",
+          "actor": "draftSam",
+          "char": "o"
+        },
+        "evidence": [
+          "evidence/frame-523.png",
+          "evidence/frame-524.png",
+          "evidence/frame-525.png"
+        ],
+        "verification": "Native before/at/after frames visually inspected; listed impact confirmed",
+        "role": "human",
+        "delta_count": 1
+      },
+      "ordinal": 28,
+      "source": {
+        "kind": "licensed_real_single_key_recording",
+        "asset_id": "key_003",
+        "license": "CC0-1.0",
+        "original_sha256": "d67cf9547d99fc65c815c4c68fa9181e0af71419761cbb1d1f0a10eb8491a8d2",
+        "prepared_sha256": "87daffcdfd03aaf9a4720099ed5c61003281138b1ff70709010cf378c3b0371e",
+        "source_collection": "keyboard",
+        "asset_gain_db": -19.0,
+        "routing_limit": "Filename/category-based original sound design; not a proprietary-sound equivalence claim"
+      },
+      "target_peak_dbfs": -25.0,
+      "pitch": 1.0,
+      "pan": 0.0,
+      "alignment": "dominant_early_attack_peak",
+      "event_sample": 838400,
+      "clip_alignment_offset_samples": 787,
+      "clip_start_sample_unclipped": 837613,
+      "boundary_adjustment_samples": 0,
+      "clip_samples": 11457,
+      "batch_policy": "one effect for one canonical event",
+      "reference": "references/cue-28.npy",
+      "reference_sha256": "75bf5cd1c07715ea45f8c61b2f49396f918f1ef413c1aca2f449f8c36f3e63a6"
+    },
+    {
+      "canonical_event": {
+        "frame": 528,
+        "kind": "delete",
+        "time": 17.6,
+        "sample_offset_48000": 844800,
+        "event_id": "checkin-v3:delete:528",
+        "audio": {
+          "target_peak_dbfs": -25
+        },
+        "director_action": {
+          "frame": 528,
+          "action": "backspace",
+          "target": "draftSam",
+          "actor": "draftSam",
+          "char": "y"
+        },
+        "evidence": [
+          "evidence/frame-527.png",
+          "evidence/frame-528.png",
+          "evidence/frame-529.png"
+        ],
+        "verification": "Native before/at/after frames visually inspected; listed impact confirmed",
+        "role": "human",
+        "delta_count": 1
+      },
+      "ordinal": 29,
+      "source": {
+        "kind": "licensed_real_single_key_recording",
+        "asset_id": "key_008",
+        "license": "CC0-1.0",
+        "original_sha256": "c2ab8722a81a2f1cab66cd863a09a9ec00392e2ede61362b3707a7bcc0eee506",
+        "prepared_sha256": "3a577465b37ee37130e5f28db6ca496f94b2922b1fc08673b4f7ba08cb599d1b",
+        "source_collection": "keyboard",
+        "asset_gain_db": -19.0,
+        "routing_limit": "Filename/category-based original sound design; not a proprietary-sound equivalence claim"
+      },
+      "target_peak_dbfs": -25.0,
+      "pitch": 1.0,
+      "pan": 0.0,
+      "alignment": "dominant_early_attack_peak",
+      "event_sample": 844800,
+      "clip_alignment_offset_samples": 2753,
+      "clip_start_sample_unclipped": 842047,
+      "boundary_adjustment_samples": 0,
+      "clip_samples": 12000,
+      "batch_policy": "one effect for one canonical event",
+      "reference": "references/cue-29.npy",
+      "reference_sha256": "ae2ae94c96c5158a8f9bc3fa683a8bb33e8838019ef429476979b8e5305f3c6f"
+    },
+    {
+      "canonical_event": {
+        "frame": 534,
+        "kind": "delete",
+        "time": 17.8,
+        "sample_offset_48000": 854400,
+        "event_id": "checkin-v3:delete:534",
+        "audio": {
+          "target_peak_dbfs": -25
+        },
+        "director_action": {
+          "frame": 534,
+          "action": "backspace",
+          "target": "draftSam",
+          "actor": "draftSam",
+          "char": "e"
+        },
+        "evidence": [
+          "evidence/frame-533.png",
+          "evidence/frame-534.png",
+          "evidence/frame-535.png"
+        ],
+        "verification": "Native before/at/after frames visually inspected; listed impact confirmed",
+        "role": "human",
+        "delta_count": 1
+      },
+      "ordinal": 30,
+      "source": {
+        "kind": "licensed_real_single_key_recording",
+        "asset_id": "key_032",
+        "license": "CC0-1.0",
+        "original_sha256": "569648b47017747070b6d2a6d640449030b1b70da717c1f774c76a32dd75fb6c",
+        "prepared_sha256": "537091a5b9c078d0a77c251b0138f4ea2923ed977e609ec76904ac627e9cf747",
+        "source_collection": "keyboard",
+        "asset_gain_db": -19.0,
+        "routing_limit": "Filename/category-based original sound design; not a proprietary-sound equivalence claim"
+      },
+      "target_peak_dbfs": -25.0,
+      "pitch": 1.0,
+      "pan": 0.0,
+      "alignment": "dominant_early_attack_peak",
+      "event_sample": 854400,
+      "clip_alignment_offset_samples": 2893,
+      "clip_start_sample_unclipped": 851507,
+      "boundary_adjustment_samples": 0,
+      "clip_samples": 12000,
+      "batch_policy": "one effect for one canonical event",
+      "reference": "references/cue-30.npy",
+      "reference_sha256": "afd66607239d7d4bb4d5559f3f4100af6ab4a2715871b6b6960dbf5fcb21ee9c"
+    },
+    {
+      "canonical_event": {
+        "frame": 538,
+        "kind": "delete",
+        "time": 17.933333333333334,
+        "sample_offset_48000": 860800,
+        "event_id": "checkin-v3:delete:538",
+        "audio": {
+          "target_peak_dbfs": -25
+        },
+        "director_action": {
+          "frame": 538,
+          "action": "backspace",
+          "target": "draftSam",
+          "actor": "draftSam",
+          "char": "r"
+        },
+        "evidence": [
+          "evidence/frame-537.png",
+          "evidence/frame-538.png",
+          "evidence/frame-539.png"
+        ],
+        "verification": "Native before/at/after frames visually inspected; listed impact confirmed",
+        "role": "human",
+        "delta_count": 1
+      },
+      "ordinal": 31,
+      "source": {
+        "kind": "licensed_real_single_key_recording",
+        "asset_id": "key_008",
+        "license": "CC0-1.0",
+        "original_sha256": "c2ab8722a81a2f1cab66cd863a09a9ec00392e2ede61362b3707a7bcc0eee506",
+        "prepared_sha256": "3a577465b37ee37130e5f28db6ca496f94b2922b1fc08673b4f7ba08cb599d1b",
+        "source_collection": "keyboard",
+        "asset_gain_db": -19.0,
+        "routing_limit": "Filename/category-based original sound design; not a proprietary-sound equivalence claim"
+      },
+      "target_peak_dbfs": -25.0,
+      "pitch": 1.0,
+      "pan": 0.0,
+      "alignment": "dominant_early_attack_peak",
+      "event_sample": 860800,
+      "clip_alignment_offset_samples": 2753,
+      "clip_start_sample_unclipped": 858047,
+      "boundary_adjustment_samples": 0,
+      "clip_samples": 12000,
+      "batch_policy": "one effect for one canonical event",
+      "reference": "references/cue-31.npy",
+      "reference_sha256": "ae2ae94c96c5158a8f9bc3fa683a8bb33e8838019ef429476979b8e5305f3c6f"
+    },
+    {
+      "canonical_event": {
+        "frame": 541,
+        "kind": "delete",
+        "time": 18.033333333333335,
+        "sample_offset_48000": 865600,
+        "event_id": "checkin-v3:delete:541",
+        "audio": {
+          "target_peak_dbfs": -25
+        },
+        "director_action": {
+          "frame": 541,
+          "action": "backspace",
+          "target": "draftSam",
+          "actor": "draftSam",
+          "char": "a"
+        },
+        "evidence": [
+          "evidence/frame-540.png",
+          "evidence/frame-541.png",
+          "evidence/frame-542.png"
+        ],
+        "verification": "Native before/at/after frames visually inspected; listed impact confirmed",
+        "role": "human",
+        "delta_count": 1
+      },
+      "ordinal": 32,
+      "source": {
+        "kind": "licensed_real_single_key_recording",
+        "asset_id": "key_029",
+        "license": "CC0-1.0",
+        "original_sha256": "248b459e92dce812858aab2498546887957828007978fa29f481ac16d799a14b",
+        "prepared_sha256": "4a7d5ca583f4be1772caf4297afd65b557da20dd4f6f22431712b4681d0939ba",
+        "source_collection": "keyboard",
+        "asset_gain_db": -19.0,
+        "routing_limit": "Filename/category-based original sound design; not a proprietary-sound equivalence claim"
+      },
+      "target_peak_dbfs": -25.0,
+      "pitch": 1.0,
+      "pan": 0.0,
+      "alignment": "dominant_early_attack_peak",
+      "event_sample": 865600,
+      "clip_alignment_offset_samples": 2753,
+      "clip_start_sample_unclipped": 862847,
+      "boundary_adjustment_samples": 0,
+      "clip_samples": 11842,
+      "batch_policy": "one effect for one canonical event",
+      "reference": "references/cue-32.npy",
+      "reference_sha256": "d4849efb9a1ff88d616d138ba2be827bfaa6997b0fbe12187a05dbcb3567dbf1"
+    },
+    {
+      "canonical_event": {
+        "frame": 570,
+        "kind": "message_send",
+        "time": 19.0,
+        "sample_offset_48000": 912000,
+        "event_id": "checkin-v3:message_send:570",
+        "audio": {
+          "target_peak_dbfs": -17
+        },
+        "director_action": {
+          "frame": 570,
+          "action": "send",
+          "target": "bubbleHeartSam",
+          "actor": "bubbleHeartSam"
+        },
+        "evidence": [
+          "evidence/frame-569.png",
+          "evidence/frame-570.png",
+          "evidence/frame-571.png"
+        ],
+        "verification": "Native before/at/after frames visually inspected; listed impact confirmed"
+      },
+      "ordinal": 33,
+      "source": {
+        "kind": "original_procedural_fallback",
+        "effect": "air_whoosh",
+        "seed": 4025740639,
+        "parameters": {
+          "pitch": 1.12,
+          "duration": 0.14,
+          "energy": 0.75,
+          "pan": 0.0
+        },
+        "code_sha256": "4797a0e736e8115975398a7c4acf5289a89d23bb0222420d7dc7d89a2f40f23c",
+        "recorded_samples_used": false
+      },
+      "target_peak_dbfs": -17.0,
+      "pitch": 1.12,
+      "pan": 0.0,
+      "alignment": "onset",
+      "event_sample": 912000,
+      "clip_alignment_offset_samples": 0,
+      "clip_start_sample_unclipped": 912000,
+      "boundary_adjustment_samples": 0,
+      "clip_samples": 6720,
+      "batch_policy": "one effect for one canonical event",
+      "reference": "references/cue-33.npy",
+      "reference_sha256": "7b3cc793303215ec4290acf1d3ac95e46095c7370a3f916732051c0d7b40fa19"
+    },
+    {
+      "canonical_event": {
+        "frame": 615,
+        "kind": "message_arrival",
+        "time": 20.5,
+        "sample_offset_48000": 984000,
+        "event_id": "checkin-v3:message_arrival:615",
+        "audio": {
+          "target_peak_dbfs": -18
+        },
+        "director_action": {
+          "frame": 615,
+          "action": "receive",
+          "target": "bubbleHeart",
+          "actor": "bubbleHeart"
+        },
+        "evidence": [
+          "evidence/frame-614.png",
+          "evidence/frame-615.png",
+          "evidence/frame-616.png"
+        ],
+        "verification": "Native before/at/after frames visually inspected; listed impact confirmed"
+      },
+      "ordinal": 34,
+      "source": {
+        "kind": "licensed_library_ui_effect",
+        "asset_id": "kenney_drop_001",
+        "license": "CC0-1.0",
+        "original_sha256": "692ee3a6f1821402ca649ff735bee9591dc4846c8098fc7d6a90fd15fa57c1af",
+        "prepared_sha256": "5536fb305fbce91643f485fc784cce11051975708d8407421fa2f409ad172fa7",
+        "source_collection": "kenney",
+        "asset_gain_db": -12.0,
+        "routing_limit": "Filename/category-based original sound design; not a proprietary-sound equivalence claim"
+      },
+      "target_peak_dbfs": -18.0,
+      "pitch": 1.0,
+      "pan": 0.0,
+      "alignment": "dominant_early_attack_peak",
+      "event_sample": 984000,
+      "clip_alignment_offset_samples": 13,
+      "clip_start_sample_unclipped": 983987,
+      "boundary_adjustment_samples": 0,
+      "clip_samples": 5894,
+      "batch_policy": "one effect for one canonical event",
+      "reference": "references/cue-34.npy",
+      "reference_sha256": "51d14bfd20949f107139ab6b824edaba6342bd337e0da799b28fb7741ad944f6"
+    }
+  ],
+  "background_reference": {
+    "reference": "references/motion.npy",
+    "reference_sha256": "acbead804eb4b6b6331a75420559d5eb936974b8b10ac75c1817f8db197d70a1",
+    "alignment_sample": 0,
+    "role": "Independent expected procedural motion reference, generated from source/seed; not decoded from production stem"
+  },
+  "delivery_transform": {
+    "linear_gain_db": 28.69,
+    "limiter_filter": "alimiter=limit=0.794328234724:attack=5:release=50:level=false:latency=true",
+    "oversampling_hz": 192000,
+    "reference_policy": "Each independently pinned production cue transformed through the same delivery chain, padded with100ms silence at each edge; not sampled from the master or stems",
+    "limiter_interaction_limit": "Per-cue templates do not model nonlinear interactions with neighboring cues; original checker thresholds retained"
+  }
+}

@@ -136,7 +136,12 @@ $PY "$T/tools/test_check_cues.py"
 $PY "$T/tools/test_repair_cues.py"
 $PY "$T/tools/test_damage_checkin.py"
 $PY "$T/checkin/tools/test_motion_texture.py"
+$PY "$T/tools/test_output_dirs.py"
 $PY "$T/tools/inventory_binaries.py"
 ```
 
 Do not regenerate historical output metadata casually: its archived SHA/source snapshots describe the versions actually used. No source video is re-encoded by the mux helpers. No claim is made that repaired AAC is bit-identical to clean PCM.
+
+## Final v3 and delivery master
+
+See `checkin-v3/README.md` for native-picture recovery, scoring and strict decoded review. See `checkin-v3/delivery/README.md` for the separate−16LUFS limited delivery master; the quiet production mix and stems are preserved. Fresh-route execution and logs are documented in `FRESH-BUILD-VERIFICATION.md`.
