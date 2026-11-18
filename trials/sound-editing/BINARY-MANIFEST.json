@@ -2,8 +2,8 @@
   "policy": "Ordinary Git, no LFS. Generated review/audio/NPY payloads collectively exceed50MB, so omitted; no new library archive registration.",
   "included_binary_source": "checkin/v1-first-export.mp4; original director input, not reproducible from audio tools",
   "included_evidence": "Contact and transition sheets PNG; individual decoded frames omitted",
-  "omitted_count": 851,
-  "omitted_bytes": 306785828,
+  "omitted_count": 854,
+  "omitted_bytes": 310255783,
   "files": [
     {
       "path": "04-poke-damaged-192k.m4a",
@@ -3621,6 +3621,27 @@
       "path": "checkin/blind/T-V2/ui.flac",
       "bytes": 355658,
       "sha256": "aae73adf45614e13090f9be822bcc5cc545c766e2d685d63d50e106908553e24",
+      "reproduction": "README.md: named outputs, Poke damage/repair, or Check In damage commands",
+      "note": null
+    },
+    {
+      "path": "checkin/checkin-damaged.flac",
+      "bytes": 1026786,
+      "sha256": "dd55709c5b103d00a25aa163f852b25e92ab9ccfd06b6f75e86e683e570f96ec",
+      "reproduction": "README.md: named outputs, Poke damage/repair, or Check In damage commands",
+      "note": null
+    },
+    {
+      "path": "checkin/checkin-damaged.m4a",
+      "bytes": 277367,
+      "sha256": "c2ce3b3b98c82665dcdc706ae5b4a75d04f56b3ebf5246976775712e7da02526",
+      "reproduction": "README.md: named outputs, Poke damage/repair, or Check In damage commands",
+      "note": null
+    },
+    {
+      "path": "checkin/checkin-damaged.mp4",
+      "bytes": 2165802,
+      "sha256": "bdbc768600a2edd64ca4d8a277252202f2699437f93e379478c0b807a1a64061",
       "reproduction": "README.md: named outputs, Poke damage/repair, or Check In damage commands",
       "note": null
     },

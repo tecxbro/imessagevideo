@@ -134,6 +134,7 @@ $PY "$T/checkin/tools/author_schedule.py"
 $PY "$T/tools/investigate_opening.py"
 $PY "$T/tools/test_check_cues.py"
 $PY "$T/tools/test_repair_cues.py"
+$PY "$T/tools/test_damage_checkin.py"
 $PY "$T/checkin/tools/test_motion_texture.py"
 $PY "$T/tools/inventory_binaries.py"
 ```

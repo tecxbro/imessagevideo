@@ -1,0 +1,52 @@
+{
+  "seed": 420186,
+  "source_mp4_sha256": "a523395dcff8d82a0c08a07472d8b1ce456cd095c0226f3e9fa3c6fa5d3b703d",
+  "source": "decoded production MP4; continuous motion preserved",
+  "defects": [
+    {
+      "ordinal": 6,
+      "frame": 445,
+      "kind": "late",
+      "expected_sample": 712000,
+      "offset_samples": 1600,
+      "offset_frames": 1
+    },
+    {
+      "ordinal": 4,
+      "frame": 186,
+      "kind": "late",
+      "expected_sample": 297600,
+      "offset_samples": 4800,
+      "offset_frames": 3
+    },
+    {
+      "ordinal": 7,
+      "frame": 451,
+      "kind": "early",
+      "expected_sample": 721600,
+      "offset_samples": -3200,
+      "offset_frames": -2
+    },
+    {
+      "ordinal": 16,
+      "frame": 529,
+      "kind": "attenuated",
+      "expected_sample": 846400,
+      "offset_samples": 0,
+      "offset_frames": 0
+    },
+    {
+      "ordinal": 19,
+      "frame": 542,
+      "kind": "dropped",
+      "expected_sample": 867200,
+      "offset_samples": 0,
+      "offset_frames": 0
+    },
+    {
+      "ordinal": null,
+      "kind": "extra",
+      "sample": 492000
+    }
+  ]
+}
