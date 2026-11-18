@@ -19,3 +19,12 @@ npm test
 node render.mjs early films/early.mp4
 node render.mjs alternate films/alternate.mp4
 ```
+
+## Revised picture and timing comparison
+
+- [Revised silent picture](https://github.com/tecxbro/imessagevideo/blob/19d50dc26e4e8e2f2875affdb3b2c7b2ca6861be/trials/pinch-hit/films/final-picture.mp4) and [isolated hold test](https://github.com/tecxbro/imessagevideo/blob/19d50dc26e4e8e2f2875affdb3b2c7b2ca6861be/trials/pinch-hit/films/hold-test.mp4), picture commit `19d50dc26e4e8e2f2875affdb3b2c7b2ca6861be`. Each is silent and runs 576 frames at 24 fps.
+- Isolated hold test confirms at f358, cuts to the book at f426, touches the pencil at f454 and finishes the mark at f488. The title remains f529. Raw picture f0–339 matches the early renderer exactly.
+- Revised picture anchors, zero-based: field f0, player f78, coach thread f128, send f170, pending f193, empty chair f230, kitchen/backup request f274, Maya types f325–341 and sends f352, matched occupied chair f374, coach confirmation f392, book f469, pencil contact f488 and mark f513, title f536, end f576. The offscreen game can lead the cut to the book, with the mark finishing in a short, unscored space.
+- [Blind first view](https://github.com/tecxbro/imessagevideo/blob/262877b84fd153d8f6471a633ab71479cfe32d0d/OBSERVER.md) · [Editorial comparison and exact cut evidence](trials/pinch-hit/README.md#the-two-wagers-and-what-changed) · [Reference study](trials/pinch-hit/EDITORIAL.md).
+
+From the picture project, run `node render.mjs hold-test films/hold-test.mp4` and `node render.mjs final films/final-picture.mp4`.
