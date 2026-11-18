@@ -1,0 +1,946 @@
+{
+ "width": 1920,
+ "height": 1080,
+ "fps": 30,
+ "duration": 9.0,
+ "background": "#FFFFFF",
+ "layers": [
+  {
+   "id": "bar-line",
+   "type": "rect",
+   "x": 0,
+   "y": 126,
+   "width": 1920,
+   "height": 1,
+   "fill": "#D8D8DC"
+  },
+  {
+   "id": "bar-back",
+   "type": "text",
+   "x": 36,
+   "y": 56,
+   "text": "\u2039 12",
+   "fontSize": 34,
+   "fontFamily": "'Helvetica Neue', Helvetica, Arial, sans-serif",
+   "fontWeight": "400",
+   "fill": "#0A84FF",
+   "textAnchor": "start"
+  },
+  {
+   "id": "bar-av",
+   "type": "circle",
+   "x": 782,
+   "y": 36,
+   "width": 60,
+   "height": 60,
+   "fill": "#0A84FF"
+  },
+  {
+   "id": "bar-av-g",
+   "type": "text",
+   "x": 767,
+   "y": 50,
+   "text": "\u2708",
+   "fontSize": 30,
+   "fontFamily": "'Helvetica Neue', Helvetica, Arial, sans-serif",
+   "fontWeight": "400",
+   "fill": "#FFFFFF",
+   "textAnchor": "start"
+  },
+  {
+   "id": "bar-name",
+   "type": "text",
+   "x": 854,
+   "y": 44,
+   "text": "Layover",
+   "fontSize": 30,
+   "fontFamily": "'Helvetica Neue', Helvetica, Arial, sans-serif",
+   "fontWeight": "700",
+   "fill": "#111111",
+   "textAnchor": "start"
+  },
+  {
+   "id": "bar-sub",
+   "type": "text",
+   "x": 854,
+   "y": 84,
+   "text": "watching UA 1140 \u00b7 SFO\u2192JFK",
+   "fontSize": 20,
+   "fontFamily": "'Helvetica Neue', Helvetica, Arial, sans-serif",
+   "fontWeight": "400",
+   "fill": "#8E8E93",
+   "textAnchor": "start"
+  },
+  {
+   "id": "alert",
+   "type": "group",
+   "x": 44,
+   "y": 170,
+   "keyframes": {
+    "opacity": [
+     {
+      "t": 0.0,
+      "value": 0
+     },
+     {
+      "t": 0.5,
+      "value": 1
+     }
+    ],
+    "y": [
+     {
+      "t": 0.0,
+      "value": 200,
+      "ease": "easeOut"
+     },
+     {
+      "t": 0.5,
+      "value": 170,
+      "ease": "easeOut"
+     }
+    ]
+   },
+   "children": [
+    {
+     "id": "alert-b",
+     "type": "rect",
+     "x": 0,
+     "y": 0,
+     "width": 560,
+     "height": 100,
+     "radius": 34,
+     "fill": "#E9E9EB"
+    },
+    {
+     "id": "alert-t",
+     "type": "text",
+     "x": 30,
+     "y": 20,
+     "text": "heads up \u2014 your 4:40 is delayed.\nI\u2019m on it.",
+     "fontSize": 28,
+     "fontFamily": "'Helvetica Neue', Helvetica, Arial, sans-serif",
+     "fontWeight": "400",
+     "fill": "#111111",
+     "textAnchor": "start",
+     "lineHeight": 38
+    }
+   ]
+  },
+  {
+   "id": "req",
+   "type": "group",
+   "x": 1876,
+   "y": 290,
+   "keyframes": {
+    "opacity": [
+     {
+      "t": 0.9,
+      "value": 0
+     },
+     {
+      "t": 1.4,
+      "value": 1
+     }
+    ],
+    "y": [
+     {
+      "t": 0.9,
+      "value": 320,
+      "ease": "easeOut"
+     },
+     {
+      "t": 1.4,
+      "value": 290,
+      "ease": "easeOut"
+     }
+    ]
+   },
+   "children": [
+    {
+     "id": "req-b",
+     "type": "rect",
+     "x": -520,
+     "y": 0,
+     "width": 520,
+     "height": 54,
+     "radius": 27,
+     "fill": "#0A84FF"
+    },
+    {
+     "id": "req-t",
+     "type": "text",
+     "x": -490,
+     "y": 14,
+     "text": "book me whatever gets me home",
+     "fontSize": 26,
+     "fontFamily": "'Helvetica Neue', Helvetica, Arial, sans-serif",
+     "fontWeight": "400",
+     "fill": "#FFFFFF",
+     "textAnchor": "start"
+    }
+   ]
+  },
+  {
+   "id": "card",
+   "type": "group",
+   "x": 44,
+   "y": 380,
+   "children": [
+    {
+     "id": "card-bg",
+     "type": "rect",
+     "x": 0,
+     "y": 0,
+     "width": 620,
+     "height": 330,
+     "radius": 28,
+     "fill": "#F7F7F9",
+     "stroke": "#E3E3E8",
+     "strokeWidth": 1.5
+    },
+    {
+     "id": "card-head",
+     "type": "text",
+     "x": 28,
+     "y": 24,
+     "text": "UA 1140 \u00b7 SFO \u2192 JFK",
+     "fontSize": 26,
+     "fontFamily": "'Helvetica Neue', Helvetica, Arial, sans-serif",
+     "fontWeight": "700",
+     "fill": "#111111",
+     "textAnchor": "start"
+    },
+    {
+     "id": "clock-a",
+     "type": "text",
+     "x": 592,
+     "y": 20,
+     "text": "2:12 PM",
+     "fontSize": 22,
+     "fontFamily": "'Helvetica Neue', Helvetica, Arial, sans-serif",
+     "fontWeight": "400",
+     "fill": "#8E8E93",
+     "textAnchor": "end",
+     "start": 0,
+     "end": 5.0
+    },
+    {
+     "id": "clock-b",
+     "type": "text",
+     "x": 592,
+     "y": 20,
+     "text": "2:15 PM",
+     "fontSize": 22,
+     "fontFamily": "'Helvetica Neue', Helvetica, Arial, sans-serif",
+     "fontWeight": "400",
+     "fill": "#8E8E93",
+     "textAnchor": "end",
+     "start": 5.0,
+     "end": 7.7
+    },
+    {
+     "id": "clock-c",
+     "type": "text",
+     "x": 592,
+     "y": 20,
+     "text": "2:18 PM",
+     "fontSize": 22,
+     "fontFamily": "'Helvetica Neue', Helvetica, Arial, sans-serif",
+     "fontWeight": "400",
+     "fill": "#8E8E93",
+     "textAnchor": "end",
+     "start": 7.7
+    },
+    {
+     "id": "card-sep",
+     "type": "rect",
+     "x": 24,
+     "y": 66,
+     "width": 572,
+     "height": 1,
+     "fill": "#E3E3E8"
+    },
+    {
+     "id": "stA",
+     "type": "group",
+     "x": 28,
+     "y": 92,
+     "start": 0,
+     "end": 6.35,
+     "children": [
+      {
+       "id": "stA-t",
+       "type": "text",
+       "x": 0,
+       "y": 0,
+       "text": "finding alternates\u2026",
+       "fontSize": 26,
+       "fontFamily": "'Helvetica Neue', Helvetica, Arial, sans-serif",
+       "fontWeight": "400",
+       "fill": "#555555",
+       "textAnchor": "start"
+      },
+      {
+       "id": "p1",
+       "type": "circle",
+       "x": 6,
+       "y": 56,
+       "width": 16,
+       "height": 16,
+       "fill": "#C7C7CC",
+       "keyframes": {
+        "scaleX": [
+         {
+          "t": 2.4,
+          "value": 1
+         },
+         {
+          "t": 2.8,
+          "value": 1.6
+         },
+         {
+          "t": 3.2,
+          "value": 1
+         }
+        ],
+        "scaleY": [
+         {
+          "t": 2.4,
+          "value": 1
+         },
+         {
+          "t": 2.8,
+          "value": 1.6
+         },
+         {
+          "t": 3.2,
+          "value": 1
+         }
+        ],
+        "opacity": [
+         {
+          "t": 2.4,
+          "value": 0.5
+         },
+         {
+          "t": 2.8,
+          "value": 1
+         },
+         {
+          "t": 3.2,
+          "value": 0.5
+         }
+        ]
+       }
+      },
+      {
+       "id": "p2",
+       "type": "circle",
+       "x": 36,
+       "y": 56,
+       "width": 16,
+       "height": 16,
+       "fill": "#C7C7CC",
+       "keyframes": {
+        "scaleX": [
+         {
+          "t": 2.8,
+          "value": 1
+         },
+         {
+          "t": 3.2,
+          "value": 1.6
+         },
+         {
+          "t": 3.6,
+          "value": 1
+         }
+        ],
+        "scaleY": [
+         {
+          "t": 2.8,
+          "value": 1
+         },
+         {
+          "t": 3.2,
+          "value": 1.6
+         },
+         {
+          "t": 3.6,
+          "value": 1
+         }
+        ],
+        "opacity": [
+         {
+          "t": 2.8,
+          "value": 0.5
+         },
+         {
+          "t": 3.2,
+          "value": 1
+         },
+         {
+          "t": 3.6,
+          "value": 0.5
+         }
+        ]
+       }
+      },
+      {
+       "id": "p3",
+       "type": "circle",
+       "x": 66,
+       "y": 56,
+       "width": 16,
+       "height": 16,
+       "fill": "#C7C7CC",
+       "keyframes": {
+        "scaleX": [
+         {
+          "t": 3.2,
+          "value": 1
+         },
+         {
+          "t": 3.6,
+          "value": 1.6
+         },
+         {
+          "t": 4.0,
+          "value": 1
+         }
+        ],
+        "scaleY": [
+         {
+          "t": 3.2,
+          "value": 1
+         },
+         {
+          "t": 3.6,
+          "value": 1.6
+         },
+         {
+          "t": 4.0,
+          "value": 1
+         }
+        ],
+        "opacity": [
+         {
+          "t": 3.2,
+          "value": 0.5
+         },
+         {
+          "t": 3.6,
+          "value": 1
+         },
+         {
+          "t": 4.0,
+          "value": 0.5
+         }
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "id": "stB",
+     "type": "group",
+     "x": 28,
+     "y": 86,
+     "start": 6.3,
+     "end": 8.0,
+     "children": [
+      {
+       "id": "r1",
+       "type": "group",
+       "x": 0,
+       "y": 0,
+       "keyframes": {
+        "opacity": [
+         {
+          "t": 6.4,
+          "value": 0
+         },
+         {
+          "t": 6.55,
+          "value": 1
+         }
+        ],
+        "y": [
+         {
+          "t": 6.4,
+          "value": 14,
+          "ease": "easeOut"
+         },
+         {
+          "t": 6.55,
+          "value": 0,
+          "ease": "easeOut"
+         }
+        ]
+       },
+       "children": [
+        {
+         "id": "r1-b",
+         "type": "rect",
+         "x": 0,
+         "y": 0,
+         "width": 564,
+         "height": 64,
+         "radius": 18,
+         "fill": "#FFFFFF",
+         "stroke": "#E3E3E8",
+         "strokeWidth": 1
+        },
+        {
+         "id": "r1-t",
+         "type": "text",
+         "x": 18,
+         "y": 18,
+         "text": "6:05 PM \u00b7 direct \u00b7 seat 21A",
+         "fontSize": 24,
+         "fontFamily": "'Helvetica Neue', Helvetica, Arial, sans-serif",
+         "fontWeight": "400",
+         "fill": "#222222",
+         "textAnchor": "start"
+        },
+        {
+         "id": "r1-p",
+         "type": "text",
+         "x": 528,
+         "y": 18,
+         "text": "free",
+         "fontSize": 22,
+         "fontFamily": "'Helvetica Neue', Helvetica, Arial, sans-serif",
+         "fontWeight": "400",
+         "fill": "#34C759",
+         "textAnchor": "end"
+        }
+       ]
+      },
+      {
+       "id": "r2",
+       "type": "group",
+       "x": 0,
+       "y": 76,
+       "keyframes": {
+        "opacity": [
+         {
+          "t": 6.48,
+          "value": 0
+         },
+         {
+          "t": 6.63,
+          "value": 1
+         }
+        ],
+        "y": [
+         {
+          "t": 6.48,
+          "value": 90,
+          "ease": "easeOut"
+         },
+         {
+          "t": 6.63,
+          "value": 76,
+          "ease": "easeOut"
+         }
+        ]
+       },
+       "children": [
+        {
+         "id": "r2-b",
+         "type": "rect",
+         "x": 0,
+         "y": 0,
+         "width": 564,
+         "height": 64,
+         "radius": 18,
+         "fill": "#0A84FF"
+        },
+        {
+         "id": "r2-t",
+         "type": "text",
+         "x": 18,
+         "y": 18,
+         "text": "4:58 PM \u00b7 direct \u00b7 seat 14C",
+         "fontSize": 24,
+         "fontFamily": "'Helvetica Neue', Helvetica, Arial, sans-serif",
+         "fontWeight": "600",
+         "fill": "#FFFFFF",
+         "textAnchor": "start"
+        },
+        {
+         "id": "r2-p",
+         "type": "text",
+         "x": 528,
+         "y": 18,
+         "text": "free",
+         "fontSize": 22,
+         "fontFamily": "'Helvetica Neue', Helvetica, Arial, sans-serif",
+         "fontWeight": "400",
+         "fill": "#FFFFFF",
+         "textAnchor": "end"
+        }
+       ]
+      },
+      {
+       "id": "r3",
+       "type": "group",
+       "x": 0,
+       "y": 152,
+       "keyframes": {
+        "opacity": [
+         {
+          "t": 6.56,
+          "value": 0
+         },
+         {
+          "t": 6.71,
+          "value": 1
+         }
+        ],
+        "y": [
+         {
+          "t": 6.56,
+          "value": 166,
+          "ease": "easeOut"
+         },
+         {
+          "t": 6.71,
+          "value": 152,
+          "ease": "easeOut"
+         }
+        ]
+       },
+       "children": [
+        {
+         "id": "r3-b",
+         "type": "rect",
+         "x": 0,
+         "y": 0,
+         "width": 564,
+         "height": 64,
+         "radius": 18,
+         "fill": "#FFFFFF",
+         "stroke": "#E3E3E8",
+         "strokeWidth": 1
+        },
+        {
+         "id": "r3-t",
+         "type": "text",
+         "x": 18,
+         "y": 18,
+         "text": "5:30 PM \u00b7 1 stop ORD \u00b7 8F",
+         "fontSize": 24,
+         "fontFamily": "'Helvetica Neue', Helvetica, Arial, sans-serif",
+         "fontWeight": "400",
+         "fill": "#222222",
+         "textAnchor": "start"
+        },
+        {
+         "id": "r3-p",
+         "type": "text",
+         "x": 528,
+         "y": 18,
+         "text": "+$41",
+         "fontSize": 22,
+         "fontFamily": "'Helvetica Neue', Helvetica, Arial, sans-serif",
+         "fontWeight": "400",
+         "fill": "#8E8E93",
+         "textAnchor": "end"
+        }
+       ]
+      },
+      {
+       "id": "tap",
+       "type": "circle",
+       "x": 260,
+       "y": 68,
+       "width": 80,
+       "height": 80,
+       "fill": "none",
+       "stroke": "#0A84FF",
+       "strokeWidth": 4,
+       "keyframes": {
+        "opacity": [
+         {
+          "t": 7.1,
+          "value": 0
+         },
+         {
+          "t": 7.2,
+          "value": 0.9
+         },
+         {
+          "t": 7.45,
+          "value": 0
+         }
+        ],
+        "scaleX": [
+         {
+          "t": 7.1,
+          "value": 0.4
+         },
+         {
+          "t": 7.45,
+          "value": 1.5
+         }
+        ],
+        "scaleY": [
+         {
+          "t": 7.1,
+          "value": 0.4
+         },
+         {
+          "t": 7.45,
+          "value": 1.5
+         }
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "id": "stC",
+     "type": "group",
+     "x": 28,
+     "y": 100,
+     "start": 8.0,
+     "end": 8.75,
+     "children": [
+      {
+       "id": "stC-t",
+       "type": "text",
+       "x": 0,
+       "y": 0,
+       "text": "holding seat 14C\u2026",
+       "fontSize": 28,
+       "fontFamily": "'Helvetica Neue', Helvetica, Arial, sans-serif",
+       "fontWeight": "600",
+       "fill": "#111111",
+       "textAnchor": "start"
+      },
+      {
+       "id": "stC-s",
+       "type": "text",
+       "x": 0,
+       "y": 44,
+       "text": "fare locked \u00b7 your credits applied",
+       "fontSize": 22,
+       "fontFamily": "'Helvetica Neue', Helvetica, Arial, sans-serif",
+       "fontWeight": "400",
+       "fill": "#8E8E93",
+       "textAnchor": "start"
+      }
+     ]
+    },
+    {
+     "id": "stD",
+     "type": "group",
+     "x": 28,
+     "y": 96,
+     "start": 8.75,
+     "children": [
+      {
+       "id": "chk",
+       "type": "circle",
+       "x": 4,
+       "y": 4,
+       "width": 44,
+       "height": 44,
+       "fill": "#34C759",
+       "keyframes": {
+        "opacity": [
+         {
+          "t": 8.85,
+          "value": 0
+         },
+         {
+          "t": 9.0,
+          "value": 1
+         }
+        ],
+        "scaleX": [
+         {
+          "t": 8.85,
+          "value": 0.4
+         },
+         {
+          "t": 9.0,
+          "value": 1.15,
+          "ease": "easeOut"
+         },
+         {
+          "t": 9.15,
+          "value": 1
+         }
+        ],
+        "scaleY": [
+         {
+          "t": 8.85,
+          "value": 0.4
+         },
+         {
+          "t": 9.0,
+          "value": 1.15,
+          "ease": "easeOut"
+         },
+         {
+          "t": 9.15,
+          "value": 1
+         }
+        ]
+       }
+      },
+      {
+       "id": "chk-t",
+       "type": "text",
+       "x": 14,
+       "y": 8,
+       "text": "\u2713",
+       "fontSize": 26,
+       "fontFamily": "'Helvetica Neue', Helvetica, Arial, sans-serif",
+       "fontWeight": "700",
+       "fill": "#FFFFFF",
+       "textAnchor": "start",
+       "keyframes": {
+        "opacity": [
+         {
+          "t": 9.0,
+          "value": 0
+         },
+         {
+          "t": 9.1,
+          "value": 1
+         }
+        ]
+       }
+      },
+      {
+       "id": "stD-t",
+       "type": "text",
+       "x": 64,
+       "y": 10,
+       "text": "confirmed \u2014 4:58 PM, seat 14C",
+       "fontSize": 28,
+       "fontFamily": "'Helvetica Neue', Helvetica, Arial, sans-serif",
+       "fontWeight": "700",
+       "fill": "#111111",
+       "textAnchor": "start"
+      },
+      {
+       "id": "stD-s",
+       "type": "text",
+       "x": 64,
+       "y": 50,
+       "text": "boarding pass added to Wallet",
+       "fontSize": 22,
+       "fontFamily": "'Helvetica Neue', Helvetica, Arial, sans-serif",
+       "fontWeight": "400",
+       "fill": "#555555",
+       "textAnchor": "start"
+      }
+     ]
+    }
+   ],
+   "keyframes": {
+    "opacity": [
+     {
+      "t": 1.6,
+      "value": 0
+     },
+     {
+      "t": 2.1,
+      "value": 1
+     }
+    ],
+    "y": [
+     {
+      "t": 1.6,
+      "value": 416,
+      "ease": "easeOut"
+     },
+     {
+      "t": 2.1,
+      "value": 380,
+      "ease": "easeOut"
+     }
+    ],
+    "scaleX": [
+     {
+      "t": 1.6,
+      "value": 0.96
+     },
+     {
+      "t": 2.1,
+      "value": 1
+     }
+    ],
+    "scaleY": [
+     {
+      "t": 1.6,
+      "value": 0.96
+     },
+     {
+      "t": 2.1,
+      "value": 1
+     }
+    ]
+   }
+  },
+  {
+   "id": "done",
+   "type": "group",
+   "x": 1876,
+   "y": 740,
+   "keyframes": {
+    "opacity": [
+     {
+      "t": 9.0,
+      "value": 0
+     },
+     {
+      "t": 9.3,
+      "value": 1
+     }
+    ],
+    "y": [
+     {
+      "t": 9.0,
+      "value": 770,
+      "ease": "easeOut"
+     },
+     {
+      "t": 9.3,
+      "value": 740,
+      "ease": "easeOut"
+     }
+    ]
+   },
+   "children": [
+    {
+     "id": "done-b",
+     "type": "rect",
+     "x": -360,
+     "y": 0,
+     "width": 360,
+     "height": 54,
+     "radius": 27,
+     "fill": "#0A84FF"
+    },
+    {
+     "id": "done-t",
+     "type": "text",
+     "x": -330,
+     "y": 14,
+     "text": "we're good. land 9:20 \ud83d\ude4c",
+     "fontSize": 26,
+     "fontFamily": "'Helvetica Neue', Helvetica, Arial, sans-serif",
+     "fontWeight": "400",
+     "fill": "#FFFFFF",
+     "textAnchor": "start"
+    }
+   ]
+  }
+ ]
+}
