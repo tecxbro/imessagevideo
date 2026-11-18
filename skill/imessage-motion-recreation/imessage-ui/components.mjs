@@ -117,8 +117,7 @@ export function PhotoStack({id, photos, caption, measure}) {
     const column=index%3, row=Math.floor(index/3);
     nodes.push(group(`${id}-photo-${index}`,7+column*36,12+column*46+row*210,[
       rect(`${id}-photo-${index}-border`,-3,-3,w+6,height+6,'#ffffff',10),
-      rect(`${id}-photo-${index}-image`,0,0,w,height,photo.color,8),
-      label(`${id}-photo-${index}-ratio`,photo.aspectRatio.toFixed(2),6,8,10,{fill:'#ffffff',fontWeight:600})
+      rect(`${id}-photo-${index}-image`,0,0,w,height,photo.color,8)
     ],{rotation:(index%2?1:-1)*3}));
   }
   const captionLines=wrapText(caption ?? '',width-20,measure,14);
@@ -208,10 +207,10 @@ export function buildConversation(config, measure) {
       built={...built,width:Math.max(built.width,preview.width),height:built.height+8+preview.height,layer:group(id+'-with-link',0,0,[built.layer,{...preview.layer,y:built.height+8}])};
     }
     const reactions=(message.reactions ?? []).map((reaction,index)=>({reaction,...Reaction({id:`${id}-reaction-${index}`,reaction,owner:actors.get(reaction.ownerId),outgoing:actors.get(reaction.ownerId).self,measure})}));
-    const reactionHeight=reactions.length?25:0;
+    const reactionHeight=reactions.length?34:0;
     const y=cursor+reactionHeight+(outgoing?0:19), x=outgoing?370-built.width:55;
     const rowChildren=[];
-    if (!outgoing) rowChildren.push(Avatar({id:id+'-avatar',x:16,y:Math.max(20,built.height-28),size:27,initials:sender.initials,fill:sender.color ?? '#d9e6e4'}),label(id+'-sender',sender.name,55,-19,12,{fill:'#72757c'}));
+    if (!outgoing) rowChildren.push(Avatar({id:id+'-avatar',x:16,y:Math.max(20,built.height-28),size:27,initials:sender.initials,fill:sender.color ?? '#d9e6e4'}),label(id+'-sender',sender.name,55,reactions.length?-46:-19,12,{fill:'#72757c'}));
     rowChildren.push({...built.layer,x});
     let reactionX=outgoing?x:x+(built.reactionAnchor?.x ?? built.width)-reactions.reduce((sum,reaction)=>sum+reaction.width+3,0);
     for (const reaction of reactions) {

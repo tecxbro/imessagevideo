@@ -30,3 +30,14 @@ participants, emoji, colors, photo ratios and sends. Only presentation variables
 above changed. A second local check noticed the photo badge still anchored to
 the empty layout box, so it was attached to the visible first card corner before
 sending the repaired candidate for independent recheck.
+
+## Independent recheck and second repair
+
+The observer rechecked `4f66e33`: U1/U2/U3 fixed, U4 fixed with a regression,
+U5 improved; composer passes. Two new defects were reported before retry:
+
+- R1: numerical aspect-ratio labels had become visible debug copy on photos.
+  Remove the labels; preserve exact rectangle geometry and ratio data instead.
+- R2: the photo reaction badge overlapped the end of the sender name.
+  Reserve a separate sender-label line above badges for reacted incoming rows;
+  verify vertical separation and recheck the decoded photo interval.

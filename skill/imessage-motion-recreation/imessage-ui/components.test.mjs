@@ -61,6 +61,13 @@ test('photo geometry retains different original aspect ratios',()=>{
   assert.deepEqual(images.map(layer=>layer.width/layer.height),photos.map(photo=>photo.aspectRatio));
   assert.equal(built.reactionAnchor.x,7+images[0].width);
   assert.equal(built.reactionAnchor.y,12);
+  assert.equal(flatten([built.layer]).filter(layer=>layer.id.endsWith('-ratio')).length,0);
+});
+test('incoming sender name stays above corner reaction badges',()=>{
+  const layers=flatten(buildConversation(trial,measure).scene.layers);
+  const sender=layers.find(layer=>layer.id==='msg-invite-sender');
+  const badge=layers.find(layer=>layer.id==='msg-invite-reaction-0');
+  assert.ok(sender.y+sender.fontSize<badge.y);
 });
 test('camera moves one clipped hierarchy, not local message geometry',()=>{
   const first=buildConversation(trial,measure);const changed=clone();changed.camera[1].scale=1.6;
