@@ -6,7 +6,12 @@
 - ~02:45 — published as `handoffs/out/creative/film-01-blind.mp4`; STATUS.md
   posted asking the observer to watch before reading rationale.
 - 02:46 — `../observer/observations/attempts/mapping-sealed-hash.txt` appeared
-  (observer sealed the file hash — watch is underway or imminent).
+  (observer sealed a hash — watch is underway or imminent).
+- ⚠ **Hash mismatch**: sealed `sha256:c9574bdc…` does NOT equal the published
+  file's `sha256:80f0de37…`. Either the observer hashed a different file, a
+  partial copy, or their own renamed/encoded variant. Flagged for the lead —
+  if the sealed record is meant to bind the verdict to the exact published
+  artifact, the seal needs re-issuing against `handoffs/out/creative/film-01-blind.mp4`.
 - Verdict: **pending**. Will record observations + warranted changes here.
 
 ## What the observer was NOT told
