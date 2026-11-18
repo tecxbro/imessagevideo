@@ -1,0 +1,162 @@
++ .sound-survey-venv/bin/python trials/sound-editing/checkin-v3/tools/build_delivery.py
+{"linear_gain_db": 23.75, "limited_pcm_loudnorm": {"integrated_lufs": -18.59, "true_peak_dbtp": -1.79, "lra_lu": 16.8, "threshold_lufs": -29.18, "silent": false}}
+{"linear_gain_db": 26.34, "limited_pcm_loudnorm": {"integrated_lufs": -17.27, "true_peak_dbtp": -1.79, "lra_lu": 19.1, "threshold_lufs": -28.0, "silent": false}}
+{"linear_gain_db": 27.61, "limited_pcm_loudnorm": {"integrated_lufs": -16.64, "true_peak_dbtp": -1.78, "lra_lu": 20.0, "threshold_lufs": -27.37, "silent": false}}
+{"linear_gain_db": 28.25, "limited_pcm_loudnorm": {"integrated_lufs": -16.3, "true_peak_dbtp": -1.78, "lra_lu": 20.5, "threshold_lufs": -27.04, "silent": false}}
+{"linear_gain_db": 28.55, "limited_pcm_loudnorm": {"integrated_lufs": -16.14, "true_peak_dbtp": -1.78, "lra_lu": 20.6, "threshold_lufs": -26.87, "silent": false}}
+{"linear_gain_db": 28.69, "limited_pcm_loudnorm": {"integrated_lufs": -16.06, "true_peak_dbtp": -1.78, "lra_lu": 20.7, "threshold_lufs": -26.8, "silent": false}}
+{
+  "input_hashes_unchanged": {
+    "final.mp4": "ad3ff5e7c3e1677bd37e5644a823e2799fde590720e102a1e1d53057776d7695",
+    "ui.flac": "7ca00aca0425e72c53be7505c4b520da3cfe95699f2a731b5be8a983fd48c7cf",
+    "music.flac": "8743d88038192de06cc55e930fc625a163ddf896be735f0d6c6985ecc45c4650",
+    "motion.flac": "3bb2276a42979ae982096c8f6163b1732388d4a6deb2753ee0cacb82c3a244ab",
+    "full_mix.flac": "1cbcec50f135f821731e02bbaf385762f9cc18af128f6928a15215babb33c9ae"
+  },
+  "source_pcm_loudnorm": {
+    "integrated_lufs": -39.75,
+    "true_peak_dbtp": -16.74,
+    "lra_lu": 15.6,
+    "threshold_lufs": -50.1,
+    "silent": false
+  },
+  "target_lufs": -16,
+  "passes": [
+    {
+      "linear_gain_db": 23.75,
+      "limited_pcm_loudnorm": {
+        "integrated_lufs": -18.59,
+        "true_peak_dbtp": -1.79,
+        "lra_lu": 16.8,
+        "threshold_lufs": -29.18,
+        "silent": false
+      }
+    },
+    {
+      "linear_gain_db": 26.34,
+      "limited_pcm_loudnorm": {
+        "integrated_lufs": -17.27,
+        "true_peak_dbtp": -1.79,
+        "lra_lu": 19.1,
+        "threshold_lufs": -28.0,
+        "silent": false
+      }
+    },
+    {
+      "linear_gain_db": 27.61,
+      "limited_pcm_loudnorm": {
+        "integrated_lufs": -16.64,
+        "true_peak_dbtp": -1.78,
+        "lra_lu": 20.0,
+        "threshold_lufs": -27.37,
+        "silent": false
+      }
+    },
+    {
+      "linear_gain_db": 28.25,
+      "limited_pcm_loudnorm": {
+        "integrated_lufs": -16.3,
+        "true_peak_dbtp": -1.78,
+        "lra_lu": 20.5,
+        "threshold_lufs": -27.04,
+        "silent": false
+      }
+    },
+    {
+      "linear_gain_db": 28.55,
+      "limited_pcm_loudnorm": {
+        "integrated_lufs": -16.14,
+        "true_peak_dbtp": -1.78,
+        "lra_lu": 20.6,
+        "threshold_lufs": -26.87,
+        "silent": false
+      }
+    },
+    {
+      "linear_gain_db": 28.69,
+      "limited_pcm_loudnorm": {
+        "integrated_lufs": -16.06,
+        "true_peak_dbtp": -1.78,
+        "lra_lu": 20.7,
+        "threshold_lufs": -26.8,
+        "silent": false
+      }
+    }
+  ],
+  "delivery_transform": {
+    "linear_gain_db": 28.69,
+    "limiter_filter": "alimiter=limit=0.794328234724:attack=5:release=50:level=false:latency=true",
+    "oversampling_hz": 192000,
+    "reference_policy": "Each independently pinned production cue transformed through the same delivery chain, padded with100ms silence at each edge; not sampled from the master or stems",
+    "limiter_interaction_limit": "Per-cue templates do not model nonlinear interactions with neighboring cues; original checker thresholds retained"
+  },
+  "limiter_gain_reduction_db": {
+    "maximum": 13.949675777762153,
+    "active_sample_p99": 10.779138661742921,
+    "method": "192kHz linked limiter output/input amplitude ratio on pre-limiter samples above1e-4, with latency compensation; before downsampling"
+  },
+  "final_mp4_loudnorm": {
+    "integrated_lufs": -16.13,
+    "true_peak_dbtp": -1.29,
+    "lra_lu": 20.7,
+    "threshold_lufs": -26.86,
+    "silent": false
+  },
+  "final_mp4_sha256": "467aa6447505a7521335831f2ceb0e1e0b68dbe406bb4c007810b3fd7082f2c5",
+  "video_packet_sha256": "SHA256=3bc70fbb7856ef3e8c988509caa5f90e8377316845367f54842322417c9d3fd6",
+  "samples": 1152000,
+  "ffmpeg_version": "ffmpeg version 9.0.2 Copyright (c) 2000-2026 the FFmpeg developers",
+  "recipe_sha256": "9dc4ab089c45731e9776f719494da3bf5dc3f71eb95574ecae4cf7fef04589f6"
+}
++ .sound-survey-venv/bin/python trials/sound-editing/tools/check_cues.py trials/sound-editing/checkin-v3/delivery/master.mp4 --receipt trials/sound-editing/checkin-v3/delivery/receipts/master.json --tolerance-frames 0.5 --json trials/sound-editing/checkin-v3/delivery/check.json
+id  expected           offset(ms/frames)   corr    level(dB)  result
+ 0  00:00.433 f13          0.00/  0.00  1.000      -0.00  ok
+ 1  00:03.000 f90          0.00/  0.00  1.000      -0.03  ok
+ 2  00:04.400 f132         0.00/  0.00  1.000      -0.01  ok
+ 3  00:06.200 f186         0.00/  0.00  0.991      -0.22  ok
+ 4  00:10.833 f325         0.00/  0.00  0.999      -0.02  ok
+ 5  00:11.033 f331         0.00/  0.00  0.998      -0.10  ok
+ 6  00:11.300 f339         0.00/  0.00  0.994      -0.22  ok
+ 7  00:11.867 f356         0.00/  0.00  0.998      -0.04  ok
+ 8  00:12.067 f362         0.00/  0.00  0.985      -0.26  ok
+ 9  00:12.300 f369         0.00/  0.00  0.996      -0.19  ok
+10  00:12.800 f384         0.00/  0.00  0.995      -0.08  ok
+11  00:13.033 f391         0.00/  0.00  0.997      -0.12  ok
+12  00:13.233 f397         0.00/  0.00  0.997      -0.07  ok
+13  00:13.533 f406         0.00/  0.00  0.995      -0.08  ok
+14  00:13.967 f419         0.00/  0.00  0.997      -0.03  ok
+15  00:14.167 f425         0.00/  0.00  0.997      -0.11  ok
+16  00:14.400 f432         0.00/  0.00  0.998      -0.07  ok
+17  00:14.667 f440         0.00/  0.00  0.994      -0.28  ok
+18  00:15.333 f460         0.00/  0.00  0.982      -0.38  ok
+19  00:16.267 f488         0.00/  0.00  0.995      -0.19  ok
+20  00:16.367 f491         0.00/  0.00  0.990       0.00  ok
+21  00:16.500 f495         0.00/  0.00  0.962      -1.29  ok
+22  00:16.600 f498         0.00/  0.00  0.988       0.47  ok
+23  00:16.833 f505         0.00/  0.00  0.985      -0.29  ok
+24  00:16.933 f508         0.00/  0.00  0.973      -1.09  ok
+25  00:17.033 f511         0.00/  0.00  0.983      -0.20  ok
+26  00:17.167 f515         0.00/  0.00  0.992      -0.17  ok
+27  00:17.367 f521         0.00/  0.00  0.977      -0.75  ok
+28  00:17.467 f524         0.00/  0.00  0.980      -0.28  ok
+29  00:17.600 f528         0.00/  0.00  0.983      -0.21  ok
+30  00:17.800 f534         0.00/  0.00  0.995      -0.21  ok
+31  00:17.933 f538         0.00/  0.00  0.987      -0.20  ok
+32  00:18.033 f541         0.00/  0.00  0.988      -0.09  ok
+33  00:19.000 f570         0.00/  0.00  0.990      -0.30  ok
+34  00:20.500 f615         0.00/  0.00  1.000      -0.01  ok
+pass: picture_match=True, cues=35, defective=0, extras=0
++ .sound-survey-venv/bin/python trials/sound-editing/checkin-v3/tools/test_delivery.py
+F..
+======================================================================
+FAIL: test_gain_limit_and_latency (__main__.DeliveryTests.test_gain_limit_and_latency)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/devin/repos/imessagevideo-fresh-sound/trials/sound-editing/checkin-v3/tools/test_delivery.py", line 19, in test_gain_limit_and_latency
+    self.assertAlmostEqual(float(quiet[24000,0]/wave[24000,0]),10**(6/20),delta=.02)
+AssertionError: 1.8963383514622505 != 1.9952623149688795 within 0.02 delta (0.09892396350662902 difference)
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.061s
+
+FAILED (failures=1)

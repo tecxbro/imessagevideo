@@ -1,0 +1,19 @@
+{
+  "key_defects": 9,
+  "before_detected": 9,
+  "remaining_key_defects": 0,
+  "resolved_key_defects": 9,
+  "new_or_unkeyed_findings": [],
+  "repair_is_bit_identical_to_clean_pcm": false,
+  "pcm_difference_vs_clean": {
+    "samples": 2054853,
+    "rms_linear": 0.0006589273219205672,
+    "rms_dbfs": -63.623249687770425,
+    "max_absolute_linear": 0.045882225036621094,
+    "max_absolute_dbfs": -26.767110587126144,
+    "snr_db": 21.234034417645535
+  },
+  "clean_stem_sha256": "44c90e34e7cb820dafab4827792e8b7704c54e4d94c844febf14f2ffd384113f",
+  "repair_stem_sha256": "dec6abfa2b370d2f91285665b46cc1ea4b647b09cba8e8e477dbf1dee5b04107",
+  "key_read_by": "post-repair evaluator only; repair tool has no key input"
+}

@@ -1,0 +1,492 @@
+{
+  "status": "fail",
+  "picture_match": true,
+  "picture_packet_sha256": "SHA256=fef5481d8bbb13c16a14d05ad846cdb72112ca876913b9f0c27d871dc393d62b",
+  "decoded_samples": 2054853,
+  "fps": 29.97002997002997,
+  "picture_packet_hash_method": "SHA-256 of concatenated first-video-stream encoded packet payloads; ffmpeg -map 0:v:0 -c copy -f hash -hash sha256; excludes container metadata and audio; not decoded frames",
+  "background_reference_review": {
+    "correlation_with_full_delivery": 0.9108790240502287,
+    "gain_delta_db": -0.023069715173195483,
+    "reference_sha256": "d3f0c0a443fc0c50a7dba6587dd0b1a520077798a89e74bcdfdad32c1461ea62",
+    "subtraction_gain": 1.0,
+    "status": "pass"
+  },
+  "priming": {
+    "first_audio_packet": {
+      "codec_type": "audio",
+      "stream_index": 1,
+      "pts": -1024,
+      "pts_time": "-0.021333",
+      "dts": -1024,
+      "dts_time": "-0.021333",
+      "duration": 1024,
+      "duration_time": "0.021333",
+      "size": "441",
+      "pos": "91279",
+      "flags": "KD_",
+      "side_data_list": [
+        {
+          "side_data_type": "Skip Samples",
+          "skip_samples": 1024,
+          "discard_padding": 0,
+          "skip_reason": 0,
+          "discard_reason": 0
+        }
+      ]
+    },
+    "decoder": "FFmpeg edit-list/skip_samples applied",
+    "measured_common_offset_samples": 0.0,
+    "additional_alignment_correction_samples": 0
+  },
+  "thresholds": {
+    "timing_frames": 1,
+    "search_frames": 12,
+    "correlation": 0.8,
+    "level_db": 6
+  },
+  "cues": [
+    {
+      "ordinal": 0,
+      "frame": 109,
+      "expected_sample": 174574,
+      "timestamp": "00:03.637 f109",
+      "offset_samples": 0,
+      "offset_ms": 0.0,
+      "offset_frames": 0.0,
+      "correlation": 0.9595832668883311,
+      "level_delta_db": -0.1920320134387045,
+      "flags": []
+    },
+    {
+      "ordinal": 1,
+      "frame": 110,
+      "expected_sample": 176176,
+      "timestamp": "00:03.670 f110",
+      "offset_samples": 0,
+      "offset_ms": 0.0,
+      "offset_frames": 0.0,
+      "correlation": 0.9723985058639311,
+      "level_delta_db": -0.07596725021958768,
+      "flags": []
+    },
+    {
+      "ordinal": 2,
+      "frame": 111,
+      "expected_sample": 177778,
+      "timestamp": "00:03.704 f111",
+      "offset_samples": 0,
+      "offset_ms": 0.0,
+      "offset_frames": 0.0,
+      "correlation": 0.9700903159320785,
+      "level_delta_db": -0.12507490898046225,
+      "flags": []
+    },
+    {
+      "ordinal": 3,
+      "frame": 112,
+      "expected_sample": 179379,
+      "timestamp": "00:03.737 f112",
+      "offset_samples": 0,
+      "offset_ms": 0.0,
+      "offset_frames": 0.0,
+      "correlation": 0.9750558869067781,
+      "level_delta_db": -0.21230893666306302,
+      "flags": []
+    },
+    {
+      "ordinal": 4,
+      "frame": 113,
+      "expected_sample": 180981,
+      "timestamp": "00:03.770 f113",
+      "offset_samples": 0,
+      "offset_ms": 0.0,
+      "offset_frames": 0.0,
+      "correlation": 0.97732483942248,
+      "level_delta_db": -0.12431589948110834,
+      "flags": []
+    },
+    {
+      "ordinal": 5,
+      "frame": 114,
+      "expected_sample": 182582,
+      "timestamp": "00:03.804 f114",
+      "offset_samples": 0,
+      "offset_ms": 0.0,
+      "offset_frames": 0.0,
+      "correlation": 0.9376769120594654,
+      "level_delta_db": -0.062711827422389,
+      "flags": []
+    },
+    {
+      "ordinal": 6,
+      "frame": 116,
+      "expected_sample": 185786,
+      "timestamp": "00:03.871 f116",
+      "offset_samples": 0,
+      "offset_ms": 0.0,
+      "offset_frames": 0.0,
+      "correlation": 0.9078468038797736,
+      "level_delta_db": -0.17837368434803857,
+      "flags": []
+    },
+    {
+      "ordinal": 7,
+      "frame": 117,
+      "expected_sample": 187387,
+      "timestamp": "00:03.904 f117",
+      "offset_samples": 0,
+      "offset_ms": 0.0,
+      "offset_frames": 0.0,
+      "correlation": 0.9076576890989351,
+      "level_delta_db": -0.2543528078438557,
+      "flags": []
+    },
+    {
+      "ordinal": 8,
+      "frame": 118,
+      "expected_sample": 188989,
+      "timestamp": "00:03.937 f118",
+      "offset_samples": 0,
+      "offset_ms": 0.0,
+      "offset_frames": 0.0,
+      "correlation": 0.953043101721168,
+      "level_delta_db": -0.18665877000931108,
+      "flags": []
+    },
+    {
+      "ordinal": 9,
+      "frame": 120,
+      "expected_sample": 192192,
+      "timestamp": "00:04.004 f120",
+      "offset_samples": 0,
+      "offset_ms": 0.0,
+      "offset_frames": 0.0,
+      "correlation": 0.9399123007955275,
+      "level_delta_db": -0.13260505742138215,
+      "flags": []
+    },
+    {
+      "ordinal": 10,
+      "frame": 121,
+      "expected_sample": 193794,
+      "timestamp": "00:04.037 f121",
+      "offset_samples": 0,
+      "offset_ms": 0.0,
+      "offset_frames": 0.0,
+      "correlation": 0.9613011810183913,
+      "level_delta_db": -0.2683897327860446,
+      "flags": []
+    },
+    {
+      "ordinal": 11,
+      "frame": 122,
+      "expected_sample": 195395,
+      "timestamp": "00:04.071 f122",
+      "offset_samples": 0,
+      "offset_ms": 0.0,
+      "offset_frames": 0.0,
+      "correlation": 0.9431476917934063,
+      "level_delta_db": -0.1333882046063186,
+      "flags": []
+    },
+    {
+      "ordinal": 12,
+      "frame": 124,
+      "expected_sample": 198598,
+      "timestamp": "00:04.137 f124",
+      "offset_samples": 0,
+      "offset_ms": 0.0,
+      "offset_frames": 0.0,
+      "correlation": 0.9761259520428174,
+      "level_delta_db": -0.1554030793065741,
+      "flags": []
+    },
+    {
+      "ordinal": 13,
+      "frame": 125,
+      "expected_sample": 200200,
+      "timestamp": "00:04.171 f125",
+      "offset_samples": 0,
+      "offset_ms": 0.0,
+      "offset_frames": 0.0,
+      "correlation": 0.9788282757491178,
+      "level_delta_db": -0.2479281096217772,
+      "flags": []
+    },
+    {
+      "ordinal": 14,
+      "frame": 142,
+      "expected_sample": 227427,
+      "timestamp": "00:04.738 f142",
+      "offset_samples": 0,
+      "offset_ms": 0.0,
+      "offset_frames": 0.0,
+      "correlation": 0.9997748633594848,
+      "level_delta_db": -0.03885529540943241,
+      "flags": []
+    },
+    {
+      "ordinal": 15,
+      "frame": 175,
+      "expected_sample": 280280,
+      "timestamp": "00:05.839 f175",
+      "offset_samples": 0,
+      "offset_ms": 0.0,
+      "offset_frames": 0.0,
+      "correlation": 0.9908375814340331,
+      "level_delta_db": -0.2801671620174024,
+      "flags": []
+    },
+    {
+      "ordinal": 16,
+      "frame": 232,
+      "expected_sample": 371571,
+      "timestamp": "00:07.741 f232",
+      "offset_samples": 0,
+      "offset_ms": 0.0,
+      "offset_frames": 0.0,
+      "correlation": 0.9977232663275841,
+      "level_delta_db": -0.02135860990559047,
+      "flags": []
+    },
+    {
+      "ordinal": 17,
+      "frame": 268,
+      "expected_sample": 429229,
+      "timestamp": "00:08.942 f268",
+      "offset_samples": 0,
+      "offset_ms": 0.0,
+      "offset_frames": 0.0,
+      "correlation": 0.9994303966489507,
+      "level_delta_db": 0.024254489142599173,
+      "flags": []
+    },
+    {
+      "ordinal": 18,
+      "frame": 280,
+      "expected_sample": 448448,
+      "timestamp": "00:09.343 f280",
+      "offset_samples": 0,
+      "offset_ms": 0.0,
+      "offset_frames": 0.0,
+      "correlation": 0.9997479842434582,
+      "level_delta_db": -0.00140919978542857,
+      "flags": []
+    },
+    {
+      "ordinal": 19,
+      "frame": 301,
+      "expected_sample": 482082,
+      "timestamp": "00:10.043 f301",
+      "offset_samples": 0,
+      "offset_ms": 0.0,
+      "offset_frames": 0.0,
+      "correlation": 0.999826280119732,
+      "level_delta_db": -0.02122774278765672,
+      "flags": []
+    },
+    {
+      "ordinal": 20,
+      "frame": 339,
+      "expected_sample": 542942,
+      "timestamp": "00:11.311 f339",
+      "offset_samples": 0,
+      "offset_ms": 0.0,
+      "offset_frames": 0.0,
+      "correlation": 0.9992560782698267,
+      "level_delta_db": -0.0367001423349972,
+      "flags": []
+    },
+    {
+      "ordinal": 21,
+      "frame": 361,
+      "expected_sample": 578178,
+      "timestamp": "00:12.045 f361",
+      "offset_samples": 0,
+      "offset_ms": 0.0,
+      "offset_frames": 0.0,
+      "correlation": 0.9857122851708229,
+      "level_delta_db": -0.39462673864453823,
+      "flags": []
+    },
+    {
+      "ordinal": 22,
+      "frame": 375,
+      "expected_sample": 600600,
+      "timestamp": "00:12.512 f375",
+      "offset_samples": 0,
+      "offset_ms": 0.0,
+      "offset_frames": 0.0,
+      "correlation": 0.9999613969882775,
+      "level_delta_db": -0.005898515763748481,
+      "flags": []
+    },
+    {
+      "ordinal": 23,
+      "frame": 413,
+      "expected_sample": 661461,
+      "timestamp": "00:13.780 f413",
+      "offset_samples": 0,
+      "offset_ms": 0.0,
+      "offset_frames": 0.0,
+      "correlation": 0.9993332441075051,
+      "level_delta_db": -0.0651110802614434,
+      "flags": []
+    },
+    {
+      "ordinal": 25,
+      "frame": 513,
+      "expected_sample": 821621,
+      "timestamp": "00:17.117 f513",
+      "offset_samples": 0,
+      "offset_ms": 0.0,
+      "offset_frames": 0.0,
+      "correlation": 0.9852680331874,
+      "level_delta_db": -0.33923361905433663,
+      "flags": []
+    },
+    {
+      "ordinal": 26,
+      "frame": 549,
+      "expected_sample": 879278,
+      "timestamp": "00:18.318 f549",
+      "offset_samples": 0,
+      "offset_ms": 0.0,
+      "offset_frames": 0.0,
+      "correlation": 0.999802746678338,
+      "level_delta_db": -0.042916751446479585,
+      "flags": []
+    },
+    {
+      "ordinal": 27,
+      "frame": 575,
+      "expected_sample": 920920,
+      "timestamp": "00:19.186 f575",
+      "offset_samples": 0,
+      "offset_ms": 0.0,
+      "offset_frames": 0.0,
+      "correlation": 0.9864092223591785,
+      "level_delta_db": -0.36529837590669667,
+      "flags": []
+    },
+    {
+      "ordinal": 28,
+      "frame": 645,
+      "expected_sample": 1033032,
+      "timestamp": "00:21.521 f645",
+      "offset_samples": 0,
+      "offset_ms": 0.0,
+      "offset_frames": 0.0,
+      "correlation": 0.9959333494810987,
+      "level_delta_db": -0.15985345952918564,
+      "flags": []
+    },
+    {
+      "ordinal": 29,
+      "frame": 664,
+      "expected_sample": 1063462,
+      "timestamp": "00:22.155 f664",
+      "offset_samples": 0,
+      "offset_ms": 0.0,
+      "offset_frames": 0.0,
+      "correlation": 0.9993535523927676,
+      "level_delta_db": 0.028689029512776586,
+      "flags": []
+    },
+    {
+      "ordinal": 30,
+      "frame": 687,
+      "expected_sample": 1100299,
+      "timestamp": "00:22.923 f687",
+      "offset_samples": 0,
+      "offset_ms": 0.0,
+      "offset_frames": 0.0,
+      "correlation": 0.9837024626859995,
+      "level_delta_db": -0.32266976809550624,
+      "flags": []
+    },
+    {
+      "ordinal": 31,
+      "frame": 728,
+      "expected_sample": 1165965,
+      "timestamp": "00:24.291 f728",
+      "offset_samples": 0,
+      "offset_ms": 0.0,
+      "offset_frames": 0.0,
+      "correlation": 0.9996999927062823,
+      "level_delta_db": -0.034870625711579985,
+      "flags": []
+    },
+    {
+      "ordinal": 32,
+      "frame": 756,
+      "expected_sample": 1210810,
+      "timestamp": "00:25.225 f756",
+      "offset_samples": 0,
+      "offset_ms": 0.0,
+      "offset_frames": 0.0,
+      "correlation": 0.9997680647442788,
+      "level_delta_db": -0.016439727281443932,
+      "flags": []
+    },
+    {
+      "ordinal": 33,
+      "frame": 800,
+      "expected_sample": 1281280,
+      "timestamp": "00:26.693 f800",
+      "offset_samples": 0,
+      "offset_ms": 0.0,
+      "offset_frames": 0.0,
+      "correlation": 0.9886710848030319,
+      "level_delta_db": -0.3090085154472661,
+      "flags": []
+    },
+    {
+      "ordinal": 34,
+      "frame": 853,
+      "expected_sample": 1366165,
+      "timestamp": "00:28.462 f853",
+      "offset_samples": 0,
+      "offset_ms": 0.0,
+      "offset_frames": 0.0,
+      "correlation": 0.99939295688472,
+      "level_delta_db": -0.05889396940636594,
+      "flags": []
+    }
+  ],
+  "extras": [
+    {
+      "sample": 31200,
+      "timestamp": "00:00.650 f19",
+      "rms": 0.005411796342396202,
+      "flags": [
+        "extra"
+      ]
+    },
+    {
+      "sample": 153360,
+      "timestamp": "00:03.195 f96",
+      "rms": 0.0037074572466535443,
+      "flags": [
+        "extra"
+      ]
+    },
+    {
+      "sample": 902640,
+      "timestamp": "00:18.805 f564",
+      "rms": 0.0037012091677728356,
+      "flags": [
+        "extra"
+      ]
+    },
+    {
+      "sample": 1663440,
+      "timestamp": "00:34.655 f1039",
+      "rms": 0.0032840958476425116,
+      "flags": [
+        "extra"
+      ]
+    }
+  ]
+}

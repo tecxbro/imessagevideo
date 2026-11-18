@@ -1,0 +1,1271 @@
+{
+  "format_version": 1,
+  "id": "checkin",
+  "status": "pass",
+  "reference_film_samples_reused": false,
+  "licensed_library_samples_used": true,
+  "procedural_fallbacks_used": true,
+  "schedule_sha256": "07aa810bca544c5ce2c72bfe6ef722e58736583d8e8c057d699daa5ccd8391a9",
+  "schedule_file": "ui-cues/canonical-checkin.json",
+  "library_manifest_sha256": "26d5b43f764517bf027ad680e93c81ea98672f50b0bcad40f309a85eb7c0894a",
+  "code_sha256": "e356a840b2bd7c60fa6958474dcecc9ae4800901b358bf43fc118c98d4c02213",
+  "library_api_sha256": "065a6392f327ce06b6a6321849cafe9c1d796f2bb1023483737cea95456f1b6c",
+  "codec_helpers_sha256": "411a2a5586d329a0ced74e3cf921231ce4be4d86e9362533ee19728160be03e2",
+  "music": {
+    "kind": "silent_bed_no_music_input",
+    "music_input_used": false,
+    "input_file": null,
+    "sha256": null,
+    "new_score_provenance": [],
+    "old_sfx_stem_used": false,
+    "gain_db": 0.0,
+    "ai_generation_required": false
+  },
+  "picture": {
+    "frames": 720,
+    "fps_numerator": 30,
+    "fps_denominator": 1
+  },
+  "sample_rate": 48000,
+  "channels": 2,
+  "samples": 1152000,
+  "canonical_event_count": 24,
+  "rendered_event_count": 21,
+  "skipped_event_count": 3,
+  "kind_counts": {
+    "message_arrival": 2,
+    "panel_open": 1,
+    "tap": 1,
+    "control_appear": 3,
+    "message_send": 2,
+    "typing": 7,
+    "cart_update": 1,
+    "delete": 7
+  },
+  "rendered_kind_counts": {
+    "message_arrival": 2,
+    "panel_open": 1,
+    "tap": 1,
+    "message_send": 2,
+    "typing": 7,
+    "cart_update": 1,
+    "delete": 7
+  },
+  "events": [
+    {
+      "canonical_event": {
+        "frame": 13,
+        "kind": "message_arrival",
+        "time": 0.43333333333333335,
+        "sample_offset_48000": 20800,
+        "event_id": "checkin:message_arrival:13",
+        "evidence": "evidence/frame-013.png",
+        "observation": "First faint Sam ask fade at13, blank12; clearly legible14. Impact uses visible fade onset.",
+        "audio": {
+          "target_peak_dbfs": -18
+        }
+      },
+      "ordinal": 0,
+      "source": {
+        "kind": "licensed_library_ui_effect",
+        "asset_id": "kenney_drop_001",
+        "license": "CC0-1.0",
+        "original_sha256": "692ee3a6f1821402ca649ff735bee9591dc4846c8098fc7d6a90fd15fa57c1af",
+        "prepared_sha256": "5536fb305fbce91643f485fc784cce11051975708d8407421fa2f409ad172fa7",
+        "source_collection": "kenney",
+        "asset_gain_db": -12.0,
+        "routing_limit": "Filename/category-based original sound design; not a proprietary-sound equivalence claim"
+      },
+      "target_peak_dbfs": -18.0,
+      "pitch": 1.0,
+      "pan": 0.0,
+      "alignment": "dominant_early_attack_peak",
+      "event_sample": 20800,
+      "clip_alignment_offset_samples": 13,
+      "clip_start_sample_unclipped": 20787,
+      "boundary_adjustment_samples": 0,
+      "clip_samples": 5894,
+      "batch_policy": "one effect for one canonical event",
+      "rendered": true,
+      "written_start_sample": 20787,
+      "written_samples": 5894,
+      "trimmed_start_samples": 0,
+      "trimmed_end_samples": 0,
+      "alignment_error_samples": 0
+    },
+    {
+      "canonical_event": {
+        "frame": 103,
+        "kind": "panel_open",
+        "time": 3.433333333333333,
+        "sample_offset_48000": 164800,
+        "event_id": "checkin:panel_open:103",
+        "evidence": "evidence/frame-103.png",
+        "observation": "Plus tap at90 is offscreen. Composer/ring is camera-revealed97\u201399; actual menu begins rising103. Sound menu movement, not inferred tap.",
+        "audio": {
+          "target_peak_dbfs": -26
+        }
+      },
+      "ordinal": 1,
+      "source": {
+        "kind": "original_procedural_fallback",
+        "effect": "card_swoosh",
+        "seed": 2712858251,
+        "parameters": {
+          "pitch": 1.0,
+          "duration": 0.22,
+          "energy": 0.75,
+          "pan": 0.0
+        },
+        "code_sha256": "4797a0e736e8115975398a7c4acf5289a89d23bb0222420d7dc7d89a2f40f23c",
+        "recorded_samples_used": false
+      },
+      "target_peak_dbfs": -26.0,
+      "pitch": 1.0,
+      "pan": 0.0,
+      "alignment": "onset",
+      "event_sample": 164800,
+      "clip_alignment_offset_samples": 0,
+      "clip_start_sample_unclipped": 164800,
+      "boundary_adjustment_samples": 0,
+      "clip_samples": 10560,
+      "batch_policy": "one effect for one canonical event",
+      "rendered": true,
+      "written_start_sample": 164800,
+      "written_samples": 10560,
+      "trimmed_start_samples": 0,
+      "trimmed_end_samples": 0,
+      "alignment_error_samples": 0
+    },
+    {
+      "canonical_event": {
+        "frame": 132,
+        "kind": "tap",
+        "time": 4.4,
+        "sample_offset_48000": 211200,
+        "event_id": "checkin:tap:132",
+        "evidence": "evidence/frame-132.png",
+        "observation": "Check In row highlights and tap ring appears132; no highlight131.",
+        "audio": {
+          "target_peak_dbfs": -21
+        }
+      },
+      "ordinal": 2,
+      "source": {
+        "kind": "licensed_library_ui_effect",
+        "asset_id": "kenney_click_001",
+        "license": "CC0-1.0",
+        "original_sha256": "ccfb7fa0cccdd9faec0eb16033c732b1e308d139d80f799161495d58f7adcdb9",
+        "prepared_sha256": "3cdcdd0a7dd41eded18064a7e36b4d320dc2c478b5aa126ec75ec6c639822ccf",
+        "source_collection": "kenney",
+        "asset_gain_db": -15.0,
+        "routing_limit": "Filename/category-based original sound design; not a proprietary-sound equivalence claim"
+      },
+      "target_peak_dbfs": -21.0,
+      "pitch": 1.0,
+      "pan": 0.0,
+      "alignment": "dominant_early_attack_peak",
+      "event_sample": 211200,
+      "clip_alignment_offset_samples": 55,
+      "clip_start_sample_unclipped": 211145,
+      "boundary_adjustment_samples": 0,
+      "clip_samples": 2529,
+      "batch_policy": "one effect for one canonical event",
+      "rendered": true,
+      "written_start_sample": 211145,
+      "written_samples": 2529,
+      "trimmed_start_samples": 0,
+      "trimmed_end_samples": 0,
+      "alignment_error_samples": 0
+    },
+    {
+      "canonical_event": {
+        "frame": 145,
+        "kind": "control_appear",
+        "time": 4.833333333333333,
+        "sample_offset_48000": 232000,
+        "event_id": "checkin:control_appear:145",
+        "evidence": "evidence/frame-145.png",
+        "observation": "First draft-card edge at bottom145;140 is empty composer and old ring. Mere appearance stays silent."
+      },
+      "ordinal": 3,
+      "rendered": false,
+      "skip_reason": "A control becoming visible is not an observed tap; silent by default",
+      "source": {
+        "kind": "silent_visual_state",
+        "audio_file_used": null
+      }
+    },
+    {
+      "canonical_event": {
+        "frame": 186,
+        "kind": "message_send",
+        "time": 6.2,
+        "sample_offset_48000": 297600,
+        "event_id": "checkin:message_send:186",
+        "evidence": "evidence/frame-186.png",
+        "observation": "Visible send-button ring186, absent185; one combined send accent, not tap plus send or backspace.",
+        "audio": {
+          "target_peak_dbfs": -17
+        }
+      },
+      "ordinal": 4,
+      "source": {
+        "kind": "original_procedural_fallback",
+        "effect": "air_whoosh",
+        "seed": 803459951,
+        "parameters": {
+          "pitch": 1.12,
+          "duration": 0.14,
+          "energy": 0.75,
+          "pan": 0.0
+        },
+        "code_sha256": "4797a0e736e8115975398a7c4acf5289a89d23bb0222420d7dc7d89a2f40f23c",
+        "recorded_samples_used": false
+      },
+      "target_peak_dbfs": -17.0,
+      "pitch": 1.12,
+      "pan": 0.0,
+      "alignment": "onset",
+      "event_sample": 297600,
+      "clip_alignment_offset_samples": 0,
+      "clip_start_sample_unclipped": 297600,
+      "boundary_adjustment_samples": 0,
+      "clip_samples": 6720,
+      "batch_policy": "one effect for one canonical event",
+      "rendered": true,
+      "written_start_sample": 297600,
+      "written_samples": 6720,
+      "trimmed_start_samples": 0,
+      "trimmed_end_samples": 0,
+      "alignment_error_samples": 0
+    },
+    {
+      "canonical_event": {
+        "frame": 435,
+        "kind": "control_appear",
+        "time": 14.5,
+        "sample_offset_48000": 696000,
+        "event_id": "checkin:control_appear:435",
+        "evidence": "evidence/frame-435.png",
+        "observation": "First card sliver camera-revealed435;432 shows phone edge only. Existing card is not a new receipt; silent."
+      },
+      "ordinal": 5,
+      "rendered": false,
+      "skip_reason": "A control becoming visible is not an observed tap; silent by default",
+      "source": {
+        "kind": "silent_visual_state",
+        "audio_file_used": null
+      }
+    },
+    {
+      "canonical_event": {
+        "frame": 445,
+        "kind": "typing",
+        "time": 14.833333333333334,
+        "sample_offset_48000": 712000,
+        "event_id": "checkin:typing:445",
+        "evidence": "evidence/frame-445.png",
+        "observation": "Visible glyph change to 'a'; one observed glyph accent.",
+        "audio": {
+          "target_peak_dbfs": -24
+        },
+        "role": "human",
+        "delta_count": 1
+      },
+      "ordinal": 6,
+      "source": {
+        "kind": "licensed_real_single_key_recording",
+        "asset_id": "key_011",
+        "license": "CC0-1.0",
+        "original_sha256": "72e79b249040bff166be863dd75f5c50d6e22bf904bd7e0adab1b30941e19968",
+        "prepared_sha256": "e0a4ea04e982ad4140d38724811d275a963318934bb4902c955d9f2bfc7bd525",
+        "source_collection": "keyboard",
+        "asset_gain_db": -18.0,
+        "routing_limit": "Filename/category-based original sound design; not a proprietary-sound equivalence claim"
+      },
+      "target_peak_dbfs": -24.0,
+      "pitch": 1.0,
+      "pan": 0.0,
+      "alignment": "dominant_early_attack_peak",
+      "event_sample": 712000,
+      "clip_alignment_offset_samples": 2283,
+      "clip_start_sample_unclipped": 709717,
+      "boundary_adjustment_samples": 0,
+      "clip_samples": 12000,
+      "batch_policy": "one effect for one canonical event",
+      "rendered": true,
+      "written_start_sample": 709717,
+      "written_samples": 12000,
+      "trimmed_start_samples": 0,
+      "trimmed_end_samples": 0,
+      "alignment_error_samples": 0
+    },
+    {
+      "canonical_event": {
+        "frame": 451,
+        "kind": "typing",
+        "time": 15.033333333333333,
+        "sample_offset_48000": 721600,
+        "event_id": "checkin:typing:451",
+        "evidence": "evidence/frame-451.png",
+        "observation": "Visible glyph change to 'ar'; one observed glyph accent.",
+        "audio": {
+          "target_peak_dbfs": -24
+        },
+        "role": "human",
+        "delta_count": 1
+      },
+      "ordinal": 7,
+      "source": {
+        "kind": "licensed_real_single_key_recording",
+        "asset_id": "key_014",
+        "license": "CC0-1.0",
+        "original_sha256": "b2069e29be488a7e55b151ef458e3314ec8f138f6d5a34fe19189f4810cba098",
+        "prepared_sha256": "7bfb2af145952e6f009175c5faf1bdd69c29aa2c1ae4d733e1f464825e1e0d18",
+        "source_collection": "keyboard",
+        "asset_gain_db": -18.0,
+        "routing_limit": "Filename/category-based original sound design; not a proprietary-sound equivalence claim"
+      },
+      "target_peak_dbfs": -24.0,
+      "pitch": 1.0,
+      "pan": 0.0,
+      "alignment": "dominant_early_attack_peak",
+      "event_sample": 721600,
+      "clip_alignment_offset_samples": 950,
+      "clip_start_sample_unclipped": 720650,
+      "boundary_adjustment_samples": 0,
+      "clip_samples": 11755,
+      "batch_policy": "one effect for one canonical event",
+      "rendered": true,
+      "written_start_sample": 720650,
+      "written_samples": 11755,
+      "trimmed_start_samples": 0,
+      "trimmed_end_samples": 0,
+      "alignment_error_samples": 0
+    },
+    {
+      "canonical_event": {
+        "frame": 457,
+        "kind": "typing",
+        "time": 15.233333333333333,
+        "sample_offset_48000": 731200,
+        "event_id": "checkin:typing:457",
+        "evidence": "evidence/frame-457.png",
+        "observation": "Visible glyph change to 'are'; one observed glyph accent.",
+        "audio": {
+          "target_peak_dbfs": -24
+        },
+        "role": "human",
+        "delta_count": 1
+      },
+      "ordinal": 8,
+      "source": {
+        "kind": "licensed_real_single_key_recording",
+        "asset_id": "key_008",
+        "license": "CC0-1.0",
+        "original_sha256": "c2ab8722a81a2f1cab66cd863a09a9ec00392e2ede61362b3707a7bcc0eee506",
+        "prepared_sha256": "3a577465b37ee37130e5f28db6ca496f94b2922b1fc08673b4f7ba08cb599d1b",
+        "source_collection": "keyboard",
+        "asset_gain_db": -18.0,
+        "routing_limit": "Filename/category-based original sound design; not a proprietary-sound equivalence claim"
+      },
+      "target_peak_dbfs": -24.0,
+      "pitch": 1.0,
+      "pan": 0.0,
+      "alignment": "dominant_early_attack_peak",
+      "event_sample": 731200,
+      "clip_alignment_offset_samples": 2753,
+      "clip_start_sample_unclipped": 728447,
+      "boundary_adjustment_samples": 0,
+      "clip_samples": 12000,
+      "batch_policy": "one effect for one canonical event",
+      "rendered": true,
+      "written_start_sample": 728447,
+      "written_samples": 12000,
+      "trimmed_start_samples": 0,
+      "trimmed_end_samples": 0,
+      "alignment_error_samples": 0
+    },
+    {
+      "canonical_event": {
+        "frame": 469,
+        "kind": "typing",
+        "time": 15.633333333333333,
+        "sample_offset_48000": 750400,
+        "event_id": "checkin:typing:469",
+        "evidence": "evidence/frame-469.png",
+        "observation": "Visible glyph change to 'are y'; one observed glyph accent.",
+        "audio": {
+          "target_peak_dbfs": -24
+        },
+        "role": "human",
+        "delta_count": 1
+      },
+      "ordinal": 9,
+      "source": {
+        "kind": "licensed_real_single_key_recording",
+        "asset_id": "key_001",
+        "license": "CC0-1.0",
+        "original_sha256": "7b873548c399b9aa0efbe63052fe1344c5317a9b23455b8be3523f47d434daf1",
+        "prepared_sha256": "b991e0ef9b337d8a6c9da0e8653fee550a40387f5340aefa02cebf3edd210c3c",
+        "source_collection": "keyboard",
+        "asset_gain_db": -18.0,
+        "routing_limit": "Filename/category-based original sound design; not a proprietary-sound equivalence claim"
+      },
+      "target_peak_dbfs": -24.0,
+      "pitch": 1.0,
+      "pan": 0.0,
+      "alignment": "dominant_early_attack_peak",
+      "event_sample": 750400,
+      "clip_alignment_offset_samples": 1874,
+      "clip_start_sample_unclipped": 748526,
+      "boundary_adjustment_samples": 0,
+      "clip_samples": 12000,
+      "batch_policy": "one effect for one canonical event",
+      "rendered": true,
+      "written_start_sample": 748526,
+      "written_samples": 12000,
+      "trimmed_start_samples": 0,
+      "trimmed_end_samples": 0,
+      "alignment_error_samples": 0
+    },
+    {
+      "canonical_event": {
+        "frame": 474,
+        "kind": "typing",
+        "time": 15.8,
+        "sample_offset_48000": 758400,
+        "event_id": "checkin:typing:474",
+        "evidence": "evidence/frame-474.png",
+        "observation": "Visible glyph change to 'are yo'; one observed glyph accent.",
+        "audio": {
+          "target_peak_dbfs": -24
+        },
+        "role": "human",
+        "delta_count": 1
+      },
+      "ordinal": 10,
+      "source": {
+        "kind": "licensed_real_single_key_recording",
+        "asset_id": "key_017",
+        "license": "CC0-1.0",
+        "original_sha256": "0f8d80d3f64328936bb699eade15cc89de12b7464833459e539bcf001101e431",
+        "prepared_sha256": "c9c59e16fe97e589cde29bf385019427427e100e41505da879df887ce1871f69",
+        "source_collection": "keyboard",
+        "asset_gain_db": -18.0,
+        "routing_limit": "Filename/category-based original sound design; not a proprietary-sound equivalence claim"
+      },
+      "target_peak_dbfs": -24.0,
+      "pitch": 1.0,
+      "pan": 0.0,
+      "alignment": "dominant_early_attack_peak",
+      "event_sample": 758400,
+      "clip_alignment_offset_samples": 482,
+      "clip_start_sample_unclipped": 757918,
+      "boundary_adjustment_samples": 0,
+      "clip_samples": 9976,
+      "batch_policy": "one effect for one canonical event",
+      "rendered": true,
+      "written_start_sample": 757918,
+      "written_samples": 9976,
+      "trimmed_start_samples": 0,
+      "trimmed_end_samples": 0,
+      "alignment_error_samples": 0
+    },
+    {
+      "canonical_event": {
+        "frame": 480,
+        "kind": "typing",
+        "time": 16.0,
+        "sample_offset_48000": 768000,
+        "event_id": "checkin:typing:480",
+        "evidence": "evidence/frame-480.png",
+        "observation": "Visible glyph change to 'are you'; one observed glyph accent.",
+        "audio": {
+          "target_peak_dbfs": -24
+        },
+        "role": "human",
+        "delta_count": 1
+      },
+      "ordinal": 11,
+      "source": {
+        "kind": "licensed_real_single_key_recording",
+        "asset_id": "key_014",
+        "license": "CC0-1.0",
+        "original_sha256": "b2069e29be488a7e55b151ef458e3314ec8f138f6d5a34fe19189f4810cba098",
+        "prepared_sha256": "7bfb2af145952e6f009175c5faf1bdd69c29aa2c1ae4d733e1f464825e1e0d18",
+        "source_collection": "keyboard",
+        "asset_gain_db": -18.0,
+        "routing_limit": "Filename/category-based original sound design; not a proprietary-sound equivalence claim"
+      },
+      "target_peak_dbfs": -24.0,
+      "pitch": 1.0,
+      "pan": 0.0,
+      "alignment": "dominant_early_attack_peak",
+      "event_sample": 768000,
+      "clip_alignment_offset_samples": 950,
+      "clip_start_sample_unclipped": 767050,
+      "boundary_adjustment_samples": 0,
+      "clip_samples": 11755,
+      "batch_policy": "one effect for one canonical event",
+      "rendered": true,
+      "written_start_sample": 767050,
+      "written_samples": 11755,
+      "trimmed_start_samples": 0,
+      "trimmed_end_samples": 0,
+      "alignment_error_samples": 0
+    },
+    {
+      "canonical_event": {
+        "frame": 492,
+        "kind": "typing",
+        "time": 16.4,
+        "sample_offset_48000": 787200,
+        "event_id": "checkin:typing:492",
+        "evidence": "evidence/frame-492.png",
+        "observation": "Visible glyph change to 'are you h'; one observed glyph accent.",
+        "audio": {
+          "target_peak_dbfs": -24
+        },
+        "role": "human",
+        "delta_count": 1
+      },
+      "ordinal": 12,
+      "source": {
+        "kind": "licensed_real_single_key_recording",
+        "asset_id": "key_020",
+        "license": "CC0-1.0",
+        "original_sha256": "056b14dea2cc590e817851d93f910b0ba918cd9179bbb4d2b39b4db92c0d505f",
+        "prepared_sha256": "048d952a6ee7e2483143653eb50b37caf656b94f48fdc25bc584b8694114af23",
+        "source_collection": "keyboard",
+        "asset_gain_db": -18.0,
+        "routing_limit": "Filename/category-based original sound design; not a proprietary-sound equivalence claim"
+      },
+      "target_peak_dbfs": -24.0,
+      "pitch": 1.0,
+      "pan": 0.0,
+      "alignment": "dominant_early_attack_peak",
+      "event_sample": 787200,
+      "clip_alignment_offset_samples": 1203,
+      "clip_start_sample_unclipped": 785997,
+      "boundary_adjustment_samples": 0,
+      "clip_samples": 12000,
+      "batch_policy": "one effect for one canonical event",
+      "rendered": true,
+      "written_start_sample": 785997,
+      "written_samples": 12000,
+      "trimmed_start_samples": 0,
+      "trimmed_end_samples": 0,
+      "alignment_error_samples": 0
+    },
+    {
+      "canonical_event": {
+        "frame": 505,
+        "kind": "control_appear",
+        "time": 16.833333333333332,
+        "sample_offset_48000": 808000,
+        "event_id": "checkin:control_appear:505",
+        "evidence": "evidence/frame-505.png",
+        "observation": "Location marker is over home around504\u2013505 and clock changes505; no UI confirmation yet. Avoid duplicate arrival accent."
+      },
+      "ordinal": 13,
+      "rendered": false,
+      "skip_reason": "A control becoming visible is not an observed tap; silent by default",
+      "source": {
+        "kind": "silent_visual_state",
+        "audio_file_used": null
+      }
+    },
+    {
+      "canonical_event": {
+        "frame": 510,
+        "kind": "cart_update",
+        "time": 17.0,
+        "sample_offset_48000": 816000,
+        "event_id": "checkin:cart_update:510",
+        "evidence": "evidence/frame-510.png",
+        "observation": "Both cards turn green Arrived and moving marker disappears510; one shared confirmation tick, no duplicated phone hits.",
+        "audio": {
+          "target_peak_dbfs": -19
+        }
+      },
+      "ordinal": 14,
+      "source": {
+        "kind": "licensed_library_ui_effect",
+        "asset_id": "kenney_tick_001",
+        "license": "CC0-1.0",
+        "original_sha256": "9d057b918024c787bbe6c00beed13a7ef72a3fa0c259add3cef36582792f4230",
+        "prepared_sha256": "d665d6e126ded580b46085f4f75f5c1b17e6e74598e3288b1b5099a6364fd9c7",
+        "source_collection": "kenney",
+        "asset_gain_db": -13.0,
+        "routing_limit": "Filename/category-based original sound design; not a proprietary-sound equivalence claim"
+      },
+      "target_peak_dbfs": -19.0,
+      "pitch": 1.0,
+      "pan": 0.0,
+      "alignment": "dominant_early_attack_peak",
+      "event_sample": 816000,
+      "clip_alignment_offset_samples": 28,
+      "clip_start_sample_unclipped": 815972,
+      "boundary_adjustment_samples": 0,
+      "clip_samples": 1123,
+      "batch_policy": "one effect for one canonical event",
+      "rendered": true,
+      "written_start_sample": 815972,
+      "written_samples": 1123,
+      "trimmed_start_samples": 0,
+      "trimmed_end_samples": 0,
+      "alignment_error_samples": 0
+    },
+    {
+      "canonical_event": {
+        "frame": 522,
+        "kind": "delete",
+        "time": 17.4,
+        "sample_offset_48000": 835200,
+        "event_id": "checkin:delete:522",
+        "evidence": "evidence/frame-522.png",
+        "observation": "Visible composer deletion to 'are you'; not inferred physical-key timing.",
+        "audio": {
+          "target_peak_dbfs": -25
+        },
+        "role": "human",
+        "delta_count": 1
+      },
+      "ordinal": 15,
+      "source": {
+        "kind": "licensed_real_single_key_recording",
+        "asset_id": "key_014",
+        "license": "CC0-1.0",
+        "original_sha256": "b2069e29be488a7e55b151ef458e3314ec8f138f6d5a34fe19189f4810cba098",
+        "prepared_sha256": "7bfb2af145952e6f009175c5faf1bdd69c29aa2c1ae4d733e1f464825e1e0d18",
+        "source_collection": "keyboard",
+        "asset_gain_db": -19.0,
+        "routing_limit": "Filename/category-based original sound design; not a proprietary-sound equivalence claim"
+      },
+      "target_peak_dbfs": -25.0,
+      "pitch": 1.0,
+      "pan": 0.0,
+      "alignment": "dominant_early_attack_peak",
+      "event_sample": 835200,
+      "clip_alignment_offset_samples": 950,
+      "clip_start_sample_unclipped": 834250,
+      "boundary_adjustment_samples": 0,
+      "clip_samples": 11755,
+      "batch_policy": "one effect for one canonical event",
+      "rendered": true,
+      "written_start_sample": 834250,
+      "written_samples": 11755,
+      "trimmed_start_samples": 0,
+      "trimmed_end_samples": 0,
+      "alignment_error_samples": 0
+    },
+    {
+      "canonical_event": {
+        "frame": 529,
+        "kind": "delete",
+        "time": 17.633333333333333,
+        "sample_offset_48000": 846400,
+        "event_id": "checkin:delete:529",
+        "evidence": "evidence/frame-529.png",
+        "observation": "Visible composer deletion to 'are yo'; not inferred physical-key timing.",
+        "audio": {
+          "target_peak_dbfs": -25
+        },
+        "role": "human",
+        "delta_count": 1
+      },
+      "ordinal": 16,
+      "source": {
+        "kind": "licensed_real_single_key_recording",
+        "asset_id": "key_020",
+        "license": "CC0-1.0",
+        "original_sha256": "056b14dea2cc590e817851d93f910b0ba918cd9179bbb4d2b39b4db92c0d505f",
+        "prepared_sha256": "048d952a6ee7e2483143653eb50b37caf656b94f48fdc25bc584b8694114af23",
+        "source_collection": "keyboard",
+        "asset_gain_db": -19.0,
+        "routing_limit": "Filename/category-based original sound design; not a proprietary-sound equivalence claim"
+      },
+      "target_peak_dbfs": -25.0,
+      "pitch": 1.0,
+      "pan": 0.0,
+      "alignment": "dominant_early_attack_peak",
+      "event_sample": 846400,
+      "clip_alignment_offset_samples": 1203,
+      "clip_start_sample_unclipped": 845197,
+      "boundary_adjustment_samples": 0,
+      "clip_samples": 12000,
+      "batch_policy": "one effect for one canonical event",
+      "rendered": true,
+      "written_start_sample": 845197,
+      "written_samples": 12000,
+      "trimmed_start_samples": 0,
+      "trimmed_end_samples": 0,
+      "alignment_error_samples": 0
+    },
+    {
+      "canonical_event": {
+        "frame": 532,
+        "kind": "delete",
+        "time": 17.733333333333334,
+        "sample_offset_48000": 851200,
+        "event_id": "checkin:delete:532",
+        "evidence": "evidence/frame-532.png",
+        "observation": "Visible composer deletion to 'are y'; not inferred physical-key timing.",
+        "audio": {
+          "target_peak_dbfs": -25
+        },
+        "role": "human",
+        "delta_count": 1
+      },
+      "ordinal": 17,
+      "source": {
+        "kind": "licensed_real_single_key_recording",
+        "asset_id": "key_014",
+        "license": "CC0-1.0",
+        "original_sha256": "b2069e29be488a7e55b151ef458e3314ec8f138f6d5a34fe19189f4810cba098",
+        "prepared_sha256": "7bfb2af145952e6f009175c5faf1bdd69c29aa2c1ae4d733e1f464825e1e0d18",
+        "source_collection": "keyboard",
+        "asset_gain_db": -19.0,
+        "routing_limit": "Filename/category-based original sound design; not a proprietary-sound equivalence claim"
+      },
+      "target_peak_dbfs": -25.0,
+      "pitch": 1.0,
+      "pan": 0.0,
+      "alignment": "dominant_early_attack_peak",
+      "event_sample": 851200,
+      "clip_alignment_offset_samples": 950,
+      "clip_start_sample_unclipped": 850250,
+      "boundary_adjustment_samples": 0,
+      "clip_samples": 11755,
+      "batch_policy": "one effect for one canonical event",
+      "rendered": true,
+      "written_start_sample": 850250,
+      "written_samples": 11755,
+      "trimmed_start_samples": 0,
+      "trimmed_end_samples": 0,
+      "alignment_error_samples": 0
+    },
+    {
+      "canonical_event": {
+        "frame": 535,
+        "kind": "delete",
+        "time": 17.833333333333332,
+        "sample_offset_48000": 856000,
+        "event_id": "checkin:delete:535",
+        "evidence": "evidence/frame-535.png",
+        "observation": "Visible composer deletion to 'are'; not inferred physical-key timing.",
+        "audio": {
+          "target_peak_dbfs": -25
+        },
+        "role": "human",
+        "delta_count": 1
+      },
+      "ordinal": 18,
+      "source": {
+        "kind": "licensed_real_single_key_recording",
+        "asset_id": "key_011",
+        "license": "CC0-1.0",
+        "original_sha256": "72e79b249040bff166be863dd75f5c50d6e22bf904bd7e0adab1b30941e19968",
+        "prepared_sha256": "e0a4ea04e982ad4140d38724811d275a963318934bb4902c955d9f2bfc7bd525",
+        "source_collection": "keyboard",
+        "asset_gain_db": -19.0,
+        "routing_limit": "Filename/category-based original sound design; not a proprietary-sound equivalence claim"
+      },
+      "target_peak_dbfs": -25.0,
+      "pitch": 1.0,
+      "pan": 0.0,
+      "alignment": "dominant_early_attack_peak",
+      "event_sample": 856000,
+      "clip_alignment_offset_samples": 2283,
+      "clip_start_sample_unclipped": 853717,
+      "boundary_adjustment_samples": 0,
+      "clip_samples": 12000,
+      "batch_policy": "one effect for one canonical event",
+      "rendered": true,
+      "written_start_sample": 853717,
+      "written_samples": 12000,
+      "trimmed_start_samples": 0,
+      "trimmed_end_samples": 0,
+      "alignment_error_samples": 0
+    },
+    {
+      "canonical_event": {
+        "frame": 542,
+        "kind": "delete",
+        "time": 18.066666666666666,
+        "sample_offset_48000": 867200,
+        "event_id": "checkin:delete:542",
+        "evidence": "evidence/frame-542.png",
+        "observation": "Visible composer deletion to 'ar'; not inferred physical-key timing.",
+        "audio": {
+          "target_peak_dbfs": -25
+        },
+        "role": "human",
+        "delta_count": 1
+      },
+      "ordinal": 19,
+      "source": {
+        "kind": "licensed_real_single_key_recording",
+        "asset_id": "key_023",
+        "license": "CC0-1.0",
+        "original_sha256": "b7395018288bc4842af0983a97d790e9db84ab65dc8ae57629dc6a9ba31ff62c",
+        "prepared_sha256": "08456f9ecaadc8c01d0f652277a5c5acb00bcf3255486fc5cc91a35f6f33ad50",
+        "source_collection": "keyboard",
+        "asset_gain_db": -19.0,
+        "routing_limit": "Filename/category-based original sound design; not a proprietary-sound equivalence claim"
+      },
+      "target_peak_dbfs": -25.0,
+      "pitch": 1.0,
+      "pan": 0.0,
+      "alignment": "dominant_early_attack_peak",
+      "event_sample": 867200,
+      "clip_alignment_offset_samples": 3419,
+      "clip_start_sample_unclipped": 863781,
+      "boundary_adjustment_samples": 0,
+      "clip_samples": 12000,
+      "batch_policy": "one effect for one canonical event",
+      "rendered": true,
+      "written_start_sample": 863781,
+      "written_samples": 12000,
+      "trimmed_start_samples": 0,
+      "trimmed_end_samples": 0,
+      "alignment_error_samples": 0
+    },
+    {
+      "canonical_event": {
+        "frame": 545,
+        "kind": "delete",
+        "time": 18.166666666666668,
+        "sample_offset_48000": 872000,
+        "event_id": "checkin:delete:545",
+        "evidence": "evidence/frame-545.png",
+        "observation": "Visible composer deletion to 'a'; not inferred physical-key timing.",
+        "audio": {
+          "target_peak_dbfs": -25
+        },
+        "role": "human",
+        "delta_count": 1
+      },
+      "ordinal": 20,
+      "source": {
+        "kind": "licensed_real_single_key_recording",
+        "asset_id": "key_014",
+        "license": "CC0-1.0",
+        "original_sha256": "b2069e29be488a7e55b151ef458e3314ec8f138f6d5a34fe19189f4810cba098",
+        "prepared_sha256": "7bfb2af145952e6f009175c5faf1bdd69c29aa2c1ae4d733e1f464825e1e0d18",
+        "source_collection": "keyboard",
+        "asset_gain_db": -19.0,
+        "routing_limit": "Filename/category-based original sound design; not a proprietary-sound equivalence claim"
+      },
+      "target_peak_dbfs": -25.0,
+      "pitch": 1.0,
+      "pan": 0.0,
+      "alignment": "dominant_early_attack_peak",
+      "event_sample": 872000,
+      "clip_alignment_offset_samples": 950,
+      "clip_start_sample_unclipped": 871050,
+      "boundary_adjustment_samples": 0,
+      "clip_samples": 11755,
+      "batch_policy": "one effect for one canonical event",
+      "rendered": true,
+      "written_start_sample": 871050,
+      "written_samples": 11755,
+      "trimmed_start_samples": 0,
+      "trimmed_end_samples": 0,
+      "alignment_error_samples": 0
+    },
+    {
+      "canonical_event": {
+        "frame": 548,
+        "kind": "delete",
+        "time": 18.266666666666666,
+        "sample_offset_48000": 876800,
+        "event_id": "checkin:delete:548",
+        "evidence": "evidence/frame-548.png",
+        "observation": "Visible composer deletion to 'iMessage placeholder'; not inferred physical-key timing.",
+        "audio": {
+          "target_peak_dbfs": -25
+        },
+        "role": "human",
+        "delta_count": 1
+      },
+      "ordinal": 21,
+      "source": {
+        "kind": "licensed_real_single_key_recording",
+        "asset_id": "key_008",
+        "license": "CC0-1.0",
+        "original_sha256": "c2ab8722a81a2f1cab66cd863a09a9ec00392e2ede61362b3707a7bcc0eee506",
+        "prepared_sha256": "3a577465b37ee37130e5f28db6ca496f94b2922b1fc08673b4f7ba08cb599d1b",
+        "source_collection": "keyboard",
+        "asset_gain_db": -19.0,
+        "routing_limit": "Filename/category-based original sound design; not a proprietary-sound equivalence claim"
+      },
+      "target_peak_dbfs": -25.0,
+      "pitch": 1.0,
+      "pan": 0.0,
+      "alignment": "dominant_early_attack_peak",
+      "event_sample": 876800,
+      "clip_alignment_offset_samples": 2753,
+      "clip_start_sample_unclipped": 874047,
+      "boundary_adjustment_samples": 0,
+      "clip_samples": 12000,
+      "batch_policy": "one effect for one canonical event",
+      "rendered": true,
+      "written_start_sample": 874047,
+      "written_samples": 12000,
+      "trimmed_start_samples": 0,
+      "trimmed_end_samples": 0,
+      "alignment_error_samples": 0
+    },
+    {
+      "canonical_event": {
+        "frame": 575,
+        "kind": "message_send",
+        "time": 19.166666666666668,
+        "sample_offset_48000": 920000,
+        "event_id": "checkin:message_send:575",
+        "evidence": "evidence/frame-575.png",
+        "observation": "Heart bubble first appears at right composer edge575 and send ring; one send accent.",
+        "audio": {
+          "target_peak_dbfs": -17
+        }
+      },
+      "ordinal": 22,
+      "source": {
+        "kind": "original_procedural_fallback",
+        "effect": "air_whoosh",
+        "seed": 1270371889,
+        "parameters": {
+          "pitch": 1.12,
+          "duration": 0.14,
+          "energy": 0.75,
+          "pan": 0.0
+        },
+        "code_sha256": "4797a0e736e8115975398a7c4acf5289a89d23bb0222420d7dc7d89a2f40f23c",
+        "recorded_samples_used": false
+      },
+      "target_peak_dbfs": -17.0,
+      "pitch": 1.12,
+      "pan": 0.0,
+      "alignment": "onset",
+      "event_sample": 920000,
+      "clip_alignment_offset_samples": 0,
+      "clip_start_sample_unclipped": 920000,
+      "boundary_adjustment_samples": 0,
+      "clip_samples": 6720,
+      "batch_policy": "one effect for one canonical event",
+      "rendered": true,
+      "written_start_sample": 920000,
+      "written_samples": 6720,
+      "trimmed_start_samples": 0,
+      "trimmed_end_samples": 0,
+      "alignment_error_samples": 0
+    },
+    {
+      "canonical_event": {
+        "frame": 590,
+        "kind": "message_arrival",
+        "time": 19.666666666666668,
+        "sample_offset_48000": 944000,
+        "event_id": "checkin:message_arrival:590",
+        "evidence": "evidence/frame-590.png",
+        "observation": "Heart bubble first appears at first-phone composer edge590; absent589.",
+        "audio": {
+          "target_peak_dbfs": -18
+        }
+      },
+      "ordinal": 23,
+      "source": {
+        "kind": "licensed_library_ui_effect",
+        "asset_id": "kenney_drop_001",
+        "license": "CC0-1.0",
+        "original_sha256": "692ee3a6f1821402ca649ff735bee9591dc4846c8098fc7d6a90fd15fa57c1af",
+        "prepared_sha256": "5536fb305fbce91643f485fc784cce11051975708d8407421fa2f409ad172fa7",
+        "source_collection": "kenney",
+        "asset_gain_db": -12.0,
+        "routing_limit": "Filename/category-based original sound design; not a proprietary-sound equivalence claim"
+      },
+      "target_peak_dbfs": -18.0,
+      "pitch": 1.0,
+      "pan": 0.0,
+      "alignment": "dominant_early_attack_peak",
+      "event_sample": 944000,
+      "clip_alignment_offset_samples": 13,
+      "clip_start_sample_unclipped": 943987,
+      "boundary_adjustment_samples": 0,
+      "clip_samples": 5894,
+      "batch_policy": "one effect for one canonical event",
+      "rendered": true,
+      "written_start_sample": 943987,
+      "written_samples": 5894,
+      "trimmed_start_samples": 0,
+      "trimmed_end_samples": 0,
+      "alignment_error_samples": 0
+    }
+  ],
+  "production_ui_before_guard": {
+    "samples_per_channel": 1152000,
+    "duration_s": 24.0,
+    "sample_peak": 0.1412537544965744,
+    "sample_peak_dbfs": -16.99999999789091,
+    "rms": 0.003858769319288293,
+    "finite": true,
+    "clipped_samples": 0,
+    "endpoints_zero": true
+  },
+  "raw_full": {
+    "samples_per_channel": 1152000,
+    "duration_s": 24.0,
+    "sample_peak": 0.1412537544965744,
+    "sample_peak_dbfs": -16.99999999789091,
+    "rms": 0.003858769319288293,
+    "finite": true,
+    "clipped_samples": 0,
+    "endpoints_zero": true,
+    "loudness": {
+      "integrated_lufs": -36.92,
+      "true_peak_dbtp": -16.78,
+      "lra_lu": 12.3,
+      "threshold_lufs": -47.57,
+      "silent": false
+    }
+  },
+  "common_peak_guard_gain_db": 0.0,
+  "loudness_raising_applied": false,
+  "ui_preview": {
+    "whole_stem_boost_db": 11.99999999789091,
+    "target_sample_peak_dbfs": -5.0,
+    "purpose": "Clearly labelled listening boost; production UI remains separate at its designed level"
+  },
+  "exports": {
+    "ui.flac": {
+      "samples_per_channel": 1152000,
+      "duration_s": 24.0,
+      "sample_peak": 0.14125382900238037,
+      "sample_peak_dbfs": -16.999995416426582,
+      "rms": 0.003858769349122573,
+      "finite": true,
+      "clipped_samples": 0,
+      "endpoints_zero": true,
+      "raw_decoded_samples": 1152000,
+      "loudness": {
+        "integrated_lufs": -36.92,
+        "true_peak_dbtp": -16.78,
+        "lra_lu": 12.3,
+        "threshold_lufs": -47.57,
+        "silent": false
+      },
+      "stream": {
+        "codec_name": "flac",
+        "sample_rate": "48000",
+        "channels": 2,
+        "time_base": "1/48000",
+        "duration_ts": 1152000,
+        "bits_per_raw_sample": "24"
+      },
+      "file": "ui.flac",
+      "bytes": 355658,
+      "sha256": "aae73adf45614e13090f9be822bcc5cc545c766e2d685d63d50e106908553e24"
+    },
+    "ui.m4a": {
+      "file": {
+        "samples_per_channel": 1152000,
+        "duration_s": 24.0,
+        "sample_peak": 0.14177078008651733,
+        "sample_peak_dbfs": -16.96826541900397,
+        "rms": 0.0037972063639344577,
+        "finite": true,
+        "clipped_samples": 0,
+        "endpoints_zero": true,
+        "raw_decoded_samples": 1152000,
+        "loudness": {
+          "integrated_lufs": -37.11,
+          "true_peak_dbtp": -16.79,
+          "lra_lu": 12.4,
+          "threshold_lufs": -47.76,
+          "silent": false
+        },
+        "stream": {
+          "codec_name": "aac",
+          "sample_rate": "48000",
+          "channels": 2,
+          "time_base": "1/48000",
+          "duration_ts": 1152000
+        },
+        "file": "ui.m4a",
+        "bytes": 106486,
+        "sha256": "346f2d7570ba6f2d3844656f6740155f00a44254fefec8fdc534e7aa4ff66843"
+      },
+      "codec_gain_db": 0.0,
+      "first_pass_if_corrected": null,
+      "bitrate": "192k"
+    },
+    "music.flac": {
+      "samples_per_channel": 1152000,
+      "duration_s": 24.0,
+      "sample_peak": 0.0,
+      "sample_peak_dbfs": null,
+      "rms": 0.0,
+      "finite": true,
+      "clipped_samples": 0,
+      "endpoints_zero": true,
+      "raw_decoded_samples": 1152000,
+      "loudness": {
+        "integrated_lufs": null,
+        "true_peak_dbtp": null,
+        "lra_lu": 0.0,
+        "silent": true
+      },
+      "stream": {
+        "codec_name": "flac",
+        "sample_rate": "48000",
+        "channels": 2,
+        "time_base": "1/48000",
+        "duration_ts": 1152000,
+        "bits_per_raw_sample": "24"
+      },
+      "file": "music.flac",
+      "bytes": 12952,
+      "sha256": "8743d88038192de06cc55e930fc625a163ddf896be735f0d6c6985ecc45c4650"
+    },
+    "music.m4a": {
+      "file": {
+        "samples_per_channel": 1152000,
+        "duration_s": 24.0,
+        "sample_peak": 0.0,
+        "sample_peak_dbfs": null,
+        "rms": 0.0,
+        "finite": true,
+        "clipped_samples": 0,
+        "endpoints_zero": true,
+        "raw_decoded_samples": 1152000,
+        "loudness": {
+          "integrated_lufs": null,
+          "true_peak_dbtp": null,
+          "lra_lu": 0.0,
+          "silent": true
+        },
+        "stream": {
+          "codec_name": "aac",
+          "sample_rate": "48000",
+          "channels": 2,
+          "time_base": "1/48000",
+          "duration_ts": 1152000
+        },
+        "file": "music.m4a",
+        "bytes": 12133,
+        "sha256": "fea93d9375b0e76e6b5b5a44bc749789a65b97c6821970848f55cbe409d8f721"
+      },
+      "codec_gain_db": 0.0,
+      "first_pass_if_corrected": null,
+      "bitrate": "128k"
+    },
+    "full_mix.flac": {
+      "samples_per_channel": 1152000,
+      "duration_s": 24.0,
+      "sample_peak": 0.14125382900238037,
+      "sample_peak_dbfs": -16.999995416426582,
+      "rms": 0.003858769349122573,
+      "finite": true,
+      "clipped_samples": 0,
+      "endpoints_zero": true,
+      "raw_decoded_samples": 1152000,
+      "loudness": {
+        "integrated_lufs": -36.92,
+        "true_peak_dbtp": -16.78,
+        "lra_lu": 12.3,
+        "threshold_lufs": -47.57,
+        "silent": false
+      },
+      "stream": {
+        "codec_name": "flac",
+        "sample_rate": "48000",
+        "channels": 2,
+        "time_base": "1/48000",
+        "duration_ts": 1152000,
+        "bits_per_raw_sample": "24"
+      },
+      "file": "full_mix.flac",
+      "bytes": 355658,
+      "sha256": "aae73adf45614e13090f9be822bcc5cc545c766e2d685d63d50e106908553e24"
+    },
+    "full_mix.m4a": {
+      "file": {
+        "samples_per_channel": 1152000,
+        "duration_s": 24.0,
+        "sample_peak": 0.14177078008651733,
+        "sample_peak_dbfs": -16.96826541900397,
+        "rms": 0.0037972063639344577,
+        "finite": true,
+        "clipped_samples": 0,
+        "endpoints_zero": true,
+        "raw_decoded_samples": 1152000,
+        "loudness": {
+          "integrated_lufs": -37.11,
+          "true_peak_dbtp": -16.79,
+          "lra_lu": 12.4,
+          "threshold_lufs": -47.76,
+          "silent": false
+        },
+        "stream": {
+          "codec_name": "aac",
+          "sample_rate": "48000",
+          "channels": 2,
+          "time_base": "1/48000",
+          "duration_ts": 1152000
+        },
+        "file": "full_mix.m4a",
+        "bytes": 106486,
+        "sha256": "346f2d7570ba6f2d3844656f6740155f00a44254fefec8fdc534e7aa4ff66843"
+      },
+      "codec_gain_db": 0.0,
+      "first_pass_if_corrected": null,
+      "bitrate": "192k"
+    },
+    "ui_preview.m4a": {
+      "file": {
+        "samples_per_channel": 1152000,
+        "duration_s": 24.0,
+        "sample_peak": 0.5747867822647095,
+        "sample_peak_dbfs": -4.809864548247615,
+        "rms": 0.015098466941608454,
+        "finite": true,
+        "clipped_samples": 0,
+        "endpoints_zero": true,
+        "raw_decoded_samples": 1152000,
+        "loudness": {
+          "integrated_lufs": -25.12,
+          "true_peak_dbtp": -4.77,
+          "lra_lu": 12.3,
+          "threshold_lufs": -35.89,
+          "silent": false
+        },
+        "stream": {
+          "codec_name": "aac",
+          "sample_rate": "48000",
+          "channels": 2,
+          "time_base": "1/48000",
+          "duration_ts": 1152000
+        },
+        "file": "ui_preview.m4a",
+        "bytes": 106777,
+        "sha256": "2c705fdd21365154d7fa07523db2dfe6551176bd4106e6cd1934f374f153f99b"
+      },
+      "codec_gain_db": 0.0,
+      "first_pass_if_corrected": null,
+      "bitrate": "192k"
+    }
+  },
+  "validation": {
+    "status": "pass",
+    "finite_no_clipping": true,
+    "picture_sample_span_exact": true,
+    "no_reference_audio_inputs": true,
+    "no_inferred_subframe_keystrokes": true,
+    "stem_sum_max_error": 0.0,
+    "stem_sum_domain": "PCM24 FLAC; AAC copies independently codec validated",
+    "production_and_boosted_preview_separate": true
+  }
+}

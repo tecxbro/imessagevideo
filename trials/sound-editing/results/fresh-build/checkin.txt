@@ -1,0 +1,92 @@
++ .sound-survey-venv/bin/python trials/sound-editing/checkin/tools/inspect_frames.py
+Extracted 273 native frames; evidence/contact-sheet.png
++ .sound-survey-venv/bin/python trials/sound-editing/checkin/tools/evidence_sheets.py
++ .sound-survey-venv/bin/python trials/sound-editing/checkin/tools/transition_sheets.py
++ .sound-survey-venv/bin/python trials/sound-editing/checkin/tools/author_schedule.py
+{
+  "events": 24,
+  "audible": 21,
+  "silent": 3,
+  "picture_packet_sha256": "SHA256=782119ce82a1cb231fa9d1ea0576174d36108d374cbefd40f3ab1d5fd4197799"
+}
++ .sound-survey-venv/bin/python trials/sound-editing/audio-recreation/scripts/render_ui.py --id checkin --no-music
+{
+  "id": "checkin",
+  "status": "pass",
+  "events": 24,
+  "samples": 1152000,
+  "preview_gain_db": 11.99999999789091,
+  "output": "/Users/devin/repos/imessagevideo-fresh-checkin/trials/sound-editing/audio-recreation/ui-mixes/checkin/no-music"
+}
++ .sound-survey-venv/bin/python trials/sound-editing/tools/restore_outputs.py
+Validated/restored 304 pinned cue references; named exports restored when missing
++ .sound-survey-venv/bin/python trials/sound-editing/checkin/tools/inspect_frames.py
+Extracted 273 native frames; evidence/contact-sheet.png
++ .sound-survey-venv/bin/python trials/sound-editing/checkin/tools/evidence_sheets.py
++ .sound-survey-venv/bin/python trials/sound-editing/checkin/tools/transition_sheets.py
++ .sound-survey-venv/bin/python trials/sound-editing/checkin/tools/author_schedule.py
+{
+  "events": 24,
+  "audible": 21,
+  "silent": 3,
+  "picture_packet_sha256": "SHA256=782119ce82a1cb231fa9d1ea0576174d36108d374cbefd40f3ab1d5fd4197799"
+}
++ .sound-survey-venv/bin/python trials/sound-editing/audio-recreation/scripts/render_ui.py --id checkin --no-music
+{
+  "id": "checkin",
+  "status": "pass",
+  "events": 24,
+  "samples": 1152000,
+  "preview_gain_db": 11.99999999789091,
+  "output": "/Users/devin/repos/imessagevideo-fresh-checkin/trials/sound-editing/audio-recreation/ui-mixes/checkin/no-music"
+}
++ .sound-survey-venv/bin/python trials/sound-editing/tools/restore_outputs.py
+Validated/restored 304 pinned cue references; named exports restored when missing
++ .sound-survey-venv/bin/python trials/sound-editing/tools/check_cues.py trials/sound-editing/checkin/blind/T-M8/production.mp4 --receipt trials/sound-editing/checkin/blind/T-M8/receipts/production.json --json trials/sound-editing/checkin/blind/T-M8/check-production.json
+id  expected           offset(ms/frames)   corr    level(dB)  result
+ 0  00:00.433 f13          0.00/  0.00  1.000      -0.01  ok
+ 1  00:03.433 f103         0.00/  0.00  0.993      -0.27  ok
+ 2  00:04.400 f132         0.00/  0.00  1.000       0.00  ok
+ 4  00:06.200 f186         0.00/  0.00  0.991      -0.28  ok
+ 6  00:14.833 f445         0.00/  0.00  0.998      -0.04  ok
+ 7  00:15.033 f451         0.00/  0.00  0.997      -0.22  ok
+ 8  00:15.233 f457         0.00/  0.00  0.997      -0.18  ok
+ 9  00:15.633 f469         0.00/  0.00  0.990      -0.02  ok
+10  00:15.800 f474         0.00/  0.00  0.992      -0.16  ok
+11  00:16.000 f480         0.00/  0.00  0.994      -0.09  ok
+12  00:16.400 f492         0.00/  0.00  0.999      -0.04  ok
+14  00:17.000 f510         0.00/  0.00  0.973      -0.55  ok
+15  00:17.400 f522         0.00/  0.00  0.999      -0.09  ok
+16  00:17.633 f529         0.00/  0.00  0.994      -0.07  ok
+17  00:17.733 f532         0.00/  0.00  0.993      -0.11  ok
+18  00:17.833 f535         0.00/  0.00  0.993      -0.07  ok
+19  00:18.067 f542         0.00/  0.00  0.994      -0.29  ok
+20  00:18.167 f545         0.00/  0.00  0.992      -0.10  ok
+21  00:18.267 f548         0.00/  0.00  0.994      -0.21  ok
+22  00:19.167 f575         0.00/  0.00  0.991      -0.19  ok
+23  00:19.667 f590         0.00/  0.00  1.000       0.00  ok
+pass: picture_match=True, cues=21, defective=0, extras=0
++ .sound-survey-venv/bin/python trials/sound-editing/tools/check_cues.py trials/sound-editing/checkin/blind/T-V2/production.mp4 --receipt trials/sound-editing/checkin/blind/T-V2/receipts/production.json --json trials/sound-editing/checkin/blind/T-V2/check-production.json
+id  expected           offset(ms/frames)   corr    level(dB)  result
+ 0  00:00.433 f13          0.00/  0.00  1.000      -0.01  ok
+ 1  00:03.433 f103         0.00/  0.00  0.993      -0.27  ok
+ 2  00:04.400 f132         0.00/  0.00  1.000       0.00  ok
+ 4  00:06.200 f186         0.00/  0.00  0.991      -0.28  ok
+ 6  00:14.833 f445         0.00/  0.00  0.998      -0.04  ok
+ 7  00:15.033 f451         0.00/  0.00  0.997      -0.22  ok
+ 8  00:15.233 f457         0.00/  0.00  0.997      -0.18  ok
+ 9  00:15.633 f469         0.00/  0.00  0.990      -0.02  ok
+10  00:15.800 f474         0.00/  0.00  0.992      -0.16  ok
+11  00:16.000 f480         0.00/  0.00  0.994      -0.09  ok
+12  00:16.400 f492         0.00/  0.00  0.999      -0.04  ok
+14  00:17.000 f510         0.00/  0.00  0.973      -0.55  ok
+15  00:17.400 f522         0.00/  0.00  0.999      -0.09  ok
+16  00:17.633 f529         0.00/  0.00  0.994      -0.07  ok
+17  00:17.733 f532         0.00/  0.00  0.993      -0.11  ok
+18  00:17.833 f535         0.00/  0.00  0.993      -0.07  ok
+19  00:18.067 f542         0.00/  0.00  0.994      -0.29  ok
+20  00:18.167 f545         0.00/  0.00  0.992      -0.10  ok
+21  00:18.267 f548         0.00/  0.00  0.994      -0.21  ok
+22  00:19.167 f575         0.00/  0.00  0.991      -0.19  ok
+23  00:19.667 f590         0.00/  0.00  1.000       0.00  ok
+pass: picture_match=True, cues=21, defective=0, extras=0

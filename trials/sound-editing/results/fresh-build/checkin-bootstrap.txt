@@ -1,0 +1,35 @@
++ /opt/homebrew/bin/python3.12 -m venv .sound-survey-venv
++ .sound-survey-venv/bin/python -m pip install numpy==2.5.5 scipy==1.18.1 Pillow==13.0.0
+Collecting numpy==2.5.5
+  Using cached numpy-2.5.5-cp312-cp312-macosx_14_0_arm64.whl.metadata (6.6 kB)
+Collecting scipy==1.18.1
+  Using cached scipy-1.18.1-cp312-cp312-macosx_14_0_arm64.whl.metadata (62 kB)
+Collecting Pillow==13.0.0
+  Using cached pillow-13.0.0-cp312-cp312-macosx_11_0_arm64.whl.metadata (9.1 kB)
+Using cached numpy-2.5.5-cp312-cp312-macosx_14_0_arm64.whl (5.5 MB)
+Using cached scipy-1.18.1-cp312-cp312-macosx_14_0_arm64.whl (20.5 MB)
+Using cached pillow-13.0.0-cp312-cp312-macosx_11_0_arm64.whl (4.9 MB)
+Installing collected packages: Pillow, numpy, scipy
+
+Successfully installed Pillow-13.0.0 numpy-2.5.5 scipy-1.18.1
+
+[notice] A new release of pip is available: 26.2.1 -> 26.3
+[notice] To update, run: /Users/devin/repos/imessagevideo-fresh-checkin/.sound-survey-venv/bin/python -m pip install --upgrade pip
++ /opt/homebrew/bin/python3.12 tools/sync_library.py
+{
+  "status": "pass",
+  "mode": "offline-chunk-sync",
+  "archives": 12,
+  "snapshots": 2,
+  "parts": 78,
+  "archives_assembled": 12,
+  "extracted_files_verified": 14161,
+  "network_used": false,
+  "existing_different_files_overwritten": false
+}
++ T=trials/sound-editing
++ A=resources/complete-ui-audio-source-v1/imessage-recreations/audio-recreation
++ P=projects/04-poke-complete-v1/imessage-recreations/deliverables/04-poke/gsap.mp4
++ PY=.sound-survey-venv/bin/python
++ cp -R resources/complete-ui-audio-source-v1/imessage-recreations/audio-recreation/library trials/sound-editing/audio-recreation/
++ cp -R resources/complete-ui-audio-source-v1/imessage-recreations/audio-recreation/synthesis trials/sound-editing/audio-recreation/

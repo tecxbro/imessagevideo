@@ -1,0 +1,24 @@
+{
+  "status": "pass",
+  "picture_sha256": "1004ce2e9ab70da7f5a1e0d7a849156cf06b89902ee0aadb8d2bddb2e416e176",
+  "output_sha256": "726636d1b7514a27e0e64070a1b5b307a31fd724a7e83df9bf089627b268da13",
+  "video_packet_sha256": "SHA256=fef5481d8bbb13c16a14d05ad846cdb72112ca876913b9f0c27d871dc393d62b",
+  "aac_packet_sha256": "SHA256=8a5e32648d6508fab4e538043bdfc2733103e5515aee0fd49b6cdd77f1795f54",
+  "picture_and_aac_packets_unchanged": true,
+  "decoded_samples": 2054853,
+  "clipped_samples": 0,
+  "loudness": {
+    "integrated_lufs": -30.37,
+    "true_peak_dbtp": -11.61,
+    "lra_lu": 8.7,
+    "threshold_lufs": -41.26,
+    "silent": false
+  },
+  "cue_onsets_compared": false,
+  "hash_methods": {
+    "picture_sha256": "SHA-256 of entire named MP4 file bytes, including container and all streams; not stream packets or decoded frames",
+    "output_sha256": "SHA-256 of entire named MP4 file bytes, including container and all streams; not stream packets or decoded frames",
+    "video_packet_sha256": "SHA-256 of concatenated first-video-stream encoded packet payloads; ffmpeg -map 0:v:0 -c copy -f hash -hash sha256; excludes container metadata and audio; not decoded frames",
+    "aac_packet_sha256": "SHA-256 of concatenated encoded first-audio-stream packet payloads; ffmpeg -map 0:a:0 -c copy -f hash -hash sha256"
+  }
+}

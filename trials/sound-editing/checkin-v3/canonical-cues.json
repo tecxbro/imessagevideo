@@ -1,0 +1,898 @@
+{
+  "id": "checkin-v3",
+  "frames": 720,
+  "fps_numerator": 30,
+  "fps_denominator": 1,
+  "sample_count": 1152000,
+  "sample_rate": 48000,
+  "duration": 24,
+  "picture_file_sha256": "9dc4a812480d778c4b453f1eeb8d87e19569683ea2f4d78e8015b9f2f9952d9e",
+  "events": [
+    {
+      "frame": 13,
+      "kind": "message_arrival",
+      "time": 0.43333333333333335,
+      "sample_offset_48000": 20800,
+      "event_id": "checkin-v3:message_arrival:13",
+      "audio": {
+        "target_peak_dbfs": -18
+      },
+      "director_action": {
+        "frame": 13,
+        "action": "receive",
+        "target": "bubbleAsk",
+        "actor": "bubbleAsk"
+      },
+      "evidence": [
+        "evidence/frame-012.png",
+        "evidence/frame-013.png",
+        "evidence/frame-014.png"
+      ],
+      "verification": "Native before/at/after frames visually inspected; listed impact confirmed"
+    },
+    {
+      "frame": 90,
+      "kind": "tap",
+      "time": 3.0,
+      "sample_offset_48000": 144000,
+      "event_id": "checkin-v3:tap:90",
+      "audio": {
+        "target_peak_dbfs": -21
+      },
+      "director_action": {
+        "frame": 90,
+        "action": "tap",
+        "target": "tapPlus",
+        "actor": "tapPlus"
+      },
+      "evidence": [
+        "evidence/frame-089.png",
+        "evidence/frame-090.png",
+        "evidence/frame-091.png"
+      ],
+      "verification": "Native before/at/after frames visually inspected; listed impact confirmed"
+    },
+    {
+      "frame": 132,
+      "kind": "tap",
+      "time": 4.4,
+      "sample_offset_48000": 211200,
+      "event_id": "checkin-v3:tap:132",
+      "audio": {
+        "target_peak_dbfs": -21
+      },
+      "director_action": {
+        "frame": 132,
+        "action": "tap",
+        "target": "tapCheckIn",
+        "actor": "tapCheckIn"
+      },
+      "evidence": [
+        "evidence/frame-131.png",
+        "evidence/frame-132.png",
+        "evidence/frame-133.png"
+      ],
+      "verification": "Native before/at/after frames visually inspected; listed impact confirmed"
+    },
+    {
+      "frame": 186,
+      "kind": "message_send",
+      "time": 6.2,
+      "sample_offset_48000": 297600,
+      "event_id": "checkin-v3:message_send:186",
+      "audio": {
+        "target_peak_dbfs": -17
+      },
+      "director_action": {
+        "frame": 186,
+        "action": "send",
+        "target": "cardMaya",
+        "actor": "cardMaya"
+      },
+      "evidence": [
+        "evidence/frame-185.png",
+        "evidence/frame-186.png",
+        "evidence/frame-187.png"
+      ],
+      "verification": "Native before/at/after frames visually inspected; listed impact confirmed"
+    },
+    {
+      "frame": 325,
+      "kind": "typing",
+      "time": 10.833333333333334,
+      "sample_offset_48000": 520000,
+      "event_id": "checkin-v3:typing:325",
+      "audio": {
+        "target_peak_dbfs": -24
+      },
+      "director_action": {
+        "frame": 325,
+        "action": "type char",
+        "target": "draftSam",
+        "actor": "draftSam",
+        "char": "a"
+      },
+      "evidence": [
+        "evidence/frame-324.png",
+        "evidence/frame-325.png",
+        "evidence/frame-326.png"
+      ],
+      "verification": "Native before/at/after frames visually inspected; listed impact confirmed",
+      "role": "human",
+      "delta_count": 1
+    },
+    {
+      "frame": 331,
+      "kind": "typing",
+      "time": 11.033333333333333,
+      "sample_offset_48000": 529600,
+      "event_id": "checkin-v3:typing:331",
+      "audio": {
+        "target_peak_dbfs": -24
+      },
+      "director_action": {
+        "frame": 331,
+        "action": "type char",
+        "target": "draftSam",
+        "actor": "draftSam",
+        "char": "r"
+      },
+      "evidence": [
+        "evidence/frame-330.png",
+        "evidence/frame-331.png",
+        "evidence/frame-332.png"
+      ],
+      "verification": "Native before/at/after frames visually inspected; listed impact confirmed",
+      "role": "human",
+      "delta_count": 1
+    },
+    {
+      "frame": 339,
+      "kind": "typing",
+      "time": 11.3,
+      "sample_offset_48000": 542400,
+      "event_id": "checkin-v3:typing:339",
+      "audio": {
+        "target_peak_dbfs": -24
+      },
+      "director_action": {
+        "frame": 339,
+        "action": "type char",
+        "target": "draftSam",
+        "actor": "draftSam",
+        "char": "e"
+      },
+      "evidence": [
+        "evidence/frame-338.png",
+        "evidence/frame-339.png",
+        "evidence/frame-340.png"
+      ],
+      "verification": "Native before/at/after frames visually inspected; listed impact confirmed",
+      "role": "human",
+      "delta_count": 1
+    },
+    {
+      "frame": 356,
+      "kind": "typing",
+      "time": 11.866666666666667,
+      "sample_offset_48000": 569600,
+      "event_id": "checkin-v3:typing:356",
+      "audio": {
+        "target_peak_dbfs": -24
+      },
+      "director_action": {
+        "frame": 356,
+        "action": "type char",
+        "target": "draftSam",
+        "actor": "draftSam",
+        "char": "y"
+      },
+      "evidence": [
+        "evidence/frame-355.png",
+        "evidence/frame-356.png",
+        "evidence/frame-357.png"
+      ],
+      "verification": "Native before/at/after frames visually inspected; listed impact confirmed",
+      "role": "human",
+      "delta_count": 1
+    },
+    {
+      "frame": 362,
+      "kind": "typing",
+      "time": 12.066666666666666,
+      "sample_offset_48000": 579200,
+      "event_id": "checkin-v3:typing:362",
+      "audio": {
+        "target_peak_dbfs": -24
+      },
+      "director_action": {
+        "frame": 362,
+        "action": "type char",
+        "target": "draftSam",
+        "actor": "draftSam",
+        "char": "o"
+      },
+      "evidence": [
+        "evidence/frame-361.png",
+        "evidence/frame-362.png",
+        "evidence/frame-363.png"
+      ],
+      "verification": "Native before/at/after frames visually inspected; listed impact confirmed",
+      "role": "human",
+      "delta_count": 1
+    },
+    {
+      "frame": 369,
+      "kind": "typing",
+      "time": 12.3,
+      "sample_offset_48000": 590400,
+      "event_id": "checkin-v3:typing:369",
+      "audio": {
+        "target_peak_dbfs": -24
+      },
+      "director_action": {
+        "frame": 369,
+        "action": "type char",
+        "target": "draftSam",
+        "actor": "draftSam",
+        "char": "u"
+      },
+      "evidence": [
+        "evidence/frame-368.png",
+        "evidence/frame-369.png",
+        "evidence/frame-370.png"
+      ],
+      "verification": "Native before/at/after frames visually inspected; listed impact confirmed",
+      "role": "human",
+      "delta_count": 1
+    },
+    {
+      "frame": 384,
+      "kind": "typing",
+      "time": 12.8,
+      "sample_offset_48000": 614400,
+      "event_id": "checkin-v3:typing:384",
+      "audio": {
+        "target_peak_dbfs": -24
+      },
+      "director_action": {
+        "frame": 384,
+        "action": "type char",
+        "target": "draftSam",
+        "actor": "draftSam",
+        "char": "h"
+      },
+      "evidence": [
+        "evidence/frame-383.png",
+        "evidence/frame-384.png",
+        "evidence/frame-385.png"
+      ],
+      "verification": "Native before/at/after frames visually inspected; listed impact confirmed",
+      "role": "human",
+      "delta_count": 1
+    },
+    {
+      "frame": 391,
+      "kind": "typing",
+      "time": 13.033333333333333,
+      "sample_offset_48000": 625600,
+      "event_id": "checkin-v3:typing:391",
+      "audio": {
+        "target_peak_dbfs": -24
+      },
+      "director_action": {
+        "frame": 391,
+        "action": "type char",
+        "target": "draftSam",
+        "actor": "draftSam",
+        "char": "o"
+      },
+      "evidence": [
+        "evidence/frame-390.png",
+        "evidence/frame-391.png",
+        "evidence/frame-392.png"
+      ],
+      "verification": "Native before/at/after frames visually inspected; listed impact confirmed",
+      "role": "human",
+      "delta_count": 1
+    },
+    {
+      "frame": 397,
+      "kind": "typing",
+      "time": 13.233333333333333,
+      "sample_offset_48000": 635200,
+      "event_id": "checkin-v3:typing:397",
+      "audio": {
+        "target_peak_dbfs": -24
+      },
+      "director_action": {
+        "frame": 397,
+        "action": "type char",
+        "target": "draftSam",
+        "actor": "draftSam",
+        "char": "m"
+      },
+      "evidence": [
+        "evidence/frame-396.png",
+        "evidence/frame-397.png",
+        "evidence/frame-398.png"
+      ],
+      "verification": "Native before/at/after frames visually inspected; listed impact confirmed",
+      "role": "human",
+      "delta_count": 1
+    },
+    {
+      "frame": 406,
+      "kind": "typing",
+      "time": 13.533333333333333,
+      "sample_offset_48000": 649600,
+      "event_id": "checkin-v3:typing:406",
+      "audio": {
+        "target_peak_dbfs": -24
+      },
+      "director_action": {
+        "frame": 406,
+        "action": "type char",
+        "target": "draftSam",
+        "actor": "draftSam",
+        "char": "e"
+      },
+      "evidence": [
+        "evidence/frame-405.png",
+        "evidence/frame-406.png",
+        "evidence/frame-407.png"
+      ],
+      "verification": "Native before/at/after frames visually inspected; listed impact confirmed",
+      "role": "human",
+      "delta_count": 1
+    },
+    {
+      "frame": 419,
+      "kind": "typing",
+      "time": 13.966666666666667,
+      "sample_offset_48000": 670400,
+      "event_id": "checkin-v3:typing:419",
+      "audio": {
+        "target_peak_dbfs": -24
+      },
+      "director_action": {
+        "frame": 419,
+        "action": "type char",
+        "target": "draftSam",
+        "actor": "draftSam",
+        "char": "y"
+      },
+      "evidence": [
+        "evidence/frame-418.png",
+        "evidence/frame-419.png",
+        "evidence/frame-420.png"
+      ],
+      "verification": "Native before/at/after frames visually inspected; listed impact confirmed",
+      "role": "human",
+      "delta_count": 1
+    },
+    {
+      "frame": 425,
+      "kind": "typing",
+      "time": 14.166666666666666,
+      "sample_offset_48000": 680000,
+      "event_id": "checkin-v3:typing:425",
+      "audio": {
+        "target_peak_dbfs": -24
+      },
+      "director_action": {
+        "frame": 425,
+        "action": "type char",
+        "target": "draftSam",
+        "actor": "draftSam",
+        "char": "e"
+      },
+      "evidence": [
+        "evidence/frame-424.png",
+        "evidence/frame-425.png",
+        "evidence/frame-426.png"
+      ],
+      "verification": "Native before/at/after frames visually inspected; listed impact confirmed",
+      "role": "human",
+      "delta_count": 1
+    },
+    {
+      "frame": 432,
+      "kind": "typing",
+      "time": 14.4,
+      "sample_offset_48000": 691200,
+      "event_id": "checkin-v3:typing:432",
+      "audio": {
+        "target_peak_dbfs": -24
+      },
+      "director_action": {
+        "frame": 432,
+        "action": "type char",
+        "target": "draftSam",
+        "actor": "draftSam",
+        "char": "t"
+      },
+      "evidence": [
+        "evidence/frame-431.png",
+        "evidence/frame-432.png",
+        "evidence/frame-433.png"
+      ],
+      "verification": "Native before/at/after frames visually inspected; listed impact confirmed",
+      "role": "human",
+      "delta_count": 1
+    },
+    {
+      "frame": 440,
+      "kind": "typing",
+      "time": 14.666666666666666,
+      "sample_offset_48000": 704000,
+      "event_id": "checkin-v3:typing:440",
+      "audio": {
+        "target_peak_dbfs": -24
+      },
+      "director_action": {
+        "frame": 440,
+        "action": "type char",
+        "target": "draftSam",
+        "actor": "draftSam",
+        "char": "?"
+      },
+      "evidence": [
+        "evidence/frame-439.png",
+        "evidence/frame-440.png",
+        "evidence/frame-441.png"
+      ],
+      "verification": "Native before/at/after frames visually inspected; listed impact confirmed",
+      "role": "human",
+      "delta_count": 1
+    },
+    {
+      "frame": 460,
+      "kind": "cart_update",
+      "time": 15.333333333333334,
+      "sample_offset_48000": 736000,
+      "event_id": "checkin-v3:cart_update:460",
+      "audio": {
+        "target_peak_dbfs": -19
+      },
+      "director_action": {
+        "frame": 460,
+        "action": "arrival",
+        "target": "cardSam",
+        "actor": "cardSam",
+        "targets": [
+          "cardMaya",
+          "cardSam"
+        ]
+      },
+      "evidence": [
+        "evidence/frame-459.png",
+        "evidence/frame-460.png",
+        "evidence/frame-461.png"
+      ],
+      "verification": "Native before/at/after frames visually inspected; listed impact confirmed"
+    },
+    {
+      "frame": 488,
+      "kind": "delete",
+      "time": 16.266666666666666,
+      "sample_offset_48000": 780800,
+      "event_id": "checkin-v3:delete:488",
+      "audio": {
+        "target_peak_dbfs": -25
+      },
+      "director_action": {
+        "frame": 488,
+        "action": "backspace",
+        "target": "draftSam",
+        "actor": "draftSam",
+        "char": "?"
+      },
+      "evidence": [
+        "evidence/frame-487.png",
+        "evidence/frame-488.png",
+        "evidence/frame-489.png"
+      ],
+      "verification": "Native before/at/after frames visually inspected; listed impact confirmed",
+      "role": "human",
+      "delta_count": 1
+    },
+    {
+      "frame": 491,
+      "kind": "delete",
+      "time": 16.366666666666667,
+      "sample_offset_48000": 785600,
+      "event_id": "checkin-v3:delete:491",
+      "audio": {
+        "target_peak_dbfs": -25
+      },
+      "director_action": {
+        "frame": 491,
+        "action": "backspace",
+        "target": "draftSam",
+        "actor": "draftSam",
+        "char": "t"
+      },
+      "evidence": [
+        "evidence/frame-490.png",
+        "evidence/frame-491.png",
+        "evidence/frame-492.png"
+      ],
+      "verification": "Native before/at/after frames visually inspected; listed impact confirmed",
+      "role": "human",
+      "delta_count": 1
+    },
+    {
+      "frame": 495,
+      "kind": "delete",
+      "time": 16.5,
+      "sample_offset_48000": 792000,
+      "event_id": "checkin-v3:delete:495",
+      "audio": {
+        "target_peak_dbfs": -25
+      },
+      "director_action": {
+        "frame": 495,
+        "action": "backspace",
+        "target": "draftSam",
+        "actor": "draftSam",
+        "char": "e"
+      },
+      "evidence": [
+        "evidence/frame-494.png",
+        "evidence/frame-495.png",
+        "evidence/frame-496.png"
+      ],
+      "verification": "Native before/at/after frames visually inspected; listed impact confirmed",
+      "role": "human",
+      "delta_count": 1
+    },
+    {
+      "frame": 498,
+      "kind": "delete",
+      "time": 16.6,
+      "sample_offset_48000": 796800,
+      "event_id": "checkin-v3:delete:498",
+      "audio": {
+        "target_peak_dbfs": -25
+      },
+      "director_action": {
+        "frame": 498,
+        "action": "backspace",
+        "target": "draftSam",
+        "actor": "draftSam",
+        "char": "y"
+      },
+      "evidence": [
+        "evidence/frame-497.png",
+        "evidence/frame-498.png",
+        "evidence/frame-499.png"
+      ],
+      "verification": "Native before/at/after frames visually inspected; listed impact confirmed",
+      "role": "human",
+      "delta_count": 1
+    },
+    {
+      "frame": 505,
+      "kind": "delete",
+      "time": 16.833333333333332,
+      "sample_offset_48000": 808000,
+      "event_id": "checkin-v3:delete:505",
+      "audio": {
+        "target_peak_dbfs": -25
+      },
+      "director_action": {
+        "frame": 505,
+        "action": "backspace",
+        "target": "draftSam",
+        "actor": "draftSam",
+        "char": "e"
+      },
+      "evidence": [
+        "evidence/frame-504.png",
+        "evidence/frame-505.png",
+        "evidence/frame-506.png"
+      ],
+      "verification": "Native before/at/after frames visually inspected; listed impact confirmed",
+      "role": "human",
+      "delta_count": 1
+    },
+    {
+      "frame": 508,
+      "kind": "delete",
+      "time": 16.933333333333334,
+      "sample_offset_48000": 812800,
+      "event_id": "checkin-v3:delete:508",
+      "audio": {
+        "target_peak_dbfs": -25
+      },
+      "director_action": {
+        "frame": 508,
+        "action": "backspace",
+        "target": "draftSam",
+        "actor": "draftSam",
+        "char": "m"
+      },
+      "evidence": [
+        "evidence/frame-507.png",
+        "evidence/frame-508.png",
+        "evidence/frame-509.png"
+      ],
+      "verification": "Native before/at/after frames visually inspected; listed impact confirmed",
+      "role": "human",
+      "delta_count": 1
+    },
+    {
+      "frame": 511,
+      "kind": "delete",
+      "time": 17.033333333333335,
+      "sample_offset_48000": 817600,
+      "event_id": "checkin-v3:delete:511",
+      "audio": {
+        "target_peak_dbfs": -25
+      },
+      "director_action": {
+        "frame": 511,
+        "action": "backspace",
+        "target": "draftSam",
+        "actor": "draftSam",
+        "char": "o"
+      },
+      "evidence": [
+        "evidence/frame-510.png",
+        "evidence/frame-511.png",
+        "evidence/frame-512.png"
+      ],
+      "verification": "Native before/at/after frames visually inspected; listed impact confirmed",
+      "role": "human",
+      "delta_count": 1
+    },
+    {
+      "frame": 515,
+      "kind": "delete",
+      "time": 17.166666666666668,
+      "sample_offset_48000": 824000,
+      "event_id": "checkin-v3:delete:515",
+      "audio": {
+        "target_peak_dbfs": -25
+      },
+      "director_action": {
+        "frame": 515,
+        "action": "backspace",
+        "target": "draftSam",
+        "actor": "draftSam",
+        "char": "h"
+      },
+      "evidence": [
+        "evidence/frame-514.png",
+        "evidence/frame-515.png",
+        "evidence/frame-516.png"
+      ],
+      "verification": "Native before/at/after frames visually inspected; listed impact confirmed",
+      "role": "human",
+      "delta_count": 1
+    },
+    {
+      "frame": 521,
+      "kind": "delete",
+      "time": 17.366666666666667,
+      "sample_offset_48000": 833600,
+      "event_id": "checkin-v3:delete:521",
+      "audio": {
+        "target_peak_dbfs": -25
+      },
+      "director_action": {
+        "frame": 521,
+        "action": "backspace",
+        "target": "draftSam",
+        "actor": "draftSam",
+        "char": "u"
+      },
+      "evidence": [
+        "evidence/frame-520.png",
+        "evidence/frame-521.png",
+        "evidence/frame-522.png"
+      ],
+      "verification": "Native before/at/after frames visually inspected; listed impact confirmed",
+      "role": "human",
+      "delta_count": 1
+    },
+    {
+      "frame": 524,
+      "kind": "delete",
+      "time": 17.466666666666665,
+      "sample_offset_48000": 838400,
+      "event_id": "checkin-v3:delete:524",
+      "audio": {
+        "target_peak_dbfs": -25
+      },
+      "director_action": {
+        "frame": 524,
+        "action": "backspace",
+        "target": "draftSam",
+        "actor": "draftSam",
+        "char": "o"
+      },
+      "evidence": [
+        "evidence/frame-523.png",
+        "evidence/frame-524.png",
+        "evidence/frame-525.png"
+      ],
+      "verification": "Native before/at/after frames visually inspected; listed impact confirmed",
+      "role": "human",
+      "delta_count": 1
+    },
+    {
+      "frame": 528,
+      "kind": "delete",
+      "time": 17.6,
+      "sample_offset_48000": 844800,
+      "event_id": "checkin-v3:delete:528",
+      "audio": {
+        "target_peak_dbfs": -25
+      },
+      "director_action": {
+        "frame": 528,
+        "action": "backspace",
+        "target": "draftSam",
+        "actor": "draftSam",
+        "char": "y"
+      },
+      "evidence": [
+        "evidence/frame-527.png",
+        "evidence/frame-528.png",
+        "evidence/frame-529.png"
+      ],
+      "verification": "Native before/at/after frames visually inspected; listed impact confirmed",
+      "role": "human",
+      "delta_count": 1
+    },
+    {
+      "frame": 534,
+      "kind": "delete",
+      "time": 17.8,
+      "sample_offset_48000": 854400,
+      "event_id": "checkin-v3:delete:534",
+      "audio": {
+        "target_peak_dbfs": -25
+      },
+      "director_action": {
+        "frame": 534,
+        "action": "backspace",
+        "target": "draftSam",
+        "actor": "draftSam",
+        "char": "e"
+      },
+      "evidence": [
+        "evidence/frame-533.png",
+        "evidence/frame-534.png",
+        "evidence/frame-535.png"
+      ],
+      "verification": "Native before/at/after frames visually inspected; listed impact confirmed",
+      "role": "human",
+      "delta_count": 1
+    },
+    {
+      "frame": 538,
+      "kind": "delete",
+      "time": 17.933333333333334,
+      "sample_offset_48000": 860800,
+      "event_id": "checkin-v3:delete:538",
+      "audio": {
+        "target_peak_dbfs": -25
+      },
+      "director_action": {
+        "frame": 538,
+        "action": "backspace",
+        "target": "draftSam",
+        "actor": "draftSam",
+        "char": "r"
+      },
+      "evidence": [
+        "evidence/frame-537.png",
+        "evidence/frame-538.png",
+        "evidence/frame-539.png"
+      ],
+      "verification": "Native before/at/after frames visually inspected; listed impact confirmed",
+      "role": "human",
+      "delta_count": 1
+    },
+    {
+      "frame": 541,
+      "kind": "delete",
+      "time": 18.033333333333335,
+      "sample_offset_48000": 865600,
+      "event_id": "checkin-v3:delete:541",
+      "audio": {
+        "target_peak_dbfs": -25
+      },
+      "director_action": {
+        "frame": 541,
+        "action": "backspace",
+        "target": "draftSam",
+        "actor": "draftSam",
+        "char": "a"
+      },
+      "evidence": [
+        "evidence/frame-540.png",
+        "evidence/frame-541.png",
+        "evidence/frame-542.png"
+      ],
+      "verification": "Native before/at/after frames visually inspected; listed impact confirmed",
+      "role": "human",
+      "delta_count": 1
+    },
+    {
+      "frame": 570,
+      "kind": "message_send",
+      "time": 19.0,
+      "sample_offset_48000": 912000,
+      "event_id": "checkin-v3:message_send:570",
+      "audio": {
+        "target_peak_dbfs": -17
+      },
+      "director_action": {
+        "frame": 570,
+        "action": "send",
+        "target": "bubbleHeartSam",
+        "actor": "bubbleHeartSam"
+      },
+      "evidence": [
+        "evidence/frame-569.png",
+        "evidence/frame-570.png",
+        "evidence/frame-571.png"
+      ],
+      "verification": "Native before/at/after frames visually inspected; listed impact confirmed"
+    },
+    {
+      "frame": 615,
+      "kind": "message_arrival",
+      "time": 20.5,
+      "sample_offset_48000": 984000,
+      "event_id": "checkin-v3:message_arrival:615",
+      "audio": {
+        "target_peak_dbfs": -18
+      },
+      "director_action": {
+        "frame": 615,
+        "action": "receive",
+        "target": "bubbleHeart",
+        "actor": "bubbleHeart"
+      },
+      "evidence": [
+        "evidence/frame-614.png",
+        "evidence/frame-615.png",
+        "evidence/frame-616.png"
+      ],
+      "verification": "Native before/at/after frames visually inspected; listed impact confirmed"
+    }
+  ],
+  "exclusions": [
+    {
+      "range_inclusive": [
+        210,
+        299
+      ],
+      "reason": "Retimed walk; continuous motion texture only, zero UI cues"
+    },
+    {
+      "reason": "Trailing spaces and invisible-space deletions excluded; source list already contains visible glyph changes only"
+    },
+    {
+      "reason": "Menu/card appearances, camera reveals, locator/clock/countdown changes and end-card graphics stay silent"
+    },
+    {
+      "frames": [
+        186,
+        570
+      ],
+      "reason": "One send per action; no separate tap or backspace for composer clear"
+    },
+    {
+      "frames": [
+        460
+      ],
+      "reason": "One shared semantic arrival confirmation, not one cue per phone"
+    }
+  ]
+}

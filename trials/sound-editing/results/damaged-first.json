@@ -1,0 +1,479 @@
+{
+  "status": "fail",
+  "picture_match": true,
+  "picture_packet_sha256": "SHA256=fef5481d8bbb13c16a14d05ad846cdb72112ca876913b9f0c27d871dc393d62b",
+  "decoded_samples": 2054853,
+  "fps": 29.97002997002997,
+  "priming": {
+    "first_audio_packet": {
+      "codec_type": "audio",
+      "stream_index": 1,
+      "pts": -1024,
+      "pts_time": "-0.021333",
+      "dts": -1024,
+      "dts_time": "-0.021333",
+      "duration": 1024,
+      "duration_time": "0.021333",
+      "size": "21",
+      "pos": "91279",
+      "flags": "KD_",
+      "side_data_list": [
+        {
+          "side_data_type": "Skip Samples",
+          "skip_samples": 1024,
+          "discard_padding": 0,
+          "skip_reason": 0,
+          "discard_reason": 0
+        }
+      ]
+    },
+    "decoder": "FFmpeg edit-list/skip_samples applied",
+    "measured_common_offset_samples": 0.0,
+    "additional_alignment_correction_samples": 0
+  },
+  "thresholds": {
+    "timing_frames": 1,
+    "search_frames": 12,
+    "correlation": 0.8,
+    "level_db": 6
+  },
+  "cues": [
+    {
+      "ordinal": 0,
+      "frame": 109,
+      "expected_sample": 174574,
+      "timestamp": "00:03.637 f109",
+      "offset_samples": 0,
+      "offset_ms": 0.0,
+      "offset_frames": 0.0,
+      "correlation": 0.9953710445933558,
+      "level_delta_db": -0.02603395836895792,
+      "flags": []
+    },
+    {
+      "ordinal": 1,
+      "frame": 110,
+      "expected_sample": 176176,
+      "timestamp": "00:03.670 f110",
+      "offset_samples": 0,
+      "offset_ms": 0.0,
+      "offset_frames": 0.0,
+      "correlation": 0.9966821857739988,
+      "level_delta_db": -0.019289506295206194,
+      "flags": []
+    },
+    {
+      "ordinal": 2,
+      "frame": 111,
+      "expected_sample": 177778,
+      "timestamp": "00:03.704 f111",
+      "offset_samples": 0,
+      "offset_ms": 0.0,
+      "offset_frames": 0.0,
+      "correlation": 0.9975103716884477,
+      "level_delta_db": -0.13044274985343118,
+      "flags": []
+    },
+    {
+      "ordinal": 3,
+      "frame": 112,
+      "expected_sample": 179379,
+      "timestamp": "00:03.737 f112",
+      "offset_samples": 0,
+      "offset_ms": 0.0,
+      "offset_frames": 0.0,
+      "correlation": 0.9983069134459064,
+      "level_delta_db": -0.04877113350286871,
+      "flags": []
+    },
+    {
+      "ordinal": 4,
+      "frame": 113,
+      "expected_sample": 180981,
+      "timestamp": "00:03.770 f113",
+      "offset_samples": 0,
+      "offset_ms": 0.0,
+      "offset_frames": 0.0,
+      "correlation": 0.9986746518721283,
+      "level_delta_db": -0.018335507684246875,
+      "flags": []
+    },
+    {
+      "ordinal": 5,
+      "frame": 114,
+      "expected_sample": 182582,
+      "timestamp": "00:03.804 f114",
+      "offset_samples": 0,
+      "offset_ms": 0.0,
+      "offset_frames": 0.0,
+      "correlation": 0.9951861068909509,
+      "level_delta_db": -0.05172466411564958,
+      "flags": []
+    },
+    {
+      "ordinal": 6,
+      "frame": 116,
+      "expected_sample": 185786,
+      "timestamp": "00:03.871 f116",
+      "offset_samples": 0,
+      "offset_ms": 0.0,
+      "offset_frames": 0.0,
+      "correlation": 0.9940896075242848,
+      "level_delta_db": -0.0681415255212802,
+      "flags": []
+    },
+    {
+      "ordinal": 7,
+      "frame": 117,
+      "expected_sample": 187387,
+      "timestamp": "00:03.904 f117",
+      "offset_samples": 0,
+      "offset_ms": 0.0,
+      "offset_frames": 0.0,
+      "correlation": 0.9943095947971888,
+      "level_delta_db": -0.014249195192953593,
+      "flags": []
+    },
+    {
+      "ordinal": 8,
+      "frame": 118,
+      "expected_sample": 188989,
+      "timestamp": "00:03.937 f118",
+      "offset_samples": 0,
+      "offset_ms": 0.0,
+      "offset_frames": 0.0,
+      "correlation": 0.996509726934014,
+      "level_delta_db": -0.02765617777026894,
+      "flags": []
+    },
+    {
+      "ordinal": 9,
+      "frame": 120,
+      "expected_sample": 192192,
+      "timestamp": "00:04.004 f120",
+      "offset_samples": 0,
+      "offset_ms": 0.0,
+      "offset_frames": 0.0,
+      "correlation": 0.995305628645371,
+      "level_delta_db": -0.021122376337320458,
+      "flags": []
+    },
+    {
+      "ordinal": 10,
+      "frame": 121,
+      "expected_sample": 193794,
+      "timestamp": "00:04.037 f121",
+      "offset_samples": 0,
+      "offset_ms": 0.0,
+      "offset_frames": 0.0,
+      "correlation": 0.9977397145195441,
+      "level_delta_db": -0.012679394165210828,
+      "flags": []
+    },
+    {
+      "ordinal": 11,
+      "frame": 122,
+      "expected_sample": 195395,
+      "timestamp": "00:04.071 f122",
+      "offset_samples": 0,
+      "offset_ms": 0.0,
+      "offset_frames": 0.0,
+      "correlation": 0.9964521815941078,
+      "level_delta_db": -0.04221229625418277,
+      "flags": []
+    },
+    {
+      "ordinal": 12,
+      "frame": 124,
+      "expected_sample": 198598,
+      "timestamp": "00:04.137 f124",
+      "offset_samples": 0,
+      "offset_ms": 0.0,
+      "offset_frames": 0.0,
+      "correlation": 0.9982737356413989,
+      "level_delta_db": -0.03923720520306412,
+      "flags": []
+    },
+    {
+      "ordinal": 13,
+      "frame": 125,
+      "expected_sample": 200200,
+      "timestamp": "00:04.171 f125",
+      "offset_samples": 0,
+      "offset_ms": 0.0,
+      "offset_frames": 0.0,
+      "correlation": 0.998511237504984,
+      "level_delta_db": -0.025548452830334575,
+      "flags": []
+    },
+    {
+      "ordinal": 14,
+      "frame": 142,
+      "expected_sample": 227427,
+      "timestamp": "00:04.738 f142",
+      "offset_samples": 0,
+      "offset_ms": 0.0,
+      "offset_frames": 0.0,
+      "correlation": 0.9999738243069324,
+      "level_delta_db": -0.023325250842367647,
+      "flags": []
+    },
+    {
+      "ordinal": 15,
+      "frame": 175,
+      "expected_sample": 280280,
+      "timestamp": "00:05.839 f175",
+      "offset_samples": 0,
+      "offset_ms": 0.0,
+      "offset_frames": 0.0,
+      "correlation": 0.9984873983027363,
+      "level_delta_db": -0.10194183707241732,
+      "flags": []
+    },
+    {
+      "ordinal": 16,
+      "frame": 232,
+      "expected_sample": 371571,
+      "timestamp": "00:07.741 f232",
+      "offset_samples": 0,
+      "offset_ms": 0.0,
+      "offset_frames": 0.0,
+      "correlation": 0.9998997815911372,
+      "level_delta_db": -0.051703436562042966,
+      "flags": []
+    },
+    {
+      "ordinal": 17,
+      "frame": 268,
+      "expected_sample": 429229,
+      "timestamp": "00:08.942 f268",
+      "offset_samples": 0,
+      "offset_ms": 0.0,
+      "offset_frames": 0.0,
+      "correlation": 0.9999793627287958,
+      "level_delta_db": -0.03418140466336298,
+      "flags": []
+    },
+    {
+      "ordinal": 18,
+      "frame": 280,
+      "expected_sample": 448448,
+      "timestamp": "00:09.343 f280",
+      "offset_samples": 0,
+      "offset_ms": 0.0,
+      "offset_frames": 0.0,
+      "correlation": 0.9999883956600136,
+      "level_delta_db": -0.00397050416964986,
+      "flags": []
+    },
+    {
+      "ordinal": 19,
+      "frame": 301,
+      "expected_sample": 482082,
+      "timestamp": "00:10.043 f301",
+      "offset_samples": -4805,
+      "offset_ms": -100.10416666666666,
+      "offset_frames": -3.000124875124875,
+      "correlation": 0.9999823741078828,
+      "level_delta_db": -0.0026841245578228135,
+      "flags": [
+        "early"
+      ]
+    },
+    {
+      "ordinal": 20,
+      "frame": 339,
+      "expected_sample": 542942,
+      "timestamp": "00:11.311 f339",
+      "offset_samples": 0,
+      "offset_ms": 0.0,
+      "offset_frames": 0.0,
+      "correlation": 0.9999314682073701,
+      "level_delta_db": -12.005481645201241,
+      "flags": [
+        "damaged"
+      ]
+    },
+    {
+      "ordinal": 21,
+      "frame": 361,
+      "expected_sample": 578178,
+      "timestamp": "00:12.045 f361",
+      "offset_samples": 62,
+      "offset_ms": 1.2916666666666667,
+      "offset_frames": 0.03871128871128871,
+      "correlation": 0.3185498821970932,
+      "level_delta_db": -21.14980587612684,
+      "flags": [
+        "damaged"
+      ]
+    },
+    {
+      "ordinal": 22,
+      "frame": 375,
+      "expected_sample": 600600,
+      "timestamp": "00:12.512 f375",
+      "offset_samples": 0,
+      "offset_ms": 0.0,
+      "offset_frames": 0.0,
+      "correlation": 0.9999971386245882,
+      "level_delta_db": -0.0025519690674106407,
+      "flags": []
+    },
+    {
+      "ordinal": 23,
+      "frame": 413,
+      "expected_sample": 661461,
+      "timestamp": "00:13.780 f413",
+      "offset_samples": 1602,
+      "offset_ms": 33.375,
+      "offset_frames": 1.0002497502497503,
+      "correlation": 0.9999968164238046,
+      "level_delta_db": -0.0087095350883944,
+      "flags": [
+        "late"
+      ]
+    },
+    {
+      "ordinal": 25,
+      "frame": 513,
+      "expected_sample": 821621,
+      "timestamp": "00:17.117 f513",
+      "offset_samples": 6406,
+      "offset_ms": 133.45833333333334,
+      "offset_frames": 3.99975024975025,
+      "correlation": 0.9960608659414861,
+      "level_delta_db": -0.19626797053031086,
+      "flags": [
+        "late"
+      ]
+    },
+    {
+      "ordinal": 26,
+      "frame": 549,
+      "expected_sample": 879278,
+      "timestamp": "00:18.318 f549",
+      "offset_samples": 0,
+      "offset_ms": 0.0,
+      "offset_frames": 0.0,
+      "correlation": 0.9999972260458326,
+      "level_delta_db": 0.00011629790694862331,
+      "flags": []
+    },
+    {
+      "ordinal": 27,
+      "frame": 575,
+      "expected_sample": 920920,
+      "timestamp": "00:19.186 f575",
+      "offset_samples": 0,
+      "offset_ms": 0.0,
+      "offset_frames": 0.0,
+      "correlation": 0.9981816295230383,
+      "level_delta_db": -0.09385464285695685,
+      "flags": []
+    },
+    {
+      "ordinal": 28,
+      "frame": 645,
+      "expected_sample": 1033032,
+      "timestamp": "00:21.521 f645",
+      "offset_samples": 12813,
+      "offset_ms": 266.9375,
+      "offset_frames": 8.000124875124875,
+      "correlation": 0.9999663768820982,
+      "level_delta_db": 0.009692014738192386,
+      "flags": [
+        "late"
+      ]
+    },
+    {
+      "ordinal": 29,
+      "frame": 664,
+      "expected_sample": 1063462,
+      "timestamp": "00:22.155 f664",
+      "offset_samples": -16872,
+      "offset_ms": -351.5,
+      "offset_frames": -10.534465534465534,
+      "correlation": 0.268544532693274,
+      "level_delta_db": -67.67195057126031,
+      "flags": [
+        "missing"
+      ]
+    },
+    {
+      "ordinal": 30,
+      "frame": 687,
+      "expected_sample": 1100299,
+      "timestamp": "00:22.923 f687",
+      "offset_samples": 0,
+      "offset_ms": 0.0,
+      "offset_frames": 0.0,
+      "correlation": 0.997019186732132,
+      "level_delta_db": -0.1641509530091927,
+      "flags": []
+    },
+    {
+      "ordinal": 31,
+      "frame": 728,
+      "expected_sample": 1165965,
+      "timestamp": "00:24.291 f728",
+      "offset_samples": 3203,
+      "offset_ms": 66.72916666666667,
+      "offset_frames": 1.999875124875125,
+      "correlation": 0.9999964726936318,
+      "level_delta_db": -0.004523267077932338,
+      "flags": [
+        "late"
+      ]
+    },
+    {
+      "ordinal": 32,
+      "frame": 756,
+      "expected_sample": 1210810,
+      "timestamp": "00:25.225 f756",
+      "offset_samples": 0,
+      "offset_ms": 0.0,
+      "offset_frames": 0.0,
+      "correlation": 0.9999921111753528,
+      "level_delta_db": -0.015512654220829888,
+      "flags": []
+    },
+    {
+      "ordinal": 33,
+      "frame": 800,
+      "expected_sample": 1281280,
+      "timestamp": "00:26.693 f800",
+      "offset_samples": 0,
+      "offset_ms": 0.0,
+      "offset_frames": 0.0,
+      "correlation": 0.9969671943111177,
+      "level_delta_db": -0.13513174161138697,
+      "flags": []
+    },
+    {
+      "ordinal": 34,
+      "frame": 853,
+      "expected_sample": 1366165,
+      "timestamp": "00:28.462 f853",
+      "offset_samples": 0,
+      "offset_ms": 0.0,
+      "offset_frames": 0.0,
+      "correlation": 0.9999796328897621,
+      "level_delta_db": 0.020853727105197426,
+      "flags": []
+    }
+  ],
+  "extras": [
+    {
+      "sample": 1596000,
+      "timestamp": "00:33.250 f997",
+      "rms": 0.04769329093802835,
+      "flags": [
+        "extra"
+      ]
+    }
+  ],
+  "hash_methods": {
+    "picture_packet_sha256": "SHA-256 of concatenated first-video-stream encoded packet payloads; ffmpeg -map 0:v:0 -c copy -f hash -hash sha256; excludes container metadata and audio; not decoded frames"
+  }
+}
