@@ -31,4 +31,6 @@ revisions and the trial artifacts. Trial B took about 19.5 minutes versus
 onsets at the final ±2-frame gate. It did not include the later sound and
 Readwise-driven updates. The observer holds the sensitive artifacts separately;
 no holdout media, source identity or raw trial logs are in Git or the bundle.
-The sound trials used computational checks, not human listening.
+The catalog and Tally outcomes are from the independent specialist trials, not
+fresh-agent reruns on the final merge. The sound trials used computational
+checks, not human listening.
