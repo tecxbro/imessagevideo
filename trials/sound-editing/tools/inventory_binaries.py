@@ -14,7 +14,9 @@ def main():
         rel=p.relative_to(BASE).as_posix()
         binary=p.suffix in suffixes or (p.suffix=='.png' and p.name.startswith('frame-'))
         if not binary or rel=='checkin/v1-first-export.mp4':continue
-        if rel.startswith(('audio-recreation/library/','audio-recreation/synthesis/')):
+        if rel.startswith('checkin-v3/'):
+            command='checkin-v3/README.md: restore pinned director input, python trials/sound-editing/checkin-v3/tools/inspect_frames.py and tools/build_score.py'
+        elif rel.startswith(('audio-recreation/library/','audio-recreation/synthesis/')):
             command='README.md: bootstrap existing sound kit from synchronized library'
         elif p.suffix=='.npy':command='python trials/sound-editing/tools/restore_outputs.py --references-only'
         elif p.suffix=='.png':command='python trials/sound-editing/checkin/tools/inspect_frames.py'
