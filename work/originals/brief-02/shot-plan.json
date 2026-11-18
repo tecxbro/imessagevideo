@@ -1,0 +1,49 @@
+{
+ "mode": "original-direction",
+ "promise": "Rebooked before you reach the counter.",
+ "fps": 30,
+ "notice": "Generality test for the direction workflow. Structure intentionally inverts film-01: no growing stack — ONE live card mutates in place while chat stays still; time passes via a clock chip, not scroll. Agent is proactive (speaks first), unlike film-01 where the agent only responded.",
+ "rejected_alternative": "A group-thread polyphony board (4 friends + agent doing availability math) — parked because 'mutation in place' tests the grammar harder than 'more senders'.",
+ "shots": [
+  {
+   "id": "proactive-alert",
+   "intent": "The agent speaks first — establish proactivity as the product's whole posture",
+   "motif": "unsolicited incoming + immediate resolve ('I'm on it' in the same breath)",
+   "start_frame": 0,
+   "end_frame_exclusive": 48,
+   "components": ["ThreadHeader", "MessageBubble"],
+   "evidence_kind": "authored-adaptation",
+   "reading_hold_frames": 24,
+   "sound_events": [{"kind": "bubble_pop", "frame": 15, "authority": "incoming text tone"}],
+   "validation": "Agent bubble arrives with NO user prompt on screen; subline already promises action."
+  },
+  {
+   "id": "ask-and-card",
+   "intent": "User commits in one line; the live card arrives as the scene's persistent object",
+   "motif": "anchored rich card (catalog ref: mini-anchored-rich-card) — but it will MUTATE, not stack",
+   "start_frame": 48,
+   "end_frame_exclusive": 189,
+   "components": ["MessageBubble", "LiveCard", "ClockChip", "OptionRow", "TapRing"],
+   "evidence_kind": "authored-adaptation",
+   "reading_hold_frames": 45,
+   "sound_events": [
+    {"kind": "message_send", "frame": 42},
+    {"kind": "card_swoosh", "frame": 63, "authority": "card arrival"},
+    {"kind": "touch_click", "frame": 216, "authority": "option select (tap ring)"}
+   ],
+   "validation": "Card occupies fixed position while its content swaps 4 states via layer start/end windows; clock chip advances 2:12→2:15→2:18 without any scroll; tap ring lands on the selected row, not elsewhere."
+  },
+  {
+   "id": "confirmed-resolve",
+   "intent": "Confirmation reads inside the same card — no cutaway needed; the object WAS the story",
+   "motif": "state mutation payoff: check pop + green confirm",
+   "start_frame": 189,
+   "end_frame_exclusive": 270,
+   "components": ["LiveCard", "MessageBubble"],
+   "evidence_kind": "authored-adaptation",
+   "reading_hold_frames": 30,
+   "sound_events": [{"kind": "glass_confirm", "frame": 265, "authority": "confirm state lands"}],
+   "validation": "End state shows confirmed seat + Wallet line inside the SAME card rect that showed 'finding alternates'; final outgoing bubble is consequence, not new section."
+  }
+ ]
+}
