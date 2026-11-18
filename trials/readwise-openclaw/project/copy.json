@@ -1,0 +1,1073 @@
+{
+  "titles": {
+    "S1": {
+      "text": "Save from anywhere.",
+      "lines": [
+        "Save from anywhere."
+      ],
+      "accent": "anywhere."
+    },
+    "S5": {
+      "text": "Your OpenClaw already knows.",
+      "lines": [
+        "Your OpenClaw already knows."
+      ],
+      "accent": "already knows."
+    }
+  },
+  "drafts": {
+    "user1": {
+      "text": "What did I save today? Give me a brief summary on each.",
+      "lines": [
+        "What did I save today?",
+        "Give me a brief summary",
+        "on each."
+      ],
+      "accent": null,
+      "bubble_lines": [
+        "What did I save today? Give me a brief",
+        "summary on each."
+      ]
+    },
+    "user2": {
+      "text": "Which one should I read first?",
+      "lines": [
+        "Which one should I read",
+        "first?"
+      ],
+      "accent": null,
+      "bubble_lines": [
+        "Which one should I read first?"
+      ]
+    }
+  },
+  "replies": {
+    "bot1": {
+      "text": "Same 3 saves today:\n\n1. Noah Zweben tweet — Claude added /\nschedule for recurring cloud jobs from\nthe terminal. Useful for CI fixes, doc\nupdates, automations that run while your\nlaptop's closed.\n2. Cal Newport video — AI \"workslop\" is\ncreating more noise, not less work. Talks\nabout reclaiming focus, deep work\nstrategies, and whether AI tools have\nactually delivered.\n3. Sam Schillace article —\n\"Compounding teams\" that go beyond\nvibe coding — teams integrating AI deeply\nto multiply their output over time.",
+      "bold": [
+        "Noah Zweben tweet",
+        "Cal Newport video",
+        "Sam Schillace article"
+      ]
+    },
+    "bot2": {
+      "text": "The Sam Schillace article — it's a quick\n4-min read and the most relevant to you\nas a product designer working on a tool\npeople use daily. Understanding how\n\"compounding teams\" work with AI could\ndirectly inform how you think about\nReader's design.\n\nThe Cal Newport video is good but it's a\nlong watch — save it for when you have\ntime. The tweet is just a feature\nannouncement, low priority.",
+      "bold": [
+        "Sam Schillace article"
+      ]
+    }
+  },
+  "command": {
+    "install": {
+      "text": "npx clawhub install readwise-official",
+      "lines": [
+        "npx clawhub install readwise-official"
+      ],
+      "accent": null
+    }
+  },
+  "header": {
+    "name": "Ghosty",
+    "subtitle": "bot",
+    "typing": "••• typing",
+    "time": "9:41",
+    "empty": "No messages here yet...",
+    "today": "Today",
+    "unread": "Unread Messages"
+  },
+  "composer": {
+    "placeholder": "Message",
+    "emoji": "☺"
+  },
+  "keyboard": {
+    "alpha": [
+      "qwertyuiop",
+      "asdfghjkl",
+      "zxcvbnm"
+    ],
+    "numeric": [
+      [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "0"
+      ],
+      [
+        "-",
+        "/",
+        ":",
+        ";",
+        "(",
+        ")",
+        "$",
+        "&",
+        "@",
+        "\""
+      ],
+      [
+        ". ",
+        ",",
+        "?",
+        "!",
+        "’"
+      ]
+    ],
+    "labels": {
+      "numbers": "123",
+      "letters": "ABC",
+      "symbols": "#+=",
+      "space": "space",
+      "return": "return"
+    },
+    "default_suggestions": [
+      "i",
+      "the",
+      "i’m"
+    ],
+    "suggestion_sets": {
+      "prediction-0": [
+        "the",
+        "i'm"
+      ],
+      "prediction-1": [
+        "the",
+        "i'm"
+      ],
+      "prediction-2": [
+        "the",
+        "i'm"
+      ],
+      "prediction-3": [
+        "the",
+        "i'm"
+      ],
+      "prediction-4": [
+        "the",
+        "i'm"
+      ],
+      "prediction-5": [
+        "\"W\""
+      ],
+      "prediction-6": [
+        "\"W\""
+      ],
+      "prediction-7": [
+        "\"Wha'",
+        "What",
+        "Whatever"
+      ],
+      "prediction-8": [
+        "\"Wha\"",
+        "What",
+        "Whatever"
+      ],
+      "prediction-9": [
+        "\"Wha\"",
+        "What",
+        "Whatever"
+      ],
+      "prediction-10": [
+        "\"d\""
+      ],
+      "prediction-11": [
+        "\"d\""
+      ],
+      "prediction-12": [
+        "\"d\""
+      ],
+      "prediction-13": [
+        "\"s\""
+      ],
+      "prediction-14": [
+        "\"s\""
+      ],
+      "prediction-15": [
+        "\"s\""
+      ],
+      "prediction-16": [
+        "\"sa",
+        "da",
+        "Sav"
+      ],
+      "prediction-17": [
+        "\"sav\"",
+        "dab",
+        "save"
+      ],
+      "prediction-18": [
+        "\"tod'",
+        "told",
+        "today"
+      ],
+      "prediction-19": [
+        "\"tod\"",
+        "told",
+        "today"
+      ],
+      "prediction-20": [
+        "\"today\"",
+        "today's",
+        "todays"
+      ],
+      "prediction-21": [
+        "\"today\"",
+        "today's",
+        "todays"
+      ],
+      "prediction-22": [
+        "\"today\"",
+        "today's",
+        "todays"
+      ],
+      "prediction-23": [
+        "\"today\"",
+        "today's",
+        "todays"
+      ],
+      "prediction-24": [
+        "\"today",
+        "today",
+        "todays"
+      ],
+      "prediction-25": [
+        "\"G\""
+      ],
+      "prediction-26": [
+        "\"G\""
+      ],
+      "prediction-27": [
+        "\"G"
+      ],
+      "prediction-28": [
+        "\"Giv\"",
+        "Go",
+        "Give"
+      ],
+      "prediction-29": [
+        "\"Gi",
+        "Gi"
+      ],
+      "prediction-30": [
+        "me",
+        "it",
+        "us"
+      ],
+      "prediction-31": [
+        "it",
+        "uS"
+      ],
+      "prediction-32": [
+        "\"те\"",
+        "me",
+        "mer"
+      ],
+      "prediction-33": [
+        "some",
+        "the"
+      ],
+      "prediction-34": [
+        "some",
+        "the"
+      ],
+      "prediction-35": [
+        "call",
+        "omew",
+        "treak"
+      ],
+      "prediction-36": [
+        "call",
+        "few",
+        "break"
+      ],
+      "prediction-37": [
+        "call",
+        "few",
+        "break"
+      ],
+      "prediction-38": [
+        "call",
+        "few",
+        "break"
+      ],
+      "prediction-39": [
+        "call",
+        "few",
+        "break"
+      ],
+      "prediction-40": [
+        "call",
+        "few",
+        "break"
+      ],
+      "prediction-41": [
+        "call",
+        "few",
+        "break"
+      ],
+      "prediction-42": [
+        "cal",
+        "rea",
+        "brea"
+      ],
+      "prediction-43": [
+        "\"b",
+        "break",
+        "bit"
+      ],
+      "prediction-44": [
+        "\"brle",
+        "briea",
+        "briet"
+      ],
+      "prediction-45": [
+        "\"brie\"",
+        "brief",
+        "briefing"
+      ],
+      "prediction-46": [
+        "\"brie\"",
+        "brief",
+        "briefing"
+      ],
+      "prediction-47": [
+        "summary",
+        "overview",
+        "description"
+      ],
+      "prediction-48": [
+        "summary",
+        "overview",
+        "description"
+      ],
+      "prediction-49": [
+        "summary",
+        "overview",
+        "description"
+      ],
+      "prediction-50": [
+        "\"su mar",
+        "ovarvie",
+        "desu riptio"
+      ],
+      "prediction-51": [
+        "\"sum\"",
+        "ummary",
+        "summrized"
+      ],
+      "prediction-52": [
+        "\"sum\"",
+        "summary",
+        "summarized"
+      ],
+      "prediction-53": [
+        "\"summa",
+        "jummary",
+        "summarized"
+      ],
+      "prediction-54": [
+        "\"summa\"",
+        "sun",
+        "summarized"
+      ],
+      "prediction-55": [
+        "\"summary",
+        "summary",
+        "summarized"
+      ],
+      "prediction-56": [
+        "\"summary\"",
+        "summary's",
+        "sum"
+      ],
+      "prediction-57": [
+        "of",
+        "and",
+        "on"
+      ],
+      "prediction-58": [
+        "of",
+        "and"
+      ],
+      "prediction-59": [
+        "\"О\"",
+        "of",
+        "on"
+      ],
+      "prediction-60": [
+        "\"о\"",
+        "of",
+        "on"
+      ],
+      "prediction-61": [
+        "\"о\"",
+        "of",
+        "on"
+      ],
+      "prediction-62": [
+        "th",
+        "how",
+        "what"
+      ],
+      "prediction-63": [
+        "the",
+        "how",
+        "what"
+      ],
+      "prediction-64": [
+        "the",
+        "how",
+        "what"
+      ],
+      "prediction-65": [
+        "hea\"",
+        "eacho",
+        "hating"
+      ],
+      "prediction-66": [
+        "\"еа\"",
+        "each",
+        "eating"
+      ],
+      "prediction-67": [
+        "\"eа\"",
+        "each",
+        "eating"
+      ],
+      "prediction-68": [
+        "\"ea\"",
+        "each",
+        "eating"
+      ],
+      "prediction-69": [
+        "\"ead",
+        "each",
+        "eating"
+      ],
+      "prediction-70": [
+        "\"eacK\""
+      ],
+      "prediction-71": [
+        "thank",
+        "thanks"
+      ],
+      "prediction-72": [
+        "thank",
+        "thanks"
+      ],
+      "prediction-73": [
+        "thank",
+        "thanks"
+      ],
+      "prediction-74": [
+        "thank",
+        "thanks"
+      ],
+      "prediction-75": [
+        "thank",
+        "thanks"
+      ],
+      "prediction-76": [
+        "thank",
+        "thanks"
+      ],
+      "prediction-77": [
+        "thank",
+        "thanks"
+      ],
+      "prediction-78": [
+        "thank",
+        "thanks"
+      ],
+      "prediction-79": [
+        "thank",
+        "thanks"
+      ],
+      "prediction-80": [
+        "thank",
+        "thanks"
+      ],
+      "prediction-81": [
+        "thank",
+        "thanks"
+      ],
+      "prediction-82": [
+        "thank",
+        "thanks"
+      ],
+      "prediction-83": [
+        "thank",
+        "thanks"
+      ],
+      "prediction-84": [
+        "thank",
+        "thanks"
+      ],
+      "prediction-85": [
+        "thank",
+        "thanks"
+      ],
+      "prediction-86": [
+        "thank",
+        "thanks"
+      ],
+      "prediction-87": [
+        "thank",
+        "thanks"
+      ],
+      "prediction-88": [
+        "thank",
+        "thanks"
+      ],
+      "prediction-89": [
+        "thank",
+        "thanks"
+      ],
+      "prediction-90": [
+        "thank",
+        "thanks"
+      ],
+      "prediction-91": [
+        "thank",
+        "thanks"
+      ],
+      "prediction-92": [
+        "thank",
+        "thanks"
+      ],
+      "prediction-93": [
+        "thank",
+        "thanks"
+      ],
+      "prediction-94": [
+        "thank",
+        "thanks"
+      ],
+      "prediction-95": [
+        "thank",
+        "thanks"
+      ],
+      "prediction-96": [
+        "thank",
+        "thanks"
+      ],
+      "prediction-97": [
+        "thank",
+        "thanks"
+      ],
+      "prediction-98": [
+        "the",
+        "i'm"
+      ],
+      "prediction-99": [
+        "the",
+        "i'm"
+      ],
+      "prediction-100": [
+        "the",
+        "i'm"
+      ],
+      "prediction-101": [
+        "the",
+        "i'm"
+      ],
+      "prediction-102": [
+        "the",
+        "i'm"
+      ],
+      "prediction-103": [
+        "The",
+        "I'm"
+      ],
+      "prediction-104": [
+        "The",
+        "I'm"
+      ],
+      "prediction-105": [
+        "The",
+        "I'm"
+      ],
+      "prediction-106": [
+        "\"W",
+        "Wha"
+      ],
+      "prediction-107": [
+        "\"W\"",
+        "What",
+        "We"
+      ],
+      "prediction-108": [
+        "\"Wh\"",
+        "Eh",
+        "Wha"
+      ],
+      "prediction-109": [
+        "\"Wh\"",
+        "Eh",
+        "hat"
+      ],
+      "prediction-110": [
+        "\"Wh\"",
+        "Eh",
+        "What"
+      ],
+      "prediction-111": [
+        "\"Whid",
+        "ich",
+        "Which"
+      ],
+      "prediction-112": [
+        "\"Whic\"",
+        "Which",
+        "Whichever"
+      ],
+      "prediction-113": [
+        "\"Whic\"",
+        "Which",
+        "Whichever"
+      ],
+      "prediction-114": [
+        "of"
+      ],
+      "prediction-115": [
+        "of",
+        "is"
+      ],
+      "prediction-116": [
+        "of",
+        "is",
+        "one"
+      ],
+      "prediction-117": [
+        "on",
+        "ones"
+      ],
+      "prediction-118": [
+        "\"on",
+        "one",
+        "ones"
+      ],
+      "prediction-119": [
+        "of",
+        "do"
+      ],
+      "prediction-120": [
+        "is",
+        "of",
+        "do"
+      ],
+      "prediction-121": [
+        "of",
+        "do"
+      ],
+      "prediction-122": [
+        "\"sh\"",
+        "should"
+      ],
+      "prediction-123": [
+        "\"sh\"",
+        "should",
+        "shall"
+      ],
+      "prediction-124": [
+        "\"sh\"",
+        "should",
+        "shall"
+      ],
+      "prediction-125": [
+        "\"sho\"",
+        "should",
+        "shold"
+      ],
+      "prediction-126": [
+        "\"shou\"",
+        "should",
+        "shoud've"
+      ],
+      "prediction-127": [
+        "\"shou\"",
+        "should",
+        "should've"
+      ],
+      "prediction-128": [
+        "\"sh",
+        "shou",
+        "Id've"
+      ],
+      "prediction-129": [
+        "We",
+        "Yo"
+      ],
+      "prediction-130": [
+        "We",
+        "You"
+      ],
+      "prediction-131": [
+        "We",
+        "You"
+      ],
+      "prediction-132": [
+        "ge",
+        "bu",
+        "pia"
+      ],
+      "prediction-133": [
+        "get",
+        "buy",
+        "pick"
+      ],
+      "prediction-134": [
+        "ge",
+        "buy",
+        "pick"
+      ],
+      "prediction-135": [
+        "re\"",
+        "rely",
+        "replce"
+      ],
+      "prediction-136": [
+        "\"re\"",
+        "read",
+        "replace"
+      ],
+      "prediction-137": [
+        "\"red",
+        "tead",
+        "repace"
+      ],
+      "prediction-138": [
+        "\"rea\"",
+        "tea",
+        "read"
+      ],
+      "prediction-139": [
+        "\"rea\"",
+        "tea",
+        "read"
+      ],
+      "prediction-140": [
+        "first",
+        "next",
+        "to"
+      ],
+      "prediction-141": [
+        "first",
+        "next",
+        "to"
+      ],
+      "prediction-142": [
+        "first",
+        "next",
+        "to"
+      ],
+      "prediction-143": [
+        "\"fir\"",
+        "firxt",
+        "fire"
+      ],
+      "prediction-144": [
+        "\"fir\"",
+        "first",
+        "fire"
+      ],
+      "prediction-145": [
+        "\"fir\"",
+        "fire"
+      ],
+      "prediction-146": [
+        "\"first\"",
+        "firsthand",
+        "first"
+      ],
+      "prediction-147": [
+        "\"first\"",
+        "firsthand",
+        "firstly"
+      ],
+      "prediction-148": [
+        "\"first\"",
+        "firsthand",
+        "firstly"
+      ],
+      "prediction-149": [
+        "\"first\"",
+        "firsthand",
+        "firstly"
+      ],
+      "prediction-150": [
+        "\"first\"",
+        "firsthan",
+        "fira tly"
+      ],
+      "prediction-151": [
+        "tha",
+        "what"
+      ],
+      "prediction-152": [
+        "the",
+        "what"
+      ],
+      "prediction-153": [
+        "the",
+        "what"
+      ],
+      "prediction-154": [
+        "the",
+        "what"
+      ],
+      "prediction-155": [
+        "the",
+        "what"
+      ],
+      "prediction-156": [
+        "the",
+        "what"
+      ],
+      "prediction-157": [
+        "the",
+        "what"
+      ],
+      "prediction-158": [
+        "the",
+        "what"
+      ],
+      "prediction-159": [
+        "the",
+        "what"
+      ],
+      "prediction-160": [
+        "the",
+        "what"
+      ],
+      "prediction-161": [
+        "the",
+        "what"
+      ],
+      "prediction-162": [
+        "the",
+        "what"
+      ],
+      "prediction-163": [
+        "the",
+        "what"
+      ],
+      "prediction-164": [
+        "the",
+        "what"
+      ],
+      "prediction-165": [
+        "the",
+        "what"
+      ],
+      "prediction-166": [
+        "the",
+        "what"
+      ],
+      "prediction-167": [
+        "the",
+        "what"
+      ],
+      "prediction-168": [
+        "the",
+        "what"
+      ],
+      "prediction-169": [
+        "the",
+        "what"
+      ],
+      "prediction-170": [
+        "the",
+        "what"
+      ],
+      "prediction-171": [
+        "the",
+        "what"
+      ],
+      "prediction-172": [
+        "the",
+        "what"
+      ],
+      "prediction-173": [
+        "the",
+        "what"
+      ],
+      "prediction-174": [
+        "the",
+        "what"
+      ],
+      "prediction-175": [
+        "the",
+        "what"
+      ],
+      "prediction-176": [
+        "the",
+        "what"
+      ],
+      "prediction-177": [
+        "the",
+        "what"
+      ],
+      "prediction-178": [
+        "the",
+        "what"
+      ],
+      "prediction-179": [
+        "the",
+        "vilm"
+      ],
+      "prediction-180": [
+        "the",
+        "vi'm"
+      ],
+      "prediction-181": [
+        "the",
+        "i'm"
+      ],
+      "prediction-182": [
+        "the",
+        "i'm"
+      ],
+      "prediction-183": [
+        "the",
+        "i'm"
+      ],
+      "measured-t": [
+        "\"t\"",
+        "",
+        ""
+      ]
+    },
+    "key_pop_labels": {
+      "pop-t": "t",
+      "pop-o": "o",
+      "pop-d": "d",
+      "pop-a": "a"
+    }
+  },
+  "timestamps": {
+    "user1": "7:31 PM",
+    "user2": "7:32 PM",
+    "bot1": "7:32 PM",
+    "bot2": "7:32 PM"
+  },
+  "colors": {
+    "gradient top left": "#000000",
+    "gradient top right": "#3B3B68",
+    "gradient bottom left": "#12101F",
+    "gradient bottom right": "#8D2C7E",
+    "gradient center": "#292544",
+    "title pink median": "#DC8C91",
+    "X toast blue": "#26A1E9",
+    "Reader toast": "#111A20",
+    "Telegram outgoing purple": "#8B36F6",
+    "Telegram incoming dark plum": "#302332",
+    "composer": "#181619",
+    "Telegram blue": "#4D8CF5",
+    "Reader progress green": "#71C36C",
+    "body white": "#FFFFFF"
+  },
+  "notes": [
+    "Inter 600 from repository inputs; static repository SF Pro Text for UI; Georgia Bold approximates the custom R. Static SF avoids observed variable-SFNS measurement mismatch.",
+    "Keyboard suggestions use partial measured observations; unobserved/transitional labels are held, not invented as exact source."
+  ],
+  "brand": {
+    "mark": "R"
+  },
+  "x_post": {
+    "date": "… PM · Mar 23, 2026 · 100K Views",
+    "post": "/schedule - create scheduled jobs for claude in the cloud",
+    "replies": "73",
+    "reposts": "118",
+    "likes": "1.4K",
+    "bookmark_before": "932",
+    "bookmark_after": "933",
+    "quotes": "View quotes >",
+    "reply": "Post your reply",
+    "button": "Reply",
+    "trends": [
+      "Trending in Canada",
+      "Toronto",
+      "Sports · Trending",
+      "Odegaard",
+      "Sports · Trending",
+      "Vancouver"
+    ],
+    "more": "Show more",
+    "footer": [
+      "Terms of Service",
+      "Privacy Policy",
+      "Cookie Policy",
+      "Accessibility",
+      "Ads info",
+      "More ···"
+    ],
+    "tooltip_before": "Bookmark",
+    "tooltip_after": "Remove from Bookmarks",
+    "toast": [
+      "Added to your Bookmarks",
+      "Add to Folder"
+    ],
+    "card_command": "/schedule",
+    "card_description": "— create scheduled jobs for claude in the cloud",
+    "card_duration": "0:09"
+  },
+  "browser": {
+    "url": "…ave-seen-the-compounding-teams",
+    "article": [
+      "at are compounding aren’t writing code at all. The each have built a",
+      "ce the Amplifier framework) around a model. They will have some",
+      "to Claude Code or Codex - something that has callback hooks, tool",
+      "control, but then the system they build will be much more proactive.",
+      "s of strategies, tools, opinions and behaviors that let it run more",
+      "of the teams I’ve seen doing this so far are making extensive use",
+      "ing tools to give the system access to itself. All are heavily",
+      "t, use markdown, containers, xml and other common tools. I",
+      "e of software at scale will be built on these programmer tools,",
+      "the same way models will sometimes privately write code",
+      "asked by a non-coder. It’s fairly clear that these are good"
+    ],
+    "toolbar": "Auto highlighting",
+    "ink": "Ink",
+    "inbox": "Inbox",
+    "toast": "Saved to Reader",
+    "extension_mark": "R"
+  },
+  "share": {
+    "actions": [
+      "Share",
+      "Ask",
+      "Remix",
+      "Thanks",
+      "Clip",
+      "Report"
+    ],
+    "title": "The collapse of modern a...",
+    "site": "youtube.com",
+    "shareplay": "SharePlay",
+    "apps": [
+      "AirDrop",
+      "Reader",
+      "Slack",
+      "Messages"
+    ],
+    "rows": [
+      "Copy",
+      "Add to New Quick Note",
+      "Save Document to Reader",
+      "Find products on Amazon"
+    ],
+    "thumbnail": [
+      "MUCH",
+      "OP."
+    ],
+    "saved": "Saved to Reader",
+    "read": "Read Now",
+    "dismiss": "Tap anywhere to dismiss"
+  }
+}

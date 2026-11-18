@@ -1,0 +1,15 @@
+{
+  "width": 1920, "height": 1080, "fps": 30, "duration": 1,
+  "background": "#182030",
+  "fonts": [{"family": "Smoke SF", "src": "/System/Library/Fonts/SFNS.ttf", "weight": 400}],
+  "gradients": [{"id": "wash", "type": "linear", "x1": "0%", "y1": "0%", "x2": "100%", "y2": "100%", "stops": [{"offset": "0%", "color": "#367cff"}, {"offset": "100%", "color": "#b95deb"}]}],
+  "layers": [
+    {"id": "panel", "type": "rect", "x": 300, "y": 160, "width": 1320, "height": 760, "radius": 60, "fill": "url(#wash)", "shadow": {"x": 0, "y": 18, "blur": 20, "color": "#000000"}},
+    {"id": "phone-screen", "type": "group", "x": 460, "y": 340, "clip": {"width": 1000, "height": 420, "radius": 50}, "children": [
+      {"id": "screen", "type": "rect", "width": 1000, "height": 420, "fill": "#ffffff"},
+      {"id": "moving-child", "type": "rect", "x": -180, "y": 250, "width": 400, "height": 260, "fill": "#25ba97", "keyframes": {"x": [{"t": 0, "value": -180}, {"t": 1, "value": 900}]}},
+      {"id": "label", "type": "text", "x": 80, "y": 70, "fontFamily": "Smoke SF", "fontSize": 72, "text": "SF Pro · toolchain only", "fill": "#182030", "keyframes": {"opacity": [{"t": 0, "value": 0.2}, {"t": 1, "value": 1}]}},
+      {"id": "check", "type": "path", "x": 770, "y": 230, "d": "M 0 50 L 40 90 L 130 0", "fill": "none", "stroke": "#367cff", "strokeWidth": 18}
+    ]}
+  ]
+}
