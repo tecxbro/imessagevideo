@@ -1,0 +1,93 @@
+{
+  "export": "/Users/devin/work/rw/exports/readwise-revised-export.mp4",
+  "sha256": "fdf221bf1d70f62ad323f482401ed613dee1856007004ea957c4f075d3d3d721",
+  "start": "03:47 PST",
+  "end": "04:05 PST",
+  "wall_seconds": 1109.7,
+  "stages_seconds": {
+    "build": 0.08620629200049734,
+    "picture": 1102.8955741660002,
+    "audio": 0.9320243750007648,
+    "master": 4.068881125000189,
+    "mux": 0.7130484170002092
+  },
+  "aac_analysis": {
+    "input_i": "-16.67",
+    "input_tp": "-1.52",
+    "input_lra": "3.20",
+    "input_thresh": "-26.69",
+    "output_i": "-16.83",
+    "output_tp": "-2.03",
+    "output_lra": "2.70",
+    "output_thresh": "-26.84",
+    "normalization_type": "dynamic",
+    "target_offset": "0.43"
+  },
+  "mastering": {
+    "source": {
+      "input_i": "-16.40",
+      "input_tp": "-3.89",
+      "input_lra": "2.60",
+      "input_thresh": "-26.45",
+      "output_i": "-15.65",
+      "output_tp": "-2.87",
+      "output_lra": "1.90",
+      "output_thresh": "-25.69",
+      "normalization_type": "dynamic",
+      "target_offset": "-0.75"
+    },
+    "first_export": {
+      "input_i": "-38.68",
+      "input_tp": "-18.89",
+      "input_lra": "5.90",
+      "input_thresh": "-48.70",
+      "output_i": "-16.81",
+      "output_tp": "-2.00",
+      "output_lra": "3.50",
+      "output_thresh": "-26.82",
+      "normalization_type": "dynamic",
+      "target_offset": "0.41"
+    },
+    "raw_mix": {
+      "input_i": "-38.62",
+      "input_tp": "-18.81",
+      "input_lra": "6.00",
+      "input_thresh": "-48.64",
+      "output_i": "-16.82",
+      "output_tp": "-2.00",
+      "output_lra": "3.60",
+      "output_thresh": "-26.83",
+      "normalization_type": "dynamic",
+      "target_offset": "0.42"
+    },
+    "mastered_pcm": {
+      "input_i": "-16.64",
+      "input_tp": "-1.95",
+      "input_lra": "3.30",
+      "input_thresh": "-26.67",
+      "output_i": "-16.82",
+      "output_tp": "-2.22",
+      "output_lra": "2.80",
+      "output_thresh": "-26.83",
+      "normalization_type": "dynamic",
+      "target_offset": "0.42"
+    },
+    "pass2": {
+      "input_i": "-38.62",
+      "input_tp": "-18.81",
+      "input_lra": "6.00",
+      "input_thresh": "-48.64",
+      "output_i": "-16.51",
+      "output_tp": "-2.00",
+      "output_lra": "3.30",
+      "output_thresh": "-26.52",
+      "normalization_type": "dynamic",
+      "target_offset": "0.11"
+    },
+    "target_lufs": -16.4,
+    "target_tp_dbtp": -2,
+    "method": "two-pass dynamic loudnorm, reference used for measurement only"
+  },
+  "work": "/Users/devin/work/rw/exports/build-20261118-034700",
+  "scene_sha256": "bfdf8ea5ae15f9450f3a25f9d08ae07815b8078a91d018894c15d4ef06237878"
+}

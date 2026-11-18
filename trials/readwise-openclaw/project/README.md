@@ -15,13 +15,16 @@ Requires Python with Pillow/NumPy/SciPy, the existing shared HTML-engine
 dependencies and Chrome. `PYTHON`, `CHROME_PATH` and the optional MP4 path argument
 are configurable. Defaults keep renders/frame caches under `~/work/rw/exports/`.
 The command runs scene build → full HTML picture render → 48 kHz stereo audio
-render → explicit video/new-audio mux → encoded AAC true-peak gate → immutable
-publication at `~/work/rw/exports/readwise-first-export.mp4`. It refuses to replace
-the first export or its receipt. Later revisions require a new filename/receipt;
-never overwrite the first export. `exports/FIRST-EXPORT.sha256`, ffprobe JSON and
-the timing/true-peak report live beside this project in the trial's exports folder.
+render → two-pass source-loudness-matched master → explicit video/new-audio mux →
+encoded AAC loudness/true-peak gate → immutable publication at
+`~/work/rw/exports/readwise-revised-export.mp4`. It refuses existing output or
+receipt paths and specifically forbids the first-export name. The first MP4 and
+`exports/FIRST-EXPORT.*` receipts are frozen. Revised and edit deliveries use
+`REVISED-EXPORT.*` and `EDIT-EXPORT.*` receipts beside this project.
 `build_scene.py` emits `build/scene.json` in the unchanged shared scene contract.
-Generated build/cache files are ignored. Output is 1920×1080, 30 fps, 1110 frames.
+Generated build/cache files are ignored. Output is native 3840×2160, 30 fps,
+1110 frames. Authoring remains 1920×1080; `timing.json.output_scale` is 2 for 4K
+or 1 for 1080p. A project-only parent scales editable geometry, not raster frames.
 
 Components: reusable gradient background, title prefix states with independent
 pink runs, drawn app icon, seeded line-doodle wallpaper, vector avatar, body and
@@ -43,7 +46,8 @@ Known fidelity limits: doodles and avatar are procedural original geometry;
 brand curl is approximated. Prediction transitions originate from the analysis'
 partial OCR observations, not an exact complete transcription. Camera x/scale
 comes from thresholded source samples; y anchors are fitted estimates. Reply
-chunks animate short growth/scroll offsets, not an original Telegram renderer.
+chunks reveal through a fixed chat viewport while earlier messages scroll by the
+new chunk's measured height; this is not an original Telegram renderer.
 OS key-down/click timing cannot be recovered from rendered reference frames.
 Titles use measured prefix births, while whitespace is implicit. Editing copy
 can require updating prefix counts/wrapping/stream lengths in timing data.
@@ -66,18 +70,57 @@ keys and Kenney clicks. Sends and reply pops use the kit's original procedural
 `synthesis/bank/air_whoosh.wav` and `bubble_pop.wav`, not claimed CC0 recordings.
 Full collection/license paths are in cues and per-event receipts in the external
 audio report. Music is original seeded NumPy synthesis (authored 112 BPM), not
-the reference soundtrack or a claimed sonic match. No source-media path is read
-by the picture/audio/export builders. The mix ends hard at frame 1100.
+the reference soundtrack or a claimed sonic match. Picture and mix builders do
+not read source media. The separate master reads the source and frozen first
+export only for scalar loudness/peak measurements; its sole audio input to the
+second pass is our independent mix. The mix ends hard at frame 1100.
 
 The mux uses `-map 0:v:0 -map 1:a:0 -c:v copy -c:a aac -ar 48000 -ac 2`.
-Before publication, FFmpeg loudnorm measures `input_tp` on the encoded AAC;
-publication fails unless it is below −1 dBTP. WAV stems and provenance reports
+Before publication, FFmpeg loudnorm measures integrated loudness and `input_tp`
+on the final encoded AAC; publication fails unless it is within ±1 LU of the
+measured source and ≤−1 dBTP. Two-pass dynamic loudnorm uses a −2 dBTP working
+ceiling for codec headroom and restores exact PCM silence at frame 1100.
+WAV stems and provenance reports
 stay outside Git. Test with:
 
 ```bash
 cd trials/readwise-openclaw/project
 ~/work/rw/.venv/bin/python -m unittest -v test_project.py test_audio.py test_export.py
 ```
+
+## Phase 2 and JSON-only editability proof
+
+The review's approximate spinner resolve at177 is first faint check186, clear189
+in native source frames. `insert_shots.browser.resolve` is the single anchor;
+badge, toolbar, toast slide/check and progress timing derive from relative
+offsets. The measured baseline is186; the separate edit proof changes it to201.
+Article copy lives in `copy.json.browser.article`. A guarded cache-reuse path
+compares all scene content outside S3 before reusing unchanged frame PNGs:
+
+```bash
+bash trials/readwise-openclaw/project/render.sh \
+  ~/work/rw/exports/readwise-edit-export.mp4 --receipt EDIT-EXPORT \
+  --reuse ~/work/rw/exports/build-REVISED-TIMESTAMP --ranges 139:210
+```
+
+Use the revised receipt's `work` for the actual reuse path. Only S3 PNGs are
+recaptured; all1110 frames are encoded into a fresh 4K movie. Copy/timing edits
+outside S3 require a full render. The proof's authored changes are JSON-only;
+receipt/log files separately document the render. See `../LOG.md` for measured
+source/first/revised loudness, probe costs, observed failures and retry variables.
+
+Other native fixes: blue bookmark hover98–106 before fill107; editable X card
+artwork/copy; share placeholder through243 then loaded preview244; source-fit
+sheet rows and panel handoff272/273 without a black hole; spinner from273;
+actual O key-pop480 with quoted-t prediction (not570, which is after send);
+outgoing draft fade/rise569–571 and830–833; first bot growth/scroll644/889.
+
+Revised publication: `~/work/rw/exports/readwise-revised-export.mp4`,
+2026-11-18 03:47–04:05 PST, 1109.70s total (picture1102.90s). Native4K,
+1110frames,37s; AAC48kHz stereo −16.67LUFS/−1.52dBTP versus source
+−16.40LUFS/−3.89dBTP and first export −38.68LUFS/−18.89dBTP. All14 tests,
+full decode, exact black PNG tail and frozen-first hashes passed. SHA256 and
+full machine-readable measurements are in `../exports/REVISED-EXPORT.*`.
 
 ## First complete export receipt
 

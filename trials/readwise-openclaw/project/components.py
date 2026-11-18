@@ -184,6 +184,14 @@ def predictions(id, labels):
     labels=(labels+['','',''])[:3]
     return group(id,[text(id+'-label-'+str(i),label,x,589,18,'#E8E5EA',textAnchor='middle') for i,(label,x) in enumerate(zip(labels,[82,224,366]))])
 
+def key_pop(id,label,row,column):
+    x=(17+column*42.3) if row==0 else (38+column*42.5)
+    y=634+row*57
+    return group(id,[rect(id+'-pressed',x,y,37.5,50,'#77777A',5),
+                     path(id+'-stem',f'M {x} {y+6} L {x} {y-6} L {x-8} {y-18} L {x+45} {y-18} L {x+37.5} {y-6} L {x+37.5} {y+6} Z',fill='#77777A',stroke='none'),
+                     rect(id+'-cap',x-8,y-62,54,61,'#77777A',10),
+                     text(id+'-label',label,x+19,y-59,43,textAnchor='middle')])
+
 def composer(id, value, final_lines, copy, first, end, caret, empty_notice=False):
     lines=wrap(value,final_lines) if value else []
     height=44+max(0,len(lines)-1)*24

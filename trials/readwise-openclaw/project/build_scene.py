@@ -48,6 +48,7 @@ def build(copy, timing):
     # Chat stages are independently editable snapshots at stream/send boundaries.
     start,end=cuts['S6']
     events=sorted({start,end,*[s['frame'] for s in timing['sends'].values()],*[s['frame'] for stages in timing['streams'].values() for s in stages]})
+    previous_total=0
     for i,(a,b) in enumerate(zip(events,events[1:])):
         items=[]
         if a<timing['sends']['user1']['frame']:continue
@@ -63,6 +64,8 @@ def build(copy, timing):
                 bold=copy['replies'][key]['bold'];out=False
             if key=='bot1':items.append(('unread',None))
             item,h=C.bubble(f'chat-stage-{i}-{key}',lines,bold,out,copy['timestamps'][key])
+            if not out and len(chunks)==1 and chunks[-1]['frame']==a:
+                item['keyframes']={'opacity':[{'t':a/fps,'value':.12},{'t':chunks[-1].get('opacity_settled',chunks[-1]['settled'])/fps,'value':1}]}
             if out and a==timing['sends'][key]['frame']:
                 item['keyframes']={'y':[{'t':a/fps,'value':20},{'t':timing['sends'][key]['settled']/fps,'value':0,'ease':'easeOut'}]}
             items.append((item,h))
@@ -77,15 +80,16 @@ def build(copy, timing):
                 y+=32
             else:
                 item['y']=y
-                if 'keyframes' in item:
+                if 'y' in item.get('keyframes',{}):
                     for k in item['keyframes']['y']:k['value']+=y
                 children.append(item);y+=h+12
-        group=C.group(f'chat-stage-{i}',children,clip={'x':12,'y':127,'width':426,'height':390})
+        motion=C.group(f'chat-stage-{i}-motion',children)
         active=next((s for stages in timing['streams'].values() for s in stages if s['frame']==a),None)
         if active:
-            group['keyframes']={'y':[{'t':a/fps,'value':10},{'t':active['settled']/fps,'value':0,'ease':'easeOut'}],
-                                'opacity':[{'t':a/fps,'value':.8},{'t':active['settled']/fps,'value':1}]}
+            motion['keyframes']={'y':[{'t':a/fps,'value':max(0,total-previous_total)},{'t':active['settled']/fps,'value':0,'ease':'easeOut'}]}
+        group=C.group(f'chat-stage-{i}',[motion],clip={'x':12,'y':127,'width':426,'height':390})
         screen.append(C.life(group,a,b))
+        previous_total=total
     # Clipped keyboard is retained during both whole-phone reading holds.
     switches=timing['keyboard_switches']
     bounds=sorted({start,end,*[s['frame'] for s in switches],*[s['frame'] for s in timing['keyboard_case']]})
@@ -129,10 +133,23 @@ def build(copy, timing):
         comp,_=C.composer(f'composer-{i}',value,lines,copy,a,b,caret,a<timing['sends']['user1']['frame'])
         comp['y']=-10
         screen.append(comp)
+    for key,state in timing.get('send_clear',{}).items():
+        first=timing['sends'][key]['frame'];stop=state['end'];entry=copy['drafts'][key]
+        lines=C.wrap(entry['text'],entry['lines']);top=568-(44+max(0,len(lines)-1)*24)
+        draft=C.group('send-draft-'+key,[C.text('send-draft-copy-'+key,'\n'.join(lines),136,top+7,19)],keyframes={'opacity':[{'t':first/fps,'value':1},{'t':stop/fps,'value':0}],'y':[{'t':first/fps,'value':-10},{'t':stop/fps,'value':state['rise']-10}]})
+        screen.append(C.life(draft,first,stop))
+    for i,pop in enumerate(timing.get('key_pops',[])):
+        cap=C.key_pop(f'key-pop-{i}',copy['keyboard']['key_pop_labels'][pop['copy_id']],pop['row'],pop['column']);cap['y']=-10
+        screen.append(C.life(cap,pop['first'],pop['end']))
     screen+=C.phone_chrome(copy,timing)
     phone.append(C.group('phone-screen-clipped',screen,clip={'x':12,'y':12,'width':426,'height':925,'radius':60}))
     camera=C.group('phone-camera',phone,keyframes={name:[{'t':k['frame']/fps,'value':k[prop]} for k in timing['camera']] for name,prop in [('x','x'),('y','y'),('scaleX','scale'),('scaleY','scale')]})
     layers.append(C.life(camera,start,end))
+    scale=timing.get('output_scale',1)
+    if scale not in [1,2]:raise ValueError('Supported output scales are 1 (1080p) or 2 (4K)')
+    if scale!=1:
+        scene['width']*=scale;scene['height']*=scale
+        scene['layers']=[C.group('output-scale',layers,scaleX=scale,scaleY=scale)]
     return scene
 
 if __name__=='__main__':

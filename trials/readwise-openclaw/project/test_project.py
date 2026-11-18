@@ -13,6 +13,7 @@ class ProjectTest(unittest.TestCase):
     def setUpClass(cls):
         cls.copy=build_scene.load('copy.json')
         cls.timing=build_scene.load('timing.json')
+        cls.timing['output_scale']=1
         cls.scene=build_scene.build(cls.copy,cls.timing)
 
     def test_contract_and_lifecycles(self):
@@ -51,7 +52,8 @@ class ProjectTest(unittest.TestCase):
     def test_insert_states_and_editable_copy(self):
         nodes={n['id']:n for n in flatten(self.scene['layers'])}
         self.assertEqual(nodes['x-bookmark-filled']['start'],107/30)
-        self.assertEqual(nodes['reader-toolbar']['start'],171/30)
+        config=self.timing['insert_shots']['browser']
+        self.assertEqual(nodes['reader-toolbar']['start'],(config['resolve']+config['relative']['toolbar'])/30)
         self.assertEqual(nodes['ios-share-sheet']['start'],235/30)
         self.assertEqual(nodes['reader-saved-content']['start'],278/30)
         self.assertIn('clip',nodes['share-screen-clipped'])
@@ -70,6 +72,36 @@ class ProjectTest(unittest.TestCase):
         self.assertEqual(nodes['S1-0-white']['text'],'T')
         self.assertEqual(nodes['S1-prefix-0']['start'],8/30)
 
+    def test_resolution_and_relative_resolve(self):
+        t=copy.deepcopy(self.timing);t['output_scale']=2
+        scene=build_scene.build(self.copy,t)
+        self.assertEqual((scene['width'],scene['height']),(3840,2160))
+        self.assertEqual(scene['layers'][0]['scaleX'],2)
+        nodes={n['id']:n for n in flatten(scene['layers'])}
+        t['insert_shots']['browser']['resolve']+=15
+        shifted={n['id']:n for n in flatten(build_scene.build(self.copy,t)['layers'])}
+        for id in ['browser-badge','reader-toolbar','reader-toast','reader-toast-check','reader-toast-spinner']:
+            self.assertAlmostEqual(shifted[id]['start']-nodes[id]['start'],.5)
+        self.assertAlmostEqual(shifted['reader-toast-spinner']['end']-nodes['reader-toast-spinner']['end'],.5)
+        self.assertAlmostEqual(shifted['reader-toast-progress']['keyframes']['width'][-1]['t']-nodes['reader-toast-progress']['keyframes']['width'][-1]['t'],.5)
+        self.assertEqual(shifted['share-phone-camera'],nodes['share-phone-camera'])
+
+    def test_native_frame_fixes(self):
+        nodes={n['id']:n for n in flatten(self.scene['layers'])}
+        self.assertEqual(nodes['x-bookmark-hover']['start'],98/30)
+        self.assertEqual(nodes['x-bookmark-hover']['end'],107/30)
+        self.assertEqual(nodes['share-preview-placeholder']['end'],244/30)
+        self.assertEqual(nodes['share-preview-loaded']['start'],244/30)
+        self.assertEqual(nodes['ios-share-sheet']['end'],273/30)
+        self.assertEqual(nodes['reader-spinner']['start'],273/30)
+        self.assertEqual(nodes['send-draft-user1']['end'],571/30)
+        self.assertEqual(nodes['send-draft-user2']['end'],833/30)
+        self.assertEqual(nodes['key-pop-1']['start'],480/30)
+        self.assertEqual(nodes['key-pop-1-label']['text'],'o')
+        motion=[n for n in nodes.values() if n['id'].endswith('-motion') and n.get('keyframes')]
+        self.assertTrue(motion)
+        self.assertGreater(motion[0]['keyframes']['y'][0]['value'],10)
+
     def test_empty_and_error_cases(self):
         c=copy.deepcopy(self.copy)
         c['titles']['S1']['text']='';c['titles']['S1']['accent']=None
@@ -77,6 +109,8 @@ class ProjectTest(unittest.TestCase):
         self.assertEqual(next(n for n in flatten(scene['layers']) if n['id']=='S1-0-white')['text'],'')
         with self.assertRaises(KeyError):
             build_scene.build({},self.timing)
+        t=copy.deepcopy(self.timing);t['output_scale']=3
+        with self.assertRaises(ValueError):build_scene.build(c,t)
 
 if __name__=='__main__':
     unittest.main()

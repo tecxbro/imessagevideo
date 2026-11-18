@@ -11,6 +11,7 @@ import subprocess
 import sys
 import time
 from zoneinfo import ZoneInfo
+from audio.master_audio import measure
 
 HERE=Path(__file__).resolve().parent
 ROOT=HERE.parents[2]
@@ -43,30 +44,50 @@ def true_peak(path):
     if peak>=-1:raise RuntimeError(f'Encoded AAC true peak {peak} dBTP violates headroom')
     return report
 
+def validate_delivery(report,target):
+    if abs(float(report['input_i'])-target)>1 or float(report['input_tp'])>-1:raise RuntimeError(f'Encoded delivery missed target: {report["input_i"]} LUFS / {report["input_tp"]} dBTP vs {target} LUFS')
+
 def main():
-    parser=argparse.ArgumentParser();parser.add_argument('--out',type=Path,default=Path.home()/'work/rw/exports/readwise-first-export.mp4');args=parser.parse_args()
-    final=args.out.expanduser().resolve();receipt=TRIAL/'exports/FIRST-EXPORT.sha256'
-    if final.exists() or receipt.exists():raise FileExistsError('First export or its receipt already exists; never overwrite. Use a new export filename and receipt for later versions.')
+    parser=argparse.ArgumentParser();parser.add_argument('--out',type=Path,default=Path.home()/'work/rw/exports/readwise-revised-export.mp4');parser.add_argument('--receipt',choices=['REVISED-EXPORT','EDIT-EXPORT'],default='REVISED-EXPORT');parser.add_argument('--reuse',type=Path);parser.add_argument('--ranges');args=parser.parse_args()
+    final=args.out.expanduser().resolve();receipt=TRIAL/'exports'/f'{args.receipt}.sha256'
+    if final.name=='readwise-first-export.mp4' or final.exists() or any((receipt.parent/f'{args.receipt}.{suffix}').exists() for suffix in ['sha256','ffprobe.json','report.json']):raise FileExistsError('Published exports/receipts are immutable; choose fresh output and receipt names.')
+    if bool(args.reuse)!=bool(args.ranges):raise ValueError('Frame reuse requires an explicit changed frame range')
     work=final.parent/f'build-{datetime.now(ZONE):%Y%m%d-%H%M%S}'
-    work.mkdir(parents=True,exist_ok=False);stage=work/'candidate.mp4';picture=work/'picture.mp4';mix=work/'mix.wav'
+    work.mkdir(parents=True,exist_ok=False);stage=work/'candidate.mp4';picture=work/'picture.mp4';mix=work/'mix.wav';master=work/'master.wav'
     env=os.environ.copy();env.setdefault('CHROME_PATH','/Applications/Google Chrome.app/Contents/MacOS/Google Chrome');os.environ.update(env)
     started=now();tick=time.monotonic();times={}
     times['build']=attempt('Complete scene build',[sys.executable,HERE/'build_scene.py'],'S2/S3/S4 enabled; all copy/timing read from JSON')
-    times['picture']=attempt('Full 1110-frame HTML picture render',['node',ROOT/'skill/imessage-motion-recreation/scripts/engines/render.mjs','--method','html','--scene',HERE/'build/scene.json','--out',picture,'--frames-dir',work/'frames'],'final checkpoint-corrected vectors; zero-area frame anchor; unchanged shared engine')
+    scene=json.loads((HERE/'build/scene.json').read_text());(work/'scene.json').write_bytes((HERE/'build/scene.json').read_bytes())
+    command=['node',ROOT/'skill/imessage-motion-recreation/scripts/engines/render.mjs','--method','html','--scene',work/'scene.json','--out',picture,'--frames-dir',work/'frames']
+    if args.reuse:
+        old=Path(args.reuse).resolve();old_scene=json.loads((old/'scene.json').read_text())
+        if not args.ranges=='139:210':raise ValueError('Only the browser-only edit proof has a validated reuse boundary')
+        def outside_browser(s):
+            def clean(nodes):
+                return [dict(n,children=clean(n['children'])) if 'children' in n else n for n in nodes if n['id'] not in ['browser-camera','S3-cursor']]
+            return dict(s,layers=clean(s['layers']))
+        if outside_browser(scene)!=outside_browser(old_scene):raise ValueError('Changes outside browser invalidate frame reuse')
+        (work/'frames').mkdir()
+        for f in range(1110):
+            if not 139<=f<=210:os.link(old/'frames'/f'{f:06d}.png',work/'frames'/f'{f:06d}.png')
+        command+=['--ranges',args.ranges]
+    times['picture']=attempt('1110-frame HTML picture render',command,'Phase 2 source-measured fidelity fixes; project-only global output scale; unchanged shared engine'+('; browser-only re-capture with validated unchanged-layer cache reuse' if args.reuse else ''))
     times['audio']=attempt('Independent UI + original music render',[sys.executable,HERE/'audio/render_audio.py','--out',mix],'CC0 keys/clicks, declared original synthesis-bank send/pop, original seeded music; no source audio input')
-    times['mux']=attempt('Explicit new-audio mux',['ffmpeg','-hide_banner','-loglevel','error','-n','-i',picture,'-i',mix,'-map','0:v:0','-map','1:a:0','-c:v','copy','-c:a','aac','-b:a','192k','-ar','48000','-ac','2','-t','37','-movflags','+faststart',stage],'only rendered picture video and newly mixed WAV audio selected')
-    peak=true_peak(stage)
+    times['master']=attempt('Source-matched two-pass delivery mastering',[sys.executable,HERE/'audio/master_audio.py','--mix',mix,'--out',master],'measure reference only; independently authored mix mastered to source LUFS with −2 dBTP ceiling')
+    mastering=json.loads(master.with_suffix('.loudness.json').read_text());target=mastering['target_lufs']
+    times['mux']=attempt('Explicit mastered-audio mux',['ffmpeg','-hide_banner','-loglevel','error','-n','-i',picture,'-i',master,'-map','0:v:0','-map','1:a:0','-c:v','copy','-c:a','aac','-b:a','192k','-ar','48000','-ac','2','-t','37','-movflags','+faststart',stage],'only rendered picture video and newly mastered independent audio selected')
+    peak=measure(stage,target);validate_delivery(peak,target)
     probe=subprocess.check_output(['ffprobe','-v','error','-show_entries','stream=codec_type,codec_name,width,height,r_frame_rate,nb_frames,sample_rate,channels,duration:format=duration,size','-of','json',stage],text=True)
     data=json.loads(probe);video=next(s for s in data['streams'] if s['codec_type']=='video');audio=next(s for s in data['streams'] if s['codec_type']=='audio')
-    if len(data['streams'])!=2 or (video['width'],video['height'],video['nb_frames'],video['r_frame_rate'])!=(1920,1080,'1110','30/1') or (audio['sample_rate'],audio['channels'])!=('48000',2):raise RuntimeError('Export stream properties do not match contract')
+    if len(data['streams'])!=2 or (video['width'],video['height'],video['nb_frames'],video['r_frame_rate'])!=(scene['width'],scene['height'],'1110','30/1') or (audio['sample_rate'],audio['channels'])!=('48000',2):raise RuntimeError('Export stream properties do not match contract')
     os.link(stage,final);stage.unlink()
     sha=subprocess.check_output(['shasum','-a','256',final],text=True)
     receipt.parent.mkdir(parents=True,exist_ok=True)
     with receipt.open('x') as f:f.write(sha)
-    with (receipt.parent/'FIRST-EXPORT.ffprobe.json').open('x') as f:f.write(probe)
-    report={'export':str(final),'sha256':sha.split()[0],'start':started,'end':now(),'wall_seconds':round(time.monotonic()-tick,2),'stages_seconds':times,'aac_analysis':peak,'work':str(work),'scene_sha256':hashlib.sha256((HERE/'build/scene.json').read_bytes()).hexdigest()}
-    with (receipt.parent/'FIRST-EXPORT.report.json').open('x') as f:f.write(json.dumps(report,indent=2)+'\n')
-    log(f'- {started} → {now()} — FIRST COMPLETE EXPORT published once: {final}; SHA256 {sha.split()[0]}; encoded AAC true peak {peak["input_tp"]} dBTP; pipeline {report["wall_seconds"]} s.')
-    print(sha.strip());print(probe);print(f'Encoded AAC true peak: {peak["input_tp"]} dBTP; pipeline wall time: {report["wall_seconds"]} s')
+    with receipt.with_suffix('.ffprobe.json').open('x') as f:f.write(probe)
+    report={'export':str(final),'sha256':sha.split()[0],'start':started,'end':now(),'wall_seconds':round(time.monotonic()-tick,2),'stages_seconds':times,'aac_analysis':peak,'mastering':mastering,'work':str(work),'scene_sha256':hashlib.sha256((work/'scene.json').read_bytes()).hexdigest()}
+    with receipt.with_suffix('.report.json').open('x') as f:f.write(json.dumps(report,indent=2)+'\n')
+    log(f'- {started} → {now()} — {args.receipt} published once: {final}; SHA256 {sha.split()[0]}; encoded AAC {peak["input_i"]} LUFS / {peak["input_tp"]} dBTP; pipeline {report["wall_seconds"]} s.')
+    print(sha.strip());print(probe);print(f'Encoded AAC: {peak["input_i"]} LUFS / {peak["input_tp"]} dBTP; pipeline wall time: {report["wall_seconds"]} s')
 
 if __name__=='__main__':main()
