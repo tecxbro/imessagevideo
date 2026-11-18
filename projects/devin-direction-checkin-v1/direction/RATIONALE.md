@@ -13,3 +13,6 @@ Treatment A (TREATMENTS.md): one continuous camera over one thread; time passes 
 | D6 | Small, low, static end card | Large centred line, authored green speech mark (not Apple's), continuous drift; no identical frames in last 2 s. |
 Own note: the walk was tiny/empty; phone now >=45% frame height with larger route and walker.
 Cost: 24 s -> 28 s, arrival moved f510 -> f580.
+
+## v2 -> v3 (sound/edit exchange)
+Sound specialist's one picture revision, accepted: walk v2 f210-419 retimed to v3 f210-299 in scene keyframes (endpoints kept, ETA/clock still paired); later timing shifts -120 frames (frame-map.json). Opening camera reframed so the + tap is on screen at f90. Ledger now lists only visible, soundable actions (35). Final: 720 frames, 24 s, arrival f460.

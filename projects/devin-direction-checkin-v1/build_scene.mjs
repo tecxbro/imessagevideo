@@ -3,9 +3,11 @@ import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {rect, text, group, MessageBubble, Composer, Avatar, BottomSheet, CameraRig} from '../../skill/imessage-motion-recreation/director/components.mjs';
 import {stateAt} from '../../skill/imessage-motion-recreation/scripts/engines/common.mjs';
+import {retimeScene, visibleEvents} from './timeline_v3.mjs';
 
 export const CONFIG = {
   width:1920,height:1080,fps:30,frames:840,
+  retime:{start:210,end:419,frames:90},
   names:{sender:'Maya',friend:'Sam'},
   copy:{ask:"Text me when you're home?",title:'Check In',mode:'When I Arrive',destination:'Home · Walking',eta:'About {min} min',received:'Check In · Maya · Home',arrived:'Arrived',arrival:'Maya has arrived · 12:00',completed:'✓  Completed',date:'Today 11:42 PM',home:'Home',draft:'are you home yet?',heart:'❤️',end:'Check In. Right in Messages.',placeholder:'iMessage',apps:['Photos','Camera','Location','Check In']},
   times:{ask:12,plus:90,sheet:96,sheetUp:120,row:132,draft:140,draftIn:165,send:186,sent:204,pull:210,pullEnd:265,route:230,routeEnd:405,reveal:420,center:444,typeStart:445,typeEnd:560,home:575,arrival:580,deleteStart:608,deleteEnd:661,heartSend:690,heartReceive:735,end:750,settle:800,tapDuration:12,flightDuration:15,askMove:12,askFade:7},
@@ -13,7 +15,7 @@ export const CONFIG = {
   eta:[{frame:204,min:18,clock:'11:42'},{frame:250,min:15,clock:'11:45'},{frame:280,min:12,clock:'11:48'},{frame:310,min:9,clock:'11:51'},{frame:340,min:6,clock:'11:54'},{frame:370,min:3,clock:'11:57'},{frame:400,min:1,clock:'11:59'},{frame:575,min:1,clock:'12:00'}],
   colors:{background:'#F1F0ED',blue:'#0A84FF',incoming:'#E9E9EB',ink:'#17181C',muted:'#85858B',green:'#24834B',greenLight:'#E9F6ED',bezel:'#18191D',line:'#D9D9DE',white:'#FFFFFF'},
   layout:{mayaX:520,mayaWalkX:520,samX:1900,phoneY:80,routeY:650,homeX:1770,homeY:532.5},
-  camera:[{f:0,s:1.6,x:-304,y:-75},{f:74,s:1.6,x:-304,y:-105},{f:120,s:1.4,x:-146,y:-550},{f:186,s:1.4,x:-146,y:-535},{f:209,s:1.4,x:-146,y:-220},{f:265,s:.82,x:-240,y:70},{f:419,s:.84,x:-252,y:58},{f:444,s:1.35,x:-1950.6,y:-470},{f:560,s:1.35,x:-1950.6,y:-470},{f:608,s:1.35,x:-1950.6,y:-468},{f:705,s:1.35,x:-1950.6,y:-466},{f:735,s:.8,x:-175,y:0},{f:780,s:.8,x:-175,y:0},{f:839,s:.81,x:-194,y:-8}],
+  camera:[{f:0,s:1.6,x:-304,y:-75},{f:50,s:1.6,x:-304,y:-101},{f:74,s:1.4,x:-146,y:-550},{f:120,s:1.4,x:-146,y:-550},{f:186,s:1.4,x:-146,y:-535},{f:209,s:1.4,x:-146,y:-220},{f:265,s:.82,x:-240,y:70},{f:419,s:.84,x:-252,y:58},{f:444,s:1.35,x:-1950.6,y:-470},{f:560,s:1.35,x:-1950.6,y:-470},{f:608,s:1.35,x:-1950.6,y:-468},{f:705,s:1.35,x:-1950.6,y:-466},{f:735,s:.8,x:-175,y:0},{f:780,s:.8,x:-175,y:0},{f:839,s:.81,x:-194,y:-8}],
   presence:{maya:[[0,1],[420,1],[424,0],[728,0],[735,1]],sam:[[0,0],[420,0],[432,1]]},
 };
 const C=CONFIG.colors,T=CONFIG.times,P=CONFIG.copy;
@@ -137,38 +139,13 @@ const scene={width:CONFIG.width,height:CONFIG.height,fps:CONFIG.fps,duration:CON
 const walk=layers=>layers.flatMap(l=>[l,...walk(l.children??[])]);
 const all=walk(scene.layers);
 if(new Set(all.map(l=>l.id)).size!==all.length)throw Error('Duplicate actor IDs');
-function eventFrame(layer,event){
-  if(event.action==='tap'||event.action==='draft appears'||['bubbleAsk','bubbleHeart','bubbleHeartSam'].includes(layer.id))return Math.round(layer.start*scene.fps);
-  if(event.action==='type char'||event.action==='backspace'){
-    const changes=layer.keyframes.text.slice(1).filter((k,i)=>{
-      const previous=layer.keyframes.text[i].value;
-      return event.action==='type char'?k.value.length>previous.length:k.value.length<previous.length;
-    });
-    const index=layer.events.filter(e=>e.action===event.action).indexOf(event);
-    return Math.round(changes[index].t*scene.fps);
-  }
-  if(event.action==='send')return Math.round(layer.keyframes.y.at(-2).t*scene.fps);
-  if(event.action==='arrival'){
-    const anchor=layer.id==='walker'?layer.keyframes.x.at(-1):layer.children.find(l=>l.id===layer.id+'-mode').keyframes.text.at(-1);
-    return Math.round(anchor.t*scene.fps);
-  }
-  if(layer.id==='cardSam'&&event.action==='receive'){
-    for(let frame=0;frame<CONFIG.frames;frame++){
-      const t=frame/scene.fps,camera=stateAt(cam,t),phoneState=stateAt(sam,t),cardState=stateAt(layer,t);
-      const left=camera.x+camera.scaleX*(phoneState.x+cardState.x);
-      if(phoneState.opacity>.05&&left<scene.width&&left+camera.scaleX*390>0)return frame;
-    }
-    throw Error('Receiving card is never revealed');
-  }
-  throw Error('No generated scene anchor for '+layer.id);
-}
-const events=all.flatMap(layer=>(layer.events??[]).map(e=>{
-  const frame=eventFrame(layer,e),time=frame/scene.fps,s=stateAt(layer,time);
-  if(time<(s.start??0)||time>=(s.end??scene.duration))throw Error('Inactive event actor '+layer.id);
-  return {...e,frame,actor:layer.id};
-})).sort((a,b)=>a.frame-b.frame);
+const {scene:finalScene,frameMap}=retimeScene(scene,CONFIG.retime);
+finalScene.title='Check In — One thread, one walk (v3)';
+finalScene.source.notes='Authored Check In UI approximation, endpoint-preserving 90-frame walk; visible-only soundable ledger. Arial fallback; no Apple marks or SF Symbols. Silent picture.';
+const events=visibleEvents(finalScene);
 const byFrame={};for(const e of events)(byFrame[e.frame]??=[]).push(e);
 const output=path.dirname(fileURLToPath(import.meta.url));
-fs.writeFileSync(path.join(output,'scene.json'),JSON.stringify(scene,null,2)+'\n');
-fs.writeFileSync(path.join(output,'events.json'),JSON.stringify({fps:scene.fps,frames:CONFIG.frames,events:byFrame},null,2)+'\n');
-console.log(JSON.stringify({layers:all.length,frames:CONFIG.frames,events:events.length,output}));
+fs.writeFileSync(path.join(output,'scene.json'),JSON.stringify(finalScene,null,2)+'\n');
+fs.writeFileSync(path.join(output,'events.json'),JSON.stringify({fps:finalScene.fps,frames:frameMap.frames,events:byFrame},null,2)+'\n');
+fs.writeFileSync(path.join(output,'frame-map.json'),JSON.stringify(frameMap,null,2)+'\n');
+console.log(JSON.stringify({layers:all.length,frames:frameMap.frames,events:events.length,output}));
