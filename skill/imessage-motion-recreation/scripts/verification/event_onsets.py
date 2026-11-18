@@ -91,22 +91,24 @@ def compare_frames(source, candidate, sm, cm, events, tolerance=2, window=20, fr
     for event in events:
         f = event['frame']
         expected = float(np.interp(f, *zip(*frame_map))) if frame_map else f/sm['fps']*cm['fps']
-        a, b = crop(source, event['bbox']), crop(candidate, event['bbox'])
+        lo,hi = max(1,round(expected)-window),min(len(candidate)-1,round(expected)+window)
+        first = max(0,lo-2)
+        a = crop(source[max(0,f-1):f+1], event['bbox'])
+        b = crop(candidate[first:min(len(candidate),hi+3)], event['bbox'])
         # Match the signed RGB state transition, not simply the largest nearby motion.
-        signature = a[min(f,len(a)-1)].mean((0,1))-a[max(0,f-1)].mean((0,1))
+        signature = a[-1].mean((0,1))-a[0].mean((0,1))
         trajectory = b.mean((1,2))
         differences = np.diff(trajectory, axis=0)
-        lo,hi = max(1,round(expected)-window),min(len(b)-1,round(expected)+window)
         indices = np.arange(lo,hi+1)
         if event['kind']=='settle':
             strength = np.linalg.norm(differences,axis=1)
-            matches = [i for i in indices if i>=2 and strength[i-2]>2 and strength[i-1:min(i+2,len(strength))].max()<2]
+            matches = [i for i in indices if i>=2 and strength[i-2-first]>2 and strength[i-1-first:min(i+2-first,len(strength))].max()<2]
             found = int(min(matches,key=lambda i:abs(i-expected))) if matches else None
         else:
             norm = np.linalg.norm(signature)
-            scores = np.linalg.norm(differences[indices-1]-signature,axis=1)
+            scores = np.linalg.norm(differences[indices-1-first]-signature,axis=1)
             valid = scores < max(3, norm*.65)
-            valid &= np.linalg.norm(differences[indices-1],axis=1)>max(2,norm*.25)
+            valid &= np.linalg.norm(differences[indices-1-first],axis=1)>max(2,norm*.25)
             matches = indices[valid]
             found = int(matches[np.argmin(scores[valid])]) if len(matches) else None
         delta = None if found is None else round(found-expected,3)
