@@ -4,6 +4,7 @@ from pathlib import Path
 import subprocess
 import tempfile
 import unittest
+from unittest import mock
 
 import numpy as np
 
@@ -13,6 +14,17 @@ spec.loader.exec_module(onsets)
 
 
 class EventOnsets(unittest.TestCase):
+    def test_cadence_option_fallback_and_cache(self):
+        for help_text,expected in [('-vsync sync_method', '-vsync'), ('-fps_mode fps_mode', '-fps_mode'), ('-fps_mode[:<stream_spec>]  set framerate mode', '-fps_mode')]:
+            onsets.cadence_option.cache_clear()
+            try:
+                with mock.patch.object(onsets.subprocess,'check_output',return_value=help_text) as probe:
+                    self.assertEqual(onsets.cadence_option(),expected)
+                    self.assertEqual(onsets.cadence_option(),expected)
+                    probe.assert_called_once()
+            finally:
+                onsets.cadence_option.cache_clear()
+
     def clip(self, path, onset, width=160, height=96):
         frames=np.full((40,height,width,3),240,np.uint8)
         if onset is not None:

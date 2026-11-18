@@ -1,6 +1,7 @@
 """Local temporal review gate. Frames are zero-based; boxes are normalized xyxy."""
 import argparse
 import csv
+from functools import lru_cache
 import json
 from pathlib import Path
 import subprocess
@@ -9,12 +10,18 @@ import time
 import numpy as np
 
 
+@lru_cache(maxsize=1)
+def cadence_option():
+    options = subprocess.check_output(['ffmpeg', '-hide_banner', '-h', 'full'], text=True, stderr=subprocess.STDOUT)
+    return '-fps_mode' if any(line.split()[0].split('[')[0] == '-fps_mode' for line in options.splitlines() if line.split()) else '-vsync'
+
+
 def decode(path):
     probe = json.loads(subprocess.check_output(['ffprobe', '-v', 'error', '-select_streams', 'v:0', '-show_streams', '-of', 'json', str(path)]))['streams'][0]
     n, d = map(int, probe['avg_frame_rate'].split('/'))
     width = min(480, int(probe['width']))
     height = max(1, round(int(probe['height']) * width / int(probe['width'])))
-    process = subprocess.Popen(['ffmpeg', '-v', 'error', '-i', str(path), '-map', '0:v:0', '-vf', f'scale={width}:{height}', '-fps_mode', 'passthrough', '-f', 'rawvideo', '-pix_fmt', 'rgb24', '-'], stdout=subprocess.PIPE)
+    process = subprocess.Popen(['ffmpeg', '-v', 'error', '-i', str(path), '-map', '0:v:0', '-vf', f'scale={width}:{height}', cadence_option(), 'passthrough', '-f', 'rawvideo', '-pix_fmt', 'rgb24', '-'], stdout=subprocess.PIPE)
     frames = []
     size = width * height * 3
     while True:
