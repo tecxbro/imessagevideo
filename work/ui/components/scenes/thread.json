@@ -1,0 +1,1299 @@
+{
+ "width": 960,
+ "height": 540,
+ "fps": 30,
+ "duration": 6,
+ "background": "#f2f2f7",
+ "layers": [
+  {
+   "id": "thread",
+   "type": "group",
+   "x": 0,
+   "y": 0,
+   "children": [
+    {
+     "id": "in1",
+     "type": "group",
+     "x": 270,
+     "y": 26,
+     "children": [
+      {
+       "id": "in1-msg",
+       "type": "group",
+       "x": 0,
+       "y": 0,
+       "children": [
+        {
+         "id": "in1-body",
+         "type": "rect",
+         "x": 0,
+         "y": 0,
+         "width": 243,
+         "height": 49,
+         "fill": "#e6e6e6",
+         "radius": 24.5
+        },
+        {
+         "id": "in1-copy",
+         "type": "text",
+         "text": "Sure, it’ll be $166.89",
+         "x": 16,
+         "y": 8.8,
+         "fontSize": 22,
+         "fontFamily": "-apple-system, \"SF Pro Text\", \"Helvetica Neue\", Arial, sans-serif",
+         "fill": "#000000",
+         "lineHeight": 26.5
+        }
+       ]
+      }
+     ],
+     "meta": {
+      "w": 243,
+      "h": 49,
+      "r": 24.5,
+      "lines": [
+       "Sure, it’ll be $166.89"
+      ],
+      "overflow": false
+     }
+    },
+    {
+     "id": "out1",
+     "type": "group",
+     "x": 382,
+     "y": 83,
+     "children": [
+      {
+       "id": "out1-msg",
+       "type": "group",
+       "x": 0,
+       "y": 0,
+       "children": [
+        {
+         "id": "out1-body",
+         "type": "path",
+         "d": "M 25.30 0.00 H 282.70 C 296.67 0.00 308.00 11.33 308.00 25.30 V 76.70 C 308.00 90.61 300.92 84.84 289.96 92.76 C 289.56 95.62 289.66 97.16 291.16 98.92 C 289.08 100.68 291.72 103.39 293.04 104.53 C 293.92 104.53 294.80 104.02 290.40 103.14 C 287.54 102.88 284.24 101.78 280.94 102.00 H 25.30 C 11.33 102.00 0.00 90.67 0.00 76.70 V 25.30 C 0.00 11.33 11.33 0.00 25.30 0.00 Z",
+         "fill": "#3581f4"
+        },
+        {
+         "id": "out1-copy",
+         "type": "text",
+         "text": "can you order my weekly\ngroceries? 🛒 and maybe a\ncake too",
+         "x": 16,
+         "y": 8.8,
+         "fontSize": 22,
+         "fontFamily": "-apple-system, \"SF Pro Text\", \"Helvetica Neue\", Arial, sans-serif",
+         "fill": "#ffffff",
+         "lineHeight": 26.5
+        }
+       ]
+      }
+     ],
+     "meta": {
+      "w": 308,
+      "h": 102,
+      "r": 25.299999999999997,
+      "lines": [
+       "can you order my weekly",
+       "groceries? 🛒 and maybe a",
+       "cake too"
+      ],
+      "overflow": false
+     }
+    },
+    {
+     "id": "in2",
+     "type": "group",
+     "x": 270,
+     "y": 193,
+     "children": [
+      {
+       "id": "in2-msg",
+       "type": "group",
+       "x": 0,
+       "y": 0,
+       "children": [
+        {
+         "id": "in2-body",
+         "type": "rect",
+         "x": 0,
+         "y": 0,
+         "width": 235,
+         "height": 75,
+         "fill": "#e6e6e6",
+         "radius": 25.299999999999997
+        },
+        {
+         "id": "in2-copy",
+         "type": "text",
+         "text": "Apple Cash request\nbelow",
+         "x": 16,
+         "y": 8.8,
+         "fontSize": 22,
+         "fontFamily": "-apple-system, \"SF Pro Text\", \"Helvetica Neue\", Arial, sans-serif",
+         "fill": "#000000",
+         "lineHeight": 26.5
+        }
+       ]
+      }
+     ],
+     "meta": {
+      "w": 235,
+      "h": 75,
+      "r": 25.299999999999997,
+      "lines": [
+       "Apple Cash request",
+       "below"
+      ],
+      "overflow": false
+     }
+    },
+    {
+     "id": "cash",
+     "type": "group",
+     "x": 270,
+     "y": 276,
+     "children": [
+      {
+       "id": "cash-badge",
+       "type": "group",
+       "x": -12.936000000000002,
+       "y": -13.860000000000001,
+       "children": [
+        {
+         "id": "cash-badge-disc",
+         "type": "circle",
+         "x": 0,
+         "y": 0,
+         "width": 46.2,
+         "height": 46.2,
+         "fill": "#ffffff",
+         "stroke": "#d1d1d6",
+         "strokeWidth": 0.5
+        },
+        {
+         "id": "cash-badge-i",
+         "type": "text",
+         "text": "",
+         "x": 23.1,
+         "y": 13.860000000000001,
+         "fontSize": 17.556,
+         "fontFamily": "-apple-system, \"SF Pro Text\", \"Helvetica Neue\", Arial, sans-serif",
+         "fill": "#000",
+         "textAnchor": "middle",
+         "fontWeight": 700
+        }
+       ]
+      },
+      {
+       "id": "cash-card",
+       "type": "group",
+       "x": 0,
+       "y": 0,
+       "children": [
+        {
+         "id": "cash-surface",
+         "type": "path",
+         "d": "M 204.80 0.00 H 35.20 C 15.76 0.00 0.00 15.76 0.00 35.20 V 84.70 C 0.00 104.06 9.86 96.03 25.10 107.04 C 25.50 111.02 25.40 113.17 23.90 115.61 C 26.32 118.06 22.65 121.84 20.81 123.42 C 19.59 123.42 18.37 122.72 24.49 121.48 C 28.47 121.12 33.06 119.59 37.65 119.90 H 204.80 C 224.24 119.90 240.00 104.14 240.00 84.70 V 35.20 C 240.00 15.76 224.24 0.00 204.80 0.00 Z",
+         "fill": "#1b1b1b"
+        },
+        {
+         "id": "cash-title",
+         "type": "text",
+         "text": "Cash",
+         "x": 18.7,
+         "y": 12.100000000000001,
+         "fontSize": 22,
+         "fontFamily": "-apple-system, \"SF Pro Text\", \"Helvetica Neue\", Arial, sans-serif",
+         "fill": "#ffffff",
+         "fontWeight": 600
+        },
+        {
+         "id": "cash-caption",
+         "type": "text",
+         "text": "$166.89 Request",
+         "x": 18.7,
+         "y": 41.800000000000004,
+         "fontSize": 17.6,
+         "fontFamily": "-apple-system, \"SF Pro Text\", \"Helvetica Neue\", Arial, sans-serif",
+         "fill": "#c7c7cc"
+        },
+        {
+         "id": "cash-cta",
+         "type": "group",
+         "x": 18.7,
+         "y": 69.30000000000001,
+         "children": [
+          {
+           "id": "cash-cta-pill",
+           "type": "rect",
+           "x": 0,
+           "y": 0,
+           "width": 202.6,
+           "height": 44,
+           "fill": "#ffffff",
+           "radius": 22
+          },
+          {
+           "id": "cash-cta-label",
+           "type": "text",
+           "text": "Pay",
+           "x": 101.3,
+           "y": 12.32,
+           "fontSize": 19.8,
+           "fontFamily": "-apple-system, \"SF Pro Text\", \"Helvetica Neue\", Arial, sans-serif",
+           "fill": "#000000",
+           "textAnchor": "middle",
+           "fontWeight": 600
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "meta": {
+      "w": 240,
+      "h": 119.9
+     }
+    },
+    {
+     "id": "in3",
+     "type": "group",
+     "x": 270,
+     "y": 405.9,
+     "children": [
+      {
+       "id": "in3-msg",
+       "type": "group",
+       "x": 0,
+       "y": 0,
+       "children": [
+        {
+         "id": "in3-body",
+         "type": "path",
+         "d": "M 241.50 0.00 H 24.50 C 10.97 0.00 0.00 10.97 0.00 24.50 V 24.50 C 0.00 37.98 6.86 32.38 17.47 40.05 C 17.87 42.82 17.77 44.31 16.27 46.02 C 18.32 47.72 15.77 50.35 14.49 51.45 C 13.63 51.45 12.78 50.96 17.04 50.10 C 19.81 49.85 23.01 48.79 26.20 49.00 H 241.50 C 255.03 49.00 266.00 38.03 266.00 24.50 V 24.50 C 266.00 10.97 255.03 0.00 241.50 0.00 Z",
+         "fill": "#e6e6e6"
+        },
+        {
+         "id": "in3-copy",
+         "type": "text",
+         "text": "Got it, ordering now 🛒",
+         "x": 16,
+         "y": 8.8,
+         "fontSize": 22,
+         "fontFamily": "-apple-system, \"SF Pro Text\", \"Helvetica Neue\", Arial, sans-serif",
+         "fill": "#000000",
+         "lineHeight": 26.5
+        }
+       ]
+      },
+      {
+       "id": "in3-tapback",
+       "type": "group",
+       "x": 235.904,
+       "y": -12.100000000000001,
+       "children": [
+        {
+         "id": "in3-tapback-bump1",
+         "type": "circle",
+         "x": 31.790000000000006,
+         "y": 33.473,
+         "width": 11.219999999999999,
+         "height": 11.219999999999999,
+         "fill": "#3581f4"
+        },
+        {
+         "id": "in3-tapback-bump2",
+         "type": "circle",
+         "x": 43.571000000000005,
+         "y": 43.01,
+         "width": 5.236000000000001,
+         "height": 5.236000000000001,
+         "fill": "#3581f4"
+        },
+        {
+         "id": "in3-tapback-badge",
+         "type": "rect",
+         "x": 0,
+         "y": 0,
+         "width": 41.888000000000005,
+         "height": 37.4,
+         "fill": "#3581f4",
+         "radius": 15.707999999999998
+        },
+        {
+         "id": "in3-tapback-emoji",
+         "type": "text",
+         "text": "👍",
+         "x": 20.944000000000003,
+         "y": 5.984,
+         "fontSize": 21.691999999999997,
+         "fontFamily": "-apple-system, \"SF Pro Text\", \"Helvetica Neue\", Arial, sans-serif",
+         "fill": "#000000",
+         "textAnchor": "middle"
+        }
+       ],
+       "originX": 10.472000000000001,
+       "originY": 37.4
+      }
+     ],
+     "meta": {
+      "w": 266,
+      "h": 49,
+      "r": 24.5,
+      "lines": [
+       "Got it, ordering now 🛒"
+      ],
+      "overflow": false
+     }
+    },
+    {
+     "id": "grp",
+     "type": "group",
+     "x": 320.6,
+     "y": 484.9,
+     "children": [
+      {
+       "id": "grp-name",
+       "type": "text",
+       "text": "Renata",
+       "x": 6.4,
+       "y": 0,
+       "fontSize": 15.399999999999999,
+       "fontFamily": "-apple-system, \"SF Pro Text\", \"Helvetica Neue\", Arial, sans-serif",
+       "fill": "#8e8e93",
+       "textAnchor": "start"
+      },
+      {
+       "id": "grp-msg",
+       "type": "group",
+       "x": 0,
+       "y": 20.9,
+       "children": [
+        {
+         "id": "grp-body",
+         "type": "rect",
+         "x": 0,
+         "y": 0,
+         "width": 241,
+         "height": 49,
+         "fill": "#e6e6e6",
+         "radius": 24.5
+        },
+        {
+         "id": "grp-copy",
+         "type": "text",
+         "text": "how about this one?",
+         "x": 16,
+         "y": 8.8,
+         "fontSize": 22,
+         "fontFamily": "-apple-system, \"SF Pro Text\", \"Helvetica Neue\", Arial, sans-serif",
+         "fill": "#000000",
+         "lineHeight": 26.5
+        }
+       ]
+      },
+      {
+       "id": "grp-avatar",
+       "type": "group",
+       "x": -42.3,
+       "y": 33.60000000000001,
+       "children": [
+        {
+         "id": "grp-avatar-disc",
+         "type": "circle",
+         "x": 0,
+         "y": 0,
+         "width": 36.3,
+         "height": 36.3,
+         "fill": "#e8d0e9"
+        },
+        {
+         "id": "grp-avatar-i",
+         "type": "text",
+         "text": "R",
+         "x": 18.15,
+         "y": 10.164,
+         "fontSize": 12.342,
+         "fontFamily": "-apple-system, \"SF Pro Text\", \"Helvetica Neue\", Arial, sans-serif",
+         "fill": "#000000",
+         "textAnchor": "middle",
+         "fontWeight": 600
+        }
+       ]
+      }
+     ],
+     "meta": {
+      "w": 241,
+      "h": 69.9,
+      "r": 24.5,
+      "lines": [
+       "how about this one?"
+      ],
+      "overflow": false
+     }
+    },
+    {
+     "id": "typing",
+     "type": "group",
+     "x": 270,
+     "y": 566.8,
+     "children": [
+      {
+       "id": "typing-pill",
+       "type": "rect",
+       "x": 0,
+       "y": 0,
+       "width": 68.2,
+       "height": 37.4,
+       "fill": "#e6e6e6",
+       "radius": 18.7
+      },
+      {
+       "id": "typing-dot0",
+       "type": "circle",
+       "x": 8.8,
+       "y": 14.85,
+       "width": 11,
+       "height": 11,
+       "fill": "#8e8e93",
+       "keyframes": {
+        "y": [
+         {
+          "t": 0,
+          "value": 14.85
+         },
+         {
+          "t": 1.2,
+          "value": 14.85
+         },
+         {
+          "t": 1.45,
+          "value": 7.149999999999999,
+          "ease": "easeOut"
+         },
+         {
+          "t": 1.75,
+          "value": 14.85,
+          "ease": "easeIn"
+         },
+         {
+          "t": 2.1,
+          "value": 14.85
+         },
+         {
+          "t": 2.35,
+          "value": 7.149999999999999,
+          "ease": "easeOut"
+         },
+         {
+          "t": 2.6500000000000004,
+          "value": 14.85,
+          "ease": "easeIn"
+         },
+         {
+          "t": 3,
+          "value": 14.85
+         },
+         {
+          "t": 3.25,
+          "value": 7.149999999999999,
+          "ease": "easeOut"
+         },
+         {
+          "t": 3.55,
+          "value": 14.85,
+          "ease": "easeIn"
+         },
+         {
+          "t": 3.9000000000000004,
+          "value": 14.85
+         },
+         {
+          "t": 4.15,
+          "value": 7.149999999999999,
+          "ease": "easeOut"
+         },
+         {
+          "t": 4.45,
+          "value": 14.85,
+          "ease": "easeIn"
+         },
+         {
+          "t": 4.8,
+          "value": 14.85
+         },
+         {
+          "t": 5.05,
+          "value": 7.149999999999999,
+          "ease": "easeOut"
+         },
+         {
+          "t": 5.35,
+          "value": 14.85,
+          "ease": "easeIn"
+         },
+         {
+          "t": 5.7,
+          "value": 14.85
+         },
+         {
+          "t": 5.95,
+          "value": 7.149999999999999,
+          "ease": "easeOut"
+         },
+         {
+          "t": 6.25,
+          "value": 14.85,
+          "ease": "easeIn"
+         }
+        ]
+       }
+      },
+      {
+       "id": "typing-dot1",
+       "type": "circle",
+       "x": 28.6,
+       "y": 14.85,
+       "width": 11,
+       "height": 11,
+       "fill": "#8e8e93",
+       "keyframes": {
+        "y": [
+         {
+          "t": 0,
+          "value": 14.85
+         },
+         {
+          "t": 1.3499999999999999,
+          "value": 14.85
+         },
+         {
+          "t": 1.5999999999999999,
+          "value": 7.149999999999999,
+          "ease": "easeOut"
+         },
+         {
+          "t": 1.9,
+          "value": 14.85,
+          "ease": "easeIn"
+         },
+         {
+          "t": 2.25,
+          "value": 14.85
+         },
+         {
+          "t": 2.5,
+          "value": 7.149999999999999,
+          "ease": "easeOut"
+         },
+         {
+          "t": 2.8,
+          "value": 14.85,
+          "ease": "easeIn"
+         },
+         {
+          "t": 3.15,
+          "value": 14.85
+         },
+         {
+          "t": 3.4,
+          "value": 7.149999999999999,
+          "ease": "easeOut"
+         },
+         {
+          "t": 3.7,
+          "value": 14.85,
+          "ease": "easeIn"
+         },
+         {
+          "t": 4.050000000000001,
+          "value": 14.85
+         },
+         {
+          "t": 4.300000000000001,
+          "value": 7.149999999999999,
+          "ease": "easeOut"
+         },
+         {
+          "t": 4.6000000000000005,
+          "value": 14.85,
+          "ease": "easeIn"
+         },
+         {
+          "t": 4.95,
+          "value": 14.85
+         },
+         {
+          "t": 5.2,
+          "value": 7.149999999999999,
+          "ease": "easeOut"
+         },
+         {
+          "t": 5.5,
+          "value": 14.85,
+          "ease": "easeIn"
+         },
+         {
+          "t": 5.8500000000000005,
+          "value": 14.85
+         },
+         {
+          "t": 6.1000000000000005,
+          "value": 7.149999999999999,
+          "ease": "easeOut"
+         },
+         {
+          "t": 6.4,
+          "value": 14.85,
+          "ease": "easeIn"
+         }
+        ]
+       }
+      },
+      {
+       "id": "typing-dot2",
+       "type": "circle",
+       "x": 48.400000000000006,
+       "y": 14.85,
+       "width": 11,
+       "height": 11,
+       "fill": "#8e8e93",
+       "keyframes": {
+        "y": [
+         {
+          "t": 0,
+          "value": 14.85
+         },
+         {
+          "t": 1.5,
+          "value": 14.85
+         },
+         {
+          "t": 1.75,
+          "value": 7.149999999999999,
+          "ease": "easeOut"
+         },
+         {
+          "t": 2.05,
+          "value": 14.85,
+          "ease": "easeIn"
+         },
+         {
+          "t": 2.4,
+          "value": 14.85
+         },
+         {
+          "t": 2.65,
+          "value": 7.149999999999999,
+          "ease": "easeOut"
+         },
+         {
+          "t": 2.95,
+          "value": 14.85,
+          "ease": "easeIn"
+         },
+         {
+          "t": 3.3,
+          "value": 14.85
+         },
+         {
+          "t": 3.55,
+          "value": 7.149999999999999,
+          "ease": "easeOut"
+         },
+         {
+          "t": 3.8499999999999996,
+          "value": 14.85,
+          "ease": "easeIn"
+         },
+         {
+          "t": 4.2,
+          "value": 14.85
+         },
+         {
+          "t": 4.45,
+          "value": 7.149999999999999,
+          "ease": "easeOut"
+         },
+         {
+          "t": 4.75,
+          "value": 14.85,
+          "ease": "easeIn"
+         },
+         {
+          "t": 5.1,
+          "value": 14.85
+         },
+         {
+          "t": 5.35,
+          "value": 7.149999999999999,
+          "ease": "easeOut"
+         },
+         {
+          "t": 5.6499999999999995,
+          "value": 14.85,
+          "ease": "easeIn"
+         },
+         {
+          "t": 6,
+          "value": 14.85
+         },
+         {
+          "t": 6.25,
+          "value": 7.149999999999999,
+          "ease": "easeOut"
+         },
+         {
+          "t": 6.55,
+          "value": 14.85,
+          "ease": "easeIn"
+         }
+        ]
+       }
+      }
+     ],
+     "meta": {
+      "w": 68.2,
+      "h": 37.4
+     },
+     "keyframes": {
+      "opacity": [
+       {
+        "t": 0,
+        "value": 0
+       },
+       {
+        "t": 1.1,
+        "value": 0,
+        "ease": "hold"
+       },
+       {
+        "t": 1.2,
+        "value": 1
+       }
+      ]
+     }
+    },
+    {
+     "id": "sent",
+     "type": "group",
+     "x": 453,
+     "y": 614.1999999999999,
+     "children": [
+      {
+       "id": "sent-msg",
+       "type": "group",
+       "x": 0,
+       "y": 0,
+       "children": [
+        {
+         "id": "sent-body",
+         "type": "path",
+         "d": "M 25.30 0.00 H 211.70 C 225.67 0.00 237.00 11.33 237.00 25.30 V 49.70 C 237.00 63.62 229.92 57.84 218.96 65.76 C 218.56 68.62 218.66 70.16 220.16 71.92 C 218.08 73.68 220.72 76.39 222.04 77.53 C 222.92 77.53 223.80 77.02 219.40 76.14 C 216.54 75.88 213.24 74.78 209.94 75.00 H 25.30 C 11.33 75.00 0.00 63.67 0.00 49.70 V 25.30 C 0.00 11.33 11.33 0.00 25.30 0.00 Z",
+         "fill": "#3581f4"
+        },
+        {
+         "id": "sent-copy",
+         "type": "text",
+         "text": "Yo i'm bored, chess\nbattle?",
+         "x": 16,
+         "y": 8.8,
+         "fontSize": 22,
+         "fontFamily": "-apple-system, \"SF Pro Text\", \"Helvetica Neue\", Arial, sans-serif",
+         "fill": "#ffffff",
+         "lineHeight": 26.5
+        }
+       ]
+      }
+     ],
+     "meta": {
+      "w": 237,
+      "h": 75,
+      "r": 25.299999999999997,
+      "lines": [
+       "Yo i'm bored, chess",
+       "battle?"
+      ],
+      "overflow": false
+     },
+     "keyframes": {
+      "opacity": [
+       {
+        "t": 4.4,
+        "value": 0
+       },
+       {
+        "t": 4.55,
+        "value": 1
+       }
+      ],
+      "y": [
+       {
+        "t": 4.4,
+        "value": 654.1999999999999
+       },
+       {
+        "t": 4.75,
+        "value": 614.1999999999999,
+        "ease": "easeOut"
+       }
+      ]
+     }
+    },
+    {
+     "id": "status",
+     "type": "text",
+     "text": "Delivered",
+     "x": 690,
+     "y": 693.1999999999999,
+     "fontSize": 15.84,
+     "fontFamily": "-apple-system, \"SF Pro Text\", \"Helvetica Neue\", Arial, sans-serif",
+     "fill": "#8e8e93",
+     "textAnchor": "end",
+     "start": 4.8
+    }
+   ],
+   "keyframes": {
+    "y": [
+     {
+      "t": 0,
+      "value": 0
+     },
+     {
+      "t": 3,
+      "value": 0,
+      "ease": "hold"
+     },
+     {
+      "t": 3.6,
+      "value": -190,
+      "ease": "easeInOut"
+     }
+    ]
+   }
+  },
+  {
+   "id": "comp",
+   "type": "group",
+   "x": 270,
+   "y": 490,
+   "children": [
+    {
+     "id": "comp-plus",
+     "type": "circle",
+     "x": 0,
+     "y": 0,
+     "width": 34,
+     "height": 34,
+     "fill": "#ffffff",
+     "shadow": {
+      "x": 0,
+      "y": 1,
+      "blur": 3,
+      "color": "#00000022"
+     }
+    },
+    {
+     "id": "comp-plus-glyph",
+     "type": "group",
+     "x": 0,
+     "y": 0,
+     "children": [
+      {
+       "id": "comp-plus-h",
+       "type": "rect",
+       "x": 10.2,
+       "y": 16.048,
+       "width": 13.600000000000001,
+       "height": 1.9040000000000001,
+       "fill": "#3c3c43",
+       "radius": 0.68
+      },
+      {
+       "id": "comp-plus-v",
+       "type": "rect",
+       "x": 16.048,
+       "y": 10.2,
+       "width": 1.9040000000000001,
+       "height": 13.600000000000001,
+       "fill": "#3c3c43",
+       "radius": 0.68
+      }
+     ]
+    },
+    {
+     "id": "comp-field",
+     "type": "rect",
+     "x": 42,
+     "y": 0,
+     "width": 378,
+     "height": 34,
+     "fill": "#ffffff",
+     "radius": 17,
+     "stroke": "#d1d1d6",
+     "strokeWidth": 0.5,
+     "shadow": {
+      "x": 0,
+      "y": 1,
+      "blur": 4,
+      "color": "#0000001c"
+     }
+    },
+    {
+     "id": "comp-placeholder",
+     "type": "text",
+     "text": "iMessage",
+     "x": 53.9,
+     "y": 8.84,
+     "fontSize": 14.28,
+     "fontFamily": "-apple-system, \"SF Pro Text\", \"Helvetica Neue\", Arial, sans-serif",
+     "fill": "#8e8e93",
+     "end": 1.4
+    },
+    {
+     "id": "comp-placeholder-post",
+     "type": "text",
+     "text": "iMessage",
+     "x": 53.9,
+     "y": 8.84,
+     "fontSize": 14.28,
+     "fontFamily": "-apple-system, \"SF Pro Text\", \"Helvetica Neue\", Arial, sans-serif",
+     "fill": "#8e8e93",
+     "start": 4.4
+    },
+    {
+     "id": "comp-mic",
+     "type": "group",
+     "x": 395.52,
+     "y": 6.800000000000001,
+     "children": [
+      {
+       "id": "comp-mic-capsule",
+       "type": "rect",
+       "x": 2.72,
+       "y": 0,
+       "width": 5.44,
+       "height": 8.432,
+       "fill": "#8e8e93",
+       "radius": 2.72
+      },
+      {
+       "id": "comp-mic-arc",
+       "type": "path",
+       "d": "M -2.72 5.984000000000001 Q -2.72 11.968000000000002 2.72 11.968000000000002 Q 8.16 11.968000000000002 8.16 5.984000000000001",
+       "fill": "none",
+       "stroke": "#8e8e93",
+       "strokeWidth": 1.1968
+      },
+      {
+       "id": "comp-mic-stem",
+       "type": "rect",
+       "x": 4.896000000000001,
+       "y": 11.968000000000002,
+       "width": 1.088,
+       "height": 2.72,
+       "fill": "#8e8e93",
+       "radius": 0.544
+      },
+      {
+       "id": "comp-mic-base",
+       "type": "rect",
+       "x": 2.9920000000000004,
+       "y": 14.688000000000002,
+       "width": 4.896000000000001,
+       "height": 1.1968,
+       "fill": "#8e8e93",
+       "radius": 0.5984
+      }
+     ],
+     "end": 1.4
+    },
+    {
+     "id": "comp-mic-post",
+     "type": "group",
+     "x": 395.52,
+     "y": 6.800000000000001,
+     "children": [
+      {
+       "id": "comp-mic-capsule-post",
+       "type": "rect",
+       "x": 2.72,
+       "y": 0,
+       "width": 5.44,
+       "height": 8.432,
+       "fill": "#8e8e93",
+       "radius": 2.72
+      },
+      {
+       "id": "comp-mic-arc-post",
+       "type": "path",
+       "d": "M -2.72 5.984000000000001 Q -2.72 11.968000000000002 2.72 11.968000000000002 Q 8.16 11.968000000000002 8.16 5.984000000000001",
+       "fill": "none",
+       "stroke": "#8e8e93",
+       "strokeWidth": 1.1968
+      },
+      {
+       "id": "comp-mic-stem-post",
+       "type": "rect",
+       "x": 4.896000000000001,
+       "y": 11.968000000000002,
+       "width": 1.088,
+       "height": 2.72,
+       "fill": "#8e8e93",
+       "radius": 0.544
+      },
+      {
+       "id": "comp-mic-base-post",
+       "type": "rect",
+       "x": 2.9920000000000004,
+       "y": 14.688000000000002,
+       "width": 4.896000000000001,
+       "height": 1.1968,
+       "fill": "#8e8e93",
+       "radius": 0.5984
+      }
+     ],
+     "start": 4.4
+    },
+    {
+     "id": "comp-send",
+     "type": "group",
+     "x": 389.74,
+     "y": 3.74,
+     "children": [
+      {
+       "id": "comp-send-fill",
+       "type": "circle",
+       "x": 0,
+       "y": 0,
+       "width": 26.52,
+       "height": 26.52,
+       "fill": "#007efe",
+       "keyframes": {
+        "fill": [
+         {
+          "t": 0,
+          "value": "#007efe"
+         },
+         {
+          "t": 1.43,
+          "value": "#c2d2fd",
+          "ease": "hold"
+         },
+         {
+          "t": 1.4629999999999999,
+          "value": "#70a3ff"
+         },
+         {
+          "t": 1.5,
+          "value": "#007efe"
+         }
+        ]
+       }
+      },
+      {
+       "id": "comp-send-arrow",
+       "type": "path",
+       "d": "M 13.26 6.3648 L 13.26 19.0944 M 6.8952 11.138399999999999 L 13.26 6.3648 L 19.6248 11.138399999999999",
+       "fill": "none",
+       "stroke": "#ffffff",
+       "strokeWidth": 1.9889999999999999
+      }
+     ],
+     "start": 1.43,
+     "end": 4.4
+    },
+    {
+     "id": "comp-typed-0",
+     "type": "text",
+     "text": "Yo i",
+     "x": 53.9,
+     "y": 8.84,
+     "fontSize": 14.28,
+     "fontFamily": "-apple-system, \"SF Pro Text\", \"Helvetica Neue\", Arial, sans-serif",
+     "fill": "#000000",
+     "start": 1.4,
+     "end": 1.775
+    },
+    {
+     "id": "comp-typed-1",
+     "type": "text",
+     "text": "Yo i'm ",
+     "x": 53.9,
+     "y": 8.84,
+     "fontSize": 14.28,
+     "fontFamily": "-apple-system, \"SF Pro Text\", \"Helvetica Neue\", Arial, sans-serif",
+     "fill": "#000000",
+     "start": 1.775,
+     "end": 2.15
+    },
+    {
+     "id": "comp-typed-2",
+     "type": "text",
+     "text": "Yo i'm bore",
+     "x": 53.9,
+     "y": 8.84,
+     "fontSize": 14.28,
+     "fontFamily": "-apple-system, \"SF Pro Text\", \"Helvetica Neue\", Arial, sans-serif",
+     "fill": "#000000",
+     "start": 2.15,
+     "end": 2.5250000000000004
+    },
+    {
+     "id": "comp-typed-3",
+     "type": "text",
+     "text": "Yo i'm bored, ",
+     "x": 53.9,
+     "y": 8.84,
+     "fontSize": 14.28,
+     "fontFamily": "-apple-system, \"SF Pro Text\", \"Helvetica Neue\", Arial, sans-serif",
+     "fill": "#000000",
+     "start": 2.5250000000000004,
+     "end": 2.9000000000000004
+    },
+    {
+     "id": "comp-typed-4",
+     "type": "text",
+     "text": "Yo i'm bored, che",
+     "x": 53.9,
+     "y": 8.84,
+     "fontSize": 14.28,
+     "fontFamily": "-apple-system, \"SF Pro Text\", \"Helvetica Neue\", Arial, sans-serif",
+     "fill": "#000000",
+     "start": 2.9000000000000004,
+     "end": 3.2750000000000004
+    },
+    {
+     "id": "comp-typed-5",
+     "type": "text",
+     "text": "Yo i'm bored, chess b",
+     "x": 53.9,
+     "y": 8.84,
+     "fontSize": 14.28,
+     "fontFamily": "-apple-system, \"SF Pro Text\", \"Helvetica Neue\", Arial, sans-serif",
+     "fill": "#000000",
+     "start": 3.2750000000000004,
+     "end": 3.6500000000000004
+    },
+    {
+     "id": "comp-typed-6",
+     "type": "text",
+     "text": "Yo i'm bored, chess batt",
+     "x": 53.9,
+     "y": 8.84,
+     "fontSize": 14.28,
+     "fontFamily": "-apple-system, \"SF Pro Text\", \"Helvetica Neue\", Arial, sans-serif",
+     "fill": "#000000",
+     "start": 3.6500000000000004,
+     "end": 4.025
+    },
+    {
+     "id": "comp-typed-7",
+     "type": "text",
+     "text": "Yo i'm bored, chess battle?",
+     "x": 53.9,
+     "y": 8.84,
+     "fontSize": 14.28,
+     "fontFamily": "-apple-system, \"SF Pro Text\", \"Helvetica Neue\", Arial, sans-serif",
+     "fill": "#000000",
+     "start": 4.025,
+     "end": 4.4
+    },
+    {
+     "id": "comp-caret",
+     "type": "rect",
+     "x": 231.54399999999998,
+     "y": 8.16,
+     "width": 1.6,
+     "height": 17.68,
+     "fill": "#0088ff",
+     "radius": 0,
+     "end": 4.4
+    }
+   ],
+   "meta": {
+    "w": 420,
+    "h": 34
+   }
+  },
+  {
+   "id": "nav",
+   "type": "group",
+   "x": 270,
+   "y": 2,
+   "children": [
+    {
+     "id": "nav-bg",
+     "type": "rect",
+     "x": 0,
+     "y": 0,
+     "width": 420,
+     "height": 44.800000000000004,
+     "fill": "#f2f2f7e6",
+     "radius": 0,
+     "blur": 8
+    },
+    {
+     "id": "nav-back",
+     "type": "text",
+     "text": "‹",
+     "x": 9.799999999999999,
+     "y": 12.544000000000002,
+     "fontSize": 26.599999999999998,
+     "fontFamily": "-apple-system, \"SF Pro Text\", \"Helvetica Neue\", Arial, sans-serif",
+     "fill": "#007efe"
+    },
+    {
+     "id": "nav-name",
+     "type": "text",
+     "text": "Linq",
+     "x": 210,
+     "y": 18.816000000000003,
+     "fontSize": 13.299999999999999,
+     "fontFamily": "-apple-system, \"SF Pro Text\", \"Helvetica Neue\", Arial, sans-serif",
+     "fill": "#000000",
+     "textAnchor": "middle",
+     "fontWeight": 600
+    },
+    {
+     "id": "nav-cam",
+     "type": "group",
+     "x": 393.4,
+     "y": 18.816000000000003,
+     "children": [
+      {
+       "id": "nav-cam-body",
+       "type": "rect",
+       "x": 0,
+       "y": 0,
+       "width": 17.5,
+       "height": 11.9,
+       "fill": "#007efe",
+       "radius": 2.52
+      },
+      {
+       "id": "nav-cam-lens",
+       "type": "path",
+       "d": "M 17.92 3.9200000000000004 L 22.68 1.4000000000000001 L 22.68 10.5 L 17.92 7.9799999999999995 Z",
+       "fill": "#007efe"
+      }
+     ]
+    },
+    {
+     "id": "nav-rule",
+     "type": "rect",
+     "x": 0,
+     "y": 44.300000000000004,
+     "width": 420,
+     "height": 0.5,
+     "fill": "#d1d1d6",
+     "radius": 0
+    }
+   ],
+   "meta": {
+    "h": 44.800000000000004
+   }
+  }
+ ]
+}
