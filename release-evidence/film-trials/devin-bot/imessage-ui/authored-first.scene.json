@@ -1,0 +1,1556 @@
+{
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "duration": 16,
+  "background": "#edf2f4",
+  "title": "Night garden 🌙",
+  "source": {
+    "notes": "Authored Messages-inspired UI, not a measured iOS recreation. 390×844 logical-point iPhone 13-class proportions; desktop Chromium/macOS render. No native device/OS gesture fidelity claimed. Arial and Apple Color Emoji require remeasurement when replaced."
+  },
+  "layers": [
+    {
+      "id": "output-fit",
+      "type": "group",
+      "x": 0,
+      "y": 0,
+      "children": [
+        {
+          "id": "conversation-camera",
+          "type": "group",
+          "x": 0,
+          "y": 0,
+          "children": [
+            {
+              "id": "phone",
+              "type": "group",
+              "x": 75,
+              "y": 58,
+              "children": [
+                {
+                  "id": "phone-shell",
+                  "type": "rect",
+                  "x": -6,
+                  "y": -6,
+                  "width": 402,
+                  "height": 856,
+                  "fill": "#1d2228",
+                  "radius": 49
+                },
+                {
+                  "id": "phone-paper",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 390,
+                  "height": 844,
+                  "fill": "#ffffff",
+                  "radius": 44
+                },
+                {
+                  "id": "phone-screen",
+                  "type": "group",
+                  "x": 0,
+                  "y": 0,
+                  "children": [
+                    {
+                      "id": "transcript-viewport",
+                      "type": "group",
+                      "x": 0,
+                      "y": 112,
+                      "children": [
+                        {
+                          "id": "transcript-scroll",
+                          "type": "group",
+                          "x": 0,
+                          "y": 0,
+                          "children": [
+                            {
+                              "id": "msg-invite-row",
+                              "type": "group",
+                              "x": 0,
+                              "y": 91,
+                              "children": [
+                                {
+                                  "id": "msg-invite-avatar",
+                                  "type": "group",
+                                  "x": 16,
+                                  "y": 65,
+                                  "children": [
+                                    {
+                                      "id": "msg-invite-avatar-disc",
+                                      "type": "circle",
+                                      "width": 27,
+                                      "height": 27,
+                                      "fill": "#e3d4ed"
+                                    },
+                                    {
+                                      "id": "msg-invite-avatar-initials",
+                                      "type": "text",
+                                      "text": "MP",
+                                      "x": 13.5,
+                                      "y": 7.290000000000001,
+                                      "fontSize": 8.64,
+                                      "fontFamily": "Arial, sans-serif",
+                                      "fill": "#17191d",
+                                      "textAnchor": "middle",
+                                      "fontWeight": 600
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "msg-invite-sender",
+                                  "type": "text",
+                                  "text": "Mina Patel",
+                                  "x": 55,
+                                  "y": -19,
+                                  "fontSize": 12,
+                                  "fontFamily": "Arial, \"Apple Color Emoji\", sans-serif",
+                                  "fill": "#72757c"
+                                },
+                                {
+                                  "id": "msg-invite",
+                                  "type": "group",
+                                  "x": 55,
+                                  "y": 0,
+                                  "children": [
+                                    {
+                                      "id": "msg-invite-tail",
+                                      "type": "path",
+                                      "d": "M 18 75 Q 2 94 -6 91 Q 3 86 2 71 Z",
+                                      "fill": "#e9e9eb"
+                                    },
+                                    {
+                                      "id": "msg-invite-surface",
+                                      "type": "rect",
+                                      "x": 0,
+                                      "y": 0,
+                                      "width": 245.595703125,
+                                      "height": 93,
+                                      "fill": "#e9e9eb",
+                                      "radius": 18
+                                    },
+                                    {
+                                      "id": "msg-invite-copy",
+                                      "type": "text",
+                                      "text": "The greenhouse opens after\nsunset. Should we bring the\ntelescope? 🔭",
+                                      "x": 16,
+                                      "y": 11,
+                                      "fontSize": 17,
+                                      "fontFamily": "Arial, \"Apple Color Emoji\", sans-serif",
+                                      "fill": "#19191c",
+                                      "lineHeight": 23
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "msg-invite-reaction-0",
+                                  "type": "group",
+                                  "x": 55,
+                                  "y": -81,
+                                  "children": [
+                                    {
+                                      "id": "msg-invite-reaction-0-pill",
+                                      "type": "rect",
+                                      "x": 0,
+                                      "y": 0,
+                                      "width": 92.36328125,
+                                      "height": 27,
+                                      "fill": "#ffffff",
+                                      "radius": 14,
+                                      "stroke": "#cbd4e0",
+                                      "strokeWidth": 1
+                                    },
+                                    {
+                                      "id": "msg-invite-reaction-0-owner",
+                                      "type": "text",
+                                      "text": "Jo Rivera ❤️",
+                                      "x": 10,
+                                      "y": 4,
+                                      "fontSize": 12,
+                                      "fontFamily": "Arial, \"Apple Color Emoji\", sans-serif",
+                                      "fill": "#23425f",
+                                      "lineHeight": 17,
+                                      "fontWeight": 600
+                                    }
+                                  ],
+                                  "start": 1.5
+                                },
+                                {
+                                  "id": "msg-invite-reaction-1",
+                                  "type": "group",
+                                  "x": 55,
+                                  "y": -51,
+                                  "children": [
+                                    {
+                                      "id": "msg-invite-reaction-1-pill",
+                                      "type": "rect",
+                                      "x": 0,
+                                      "y": 0,
+                                      "width": 64.337890625,
+                                      "height": 27,
+                                      "fill": "#dcecff",
+                                      "radius": 14,
+                                      "stroke": "#cbd4e0",
+                                      "strokeWidth": 1
+                                    },
+                                    {
+                                      "id": "msg-invite-reaction-1-owner",
+                                      "type": "text",
+                                      "text": "Nico 👍",
+                                      "x": 10,
+                                      "y": 4,
+                                      "fontSize": 12,
+                                      "fontFamily": "Arial, \"Apple Color Emoji\", sans-serif",
+                                      "fill": "#23425f",
+                                      "lineHeight": 17,
+                                      "fontWeight": 600
+                                    }
+                                  ],
+                                  "start": 2
+                                }
+                              ],
+                              "start": 0,
+                              "keyframes": {
+                                "y": [
+                                  {
+                                    "t": 0,
+                                    "value": 105
+                                  },
+                                  {
+                                    "t": 0.24,
+                                    "value": 91,
+                                    "ease": "easeOut"
+                                  }
+                                ],
+                                "opacity": [
+                                  {
+                                    "t": 0,
+                                    "value": 0
+                                  },
+                                  {
+                                    "t": 0.16,
+                                    "value": 1,
+                                    "ease": "easeOut"
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "id": "msg-yes-row",
+                              "type": "group",
+                              "x": 0,
+                              "y": 233,
+                              "children": [
+                                {
+                                  "id": "msg-yes",
+                                  "type": "group",
+                                  "x": 105.1796875,
+                                  "y": 0,
+                                  "children": [
+                                    {
+                                      "id": "msg-yes-tail",
+                                      "type": "path",
+                                      "d": "M 246.8203125 52 Q 262.8203125 71 270.8203125 68 Q 261.8203125 63 262.8203125 48 Z",
+                                      "fill": "#087ff5"
+                                    },
+                                    {
+                                      "id": "msg-yes-surface",
+                                      "type": "rect",
+                                      "x": 0,
+                                      "y": 0,
+                                      "width": 264.8203125,
+                                      "height": 70,
+                                      "fill": "#087ff5",
+                                      "radius": 18
+                                    },
+                                    {
+                                      "id": "msg-yes-copy",
+                                      "type": "text",
+                                      "text": "Yes! I found a quiet spot by the\nold observatory.",
+                                      "x": 16,
+                                      "y": 11,
+                                      "fontSize": 17,
+                                      "fontFamily": "Arial, \"Apple Color Emoji\", sans-serif",
+                                      "fill": "#ffffff",
+                                      "lineHeight": 23
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "msg-yes-reaction-0",
+                                  "type": "group",
+                                  "x": 272.31640625,
+                                  "y": -30,
+                                  "children": [
+                                    {
+                                      "id": "msg-yes-reaction-0-pill",
+                                      "type": "rect",
+                                      "x": 0,
+                                      "y": 0,
+                                      "width": 97.68359375,
+                                      "height": 27,
+                                      "fill": "#ffffff",
+                                      "radius": 14,
+                                      "stroke": "#cbd4e0",
+                                      "strokeWidth": 1
+                                    },
+                                    {
+                                      "id": "msg-yes-reaction-0-owner",
+                                      "type": "text",
+                                      "text": "Mina Patel ✨",
+                                      "x": 10,
+                                      "y": 4,
+                                      "fontSize": 12,
+                                      "fontFamily": "Arial, \"Apple Color Emoji\", sans-serif",
+                                      "fill": "#23425f",
+                                      "lineHeight": 17,
+                                      "fontWeight": 600
+                                    }
+                                  ],
+                                  "start": 3.5
+                                }
+                              ],
+                              "start": 2.8,
+                              "keyframes": {
+                                "y": [
+                                  {
+                                    "t": 2.8,
+                                    "value": 247
+                                  },
+                                  {
+                                    "t": 3.04,
+                                    "value": 233,
+                                    "ease": "easeOut"
+                                  }
+                                ],
+                                "opacity": [
+                                  {
+                                    "t": 2.8,
+                                    "value": 0
+                                  },
+                                  {
+                                    "t": 2.96,
+                                    "value": 1,
+                                    "ease": "easeOut"
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "id": "msg-cards-row",
+                              "type": "group",
+                              "x": 0,
+                              "y": 371,
+                              "children": [
+                                {
+                                  "id": "msg-cards-avatar",
+                                  "type": "group",
+                                  "x": 16,
+                                  "y": 244,
+                                  "children": [
+                                    {
+                                      "id": "msg-cards-avatar-disc",
+                                      "type": "circle",
+                                      "width": 27,
+                                      "height": 27,
+                                      "fill": "#d5e9df"
+                                    },
+                                    {
+                                      "id": "msg-cards-avatar-initials",
+                                      "type": "text",
+                                      "text": "JR",
+                                      "x": 13.5,
+                                      "y": 7.290000000000001,
+                                      "fontSize": 8.64,
+                                      "fontFamily": "Arial, sans-serif",
+                                      "fill": "#17191d",
+                                      "textAnchor": "middle",
+                                      "fontWeight": 600
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "msg-cards-sender",
+                                  "type": "text",
+                                  "text": "Jo Rivera",
+                                  "x": 55,
+                                  "y": -19,
+                                  "fontSize": 12,
+                                  "fontFamily": "Arial, \"Apple Color Emoji\", sans-serif",
+                                  "fill": "#72757c"
+                                },
+                                {
+                                  "id": "msg-cards",
+                                  "type": "group",
+                                  "x": 55,
+                                  "y": 0,
+                                  "children": [
+                                    {
+                                      "id": "msg-cards-cards",
+                                      "type": "group",
+                                      "x": 0,
+                                      "y": 0,
+                                      "children": [
+                                        {
+                                          "id": "msg-cards-card-0",
+                                          "type": "group",
+                                          "x": 0,
+                                          "y": 0,
+                                          "children": [
+                                            {
+                                              "id": "msg-cards-card-0-paper",
+                                              "type": "rect",
+                                              "x": 0,
+                                              "y": 0,
+                                              "width": 258,
+                                              "height": 240,
+                                              "fill": "#d4e1ed",
+                                              "radius": 17
+                                            },
+                                            {
+                                              "id": "msg-cards-card-0-symbol",
+                                              "type": "text",
+                                              "text": "🌌",
+                                              "x": 20,
+                                              "y": 16,
+                                              "fontSize": 34,
+                                              "fontFamily": "Arial, \"Apple Color Emoji\", sans-serif",
+                                              "fill": "#17191d"
+                                            },
+                                            {
+                                              "id": "msg-cards-card-0-title",
+                                              "type": "text",
+                                              "text": "Under the stars",
+                                              "x": 20,
+                                              "y": 66,
+                                              "fontSize": 22,
+                                              "fontFamily": "Arial, \"Apple Color Emoji\", sans-serif",
+                                              "fill": "#17191d",
+                                              "fontWeight": 600,
+                                              "lineHeight": 27
+                                            },
+                                            {
+                                              "id": "msg-cards-card-0-body",
+                                              "type": "text",
+                                              "text": "Meet at the north entrance.\nBring a warm layer.",
+                                              "x": 20,
+                                              "y": 132,
+                                              "fontSize": 16,
+                                              "fontFamily": "Arial, \"Apple Color Emoji\", sans-serif",
+                                              "fill": "#394951",
+                                              "lineHeight": 21
+                                            }
+                                          ],
+                                          "keyframes": {
+                                            "x": [
+                                              {
+                                                "t": 0,
+                                                "value": 0,
+                                                "ease": "hold"
+                                              },
+                                              {
+                                                "t": 6,
+                                                "value": 0,
+                                                "ease": "hold"
+                                              },
+                                              {
+                                                "t": 6.35,
+                                                "value": -258,
+                                                "ease": "easeInOut"
+                                              },
+                                              {
+                                                "t": 7,
+                                                "value": -258,
+                                                "ease": "hold"
+                                              },
+                                              {
+                                                "t": 7.35,
+                                                "value": -516,
+                                                "ease": "easeInOut"
+                                              },
+                                              {
+                                                "t": 8,
+                                                "value": -516,
+                                                "ease": "hold"
+                                              },
+                                              {
+                                                "t": 8.35,
+                                                "value": -774,
+                                                "ease": "easeInOut"
+                                              }
+                                            ]
+                                          }
+                                        },
+                                        {
+                                          "id": "msg-cards-card-1",
+                                          "type": "group",
+                                          "x": 0,
+                                          "y": 0,
+                                          "children": [
+                                            {
+                                              "id": "msg-cards-card-1-paper",
+                                              "type": "rect",
+                                              "x": 0,
+                                              "y": 0,
+                                              "width": 258,
+                                              "height": 240,
+                                              "fill": "#ead8df",
+                                              "radius": 17
+                                            },
+                                            {
+                                              "id": "msg-cards-card-1-symbol",
+                                              "type": "text",
+                                              "text": "🌸",
+                                              "x": 20,
+                                              "y": 16,
+                                              "fontSize": 34,
+                                              "fontFamily": "Arial, \"Apple Color Emoji\", sans-serif",
+                                              "fill": "#17191d"
+                                            },
+                                            {
+                                              "id": "msg-cards-card-1-title",
+                                              "type": "text",
+                                              "text": "Moon garden",
+                                              "x": 20,
+                                              "y": 66,
+                                              "fontSize": 22,
+                                              "fontFamily": "Arial, \"Apple Color Emoji\", sans-serif",
+                                              "fill": "#17191d",
+                                              "fontWeight": 600,
+                                              "lineHeight": 27
+                                            },
+                                            {
+                                              "id": "msg-cards-card-1-body",
+                                              "type": "text",
+                                              "text": "A quiet path through the pale\nevening flowers.",
+                                              "x": 20,
+                                              "y": 132,
+                                              "fontSize": 16,
+                                              "fontFamily": "Arial, \"Apple Color Emoji\", sans-serif",
+                                              "fill": "#394951",
+                                              "lineHeight": 21
+                                            }
+                                          ],
+                                          "keyframes": {
+                                            "x": [
+                                              {
+                                                "t": 0,
+                                                "value": 258,
+                                                "ease": "hold"
+                                              },
+                                              {
+                                                "t": 6,
+                                                "value": 258,
+                                                "ease": "hold"
+                                              },
+                                              {
+                                                "t": 6.35,
+                                                "value": 0,
+                                                "ease": "easeInOut"
+                                              },
+                                              {
+                                                "t": 7,
+                                                "value": 0,
+                                                "ease": "hold"
+                                              },
+                                              {
+                                                "t": 7.35,
+                                                "value": -258,
+                                                "ease": "easeInOut"
+                                              },
+                                              {
+                                                "t": 8,
+                                                "value": -258,
+                                                "ease": "hold"
+                                              },
+                                              {
+                                                "t": 8.35,
+                                                "value": -516,
+                                                "ease": "easeInOut"
+                                              }
+                                            ]
+                                          }
+                                        },
+                                        {
+                                          "id": "msg-cards-card-2",
+                                          "type": "group",
+                                          "x": 0,
+                                          "y": 0,
+                                          "children": [
+                                            {
+                                              "id": "msg-cards-card-2-paper",
+                                              "type": "rect",
+                                              "x": 0,
+                                              "y": 0,
+                                              "width": 258,
+                                              "height": 240,
+                                              "fill": "#d9e5d6",
+                                              "radius": 17
+                                            },
+                                            {
+                                              "id": "msg-cards-card-2-symbol",
+                                              "type": "text",
+                                              "text": "🌿",
+                                              "x": 20,
+                                              "y": 16,
+                                              "fontSize": 34,
+                                              "fontFamily": "Arial, \"Apple Color Emoji\", sans-serif",
+                                              "fill": "#17191d"
+                                            },
+                                            {
+                                              "id": "msg-cards-card-2-title",
+                                              "type": "text",
+                                              "text": "The glasshouse",
+                                              "x": 20,
+                                              "y": 66,
+                                              "fontSize": 22,
+                                              "fontFamily": "Arial, \"Apple Color Emoji\", sans-serif",
+                                              "fill": "#17191d",
+                                              "fontWeight": 600,
+                                              "lineHeight": 27
+                                            },
+                                            {
+                                              "id": "msg-cards-card-2-body",
+                                              "type": "text",
+                                              "text": "The last lantern tour begins at\neight.",
+                                              "x": 20,
+                                              "y": 132,
+                                              "fontSize": 16,
+                                              "fontFamily": "Arial, \"Apple Color Emoji\", sans-serif",
+                                              "fill": "#394951",
+                                              "lineHeight": 21
+                                            }
+                                          ],
+                                          "keyframes": {
+                                            "x": [
+                                              {
+                                                "t": 0,
+                                                "value": 516,
+                                                "ease": "hold"
+                                              },
+                                              {
+                                                "t": 6,
+                                                "value": 516,
+                                                "ease": "hold"
+                                              },
+                                              {
+                                                "t": 6.35,
+                                                "value": 258,
+                                                "ease": "easeInOut"
+                                              },
+                                              {
+                                                "t": 7,
+                                                "value": 258,
+                                                "ease": "hold"
+                                              },
+                                              {
+                                                "t": 7.35,
+                                                "value": 0,
+                                                "ease": "easeInOut"
+                                              },
+                                              {
+                                                "t": 8,
+                                                "value": 0,
+                                                "ease": "hold"
+                                              },
+                                              {
+                                                "t": 8.35,
+                                                "value": -258,
+                                                "ease": "easeInOut"
+                                              }
+                                            ]
+                                          }
+                                        },
+                                        {
+                                          "id": "msg-cards-card-3",
+                                          "type": "group",
+                                          "x": 0,
+                                          "y": 0,
+                                          "children": [
+                                            {
+                                              "id": "msg-cards-card-3-paper",
+                                              "type": "rect",
+                                              "x": 0,
+                                              "y": 0,
+                                              "width": 258,
+                                              "height": 240,
+                                              "fill": "#e9dfce",
+                                              "radius": 17
+                                            },
+                                            {
+                                              "id": "msg-cards-card-3-symbol",
+                                              "type": "text",
+                                              "text": "🔭",
+                                              "x": 20,
+                                              "y": 16,
+                                              "fontSize": 34,
+                                              "fontFamily": "Arial, \"Apple Color Emoji\", sans-serif",
+                                              "fill": "#17191d"
+                                            },
+                                            {
+                                              "id": "msg-cards-card-3-title",
+                                              "type": "text",
+                                              "text": "A clear horizon",
+                                              "x": 20,
+                                              "y": 66,
+                                              "fontSize": 22,
+                                              "fontFamily": "Arial, \"Apple Color Emoji\", sans-serif",
+                                              "fill": "#17191d",
+                                              "fontWeight": 600,
+                                              "lineHeight": 27
+                                            },
+                                            {
+                                              "id": "msg-cards-card-3-body",
+                                              "type": "text",
+                                              "text": "Leave a little room for a\ndetour.",
+                                              "x": 20,
+                                              "y": 132,
+                                              "fontSize": 16,
+                                              "fontFamily": "Arial, \"Apple Color Emoji\", sans-serif",
+                                              "fill": "#394951",
+                                              "lineHeight": 21
+                                            }
+                                          ],
+                                          "keyframes": {
+                                            "x": [
+                                              {
+                                                "t": 0,
+                                                "value": 774,
+                                                "ease": "hold"
+                                              },
+                                              {
+                                                "t": 6,
+                                                "value": 774,
+                                                "ease": "hold"
+                                              },
+                                              {
+                                                "t": 6.35,
+                                                "value": 516,
+                                                "ease": "easeInOut"
+                                              },
+                                              {
+                                                "t": 7,
+                                                "value": 516,
+                                                "ease": "hold"
+                                              },
+                                              {
+                                                "t": 7.35,
+                                                "value": 258,
+                                                "ease": "easeInOut"
+                                              },
+                                              {
+                                                "t": 8,
+                                                "value": 258,
+                                                "ease": "hold"
+                                              },
+                                              {
+                                                "t": 8.35,
+                                                "value": 0,
+                                                "ease": "easeInOut"
+                                              }
+                                            ]
+                                          }
+                                        }
+                                      ],
+                                      "clip": {
+                                        "x": 0,
+                                        "y": 0,
+                                        "width": 258,
+                                        "height": 240,
+                                        "radius": 17
+                                      }
+                                    },
+                                    {
+                                      "id": "msg-cards-counter",
+                                      "type": "text",
+                                      "text": "1 / 4",
+                                      "x": 258,
+                                      "y": 248,
+                                      "fontSize": 12,
+                                      "fontFamily": "Arial, \"Apple Color Emoji\", sans-serif",
+                                      "fill": "#6b7280",
+                                      "textAnchor": "end",
+                                      "keyframes": {
+                                        "text": [
+                                          {
+                                            "t": 0.35,
+                                            "value": "1 / 4",
+                                            "ease": "hold"
+                                          },
+                                          {
+                                            "t": 6.35,
+                                            "value": "2 / 4",
+                                            "ease": "hold"
+                                          },
+                                          {
+                                            "t": 7.35,
+                                            "value": "3 / 4",
+                                            "ease": "hold"
+                                          },
+                                          {
+                                            "t": 8.35,
+                                            "value": "4 / 4",
+                                            "ease": "hold"
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "msg-cards-reaction-0",
+                                  "type": "group",
+                                  "x": 55,
+                                  "y": -51,
+                                  "children": [
+                                    {
+                                      "id": "msg-cards-reaction-0-pill",
+                                      "type": "rect",
+                                      "x": 0,
+                                      "y": 0,
+                                      "width": 64.337890625,
+                                      "height": 27,
+                                      "fill": "#dcecff",
+                                      "radius": 14,
+                                      "stroke": "#cbd4e0",
+                                      "strokeWidth": 1
+                                    },
+                                    {
+                                      "id": "msg-cards-reaction-0-owner",
+                                      "type": "text",
+                                      "text": "Nico 😍",
+                                      "x": 10,
+                                      "y": 4,
+                                      "fontSize": 12,
+                                      "fontFamily": "Arial, \"Apple Color Emoji\", sans-serif",
+                                      "fill": "#23425f",
+                                      "lineHeight": 17,
+                                      "fontWeight": 600
+                                    }
+                                  ],
+                                  "start": 9
+                                }
+                              ],
+                              "start": 4.3,
+                              "keyframes": {
+                                "y": [
+                                  {
+                                    "t": 4.3,
+                                    "value": 385
+                                  },
+                                  {
+                                    "t": 4.54,
+                                    "value": 371,
+                                    "ease": "easeOut"
+                                  }
+                                ],
+                                "opacity": [
+                                  {
+                                    "t": 4.3,
+                                    "value": 0
+                                  },
+                                  {
+                                    "t": 4.46,
+                                    "value": 1,
+                                    "ease": "easeOut"
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "id": "msg-send-row",
+                              "type": "group",
+                              "x": 0,
+                              "y": 662,
+                              "children": [
+                                {
+                                  "id": "msg-send",
+                                  "type": "group",
+                                  "x": 107.404296875,
+                                  "y": 0,
+                                  "children": [
+                                    {
+                                      "id": "msg-send-tail",
+                                      "type": "path",
+                                      "d": "M 244.595703125 52 Q 260.595703125 71 268.595703125 68 Q 259.595703125 63 260.595703125 48 Z",
+                                      "fill": "#087ff5"
+                                    },
+                                    {
+                                      "id": "msg-send-surface",
+                                      "type": "rect",
+                                      "x": 0,
+                                      "y": 0,
+                                      "width": 262.595703125,
+                                      "height": 70,
+                                      "fill": "#087ff5",
+                                      "radius": 18
+                                    },
+                                    {
+                                      "id": "msg-send-copy",
+                                      "type": "text",
+                                      "text": "I’ll bring tea and the telescope.\nSee you by the north gate! 🫖",
+                                      "x": 16,
+                                      "y": 11,
+                                      "fontSize": 17,
+                                      "fontFamily": "Arial, \"Apple Color Emoji\", sans-serif",
+                                      "fill": "#ffffff",
+                                      "lineHeight": 23
+                                    }
+                                  ]
+                                }
+                              ],
+                              "start": 12,
+                              "keyframes": {
+                                "y": [
+                                  {
+                                    "t": 12,
+                                    "value": 676
+                                  },
+                                  {
+                                    "t": 12.24,
+                                    "value": 662,
+                                    "ease": "easeOut"
+                                  }
+                                ],
+                                "opacity": [
+                                  {
+                                    "t": 12,
+                                    "value": 0
+                                  },
+                                  {
+                                    "t": 12.16,
+                                    "value": 1,
+                                    "ease": "easeOut"
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "id": "msg-reply-row",
+                              "type": "group",
+                              "x": 0,
+                              "y": 770,
+                              "children": [
+                                {
+                                  "id": "msg-reply-avatar",
+                                  "type": "group",
+                                  "x": 16,
+                                  "y": 20,
+                                  "children": [
+                                    {
+                                      "id": "msg-reply-avatar-disc",
+                                      "type": "circle",
+                                      "width": 27,
+                                      "height": 27,
+                                      "fill": "#e3d4ed"
+                                    },
+                                    {
+                                      "id": "msg-reply-avatar-initials",
+                                      "type": "text",
+                                      "text": "MP",
+                                      "x": 13.5,
+                                      "y": 7.290000000000001,
+                                      "fontSize": 8.64,
+                                      "fontFamily": "Arial, sans-serif",
+                                      "fill": "#17191d",
+                                      "textAnchor": "middle",
+                                      "fontWeight": 600
+                                    }
+                                  ]
+                                },
+                                {
+                                  "id": "msg-reply-sender",
+                                  "type": "text",
+                                  "text": "Mina Patel",
+                                  "x": 55,
+                                  "y": -19,
+                                  "fontSize": 12,
+                                  "fontFamily": "Arial, \"Apple Color Emoji\", sans-serif",
+                                  "fill": "#72757c"
+                                },
+                                {
+                                  "id": "msg-reply",
+                                  "type": "group",
+                                  "x": 55,
+                                  "y": 0,
+                                  "children": [
+                                    {
+                                      "id": "msg-reply-tail",
+                                      "type": "path",
+                                      "d": "M 18 29 Q 2 48 -6 45 Q 3 40 2 25 Z",
+                                      "fill": "#e9e9eb"
+                                    },
+                                    {
+                                      "id": "msg-reply-surface",
+                                      "type": "rect",
+                                      "x": 0,
+                                      "y": 0,
+                                      "width": 226.87646484375,
+                                      "height": 47,
+                                      "fill": "#e9e9eb",
+                                      "radius": 18
+                                    },
+                                    {
+                                      "id": "msg-reply-copy",
+                                      "type": "text",
+                                      "text": "Perfect. See you there 🌙",
+                                      "x": 16,
+                                      "y": 11,
+                                      "fontSize": 17,
+                                      "fontFamily": "Arial, \"Apple Color Emoji\", sans-serif",
+                                      "fill": "#19191c",
+                                      "lineHeight": 23
+                                    }
+                                  ]
+                                }
+                              ],
+                              "start": 13.5,
+                              "keyframes": {
+                                "y": [
+                                  {
+                                    "t": 13.5,
+                                    "value": 784
+                                  },
+                                  {
+                                    "t": 13.74,
+                                    "value": 770,
+                                    "ease": "easeOut"
+                                  }
+                                ],
+                                "opacity": [
+                                  {
+                                    "t": 13.5,
+                                    "value": 0
+                                  },
+                                  {
+                                    "t": 13.66,
+                                    "value": 1,
+                                    "ease": "easeOut"
+                                  }
+                                ]
+                              }
+                            }
+                          ],
+                          "keyframes": {
+                            "y": [
+                              {
+                                "t": 0,
+                                "value": 0
+                              },
+                              {
+                                "t": 2.8,
+                                "value": 0,
+                                "ease": "hold"
+                              },
+                              {
+                                "t": 3.0999999999999996,
+                                "value": 0,
+                                "ease": "easeOut"
+                              },
+                              {
+                                "t": 4.3,
+                                "value": 0,
+                                "ease": "hold"
+                              },
+                              {
+                                "t": 4.6,
+                                "value": -88,
+                                "ease": "easeOut"
+                              },
+                              {
+                                "t": 12,
+                                "value": -88,
+                                "ease": "hold"
+                              },
+                              {
+                                "t": 12.3,
+                                "value": -177,
+                                "ease": "easeOut"
+                              },
+                              {
+                                "t": 13.5,
+                                "value": -177,
+                                "ease": "hold"
+                              },
+                              {
+                                "t": 13.8,
+                                "value": -262,
+                                "ease": "easeOut"
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "clip": {
+                        "x": 8,
+                        "y": 0,
+                        "width": 374,
+                        "height": 594
+                      }
+                    },
+                    {
+                      "id": "header",
+                      "type": "rect",
+                      "x": 0,
+                      "y": 0,
+                      "width": 390,
+                      "height": 112,
+                      "fill": "#f7f8fa",
+                      "radius": 0
+                    },
+                    {
+                      "id": "clock",
+                      "type": "text",
+                      "text": "9:41",
+                      "x": 29,
+                      "y": 19,
+                      "fontSize": 14,
+                      "fontFamily": "Arial, \"Apple Color Emoji\", sans-serif",
+                      "fill": "#17191d",
+                      "fontWeight": 600
+                    },
+                    {
+                      "id": "status",
+                      "type": "text",
+                      "text": "5G  ▰",
+                      "x": 307,
+                      "y": 19,
+                      "fontSize": 12,
+                      "fontFamily": "Arial, \"Apple Color Emoji\", sans-serif",
+                      "fill": "#17191d"
+                    },
+                    {
+                      "id": "island",
+                      "type": "rect",
+                      "x": 140,
+                      "y": 12,
+                      "width": 110,
+                      "height": 28,
+                      "fill": "#111419",
+                      "radius": 15
+                    },
+                    {
+                      "id": "back",
+                      "type": "text",
+                      "text": "‹",
+                      "x": 20,
+                      "y": 54,
+                      "fontSize": 34,
+                      "fontFamily": "Arial, \"Apple Color Emoji\", sans-serif",
+                      "fill": "#087ff5"
+                    },
+                    {
+                      "id": "conversation-title",
+                      "type": "text",
+                      "text": "Night garden 🌙",
+                      "x": 195,
+                      "y": 62,
+                      "fontSize": 16,
+                      "fontFamily": "Arial, \"Apple Color Emoji\", sans-serif",
+                      "fill": "#17191d",
+                      "fontWeight": 600,
+                      "textAnchor": "middle",
+                      "lineHeight": 20
+                    },
+                    {
+                      "id": "header-line",
+                      "type": "rect",
+                      "x": 0,
+                      "y": 111,
+                      "width": 390,
+                      "height": 1,
+                      "fill": "#e4e5e8",
+                      "radius": 0
+                    },
+                    {
+                      "id": "composer-matte",
+                      "type": "rect",
+                      "x": 0,
+                      "y": 706,
+                      "width": 390,
+                      "height": 138,
+                      "fill": "#ffffff",
+                      "radius": 0
+                    },
+                    {
+                      "id": "plus",
+                      "type": "text",
+                      "text": "+",
+                      "x": 17,
+                      "y": 775,
+                      "fontSize": 29,
+                      "fontFamily": "Arial, \"Apple Color Emoji\", sans-serif",
+                      "fill": "#85858c"
+                    },
+                    {
+                      "id": "draft-0",
+                      "type": "group",
+                      "x": 52,
+                      "y": 766,
+                      "children": [
+                        {
+                          "id": "draft-0-field",
+                          "type": "rect",
+                          "x": 0,
+                          "y": 0,
+                          "width": 320,
+                          "height": 44,
+                          "fill": "#ffffff",
+                          "radius": 22,
+                          "stroke": "#c9cbd0",
+                          "strokeWidth": 1
+                        },
+                        {
+                          "id": "draft-0-input",
+                          "type": "text",
+                          "text": "iMessage",
+                          "x": 14,
+                          "y": 10,
+                          "fontSize": 17,
+                          "fontFamily": "Arial, \"Apple Color Emoji\", sans-serif",
+                          "fill": "#85858c",
+                          "lineHeight": 23
+                        },
+                        {
+                          "id": "draft-0-send",
+                          "type": "circle",
+                          "x": 282,
+                          "y": 8,
+                          "width": 30,
+                          "height": 30,
+                          "fill": "#d3d5db"
+                        },
+                        {
+                          "id": "draft-0-arrow",
+                          "type": "path",
+                          "d": "M 297 31 L 297 15 M 291 21 L 297 15 L 303 21",
+                          "stroke": "#ffffff",
+                          "strokeWidth": 2,
+                          "fill": "none"
+                        }
+                      ],
+                      "start": 0,
+                      "end": 9.5
+                    },
+                    {
+                      "id": "draft-1",
+                      "type": "group",
+                      "x": 52,
+                      "y": 766,
+                      "children": [
+                        {
+                          "id": "draft-1-field",
+                          "type": "rect",
+                          "x": 0,
+                          "y": 0,
+                          "width": 320,
+                          "height": 44,
+                          "fill": "#ffffff",
+                          "radius": 22,
+                          "stroke": "#c9cbd0",
+                          "strokeWidth": 1
+                        },
+                        {
+                          "id": "draft-1-input",
+                          "type": "text",
+                          "text": "I’ll bring tea",
+                          "x": 14,
+                          "y": 10,
+                          "fontSize": 17,
+                          "fontFamily": "Arial, \"Apple Color Emoji\", sans-serif",
+                          "fill": "#17191d",
+                          "lineHeight": 23
+                        },
+                        {
+                          "id": "draft-1-send",
+                          "type": "circle",
+                          "x": 282,
+                          "y": 8,
+                          "width": 30,
+                          "height": 30,
+                          "fill": "#087ff5"
+                        },
+                        {
+                          "id": "draft-1-arrow",
+                          "type": "path",
+                          "d": "M 297 31 L 297 15 M 291 21 L 297 15 L 303 21",
+                          "stroke": "#ffffff",
+                          "strokeWidth": 2,
+                          "fill": "none"
+                        }
+                      ],
+                      "start": 9.5,
+                      "end": 10
+                    },
+                    {
+                      "id": "draft-2",
+                      "type": "group",
+                      "x": 52,
+                      "y": 766,
+                      "children": [
+                        {
+                          "id": "draft-2-field",
+                          "type": "rect",
+                          "x": 0,
+                          "y": 0,
+                          "width": 320,
+                          "height": 44,
+                          "fill": "#ffffff",
+                          "radius": 22,
+                          "stroke": "#c9cbd0",
+                          "strokeWidth": 1
+                        },
+                        {
+                          "id": "draft-2-input",
+                          "type": "text",
+                          "text": "I’ll bring tea and the telescope.",
+                          "x": 14,
+                          "y": 10,
+                          "fontSize": 17,
+                          "fontFamily": "Arial, \"Apple Color Emoji\", sans-serif",
+                          "fill": "#17191d",
+                          "lineHeight": 23
+                        },
+                        {
+                          "id": "draft-2-send",
+                          "type": "circle",
+                          "x": 282,
+                          "y": 8,
+                          "width": 30,
+                          "height": 30,
+                          "fill": "#087ff5"
+                        },
+                        {
+                          "id": "draft-2-arrow",
+                          "type": "path",
+                          "d": "M 297 31 L 297 15 M 291 21 L 297 15 L 303 21",
+                          "stroke": "#ffffff",
+                          "strokeWidth": 2,
+                          "fill": "none"
+                        }
+                      ],
+                      "start": 10,
+                      "end": 11
+                    },
+                    {
+                      "id": "draft-3",
+                      "type": "group",
+                      "x": 52,
+                      "y": 746,
+                      "children": [
+                        {
+                          "id": "draft-3-field",
+                          "type": "rect",
+                          "x": 0,
+                          "y": 0,
+                          "width": 320,
+                          "height": 64,
+                          "fill": "#ffffff",
+                          "radius": 22,
+                          "stroke": "#c9cbd0",
+                          "strokeWidth": 1
+                        },
+                        {
+                          "id": "draft-3-input",
+                          "type": "text",
+                          "text": "I’ll bring tea and the telescope.\nSee you by the north gate! 🫖",
+                          "x": 14,
+                          "y": 10,
+                          "fontSize": 17,
+                          "fontFamily": "Arial, \"Apple Color Emoji\", sans-serif",
+                          "fill": "#17191d",
+                          "lineHeight": 23
+                        },
+                        {
+                          "id": "draft-3-send",
+                          "type": "circle",
+                          "x": 282,
+                          "y": 28,
+                          "width": 30,
+                          "height": 30,
+                          "fill": "#087ff5"
+                        },
+                        {
+                          "id": "draft-3-arrow",
+                          "type": "path",
+                          "d": "M 297 51 L 297 35 M 291 41 L 297 35 L 303 41",
+                          "stroke": "#ffffff",
+                          "strokeWidth": 2,
+                          "fill": "none"
+                        }
+                      ],
+                      "start": 11,
+                      "end": 12
+                    },
+                    {
+                      "id": "draft-4",
+                      "type": "group",
+                      "x": 52,
+                      "y": 766,
+                      "children": [
+                        {
+                          "id": "draft-4-field",
+                          "type": "rect",
+                          "x": 0,
+                          "y": 0,
+                          "width": 320,
+                          "height": 44,
+                          "fill": "#ffffff",
+                          "radius": 22,
+                          "stroke": "#c9cbd0",
+                          "strokeWidth": 1
+                        },
+                        {
+                          "id": "draft-4-input",
+                          "type": "text",
+                          "text": "iMessage",
+                          "x": 14,
+                          "y": 10,
+                          "fontSize": 17,
+                          "fontFamily": "Arial, \"Apple Color Emoji\", sans-serif",
+                          "fill": "#85858c",
+                          "lineHeight": 23
+                        },
+                        {
+                          "id": "draft-4-send",
+                          "type": "circle",
+                          "x": 282,
+                          "y": 8,
+                          "width": 30,
+                          "height": 30,
+                          "fill": "#d3d5db"
+                        },
+                        {
+                          "id": "draft-4-arrow",
+                          "type": "path",
+                          "d": "M 297 31 L 297 15 M 291 21 L 297 15 L 303 21",
+                          "stroke": "#ffffff",
+                          "strokeWidth": 2,
+                          "fill": "none"
+                        }
+                      ],
+                      "start": 12,
+                      "end": 16
+                    },
+                    {
+                      "id": "home-indicator",
+                      "type": "rect",
+                      "x": 128,
+                      "y": 830,
+                      "width": 134,
+                      "height": 5,
+                      "fill": "#111419",
+                      "radius": 3
+                    }
+                  ],
+                  "clip": {
+                    "x": 0,
+                    "y": 0,
+                    "width": 390,
+                    "height": 844,
+                    "radius": 44
+                  }
+                }
+              ]
+            }
+          ],
+          "originX": 270,
+          "originY": 480,
+          "keyframes": {
+            "x": [
+              {
+                "t": 0,
+                "value": 0,
+                "ease": "easeInOut"
+              },
+              {
+                "t": 4.8,
+                "value": -10,
+                "ease": "easeInOut"
+              },
+              {
+                "t": 8.5,
+                "value": 8,
+                "ease": "easeInOut"
+              },
+              {
+                "t": 10,
+                "value": 0,
+                "ease": "easeInOut"
+              }
+            ],
+            "y": [
+              {
+                "t": 0,
+                "value": 0,
+                "ease": "easeInOut"
+              },
+              {
+                "t": 4.8,
+                "value": -40,
+                "ease": "easeInOut"
+              },
+              {
+                "t": 8.5,
+                "value": -60,
+                "ease": "easeInOut"
+              },
+              {
+                "t": 10,
+                "value": 0,
+                "ease": "easeInOut"
+              }
+            ],
+            "scaleX": [
+              {
+                "t": 0,
+                "value": 1,
+                "ease": "easeInOut"
+              },
+              {
+                "t": 4.8,
+                "value": 1.08,
+                "ease": "easeInOut"
+              },
+              {
+                "t": 8.5,
+                "value": 1.08,
+                "ease": "easeInOut"
+              },
+              {
+                "t": 10,
+                "value": 1,
+                "ease": "easeInOut"
+              }
+            ],
+            "scaleY": [
+              {
+                "t": 0,
+                "value": 1,
+                "ease": "easeInOut"
+              },
+              {
+                "t": 4.8,
+                "value": 1.08,
+                "ease": "easeInOut"
+              },
+              {
+                "t": 8.5,
+                "value": 1.08,
+                "ease": "easeInOut"
+              },
+              {
+                "t": 10,
+                "value": 1,
+                "ease": "easeInOut"
+              }
+            ]
+          }
+        }
+      ],
+      "scaleX": 2,
+      "scaleY": 2
+    }
+  ]
+}
