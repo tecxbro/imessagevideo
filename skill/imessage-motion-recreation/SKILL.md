@@ -16,10 +16,12 @@ For a new company or product, start with [RESEARCH-FIRST.md](library/RESEARCH-FI
 | Make a film for a new company | [Company research](library/RESEARCH-FIRST.md), [profile schema](library/company-profile.schema.json), then the director workflow | Verified product evidence and a newly authored shot plan |
 | Recreate a supplied film | [Reconstruction playbook](references/reconstruction-playbook.md), actual movie and native-frame comparisons | Actual source with explicit output/source mapping |
 | Direct a new film using these ideas | [Director workflow](director/directing.md), [visual explorer](director/index.html), [design grammar](director/design-grammar.md) | A new shot plan, labelled as authored choreography |
+| Retrieve and adapt a motion from footage | [Searchable motion catalog](director/motion-catalog.md) | The catalog's cited source window and fitted tracks |
 | Extract or adapt a component | [Component contracts](director/component-contracts.md), [component code](director/components.mjs), chosen study | Declared editable boundary and actual source evidence |
+| Animate an editable Messages conversation | [Conversation components and editor](imessage-ui/README.md) | Authored choreography, not measured native gestures |
 | Add UI sound | [UI audio workflow](references/ui-audio-workflow.md) | Visible actions in the delivered picture |
 
-For recreation, catalogue recipes help decompose the source; never replace its motion with a starter preset. For new direction, catalogue options carry tradeoffs; never claim a new starter is source-exact.
+For a motion request, run `node director/motion-catalog-cli.mjs search "<brief>"` from the skill folder, then use the catalog guide to compare the source clip and export an editable scene. A contrast entry or ambiguous hit is not a preset. For recreation, catalogue recipes help decompose the source; never replace its motion with a starter preset. For new direction, catalogue options carry tradeoffs; never claim a new starter is source-exact.
 
 ## Final working set and failure lessons
 
