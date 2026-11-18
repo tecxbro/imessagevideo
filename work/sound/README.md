@@ -9,6 +9,6 @@
 | `original-scoring.md` | new-material pipeline: five-layer decisions, legal sources in this checkout, editable stems, picture-versioned cues |
 | `film-01-score/` | score deliverables — currently a labeled 04-poke demo; real film when creative's picture lands |
 | `skill-proposals/` | proposed skill edits for lead integration |
-| `bin/` | `stem_build.py` (frame-exact stem builder), `onsets.py`, `cue_check.py`, `film1_score.py`, `classify` (Swift SNClassifySoundRequest) |
+| `bin/` | `stem_build.py` (frame-exact stem builder), `onsets.py`, `cue_check.py`, `kind_check.py` (timbre-vs-kind fingerprint), `film1_score.py`, `classify` (Swift SNClassifySoundRequest) |
 | `analysis/` | classifier dumps, frame strips, spectrograms, decoded source audio |
 | `exports/` `integrity/` | experiment + planted-defect media |
