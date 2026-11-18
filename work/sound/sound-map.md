@@ -40,18 +40,20 @@ Machine-listened (1.5 s windows, whole film):
 - **01-photonhq**: pure music classification; `alarm_clock:0.25` blip at 4.5 s.
   Prior UI work found **one** visible click in this film (see §2).
 - **02-danieltian**: music + `tap` hits at 3.75/11.25/12.0/39.75 s, strong
-  `finger_snapping:0.94` at 39.0 s, `whoosh_swoosh_swish` at 41.25 s, and a
-  `sigh:0.62`/`breathing` segment at ~42 s (into the silent tail — likely the
-  music fade's noisy decay; flag as ambiguous, not as dialogue).
-- **03-photon-mini**: `glass_clink:0.50` + `whoosh` at 36.75 s, then
-  `writing`/`typing`/`typewriter` at 37.5 s — this coincides with the source's
-  visible typing block; plausible real typing SFX in the source mix. `chime` at
-  31.5 s. Classifier confidence moderate; treat as "probable source UI sounds".
+  `finger_snapping:0.88` around 39.5–40.5 s, `whoosh_swoosh_swish` at 41.25 s,
+  and a `sigh:0.5`/`breathing` patch at ~42–43.5 s inside the fade just
+  before the 43.7 s silence. Reads as breathy tail texture — ambiguous;
+  not claimed as dialogue.
+- **03-photon-mini**: `glass_clink:0.47` + `coin_dropping` at ~36.5 s, then
+  strong `typing:0.81`/`typewriter:0.73`/`typing_computer_keyboard:0.57` at
+  ~37–38 s — coinciding with the source's visible typing block before the
+  4.45 s silent end hold. **Strongest evidence of a real diegetic UI layer
+  in any source film** (probable actual keystroke sounds plus a clink).
 - **04-poke**: `whale_vocalization`/`whoosh`/`water` at 0.0 s (filtered sweep
-  intro), `speech:0.14–0.24` at 16.5/24.0 s — consistent with the fal model's
-  "nonlexical vocal-like chops" note; not certified speech. A `whoosh` at
-  ~5.25 s may be a send sound.
-- **05-linq**: no non-music classes cleared threshold; `firecracker`/
+  intro), recurring low `speech:0.3–0.5` hits at ~16.5/18.5/24 s — consistent
+  with nonlexical vocal-chop texture in the track (matches the fal model
+  note); not certified speech. A `whoosh` at ~5.25 s may be a send sound.
+- **05-linq**: pure music labels throughout including the open; `firecracker`/
   `person_shuffling` hits are percussion misreads. Source UI sounds, if any,
   are buried in the music mix.
 - **06-gallery**: `chime`/`bell` at ~21 s; `foghorn`/`didgeridoo` labels on the
