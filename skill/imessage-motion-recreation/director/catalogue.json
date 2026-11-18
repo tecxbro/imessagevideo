@@ -4,6 +4,101 @@
   "native_teaching_pairs": 84,
   "evidence_kind": "measured source and accepted reconstruction; new starters are separate adaptations",
   "frame_convention": "Zero-based integer native frames. Rational clocks in source manifests; Rene output1049 maps to source1230. Atlas JPEGs are downsampled teaching images, not native-pixel validation.",
+  "motion_catalog": {
+    "sources": {
+      "linq": {
+        "title": "Linq — iMessage Apps",
+        "url": "https://www.linkedin.com/posts/elliottpotter_your-users-never-have-to-leave-imessage-again-activity-7477784121293950976-Dlap",
+        "file": "projects/05-linq-complete-v1/imessage-recreations/references/05-linq/source.mp4",
+        "sha256": "86e22e698e141c5c2a161977289be1335bb0c0a1dd98769c4c146fcd57bbf2eb",
+        "fps": 30,
+        "fit_scene": "projects/05-linq-complete-v1/imessage-recreations/scenes/05-linq/scene.json",
+        "fit_scene_sha256": "658184bb8d05c50633f37fa0ef0bfd8a943773076f249c7e0dbf02991e6e93c6"
+      }
+    },
+    "entries": [
+      {
+        "id": "linq-fixed-chrome-photo-rail",
+        "title": "Photo strip slides under fixed controls",
+        "kind": "motion",
+        "source": "linq",
+        "frames": [1091, 1111],
+        "beats": [[1091, "Storefront and table enter the cited window already moving"], [1100, "Table leads into the food images"], [1105, "Food images have replaced the storefront and table"], [1111, "Interior shares the viewport with the plated dish; the rail is still settling"]],
+        "moves": "One side-by-side row of five unequal-width images translates left behind a fixed rectangular clip.",
+        "stays": "Title, rating, Directions, utility buttons, tabs, viewport and address retain their positions.",
+        "avoid": "Not a Messages attachment stack: no overlapping deck, top-card reorder, rotation, scale swap or camera pan.",
+        "signals": {
+          "image row": ["photo", "picture", "image", "artwork", "thumbnail", "gallery", "carousel", "filmstrip", "side by side", "horizontal strip"],
+          "fixed chrome": ["stationary", "fixed", "pinned", "anchored", "stay put", "stays put", "stay still", "stays still", "unmoving", "doesn't move", "hold still", "unchanged", "locked", "frozen", "does not move"],
+          "chrome controls": ["controls", "button", "buttons", "tabs", "chrome", "header", "toolbar", "directions", "address", "navigation"],
+          "place detail": ["restaurant", "boqueria", "venue", "storefront", "maps", "business card"]
+        },
+        "fit": {
+          "layer": "v10-restaurant-rail",
+          "property": "x",
+          "samples_start": 1091,
+          "samples": [1108.5, 1084.7, 1084.7, 1060.1, 1031.6, 996.4, 956.1, 956.1, 911.6, 851.7, 777.5, 684.2, 684.2, 558.8, 402.5, 250.7, 139.4, 139.4, 59.5, -0.5, -47.9, -84.2, -84.2, -112.9, -137.1, -157.5, -175.3, -175.3, -189.3, -200.7, -209.5, -217.6]
+        }
+      },
+      {
+        "id": "linq-flight-fare-rail",
+        "title": "Fare options slide below a held flight summary",
+        "kind": "motion",
+        "source": "linq",
+        "frames": [384, 397],
+        "beats": [[384, "Basic leads and Economy peeks at right"], [390, "Both cards translate left together"], [394, "Economy settles; the fare summary stays put"], [397, "Hold before the next transition"]],
+        "moves": "A row of Basic and Economy cards with their own Select buttons moves left through the app sheet's clip.",
+        "stays": "Upper fare summary and sheet aperture stay fixed in this slice, after the preceding vertical move.",
+        "avoid": "Not a full sheet swipe: the card buttons travel with the fare cards, unlike the fixed controls of the photo rail.",
+        "signals": {
+          "fare selection": ["fare", "basic", "economy", "cabin", "baggage", "ticket tier", "price tier", "plan tier", "pricing"],
+          "flight context": ["flight", "airline", "booking", "travel", "flight summary"],
+          "card rail": ["option cards", "fare cards", "card rail", "pricing cards", "select buttons", "tier cards"]
+        },
+        "fit": {
+          "layer": "flight-review-shutter-0-fare-carousel",
+          "property": "x",
+          "samples_start": 384,
+          "samples": [0.8, 0.8, 0.8, -8.2, -31.5, -63.3, -98.0, -98.0, -129.8, -153.0, -162.0, -162.0, -162.0, -162.0]
+        }
+      },
+      {
+        "id": "linq-amount-units-roll",
+        "title": "Amount's ones digit rolls under a pulsing plus",
+        "kind": "motion",
+        "source": "linq",
+        "frames": [786, 810],
+        "beats": [[786, "Units digit 2 before the first step"], [787, "3 enters its narrow slot"], [792, "4 arrives"], [797, "5 arrives"], [803, "6 completes the increment"], [810, "Plus control returns toward rest"]],
+        "moves": "Only the ones digit steps up a clipped vertical lane while the plus disc pulses independently.",
+        "stays": "The other digits, decimal, and panel remain separate from the moving digit track.",
+        "avoid": "Do not tween or roll the whole price label when only one digit changes.",
+        "signals": {
+          "numerical display": ["amount", "total", "number", "price", "counter", "money", "cash"],
+          "digit lane": ["digit", "units", "ones", "odometer", "rolling amount", "increment", "count up"],
+          "independent pulse": ["plus", "pulse", "stepper"]
+        },
+        "fit": {
+          "layer": "v10-cash-units-rail",
+          "property": "y",
+          "samples_start": 786,
+          "samples": [-0.53, -93.64, -93.95, -94, -94.05, -94.17, -188, -188, -188, -188, -188, -282, -281.99, -282, -282, -282, -282.17, -376, -376, -376, -376, -376, -376, -376, -376]
+        }
+      },
+      {
+        "id": "messages-attachment-stack",
+        "title": "Messages attachment stack swipe — contrast only",
+        "kind": "contrast",
+        "moves": "An overlapping deck changes the front attachment; card poses or stacking order distinguish it from a clipped strip.",
+        "stays": "The deck belongs to a conversation, not a restaurant detail page.",
+        "avoid": "No verified attachment-stack footage, editable preset, or device/OS gesture claim in this catalog. Do not substitute the Linq photo rail.",
+        "signals": {
+          "stacked attachments": ["attachment stack", "stack", "stacked", "deck", "overlap", "overlapping", "pile", "top card", "front card", "top photo", "front photo", "frontmost", "fan"],
+          "message context": ["messages", "imessage", "conversation", "chat", "thread", "bubble", "attachment"],
+          "stack operations": ["reorder", "restack", "z order", "bring forward", "to the front", "behind it", "underneath it", "next attachment"]
+        }
+      }
+    ]
+  },
   "studies": [
     {
       "id": "photon-press-release",

@@ -1,0 +1,685 @@
+{
+  "width": 960,
+  "height": 720,
+  "fps": 30,
+  "duration": 2.066666666666667,
+  "title": "Photo strip slides under fixed controls",
+  "background": "#d9e2f4",
+  "source": {
+    "notes": "New artwork and layout around fitted source motion; not a source-exact render.",
+    "evidence": {
+      "url": "https://www.linkedin.com/posts/elliottpotter_your-users-never-have-to-leave-imessage-again-activity-7477784121293950976-Dlap",
+      "sha256": "86e22e698e141c5c2a161977289be1335bb0c0a1dd98769c4c146fcd57bbf2eb",
+      "citedFrames": [
+        1091,
+        1111
+      ],
+      "fittedFrames": [
+        1091,
+        1122
+      ],
+      "outputLeadFrames": 12
+    }
+  },
+  "layers": [
+    {
+      "id": "gallery-panel",
+      "type": "rect",
+      "x": 166,
+      "y": 19,
+      "width": 636,
+      "height": 682,
+      "fill": "#ffffff",
+      "radius": 36
+    },
+    {
+      "id": "gallery-title",
+      "type": "text",
+      "text": "Solstice Observatory",
+      "x": 195,
+      "y": 57,
+      "fontSize": 34,
+      "fontFamily": "Arial, sans-serif",
+      "fill": "#17191d",
+      "fontWeight": 700
+    },
+    {
+      "id": "gallery-meta",
+      "type": "text",
+      "text": "Field notes  /  Session 03",
+      "x": 195,
+      "y": 107,
+      "fontSize": 21,
+      "fontFamily": "Arial, sans-serif",
+      "fill": "#505854"
+    },
+    {
+      "id": "gallery-action",
+      "type": "group",
+      "x": 195,
+      "y": 151,
+      "children": [
+        {
+          "id": "gallery-action-shape",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 348,
+          "height": 42,
+          "fill": "#283557",
+          "radius": 21
+        },
+        {
+          "id": "gallery-action-label",
+          "type": "text",
+          "text": "View dispatch",
+          "x": 174,
+          "y": 11,
+          "fontSize": 16,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#ffffff",
+          "textAnchor": "middle",
+          "fontWeight": 600
+        }
+      ]
+    },
+    {
+      "id": "gallery-info",
+      "type": "group",
+      "x": 563,
+      "y": 151,
+      "children": [
+        {
+          "id": "gallery-info-shape",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 92,
+          "height": 42,
+          "fill": "#283557",
+          "radius": 21
+        },
+        {
+          "id": "gallery-info-label",
+          "type": "text",
+          "text": "Info",
+          "x": 46,
+          "y": 11,
+          "fontSize": 16,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#ffffff",
+          "textAnchor": "middle",
+          "fontWeight": 600
+        }
+      ]
+    },
+    {
+      "id": "gallery-share",
+      "type": "group",
+      "x": 675,
+      "y": 151,
+      "children": [
+        {
+          "id": "gallery-share-shape",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 98,
+          "height": 42,
+          "fill": "#283557",
+          "radius": 21
+        },
+        {
+          "id": "gallery-share-label",
+          "type": "text",
+          "text": "Share",
+          "x": 49,
+          "y": 11,
+          "fontSize": 16,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#ffffff",
+          "textAnchor": "middle",
+          "fontWeight": 600
+        }
+      ]
+    },
+    {
+      "id": "gallery-tabs",
+      "type": "text",
+      "text": "Overview           Collection           Visit",
+      "x": 195,
+      "y": 243,
+      "fontSize": 20,
+      "fontFamily": "Arial, sans-serif",
+      "fill": "#17191d",
+      "fontWeight": 600
+    },
+    {
+      "id": "gallery-tab-indicator",
+      "type": "rect",
+      "x": 195,
+      "y": 278,
+      "width": 98,
+      "height": 3,
+      "fill": "#283557",
+      "radius": 1.5
+    },
+    {
+      "id": "photo-rail-viewport",
+      "type": "group",
+      "x": 195,
+      "y": 294,
+      "children": [
+        {
+          "id": "photo-rail",
+          "type": "group",
+          "x": 0,
+          "y": 0,
+          "children": [
+            {
+              "id": "art-0",
+              "type": "group",
+              "x": -1255,
+              "y": 0,
+              "children": [
+                {
+                  "id": "art-0-base",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 417,
+                  "height": 334,
+                  "fill": "#222750",
+                  "radius": 0
+                },
+                {
+                  "id": "art-0-shape",
+                  "type": "rect",
+                  "x": 116.64999999999999,
+                  "y": 64,
+                  "width": 124.91600000000003,
+                  "height": 183.70000000000002,
+                  "fill": "#f4b97e",
+                  "radius": 8
+                },
+                {
+                  "id": "art-0-inset",
+                  "type": "rect",
+                  "x": 190.13,
+                  "y": 120,
+                  "width": 110.22000000000001,
+                  "height": 121.24200000000002,
+                  "fill": "#f4b97e",
+                  "radius": 8,
+                  "rotation": -18
+                },
+                {
+                  "id": "art-0-plate",
+                  "type": "rect",
+                  "x": 15,
+                  "y": 283,
+                  "width": 387,
+                  "height": 36,
+                  "fill": "#ffffff",
+                  "radius": 8
+                },
+                {
+                  "id": "art-0-label",
+                  "type": "text",
+                  "text": "ARRAY",
+                  "x": 26,
+                  "y": 291,
+                  "fontSize": 15,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#17191d",
+                  "fontWeight": 700,
+                  "letterSpacing": 2
+                }
+              ],
+              "clip": {
+                "width": 417,
+                "height": 334,
+                "radius": 18
+              }
+            },
+            {
+              "id": "art-1",
+              "type": "group",
+              "x": -814,
+              "y": 0,
+              "children": [
+                {
+                  "id": "art-1-base",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 268,
+                  "height": 334,
+                  "fill": "#d95863",
+                  "radius": 0
+                },
+                {
+                  "id": "art-1-shape",
+                  "type": "circle",
+                  "x": 60.3,
+                  "y": 52,
+                  "width": 147.4,
+                  "height": 147.4,
+                  "fill": "#ffe1a4"
+                },
+                {
+                  "id": "art-1-inset",
+                  "type": "circle",
+                  "x": 111.88999999999999,
+                  "y": 103.59,
+                  "width": 44.22,
+                  "height": 44.22,
+                  "fill": "#d95863"
+                },
+                {
+                  "id": "art-1-plate",
+                  "type": "rect",
+                  "x": 15,
+                  "y": 283,
+                  "width": 238,
+                  "height": 36,
+                  "fill": "#ffffff",
+                  "radius": 8
+                },
+                {
+                  "id": "art-1-label",
+                  "type": "text",
+                  "text": "CORONA",
+                  "x": 26,
+                  "y": 291,
+                  "fontSize": 15,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#17191d",
+                  "fontWeight": 700,
+                  "letterSpacing": 2
+                }
+              ],
+              "clip": {
+                "width": 268,
+                "height": 334,
+                "radius": 18
+              }
+            },
+            {
+              "id": "art-2",
+              "type": "group",
+              "x": -522,
+              "y": 0,
+              "children": [
+                {
+                  "id": "art-2-base",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 504,
+                  "height": 334,
+                  "fill": "#535ab2",
+                  "radius": 0
+                },
+                {
+                  "id": "art-2-shape",
+                  "type": "circle",
+                  "x": 160.14999999999998,
+                  "y": 52,
+                  "width": 183.70000000000002,
+                  "height": 183.70000000000002,
+                  "fill": "#a8e6eb"
+                },
+                {
+                  "id": "art-2-inset",
+                  "type": "circle",
+                  "x": 224.445,
+                  "y": 116.295,
+                  "width": 55.11000000000001,
+                  "height": 55.11000000000001,
+                  "fill": "#535ab2"
+                },
+                {
+                  "id": "art-2-plate",
+                  "type": "rect",
+                  "x": 15,
+                  "y": 283,
+                  "width": 474,
+                  "height": 36,
+                  "fill": "#ffffff",
+                  "radius": 8
+                },
+                {
+                  "id": "art-2-label",
+                  "type": "text",
+                  "text": "DOPPLER",
+                  "x": 26,
+                  "y": 291,
+                  "fontSize": 15,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#17191d",
+                  "fontWeight": 700,
+                  "letterSpacing": 2
+                }
+              ],
+              "clip": {
+                "width": 504,
+                "height": 334,
+                "radius": 18
+              }
+            },
+            {
+              "id": "art-3",
+              "type": "group",
+              "x": 6,
+              "y": 0,
+              "children": [
+                {
+                  "id": "art-3-base",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 334,
+                  "height": 334,
+                  "fill": "#006e84",
+                  "radius": 0
+                },
+                {
+                  "id": "art-3-shape",
+                  "type": "rect",
+                  "x": 75.14999999999999,
+                  "y": 64,
+                  "width": 124.91600000000003,
+                  "height": 183.70000000000002,
+                  "fill": "#f7d17e",
+                  "radius": 8
+                },
+                {
+                  "id": "art-3-inset",
+                  "type": "rect",
+                  "x": 148.63,
+                  "y": 120,
+                  "width": 110.22000000000001,
+                  "height": 121.24200000000002,
+                  "fill": "#f7d17e",
+                  "radius": 8,
+                  "rotation": -18
+                },
+                {
+                  "id": "art-3-plate",
+                  "type": "rect",
+                  "x": 15,
+                  "y": 283,
+                  "width": 304,
+                  "height": 36,
+                  "fill": "#ffffff",
+                  "radius": 8
+                },
+                {
+                  "id": "art-3-label",
+                  "type": "text",
+                  "text": "LIMB",
+                  "x": 26,
+                  "y": 291,
+                  "fontSize": 15,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#17191d",
+                  "fontWeight": 700,
+                  "letterSpacing": 2
+                }
+              ],
+              "clip": {
+                "width": 334,
+                "height": 334,
+                "radius": 18
+              }
+            },
+            {
+              "id": "art-4",
+              "type": "group",
+              "x": 364,
+              "y": 0,
+              "children": [
+                {
+                  "id": "art-4-base",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 444,
+                  "height": 334,
+                  "fill": "#b7daed",
+                  "radius": 0
+                },
+                {
+                  "id": "art-4-shape",
+                  "type": "rect",
+                  "x": 130.14999999999998,
+                  "y": 48,
+                  "width": 183.70000000000002,
+                  "height": 320.64,
+                  "fill": "#5451a6",
+                  "radius": 91.85000000000001
+                },
+                {
+                  "id": "art-4-inset",
+                  "type": "rect",
+                  "x": 163.21599999999998,
+                  "y": 77,
+                  "width": 117.56800000000001,
+                  "height": 287.24,
+                  "fill": "#b7daed",
+                  "radius": 58.784000000000006
+                },
+                {
+                  "id": "art-4-plate",
+                  "type": "rect",
+                  "x": 15,
+                  "y": 283,
+                  "width": 414,
+                  "height": 36,
+                  "fill": "#ffffff",
+                  "radius": 8
+                },
+                {
+                  "id": "art-4-label",
+                  "type": "text",
+                  "text": "ZENITH",
+                  "x": 26,
+                  "y": 291,
+                  "fontSize": 15,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#17191d",
+                  "fontWeight": 700,
+                  "letterSpacing": 2
+                }
+              ],
+              "clip": {
+                "width": 444,
+                "height": 334,
+                "radius": 18
+              }
+            }
+          ],
+          "keyframes": {
+            "x": [
+              {
+                "t": 0.4,
+                "value": 1108.5,
+                "ease": "linear"
+              },
+              {
+                "t": 0.43333333333333335,
+                "value": 1084.7,
+                "ease": "linear"
+              },
+              {
+                "t": 0.4666666666666667,
+                "value": 1084.7,
+                "ease": "linear"
+              },
+              {
+                "t": 0.5,
+                "value": 1060.1,
+                "ease": "linear"
+              },
+              {
+                "t": 0.5333333333333333,
+                "value": 1031.6,
+                "ease": "linear"
+              },
+              {
+                "t": 0.5666666666666667,
+                "value": 996.4,
+                "ease": "linear"
+              },
+              {
+                "t": 0.6,
+                "value": 956.1,
+                "ease": "linear"
+              },
+              {
+                "t": 0.6333333333333333,
+                "value": 956.1,
+                "ease": "linear"
+              },
+              {
+                "t": 0.6666666666666666,
+                "value": 911.6,
+                "ease": "linear"
+              },
+              {
+                "t": 0.7,
+                "value": 851.7,
+                "ease": "linear"
+              },
+              {
+                "t": 0.7333333333333333,
+                "value": 777.5,
+                "ease": "linear"
+              },
+              {
+                "t": 0.7666666666666667,
+                "value": 684.2,
+                "ease": "linear"
+              },
+              {
+                "t": 0.8,
+                "value": 684.2,
+                "ease": "linear"
+              },
+              {
+                "t": 0.8333333333333334,
+                "value": 558.8,
+                "ease": "linear"
+              },
+              {
+                "t": 0.8666666666666667,
+                "value": 402.5,
+                "ease": "linear"
+              },
+              {
+                "t": 0.9,
+                "value": 250.7,
+                "ease": "linear"
+              },
+              {
+                "t": 0.9333333333333333,
+                "value": 139.4,
+                "ease": "linear"
+              },
+              {
+                "t": 0.9666666666666667,
+                "value": 139.4,
+                "ease": "linear"
+              },
+              {
+                "t": 1,
+                "value": 59.5,
+                "ease": "linear"
+              },
+              {
+                "t": 1.0333333333333334,
+                "value": -0.5,
+                "ease": "linear"
+              },
+              {
+                "t": 1.0666666666666667,
+                "value": -47.9,
+                "ease": "linear"
+              },
+              {
+                "t": 1.1,
+                "value": -84.2,
+                "ease": "linear"
+              },
+              {
+                "t": 1.1333333333333333,
+                "value": -84.2,
+                "ease": "linear"
+              },
+              {
+                "t": 1.1666666666666667,
+                "value": -112.9,
+                "ease": "linear"
+              },
+              {
+                "t": 1.2,
+                "value": -137.1,
+                "ease": "linear"
+              },
+              {
+                "t": 1.2333333333333334,
+                "value": -157.5,
+                "ease": "linear"
+              },
+              {
+                "t": 1.2666666666666666,
+                "value": -175.3,
+                "ease": "linear"
+              },
+              {
+                "t": 1.3,
+                "value": -175.3,
+                "ease": "linear"
+              },
+              {
+                "t": 1.3333333333333333,
+                "value": -189.3,
+                "ease": "linear"
+              },
+              {
+                "t": 1.3666666666666667,
+                "value": -200.7,
+                "ease": "linear"
+              },
+              {
+                "t": 1.4,
+                "value": -209.5,
+                "ease": "linear"
+              },
+              {
+                "t": 1.4333333333333333,
+                "value": -217.6,
+                "ease": "linear"
+              }
+            ]
+          }
+        }
+      ],
+      "clip": {
+        "width": 578,
+        "height": 334
+      }
+    },
+    {
+      "id": "gallery-footer",
+      "type": "text",
+      "text": "Archive  /  Remote instruments",
+      "x": 195,
+      "y": 652,
+      "fontSize": 19,
+      "fontFamily": "Arial, sans-serif",
+      "fill": "#505854"
+    }
+  ]
+}
