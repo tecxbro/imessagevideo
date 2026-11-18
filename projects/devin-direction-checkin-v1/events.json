@@ -1,6 +1,6 @@
 {
   "fps": 30,
-  "frames": 720,
+  "frames": 840,
   "events": {
     "12": [
       {
@@ -48,9 +48,9 @@
         "actor": "tapSend"
       }
     ],
-    "432": [
+    "423": [
       {
-        "frame": 432,
+        "frame": 423,
         "action": "receive",
         "target": "cardSam",
         "actor": "cardSam"
@@ -74,150 +74,110 @@
         "actor": "draftSam"
       }
     ],
-    "457": [
+    "459": [
       {
-        "frame": 457,
+        "frame": 459,
         "action": "type char",
         "char": "e",
         "target": "draftSam",
         "actor": "draftSam"
       }
     ],
-    "463": [
+    "464": [
       {
-        "frame": 463,
+        "frame": 464,
         "action": "type char",
         "char": " ",
         "target": "draftSam",
         "actor": "draftSam"
       }
     ],
-    "469": [
+    "476": [
       {
-        "frame": 469,
+        "frame": 476,
         "action": "type char",
         "char": "y",
         "target": "draftSam",
         "actor": "draftSam"
       }
     ],
-    "474": [
+    "482": [
       {
-        "frame": 474,
+        "frame": 482,
         "action": "type char",
         "char": "o",
         "target": "draftSam",
         "actor": "draftSam"
       }
     ],
-    "480": [
+    "489": [
       {
-        "frame": 480,
+        "frame": 489,
         "action": "type char",
         "char": "u",
         "target": "draftSam",
         "actor": "draftSam"
       }
     ],
-    "486": [
+    "499": [
       {
-        "frame": 486,
+        "frame": 499,
         "action": "type char",
         "char": " ",
         "target": "draftSam",
         "actor": "draftSam"
       }
     ],
-    "492": [
+    "504": [
       {
-        "frame": 492,
+        "frame": 504,
         "action": "type char",
         "char": "h",
         "target": "draftSam",
         "actor": "draftSam"
       }
     ],
-    "505": [
+    "511": [
       {
-        "frame": 505,
-        "action": "arrival",
-        "target": "homePin",
-        "actor": "walker"
-      }
-    ],
-    "510": [
-      {
-        "frame": 510,
-        "action": "arrival",
-        "target": "cardMaya",
-        "actor": "cardMaya"
-      },
-      {
-        "frame": 510,
-        "action": "arrival",
-        "target": "cardSam",
-        "actor": "cardSam"
-      }
-    ],
-    "522": [
-      {
-        "frame": 522,
-        "action": "backspace",
-        "char": "h",
-        "target": "draftSam",
-        "actor": "draftSam"
-      }
-    ],
-    "525": [
-      {
-        "frame": 525,
-        "action": "backspace",
-        "char": " ",
-        "target": "draftSam",
-        "actor": "draftSam"
-      }
-    ],
-    "529": [
-      {
-        "frame": 529,
-        "action": "backspace",
-        "char": "u",
-        "target": "draftSam",
-        "actor": "draftSam"
-      }
-    ],
-    "532": [
-      {
-        "frame": 532,
-        "action": "backspace",
+        "frame": 511,
+        "action": "type char",
         "char": "o",
         "target": "draftSam",
         "actor": "draftSam"
       }
     ],
-    "535": [
+    "517": [
       {
-        "frame": 535,
-        "action": "backspace",
-        "char": "y",
+        "frame": 517,
+        "action": "type char",
+        "char": "m",
         "target": "draftSam",
         "actor": "draftSam"
       }
     ],
-    "538": [
+    "526": [
       {
-        "frame": 538,
-        "action": "backspace",
-        "char": " ",
-        "target": "draftSam",
-        "actor": "draftSam"
-      }
-    ],
-    "542": [
-      {
-        "frame": 542,
-        "action": "backspace",
+        "frame": 526,
+        "action": "type char",
         "char": "e",
+        "target": "draftSam",
+        "actor": "draftSam"
+      }
+    ],
+    "531": [
+      {
+        "frame": 531,
+        "action": "type char",
+        "char": " ",
+        "target": "draftSam",
+        "actor": "draftSam"
+      }
+    ],
+    "539": [
+      {
+        "frame": 539,
+        "action": "type char",
+        "char": "y",
         "target": "draftSam",
         "actor": "draftSam"
       }
@@ -225,17 +185,26 @@
     "545": [
       {
         "frame": 545,
-        "action": "backspace",
-        "char": "r",
+        "action": "type char",
+        "char": "e",
         "target": "draftSam",
         "actor": "draftSam"
       }
     ],
-    "548": [
+    "552": [
       {
-        "frame": 548,
-        "action": "backspace",
-        "char": "a",
+        "frame": 552,
+        "action": "type char",
+        "char": "t",
+        "target": "draftSam",
+        "actor": "draftSam"
+      }
+    ],
+    "560": [
+      {
+        "frame": 560,
+        "action": "type char",
+        "char": "?",
         "target": "draftSam",
         "actor": "draftSam"
       }
@@ -243,20 +212,195 @@
     "575": [
       {
         "frame": 575,
+        "action": "arrival",
+        "target": "homePin",
+        "actor": "walker"
+      }
+    ],
+    "580": [
+      {
+        "frame": 580,
+        "action": "arrival",
+        "target": "cardMaya",
+        "actor": "cardMaya"
+      },
+      {
+        "frame": 580,
+        "action": "arrival",
+        "target": "cardSam",
+        "actor": "cardSam"
+      }
+    ],
+    "608": [
+      {
+        "frame": 608,
+        "action": "backspace",
+        "char": "?",
+        "target": "draftSam",
+        "actor": "draftSam"
+      }
+    ],
+    "611": [
+      {
+        "frame": 611,
+        "action": "backspace",
+        "char": "t",
+        "target": "draftSam",
+        "actor": "draftSam"
+      }
+    ],
+    "615": [
+      {
+        "frame": 615,
+        "action": "backspace",
+        "char": "e",
+        "target": "draftSam",
+        "actor": "draftSam"
+      }
+    ],
+    "618": [
+      {
+        "frame": 618,
+        "action": "backspace",
+        "char": "y",
+        "target": "draftSam",
+        "actor": "draftSam"
+      }
+    ],
+    "621": [
+      {
+        "frame": 621,
+        "action": "backspace",
+        "char": " ",
+        "target": "draftSam",
+        "actor": "draftSam"
+      }
+    ],
+    "625": [
+      {
+        "frame": 625,
+        "action": "backspace",
+        "char": "e",
+        "target": "draftSam",
+        "actor": "draftSam"
+      }
+    ],
+    "628": [
+      {
+        "frame": 628,
+        "action": "backspace",
+        "char": "m",
+        "target": "draftSam",
+        "actor": "draftSam"
+      }
+    ],
+    "631": [
+      {
+        "frame": 631,
+        "action": "backspace",
+        "char": "o",
+        "target": "draftSam",
+        "actor": "draftSam"
+      }
+    ],
+    "635": [
+      {
+        "frame": 635,
+        "action": "backspace",
+        "char": "h",
+        "target": "draftSam",
+        "actor": "draftSam"
+      }
+    ],
+    "638": [
+      {
+        "frame": 638,
+        "action": "backspace",
+        "char": " ",
+        "target": "draftSam",
+        "actor": "draftSam"
+      }
+    ],
+    "641": [
+      {
+        "frame": 641,
+        "action": "backspace",
+        "char": "u",
+        "target": "draftSam",
+        "actor": "draftSam"
+      }
+    ],
+    "644": [
+      {
+        "frame": 644,
+        "action": "backspace",
+        "char": "o",
+        "target": "draftSam",
+        "actor": "draftSam"
+      }
+    ],
+    "648": [
+      {
+        "frame": 648,
+        "action": "backspace",
+        "char": "y",
+        "target": "draftSam",
+        "actor": "draftSam"
+      }
+    ],
+    "651": [
+      {
+        "frame": 651,
+        "action": "backspace",
+        "char": " ",
+        "target": "draftSam",
+        "actor": "draftSam"
+      }
+    ],
+    "654": [
+      {
+        "frame": 654,
+        "action": "backspace",
+        "char": "e",
+        "target": "draftSam",
+        "actor": "draftSam"
+      }
+    ],
+    "658": [
+      {
+        "frame": 658,
+        "action": "backspace",
+        "char": "r",
+        "target": "draftSam",
+        "actor": "draftSam"
+      }
+    ],
+    "661": [
+      {
+        "frame": 661,
+        "action": "backspace",
+        "char": "a",
+        "target": "draftSam",
+        "actor": "draftSam"
+      }
+    ],
+    "690": [
+      {
+        "frame": 690,
         "action": "send",
         "target": "bubbleHeartSam",
         "actor": "bubbleHeartSam"
       },
       {
-        "frame": 575,
+        "frame": 690,
         "action": "tap",
         "target": "tapHeartSend",
         "actor": "tapHeartSend"
       }
     ],
-    "590": [
+    "735": [
       {
-        "frame": 590,
+        "frame": 735,
         "action": "receive",
         "target": "bubbleHeart",
         "actor": "bubbleHeart"

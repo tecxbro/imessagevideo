@@ -5,14 +5,16 @@ import {rect, text, group, MessageBubble, Composer, Avatar, BottomSheet, CameraR
 import {stateAt} from '../../skill/imessage-motion-recreation/scripts/engines/common.mjs';
 
 export const CONFIG = {
-  width:1920,height:1080,fps:30,frames:720,
+  width:1920,height:1080,fps:30,frames:840,
   names:{sender:'Maya',friend:'Sam'},
-  copy:{ask:"Text me when you're home?",title:'Check In',mode:'When I Arrive',destination:'Home · Walking',eta:'About {min} min',received:'Check In · Maya · Home',arrived:'Arrived',arrival:'Maya has arrived · 12:00',completed:'✓  Completed',date:'Today 11:42 PM',home:'Home',draft:'are you h',heart:'❤️',end:'Check In. Right in Messages.',placeholder:'iMessage',apps:['Photos','Camera','Location','Check In']},
-  times:{ask:12,plus:90,sheet:96,sheetUp:120,row:132,draft:140,draftIn:165,send:186,sent:204,pull:210,pullEnd:265,route:230,routeEnd:405,reveal:420,center:480,typeStart:445,typeEnd:492,home:505,arrival:510,deleteStart:522,deleteEnd:548,heartSend:575,heartReceive:590,end:625,settle:640,tapDuration:12,flightDuration:15,askMove:12,askFade:7},
-  eta:[{frame:204,min:18,clock:'11:42'},{frame:250,min:15,clock:'11:45'},{frame:280,min:12,clock:'11:48'},{frame:310,min:9,clock:'11:51'},{frame:340,min:6,clock:'11:54'},{frame:370,min:3,clock:'11:57'},{frame:400,min:1,clock:'11:59'},{frame:505,min:1,clock:'12:00'}],
+  copy:{ask:"Text me when you're home?",title:'Check In',mode:'When I Arrive',destination:'Home · Walking',eta:'About {min} min',received:'Check In · Maya · Home',arrived:'Arrived',arrival:'Maya has arrived · 12:00',completed:'✓  Completed',date:'Today 11:42 PM',home:'Home',draft:'are you home yet?',heart:'❤️',end:'Check In. Right in Messages.',placeholder:'iMessage',apps:['Photos','Camera','Location','Check In']},
+  times:{ask:12,plus:90,sheet:96,sheetUp:120,row:132,draft:140,draftIn:165,send:186,sent:204,pull:210,pullEnd:265,route:230,routeEnd:405,reveal:420,center:444,typeStart:445,typeEnd:560,home:575,arrival:580,deleteStart:608,deleteEnd:661,heartSend:690,heartReceive:735,end:750,settle:800,tapDuration:12,flightDuration:15,askMove:12,askFade:7},
+  typingGaps:[6,8,5,12,6,7,10,5,7,6,9,5,8,6,7,8],
+  eta:[{frame:204,min:18,clock:'11:42'},{frame:250,min:15,clock:'11:45'},{frame:280,min:12,clock:'11:48'},{frame:310,min:9,clock:'11:51'},{frame:340,min:6,clock:'11:54'},{frame:370,min:3,clock:'11:57'},{frame:400,min:1,clock:'11:59'},{frame:575,min:1,clock:'12:00'}],
   colors:{background:'#F1F0ED',blue:'#0A84FF',incoming:'#E9E9EB',ink:'#17181C',muted:'#85858B',green:'#24834B',greenLight:'#E9F6ED',bezel:'#18191D',line:'#D9D9DE',white:'#FFFFFF'},
-  layout:{mayaX:520,mayaWalkX:-500,samX:2100,phoneY:80,routeY:650,homeX:1953,homeY:532.5},
-  camera:[{f:0,s:1.6,x:-304,y:-75},{f:74,s:1.6,x:-304,y:-105},{f:120,s:1.4,x:-146,y:-550},{f:186,s:1.4,x:-146,y:-535},{f:209,s:1.4,x:-146,y:-220},{f:265,s:.62,x:650,y:160},{f:419,s:.62,x:620,y:145},{f:480,s:.7,x:-240,y:100},{f:600,s:.7,x:-240,y:100},{f:640,s:.74,x:-305,y:65}],
+  layout:{mayaX:520,mayaWalkX:520,samX:1900,phoneY:80,routeY:650,homeX:1770,homeY:532.5},
+  camera:[{f:0,s:1.6,x:-304,y:-75},{f:74,s:1.6,x:-304,y:-105},{f:120,s:1.4,x:-146,y:-550},{f:186,s:1.4,x:-146,y:-535},{f:209,s:1.4,x:-146,y:-220},{f:265,s:.82,x:-240,y:70},{f:419,s:.84,x:-252,y:58},{f:444,s:1.35,x:-1950.6,y:-470},{f:560,s:1.35,x:-1950.6,y:-470},{f:608,s:1.35,x:-1950.6,y:-468},{f:705,s:1.35,x:-1950.6,y:-466},{f:735,s:.8,x:-175,y:0},{f:780,s:.8,x:-175,y:0},{f:839,s:.81,x:-194,y:-8}],
+  presence:{maya:[[0,1],[420,1],[424,0],[728,0],[735,1]],sam:[[0,0],[420,0],[432,1]]},
 };
 const C=CONFIG.colors,T=CONFIG.times,P=CONFIG.copy;
 const seconds=f=>f/CONFIG.fps;
@@ -28,21 +30,26 @@ const arrivalKeys=(before,after)=>[key(0,before,'hold'),key(T.arrival,after,'hol
 
 function checkCard(id,received=false){
   const title=received?P.received:P.title;
-  const card=group(id,received?32:90,received?320:580,[
-    rect(id+'-surface',0,0,390,222,'#F2F5FA',25,{stroke:'#D9E1EC',strokeWidth:1.5,keyframes:{fill:arrivalKeys('#F2F5FA',C.greenLight)}}),
+  const width=received?390:340;
+  const outgoingX=512-28-width;
+  const card=group(id,received?32:outgoingX,received?320:580,[
+    rect(id+'-surface',0,0,width,222,'#F2F5FA',25,{stroke:'#D9E1EC',strokeWidth:1.5,keyframes:{fill:arrivalKeys('#F2F5FA',C.greenLight)}}),
     circle(id+'-icon',20,20,40,C.blue,{keyframes:{fill:arrivalKeys(C.blue,C.green)}}),
     line(id+'-check','M 31 40 L 38 47 L 50 32',C.white,3),
     txt(id+'-title',title,72,26,received?23:28,{fontWeight:700}),
     txt(id+'-mode',P.mode,22,82,29,{fontWeight:700,keyframes:{text:arrivalKeys(P.mode,P.arrived),fill:arrivalKeys(C.ink,C.green)}}),
     txt(id+'-destination',P.destination,22,125,24,{fill:'#555C66',keyframes:{text:arrivalKeys(P.destination,P.arrival),fontSize:arrivalKeys(24,23)}}),
     txt(id+'-eta',P.eta.replace('{min}',CONFIG.eta[0].min),22,174,25,{fill:C.blue,keyframes:{text:[...CONFIG.eta.map(e=>key(e.frame,P.eta.replace('{min}',e.min),'hold')),key(T.arrival,P.completed,'hold')],fill:arrivalKeys(C.blue,C.green)}}),
-    txt(id+'-chevron','›',350,175,27,{fill:C.muted}),
+    txt(id+'-chevron','›',width-40,175,27,{fill:C.muted}),
   ]);
   if(!received){
     card.start=seconds(T.draft);
-    card.keyframes={x:track([[T.draft,90],[T.send,90],[T.sent,90]]),y:track([[T.draft,925],[T.draftIn,580],[T.send,580],[T.sent,320]]),scaleX:track([[T.draft,.93],[T.draftIn,1]]),scaleY:track([[T.draft,.93],[T.draftIn,1]])};
+    card.keyframes={x:track([[T.draft,outgoingX],[T.send,outgoingX],[T.sent,outgoingX]]),y:track([[T.draft,925],[T.draftIn,580],[T.send,580],[T.sent,320]]),scaleX:track([[T.draft,.93],[T.draftIn,1]]),scaleY:track([[T.draft,.93],[T.draftIn,1]])};
     eventsOn(card,[{frame:T.draft,action:'draft appears',target:id},{frame:T.send,action:'send',target:id},{frame:T.arrival,action:'arrival',target:id}]);
-  }else eventsOn(card,[{frame:T.reveal,action:'receive',target:id},{frame:T.arrival,action:'arrival',target:id}]);
+  }else {
+    card.keyframes={y:track([[T.reveal,320],[T.center,400]])};
+    eventsOn(card,[{frame:T.reveal,action:'receive',target:id},{frame:T.arrival,action:'arrival',target:id}]);
+  }
   return card;
 }
 
@@ -85,10 +92,13 @@ function phone(id,x,name,isMaya){
     const receivedHeart=heart('bubbleHeart',false,T.heartReceive);
     thread.children.push(receivedHeart);
   }else{
-    thread.children.push(MessageBubble({id:'bubbleAskSam',x:114,y:240,width:371,height:64,side:'outgoing',copy:P.ask,fill:C.blue,fontSize:26}));
+    const earlierQuestion=MessageBubble({id:'bubbleAskSam',x:114,y:240,width:371,height:64,side:'outgoing',copy:P.ask,fill:C.blue,fontSize:26});
+    earlierQuestion.keyframes={y:track([[T.reveal,240],[T.center,160]])};
+    thread.children.push(earlierQuestion);
     thread.children.push(checkCard('cardSam',true),heart('bubbleHeartSam',true,T.heartSend));
-    const draft=txt('draftSam','',106,856,25);
-    const typing=Array.from(P.draft).map((char,i)=>({frame:Math.round(T.typeStart+i*(T.typeEnd-T.typeStart)/(P.draft.length-1)),value:Array.from(P.draft).slice(0,i+1).join(''),action:'type char',char}));
+    const draft=txt('draftSam','',106,853,32);
+    const gapTotal=CONFIG.typingGaps.reduce((a,b)=>a+b,0);
+    const typing=Array.from(P.draft).map((char,i)=>({frame:T.typeStart+Math.round(CONFIG.typingGaps.slice(0,i).reduce((a,b)=>a+b,0)/gapTotal*(T.typeEnd-T.typeStart)),value:Array.from(P.draft).slice(0,i+1).join(''),action:'type char',char}));
     const deleting=Array.from(P.draft).map((char,i)=>({frame:Math.round(T.deleteStart+i*(T.deleteEnd-T.deleteStart)/(P.draft.length-1)),value:Array.from(P.draft).slice(0,P.draft.length-i-1).join(''),action:'backspace',char:Array.from(P.draft).at(-i-1)}));
     draft.keyframes={text:[key(0,'','hold'),...typing.concat(deleting).map(e=>key(e.frame,e.value,'hold'))]};
     eventsOn(draft,typing.concat(deleting).map(({frame,action,char})=>({frame,action,char,target:'draftSam'})));
@@ -98,16 +108,17 @@ function phone(id,x,name,isMaya){
   return group(id,x,CONFIG.layout.phoneY,[rect(id+'-rim',-14,-14,540,944,'#424349',62,{stroke:'#9B9CA1',strokeWidth:2,shadow:{x:0,y:22,blur:30,color:'#00000025'}}),rect(id+'-bezel',-9,-9,530,934,C.bezel,58),group(id+'-screen',0,0,children,{clip:{x:0,y:0,width:512,height:916,radius:48}})]);
 }
 function heart(id,outgoing,frame){
-  const b=MessageBubble({id,x:outgoing?370:28,y:595,width:108,height:73,side:outgoing?'outgoing':'incoming',copy:'',fill:outgoing?C.blue:C.incoming});
-  b.children.push(txt(id+'-glyph',P.heart,29,10,42,{fontFamily:'Arial, Apple Color Emoji, sans-serif'}));
-  b.start=seconds(frame);b.keyframes={y:track([[frame,820],[frame+T.flightDuration,595]])};
+  const b=MessageBubble({id,x:outgoing?326:28,y:665,width:158,height:116,side:outgoing?'outgoing':'incoming',copy:'',fill:outgoing?C.blue:C.incoming});
+  b.children.push(txt(id+'-glyph',P.heart,39,9,76,{fontFamily:'Arial, Apple Color Emoji, sans-serif'}));
+  b.start=seconds(frame);b.keyframes={y:track([[frame,730],[frame+T.flightDuration,665]])};
   return eventsOn(b,[{frame,action:outgoing?'send':'receive',target:id}]);
 }
 
 const L=CONFIG.layout;
 const maya=phone('phoneMaya',L.mayaX,CONFIG.names.friend,true);
-maya.keyframes={x:track([[0,L.mayaX],[T.pull,L.mayaX],[T.pullEnd,L.mayaWalkX],[T.reveal-1,L.mayaWalkX],[T.center,L.mayaX]])};
+maya.keyframes={x:track([[0,L.mayaX],[T.pull,L.mayaX],[T.pullEnd,L.mayaWalkX],[T.reveal-1,L.mayaWalkX],[T.center,L.mayaX]]),opacity:track(CONFIG.presence.maya)};
 const sam=phone('phoneSam',L.samX,CONFIG.names.sender,false);
+sam.keyframes={opacity:track(CONFIG.presence.sam)};
 const routePoints=Array.from({length:48},(_,i)=>({x:L.mayaWalkX+540+i/47*(L.homeX-L.mayaWalkX-540),y:L.routeY-Math.sin(i/47*Math.PI)*120+i/47*(L.homeY-L.routeY)}));
 const route=group('route',0,0,routePoints.map((p,i)=>show(circle('route-dot-'+i,p.x,p.y,8,'#A7B8AB',{keyframes:{x:track([[T.reveal-1,p.x],[T.center,p.x+(L.mayaX-L.mayaWalkX)*(1-i/47)]])}}),Math.round(T.route+i*(T.routeEnd-T.route)/47))));
 const walkerKeys=routePoints.map((p,i)=>{
@@ -115,13 +126,14 @@ const walkerKeys=routePoints.map((p,i)=>{
   const shift=stateAt(maya,seconds(frame)).x-L.mayaWalkX;
   return {frame,x:p.x+shift*(1-i/47),y:p.y};
 });
-const walker=group('walker',0,0,[circle('walker-halo',-20,-20,40,'#FFFFFF'),circle('walker-core',-12,-12,24,C.blue)],{start:seconds(T.route),end:seconds(T.arrival),keyframes:{x:walkerKeys.map(p=>key(p.frame,p.x)),y:walkerKeys.map(p=>key(p.frame,p.y))}});
+const walker=group('walker',0,0,[circle('walker-halo',-32,-32,64,'#FFFFFF'),circle('walker-core',-21,-21,42,C.blue)],{start:seconds(T.route),end:seconds(T.arrival),keyframes:{x:walkerKeys.map(p=>key(p.frame,p.x)),y:walkerKeys.map(p=>key(p.frame,p.y))}});
 eventsOn(walker,[{frame:T.home,action:'arrival',target:'homePin'}]);
 const hp=routePoints.at(-1);
 const home=show(group('homePin',hp.x-33,hp.y-33,[circle('home-disc',0,0,66,C.white,{stroke:'#DCE4DC',strokeWidth:2}),line('home-roof','M 15 31 L 33 15 L 51 31',C.green,4),line('home-walls','M 20 28 L 20 48 L 46 48 L 46 28 M 30 48 L 30 36 L 37 36 L 37 48',C.green,3),txt('home-label',P.home,33,-43,28,{textAnchor:'middle',fill:C.green,fontWeight:600})]),T.route);
 const cam=CameraRig({id:'camera',originX:0,originY:0,children:[route,home,walker,maya,sam],keyframes:{x:CONFIG.camera.map(c=>key(c.f,c.x)),y:CONFIG.camera.map(c=>key(c.f,c.y)),scaleX:CONFIG.camera.map(c=>key(c.f,c.s)),scaleY:CONFIG.camera.map(c=>key(c.f,c.s))}});
-const endLine=show(txt('endLine',P.end,960,972,48,{textAnchor:'middle',fontWeight:600,keyframes:{opacity:track([[T.end,0],[T.settle,1]])}}),T.end);
-const scene={width:CONFIG.width,height:CONFIG.height,fps:CONFIG.fps,duration:CONFIG.frames/CONFIG.fps,background:C.background,title:'Check In — One thread, one walk',source:{notes:'Authored choreography following SHOT-PLAN.md. Editable geometric approximation, Arial fallback; no Apple artwork or SF Symbols. Silent picture.'},layers:[group('world',0,0,[cam]),endLine]};
+const endLine=show(txt('endLine',P.end,960,936,66,{textAnchor:'middle',fontWeight:600,keyframes:{opacity:track([[T.end,0],[T.end+15,1]])}}),T.end);
+const endMark=show(group('endMark',960,490,[rect('mark-green',-70,-70,140,140,C.green,36),{id:'mark-bubble',type:'path',d:'M -38 -30 H 38 Q 46 -30 46 -22 V 20 Q 46 30 36 30 H -12 L -36 47 L -31 30 H -38 Q -46 30 -46 20 V -22 Q -46 -30 -38 -30 Z',fill:C.white},...[-20,0,20].map((x,i)=>circle('mark-dot-'+i,x-5,-5,10,C.green))],{keyframes:{opacity:track([[T.end,0],[T.end+15,1]]),scaleX:track([[T.end,1.16],[CONFIG.frames-1,1]]),scaleY:track([[T.end,1.16],[CONFIG.frames-1,1]]),rotation:track([[T.end,-6],[CONFIG.frames-1,0]]),y:track([[T.end,510],[CONFIG.frames-1,490]])}}),T.end);
+const scene={width:CONFIG.width,height:CONFIG.height,fps:CONFIG.fps,duration:CONFIG.frames/CONFIG.fps,background:C.background,title:'Check In — One thread, one walk (v2)',source:{notes:'Authored v2 revision: readable worry draft, outgoing card, closer walking composition and live authored end mark. Arial fallback; no Apple artwork or SF Symbols. Silent picture.'},layers:[group('world',0,0,[cam]),endLine,endMark]};
 const walk=layers=>layers.flatMap(l=>[l,...walk(l.children??[])]);
 const all=walk(scene.layers);
 if(new Set(all.map(l=>l.id)).size!==all.length)throw Error('Duplicate actor IDs');
@@ -144,7 +156,7 @@ function eventFrame(layer,event){
     for(let frame=0;frame<CONFIG.frames;frame++){
       const t=frame/scene.fps,camera=stateAt(cam,t),phoneState=stateAt(sam,t),cardState=stateAt(layer,t);
       const left=camera.x+camera.scaleX*(phoneState.x+cardState.x);
-      if(left<scene.width&&left+camera.scaleX*390>0)return frame;
+      if(phoneState.opacity>.05&&left<scene.width&&left+camera.scaleX*390>0)return frame;
     }
     throw Error('Receiving card is never revealed');
   }
