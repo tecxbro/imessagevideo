@@ -36,6 +36,8 @@ Use `brief-schema.json` and `examples/dinner-shot-plan.json` as a structured sta
 
 **Sound review:** Start with UI only. Type only for observed human input; do not sound title reveals, AI response text or caret blinks. Keep actual pauses and silence. Check attack/onset alignment and codec headroom, then add quiet optional music.
 
+**Original-direction review (authored films):** Give the observer only the film first, collect a timestamped viewer report, revise against it, then send the rationale. Check for the slide-like failure where a view change is a cut to a standalone card or title rather than a camera move or causal UI action, and where elapsed time is announced instead of shown by in-picture state (an ETA, a clock, a moving actor). Keep objects on their intended side after send on every device that shows them. Make a human action that is abandoned or deleted legible enough to read as intent. Inspect camera-move boundaries and any sampled warning frames at delivery size for torn or duplicated screens and off-screen device slivers at frame edges.
+
 For each failure log the observed defect, evidence, cause or bounded hypothesis, changed variable and next check. Retain successful artifacts and scoped outside-range proofs. Numerical metrics diagnose differences, not a percentage of perfection.
 
 ## Deliver something an agent can reuse
