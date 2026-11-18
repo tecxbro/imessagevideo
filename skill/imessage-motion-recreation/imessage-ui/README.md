@@ -80,7 +80,9 @@ content: four participants, long URL preview, emoji-only message, unbreakable
 word, three photo ratios, five owned reactions, a typed multiline send and a
 1.6× camera push. Timing is newly authored because the observer supplied none.
 
-`evidence/` preserves first exports, revised exports, their scenes and layout audits. These films
+`../../../release-evidence/film-trials/devin-bot/imessage-ui/` preserves first
+exports, revised exports, their scenes and layout audits, outside the distributable skill.
+These films
 are intentionally silent: UI behavior is this assignment's boundary, not an
 unscored claim of a finished audiovisual launch. Re-render commands above produce
 new outputs without modifying that evidence.
