@@ -19,7 +19,7 @@ export function wrapText(value, width, measure, size=17, weight=400) {
   const lines = [];
   for (const paragraph of value.split('\n')) {
     let line = '';
-    for (const token of paragraph.match(/\s+|\S+/gu) ?? []) {
+    for (const token of paragraph.trimEnd().match(/\s+|\S+/gu) ?? []) {
       if (measure(line + token, size, weight) <= width) { line += token; continue; }
       if (line.trim()) { lines.push(line.trimEnd()); line = ''; }
       for (const cluster of graphemes(token.trimStart())) {

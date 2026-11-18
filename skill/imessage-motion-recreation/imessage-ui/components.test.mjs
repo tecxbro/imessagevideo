@@ -87,6 +87,12 @@ test('camera moves one clipped hierarchy, not local message geometry',()=>{
   assert.ok(layers.find(layer=>layer.id==='phone-screen').clip);
   assert.equal(stateAt(layers.find(layer=>layer.id==='conversation-camera'),4.8).scaleX,1.6);
 });
+test('trailing spaces do not invent a fourth composer line',()=>{
+  const copy=Array(3).fill('A'.repeat(27)).join('\n');
+  assert.equal(wrapText(copy+' ',248,measure).length,3);
+  assert.equal(ComposerState({id:'spaces',copy:copy+' ',measure,start:0,end:1}).lines.length,3);
+  assert.deepEqual(wrapText('one\n\n',248,measure),['one','','']);
+});
 test('scene IDs are unique, finite at every native frame, deterministic and escaped',()=>{
   const input=clone();input.messages[0].copy='<script>hello & goodbye</script>';
   const original=structuredClone(input), {scene}=buildConversation(input,measure), layers=flatten(scene.layers);
