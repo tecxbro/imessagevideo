@@ -12,6 +12,9 @@ export async function picture(editName) {
   const edit = edits[editName];
   if (!edit) throw new Error('Unknown edit: ' + editName);
   const sheet = await loadImage(new URL('./assets/plates.png', import.meta.url).pathname);
+  const payoff = editName === 'final'
+    ? await loadImage(new URL('./assets/payoff-plates.png', import.meta.url).pathname)
+    : null;
   const canvas = createCanvas(width, height);
   const ctx = canvas.getContext('2d');
   const tileWidth = Math.floor(sheet.width / 2);
@@ -107,13 +110,15 @@ export async function picture(editName) {
     plate(0, 1 + f * 0.00042, f * -0.13, 0.74);
     if (f < edit.entrance) return;
     veil(0, 0.74);
-    label('SATURDAY', 82, 548, 20, ivory, 'system-ui', '700');
+    const locator = editName === 'final' ? 'SCORE TABLE  /  SATURDAY' : 'SATURDAY';
+    label(locator, 82, 548, 20, ivory, 'system-ui', '700');
     label('First pitch, 9:00', 81, 607, 56);
   }
 
   function chair(f) {
     const elapsed = f - edit.chairReturn;
-    plate(0, 1.13 + elapsed * 0.00074, -72 - elapsed * 0.32, 0.87);
+    if (editName === 'final') plate(0, 1.035 + elapsed * 0.0003, -5 - elapsed * 0.14, 0.75);
+    else plate(0, 1.13 + elapsed * 0.00074, -72 - elapsed * 0.32, 0.87);
   }
 
   function book(f) {
@@ -192,11 +197,73 @@ export async function picture(editName) {
     const jitter = pulse >= 0 && pulse < 19 ? Math.sin(pulse * 2.1) * (1 - pulse / 19) * 6 : 0;
     plate(2, 1.04 + f * 0.00017, -8 + jitter, 0.61);
     if (f < edit.askCut) return;
-    const typed = Math.floor(fixed(f, edit.accept - 35, edit.accept - 11) * backupThread[1].text.length);
+    const typed = Math.floor(fixed(f, edit.accept - (editName === 'final' ? 27 : 35), edit.accept - 11) * backupThread[1].text.length);
     insert({
       person: 'Maya', x: 658, y: 169, first: f - edit.askCut, second: f - edit.accept, third: -1,
       composer: f < edit.accept && typed ? backupThread[1].text.slice(0, typed) : '',
     });
+  }
+
+  function payoffPlate(row, f, from, drift) {
+    const elapsed = f - from;
+    const h = Math.floor(payoff.height / 2);
+    const scale = 1.015 + elapsed * drift;
+    const w = height * scale * payoff.width / h;
+    ctx.drawImage(payoff, 0, row * h, payoff.width, h,
+      (width - w) / 2, height * (1 - scale) / 2, w, height * scale);
+    return scale;
+  }
+
+  function occupied(f) {
+    payoffPlate(0, f, edit.occupiedCut, 0.00023);
+    if (f < edit.confirmed) return;
+    const fade = fixed(f - edit.confirmed + 1, 0, 7);
+    ctx.save();
+    ctx.globalAlpha = fade;
+    ctx.translate(0, 9 * (1 - ease(fade)));
+    ctx.shadowColor = 'rgba(7,14,12,.38)';
+    ctx.shadowBlur = 22;
+    ctx.shadowOffsetY = 5;
+    panel(76, 82, 470, 142, 18, '#fbf2df');
+    ctx.restore();
+    ctx.save();
+    ctx.globalAlpha = fade;
+    ctx.translate(0, 9 * (1 - ease(fade)));
+    label('PINCH HIT  /  TO COACH', 102, 118, 17, '#4a554b', 'system-ui', '700');
+    const [line, rest] = coachThread[2].text.split('. ');
+    label(line + '.', 102, 162, 32, '#1f2828', 'system-ui', '600');
+    label(rest, 102, 198, 26, '#1f2828', 'system-ui');
+    ctx.restore();
+  }
+
+  function finalBook(f) {
+    const scale = payoffPlate(1, f, edit.bookCut, 0.00026);
+    const p = ease(fixed(f, edit.pencilDown, edit.markComplete));
+    if (p > 0) {
+      const tipX = width / 2 + 364 * scale;
+      const tipY = height / 2 - 23 * scale;
+      ctx.strokeStyle = 'rgba(46,40,33,.8)';
+      ctx.lineWidth = 2.8;
+      ctx.lineCap = 'round';
+      ctx.beginPath();
+      ctx.moveTo(tipX + 3 - 16 * p, tipY + 2 + 13 * p);
+      ctx.lineTo(tipX + 3, tipY + 2);
+      ctx.stroke();
+    }
+    if (f >= edit.title) {
+      veil(0, 0.78);
+      label('Pinch Hit', 81, 619, 81, ivory, 'Georgia', 'italic');
+    }
+  }
+
+  function final(f) {
+    if (f < edit.fieldCut) opening(f);
+    else if (f < edit.requestCut) coachApproach(f);
+    else if (f < edit.chairReturn) coachRequest(f);
+    else if (f < edit.askCut) chair(f);
+    else if (f < edit.occupiedCut) kitchen(f);
+    else if (f < edit.bookCut) occupied(f);
+    else finalBook(f);
   }
 
   function early(f) {
@@ -218,6 +285,7 @@ export async function picture(editName) {
     ctx.fillStyle = '#1b1a16';
     ctx.fillRect(0, 0, width, height);
     if (editName === 'alternate') alternate(f);
+    else if (editName === 'final') final(f);
     else early(f);
     return canvas;
   };
