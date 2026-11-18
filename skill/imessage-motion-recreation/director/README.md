@@ -9,7 +9,7 @@ Start with `../SKILL.md`. The previous version was primarily a measured reconstr
 | Design grammar | `design-grammar.md` | Attention hierarchy, typography, actor identity, camera, clipping, material and reading holds |
 | Measured source studies | `catalogue.json`, `source-studies/*.json` | 14 studies with exact frames, actual canonical IDs/literal keys, anatomy, choose/avoid rules, sound hooks and caveats |
 | Visual evidence | `atlas/*.jpg` | 84 paired source/rebuild teaching frames, six phases per study; images must actually be opened |
-| Components | `components.mjs`, `component-contracts.md`, `visuals/component-anatomy.png` | Nine editable neutral builders with parameter APIs and explicit asset boundaries |
+| Components | `components.mjs`, `component-contracts.md`, `visuals/component-anatomy.png` | Editable Conversation and media builders, plus the nine original neutral starter components |
 | Motion code | `motions.mjs`, `examples/scenes/*.json` | Nine new adaptable starters, using the same scene format as production renderers |
 | Exposed UI | `index.html` | Offline play/pause, native-frame scrubbing, duration/copy/color edits, routing suggestions, scene/cue/SVG export and source filmstrips |
 | Frame analysis | `analysis/*/frames.csv`, `scan.json`, `analysis/index.json` | Historical native-pixel comparison of all7,499 aligned output frames, including residual error and source mapping |
@@ -32,7 +32,7 @@ node director/cli.mjs frames --motif identity-morph --out work/svg-frames
 node --test director/test_toolkit.mjs
 ```
 
-See component-contracts.md and ../RUNNING.md before video rendering. The visual viewer does not automatically assemble the full shot plan, export video, mix sound or build an editable Figma file.
+For an original thread with editable participants, arrivals, reactions, photos and camera, use the [Conversation API and render example](component-contracts.md#compose-a-moving-thread). See [Running](../RUNNING.md) for renderer setup.
 
 ## Concrete interpretation examples
 

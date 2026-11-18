@@ -16,6 +16,7 @@ For a new company or product, start with [RESEARCH-FIRST.md](library/RESEARCH-FI
 | Make a film for a new company | [Company research](library/RESEARCH-FIRST.md), [profile schema](library/company-profile.schema.json), then the director workflow | Verified product evidence and a newly authored shot plan |
 | Recreate a supplied film | [Reconstruction playbook](references/reconstruction-playbook.md), actual movie and native-frame comparisons | Actual source with explicit output/source mapping |
 | Direct a new film using these ideas | [Director workflow](director/directing.md), [visual explorer](director/index.html), [design grammar](director/design-grammar.md) | A new shot plan, labelled as authored choreography |
+| Assemble an editable conversation with new copy, people or media | [Conversation contract](director/component-contracts.md#compose-a-moving-thread), [moving example](director/examples/conversation-motion.mjs), [attachment evidence](director/attachment-evidence.md) | Authored message, draft, reaction, scroll and camera times |
 | Extract or adapt a component | [Component contracts](director/component-contracts.md), [component code](director/components.mjs), chosen study | Declared editable boundary and actual source evidence |
 | Add UI sound | [UI audio workflow](references/ui-audio-workflow.md) | Visible actions in the delivered picture |
 
@@ -82,7 +83,7 @@ Keep this private repository's current visibility unless the user explicitly cha
 
 ## Components and exposed UI
 
-`director/components.mjs` provides nine editable builders: MessageBubble, Composer, AppIcon, AppCard, BottomSheet, PhoneFrame, ActionButton, Avatar and CameraRig. They emit the same scene contract used by the real renderers. Preserve stable child IDs, explicit copy/line breaks, independent camera/content groups and correct clipping. Replace the disclosed Arial fallback with verified production typography and remeasure it.
+`director/components.mjs` exports `Conversation` for editable threads. Supply participants, messages, draft states, reactions and scroll cues, then wrap the phone in `CameraRig`. The thread lays out bubbles and clips to the moving phone. Choose the [media surface](director/component-contracts.md#choose-the-media-surface) from visible evidence before building a photo strip, collection or app card. The nine original starter builders remain available for direct layer authoring. Replace the disclosed Arial fallback with verified production typography and remeasure it.
 
 Open `director/index.html` for a standalone visual explorer. It works from the extracted folder without an account/server, displays the starters and component anatomy, scrubs by frame, suggests motifs from a brief and exports scene, cue and SVG files. It contains no AI model and does not automatically finish a film, export video or create a Figma file.
 
