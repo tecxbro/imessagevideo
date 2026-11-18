@@ -1,21 +1,21 @@
 ---
 name: imessage-motion-recreation
-description: Research, direct and recreate Apple Messages launch motion using the complete local example projects, actual source code, assets, five renderers, visual studies, editable UI components, measured timing and UI sound in this checkout.
+description: Originate an iMessage product launch film from a brief, or recreate a supplied film using the local movies, editable UI, measured timing and five renderers.
 ---
 
 # iMessage motion director
 
-Version 3.1 local combines direction instructions, visual studies, component code and the complete example library stored in this checkout. It is not trained model weights or an autonomous video generator. Act as a director: research the product, determine its promise, choose visual evidence, establish component anatomy, plan motion and sound, then render and judge the result.
+Version 3.1 local combines direction instructions, visual studies, component code and the complete example library stored in this checkout. It is not trained model weights or an autonomous video generator. For original direction, ground the product action, decide what is worth watching unfold, then build and review moving treatments. For recreation, preserve measured source evidence.
 
-For a new company or product, start with [RESEARCH-FIRST.md](library/RESEARCH-FIRST.md) and produce an evidence-backed profile using [company-profile.schema.json](library/company-profile.schema.json) **before choosing motion or writing the shot plan**. Use supplied/connected context, the official site, primary docs and real UI. Record citations, observed facts, inferences and unresolved gaps; do not invent product capabilities, transactions, integrations or results. Investigate ambiguous names before asking one focused clarification.
+For an existing company or product, start with [RESEARCH-FIRST.md](library/RESEARCH-FIRST.md) and produce an evidence-backed profile using [company-profile.schema.json](library/company-profile.schema.json) **before choosing motion or writing the shot plan**. Use supplied/connected context, the official site, primary docs and real UI. Record citations, observed facts, inferences and unresolved gaps; do not invent product capabilities, transactions, integrations or results. Investigate ambiguous names before asking one focused clarification. For a fictional brief, implement or replay a clearly scoped fixture and tie the depicted actions and wording to it.
 
 ## Route the task
 
 | User goal | Start here | Timing authority |
 |---|---|---|
-| Make a film for a new company | [Company research](library/RESEARCH-FIRST.md), [profile schema](library/company-profile.schema.json), then the director workflow | Verified product evidence and a newly authored shot plan |
+| Originate a film from a product brief | [Director workflow](director/directing.md) and [product evidence](library/RESEARCH-FIRST.md) | Observed product behavior or a tested prototype, and an authored edit |
 | Recreate a supplied film | [Reconstruction playbook](references/reconstruction-playbook.md), actual movie and native-frame comparisons | Actual source with explicit output/source mapping |
-| Direct a new film using these ideas | [Director workflow](director/directing.md), [visual explorer](director/index.html), [design grammar](director/design-grammar.md) | A new shot plan, labelled as authored choreography |
+| Adapt a studied technique to new footage | [Director workflow](director/directing.md), [visual explorer](director/index.html), [design grammar](director/design-grammar.md) | Authored choreography supported by the relevant source study |
 | Extract or adapt a component | [Component contracts](director/component-contracts.md), [component code](director/components.mjs), chosen study | Declared editable boundary and actual source evidence |
 | Add UI sound | [UI audio workflow](references/ui-audio-workflow.md) | Visible actions in the delivered picture |
 
@@ -58,11 +58,9 @@ Keep this private repository's current visibility unless the user explicitly cha
 
 ## Read the relevant knowledge
 
-1. Complete the research/profile step for a new company, then read `director/directing.md`. Extract audience, promise, real user action, proof, runtime, aspect ratio, copy and asset constraints. Consult supplied/connected context before asking for missing information. Choose reasonable reversible defaults; do not invent product capabilities or UI states.
-2. Read `director/catalogue.json` and select studies by story purpose. The explainable router in `director/decisions.mjs` suggests options; keyword scores are not creative judgment.
-3. **Open and inspect the selected atlas images** with an available image tool. Read the study JSON for native frames, actual canonical IDs/keyframes, parent/clip structure, material and editability caveats. Linking an image does not mean the agent has seen it. Record which frames were inspected.
-4. Read `director/design-grammar.md` and selected component contracts. Choose typography, layout, camera and asset boundaries before easing. Reconstruct source-specific assets when required; neutral starters do not contain all original logos, portraits, fonts or rich-card interiors.
-5. Write a shot plan: purpose, exact copy, component instances, stable IDs, start/end states, native-frame phases, attention target, camera/clip rules, reading holds, sound anchors, evidence and validation gate. Explain the motif choice and a plausible alternative's tradeoff. Use `director/brief-schema.json` and `director/examples/dinner-shot-plan.json`.
+For an original film, prove the action and try the edit in the [director workflow](director/directing.md) before reaching for the catalogue. The catalogue and keyword router help find a component when a particular shot calls for it.
+
+For recreation and technique adaptation, open the relevant source movie, native-frame atlas, study JSON, [design grammar](director/design-grammar.md) and component contract. Record the inspected frames, parent and clip structure, material and editability limits. Reconstruct source-specific artwork when the shot requires it. Use the brief schema and example as technical references for IDs, timing, clipping and evidence.
 
 ## Motion starters
 
