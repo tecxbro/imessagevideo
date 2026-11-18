@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="400" viewBox="0 0 640 400">
+  <defs>
+    <linearGradient id="blue" x2="0" y2="1" gradientUnits="objectBoundingBox"><stop stop-color="#182448"/><stop offset="1" stop-color="#504581"/></linearGradient>
+    <radialGradient id="glow"><stop stop-color="#f2adec" stop-opacity=".85"/><stop offset="1" stop-color="#f2adec" stop-opacity="0"/></radialGradient>
+    <path id="petal" d="M0 9c-27-22-19-43 0-39 19-4 27 17 0 39z"/>
+  </defs>
+  <path fill="url(#blue)" d="M0 0h640v400H0z"/>
+  <ellipse cx="310" cy="216" rx="295" ry="180" fill="url(#glow)"/>
+  <path d="M0 70q159 66 307 28t333-26" fill="none" stroke="#b89ed4" stroke-width="3"/>
+  <g fill="#f5bfde"><circle cx="50" cy="86" r="6"/><circle cx="144" cy="107" r="7"/><circle cx="239" cy="109" r="6"/><circle cx="343" cy="90" r="7"/><circle cx="443" cy="73" r="7"/><circle cx="546" cy="66" r="6"/><circle cx="608" cy="69" r="7"/></g>
+  <path fill="#49476e" d="M107 351V228l71-60h283l72 60v123z"/>
+  <path fill="#b180be" d="M178 168h283l72 60H107z"/>
+  <path d="M231 168l-36 60m91-60-11 60m79-60 11 60m44-60 36 60" stroke="#f3a8d5" stroke-width="12"/>
+  <path fill="#f4b9d3" d="M170 231h300v90H170z"/>
+  <path fill="#9b6299" d="M170 301h300v20H170z"/>
+  <g transform="translate(320 269)" fill="#fff1bf">
+    <use href="#petal"/><use href="#petal" transform="rotate(72)"/><use href="#petal" transform="rotate(144)"/><use href="#petal" transform="rotate(216)"/><use href="#petal" transform="rotate(288)"/><circle r="8" fill="#e778ad"/>
+  </g>
+  <path fill="#28203e" d="M0 350h640v50H0z"/>
+  <text x="320" y="379" text-anchor="middle" letter-spacing="6" fill="#ffdbef" font-family="sans-serif" font-size="16">PETAL SWEETS</text>
+</svg>

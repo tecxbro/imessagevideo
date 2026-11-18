@@ -1,0 +1,52 @@
+{
+  "query": "Let's make a quick carousel for night market stalls. I want the pictures to glide sideways underneath Night Garden while the Hours and Get there buttons stay put.",
+  "status": "match",
+  "selected": "place-photo-strip",
+  "candidates": [
+    {
+      "id": "place-photo-strip",
+      "title": "Photos slide inside a fixed place card",
+      "score": 8,
+      "matches": [
+        {
+          "part": "fixed metadata or controls",
+          "phrase": "buttons stay",
+          "weight": 6
+        },
+        {
+          "part": "shared browsing term",
+          "phrase": "carousel",
+          "weight": 1
+        },
+        {
+          "part": "shared artwork term",
+          "phrase": "pictures",
+          "weight": 1
+        }
+      ],
+      "moves": "A single horizontal strip carries all photos left together. The viewport clips both edges.",
+      "staysFixed": "The place name, open status, rating, action controls, tabs, address and viewport stay fixed.",
+      "preview": "previews/place-photo-strip.mp4"
+    },
+    {
+      "id": "messages-attachment-stack",
+      "title": "Swipe through stacked attachments in a chat",
+      "score": 2,
+      "matches": [
+        {
+          "part": "shared browsing term",
+          "phrase": "carousel",
+          "weight": 1
+        },
+        {
+          "part": "shared artwork term",
+          "phrase": "pictures",
+          "weight": 1
+        }
+      ],
+      "moves": "The top attachment moves sideways across the card edges. Independently offset artwork beneath it becomes the next top attachment.",
+      "staysFixed": "Conversation header, message copy, composer and stack anchor stay in place.",
+      "preview": "previews/messages-attachment-stack.mp4"
+    }
+  ]
+}

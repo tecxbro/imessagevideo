@@ -1,0 +1,32 @@
+{
+  "query": "A bunch of headshots come together around the words Everyone is here. The text gets smaller without leaving the center.",
+  "status": "match",
+  "selected": "avatar-ring-assemble",
+  "candidates": [
+    {
+      "id": "avatar-ring-assemble",
+      "title": "Portrait circles gather around anchored copy",
+      "score": 15,
+      "matches": [
+        {
+          "part": "portrait forms",
+          "phrase": "headshots",
+          "weight": 6
+        },
+        {
+          "part": "assembly",
+          "phrase": "come together",
+          "weight": 5
+        },
+        {
+          "part": "anchored center",
+          "phrase": "around the words",
+          "weight": 4
+        }
+      ],
+      "moves": "Portrait circles move in on separate paths, shrink and come into focus at different rates. The headline shrinks about its fixed center and is partly covered.",
+      "staysFixed": "The background, the headline string and its center anchor remain fixed.",
+      "preview": "previews/avatar-ring-assemble.mp4"
+    }
+  ]
+}

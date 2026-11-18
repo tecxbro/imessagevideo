@@ -8,8 +8,15 @@ protected={'imessage-motion-recreation-skill.zip','imessage-motion-recreation-sk
 if out.name in protected:raise ValueError('Use a new archive name; previous snapshots are frozen.')
 if out.is_relative_to(root):raise ValueError('Write the archive outside the skill folder.')
 files=[p for p in sorted(root.rglob('*')) if p.is_file() and p.name!='checksums.json' and '__pycache__' not in p.parts and not p.name.endswith(('.tmp','.pyc'))]
+library=root/'director/motion-library'
+catalog=library/'catalog.json'
+authored_previews={
+    library/'previews'/f"{entry['id']}.mp4"
+    for entry in json.loads(catalog.read_text())['entries']
+} if catalog.is_file() else set()
 for path in files:
     if path.is_symlink():raise ValueError('Symlink: '+str(path))
+    if path in authored_previews:continue
     if path.suffix.lower() in {'.mp4','.mov','.mp3','.m4a','.wav','.flac','.ogg','.ttf','.otf','.woff','.woff2'}:raise ValueError('Keep movies/audio/proprietary fonts external: '+str(path))
 checks={str(p.relative_to(root)):hashlib.sha256(p.read_bytes()).hexdigest() for p in files}
 (root/'checksums.json').write_text(json.dumps(checks,indent=2)+'\n');files.append(root/'checksums.json')

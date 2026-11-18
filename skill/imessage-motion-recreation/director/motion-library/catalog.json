@@ -1,0 +1,560 @@
+{
+  "version": 1,
+  "frameConvention": "Zero-based decoded source frames, inclusive endpoints. Source times are half-open ranges.",
+  "entries": [
+    {
+      "id": "place-photo-strip",
+      "title": "Photos slide inside a fixed place card",
+      "moves": "A single horizontal strip carries all photos left together. The viewport clips both edges.",
+      "staysFixed": "The place name, open status, rating, action controls, tabs, address and viewport stay fixed.",
+      "inferred": "A shared horizontal transform and clip reproduce the visible behavior. No touch input, snap points or inertia are observable.",
+      "evidence": {
+        "kind": "measured-film",
+        "film": "05-linq",
+        "url": "https://github.com/tecxbro/imessagevideo/blob/c49482aec7b8ed0b840f97c61a5e5b860c4077b6/projects/05-linq-complete-v1/imessage-recreations/references/05-linq/source.mp4",
+        "localMovie": "projects/05-linq-complete-v1/imessage-recreations/references/05-linq/source.mp4",
+        "framesInclusive": [
+          1091,
+          1111
+        ],
+        "secondsHalfOpen": [
+          36.366667,
+          37.066667
+        ],
+        "sha256": "86e22e698e141c5c2a161977289be1335bb0c0a1dd98769c4c146fcd57bbf2eb",
+        "observations": {
+          "method": "Frame-to-frame luma patch alignment at one-pixel X and within two pixels Y, with visual review of all 21 decoded frames.",
+          "photoDxFromFirstPx": [
+            0,
+            -22,
+            -22,
+            -47,
+            -76,
+            -109,
+            -148,
+            -148,
+            -195,
+            -252,
+            -324,
+            -417,
+            -417,
+            -542,
+            -698,
+            -846,
+            -956,
+            -956,
+            -1035,
+            -1094,
+            -1140
+          ],
+          "photoDyFromFirstPx": 0,
+          "viewportApproxPx": [
+            195,
+            303,
+            772,
+            637
+          ],
+          "holdsAfterFrame": [
+            1092,
+            1097,
+            1102,
+            1107
+          ],
+          "fixedCropDisplacements": "Name, rating, action row, tabs and address each registered dx=0, dy=0 on every consecutive frame pair."
+        }
+      },
+      "editable": [
+        "title",
+        "copy",
+        "actions",
+        "artwork",
+        "accent",
+        "sceneTitle",
+        "detail",
+        "duration"
+      ],
+      "defaults": "defaults/place-photo-strip.json",
+      "preview": "previews/place-photo-strip.mp4",
+      "signals": [
+        {
+          "part": "place or venue surface",
+          "weight": 5,
+          "phrases": [
+            "restaurant",
+            "restaurants",
+            "venue",
+            "venues",
+            "place card",
+            "place details",
+            "place name",
+            "restaurant name",
+            "listing",
+            "storefront",
+            "cafe",
+            "coffee shop",
+            "diner",
+            "menu photos",
+            "maps card",
+            "shop name"
+          ]
+        },
+        {
+          "part": "fixed metadata or controls",
+          "weight": 6,
+          "phrases": [
+            "action row",
+            "row of buttons",
+            "actions stay",
+            "buttons stay",
+            "buttons do not move",
+            "buttons don t move",
+            "fixed buttons",
+            "pinned buttons",
+            "name stays",
+            "name never moves",
+            "name fixed",
+            "title stays",
+            "title and buttons",
+            "title stays put",
+            "directions button",
+            "rating stays",
+            "fixed heading",
+            "labels stay",
+            "keep the buttons",
+            "above its address"
+          ]
+        },
+        {
+          "part": "shared strip translation",
+          "weight": 6,
+          "phrases": [
+            "photo strip",
+            "image strip",
+            "strip of photos",
+            "strip of pictures",
+            "line of photos",
+            "row of photos",
+            "row of pictures",
+            "side by side",
+            "slide beneath",
+            "slide under",
+            "pictures slide across",
+            "slide sideways under",
+            "photos move together",
+            "photos slide past",
+            "moves as one row",
+            "pan horizontally",
+            "slide left together",
+            "glide left",
+            "scroll sideways",
+            "scrolls underneath"
+          ]
+        },
+        {
+          "part": "shared browsing term",
+          "weight": 1,
+          "phrases": [
+            "carousel",
+            "swipe",
+            "swipes",
+            "swiping",
+            "swipeable",
+            "browse",
+            "browsing"
+          ]
+        },
+        {
+          "part": "shared artwork term",
+          "weight": 1,
+          "phrases": [
+            "photo",
+            "photos",
+            "picture",
+            "pictures",
+            "image",
+            "images",
+            "media",
+            "snapshots"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "messages-attachment-stack",
+      "title": "Swipe through stacked attachments in a chat",
+      "moves": "The top attachment moves sideways across the card edges. Independently offset artwork beneath it becomes the next top attachment.",
+      "staysFixed": "Conversation header, message copy, composer and stack anchor stay in place.",
+      "inferred": "The editable film stages a layered peel and promote. Depth, lateral distance and easing are authored. The Apple guide documents grouping and swiping in the opened stack.",
+      "evidence": {
+        "kind": "documented-native-interaction/authored-film-adaptation",
+        "url": "https://support.apple.com/guide/iphone/share-content-iphb66cfeaad/27/ios/27",
+        "observations": "The current Apple guide documents a collage for two to three items or a stack for four or more, and swiping through an opened stack. Apple’s iOS 15 features page also describes swiping a stack of photos in a conversation.",
+        "historicalAppleReference": "https://www.apple.com/jo/ios/ios-15-preview/features/#messages"
+      },
+      "editable": [
+        "title",
+        "copy",
+        "artwork",
+        "accent",
+        "sceneTitle",
+        "detail",
+        "duration",
+        "swipes"
+      ],
+      "defaults": "defaults/messages-attachment-stack.json",
+      "preview": "previews/messages-attachment-stack.mp4",
+      "signals": [
+        {
+          "part": "attachments in a conversation",
+          "weight": 6,
+          "phrases": [
+            "attachment",
+            "attachments",
+            "shared photos in a text",
+            "photo message",
+            "photo bundle",
+            "photos someone sent",
+            "photos i sent",
+            "pictures someone sent",
+            "sent a bunch of pictures",
+            "cluster of sent images",
+            "in the same message"
+          ]
+        },
+        {
+          "part": "overlapping objects",
+          "weight": 7,
+          "phrases": [
+            "stack",
+            "stacked",
+            "pile",
+            "piled",
+            "deck",
+            "fanned",
+            "overlap",
+            "overlapping",
+            "layered",
+            "cards on top of each other",
+            "one on top of another",
+            "card behind it",
+            "photo behind it",
+            "one behind it",
+            "next behind it",
+            "one behind",
+            "underneath it"
+          ]
+        },
+        {
+          "part": "one-at-a-time promotion",
+          "weight": 5,
+          "phrases": [
+            "front photo",
+            "front card",
+            "top photo",
+            "top picture",
+            "top card",
+            "peel",
+            "peels",
+            "flick the top",
+            "next underneath",
+            "one at a time",
+            "foreground card"
+          ]
+        },
+        {
+          "part": "conversation context",
+          "weight": 1,
+          "phrases": [
+            "imessage",
+            "messages",
+            "chat",
+            "conversation",
+            "group thread",
+            "text thread"
+          ]
+        },
+        {
+          "part": "shared browsing term",
+          "weight": 1,
+          "phrases": [
+            "carousel",
+            "swipe",
+            "swipes",
+            "swiping",
+            "swipeable",
+            "browse",
+            "browsing"
+          ]
+        },
+        {
+          "part": "shared artwork term",
+          "weight": 1,
+          "phrases": [
+            "photo",
+            "photos",
+            "picture",
+            "pictures",
+            "image",
+            "images",
+            "media",
+            "snapshots"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "inline-card-expand",
+      "title": "Open a full sheet over a dimmed conversation",
+      "moves": "A white sheet carrying its grabber, heading and controls rises over the chat and settles. The retained conversation dims and shifts slightly.",
+      "staysFixed": "The surrounding white stage stays fixed and the inline card remains under the sheet. The phone silhouette is nearly fixed.",
+      "inferred": "A separate translating sheet over a scrim models what is visible. Source clips do not expose input gesture or spring constants.",
+      "evidence": {
+        "kind": "measured-film",
+        "film": "03-photon-mini",
+        "url": "https://github.com/tecxbro/imessagevideo/blob/c49482aec7b8ed0b840f97c61a5e5b860c4077b6/projects/03-photon-mini-complete-v1/imessage-recreations/references/03-photon-mini/source.mp4",
+        "localMovie": "projects/03-photon-mini-complete-v1/imessage-recreations/references/03-photon-mini/source.mp4",
+        "framesInclusive": [
+          211,
+          240
+        ],
+        "secondsHalfOpen": [
+          7.033333,
+          8.033333
+        ],
+        "sha256": "886405a53b2ce053749c17cb37b3f4870f09db0c6079dbcf3b3ffa9dbba859c9",
+        "observations": {
+          "method": "Inspect decoded native frames in the one-second interval, sample the visible grabber and a neutral underlay patch.",
+          "underlayLumaExamples": {
+            "211": 251,
+            "222": 169
+          },
+          "grabberYFirstFrame": 214,
+          "grabberYEachFramePx": [
+            879,
+            640,
+            482,
+            374,
+            294,
+            232,
+            183,
+            144,
+            113,
+            89,
+            69,
+            54,
+            43,
+            36,
+            31,
+            29,
+            30,
+            31,
+            33,
+            34,
+            35,
+            36,
+            36,
+            37,
+            38,
+            38,
+            39
+          ]
+        }
+      },
+      "editable": [
+        "title",
+        "copy",
+        "actions",
+        "artwork",
+        "accent",
+        "sceneTitle",
+        "detail",
+        "duration"
+      ],
+      "defaults": "defaults/inline-card-expand.json",
+      "preview": "previews/inline-card-expand.mp4",
+      "signals": [
+        {
+          "part": "rising layer",
+          "weight": 7,
+          "phrases": [
+            "bottom sheet",
+            "slide up",
+            "slides up",
+            "rises",
+            "rise from the bottom",
+            "rises from the bottom",
+            "slide in from the bottom",
+            "lifts up",
+            "comes up from below",
+            "slides in from below",
+            "modal",
+            "sheet rises",
+            "pull up a panel"
+          ]
+        },
+        {
+          "part": "underlay remains visible",
+          "weight": 6,
+          "phrases": [
+            "dim the chat",
+            "chat dims",
+            "conversation dims",
+            "dim the conversation",
+            "dimmed behind",
+            "darken the background",
+            "darkens behind",
+            "dimming",
+            "scrim",
+            "underneath the sheet",
+            "over the thread"
+          ]
+        },
+        {
+          "part": "open an embedded surface",
+          "weight": 5,
+          "phrases": [
+            "inline card",
+            "embedded card",
+            "inline preview",
+            "card opens",
+            "opens a sheet",
+            "opened card",
+            "expand the card",
+            "card expands",
+            "open a larger view",
+            "open up inside the chat",
+            "full sheet",
+            "grabber",
+            "full size control panel"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "avatar-ring-assemble",
+      "title": "Portrait circles gather around anchored copy",
+      "moves": "Portrait circles move in on separate paths, shrink and come into focus at different rates. The headline shrinks about its fixed center and is partly covered.",
+      "staysFixed": "The background, the headline string and its center anchor remain fixed.",
+      "inferred": "Separate avatar position, scale, focus and depth tracks are inferred from the frames. The editable preview adapts the grouping to a different graphic.",
+      "evidence": {
+        "kind": "measured-film",
+        "film": "06-gallery",
+        "url": "https://github.com/tecxbro/imessagevideo/blob/c49482aec7b8ed0b840f97c61a5e5b860c4077b6/projects/06-gallery-complete-v1/imessage-recreations/references/06-gallery/source.mp4",
+        "localMovie": "projects/06-gallery-complete-v1/imessage-recreations/references/06-gallery/source.mp4",
+        "framesInclusive": [
+          603,
+          653
+        ],
+        "secondsHalfOpen": [
+          20.1,
+          21.8
+        ],
+        "sha256": "fcbc98fa2f1697da5c947ed59b952128acd1c8f6194ce982c60133a423f1ddaf",
+        "observations": {
+          "method": "Use decoded source presentation timestamps. Do not use reconstructed output frame numbers.",
+          "phases": {
+            "605–611": "Defocused circles begin entering at edges.",
+            "612–624": "Circles sweep inward, shrink and sharpen.",
+            "640–653": "Circles regroup and settle before the next beat."
+          },
+          "headlineCenteredScaleSamples": {
+            "604": 1.0,
+            "610": 0.94,
+            "616": 0.73,
+            "620": 0.65,
+            "624": 0.61,
+            "630": 0.58,
+            "640": 0.56,
+            "652": 0.56
+          },
+          "portraitCenterExamplesPx": {
+            "630": [
+              876,
+              188
+            ],
+            "634": [
+              844,
+              208
+            ],
+            "640": [
+              816,
+              224
+            ],
+            "646": [
+              804,
+              228
+            ],
+            "652": [
+              800,
+              228
+            ]
+          }
+        }
+      },
+      "editable": [
+        "title",
+        "copy",
+        "artwork",
+        "accent",
+        "duration"
+      ],
+      "defaults": "defaults/avatar-ring-assemble.json",
+      "preview": "previews/avatar-ring-assemble.mp4",
+      "signals": [
+        {
+          "part": "portrait forms",
+          "weight": 6,
+          "phrases": [
+            "avatar",
+            "avatars",
+            "headshots",
+            "portraits",
+            "faces",
+            "profile pictures",
+            "circles with faces",
+            "circular photos",
+            "round faces",
+            "round portraits",
+            "profile photos"
+          ]
+        },
+        {
+          "part": "assembly",
+          "weight": 5,
+          "phrases": [
+            "converge",
+            "converges",
+            "gather around",
+            "cluster around",
+            "settle around",
+            "assemble around",
+            "swarm in",
+            "sweep inward",
+            "float in",
+            "drift in",
+            "come together",
+            "arrive around",
+            "circle around"
+          ]
+        },
+        {
+          "part": "anchored center",
+          "weight": 4,
+          "phrases": [
+            "centered headline",
+            "center headline",
+            "centered copy",
+            "centered text",
+            "middle line",
+            "around a line of text",
+            "around the words",
+            "central text",
+            "central line",
+            "headline stays centered",
+            "shrink the headline"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "night-garden": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 960,
+        "height": 540,
+        "pix_fmt": "yuv420p",
+        "avg_frame_rate": "30/1",
+        "nb_frames": "102"
+      }
+    ],
+    "format": {
+      "duration": "3.400000"
+    },
+    "sampled_frames": [
+      0,
+      41,
+      47,
+      51,
+      55,
+      101
+    ],
+    "fixed_crop_max_frame_mae_rgb_of_255": {
+      "headline": 0.0943,
+      "card title, subtitle, and controls": 0.0535,
+      "card address": 0.041
+    },
+    "moving_crop_max_frame_mae_rgb_of_255": 58.4129
+  },
+  "field-crew": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 960,
+        "height": 540,
+        "pix_fmt": "yuv420p",
+        "avg_frame_rate": "30/1",
+        "nb_frames": "114"
+      }
+    ],
+    "format": {
+      "duration": "3.800000"
+    },
+    "sampled_frames": [
+      0,
+      39,
+      55,
+      73,
+      92,
+      113
+    ],
+    "fixed_crop_max_frame_mae_rgb_of_255": {
+      "headline": 0.1283,
+      "conversation header": 0.0428,
+      "message bubble": 0.0107,
+      "composer": 0.0019
+    },
+    "moving_crop_max_frame_mae_rgb_of_255": 54.2159
+  }
+}

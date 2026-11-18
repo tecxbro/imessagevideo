@@ -9,7 +9,15 @@ import {svgMarkup,stateAt} from '../scripts/engines/common.mjs';
 const args=process.argv.slice(2),command=args.shift();
 const option=(name,fallback)=>{const i=args.indexOf('--'+name);return i<0?fallback:args[i+1];};
 const save=(filename,value)=>{fs.mkdirSync(path.dirname(filename),{recursive:true});fs.writeFileSync(filename,typeof value==='string'?value:JSON.stringify(value,null,2)+'\n');};
-if(command==='list'){
+if(command==='motion'){
+  try {
+    const {motionCommand} = await import('./motion-library/command.mjs');
+    await motionCommand(args);
+  } catch (error) {
+    console.error(error.message);
+    process.exitCode = 1;
+  }
+}else if(command==='list'){
   console.log(JSON.stringify({motifs:MOTIFS,components:COMPONENTS},null,2));
 }else if(command==='plan'){
   const result=directorPlan(option('brief',''));const out=option('out');if(out)save(out,result);else console.log(JSON.stringify(result,null,2));
@@ -26,6 +34,6 @@ if(command==='list'){
     save(out,{provenance:result.provenance,notice:'Evaluated starter trajectories, not measured source pixels. Local transforms; parent matrices must be composed for world coordinates.',frames});
   }
 }else{
-  console.log('list | plan --brief TEXT [--out plan.json] | scene --motif ID --out scene.json | frames --motif ID --out DIR | trajectory --motif ID --out frames.json');
+  console.log('motion --help | list | plan --brief TEXT [--out plan.json] | scene --motif ID --out scene.json | frames --motif ID --out DIR | trajectory --motif ID --out frames.json');
   if(command)process.exitCode=1;
 }

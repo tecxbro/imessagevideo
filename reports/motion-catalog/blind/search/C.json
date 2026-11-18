@@ -1,0 +1,37 @@
+{
+  "query": "Tap the inline preview and bring a full-size control panel up from below, darkening the conversation that is still visible behind.",
+  "status": "match",
+  "selected": "inline-card-expand",
+  "candidates": [
+    {
+      "id": "inline-card-expand",
+      "title": "Open a full sheet over a dimmed conversation",
+      "score": 5,
+      "matches": [
+        {
+          "part": "open an embedded surface",
+          "phrase": "full size control panel",
+          "weight": 5
+        }
+      ],
+      "moves": "A white sheet carrying its grabber, heading and controls rises over the chat and settles. The retained conversation dims and shifts slightly.",
+      "staysFixed": "The surrounding white stage stays fixed and the inline card remains under the sheet. The phone silhouette is nearly fixed.",
+      "preview": "previews/inline-card-expand.mp4"
+    },
+    {
+      "id": "messages-attachment-stack",
+      "title": "Swipe through stacked attachments in a chat",
+      "score": 1,
+      "matches": [
+        {
+          "part": "conversation context",
+          "phrase": "conversation",
+          "weight": 1
+        }
+      ],
+      "moves": "The top attachment moves sideways across the card edges. Independently offset artwork beneath it becomes the next top attachment.",
+      "staysFixed": "Conversation header, message copy, composer and stack anchor stay in place.",
+      "preview": "previews/messages-attachment-stack.mp4"
+    }
+  ]
+}

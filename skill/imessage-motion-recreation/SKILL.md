@@ -16,6 +16,7 @@ For a new company or product, start with [RESEARCH-FIRST.md](library/RESEARCH-FI
 | Make a film for a new company | [Company research](library/RESEARCH-FIRST.md), [profile schema](library/company-profile.schema.json), then the director workflow | Verified product evidence and a newly authored shot plan |
 | Recreate a supplied film | [Reconstruction playbook](references/reconstruction-playbook.md), actual movie and native-frame comparisons | Actual source with explicit output/source mapping |
 | Direct a new film using these ideas | [Director workflow](director/directing.md), [visual explorer](director/index.html), [design grammar](director/design-grammar.md) | A new shot plan, labelled as authored choreography |
+| Find and reuse a motion from a description | [Motion library](director/motion-library/README.md) | Source evidence for behavior, editable scene for the new timing |
 | Extract or adapt a component | [Component contracts](director/component-contracts.md), [component code](director/components.mjs), chosen study | Declared editable boundary and actual source evidence |
 | Add UI sound | [UI audio workflow](references/ui-audio-workflow.md) | Visible actions in the delivered picture |
 
@@ -63,6 +64,10 @@ Keep this private repository's current visibility unless the user explicitly cha
 3. **Open and inspect the selected atlas images** with an available image tool. Read the study JSON for native frames, actual canonical IDs/keyframes, parent/clip structure, material and editability caveats. Linking an image does not mean the agent has seen it. Record which frames were inspected.
 4. Read `director/design-grammar.md` and selected component contracts. Choose typography, layout, camera and asset boundaries before easing. Reconstruct source-specific assets when required; neutral starters do not contain all original logos, portraits, fonts or rich-card interiors.
 5. Write a shot plan: purpose, exact copy, component instances, stable IDs, start/end states, native-frame phases, attention target, camera/clip rules, reading holds, sound anchors, evidence and validation gate. Explain the motif choice and a plausible alternative's tradeoff. Use `director/brief-schema.json` and `director/examples/dinner-shot-plan.json`.
+
+## Find and reuse motion
+
+Use the [motion library](director/motion-library/README.md) before building a known beat. Describe which object moves, how it moves and which layers stay put. Inspect the returned clip, open the editable JSON defaults, swap in the new scene’s copy and artwork, and render with the director CLI. Use the listed source interval whenever timing or behavior is in doubt. When the search is ambiguous, add the moving and stationary layers to the query.
 
 ## Motion starters
 

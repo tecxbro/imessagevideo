@@ -1,0 +1,62 @@
+{
+  "query": "In a group thread called Field Crew, someone sent a bunch of pictures. Let's swipe the front one to the left to see the one behind it, then swipe again. Keep the composer exactly where it is.",
+  "status": "match",
+  "selected": "messages-attachment-stack",
+  "candidates": [
+    {
+      "id": "messages-attachment-stack",
+      "title": "Swipe through stacked attachments in a chat",
+      "score": 16,
+      "matches": [
+        {
+          "part": "attachments in a conversation",
+          "phrase": "sent a bunch of pictures",
+          "weight": 6
+        },
+        {
+          "part": "overlapping objects",
+          "phrase": "one behind it",
+          "weight": 7
+        },
+        {
+          "part": "conversation context",
+          "phrase": "group thread",
+          "weight": 1
+        },
+        {
+          "part": "shared browsing term",
+          "phrase": "swipe",
+          "weight": 1
+        },
+        {
+          "part": "shared artwork term",
+          "phrase": "pictures",
+          "weight": 1
+        }
+      ],
+      "moves": "The top attachment moves sideways across the card edges. Independently offset artwork beneath it becomes the next top attachment.",
+      "staysFixed": "Conversation header, message copy, composer and stack anchor stay in place.",
+      "preview": "previews/messages-attachment-stack.mp4"
+    },
+    {
+      "id": "place-photo-strip",
+      "title": "Photos slide inside a fixed place card",
+      "score": 2,
+      "matches": [
+        {
+          "part": "shared browsing term",
+          "phrase": "swipe",
+          "weight": 1
+        },
+        {
+          "part": "shared artwork term",
+          "phrase": "pictures",
+          "weight": 1
+        }
+      ],
+      "moves": "A single horizontal strip carries all photos left together. The viewport clips both edges.",
+      "staysFixed": "The place name, open status, rating, action controls, tabs, address and viewport stay fixed.",
+      "preview": "previews/place-photo-strip.mp4"
+    }
+  ]
+}
