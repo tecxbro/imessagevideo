@@ -1,0 +1,144 @@
+{
+  "messages": [
+    {
+      "id": "invite",
+      "senderId": "mina",
+      "x": 55,
+      "y": 91,
+      "width": 245.595703125,
+      "height": 93,
+      "lines": [
+        "The greenhouse opens after",
+        "sunset. Should we bring the",
+        "telescope? 🔭"
+      ],
+      "reactions": [
+        {
+          "ownerId": "jo",
+          "messageId": "invite",
+          "at": 1.5
+        },
+        {
+          "ownerId": "self",
+          "messageId": "invite",
+          "at": 2
+        }
+      ],
+      "scroll": 0
+    },
+    {
+      "id": "yes",
+      "senderId": "self",
+      "x": 105.1796875,
+      "y": 233,
+      "width": 264.8203125,
+      "height": 70,
+      "lines": [
+        "Yes! I found a quiet spot by the",
+        "old observatory."
+      ],
+      "reactions": [
+        {
+          "ownerId": "mina",
+          "messageId": "yes",
+          "at": 3.5
+        }
+      ],
+      "scroll": 0
+    },
+    {
+      "id": "cards",
+      "senderId": "jo",
+      "x": 55,
+      "y": 371,
+      "width": 258,
+      "height": 272,
+      "reactions": [
+        {
+          "ownerId": "self",
+          "messageId": "cards",
+          "at": 9
+        }
+      ],
+      "scroll": -88
+    },
+    {
+      "id": "send",
+      "senderId": "self",
+      "x": 107.404296875,
+      "y": 662,
+      "width": 262.595703125,
+      "height": 70,
+      "lines": [
+        "I’ll bring tea and the telescope.",
+        "See you by the north gate! 🫖"
+      ],
+      "reactions": [],
+      "scroll": -177
+    },
+    {
+      "id": "reply",
+      "senderId": "mina",
+      "x": 55,
+      "y": 770,
+      "width": 226.87646484375,
+      "height": 47,
+      "lines": [
+        "Perfect. See you there 🌙"
+      ],
+      "reactions": [],
+      "scroll": -262
+    }
+  ],
+  "composer": [
+    {
+      "at": 0,
+      "copy": "",
+      "enabled": false,
+      "height": 44,
+      "lines": [
+        ""
+      ]
+    },
+    {
+      "at": 9.5,
+      "copy": "I’ll bring tea",
+      "enabled": true,
+      "height": 44,
+      "lines": [
+        "I’ll bring tea"
+      ]
+    },
+    {
+      "at": 10,
+      "copy": "I’ll bring tea and the telescope.",
+      "enabled": true,
+      "height": 44,
+      "lines": [
+        "I’ll bring tea and the telescope."
+      ]
+    },
+    {
+      "at": 11,
+      "copy": "I’ll bring tea and the telescope. See you by the north gate! 🫖",
+      "enabled": true,
+      "height": 64,
+      "lines": [
+        "I’ll bring tea and the telescope.",
+        "See you by the north gate! 🫖"
+      ]
+    },
+    {
+      "at": 12,
+      "copy": "",
+      "enabled": false,
+      "height": 44,
+      "lines": [
+        ""
+      ]
+    }
+  ],
+  "font": "Arial, \"Apple Color Emoji\", sans-serif",
+  "measurement": "CanvasRenderingContext2D.measureText",
+  "nativeGestureClaims": false
+}
