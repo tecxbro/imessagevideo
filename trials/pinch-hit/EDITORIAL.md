@@ -1,0 +1,21 @@
+# Editorial study of the moving exports
+
+## Where the progression becomes a presentation
+
+**Photon Mini Apps, GSAP master.** “Sent.” and “I’ll let you know when she replies.” hold inside the Mail conversation at sampled frames 376–418 (12.533–13.933). The phone shrinks through frame 428 (14.267). Frame 430 (14.333) introduces a new blue Memoji disk, which resolves at frame 444 (14.800) to a Team Lunch group. The Mail send has a visible confirmation. The promised reply leaves the edit with the conversation. The zoom carries spatial energy across the transition, while the viewer’s reason to stay changes.
+
+At the second reset, frame 971 (32.367) still carries the last sliver of the card wall at the top of the screen. Frames 972–977 ([32.400, 32.600)) are visibly blank white. Frame 978 (32.600) says “Now” at center, followed by “Now your agent” at frame 982 (32.733) and “Now your agent can send [icon] agentic apps” by frame 1000 (33.333). In the following sampled passage the current feature noun swaps on the shared baseline through generative UIs, games, sign-in requests, menus, dashboards, and mini apps. The carried motion serves to clear the previous display. The copy series supplies the subsequent progression. The 200 ms pause reads as punctuation before the next panel. [GSAP master at the trial base](https://github.com/tecxbro/imessagevideo/blob/c49482aec7b8ed0b840f97c61a5e5b860c4077b6/projects/03-photon-mini-complete-v1/imessage-recreations/deliverables/03-photon-mini/gsap.mp4)
+
+**Photon 2.0, GSAP master.** Frames 357 (11.900), 390 (13.000), and 426 (14.200) show “Unlimited iMessage,” “Unlimited WhatsApp,” and “Unlimited Telegram.” The centered headline stays in one fixed band and the surrounding message rows swap by channel; the rows preview their replacements before completing the transition. The consistent shape and position make comparison easy. The price of that clarity is that viewers can anticipate the edit’s next move from the first swap. [GSAP master at the trial base](https://github.com/tecxbro/imessagevideo/blob/c49482aec7b8ed0b840f97c61a5e5b860c4077b6/projects/01-photonhq-complete-v1/imessage-recreations/deliverables/01-photonhq/gsap.mp4)
+
+## A different reason to hold
+
+**AffordiHome Finder.** In the same bedroom composition, the phone goes dark (lit at frame 220 / 7.333, dark at 224 / 7.467). No search steps are visible. The moon drops and the sun begins to rise between sampled frames 248 (8.267) and 260 (8.667). The phone relights and the “08:00” notification appears by frame 276 (9.200); frame 284 (9.467) shows the snail smiling. The changed daylight gives the wait a duration and the reaction gives it a consequence. The subsequent sequence does repeat caption/card variants. Borrow the causally related hold and reaction. [Curated reference and original-post provenance](https://serenatan.org/launchvideo/#video-51) · [Source MP4 at dataset commit](https://github.com/serenakeyitan/awesome-ai-clonable-launch-videos/blob/90816b42d7cba86b42354f1ecb92a533f8e43829/videos/affordihome-finder-illustrated-launch.mp4)
+
+## Transfer to the trial
+
+Find the frame at which the spectator’s question changes. If a hero action borrows time from a real person, let the person or their surroundings carry the wait. Use a title where it adds orientation or punctuation. Compare a cut that clears the setup with a cut or hold that carries it forward while preserving the verified product proof in both. For another product, choose a different question or editorial form if the proof suggests one.
+
+## Inspection scope
+
+Visual frames extracted directly with FFmpeg from the delivered MP4s. Mini Apps decoded 1,260 video frames (30 fps, 42 s) and Photon 2.0 decoded 655 (30 fps, 21.833 s); Git blob IDs were 22b070f73ba61312a5c18c733867bed11fb5cf15 and 5d122e519202ee03e950a8026bec2faf66edb529, respectively. AffordiHome decoded 977 video frames (30 fps, 32.567 s; SHA-256 e192c529f74f582f25360916f79df5cec138d7e840ff421320d74837c9294ac3). Whole-film contact strips were sampled around one-second intervals. Targeted visual coverage was MINI f376–448 every second frame, f952–1000 every second frame, 15 contiguous frames f967–981, and a quarter-second sample of the 27–37 s passage; PHOTON f342–462 every third frame; AHF f216–320 every fourth frame. Times are source-relative PTS. Findings concern the picture.
