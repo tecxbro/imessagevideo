@@ -119,9 +119,10 @@ def coalesce(events):
     return sorted(merged, key=lambda e: (e['frame'], e['kind'], e['bbox']))
 
 
-def spatial_transition(frames):
+def spatial_transition(frames, grid=None):
     h, w = frames.shape[1:3]
-    ys, xs = np.linspace(0, h, min(8, h)+1, dtype=int), np.linspace(0, w, min(8, w)+1, dtype=int)
+    ny, nx = grid if grid is not None else (min(8, h), min(8, w))
+    ys, xs = np.linspace(0, h, ny+1, dtype=int), np.linspace(0, w, nx+1, dtype=int)
     cells = np.stack([frames[:, y0:y1, x0:x1].mean((1, 2))
                       for y0, y1 in zip(ys, ys[1:]) for x0, x1 in zip(xs, xs[1:])], axis=1)
     return np.diff(cells, axis=0)
@@ -171,8 +172,9 @@ def compare_frames(source, candidate, sm, cm, events, tolerance=2, window=20, fr
                 valid &= differences[indices-1-first] @ signature > 0
             matches = indices[valid]
             if len(matches):
-                target = spatial_transition(a)[0]
-                transitions = spatial_transition(b)[matches-1-first]
+                grid = (min(8, a.shape[1], b.shape[1]), min(8, a.shape[2], b.shape[2]))
+                target = spatial_transition(a, grid)[0]
+                transitions = spatial_transition(b, grid)[matches-1-first]
                 spatial_scores = np.linalg.norm(transitions-target, axis=(1,2)) / max(1, np.linalg.norm(target))
                 combined = spatial_scores + scores[valid] / max(3, norm) + np.array([1-regional.get(i,1) for i in matches])
                 found = int(min(zip(matches, combined), key=lambda item: (round(float(item[1]), 6), abs(item[0]-expected), item[0]))[0])

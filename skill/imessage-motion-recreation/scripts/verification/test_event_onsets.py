@@ -14,6 +14,23 @@ spec.loader.exec_module(onsets)
 
 
 class EventOnsets(unittest.TestCase):
+    def test_tiny_roi_different_resolutions(self):
+        source=np.zeros((40,32,32,3),np.uint8)
+        candidate=np.zeros((40,64,64,3),np.uint8)
+        source[12:]=[20,120,240]
+        candidate[18:]=[20,120,240]
+        meta={'fps':30}
+        for box in [[.25,.25,.28125,.28125],[.25,.25,.375,.375],[.25,.25,.28125,.5]]:
+            with self.subTest(box=box):
+                event={'frame':12,'time':.4,'bbox':box,'kind':'local-onset','magnitude':10}
+                for a,b in [(source,candidate),(candidate,source)]:
+                    current={**event,'frame':12 if a is source else 18}
+                    rows=onsets.compare_frames(a,b,meta,meta,[current])
+                    self.assertEqual(rows[0]['candidate_frame'],18 if a is source else 12)
+                    self.assertEqual(rows[0]['status'],'late' if a is source else 'early')
+                    self.assertEqual(onsets.compare_frames(a,a,meta,meta,[current])[0]['status'],'pass')
+                self.assertEqual(onsets.compare_frames(source,np.zeros_like(candidate),meta,meta,[event])[0]['status'],'missing')
+
     def test_coalesce(self):
         def event(box, frame=12):
             return {'frame':frame,'time':frame/30,'bbox':box,'kind':'local-onset','magnitude':10}
