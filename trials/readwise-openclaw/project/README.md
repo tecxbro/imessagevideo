@@ -7,20 +7,36 @@ switches, camera samples and end-icon opacity boundaries. All frames are 0-based
 at 30 fps. Edit these data files and rebuild; the builder does not read the source
 film or extracted frames.
 
+From the repository root, sync the library with Python 3.11+, install the
+[HTML-engine dependencies](../../../skill/imessage-motion-recreation/RUNNING.md)
+and use Python with Pillow, NumPy and SciPy. Chrome and the documented macOS
+font paths are required. Supply the original Readwise reference separately;
+the recreated exports are in the external artifact bundle. The
+[pinned reference](https://github.com/serenakeyitan/awesome-ai-clonable-launch-videos/blob/90816b42d7cba86b42354f1ecb92a533f8e43829/videos/readwise-for-openclaw.mp4)
+is dataset item 46. Its SHA-256 is
+`b4a02b06099fd7f9f45398fdc2fe1e090a96d803345504e5d5d237e8e3baeb48`.
+
 ```bash
-bash trials/readwise-openclaw/project/render.sh
+SOURCE=/absolute/path/to/readwise-for-openclaw.mp4
+FIRST=/absolute/path/to/film-trial-artifacts/readwise/readwise-first-export.mp4
+WORK="$(mktemp -d)"
+PYTHON=.venv/bin/python bash trials/readwise-openclaw/project/render.sh \
+  --source "$SOURCE" --first "$FIRST" --out "$WORK/replay.mp4" \
+  --receipt EDIT-EXPORT
 ```
 
-Requires Python with Pillow/NumPy/SciPy, the existing shared HTML-engine
-dependencies and Chrome. `PYTHON`, `CHROME_PATH` and the optional MP4 path argument
-are configurable. Defaults keep renders/frame caches under `~/work/rw/exports/`.
+`PYTHON` and `CHROME_PATH` can be overridden. The tip contains the JSON-only
+edit. To recreate the unedited revision, use `copy.json` and `timing.json` from
+[b6f17cb](https://github.com/tecxbro/imessagevideo/commit/b6f17cb) in a separate
+working copy and use `--receipt REVISED-EXPORT`. Never overwrite an original
+trial export.
 The command runs scene build → full HTML picture render → 48 kHz stereo audio
 render → two-pass source-loudness-matched master → explicit video/new-audio mux →
-encoded AAC loudness/true-peak gate → immutable publication at
-`~/work/rw/exports/readwise-revised-export.mp4`. It refuses existing output or
-receipt paths and specifically forbids the first-export name. The first MP4 and
-`exports/FIRST-EXPORT.*` receipts are frozen. Revised and edit deliveries use
-`REVISED-EXPORT.*` and `EDIT-EXPORT.*` receipts beside this project.
+encoded AAC loudness/true-peak gate → immutable publication. Run logs, frame
+caches and new receipts are created in a sibling `<output>.evidence/` directory.
+It refuses existing publications and the first-export name. The three reviewed
+exports are preserved in the [handoff](../../../release-evidence/film-trials/devin-bot/readwise/),
+with immutable original receipts in [../exports/](../exports/).
 `build_scene.py` emits `build/scene.json` in the unchanged shared scene contract.
 Generated build/cache files are ignored. Output is native 3840×2160, 30 fps,
 1110 frames. Authoring remains 1920×1080; `timing.json.output_scale` is 2 for 4K
@@ -98,12 +114,12 @@ Article copy lives in `copy.json.browser.article`. A guarded cache-reuse path
 compares all scene content outside S3 before reusing unchanged frame PNGs:
 
 ```bash
-bash trials/readwise-openclaw/project/render.sh \
-  ~/work/rw/exports/readwise-edit-export.mp4 --receipt EDIT-EXPORT \
-  --reuse ~/work/rw/exports/build-REVISED-TIMESTAMP --ranges 139:210
+PYTHON=.venv/bin/python bash trials/readwise-openclaw/project/render.sh \
+  --source "$SOURCE" --first "$FIRST" --out "$WORK/replay-edit.mp4" \
+  --receipt EDIT-EXPORT --reuse "$REVISED_BUILD" --ranges 139:210
 ```
 
-Use the revised receipt's `work` for the actual reuse path. Only S3 PNGs are
+Set `REVISED_BUILD` to the rebuilt revision's receipt `work` directory. Only S3 PNGs are
 recaptured; all1110 frames are encoded into a fresh 4K movie. Copy/timing edits
 outside S3 require a full render. The proof's authored changes are JSON-only;
 receipt/log files separately document the render. See `../LOG.md` for measured
@@ -127,8 +143,7 @@ full machine-readable measurements are in `../exports/REVISED-EXPORT.*`.
 The complete pipeline ran once, 03:15–03:25 PST, on 2026-11-18. External wall
 time was 585.42 s (internal pipeline 585.37 s); picture 581.79 s, audio 1.46 s,
 mux 1.04 s. Encoded AAC true peak was −18.89 dBTP. The external MP4 is
-8,878,521 bytes; it is not stored in this repository and has not been modified
-after publication. See `../exports/FIRST-EXPORT.sha256`,
+8,878,521 bytes and has not been modified after publication. See `../exports/FIRST-EXPORT.sha256`,
 `FIRST-EXPORT.ffprobe.json` and `FIRST-EXPORT.report.json` for exact receipts.
 
 All 11 tests passed. The full video/audio decoded without errors; the muxed

@@ -25,9 +25,20 @@ class ExportTest(unittest.TestCase):
     def test_existing_export_is_never_overwritten(self):
         with tempfile.TemporaryDirectory() as d:
             path=Path(d)/'already-published.mp4';path.write_bytes(b'immutable fixture')
-            with patch.object(export.sys,'argv',['export.py','--out',str(path)]),patch.object(export.subprocess,'run') as run:
+            with patch.object(export.sys,'argv',['export.py','--out',str(path),'--source','source.mp4','--first','first.mp4']),patch.object(export.subprocess,'run') as run:
                 with self.assertRaises(FileExistsError):export.main()
                 run.assert_not_called()
             self.assertEqual(path.read_bytes(),b'immutable fixture')
+
+    def test_fresh_export_uses_external_evidence_directory(self):
+        with tempfile.TemporaryDirectory() as d:
+            out=Path(d).resolve()/'new-delivery.mp4'
+            source=Path(d)/'source.mp4';source.touch()
+            first=Path(d)/'first.mp4';first.touch()
+            argv=['export.py','--out',str(out),'--source',str(source),'--first',str(first)]
+            with patch.object(export.sys,'argv',argv),patch.object(export,'attempt',side_effect=RuntimeError('stop before capture')) as attempt:
+                with self.assertRaisesRegex(RuntimeError,'stop before capture'):export.main()
+            self.assertEqual(attempt.call_args.args[0],out.with_name(out.name+'.evidence')/'LOG.md')
+            self.assertFalse(out.exists())
 
 if __name__=='__main__':unittest.main()
