@@ -46,6 +46,14 @@ asset, gain, pan and layering decision is new.
 - `cue_check.py` on the **encoded** export vs merged cue sheet: **35/36
   pass, 0 unexpected onsets**; sole fail = the intentional silence
   (whitelist semantics working as designed).
+- `kind_check.py` (final, calibrated): **2 flags, both the deliberate
+  asset deviations** — `tap@21.521` (kenney_confirmation: ZCR 0.087 /
+  crest 3.9 = confirm timbre, not click) and `message_send@26.693`
+  (bubble_pop: ZCR 0.029 = pop, not whoosh). Both are declared in the cue
+  sheet; the checker correctly surfaces them for review rather than
+  silently passing an asset the sheet didn't predict. Earlier uncalibrated
+  run flagged 14+ events — fixed by capping windows at the next event and
+  judging RMS relative to the file's median event level.
 - Export loudness −35.2 LUFS / −18.4 dBTP (production UI level — sparse by
   design). Labelled audition copy `*-AUDITION-BOOST-9dB.mp4` at −26.2
   LUFS / −9.5 dBTP; production gain is the unboosted file.

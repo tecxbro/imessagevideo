@@ -25,7 +25,7 @@ picture + boosted UI stem, AAC 192k). Canonical schedule:
 | stream/duration | ok | ok | ok |
 | machine classify (1 s windows) | click@11.0, whoosh@11.5–12.0 | same labels — **miss** | whoosh stays top label but `click` rises at 11.5–12.0 — **weak signal only** |
 | **cue_check.py vs canonical sheet** | 34/35 (1 = intentional silence) | **CAUGHT**: `tap` FAIL (rise 0 dB) + unexpected onset at t=11.495 (+184 ms measured) | passes — attack present at right time (not its job) |
-| **kind fingerprint** (ZCR/crest/window-RMS in [t, t+0.4 s]) | matches declared kinds | tap slot: click fingerprint, still present — consistent w/ D1 once onset is flagged | **CAUGHT**: send slot shows ZCR 0.018 / crest 33 / −38.5 dB vs whoosh class ZCR ≈0.15 / crest ≈8 / ≈−25 dB |
+| **kind_check.py** (ZCR/crest/window-RMS, window capped at next event) | **0 fails** | **0 fails** — shifted cue is still a click (timing is cue_check's job) | **CAUGHT: 1 fail** — send slot reads ZCR 0.057 / crest 32.6 vs whoosh family (0.09–0.36 / 4–16) |
 
 ## What caught what — honest summary
 
@@ -38,11 +38,16 @@ picture + boosted UI stem, AAC 192k). Canonical schedule:
 - **cue_check (action↔onset correlation) caught D1 decisively**: the
   expected slot shows zero rise (a hole), and an unexplained onset appears
   +184 ms later. Two independent flags from one measurement.
-- **cue_check passed D2** — timing/presence is blind to timbre. The kind
-  fingerprint (zero-crossing rate, crest factor, window RMS in a 0.4 s
-  window) is the designed complement: three declared classes separate by an
-  order of magnitude (whoosh ZCR≈0.15 / click≈0.012 / drop≈0.054; crest
-  ≈8 / ≈33 / ≈18). D2's swapped slot reads click on every metric.
+- **cue_check passed D2; kind_check passed D1** — the two checks are
+  complementary: timing/presence is blind to timbre, and a timbre
+  fingerprint is blind to a 200 ms shift of the *right* sound. Both are
+  required for a gate.
+- **kind_check calibration lesson** (implemented in `bin/kind_check.py`):
+  each event's analysis window must be capped at the next expected event —
+  a flat 0.4 s window smeared dense typing bursts into whoosh fingerprints
+  (14 false fails → 0). RMS is judged relative to the file's own median
+  event level ([−18, +9] dB) and noise floor (+8 dB), not absolute dBFS, so
+  the same families hold on boosted previews and production-level stems.
 - The one standing "failure" on the clean file is `control_appear@15.18` —
   the intentionally silent control. Cue sheets must mark intentional
   silence (`silent_visual_state`) so the check whitelists it rather than
@@ -66,9 +71,14 @@ the stem can, and the stem is an editable deliverable.
 1. `cue_check.py <export-audio> <canonical-cue-sheet>` → every declared cue
    produces an attack within ±120 ms, no unexplained onsets; silent-flagged
    events must show silence.
-2. Kind fingerprint per declared event: ZCR + crest factor + RMS in the
-   post-onset window vs the kind's expected envelope family (whoosh/click/
-   drop/key measured above). Catches wrong-asset and decay-truncation bugs.
+2. `kind_check.py <export-audio> <canonical-cue-sheet>` → per-event
+   fingerprint (ZCR + crest + relative RMS in a window capped at the next
+   event) vs the declared kind's family. Catches wrong-asset and
+   decay-truncation bugs. **It flags deliberate deviations too** — on the
+   04-poke demo score it flags exactly the two intentional asset swaps
+   (kenney_confirmation at a tap slot, bubble_pop at a send slot). It is a
+   discrepancy detector, not a pass/fail oracle: the reviewer resolves
+   flags against the cue sheet's declared intents.
 3. Machine-listened pass (`bin/classify`) over the export → texture sanity
    (typing reads typing, sends read whoosh, no music where none was
    designed) — complements, cannot replace, 1+2.
@@ -81,4 +91,5 @@ the stem can, and the stem is an editable deliverable.
 `integrity/delivered-audio.wav` (decoded delivered audio),
 `integrity/d1-shifted.{wav,mp4}`, `integrity/d2-swapped.{wav,mp4}`,
 tools `bin/onsets.py`, `bin/cue_check.py` (exit 1 on fail),
+`bin/kind_check.py` (exit 1 on fail),
 `bin/classify` (Swift/SNClassifySoundRequest).

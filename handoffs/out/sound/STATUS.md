@@ -17,13 +17,18 @@ Branch `devin-agent-sound` · owns `work/sound/`, `handoffs/out/sound/`
   `work/sound/treatment-experiment.md`. Verdict: clean sound changes beat
   small cut changes; stale cues over a recut are worse than silence.
 - DONE: cue-integrity test → `work/sound/cue-integrity-test.md`. A +200ms
-  shifted cue and a whoosh→click swap both pass LUFS/TP/duration; my
-  onset-correlation + kind-fingerprint checks catch them. Honest limit
+  shifted cue and a whoosh→click swap both pass LUFS/TP/duration;
+  `bin/cue_check.py` catches the shift (0-rise hole + unexpected onset
+  +184ms), `bin/kind_check.py` catches the swap (whoosh slot reads click:
+  ZCR 0.057/crest 32.6 vs whoosh family). Complementary: each passes the
+  other's defect. kind_check calibrated — windows capped at next event,
+  RMS relative to file median (14 false fails → 0 on clean). Honest limit
   documented: under a music bed the check is advisory — verify the UI stem.
 - DONE: original-scoring workflow → `work/sound/original-scoring.md`.
 - DONE: skill proposal → `work/sound/skill-proposals/sound-picture-cut-relationship.md`.
 - DONE (demo): `work/sound/film-01-score/` — 04-poke re-scored end-to-end
-  as pipeline proof (stems, cue sheet, muxed export, 35/36 verify).
+  as pipeline proof (stems, cue sheet, muxed export, 35/36 cue_check,
+  kind_check flags only the 2 deliberate asset deviations).
 - WAITING: creative agent picture-lock (../creative/handoffs/out/creative/
   empty as of last check — brief written, scenes not built). If it lands
   I score the real film in `work/sound/film-01-score/` same pipeline.
