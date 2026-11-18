@@ -59,6 +59,8 @@ test('photo geometry retains different original aspect ratios',()=>{
   const built=PhotoStack({id:'photos',photos,caption:'kiln 2 shelf layout v3',measure});
   const images=flatten([built.layer]).filter(layer=>layer.id.endsWith('-image'));
   assert.deepEqual(images.map(layer=>layer.width/layer.height),photos.map(photo=>photo.aspectRatio));
+  assert.equal(built.reactionAnchor.x,7+images[0].width);
+  assert.equal(built.reactionAnchor.y,12);
 });
 test('camera moves one clipped hierarchy, not local message geometry',()=>{
   const first=buildConversation(trial,measure);const changed=clone();changed.camera[1].scale=1.6;

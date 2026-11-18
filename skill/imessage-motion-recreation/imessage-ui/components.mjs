@@ -124,7 +124,8 @@ export function PhotoStack({id, photos, caption, measure}) {
   const captionLines=wrapText(caption ?? '',width-20,measure,14);
   const artworkHeight=Math.ceil(photos.length/3)*230;
   const height=artworkHeight+30+captionLines.length*19;
-  return {width,height,layer:group(id,0,0,[...nodes,label(id+'-photo-count',`${photos.length} photos`,width,artworkHeight,12,{textAnchor:'end',fill:'#6b7280'}),label(id+'-caption',captionLines.join('\n'),10,artworkHeight+23,14,{lineHeight:19})])};
+  const firstHeight=Math.min(150,186/photos[0].aspectRatio);
+  return {width,height,reactionAnchor:{x:7+firstHeight*photos[0].aspectRatio,y:12},layer:group(id,0,0,[...nodes,label(id+'-photo-count',`${photos.length} photos`,width,artworkHeight,12,{textAnchor:'end',fill:'#6b7280'}),label(id+'-caption',captionLines.join('\n'),10,artworkHeight+23,14,{lineHeight:19})])};
 }
 
 export function ComposerState({id, copy='', attachment, start, end, measure, phoneWidth=390}) {
@@ -212,9 +213,9 @@ export function buildConversation(config, measure) {
     const rowChildren=[];
     if (!outgoing) rowChildren.push(Avatar({id:id+'-avatar',x:16,y:Math.max(20,built.height-28),size:27,initials:sender.initials,fill:sender.color ?? '#d9e6e4'}),label(id+'-sender',sender.name,55,-19,12,{fill:'#72757c'}));
     rowChildren.push({...built.layer,x});
-    let reactionX=outgoing?x:x+built.width-reactions.reduce((sum,reaction)=>sum+reaction.width+3,0);
+    let reactionX=outgoing?x:x+(built.reactionAnchor?.x ?? built.width)-reactions.reduce((sum,reaction)=>sum+reaction.width+3,0);
     for (const reaction of reactions) {
-      rowChildren.push({...reaction.layer,x:reactionX,y:-24,start:reaction.reaction.at});
+      rowChildren.push({...reaction.layer,x:reactionX,y:(built.reactionAnchor?.y ?? 0)-24,start:reaction.reaction.at});
       reactionX+=reaction.width+3;
     }
     rows.push(group(id+'-row',0,y,rowChildren,{start:message.at,keyframes:{y:[{t:message.at,value:y+14},{t:message.at+.24,value:y,ease:'easeOut'}],opacity:[{t:message.at,value:0},{t:message.at+.16,value:1,ease:'easeOut'}]}}));
