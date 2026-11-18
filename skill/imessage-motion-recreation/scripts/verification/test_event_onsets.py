@@ -1,4 +1,5 @@
 import importlib.util
+import json
 from pathlib import Path
 import subprocess
 import tempfile
@@ -51,6 +52,27 @@ class EventOnsets(unittest.TestCase):
     def test_decode_error(self):
         with self.assertRaises(subprocess.CalledProcessError):
             onsets.decode('/nonexistent/event-onsets.mp4')
+
+    def test_first_video_stream(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp)
+            self.clip(root/'first.mp4',12,80,48)
+            self.clip(root/'second.mp4',18,160,96)
+            subprocess.run(['ffmpeg','-v','error','-i',str(root/'first.mp4'),'-i',str(root/'second.mp4'),'-map','0:v:0','-map','1:v:0','-c','copy',str(root/'two.mp4')],check=True)
+            frames,meta=onsets.decode(root/'two.mp4')
+            self.assertEqual((meta['width'],meta['height'],meta['frames']),(80,48,40))
+            self.assertEqual(frames.shape,(40,48,80,3))
+
+    def test_vfr_native_packet_count(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path=Path(tmp)/'vfr.mp4'
+            subprocess.run(['ffmpeg','-v','error','-f','lavfi','-i','testsrc=size=80x48:rate=30:duration=2','-vf',r'select=if(lt(n\,30)\,1\,not(mod(n\,3)))','-fps_mode','vfr','-c:v','libx264','-pix_fmt','yuv420p',str(path)],check=True)
+            probe=json.loads(subprocess.check_output(['ffprobe','-v','error','-select_streams','v:0','-count_packets','-show_entries','stream=nb_read_packets','-show_packets','-show_entries','packet=pts_time','-of','json',str(path)]))
+            times=sorted(float(p['pts_time']) for p in probe['packets'])
+            self.assertGreater(len(set(np.round(np.diff(times),3))),1)
+            frames,meta=onsets.decode(path)
+            self.assertEqual(len(frames),int(probe['streams'][0]['nb_read_packets']))
+            self.assertEqual(meta['frames'],40)
 
 
 if __name__=='__main__':

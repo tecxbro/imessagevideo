@@ -14,7 +14,7 @@ def decode(path):
     n, d = map(int, probe['avg_frame_rate'].split('/'))
     width = min(480, int(probe['width']))
     height = max(1, round(int(probe['height']) * width / int(probe['width'])))
-    process = subprocess.Popen(['ffmpeg', '-v', 'error', '-i', str(path), '-vf', f'scale={width}:{height}', '-f', 'rawvideo', '-pix_fmt', 'rgb24', '-'], stdout=subprocess.PIPE)
+    process = subprocess.Popen(['ffmpeg', '-v', 'error', '-i', str(path), '-map', '0:v:0', '-vf', f'scale={width}:{height}', '-fps_mode', 'passthrough', '-f', 'rawvideo', '-pix_fmt', 'rgb24', '-'], stdout=subprocess.PIPE)
     frames = []
     size = width * height * 3
     while True:
