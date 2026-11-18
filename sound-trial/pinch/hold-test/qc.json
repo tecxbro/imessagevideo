@@ -1,0 +1,44 @@
+{
+  "picture_sha256": "f64d8945ade7431ff029f40e8a9ddee7391b05f9f7a8d816ed783ac880966427",
+  "max_true_peak_dbtp": -1,
+  "cues": [
+    {
+      "id": "coach-send",
+      "template": "templates/coach-send.flac",
+      "start_s": 8.381666666666666,
+      "impact_offset_s": 0.035,
+      "tolerance_ms": 24,
+      "search_ms": 440
+    },
+    {
+      "id": "coach-confirmation",
+      "template": "templates/coach-confirmation.flac",
+      "start_s": 15.021333333333333,
+      "impact_offset_s": 0.062,
+      "tolerance_ms": 24,
+      "search_ms": 440
+    },
+    {
+      "id": "pencil-contact",
+      "template": "templates/pencil-contact.flac",
+      "start_s": 18.905666666666665,
+      "impact_offset_s": 0.011,
+      "tolerance_ms": 24,
+      "search_ms": 440
+    }
+  ],
+  "silences": [
+    {
+      "id": "empty-chair-mid-hold",
+      "start_s": 12,
+      "end_s": 13.55,
+      "max_peak_dbfs": -60
+    },
+    {
+      "id": "completed-mark-and-title-breathe",
+      "start_s": 21.25,
+      "end_s": 23.5,
+      "max_peak_dbfs": -43
+    }
+  ]
+}

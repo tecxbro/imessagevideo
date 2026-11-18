@@ -1,0 +1,36 @@
+{
+  "picture_sha256": "483373b7ac8bf092e955d3a6acf4b1c5290e3603f501f6677a727677f2712ed5",
+  "max_true_peak_dbtp": -1,
+  "cues": [
+    {
+      "id": "restaurant-choice",
+      "template": "templates/restaurant-choice.flac",
+      "start_s": 3.5016458333333333,
+      "impact_offset_s": 0.0018541666666666667,
+      "tolerance_ms": 24,
+      "search_ms": 440
+    },
+    {
+      "id": "map-resolves",
+      "template": "templates/map-resolves.flac",
+      "start_s": 6.124395833333334,
+      "impact_offset_s": 0.282,
+      "tolerance_ms": 24,
+      "search_ms": 440
+    }
+  ],
+  "silences": [
+    {
+      "id": "decision-reading-gap",
+      "start_s": 1.6,
+      "end_s": 3.43,
+      "max_peak_dbfs": -60
+    },
+    {
+      "id": "distance-copy",
+      "start_s": 7.18,
+      "end_s": 7.65,
+      "max_peak_dbfs": -60
+    }
+  ]
+}

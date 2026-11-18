@@ -1,0 +1,318 @@
+{
+  "picture_commit": "19d50dc26e4e8e2f2875affdb3b2c7b2ca6861be",
+  "picture_version": "Pinch Hit director revised final picture",
+  "picture_path_at_commit": "trials/pinch-hit/films/final-picture.mp4",
+  "picture_sha256": "b9c6d6a86fb34cbf5a7f6058dc3c96226a31d415d8e9a3bd54e571f9f61452db",
+  "fps": "24",
+  "frames": 576,
+  "asset_manifest": "../assets.json",
+  "intent": "Ballpark air gives way to the empty chair. Maya's accept is tactile. Soft field activity returns before the occupied-chair cut and bridges into the scorebook. Graphite ends the action.",
+  "field_bed": {
+    "seed": 5105,
+    "perspective_by_frame": [
+      [
+        0,
+        0.36
+      ],
+      [
+        78,
+        0.18
+      ],
+      [
+        128,
+        0.09
+      ],
+      [
+        271,
+        0.09
+      ],
+      [
+        278,
+        0.03
+      ],
+      [
+        366,
+        0.03
+      ],
+      [
+        374,
+        0.24
+      ],
+      [
+        469,
+        0.1
+      ],
+      [
+        576,
+        0.04
+      ]
+    ],
+    "indoors_by_frame": [
+      [
+        0,
+        0
+      ],
+      [
+        272,
+        0
+      ],
+      [
+        280,
+        1
+      ],
+      [
+        365,
+        1
+      ],
+      [
+        374,
+        0
+      ],
+      [
+        576,
+        0
+      ]
+    ],
+    "level_dbfs_by_frame": [
+      [
+        0,
+        -33
+      ],
+      [
+        67,
+        -33
+      ],
+      [
+        84,
+        -37
+      ],
+      [
+        128,
+        -39
+      ],
+      [
+        200,
+        -43
+      ],
+      [
+        230,
+        -49
+      ],
+      [
+        240,
+        -72
+      ],
+      [
+        267,
+        -72
+      ],
+      [
+        274,
+        -54
+      ],
+      [
+        285,
+        -47
+      ],
+      [
+        356,
+        -47
+      ],
+      [
+        365,
+        -52
+      ],
+      [
+        374,
+        -38
+      ],
+      [
+        461,
+        -41
+      ],
+      [
+        477,
+        -45
+      ],
+      [
+        519,
+        -48
+      ],
+      [
+        536,
+        -46
+      ],
+      [
+        576,
+        -48
+      ]
+    ]
+  },
+  "cues": [
+    {
+      "id": "offscreen-glove",
+      "anchor_frame": 44,
+      "asset": "distant-field-pop",
+      "lane": "environment",
+      "peak_dbfs": -25,
+      "action": "Distant warm-up activity in opening wide"
+    },
+    {
+      "id": "fence-perspective",
+      "anchor_frame": 80,
+      "asset": "field-scuff",
+      "lane": "environment",
+      "peak_dbfs": -29,
+      "action": "Perspective settles after the cut to players f78"
+    },
+    {
+      "id": "coach-composer-first",
+      "anchor_frame": 138,
+      "asset": "key-008",
+      "lane": "hands",
+      "peak_dbfs": -24,
+      "action": "First visible coach composer character"
+    },
+    {
+      "id": "coach-composer-space",
+      "anchor_frame": 151,
+      "asset": "key-014",
+      "lane": "hands",
+      "peak_dbfs": -26,
+      "action": "Coach adds space"
+    },
+    {
+      "id": "coach-composer-last",
+      "anchor_frame": 159,
+      "asset": "key-008",
+      "lane": "hands",
+      "peak_dbfs": -24,
+      "action": "Final coach composer character"
+    },
+    {
+      "id": "coach-send",
+      "anchor_frame": 170,
+      "asset": "request-sent",
+      "lane": "hands",
+      "peak_dbfs": -9,
+      "action": "Outgoing blue bubble replaces the coach composer",
+      "verify": true,
+      "impact_after_frames": 1
+    },
+    {
+      "id": "pending",
+      "anchor_frame": 195,
+      "asset": "bubble-pop",
+      "lane": "hands",
+      "peak_dbfs": -22,
+      "action": "Pending reply becomes recognizable, first faint at f193"
+    },
+    {
+      "id": "backup-ask",
+      "anchor_frame": 277,
+      "asset": "bubble-pop",
+      "lane": "hands",
+      "peak_dbfs": -19,
+      "action": "Incoming request becomes recognizable in Maya's thread, first faint at f274"
+    },
+    {
+      "id": "maya-composer-first",
+      "anchor_frame": 327,
+      "asset": "key-014",
+      "lane": "hands",
+      "peak_dbfs": -25,
+      "action": "First visible Maya composer character"
+    },
+    {
+      "id": "maya-composer-space",
+      "anchor_frame": 334,
+      "asset": "key-008",
+      "lane": "hands",
+      "peak_dbfs": -26,
+      "action": "Maya adds the second space"
+    },
+    {
+      "id": "maya-composer-last",
+      "anchor_frame": 341,
+      "asset": "key-014",
+      "lane": "hands",
+      "peak_dbfs": -25,
+      "action": "Final Maya composer character"
+    },
+    {
+      "id": "maya-accepts",
+      "anchor_frame": 352,
+      "asset": "maya-reply",
+      "lane": "hands",
+      "peak_dbfs": -10,
+      "action": "Maya's acceptance replaces her composer",
+      "verify": true,
+      "impact_after_frames": 1
+    },
+    {
+      "id": "field-returns",
+      "anchor_frame": 374,
+      "asset": "field-scuff",
+      "lane": "environment",
+      "peak_dbfs": -31,
+      "action": "Cut to occupied chair, foley begins before cut"
+    },
+    {
+      "id": "coach-confirmation",
+      "anchor_frame": 397,
+      "asset": "answer-arrives",
+      "lane": "payoff",
+      "peak_dbfs": -12,
+      "action": "Coach's confirmation is nearly fully opaque, first faint at f392",
+      "verify": true
+    },
+    {
+      "id": "activity-bridges-book-cut",
+      "anchor_frame": 467,
+      "asset": "distant-field-pop",
+      "lane": "environment",
+      "peak_dbfs": -30,
+      "action": "Offscreen field activity trails across the f469 book cut"
+    },
+    {
+      "id": "pencil-contact",
+      "anchor_frame": 488,
+      "asset": "paper-touch",
+      "lane": "hands",
+      "peak_dbfs": -12,
+      "action": "Pencil tip meets scorebook",
+      "verify": true
+    },
+    {
+      "id": "graphite-mark",
+      "anchor_frame": 501,
+      "asset": "graphite-draw-short",
+      "lane": "payoff",
+      "peak_dbfs": -12,
+      "action": "Stroke starts with first visible graphite at f489 and releases at completion f513"
+    }
+  ],
+  "silences": [
+    {
+      "id": "empty-chair-mid-hold",
+      "start_s": 10.03,
+      "end_s": 11.06,
+      "max_peak_dbfs": -60
+    },
+    {
+      "id": "completed-mark-and-title-breathe",
+      "start_s": 21.7,
+      "end_s": 23.5,
+      "max_peak_dbfs": -43
+    }
+  ],
+  "faults": {
+    "coach-send": {
+      "delay_frames": 5
+    },
+    "pencil-contact": {
+      "remove": true
+    }
+  },
+  "output_gain_db": 4
+}

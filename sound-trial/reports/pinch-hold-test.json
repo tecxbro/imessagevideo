@@ -1,0 +1,75 @@
+{
+  "passed": true,
+  "export_sha256": "7633b611061852eeb250e74c158130309e4970294758e4a3329d687d533eca7a",
+  "picture_sha256": "f64d8945ade7431ff029f40e8a9ddee7391b05f9f7a8d816ed783ac880966427",
+  "video_packets_and_timestamps_match": true,
+  "video_duration_s": 24.0,
+  "audio_duration_s": 24.0,
+  "decoded_audio_duration_s": 24.0,
+  "integrated_lufs": -29.6,
+  "true_peak_dbtp": -9.1,
+  "max_true_peak_dbtp": -1,
+  "cues": [
+    {
+      "id": "coach-send",
+      "expected_sample_start_s": 8.381666666666666,
+      "expected_impact_landmark_s": 8.416667,
+      "picture_anchor_s": null,
+      "tolerance_ms": 24,
+      "search_ms": 440,
+      "status": "pass",
+      "measured_sample_start_s": 8.381625,
+      "estimated_impact_landmark_s": 8.416625,
+      "delta_ms": 0.0,
+      "correlation": 0.969,
+      "matched_gain_db": -0.28
+    },
+    {
+      "id": "coach-confirmation",
+      "expected_sample_start_s": 15.021333333333333,
+      "expected_impact_landmark_s": 15.083333,
+      "picture_anchor_s": null,
+      "tolerance_ms": 24,
+      "search_ms": 440,
+      "status": "pass",
+      "measured_sample_start_s": 15.021375,
+      "estimated_impact_landmark_s": 15.083375,
+      "delta_ms": 0.0,
+      "correlation": 0.978,
+      "matched_gain_db": -0.17
+    },
+    {
+      "id": "pencil-contact",
+      "expected_sample_start_s": 18.905666666666665,
+      "expected_impact_landmark_s": 18.916667,
+      "picture_anchor_s": null,
+      "tolerance_ms": 24,
+      "search_ms": 440,
+      "status": "pass",
+      "measured_sample_start_s": 18.905625,
+      "estimated_impact_landmark_s": 18.916625,
+      "delta_ms": 0.0,
+      "correlation": 0.824,
+      "matched_gain_db": -1.79
+    }
+  ],
+  "silences": [
+    {
+      "id": "empty-chair-mid-hold",
+      "start_s": 12,
+      "end_s": 13.55,
+      "max_peak_dbfs": -60,
+      "measured_peak_dbfs": -74.28,
+      "passed": true
+    },
+    {
+      "id": "completed-mark-and-title-breathe",
+      "start_s": 21.25,
+      "end_s": 23.5,
+      "max_peak_dbfs": -43,
+      "measured_peak_dbfs": -44.75,
+      "passed": true
+    }
+  ],
+  "errors": []
+}

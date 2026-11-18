@@ -1,0 +1,191 @@
+{
+  "picture_commit": "3324065c5386952c1db87a77925a5df9c1d81dff",
+  "picture_path_at_commit": "trials/pinch-hit/films/early.mp4",
+  "picture_version": "Pinch Hit director early cut",
+  "picture_sha256": "3701709ad0eed000f90ec8091e921ef007579994fc9d6ae83ea493c35711b123",
+  "fps": "24",
+  "frames": 576,
+  "asset_manifest": "../assets.json",
+  "intent": "Keep the ballpark present under the request. Pull back for the empty chair. Let the dry sound of the first mark deliver the outcome.",
+  "field_bed": {
+    "seed": 5105,
+    "level_dbfs_by_frame": [
+      [
+        0,
+        -35
+      ],
+      [
+        88,
+        -35
+      ],
+      [
+        110,
+        -39
+      ],
+      [
+        158,
+        -40
+      ],
+      [
+        244,
+        -43
+      ],
+      [
+        267,
+        -48
+      ],
+      [
+        284,
+        -72
+      ],
+      [
+        329,
+        -72
+      ],
+      [
+        352,
+        -46
+      ],
+      [
+        374,
+        -43
+      ],
+      [
+        430,
+        -40
+      ],
+      [
+        453,
+        -43
+      ],
+      [
+        495,
+        -46
+      ],
+      [
+        530,
+        -44
+      ],
+      [
+        576,
+        -45
+      ]
+    ]
+  },
+  "cues": [
+    {
+      "id": "offscreen-glove",
+      "anchor_frame": 61,
+      "asset": "distant-field-pop",
+      "lane": "environment",
+      "peak_dbfs": -25,
+      "action": "Distant field activity, opening chair wide"
+    },
+    {
+      "id": "fence-perspective",
+      "anchor_frame": 101,
+      "asset": "field-scuff",
+      "lane": "environment",
+      "peak_dbfs": -29,
+      "action": "Scuff with the cut closer to fence, visual cut f98"
+    },
+    {
+      "id": "composer-batch",
+      "anchor_frame": 170,
+      "asset": "key-008",
+      "lane": "hands",
+      "peak_dbfs": -24,
+      "action": "First visible composer character, c"
+    },
+    {
+      "id": "composer-space",
+      "anchor_frame": 183,
+      "asset": "key-014",
+      "lane": "hands",
+      "peak_dbfs": -26,
+      "action": "Space added to the composer"
+    },
+    {
+      "id": "composer-completes",
+      "anchor_frame": 190,
+      "asset": "key-008",
+      "lane": "hands",
+      "peak_dbfs": -24,
+      "action": "Final composer character arrives"
+    },
+    {
+      "id": "coach-send",
+      "anchor_frame": 201,
+      "asset": "request-sent",
+      "lane": "hands",
+      "peak_dbfs": -9,
+      "action": "Blue bubble starts replacing composer",
+      "verify": true,
+      "impact_after_frames": 1
+    },
+    {
+      "id": "pending",
+      "anchor_frame": 239,
+      "asset": "bubble-pop",
+      "lane": "hands",
+      "peak_dbfs": -22,
+      "action": "Pending reply is recognizable, first faint at f237"
+    },
+    {
+      "id": "coach-confirmation",
+      "anchor_frame": 374,
+      "asset": "answer-arrives",
+      "lane": "payoff",
+      "peak_dbfs": -11,
+      "action": "Cover is legible, first faint at f370",
+      "verify": true
+    },
+    {
+      "id": "offscreen-game",
+      "anchor_frame": 434,
+      "asset": "distant-field-pop",
+      "lane": "environment",
+      "peak_dbfs": -32,
+      "action": "Distant action bridges the edit into the scorebook"
+    },
+    {
+      "id": "pencil-contact",
+      "anchor_frame": 466,
+      "asset": "paper-touch",
+      "lane": "hands",
+      "peak_dbfs": -12,
+      "action": "Pencil tip touches paper",
+      "verify": true
+    },
+    {
+      "id": "graphite-mark",
+      "anchor_frame": 483,
+      "asset": "graphite-draw",
+      "lane": "payoff",
+      "peak_dbfs": -12,
+      "action": "Center of visible graphite stroke from first mark f467 to complete f500"
+    }
+  ],
+  "silences": [
+    {
+      "id": "empty-chair-mid-hold",
+      "start_s": 12,
+      "end_s": 13.55,
+      "max_peak_dbfs": -60
+    },
+    {
+      "id": "completed-mark-and-title-breathe",
+      "start_s": 21.25,
+      "end_s": 23.5,
+      "max_peak_dbfs": -43
+    }
+  ],
+  "faults": {
+    "coach-send": {
+      "delay_frames": 5
+    },
+    "pencil-contact": {
+      "remove": true
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "picture_commit": "c49482aec7b8ed0b840f97c61a5e5b860c4077b6",
+  "picture_version": "Poke accepted GSAP v19, zero-based frames [540,770), 30000/1001",
+  "picture_sha256": "483373b7ac8bf092e955d3a6acf4b1c5290e3603f501f6677a727677f2712ed5",
+  "fps": "30000/1001",
+  "frames": 230,
+  "asset_manifest": "../assets.json",
+  "silences": [
+    {
+      "id": "decision-reading-gap",
+      "start_s": 1.6,
+      "end_s": 3.43,
+      "max_peak_dbfs": -60
+    },
+    {
+      "id": "distance-copy",
+      "start_s": 7.18,
+      "end_s": 7.65,
+      "max_peak_dbfs": -60
+    }
+  ],
+  "intent": "Treat the chooser and Maps payoff as two fluid editorial gestures while preserving the selection click and decision quiet.",
+  "cues": [
+    {
+      "id": "chooser-opens",
+      "source_picture_frame": 575,
+      "anchor_frame": 35,
+      "asset": "sheet-lift",
+      "lane": "motion",
+      "peak_dbfs": -12,
+      "action": "Chooser first appears",
+      "impact_after_frames": 1
+    },
+    {
+      "id": "restaurant-choice",
+      "source_picture_frame": 645,
+      "anchor_frame": 105,
+      "asset": "select",
+      "lane": "hands",
+      "peak_dbfs": -10.5,
+      "action": "Blue selection check first appears",
+      "verify": true
+    },
+    {
+      "id": "map-resolves",
+      "source_picture_frame": 732,
+      "anchor_frame": 192,
+      "asset": "map-focus",
+      "lane": "payoff",
+      "peak_dbfs": -9.5,
+      "action": "Orange marker is visible; prelap carries preceding shot into Maps.",
+      "verify": true
+    }
+  ]
+}

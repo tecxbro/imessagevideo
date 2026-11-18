@@ -13,6 +13,15 @@ Use this workflow when the visible interface needs convincing keystrokes, taps, 
 9. Copy the accepted video stream and newly encoded audio into MP4; map streams explicitly so source-film audio cannot leak into a new mix. Prove video and AAC packet hashes unchanged by muxing. Preserve all original master videos and immutable deliveries.
 10. Offer UI-only, quiet-music and reference modes over the same picture. Say which mode contains the supplied soundtrack. Match comparison loudness without raising peaks or erasing manual volume/mute state. Keep production stems, download links, source licenses and a reusable sound kit accessible.
 
+## Audition and verify the delivered edit
+
+- Lock the picture commit, file hash, rational cadence and zero-based frames. For each scored action, keep the visible onset, readable or settled frame, sample start, designed impact landmark and any measured peak. Cue a sound with a long attack to the picture event that should feel like its landing. Reserve empty holds where the audience is deciding, reading or waiting.
+- Render two treatments of the same picture. Keep key anchors and playback conditions comparable. Give the listener neutral versions before sharing the cue list and ask what changed in the perceived action. Keep listening notes, model-assisted interpretation and meter readings distinct.
+- Keep an editable baseline and change one editorial hold or cut with the director. Retime foreground cues to changed frames, then separately check how the change affects the payoff and the reading time. Preserve the original mix.
+- Fingerprint a few distinctive cues in decoded final MP4 audio. Check silence ceilings, true peak, audio span and picture packet identity. Challenge the gate by exporting a late cue and a missing cue, and check that both fail while the otherwise identical clean export passes.
+
+See [the Codex sound trial](../../../sound-trial/README.md) for mixes, frame-specific cues and a repeatable control.
+
 ## Reproduction layout
 
 The bundled audio-recreation directory contains source code, canonical event schedules, original production-code snapshots, safe license/provenance manifests and validation reports. It intentionally excludes audio/video/font binaries. Download the separately published UI sound kit and merge its prepared library and synthesis bank into the same audio-recreation layout, or use library_bank.py fetch/prepare with the pinned source licenses and hashes. Python requires NumPy/SciPy; FFmpeg/ffprobe must be installed. Canonical scenes and pinned music inputs belong beside this template in the host recreation project.

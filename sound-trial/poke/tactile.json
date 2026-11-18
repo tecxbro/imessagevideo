@@ -1,0 +1,81 @@
+{
+  "picture_commit": "c49482aec7b8ed0b840f97c61a5e5b860c4077b6",
+  "picture_version": "Poke accepted GSAP v19, zero-based frames [540,770), 30000/1001",
+  "picture_sha256": "483373b7ac8bf092e955d3a6acf4b1c5290e3603f501f6677a727677f2712ed5",
+  "fps": "30000/1001",
+  "frames": 230,
+  "asset_manifest": "../assets.json",
+  "silences": [
+    {
+      "id": "decision-reading-gap",
+      "start_s": 1.6,
+      "end_s": 3.43,
+      "max_peak_dbfs": -60
+    },
+    {
+      "id": "distance-copy",
+      "start_s": 7.18,
+      "end_s": 7.65,
+      "max_peak_dbfs": -60
+    }
+  ],
+  "intent": "Read the choice, acknowledgment and result as separate actions.",
+  "cues": [
+    {
+      "id": "found-spots",
+      "source_picture_frame": 549,
+      "anchor_frame": 9,
+      "asset": "bubble-pop",
+      "lane": "hands",
+      "peak_dbfs": -20,
+      "action": "New message becomes coherent"
+    },
+    {
+      "id": "chooser-opens",
+      "source_picture_frame": 575,
+      "anchor_frame": 35,
+      "asset": "sheet-breath",
+      "lane": "motion",
+      "peak_dbfs": -16,
+      "action": "Chooser first appears",
+      "impact_after_frames": 1
+    },
+    {
+      "id": "restaurant-choice",
+      "source_picture_frame": 645,
+      "anchor_frame": 105,
+      "asset": "select",
+      "lane": "hands",
+      "peak_dbfs": -10.5,
+      "action": "Blue selection check first appears",
+      "verify": true
+    },
+    {
+      "id": "choice-acknowledgment",
+      "source_picture_frame": 690,
+      "anchor_frame": 150,
+      "asset": "touch",
+      "lane": "hands",
+      "peak_dbfs": -17,
+      "action": "Restaurant card body is legible; first partial frame is 687"
+    },
+    {
+      "id": "map-resolves",
+      "source_picture_frame": 732,
+      "anchor_frame": 192,
+      "asset": "felt-tab",
+      "lane": "payoff",
+      "peak_dbfs": -12.5,
+      "action": "Orange map marker is clear; first faint entrance is frame 728",
+      "verify": true
+    }
+  ],
+  "faults": {
+    "restaurant-choice": {
+      "delay_frames": 6
+    },
+    "map-resolves": {
+      "remove": true
+    }
+  }
+}

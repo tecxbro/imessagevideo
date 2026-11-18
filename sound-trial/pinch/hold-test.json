@@ -1,0 +1,183 @@
+{
+  "picture_commit": "19d50dc26e4e8e2f2875affdb3b2c7b2ca6861be",
+  "picture_path_at_commit": "trials/pinch-hit/films/hold-test.mp4",
+  "picture_version": "Pinch Hit isolated director hold test",
+  "picture_sha256": "f64d8945ade7431ff029f40e8a9ddee7391b05f9f7a8d816ed783ac880966427",
+  "fps": "24",
+  "frames": 576,
+  "asset_manifest": "../assets.json",
+  "intent": "Transfer 12 frames from the chair wait into the completed-mark hold. Retain the same foreground sound choices and gains.",
+  "field_bed": {
+    "seed": 5105,
+    "level_dbfs_by_frame": [
+      [
+        0,
+        -35
+      ],
+      [
+        88,
+        -35
+      ],
+      [
+        110,
+        -39
+      ],
+      [
+        158,
+        -40
+      ],
+      [
+        244,
+        -43
+      ],
+      [
+        267,
+        -48
+      ],
+      [
+        284,
+        -72
+      ],
+      [
+        329,
+        -72
+      ],
+      [
+        340,
+        -46
+      ],
+      [
+        362,
+        -43
+      ],
+      [
+        418,
+        -40
+      ],
+      [
+        441,
+        -43
+      ],
+      [
+        483,
+        -46
+      ],
+      [
+        530,
+        -44
+      ],
+      [
+        576,
+        -45
+      ]
+    ]
+  },
+  "cues": [
+    {
+      "id": "offscreen-glove",
+      "anchor_frame": 61,
+      "asset": "distant-field-pop",
+      "lane": "environment",
+      "peak_dbfs": -25,
+      "action": "Distant field activity, opening chair wide"
+    },
+    {
+      "id": "fence-perspective",
+      "anchor_frame": 101,
+      "asset": "field-scuff",
+      "lane": "environment",
+      "peak_dbfs": -29,
+      "action": "Scuff with the cut closer to fence, visual cut f98"
+    },
+    {
+      "id": "composer-batch",
+      "anchor_frame": 170,
+      "asset": "key-008",
+      "lane": "hands",
+      "peak_dbfs": -24,
+      "action": "First visible composer character, c"
+    },
+    {
+      "id": "composer-space",
+      "anchor_frame": 183,
+      "asset": "key-014",
+      "lane": "hands",
+      "peak_dbfs": -26,
+      "action": "Space added to the composer"
+    },
+    {
+      "id": "composer-completes",
+      "anchor_frame": 190,
+      "asset": "key-008",
+      "lane": "hands",
+      "peak_dbfs": -24,
+      "action": "Final composer character arrives"
+    },
+    {
+      "id": "coach-send",
+      "anchor_frame": 201,
+      "asset": "request-sent",
+      "lane": "hands",
+      "peak_dbfs": -9,
+      "action": "Blue bubble starts replacing composer",
+      "verify": true,
+      "impact_after_frames": 1
+    },
+    {
+      "id": "pending",
+      "anchor_frame": 239,
+      "asset": "bubble-pop",
+      "lane": "hands",
+      "peak_dbfs": -22,
+      "action": "Pending reply is recognizable, first faint at f237"
+    },
+    {
+      "id": "coach-confirmation",
+      "anchor_frame": 362,
+      "asset": "answer-arrives",
+      "lane": "payoff",
+      "peak_dbfs": -11,
+      "action": "Cover is legible, first faint at f358",
+      "verify": true
+    },
+    {
+      "id": "offscreen-game",
+      "anchor_frame": 422,
+      "asset": "distant-field-pop",
+      "lane": "environment",
+      "peak_dbfs": -32,
+      "action": "Distant action bridges the edit into the scorebook"
+    },
+    {
+      "id": "pencil-contact",
+      "anchor_frame": 454,
+      "asset": "paper-touch",
+      "lane": "hands",
+      "peak_dbfs": -12,
+      "action": "Pencil tip touches paper",
+      "verify": true
+    },
+    {
+      "id": "graphite-mark",
+      "anchor_frame": 471,
+      "asset": "graphite-draw",
+      "lane": "payoff",
+      "peak_dbfs": -12,
+      "action": "Center of the visible graphite stroke, first mark f455 and complete f488"
+    }
+  ],
+  "silences": [
+    {
+      "id": "empty-chair-mid-hold",
+      "start_s": 12,
+      "end_s": 13.55,
+      "max_peak_dbfs": -60
+    },
+    {
+      "id": "completed-mark-and-title-breathe",
+      "start_s": 21.25,
+      "end_s": 23.5,
+      "max_peak_dbfs": -43
+    }
+  ]
+}

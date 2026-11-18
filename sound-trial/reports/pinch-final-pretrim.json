@@ -1,0 +1,89 @@
+{
+  "passed": true,
+  "export_sha256": "b8251af8853b7d3b2b4e349873e9df3b1c7f5d13cf199bf72d99ededf9d5fd87",
+  "picture_sha256": "b9c6d6a86fb34cbf5a7f6058dc3c96226a31d415d8e9a3bd54e571f9f61452db",
+  "video_packets_and_timestamps_match": true,
+  "video_duration_s": 24.0,
+  "audio_duration_s": 24.0,
+  "decoded_audio_duration_s": 24.0,
+  "integrated_lufs": -31.1,
+  "true_peak_dbtp": -9.0,
+  "max_true_peak_dbtp": -1,
+  "cues": [
+    {
+      "id": "coach-send",
+      "expected_sample_start_s": 7.09,
+      "expected_impact_landmark_s": 7.125,
+      "picture_anchor_s": null,
+      "tolerance_ms": 24,
+      "search_ms": 440,
+      "status": "pass",
+      "measured_sample_start_s": 7.09,
+      "estimated_impact_landmark_s": 7.125,
+      "delta_ms": 0.0,
+      "correlation": 1.0,
+      "matched_gain_db": -0.01
+    },
+    {
+      "id": "maya-accepts",
+      "expected_sample_start_s": 14.681333333333333,
+      "expected_impact_landmark_s": 14.708333,
+      "picture_anchor_s": null,
+      "tolerance_ms": 24,
+      "search_ms": 440,
+      "status": "pass",
+      "measured_sample_start_s": 14.681375,
+      "estimated_impact_landmark_s": 14.708375,
+      "delta_ms": 0.0,
+      "correlation": 0.914,
+      "matched_gain_db": -0.83
+    },
+    {
+      "id": "coach-confirmation",
+      "expected_sample_start_s": 16.479666666666667,
+      "expected_impact_landmark_s": 16.541667,
+      "picture_anchor_s": null,
+      "tolerance_ms": 24,
+      "search_ms": 440,
+      "status": "pass",
+      "measured_sample_start_s": 16.479625,
+      "estimated_impact_landmark_s": 16.541625,
+      "delta_ms": 0.0,
+      "correlation": 0.978,
+      "matched_gain_db": -0.17
+    },
+    {
+      "id": "pencil-contact",
+      "expected_sample_start_s": 20.322333333333333,
+      "expected_impact_landmark_s": 20.333333,
+      "picture_anchor_s": null,
+      "tolerance_ms": 24,
+      "search_ms": 440,
+      "status": "pass",
+      "measured_sample_start_s": 20.322375,
+      "estimated_impact_landmark_s": 20.333375,
+      "delta_ms": 0.0,
+      "correlation": 0.827,
+      "matched_gain_db": -1.72
+    }
+  ],
+  "silences": [
+    {
+      "id": "empty-chair-mid-hold",
+      "start_s": 10.03,
+      "end_s": 11.06,
+      "max_peak_dbfs": -60,
+      "measured_peak_dbfs": -72.09,
+      "passed": true
+    },
+    {
+      "id": "completed-mark-and-title-breathe",
+      "start_s": 21.7,
+      "end_s": 23.5,
+      "max_peak_dbfs": -43,
+      "measured_peak_dbfs": -47.72,
+      "passed": true
+    }
+  ],
+  "errors": []
+}
