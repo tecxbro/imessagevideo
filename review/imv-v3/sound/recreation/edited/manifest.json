@@ -1,0 +1,105 @@
+{
+  "picture_sha256": "6e9cdc57f6e3e4b178955e86aa23c9e7c55596ef16c470c0cae48f945df92b8f",
+  "plan_sha256": "5bb2c7273649e15b0d6fc0df0e1646e0ca7ebecdd08f5c6045a952668d6289e5",
+  "mix_sha256": "e54d3912b28facec8489067fce15557082de9a6b7c391bca5a05ff440a0c92c9",
+  "export_sha256": "9bc9687aaa516f83066b9293888192ae0d4bf05548bcb14de5f69f6b5e954def",
+  "picture_time_base": "1/15360",
+  "picture_duration": "4",
+  "sample_rate": 48000,
+  "sample_count": 192000,
+  "pcm_peak_dbfs": -13.1,
+  "stems": {
+    "dialogue": "6617bc1d753e5d3327e42b20155a75ffe2ebc33c03556a08f686dd154c7472a0",
+    "music": "6617bc1d753e5d3327e42b20155a75ffe2ebc33c03556a08f686dd154c7472a0",
+    "atmosphere": "6617bc1d753e5d3327e42b20155a75ffe2ebc33c03556a08f686dd154c7472a0",
+    "effects": "e54d3912b28facec8489067fce15557082de9a6b7c391bca5a05ff440a0c92c9"
+  },
+  "landmarks": {
+    "recreate.train.request": {
+      "frame": 30,
+      "pts": "1",
+      "score": 1.0,
+      "sample": 48000
+    },
+    "recreate.train.drawer": {
+      "frame": 56,
+      "pts": "28/15",
+      "score": 1.0,
+      "sample": 89600
+    },
+    "recreate.train.seat-selection": {
+      "frame": 69,
+      "pts": "23/10",
+      "score": 0.8214285714285714,
+      "sample": 110400
+    },
+    "recreate.train.receipt": {
+      "frame": 89,
+      "pts": "89/30",
+      "score": 1.0,
+      "sample": 142400
+    }
+  },
+  "cues": [
+    {
+      "id": "send-flick",
+      "event": "recreate.train.request",
+      "bus": "effects",
+      "purpose": "A light outgoing flick moves attention onto the request text.",
+      "source": "Original procedural sound in recreation/synthesize.py (send-flick), using oscillators and seeded noise.",
+      "event_frame": 30,
+      "offset_samples": 288,
+      "asset_start_sample": 47489,
+      "onset_marker_sample": 47765,
+      "impact_sample": 48288,
+      "asset_sha256": "ddad6223463e0de7963cdab7057fc02be0cc2b71b507a1d53f353b06b615eb0f",
+      "asset_end_sample": 52673,
+      "gain_db": -13.0
+    },
+    {
+      "id": "drawer-glide",
+      "event": "recreate.train.drawer",
+      "bus": "effects",
+      "purpose": "A brushed slider suggests a new working surface, with the resonant impact just ahead of the first visible handle.",
+      "source": "Original procedural sound in recreation/synthesize.py (drawer-glide), using oscillators and seeded noise.",
+      "event_frame": 56,
+      "offset_samples": -768,
+      "asset_start_sample": 85927,
+      "onset_marker_sample": 87396,
+      "impact_sample": 88832,
+      "asset_sha256": "cf034e20493fb118f6189ecb7e7afcd584de6f8677474f08c7975330e5c51dde",
+      "asset_end_sample": 94423,
+      "gain_db": -18.0
+    },
+    {
+      "id": "seat-latch",
+      "event": "recreate.train.seat-selection",
+      "bus": "effects",
+      "purpose": "The shortest and strongest touch acknowledges the chosen departure.",
+      "source": "Original procedural sound in recreation/synthesize.py (seat-latch), using oscillators and seeded noise.",
+      "event_frame": 69,
+      "offset_samples": 432,
+      "asset_start_sample": 110415,
+      "onset_marker_sample": 110449,
+      "impact_sample": 110832,
+      "asset_sha256": "64da55596868b53c260ebb4cfcdcdde271cd0d05d0bdfaca5b8ddbf5e8190e26",
+      "asset_end_sample": 113679,
+      "gain_db": -10.0
+    },
+    {
+      "id": "receipt-resolve",
+      "event": "recreate.train.receipt",
+      "bus": "effects",
+      "purpose": "A small two-tone figure confirms fulfillment before the viewer reads the time.",
+      "source": "Original procedural sound in recreation/synthesize.py (receipt-resolve), using oscillators and seeded noise.",
+      "event_frame": 89,
+      "offset_samples": 672,
+      "asset_start_sample": 141484,
+      "onset_marker_sample": 142803,
+      "impact_sample": 143072,
+      "asset_sha256": "914869c5521c4d0336145b47ed7f7f4e0d2393a70911d1a1f3900a87fe34a9fe",
+      "asset_end_sample": 153436,
+      "gain_db": -14.0
+    }
+  ]
+}

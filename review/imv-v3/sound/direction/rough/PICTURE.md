@@ -35,5 +35,3 @@ for event, match in resolve_landmarks(Path(sys.argv[1]), detectors, folder).item
     print(event, match["frame"], match["pts"], round(match["score"], 3))
 PY
 ```
-
-In a retime check, eight repeated stage frames inserted before the moon animation moved the crescent to frame 274 (137/12 s) and the rabbit to frame 289 (289/24 s). Seven earlier boundaries resolved to the original frames after the H.264 re-encode. The detector definitions were reused as written.
