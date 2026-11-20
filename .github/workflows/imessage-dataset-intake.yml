@@ -3,15 +3,10 @@ name: iMessage dataset intake
 on:
   schedule:
     - cron: '23 16 * * 1'
-  workflow_dispatch:
+  workflow_dispatch: {}
   push:
     branches:
       - codex-video-v3/dataset
-      - main
-    paths:
-      - '.github/workflows/imessage-dataset-intake.yml'
-      - 'datasets/imessage/**'
-      - 'review/imv-v3/dataset/**'
 
 permissions:
   contents: read
