@@ -19,3 +19,11 @@ SOURCE=projects/04-poke-complete-v1/imessage-recreations/references/04-poke/sour
 python3 "$R/recreate.py" inspect "$SOURCE" --frames 406:420,446:459,481:490,507:519 --out /tmp/poke-landmarks --sheet-width 280
 python3 "$R/recreate.py" landmarks "$SOURCE" --plan review/imv-v3/recreate/poke/pin-track.json --out /tmp/poke-pin
 ```
+
+In one local run, exporting the 510–514 crop took 6.13 seconds with a fresh clock probe and 1.65 seconds with saved measurements. The PNGs, contact sheet, and inspection JSON matched byte for byte. Reusing the same clock also reproduced the full pin landmark CSV.
+
+```bash
+python3 "$R/recreate.py" analyze "$SOURCE" --reuse --out /tmp/poke-measurements
+python3 "$R/recreate.py" inspect "$SOURCE" --measurements /tmp/poke-measurements \
+  --frames 510:514 --crop 800 550 160 175 --out /tmp/poke-crop
+```

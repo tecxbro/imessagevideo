@@ -1,5 +1,6 @@
 """Display-order video, exact presentation clocks, and reusable media fingerprints."""
 from contextlib import contextmanager
+import csv
 from dataclasses import dataclass
 from fractions import Fraction
 from functools import lru_cache
@@ -56,6 +57,24 @@ def write_json(path, data):
         json.dump(data, temporary, indent=2, allow_nan=False)
         temporary.write("\n")
     Path(temporary.name).replace(path)
+
+
+def load_measurement_timeline(directory, require_integrity=False):
+    directory = Path(directory)
+    analysis = json.loads((directory / "analysis.json").read_text())
+    timeline = directory / "timeline.csv"
+    expected = analysis.get("artifact_sha256", {}).get(timeline.name)
+    if expected and digest(timeline) != expected:
+        raise MediaError("The saved timeline does not match its recorded SHA-256")
+    if require_integrity and not expected:
+        raise MediaError("The saved timeline lacks an artifact SHA-256; run analyze to refresh it")
+    with timeline.open(newline="") as source:
+        rows = list(csv.DictReader(source))
+    if len(rows) != analysis["clock"]["frames"] or not rows:
+        raise MediaError("Clock CSV does not match measurement frame count")
+    if any(int(row["frame"]) != index for index, row in enumerate(rows)):
+        raise MediaError("Clock CSV must cover every frame index in order")
+    return analysis, rows
 
 
 @dataclass
@@ -188,6 +207,23 @@ def video_clock(path):
     return Clock(stream, pts, end, basis)
 
 
+def measured_video_clock(path, measurements):
+    analysis, rows = load_measurement_timeline(measurements, require_integrity=True)
+    if digest(path) != analysis["source_sha256"]:
+        raise MediaError("The saved measurements belong to different source bytes")
+    info = analysis["clock"]
+    stream = {
+        "width": info["width"], "height": info["height"], "time_base": info["time_base"],
+        "r_frame_rate": info["declared_rate"], "avg_frame_rate": info["declared_average_rate"],
+        "sample_aspect_ratio": info["sample_aspect_ratio"],
+    }
+    pts = [int(row["pts"]) for row in rows]
+    if pts[0] != info["start_pts"] or any(a >= b for a, b in zip(pts, pts[1:])):
+        raise MediaError("The saved timeline has an invalid origin or presentation order")
+    clock = Clock(stream, pts, info["end_pts_exclusive"], info["end_basis"])
+    return clock, analysis["source_sha256"], [row["rgb_sha256"] for row in rows]
+
+
 @contextmanager
 def video_frames(path, clock):
     """Strict full decode. Native coded geometry, display order, no rate conversion."""
@@ -222,6 +258,20 @@ def video_frames(path, clock):
             if proc.poll() is None:
                 proc.kill()
                 proc.wait()
+
+
+def inspection_clock(path, measurements=None):
+    """Reuse a measured clock for targeted reads; verify pixels at the selected indices."""
+    if measurements is None:
+        clock, checksum, hashes = video_clock(path), digest(path), None
+    else:
+        clock, checksum, hashes = measured_video_clock(path, measurements)
+
+    def verify(index, rgb):
+        if hashes is not None and sha256(rgb).hexdigest() != hashes[index]:
+            raise MediaError(f"Decoded frame {index} differs from the saved RGB measurement")
+
+    return clock, checksum, verify
 
 
 def audio_streams(path):

@@ -12,12 +12,14 @@ Run from the repository root. The measurements and checker use Python 3.10+, Num
 ```bash
 R=skill/imessage-motion-recreation/recreate
 python3 "$R/recreate.py" analyze "$REFERENCE" --out work/measurements
-python3 "$R/recreate.py" inspect "$REFERENCE" --frames 42:49,75,118:119 --out work/inspect
+python3 "$R/recreate.py" inspect "$REFERENCE" --measurements work/measurements --frames 42:49,75,118:119 --out work/inspect
 ```
 
 ## Read the complete reference
 
 Read `analysis.json` and the contact sheets. `timeline.csv` has one row per decoded picture in presentation order, with integer PTS, sample span, a hash of decoded RGB, and a thumbnail motion estimate. Use decoded PTS and final end for timing. A filename marked 60 fps and an average frame rate can conceal irregular intervals. Reuse this folder when revising a scene. Use `analyze --reuse` for a SHA-checked cache hit. A different source SHA needs a separate measurement directory. Full-color comparison runs on the coded raster, so include display aspect ratio and display transform when interpreting positions.
+
+Pass `--measurements work/measurements` to repeat an `inspect` or `landmarks` pass without another whole-film clock probe. It checks the source and timeline hashes, then matches the selected decoded RGB frames to the saved frame hashes. Put neighboring windows in a single call to share the decode through the last requested frame.
 
 Thumbnail cuts, change boxes, exact-image holds and audio rises are hypotheses. Check both sides of suspected cuts, go back to native pixels for small controls, and inspect a consecutive run around every interaction. Split slow dissolves and freezes by observation. Compare first/last stills and check color, motion blur, and transparency where they affect a state. Use `inspect --crop X Y W H --ocr` to read difficult UI text; OCR TSV boxes use native crop coordinates. Crop tightly and use `--ocr-mode line` for one line or `--ocr-mode block` for a wrapped message. Confirm strings, line breaks, truncation, and system glyphs against the cited frames. Use `landmarks --plan PLAN --out DIR` to record a known flat-color object’s native bounding box, centroid and pixel count over a window. Each item under `tracks` supplies `id`, `start`, `end`, `rect`, `rgb` and a per-channel `tolerance`. Inspect frames for similarly colored objects and refine the crop before taking the trajectory as evidence.
 

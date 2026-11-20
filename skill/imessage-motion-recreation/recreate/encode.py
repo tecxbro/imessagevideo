@@ -1,13 +1,11 @@
 """Encode an authored, frame-indexed PNG cache on a measured variable picture clock."""
-import csv
 from fractions import Fraction
-import json
 from pathlib import Path
 import re
 import subprocess
 from tempfile import TemporaryDirectory
 
-from media import MediaError, video_clock, write_json
+from media import MediaError, load_measurement_timeline, video_clock, write_json
 
 
 def timestamp_expression(ticks, first=0):
@@ -28,21 +26,15 @@ def encode_measured_clock(frames, measurements, output):
     frames, measurements, output = Path(frames), Path(measurements), Path(output).resolve()
     if output.suffix.lower() != ".mp4":
         raise MediaError("Clock encoding currently writes opaque H.264 MP4")
-    analysis = json.loads((measurements / "analysis.json").read_text())
+    analysis, rows = load_measurement_timeline(measurements)
     clock = analysis["clock"]
     base = Fraction(clock["time_base"])
-    with (measurements / "timeline.csv").open(newline="") as source:
-        rows = list(csv.DictReader(source))
-    if len(rows) != clock["frames"] or not rows:
-        raise MediaError("Clock CSV does not match measurement frame count")
     origin = int(rows[0]["pts"])
     ticks = [(int(row["pts"]) - origin) * base.numerator for row in rows]
     duration = int(rows[-1]["duration_pts"]) * base.numerator
     if (origin != clock["start_pts"] or duration <= 0 or
             ticks[-1] + duration != (clock["end_pts_exclusive"] - origin) * base.numerator):
         raise MediaError("Clock CSV disagrees with measured picture origin or final sample")
-    if any(int(row["frame"]) != n for n, row in enumerate(rows)):
-        raise MediaError("Clock CSV must cover every frame index in order")
     if any(a >= b for a, b in zip(ticks, ticks[1:])):
         raise MediaError("Clock CSV must contain strictly increasing PTS")
     if clock.get("alpha_present") or clock["color_transfer"] in ("smpte2084", "arib-std-b67"):

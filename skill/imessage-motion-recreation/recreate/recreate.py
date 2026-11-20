@@ -27,10 +27,12 @@ def parse_args():
     view.add_argument("--ocr", action="store_true")
     view.add_argument("--ocr-mode", choices=("sparse", "line", "block"), default="sparse")
     view.add_argument("--sheet-width", type=int, default=300)
+    view.add_argument("--measurements", help="reuse and verify a saved source timeline")
     locate = commands.add_parser("landmarks", help="track flat-colored landmarks in native frame windows")
     locate.add_argument("source")
     locate.add_argument("--plan", required=True)
     locate.add_argument("--out", required=True)
+    locate.add_argument("--measurements", help="reuse and verify a saved source timeline")
     check = commands.add_parser("compare", help="decode both complete videos and test native-clock and pixel gates")
     check.add_argument("reference")
     check.add_argument("candidate")
@@ -52,9 +54,9 @@ def main():
             print(f"{report['picture_decoded_frames']} decoded frames; {Path(args.out) / 'analysis.json'}")
         elif args.command == "inspect":
             inspect(args.source, args.out, [read_range(item) for item in args.frames.split(",")],
-                    args.crop, args.ocr, args.sheet_width, args.ocr_mode)
+                    args.crop, args.ocr, args.sheet_width, args.ocr_mode, args.measurements)
         elif args.command == "landmarks":
-            measure_landmarks(args.source, args.plan, args.out)
+            measure_landmarks(args.source, args.plan, args.out, args.measurements)
         elif args.command == "encode-clock":
             report = encode_measured_clock(args.frames, args.measurements, args.out)
             print(f"{report['matched_presentation_timestamps']} exact timestamps; end {report['matched_end_seconds']}s")

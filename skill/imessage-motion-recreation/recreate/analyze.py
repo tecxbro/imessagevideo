@@ -12,7 +12,7 @@ import numpy as np
 from PIL import Image, ImageDraw, ImageOps
 
 from compare import intervals
-from media import MediaError, audio_samples, audio_streams, digest, video_clock, video_frames, write_json
+from media import MediaError, audio_samples, audio_streams, digest, inspection_clock, video_clock, video_frames, write_json
 
 
 def collage(path, items, width=230, columns=5):
@@ -183,10 +183,10 @@ def ocr_frame(image, mode, filename):
     return words
 
 
-def inspect(path, out, ranges, rect=None, ocr=False, size=300, ocr_mode="sparse"):
+def inspect(path, out, ranges, rect=None, ocr=False, size=300, ocr_mode="sparse", measurements=None):
     out = Path(out)
     out.mkdir(parents=True, exist_ok=True)
-    clock = video_clock(path)
+    clock, checksum, verify = inspection_clock(path, measurements)
     times = clock.times
     if any(end >= len(times) for _, end in ranges):
         raise MediaError(f"Maximum frame index is {len(times) - 1}")
@@ -203,6 +203,7 @@ def inspect(path, out, ranges, rect=None, ocr=False, size=300, ocr_mode="sparse"
         for i, array in enumerate(frames):
             if i not in frames_to_export:
                 continue
+            verify(i, array)
             if rect:
                 array = array[y:y + h, x:x + w]
             image = Image.fromarray(array)
@@ -216,15 +217,17 @@ def inspect(path, out, ranges, rect=None, ocr=False, size=300, ocr_mode="sparse"
                 panels.clear()
             if i == last:
                 break
-    write_json(out / "inspect.json", {"source_sha256": digest(path), "frames": intervals(sorted(frames_to_export)),
+        else:
+            raise MediaError(f"The source ended before requested frame {last}")
+    write_json(out / "inspect.json", {"source_sha256": checksum, "frames": intervals(sorted(frames_to_export)),
                                      "rect": rect, "ocr_mode": ocr_mode if ocr else None, "ocr_crop_relative": text_hits})
 
 
-def measure_landmarks(path, plan, out):
+def measure_landmarks(path, plan, out, measurements=None):
     """Track known flat colors in bounded native windows and keep pixel observations."""
     out = Path(out)
     out.mkdir(parents=True, exist_ok=True)
-    clock = video_clock(path)
+    clock, checksum, verify = inspection_clock(path, measurements)
     times = clock.times
     tracks = json.loads(Path(plan).read_text())["tracks"]
     if not tracks:
@@ -251,9 +254,10 @@ def measure_landmarks(path, plan, out):
         table = csv.writer(file, lineterminator="\n")
         table.writerow(("id", "frame", "pts", "seconds", "pixels", "centroid_x", "centroid_y", "x", "y", "width", "height"))
         for i, rgb in enumerate(pictures):
-            for name, start, end, x, y, w, h, target, tolerance in parsed:
-                if not start <= i <= end:
-                    continue
+            active = [track for track in parsed if track[1] <= i <= track[2]]
+            if active:
+                verify(i, rgb)
+            for name, _, _, x, y, w, h, target, tolerance in active:
                 region = rgb[y:y + h, x:x + w].astype(np.int16)
                 rows, cols = np.where(np.max(np.abs(region - target), axis=2) <= tolerance)
                 if rows.size:
@@ -264,4 +268,6 @@ def measure_landmarks(path, plan, out):
                     table.writerow((name, i, clock.pts[i], float(times[i]), 0, "", "", "", "", "", ""))
             if i == last:
                 break
-    write_json(out / "landmarks.json", {"source_sha256": digest(path), "tracks": tracks})
+        else:
+            raise MediaError(f"The source ended before requested frame {last}")
+    write_json(out / "landmarks.json", {"source_sha256": checksum, "tracks": tracks})
