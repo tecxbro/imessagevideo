@@ -29,6 +29,26 @@ def value_at(node, prop, frame, fps):
 
 
 class AdapterRegressionTests(unittest.TestCase):
+    def test_mock_approval_follows_one_card_and_dismissal_does_not_settle_it(self):
+        doc = fixture("payment-mock.json")
+        scene = compile_fixture(doc)
+        events = scene["timeline"]["events"]
+        self.assertEqual([event["target"] for event in events], ["request"] * 4)
+        self.assertEqual([event["uiState"]["viewport"]["surface"] for event in events],
+                         ["conversation", "payment-approval", "conversation", "conversation"])
+        card = layers(scene)["ui.message/request/card"]
+        self.assertEqual([part["start"] for part in card["children"]], [14 / 24, 78 / 24])
+
+        missing_dismissal = deepcopy(doc)
+        missing_dismissal["events"].pop(2)
+        with self.assertRaisesRegex(ValueError, "dismiss the mock approval"):
+            compile_fixture(missing_dismissal)
+
+        invalid_target = deepcopy(doc)
+        invalid_target["events"][1]["messageId"] = "question"
+        with self.assertRaisesRegex(ValueError, "requires a requested payment-mock"):
+            compile_fixture(invalid_target)
+
     def test_retargeted_reaction_scroll_and_typing_survive_shared_readback(self):
         doc = fixture("conversation.json")
         doc["initial"]["draft"] = "I will meet you by the north exit. " * 4

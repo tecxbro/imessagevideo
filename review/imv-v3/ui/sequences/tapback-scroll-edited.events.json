@@ -1,0 +1,483 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 24,
+    "fpsDen": 1,
+    "frameCount": 94
+  },
+  "sampleRate": 48000,
+  "sampleCount": 188000,
+  "initialUI": {
+    "conversationId": "press-room",
+    "messages": [
+      {
+        "id": "ink",
+        "senderId": "amy",
+        "text": "The new ink arrived with the afternoon order.",
+        "attachmentIds": [],
+        "reactions": {},
+        "edited": false,
+        "receipt": ""
+      },
+      {
+        "id": "cabinets",
+        "senderId": "leo",
+        "text": "I moved it to the lower cabinet beside the sample paper.",
+        "attachmentIds": [],
+        "reactions": {},
+        "edited": false,
+        "receipt": ""
+      },
+      {
+        "id": "size",
+        "senderId": "amy",
+        "text": "Thanks. Are we making the tall handouts or the shorter folded maps?",
+        "attachmentIds": [],
+        "reactions": {},
+        "edited": false,
+        "receipt": ""
+      },
+      {
+        "id": "map",
+        "senderId": "leo",
+        "text": "Folded maps this time. Keep the margins wide so people can write notes.",
+        "attachmentIds": [],
+        "reactions": {},
+        "edited": false,
+        "receipt": ""
+      },
+      {
+        "id": "stack",
+        "senderId": "amy",
+        "text": "I cut an extra stack in case a few sheets get damaged.",
+        "attachmentIds": [],
+        "reactions": {},
+        "edited": false,
+        "receipt": ""
+      },
+      {
+        "id": "lights",
+        "senderId": "leo",
+        "text": "The back room lamp is on. The window by the sink can stay closed.",
+        "attachmentIds": [],
+        "reactions": {},
+        "edited": false,
+        "receipt": ""
+      },
+      {
+        "id": "arrival",
+        "senderId": "amy",
+        "text": "I’ll come in through the courtyard.",
+        "attachmentIds": [],
+        "reactions": {},
+        "edited": false,
+        "receipt": ""
+      },
+      {
+        "id": "ready",
+        "senderId": "leo",
+        "text": "Your first proof is ready.",
+        "attachmentIds": [],
+        "reactions": {},
+        "edited": false,
+        "receipt": ""
+      },
+      {
+        "id": "table",
+        "senderId": "amy",
+        "text": "I’ll check it at the long table.",
+        "attachmentIds": [],
+        "reactions": {},
+        "edited": false,
+        "receipt": ""
+      },
+      {
+        "id": "wait",
+        "senderId": "leo",
+        "text": "I’ll leave the pencil on top.",
+        "attachmentIds": [],
+        "reactions": {},
+        "edited": false,
+        "receipt": ""
+      }
+    ],
+    "composer": {
+      "text": "",
+      "focused": false,
+      "keyboardVisible": false
+    },
+    "viewport": {
+      "surface": "conversation",
+      "anchorMessageId": "wait",
+      "scrollOffset": 0
+    },
+    "typingSenderIds": []
+  },
+  "events": [
+    {
+      "id": "ui.tapback-scroll.context",
+      "kind": "overlay",
+      "target": "arrival",
+      "frame": 14,
+      "uiState": {
+        "conversationId": "press-room",
+        "messages": [
+          {
+            "id": "ink",
+            "senderId": "amy",
+            "text": "The new ink arrived with the afternoon order.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "cabinets",
+            "senderId": "leo",
+            "text": "I moved it to the lower cabinet beside the sample paper.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "size",
+            "senderId": "amy",
+            "text": "Thanks. Are we making the tall handouts or the shorter folded maps?",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "map",
+            "senderId": "leo",
+            "text": "Folded maps this time. Keep the margins wide so people can write notes.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "stack",
+            "senderId": "amy",
+            "text": "I cut an extra stack in case a few sheets get damaged.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "lights",
+            "senderId": "leo",
+            "text": "The back room lamp is on. The window by the sink can stay closed.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "arrival",
+            "senderId": "amy",
+            "text": "I’ll come in through the courtyard.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "ready",
+            "senderId": "leo",
+            "text": "Your first proof is ready.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "table",
+            "senderId": "amy",
+            "text": "I’ll check it at the long table.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "wait",
+            "senderId": "leo",
+            "text": "I’ll leave the pencil on top.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          }
+        ],
+        "composer": {
+          "text": "",
+          "focused": false,
+          "keyboardVisible": false
+        },
+        "viewport": {
+          "surface": "context",
+          "anchorMessageId": "wait",
+          "scrollOffset": 0,
+          "selection": [
+            "arrival"
+          ]
+        },
+        "typingSenderIds": []
+      },
+      "layerIds": [
+        "ui.overlay",
+        "ui.inbox"
+      ],
+      "sample": 28000
+    },
+    {
+      "id": "ui.tapback-scroll.apply",
+      "kind": "reaction",
+      "target": "arrival",
+      "frame": 34,
+      "uiState": {
+        "conversationId": "press-room",
+        "messages": [
+          {
+            "id": "ink",
+            "senderId": "amy",
+            "text": "The new ink arrived with the afternoon order.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "cabinets",
+            "senderId": "leo",
+            "text": "I moved it to the lower cabinet beside the sample paper.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "size",
+            "senderId": "amy",
+            "text": "Thanks. Are we making the tall handouts or the shorter folded maps?",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "map",
+            "senderId": "leo",
+            "text": "Folded maps this time. Keep the margins wide so people can write notes.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "stack",
+            "senderId": "amy",
+            "text": "I cut an extra stack in case a few sheets get damaged.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "lights",
+            "senderId": "leo",
+            "text": "The back room lamp is on. The window by the sink can stay closed.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "arrival",
+            "senderId": "amy",
+            "text": "I’ll come in through the courtyard.",
+            "attachmentIds": [],
+            "reactions": {
+              "amy": "Wow"
+            },
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "ready",
+            "senderId": "leo",
+            "text": "Your first proof is ready.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "table",
+            "senderId": "amy",
+            "text": "I’ll check it at the long table.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "wait",
+            "senderId": "leo",
+            "text": "I’ll leave the pencil on top.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          }
+        ],
+        "composer": {
+          "text": "",
+          "focused": false,
+          "keyboardVisible": false
+        },
+        "viewport": {
+          "surface": "conversation",
+          "anchorMessageId": "wait",
+          "scrollOffset": 0
+        },
+        "typingSenderIds": []
+      },
+      "layerIds": [
+        "ui.message/arrival/reaction"
+      ],
+      "sample": 68000
+    },
+    {
+      "id": "ui.tapback-scroll.scroll",
+      "kind": "scroll",
+      "target": "press-room",
+      "frame": 54,
+      "uiState": {
+        "conversationId": "press-room",
+        "messages": [
+          {
+            "id": "ink",
+            "senderId": "amy",
+            "text": "The new ink arrived with the afternoon order.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "cabinets",
+            "senderId": "leo",
+            "text": "I moved it to the lower cabinet beside the sample paper.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "size",
+            "senderId": "amy",
+            "text": "Thanks. Are we making the tall handouts or the shorter folded maps?",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "map",
+            "senderId": "leo",
+            "text": "Folded maps this time. Keep the margins wide so people can write notes.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "stack",
+            "senderId": "amy",
+            "text": "I cut an extra stack in case a few sheets get damaged.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "lights",
+            "senderId": "leo",
+            "text": "The back room lamp is on. The window by the sink can stay closed.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "arrival",
+            "senderId": "amy",
+            "text": "I’ll come in through the courtyard.",
+            "attachmentIds": [],
+            "reactions": {
+              "amy": "Wow"
+            },
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "ready",
+            "senderId": "leo",
+            "text": "Your first proof is ready.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "table",
+            "senderId": "amy",
+            "text": "I’ll check it at the long table.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "wait",
+            "senderId": "leo",
+            "text": "I’ll leave the pencil on top.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          }
+        ],
+        "composer": {
+          "text": "",
+          "focused": false,
+          "keyboardVisible": false
+        },
+        "viewport": {
+          "surface": "conversation",
+          "anchorMessageId": "table",
+          "scrollOffset": 62
+        },
+        "typingSenderIds": []
+      },
+      "layerIds": [
+        "ui.transcript"
+      ],
+      "sample": 108000
+    }
+  ],
+  "cues": [
+    {
+      "id": "ui.tapback-scroll.apply-cue",
+      "eventId": "ui.tapback-scroll.apply",
+      "offsetSamples": 0,
+      "frame": 34,
+      "sample": 68000
+    }
+  ]
+}

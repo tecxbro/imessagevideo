@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "skin": "film-ink",
+  "conversationId": "workshop",
+  "title": "Workshop pickup",
+  "participants": {"alex": "Alex", "sam": "Sam"},
+  "localSenderId": "alex",
+  "display": {"width": 402, "height": 720},
+  "fps": 24,
+  "frameCount": 68,
+  "initial": {
+    "focused": true,
+    "draft": "I’ll leave the key at the front desk.",
+    "messages": [
+      {"id": "question", "senderId": "sam", "text": "Can we pick up the key after six?"},
+      {"id": "prior", "senderId": "alex", "text": "Yes, the workshop stays open.", "receipt": "Delivered"}
+    ]
+  },
+  "events": [
+    {"id": "ui.send-keyboard.send", "kind": "send", "frame": 18, "message": {"id": "outgoing"}},
+    {"id": "ui.send-keyboard.delivered", "kind": "receipt", "frame": 47,
+     "messageId": "outgoing", "status": "Delivered"}
+  ],
+  "cues": [
+    {"id": "ui.send-keyboard.send-cue", "eventId": "ui.send-keyboard.send", "offsetSamples": 0}
+  ]
+}

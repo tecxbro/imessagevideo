@@ -1,6 +1,6 @@
 """Render generic rich-message cards as editable scene geometry."""
 
-from .components import INK, LAVENDER, LINE, MUTED, PLUM, rect, text
+from .components import INK, LAVENDER, LINE, MUTED, PLUM, group, rect, text
 
 
 KIND_LABELS = {
@@ -10,7 +10,9 @@ KIND_LABELS = {
     "audio": "Audio",
     "file": "File",
     "poll": "Poll",
+    "payment-mock": "Payment · Test mock",
 }
+PAYMENT_MOCK_STATES = {"requested": "Awaiting payment", "paid": "Paid · Simulated"}
 CARD = "#fffaf4"
 PAD = 12
 
@@ -37,6 +39,10 @@ def build_card(id, payload, width, measure):
         detail = measure.wrap(payload["detail"], inner_width, 12)
         layers.append(text(id + "/detail", "\n".join(detail), PAD, y + 4, 12, lineHeight=16, fill=MUTED))
         y += 4 + len(detail) * 16
+    if kind == "payment-mock":
+        layers.append(text(id + "/status", PAYMENT_MOCK_STATES[payload["status"]],
+                           PAD, y + 8, 12, fill=PLUM, fontWeight=700))
+        y += 25
     if kind == "poll":
         options = payload.get("options", [])
         count_width = max((measure.width(str(option["votes"]), 12, 700) for option in options), default=0)
@@ -68,3 +74,27 @@ def build_card(id, payload, width, measure):
         y += 16 + len(action) * 16
     height = y + PAD
     return height, [rect(id + "/surface", 0, 0, width, height, CARD, 12, stroke=LINE, strokeWidth=1), *layers]
+
+
+def payment_approval(width, height, payload, measure):
+    """The mock approval occupies its own screen-space surface."""
+    prefix = "ui.overlay.payment"
+    inset = 16
+    panel_width = min(360, width - 2 * inset)
+    content_width = panel_width - 2 * inset
+    title = measure.ellipsis(payload["title"], content_width, 17, 700)
+    detail = measure.ellipsis(payload.get("detail", ""), content_width, 13)
+    panel_height = 180
+    return [
+        rect(prefix + ".shade", 0, 0, width, height, INK, opacity=.28),
+        group(prefix + ".sheet", (width - panel_width) / 2, height - panel_height - 22, [
+            rect(prefix + ".panel", 0, 0, panel_width, panel_height, CARD, 16, stroke=LINE, strokeWidth=1),
+            text(prefix + ".mode", "TEST MOCK · NO CHARGE", inset, 14, 11, fill=PLUM, fontWeight=700),
+            text(prefix + ".title", "Review test payment", inset, 37, 17, fontWeight=700),
+            text(prefix + ".item", title, inset, 69, 17, fontWeight=700),
+            text(prefix + ".detail", detail, inset, 94, 13, fill=MUTED),
+            rect(prefix + ".button", inset, 125, content_width, 36, PLUM, 9),
+            text(prefix + ".button-label", "Simulated approval", panel_width / 2, 135, 12,
+                 fill=CARD, fontWeight=700, textAnchor="middle"),
+        ]),
+    ]

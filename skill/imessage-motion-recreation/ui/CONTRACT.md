@@ -47,7 +47,7 @@ the later move starts at the prior rendered transform.
 | `edit` | `messageId`, `text`. Keeps row identity and adds Edited. |
 | `unsend` | `messageId`. Removes message from semantic state and shows a removal line. |
 | `receipt` | Outgoing `messageId`, `status`. An explicit receipt moves its label to that message. Empty status hides a label already there. A send can leave the previous label in place until the new receipt appears. |
-| `overlay` | `surface` of `conversation` (dismiss), `tray` (optional `items` labels), `context` (`messageId`), `media` (`messageId`), `list`, or `search` (optional `query`). |
+| `overlay` | `surface` of `conversation` (dismiss), `tray` (optional `items` labels), `context` (`messageId`), `media` (`messageId`), `list`, `search` (optional `query`), or `payment-approval` for a requested `payment-mock` message. |
 | `media.page` | Attached `messageId` and zero-based `index`. Slides the photo strip within its own clip. |
 | `suggestion` | `phase` of `visible`, `pressed` or `hidden`. Supply a `label` on first reveal. Optional `dismissKeyboard` clears composer focus. |
 | `search.query` | `query` on the open search surface. Case-insensitive matching uses authored inbox entries. Dismissing to `conversation` resumes the active conversation. |
@@ -60,6 +60,13 @@ A poll has two to twelve `options`, each with stable `id`, `label` and integer
 `votes`, and an optional `selected` ID. The source description owns counts
 and copy. A card action label is editable display content. The film simulator
 does not execute app actions.
+
+Use `payment-mock` for an explicitly simulated payment. It takes the same
+editable card copy and a `status` of `requested` or `paid`. Open
+`payment-approval` using the request's `messageId`, dismiss to the
+conversation, then use a separate `card.update` on the same ID for the
+simulated result. The card and approval sheet carry visible test labels.
+The fixture uses local authoring events and has no provider integration.
 
 Search retains its last query if you reopen it without an explicit `query`.
 The list and search depict one active conversation plus any additional authored

@@ -1,0 +1,219 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 24,
+    "fpsDen": 1,
+    "frameCount": 108
+  },
+  "sampleRate": 48000,
+  "sampleCount": 216000,
+  "initialUI": {
+    "conversationId": "print-order",
+    "messages": [
+      {
+        "id": "question",
+        "senderId": "alex",
+        "text": "Can I pay for the set of trail maps?",
+        "attachmentIds": [],
+        "reactions": {},
+        "edited": false,
+        "receipt": ""
+      }
+    ],
+    "composer": {
+      "text": "",
+      "focused": false,
+      "keyboardVisible": false
+    },
+    "viewport": {
+      "surface": "conversation",
+      "anchorMessageId": "question",
+      "scrollOffset": 0
+    },
+    "typingSenderIds": []
+  },
+  "events": [
+    {
+      "id": "ui.payment-mock.card",
+      "kind": "receive",
+      "target": "request",
+      "frame": 14,
+      "uiState": {
+        "conversationId": "print-order",
+        "messages": [
+          {
+            "id": "question",
+            "senderId": "alex",
+            "text": "Can I pay for the set of trail maps?",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "request",
+            "senderId": "shop",
+            "text": "",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          }
+        ],
+        "composer": {
+          "text": "",
+          "focused": false,
+          "keyboardVisible": false
+        },
+        "viewport": {
+          "surface": "conversation",
+          "anchorMessageId": "request",
+          "scrollOffset": 0
+        },
+        "typingSenderIds": []
+      },
+      "layerIds": [
+        "ui.message/request"
+      ],
+      "sample": 28000
+    },
+    {
+      "id": "ui.payment-mock.approval",
+      "kind": "overlay",
+      "target": "request",
+      "frame": 34,
+      "uiState": {
+        "conversationId": "print-order",
+        "messages": [
+          {
+            "id": "question",
+            "senderId": "alex",
+            "text": "Can I pay for the set of trail maps?",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "request",
+            "senderId": "shop",
+            "text": "",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          }
+        ],
+        "composer": {
+          "text": "",
+          "focused": false,
+          "keyboardVisible": false
+        },
+        "viewport": {
+          "surface": "payment-approval",
+          "anchorMessageId": "request",
+          "scrollOffset": 0,
+          "selection": [
+            "request"
+          ]
+        },
+        "typingSenderIds": []
+      },
+      "layerIds": [
+        "ui.overlay",
+        "ui.inbox"
+      ],
+      "sample": 68000
+    },
+    {
+      "id": "ui.payment-mock.dismiss",
+      "kind": "overlay",
+      "target": "request",
+      "frame": 59,
+      "uiState": {
+        "conversationId": "print-order",
+        "messages": [
+          {
+            "id": "question",
+            "senderId": "alex",
+            "text": "Can I pay for the set of trail maps?",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "request",
+            "senderId": "shop",
+            "text": "",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          }
+        ],
+        "composer": {
+          "text": "",
+          "focused": false,
+          "keyboardVisible": false
+        },
+        "viewport": {
+          "surface": "conversation",
+          "anchorMessageId": "request",
+          "scrollOffset": 0
+        },
+        "typingSenderIds": []
+      },
+      "layerIds": [
+        "ui.overlay",
+        "ui.inbox"
+      ],
+      "sample": 118000
+    },
+    {
+      "id": "ui.payment-mock.result",
+      "kind": "card.update",
+      "target": "request",
+      "frame": 78,
+      "uiState": {
+        "conversationId": "print-order",
+        "messages": [
+          {
+            "id": "question",
+            "senderId": "alex",
+            "text": "Can I pay for the set of trail maps?",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "request",
+            "senderId": "shop",
+            "text": "",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          }
+        ],
+        "composer": {
+          "text": "",
+          "focused": false,
+          "keyboardVisible": false
+        },
+        "viewport": {
+          "surface": "conversation",
+          "anchorMessageId": "request",
+          "scrollOffset": 0
+        },
+        "typingSenderIds": []
+      },
+      "layerIds": [
+        "ui.message/request/card"
+      ],
+      "sample": 156000
+    }
+  ],
+  "cues": []
+}

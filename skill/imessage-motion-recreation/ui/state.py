@@ -4,7 +4,7 @@ from dataclasses import dataclass, field
 import math
 import re
 
-from .rich import KIND_LABELS
+from .rich import KIND_LABELS, PAYMENT_MOCK_STATES
 
 ID = re.compile(r"[a-z0-9][a-z0-9._:-]*")
 KINDS = {
@@ -57,6 +57,10 @@ def card_payload(value):
     for key in ("detail", "action"):
         if key in value:
             result[key] = copy(value[key], f"card {key}")
+    if kind == "payment-mock":
+        status = value.get("status")
+        require(isinstance(status, str) and status in PAYMENT_MOCK_STATES, "unknown mock payment status")
+        result["status"] = status
     if kind == "poll":
         options = value["options"]
         require(isinstance(options, list) and 2 <= len(options) <= 12, "poll needs 2 to 12 options")
@@ -224,7 +228,11 @@ class Conversation:
                 message["page"] = integer(event["index"], "media index", 0, count - 1)
             elif kind == "card.update":
                 require(message["card"] is not None, "card.update requires a card")
-                message["card"] = card_payload(event["card"])
+                card = card_payload(event["card"])
+                if self.overlay == {"surface": "payment-approval", "messageId": target}:
+                    require(card["kind"] == "payment-mock" and card["status"] == "requested",
+                            "dismiss the mock approval before changing its payment state")
+                message["card"] = card
             elif kind == "card.vote":
                 card = message["card"]
                 require(card is not None and card["kind"] == "poll", "card.vote requires a poll")
@@ -257,9 +265,13 @@ class Conversation:
             if surface == "search" and "query" in event:
                 self.query = copy(event["query"], "search query")
             return self.id
-        require(surface in {"context", "media"}, f"unsupported overlay: {surface}")
+        require(surface in {"context", "media", "payment-approval"}, f"unsupported overlay: {surface}")
         mid = self.message_id(event["messageId"])
         if surface == "media":
             require(bool(self.messages[mid]["attachmentIds"]), "media overlay requires an attachment")
+        if surface == "payment-approval":
+            card = self.messages[mid]["card"]
+            require(card is not None and card["kind"] == "payment-mock" and card["status"] == "requested",
+                    "mock approval requires a requested payment-mock card")
         self.overlay = {"surface": surface, "messageId": mid}
         return mid

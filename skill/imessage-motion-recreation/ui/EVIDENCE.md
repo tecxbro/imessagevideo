@@ -97,6 +97,8 @@ Apple's versioned guide documents direct replies, scheduled sends, media, polls,
 
 | Starting state | Action | Ending state and layer check |
 | --- | --- | --- |
+| Visible draft with the software keyboard up on a physical iPhone in iMessage | Send a draft, with the whole keyboard and last two messages in frame | Draft clears, outgoing row settles and keyboard remains visible. Capture the later receipt if it appears. |
+| Physical iPhone, a visible message in a long iMessage thread | Open the reaction picker, apply a Tapback, and scroll without a cut | Keep the marked bubble in frame so badge, message and fixed chrome can be tracked through scroll. |
 | iMessage conversation open on two physical devices | Remote party types, pauses, sends a long multiline message | Typing indicator gives way to the same sender's row. Record the composer, previous last row, and receipts throughout. |
 | Group iMessage conversation with two remote typists | Start both drafts, send one, then dismiss the second draft | Identify each typing indicator and watch how the first send affects the remaining indicator and transcript seat. |
 | Long group transcript with reactions, an inline reply and keyboard hidden | Scroll back, pull sideways to reveal timestamps, and let go | Check which labels follow each row, which layers stay screen-fixed, and whether the app restores the same scroll anchor. |
@@ -104,5 +106,14 @@ Apple's versioned guide documents direct replies, scheduled sends, media, polls,
 | Outgoing text with a reaction near the screen edge | Long-press, select Edit, replace with longer copy, then undo send on another outgoing message | Follow message ID, receipt, attached reaction, reply references and transcript reflow through both actions. |
 | Conversation list with a known matching indexed message | Tap search, type query, open a result and go back | Record search field, keyboard, the opened conversation's scroll position and whether query state survives. |
 | Open conversation with composer at rest | Open plus tray, choose Photos, stage attachments, dismiss picker and reopen | Check ownership of the picker, keyboard, staged content and preserved draft. |
+| Approved test payment request visible in a test thread | Open the payment UI, capture approval, dismiss, then wait for the provider result | Capture the pre-action card, approval surface, complete return to the thread, and authoritative test result. Record test-mode evidence and redact participant or provider secrets. |
+
+The [standalone sequence kit](../../../review/imv-v3/ui/sequences/README.md)
+demonstrates these three behavior checks from decoded authored frames with
+edited inputs. The [payment evidence ledger](../../../review/imv-v3/ui/sequences/PAYMENT.md)
+records observed editorial states and the test mock at each matching stage.
+On November 20, 2026 Pacific time, the
+[request to Dataset](https://github.com/tecxbro/imessagevideo/issues/7#issuecomment-7052500167)
+asked for continuous footage and provenance for all four sequences.
 
 For new evidence, retain the original file, device and exact build, logical viewport and pixel scale, capture method, source and reuse terms, SHA-256, and a frame or time window with rest before activation and after settlement. Record the input method, theme, text size setting, delivery service, and any external camera motion.
