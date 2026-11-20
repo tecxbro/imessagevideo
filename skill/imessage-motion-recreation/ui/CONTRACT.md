@@ -61,12 +61,14 @@ A poll has two to twelve `options`, each with stable `id`, `label` and integer
 and copy. A card action label is editable display content. The film simulator
 does not execute app actions.
 
-Use `payment-mock` for an explicitly simulated payment. It takes the same
-editable card copy and a `status` of `requested` or `paid`. Open
-`payment-approval` using the request's `messageId`, dismiss to the
-conversation, then use a separate `card.update` on the same ID for the
-simulated result. The card and approval sheet carry visible test labels.
-The fixture uses local authoring events and has no provider integration.
+Use `payment-mock` for an explicitly simulated payment. Its editable card
+starts with status `requested`. Open `payment-approval` on its message ID
+and dismiss it with an `overlay` event targeting the `conversation` surface.
+The later `card.update` with status `paid` requires an explicit dismissal
+of that card's review. Leave a hold between dismissal and result when both
+need to read separately. The card and sheet carry visible mock labels.
+The fixture uses local authored data.
+[Editable rehearsal](examples/payment-mock.json)
 
 Search retains its last query if you reopen it without an explicit `query`.
 The list and search depict one active conversation plus any additional authored

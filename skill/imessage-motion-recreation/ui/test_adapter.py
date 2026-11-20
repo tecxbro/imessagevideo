@@ -44,6 +44,16 @@ class AdapterRegressionTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "dismiss the mock approval"):
             compile_fixture(missing_dismissal)
 
+        missing_review = deepcopy(doc)
+        del missing_review["events"][1:3]
+        with self.assertRaisesRegex(ValueError, "explicit dismissal of that card"):
+            compile_fixture(missing_review)
+
+        replaced_review = deepcopy(doc)
+        replaced_review["events"][2]["surface"] = "list"
+        with self.assertRaisesRegex(ValueError, "dismiss the mock approval into the thread"):
+            compile_fixture(replaced_review)
+
         invalid_target = deepcopy(doc)
         invalid_target["events"][1]["messageId"] = "question"
         with self.assertRaisesRegex(ValueError, "requires a requested payment-mock"):

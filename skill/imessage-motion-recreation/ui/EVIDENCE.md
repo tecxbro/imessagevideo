@@ -116,4 +116,20 @@ On November 20, 2026 Pacific time, the
 [request to Dataset](https://github.com/tecxbro/imessagevideo/issues/7#issuecomment-7052500167)
 asked for continuous footage and provenance for all four sequences.
 
+The pinned macOS Tapback strip spans f100–123 at 60 fps on macOS 26.5.2
+build 25F84, Messages 26.0. Its SHA-256 is
+`271d57efcc3891bbdd92a54657a114d92f594bb22fb8794fb406bd1038b2f736`.
+Poke's editorial launch cut has a visible badge at f393 and holds it
+through the f447–460 push, at 30000/1001 fps. Neither provides iPhone
+scroll timing. [macOS strip](https://github.com/theswerd/imessage-ui/blob/1f132909792ff540501385f91d37ef20629c55b7/references/macos/captures/tapback-apply-frames-100-123.png)
+[Launch-film source index](../../../PROJECT-HANDOFF.md)
+
+The iOS 26 simulator's `photo-run-0.png` is 1206×2622 at 3 px/pt,
+SHA-256 `6163005db5958a874c70925393dd06e3fc635b7da493082b27e6911e749b63ff`.
+The f1090–1111 Linq rail is inside a venue mini app at 30 fps, with the
+device and OS unverified. The authored in-thread fixture supplies its own
+motion and still awaits continuous iOS capture.
+[Simulator still](https://github.com/theswerd/imessage-ui/blob/1f132909792ff540501385f91d37ef20629c55b7/references/ios/light/photo-run-0.png)
+[Apple iOS 15 feature guide](https://www.apple.com/kw/ios/ios-15-preview/features/)
+
 For new evidence, retain the original file, device and exact build, logical viewport and pixel scale, capture method, source and reuse terms, SHA-256, and a frame or time window with rest before activation and after settlement. Record the input method, theme, text size setting, delivery service, and any external camera motion.

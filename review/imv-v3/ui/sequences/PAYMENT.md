@@ -26,6 +26,17 @@ charge was used. [Keiki Payments](https://onkeiki.com/docs/payments) ·
 [Keiki iMessage Apps](https://onkeiki.com/docs/imessage-apps) ·
 [Keiki Vault](https://onkeiki.com/docs/keiki-vault)
 
+The pinned Photon demo notes describe merchant-checkout presentation
+f66–181, card growth f101–121, and cancellation f185–198 in a 512×1112,
+30 fps source. Its original clip, device build and reuse permission are
+unverified. The notes exclude authorization and settlement. Apple's
+no-charge merchant web demo describes selection, authentication and a
+result on the sheet before dismissal between 00:38 and 04:12. That is a
+different platform and flow from a Messages test order. The fixture's
+post-dismissal result remains authored.
+[Photon presentation notes](https://github.com/tecxbro/imessagedemo/blob/807e86e03e4a7e95ae6954b4a8c4dd5e031854bc/docs/apple-pay-presentation.md)
+[Apple Developer web demo](https://developer.apple.com/videos/play/tech-talks/111381/)
+
 [Editable test fixture](../../../../skill/imessage-motion-recreation/ui/examples/payment-mock.json) ·
 [Decoded test clip](payment-mock.mp4) · [Event map](payment-mock.events.json) ·
 [Consecutive frames](payment-mock-frames.jpg)

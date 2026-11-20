@@ -38,9 +38,10 @@ sequences prove from the remaining device capture requests.
 The [decoded proof report](proof.json) records exact CFR timestamps, the
 picture hashes, and pixel checks. The send checks compare the draft region
 and outgoing seat before and after send, and measure maximum mean RGB drift
-under the keyboard. The Tapback check compares each badge crop before scroll
-and after the measured translation. The photo check measures both change
-inside the rail and stability of the header. Small pixel deltas come from
+under the keyboard through the last decoded frame. The Tapback check tracks
+the translated badge crop on every scroll frame and confirms its settled
+position. The photo check compares decoded endpoints to their source assets
+and measures fixed header and composer stability. Small pixel deltas come from
 the encoded picture.
 
 ## Reproduce

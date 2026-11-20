@@ -9,7 +9,7 @@ import sys
 from tempfile import TemporaryDirectory
 
 import numpy as np
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image, ImageDraw, ImageFont, ImageOps
 
 from .adapter import compile_conversation
 from .compare import contact_sheet, probe
@@ -83,8 +83,10 @@ def send_proof(events, initial, layers, picture, value):
     ky = int(value(layers["ui.keyboard"], "y", frame)) + 8
     keyboard_end = picture.shape[1] - FOOTER
     keyboard_change = max(delta(picture[frame - 1, ky:keyboard_end], frame_image[ky:keyboard_end])
-                          for frame_image in picture[frame:settled + 2])
+                          for frame_image in picture[frame:])
     require(keyboard_change < 1.2, "keyboard moved or changed during send")
+    require(receipt["uiState"]["composer"] == send["uiState"]["composer"],
+            "the receipt closed the keyboard or repopulated the draft")
     cx, cy = round(right - 27), HEADER + round(top + 30)
     entrance = HEADER + round(value(row, "y", frame)) + 25
     require(delta(picture[frame - 1, entrance:entrance + 5, cx:cx + 10],
@@ -118,7 +120,9 @@ def tapback_proof(events, layers, picture, value):
     def decoded_badge(frame):
         x = round(value(badge, "x", frame)) + 3
         y = round(HEADER + value(row, "y", frame) + value(transcript, "y", frame)) + 2
-        return picture[frame, y:y + 15, x:x + int(chip["width"]) - 6], y
+        crop = picture[frame, y:y + 15, x:x + int(chip["width"]) - 6]
+        require(crop.shape == (15, int(chip["width"]) - 6, 3), "the badge left the picture")
+        return crop, y
 
     settled = 65
     before_crop, before_y = decoded_badge(scroll_frame - 1)
@@ -128,14 +132,25 @@ def tapback_proof(events, layers, picture, value):
     require(actual_shift == scroll["uiState"]["viewport"]["scrollOffset"] > 0
             and np.ptp(before_crop) > 35 and relative_change < 4,
             "the decoded reaction did not travel with the same message row")
+    shifts, translated_drift = [], []
+    for frame in range(scroll_frame, settled + 2):
+        crop, y = decoded_badge(frame)
+        shift = value(transcript, "y", frame) - value(transcript, "y", scroll_frame - 1)
+        require(abs(y - before_y - shift) <= 1 and np.ptp(crop) > 35,
+                f"decoded badge failed to follow the transcript at f{frame}")
+        shifts.append(round(shift, 4))
+        translated_drift.append(delta(before_crop, crop))
+    require(shifts[0] > 0 and shifts == sorted(shifts) and max(translated_drift) < 16,
+            "badge lost visual identity during a moving frame")
     return {"target": target, "reaction": after["reactions"], "badgeShiftPx": actual_shift,
+            "badgeShiftByFrame": shifts, "movingBadgeMeanRgbDeltaMax": max(translated_drift),
             "badgeMeanRgbDeltaAfterTranslation": relative_change, "settledFrame": settled}, [
         range(context["frame"] - 2, context["frame"] + 4), range(mark_frame - 2, mark_frame + 4),
         range(scroll_frame - 2, scroll_frame + 4), range(settled - 2, settled + 4)
     ]
 
 
-def photo_proof(events, layers, picture, value):
+def photo_proof(events, layers, picture, value, assets):
     swipe, back = events
     frame, return_frame = swipe["frame"], back["frame"]
     target = swipe["target"]
@@ -157,8 +172,28 @@ def photo_proof(events, layers, picture, value):
     photo_change = delta(box[frame - 1], box[settled])
     require(header_change < 1.2 and photo_change > 8 and delta(box[frame - 1], box[51]) < 3,
             "decoded photo rail failed to change and return behind a fixed header")
+    require(delta(box[frame - 1], box[frame]) > 4, "decoded swipe did not begin on the event frame")
+    photo_order = event_message(swipe)["attachmentIds"]
+    template_errors = []
+    for endpoint, aid in ((frame - 1, photo_order[0]), (settled, photo_order[1]), (51, photo_order[0])):
+        photo = layers[name + f"/tiles/{aid}/image"]
+        width, height = round(photo["width"]), round(photo["height"])
+        left = round(sum(value(layer, "x", endpoint) for layer in (row, media, rail, photo)))
+        top = HEADER + round(sum(value(layer, "y", endpoint) for layer in (row, media, rail, photo)))
+        with Image.open(EXAMPLES / assets[aid]) as source:
+            asset = ImageOps.exif_transpose(source).convert("RGB")
+            template = np.asarray(asset.resize((width, height), Image.Resampling.LANCZOS))
+        crop = picture[endpoint, top + 6:top + height - 6, left + 6:left + width - 6]
+        error = delta(template[6:-6, 6:-6], crop)
+        require(error < 18, f"decoded page at f{endpoint} does not match attachment {aid}")
+        template_errors.append({"frame": endpoint, "asset": aid, "meanRgbDelta": round(error, 4)})
+    composer_top = round(value(layers["ui.composer"], "y", frame))
+    composer = picture[:, composer_top + 3:-FOOTER, 4:-4]
+    composer_change = max(delta(composer[frame - 1], other) for other in composer)
+    require(composer_change < 1.2, "composer moved or changed during the photo swipe")
     return {"target": target, "attachmentOrder": event_message(swipe)["attachmentIds"],
             "headerMeanRgbDeltaMax": header_change, "photoMeanRgbDelta": photo_change,
+            "composerMeanRgbDeltaMax": composer_change, "assetMatchByFrame": template_errors,
             "settledFrame": settled}, [
         range(frame - 2, frame + 4), range(settled - 2, settled + 4), range(return_frame - 2, return_frame + 4)
     ]
@@ -175,6 +210,10 @@ def payment_proof(events, layers, picture, value):
             [card["frame"] / 24, result["frame"] / 24], "the result must replace the original card's contents")
     require(value(layers["ui.overlay"], "opacity", 58) == 1
             and value(layers["ui.overlay"], "opacity", 66) == 0, "approval sheet did not dismiss")
+    require(layers["ui.overlay.payment.mode"]["text"] == "TEST MOCK · NO CHARGE"
+            and all(any(node.get("text") == "Payment · Test mock" for node in child["children"])
+                    for child in card_layer["children"]),
+            "mock payment labels must remain present in the approval and both card revisions")
     require(delta(picture[33], picture[41]) > 10 and delta(picture[33], picture[67]) < 1.2,
             "decoded mock approval must appear and clear before the result")
     require(delta(picture[77, HEADER:350], picture[78, HEADER:350]) > 0.5,
@@ -200,7 +239,8 @@ def sheet(picture, windows, path, fps):
 
 def run_case(name, work, out, resolver):
     path = EXAMPLES / (name + ".json")
-    scene = compile_conversation(read(path), input_dir=EXAMPLES, output_dir=work)
+    doc = read(path)
+    scene = compile_conversation(doc, input_dir=EXAMPLES, output_dir=work)
     scene_path = work / (name + ".scene.json")
     scene_path.write_text(json.dumps(scene), encoding="utf8")
     video = work / (name + ".mp4")
@@ -219,9 +259,10 @@ def run_case(name, work, out, resolver):
     case = name.removesuffix("-edited")
     if case == "send-keyboard":
         measurements, windows = send_proof(events, scene["timeline"]["initialUI"], layers, picture, value)
+    elif case == "photos-fixed-header":
+        measurements, windows = photo_proof(events, layers, picture, value, doc["assets"])
     else:
-        check = {"tapback-scroll": tapback_proof, "photos-fixed-header": photo_proof,
-                 "payment-mock": payment_proof}[case]
+        check = {"tapback-scroll": tapback_proof, "payment-mock": payment_proof}[case]
         measurements, windows = check(events, layers, picture, value)
     shutil.copyfile(video, out / video.name)
     sheet(picture, windows, out / (name + "-frames.jpg"), fps)
@@ -239,8 +280,15 @@ def main():
         runs = [name for case in CASES for name in (case, case + "-edited")] + ["payment-mock"]
         results = {name: run_case(name, Path(temp), args.out_dir.resolve(), args.resolver.resolve())
                    for name in runs}
-    require(all(results[case]["sha256"] != results[case + "-edited"]["sha256"] for case in CASES),
-            "an edited input produced the unchanged picture")
+    for case in CASES:
+        edited = case + "-edited"
+        require(results[case]["sha256"] != results[edited]["sha256"],
+                f"{case}: the edited input produced an unchanged picture")
+        baseline_map = read(args.out_dir / (case + ".events.json"))
+        edited_map = read(args.out_dir / (edited + ".events.json"))
+        require([event["id"] for event in baseline_map["events"]] ==
+                [event["id"] for event in edited_map["events"]],
+                f"{case}: editing changed the stable event IDs")
     (args.out_dir / "proof.json").write_text(json.dumps(results, indent=2) + "\n", encoding="utf8")
 
 
