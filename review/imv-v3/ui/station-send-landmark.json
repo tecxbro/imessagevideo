@@ -1,0 +1,35 @@
+{
+  "landmarks": {
+    "station.send": {
+      "roi": [
+        0.8706467661691543,
+        0.7059496567505721,
+        0.07462686567164178,
+        0.02402745995423341
+      ],
+      "color": [
+        232,
+        219,
+        232
+      ],
+      "tolerance": 20,
+      "min_fraction": 0.5,
+      "settle_frames": 2,
+      "search_s": [
+        0.25,
+        0.85
+      ]
+    }
+  },
+  "cues": [
+    {
+      "id": "station.send.click",
+      "event": "station.send",
+      "offset_samples": 0,
+      "bus": "effects",
+      "asset": "send.wav",
+      "source": "Picture anchor probe",
+      "purpose": "Resolve the composer send state"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 72
+  },
+  "initialUI": {
+    "conversationId": "thread.prop-table",
+    "messages": [
+      {
+        "id": "message.question",
+        "senderId": "operator",
+        "text": "Did you find the spare receiver?"
+      },
+      {
+        "id": "message.reply",
+        "senderId": "stage-crew",
+        "text": "Teal case, beside the spool."
+      }
+    ],
+    "composer": {
+      "text": "",
+      "focused": false
+    },
+    "viewport": {
+      "surface": "conversation",
+      "anchorMessageId": "message.reply"
+    }
+  },
+  "events": [
+    {
+      "id": "motion.screen-to-physical-prop.reply-readable",
+      "kind": "edit.read",
+      "target": "prop-reply",
+      "frame": 0,
+      "layerIds": [
+        "prop-reply"
+      ]
+    },
+    {
+      "id": "motion.screen-to-physical-prop.phone-releases-attention",
+      "kind": "camera.release",
+      "target": "prop-handset",
+      "frame": 31,
+      "layerIds": [
+        "prop-handset"
+      ]
+    },
+    {
+      "id": "motion.screen-to-physical-prop.attention-on-prop",
+      "kind": "edit.focus",
+      "target": "prop-tin",
+      "frame": 45,
+      "layerIds": [
+        "prop-tin"
+      ]
+    },
+    {
+      "id": "motion.screen-to-physical-prop.cut-to-prop",
+      "kind": "edit.cut",
+      "target": "prop-tin",
+      "frame": 48,
+      "layerIds": [
+        "prop-tin"
+      ],
+      "uiState": null
+    },
+    {
+      "id": "motion.screen-to-physical-prop.prop-hold-start",
+      "kind": "edit.hold",
+      "target": "prop-tin",
+      "frame": 60,
+      "layerIds": [
+        "prop-tin"
+      ]
+    }
+  ],
+  "cues": []
+}

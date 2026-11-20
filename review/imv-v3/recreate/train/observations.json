@@ -1,0 +1,96 @@
+{
+  "film": "Train options",
+  "clock": {
+    "width": 640,
+    "height": 360,
+    "fps": "30/1",
+    "frames": 120
+  },
+  "shots": [
+    {
+      "frames": [
+        0,
+        17
+      ],
+      "camera": "locked",
+      "fixed": [
+        "full-bleed navy backdrop"
+      ],
+      "layers": [
+        "title kicker",
+        "title copy"
+      ],
+      "copy": [
+        "RAIL PLANNER",
+        "Train options"
+      ]
+    },
+    {
+      "frames": [
+        18,
+        119
+      ],
+      "camera": "locked",
+      "fixed": [
+        "lavender canvas",
+        "conversation shell",
+        "header",
+        "composer",
+        "incoming offer until later occlusion"
+      ],
+      "layers": [
+        "shell",
+        "content",
+        "request bubble",
+        "drawer",
+        "seat selection",
+        "receipt"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": "recreate.train.conversation",
+      "frame": 18,
+      "before": "title",
+      "after": "conversation with Where are we heading?"
+    },
+    {
+      "id": "recreate.train.request",
+      "frame": 30,
+      "settles": 38,
+      "before": "empty thread",
+      "after": "outgoing request",
+      "copy": "Two seats to Union Station.",
+      "sound": "short separate authored cue"
+    },
+    {
+      "id": "recreate.train.drawer",
+      "frame": 56,
+      "settles": 66,
+      "before": "request in thread",
+      "after": "route choices below request",
+      "sound": "short separate authored cue"
+    },
+    {
+      "id": "recreate.train.seat-selection",
+      "frame": 74,
+      "before": "unselected small check",
+      "after": "purple selected check",
+      "sound": "short separate authored cue"
+    },
+    {
+      "id": "recreate.train.receipt",
+      "frame": 89,
+      "settles": 96,
+      "before": "selected choice",
+      "after": "confirmation visible",
+      "sound": "short separate authored cue",
+      "copy": "Booked for 18:40."
+    }
+  ],
+  "hold": [
+    96,
+    119
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "handoff_commit": "de04deb",
+  "frame_count": 72,
+  "custom_sha256": "6afc0c1662a0f78298febea9589cf563500e36ffe09af3595cb3e25a0e02836b",
+  "default_sha256": "17f56b85bc684d61e676f155c86a80994098f92ca73ee2955a838dd0b10ae76b",
+  "custom_event_map": {
+    "version": 1,
+    "picture": {
+      "fpsNum": 30,
+      "fpsDen": 1,
+      "frameCount": 72
+    },
+    "initialUI": null,
+    "events": [
+      {
+        "id": "motion.photos-under-fixed-heading.rail-start",
+        "kind": "media.scroll",
+        "target": "photo-rail",
+        "frame": 20,
+        "layerIds": [
+          "photo-rail"
+        ]
+      },
+      {
+        "id": "motion.photos-under-fixed-heading.rail-settle",
+        "kind": "media.settle",
+        "target": "photo-rail",
+        "frame": 39,
+        "layerIds": [
+          "photo-rail"
+        ]
+      }
+    ],
+    "cues": []
+  },
+  "custom_decoded_comparisons": [
+    {
+      "frames": [
+        19,
+        20
+      ],
+      "heading": {
+        "mean_channel_delta": 0.00397,
+        "fraction_pixels_any_delta_gt_12": 0.0
+      },
+      "photo_viewport": {
+        "mean_channel_delta": 10.41829,
+        "fraction_pixels_any_delta_gt_12": 0.14651
+      }
+    },
+    {
+      "frames": [
+        20,
+        39
+      ],
+      "heading": {
+        "mean_channel_delta": 0.00397,
+        "fraction_pixels_any_delta_gt_12": 0.0
+      },
+      "photo_viewport": {
+        "mean_channel_delta": 53.32726,
+        "fraction_pixels_any_delta_gt_12": 0.98555
+      }
+    },
+    {
+      "frames": [
+        38,
+        39
+      ],
+      "heading": {
+        "mean_channel_delta": 0.00332,
+        "fraction_pixels_any_delta_gt_12": 0.0
+      },
+      "photo_viewport": {
+        "mean_channel_delta": 13.86331,
+        "fraction_pixels_any_delta_gt_12": 0.17216
+      }
+    },
+    {
+      "frames": [
+        39,
+        40
+      ],
+      "heading": {
+        "mean_channel_delta": 0.0,
+        "fraction_pixels_any_delta_gt_12": 0.0
+      },
+      "photo_viewport": {
+        "mean_channel_delta": 0.0,
+        "fraction_pixels_any_delta_gt_12": 0.0
+      }
+    },
+    {
+      "frames": [
+        39,
+        60
+      ],
+      "heading": {
+        "mean_channel_delta": 0.00315,
+        "fraction_pixels_any_delta_gt_12": 0.0
+      },
+      "photo_viewport": {
+        "mean_channel_delta": 0.00487,
+        "fraction_pixels_any_delta_gt_12": 0.0
+      }
+    }
+  ],
+  "changed_story_editors": {
+    "custom_heading": "Rail Planner \u00b7 station cards",
+    "photos": [
+      "union.png",
+      "northgate.png"
+    ]
+  },
+  "default_vs_custom_first_photo_viewport": {
+    "mean_channel_delta": 45.91222,
+    "fraction_pixels_any_delta_gt_12": 0.93756
+  }
+}

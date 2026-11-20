@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 72
+  },
+  "initialUI": null,
+  "events": [
+    {
+      "id": "motion.undo-send-remove.undo-send",
+      "kind": "unsend",
+      "target": "undo-outgoing",
+      "frame": 26,
+      "layerIds": [
+        "undo-outgoing"
+      ]
+    },
+    {
+      "id": "motion.undo-send-remove.row-removed",
+      "kind": "message_removed",
+      "target": "undo-outgoing",
+      "frame": 42,
+      "layerIds": [
+        "undo-outgoing"
+      ]
+    }
+  ],
+  "cues": []
+}

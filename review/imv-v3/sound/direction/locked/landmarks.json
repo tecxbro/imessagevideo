@@ -1,0 +1,162 @@
+{
+  "message.question.press": {
+    "roi": [
+      0.57604167,
+      0.86296296,
+      0.03645833,
+      0.05925926
+    ],
+    "settle_frames": 2,
+    "search_s": [
+      2,
+      5.4
+    ],
+    "template": "pressed-arrow.png",
+    "max_distance": 0.045
+  },
+  "message.question.send": {
+    "roi": [
+      0.34583333,
+      0.2537037,
+      0.05729167,
+      0.05740741
+    ],
+    "settle_frames": 2,
+    "search_s": [
+      2,
+      6.5
+    ],
+    "template": "outgoing-bubble.png",
+    "max_distance": 0.145
+  },
+  "message.answer.receive": {
+    "roi": [
+      0.465625,
+      0.42592593,
+      0.05520833,
+      0.06666667
+    ],
+    "settle_frames": 2,
+    "search_s": [
+      3.1,
+      8
+    ],
+    "template": "incoming-bubble.png",
+    "max_distance": 0.056
+  },
+  "prop.table.reveal": {
+    "roi": [
+      0.76666667,
+      0.58703704,
+      0.0125,
+      0.02222222
+    ],
+    "settle_frames": 3,
+    "search_s": [
+      5.5,
+      9.0
+    ],
+    "color": [
+      144,
+      46,
+      45
+    ],
+    "tolerance": 28,
+    "min_fraction": 0.7
+  },
+  "prop.tin.open": {
+    "roi": [
+      0.73958333,
+      0.67407407,
+      0.0375,
+      0.04444444
+    ],
+    "settle_frames": 1,
+    "search_s": [
+      5.4,
+      8.8
+    ],
+    "template": "separating-tin.png",
+    "max_distance": 0.023
+  },
+  "prop.moon.lift": {
+    "roi": [
+      0.634375,
+      0.55555556,
+      0.03541667,
+      0.05
+    ],
+    "settle_frames": 1,
+    "search_s": [
+      6.6,
+      9.5
+    ],
+    "template": "rising-paper.png",
+    "max_distance": 0.021
+  },
+  "stage.return": {
+    "roi": [
+      0.65208333,
+      0.43333333,
+      0.0125,
+      0.02222222
+    ],
+    "settle_frames": 3,
+    "search_s": [
+      7.5,
+      12
+    ],
+    "color": [
+      238,
+      187,
+      122
+    ],
+    "tolerance": 28,
+    "min_fraction": 0.7
+  },
+  "stage.moon.enter": {
+    "roi": [
+      0.74166667,
+      0.28888889,
+      0.05104167,
+      0.17222222
+    ],
+    "settle_frames": 1,
+    "search_s": [
+      8.4,
+      11.9
+    ],
+    "template": "readable-crescent.png",
+    "max_distance": 0.08
+  },
+  "stage.rabbit.release": {
+    "roi": [
+      0.471875,
+      0.46481481,
+      0.02395833,
+      0.08518519
+    ],
+    "settle_frames": 2,
+    "search_s": [
+      9.1,
+      13.2
+    ],
+    "template": "rabbit-ear-turn.png",
+    "max_distance": 0.035
+  },
+  "stage.audience.release": {
+    "roi": [
+      0.79791667,
+      0.80740741,
+      0.02708333,
+      0.03333333
+    ],
+    "settle_frames": 1,
+    "search_s": [
+      9.2,
+      12.15
+    ],
+    "template": "audience-lean.png",
+    "max_distance": 0.014
+  }
+}

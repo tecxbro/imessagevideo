@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 72
+  },
+  "initialUI": null,
+  "events": [
+    {
+      "id": "motion.accordion-displaces-row.accordion-opens",
+      "kind": "accordion-opens",
+      "target": "accordion-surface",
+      "frame": 13,
+      "layerIds": [
+        "accordion-surface"
+      ]
+    },
+    {
+      "id": "motion.accordion-displaces-row.detail-exposed",
+      "kind": "detail-exposed",
+      "target": "expanded-copy",
+      "frame": 44,
+      "layerIds": [
+        "expanded-copy"
+      ]
+    }
+  ],
+  "cues": []
+}

@@ -1,0 +1,22 @@
+{
+  "unmodified": [],
+  "missing_overlay": [
+    "decoded audio differs materially from the approved PCM"
+  ],
+  "dropout": [
+    "decoded audio has energy dropouts relative to the approved PCM",
+    "decoded audio differs materially from the approved PCM"
+  ],
+  "clipping": [
+    "decoded audio clips or exceeds full scale between samples",
+    "decoded audio differs materially from the approved PCM"
+  ],
+  "short_audio": [
+    "audio duration differs from picture beyond MP4 rounding/AAC padding"
+  ],
+  "discontinuous_pts": [
+    "decoded audio PTS has a nonzero start or gaps/overlaps",
+    "audio duration differs from picture beyond MP4 rounding/AAC padding",
+    "decoded audio differs materially from the approved PCM"
+  ]
+}

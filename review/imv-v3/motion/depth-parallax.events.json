@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 72
+  },
+  "initialUI": null,
+  "events": [
+    {
+      "id": "motion.depth-parallax.depth-shift-start",
+      "kind": "depth-shift-start",
+      "target": "near-frame",
+      "frame": 8,
+      "layerIds": [
+        "near-frame"
+      ]
+    },
+    {
+      "id": "motion.depth-parallax.planes-settle",
+      "kind": "planes-settle",
+      "target": "middle-cards",
+      "frame": 54,
+      "layerIds": [
+        "middle-cards"
+      ]
+    }
+  ],
+  "cues": []
+}

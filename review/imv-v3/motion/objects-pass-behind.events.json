@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 72
+  },
+  "initialUI": null,
+  "events": [
+    {
+      "id": "motion.objects-pass-behind.payloads-enter-occlusion",
+      "kind": "payloads-enter-occlusion",
+      "target": "bridge",
+      "frame": 19,
+      "layerIds": [
+        "bridge"
+      ]
+    },
+    {
+      "id": "motion.objects-pass-behind.payloads-emerge",
+      "kind": "payloads-emerge",
+      "target": "left-payload",
+      "frame": 33,
+      "layerIds": [
+        "left-payload"
+      ]
+    }
+  ],
+  "cues": []
+}

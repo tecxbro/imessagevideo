@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 72
+  },
+  "initialUI": null,
+  "events": [
+    {
+      "id": "motion.history-prepend-anchor.history-inserted",
+      "kind": "history_prepend",
+      "target": "prepend-older-page",
+      "frame": 29,
+      "layerIds": [
+        "prepend-older-page"
+      ]
+    },
+    {
+      "id": "motion.history-prepend-anchor.history-reveal-drag",
+      "kind": "gesture_begin",
+      "target": "prepend-transcript",
+      "frame": 39,
+      "layerIds": [
+        "prepend-transcript"
+      ]
+    }
+  ],
+  "cues": []
+}

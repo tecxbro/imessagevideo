@@ -1,0 +1,1068 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 24,
+    "fpsDen": 1,
+    "frameCount": 136
+  },
+  "sampleRate": 48000,
+  "sampleCount": 272000,
+  "initialUI": {
+    "conversationId": "station",
+    "messages": [
+      {
+        "id": "early",
+        "senderId": "morgan",
+        "text": "I'm on the earlier train. Are you already near the station?",
+        "attachmentIds": [],
+        "reactions": {},
+        "edited": false,
+        "receipt": ""
+      },
+      {
+        "id": "arrival",
+        "senderId": "alex",
+        "text": "Almost. The front of the station is under construction and the usual entrance is fenced off.",
+        "attachmentIds": [],
+        "reactions": {},
+        "edited": false,
+        "receipt": "Read"
+      },
+      {
+        "id": "pickup",
+        "senderId": "morgan",
+        "text": "Use the side street by the newsstand. The little blue sign leads straight to the platform stairs.",
+        "attachmentIds": [],
+        "reactions": {},
+        "edited": false,
+        "receipt": ""
+      },
+      {
+        "id": "check",
+        "senderId": "alex",
+        "text": "Got it. Which end of the platform should I aim for?",
+        "attachmentIds": [],
+        "reactions": {},
+        "edited": false,
+        "receipt": ""
+      },
+      {
+        "id": "map",
+        "senderId": "morgan",
+        "text": "Far end, closest to the pedestrian crossing. There's a bench in front of the stairwell.",
+        "attachmentIds": [],
+        "reactions": {},
+        "edited": false,
+        "receipt": ""
+      },
+      {
+        "id": "exit",
+        "senderId": "morgan",
+        "text": "I can walk up to the exit if it's crowded.",
+        "attachmentIds": [],
+        "reactions": {},
+        "edited": false,
+        "receipt": ""
+      }
+    ],
+    "composer": {
+      "text": "I am bringing the backup microphone and the adapter. Meet me by the stage door after the sound check.",
+      "focused": true,
+      "keyboardVisible": true
+    },
+    "viewport": {
+      "surface": "conversation",
+      "anchorMessageId": "exit",
+      "scrollOffset": 0
+    },
+    "typingSenderIds": []
+  },
+  "events": [
+    {
+      "id": "station.send",
+      "kind": "send",
+      "target": "meet",
+      "frame": 19,
+      "uiState": {
+        "conversationId": "station",
+        "messages": [
+          {
+            "id": "early",
+            "senderId": "morgan",
+            "text": "I'm on the earlier train. Are you already near the station?",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "arrival",
+            "senderId": "alex",
+            "text": "Almost. The front of the station is under construction and the usual entrance is fenced off.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": "Read"
+          },
+          {
+            "id": "pickup",
+            "senderId": "morgan",
+            "text": "Use the side street by the newsstand. The little blue sign leads straight to the platform stairs.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "check",
+            "senderId": "alex",
+            "text": "Got it. Which end of the platform should I aim for?",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "map",
+            "senderId": "morgan",
+            "text": "Far end, closest to the pedestrian crossing. There's a bench in front of the stairwell.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "exit",
+            "senderId": "morgan",
+            "text": "I can walk up to the exit if it's crowded.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "meet",
+            "senderId": "alex",
+            "text": "I am bringing the backup microphone and the adapter. Meet me by the stage door after the sound check.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          }
+        ],
+        "composer": {
+          "text": "",
+          "focused": true,
+          "keyboardVisible": true
+        },
+        "viewport": {
+          "surface": "conversation",
+          "anchorMessageId": "meet",
+          "scrollOffset": 0
+        },
+        "typingSenderIds": []
+      },
+      "layerIds": [
+        "ui.message/meet"
+      ],
+      "sample": 38000
+    },
+    {
+      "id": "station.delivered",
+      "kind": "receipt",
+      "target": "meet",
+      "frame": 28,
+      "uiState": {
+        "conversationId": "station",
+        "messages": [
+          {
+            "id": "early",
+            "senderId": "morgan",
+            "text": "I'm on the earlier train. Are you already near the station?",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "arrival",
+            "senderId": "alex",
+            "text": "Almost. The front of the station is under construction and the usual entrance is fenced off.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": "Read"
+          },
+          {
+            "id": "pickup",
+            "senderId": "morgan",
+            "text": "Use the side street by the newsstand. The little blue sign leads straight to the platform stairs.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "check",
+            "senderId": "alex",
+            "text": "Got it. Which end of the platform should I aim for?",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "map",
+            "senderId": "morgan",
+            "text": "Far end, closest to the pedestrian crossing. There's a bench in front of the stairwell.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "exit",
+            "senderId": "morgan",
+            "text": "I can walk up to the exit if it's crowded.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "meet",
+            "senderId": "alex",
+            "text": "I am bringing the backup microphone and the adapter. Meet me by the stage door after the sound check.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": "Delivered"
+          }
+        ],
+        "composer": {
+          "text": "",
+          "focused": true,
+          "keyboardVisible": true
+        },
+        "viewport": {
+          "surface": "conversation",
+          "anchorMessageId": "meet",
+          "scrollOffset": 0
+        },
+        "typingSenderIds": []
+      },
+      "layerIds": [
+        "ui.message/meet/receipt"
+      ],
+      "sample": 56000
+    },
+    {
+      "id": "station.typing",
+      "kind": "typing",
+      "target": "morgan",
+      "frame": 30,
+      "uiState": {
+        "conversationId": "station",
+        "messages": [
+          {
+            "id": "early",
+            "senderId": "morgan",
+            "text": "I'm on the earlier train. Are you already near the station?",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "arrival",
+            "senderId": "alex",
+            "text": "Almost. The front of the station is under construction and the usual entrance is fenced off.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": "Read"
+          },
+          {
+            "id": "pickup",
+            "senderId": "morgan",
+            "text": "Use the side street by the newsstand. The little blue sign leads straight to the platform stairs.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "check",
+            "senderId": "alex",
+            "text": "Got it. Which end of the platform should I aim for?",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "map",
+            "senderId": "morgan",
+            "text": "Far end, closest to the pedestrian crossing. There's a bench in front of the stairwell.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "exit",
+            "senderId": "morgan",
+            "text": "I can walk up to the exit if it's crowded.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "meet",
+            "senderId": "alex",
+            "text": "I am bringing the backup microphone and the adapter. Meet me by the stage door after the sound check.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": "Delivered"
+          }
+        ],
+        "composer": {
+          "text": "",
+          "focused": true,
+          "keyboardVisible": true
+        },
+        "viewport": {
+          "surface": "conversation",
+          "anchorMessageId": "meet",
+          "scrollOffset": 0
+        },
+        "typingSenderIds": [
+          "morgan"
+        ]
+      },
+      "layerIds": [
+        "ui.typing"
+      ],
+      "sample": 60000
+    },
+    {
+      "id": "station.reply",
+      "kind": "receive",
+      "target": "reply",
+      "frame": 44,
+      "uiState": {
+        "conversationId": "station",
+        "messages": [
+          {
+            "id": "early",
+            "senderId": "morgan",
+            "text": "I'm on the earlier train. Are you already near the station?",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "arrival",
+            "senderId": "alex",
+            "text": "Almost. The front of the station is under construction and the usual entrance is fenced off.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": "Read"
+          },
+          {
+            "id": "pickup",
+            "senderId": "morgan",
+            "text": "Use the side street by the newsstand. The little blue sign leads straight to the platform stairs.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "check",
+            "senderId": "alex",
+            "text": "Got it. Which end of the platform should I aim for?",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "map",
+            "senderId": "morgan",
+            "text": "Far end, closest to the pedestrian crossing. There's a bench in front of the stairwell.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "exit",
+            "senderId": "morgan",
+            "text": "I can walk up to the exit if it's crowded.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "meet",
+            "senderId": "alex",
+            "text": "I am bringing the backup microphone and the adapter. Meet me by the stage door after the sound check.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": "Delivered"
+          },
+          {
+            "id": "reply",
+            "senderId": "morgan",
+            "text": "Perfect. I'll wait beside the bicycle rack.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          }
+        ],
+        "composer": {
+          "text": "",
+          "focused": true,
+          "keyboardVisible": true
+        },
+        "viewport": {
+          "surface": "conversation",
+          "anchorMessageId": "reply",
+          "scrollOffset": 0
+        },
+        "typingSenderIds": []
+      },
+      "layerIds": [
+        "ui.message/reply"
+      ],
+      "sample": 88000
+    },
+    {
+      "id": "station.press",
+      "kind": "overlay",
+      "target": "meet",
+      "frame": 53,
+      "uiState": {
+        "conversationId": "station",
+        "messages": [
+          {
+            "id": "early",
+            "senderId": "morgan",
+            "text": "I'm on the earlier train. Are you already near the station?",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "arrival",
+            "senderId": "alex",
+            "text": "Almost. The front of the station is under construction and the usual entrance is fenced off.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": "Read"
+          },
+          {
+            "id": "pickup",
+            "senderId": "morgan",
+            "text": "Use the side street by the newsstand. The little blue sign leads straight to the platform stairs.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "check",
+            "senderId": "alex",
+            "text": "Got it. Which end of the platform should I aim for?",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "map",
+            "senderId": "morgan",
+            "text": "Far end, closest to the pedestrian crossing. There's a bench in front of the stairwell.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "exit",
+            "senderId": "morgan",
+            "text": "I can walk up to the exit if it's crowded.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "meet",
+            "senderId": "alex",
+            "text": "I am bringing the backup microphone and the adapter. Meet me by the stage door after the sound check.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": "Delivered"
+          },
+          {
+            "id": "reply",
+            "senderId": "morgan",
+            "text": "Perfect. I'll wait beside the bicycle rack.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          }
+        ],
+        "composer": {
+          "text": "",
+          "focused": true,
+          "keyboardVisible": true
+        },
+        "viewport": {
+          "surface": "context",
+          "anchorMessageId": "reply",
+          "scrollOffset": 0,
+          "selection": [
+            "meet"
+          ]
+        },
+        "typingSenderIds": []
+      },
+      "layerIds": [
+        "ui.overlay",
+        "ui.inbox"
+      ],
+      "sample": 106000
+    },
+    {
+      "id": "station.love",
+      "kind": "reaction",
+      "target": "meet",
+      "frame": 74,
+      "uiState": {
+        "conversationId": "station",
+        "messages": [
+          {
+            "id": "early",
+            "senderId": "morgan",
+            "text": "I'm on the earlier train. Are you already near the station?",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "arrival",
+            "senderId": "alex",
+            "text": "Almost. The front of the station is under construction and the usual entrance is fenced off.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": "Read"
+          },
+          {
+            "id": "pickup",
+            "senderId": "morgan",
+            "text": "Use the side street by the newsstand. The little blue sign leads straight to the platform stairs.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "check",
+            "senderId": "alex",
+            "text": "Got it. Which end of the platform should I aim for?",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "map",
+            "senderId": "morgan",
+            "text": "Far end, closest to the pedestrian crossing. There's a bench in front of the stairwell.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "exit",
+            "senderId": "morgan",
+            "text": "I can walk up to the exit if it's crowded.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "meet",
+            "senderId": "alex",
+            "text": "I am bringing the backup microphone and the adapter. Meet me by the stage door after the sound check.",
+            "attachmentIds": [],
+            "reactions": {
+              "alex": "Wow"
+            },
+            "edited": false,
+            "receipt": "Delivered"
+          },
+          {
+            "id": "reply",
+            "senderId": "morgan",
+            "text": "Perfect. I'll wait beside the bicycle rack.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          }
+        ],
+        "composer": {
+          "text": "",
+          "focused": true,
+          "keyboardVisible": true
+        },
+        "viewport": {
+          "surface": "conversation",
+          "anchorMessageId": "reply",
+          "scrollOffset": 0
+        },
+        "typingSenderIds": []
+      },
+      "layerIds": [
+        "ui.message/meet/reaction"
+      ],
+      "sample": 148000
+    },
+    {
+      "id": "station.scroll",
+      "kind": "scroll",
+      "target": "station",
+      "frame": 80,
+      "uiState": {
+        "conversationId": "station",
+        "messages": [
+          {
+            "id": "early",
+            "senderId": "morgan",
+            "text": "I'm on the earlier train. Are you already near the station?",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "arrival",
+            "senderId": "alex",
+            "text": "Almost. The front of the station is under construction and the usual entrance is fenced off.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": "Read"
+          },
+          {
+            "id": "pickup",
+            "senderId": "morgan",
+            "text": "Use the side street by the newsstand. The little blue sign leads straight to the platform stairs.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "check",
+            "senderId": "alex",
+            "text": "Got it. Which end of the platform should I aim for?",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "map",
+            "senderId": "morgan",
+            "text": "Far end, closest to the pedestrian crossing. There's a bench in front of the stairwell.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "exit",
+            "senderId": "morgan",
+            "text": "I can walk up to the exit if it's crowded.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "meet",
+            "senderId": "alex",
+            "text": "I am bringing the backup microphone and the adapter. Meet me by the stage door after the sound check.",
+            "attachmentIds": [],
+            "reactions": {
+              "alex": "Wow"
+            },
+            "edited": false,
+            "receipt": "Delivered"
+          },
+          {
+            "id": "reply",
+            "senderId": "morgan",
+            "text": "Perfect. I'll wait beside the bicycle rack.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          }
+        ],
+        "composer": {
+          "text": "",
+          "focused": true,
+          "keyboardVisible": true
+        },
+        "viewport": {
+          "surface": "conversation",
+          "anchorMessageId": "meet",
+          "scrollOffset": 170
+        },
+        "typingSenderIds": []
+      },
+      "layerIds": [
+        "ui.transcript"
+      ],
+      "sample": 160000
+    },
+    {
+      "id": "station.push-in",
+      "kind": "camera",
+      "target": "station",
+      "frame": 87,
+      "layerIds": [
+        "ui.camera"
+      ],
+      "sample": 174000,
+      "uiState": {
+        "conversationId": "station",
+        "messages": [
+          {
+            "id": "early",
+            "senderId": "morgan",
+            "text": "I'm on the earlier train. Are you already near the station?",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "arrival",
+            "senderId": "alex",
+            "text": "Almost. The front of the station is under construction and the usual entrance is fenced off.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": "Read"
+          },
+          {
+            "id": "pickup",
+            "senderId": "morgan",
+            "text": "Use the side street by the newsstand. The little blue sign leads straight to the platform stairs.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "check",
+            "senderId": "alex",
+            "text": "Got it. Which end of the platform should I aim for?",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "map",
+            "senderId": "morgan",
+            "text": "Far end, closest to the pedestrian crossing. There's a bench in front of the stairwell.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "exit",
+            "senderId": "morgan",
+            "text": "I can walk up to the exit if it's crowded.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "meet",
+            "senderId": "alex",
+            "text": "I am bringing the backup microphone and the adapter. Meet me by the stage door after the sound check.",
+            "attachmentIds": [],
+            "reactions": {
+              "alex": "Wow"
+            },
+            "edited": false,
+            "receipt": "Delivered"
+          },
+          {
+            "id": "reply",
+            "senderId": "morgan",
+            "text": "Perfect. I'll wait beside the bicycle rack.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          }
+        ],
+        "composer": {
+          "text": "",
+          "focused": true,
+          "keyboardVisible": true
+        },
+        "viewport": {
+          "surface": "conversation",
+          "anchorMessageId": "meet",
+          "scrollOffset": 170
+        },
+        "typingSenderIds": []
+      }
+    },
+    {
+      "id": "station.return",
+      "kind": "scroll",
+      "target": "station",
+      "frame": 105,
+      "uiState": {
+        "conversationId": "station",
+        "messages": [
+          {
+            "id": "early",
+            "senderId": "morgan",
+            "text": "I'm on the earlier train. Are you already near the station?",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "arrival",
+            "senderId": "alex",
+            "text": "Almost. The front of the station is under construction and the usual entrance is fenced off.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": "Read"
+          },
+          {
+            "id": "pickup",
+            "senderId": "morgan",
+            "text": "Use the side street by the newsstand. The little blue sign leads straight to the platform stairs.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "check",
+            "senderId": "alex",
+            "text": "Got it. Which end of the platform should I aim for?",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "map",
+            "senderId": "morgan",
+            "text": "Far end, closest to the pedestrian crossing. There's a bench in front of the stairwell.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "exit",
+            "senderId": "morgan",
+            "text": "I can walk up to the exit if it's crowded.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "meet",
+            "senderId": "alex",
+            "text": "I am bringing the backup microphone and the adapter. Meet me by the stage door after the sound check.",
+            "attachmentIds": [],
+            "reactions": {
+              "alex": "Wow"
+            },
+            "edited": false,
+            "receipt": "Delivered"
+          },
+          {
+            "id": "reply",
+            "senderId": "morgan",
+            "text": "Perfect. I'll wait beside the bicycle rack.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          }
+        ],
+        "composer": {
+          "text": "",
+          "focused": true,
+          "keyboardVisible": true
+        },
+        "viewport": {
+          "surface": "conversation",
+          "anchorMessageId": "reply",
+          "scrollOffset": 0
+        },
+        "typingSenderIds": []
+      },
+      "layerIds": [
+        "ui.transcript"
+      ],
+      "sample": 210000
+    },
+    {
+      "id": "station.blur",
+      "kind": "focus",
+      "target": "station",
+      "frame": 117,
+      "uiState": {
+        "conversationId": "station",
+        "messages": [
+          {
+            "id": "early",
+            "senderId": "morgan",
+            "text": "I'm on the earlier train. Are you already near the station?",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "arrival",
+            "senderId": "alex",
+            "text": "Almost. The front of the station is under construction and the usual entrance is fenced off.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": "Read"
+          },
+          {
+            "id": "pickup",
+            "senderId": "morgan",
+            "text": "Use the side street by the newsstand. The little blue sign leads straight to the platform stairs.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "check",
+            "senderId": "alex",
+            "text": "Got it. Which end of the platform should I aim for?",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "map",
+            "senderId": "morgan",
+            "text": "Far end, closest to the pedestrian crossing. There's a bench in front of the stairwell.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "exit",
+            "senderId": "morgan",
+            "text": "I can walk up to the exit if it's crowded.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "meet",
+            "senderId": "alex",
+            "text": "I am bringing the backup microphone and the adapter. Meet me by the stage door after the sound check.",
+            "attachmentIds": [],
+            "reactions": {
+              "alex": "Wow"
+            },
+            "edited": false,
+            "receipt": "Delivered"
+          },
+          {
+            "id": "reply",
+            "senderId": "morgan",
+            "text": "Perfect. I'll wait beside the bicycle rack.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          }
+        ],
+        "composer": {
+          "text": "",
+          "focused": false,
+          "keyboardVisible": false
+        },
+        "viewport": {
+          "surface": "conversation",
+          "anchorMessageId": "reply",
+          "scrollOffset": 0
+        },
+        "typingSenderIds": []
+      },
+      "layerIds": [
+        "ui.composer",
+        "ui.keyboard"
+      ],
+      "sample": 234000
+    }
+  ],
+  "cues": [
+    {
+      "id": "station.send.click",
+      "eventId": "station.send",
+      "offsetSamples": 0,
+      "frame": 19,
+      "sample": 38000
+    },
+    {
+      "id": "station.reaction.tap",
+      "eventId": "station.love",
+      "offsetSamples": 0,
+      "frame": 74,
+      "sample": 148000
+    }
+  ]
+}

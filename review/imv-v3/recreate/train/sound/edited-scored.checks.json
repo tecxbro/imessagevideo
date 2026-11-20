@@ -1,0 +1,36 @@
+{
+  "global_mae": 0,
+  "audio": "present",
+  "audio_checks": {
+    "cues": [
+      {
+        "id": "send-flick",
+        "frame": 30,
+        "offset_ms": 6,
+        "window_ms": 12,
+        "min_peak": 0.015
+      },
+      {
+        "id": "drawer-glide",
+        "frame": 56,
+        "offset_ms": -16,
+        "window_ms": 12,
+        "min_peak": 0.015
+      },
+      {
+        "id": "seat-latch",
+        "frame": 69,
+        "offset_ms": 9,
+        "window_ms": 12,
+        "min_peak": 0.015
+      },
+      {
+        "id": "receipt-resolve",
+        "frame": 89,
+        "offset_ms": 14,
+        "window_ms": 12,
+        "min_peak": 0.015
+      }
+    ]
+  }
+}

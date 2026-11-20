@@ -1,0 +1,661 @@
+{
+  "reference": {
+    "file": "send-60fps.mp4",
+    "sha256": "23a9680f70a436a119b786334aeb88c70b59c083703ef273eb0cdad2be98cf8b",
+    "anchorFrame": 73,
+    "device": "iPhone 17 Pro simulator",
+    "os": "iOS 26.0 (23A343)",
+    "service": "SMS",
+    "logicalViewport": [
+      402,
+      874
+    ],
+    "comparisonPixelScale": 1
+  },
+  "method": "Decode without interpolating frames, scale each frame to 402 by 874, and read RGB. At y >= 668, retain pixels with source G-R > 20, G-B > 17, and at least one RGB channel changing by > 20 from frame 72. Report the top and width of that changed green region, including the tail and any visible tinted composer shape.",
+  "render": {
+    "file": "send.mp4",
+    "sha256": "9726a40a23ebb386931f28d31528e95b71cb95b0895d0d9051d1899a6e0fab7a",
+    "anchorFrame": 12,
+    "conversation": {
+      "version": 1,
+      "skin": "film-paper",
+      "conversationId": "station",
+      "title": "Morgan",
+      "service": "Messages \u00b7 Station pickup",
+      "participants": {
+        "alex": "Alex",
+        "morgan": "Morgan"
+      },
+      "localSenderId": "alex",
+      "display": {
+        "width": 402,
+        "height": 874
+      },
+      "fps": 24,
+      "frameCount": 65,
+      "initial": {
+        "focused": false,
+        "draft": "I\u2019m here.",
+        "messages": [
+          {
+            "id": "pickup",
+            "senderId": "morgan",
+            "text": "Use the side street by the newsstand. The little blue sign leads straight to the platform stairs."
+          },
+          {
+            "id": "map",
+            "senderId": "morgan",
+            "text": "Far end, closest to the pedestrian crossing. There's a bench in front of the stairwell."
+          },
+          {
+            "id": "check",
+            "senderId": "alex",
+            "text": "Got it. Which end of the platform should I aim for?",
+            "receipt": "Delivered"
+          }
+        ]
+      },
+      "events": [
+        {
+          "id": "station.send",
+          "kind": "send",
+          "frame": 12,
+          "message": {
+            "id": "meet"
+          }
+        },
+        {
+          "id": "station.delivered",
+          "kind": "receipt",
+          "frame": 36,
+          "messageId": "meet",
+          "status": "Delivered"
+        }
+      ],
+      "cues": [
+        {
+          "id": "station.send.click",
+          "eventId": "station.send",
+          "offsetSamples": 0
+        }
+      ]
+    }
+  },
+  "comparison": {
+    "file": "send-motion-trace.mp4",
+    "sha256": "48450761649c3b978614947ede1559c52ad06cb4ba1fc455535dfcb9467cc47f",
+    "frames": 93,
+    "fps": 60,
+    "anchorFrame": 12
+  },
+  "samples": [
+    {
+      "frame": 73,
+      "pts": "1233333/1000000",
+      "millisecondsFromOnset": 0.0,
+      "opticalTopPt": 811,
+      "widthPt": 294
+    },
+    {
+      "frame": 74,
+      "pts": "5/4",
+      "millisecondsFromOnset": 16.667,
+      "opticalTopPt": 811,
+      "widthPt": 296
+    },
+    {
+      "frame": 75,
+      "pts": "1266667/1000000",
+      "millisecondsFromOnset": 33.334,
+      "opticalTopPt": 811,
+      "widthPt": 272
+    },
+    {
+      "frame": 76,
+      "pts": "1283333/1000000",
+      "millisecondsFromOnset": 50.0,
+      "opticalTopPt": 811,
+      "widthPt": 254
+    },
+    {
+      "frame": 77,
+      "pts": "13/10",
+      "millisecondsFromOnset": 66.667,
+      "opticalTopPt": 808,
+      "widthPt": 228
+    },
+    {
+      "frame": 78,
+      "pts": "1316667/1000000",
+      "millisecondsFromOnset": 83.334,
+      "opticalTopPt": 802,
+      "widthPt": 198
+    },
+    {
+      "frame": 79,
+      "pts": "1333333/1000000",
+      "millisecondsFromOnset": 100.0,
+      "opticalTopPt": 791,
+      "widthPt": 154
+    },
+    {
+      "frame": 80,
+      "pts": "27/20",
+      "millisecondsFromOnset": 116.667,
+      "opticalTopPt": 781,
+      "widthPt": 124
+    },
+    {
+      "frame": 81,
+      "pts": "1366667/1000000",
+      "millisecondsFromOnset": 133.334,
+      "opticalTopPt": 771,
+      "widthPt": 99
+    },
+    {
+      "frame": 82,
+      "pts": "1383333/1000000",
+      "millisecondsFromOnset": 150.0,
+      "opticalTopPt": 761,
+      "widthPt": 84
+    },
+    {
+      "frame": 83,
+      "pts": "7/5",
+      "millisecondsFromOnset": 166.667,
+      "opticalTopPt": 761,
+      "widthPt": 84
+    },
+    {
+      "frame": 84,
+      "pts": "1416667/1000000",
+      "millisecondsFromOnset": 183.334,
+      "opticalTopPt": 741,
+      "widthPt": 68
+    },
+    {
+      "frame": 85,
+      "pts": "1433333/1000000",
+      "millisecondsFromOnset": 200.0,
+      "opticalTopPt": 732,
+      "widthPt": 70
+    },
+    {
+      "frame": 86,
+      "pts": "29/20",
+      "millisecondsFromOnset": 216.667,
+      "opticalTopPt": 725,
+      "widthPt": 70
+    },
+    {
+      "frame": 87,
+      "pts": "1466667/1000000",
+      "millisecondsFromOnset": 233.334,
+      "opticalTopPt": 717,
+      "widthPt": 72
+    },
+    {
+      "frame": 88,
+      "pts": "1483333/1000000",
+      "millisecondsFromOnset": 250.0,
+      "opticalTopPt": 710,
+      "widthPt": 72
+    },
+    {
+      "frame": 89,
+      "pts": "3/2",
+      "millisecondsFromOnset": 266.667,
+      "opticalTopPt": 705,
+      "widthPt": 74
+    },
+    {
+      "frame": 90,
+      "pts": "1516667/1000000",
+      "millisecondsFromOnset": 283.334,
+      "opticalTopPt": 700,
+      "widthPt": 77
+    },
+    {
+      "frame": 91,
+      "pts": "1533333/1000000",
+      "millisecondsFromOnset": 300.0,
+      "opticalTopPt": 695,
+      "widthPt": 80
+    },
+    {
+      "frame": 92,
+      "pts": "31/20",
+      "millisecondsFromOnset": 316.667,
+      "opticalTopPt": 692,
+      "widthPt": 80
+    },
+    {
+      "frame": 93,
+      "pts": "1566667/1000000",
+      "millisecondsFromOnset": 333.334,
+      "opticalTopPt": 689,
+      "widthPt": 82
+    },
+    {
+      "frame": 94,
+      "pts": "1583333/1000000",
+      "millisecondsFromOnset": 350.0,
+      "opticalTopPt": 687,
+      "widthPt": 84
+    },
+    {
+      "frame": 95,
+      "pts": "8/5",
+      "millisecondsFromOnset": 366.667,
+      "opticalTopPt": 686,
+      "widthPt": 85
+    },
+    {
+      "frame": 96,
+      "pts": "1616667/1000000",
+      "millisecondsFromOnset": 383.334,
+      "opticalTopPt": 684,
+      "widthPt": 86
+    },
+    {
+      "frame": 97,
+      "pts": "1633333/1000000",
+      "millisecondsFromOnset": 400.0,
+      "opticalTopPt": 684,
+      "widthPt": 87
+    },
+    {
+      "frame": 98,
+      "pts": "33/20",
+      "millisecondsFromOnset": 416.667,
+      "opticalTopPt": 683,
+      "widthPt": 88
+    },
+    {
+      "frame": 99,
+      "pts": "1666667/1000000",
+      "millisecondsFromOnset": 433.334,
+      "opticalTopPt": 683,
+      "widthPt": 88
+    },
+    {
+      "frame": 100,
+      "pts": "1683333/1000000",
+      "millisecondsFromOnset": 450.0,
+      "opticalTopPt": 683,
+      "widthPt": 89
+    },
+    {
+      "frame": 101,
+      "pts": "17/10",
+      "millisecondsFromOnset": 466.667,
+      "opticalTopPt": 683,
+      "widthPt": 90
+    },
+    {
+      "frame": 102,
+      "pts": "1716667/1000000",
+      "millisecondsFromOnset": 483.334,
+      "opticalTopPt": 683,
+      "widthPt": 90
+    },
+    {
+      "frame": 103,
+      "pts": "1733333/1000000",
+      "millisecondsFromOnset": 500.0,
+      "opticalTopPt": 684,
+      "widthPt": 90
+    },
+    {
+      "frame": 104,
+      "pts": "7/4",
+      "millisecondsFromOnset": 516.667,
+      "opticalTopPt": 684,
+      "widthPt": 90
+    },
+    {
+      "frame": 105,
+      "pts": "1766667/1000000",
+      "millisecondsFromOnset": 533.334,
+      "opticalTopPt": 684,
+      "widthPt": 90
+    },
+    {
+      "frame": 106,
+      "pts": "1783333/1000000",
+      "millisecondsFromOnset": 550.0,
+      "opticalTopPt": 685,
+      "widthPt": 90
+    },
+    {
+      "frame": 107,
+      "pts": "9/5",
+      "millisecondsFromOnset": 566.667,
+      "opticalTopPt": 685,
+      "widthPt": 90
+    },
+    {
+      "frame": 108,
+      "pts": "1816667/1000000",
+      "millisecondsFromOnset": 583.334,
+      "opticalTopPt": 685,
+      "widthPt": 89
+    },
+    {
+      "frame": 109,
+      "pts": "1833333/1000000",
+      "millisecondsFromOnset": 600.0,
+      "opticalTopPt": 686,
+      "widthPt": 89
+    },
+    {
+      "frame": 110,
+      "pts": "37/20",
+      "millisecondsFromOnset": 616.667,
+      "opticalTopPt": 686,
+      "widthPt": 89
+    },
+    {
+      "frame": 111,
+      "pts": "1866667/1000000",
+      "millisecondsFromOnset": 633.334,
+      "opticalTopPt": 686,
+      "widthPt": 89
+    },
+    {
+      "frame": 112,
+      "pts": "1883333/1000000",
+      "millisecondsFromOnset": 650.0,
+      "opticalTopPt": 686,
+      "widthPt": 89
+    },
+    {
+      "frame": 113,
+      "pts": "19/10",
+      "millisecondsFromOnset": 666.667,
+      "opticalTopPt": 687,
+      "widthPt": 89
+    },
+    {
+      "frame": 114,
+      "pts": "1916667/1000000",
+      "millisecondsFromOnset": 683.334,
+      "opticalTopPt": 687,
+      "widthPt": 89
+    },
+    {
+      "frame": 115,
+      "pts": "1933333/1000000",
+      "millisecondsFromOnset": 700.0,
+      "opticalTopPt": 687,
+      "widthPt": 89
+    },
+    {
+      "frame": 116,
+      "pts": "39/20",
+      "millisecondsFromOnset": 716.667,
+      "opticalTopPt": 687,
+      "widthPt": 89
+    },
+    {
+      "frame": 117,
+      "pts": "1966667/1000000",
+      "millisecondsFromOnset": 733.334,
+      "opticalTopPt": 687,
+      "widthPt": 89
+    },
+    {
+      "frame": 118,
+      "pts": "1983333/1000000",
+      "millisecondsFromOnset": 750.0,
+      "opticalTopPt": 687,
+      "widthPt": 89
+    },
+    {
+      "frame": 119,
+      "pts": "2",
+      "millisecondsFromOnset": 766.667,
+      "opticalTopPt": 687,
+      "widthPt": 89
+    },
+    {
+      "frame": 120,
+      "pts": "2016667/1000000",
+      "millisecondsFromOnset": 783.334,
+      "opticalTopPt": 687,
+      "widthPt": 89
+    },
+    {
+      "frame": 121,
+      "pts": "2033333/1000000",
+      "millisecondsFromOnset": 800.0,
+      "opticalTopPt": 687,
+      "widthPt": 89
+    },
+    {
+      "frame": 122,
+      "pts": "41/20",
+      "millisecondsFromOnset": 816.667,
+      "opticalTopPt": 687,
+      "widthPt": 89
+    },
+    {
+      "frame": 123,
+      "pts": "2066667/1000000",
+      "millisecondsFromOnset": 833.334,
+      "opticalTopPt": 687,
+      "widthPt": 89
+    },
+    {
+      "frame": 124,
+      "pts": "2083333/1000000",
+      "millisecondsFromOnset": 850.0,
+      "opticalTopPt": 687,
+      "widthPt": 89
+    },
+    {
+      "frame": 125,
+      "pts": "21/10",
+      "millisecondsFromOnset": 866.667,
+      "opticalTopPt": 687,
+      "widthPt": 89
+    },
+    {
+      "frame": 126,
+      "pts": "2116667/1000000",
+      "millisecondsFromOnset": 883.334,
+      "opticalTopPt": 687,
+      "widthPt": 89
+    },
+    {
+      "frame": 127,
+      "pts": "2133333/1000000",
+      "millisecondsFromOnset": 900.0,
+      "opticalTopPt": 687,
+      "widthPt": 89
+    },
+    {
+      "frame": 128,
+      "pts": "43/20",
+      "millisecondsFromOnset": 916.667,
+      "opticalTopPt": 687,
+      "widthPt": 89
+    },
+    {
+      "frame": 129,
+      "pts": "2166667/1000000",
+      "millisecondsFromOnset": 933.334,
+      "opticalTopPt": 687,
+      "widthPt": 89
+    },
+    {
+      "frame": 130,
+      "pts": "2183333/1000000",
+      "millisecondsFromOnset": 950.0,
+      "opticalTopPt": 687,
+      "widthPt": 89
+    },
+    {
+      "frame": 131,
+      "pts": "11/5",
+      "millisecondsFromOnset": 966.667,
+      "opticalTopPt": 687,
+      "widthPt": 89
+    },
+    {
+      "frame": 132,
+      "pts": "2216667/1000000",
+      "millisecondsFromOnset": 983.334,
+      "opticalTopPt": 687,
+      "widthPt": 89
+    },
+    {
+      "frame": 133,
+      "pts": "2233333/1000000",
+      "millisecondsFromOnset": 1000.0,
+      "opticalTopPt": 687,
+      "widthPt": 89
+    },
+    {
+      "frame": 134,
+      "pts": "9/4",
+      "millisecondsFromOnset": 1016.667,
+      "opticalTopPt": 686,
+      "widthPt": 89
+    },
+    {
+      "frame": 135,
+      "pts": "2266667/1000000",
+      "millisecondsFromOnset": 1033.334,
+      "opticalTopPt": 685,
+      "widthPt": 89
+    },
+    {
+      "frame": 136,
+      "pts": "2283333/1000000",
+      "millisecondsFromOnset": 1050.0,
+      "opticalTopPt": 683,
+      "widthPt": 89
+    },
+    {
+      "frame": 137,
+      "pts": "23/10",
+      "millisecondsFromOnset": 1066.667,
+      "opticalTopPt": 681,
+      "widthPt": 89
+    },
+    {
+      "frame": 138,
+      "pts": "2316667/1000000",
+      "millisecondsFromOnset": 1083.334,
+      "opticalTopPt": 679,
+      "widthPt": 89
+    },
+    {
+      "frame": 139,
+      "pts": "2333333/1000000",
+      "millisecondsFromOnset": 1100.0,
+      "opticalTopPt": 677,
+      "widthPt": 89
+    },
+    {
+      "frame": 140,
+      "pts": "47/20",
+      "millisecondsFromOnset": 1116.667,
+      "opticalTopPt": 676,
+      "widthPt": 89
+    },
+    {
+      "frame": 141,
+      "pts": "2366667/1000000",
+      "millisecondsFromOnset": 1133.334,
+      "opticalTopPt": 675,
+      "widthPt": 89
+    },
+    {
+      "frame": 142,
+      "pts": "2383333/1000000",
+      "millisecondsFromOnset": 1150.0,
+      "opticalTopPt": 674,
+      "widthPt": 89
+    },
+    {
+      "frame": 143,
+      "pts": "12/5",
+      "millisecondsFromOnset": 1166.667,
+      "opticalTopPt": 674,
+      "widthPt": 89
+    },
+    {
+      "frame": 144,
+      "pts": "2416667/1000000",
+      "millisecondsFromOnset": 1183.334,
+      "opticalTopPt": 673,
+      "widthPt": 89
+    },
+    {
+      "frame": 145,
+      "pts": "2433333/1000000",
+      "millisecondsFromOnset": 1200.0,
+      "opticalTopPt": 673,
+      "widthPt": 89
+    },
+    {
+      "frame": 146,
+      "pts": "49/20",
+      "millisecondsFromOnset": 1216.667,
+      "opticalTopPt": 672,
+      "widthPt": 89
+    },
+    {
+      "frame": 147,
+      "pts": "2466667/1000000",
+      "millisecondsFromOnset": 1233.334,
+      "opticalTopPt": 672,
+      "widthPt": 89
+    },
+    {
+      "frame": 148,
+      "pts": "2483333/1000000",
+      "millisecondsFromOnset": 1250.0,
+      "opticalTopPt": 672,
+      "widthPt": 89
+    },
+    {
+      "frame": 149,
+      "pts": "5/2",
+      "millisecondsFromOnset": 1266.667,
+      "opticalTopPt": 672,
+      "widthPt": 89
+    },
+    {
+      "frame": 150,
+      "pts": "2516667/1000000",
+      "millisecondsFromOnset": 1283.334,
+      "opticalTopPt": 672,
+      "widthPt": 89
+    },
+    {
+      "frame": 151,
+      "pts": "2533333/1000000",
+      "millisecondsFromOnset": 1300.0,
+      "opticalTopPt": 672,
+      "widthPt": 89
+    },
+    {
+      "frame": 152,
+      "pts": "51/20",
+      "millisecondsFromOnset": 1316.667,
+      "opticalTopPt": 672,
+      "widthPt": 89
+    },
+    {
+      "frame": 153,
+      "pts": "2566667/1000000",
+      "millisecondsFromOnset": 1333.334,
+      "opticalTopPt": 672,
+      "widthPt": 89
+    }
+  ]
+}

@@ -7,7 +7,7 @@ import json
 import os
 from pathlib import Path, PurePosixPath
 import tempfile
-from zipfile import ZIP_DEFLATED, ZipFile, ZipInfo
+from zipfile import BadZipFile, ZIP_DEFLATED, ZipFile, ZipInfo
 
 ROOT = Path(__file__).resolve().parents[1]
 SKILL = "imessage-motion-recreation"
@@ -18,10 +18,12 @@ LOCAL_ONLY = {"observer/exclusions.json"}
 EXTERNAL_SUFFIXES = {".mp4", ".mov", ".mp3", ".m4a", ".wav", ".flac", ".ogg", ".ttf", ".otf", ".woff", ".woff2"}
 SYNTHETIC_PICTURE_FIXTURES = {"sound/fixtures/picture.mp4", "sound/fixtures/revised.mp4"}
 FROZEN = {
+    "imessage-motion-complete-skill-v3.zip",
     "imessage-motion-recreation-skill.zip",
     "imessage-motion-recreation-skill-public-update.zip",
     "imessage-motion-recreation-with-ui-audio-skill.zip",
     "imessage-motion-recreation-ui-audio-final-skill.zip",
+    "release-verification-v3.zip",
 }
 
 
@@ -42,6 +44,8 @@ def skill_files(root):
                 raise ValueError(f"invalid mounted file in skill: {relative}")
             if relative in LOCAL_ONLY:
                 continue
+            if name == ".env" or name.startswith(".env."):
+                raise ValueError(f"local environment file in skill: {relative}")
             if path.suffix.lower() in EXTERNAL_SUFFIXES and relative not in SYNTHETIC_PICTURE_FIXTURES:
                 raise ValueError(f"put media and fonts in the editable project bundle: {relative}")
             files[relative] = path
@@ -68,6 +72,8 @@ def verify(out):
         if bad := archive.testzip():
             raise ValueError(f"corrupt ZIP member: {bad}")
         hashes = json.loads(archive.read(manifest))
+        if not isinstance(hashes, dict) or not all(isinstance(value, str) for value in hashes.values()):
+            raise ValueError("invalid checksum manifest")
         if set(names) != {f"{SKILL}/{name}" for name in hashes} | {manifest}:
             raise ValueError("ZIP contents differ from the checksum manifest")
         for name, expected in hashes.items():
@@ -113,7 +119,7 @@ def main():
     args = parser.parse_args()
     try:
         result = make_zip(args.out.resolve()) if args.out else verify(args.verify.resolve())
-    except (ValueError, OSError, KeyError) as exc:
+    except (BadZipFile, ValueError, OSError, KeyError) as exc:
         parser.exit(1, f"{exc}\n")
     print(json.dumps(result, indent=2))
 

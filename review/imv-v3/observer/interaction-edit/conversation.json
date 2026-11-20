@@ -1,0 +1,141 @@
+{
+  "version": 1,
+  "skin": "film-paper",
+  "conversationId": "station",
+  "title": "Workshop meetup",
+  "service": "Messages \u00b7 Station pickup",
+  "participants": {
+    "alex": "Alex",
+    "morgan": "Morgan"
+  },
+  "localSenderId": "alex",
+  "display": {
+    "width": 402,
+    "height": 874
+  },
+  "fps": 24,
+  "frameCount": 136,
+  "initial": {
+    "focused": true,
+    "draft": "I am bringing the backup microphone and the adapter. Meet me by the stage door after the sound check.",
+    "messages": [
+      {
+        "id": "early",
+        "senderId": "morgan",
+        "text": "I'm on the earlier train. Are you already near the station?"
+      },
+      {
+        "id": "arrival",
+        "senderId": "alex",
+        "text": "Almost. The front of the station is under construction and the usual entrance is fenced off.",
+        "receipt": "Read"
+      },
+      {
+        "id": "pickup",
+        "senderId": "morgan",
+        "text": "Use the side street by the newsstand. The little blue sign leads straight to the platform stairs."
+      },
+      {
+        "id": "check",
+        "senderId": "alex",
+        "text": "Got it. Which end of the platform should I aim for?"
+      },
+      {
+        "id": "map",
+        "senderId": "morgan",
+        "text": "Far end, closest to the pedestrian crossing. There's a bench in front of the stairwell."
+      },
+      {
+        "id": "exit",
+        "senderId": "morgan",
+        "text": "I can walk up to the exit if it's crowded."
+      }
+    ]
+  },
+  "events": [
+    {
+      "id": "station.send",
+      "kind": "send",
+      "frame": 19,
+      "message": {
+        "id": "meet"
+      }
+    },
+    {
+      "id": "station.delivered",
+      "kind": "receipt",
+      "frame": 28,
+      "messageId": "meet",
+      "status": "Delivered"
+    },
+    {
+      "id": "station.typing",
+      "kind": "typing",
+      "frame": 30,
+      "senderId": "morgan",
+      "active": true
+    },
+    {
+      "id": "station.reply",
+      "kind": "receive",
+      "frame": 44,
+      "message": {
+        "id": "reply",
+        "senderId": "morgan",
+        "text": "Perfect. I'll wait beside the bicycle rack."
+      }
+    },
+    {
+      "id": "station.press",
+      "kind": "overlay",
+      "frame": 53,
+      "surface": "context",
+      "messageId": "meet"
+    },
+    {
+      "id": "station.love",
+      "kind": "reaction",
+      "frame": 74,
+      "messageId": "meet",
+      "mark": "Wow"
+    },
+    {
+      "id": "station.scroll",
+      "kind": "scroll",
+      "frame": 80,
+      "offset": 170
+    },
+    {
+      "id": "station.push-in",
+      "kind": "camera",
+      "frame": 87,
+      "scale": 1.1,
+      "x": 0,
+      "y": -12
+    },
+    {
+      "id": "station.return",
+      "kind": "scroll",
+      "frame": 105,
+      "offset": 0
+    },
+    {
+      "id": "station.blur",
+      "kind": "focus",
+      "frame": 117,
+      "focused": false
+    }
+  ],
+  "cues": [
+    {
+      "id": "station.send.click",
+      "eventId": "station.send",
+      "offsetSamples": 0
+    },
+    {
+      "id": "station.reaction.tap",
+      "eventId": "station.love",
+      "offsetSamples": 0
+    }
+  ]
+}

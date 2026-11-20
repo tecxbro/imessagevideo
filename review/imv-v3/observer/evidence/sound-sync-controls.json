@@ -1,0 +1,38 @@
+{
+  "correct": {
+    "pass": true,
+    "verdict": "pass",
+    "frame": 12,
+    "error_ms": 0.0
+  },
+  "late": {
+    "pass": false,
+    "verdict": "late",
+    "frame": 12,
+    "error_ms": 200.0
+  },
+  "missing": {
+    "pass": false,
+    "verdict": "missing",
+    "frame": 12,
+    "error_ms": null
+  },
+  "jointly_shifted": {
+    "pass": false,
+    "verdict": "late",
+    "frame": 12,
+    "error_ms": 200.0
+  },
+  "stale": {
+    "pass": false,
+    "verdict": "early",
+    "frame": 18,
+    "error_ms": -250.0
+  },
+  "remapped": {
+    "pass": true,
+    "verdict": "pass",
+    "frame": 18,
+    "error_ms": 0.0
+  }
+}

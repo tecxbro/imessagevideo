@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 72
+  },
+  "initialUI": null,
+  "events": [
+    {
+      "id": "motion.album-page-turn.page-edge-lift",
+      "kind": "drag",
+      "target": "turning-front",
+      "frame": 17,
+      "layerIds": [
+        "turning-front"
+      ]
+    },
+    {
+      "id": "motion.album-page-turn.page-spine-cross",
+      "kind": "gesture_change",
+      "target": "turning-back",
+      "frame": 36,
+      "layerIds": [
+        "turning-back"
+      ]
+    },
+    {
+      "id": "motion.album-page-turn.page-settle",
+      "kind": "gesture_end",
+      "target": "turning-back",
+      "frame": 54,
+      "layerIds": [
+        "turning-back"
+      ]
+    }
+  ],
+  "cues": []
+}
