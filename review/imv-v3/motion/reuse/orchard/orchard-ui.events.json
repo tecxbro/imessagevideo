@@ -12,47 +12,68 @@
         "id": "message.opening",
         "senderId": "account.remote",
         "text": "Do you have a minute?",
-        "attachmentIds": []
+        "attachmentIds": [],
+        "reactions": {},
+        "edited": false,
+        "receipt": ""
       },
       {
         "id": "message.acknowledged",
         "senderId": "account.self",
         "text": "Yes, go ahead.",
-        "attachmentIds": []
+        "attachmentIds": [],
+        "reactions": {},
+        "edited": false,
+        "receipt": ""
       },
       {
         "id": "message.prior",
         "senderId": "account.remote",
         "text": "I can check the details.",
-        "attachmentIds": []
+        "attachmentIds": [],
+        "reactions": {},
+        "edited": false,
+        "receipt": ""
       },
       {
         "id": "message.context",
         "senderId": "account.self",
         "text": "Could you confirm what you found?",
-        "attachmentIds": []
+        "attachmentIds": [],
+        "reactions": {},
+        "edited": false,
+        "receipt": ""
       },
       {
         "id": "message.detail",
         "senderId": "account.remote",
         "text": "I have the first part.",
-        "attachmentIds": []
+        "attachmentIds": [],
+        "reactions": {},
+        "edited": false,
+        "receipt": ""
       },
       {
         "id": "message.request",
         "senderId": "account.self",
         "text": "The power is out. Is tonight still on?",
-        "attachmentIds": []
+        "attachmentIds": [],
+        "reactions": {},
+        "edited": false,
+        "receipt": ""
       }
     ],
     "composer": {
       "text": "",
-      "focused": false
+      "focused": false,
+      "keyboardVisible": false
     },
     "viewport": {
       "surface": "conversation",
-      "anchorMessageId": "message.request"
-    }
+      "anchorMessageId": "message.request",
+      "scrollOffset": 0
+    },
+    "typingSenderIds": []
   },
   "events": [
     {
@@ -67,53 +88,77 @@
             "id": "message.opening",
             "senderId": "account.remote",
             "text": "Do you have a minute?",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
           },
           {
             "id": "message.acknowledged",
             "senderId": "account.self",
             "text": "Yes, go ahead.",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
           },
           {
             "id": "message.prior",
             "senderId": "account.remote",
             "text": "I can check the details.",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
           },
           {
             "id": "message.context",
             "senderId": "account.self",
             "text": "Could you confirm what you found?",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
           },
           {
             "id": "message.detail",
             "senderId": "account.remote",
             "text": "I have the first part.",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
           },
           {
             "id": "message.request",
             "senderId": "account.self",
             "text": "The power is out. Is tonight still on?",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
           },
           {
             "id": "message.reply",
             "senderId": "account.remote",
             "text": "Bring lanterns. We open at dusk.",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
           }
         ],
         "composer": {
           "text": "",
-          "focused": false
+          "focused": false,
+          "keyboardVisible": false
         },
         "viewport": {
           "surface": "conversation",
-          "anchorMessageId": "message.reply"
-        }
+          "anchorMessageId": "message.reply",
+          "scrollOffset": 0
+        },
+        "typingSenderIds": []
       },
       "layerIds": [
         "ui.message/message.reply"

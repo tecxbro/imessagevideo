@@ -33,33 +33,37 @@ const ALIASES = [
   [/\b(?:compose(?:r)? bar|input (?:box|field)|message (?:box|field)|typing field|draft field|reply input|text entry)\b/g, 'composer'],
   [/\b(heading and (?:the )?)input\b/g, '$1composer'],
   [/\b(?:old|older|earlier|previous|prior|existing) (?:chat )?(?:messages|rows|bubbles|texts)\b/g, 'transcript'],
+  [/\b(?:messages|bubbles|chat rows) (?:already |currently |now )?(?:on screen|visible|in view)\b/g, 'transcript'],
   [/\b(?:every|all) (?:chat )?(?:bubble|bubbles|messages)\b/g, 'transcript'],
   [/\b(?:conversation|conversations|group thread|message thread|chat thread)\b/g, 'chat'],
   [/\bchat (?=(?:over|under) (?:it|them)\b)/g, 'transcript '],
   [/\b(?:nudg(?:e[sd]?|ing)|shift(?:s|ing|ed)?)\b/g, 'shift'],
+  [/\btouch(?:es|ed|ing)?\b/g, 'tap'],
   [/\b(?:answer(?:s|ed|ing)?|respond(?:s|ed|ing)?|responses?)\b/g, 'reply'],
   [/\b(?:sent|sending|sends)\b/g, 'send'],
+  [/\bletters?\b/g, 'characters'],
   [/\btyping progress\b/g, 'type draft'],
   [/\b(?:typed|typing|types)\b/g, 'type'],
 ];
 
-const STOP = new Set(('a an and are at be can could do enough for from get had has have he her him how i if in into is it its just let lets like make me my of on one only our out please put so some that the their them there these they this those to us use want was we were what when where which who will with would you your should can t s show see viewer notice stays place keep whole under over around then avoid without no not never as yet while itself every each exactly').split(' '));
+const STOP = new Set(('a an and are at be can could do enough for from get had has have he her him how i if in into is it its just let lets like make me my of on one only our out please put so some that the their them there these they this those to us use want was we were what when where which who will with would you your should can t s show see viewer notice stays stay place keep whole under over around then avoid without no not never as yet while itself every each exactly but').split(' '));
 const GENERAL = new Set(['move', 'slide', 'fixed', 'photo', 'heading', 'chat', 'control', 'button', 'card', 'message', 'screen', 'carousel', 'swipe', 'text', 'camera']);
 const ACTOR_NAME = 'heading|photos|avatar|composer|camera|background|controls|buttons?|chat|viewport|transcript';
 const ACTOR = new RegExp('\\b(' + ACTOR_NAME + ')\\b', 'g');
-const MOTION = 'slide|move|rise|drop|shift|sweep|rotate|expand|shrink|fade|swipe|bounce|zoom|scroll|animate|bring|ease|assemble';
+const MOTION = 'slide|move|rise|drop|shift|push|sweep|rotate|expand|shrink|fade|swipe|bounce|zoom|scroll|animate|bring|ease|assemble';
 const QUALIFIER = '(?:the |a |an |all |each |every |both |our |your |these |those |new |existing |current |first |long |wide |small )*';
 const PAIR = {
   photos: {id:'photos-under-fixed-heading', fixed:'heading', defaultDirection:'left', adaptDirections:['right']},
   heading: {id:'heading-over-fixed-photos', fixed:'photos', defaultDirection:'right', adaptDirections:['left', 'up', 'down', 'vertical']},
 };
-const DIRECTION = 'up|down|left|right|vertical|horizontal';
+const DIRECTION = 'up|down|higher|lower|left|right|vertical|horizontal';
+const DIRECTION_MODIFIER = '(?:to (?:the )?|a little |a bit |slightly |somewhat )?';
 const FIXED_BEFORE = new RegExp('\\b(?:fixed|still|keep|hold|pin|lock|freeze|arrest|immobilize|leave alone|(?:not|never|without|avoid) (?:a |any )?(?:' + MOTION + ')) (?:up |down )?' + QUALIFIER + '$');
 const FIXED_AFTER = new RegExp('^ (?:that |which |should |must |can |will |does |are |is |all |both |remains? |stays? |stay )*(?:fixed\\b|(?:not|never) (?:' + MOTION + ')\\b|alone\\b|still\\b)');
 const MOVE_BEFORE = new RegExp('\\b(' + MOTION + ') (' + DIRECTION + ' )?' + QUALIFIER + '$');
 const DESCRIBED_TARGET = new RegExp('^\\s*(?:only |just |please )?(' + MOTION + ') (' + DIRECTION + ' )?(?:the |a |an |each |my |our |your )(?:[a-z]+ ){0,4}$');
-const MOVE_AFTER = new RegExp('^ (?:that |which |itself |themselves |alone |should |must |will |would |to )*(' + MOTION + ')(?:s|es)?\\b(?: (?:to (?:the )?)?(' + DIRECTION + ')\\b)?');
-const DIRECTION_AFTER = new RegExp('^ (?:(?:over|under|behind) (?:it|them) )?(?:to (?:the )?)?(' + DIRECTION + ')\\b');
+const MOVE_AFTER = new RegExp('^ (?:that |which |so it |so they |itself |themselves |alone |should |must |will |would |to )*(' + MOTION + ')(?:s|es)?\\b(?: ' + DIRECTION_MODIFIER + '(' + DIRECTION + ')\\b)?');
+const DIRECTION_AFTER = new RegExp('^ (?:(?:over|under|behind) (?:it|them) )?' + DIRECTION_MODIFIER + '(' + DIRECTION + ')\\b');
 const COORDINATED = new RegExp('\\b(photos|heading) and ' + QUALIFIER + '(photos|heading) (?:both )?(' + MOTION + ')(?:s|es)?\\b');
 const JOINT_TARGET = new RegExp('\\b(' + MOTION + ') ' + QUALIFIER + '(photos|heading) and ' + QUALIFIER + '(photos|heading)\\b');
 const JOINED_ACTORS = new RegExp('\\b(' + ACTOR_NAME + ') and ' + QUALIFIER + '(' + ACTOR_NAME + ')\\b', 'g');
@@ -124,7 +128,7 @@ function briefRoles(input) {
       const direction = preceding?.[2]?.trim() ?? following?.[2] ??
         (preceding ? after.match(DIRECTION_AFTER)?.[1] : undefined) ?? (verb === 'rise' ? 'up' : undefined);
       if (verb) {
-        moving.set(name, {verb, direction});
+        moving.set(name, {verb, direction: {higher: 'up', lower: 'down'}[direction] ?? direction});
       }
     }
     for (const pair of clause.matchAll(JOINED_ACTORS)) {
@@ -162,15 +166,20 @@ const EDITS = [
 ];
 const SPECIAL = /\b(?:3d|three dimensional|page curl|cloth physics|fabric simulation|fluid simulation|ray tracing|particle simulation|elastic grid|glass reflection|liquid morph|lens flare|live tracking|procedural fire|blow up into confetti)\b/g;
 const FORBID = /\b(?:without|avoid|no|never|not) (?:a |an |any |the )?(?:any )?([a-z]+)\b/g;
-const TECHNIQUES = new Set('bounce camera cut dim fade flip zoom rotate spin slide rise shake explode tilt blur pulse strobe wobble send swipe'.split(' '));
+const BEFORE_SEND = /\b(?:before|prior to) (?:i |you |they |we |the user |the person |it is |it gets |the message is )?(?:(?:hit|press|tap) )?send\b/;
+const TECHNIQUES = new Set('bounce camera cut dim fade flip zoom rotate spin slide rise shake explode tilt blur pulse strobe wobble send swipe expand'.split(' '));
 const CAPABILITIES = {
   zoom: ['scale', 'scal', 'pinch'],
+  expand: ['scale', 'scal'],
   slide: ['shift', 'drag', 'rail'],
   fade: ['opacity', 'dissolve'],
 };
 
 function avoidedTechniques(input) {
-  return [...normalized(input).matchAll(FORBID)].map(match => stem(match[1])).filter(word => TECHNIQUES.has(word));
+  const brief = normalized(input);
+  const forbidden = [...brief.matchAll(FORBID)].map(match => stem(match[1])).filter(word => TECHNIQUES.has(word));
+  if (BEFORE_SEND.test(brief)) forbidden.push('send');
+  return forbidden;
 }
 
 function requestedSpecial(input) {
@@ -299,7 +308,9 @@ function isHold(input, roles) {
   if (roles.moving.size) return false;
   return /^(?:just |please )?(?:still|fixed|steady)(?:$|[.!?]| (?:so|for|to|while|on)\b)/.test(input) || /\b(?:still|steady|fixed)\b/.test(input)
     && /\b(?:everything|whole|entire|both|all of it|frame|shot|screen|completely)\b/.test(input)
-    || /\b(?:reading hold|time to read|long enough to read|(?:keep|hold|leave) .* while .* read)\b/.test(input);
+    || /\b(?:reading hold|(?:time|long enough) to (?:read|finish reading|keep reading))\b/.test(input)
+    || /\b(?:keep|hold|leave) (?:it|this|that|the frame|the shot) (?:exactly |just )?(?:like this|as is|as it is)\b/.test(input)
+    || /\b(?:keep|hold|leave) .* while .* read(?:ing)?\b/.test(input);
 }
 
 function selectBeat(entries, request) {
