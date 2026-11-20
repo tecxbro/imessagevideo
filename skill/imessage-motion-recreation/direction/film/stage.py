@@ -170,14 +170,20 @@ def _front_plate(audience):
         d.ellipse((85, 452, 156, 532), fill=(17, 12, 21))
         d.polygon([(42, 540), (61, 518), (102, 502), (146, 503), (197, 527),
                    (206, 540)], fill=(17, 12, 21))
-        d.ellipse((756, 442, 836, 526), fill=(17, 12, 21))
-        d.polygon([(713, 540), (721, 519), (767, 497), (821, 494),
-                   (877, 514), (898, 540)], fill=(17, 12, 21))
-        d.arc((756, 442, 836, 526), 194, 292, fill=(77, 36, 41), width=2)
         d.ellipse((378, 483, 431, 547), fill=(21, 13, 22))
         d.polygon([(344, 540), (369, 522), (403, 522), (439, 531), (459, 540)],
                   fill=(21, 13, 22))
     return face
+
+
+def _audience_lean(draw, phase):
+    dx, dy = round(-18 * phase), round(-9 * phase)
+    head = (756 + dx, 442 + dy, 836 + dx, 526 + dy)
+    draw.ellipse(head, fill=(17, 12, 21))
+    draw.polygon([(713, 540), (721 + dx / 3, 519), (767 + dx, 497 + dy),
+                  (821 + dx, 494 + dy), (877 + dx / 3, 514), (898, 540)],
+                 fill=(17, 12, 21))
+    draw.arc(head, 194, 292, fill=(77, 36, 41), width=2)
 
 
 def _crescent(radius, rotation=0):
@@ -195,12 +201,14 @@ def _at(points, x, y, squash=1):
     return [(x + dx, y + dy * squash) for dx, dy in points]
 
 
-def stage(moon: float, audience: bool = True, rabbit_motion: float = 0) -> Image.Image:
-    """Render the theatre. Moon progress starts offscreen and allows overshoot."""
+def stage(
+    moon: float, audience: bool = True, rabbit_motion: float = 0, audience_motion: float = 0
+) -> Image.Image:
+    """Render the theatre. Audience phase runs from rest (0) to forward lean (1)."""
     plate = _stage_plate().copy()
     plate.paste(SILHOUETTE, (0, 0, WIDTH, HEIGHT), _rabbit_pose(round(24 * rabbit_motion)))
     if moon > 0:
-        x = 824 - 191 * moon
+        x = 800 - 167 * moon
         y = 222 - 45 * moon + 3 * math.sin(9 * moon)
         shape = _at(_crescent(37, rotation=-.35 + moon * .15), x, y)
 
@@ -210,6 +218,8 @@ def stage(moon: float, audience: bool = True, rabbit_motion: float = 0) -> Image
 
         _shape_shadow(plate, draw_moon, (55, 33, 43), blur=.88, bounds=(192, 79, 765, 423))
     plate.paste(_front_plate(audience), (0, 0), _front_plate(audience))
+    if audience:
+        _audience_lean(ImageDraw.Draw(plate), audience_motion)
     return plate
 
 
@@ -220,6 +230,17 @@ def _spool(draw, x, y, radius, dark, light):
         draw.arc((x - radius + 3, y - radius * .44 + delta,
                   x + radius - 3, y + radius * .36 + delta), 0, 180, fill=light)
     draw.ellipse((x - 5, y - 3, x + 4, y + 3), fill=(26, 16, 23))
+
+
+def _brass_star(draw, x, y, radius, turn, gold):
+    tips = []
+    for tip in range(10):
+        angle = turn + tip * math.tau / 10
+        width = radius if tip % 2 == 0 else radius * .43
+        tips.append((x + math.cos(angle) * width, y + math.sin(angle) * width * .73))
+    draw.polygon([(px + 2, py + 4) for px, py in tips], fill=(66, 32, 32))
+    draw.polygon(tips, fill=gold, outline=(240, 180, 113))
+    draw.line([tips[4], (x, y), tips[8]], fill=(239, 170, 101))
 
 
 @lru_cache(maxsize=1)
@@ -259,6 +280,9 @@ def _table_plate():
                (51, 356)], fill=(39, 24, 29))
     d.line([(52, 355), (127, 376), (195, 436)], fill=(80, 46, 41), width=2)
     d.line([(82, 425), (127, 376), (177, 356)], fill=(65, 38, 36), width=2)
+    _brass_star(d, 619, 218, 13, .08, (194, 127, 70))
+    _brass_star(d, 672, 144, 17, .50, (209, 145, 80))
+    _brass_star(d, 756, 146, 11, -.21, (184, 114, 62))
     return plate
 
 
