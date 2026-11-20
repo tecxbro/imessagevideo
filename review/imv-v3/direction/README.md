@@ -9,6 +9,7 @@ text and agent reply on iMessage in an authored scenario.
 - [Direction skill](../../../skill/imessage-motion-recreation/direction/SKILL.md) and [ten optional film studies](../../../skill/imessage-motion-recreation/direction/studies/README.md)
 - [Original rough cut](rough.mp4) and [locked silent picture](locked.mp4)
 - [Revision evidence](REVISION.md), [Keiki claim record](CLAIMS.md) and [source audit](SOURCES.md)
+- [Independent second-brief status](SECOND-BRIEF.md)
 - [Picture event map](locked.events.json) and [independent send landmark check](send-landmark-result.json)
 
 Picture is H.264, 960 × 540, 24/1 fps and exactly 360 frames. Both silent
