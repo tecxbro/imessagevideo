@@ -20,16 +20,25 @@ intended offsets, each measured at 0.0 ms error. It reported −4.14 dBTP,
 zero audio-clock discontinuity and no energy dropout. Sound measured
 −29.7 LUFS integrated. Human listening remains pending.
 
-Re-run the encoder or decoded-export check using the integrated Sound
-runtime. On the standalone Direction branch, export Sound at its pinned
-commit to an isolated directory and install the dependencies documented
-there. Run the following from the repository root.
+Re-run the encoder or decoded-export check from the repository root using
+the integrated Sound runtime.
 
 ```sh
-S=skill/imessage-motion-recreation/sound
+S=${S:-skill/imessage-motion-recreation/sound}
 R=review/imv-v3/direction
 python3 "$S/sound.py" mix "$R/sound/locked/a.json" "$R/locked.mp4" /tmp/moon-mix
 python3 "$S/sound.py" verify "$R/sound/locked/a.json" "$R/locked.mp4" \
   "$R/the-moon-cue.mp4" "$R/sound/locked/a/manifest.json"
 (cd "$R" && sha256sum -c final.sha256)
+```
+
+On the standalone Direction branch, run this setup and use its `S` value in
+the commands above.
+
+```sh
+git fetch origin refs/heads/codex-video-v3/sound:refs/remotes/origin/codex-video-v3/sound
+sound_runtime=$(mktemp -d)
+git archive 1ba37bb skill/imessage-motion-recreation/sound | tar -x -C "$sound_runtime"
+S="$sound_runtime/skill/imessage-motion-recreation/sound"
+python3 -m pip install -r "$S/requirements.txt"
 ```

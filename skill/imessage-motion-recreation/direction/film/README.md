@@ -28,8 +28,10 @@ python3 "$D/render.py" --frame 153 --out /tmp/moon-frame-153.png
 ```
 
 The integrated skill finds `ui/` alongside `direction/`. In the standalone
-Direction branch, export the exact adapter used for this picture and pass its
-parent directory.
+Direction branch, use the pinned adapter below and pass its parent directory.
+Use the same pin for byte-for-byte reproduction in any checkout. The current
+adapter also compiles this edit, with its own screen pixels. A newly rendered
+picture needs its own Sound landmark check before mixing.
 
 ```sh
 git fetch origin refs/heads/codex-video-v3/ui:refs/remotes/origin/codex-video-v3/ui
