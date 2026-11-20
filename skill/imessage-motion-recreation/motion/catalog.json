@@ -2,9 +2,9 @@
   "version": 1,
   "counts": {
     "observedOnly": 7,
-    "playableEntries": 73,
-    "reusedEntries": 5,
-    "distinctPlayableMotions": 71
+    "playableEntries": 77,
+    "reusedEntries": 6,
+    "distinctPlayableMotions": 75
   },
   "frameConvention": "Output event frame zero is the first decoded frame. Source ranges in seconds are half-open.",
   "entries": [
@@ -6746,6 +6746,366 @@
         "photos": "array of local PNG, JPEG or WebP paths, relative to the content JSON"
       },
       "renderCommand": "node motion/cli.mjs render --id screen-to-physical-prop --method pillow --out /tmp/screen-to-physical-prop.mp4"
+    },
+    {
+      "id": "metric-count",
+      "title": "Count between totals in place",
+      "moves": "Only the numeric value steps through intermediate whole numbers, then the final value holds.",
+      "fixed": "The heading, metric label, optional unit and field stay in place.",
+      "notice": "Readable growth or reduction on one comparable measure while the label retains its meaning.",
+      "fits": "Count one metric up or down between known endpoints without scrolling its digits.",
+      "avoid": "An odometer needs rolling glyphs. Use a still when only a final value is supported.",
+      "intents": [
+        "Count a single number up in place and hold the total",
+        "Make the number tick up with the label fixed",
+        "Count down to a final number with fixed title"
+      ],
+      "editable": [
+        "heading",
+        "copy",
+        "detail",
+        "values"
+      ],
+      "defaults": {
+        "heading": "A growing delivery total",
+        "copy": "Completed trips",
+        "detail": "trips this week",
+        "values": [
+          620,
+          1280
+        ]
+      },
+      "source": {
+        "kind": "authored",
+        "ref": "skill/imessage-motion-recreation/motion/packs/attention.mjs",
+        "range": [
+          0,
+          2.4
+        ],
+        "note": "Adapted from a fresh, Pillow-authored volunteer count reuse. The editable canonical recipe preserves the value trajectory and event timing."
+      },
+      "implementation": "packs/attention.mjs",
+      "preview": "review/imv-v3/motion/metric-count.mp4",
+      "sha256": "8947f2326310b1368f899a0be45f276e25c429320441e73eab78f41c67782fbb",
+      "eventMap": "review/imv-v3/motion/metric-count.events.json",
+      "picture": {
+        "fpsNum": 30,
+        "fpsDen": 1,
+        "frameCount": 72
+      },
+      "events": [
+        {
+          "id": "motion.metric-count.count-begins",
+          "kind": "metric.count.begin",
+          "frame": 10
+        },
+        {
+          "id": "motion.metric-count.final-value-held",
+          "kind": "metric.count.hold",
+          "frame": 55
+        }
+      ],
+      "renderers": [
+        {
+          "method": "pillow",
+          "evidence": "full-preview",
+          "frames": 72
+        },
+        {
+          "method": "html",
+          "evidence": "retimed-nine-frame-probe",
+          "distinctFrames": 9
+        },
+        {
+          "method": "gsap",
+          "evidence": "retimed-nine-frame-probe",
+          "distinctFrames": 9
+        },
+        {
+          "method": "remotion",
+          "evidence": "retimed-nine-frame-probe",
+          "distinctFrames": 9
+        },
+        {
+          "method": "motion-canvas",
+          "evidence": "retimed-nine-frame-probe",
+          "distinctFrames": 9
+        }
+      ],
+      "editableFields": {
+        "heading": "text",
+        "copy": "text",
+        "detail": "text",
+        "values": "array of 1–24 finite numbers; use the entry notes for meaning and bounds"
+      },
+      "renderCommand": "node motion/cli.mjs render --id metric-count --method pillow --out /tmp/metric-count.mp4"
+    },
+    {
+      "id": "text-scramble-resolve",
+      "title": "Resolve shifting glyphs to one fixed title",
+      "moves": "Unsettled character slots change while their positions stay fixed, then resolve into a readable title left to right.",
+      "fixed": "The title field, heading and camera hold steady.",
+      "notice": "A title changes from unreadable to definite without moving the reading position.",
+      "fits": "A short decode, establishment or reveal where delayed legibility is intentional.",
+      "avoid": "Keep accessibility-critical or instructional text readable from its first frame.",
+      "intents": [
+        "Scramble the title glyphs and resolve into a legible word",
+        "Reveal a code by decoding changing characters in place"
+      ],
+      "editable": [
+        "heading",
+        "title",
+        "detail"
+      ],
+      "defaults": {
+        "heading": "Signal received",
+        "title": "CLEAR TO OPEN",
+        "detail": "Read the final title"
+      },
+      "source": {
+        "kind": "authored",
+        "ref": "skill/imessage-motion-recreation/motion/packs/attention.mjs",
+        "range": [
+          0,
+          2.4
+        ],
+        "note": "Authored from the editorial motion pack’s deterministic glyph progression."
+      },
+      "implementation": "packs/attention.mjs",
+      "preview": "review/imv-v3/motion/text-scramble-resolve.mp4",
+      "sha256": "8286c1667566c61621149502809ce4d902af5fbb7aca9419b86368356fe39152",
+      "eventMap": "review/imv-v3/motion/text-scramble-resolve.events.json",
+      "picture": {
+        "fpsNum": 30,
+        "fpsDen": 1,
+        "frameCount": 72
+      },
+      "events": [
+        {
+          "id": "motion.text-scramble-resolve.scramble-start",
+          "kind": "label.decode.begin",
+          "frame": 11
+        },
+        {
+          "id": "motion.text-scramble-resolve.title-readable",
+          "kind": "label.decode.readable",
+          "frame": 46
+        }
+      ],
+      "renderers": [
+        {
+          "method": "pillow",
+          "evidence": "full-preview",
+          "frames": 72
+        },
+        {
+          "method": "html",
+          "evidence": "retimed-nine-frame-probe",
+          "distinctFrames": 9
+        },
+        {
+          "method": "gsap",
+          "evidence": "retimed-nine-frame-probe",
+          "distinctFrames": 9
+        },
+        {
+          "method": "remotion",
+          "evidence": "retimed-nine-frame-probe",
+          "distinctFrames": 9
+        },
+        {
+          "method": "motion-canvas",
+          "evidence": "retimed-nine-frame-probe",
+          "distinctFrames": 9
+        }
+      ],
+      "editableFields": {
+        "heading": "text",
+        "title": "text",
+        "detail": "text"
+      },
+      "renderCommand": "node motion/cli.mjs render --id text-scramble-resolve --method pillow --out /tmp/text-scramble-resolve.mp4"
+    },
+    {
+      "id": "center-gutter-open",
+      "title": "Part two images to reveal the center",
+      "moves": "Two separate picture planes slide outward in opposite directions and open a gutter for a label.",
+      "fixed": "The original frame and revealed text stay centered.",
+      "notice": "Two distinct views make room for a shared conclusion between them.",
+      "fits": "The pair and the central conclusion should remain simultaneously visible.",
+      "avoid": "A wipe replaces one field with another. Use that for an in-place before/after comparison.",
+      "intents": [
+        "Part two panels outward like curtains to reveal a label in the gap",
+        "Open a center gutter between photos"
+      ],
+      "editable": [
+        "heading",
+        "title",
+        "detail",
+        "photos"
+      ],
+      "photoCount": {
+        "min": 2,
+        "max": 2
+      },
+      "defaults": {
+        "heading": "Two routes",
+        "title": "Same destination",
+        "detail": "Two views stay visible"
+      },
+      "source": {
+        "kind": "authored",
+        "ref": "skill/imessage-motion-recreation/motion/packs/attention.mjs",
+        "range": [
+          0,
+          2.4
+        ],
+        "note": "Authored from the editorial pack’s split-plane reveal."
+      },
+      "implementation": "packs/attention.mjs",
+      "preview": "review/imv-v3/motion/center-gutter-open.mp4",
+      "sha256": "9fc18dcd47f22c59f0e4e0a7c35ea80d72937cbb801ad733cee48fdb2a4adfd2",
+      "eventMap": "review/imv-v3/motion/center-gutter-open.events.json",
+      "picture": {
+        "fpsNum": 30,
+        "fpsDen": 1,
+        "frameCount": 72
+      },
+      "events": [
+        {
+          "id": "motion.center-gutter-open.split-begins",
+          "kind": "panel.gutter.open",
+          "frame": 16
+        },
+        {
+          "id": "motion.center-gutter-open.center-readable",
+          "kind": "panel.gutter.settle",
+          "frame": 53
+        }
+      ],
+      "renderers": [
+        {
+          "method": "pillow",
+          "evidence": "full-preview",
+          "frames": 72
+        },
+        {
+          "method": "html",
+          "evidence": "retimed-nine-frame-probe",
+          "distinctFrames": 9
+        },
+        {
+          "method": "gsap",
+          "evidence": "retimed-nine-frame-probe",
+          "distinctFrames": 9
+        },
+        {
+          "method": "remotion",
+          "evidence": "retimed-nine-frame-probe",
+          "distinctFrames": 9
+        },
+        {
+          "method": "motion-canvas",
+          "evidence": "retimed-nine-frame-probe",
+          "distinctFrames": 9
+        }
+      ],
+      "editableFields": {
+        "heading": "text",
+        "title": "text",
+        "detail": "text",
+        "photos": "array of local PNG, JPEG or WebP paths, relative to the content JSON"
+      },
+      "renderCommand": "node motion/cli.mjs render --id center-gutter-open --method pillow --out /tmp/center-gutter-open.mp4"
+    },
+    {
+      "id": "hinged-swatch-fan",
+      "title": "Fan and hold swatches around a shared pin",
+      "moves": "The outer leaves rotate in opposite directions around a common pin and stop in a standing fan.",
+      "fixed": "The center leaf, visible pivot, heading and camera are fixed.",
+      "notice": "The surfaces are variants of the same collection and share a single attachment point.",
+      "fits": "Reveal three material or visual samples simultaneously around an anchored pivot.",
+      "avoid": "A stack swipe removes a top item. Use it when only one item should be active at a time.",
+      "intents": [
+        "Fan swatches outward around a pin",
+        "Rotate outer cards around one shared pivot and keep the middle still"
+      ],
+      "editable": [
+        "heading",
+        "detail",
+        "photos"
+      ],
+      "photoCount": {
+        "min": 3,
+        "max": 3
+      },
+      "defaults": {
+        "heading": "Finish options",
+        "detail": "Three swatches, one collection"
+      },
+      "source": {
+        "kind": "authored",
+        "ref": "skill/imessage-motion-recreation/motion/packs/attention.mjs",
+        "range": [
+          0,
+          2.4
+        ],
+        "note": "Authored from the composition pack’s pinned fan of three individually editable cards."
+      },
+      "implementation": "packs/attention.mjs",
+      "preview": "review/imv-v3/motion/hinged-swatch-fan.mp4",
+      "sha256": "c201eb29a84e2a4e22d9f864092e4c3209f1275e58867dd9dd116fcd96d35210",
+      "eventMap": "review/imv-v3/motion/hinged-swatch-fan.events.json",
+      "picture": {
+        "fpsNum": 30,
+        "fpsDen": 1,
+        "frameCount": 72
+      },
+      "events": [
+        {
+          "id": "motion.hinged-swatch-fan.leaves-open",
+          "kind": "swatches.open",
+          "frame": 16
+        },
+        {
+          "id": "motion.hinged-swatch-fan.fan-settled",
+          "kind": "swatches.settle",
+          "frame": 47
+        }
+      ],
+      "renderers": [
+        {
+          "method": "pillow",
+          "evidence": "full-preview",
+          "frames": 72
+        },
+        {
+          "method": "html",
+          "evidence": "retimed-nine-frame-probe",
+          "distinctFrames": 9
+        },
+        {
+          "method": "gsap",
+          "evidence": "retimed-nine-frame-probe",
+          "distinctFrames": 9
+        },
+        {
+          "method": "remotion",
+          "evidence": "retimed-nine-frame-probe",
+          "distinctFrames": 9
+        },
+        {
+          "method": "motion-canvas",
+          "evidence": "retimed-nine-frame-probe",
+          "distinctFrames": 9
+        }
+      ],
+      "editableFields": {
+        "heading": "text",
+        "detail": "text",
+        "photos": "array of local PNG, JPEG or WebP paths, relative to the content JSON"
+      },
+      "renderCommand": "node motion/cli.mjs render --id hinged-swatch-fan --method pillow --out /tmp/hinged-swatch-fan.mp4"
     }
   ],
   "observedOnly": [
@@ -6875,6 +7235,14 @@
       "sha256": "85d58f4301c7cf4998eb07e29c5d81e7d79c45baaceaf8f7bd5fa43deb9e3b09",
       "evidence": "Direction retrieved the recipe from the original missed brief and independently decoded phone release f31, prop focus f45, cut f48 and hold f60.",
       "reference": "https://github.com/tecxbro/imessagevideo/issues/7"
+    },
+    {
+      "id": "metric-count",
+      "scene": "North Quay volunteers, with a fixed Registrations label and a 620 to 1,280 count",
+      "preview": "review/imv-v3/motion/reuse/north-quay/north-quay-volunteers.mp4",
+      "sha256": "d5e367b02fac37c9918696604444b41599a434e7300ed810d8a7c780b36352d1",
+      "evidence": "An independent fresh tester used only the staged skill, preview and neutral runtime. The original prose alone selected Adapt and set the copy, endpoints and blank unit. The new H.264 export is 72 frames at 720×480, 30 fps. The first increase is f10 and the final total holds from f55.",
+      "reference": "review/imv-v3/motion/reuse/north-quay/README.md"
     }
   ]
 }

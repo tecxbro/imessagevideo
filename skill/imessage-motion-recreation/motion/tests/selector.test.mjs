@@ -188,3 +188,20 @@ test('each entry can be looked up by the authored sample wording', () => {
     }
   }
 });
+
+test('a metric endpoint hold is part of the effect, with no fixture-specific unit', () => {
+  const brief = 'For our volunteer drive recap, keep the section heading and the word Registrations steady. The figure should climb from 620 to 1,280 so the audience sees the growth, then pause on the total. Use the heading North Quay volunteers.';
+  const result = select(catalog, brief);
+  assert.deepEqual([result.action, result.matches, result.content], [
+    'adapt', ['metric-count'],
+    {values:[620,1280], detail:'', copy:'Registrations', heading:'North Quay volunteers'},
+  ]);
+});
+
+test('fixed count handles grouped signed integers, ending pauses and explicit precision gaps', () => {
+  const percent = select(catalog, 'Count the number from −20% to 50%, then pause on the total.');
+  assert.deepEqual(percent.content, {values:[-20,50], detail:'%'});
+  assert.equal(select(catalog, 'Count the value from 12.8 to 14.6.').action, 'missing');
+  assert.equal(select(catalog, 'Count the number from 12 to 12 and hold.').action, 'hold');
+  assert.deepEqual(select(catalog, 'Count up the number while the heading and label stay fixed').matches, ['metric-count']);
+});

@@ -389,6 +389,35 @@ function attachmentStackChoice(entries, brief, beats) {
   return matched(entry, brief, [], repeated ? {swipes: 2} : {});
 }
 
+function metricChoice(entries, brief) {
+  const entry = entries.find(candidate => candidate.id === 'metric-count');
+  if (!entry) return null;
+  const input = normalized(brief);
+  if (!/\b(?:number|figures?|value|count|metric|total)\b/.test(input) ||
+      !/\b(?:count (?:up|down|the (?:number|value))|climb\w*|rise|grow\w*|increment\w*|increase\w*|decrease\w*|tick up)\b/.test(input) ||
+      /\b(?:roll\w*|odometer|digit wheel)\b/.test(input) ||
+      /\b(?:not|never|no) (?:an? |the )?(?:count|change|increase)\b/.test(input)) return null;
+
+  const numeric = '([+−-]?(?:[0-9]{1,3}(?:,[0-9]{3})+|[0-9]+)(?:\\.[0-9]+)?)';
+  const endpoints = brief.match(new RegExp(`\\bfrom ${numeric}(%?) (?:to|through) ${numeric}(%?)`, 'i'));
+  if (!endpoints) return /\b(?:count the (?:number|value)|count (?:up|down) the (?:number|value)|(?:number|value) tick up)\b/.test(input) ? matched(entry, brief) : null;
+  const remaining = brief.slice(endpoints.index + endpoints[0].length);
+  const secondary = remaining.split(/\bthen\b/i).slice(1);
+  if (secondary.some(beat => !/^\s*(?:pause|hold|rest|stay|settle)\b/i.test(beat))) return null;
+  const values = [endpoints[1], endpoints[3]].map(value => Number(value.replace(/,/g, '').replace('−', '-')));
+  if (!values.every(value => Number.isSafeInteger(value) && Math.abs(value) <= 1e9)) {
+    return decision('missing', 'This fixed count shows whole numbers up to one billion. A different number format requires an editable formatter.');
+  }
+  if (values[0] === values[1]) return decision('hold', 'The initial and final values match. Keep the single total readable.');
+  const label = brief.match(/\b(?:the word|metric label|label)\s+[“"']?([\p{L}][\p{L} -]{0,32}?)[”"']?\s+(?:stays? |remain(?:s)? )?(?:fixed|steady|still)\b/iu);
+  const title = brief.match(/\b(?:use|set|name) the (?:heading|title)\s+[“"']?([^.!?;”"']{1,45})/i);
+  const suffix = endpoints[2] || endpoints[4] ? '%' : '';
+  const content = {values, detail: suffix};
+  if (label) content.copy = label[1].trim();
+  if (title) content.heading = title[1].trim();
+  return matched(entry, brief, [], content);
+}
+
 export function select(entries, request) {
   if (!Array.isArray(entries)) throw new TypeError('Pass the catalog entries as an array.');
   const brief = String(request ?? '').trim();
@@ -400,6 +429,8 @@ export function select(entries, request) {
   if (attachment) return attachment;
   const exact = entries.filter(entry => entry.intents?.some(intent => normalized(intent) === normalized(brief)));
   if (exact.length === 1) return matched(exact[0], brief);
+  const counter = metricChoice(entries, brief);
+  if (counter) return counter;
   if (beats.length < 2) return selectBeat(entries, brief);
   const supportedComposite = knownComposite(entries, beats);
   if (supportedComposite) return matched(supportedComposite, brief);

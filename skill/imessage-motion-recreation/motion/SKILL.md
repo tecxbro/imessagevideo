@@ -9,6 +9,7 @@ Start in `skill/imessage-motion-recreation`. Describe what changes, what must st
 node motion/cli.mjs select --brief "Move the photos beneath a fixed heading"
 node motion/cli.mjs select --brief "Hold the photos still while the heading moves"
 node motion/cli.mjs info --id heading-over-fixed-photos
+node motion/cli.mjs preview --id heading-over-fixed-photos
 node motion/cli.mjs render --id heading-over-fixed-photos --out /tmp/gallery.mp4
 ```
 
@@ -56,3 +57,7 @@ Read [source provenance](SOURCES.md), the [observed-only inventory](observed.jso
 ```sh
 node --test motion/tests/*.test.mjs
 ```
+
+## Count between two totals
+
+`metric-count` updates the displayed value in place while the label and heading hold. The settled event is the first frame showing the final value. Use `values` for two distinct whole numbers, `copy` for the metric label and `detail` for an optional unit. The selector can fill these fields and run the recipe with `render --brief`. A rolling numeral treatment lives under `metric-wheel-roll`.

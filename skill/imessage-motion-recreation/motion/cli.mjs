@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import {mkdirSync, readFileSync, writeFileSync} from 'node:fs';
+import {copyFileSync, mkdirSync, readFileSync, statSync, writeFileSync} from 'node:fs';
 import {spawnSync} from 'node:child_process';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
@@ -10,9 +10,11 @@ import {composeScenes} from './sequence.mjs';
 import {buildUiMotion, uiIds} from './ui-bridge.mjs';
 
 const engines = fileURLToPath(new URL('../scripts/engines/', import.meta.url));
+const repo = fileURLToPath(new URL('../../../', import.meta.url));
 const usage = `node motion/cli.mjs list
 node motion/cli.mjs select --brief "What the viewer should see"
 node motion/cli.mjs info --id MOTION
+node motion/cli.mjs preview --id MOTION [--out PREVIEW.mp4]
 node motion/cli.mjs scene --id MOTION --content CONTENT.json --out SCENE.json
 node motion/cli.mjs render --id MOTION --out PREVIEW.mp4 [--method pillow]
 Use --ui for a Clone iMessage UI variant. Use --ui-root to point to a separate checkout.
@@ -75,6 +77,22 @@ async function main() {
   const print = value => console.log(JSON.stringify(value, null, 2));
   if (command === 'list') { print(entries.map(describe)); return; }
   if (command === 'info') { print(describe(requireEntry(flags.id))); return; }
+  if (command === 'preview') {
+    const entry = describe(requireEntry(flags.id));
+    const variant = flags.ui ? entry.ui : entry;
+    if (!variant?.preview) throw Error('No published preview for this motion and variant');
+    const source = path.resolve(repo, variant.preview);
+    if (!statSync(source, {throwIfNoEntry: false})?.isFile())
+      throw Error(`Preview is absent from this checkout. Rebuild it with: ${variant.renderCommand}`);
+    const out = flags.out ? path.resolve(flags.out) : source;
+    if (out !== source) {
+      if (path.extname(out) !== '.mp4') throw Error('Preview output must end in .mp4');
+      mkdirSync(path.dirname(out), {recursive: true});
+      copyFileSync(source, out);
+    }
+    print({id: entry.id, preview: out, sha256: variant.sha256});
+    return;
+  }
   if (command === 'select') {
     const result = await choose(flags.brief);
     const matches = result.matches.map(id => {
