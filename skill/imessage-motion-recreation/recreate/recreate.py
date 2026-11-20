@@ -60,6 +60,8 @@ def main():
         else:
             report = compare(args.reference, args.candidate, args.out, args.checks, args.sheets)
             print(f"{report['verdict']}  {report['compared_frames']} compared frames  {Path(args.out) / 'report.json'}")
+            if not report["regions"]:
+                print("Coverage: picture-level checks; add native interaction windows for event-level validation.")
             for failure in report["failures"]:
                 print(json.dumps(failure))
             return 0 if report["verdict"] == "PASS" else 1

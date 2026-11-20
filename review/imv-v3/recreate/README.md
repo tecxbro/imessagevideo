@@ -16,3 +16,5 @@ The repair changed only native frames 74–77 and retained 116 PNGs byte for byt
 The [portrait companion](ui/train-proof.json) uses the Clone iMessage UI adapter. It was rendered before and after the text and timing edit. Its visual treatment differs from the landscape fixture. [UI compiler and reproduction](../../../skill/imessage-motion-recreation/recreate/example/README.md)
 
 The [variable frame clock probe](clock/README.md) applied 126 exact source timestamps to separately authored frames. The [Motion handoff](motion/README.md) verifies an editable asset swap in the motion library.
+
+The [scored final](train/scored.mp4) and [scored edit](train/edited-scored.mp4) preserve the decoded pictures. The score is independently authored, and its four cue stems and decoded timing evidence are [included](train/sound/README.md). A [full source audit](library/source-clocks.json) records the native clocks and audio sample counts of the six existing library films, totaling 7,680 decoded source frames.

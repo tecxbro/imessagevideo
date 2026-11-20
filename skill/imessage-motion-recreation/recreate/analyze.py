@@ -91,9 +91,9 @@ def analyze(path, out, reuse=False):
         cached = json.loads(index.read_text())
         if cached["source_sha256"] != checksum:
             raise MediaError("The saved measurements belong to different source bytes; pick a new output directory")
-        required = [out / "timeline.csv", out / "contact-00.jpg"]
-        required.extend(out / f"audio-{track['stream']['index']}.csv" for track in cached["audio_tracks"])
-        if all(path.is_file() for path in required):
+        artifacts = cached.get("artifact_sha256", {})
+        if artifacts and all((out / name).is_file() and digest(out / name) == expected_digest
+                             for name, expected_digest in artifacts.items()):
             return cached
     clock = video_clock(path)
     times = clock.times
@@ -130,13 +130,17 @@ def analyze(path, out, reuse=False):
         holds.append([pending, len(times) - 1])
     tracks = audio_evidence(path, clock, out)
     ordered = sorted(contact.items())
+    files = ["timeline.csv", *(f"audio-{track['stream']['index']}.csv" for track in tracks)]
     for offset in range(0, len(ordered), 30):
         items = [(f"#{frame} · {float(times[frame]):.3f}s", img) for frame, img in ordered[offset:offset + 30]]
-        collage(out / f"contact-{offset // 30:02d}.jpg", items)
+        filename = f"contact-{offset // 30:02d}.jpg"
+        collage(out / filename, items)
+        files.append(filename)
     report = {"schema": 1, "source_name": Path(path).name, "source_sha256": checksum,
               "clock": clock.summary(), "picture_decoded_frames": len(times),
               "exact_pixel_hold_spans": holds, "candidate_cuts_or_fast_changes": cuts,
               "audio_tracks": tracks, "thumbnails": sorted(contact),
+              "artifact_sha256": {filename: digest(out / filename) for filename in files},
               "analysis_parameters": {"motion_preview_size": size, "change_pixel_floor": 20,
                                       "cut_thumbnail_mae": 18, "cut_changed_fraction": 0.35}}
     write_json(out / "analysis.json", report)

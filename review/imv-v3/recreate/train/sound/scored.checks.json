@@ -1,0 +1,113 @@
+{
+  "global_mae": 0.3,
+  "pixel_floor": 24,
+  "audio": "present",
+  "regions": [
+    {
+      "id": "title-cut",
+      "start": 15,
+      "end": 20,
+      "rect": [
+        139,
+        108,
+        364,
+        103
+      ],
+      "mae": 1.5
+    },
+    {
+      "id": "request-bubble",
+      "start": 28,
+      "end": 40,
+      "rect": [
+        249,
+        147,
+        235,
+        55
+      ],
+      "mae": 1.5
+    },
+    {
+      "id": "drawer-reveal",
+      "start": 54,
+      "end": 68,
+      "rect": [
+        155,
+        166,
+        330,
+        150
+      ],
+      "mae": 1.5
+    },
+    {
+      "id": "seat-selection",
+      "start": 71,
+      "end": 81,
+      "rect": [
+        426,
+        202,
+        32,
+        28
+      ],
+      "mae": 3,
+      "changed_pixels": 15
+    },
+    {
+      "id": "receipt",
+      "start": 87,
+      "end": 98,
+      "rect": [
+        151,
+        225,
+        207,
+        55
+      ],
+      "mae": 1.5
+    },
+    {
+      "id": "last-hold",
+      "start": 115,
+      "end": 119,
+      "rect": [
+        150,
+        166,
+        336,
+        150
+      ],
+      "mae": 1.5
+    }
+  ],
+  "audio_checks": {
+    "max_start_delta_seconds": "1/48000",
+    "cues": [
+      {
+        "id": "send-flick",
+        "frame": 30,
+        "offset_ms": 6,
+        "window_ms": 12,
+        "min_peak": 0.015
+      },
+      {
+        "id": "drawer-glide",
+        "frame": 56,
+        "offset_ms": -16,
+        "window_ms": 12,
+        "min_peak": 0.015
+      },
+      {
+        "id": "seat-latch",
+        "frame": 74,
+        "offset_ms": 9,
+        "window_ms": 12,
+        "min_peak": 0.015
+      },
+      {
+        "id": "receipt-resolve",
+        "frame": 89,
+        "offset_ms": 14,
+        "window_ms": 12,
+        "min_peak": 0.015
+      }
+    ]
+  }
+}

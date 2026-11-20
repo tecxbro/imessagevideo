@@ -15,3 +15,5 @@ for frame in $(seq 0 125); do
 done
 python3 "$R/recreate.py" encode-clock "$W/frames" --measurements "$W/measurements" --out "$W/clock.mp4"
 ```
+
+A second probe used the long-press simulator capture. It retained all 239 PTS and the final one-microsecond sample. [Long-press clock result](longpress-encode.json)

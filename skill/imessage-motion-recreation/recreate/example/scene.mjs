@@ -1,4 +1,5 @@
 import {readFileSync, writeFileSync} from 'node:fs';
+import {sampleTrack} from '../../scripts/engines/common.mjs';
 import {
   BottomSheet, Composer, MessageBubble, PhoneFrame, group, rect, text,
 } from '../../director/components.mjs';
@@ -142,7 +143,13 @@ function segment(scene, first, last) {
       for (const [key, values] of Object.entries(layer.keyframes)) {
         if (values.at(-1).t <= toSeconds(first)) result[key] = values.at(-1).value;
         else if (values[0].t >= toSeconds(last)) result[key] = values[0].value;
-        else result.keyframes[key] = values.map(value => ({...value, t: rebase(value.t)}));
+        else {
+          // Evaluate the original curves at native frames before shifting the origin.
+          result.keyframes[key] = Array.from({length: last - first + 1}, (_, local) => ({
+            t: toSeconds(local),
+            value: sampleTrack(values, toSeconds(first + local)),
+          }));
+        }
       }
       if (!Object.keys(result.keyframes).length) delete result.keyframes;
     }
