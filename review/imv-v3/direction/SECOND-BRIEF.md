@@ -15,3 +15,9 @@ Direction proposed a fallback with a fresh tester and a dedicated input
 workspace. [Observer's picture and isolation report](https://github.com/tecxbro/imessagevideo/issues/7#issuecomment-7027546041) · [Fallback proposal](https://github.com/tecxbro/imessagevideo/issues/7#issuecomment-7027587421)
 
 The second-brief film and premise, opening and structure comparison are pending.
+
+A follow-up check of Direction's Cloud Environment confirmed an enforced
+restricted network policy. Neither `api.openai.com` nor `chatgpt.com` is in
+its effective allowlist. The test needs an isolated runner with approved
+model access and only Observer's reserved brief and the pinned skill as
+creative inputs.
