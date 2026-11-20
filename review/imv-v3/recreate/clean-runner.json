@@ -1,0 +1,110 @@
+{
+  "fixture": "Train Options",
+  "observer_package_base": "f926ed417a128845a7912cc23edb632561f26cdd",
+  "package_sha256": "132d77b828caf4552f149c9ba357b11080beb41e648665d26470a2a8425906ee",
+  "dependency_install": "npm ci --prefix scripts/engines",
+  "runtime": {
+    "node": "24.22.1",
+    "npm": "11.9.0",
+    "chromium": "156.0.8078.79",
+    "ffmpeg": "7.1.5",
+    "bubblewrap": "0.12.0",
+    "python": "3.12.14"
+  },
+  "render_command": "bash recreate/verify-clean-runner.sh /tmp/recreate-clean-preflight",
+  "sha256": {
+    "train/reference.mp4": "8f73c68dd6ede5b0ff1882085c549f62653f50659ed0c9473a9e33da7d2c9a22",
+    "train/render/final.mp4": "eca99d87a9b8e92a5ca31c2b16bff5ba42f23ba7236ab8182c08ce9e71d81c8f",
+    "isolated/final.mp4": "eca99d87a9b8e92a5ca31c2b16bff5ba42f23ba7236ab8182c08ce9e71d81c8f"
+  },
+  "picture": {
+    "paired_frames": 120,
+    "verdict": "PASS",
+    "mean_abs_rgb": 0.029628255208333346,
+    "worst_frame": {
+      "frame": 61,
+      "mean_abs_rgb": 0.05800347222222222
+    },
+    "seat_selection_region": [
+      426,
+      202,
+      32,
+      28
+    ],
+    "seat_selection_peak_frame": 76,
+    "seat_selection_peak_mae": 0.203125,
+    "reference_time_base": "1/15360",
+    "candidate_time_base": "1/15360",
+    "last_row": {
+      "frame": "119",
+      "reference_pts": "60928",
+      "candidate_pts": "60928",
+      "reference_seconds": "3.966666666666667",
+      "candidate_seconds": "3.966666666666667",
+      "clock_delta_ms": "0.0",
+      "mean_abs_rgb": "0.0509837962962963",
+      "pixels_above_floor": "54",
+      "max_abs_rgb": "57",
+      "tile_mae": "",
+      "tile_rect": "",
+      "status": "pass",
+      "reference_frame": "119",
+      "candidate_frame": "119",
+      "reference_end_pts_exclusive": "61440",
+      "candidate_end_pts_exclusive": "61440"
+    }
+  },
+  "controls": {
+    "first": [
+      {
+        "check": "region",
+        "id": "seat-selection",
+        "spans": [
+          [
+            74,
+            77
+          ]
+        ]
+      }
+    ],
+    "truncated": [
+      {
+        "check": "missing_candidate_frames",
+        "spans": [
+          [
+            110,
+            119
+          ]
+        ]
+      },
+      {
+        "check": "final_hold",
+        "frame": 119,
+        "reference_end_seconds_rational": "4",
+        "candidate_end_seconds_rational": "11/3"
+      },
+      {
+        "check": "incomplete_region",
+        "id": "last-hold"
+      }
+    ],
+    "truncated_overlap_mean_abs_rgb": 0.0,
+    "edit_selected_frames": {
+      "first": 78,
+      "final": 74,
+      "edited": 69
+    },
+    "edit_copy": [
+      "Two seats to Union Station.",
+      "Two seats to Northgate."
+    ]
+  },
+  "motion_ui": {
+    "entry": "conversation-handoff",
+    "send_frame": 32,
+    "receive_frame": 51,
+    "decoded_frames": 72,
+    "fps": "30/1",
+    "sha256": "8889bb79b1743237f656dd0882cb1bd87475827c3cba59b035c4a3b2cef1d05f"
+  }
+}

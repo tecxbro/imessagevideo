@@ -210,11 +210,13 @@ def compare(reference, candidate, out, checks=None, sheets=False):
     bad_global, bad_tiles = [], []
     worst_local_tile = None
     region_stats = {region[0]: {"expected_frames": region[2] - region[1] + 1, "scanned_frames": 0,
-                               "worst_mae": 0, "worst_changed_pixels": 0, "bad": [],
+                               "worst_mae": 0, "worst_mae_frame": None,
+                               "worst_changed_pixels": 0, "worst_changed_pixels_frame": None, "bad": [],
                                "mae_limit": region[5], "pixel_floor": region[6], "changed_pixels_limit": region[7]}
                     for region in regions}
     timeline_fields = ("frame", "reference_pts", "candidate_pts", "reference_seconds", "candidate_seconds",
-                       "clock_delta_ms", "mean_abs_rgb", "pixels_above_floor", "max_abs_rgb", "tile_mae", "tile_rect", "status")
+                       "clock_delta_ms", "mean_abs_rgb", "pixels_above_floor", "max_abs_rgb", "tile_mae", "tile_rect", "status",
+                       "reference_frame", "candidate_frame", "reference_end_pts_exclusive", "candidate_end_pts_exclusive")
     local_fields = ("id", "frame", "x", "y", "width", "height", "mean_abs_rgb", "pixels_above_floor", "status")
     count, sum_mae, worst = 0, 0.0, None
     final_pair = None
@@ -222,6 +224,8 @@ def compare(reference, candidate, out, checks=None, sheets=False):
     with ExitStack() as stack:
         ref_frames = stack.enter_context(video_frames(reference, ref))
         enc_frames = stack.enter_context(video_frames(candidate, enc))
+        ref_ends = ref.pts[1:] + [ref.end_pts]
+        enc_ends = enc.pts[1:] + [enc.end_pts]
         table = csv.writer(stack.enter_context((out / "frames.csv").open("w", newline="")), lineterminator="\n")
         local = csv.writer(stack.enter_context((out / "regions.csv").open("w", newline="")), lineterminator="\n")
         table.writerow(timeline_fields)
@@ -233,12 +237,14 @@ def compare(reference, candidate, out, checks=None, sheets=False):
                 i, ref.pts[i] if a is not None else "", enc.pts[i] if b is not None else "",
                 float(a_time) if a_time is not None else "", float(b_time) if b_time is not None else "",
             ]
+            mapping = [i if a is not None else "", i if b is not None else "",
+                       ref_ends[i] if a is not None else "", enc_ends[i] if b is not None else ""]
             if a is None or b is None:
-                table.writerow([*row, "", "", "", "", "", "", "extra" if a is None else "missing"])
+                table.writerow([*row, "", "", "", "", "", "", "extra" if a is None else "missing", *mapping])
                 continue
             clock_ms = float((b_time - a_time) * 1000)
             if not display_match:
-                table.writerow([*row, clock_ms, "", "", "", "", "", "display_geometry"])
+                table.writerow([*row, clock_ms, "", "", "", "", "", "display_geometry", *mapping])
                 continue
             delta = np.maximum(a, b) - np.minimum(a, b)
             peak_by_pixel = np.maximum(np.maximum(delta[:, :, 0], delta[:, :, 1]), delta[:, :, 2])
@@ -262,7 +268,7 @@ def compare(reference, candidate, out, checks=None, sheets=False):
                 worst_local_tile = {"frame": i, "rect": tile_rect, "mae": tile_mae}
             table.writerow([*row, clock_ms, mae, int(np.count_nonzero(peak_by_pixel >= pixel_floor)),
                             int(peak_by_pixel.max()), tile_mae, " ".join(map(str, tile_rect)),
-                            "fail" if clock_bad or mae > global_limit or tile_bad else "pass"])
+                            "fail" if clock_bad or mae > global_limit or tile_bad else "pass", *mapping])
             for region_i, (name, start, end, rects, slices, mae_limit, floor, pixel_limit) in enumerate(regions):
                 if not start <= i <= end:
                     continue
@@ -275,8 +281,12 @@ def compare(reference, candidate, out, checks=None, sheets=False):
                           (pixel_limit is not None and changed > pixel_limit))
                 stats = region_stats[name]
                 stats["scanned_frames"] += 1
-                stats["worst_mae"] = max(stats["worst_mae"], local_mae)
-                stats["worst_changed_pixels"] = max(stats["worst_changed_pixels"], changed)
+                if stats["worst_mae_frame"] is None or local_mae > stats["worst_mae"]:
+                    stats["worst_mae"] = local_mae
+                    stats["worst_mae_frame"] = i
+                if stats["worst_changed_pixels_frame"] is None or changed > stats["worst_changed_pixels"]:
+                    stats["worst_changed_pixels"] = changed
+                    stats["worst_changed_pixels_frame"] = i
                 if failed:
                     stats["bad"].append(i)
                 local.writerow([name, i, *rects[i - start], local_mae, changed, "fail" if failed else "pass"])

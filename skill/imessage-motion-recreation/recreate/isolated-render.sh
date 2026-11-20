@@ -23,8 +23,8 @@ for path in /bin /lib /lib64 /opt; do
     runtime+=(--ro-bind "$path" "$path")
   fi
 done
-exec bwrap --die-with-parent --new-session --unshare-net --clearenv \
+exec bwrap --die-with-parent --new-session --unshare-pid --unshare-ipc --unshare-uts --unshare-net --clearenv \
   "${runtime[@]}" --proc /proc --dev /dev --tmpfs /tmp \
   --ro-bind "$input" /input --bind "$output" /output --chdir /input \
   --setenv HOME /tmp --setenv PATH /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin:/usr/local/bin:/usr/bin:/bin \
-  --setenv CHROME_PATH /usr/bin/chromium --setenv LANG C.UTF-8 -- "$@"
+  --setenv CHROME_PATH "${CHROME_PATH:-/usr/bin/chromium}" --setenv LANG C.UTF-8 -- "$@"
