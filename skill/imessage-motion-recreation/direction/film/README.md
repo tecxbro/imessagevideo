@@ -29,7 +29,7 @@ python3 "$D/render.py" --frame 153 --out /tmp/moon-frame-153.png
 
 The integrated skill finds `ui/` alongside `direction/`. In the standalone
 Direction branch, export the exact adapter used for this picture and pass its
-parent directory. This does not switch or modify the UI branch.
+parent directory.
 
 ```sh
 git fetch origin refs/heads/codex-video-v3/ui:refs/remotes/origin/codex-video-v3/ui
@@ -43,6 +43,10 @@ python3 "$D/render.py" --ui-root "$ui_root" --out /tmp/moon-picture.mp4
 The event map uses Observer's timeline clock. The initial rough renderer and
 its alternate cut frames are preserved at `2873e04`. The locked version uses
 a revised composition and compilation path.
+
+A clean export with only this film source, the pinned UI adapter, and the
+base Pillow renderer reproduced both locked file hashes. Values appear in
+`locked.sha256` in the review folder.
 
 For exact review media, product claims and revision frames, see
 [the Direction review folder](../../../../review/imv-v3/direction/README.md).
