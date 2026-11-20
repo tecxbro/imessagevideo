@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Offline payment test</title>
+  <style>
+    :root { font-family: system-ui, sans-serif; color: #18233d; background: #f0eee8; }
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    header { display: flex; justify-content: space-between; align-items: center;
+             background: #18233d; color: white; padding: 20px 24px; }
+    header span { font-size: 11px; font-weight: 750; letter-spacing: .09em; color: #c4f7e5; }
+    main { padding: 32px 24px; }
+    .context { color: #414963; font-size: 15px; margin: 0 0 24px; }
+    article, dialog { background: white; padding: 22px; border: 1px solid #c6cbd6; border-radius: 16px; }
+    h1, h2 { margin: 0; line-height: 1.2; }
+    h1 { font-size: 26px; }
+    h2 { font-size: 23px; }
+    .amount { font-size: 21px; margin: 12px 0 18px; }
+    button { color: white; background: #173e74; font: inherit; font-weight: 650; border: 0;
+             padding: 12px 16px; border-radius: 8px; width: 100%; }
+    dialog { width: calc(100% - 48px); inset: auto auto 24px 24px; margin: 0; color: inherit; }
+    ::backdrop { background: #151d36a3; }
+    #result { margin-top: 18px; padding: 16px; background: #cff6e5; border: 1px solid #509c7c;
+              border-radius: 10px; color: #123c31; }
+    #result p { margin: 6px 0 0; }
+  </style>
+</head>
+<body>
+  <header><strong>Harbor Studio</strong><span>OFFLINE TEST</span></header>
+  <main>
+    <p class="context">Checkout for a fictional order.</p>
+    <article id="test-order">
+      <h1>Workshop pass</h1>
+      <p class="amount">$12.00 test total</p>
+      <button id="review">Review test payment</button>
+    </article>
+    <section id="result" role="status" hidden>
+      <strong>Test payment approved</strong>
+      <p>Order HARBOR-TEST-01 · No charge</p>
+    </section>
+  </main>
+  <dialog id="approval" aria-labelledby="approval-title">
+    <h2 id="approval-title">Approve test payment</h2>
+    <p>Local simulator · $12.00 · No payment provider</p>
+    <button id="approve">Approve $12.00 test</button>
+  </dialog>
+  <script>
+    const approval = document.querySelector("#approval");
+    const review = document.querySelector("#review");
+    const result = document.querySelector("#result");
+    review.addEventListener("click", () => approval.showModal());
+    document.querySelector("#approve").addEventListener("click", ({ currentTarget: button }) => {
+      button.textContent = "Test approved";
+      button.disabled = true;
+      setTimeout(() => {
+        approval.close();
+        review.disabled = true;
+        review.textContent = "Approval received";
+        setTimeout(() => { result.hidden = false; }, 750);
+      }, 300);
+    });
+  </script>
+</body>
+</html>

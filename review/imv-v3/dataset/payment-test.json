@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "payment-test",
+  "classification": "fixture",
+  "source": {
+    "reference": "datasets/imessage/fixtures/payment-test.html",
+    "method": "One offline Chromium session captured on a 20 fps virtual clock with scripted clicks",
+    "captured_on": "2026-11-20"
+  },
+  "rights": {
+    "holder": "Dataset project fixture author",
+    "permission_ref": "review/imv-v3/dataset/payment-test-rights.md",
+    "scope": "private-repo-and-team-analysis"
+  },
+  "device": {
+    "model": "Headless Chromium desktop, 400 × 720 browser viewport",
+    "os": "Debian GNU/Linux 13",
+    "build": "Chromium 156.0.8078.79"
+  },
+  "interaction": {
+    "name": "Offline approval through result",
+    "before": "The fictional order card and Review test payment control are visible at rest.",
+    "action": "Open the test sheet, approve the fictional amount, hold the visible approval and dismiss to the same card.",
+    "after": "The separate Test payment approved result holds below the original card.",
+    "landmarks": [
+      {"name": "card-at-rest", "frame": 0},
+      {"name": "sheet-open", "frame": 20},
+      {"name": "approval-input-and-acknowledgment", "frame": 40},
+      {"name": "sheet-dismissed-same-card", "frame": 46},
+      {"name": "first-readable-test-result", "frame": 61},
+      {"name": "result-hold", "frame": 95}
+    ],
+    "layers": ["Stationary header and order card", "Modal sheet and backdrop", "Independent result below the same card"]
+  },
+  "media_sha256": "7453ed189d2e0e5d7fe1ca03d4a6cfd7f5e0ae2227e389771d1da37779644743",
+  "clock": {"time_base": "1/10240", "average_fps": "20/1"},
+  "range": {"start_frame": 0, "end_frame": 95, "start_pts": 0, "end_pts": 48640}
+}
