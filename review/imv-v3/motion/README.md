@@ -21,3 +21,5 @@ The early selector sometimes guessed the wrong moving layer from phrases such as
 A vertical photo rail, a third swipe from the same attachment stack, and a true 3D page curl return `missing` with a specific reason. Album turning in the catalog uses a projected flat hinge. Video scrubbing uses ordered still samples. The adapter's horizontal paging uses one adjacent photo per swipe. A native multi-photo send followed by inline paging under a fixed conversation header still lacks the requested continuous Dataset capture, so the short loop remains an authored adapter demonstration. The source inventory records the native observations already on hand. Human picture review remains pending.
 
 The four added recipes use fixed value counting, resolving glyphs, parting picture planes and fanning pinned swatches. Each has a full 72-frame Pillow preview and moving nine-frame probes in each of the other four engines.
+
+The [v3.2 retest](v3.2/README.md) contains both selector regressions, a decoded counter hold with supplied endpoints, and a portable photo comparison with changed content and event maps.

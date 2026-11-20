@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 72
+  },
+  "initialUI": null,
+  "events": [
+    {
+      "id": "motion.messages-attachment-stack.swipe",
+      "kind": "media.swipe",
+      "target": "attachment-1",
+      "frame": 21,
+      "layerIds": [
+        "attachment-1"
+      ]
+    },
+    {
+      "id": "motion.messages-attachment-stack.promoted",
+      "kind": "media.promote",
+      "target": "attachment-2",
+      "frame": 38,
+      "layerIds": [
+        "attachment-2"
+      ]
+    },
+    {
+      "id": "motion.messages-attachment-stack.swipe-2",
+      "kind": "media.swipe",
+      "target": "attachment-2",
+      "frame": 40,
+      "layerIds": [
+        "attachment-2"
+      ]
+    },
+    {
+      "id": "motion.messages-attachment-stack.promoted-2",
+      "kind": "media.promote",
+      "target": "attachment-3",
+      "frame": 57,
+      "layerIds": [
+        "attachment-3"
+      ]
+    }
+  ],
+  "cues": []
+}

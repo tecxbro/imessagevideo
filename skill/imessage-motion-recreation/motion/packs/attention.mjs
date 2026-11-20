@@ -130,6 +130,7 @@ export const entries = [
     avoid: 'An odometer needs rolling glyphs. Use a still when only a final value is supported.',
     intents: ['Count a single number up in place and hold the total', 'Make the number tick up with the label fixed', 'Count down to a final number with fixed title'],
     editable: ['heading','copy','detail','values'],
+    example: 'motion/examples/metric-hold.json',
     defaults: {heading:'A growing delivery total', copy:'Completed trips', detail:'trips this week', values:[620,1280]},
     source: source('Adapted from a fresh, Pillow-authored volunteer count reuse. The editable canonical recipe preserves the value trajectory and event timing.'),
     build: metric,

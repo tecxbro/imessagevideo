@@ -3,7 +3,7 @@
 const ALIASES = [
   [/\b(?:top (?:line|label|caption|title)|name at the top|(?:venue|place|shop|storefront|chat|conversation|thread) name|masthead|headline|header|title)\b/g, 'heading'],
   [/\b(?:avatars?|headshots?|portraits?|profile (?:photos|pictures))\b/g, 'avatar'],
-  [/\b(?:images?|pictures?|thumbnails?|photographs?|imagery|stills)\b/g, 'photos'],
+  [/\b(?:images?|pictures?|thumbnails?|photographs?|imagery|stills|snapshots?)\b/g, 'photos'],
   [/\b(?:photo|pics?)\b/g, 'photos'],
   [/\b(?:side to side horizontally|side to side|laterally|sideways|horizontally)\b/g, 'horizontal'],
   [/\b(?:beneath|below|underneath)\b/g, 'under'],
@@ -309,6 +309,7 @@ function isHold(input, roles) {
   return /^(?:just |please )?(?:still|fixed|steady)(?:$|[.!?]| (?:so|for|to|while|on)\b)/.test(input) || /\b(?:still|steady|fixed)\b/.test(input)
     && /\b(?:everything|whole|entire|both|all of it|frame|shot|screen|completely)\b/.test(input)
     || /\b(?:reading hold|(?:time|long enough) to (?:read|finish reading|keep reading))\b/.test(input)
+    || /^(?:pause|hold|rest|stay|settle) (?:on|at) (?:the )?(?:final )?(?:total|value|figure|number|statistic)\b/.test(input)
     || /\b(?:keep|hold|leave) (?:it|this|that|the frame|the shot) (?:exactly |just )?(?:like this|as is|as it is)\b/.test(input)
     || /\b(?:keep|hold|leave) .* while .* read(?:ing)?\b/.test(input);
 }
@@ -389,21 +390,24 @@ function attachmentStackChoice(entries, brief, beats) {
   return matched(entry, brief, [], repeated ? {swipes: 2} : {});
 }
 
-function metricChoice(entries, brief) {
+function metricChoice(entries, brief, beats = [brief]) {
   const entry = entries.find(candidate => candidate.id === 'metric-count');
   if (!entry) return null;
-  const input = normalized(brief);
+  const [opening, ...later] = beats;
+  const input = normalized(opening);
   if (!/\b(?:number|figures?|value|count|metric|total)\b/.test(input) ||
       !/\b(?:count (?:up|down|the (?:number|value))|climb\w*|rise|grow\w*|increment\w*|increase\w*|decrease\w*|tick up)\b/.test(input) ||
       /\b(?:roll\w*|odometer|digit wheel)\b/.test(input) ||
       /\b(?:not|never|no) (?:an? |the )?(?:count|change|increase)\b/.test(input)) return null;
+  if (later.some(beat => selectBeat(entries, beat).action !== 'hold')) return null;
 
   const numeric = '([+−-]?(?:[0-9]{1,3}(?:,[0-9]{3})+|[0-9]+)(?:\\.[0-9]+)?)';
-  const endpoints = brief.match(new RegExp(`\\bfrom ${numeric}(%?) (?:to|through) ${numeric}(%?)`, 'i'));
-  if (!endpoints) return /\b(?:count the (?:number|value)|count (?:up|down) the (?:number|value)|(?:number|value) tick up)\b/.test(input) ? matched(entry, brief) : null;
-  const remaining = brief.slice(endpoints.index + endpoints[0].length);
-  const secondary = remaining.split(/\bthen\b/i).slice(1);
-  if (secondary.some(beat => !/^\s*(?:pause|hold|rest|stay|settle)\b/i.test(beat))) return null;
+  const endpoints = opening.match(new RegExp(`\\bfrom ${numeric}(%?) (?:to|through) ${numeric}(%?)`, 'i'));
+  if (!endpoints) {
+    const risingTotal = /\b(?:count|number|metric|value|total) (?:climb\w*|rise\w*|increase\w*)\b/.test(input);
+    const directCount = /\b(?:count the (?:number|value)|count (?:up|down) the (?:number|value)|(?:number|value) tick up)\b/.test(input);
+    return risingTotal || directCount ? matched(entry, brief) : null;
+  }
   const values = [endpoints[1], endpoints[3]].map(value => Number(value.replace(/,/g, '').replace('−', '-')));
   if (!values.every(value => Number.isSafeInteger(value) && Math.abs(value) <= 1e9)) {
     return decision('missing', 'This fixed count shows whole numbers up to one billion. A different number format requires an editable formatter.');
@@ -429,12 +433,12 @@ export function select(entries, request) {
   if (attachment) return attachment;
   const exact = entries.filter(entry => entry.intents?.some(intent => normalized(intent) === normalized(brief)));
   if (exact.length === 1) return matched(exact[0], brief);
-  const counter = metricChoice(entries, brief);
+  const counter = metricChoice(entries, brief, beats);
   if (counter) return counter;
   if (beats.length < 2) return selectBeat(entries, brief);
   const supportedComposite = knownComposite(entries, beats);
   if (supportedComposite) return matched(supportedComposite, brief);
-  const selections = beats.map(beat => selectBeat(entries, beat));
+  const selections = beats.map(beat => metricChoice(entries, beat) ?? selectBeat(entries, beat));
   if (selections.every(selection => selection.action === 'hold')) return selections[0];
   if (selections.every(selection => selection.matches.length || selection.action === 'hold')) {
     const matches = selections.flatMap(selection => selection.matches);
