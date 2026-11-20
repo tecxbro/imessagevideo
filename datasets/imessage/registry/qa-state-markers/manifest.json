@@ -1,0 +1,105 @@
+{
+  "approval": {
+    "path": "datasets/imessage/approvals/qa-state-markers.json",
+    "sha256": "8eb8ec7a843df0ac21dc8a81eea20354b1d5d707a64f43e8317e0e716467e575"
+  },
+  "archive": {
+    "bytes": 10209,
+    "parts": [
+      {
+        "bytes": 10209,
+        "name": "archive.zip",
+        "sha256": "3d530d4634cf2aed1bab73a8f34ac2b4d3e1cc1d7e252b2e38abdab7aa3d812c"
+      }
+    ],
+    "sha256": "3d530d4634cf2aed1bab73a8f34ac2b4d3e1cc1d7e252b2e38abdab7aa3d812c"
+  },
+  "capture": {
+    "classification": "fixture",
+    "clock": {
+      "average_fps": "24/1",
+      "time_base": "1/12288"
+    },
+    "device": {
+      "build": "FFmpeg 7.1.5-0+deb13u1",
+      "model": "Headless FFmpeg chart generator",
+      "os": "Debian GNU/Linux 13"
+    },
+    "id": "qa-state-markers",
+    "interaction": {
+      "action": "The marker is replaced with an amber block.",
+      "after": "The amber block gives way to a green block that holds through the last frame.",
+      "before": "Slate marker is visible inside the chart.",
+      "landmarks": [
+        {
+          "frame": 0,
+          "name": "initial-marker"
+        },
+        {
+          "frame": 48,
+          "name": "amber-onset"
+        },
+        {
+          "frame": 96,
+          "name": "green-onset"
+        },
+        {
+          "frame": 191,
+          "name": "end-hold"
+        }
+      ],
+      "layers": [
+        "Fixed blue header and footer",
+        "Fixed tan panel",
+        "Independent slate, amber and green markers"
+      ],
+      "name": "QA marker transitions"
+    },
+    "media_sha256": "bdb7de1c38d493bc0757175af610dfd3434255eb779589d49a8c57538e211b88",
+    "range": {
+      "end_frame": 191,
+      "end_pts": 97792,
+      "start_frame": 0,
+      "start_pts": 0
+    },
+    "rights": {
+      "holder": "Dataset project fixture author",
+      "permission_ref": "review/imv-v3/dataset/fixture-rights.md",
+      "scope": "private-repo-and-team-analysis"
+    },
+    "schema_version": 1,
+    "source": {
+      "captured_on": "2026-11-20",
+      "method": "Original FFmpeg-generated color bars and timed rectangles, encoded directly with libx264",
+      "reference": "review/imv-v3/dataset/qa-state-markers.mp4"
+    }
+  },
+  "exclusion_check": {
+    "exclusions_checked": 3,
+    "extra_sha256": [],
+    "manifest_sha256": "a497a4c0e30b1bedbb31181bb4ed142a59ba9d3f693d3d7eaf4303f67cccc0f3",
+    "observer_commit": "f926ed417a128845a7912cc23edb632561f26cdd",
+    "status": "clear",
+    "tool_sha256": "f53ff09567fa121b846d8fce645459a497f7a53f5a73f9b169804c71b54c5437"
+  },
+  "media": {
+    "bytes": 8385,
+    "clock": {
+      "average_fps": "24/1",
+      "time_base": "1/12288"
+    },
+    "frame_count": 192,
+    "height": 480,
+    "landmark_pts": {
+      "amber-onset": 24576,
+      "end-hold": 97792,
+      "green-onset": 49152,
+      "initial-marker": 0
+    },
+    "name": "clip.mp4",
+    "sha256": "bdb7de1c38d493bc0757175af610dfd3434255eb779589d49a8c57538e211b88",
+    "width": 320
+  },
+  "record_sha256": "166b63e422ee71f77f3d16b193c68669da07a15c02a014eb7cf1b5478ed67f02",
+  "schema_version": 1
+}
