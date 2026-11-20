@@ -9,6 +9,8 @@
 | Truncated test against the final master | 110 paired frames with zero RGB error. Gate fails for frames 110–119 missing, a short final hold, and an unscanned last-hold window. |
 | Edited | Real copy changes from “Two seats to Union Station.” to “Two seats to Northgate.” and the first selected frame moves from 74 to 69. |
 
+Decoded line OCR at frame 38 reads “Two seats to Union Station.” in the final and “Two seats to Northgate.” in the edit. [Final crop OCR](train/ocr/final.json) · [Edited crop OCR](train/ocr/edited.json)
+
 The repair changed only native frames 74–77 and retained 116 PNGs byte for byte. The complete final encode was compared again. The isolated output matches the final file SHA-256. Refer to the [full-frame result](train/final-check/report.json), [native repair and edit](train/repair-and-edit.json) and [independent adversarial suite](qa/suite.json). This evidence uses decoded frames and audio measurements.
 
 [Poke](poke/README.md) is a measured source passage for Direction and Motion, along with a complete comparison of the archived original and silent GSAP master. It is separate from the Train reconstruction.

@@ -40,6 +40,23 @@ node "$S/recreate/example/scene.mjs" /tmp/train-edit.scene.json --config "$S/rec
 node "$S/scripts/engines/render.mjs" --method html --scene /tmp/train-edit.scene.json --out /tmp/train-edit.mp4
 ```
 
+## Reproduce the isolated render
+
+On Linux with Bubblewrap and the renderer dependencies installed, stage the editable manifest and engine in a fresh directory. The render mounts the input, an empty output directory and the system runtime, with networking disabled.
+
+```sh
+S=skill/imessage-motion-recreation
+D=review/imv-v3/recreate/train
+WORK=$(mktemp -d)
+mkdir -p "$WORK/input/engine"
+cp "$D/final.scene.json" "$WORK/input/scene.json"
+cp -a "$S/scripts/engines/." "$WORK/input/engine"
+bash "$S/recreate/isolated-render.sh" "$WORK/input" "$WORK/output" \
+  node /input/engine/render.mjs --method html --scene /input/scene.json --out /output/final.mp4
+sha256sum "$WORK/output/final.mp4" "$D/final.mp4"
+```
+
+
 ## Picture clock
 
 The reference and each full output contain 120 frames at 30/1, 640 × 360. Validation on this authored fixture exercises independent video and audio analysis plus a one-control repair. It complements comparison against the repository's production films and Observer's reserved tests.

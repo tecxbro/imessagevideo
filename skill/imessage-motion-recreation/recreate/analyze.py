@@ -3,12 +3,13 @@ import csv
 from fractions import Fraction
 from hashlib import sha256
 import json
+from io import BytesIO
 from math import ceil
 from pathlib import Path
 import subprocess
 
 import numpy as np
-from PIL import Image, ImageDraw
+from PIL import Image, ImageDraw, ImageOps
 
 from compare import intervals
 from media import MediaError, audio_samples, audio_streams, digest, video_clock, video_frames, write_json
@@ -155,7 +156,34 @@ def read_range(text):
     return a, b
 
 
-def inspect(path, out, ranges, rect=None, ocr=False, size=300):
+
+def ocr_frame(image, mode, filename):
+    zoom = min(4 if mode == "line" else 2, 5200 / max(image.size))
+    enlarged_size = tuple(max(1, round(length * zoom)) for length in image.size)
+    enlarged = image.convert("L").resize(enlarged_size, Image.Resampling.LANCZOS)
+    payload = BytesIO()
+    ImageOps.autocontrast(enlarged).save(payload, format="PNG")
+    psm = {"line": "7", "block": "6", "sparse": "11"}[mode]
+    result = subprocess.run(
+        ["tesseract", "stdin", "stdout", "--psm", psm, "tsv"],
+        input=payload.getvalue(), capture_output=True, check=True,
+    )
+    rows = csv.DictReader(result.stdout.decode().splitlines(), delimiter="\t")
+    words = []
+    with filename.open("w", newline="") as file:
+        writer = csv.DictWriter(file, fieldnames=rows.fieldnames, delimiter="\t", lineterminator="\n")
+        writer.writeheader()
+        sx, sy = image.width / enlarged.width, image.height / enlarged.height
+        for row in rows:
+            for key, ratio in (("left", sx), ("width", sx), ("top", sy), ("height", sy)):
+                row[key] = round(int(row[key]) * ratio)
+            writer.writerow(row)
+            if row.get("text", "").strip():
+                words.append(row)
+    return words
+
+
+def inspect(path, out, ranges, rect=None, ocr=False, size=300, ocr_mode="sparse"):
     out = Path(out)
     out.mkdir(parents=True, exist_ok=True)
     clock = video_clock(path)
@@ -181,11 +209,7 @@ def inspect(path, out, ranges, rect=None, ocr=False, size=300):
             filename = out / f"frame-{i:06d}.png"
             image.save(filename)
             if ocr:
-                result = subprocess.run(["tesseract", str(filename), "stdout", "--psm", "11", "tsv"],
-                                        capture_output=True, text=True, check=True)
-                filename.with_suffix(".tsv").write_text(result.stdout)
-                ocr_rows = list(csv.DictReader(result.stdout.splitlines(), delimiter="\t"))
-                text_hits[i] = [row for row in ocr_rows if row.get("text", "").strip()]
+                text_hits[i] = ocr_frame(image, ocr_mode, filename.with_suffix(".tsv"))
             panels.append((f"#{i} · {float(times[i]):.3f}s", image.copy()))
             if len(panels) == 20 or i == last:
                 collage(out / f"inspect-{i:06d}.jpg", panels, width=size)
@@ -193,7 +217,7 @@ def inspect(path, out, ranges, rect=None, ocr=False, size=300):
             if i == last:
                 break
     write_json(out / "inspect.json", {"source_sha256": digest(path), "frames": intervals(sorted(frames_to_export)),
-                                     "rect": rect, "ocr_crop_relative": text_hits})
+                                     "rect": rect, "ocr_mode": ocr_mode if ocr else None, "ocr_crop_relative": text_hits})
 
 
 def measure_landmarks(path, plan, out):

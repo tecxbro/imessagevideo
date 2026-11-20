@@ -25,6 +25,7 @@ def parse_args():
     view.add_argument("--frames", required=True, help="inclusive spans, e.g. 12:20,45,100:105")
     view.add_argument("--crop", nargs=4, type=int, metavar=("X", "Y", "WIDTH", "HEIGHT"))
     view.add_argument("--ocr", action="store_true")
+    view.add_argument("--ocr-mode", choices=("sparse", "line", "block"), default="sparse")
     view.add_argument("--sheet-width", type=int, default=300)
     locate = commands.add_parser("landmarks", help="track flat-colored landmarks in native frame windows")
     locate.add_argument("source")
@@ -51,7 +52,7 @@ def main():
             print(f"{report['picture_decoded_frames']} decoded frames; {Path(args.out) / 'analysis.json'}")
         elif args.command == "inspect":
             inspect(args.source, args.out, [read_range(item) for item in args.frames.split(",")],
-                    args.crop, args.ocr, args.sheet_width)
+                    args.crop, args.ocr, args.sheet_width, args.ocr_mode)
         elif args.command == "landmarks":
             measure_landmarks(args.source, args.plan, args.out)
         elif args.command == "encode-clock":

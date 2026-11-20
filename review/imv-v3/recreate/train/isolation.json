@@ -1,10 +1,19 @@
 {
   "separate_staged_manifest": "final.scene.json",
   "renderer": "HTML/SVG through the existing Chromium export",
-  "read_only_mounts": ["/usr","/etc","/bin","/lib","/lib64","/opt","/input"],
+  "read_only_mounts": [
+    "/usr",
+    "/etc",
+    "/bin",
+    "/lib",
+    "/lib64",
+    "/opt",
+    "/input"
+  ],
   "generated_media_mount": "/output",
   "network": "unshared",
   "source_and_measurement_existence_checks": "absent",
   "final_sha256": "eca99d87a9b8e92a5ca31c2b16bff5ba42f23ba7236ab8182c08ce9e71d81c8f",
-  "isolated_sha256": "eca99d87a9b8e92a5ca31c2b16bff5ba42f23ba7236ab8182c08ce9e71d81c8f"
+  "isolated_sha256": "eca99d87a9b8e92a5ca31c2b16bff5ba42f23ba7236ab8182c08ce9e71d81c8f",
+  "staged_manifest_sha256": "a8b3ec7aca44bcf6c884060d98701590a7ee61651ba890b9fb1e5e94ef44e9e3"
 }
