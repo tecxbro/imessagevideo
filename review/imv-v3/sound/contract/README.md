@@ -18,3 +18,5 @@ From the repository root, run `python3 skill/imessage-motion-recreation/sound/ex
 The exported impact in the first delivery is sample 24,120. The source begins at sample 22,680 and its onset marker lands at sample 23,256. On the revised picture the estimated impact is sample 36,120, retaining the +2.5 ms intentional lag. The failure suites independently mux WAV variants into MP4 before verification.
 
 To reproduce only the fresh-cut workflow, run the example with `--picture PATH` to an independently supplied cut. It writes stems, mix, manifest and verification report directly into the specified output directory.
+
+Run `python3 skill/imessage-motion-recreation/sound/quality_controls.py /tmp/imv-sound-quality` for five encoded negative controls. They cover a missing overlay on continuous ambience, silence inserted into the signal, clipping, truncated audio, and a discontinuity in decoded AAC frame timestamps. Updating the export hash for each control leaves its gate failing. The intact control passes.

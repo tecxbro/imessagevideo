@@ -1,0 +1,313 @@
+{
+  "landmarks": {
+    "message.question.press": {
+      "roi": [
+        0.57083333,
+        0.82407407,
+        0.0375,
+        0.06851852
+      ],
+      "settle_frames": 2,
+      "search_s": [
+        2,
+        5.4
+      ],
+      "template": "pressed-arrow.png",
+      "max_distance": 0.045
+    },
+    "message.question.send": {
+      "roi": [
+        0.58958333,
+        0.4537037,
+        0.0125,
+        0.02222222
+      ],
+      "settle_frames": 3,
+      "search_s": [
+        2,
+        6.5
+      ],
+      "color": [
+        31,
+        117,
+        202
+      ],
+      "tolerance": 28,
+      "min_fraction": 0.7
+    },
+    "message.answer.receive": {
+      "roi": [
+        0.58958333,
+        0.55185185,
+        0.0125,
+        0.02222222
+      ],
+      "settle_frames": 3,
+      "search_s": [
+        3.1,
+        8
+      ],
+      "color": [
+        54,
+        52,
+        60
+      ],
+      "tolerance": 22,
+      "min_fraction": 0.7
+    },
+    "prop.table.reveal": {
+      "roi": [
+        0.76666667,
+        0.58703704,
+        0.0125,
+        0.02222222
+      ],
+      "settle_frames": 3,
+      "search_s": [
+        6,
+        10.3
+      ],
+      "color": [
+        144,
+        46,
+        45
+      ],
+      "tolerance": 28,
+      "min_fraction": 0.7
+    },
+    "prop.tin.open": {
+      "roi": [
+        0.74166667,
+        0.68888889,
+        0.00625,
+        0.01111111
+      ],
+      "settle_frames": 3,
+      "search_s": [
+        6.5,
+        11
+      ],
+      "color": [
+        93,
+        29,
+        37
+      ],
+      "tolerance": 28,
+      "min_fraction": 0.7
+    },
+    "prop.moon.lift": {
+      "roi": [
+        0.70833333,
+        0.59259259,
+        0.125,
+        0.12962963
+      ],
+      "settle_frames": 2,
+      "search_s": [
+        7.5,
+        12
+      ],
+      "template": "hand-on-stick.png",
+      "max_distance": 0.045
+    },
+    "stage.return": {
+      "roi": [
+        0.65208333,
+        0.43333333,
+        0.0125,
+        0.02222222
+      ],
+      "settle_frames": 3,
+      "search_s": [
+        8.4,
+        13.8
+      ],
+      "color": [
+        238,
+        187,
+        122
+      ],
+      "tolerance": 28,
+      "min_fraction": 0.7
+    },
+    "stage.moon.enter": {
+      "roi": [
+        0.73958333,
+        0.28518519,
+        0.05520833,
+        0.17037037
+      ],
+      "settle_frames": 1,
+      "search_s": [
+        9.3,
+        14.4
+      ],
+      "template": "readable-crescent.png",
+      "max_distance": 0.06
+    },
+    "stage.rabbit.release": {
+      "roi": [
+        0.471875,
+        0.46481481,
+        0.02395833,
+        0.08518519
+      ],
+      "settle_frames": 2,
+      "search_s": [
+        9.5,
+        14.5
+      ],
+      "template": "rabbit-ear-turn.png",
+      "max_distance": 0.035
+    }
+  },
+  "cues": [
+    {
+      "id": "seated-opening",
+      "asset": "../assets/seated-opening.wav",
+      "bus": "atmosphere",
+      "gain_db": -6,
+      "purpose": "Establish the space and fade it as the phone takes focus.",
+      "source": "Original procedural audio from sound/direction/synthesize.py.",
+      "impact_ms": 0,
+      "onset_ms": 0,
+      "time_s": 0
+    },
+    {
+      "id": "send",
+      "asset": "../assets/send.wav",
+      "bus": "effects",
+      "gain_db": -10,
+      "purpose": "Mark the stagehand's choice to ask and give the question a clean reading hold.",
+      "source": "Original procedural audio from sound/direction/synthesize.py.",
+      "impact_ms": 32,
+      "onset_ms": 24,
+      "event": "message.question.send",
+      "offset_ms": 0,
+      "tolerance_ms": 25
+    },
+    {
+      "id": "reply",
+      "asset": "../assets/reply.wav",
+      "bus": "effects",
+      "gain_db": -13,
+      "purpose": "Shift the viewer's attention to the crew's answer without breaking its reading hold.",
+      "source": "Original procedural audio from sound/direction/synthesize.py.",
+      "impact_ms": 38,
+      "onset_ms": 29,
+      "event": "message.answer.receive",
+      "offset_ms": 12,
+      "tolerance_ms": 25
+    },
+    {
+      "id": "tin",
+      "asset": "../assets/tin.wav",
+      "bus": "effects",
+      "gain_db": -5,
+      "purpose": "Give the first movement of the closed tin weight and identify the prop as metal.",
+      "source": "Original procedural audio from sound/direction/synthesize.py.",
+      "impact_ms": 65,
+      "onset_ms": 35,
+      "event": "prop.tin.open",
+      "offset_ms": 0,
+      "tolerance_ms": 25,
+      "fingerprint_ms": [
+        47,
+        137
+      ]
+    },
+    {
+      "id": "paper",
+      "asset": "../assets/paper.wav",
+      "bus": "effects",
+      "gain_db": -8,
+      "purpose": "Make the small moon feel hand-cut and almost weightless as it leaves the tin.",
+      "source": "Original procedural audio from sound/direction/synthesize.py.",
+      "impact_ms": 65,
+      "onset_ms": 35,
+      "event": "prop.moon.lift",
+      "offset_ms": 6,
+      "tolerance_ms": 25,
+      "fingerprint_ms": [
+        45,
+        140
+      ]
+    },
+    {
+      "id": "seated-return",
+      "asset": "../assets/seated-return.wav",
+      "bus": "atmosphere",
+      "gain_db": -9,
+      "purpose": "Return to the audience's point of view across the stage cut.",
+      "source": "Original procedural audio from sound/direction/synthesize.py.",
+      "impact_ms": 0,
+      "onset_ms": 0,
+      "event": "stage.return",
+      "offset_ms": -85,
+      "tolerance_ms": 25,
+      "fingerprint_ms": [
+        440,
+        680
+      ]
+    },
+    {
+      "id": "puppet",
+      "asset": "../assets/puppet.wav",
+      "bus": "effects",
+      "gain_db": -12,
+      "purpose": "A small cloth movement marks the rabbit's release.",
+      "source": "Original procedural audio from sound/direction/synthesize.py.",
+      "impact_ms": 65,
+      "onset_ms": 35,
+      "event": "stage.rabbit.release",
+      "offset_ms": 0,
+      "tolerance_ms": 25,
+      "fingerprint_ms": [
+        48,
+        141
+      ]
+    },
+    {
+      "id": "audience-release",
+      "asset": "../assets/audience-release.wav",
+      "bus": "atmosphere",
+      "gain_db": -5,
+      "purpose": "Suggest the room exhaling once the rabbit relaxes.",
+      "source": "Original procedural audio from sound/direction/synthesize.py.",
+      "impact_ms": 290,
+      "onset_ms": 155,
+      "event": "stage.rabbit.release",
+      "offset_ms": 115,
+      "tolerance_ms": 25,
+      "fingerprint_ms": [
+        230,
+        465
+      ]
+    },
+    {
+      "id": "seated-wait",
+      "asset": "../assets/seated-wait.wav",
+      "bus": "atmosphere",
+      "gain_db": -5,
+      "purpose": "A nearly still seated room leads into the prop cut and clears the tin.",
+      "source": "Original procedural audio from sound/direction/synthesize.py.",
+      "impact_ms": 0,
+      "onset_ms": 0,
+      "event": "prop.table.reveal",
+      "offset_ms": -1160,
+      "tolerance_ms": 25,
+      "fingerprint_ms": [
+        535,
+        775
+      ]
+    }
+  ],
+  "silence": [
+    {
+      "start_s": 3.8,
+      "end_s": 4.38,
+      "purpose": "Hold the unanswered question after the send.",
+      "max_peak_dbfs": -57
+    }
+  ]
+}

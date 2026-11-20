@@ -61,3 +61,9 @@ When a new cut arrives, preserve the prior export. Compare version hashes, run `
 `verify` decodes the MP4 to locate visible events independently of the cue sheet. It compares the muxed picture payload and presentation timestamps with the handed-off master. It finds each distinctive cue waveform in decoded AAC, compares its impact with the visible event plus the authored offset, and reports early, late or missing cues. It also checks the stream profile, audio start and duration, decoded audio frame continuity, clipping, quiet passages, plus substantial energy drops or changes relative to the approved PCM. A ±48-sample stream duration allowance covers MP4 rounding. Decoded AAC may expose up to 1,024 samples of final frame padding. Estimated true peak uses 4× oversampling. A wall-clock bed receives continuity and dropout checks. For timing acceptance, bind the bed's distinctive story beat to a visual landmark.
 
 Deliver the plan, source recipes or assets, separately editable stems, mix WAV and MP4, verification report, updated listening notes, and exact SHA-256. Keep old timings alongside the revised timings in the evidence. Split tracked review payloads above 24 MiB in repository archive style and verify the rejoined hash. In the team issue, include the pushed commit, run command and expected result. For a cold retiming check, supply the skill, old plan and a new silent cut with no moved-event hint.
+
+## More examples
+
+- Run `python3 "$S/quality_controls.py" /tmp/imv-sound-quality` for encoded stream, clipping and gap controls.
+- The [silent-master examples](masters/README.md) cover independent sound design, source classification and five renderer smoke checks in the complete repository.
+- See [source studies](SOURCES.md) for the six pinned repositories, primary tool documentation, and the measured failure in the historical checker.
