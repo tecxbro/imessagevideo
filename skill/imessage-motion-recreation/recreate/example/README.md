@@ -1,8 +1,16 @@
 # Train options
 
-This four-second authored development reference shows a title, two Messages-style bubbles, an options drawer, a small seat selection and a receipt. The reference is an independently rendered SVG document with original synthesized cues. The rebuild uses editable text, shapes, masks and timing in a shared scene manifest. The repository's existing director components are the stand-in for the Clone iMessage UI handoff.
+This four-second authored development reference shows a title, two Messages-style bubbles, an options drawer, a small seat selection and a receipt. The reference is an independently rendered SVG document with original synthesized cues. The initial rebuild uses the repository's director components to render editable text, shapes, masks and timing. The companion project below exercises the Clone iMessage UI handoff.
 
 ## Reproduce
+
+For the complete render, compare, edit and destructive-test proof, run from the repository root with a fresh output directory.
+
+```sh
+bash skill/imessage-motion-recreation/recreate/example/prove.sh /tmp/recreate-train
+```
+
+To generate just the reference or just the editable exports, use the separate commands below.
 
 Use Node, Chromium, Python 3 and FFmpeg/ffprobe. Install the pinned shared browser dependencies from the repository root with `npm ci --prefix skill/imessage-motion-recreation/scripts/engines`. For a nondefault Chromium executable, set `CHROME_PATH`.
 
@@ -47,3 +55,25 @@ The reference and each full output contain 120 frames at 30/1, 640 × 360. Valid
 | 96–119 | Terminal hold through the last frame |
 
 The source has authored audio cues at frames 30, 56, 74 and 89. The rebuilt exports are silent picture masters for a separate soundtrack handoff.
+
+## Clone iMessage UI
+
+[ui-train.json](ui-train.json) carries the same booking interaction and stable event IDs into the Clone iMessage UI film-paper skin. The adapter compiles the editable transcript, header, composer and tray. [compile_clone_ui.py](compile_clone_ui.py) mounts the original product-specific seat control in the first tray item. This portrait project has its own picture layouts. The native source-vs-export comparison above applies to the 640 × 360 development fixture.
+
+Run with a Python environment that has Pillow, Fontconfig and the DejaVu Sans regular/bold fonts. In the integrated checkout, set `PYTHONPATH` to the skill directory when calling the compiler as a script. On the standalone Recreation branch, stage only the teammate's UI folder at the tested handoff commit.
+
+```sh
+S=skill/imessage-motion-recreation
+STAGE=$(mktemp -d)
+git fetch origin refs/heads/codex-video-v3/ui
+git archive 9beea91a43c0b24fb7a2061ea54071d426f621c6 "$S/ui" | tar -x -C "$STAGE"
+PYTHONPATH="$STAGE/$S" python3 "$S/recreate/example/compile_clone_ui.py" \
+  "$S/recreate/example/ui-train.json" --out "$STAGE/train.scene.json"
+node "$S/scripts/engines/render.mjs" --method html --scene "$STAGE/train.scene.json" --out "$STAGE/train.mp4"
+
+PYTHONPATH="$STAGE/$S" python3 "$S/recreate/example/compile_clone_ui.py" \
+  "$S/recreate/example/ui-train.json" --edit "$S/recreate/example/edited.json" --out "$STAGE/train-edit.scene.json"
+node "$S/scripts/engines/render.mjs" --method html --scene "$STAGE/train-edit.scene.json" --out "$STAGE/train-edit.mp4"
+```
+
+Both pictures export 120 silent frames at 30/1, 402 × 480. The edit moves `recreate.train.seat-selection` from frame 74 to 69 and changes the outgoing message to “Two seats to Northgate.”

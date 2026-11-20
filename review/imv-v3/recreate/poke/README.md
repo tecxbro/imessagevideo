@@ -11,10 +11,11 @@ This is a measurement of the existing Poke source, used to test the workflow and
 | 509–512 | Composer and keyboard exit downward. The question persists through the blank response area. |
 | 513–514 | The response appears beneath and to the right of the question. The pin and Shared Location title are legible on 513. Palo Alto, CA is legible on 514. |
 
-The visible question is the continuity anchor. It follows the camera, while the response area changes from keyboard control to blank space to a local map bubble. Use separate editable tracks for the location control, keyboard/composer, question and card. The new card moves up over frames 513–517; keep the pin attached to the card, then hold while the caption can be read. The source timings and crop gates are recreation measurements. An original edit can choose its own pacing.
+The visible question is the continuity anchor. It follows the camera, while the response area changes from keyboard control to blank space to a local map bubble. Use separate editable tracks for the location control, keyboard/composer, question and card. The magenta pin appears at f513. Its measured centroid is approximately (878, 697) and moves up by 57.8 coded pixels in the next frame, then by 20.5 more by f515. It is near (878, 590) at f519. Keep the pin attached to the card and continue the smaller vertical settling motion while the caption can be read. See [the full landmark series](pin-landmarks.csv). The source timings and crop gates are recreation measurements. An original edit can choose its own pacing.
 
 ```bash
 R=skill/imessage-motion-recreation/recreate
 SOURCE=projects/04-poke-complete-v1/imessage-recreations/references/04-poke/source.mp4
 python3 "$R/recreate.py" inspect "$SOURCE" --frames 406:420,446:459,481:490,507:519 --out /tmp/poke-landmarks --sheet-width 280
+python3 "$R/recreate.py" landmarks "$SOURCE" --plan review/imv-v3/recreate/poke/pin-track.json --out /tmp/poke-pin
 ```

@@ -85,9 +85,10 @@ def strip(path, pairs, label, crop=None, width=220):
         delta = np.abs(reference.astype(np.int16) - candidate)
         panels = [Image.fromarray(item) for item in
                   (reference, candidate, np.minimum(delta * 4, 255).astype(np.uint8))]
-        height = max(1, round(width * panels[0].height / panels[0].width))
-        images.append((index, height, [p.resize((width, height), Image.Resampling.NEAREST if crop
-                                               else Image.Resampling.LANCZOS) for p in panels]))
+        scale = min(width / panels[0].width, 320 / panels[0].height)
+        panel_size = (max(1, round(scale * panels[0].width)), max(1, round(scale * panels[0].height)))
+        resampling = Image.Resampling.NEAREST if crop else Image.Resampling.LANCZOS
+        images.append((index, panel_size[1], [panel.resize(panel_size, resampling) for panel in panels]))
     if not images:
         return
     canvas = Image.new("RGB", (width * 3, 25 + sum(height + 20 for _, height, _ in images)), "#171717")
@@ -97,7 +98,7 @@ def strip(path, pairs, label, crop=None, width=220):
     for index, height, panels in images:
         draw.text((5, y), f"Frame {index}   reference / candidate / difference ×4", fill="white")
         for column, panel in enumerate(panels):
-            canvas.paste(panel, (width * column, y + 20))
+            canvas.paste(panel, (width * column + (width - panel.width) // 2, y + 20))
         y += height + 20
     canvas.save(path)
 

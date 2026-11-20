@@ -12,3 +12,7 @@
 The repair changed only native frames 74–77 and retained 116 PNGs byte for byte. The complete final encode was compared again. The isolated output matches the final file SHA-256. Refer to the [full-frame result](train/final-check/report.json), [native repair and edit](train/repair-and-edit.json) and [independent adversarial suite](qa/suite.json). This evidence uses decoded frames and audio measurements.
 
 [Poke](poke/README.md) is a measured source passage for Direction and Motion, along with a complete comparison of the archived original and silent GSAP master. It is separate from the Train reconstruction.
+
+The [portrait companion](ui/train-proof.json) uses the Clone iMessage UI adapter. It was rendered before and after the text and timing edit. Its visual treatment differs from the landscape fixture. [UI compiler and reproduction](../../../skill/imessage-motion-recreation/recreate/example/README.md)
+
+The [variable frame clock probe](clock/README.md) applied 126 exact source timestamps to separately authored frames. The [Motion handoff](motion/README.md) verifies an editable asset swap in the motion library.

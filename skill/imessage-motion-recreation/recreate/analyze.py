@@ -2,6 +2,7 @@
 import csv
 from fractions import Fraction
 from hashlib import sha256
+import json
 from math import ceil
 from pathlib import Path
 import subprocess
@@ -43,7 +44,7 @@ def audio_evidence(path, clock, out):
             block = signal[index:index + window]
             rms[n] = np.sqrt(np.max(np.mean(block * block, axis=0)))
             peak[n] = np.max(np.abs(block))
-        previous = np.r_[rms[0], rms[:-1]]
+        previous = np.r_[0, rms[:-1]]
         rise = np.maximum(rms - previous, 0)
         threshold = max(0.002, float(np.quantile(rise, 0.95)))
         candidates = []
@@ -81,10 +82,19 @@ def area_of_change(before, after, width, height):
     return float(difference.mean()), rows.size / peaks.size, [x, y, right - x, bottom - y]
 
 
-def analyze(path, out):
+def analyze(path, out, reuse=False):
     out = Path(out)
     out.mkdir(parents=True, exist_ok=True)
     checksum = digest(path)
+    index = out / "analysis.json"
+    if reuse and index.is_file():
+        cached = json.loads(index.read_text())
+        if cached["source_sha256"] != checksum:
+            raise MediaError("The saved measurements belong to different source bytes; pick a new output directory")
+        required = [out / "timeline.csv", out / "contact-00.jpg"]
+        required.extend(out / f"audio-{track['stream']['index']}.csv" for track in cached["audio_tracks"])
+        if all(path.is_file() for path in required):
+            return cached
     clock = video_clock(path)
     times = clock.times
     cuts, holds, contact = [], [], {}
@@ -149,6 +159,9 @@ def inspect(path, out, ranges, rect=None, ocr=False, size=300):
     if any(end >= len(times) for _, end in ranges):
         raise MediaError(f"Maximum frame index is {len(times) - 1}")
     frames_to_export = {frame for start, end in ranges for frame in range(start, end + 1)}
+    last = max(frames_to_export)
+    if size <= 0:
+        raise MediaError("Sheet width must be positive")
     if rect is not None:
         x, y, w, h = rect
         if x < 0 or y < 0 or w < 1 or h < 1 or x + w > clock.width or y + h > clock.height:
@@ -170,10 +183,57 @@ def inspect(path, out, ranges, rect=None, ocr=False, size=300):
                 ocr_rows = list(csv.DictReader(result.stdout.splitlines(), delimiter="\t"))
                 text_hits[i] = [row for row in ocr_rows if row.get("text", "").strip()]
             panels.append((f"#{i} · {float(times[i]):.3f}s", image.copy()))
-            if len(panels) == 20 or i == max(frames_to_export):
+            if len(panels) == 20 or i == last:
                 collage(out / f"inspect-{i:06d}.jpg", panels, width=size)
                 panels.clear()
-            if i == max(frames_to_export):
+            if i == last:
                 break
     write_json(out / "inspect.json", {"source_sha256": digest(path), "frames": intervals(sorted(frames_to_export)),
                                      "rect": rect, "ocr_crop_relative": text_hits})
+
+
+def measure_landmarks(path, plan, out):
+    """Track known flat colors in bounded native windows and keep pixel observations."""
+    out = Path(out)
+    out.mkdir(parents=True, exist_ok=True)
+    clock = video_clock(path)
+    times = clock.times
+    tracks = json.loads(Path(plan).read_text())["tracks"]
+    if not tracks:
+        raise MediaError("Supply at least one landmark track")
+    names = set()
+    parsed = []
+    for item in tracks:
+        if set(item) != {"id", "start", "end", "rect", "rgb", "tolerance"}:
+            raise MediaError("Landmark needs id, start, end, rect, rgb and tolerance")
+        name, start, end = item["id"], item["start"], item["end"]
+        x, y, w, h = item["rect"]
+        target, tolerance = item["rgb"], item["tolerance"]
+        integers = (start, end, x, y, w, h, tolerance, *target)
+        if (not isinstance(name, str) or not name.strip() or name in names
+                or any(type(value) is not int for value in integers)
+                or not 0 <= start <= end < len(times) or len(target) != 3
+                or min(x, y) < 0 or min(w, h) <= 0 or x + w > clock.width or y + h > clock.height
+                or any(not 0 <= value <= 255 for value in (tolerance, *target))):
+            raise MediaError(f"Invalid landmark track {name!r}")
+        names.add(name)
+        parsed.append((name, start, end, x, y, w, h, np.asarray(target, dtype=np.int16), tolerance))
+    last = max(track[2] for track in parsed)
+    with (out / "landmarks.csv").open("w", newline="") as file, video_frames(path, clock) as pictures:
+        table = csv.writer(file, lineterminator="\n")
+        table.writerow(("id", "frame", "pts", "seconds", "pixels", "centroid_x", "centroid_y", "x", "y", "width", "height"))
+        for i, rgb in enumerate(pictures):
+            for name, start, end, x, y, w, h, target, tolerance in parsed:
+                if not start <= i <= end:
+                    continue
+                region = rgb[y:y + h, x:x + w].astype(np.int16)
+                rows, cols = np.where(np.max(np.abs(region - target), axis=2) <= tolerance)
+                if rows.size:
+                    table.writerow((name, i, clock.pts[i], float(times[i]), rows.size, x + cols.mean(),
+                                    y + rows.mean(), x + int(cols.min()), y + int(rows.min()),
+                                    int(np.ptp(cols)) + 1, int(np.ptp(rows)) + 1))
+                else:
+                    table.writerow((name, i, clock.pts[i], float(times[i]), 0, "", "", "", "", "", ""))
+            if i == last:
+                break
+    write_json(out / "landmarks.json", {"source_sha256": digest(path), "tracks": tracks})

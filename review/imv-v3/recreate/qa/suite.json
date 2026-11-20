@@ -270,6 +270,25 @@
     "error": null
   },
   {
+    "case": "unsupported-transparency",
+    "meets_expectation": true,
+    "expected_verdict": "FAIL",
+    "expected_check": "unsupported_alpha_comparison",
+    "expected_span": null,
+    "exit_code": 1,
+    "verdict": "FAIL",
+    "compared_frames": 8,
+    "mean_abs_rgb": 0.0,
+    "failures": [
+      {
+        "check": "unsupported_alpha_comparison",
+        "reference_alpha": true,
+        "candidate_alpha": true
+      }
+    ],
+    "error": null
+  },
+  {
     "case": "video-delayed-from-audio",
     "meets_expectation": true,
     "expected_verdict": "FAIL",
