@@ -50,8 +50,12 @@ function sequence(parts) {
   let frames = 0;
   const layers = [];
   const events = [];
+  const cues = [];
   for (const [index, part] of parts.entries()) {
-    const prefix = `beat-${index + 1}.`;
+    if (part.fps !== first.fps || part.width !== first.width || part.height !== first.height)
+      throw Error('Sequence beats must share picture dimensions and frame rate');
+    const groupId = `beat-${index + 1}`;
+    const prefix = groupId + '.';
     const start = frames / first.fps;
     const beatFrames = part.timeline.picture.frameCount;
     const end = (frames + beatFrames) / first.fps;
@@ -63,15 +67,28 @@ function sequence(parts) {
         for (const key of track) key.t += start;
       for (const child of layer.children ?? []) offset(child);
     };
+    const background = {
+      id: prefix + 'background', type: 'rect', x: 0, y: 0,
+      width: part.width, height: part.height, fill: part.background,
+    };
     for (const layer of part.layers) offset(layer);
-    layers.push({id: `beat-${index + 1}`, type: 'group', start, end, children: part.layers});
-    for (const event of part.timeline.events)
-      events.push({...event, id: prefix + event.id, frame: event.frame + frames, layerIds: event.layerIds.map(id => prefix + id)});
+    layers.push({id: groupId, type: 'group', start, end, children: [background, ...part.layers]});
+    if (index && !part.timeline.events.some(event => event.frame === 0 && Object.hasOwn(event, 'uiState'))) {
+      events.push({id: prefix + 'cut', kind: 'shot.cut', target: groupId,
+        frame: frames, layerIds: [groupId], uiState: part.timeline.initialUI});
+    }
+    for (const event of part.timeline.events) {
+      const remapped = {...event, id: prefix + event.id, frame: event.frame + frames};
+      if (event.layerIds) remapped.layerIds = event.layerIds.map(id => prefix + id);
+      events.push(remapped);
+    }
+    for (const cue of part.timeline.cues)
+      cues.push({...cue, id: prefix + cue.id, eventId: prefix + cue.eventId});
     frames += beatFrames;
   }
   return {...first, duration: frames / first.fps, title: parts.map(part => part.title).join(' / '),
     source: {notes: parts.map(part => `${part.source.path} [${part.source.sourceStart}, ${part.source.sourceEnd})`).join(' then ')},
-    layers, timeline: {...first.timeline, picture: {...first.timeline.picture, frameCount: frames}, events},
+    layers, timeline: {...first.timeline, picture: {...first.timeline.picture, frameCount: frames}, events, cues},
   };
 }
 
