@@ -50,6 +50,8 @@ node motion/cli.mjs render --id photos-under-fixed-heading --ui --out /tmp/attac
 
 If `ui/` lives in a separate checkout, use `--ui-root /absolute/path/to/skill/imessage-motion-recreation`. For the pinned version used in the review files, `git archive 5e2ff5a skill/imessage-motion-recreation/ui` yields the adapter from its fetched ref. Unpack it into a working directory and pass the skill directory as `--ui-root`.
 
+For attachment browsing, see the [photo swipe comparison](PHOTO-SWIPE.md) and its portable inputs. It shows the venue rail, the overlapping stack and the adapter’s send, page, viewer and return sequence.
+
 Render produces an MP4, an editable `.scene.json` and an `.events.json` with the shared frame clock. `scene` produces the same editable scene and event map without encoding. For programmatic reuse, import `buildMotion(entry, content, options)` from [scene.mjs](scene.mjs), `byId` from [catalog.mjs](catalog.mjs), or `buildUiMotion(entry, content, options)` from [ui-bridge.mjs](ui-bridge.mjs). Insert the returned layers and timeline into a matching scene, or use [composeScenes](sequence.mjs) for serial beats. It resets UI state at cuts and prefixes each occurrence's layer, event and cue links. Keep artwork as individual source files when relocating a generated manifest.
 
 Read [source provenance](SOURCES.md), the [observed-only inventory](observed.json) and the [review evidence](../../../review/imv-v3/motion/README.md) for limits and reuse results. Selector tests include unfamiliar wording, negation, invariant layers and near matches.
@@ -61,3 +63,10 @@ node --test motion/tests/*.test.mjs
 ## Count between two totals
 
 `metric-count` updates the displayed value in place while the label and heading hold. The settled event is the first frame showing the final value. Use `values` for two distinct whole numbers, `copy` for the metric label and `detail` for an optional unit. The selector can fill these fields and run the recipe with `render --brief`. A rolling numeral treatment lives under `metric-wheel-roll`.
+
+When the brief leaves the endpoints unspecified, supply the actual values in a content file. This command uses the editable [counter input](examples/metric-hold.json).
+
+```sh
+node motion/cli.mjs render --brief "Show a count climb to the real total then give the statistic time to read" \
+  --content motion/examples/metric-hold.json --out /tmp/metric-hold.mp4
+```

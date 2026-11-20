@@ -158,6 +158,8 @@ const holdouts = [
     'retrieve', ['composer-type']],
   ['Keep every thumbnail pinned in place while the title itself slides above them.',
     'retrieve', heading],
+  ['Leave the snapshots pinned while the title travels over them',
+    'retrieve', ['heading-over-fixed-photos']],
   ['Tap the middle thumbnail and let just that image grow into a viewer. Keep the heading and every other thumbnail pinned.',
     'retrieve', ['photo-open-continuity']],
   ['Touch the second thumbnail so it expands into a viewer while the other thumbnails stay where they are.',
@@ -195,6 +197,31 @@ test('a metric endpoint hold is part of the effect, with no fixture-specific uni
   assert.deepEqual([result.action, result.matches, result.content], [
     'adapt', ['metric-count'],
     {values:[620,1280], detail:'', copy:'Registrations', heading:'North Quay volunteers'},
+  ]);
+});
+
+test('a count with a reading hold retrieves without assuming the real endpoints', () => {
+  const result = select(catalog, 'Show a count climb to the real total then give the statistic time to read');
+  assert.deepEqual([result.action, result.matches, result.content], ['retrieve', ['metric-count'], undefined]);
+});
+
+test('a camera move during reading remains a separate beat after a count', () => {
+  const fromBrief = select(catalog,
+    'Show a count climb to the real total then push the camera closer to the booking detail');
+  assert.deepEqual([fromBrief.action, fromBrief.matches], ['combine', ['metric-count', 'camera-push-in']]);
+  const result = select(catalog,
+    'Count the number from 4 to 12 then give the statistic time to read by pushing the camera closer to the booking detail');
+  assert.deepEqual([result.action, result.matches], ['combine', ['metric-count', 'camera-push-in']]);
+  assert.deepEqual(result.sequence[0].content.values, [4, 12]);
+  assert.equal(result.sequence[1].action, 'retrieve');
+});
+
+test('a second action without a matching recipe remains missing after a count', () => {
+  const result = select(catalog, 'Show a count climb to the real total followed by simulate cloth physics');
+  assert.equal(result.action, 'missing');
+  assert.deepEqual(result.sequence.map(({action, matches}) => [action, matches]), [
+    ['retrieve', ['metric-count']],
+    ['missing', []],
   ]);
 });
 

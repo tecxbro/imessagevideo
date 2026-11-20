@@ -1,0 +1,63 @@
+{
+  "pass": true,
+  "failures": [],
+  "picture_duration": "1001/150",
+  "first_audio_sample": 0,
+  "audio_clock_max_discontinuity_samples": 0,
+  "audio_stream_duration_samples": 320304,
+  "decoded_audio_samples": 320512,
+  "sample_peak_dbfs": -13.14,
+  "estimated_true_peak_dbfs": -13.12,
+  "energy_dropouts_s": [],
+  "silence": [
+    {
+      "start_sample": 0,
+      "end_sample": 207840,
+      "purpose": "Allow the map, panel reveal and list to read as one quiet search.",
+      "peak_dbfs": null,
+      "pass": true
+    },
+    {
+      "start_sample": 216960,
+      "end_sample": 319200,
+      "purpose": "After the physical choice, read the result while the frame holds.",
+      "peak_dbfs": null,
+      "pass": true
+    }
+  ],
+  "landmarks": {
+    "poke.restaurant_sheet.open": {
+      "frame": 61,
+      "pts": "61061/30000",
+      "score": 0.9929928221288515,
+      "sample": 97698
+    },
+    "poke.restaurant_choice.check": {
+      "frame": 131,
+      "pts": "131131/30000",
+      "score": 0.6980392156862745,
+      "sample": 209810
+    },
+    "poke.restaurant_card.entry": {
+      "frame": 173,
+      "pts": "173173/30000",
+      "score": 1.0,
+      "sample": 277077
+    }
+  },
+  "cues": [
+    {
+      "id": "select-place",
+      "event": "poke.restaurant_choice.check",
+      "expected_impact_sample": 210674,
+      "intended_offset_samples": 864,
+      "verdict": "pass",
+      "correlation": 0.996,
+      "observed_asset_alignment_sample": 210172,
+      "estimated_onset_marker_sample": 210427,
+      "observed_impact_marker_sample": 210675,
+      "error_ms": 0.021
+    }
+  ],
+  "human_audition": "pending unless documented separately"
+}

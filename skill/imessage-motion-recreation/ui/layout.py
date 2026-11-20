@@ -5,7 +5,7 @@ from .components import (
     bubble, clip, composer, font_path, group, header, rect, text, typing,
 )
 from .inbox import INBOX_CONTROL_HEIGHT, INBOX_HEADER_HEIGHT, inbox_chrome, inbox_rows, search_rows
-from .rich import build_card
+from .rich import build_card, payment_approval
 from .state import copy, integer, require
 from .tracks import Tracks
 
@@ -332,6 +332,10 @@ class Layout:
             x = self.width - GUTTER - width if selected[0]["senderId"] == state.owner else GUTTER
             if row_end - row_y + height + 14 < live_height:
                 follow = row, selected[2] - selected[1]
+        elif surface == "payment-approval":
+            card = state.messages[overlay["messageId"]]["card"]
+            layers = payment_approval(width, self.height, card, self.measure)
+            x, y = 0, 0
         else:
             message = state.messages[overlay["messageId"]]
             asset = self.assets[message["attachmentIds"][message["page"]]]

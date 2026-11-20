@@ -24,7 +24,7 @@ export const entries = [
     moves: 'Adjacent photos translate together on one horizontally clipped rail.',
     fixed: 'The heading, viewport, divider and supporting footer stay in place.',
     notice: 'The next photo comes into view while the place and surrounding context remain easy to read.',
-    fits: 'Browse pictures within a single place, album or message surface with persistent labels.',
+    fits: 'Browse pictures inside a place or album surface with persistent labels. Use the separate UI adapter variant for inline conversation paging.',
     avoid: 'A stack that lifts or dismisses only its front photo needs independent layers and depth.',
     intents: [
       'Move the photos beneath a fixed heading',
@@ -33,6 +33,8 @@ export const entries = [
       'Scroll images without moving the header',
     ],
     editable: ['heading', 'detail', 'photos', 'direction'],
+    example: 'motion/examples/photo-swipe.content.json',
+    comparison: 'motion/PHOTO-SWIPE.md',
     photoCount: {min:2, max:12},
     source: {
       kind: 'measured-adaptation',

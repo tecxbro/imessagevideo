@@ -20,6 +20,13 @@ poll. Use the [content and state contract](CONTRACT.md) to choose event kinds.
 Choose `film-paper` for plum/lavender bubbles or `film-ink` for blue/gray.
 Both share the same authored screen geometry and state.
 
+For isolated interactions, start with [send with keyboard up](examples/send-keyboard.json),
+[Tapback and scroll](examples/tapback-scroll.json), or [in-thread photo swipe](examples/photos-fixed-header.json).
+Each has an edited input and decoded evidence in the
+[sequence kit](../../../review/imv-v3/ui/sequences/README.md). For payment
+storyboarding, the [test mock](examples/payment-mock.json) separates the
+approval overlay from the inline card and its simulated result.
+
 Run from `skill/imessage-motion-recreation` with Python 3.11+, Pillow,
 fontconfig and DejaVu Sans regular and bold. Install the
 [renderer requirements](../RUNNING.md) for the route you want.

@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "skin": "film-ink",
+  "conversationId": "archive",
+  "title": "Photo archive",
+  "participants": {
+    "eli": "Eli",
+    "rana": "Rana"
+  },
+  "localSenderId": "eli",
+  "display": {
+    "width": 402,
+    "height": 720
+  },
+  "fps": 24,
+  "frameCount": 74,
+  "assets": {
+    "portrait": "assets/archive-astronaut.png",
+    "launch": "assets/archive-launch.jpg"
+  },
+  "initial": {
+    "messages": [
+      {
+        "id": "question",
+        "senderId": "eli",
+        "text": "Can you send both archive photos?"
+      },
+      {
+        "id": "photos",
+        "senderId": "rana",
+        "text": "The portrait and the launch.",
+        "attachmentIds": [
+          "portrait",
+          "launch"
+        ]
+      },
+      {
+        "id": "after",
+        "senderId": "eli",
+        "text": "I’ll check both captions."
+      }
+    ]
+  },
+  "events": [
+    {
+      "id": "ui.photos-fixed-header.swipe",
+      "kind": "media.page",
+      "frame": 19,
+      "messageId": "photos",
+      "index": 1
+    },
+    {
+      "id": "ui.photos-fixed-header.return",
+      "kind": "media.page",
+      "frame": 44,
+      "messageId": "photos",
+      "index": 0
+    }
+  ],
+  "cues": [
+    {
+      "id": "ui.photos-fixed-header.swipe-cue",
+      "eventId": "ui.photos-fixed-header.swipe",
+      "offsetSamples": 0
+    }
+  ]
+}

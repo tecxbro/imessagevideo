@@ -14,7 +14,7 @@
       "moves": "Adjacent photos translate together on one horizontally clipped rail.",
       "fixed": "The heading, viewport, divider and supporting footer stay in place.",
       "notice": "The next photo comes into view while the place and surrounding context remain easy to read.",
-      "fits": "Browse pictures within a single place, album or message surface with persistent labels.",
+      "fits": "Browse pictures inside a place or album surface with persistent labels. Use the separate UI adapter variant for inline conversation paging.",
       "avoid": "A stack that lifts or dismisses only its front photo needs independent layers and depth.",
       "intents": [
         "Move the photos beneath a fixed heading",
@@ -28,6 +28,8 @@
         "photos",
         "direction"
       ],
+      "example": "motion/examples/photo-swipe.content.json",
+      "comparison": "motion/PHOTO-SWIPE.md",
       "photoCount": {
         "min": 2,
         "max": 12
@@ -4827,7 +4829,7 @@
       "moves": "The top card translates and rotates off the deck; the next card advances in depth and turns back toward zero.",
       "fixed": "The attachment count, conversation label, composer, and backdrop remain fixed.",
       "notice": "The photos are separate cards in one attachment, and the next card moves into the lead slot.",
-      "fits": "Show one-at-a-time browsing in a stack of overlapping attachments.",
+      "fits": "Show one-at-a-time browsing with an authored inline stack of overlapping attachments.",
       "avoid": "A horizontal media rail needs a shared strip translation with no individual promotion.",
       "intents": [
         "Peel the front photo away and bring the next attachment forward",
@@ -4843,6 +4845,8 @@
         "min": 2,
         "max": 5
       },
+      "example": "motion/examples/photo-swipe.content.json",
+      "comparison": "motion/PHOTO-SWIPE.md",
       "source": {
         "kind": "authored-adaptation",
         "ref": "a23bfb294fbc65739811a84f264ad306ca192fe1:skill/imessage-motion-recreation/director/motion-library/blocks.mjs#attachmentStack",
@@ -4850,7 +4854,7 @@
           0,
           4
         ],
-        "note": "Reuses the original rank-by-rank translation, rotation and scale idea. Gesture timing is authored."
+        "note": "The earlier recipe supplies rank-by-rank translation, rotation and scale. Inline promotion and gesture timing are authored."
       },
       "implementation": "packs/inherited.mjs",
       "preview": "review/imv-v3/motion/messages-attachment-stack.mp4",
@@ -6766,6 +6770,7 @@
         "detail",
         "values"
       ],
+      "example": "motion/examples/metric-hold.json",
       "defaults": {
         "heading": "A growing delivery total",
         "copy": "Completed trips",

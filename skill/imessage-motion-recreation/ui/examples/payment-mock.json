@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "skin": "film-ink",
+  "conversationId": "print-order",
+  "title": "Map printing",
+  "service": "Messages · Payment sandbox mock",
+  "participants": {"alex": "Alex", "shop": "Print Room"},
+  "localSenderId": "alex",
+  "display": {"width": 402, "height": 720},
+  "fps": 24,
+  "frameCount": 108,
+  "initial": {
+    "messages": [
+      {"id": "question", "senderId": "alex", "text": "Can I pay for the set of trail maps?"}
+    ]
+  },
+  "events": [
+    {"id": "ui.payment-mock.card", "kind": "receive", "frame": 14, "message": {
+      "id": "request", "senderId": "shop", "card": {
+        "kind": "payment-mock", "status": "requested", "title": "Trail map printing",
+        "detail": "$8.00 · Demo order", "action": "Review test payment"
+      }
+    }},
+    {"id": "ui.payment-mock.approval", "kind": "overlay", "frame": 34,
+     "surface": "payment-approval", "messageId": "request"},
+    {"id": "ui.payment-mock.dismiss", "kind": "overlay", "frame": 59, "surface": "conversation"},
+    {"id": "ui.payment-mock.result", "kind": "card.update", "frame": 78, "messageId": "request", "card": {
+      "kind": "payment-mock", "status": "paid", "title": "Trail map printing", "detail": "$8.00 · Demo order"
+    }}
+  ]
+}

@@ -1,0 +1,197 @@
+{
+  "pass": false,
+  "failures": [
+    "manifest landmarks differ from decoded export frames",
+    "audience-release: manifest event_frame differs from decoded picture resolution",
+    "audience-release: manifest asset_start_sample differs from decoded picture resolution",
+    "audience-release: manifest impact_sample differs from decoded picture resolution",
+    "audience-release: manifest onset_marker_sample differs from decoded picture resolution",
+    "audience-release: early against decoded picture"
+  ],
+  "picture_duration": "15",
+  "first_audio_sample": 0,
+  "audio_clock_max_discontinuity_samples": 0,
+  "audio_stream_duration_samples": 720000,
+  "decoded_audio_samples": 720896,
+  "sample_peak_dbfs": -4.26,
+  "estimated_true_peak_dbfs": -4.14,
+  "energy_dropouts_s": [],
+  "pcm_difference_ranges_s": [],
+  "silence": [
+    {
+      "start_sample": 182400,
+      "end_sample": 210240,
+      "purpose": "Hold the unanswered question after the send.",
+      "peak_dbfs": null,
+      "pass": true
+    },
+    {
+      "start_sample": 624000,
+      "end_sample": 720000,
+      "purpose": "Let the final line hold after the physical and audience sounds resolve.",
+      "peak_dbfs": null,
+      "pass": true
+    }
+  ],
+  "landmarks": {
+    "message.question.press": {
+      "frame": 82,
+      "pts": "41/12",
+      "score": 0.9829575163398693,
+      "sample": 164000
+    },
+    "message.question.send": {
+      "frame": 84,
+      "pts": "7/2",
+      "score": 0.9868675368485615,
+      "sample": 168000
+    },
+    "message.answer.receive": {
+      "frame": 113,
+      "pts": "113/24",
+      "score": 1.0,
+      "sample": 226000
+    },
+    "prop.table.reveal": {
+      "frame": 153,
+      "pts": "51/8",
+      "score": 1.0,
+      "sample": 306000
+    },
+    "prop.tin.open": {
+      "frame": 165,
+      "pts": "55/8",
+      "score": 0.9941448801742919,
+      "sample": 330000
+    },
+    "prop.moon.lift": {
+      "frame": 189,
+      "pts": "63/8",
+      "score": 0.9916228800888547,
+      "sample": 378000
+    },
+    "stage.return": {
+      "frame": 212,
+      "pts": "53/6",
+      "score": 1.0,
+      "sample": 424000
+    },
+    "stage.moon.enter": {
+      "frame": 218,
+      "pts": "109/12",
+      "score": 0.9917082245084413,
+      "sample": 436000
+    },
+    "stage.rabbit.release": {
+      "frame": 254,
+      "pts": "127/12",
+      "score": 0.9822466856938112,
+      "sample": 508000
+    },
+    "stage.audience.release": {
+      "frame": 275,
+      "pts": "275/24",
+      "score": 0.9971342383107089,
+      "sample": 550000
+    }
+  },
+  "cues": [
+    {
+      "id": "send",
+      "event": "message.question.send",
+      "expected_impact_sample": 168000,
+      "intended_offset_samples": 0,
+      "verdict": "pass",
+      "correlation": 1.0,
+      "observed_asset_alignment_sample": 166464,
+      "estimated_onset_marker_sample": 167616,
+      "observed_impact_marker_sample": 168000,
+      "error_ms": 0.0
+    },
+    {
+      "id": "reply",
+      "event": "message.answer.receive",
+      "expected_impact_sample": 226576,
+      "intended_offset_samples": 576,
+      "verdict": "pass",
+      "correlation": 1.0,
+      "observed_asset_alignment_sample": 224752,
+      "estimated_onset_marker_sample": 226144,
+      "observed_impact_marker_sample": 226576,
+      "error_ms": 0.0
+    },
+    {
+      "id": "tin",
+      "event": "prop.tin.open",
+      "expected_impact_sample": 330000,
+      "intended_offset_samples": 0,
+      "verdict": "pass",
+      "correlation": 0.996,
+      "observed_asset_alignment_sample": 326880,
+      "estimated_onset_marker_sample": 328560,
+      "observed_impact_marker_sample": 330000,
+      "error_ms": 0.0
+    },
+    {
+      "id": "paper",
+      "event": "prop.moon.lift",
+      "expected_impact_sample": 378288,
+      "intended_offset_samples": 288,
+      "verdict": "pass",
+      "correlation": 0.997,
+      "observed_asset_alignment_sample": 375168,
+      "estimated_onset_marker_sample": 376848,
+      "observed_impact_marker_sample": 378288,
+      "error_ms": 0.0
+    },
+    {
+      "id": "seated-return",
+      "event": "stage.return",
+      "expected_impact_sample": 419920,
+      "intended_offset_samples": -4080,
+      "verdict": "pass",
+      "correlation": 1.0,
+      "observed_asset_alignment_sample": 419920,
+      "estimated_onset_marker_sample": 419920,
+      "observed_impact_marker_sample": 419920,
+      "error_ms": 0.0
+    },
+    {
+      "id": "puppet",
+      "event": "stage.rabbit.release",
+      "expected_impact_sample": 508000,
+      "intended_offset_samples": 0,
+      "verdict": "pass",
+      "correlation": 1.0,
+      "observed_asset_alignment_sample": 504880,
+      "estimated_onset_marker_sample": 506560,
+      "observed_impact_marker_sample": 508000,
+      "error_ms": 0.0
+    },
+    {
+      "id": "audience-release",
+      "event": "stage.audience.release",
+      "expected_impact_sample": 552880,
+      "intended_offset_samples": 2880,
+      "verdict": "early",
+      "correlation": 0.999,
+      "observed_asset_alignment_sample": 528960,
+      "estimated_onset_marker_sample": 536400,
+      "observed_impact_marker_sample": 542880,
+      "error_ms": -208.333
+    },
+    {
+      "id": "seated-wait",
+      "event": "prop.table.reveal",
+      "expected_impact_sample": 245520,
+      "intended_offset_samples": -60480,
+      "verdict": "pass",
+      "correlation": 1.0,
+      "observed_asset_alignment_sample": 245520,
+      "estimated_onset_marker_sample": 245520,
+      "observed_impact_marker_sample": 245520,
+      "error_ms": 0.0
+    }
+  ],
+  "human_audition": "pending unless documented separately"
+}

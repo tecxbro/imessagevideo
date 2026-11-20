@@ -74,8 +74,13 @@ Pillow and FFmpeg:
 node motion/cli.mjs render --id heading-over-fixed-photos --out /tmp/heading-preview.mp4 --method pillow
 ```
 
-Use the v3.2.1 media companion for finished films, frame strips, verified Motion
+Use the v3.3.0 media companion for finished films, frame strips, verified Motion
 previews and editable projects with audio stems. Extract it alongside the skill
 using the release notes, then open `review/imv-v3/observer/PORTABLE.md` from the
 release directory. For older case packs and their viewing tools, see the
 [private library guide](observer/BASE-LIBRARY.md).
+
+Dataset intake uses an approved repository checkout for its Git-pinned
+rights records and exclusion policy. For an extracted skill without that
+checkout, the [fingerprint workflow](observer/FINGERPRINT.md) checks a local
+candidate against an authorized exclusion manifest.

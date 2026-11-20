@@ -1,0 +1,73 @@
+{
+  "method": "Previous render PCM intentionally muxed onto current picture. The control manifest uses current landmark and cue expectations and hashes the actual stale export and PCM.",
+  "untuned_plan": {
+    "pass": false,
+    "failures": [
+      "puppet: early against decoded picture",
+      "audience-release: early against decoded picture"
+    ],
+    "moved_cues": [
+      {
+        "id": "puppet",
+        "verdict": "early",
+        "error_ms": -333.333,
+        "correlation": 0.924
+      },
+      {
+        "id": "audience-release",
+        "verdict": "early",
+        "error_ms": -333.333,
+        "correlation": 0.833
+      },
+      {
+        "id": "release",
+        "verdict": "pass",
+        "error_ms": 18.417,
+        "correlation": 0.915
+      }
+    ]
+  },
+  "retimed_plan": {
+    "pass": false,
+    "failures": [
+      "puppet: early against decoded picture",
+      "audience-release: early against decoded picture",
+      "release: early against decoded picture"
+    ],
+    "moved_cues": [
+      {
+        "id": "puppet",
+        "verdict": "early",
+        "error_ms": -333.333,
+        "correlation": 0.924
+      },
+      {
+        "id": "audience-release",
+        "verdict": "early",
+        "error_ms": -333.333,
+        "correlation": 0.833
+      },
+      {
+        "id": "release",
+        "verdict": "early",
+        "error_ms": -333.333,
+        "correlation": 0.974
+      }
+    ]
+  },
+  "retimed_plan_on_previous_picture": {
+    "pass": true,
+    "release": {
+      "id": "release",
+      "event": "stage.moon.enter",
+      "expected_impact_sample": 532864,
+      "intended_offset_samples": 864,
+      "verdict": "pass",
+      "correlation": 0.974,
+      "observed_asset_alignment_sample": 520864,
+      "estimated_onset_marker_sample": 523264,
+      "observed_impact_marker_sample": 532864,
+      "error_ms": 0.0
+    }
+  }
+}

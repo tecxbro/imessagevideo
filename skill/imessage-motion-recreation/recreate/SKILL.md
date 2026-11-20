@@ -7,6 +7,8 @@ description: Rebuild a complete supplied iMessage film as editable scene source.
 
 Use the supplied movie as visual and timing evidence. Deliver editable scene data, authored assets, first and final complete picture exports, and an evidence directory with reproducible commands. Use the shared [scene format](../scripts/shared/SCHEMA.md) and, when present in your checkout, the Observer timeline contract and Clone iMessage UI adapter. Use the Motion library for a behavior only after measuring its local anchors in this film. Start with the [worked example](example/README.md). [Source studies and renderer probes](SOURCES.md) give tested commands.
 
+For a private full-film assignment, use [the clean-run commands](CLEAN-RUN.md). They cover preflight on Train Options, the whole-film ledger, and the separate analysis and render workspaces.
+
 Run from the repository root. The measurements and checker use Python 3.10+, NumPy, Pillow, and the matching FFmpeg and ffprobe executables (verified with FFmpeg 7.1). Tesseract is optional. Browser renderers also need the pinned Node dependencies and Chromium documented in the [engine setup](../RUNNING.md).
 
 ```bash

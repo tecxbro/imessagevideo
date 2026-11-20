@@ -58,6 +58,14 @@ Use a zero-start H.264 MP4 with one full-frame video stream and a positive durat
 
 When a new cut arrives, preserve the prior export. Compare version hashes, run `resolve` on the new picture, inspect neighboring frames for changed landmarks, and compare cue offsets. Remap event-bound cues by running `mix` with the new picture and a new output directory. Check fixed-time beds and quiet holds against the revised scene, adjust the source edit when needed, and rerender. Review both picture and audio from the newly encoded file.
 
+For a stale-audio control, first run the check with the same plan from the previous mix and the newly received silent picture.
+
+```sh
+python3 "$S/retime_control.py" score/plan.json revised.mp4 work/cut-01/manifest.json work/stale
+```
+
+It copies the prior approved WAV into a new mux of the revised picture, keeps the old cue placements, and writes a decoded report to `work/stale/verify.json`. Exit 1 means the verifier rejected the control. Inspect the affected cue's early, late or missing verdict to confirm the specific sync failure. A picture edit outside the event-bound cues can leave the audio cues passing.
+
 `verify` decodes the MP4 to locate visible events independently of the cue sheet. It compares the muxed picture payload and presentation timestamps with the handed-off master. It finds each distinctive cue waveform in decoded AAC, compares its impact with the visible event plus the authored offset, and reports early, late, missing or ambiguous cues. It also checks the stream profile, audio start and duration, decoded audio frame continuity, clipping, quiet passages, plus substantial energy drops or changes relative to the approved PCM. A ±48-sample stream duration allowance covers MP4 rounding. Decoded AAC may expose up to 1,024 samples of final frame padding. Estimated true peak uses 4× oversampling. A wall-clock bed receives continuity and dropout checks. For timing acceptance, bind the bed's distinctive story beat to a visual landmark.
 
 Deliver the plan, source recipes or assets, separately editable stems, mix WAV and MP4, verification report, updated listening notes, and exact SHA-256. Keep old timings alongside the revised timings in the evidence. Split tracked review payloads above 24 MiB in repository archive style and verify the rejoined hash. In the team issue, include the pushed commit, run command and expected result. For a cold retiming check, supply the skill, old plan and a new silent cut with no moved-event hint.

@@ -1,0 +1,174 @@
+{
+  "landmarks": {
+    "message.question.press": {
+      "frame": 82,
+      "pts": "41/12",
+      "score": 0.9829575163398693,
+      "sample": 164000
+    },
+    "message.question.send": {
+      "frame": 84,
+      "pts": "7/2",
+      "score": 0.9868675368485615,
+      "sample": 168000
+    },
+    "message.answer.receive": {
+      "frame": 113,
+      "pts": "113/24",
+      "score": 1.0,
+      "sample": 226000
+    },
+    "prop.table.reveal": {
+      "frame": 153,
+      "pts": "51/8",
+      "score": 1.0,
+      "sample": 306000
+    },
+    "prop.tin.open": {
+      "frame": 165,
+      "pts": "55/8",
+      "score": 0.9941448801742919,
+      "sample": 330000
+    },
+    "prop.moon.lift": {
+      "frame": 189,
+      "pts": "63/8",
+      "score": 0.9916228800888547,
+      "sample": 378000
+    },
+    "stage.return": {
+      "frame": 212,
+      "pts": "53/6",
+      "score": 1.0,
+      "sample": 424000
+    },
+    "stage.moon.enter": {
+      "frame": 218,
+      "pts": "109/12",
+      "score": 0.9917082245084413,
+      "sample": 436000
+    },
+    "stage.rabbit.release": {
+      "frame": 254,
+      "pts": "127/12",
+      "score": 0.9822466856938112,
+      "sample": 508000
+    },
+    "stage.audience.release": {
+      "frame": 275,
+      "pts": "275/24",
+      "score": 0.9971342383107089,
+      "sample": 550000
+    }
+  },
+  "cues": [
+    {
+      "id": "seated-opening",
+      "event": null,
+      "bus": "atmosphere",
+      "purpose": "Establish the space and fade it as the phone takes focus.",
+      "source": "Original procedural audio from sound/direction/synthesize.py.",
+      "event_frame": null,
+      "offset_samples": 0,
+      "asset_start_sample": 0,
+      "onset_marker_sample": 0,
+      "impact_sample": 0
+    },
+    {
+      "id": "send",
+      "event": "message.question.send",
+      "bus": "effects",
+      "purpose": "Mark the stagehand's choice to ask and give the question a clean reading hold.",
+      "source": "Original procedural audio from sound/direction/synthesize.py.",
+      "event_frame": 84,
+      "offset_samples": 0,
+      "asset_start_sample": 166464,
+      "onset_marker_sample": 167616,
+      "impact_sample": 168000
+    },
+    {
+      "id": "reply",
+      "event": "message.answer.receive",
+      "bus": "effects",
+      "purpose": "Shift the viewer's attention to the crew's answer without breaking its reading hold.",
+      "source": "Original procedural audio from sound/direction/synthesize.py.",
+      "event_frame": 113,
+      "offset_samples": 576,
+      "asset_start_sample": 224752,
+      "onset_marker_sample": 226144,
+      "impact_sample": 226576
+    },
+    {
+      "id": "tin",
+      "event": "prop.tin.open",
+      "bus": "effects",
+      "purpose": "Give the first movement of the closed tin weight and identify the prop as metal.",
+      "source": "Original procedural audio from sound/direction/synthesize.py.",
+      "event_frame": 165,
+      "offset_samples": 0,
+      "asset_start_sample": 326880,
+      "onset_marker_sample": 328560,
+      "impact_sample": 330000
+    },
+    {
+      "id": "paper",
+      "event": "prop.moon.lift",
+      "bus": "effects",
+      "purpose": "Make the small moon feel hand-cut and almost weightless as it leaves the tin.",
+      "source": "Original procedural audio from sound/direction/synthesize.py.",
+      "event_frame": 189,
+      "offset_samples": 288,
+      "asset_start_sample": 375168,
+      "onset_marker_sample": 376848,
+      "impact_sample": 378288
+    },
+    {
+      "id": "seated-return",
+      "event": "stage.return",
+      "bus": "atmosphere",
+      "purpose": "Return to the audience's point of view across the stage cut.",
+      "source": "Original procedural audio from sound/direction/synthesize.py.",
+      "event_frame": 212,
+      "offset_samples": -4080,
+      "asset_start_sample": 419920,
+      "onset_marker_sample": 419920,
+      "impact_sample": 419920
+    },
+    {
+      "id": "puppet",
+      "event": "stage.rabbit.release",
+      "bus": "effects",
+      "purpose": "A small cloth movement marks the rabbit's release.",
+      "source": "Original procedural audio from sound/direction/synthesize.py.",
+      "event_frame": 254,
+      "offset_samples": 0,
+      "asset_start_sample": 504880,
+      "onset_marker_sample": 506560,
+      "impact_sample": 508000
+    },
+    {
+      "id": "audience-release",
+      "event": "stage.audience.release",
+      "bus": "atmosphere",
+      "purpose": "Let the room exhale as attention moves from the puppet to its viewers.",
+      "source": "Original procedural audio from sound/direction/synthesize.py.",
+      "event_frame": 275,
+      "offset_samples": 2880,
+      "asset_start_sample": 538960,
+      "onset_marker_sample": 546400,
+      "impact_sample": 552880
+    },
+    {
+      "id": "seated-wait",
+      "event": "prop.table.reveal",
+      "bus": "atmosphere",
+      "purpose": "A nearly still seated room leads into the prop cut and clears the tin.",
+      "source": "Original procedural audio from sound/direction/synthesize.py.",
+      "event_frame": 153,
+      "offset_samples": -60480,
+      "asset_start_sample": 245520,
+      "onset_marker_sample": 245520,
+      "impact_sample": 245520
+    }
+  ]
+}

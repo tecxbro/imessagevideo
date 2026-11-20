@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "skin": "film-ink",
+  "conversationId": "trail-survey",
+  "title": "Trail survey",
+  "service": "Route planning",
+  "participants": {"lee": "Lee", "asha": "Asha"},
+  "localSenderId": "lee",
+  "display": {"width": 402, "height": 874, "textSize": 17},
+  "fps": 24,
+  "frameCount": 84,
+  "assets": {
+    "first-view": "../assets/landscape-1.png",
+    "next-view": "../assets/landscape-2.png"
+  },
+  "initial": {
+    "messages": [
+      {"id": "request", "senderId": "asha", "text": "Which viewpoint should we visit first?"}
+    ]
+  },
+  "events": [
+    {"id": "trail.photos.send", "kind": "send", "frame": 12, "message": {"id": "photos", "attachmentIds": ["first-view", "next-view"]}},
+    {"id": "trail.photos.page", "kind": "media.page", "frame": 32, "durationFrames": 12, "messageId": "photos", "index": 1},
+    {"id": "trail.photos.open", "kind": "overlay", "frame": 52, "surface": "media", "messageId": "photos"},
+    {"id": "trail.photos.close", "kind": "overlay", "frame": 68, "durationFrames": 0, "surface": "conversation"}
+  ]
+}

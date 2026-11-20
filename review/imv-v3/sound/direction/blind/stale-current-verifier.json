@@ -1,0 +1,206 @@
+{
+  "pass": false,
+  "failures": [
+    "manifest landmarks differ from decoded export frames",
+    "puppet: manifest event_frame differs from decoded picture resolution",
+    "puppet: manifest asset_start_sample differs from decoded picture resolution",
+    "puppet: manifest impact_sample differs from decoded picture resolution",
+    "puppet: manifest onset_marker_sample differs from decoded picture resolution",
+    "puppet: early against decoded picture",
+    "audience-release: manifest event_frame differs from decoded picture resolution",
+    "audience-release: manifest asset_start_sample differs from decoded picture resolution",
+    "audience-release: manifest impact_sample differs from decoded picture resolution",
+    "audience-release: manifest onset_marker_sample differs from decoded picture resolution",
+    "audience-release: early against decoded picture",
+    "release: manifest event_frame differs from decoded picture resolution",
+    "release: manifest asset_start_sample differs from decoded picture resolution",
+    "release: manifest impact_sample differs from decoded picture resolution",
+    "release: manifest onset_marker_sample differs from decoded picture resolution",
+    "release: early against decoded picture"
+  ],
+  "picture_duration": "15",
+  "first_audio_sample": 0,
+  "audio_clock_max_discontinuity_samples": 0,
+  "audio_stream_duration_samples": 720000,
+  "decoded_audio_samples": 720896,
+  "sample_peak_dbfs": -4.44,
+  "estimated_true_peak_dbfs": -4.28,
+  "energy_dropouts_s": [],
+  "pcm_difference_ranges_s": [],
+  "silence": [
+    {
+      "start_sample": 182400,
+      "end_sample": 210240,
+      "purpose": "Hold the unanswered question after the send.",
+      "peak_dbfs": null,
+      "pass": true
+    }
+  ],
+  "landmarks": {
+    "message.question.press": {
+      "frame": 82,
+      "pts": "41/12",
+      "score": 0.9843735892755501,
+      "sample": 164000
+    },
+    "message.question.send": {
+      "frame": 84,
+      "pts": "7/2",
+      "score": 1.0,
+      "sample": 168000
+    },
+    "message.answer.receive": {
+      "frame": 113,
+      "pts": "113/24",
+      "score": 1.0,
+      "sample": 226000
+    },
+    "prop.table.reveal": {
+      "frame": 181,
+      "pts": "181/24",
+      "score": 1.0,
+      "sample": 362000
+    },
+    "prop.tin.open": {
+      "frame": 197,
+      "pts": "197/24",
+      "score": 1.0,
+      "sample": 394000
+    },
+    "prop.moon.lift": {
+      "frame": 218,
+      "pts": "109/12",
+      "score": 0.9955038904450669,
+      "sample": 436000
+    },
+    "stage.return": {
+      "frame": 246,
+      "pts": "41/4",
+      "score": 1.0,
+      "sample": 492000
+    },
+    "stage.moon.enter": {
+      "frame": 274,
+      "pts": "137/12",
+      "score": 0.9965499954425303,
+      "sample": 548000
+    },
+    "stage.rabbit.release": {
+      "frame": 289,
+      "pts": "289/24",
+      "score": 0.9834253802340092,
+      "sample": 578000
+    }
+  },
+  "cues": [
+    {
+      "id": "send",
+      "event": "message.question.send",
+      "expected_impact_sample": 168000,
+      "intended_offset_samples": 0,
+      "verdict": "pass",
+      "correlation": 1.0,
+      "observed_asset_alignment_sample": 166464,
+      "estimated_onset_marker_sample": 167616,
+      "observed_impact_marker_sample": 168000,
+      "error_ms": 0.0
+    },
+    {
+      "id": "reply",
+      "event": "message.answer.receive",
+      "expected_impact_sample": 226576,
+      "intended_offset_samples": 576,
+      "verdict": "pass",
+      "correlation": 1.0,
+      "observed_asset_alignment_sample": 224752,
+      "estimated_onset_marker_sample": 226144,
+      "observed_impact_marker_sample": 226576,
+      "error_ms": 0.0
+    },
+    {
+      "id": "tin",
+      "event": "prop.tin.open",
+      "expected_impact_sample": 394000,
+      "intended_offset_samples": 0,
+      "verdict": "pass",
+      "correlation": 0.995,
+      "observed_asset_alignment_sample": 390880,
+      "estimated_onset_marker_sample": 392560,
+      "observed_impact_marker_sample": 394000,
+      "error_ms": 0.0
+    },
+    {
+      "id": "paper",
+      "event": "prop.moon.lift",
+      "expected_impact_sample": 436288,
+      "intended_offset_samples": 288,
+      "verdict": "pass",
+      "correlation": 0.998,
+      "observed_asset_alignment_sample": 433168,
+      "estimated_onset_marker_sample": 434848,
+      "observed_impact_marker_sample": 436288,
+      "error_ms": 0.0
+    },
+    {
+      "id": "seated-return",
+      "event": "stage.return",
+      "expected_impact_sample": 487920,
+      "intended_offset_samples": -4080,
+      "verdict": "pass",
+      "correlation": 1.0,
+      "observed_asset_alignment_sample": 487920,
+      "estimated_onset_marker_sample": 487920,
+      "observed_impact_marker_sample": 487920,
+      "error_ms": 0.0
+    },
+    {
+      "id": "puppet",
+      "event": "stage.rabbit.release",
+      "expected_impact_sample": 578000,
+      "intended_offset_samples": 0,
+      "verdict": "early",
+      "correlation": 0.924,
+      "observed_asset_alignment_sample": 558880,
+      "estimated_onset_marker_sample": 560560,
+      "observed_impact_marker_sample": 562000,
+      "error_ms": -333.333
+    },
+    {
+      "id": "audience-release",
+      "event": "stage.rabbit.release",
+      "expected_impact_sample": 583520,
+      "intended_offset_samples": 5520,
+      "verdict": "early",
+      "correlation": 0.833,
+      "observed_asset_alignment_sample": 553600,
+      "estimated_onset_marker_sample": 561040,
+      "observed_impact_marker_sample": 567520,
+      "error_ms": -333.333
+    },
+    {
+      "id": "tension",
+      "event": "prop.table.reveal",
+      "expected_impact_sample": 312560,
+      "intended_offset_samples": -49440,
+      "verdict": "pass",
+      "correlation": 1.0,
+      "observed_asset_alignment_sample": 312560,
+      "estimated_onset_marker_sample": 312560,
+      "observed_impact_marker_sample": 312560,
+      "error_ms": 0.0
+    },
+    {
+      "id": "release",
+      "event": "stage.moon.enter",
+      "expected_impact_sample": 548864,
+      "intended_offset_samples": 864,
+      "verdict": "early",
+      "correlation": 0.974,
+      "observed_asset_alignment_sample": 520864,
+      "estimated_onset_marker_sample": 523264,
+      "observed_impact_marker_sample": 532864,
+      "error_ms": -333.333
+    }
+  ],
+  "human_audition": "pending unless documented separately"
+}

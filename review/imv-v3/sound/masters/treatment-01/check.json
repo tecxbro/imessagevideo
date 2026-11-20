@@ -1,0 +1,94 @@
+{
+  "pass": true,
+  "failures": [],
+  "picture_duration": "1001/150",
+  "first_audio_sample": 0,
+  "audio_clock_max_discontinuity_samples": 0,
+  "audio_stream_duration_samples": 320304,
+  "decoded_audio_samples": 320512,
+  "sample_peak_dbfs": -13.14,
+  "estimated_true_peak_dbfs": -13.12,
+  "energy_dropouts_s": [],
+  "silence": [
+    {
+      "start_sample": 165600,
+      "end_sample": 207840,
+      "purpose": "Leave the end of the four-row scan clear before the choice.",
+      "peak_dbfs": null,
+      "pass": true
+    },
+    {
+      "start_sample": 216960,
+      "end_sample": 273120,
+      "purpose": "Let the closure and return to the conversation play as one quiet move.",
+      "peak_dbfs": null,
+      "pass": true
+    },
+    {
+      "start_sample": 290400,
+      "end_sample": 319200,
+      "purpose": "Keep the card\u2019s written promise readable through the end hold.",
+      "peak_dbfs": null,
+      "pass": true
+    }
+  ],
+  "landmarks": {
+    "poke.restaurant_sheet.open": {
+      "frame": 61,
+      "pts": "61061/30000",
+      "score": 0.9929928221288515,
+      "sample": 97698
+    },
+    "poke.restaurant_choice.check": {
+      "frame": 131,
+      "pts": "131131/30000",
+      "score": 0.6980392156862745,
+      "sample": 209810
+    },
+    "poke.restaurant_card.entry": {
+      "frame": 173,
+      "pts": "173173/30000",
+      "score": 1.0,
+      "sample": 277077
+    }
+  },
+  "cues": [
+    {
+      "id": "open-sheet",
+      "event": "poke.restaurant_sheet.open",
+      "expected_impact_sample": 97122,
+      "intended_offset_samples": -576,
+      "verdict": "pass",
+      "correlation": 0.972,
+      "observed_asset_alignment_sample": 93780,
+      "estimated_onset_marker_sample": 96675,
+      "observed_impact_marker_sample": 97122,
+      "error_ms": 0.0
+    },
+    {
+      "id": "select-place",
+      "event": "poke.restaurant_choice.check",
+      "expected_impact_sample": 210674,
+      "intended_offset_samples": 864,
+      "verdict": "pass",
+      "correlation": 0.996,
+      "observed_asset_alignment_sample": 210172,
+      "estimated_onset_marker_sample": 210427,
+      "observed_impact_marker_sample": 210675,
+      "error_ms": 0.021
+    },
+    {
+      "id": "send-card",
+      "event": "poke.restaurant_card.entry",
+      "expected_impact_sample": 277653,
+      "intended_offset_samples": 576,
+      "verdict": "pass",
+      "correlation": 0.992,
+      "observed_asset_alignment_sample": 276136,
+      "estimated_onset_marker_sample": 277413,
+      "observed_impact_marker_sample": 277651,
+      "error_ms": -0.042
+    }
+  ],
+  "human_audition": "pending unless documented separately"
+}

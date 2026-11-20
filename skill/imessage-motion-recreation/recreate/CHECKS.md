@@ -2,6 +2,8 @@
 
 All positions use the decoded coded raster with container crops and orientation reported separately. Frame indices start at zero. Window endpoints are inclusive. Comparison pairs display-order frames by index and fails a separate gate on any PTS mismatch outside the tolerance. A dropped interior frame can cause every later paired picture to disagree. Consult the PTS columns to find where the shift begins.
 
+`frames.csv` maps each reference frame to the paired output frame with integer start and exclusive-end tick columns. Each side uses its own time base from `report.json`. An unmatched side has blank frame and tick fields. A known final hold ends at the measured stream end. `regions.csv` gives the exact coded pixel rectangle for each local observation, and the report identifies each region’s worst MAE and changed-pixel frames.
+
 | Key | Meaning |
 | --- | --- |
 | `global_mae` | Maximum per-frame mean absolute RGB channel difference on a 0–255 scale. Defaults to 2. |

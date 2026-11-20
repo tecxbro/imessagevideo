@@ -29,6 +29,36 @@ def value_at(node, prop, frame, fps):
 
 
 class AdapterRegressionTests(unittest.TestCase):
+    def test_mock_approval_follows_one_card_and_dismissal_does_not_settle_it(self):
+        doc = fixture("payment-mock.json")
+        scene = compile_fixture(doc)
+        events = scene["timeline"]["events"]
+        self.assertEqual([event["target"] for event in events], ["request"] * 4)
+        self.assertEqual([event["uiState"]["viewport"]["surface"] for event in events],
+                         ["conversation", "payment-approval", "conversation", "conversation"])
+        card = layers(scene)["ui.message/request/card"]
+        self.assertEqual([part["start"] for part in card["children"]], [14 / 24, 78 / 24])
+
+        missing_dismissal = deepcopy(doc)
+        missing_dismissal["events"].pop(2)
+        with self.assertRaisesRegex(ValueError, "dismiss the mock approval"):
+            compile_fixture(missing_dismissal)
+
+        missing_review = deepcopy(doc)
+        del missing_review["events"][1:3]
+        with self.assertRaisesRegex(ValueError, "explicit dismissal of that card"):
+            compile_fixture(missing_review)
+
+        replaced_review = deepcopy(doc)
+        replaced_review["events"][2]["surface"] = "list"
+        with self.assertRaisesRegex(ValueError, "dismiss the mock approval into the thread"):
+            compile_fixture(replaced_review)
+
+        invalid_target = deepcopy(doc)
+        invalid_target["events"][1]["messageId"] = "question"
+        with self.assertRaisesRegex(ValueError, "requires a requested payment-mock"):
+            compile_fixture(invalid_target)
+
     def test_retargeted_reaction_scroll_and_typing_survive_shared_readback(self):
         doc = fixture("conversation.json")
         doc["initial"]["draft"] = "I will meet you by the north exit. " * 4

@@ -6,6 +6,31 @@ import argparse, csv, hashlib, json, sys
 ROOT=Path(__file__).resolve().parents[1]
 REGISTRY=ROOT/'LOCAL-LIBRARY.json'
 ORIGINAL=ROOT/'skill/imessage-motion-recreation/library/manifest.json'
+
+
+def dataset_archives():
+    registry = ROOT / 'datasets/imessage/registry'
+    for manifest in sorted(registry.glob('*/manifest.json')):
+        archive = json.loads(manifest.read_text())['archive']
+        archive_id = f'dataset-{manifest.parent.name}'
+        yield {
+            'id': archive_id,
+            'category': 'dataset',
+            'archive_path': f'archives/{archive_id}.zip',
+            'bytes': archive['bytes'],
+            'sha256': archive['sha256'],
+            'extracted_path': f'resources/{archive_id}',
+            'parts': [
+                {
+                    'path': (manifest.parent / part['name']).relative_to(ROOT).as_posix(),
+                    'bytes': part['bytes'],
+                    'sha256': part['sha256'],
+                }
+                for part in archive['parts']
+            ],
+        }
+
+
 def sha(p):
     with p.open('rb') as f:return hashlib.file_digest(f,'sha256').hexdigest()
 def index():
@@ -13,6 +38,7 @@ def index():
     for a in old['archives']:
         prefix=('projects/' if a.get('example') else 'resources/')+a['id']
         archives.append({'id':a['id'],'category':a['category'],'archive_path':'archives/'+a['id']+'.zip','bytes':a['bytes'],'sha256':a['sha256'],'extracted_path':prefix,'parts':[{'path':'archives/resource-parts/'+a['id']+'/'+p['file_name'],'bytes':p['bytes'],'sha256':p['sha256']} for p in a['parts']]})
+    archives.extend(dataset_archives())
     for e in old['examples']:
         base='projects/'+e['complete_project_archive']+'/imessage-recreations'
         def entry(x):return {'path':base+'/'+x['project_path'],'bytes':x['bytes'],'sha256':x['sha256']}
@@ -21,13 +47,19 @@ def index():
     REGISTRY.write_text(json.dumps(result,indent=2)+'\n');return result
 def load():return json.loads(REGISTRY.read_text())
 def locate(query):
-    m=load();q=query.casefold();hits=[]
-    for e in m['examples']:
-        if q in (e['id']+' '+e['archive_id']+' '+e['title']).casefold():
-            hits.append({**e,'absolute_project_root':str(ROOT/e['project_root'])})
-    for a in m['archives']:
-        if q in a['id'].casefold() and not any(e['archive_id']==a['id'] for e in hits):hits.append(a)
-    return hits
+    library = load()
+    query = query.casefold()
+    matches = [
+        {**example, 'absolute_project_root': str(ROOT / example['project_root'])}
+        for example in library['examples']
+        if query in ' '.join((example['id'], example['archive_id'], example['title'])).casefold()
+    ]
+    covered = {example['archive_id'] for example in matches}
+    matches.extend(
+        archive for archive in library['archives']
+        if query in archive['id'].casefold() and archive['id'] not in covered
+    )
+    return matches
 def verify(all_files=False):
     m=load();checked={};errors=[]
     for a in m['archives']:

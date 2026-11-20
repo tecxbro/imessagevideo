@@ -1,5 +1,7 @@
 # Editable Messages film interface review
 
+See the [standalone interaction sequences](sequences/README.md) for the three edited comparisons and the payment test mock.
+
 The [station source](../../../skill/imessage-motion-recreation/ui/examples/conversation.json)
 renders the same interaction through [Pillow](station-pillow.mp4),
 [HTML/SVG](station-html.mp4), [GSAP](station-gsap.mp4),

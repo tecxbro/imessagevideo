@@ -27,7 +27,14 @@ MEDIA_FILES = (
     "observer/interaction-edit/events.json",
     "ui/station-pillow.mp4",
     "ui/station-pillow-consecutive.jpg",
+    "sound/recreation/assets/drawer-glide.wav",
+    "sound/recreation/assets/drawer.png",
+    "sound/recreation/assets/receipt-resolve.wav",
+    "sound/recreation/assets/receipt.png",
+    "sound/recreation/assets/seat-latch.wav",
+    "sound/recreation/assets/send-flick.wav",
 )
+PROOF_BUNDLES = ("motion/v3.2", "ui/sequences", "sound/recreation/owner-retime")
 
 
 def media_path(name, parent):
@@ -46,6 +53,17 @@ def collect():
     for name in MEDIA_FILES:
         relative = (REVIEW / name).as_posix()
         files[relative] = media_path(relative, REVIEW)
+    for name in PROOF_BUNDLES:
+        bundle = REVIEW / name
+        ledger = media_path((bundle / "SHA256SUMS").as_posix(), bundle)
+        for line in ledger.read_text().splitlines():
+            expected, member = line.split("  ", 1)
+            relative = (bundle / member).as_posix()
+            path = media_path(relative, bundle)
+            if file_hash(path) != expected:
+                raise ValueError(f"proof checksum differs: {relative}")
+            if path.suffix != ".md":
+                files[relative] = path
     catalog = json.loads((ROOT / "motion/catalog.json").read_text())
     for entry in catalog["entries"]:
         for example in (entry, entry.get("ui")):

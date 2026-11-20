@@ -2,6 +2,8 @@
 
 [Train options](train/) is a complete authored development fixture and independent editable rebuild. The silent final picture is `train/final.mp4`; its events are in `train/final.events.json`. [Editable source and commands](../../../skill/imessage-motion-recreation/recreate/example/README.md)
 
+The clean-run preflight installed the locked renderer dependencies from an extracted skill. It decoded through frame 119, reproduced the final MP4 byte for byte with isolated renderer inputs, and verified the native end ticks and both deliberate failures. A separate 72-frame preview exercised the shared UI through Motion. [Clean-run commands](../../../skill/imessage-motion-recreation/recreate/CLEAN-RUN.md) · [Preflight evidence](clean-runner.json)
+
 | Export | Decoded result |
 | --- | --- |
 | First | 120 of 120 pictures. Whole-frame gate passed. Seat selection fails on 74–77. |
