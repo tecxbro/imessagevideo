@@ -1,0 +1,14 @@
+# Recreation review
+
+[Train options](train/) is a complete authored development fixture and independent editable rebuild. The silent final picture is `train/final.mp4`; its events are in `train/final.events.json`. [Editable source and commands](../../../skill/imessage-motion-recreation/recreate/example/README.md)
+
+| Export | Decoded result |
+| --- | --- |
+| First | 120 of 120 pictures. Whole-frame gate passed. Seat selection fails on 74–77. |
+| Final | 120 of 120 pictures, exact measured clock through 4 seconds. All six local windows pass. Mean RGB channel error is 0.02963 on a 0–255 scale. |
+| Truncated test against the final master | 110 paired frames with zero RGB error. Gate fails for frames 110–119 missing, a short final hold, and an unscanned last-hold window. |
+| Edited | Real copy changes from “Two seats to Union Station.” to “Two seats to Northgate.” and the first selected frame moves from 74 to 69. |
+
+The repair changed only native frames 74–77 and retained 116 PNGs byte for byte. The complete final encode was compared again. The isolated output matches the final file SHA-256. Refer to the [full-frame result](train/final-check/report.json), [native repair and edit](train/repair-and-edit.json) and [independent adversarial suite](qa/suite.json). This evidence uses decoded frames and audio measurements.
+
+[Poke](poke/README.md) is a measured source passage for Direction and Motion, along with a complete comparison of the archived original and silent GSAP master. It is separate from the Train reconstruction.

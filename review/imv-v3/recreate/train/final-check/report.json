@@ -1,0 +1,167 @@
+{
+  "schema": 1,
+  "verdict": "PASS",
+  "failures": [],
+  "reference": {
+    "name": "reference.mp4",
+    "sha256": "8f73c68dd6ede5b0ff1882085c549f62653f50659ed0c9473a9e33da7d2c9a22",
+    "clock": {
+      "width": 640,
+      "height": 360,
+      "sample_aspect_ratio": "1",
+      "rotation_degrees": 0,
+      "time_base": "1/15360",
+      "declared_rate": "30",
+      "declared_average_rate": "30/1",
+      "start_pts": 0,
+      "end_pts_exclusive": 61440,
+      "end_basis": "last decoded frame duration",
+      "end_seconds": 4.0,
+      "frames": 120,
+      "cadence": "constant",
+      "color_range": "tv",
+      "color_space": "bt709",
+      "color_primaries": null,
+      "color_transfer": null
+    },
+    "audio": [
+      {
+        "index": 1,
+        "codec_name": "aac",
+        "sample_rate": "48000",
+        "channels": 1,
+        "channel_layout": "mono",
+        "time_base": "1/48000",
+        "start_pts": 0,
+        "duration_ts": 192000,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "SoundHandler",
+          "vendor_id": "[0][0][0][0]"
+        }
+      }
+    ]
+  },
+  "candidate": {
+    "name": "final.mp4",
+    "sha256": "eca99d87a9b8e92a5ca31c2b16bff5ba42f23ba7236ab8182c08ce9e71d81c8f",
+    "clock": {
+      "width": 640,
+      "height": 360,
+      "sample_aspect_ratio": "1",
+      "rotation_degrees": 0,
+      "time_base": "1/15360",
+      "declared_rate": "30",
+      "declared_average_rate": "30/1",
+      "start_pts": 0,
+      "end_pts_exclusive": 61440,
+      "end_basis": "last decoded frame duration",
+      "end_seconds": 4.0,
+      "frames": 120,
+      "cadence": "constant",
+      "color_range": "tv",
+      "color_space": "bt709",
+      "color_primaries": null,
+      "color_transfer": null
+    },
+    "audio": []
+  },
+  "compared_frames": 120,
+  "mean_abs_rgb": 0.029628255208333346,
+  "worst_frame": {
+    "frame": 61,
+    "mean_abs_rgb": 0.05800347222222222
+  },
+  "whole_frame_mae_limit": 0.3,
+  "pixel_floor": 24,
+  "clock_tolerance_seconds": "0",
+  "alignment": "display-order index with independent exact PTS gate",
+  "audio_rule": "silent",
+  "audio_checks": null,
+  "regions": {
+    "title-cut": {
+      "expected_frames": 6,
+      "scanned_frames": 6,
+      "worst_mae": 0.04416942281019951,
+      "worst_changed_pixels": 29,
+      "mae_limit": 1.5,
+      "pixel_floor": 24,
+      "changed_pixels_limit": null,
+      "failed_spans": []
+    },
+    "request-bubble": {
+      "expected_frames": 13,
+      "scanned_frames": 13,
+      "worst_mae": 0.3206189555125725,
+      "worst_changed_pixels": 9,
+      "mae_limit": 1.5,
+      "pixel_floor": 24,
+      "changed_pixels_limit": null,
+      "failed_spans": []
+    },
+    "drawer-reveal": {
+      "expected_frames": 15,
+      "scanned_frames": 15,
+      "worst_mae": 0.19148821548821549,
+      "worst_changed_pixels": 13,
+      "mae_limit": 1.5,
+      "pixel_floor": 24,
+      "changed_pixels_limit": null,
+      "failed_spans": []
+    },
+    "seat-selection": {
+      "expected_frames": 11,
+      "scanned_frames": 11,
+      "worst_mae": 0.203125,
+      "worst_changed_pixels": 0,
+      "mae_limit": 3,
+      "pixel_floor": 24,
+      "changed_pixels_limit": 15,
+      "failed_spans": []
+    },
+    "receipt": {
+      "expected_frames": 12,
+      "scanned_frames": 12,
+      "worst_mae": 0.1259259259259259,
+      "worst_changed_pixels": 0,
+      "mae_limit": 1.5,
+      "pixel_floor": 24,
+      "changed_pixels_limit": null,
+      "failed_spans": []
+    },
+    "last-hold": {
+      "expected_frames": 5,
+      "scanned_frames": 5,
+      "worst_mae": 0.16857804232804233,
+      "worst_changed_pixels": 0,
+      "mae_limit": 1.5,
+      "pixel_floor": 24,
+      "changed_pixels_limit": null,
+      "failed_spans": []
+    }
+  },
+  "tile": null,
+  "regional_coverage": "explicit windows",
+  "decode_completed": true
+}
