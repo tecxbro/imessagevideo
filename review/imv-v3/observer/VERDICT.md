@@ -1,21 +1,24 @@
-# iMessage video v3 integration verdict
+# iMessage video v3.2.1 integration verdict
 
 The package contains the central skill, shared frame clock, renderer source
 and specialist workflows. The table identifies the checked specialist pins and
 the commands run from the extracted skill unless a repository command is
 shown. The released films are technically checked. Human listening and a
-fresh-agent blind run are pending.
+both fresh-agent blind runs are pending. This release is on the Observer
+branch. The final seven-head integration requires the remaining specialist
+proofs.
 
 | Capability | Source commit | Command | Result | Remaining work |
 | --- | --- | --- | --- | --- |
-| Shared picture, event, UI and cue contracts | `6add29b`, `a7a70e7` | `python3 observer/imv.py smoke --method all --out /tmp/imv-renderers` | Pillow/FFmpeg, HTML/CSS/SVG, GSAP, Remotion and native Motion Canvas each produced 24 decoded frames with the named marker crossing at frame 12. The cue resolves to sample 24,120. All five also exported 30000/1001 with exact frame timestamps through 23023/30000. | Figma remains a prototype. The build-room Dataset acknowledgment is pending. |
-| Central entry and skill packaging | `a7a70e7` plus the integration commit | `python3 observer/test_imv.py`, `python3 observer/package.py --verify PACKAGE.zip` | Ordinary reference, original brief, single motion, interaction, sound and intake requests selected the intended route. The package and member checksums verify. | Fresh-agent verification is pending. |
-| Recreation | `a8ee16a` | `bash recreate/example/prove.sh /tmp/recreate-train`, `python3 recreate/qa/adversarial.py --out /tmp/imv-recreate-qa` | The editable Train scene reproduces the accepted silent picture. All 120 frames pass, including the booking receipt and hold through f119. The late selection fails at f74–77. A zero-error 110-frame prefix fails for the missing f110–119 and ending. All 15 adversarial cases return their intended verdicts. | A reserved-film run is pending. |
-| Direction | `db8c0ba` picture and `1ba37bb` selected Sound A | From the Moon Cue project, `python3 direction/film/render.py --out /tmp/moon-picture.mp4` and `sha256sum -c SHA256SUMS` | The project with pinned UI source reproduces the silent lock byte for byte in isolation. The mux decodes all 360 original picture frames. The two cold picture reviews and verified revision are recorded below. | An independent run of the second Keiki brief is pending. |
-| Motion | `37b72e8` | `node --test motion/tests/*.test.mjs` and `node motion/cli.mjs scene --ids conversation-handoff,heading-over-fixed-photos,conversation-handoff --out /tmp/imv-sequence.json` | All 64 selector, sequence, and editable-output tests passed. The catalog contains 77 playable entries covering 75 distinct motions. The 95 reviewed MP4s all decoded. The two shot boundaries at f72 and f144 reset state, and the heading events at f92 and f123 have null UI. | The native photo paging capture is pending. Two plain-language selector misses have a verified explicit-ID fallback and a proposed patch sent to Motion. |
+| Shared picture, event, UI and cue contracts | `6add29b`, `a7a70e7` | `python3 observer/imv.py smoke --method all --out /tmp/imv-renderers` | Pillow/FFmpeg, HTML/CSS/SVG, GSAP, Remotion and native Motion Canvas each produced 24 decoded frames with the named marker crossing at frame 12. The cue resolves to sample 24,120. All five also exported 30000/1001 with exact frame timestamps through 23023/30000. | Figma remains a prototype. |
+| Central entry and skill packaging | `a7a70e7` plus this integration commit | `python3 observer/test_imv.py`, `python3 observer/package.py --verify PACKAGE.zip` | Ordinary reference, original brief, single motion, interaction, sound and intake requests selected the intended route. The package and member checksums verify. A clean extract exported all five renderers with the event at f12. | Fresh intake and Direction/Recreation tests are pending. |
+| Portable media | This integration commit | From the release root, `sha256sum -c MEDIA-SHA256SUMS`. From the skill, `node motion/cli.mjs preview --id heading-over-fixed-photos` and `node motion/cli.mjs render --id heading-over-fixed-photos --out /tmp/heading-preview.mp4 --method pillow` | Both ZIPs rebuild byte for byte. All 90 Motion previews match their catalog hashes, decoded lengths, rates and event maps. The standalone Motion render matches the preview byte for byte and resolves f20 and f51. Both editable project manifests pass. The extracted guide's 20 links resolve. Four other movies, four images and 24 WAVs decode. | See Motion's selector results below. |
+| Recreation | `de3c296` clean-runner handoff and `a8ee16a` packaged regression | At the handoff pin, `npm ci --prefix scripts/engines` and `bash recreate/verify-clean-runner.sh /tmp/recreate-clean-preflight`. From the release, `bash recreate/example/prove.sh /tmp/recreate-train`. | The editable Train scene reproduces the silent picture byte for byte in isolation. All 120 frames pass. On both clocks f119 spans ticks [60928,61440) at 1/15360. The late selection fails at f74–77 and the truncated prefix fails for missing f110–119 and the ending. | A reserved-film run is pending. |
+| Direction | `84b87e0` handoff, `931fe2d` locked delivery and `1ba37bb` selected Sound A | From the Moon Cue project, `python3 direction/film/render.py --out /tmp/moon-picture.mp4` and `sha256sum -c SHA256SUMS` | The packaged project reproduces the silent lock byte for byte in isolation. The mux decodes all 360 original picture frames and passes all eight encoded cue checks. The two cold picture reviews and verified revision are recorded below. | An independent run of the second Keiki brief is pending. |
+| Motion | `51fff53` | `node --test motion/tests/*.test.mjs`, `node motion/cli.mjs select --brief REQUEST` | All 64 selector, sequence and editable-output tests passed. The catalog contains 77 playable entries covering 75 distinct motions. Earlier sequence proof reset state at f72 and f144, with heading events at f92 and f123. | Two requests returned `action: missing`: “Leave the snapshots pinned while the title travels over them” and “Show a count climb to the real total then give the statistic time to read”. Motion has the reproduction and proposed fix. Native photo paging capture is pending. |
 | Interaction | `5e2ff5a` | `python3 -m unittest ui.test_adapter`, `python3 -m ui.adapter ui/examples/conversation.json --out /tmp/station.scene.json`, `python3 observer/imv.py render /tmp/station.scene.json --out /tmp/station.mp4` | 136 frames at 24/1 with the reaction retained in state after scrolling. The independently edited draft clears at f19 and a retargeted f74 Wow follows its outgoing row during f80–87. | Physical-device evidence is pending for keyboard-up send, Tapback into scroll and native multi-photo paging. |
-| Sound | `1ba37bb` | `python3 sound/example.py /tmp/imv-sound` and `python3 sound/quality_controls.py /tmp/imv-sound-quality` | Six sync cases and six audio-quality controls return their expected results. The selected Moon Cue mix passes eight decoded cues with 0.0 ms measured error and −4.14 dBTP. The four Train effects land within 0.021 ms of their intended offsets. The stale seat cue fails at +166.688 ms. | Human audition is pending. |
-| Fingerprints and Dataset archives | `8f43aec` tool and the current fingerprint manifest | `python3 observer/test_fingerprint.py` and repository `python3 tools/sync_library.py --self-test` | Nine fingerprint checks pass, including resizing, re-encoding, cropping, padding, an overlay, and an intro with a trimmed tail. All three reserved films match their own fingerprints and clear the other two. The two latest references also match their re-encodes. Offline archive restore passes the isolated synthetic fixture. | Dataset's intake rejection, requested captures, rights records and production archive registration are pending. The entry uses the Observer fingerprint workflow for now. |
+| Sound | `5c26dce` replay, `fb7a8de` retime and `1ba37bb` original A | [Clean replay commands](https://github.com/tecxbro/imessagevideo/blob/5c26dce493a9fadade4f84126f5b970c9e9fe5a9/review/imv-v3/sound/RELEASE-RECHECK.md) | All six sync checks and six quality cases passed their expected verdicts. All eight retimed cues passed. The audience landmark moved from f270 to f275, retaining +2,880 samples (+60 ms). The stale mix fails 208.333 ms early. Both regenerated timing reports matched the checked-in JSON byte for byte. | Human audition and new blind-cut scoring remain pending. |
+| Fingerprints and Dataset archives | `f926ed4` manifest and `8f43aec` tool | `python3 observer/test_fingerprint.py` and repository `python3 tools/sync_library.py --self-test` | Nine fingerprint checks pass, including resizing, re-encoding, cropping, padding, an overlay, and an intro with a trimmed tail. All three reserved films match their own fingerprints and clear the other two. The two latest references match their re-encodes. Offline archive restore passes the isolated synthetic fixture. Dataset acknowledged the intake gate. | Dataset's intake rejection, requested captures, rights records and production archive registration are pending. The entry uses the Observer fingerprint workflow for now. |
 
 ## Picture review and sound measurements
 
@@ -44,15 +47,30 @@ fully decoding 30 renderer exports from the six accepted source projects.
 
 ## Blind-run status
 
-A network-isolated workspace mounted only the extracted package and its
-runtime, with an empty home and no GitHub access. In a neutral test, a
-fresh Codex CLI created a thread and reached turn initialization. It
-could not reach the model endpoint. The ordinary provider request is
-blocked by the cloud proxy before authentication. Fresh agents in this
-chat share the workspace and connector permissions. Blind runs are pending.
+A filesystem-isolated preflight used an empty home and no GitHub credentials.
+Both the Codex responses endpoint and the OpenAI Responses API failed at the
+cloud proxy before authentication. Curl returned exit 56, proxy HTTP 403 and
+origin HTTP 000. The agents available in this chat share the workspace.
+The Recreation and Direction blind runs are pending.
 The restricted skill packets and three complete reference films are staged
 privately. The references were screened against the base and visible
 build branches. The second product brief is grounded in the first-party
 Keiki docs. No reserved input was given to a tester. Only fingerprints
 go to the Dataset intake. Use a different reserved film when retesting
 after an actual failed run.
+
+## Seven-head integration gate
+
+The release is an Observer-branch update. The `codex-main` branch awaits
+Motion's updated selector proof and Dataset's intake rejection, archive
+registration and independent rerun. The currently checked specialist heads
+are below.
+
+| Specialist | Exact head |
+| --- | --- |
+| Recreation | `de3c296ea49298fbc596de0298a6588d9c683fd6` |
+| Direction | `84b87e0d6971c9cec4136acea274c35391df40ab` |
+| Motion | `51fff53c936c3f2fb83566f69880e0a7a826570e` |
+| Interaction | `5e2ff5a765dd105b5bdebb51bcfbe2a803e3bb71` |
+| Sound | `5c26dce493a9fadade4f84126f5b970c9e9fe5a9` |
+| Dataset | Awaiting a published head and production archive manifest |

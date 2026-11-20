@@ -1,8 +1,29 @@
-# iMessage video v3 release
+# iMessage video v3.2.1 release
 
-- [Standalone skill ZIP](imessage-motion-recreation-v3.2.0.zip)
+- [Standalone skill ZIP](imessage-motion-recreation-v3.2.1.zip)
+- [Media companion ZIP](imessage-motion-media-v3.2.1.zip)
 - [Capability verdicts, commands and remaining work](VERDICT.md)
 - [Shared frame and cue contract](../../../skill/imessage-motion-recreation/contracts/README.md)
+
+The standalone skill includes a command to generate a Motion example after
+runtime setup. The media companion adds the finished films, images, editable
+project and audio archives, and 90 ready-to-open Motion previews with event
+maps. It uses the same catalog paths as the source checkout.
+
+Download both ZIPs into one folder and run these commands there:
+
+```sh
+mkdir imessage-video-release
+unzip -q imessage-motion-recreation-v3.2.1.zip -d imessage-video-release/skill
+unzip -q imessage-motion-media-v3.2.1.zip -d imessage-video-release
+cd imessage-video-release
+sha256sum -c MEDIA-SHA256SUMS
+python3 skill/imessage-motion-recreation/observer/package.py --verify ../imessage-motion-recreation-v3.2.1.zip
+```
+
+Then open `review/imv-v3/observer/PORTABLE.md` in the extracted release for
+playback, pictures and the exact audio edit paths. The [v3.2.0 skill ZIP](imessage-motion-recreation-v3.2.0.zip)
+is also available.
 
 ## Accepted films and editable projects
 
@@ -20,3 +41,16 @@ All links in this table are part of the private integration checkout.
 From this directory, check the exact releases with `sha256sum -c SHA256SUMS`.
 Verify the standalone skill with `observer/package.py --verify` from that
 skill or the corresponding checkout.
+
+To rebuild both archives from the repository root, run:
+
+```sh
+skill=skill/imessage-motion-recreation
+release=review/imv-v3/observer
+python3 "$skill/observer/package.py" --out "$release/imessage-motion-recreation-v3.2.1.zip"
+python3 "$skill/observer/package_media.py" --out "$release/imessage-motion-media-v3.2.1.zip"
+(cd "$release" && sha256sum -c SHA256SUMS)
+```
+
+This v3.2.1 update ships from the Observer branch. The verdict lists the
+current handoff pins and evidence still needed for the seven-head integration.

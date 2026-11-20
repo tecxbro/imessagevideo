@@ -67,6 +67,15 @@ moved at frame 12, and all 24 frames decoded on the declared clock. Use
 `python3 observer/imv.py smoke --method all --out /tmp/imv-renderers` to
 reproduce the check. The separate Figma prototype is unverified.
 
-For the previous accepted films, their assets, code, and viewing tools,
-start with the [private library guide](observer/BASE-LIBRARY.md). These case
-packs are separate from the standalone skill.
+Generate an editable Motion example from the standalone skill after setting up
+Pillow and FFmpeg:
+
+```sh
+node motion/cli.mjs render --id heading-over-fixed-photos --out /tmp/heading-preview.mp4 --method pillow
+```
+
+Use the v3.2.1 media companion for finished films, frame strips, verified Motion
+previews and editable projects with audio stems. Extract it alongside the skill
+using the release notes, then open `review/imv-v3/observer/PORTABLE.md` from the
+release directory. For older case packs and their viewing tools, see the
+[private library guide](observer/BASE-LIBRARY.md).
