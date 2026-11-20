@@ -12,23 +12,32 @@
         "id": "message.prior",
         "senderId": "account.self",
         "text": "Here it is. Meet at the north gate.",
-        "attachmentIds": []
+        "attachmentIds": [],
+        "reactions": {},
+        "edited": false,
+        "receipt": ""
       },
       {
         "id": "message.target",
         "senderId": "account.remote",
         "text": "Can you send the trail map?",
-        "attachmentIds": []
+        "attachmentIds": [],
+        "reactions": {},
+        "edited": false,
+        "receipt": ""
       }
     ],
     "composer": {
       "text": "",
-      "focused": false
+      "focused": false,
+      "keyboardVisible": false
     },
     "viewport": {
       "surface": "conversation",
-      "anchorMessageId": "message.target"
-    }
+      "anchorMessageId": "message.target",
+      "scrollOffset": 0
+    },
+    "typingSenderIds": []
   },
   "events": [
     {
@@ -43,29 +52,39 @@
             "id": "message.prior",
             "senderId": "account.self",
             "text": "Here it is. Meet at the north gate.",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
           },
           {
             "id": "message.target",
             "senderId": "account.remote",
             "text": "Can you send the trail map?",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
           }
         ],
         "composer": {
           "text": "",
-          "focused": false
+          "focused": false,
+          "keyboardVisible": false
         },
         "viewport": {
           "surface": "context",
           "anchorMessageId": "message.target",
+          "scrollOffset": 0,
           "selection": [
             "message.target"
           ]
-        }
+        },
+        "typingSenderIds": []
       },
       "layerIds": [
-        "ui.overlay"
+        "ui.overlay",
+        "ui.inbox"
       ]
     },
     {
@@ -80,23 +99,34 @@
             "id": "message.prior",
             "senderId": "account.self",
             "text": "Here it is. Meet at the north gate.",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
           },
           {
             "id": "message.target",
             "senderId": "account.remote",
             "text": "Can you send the trail map?",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {
+              "account.self": "Love"
+            },
+            "edited": false,
+            "receipt": ""
           }
         ],
         "composer": {
           "text": "",
-          "focused": false
+          "focused": false,
+          "keyboardVisible": false
         },
         "viewport": {
           "surface": "conversation",
-          "anchorMessageId": "message.target"
-        }
+          "anchorMessageId": "message.target",
+          "scrollOffset": 0
+        },
+        "typingSenderIds": []
       },
       "layerIds": [
         "ui.message/message.target/reaction"

@@ -12,17 +12,23 @@
         "id": "message.sent",
         "senderId": "account.self",
         "text": "Can you send the trail map?",
-        "attachmentIds": []
+        "attachmentIds": [],
+        "reactions": {},
+        "edited": false,
+        "receipt": ""
       }
     ],
     "composer": {
       "text": "",
-      "focused": false
+      "focused": false,
+      "keyboardVisible": false
     },
     "viewport": {
       "surface": "conversation",
-      "anchorMessageId": "message.sent"
-    }
+      "anchorMessageId": "message.sent",
+      "scrollOffset": 0
+    },
+    "typingSenderIds": []
   },
   "events": [
     {
@@ -37,17 +43,25 @@
             "id": "message.sent",
             "senderId": "account.self",
             "text": "Can you send the trail map?",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
           }
         ],
         "composer": {
           "text": "",
-          "focused": false
+          "focused": false,
+          "keyboardVisible": false
         },
         "viewport": {
           "surface": "conversation",
-          "anchorMessageId": "message.sent"
-        }
+          "anchorMessageId": "message.sent",
+          "scrollOffset": 0
+        },
+        "typingSenderIds": [
+          "account.remote"
+        ]
       },
       "layerIds": [
         "ui.typing"

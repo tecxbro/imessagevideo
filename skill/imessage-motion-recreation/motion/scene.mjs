@@ -86,7 +86,7 @@ export function buildMotion(entry, content = {}, options = {}) {
   let initialUI = null;
 
   entry.build({
-    heading, stage, footer, colors, rect, text, group, content: data, ui, fps, frameCount, duration,
+    heading, stage, footer, colors, rect, text, group, content: data, hasCustomPhotos: content.photos !== undefined, ui, fps, frameCount, duration,
     label(value) {
       footer.children.push(text('footer-label', value, 26, 11, 15, {fill: colors.muted}));
     },

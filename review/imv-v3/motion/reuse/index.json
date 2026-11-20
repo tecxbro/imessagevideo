@@ -21,5 +21,21 @@
     "scene": "Direction's Stage Crew conversation with new heading, draft and reply",
     "evidence": "Direction reported a changed-content render and decoded f31→32 send, f50→51 receive. The initial recipe's answer preceded the send vertically. The updated recipe and adapter use chronological placement.",
     "reference": "https://github.com/tecxbro/imessagevideo/issues/7"
+  },
+  {
+    "id": "reply-makes-room",
+    "commit": "c95a7a04cba7b9d4911f93656b652c768a640ab5",
+    "scene": "Orchard Crew, a changed request and independent remote reply through Clone iMessage UI",
+    "preview": "review/imv-v3/motion/reuse/orchard/orchard-ui.mp4",
+    "sha256": "2ea3c831ea2b96824152174534cbbbea198398b5d6a97e5319d1864f9403c545",
+    "evidence": "A fresh tester rendered the clarified request in an isolated package. Decoded f34→35 introduces the reply and moves old rows while title and composer are pixel-identical. The first paraphrase miss prompted an inbound-reflow regression."
+  },
+  {
+    "id": "screen-to-physical-prop",
+    "commit": "c95a7a04cba7b9d4911f93656b652c768a640ab5",
+    "scene": "Direction’s visitor-pass scene with changed exchange, prop label and departure value",
+    "sha256": "85d58f4301c7cf4998eb07e29c5d81e7d79c45baaceaf8f7bd5fa43deb9e3b09",
+    "evidence": "Direction retrieved the recipe from the original missed brief and independently decoded phone release f31, prop focus f45, cut f48 and hold f60.",
+    "reference": "https://github.com/tecxbro/imessagevideo/issues/7"
   }
 ]

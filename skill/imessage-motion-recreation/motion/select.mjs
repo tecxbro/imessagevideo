@@ -1,7 +1,7 @@
 /** Offline brief selection. Hard constraints come before catalog similarity. */
 
 const ALIASES = [
-  [/\b(?:top (?:line|label|caption|title)|name at the top|(?:venue|place|shop|storefront) name|masthead|headline|header|title)\b/g, 'heading'],
+  [/\b(?:top (?:line|label|caption|title)|name at the top|(?:venue|place|shop|storefront|chat|conversation|thread) name|masthead|headline|header|title)\b/g, 'heading'],
   [/\b(?:avatars?|headshots?|portraits?|profile (?:photos|pictures))\b/g, 'avatar'],
   [/\b(?:images?|pictures?|thumbnails?|photographs?|imagery|stills)\b/g, 'photos'],
   [/\b(?:photo|pics?)\b/g, 'photos'],
@@ -26,23 +26,29 @@ const ALIASES = [
   [/\b(?:scale up|get(?:s|ting)? bigger|grow(?:s|ing)?|enlarge(?:s|d)?)\b/g, 'expand'],
   [/\b(?:full size|full screen)\b/g, 'fullscreen'],
   [/\b(?:darken(?:s|ing|ed)?|dim(?:s|ming|med)?)\b/g, 'dim'],
-  [/\b(?:rise[sd]?|rising|ascend(?:s|ing|ed)?|come(?:s)? up|bring(?:s)? up)\b/g, 'rise'],
+  [/\b(?:rise[sd]?|rising|ascend(?:s|ing|ed)?|come(?:s)? up|bring(?:s)? up|lift(?:s|ing|ed)?)\b/g, 'rise'],
   [/\bupwards?\b/g, 'up'],
   [/\bdownwards?\b/g, 'down'],
   [/\bvertically\b/g, 'vertical'],
-  [/\b(?:compose(?:r)? bar|input (?:box|field)|message field)\b/g, 'composer'],
+  [/\b(?:compose(?:r)? bar|input (?:box|field)|message (?:box|field)|typing field|draft field|reply input|text entry)\b/g, 'composer'],
+  [/\b(heading and (?:the )?)input\b/g, '$1composer'],
+  [/\b(?:old|older|earlier|previous|prior|existing) (?:chat )?(?:messages|rows|bubbles|texts)\b/g, 'transcript'],
+  [/\b(?:every|all) (?:chat )?(?:bubble|bubbles|messages)\b/g, 'transcript'],
   [/\b(?:conversation|conversations|group thread|message thread|chat thread)\b/g, 'chat'],
+  [/\bchat (?=(?:over|under) (?:it|them)\b)/g, 'transcript '],
+  [/\b(?:nudg(?:e[sd]?|ing)|shift(?:s|ing|ed)?)\b/g, 'shift'],
   [/\b(?:answer(?:s|ed|ing)?|respond(?:s|ed|ing)?|responses?)\b/g, 'reply'],
   [/\b(?:sent|sending|sends)\b/g, 'send'],
   [/\btyping progress\b/g, 'type draft'],
   [/\b(?:typed|typing|types)\b/g, 'type'],
 ];
 
-const STOP = new Set(('a an and are at be can could do enough for from get had has have he her him how i if in into is it its just let lets like make me my of on one only our out please put so some that the their them there these they this those to us use want was we were what when where which who will with would you your should can t s show see viewer notice stays place keep whole under over around then avoid without no not never as yet').split(' '));
+const STOP = new Set(('a an and are at be can could do enough for from get had has have he her him how i if in into is it its just let lets like make me my of on one only our out please put so some that the their them there these they this those to us use want was we were what when where which who will with would you your should can t s show see viewer notice stays place keep whole under over around then avoid without no not never as yet while itself every each exactly').split(' '));
 const GENERAL = new Set(['move', 'slide', 'fixed', 'photo', 'heading', 'chat', 'control', 'button', 'card', 'message', 'screen', 'carousel', 'swipe', 'text', 'camera']);
-const ACTOR = /\b(heading|photos|avatar|composer|camera|background|controls|buttons?|chat|viewport)\b/g;
+const ACTOR_NAME = 'heading|photos|avatar|composer|camera|background|controls|buttons?|chat|viewport|transcript';
+const ACTOR = new RegExp('\\b(' + ACTOR_NAME + ')\\b', 'g');
 const MOTION = 'slide|move|rise|drop|shift|sweep|rotate|expand|shrink|fade|swipe|bounce|zoom|scroll|animate|bring|ease|assemble';
-const QUALIFIER = '(?:the |a |an |all |each |both |our |your |these |those |new |existing |current |first |long |wide |small )*';
+const QUALIFIER = '(?:the |a |an |all |each |every |both |our |your |these |those |new |existing |current |first |long |wide |small )*';
 const PAIR = {
   photos: {id:'photos-under-fixed-heading', fixed:'heading', defaultDirection:'left', adaptDirections:['right']},
   heading: {id:'heading-over-fixed-photos', fixed:'photos', defaultDirection:'right', adaptDirections:['left', 'up', 'down', 'vertical']},
@@ -52,10 +58,12 @@ const FIXED_BEFORE = new RegExp('\\b(?:fixed|still|keep|hold|pin|lock|freeze|arr
 const FIXED_AFTER = new RegExp('^ (?:that |which |should |must |can |will |does |are |is |all |both |remains? |stays? |stay )*(?:fixed\\b|(?:not|never) (?:' + MOTION + ')\\b|alone\\b|still\\b)');
 const MOVE_BEFORE = new RegExp('\\b(' + MOTION + ') (' + DIRECTION + ' )?' + QUALIFIER + '$');
 const DESCRIBED_TARGET = new RegExp('^\\s*(?:only |just |please )?(' + MOTION + ') (' + DIRECTION + ' )?(?:the |a |an |each |my |our |your )(?:[a-z]+ ){0,4}$');
-const MOVE_AFTER = new RegExp('^ (?:that |which |should |must |will |would |to )*(' + MOTION + ')(?:s|es)?\\b(?: (?:to (?:the )?)?(' + DIRECTION + ')\\b)?');
-const DIRECTION_AFTER = new RegExp('^ (?:to (?:the )?)?(' + DIRECTION + ')\\b');
+const MOVE_AFTER = new RegExp('^ (?:that |which |itself |themselves |alone |should |must |will |would |to )*(' + MOTION + ')(?:s|es)?\\b(?: (?:to (?:the )?)?(' + DIRECTION + ')\\b)?');
+const DIRECTION_AFTER = new RegExp('^ (?:(?:over|under|behind) (?:it|them) )?(?:to (?:the )?)?(' + DIRECTION + ')\\b');
 const COORDINATED = new RegExp('\\b(photos|heading) and ' + QUALIFIER + '(photos|heading) (?:both )?(' + MOTION + ')(?:s|es)?\\b');
 const JOINT_TARGET = new RegExp('\\b(' + MOTION + ') ' + QUALIFIER + '(photos|heading) and ' + QUALIFIER + '(photos|heading)\\b');
+const JOINED_ACTORS = new RegExp('\\b(' + ACTOR_NAME + ') and ' + QUALIFIER + '(' + ACTOR_NAME + ')\\b', 'g');
+const LOCAL_PHOTO_ACTION = /\b(?:reorder|rearrange|reflow|grid density|photos? picker|select(?:ed)? (?:one|a) photos|(?:one|single) photos .* (?:viewer|slot))\b/;
 
 function normalized(input) {
   return ALIASES.reduce((value, [pattern, replacement]) => value.replace(pattern, replacement), String(input ?? '')
@@ -90,19 +98,23 @@ function briefRoles(input) {
   for (const line of clauses(input)) {
     const clause = usesHeading ? line.replace(/\bfilmstrip\b/g, 'photos') : line;
     const setInMotion = /^\s*(?:only |just |please )?(?:set|put) /.test(clause) && /\bin motion\b/.test(clause);
+    const holdInPlace = /^(?:only |just |please )?(?:keep|hold|leave)\b/.test(clause);
+    const fixedAfter = after => FIXED_AFTER.test(after) || holdInPlace && /^ in place\b/.test(after);
     let firstActor = true;
     for (const match of clause.matchAll(ACTOR)) {
       const name = nameOf(match[1]);
       const before = clause.slice(0, match.index);
       const after = clause.slice(match.index + match[0].length).replace(/^ (?:strip|rail|row|grid|band|text)\b/, '');
       mentioned.add(name);
+      // Other thumbnails can hold their slots while the selected thumbnail moves.
+      if (name === 'photos' && /\b(?:other|remaining|unselected|neighboring) $/.test(before)) continue;
       if (setInMotion && firstActor) {
         moving.set(name, {verb: 'move'});
         firstActor = false;
         continue;
       }
       firstActor = false;
-      if (FIXED_AFTER.test(after) || FIXED_BEFORE.test(before) && !(/\bkeep (?:the )?$/.test(before) && MOVE_AFTER.test(after))) {
+      if (fixedAfter(after) || FIXED_BEFORE.test(before) && !(/\bkeep (?:the )?$/.test(before) && MOVE_AFTER.test(after))) {
         fixed.add(name);
         continue;
       }
@@ -110,9 +122,15 @@ function briefRoles(input) {
       const following = after.match(MOVE_AFTER);
       const verb = preceding?.[1] ?? following?.[1];
       const direction = preceding?.[2]?.trim() ?? following?.[2] ??
-        (preceding ? after.match(DIRECTION_AFTER)?.[1] : undefined);
+        (preceding ? after.match(DIRECTION_AFTER)?.[1] : undefined) ?? (verb === 'rise' ? 'up' : undefined);
       if (verb) {
         moving.set(name, {verb, direction});
+      }
+    }
+    for (const pair of clause.matchAll(JOINED_ACTORS)) {
+      if (fixedAfter(clause.slice(pair.index + pair[0].length))) {
+        fixed.add(nameOf(pair[1]));
+        fixed.add(nameOf(pair[2]));
       }
     }
     const coordinated = clause.match(COORDINATED);
@@ -144,7 +162,7 @@ const EDITS = [
 ];
 const SPECIAL = /\b(?:3d|three dimensional|page curl|cloth physics|fabric simulation|fluid simulation|ray tracing|particle simulation|elastic grid|glass reflection|liquid morph|lens flare|live tracking|procedural fire|blow up into confetti)\b/g;
 const FORBID = /\b(?:without|avoid|no|never|not) (?:a |an |any |the )?(?:any )?([a-z]+)\b/g;
-const TECHNIQUES = new Set('bounce camera cut dim fade flip zoom rotate spin slide shake explode tilt blur pulse strobe wobble send swipe'.split(' '));
+const TECHNIQUES = new Set('bounce camera cut dim fade flip zoom rotate spin slide rise shake explode tilt blur pulse strobe wobble send swipe'.split(' '));
 const CAPABILITIES = {
   zoom: ['scale', 'scal', 'pinch'],
   slide: ['shift', 'drag', 'rail'],
@@ -191,13 +209,14 @@ function roleMatch(entries, roles, input) {
   const conflict = [...fixed].find(actor => moving.has(actor));
   if (conflict) return decision('missing', `The request asks for the ${conflict} to move and stay fixed in the same beat.`);
   if (!mentioned.has('photos') || !mentioned.has('heading')) return null;
+  if (LOCAL_PHOTO_ACTION.test(input)) return null;
   const relational = /\b(?:under|over|through|behind)\b/.test(input);
   for (const [actor, motion] of Object.entries(PAIR)) {
     const movement = moving.get(actor);
     if (!movement || !(fixed.has(motion.fixed) || relational) || moving.size > 1) continue;
     const entry = entries.find(candidate => candidate.id === motion.id);
     if (!entry) continue;
-    const compatible = /^(?:move|slide|sweep|shift|bring|ease)$/.test(movement.verb);
+    const compatible = /^(?:move|slide|sweep|shift|bring|ease|rise)$/.test(movement.verb);
     if (!compatible || avoidedTechniques(input).includes('slide')) continue;
     const {issue, content} = directionChoice(entry, motion, movement.direction);
     if (issue) {
@@ -220,6 +239,7 @@ function indexEntry(entry) {
     primary: new Set(words(main)),
     context: new Set(words([entry.fits, entry.notice, entry.fixed].join(' '))),
     moving: new Set(words(entry.moves)),
+    actualMovers: briefRoles(entry.moves).moving,
     techniques: new Set(words(techniqueDescription).filter(word => !negated.includes(word))),
     fixed: new Set(words(entry.fixed)),
     examples,
@@ -235,17 +255,22 @@ function rank(entries, input, roles) {
   const pairs = new Set(allWords.slice(1).map((word, index) => allWords[index] + ' ' + word));
   const indexed = entries.map(indexEntry);
   const counts = new Map([...queryWithoutNegation].map(word => [word, indexed.filter(record => record.primary.has(word)).length]));
-  return indexed.map(({entry, primary, context, moving, fixed, examples, all, techniques}) => {
+  return indexed.map(({entry, primary, context, moving, fixed, examples, all, techniques, actualMovers}) => {
     let content;
+    const movesActor = actor => actor === 'transcript' ? actualMovers.has(actor) : moving.has(stem(actor));
     const issues = [...special.filter(phrase => !all.includes(phrase)).map(phrase => `requires ${phrase}`),
       ...forbidden.filter(word => uses(techniques, word)).map(word => `uses ${word}`)];
     for (const actor of roles.fixed) {
-      if (moving.has(stem(actor)) && !fixed.has(stem(actor))) issues.push(`moves the requested fixed ${actor}`);
+      if (movesActor(actor) && (actor === 'transcript' || !fixed.has(stem(actor))))
+        issues.push(`moves the requested fixed ${actor}`);
     }
     for (const [actor, movement] of roles.moving) {
-      if (!moving.has(stem(actor))) issues.push(fixed.has(stem(actor))
+      const actual = actualMovers.get(actor);
+      if (!movesActor(actor)) issues.push(fixed.has(stem(actor))
         ? `fixes the requested moving ${actor}`
         : `does not describe a moving ${actor}`);
+      if (actor === 'transcript' && actual && movement.direction && actual.direction !== movement.direction)
+        issues.push(`does not describe the transcript moving ${movement.direction}`);
       if (TECHNIQUES.has(movement.verb) && !uses(moving, movement.verb)) issues.push(`requires ${movement.verb} on the ${actor}`);
       const photoPair = PAIR[actor];
       if (photoPair?.id !== entry.id) continue;
@@ -262,7 +287,7 @@ function rank(entries, input, roles) {
     const contextScore = [...queryWithoutNegation].filter(word => context.has(word) && !primary.has(word)).length * 0.28;
     const phraseScore = examples.reduce((best, example) => Math.max(best, example.slice(1)
       .filter((word, index) => pairs.has(example[index] + ' ' + word)).length * 1.75), 0);
-    const assigned = [...roles.moving.keys()].filter(actor => moving.has(stem(actor))).length * 1.5
+    const assigned = [...roles.moving.keys()].filter(movesActor).length * 1.5
       + [...roles.fixed].filter(actor => fixed.has(stem(actor))).length * 1.2;
     const score = Math.round((relevance + contextScore + phraseScore + assigned) * 100) / 100;
     return {id: entry.id, score, signals, distinctive, issues, ...(content && {content})};
@@ -280,10 +305,12 @@ function isHold(input, roles) {
 function selectBeat(entries, request) {
   const input = normalized(request);
   const roles = briefRoles(request);
-  const prohibited = /^(?:please )?(?:without|no|not|avoid) (?:extra |any |a |the )?(?:animation|motion|movement|animate|move|transitions?)\b/;
+  const noMotion = /\b(?:without|no|avoid) (?:absolutely |any |extra |a |the )?(?:animation|motion|movement|transitions?)\b/;
+  const prohibited = /^(?:please )?(?:not|avoid) (?:animate|move)\b/;
   const movement = /\b(?:slide|move|zoom|cut|reveal|tap|focus|fade|bounce|push|pull|scroll|change|shift|swipe|rotate|assemble|rise|dim|expand|shrink|drag|collapse|spill|shake|highlight|pinch|sharpen|switch|adjust|grow|reframe|bring|send|type)\w*\b/;
-  const explicitHold = isHold(input, roles) || clauses(request).some(clause => prohibited.test(clause));
-  const positiveClauses = clauses(request).map(clause => clause.replace(/\b(?:not|without|no|avoid|never) (?:extra |any |a |the )?(?:animation|movement|animate|move|slide|zoom|cut|fade|bounce|rotate|scroll)\b/g, ''));
+  const explicitHold = isHold(input, roles) || noMotion.test(input) || clauses(request).some(clause => prohibited.test(clause));
+  const positiveClauses = clauses(request).map(clause => clause.replace(noMotion, '')
+    .replace(/\b(?:not|without|no|avoid|never) (?:extra |any |a |the )?(?:animation|movement|animate|move|slide|zoom|cut|fade|bounce|rotate|scroll)\b/g, ''));
   if (explicitHold && !positiveClauses.some(clause => movement.test(clause))) {
     return decision('hold', 'A static reading hold preserves attention on the content and the requested fixed layers.');
   }

@@ -17,17 +17,24 @@
           "photo-2",
           "photo-3",
           "photo-4"
-        ]
+        ],
+        "reactions": {},
+        "edited": false,
+        "receipt": "",
+        "page": 0
       }
     ],
     "composer": {
       "text": "",
-      "focused": false
+      "focused": false,
+      "keyboardVisible": false
     },
     "viewport": {
       "surface": "conversation",
-      "anchorMessageId": "message.photos"
-    }
+      "anchorMessageId": "message.photos",
+      "scrollOffset": 0
+    },
+    "typingSenderIds": []
   },
   "events": [
     {
@@ -47,17 +54,24 @@
               "photo-2",
               "photo-3",
               "photo-4"
-            ]
+            ],
+            "reactions": {},
+            "edited": false,
+            "receipt": "",
+            "page": 1
           }
         ],
         "composer": {
           "text": "",
-          "focused": false
+          "focused": false,
+          "keyboardVisible": false
         },
         "viewport": {
           "surface": "conversation",
-          "anchorMessageId": "message.photos"
-        }
+          "anchorMessageId": "message.photos",
+          "scrollOffset": 0
+        },
+        "typingSenderIds": []
       },
       "layerIds": [
         "ui.message/message.photos/media"

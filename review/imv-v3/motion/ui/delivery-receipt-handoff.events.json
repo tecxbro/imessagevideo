@@ -12,17 +12,23 @@
         "id": "message.first",
         "senderId": "account.self",
         "text": "Can you send the trail map?",
-        "attachmentIds": []
+        "attachmentIds": [],
+        "reactions": {},
+        "edited": false,
+        "receipt": "Delivered"
       }
     ],
     "composer": {
       "text": "",
-      "focused": false
+      "focused": false,
+      "keyboardVisible": false
     },
     "viewport": {
       "surface": "conversation",
-      "anchorMessageId": "message.first"
-    }
+      "anchorMessageId": "message.first",
+      "scrollOffset": 0
+    },
+    "typingSenderIds": []
   },
   "events": [
     {
@@ -37,23 +43,32 @@
             "id": "message.first",
             "senderId": "account.self",
             "text": "Can you send the trail map?",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": "Delivered"
           },
           {
             "id": "message.latest",
             "senderId": "account.self",
             "text": "Here it is. Meet at the north gate.",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
           }
         ],
         "composer": {
           "text": "",
-          "focused": false
+          "focused": false,
+          "keyboardVisible": false
         },
         "viewport": {
           "surface": "conversation",
-          "anchorMessageId": "message.latest"
-        }
+          "anchorMessageId": "message.latest",
+          "scrollOffset": 0
+        },
+        "typingSenderIds": []
       },
       "layerIds": [
         "ui.message/message.latest"
@@ -71,23 +86,32 @@
             "id": "message.first",
             "senderId": "account.self",
             "text": "Can you send the trail map?",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": "Delivered"
           },
           {
             "id": "message.latest",
             "senderId": "account.self",
             "text": "Here it is. Meet at the north gate.",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": "Delivered"
           }
         ],
         "composer": {
           "text": "",
-          "focused": false
+          "focused": false,
+          "keyboardVisible": false
         },
         "viewport": {
           "surface": "conversation",
-          "anchorMessageId": "message.latest"
-        }
+          "anchorMessageId": "message.latest",
+          "scrollOffset": 0
+        },
+        "typingSenderIds": []
       },
       "layerIds": [
         "ui.message/message.latest/receipt"

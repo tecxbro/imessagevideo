@@ -12,23 +12,32 @@
         "id": "message.original",
         "senderId": "account.self",
         "text": "Meet at the station.",
-        "attachmentIds": []
+        "attachmentIds": [],
+        "reactions": {},
+        "edited": false,
+        "receipt": ""
       },
       {
         "id": "message.reply",
         "senderId": "account.remote",
         "text": "Here it is. Meet at the north gate.",
-        "attachmentIds": []
+        "attachmentIds": [],
+        "reactions": {},
+        "edited": false,
+        "receipt": ""
       }
     ],
     "composer": {
       "text": "",
-      "focused": false
+      "focused": false,
+      "keyboardVisible": false
     },
     "viewport": {
       "surface": "conversation",
-      "anchorMessageId": "message.reply"
-    }
+      "anchorMessageId": "message.reply",
+      "scrollOffset": 0
+    },
+    "typingSenderIds": []
   },
   "events": [
     {
@@ -43,23 +52,32 @@
             "id": "message.original",
             "senderId": "account.self",
             "text": "Meet at the station.\nBy the north entrance.",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": true,
+            "receipt": ""
           },
           {
             "id": "message.reply",
             "senderId": "account.remote",
             "text": "Here it is. Meet at the north gate.",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
           }
         ],
         "composer": {
           "text": "",
-          "focused": false
+          "focused": false,
+          "keyboardVisible": false
         },
         "viewport": {
           "surface": "conversation",
-          "anchorMessageId": "message.reply"
-        }
+          "anchorMessageId": "message.reply",
+          "scrollOffset": 0
+        },
+        "typingSenderIds": []
       },
       "layerIds": [
         "ui.message/message.original"

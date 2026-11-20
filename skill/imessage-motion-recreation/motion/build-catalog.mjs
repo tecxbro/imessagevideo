@@ -41,7 +41,7 @@ const rows = entries.map(entry => {
   ];
   const ui = existsSync(path.join(repo,review,'ui',entry.id+'.mp4')) ? {
     ...capture(`ui/${entry.id}`),
-    adapter:'Clone iMessage UI at 9beea91',
+    adapter:'Clone iMessage UI at 5e2ff5a',
     renderCommand:`${renderCommand(entry.id)} --ui`,
   } : undefined;
   return {...metadata(entry), ...assets, renderers, ui,

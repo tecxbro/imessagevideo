@@ -3,7 +3,7 @@
   "counts": {
     "observedOnly": 7,
     "playableEntries": 73,
-    "reusedEntries": 3,
+    "reusedEntries": 5,
     "distinctPlayableMotions": 71
   },
   "frameConvention": "Output event frame zero is the first decoded frame. Source ranges in seconds are half-open.",
@@ -114,7 +114,7 @@
             "frame": 39
           }
         ],
-        "adapter": "Clone iMessage UI at 9beea91",
+        "adapter": "Clone iMessage UI at 5e2ff5a",
         "renderCommand": "node motion/cli.mjs render --id photos-under-fixed-heading --method pillow --out /tmp/photos-under-fixed-heading.mp4 --ui"
       },
       "editableFields": {
@@ -292,7 +292,7 @@
       ],
       "ui": {
         "preview": "review/imv-v3/motion/ui/conversation-handoff.mp4",
-        "sha256": "44f890f70e05f2b7c8dceb8e58fcbf716bb991d41b529787e641a2d550772698",
+        "sha256": "07a187f5fa79e448aa7a56a4b323f5a0b08c5f7d70dbba6ab8632c78d168075f",
         "eventMap": "review/imv-v3/motion/ui/conversation-handoff.events.json",
         "picture": {
           "fpsNum": 30,
@@ -406,7 +406,7 @@
             "frame": 51
           }
         ],
-        "adapter": "Clone iMessage UI at 9beea91",
+        "adapter": "Clone iMessage UI at 5e2ff5a",
         "renderCommand": "node motion/cli.mjs render --id conversation-handoff --method pillow --out /tmp/conversation-handoff.mp4 --ui"
       },
       "editableFields": {
@@ -642,7 +642,7 @@
             "frame": 60
           }
         ],
-        "adapter": "Clone iMessage UI at 9beea91",
+        "adapter": "Clone iMessage UI at 5e2ff5a",
         "renderCommand": "node motion/cli.mjs render --id composer-type --method pillow --out /tmp/composer-type.mp4 --ui"
       },
       "editableFields": {
@@ -734,7 +734,7 @@
       ],
       "ui": {
         "preview": "review/imv-v3/motion/ui/draft-send-flight.mp4",
-        "sha256": "44fef2e220b7fee0c14786ead4970fd5dffa14000baa643b96f09a226a468f29",
+        "sha256": "bf78899cddd69705d681d8b46a830b9f53fe7b34b99edee08db7e7e66900fdea",
         "eventMap": "review/imv-v3/motion/ui/draft-send-flight.events.json",
         "picture": {
           "fpsNum": 30,
@@ -753,7 +753,7 @@
             "frame": 35
           }
         ],
-        "adapter": "Clone iMessage UI at 9beea91",
+        "adapter": "Clone iMessage UI at 5e2ff5a",
         "renderCommand": "node motion/cli.mjs render --id draft-send-flight --method pillow --out /tmp/draft-send-flight.mp4 --ui"
       },
       "editableFields": {
@@ -847,7 +847,7 @@
             "frame": 8
           }
         ],
-        "adapter": "Clone iMessage UI at 9beea91",
+        "adapter": "Clone iMessage UI at 5e2ff5a",
         "renderCommand": "node motion/cli.mjs render --id typing-indicator-cycle --method pillow --out /tmp/typing-indicator-cycle.mp4 --ui"
       },
       "editableFields": {
@@ -927,7 +927,7 @@
       ],
       "ui": {
         "preview": "review/imv-v3/motion/ui/reply-makes-room.mp4",
-        "sha256": "22a65ba24f10c5abac73f74aa2c39fbd48ce901b44d96acb3ec461bd505df292",
+        "sha256": "75dc427bc736dbcf2da11fdc71510ddb46095d2fd1a43089903d314a29a3461a",
         "eventMap": "review/imv-v3/motion/ui/reply-makes-room.events.json",
         "picture": {
           "fpsNum": 30,
@@ -941,7 +941,7 @@
             "frame": 35
           }
         ],
-        "adapter": "Clone iMessage UI at 9beea91",
+        "adapter": "Clone iMessage UI at 5e2ff5a",
         "renderCommand": "node motion/cli.mjs render --id reply-makes-room --method pillow --out /tmp/reply-makes-room.mp4 --ui"
       },
       "editableFields": {
@@ -1031,7 +1031,7 @@
       ],
       "ui": {
         "preview": "review/imv-v3/motion/ui/delivery-receipt-handoff.mp4",
-        "sha256": "c1930e150c6712436c5937813a0fb3c1361d3042b2090e8d2b3104d335055a9e",
+        "sha256": "ee68c78fe4af9792f15939ca307c986dd02e610675baf14031c45439afbc768e",
         "eventMap": "review/imv-v3/motion/ui/delivery-receipt-handoff.events.json",
         "picture": {
           "fpsNum": 30,
@@ -1050,7 +1050,7 @@
             "frame": 34
           }
         ],
-        "adapter": "Clone iMessage UI at 9beea91",
+        "adapter": "Clone iMessage UI at 5e2ff5a",
         "renderCommand": "node motion/cli.mjs render --id delivery-receipt-handoff --method pillow --out /tmp/delivery-receipt-handoff.mp4 --ui"
       },
       "editableFields": {
@@ -1142,7 +1142,7 @@
       ],
       "ui": {
         "preview": "review/imv-v3/motion/ui/long-press-actions.mp4",
-        "sha256": "d0b4353037f53e325d74e0e33578cd6041899c2cad20154179e363bf2b0c68a5",
+        "sha256": "03383aee4d622542c4a4d5494dbf10c6e3bf3061a8cad125f62c244054902626",
         "eventMap": "review/imv-v3/motion/ui/long-press-actions.events.json",
         "picture": {
           "fpsNum": 30,
@@ -1161,7 +1161,7 @@
             "frame": 31
           }
         ],
-        "adapter": "Clone iMessage UI at 9beea91",
+        "adapter": "Clone iMessage UI at 5e2ff5a",
         "renderCommand": "node motion/cli.mjs render --id long-press-actions --method pillow --out /tmp/long-press-actions.mp4 --ui"
       },
       "editableFields": {
@@ -1251,7 +1251,7 @@
       ],
       "ui": {
         "preview": "review/imv-v3/motion/ui/reaction-attach.mp4",
-        "sha256": "1565fef185e0e088f3d73bedce8f964c691cf66a79cffbca777a99e0db638e65",
+        "sha256": "7d852b1d21ded938cc7c7a8534883ffea26694d5b2a48a87fc61c2ff1f1711b4",
         "eventMap": "review/imv-v3/motion/ui/reaction-attach.events.json",
         "picture": {
           "fpsNum": 30,
@@ -1275,7 +1275,7 @@
             "frame": 49
           }
         ],
-        "adapter": "Clone iMessage UI at 9beea91",
+        "adapter": "Clone iMessage UI at 5e2ff5a",
         "renderCommand": "node motion/cli.mjs render --id reaction-attach --method pillow --out /tmp/reaction-attach.mp4 --ui"
       },
       "editableFields": {
@@ -1626,7 +1626,7 @@
       ],
       "ui": {
         "preview": "review/imv-v3/motion/ui/edit-message-reflow.mp4",
-        "sha256": "3196150cb00b12e88e78f20fe8a58204feddebf6f612336fbf40424347fbdcbc",
+        "sha256": "00fef6e89c3410d48b91590a633169a6703e917ee91da7695a66b5c218e15499",
         "eventMap": "review/imv-v3/motion/ui/edit-message-reflow.events.json",
         "picture": {
           "fpsNum": 30,
@@ -1640,7 +1640,7 @@
             "frame": 47
           }
         ],
-        "adapter": "Clone iMessage UI at 9beea91",
+        "adapter": "Clone iMessage UI at 5e2ff5a",
         "renderCommand": "node motion/cli.mjs render --id edit-message-reflow --method pillow --out /tmp/edit-message-reflow.mp4 --ui"
       },
       "editableFields": {
@@ -1727,7 +1727,7 @@
       ],
       "ui": {
         "preview": "review/imv-v3/motion/ui/undo-send-remove.mp4",
-        "sha256": "11d906a99e67ff29f97693b6d00db695be2cf2303c51c039d34faf65412243d2",
+        "sha256": "e57077f4d147b4d377001d866585652fcc5a11dde3b4cf5c98a964dbbf8106c5",
         "eventMap": "review/imv-v3/motion/ui/undo-send-remove.events.json",
         "picture": {
           "fpsNum": 30,
@@ -1741,7 +1741,7 @@
             "frame": 26
           }
         ],
-        "adapter": "Clone iMessage UI at 9beea91",
+        "adapter": "Clone iMessage UI at 5e2ff5a",
         "renderCommand": "node motion/cli.mjs render --id undo-send-remove --method pillow --out /tmp/undo-send-remove.mp4 --ui"
       },
       "editableFields": {
@@ -2021,7 +2021,7 @@
             "frame": 44
           }
         ],
-        "adapter": "Clone iMessage UI at 9beea91",
+        "adapter": "Clone iMessage UI at 5e2ff5a",
         "renderCommand": "node motion/cli.mjs render --id keyboard-focus-reflow --method pillow --out /tmp/keyboard-focus-reflow.mp4 --ui"
       },
       "editableFields": {
@@ -4442,7 +4442,7 @@
             "frame": 31
           }
         ],
-        "adapter": "Clone iMessage UI at 9beea91",
+        "adapter": "Clone iMessage UI at 5e2ff5a",
         "renderCommand": "node motion/cli.mjs render --id app-drawer --method pillow --out /tmp/app-drawer.mp4 --ui"
       },
       "editableFields": {
@@ -6636,8 +6636,13 @@
         "title",
         "detail",
         "action",
-        "values"
+        "values",
+        "photos"
       ],
+      "photoCount": {
+        "min": 1,
+        "max": 1
+      },
       "defaults": {
         "heading": "From the screen to the prop table",
         "copy": "Where’s the moon?",
@@ -6649,7 +6654,7 @@
           100
         ]
       },
-      "editNotes": "Use copy and reply for the short exchange, action for the contact name, and title for the label on the prop. Replace the vector children inside prop-tin to swap the prop for both shots. The first values item sets departure from 0 (source-like drift and cut with the phone visible) to 100 (full exit before the cut).",
+      "editNotes": "Use copy and reply for the short exchange, action for the contact name, and title for the label on the prop. Supply one photo of the replacement prop, preferably a transparent PNG; exactly the same image is used in both shots. The first values item sets departure from 0 (source-like drift and cut with the phone visible) to 100 (full exit before the cut).",
       "source": {
         "kind": "direction-authored-adaptation",
         "ref": "https://github.com/tecxbro/imessagevideo/blob/db9218888e89660771b9946c5bd0e32568b57a1e/skill/imessage-motion-recreation/direction/film/movement.py",
@@ -6659,9 +6664,9 @@
           5.833333333333333,
           7.041666666666667
         ],
-        "frames": [
+        "framesInclusive": [
           140,
-          169
+          168
         ],
         "fps": 24,
         "cueFrame": 153,
@@ -6737,7 +6742,8 @@
         "title": "text",
         "detail": "text",
         "action": "text",
-        "values": "array of 1–24 finite numbers; use the entry notes for meaning and bounds"
+        "values": "array of 1–24 finite numbers; use the entry notes for meaning and bounds",
+        "photos": "array of local PNG, JPEG or WebP paths, relative to the content JSON"
       },
       "renderCommand": "node motion/cli.mjs render --id screen-to-physical-prop --method pillow --out /tmp/screen-to-physical-prop.mp4"
     }
@@ -6777,7 +6783,7 @@
           0.292
         ]
       },
-      "gap": "The team adapter exposes neither search results nor an independently persistent search field."
+      "gap": "The team adapter has authored search states. This source window still needs a calibrated reusable opening and dismissal with the measured fixed-field ownership."
     },
     {
       "id": "sheet-readiness-and-restore",
@@ -6852,6 +6858,22 @@
       "commit": "de04deb3071ccd9c674f95a4267e2843ed4e3bf0",
       "scene": "Direction's Stage Crew conversation with new heading, draft and reply",
       "evidence": "Direction reported a changed-content render and decoded f31→32 send, f50→51 receive. The initial recipe's answer preceded the send vertically. The updated recipe and adapter use chronological placement.",
+      "reference": "https://github.com/tecxbro/imessagevideo/issues/7"
+    },
+    {
+      "id": "reply-makes-room",
+      "commit": "c95a7a04cba7b9d4911f93656b652c768a640ab5",
+      "scene": "Orchard Crew, a changed request and independent remote reply through Clone iMessage UI",
+      "preview": "review/imv-v3/motion/reuse/orchard/orchard-ui.mp4",
+      "sha256": "2ea3c831ea2b96824152174534cbbbea198398b5d6a97e5319d1864f9403c545",
+      "evidence": "A fresh tester rendered the clarified request in an isolated package. Decoded f34→35 introduces the reply and moves old rows while title and composer are pixel-identical. The first paraphrase miss prompted an inbound-reflow regression."
+    },
+    {
+      "id": "screen-to-physical-prop",
+      "commit": "c95a7a04cba7b9d4911f93656b652c768a640ab5",
+      "scene": "Direction’s visitor-pass scene with changed exchange, prop label and departure value",
+      "sha256": "85d58f4301c7cf4998eb07e29c5d81e7d79c45baaceaf8f7bd5fa43deb9e3b09",
+      "evidence": "Direction retrieved the recipe from the original missed brief and independently decoded phone release f31, prop focus f45, cut f48 and hold f60.",
       "reference": "https://github.com/tecxbro/imessagevideo/issues/7"
     }
   ]

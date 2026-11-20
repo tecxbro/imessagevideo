@@ -194,12 +194,14 @@ const recipes = {
 export const uiIds = Object.freeze(Object.keys(recipes));
 
 function rebaseAssets(scene, directory) {
+  // The adapter emits data URIs for artwork normalized from EXIF orientation.
+  const rebase = src => src.startsWith('data:') ? src : path.resolve(directory, src);
   function visit(layer) {
-    if (layer.type === 'image') layer.src = path.resolve(directory, layer.src);
+    if (layer.type === 'image') layer.src = rebase(layer.src);
     for (const child of layer.children ?? []) visit(child);
   }
   for (const layer of scene.layers) visit(layer);
-  for (const font of scene.fonts ?? []) font.src = path.resolve(directory, font.src);
+  for (const font of scene.fonts ?? []) font.src = rebase(font.src);
 }
 
 export function buildUiMotion(entry, content = {}, {

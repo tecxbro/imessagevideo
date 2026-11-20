@@ -47,7 +47,7 @@ node motion/cli.mjs render --id conversation-handoff --ui --content /tmp/worksho
 node motion/cli.mjs render --id photos-under-fixed-heading --ui --out /tmp/attachment-ui.mp4
 ```
 
-If `ui/` lives in a separate checkout, use `--ui-root /absolute/path/to/skill/imessage-motion-recreation`. For the pinned version used in the review files, `git archive 9beea91 skill/imessage-motion-recreation/ui` yields the adapter from its fetched ref. Unpack it into a working directory and pass the skill directory as `--ui-root`.
+If `ui/` lives in a separate checkout, use `--ui-root /absolute/path/to/skill/imessage-motion-recreation`. For the pinned version used in the review files, `git archive 5e2ff5a skill/imessage-motion-recreation/ui` yields the adapter from its fetched ref. Unpack it into a working directory and pass the skill directory as `--ui-root`.
 
 Render produces an MP4, an editable `.scene.json` and an `.events.json` with the shared frame clock. `scene` produces the same editable scene and event map without encoding. For programmatic reuse, import `buildMotion(entry, content, options)` from [scene.mjs](scene.mjs), `byId` from [catalog.mjs](catalog.mjs), or `buildUiMotion(entry, content, options)` from [ui-bridge.mjs](ui-bridge.mjs). Insert the returned layers and timeline into a matching scene, or use [composeScenes](sequence.mjs) for serial beats. It resets UI state at cuts and prefixes each occurrence's layer, event and cue links. Keep artwork as individual source files when relocating a generated manifest.
 

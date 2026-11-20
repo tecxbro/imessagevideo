@@ -8,7 +8,7 @@ const source = {
   picture: 'https://github.com/tecxbro/imessagevideo/blob/db9218888e89660771b9946c5bd0e32568b57a1e/review/imv-v3/direction/locked.mp4',
   pictureSha256: '838fbb35fa9741cb373875d2c6f88536c2dd46ab6abc39978e47a1d7f978cec7',
   range: [140 / 24, 169 / 24],
-  frames: [140, 169],
+  framesInclusive: [140, 168],
   fps: 24,
   cueFrame: 153,
   note: 'The locked shot holds the readable reply, starts the 12-frame phone/focus lead at 141, cuts at 153, and completes the tin camera push at 168. The phone remains partly visible at 152. The preview ports Direction’s independent source curves. Its full left exit, tighter scale at the cut, and closed-tin hold adapt the requested brief. The source begins lifting the lid at 165.',
@@ -32,7 +32,9 @@ function oval(id, x, y, width, height, fill, extra = {}) {
 
 function propTable(ctx) {
   const {content, group, rect, text} = ctx;
-  const tin = group('prop-tin', 242, 125, [
+  const tin = group('prop-tin', 242, 125, ctx.hasCustomPhotos ? [
+    ctx.image('prop-photo', 0, -26, 185, 132, {preserveAspectRatio:'xMidYMid meet'}),
+  ] : [
     oval('tin-contact-shadow', -4, 60, 197, 61, '#161016', {blur: 8, opacity: .72}),
     oval('tin-bottom', 1, 29, 182, 71, '#6d272c', {stroke: '#402029', strokeWidth: 3}),
     rect('tin-wall', 2, 39, 179, 24, '#74262b', 1),
@@ -120,13 +122,14 @@ export const entries = [{
     'Read a reply, let the handset leave frame and cut closer to the object it points to.',
     'Transfer attention from a message screen to a real object with a leftward phone exit and a tighter prop shot.',
   ],
-  editable: ['heading', 'copy', 'reply', 'title', 'detail', 'action', 'values'],
+  editable: ['heading', 'copy', 'reply', 'title', 'detail', 'action', 'values', 'photos'],
+  photoCount: {min:1,max:1},
   defaults: {
     heading: 'From the screen to the prop table', copy: 'Where’s the moon?',
     reply: 'Red tin. Under the stars.', title: 'MOON', action: 'Stage Crew',
     detail: 'Find the object named in the reply.', values: [100],
   },
-  editNotes: 'Use copy and reply for the short exchange, action for the contact name, and title for the label on the prop. Replace the vector children inside prop-tin to swap the prop for both shots. The first values item sets departure from 0 (source-like drift and cut with the phone visible) to 100 (full exit before the cut).',
+  editNotes: 'Use copy and reply for the short exchange, action for the contact name, and title for the label on the prop. Supply one photo of the replacement prop, preferably a transparent PNG; exactly the same image is used in both shots. The first values item sets departure from 0 (source-like drift and cut with the phone visible) to 100 (full exit before the cut).',
   source,
   build(ctx) {
     const {track, event, stage, content, frameCount, rect} = ctx;
