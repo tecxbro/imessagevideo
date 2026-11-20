@@ -1,0 +1,115 @@
+{
+  "approval": {
+    "path": "datasets/imessage/approvals/payment-test.json",
+    "sha256": "eb8be9c56aa86a9758f88852102ba308fe4b63104854de3cf3afac821da17cc5"
+  },
+  "archive": {
+    "bytes": 51875,
+    "parts": [
+      {
+        "bytes": 51875,
+        "name": "archive.zip",
+        "sha256": "bb97f06de7319044cf3ab5de5b74cc165c7d1415c4dad9f97f66e8409ab68da2"
+      }
+    ],
+    "sha256": "bb97f06de7319044cf3ab5de5b74cc165c7d1415c4dad9f97f66e8409ab68da2"
+  },
+  "capture": {
+    "classification": "fixture",
+    "clock": {
+      "average_fps": "20/1",
+      "time_base": "1/10240"
+    },
+    "device": {
+      "build": "Chromium 156.0.8078.79",
+      "model": "Headless Chromium desktop, 400 \u00d7 720 browser viewport",
+      "os": "Debian GNU/Linux 13"
+    },
+    "id": "payment-test",
+    "interaction": {
+      "action": "Open the test sheet, approve the fictional amount, hold the visible approval and dismiss to the same card.",
+      "after": "The separate Test payment approved result holds below the original card.",
+      "before": "The fictional order card and Review test payment control are visible at rest.",
+      "landmarks": [
+        {
+          "frame": 0,
+          "name": "card-at-rest"
+        },
+        {
+          "frame": 20,
+          "name": "sheet-open"
+        },
+        {
+          "frame": 40,
+          "name": "approval-input-and-acknowledgment"
+        },
+        {
+          "frame": 46,
+          "name": "sheet-dismissed-same-card"
+        },
+        {
+          "frame": 61,
+          "name": "first-readable-test-result"
+        },
+        {
+          "frame": 95,
+          "name": "result-hold"
+        }
+      ],
+      "layers": [
+        "Stationary header and order card",
+        "Modal sheet and backdrop",
+        "Independent result below the same card"
+      ],
+      "name": "Offline approval through result"
+    },
+    "media_sha256": "7453ed189d2e0e5d7fe1ca03d4a6cfd7f5e0ae2227e389771d1da37779644743",
+    "range": {
+      "end_frame": 95,
+      "end_pts": 48640,
+      "start_frame": 0,
+      "start_pts": 0
+    },
+    "rights": {
+      "holder": "Dataset project fixture author",
+      "permission_ref": "review/imv-v3/dataset/payment-test-rights.md",
+      "scope": "private-repo-and-team-analysis"
+    },
+    "schema_version": 1,
+    "source": {
+      "captured_on": "2026-11-20",
+      "method": "One offline Chromium session captured on a 20 fps virtual clock with scripted clicks",
+      "reference": "datasets/imessage/fixtures/payment-test.html"
+    }
+  },
+  "exclusion_check": {
+    "exclusions_checked": 3,
+    "extra_sha256": [],
+    "manifest_sha256": "a497a4c0e30b1bedbb31181bb4ed142a59ba9d3f693d3d7eaf4303f67cccc0f3",
+    "observer_commit": "f926ed417a128845a7912cc23edb632561f26cdd",
+    "status": "clear",
+    "tool_sha256": "f53ff09567fa121b846d8fce645459a497f7a53f5a73f9b169804c71b54c5437"
+  },
+  "media": {
+    "bytes": 49727,
+    "clock": {
+      "average_fps": "20/1",
+      "time_base": "1/10240"
+    },
+    "frame_count": 96,
+    "height": 720,
+    "landmark_pts": {
+      "approval-input-and-acknowledgment": 20480,
+      "card-at-rest": 0,
+      "first-readable-test-result": 31232,
+      "result-hold": 48640,
+      "sheet-dismissed-same-card": 23552,
+      "sheet-open": 10240
+    },
+    "name": "clip.mp4",
+    "sha256": "7453ed189d2e0e5d7fe1ca03d4a6cfd7f5e0ae2227e389771d1da37779644743",
+    "width": 400
+  },
+  "record_sha256": "0a5c85caedb7509082d7670ac04dc42aa395da959064cdf959ecb92d11812ded",
+  "schema_version": 1
+}
