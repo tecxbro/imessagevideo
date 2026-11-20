@@ -91,7 +91,7 @@ def strongest_fingerprint(template, cue):
     return begin, reference, energy, channel
 
 
-def check_cue(cue, expected_impact, source, decoded, audio_start, bus_gain):
+def check_cue(cue, expected_impact, source, decoded, audio_start, bus_gain, other_starts=()):
     begin, template, energy, channel = strongest_fingerprint(source, cue)
     predicted_asset = expected_impact - cue.impact - audio_start
     first = max(0, (predicted_asset - cue.search) // DECIMATION + begin)
@@ -111,8 +111,12 @@ def check_cue(cue, expected_impact, source, decoded, audio_start, bus_gain):
     impacts = ((np.arange(len(correlation)) + first - begin) * DECIMATION
                + audio_start + cue.impact)
     errors = impacts - expected_impact
-    within = valid & (np.abs(errors) <= cue.tolerance)
-    candidates = np.flatnonzero(within if np.any(within) else valid)
+    asset_starts = impacts - cue.impact
+    expected_start = expected_impact - cue.impact
+    for other_start in other_starts:
+        if other_start != expected_start:
+            valid &= np.abs(asset_starts - expected_start) < np.abs(asset_starts - other_start)
+    candidates = np.flatnonzero(valid)
     if not len(candidates):
         return {**measurement, "verdict": "missing",
                 "best_correlation": round(float(np.max(correlation)), 3)}
@@ -120,6 +124,13 @@ def check_cue(cue, expected_impact, source, decoded, audio_start, bus_gain):
     impact = int(impacts[index])
     error = int(errors[index])
     verdict = "pass" if abs(error) <= cue.tolerance else "late" if error > 0 else "early"
+    # A steady tone can match many source alignments. Only accept a near tie if every
+    # credible alternative is also in tolerance. The asset's attack is usually a better template.
+    rivals = (valid & (np.abs(errors) > cue.tolerance)
+              & (np.abs(impacts - impact) > 0.04 * RATE)
+              & (correlation >= correlation[index] - .003))
+    if verdict == "pass" and np.any(rivals):
+        verdict = "ambiguous"
     return {**measurement, "verdict": verdict, "correlation": round(float(correlation[index]), 3),
             "observed_asset_alignment_sample": impact - cue.impact,
             "estimated_onset_marker_sample": impact - cue.impact + cue.onset,
@@ -185,6 +196,13 @@ def verify(plan_path, picture, export, manifest_path):
     source_cache = {}
     cue_results = []
     observations = {}
+    repeated_starts = {}
+    asset_hashes = {}
+    for cue, row in zip(cues, rows):
+        if cue.asset not in asset_hashes:
+            asset_hashes[cue.asset] = sha256(cue.asset)
+        if cue.event is not None:
+            repeated_starts.setdefault(asset_hashes[cue.asset], []).append(row["asset_start_sample"])
     manifest_rows = {row["id"]: row for row in manifest.get("cues", [])}
     if len(manifest.get("cues", [])) != len(cues) or set(manifest_rows) != {cue.id for cue in cues}:
         failures.append("manifest cue IDs differ from the sound plan")
@@ -194,7 +212,7 @@ def verify(plan_path, picture, export, manifest_path):
                     "onset_marker_sample"):
             if row[key] != compiled.get(key):
                 failures.append(f"{cue.id}: manifest {key} differs from decoded picture resolution")
-        asset_hash = sha256(cue.asset)
+        asset_hash = asset_hashes[cue.asset]
         if asset_hash != compiled.get("asset_sha256"):
             failures.append(f"{cue.id}: source audio hash differs from manifest")
         if cue.event is None:
@@ -202,7 +220,8 @@ def verify(plan_path, picture, export, manifest_path):
         if cue.asset not in source_cache:
             source_cache[cue.asset] = match_signal(decode(cue.asset))
         result = check_cue(cue, row["impact_sample"], source_cache[cue.asset], match_audio, start,
-                           float(plan.get("bus_gain_db", {}).get(cue.bus, 0)))
+                           float(plan.get("bus_gain_db", {}).get(cue.bus, 0)),
+                           repeated_starts[asset_hash])
         if result["verdict"] == "pass":
             observed = result["observed_asset_alignment_sample"]
             matches = observations.setdefault(asset_hash, [])

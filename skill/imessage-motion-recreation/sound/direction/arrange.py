@@ -22,7 +22,8 @@ def cue(name, purpose, bus, gain, *, event=None, time_s=None, offset=0, impact=0
     return entry
 
 
-def plans(landmarks):
+def plans(landmarks, *, locked=False):
+    audience_event = "stage.audience.release" if locked else "stage.rabbit.release"
     common = [
         cue("seated-opening", "Establish the space and fade it as the phone takes focus.",
             "atmosphere", -6, time_s=0),
@@ -39,17 +40,19 @@ def plans(landmarks):
         cue("puppet", "A small cloth movement marks the rabbit's release.",
             "effects", -12, event="stage.rabbit.release", impact=65, onset=35, offset=0,
             fingerprint=[48, 141]),
-        cue("audience-release", "Suggest the room exhaling once the rabbit relaxes.",
-            "atmosphere", -5, event="stage.rabbit.release", impact=290, onset=155, offset=115,
+        cue("audience-release", "Let the room exhale as attention moves from the puppet to its viewers.",
+            "atmosphere", -5, event=audience_event, impact=290, onset=155,
+            offset=60 if locked else 115,
             fingerprint=[230, 465]),
     ]
     room = [
         cue("seated-wait", "A nearly still seated room leads into the prop cut and clears the tin.",
-            "atmosphere", -5, event="prop.table.reveal", offset=-1160, fingerprint=[535, 775]),
+            "atmosphere", -9 if locked else -5, event="prop.table.reveal",
+            offset=-1260 if locked else -1160, fingerprint=[535, 775]),
     ]
     music = [
         cue("tension", "A felt minor color builds a little expectation and clears before the contact.",
-            "music", -12, event="prop.table.reveal", offset=-1030, fingerprint=[485, 655]),
+            "music", -12, event="prop.table.reveal", offset=-1180 if locked else -1030, fingerprint=[485, 655]),
         cue("release", "A restrained major color arrives as the stage crescent becomes legible.",
             "music", -13, event="stage.moon.enter", impact=250, onset=50, offset=18,
             fingerprint=[190, 355]),
@@ -60,15 +63,28 @@ def plans(landmarks):
             "purpose": "Hold the unanswered question after the send.", "max_peak_dbfs": -57,
         },
     ]
+    if locked:
+        silence.append({
+            "start_s": 13.0, "end_s": 15.0,
+            "purpose": "Let the final line hold after the physical and audience sounds resolve.",
+        })
+    # In the shorter lock, the score overlaps the room's later fingerprint.
+    # Match the earlier clean bed before the release note enters.
+    music_common = [{**entry, "fingerprint_ms": [40, 95]}
+                    if locked and entry["id"] == "seated-return" else entry
+                    for entry in common]
     return {
         "a": {"landmarks": landmarks, "cues": common + room, "silence": silence},
-        "b": {"landmarks": landmarks, "cues": common + music, "silence": silence},
+        "b": {"landmarks": landmarks, "cues": music_common + music, "silence": silence},
     }
 
 
 if __name__ == "__main__":
     cli = argparse.ArgumentParser(description=__doc__)
     cli.add_argument("cut", type=Path, help="folder containing landmarks.json and picture.mp4")
-    folder = cli.parse_args().cut
-    for version, plan in plans(json.loads((folder / "landmarks.json").read_text())).items():
+    cli.add_argument("--locked", action="store_true", help="shape the shortened wait and visible audience beat")
+    args = cli.parse_args()
+    folder = args.cut
+    variants = plans(json.loads((folder / "landmarks.json").read_text()), locked=args.locked)
+    for version, plan in variants.items():
         (folder / f"{version}.json").write_text(json.dumps(plan, indent=2) + "\n")

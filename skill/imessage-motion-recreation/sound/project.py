@@ -125,6 +125,8 @@ def silence_ranges(plan, landmarks, count):
 
 
 def mix(plan_path, picture, output, *, replace_audio=False):
+    picture_hash = sha256(picture)
+    plan_hash = sha256(plan_path)
     stream, duration = picture_track(picture)
     streams = probe(picture, "-show_streams")["streams"]
     if any(track["codec_type"] == "audio" for track in streams) and not replace_audio:
@@ -142,7 +144,8 @@ def mix(plan_path, picture, output, *, replace_audio=False):
     # Validate sources and bounds before overwriting any previous render.
     for cue, row in zip(cues, rows):
         if cue.asset not in assets:
-            assets[cue.asset] = (decode(cue.asset), sha256(cue.asset))
+            asset_hash = sha256(cue.asset)
+            assets[cue.asset] = (decode(cue.asset), asset_hash)
         audio, asset_hash = assets[cue.asset]
         start = row["asset_start_sample"]
         end = start + len(audio)
@@ -169,8 +172,12 @@ def mix(plan_path, picture, output, *, replace_audio=False):
             wavfile.write(staging / f"{bus}.wav", RATE, audio)
         wavfile.write(staging / "mix.wav", RATE, master)
         mux(picture, staging / "mix.wav", staging / "mix.mp4")
+        stable_inputs = {picture: picture_hash, plan_path: plan_hash,
+                         **{asset: signature for asset, (_, signature) in assets.items()}}
+        if any(sha256(path) != signature for path, signature in stable_inputs.items()):
+            raise ValueError("picture, plan or audio changed during the render; retry with a stable cut")
         manifest = {
-            "picture_sha256": sha256(picture), "plan_sha256": sha256(plan_path),
+            "picture_sha256": picture_hash, "plan_sha256": plan_hash,
             "mix_sha256": sha256(staging / "mix.wav"),
             "export_sha256": sha256(staging / "mix.mp4"),
             "picture_time_base": stream["time_base"], "picture_duration": str(duration),

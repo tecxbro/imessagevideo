@@ -1,0 +1,300 @@
+{
+  "landmarks": {
+    "message.question.press": {
+      "previous": {
+        "frame": 82,
+        "pts": "41/12",
+        "score": 0.9880301870497948,
+        "sample": 164000
+      },
+      "current": {
+        "frame": 82,
+        "pts": "41/12",
+        "score": 0.9843735892755501,
+        "sample": 164000
+      },
+      "delta_frames": 0,
+      "delta_samples": 0
+    },
+    "message.question.send": {
+      "previous": {
+        "frame": 84,
+        "pts": "7/2",
+        "score": 1.0,
+        "sample": 168000
+      },
+      "current": {
+        "frame": 84,
+        "pts": "7/2",
+        "score": 1.0,
+        "sample": 168000
+      },
+      "delta_frames": 0,
+      "delta_samples": 0
+    },
+    "message.answer.receive": {
+      "previous": {
+        "frame": 113,
+        "pts": "113/24",
+        "score": 1.0,
+        "sample": 226000
+      },
+      "current": {
+        "frame": 113,
+        "pts": "113/24",
+        "score": 1.0,
+        "sample": 226000
+      },
+      "delta_frames": 0,
+      "delta_samples": 0
+    },
+    "prop.table.reveal": {
+      "previous": {
+        "frame": 181,
+        "pts": "181/24",
+        "score": 1.0,
+        "sample": 362000
+      },
+      "current": {
+        "frame": 181,
+        "pts": "181/24",
+        "score": 1.0,
+        "sample": 362000
+      },
+      "delta_frames": 0,
+      "delta_samples": 0
+    },
+    "prop.tin.open": {
+      "previous": {
+        "frame": 197,
+        "pts": "197/24",
+        "score": 0.9444444444444444,
+        "sample": 394000
+      },
+      "current": {
+        "frame": 197,
+        "pts": "197/24",
+        "score": 1.0,
+        "sample": 394000
+      },
+      "delta_frames": 0,
+      "delta_samples": 0
+    },
+    "prop.moon.lift": {
+      "previous": {
+        "frame": 218,
+        "pts": "109/12",
+        "score": 1.0,
+        "sample": 436000
+      },
+      "current": {
+        "frame": 218,
+        "pts": "109/12",
+        "score": 0.9955038904450669,
+        "sample": 436000
+      },
+      "delta_frames": 0,
+      "delta_samples": 0
+    },
+    "stage.return": {
+      "previous": {
+        "frame": 246,
+        "pts": "41/4",
+        "score": 1.0,
+        "sample": 492000
+      },
+      "current": {
+        "frame": 246,
+        "pts": "41/4",
+        "score": 1.0,
+        "sample": 492000
+      },
+      "delta_frames": 0,
+      "delta_samples": 0
+    },
+    "stage.moon.enter": {
+      "previous": {
+        "frame": 266,
+        "pts": "133/12",
+        "score": 1.0,
+        "sample": 532000
+      },
+      "current": {
+        "frame": 274,
+        "pts": "137/12",
+        "score": 0.9965499954425303,
+        "sample": 548000
+      },
+      "delta_frames": 8,
+      "delta_samples": 16000
+    },
+    "stage.rabbit.release": {
+      "previous": {
+        "frame": 281,
+        "pts": "281/24",
+        "score": 0.9852168970928006,
+        "sample": 562000
+      },
+      "current": {
+        "frame": 289,
+        "pts": "289/24",
+        "score": 0.9834253802340092,
+        "sample": 578000
+      },
+      "delta_frames": 8,
+      "delta_samples": 16000
+    }
+  },
+  "cues": {
+    "seated-opening": {
+      "previous": {
+        "asset_start_sample": 0,
+        "onset_marker_sample": 0,
+        "impact_sample": 0
+      },
+      "current": {
+        "asset_start_sample": 0,
+        "onset_marker_sample": 0,
+        "impact_sample": 0
+      },
+      "delta_samples": 0,
+      "offset_samples": 0,
+      "gain_db": -6.0
+    },
+    "send": {
+      "previous": {
+        "asset_start_sample": 166464,
+        "onset_marker_sample": 167616,
+        "impact_sample": 168000
+      },
+      "current": {
+        "asset_start_sample": 166464,
+        "onset_marker_sample": 167616,
+        "impact_sample": 168000
+      },
+      "delta_samples": 0,
+      "offset_samples": 0,
+      "gain_db": -10.0
+    },
+    "reply": {
+      "previous": {
+        "asset_start_sample": 224752,
+        "onset_marker_sample": 226144,
+        "impact_sample": 226576
+      },
+      "current": {
+        "asset_start_sample": 224752,
+        "onset_marker_sample": 226144,
+        "impact_sample": 226576
+      },
+      "delta_samples": 0,
+      "offset_samples": 576,
+      "gain_db": -13.0
+    },
+    "tin": {
+      "previous": {
+        "asset_start_sample": 390880,
+        "onset_marker_sample": 392560,
+        "impact_sample": 394000
+      },
+      "current": {
+        "asset_start_sample": 390880,
+        "onset_marker_sample": 392560,
+        "impact_sample": 394000
+      },
+      "delta_samples": 0,
+      "offset_samples": 0,
+      "gain_db": -5.0
+    },
+    "paper": {
+      "previous": {
+        "asset_start_sample": 433168,
+        "onset_marker_sample": 434848,
+        "impact_sample": 436288
+      },
+      "current": {
+        "asset_start_sample": 433168,
+        "onset_marker_sample": 434848,
+        "impact_sample": 436288
+      },
+      "delta_samples": 0,
+      "offset_samples": 288,
+      "gain_db": -8.0
+    },
+    "seated-return": {
+      "previous": {
+        "asset_start_sample": 487920,
+        "onset_marker_sample": 487920,
+        "impact_sample": 487920
+      },
+      "current": {
+        "asset_start_sample": 487920,
+        "onset_marker_sample": 487920,
+        "impact_sample": 487920
+      },
+      "delta_samples": 0,
+      "offset_samples": -4080,
+      "gain_db": -9.0
+    },
+    "puppet": {
+      "previous": {
+        "asset_start_sample": 558880,
+        "onset_marker_sample": 560560,
+        "impact_sample": 562000
+      },
+      "current": {
+        "asset_start_sample": 574880,
+        "onset_marker_sample": 576560,
+        "impact_sample": 578000
+      },
+      "delta_samples": 16000,
+      "offset_samples": 0,
+      "gain_db": -12.0
+    },
+    "audience-release": {
+      "previous": {
+        "asset_start_sample": 553600,
+        "onset_marker_sample": 561040,
+        "impact_sample": 567520
+      },
+      "current": {
+        "asset_start_sample": 569600,
+        "onset_marker_sample": 577040,
+        "impact_sample": 583520
+      },
+      "delta_samples": 16000,
+      "offset_samples": 5520,
+      "gain_db": -5.0
+    },
+    "tension": {
+      "previous": {
+        "asset_start_sample": 312560,
+        "onset_marker_sample": 312560,
+        "impact_sample": 312560
+      },
+      "current": {
+        "asset_start_sample": 312560,
+        "onset_marker_sample": 312560,
+        "impact_sample": 312560
+      },
+      "delta_samples": 0,
+      "offset_samples": -49440,
+      "gain_db": -12.0
+    },
+    "release": {
+      "previous": {
+        "asset_start_sample": 520864,
+        "onset_marker_sample": 523264,
+        "impact_sample": 532864
+      },
+      "current": {
+        "asset_start_sample": 536864,
+        "onset_marker_sample": 539264,
+        "impact_sample": 548864
+      },
+      "delta_samples": 16000,
+      "offset_samples": 864,
+      "gain_db": -13.0
+    }
+  }
+}
