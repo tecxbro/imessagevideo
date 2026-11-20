@@ -344,7 +344,8 @@ def parse_ranges(value,first,last,count):
 
 def main():
  engine_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest()
- p=argparse.ArgumentParser();p.add_argument('--scene',required=True);p.add_argument('--out',required=True);p.add_argument('--frame',type=int);p.add_argument('--aa',type=int,default=1);p.add_argument('--frames-dir');p.add_argument('--ranges');p.add_argument('--start-frame',type=int,default=0);p.add_argument('--end-frame',type=int);p.add_argument('--encode-only',nargs='?',const='true',default='false');a=p.parse_args();f=Path(a.scene).resolve();scene=json.loads(f.read_text());out=Path(a.out).resolve();out.parent.mkdir(parents=True,exist_ok=True);register_fonts(scene,str(f.parent));count=round(scene['fps']*scene['duration']);ranges,frames=parse_ranges(a.ranges,a.start_frame,a.end_frame if a.end_frame is not None else count-1,count);directory=Path(a.frames_dir).resolve() if a.frames_dir else None;encode_only=str(a.encode_only).lower() in ('true','1');unique=0
+ p=argparse.ArgumentParser();p.add_argument('--scene',required=True);p.add_argument('--out',required=True);p.add_argument('--frame',type=int);p.add_argument('--aa',type=int,default=1);p.add_argument('--frames-dir');p.add_argument('--ranges');p.add_argument('--start-frame',type=int,default=0);p.add_argument('--end-frame',type=int);p.add_argument('--encode-only',nargs='?',const='true',default='false');a=p.parse_args();f=Path(a.scene).resolve();scene=json.loads(f.read_text());out=Path(a.out).resolve();out.parent.mkdir(parents=True,exist_ok=True);register_fonts(scene,str(f.parent));picture=scene.get('timeline',{}).get('picture');count=picture['frameCount'] if picture else round(scene['fps']*scene['duration']);ranges,frames=parse_ranges(a.ranges,a.start_frame,a.end_frame if a.end_frame is not None else count-1,count);directory=Path(a.frames_dir).resolve() if a.frames_dir else None;encode_only=str(a.encode_only).lower() in ('true','1');unique=0
+ encode_rate=f"{picture['fpsNum']}/{picture['fpsDen']}" if picture else str(scene['fps'])
  if a.aa<1:raise ValueError('Antialias scale must be positive')
  if a.frame is not None:
   if not 0<=a.frame<count:raise ValueError('Invalid frame index')
@@ -372,9 +373,9 @@ def main():
      previous_key=key;previous_path=destination
    missing=[frame for frame in range(count) if not (directory/f'{frame:06d}.png').exists()]
    if missing:raise ValueError(f'Cannot encode incomplete native cache; first missingframe {missing[0]}')
-   subprocess.run(['ffmpeg','-hide_banner','-loglevel','error','-y','-threads','1','-framerate',str(scene['fps']),'-i',str(directory/'%06d.png'),'-frames:v',str(count)]+common,check=True)
+   subprocess.run(['ffmpeg','-hide_banner','-loglevel','error','-y','-threads','1','-framerate',encode_rate,'-i',str(directory/'%06d.png'),'-frames:v',str(count)]+common,check=True)
   else:
-   proc=subprocess.Popen(['ffmpeg','-hide_banner','-loglevel','error','-y','-f','rawvideo','-pixel_format','rgb24','-video_size',f'{scene["width"]}x{scene["height"]}','-framerate',str(scene['fps']),'-threads','1','-i','-']+common,stdin=subprocess.PIPE);previous_key=None;previous_bytes=None
+   proc=subprocess.Popen(['ffmpeg','-hide_banner','-loglevel','error','-y','-f','rawvideo','-pixel_format','rgb24','-video_size',f'{scene["width"]}x{scene["height"]}','-framerate',encode_rate,'-threads','1','-i','-']+common,stdin=subprocess.PIPE);previous_key=None;previous_bytes=None
    try:
     for frame in frames:
      if frame%150==0:print(json.dumps(dict(method='pillow',frame=frame,total=count)),flush=True)

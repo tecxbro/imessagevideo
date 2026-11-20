@@ -15,7 +15,9 @@ fs.rmSync(out+'.render.json',{force:true});
 const browserExecutable=process.env.CHROME_PATH??(fs.existsSync('/usr/bin/chromium')?'/usr/bin/chromium':'/home/agent/.cache/ms-playwright/chromium-1234/chrome-linux64/chrome');
 const started=Date.now();
 const pixelFormat=scene.width%2||scene.height%2?'yuv444p':'yuv420p';
-const frameCount=Math.round(scene.duration*scene.fps);
+const picture=scene.timeline?.picture;
+const frameCount=picture?.frameCount??Math.round(scene.duration*scene.fps);
+const encodeRate=picture?`${picture.fpsNum}/${picture.fpsDen}`:String(scene.fps);
 const explicitRanges=args.ranges?args.ranges.split(',').map(r=>r.split(':').map(Number)):null;
 const ranges=explicitRanges??[[Number(args['start-frame']??0),Number(args['end-frame']??(frameCount-1))]];
 for(const range of ranges)if(range.length!==2||!range.every(Number.isInteger)||range[0]<0||range[1]>=frameCount||range[1]<range[0])throw new Error('Invalid inclusive frame range');
@@ -31,7 +33,7 @@ function cloneFrame(source,destination){if(source===destination)return;fs.rmSync
 function encodeFrames(directory){
  for(let frame=0;frame<frameCount;frame++)if(!fs.existsSync(path.join(directory,`${String(frame).padStart(6,'0')}.png`)))throw new Error(`Cannot encode incomplete frame cache: missing frame ${frame}`);
  const partial=out+`.rendering-${process.pid}.mp4`;
- const proc=spawnSync('ffmpeg',['-hide_banner','-loglevel','error','-y','-threads','1','-filter_threads','1','-framerate',String(scene.fps),'-i',path.join(directory,'%06d.png'),'-frames:v',String(frameCount),'-c:v','libx264','-threads','2','-vf','scale=out_color_matrix=bt709','-colorspace','bt709','-color_primaries','bt709','-color_trc','bt709','-color_range','tv','-crf','16','-pix_fmt',pixelFormat,'-movflags','+faststart',partial],{stdio:'inherit'});if(proc.status!==0){fs.rmSync(partial,{force:true});throw new Error(`ffmpeg failed: ${proc.status}`);}fs.renameSync(partial,out);
+ const proc=spawnSync('ffmpeg',['-hide_banner','-loglevel','error','-y','-threads','1','-filter_threads','1','-framerate',encodeRate,'-i',path.join(directory,'%06d.png'),'-frames:v',String(frameCount),'-c:v','libx264','-threads','2','-vf','scale=out_color_matrix=bt709','-colorspace','bt709','-color_primaries','bt709','-color_trc','bt709','-color_range','tv','-crf','16','-pix_fmt',pixelFormat,'-movflags','+faststart',partial],{stdio:'inherit'});if(proc.status!==0){fs.rmSync(partial,{force:true});throw new Error(`ffmpeg failed: ${proc.status}`);}fs.renameSync(partial,out);
 }
 if(args.method==='remotion'){
  const {bundle}=await import('@remotion/bundler');const {selectComposition,renderFrames,renderStill,openBrowser}=await import('@remotion/renderer');
@@ -75,4 +77,4 @@ if(args.method==='remotion'){
  }finally{await browser?.close();fs.rmSync(temp,{recursive:true,force:true});}
 }
 const metadata={method:args.method,scene:path.resolve(args.scene),sceneSHA256:createHash('sha256').update(fs.readFileSync(args.scene)).digest('hex'),out,width:scene.width,height:scene.height,fps:scene.fps,frames:frameCount,duration:frameCount/scene.fps,source:scene.source??null,frame:args.frame===undefined?null:Number(args.frame),frameDirectory,capturedFrameRange:[firstFrame,lastFrame],capturedFrameRanges:ranges,uniqueFramesCaptured,runtimeTransport,pixelFormat,seconds:(Date.now()-started)/1000};atomicWrite(out+'.render.json',JSON.stringify(metadata,null,2)+'\n');
-console.log(JSON.stringify({method:args.method,out,width:scene.width,height:scene.height,fps:scene.fps,frames:Math.round(scene.duration*scene.fps),seconds:(Date.now()-started)/1000}));
+console.log(JSON.stringify({method:args.method,out,width:scene.width,height:scene.height,fps:scene.fps,frames:frameCount,seconds:(Date.now()-started)/1000}));

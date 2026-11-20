@@ -26,9 +26,13 @@ into v3, measure its event frames and add the extension before handing it off.
   consumers resolve the intended state. A state is null for a shot without UI
   or an object with `conversationId`, ordered `messages`, `composer` and
   `viewport`. Each message has `id`, `senderId`, `text` and optional
-  `attachmentIds`. The composer has `text` and `focused`. The viewport has a
-  semantic `surface`, nullable `anchorMessageId` and optional message-ID
-  `selection`. Keep placement and animation in the layers.
+  `attachmentIds`, `replyTo` message ID, `reactions` (sender ID to mark),
+  zero-based attachment `page`, `edited` flag, and `receipt` text. The composer
+  has `text`, `focused` and an optional `keyboardVisible`. The viewport has a
+  semantic `surface`, nullable `anchorMessageId`, optional message-ID
+  `selection` and optional logical `scrollOffset` in scene pixels. The state can
+  also carry `typingSenderIds`. Include the fields the interaction changes so
+  another specialist can reproduce its result. Keep animation in the layers.
 - `cues` contain a stable `id`, an `eventId` and a signed integer
   `offsetSamples`. The audio clock is 48 kHz from output sample zero. A cue's
   onset is `floor(f * 48000 * fpsDen / fpsNum + 1/2) + offsetSamples`.

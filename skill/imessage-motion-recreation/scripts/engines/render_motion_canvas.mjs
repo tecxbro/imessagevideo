@@ -1,6 +1,10 @@
 import fs from 'node:fs';import path from 'node:path';import os from 'node:os';import {spawnSync} from 'node:child_process';import {fileURLToPath} from 'node:url';import {createHash} from 'node:crypto';import {chromium} from 'playwright';import {build} from 'esbuild';import {loadScene} from './scene-loader.mjs';import {runtimeChunks,proveRuntimeChunks} from './runtime-scene.mjs';
 const args=Object.fromEntries(process.argv.slice(2).reduce((p,a,i,all)=>a.startsWith('--')?[...p,[a.slice(2),all[i+1]]]:p,[]));if(!args.scene||!args.out){console.error('Usage: node render_motion_canvas.mjs --scene scene.json --out output.mp4 [--frame N] [--frames-dir DIR] [--ranges first:last,...]');process.exit(2);}
-const scene=loadScene(args.scene),out=path.resolve(args.out),frameCount=Math.round(scene.duration*scene.fps),root=path.dirname(fileURLToPath(import.meta.url));fs.mkdirSync(path.dirname(out),{recursive:true});
+const scene=loadScene(args.scene),out=path.resolve(args.out),root=path.dirname(fileURLToPath(import.meta.url));
+const picture=scene.timeline?.picture;
+const frameCount=picture?.frameCount??Math.round(scene.duration*scene.fps);
+const encodeRate=picture?`${picture.fpsNum}/${picture.fpsDen}`:String(scene.fps);
+fs.mkdirSync(path.dirname(out),{recursive:true});
 const engineSha256=createHash('sha256').update(Buffer.concat(['render_motion_canvas.mjs','motion-canvas-runtime.mjs','common.mjs','scene-loader.mjs','runtime-scene.mjs'].map(n=>fs.readFileSync(path.join(root,n))))).digest('hex');
 const frameDirectory=args['frames-dir']?path.resolve(args['frames-dir']):null,ranges=args.ranges?args.ranges.split(',').map(r=>r.split(':').map(Number)):[[Number(args['start-frame']??0),Number(args['end-frame']??frameCount-1)]];
 for(const r of ranges)if(r.length!==2||!r.every(Number.isInteger)||r[0]<0||r[1]>=frameCount||r[1]<r[0])throw new Error('Invalid inclusive frame range');
@@ -14,7 +18,7 @@ const transportByteLimit=8*1024*1024,transportPruningThreshold=32*1024*1024;let 
 const pngPath=f=>path.join(directory,`${String(f).padStart(6,'0')}.png`);
 function atomicWrite(file,data){const temporary=file+`.tmp-${process.pid}`;fs.writeFileSync(temporary,data);fs.renameSync(temporary,file);}
 function cloneFrame(source,target){if(source===target)return;fs.rmSync(target,{force:true});fs.linkSync(source,target);}
-function encode(){for(let f=0;f<frameCount;f++)if(!fs.existsSync(pngPath(f)))throw new Error(`Incomplete native frame cache: ${f}`);const p=spawnSync('ffmpeg',['-hide_banner','-loglevel','error','-y','-threads','1','-filter_threads','1','-framerate',String(scene.fps),'-i',path.join(directory,'%06d.png'),'-frames:v',String(frameCount),'-c:v','libx264','-threads','2','-vf','scale=out_color_matrix=bt709','-colorspace','bt709','-color_primaries','bt709','-color_trc','bt709','-color_range','tv','-crf','16','-pix_fmt',scene.width%2||scene.height%2?'yuv444p':'yuv420p','-movflags','+faststart',encoding],{stdio:'inherit'});if(p.status)throw new Error('FFmpeg '+p.status);fs.renameSync(encoding,out);}
+function encode(){for(let f=0;f<frameCount;f++)if(!fs.existsSync(pngPath(f)))throw new Error(`Incomplete native frame cache: ${f}`);const p=spawnSync('ffmpeg',['-hide_banner','-loglevel','error','-y','-threads','1','-filter_threads','1','-framerate',encodeRate,'-i',path.join(directory,'%06d.png'),'-frames:v',String(frameCount),'-c:v','libx264','-threads','2','-vf','scale=out_color_matrix=bt709','-colorspace','bt709','-color_primaries','bt709','-color_trc','bt709','-color_range','tv','-crf','16','-pix_fmt',scene.width%2||scene.height%2?'yuv444p':'yuv420p','-movflags','+faststart',encoding],{stdio:'inherit'});if(p.status)throw new Error('FFmpeg '+p.status);fs.renameSync(encoding,out);}
 try{
  if(args['encode-only']!=='true'){
   await build({entryPoints:[path.join(root,'motion-canvas-runtime.mjs')],bundle:true,format:'iife',globalName:'MotionCanvasRuntime',platform:'browser',outfile:path.join(tmp,'runtime.js'),loader:{'.svg':'text','.css':'text','.glsl':'text'},define:{'import.meta.env.PROD':'true'}});

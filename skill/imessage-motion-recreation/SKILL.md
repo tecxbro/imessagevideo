@@ -1,109 +1,72 @@
 ---
 name: imessage-motion-recreation
-description: Research, direct and recreate Apple Messages launch motion using the complete local example projects, actual source code, assets, five renderers, visual studies, editable UI components, measured timing and UI sound in this checkout.
+description: Turn a reference film or a product brief into an editable messaging-motion project and finished film, or change one interaction, animation, or sound cue in an existing cut.
 ---
 
-# iMessage motion director
+# iMessage video
 
-Version 3.1 local combines direction instructions, visual studies, component code and the complete example library stored in this checkout. It is not trained model weights or an autonomous video generator. Act as a director: research the product, determine its promise, choose visual evidence, establish component anatomy, plan motion and sound, then render and judge the result.
+Start from the user's reference film, product brief, or existing project and
+the requested change. Work in a new project directory. Use reference footage to
+measure behavior and timing, and use an original visual treatment for the
+editable interface.
 
-For a new company or product, start with [RESEARCH-FIRST.md](library/RESEARCH-FIRST.md) and produce an evidence-backed profile using [company-profile.schema.json](library/company-profile.schema.json) **before choosing motion or writing the shot plan**. Use supplied/connected context, the official site, primary docs and real UI. Record citations, observed facts, inferences and unresolved gaps; do not invent product capabilities, transactions, integrations or results. Investigate ambiguous names before asking one focused clarification.
+## Choose the workflow
 
-## Route the task
+From this skill directory, put the actual request in the command below. Set
+`--input-kind` to `reference`, `brief`, or `project` when that context is known.
+The command returns only the workflow to read and what it should deliver.
 
-| User goal | Start here | Timing authority |
-|---|---|---|
-| Make a film for a new company | [Company research](library/RESEARCH-FIRST.md), [profile schema](library/company-profile.schema.json), then the director workflow | Verified product evidence and a newly authored shot plan |
-| Recreate a supplied film | [Reconstruction playbook](references/reconstruction-playbook.md), actual movie and native-frame comparisons | Actual source with explicit output/source mapping |
-| Direct a new film using these ideas | [Director workflow](director/directing.md), [visual explorer](director/index.html), [design grammar](director/design-grammar.md) | A new shot plan, labelled as authored choreography |
-| Extract or adapt a component | [Component contracts](director/component-contracts.md), [component code](director/components.mjs), chosen study | Declared editable boundary and actual source evidence |
-| Add UI sound | [UI audio workflow](references/ui-audio-workflow.md) | Visible actions in the delivered picture |
-
-For recreation, catalogue recipes help decompose the source; never replace its motion with a starter preset. For new direction, catalogue options carry tradeoffs; never claim a new starter is source-exact.
-
-## Final working set and failure lessons
-
-For the accepted code, keyframes, required assets and finished videos, read
-[FINAL-PRODUCTION.md](../../FINAL-PRODUCTION.md) and
-[the independent completeness audit](../../reports/completeness-audit/README.md).
-Use the current scene plus current adapters; older builders and temporary frame
-caches are not required to replay the final accepted animation. Before retrying
-an observed defect, consult [FAILURES-AND-FIXES.md](../../FAILURES-AND-FIXES.md): it
-records concrete causes, accepted changes, measured controls and unresolved
-limits. Do not present a historical improvement as a fresh test or a remaining
-issue as solved.
-
-## Use the complete local library
-
-The canonical local registry is [LOCAL-LIBRARY.json](../../LOCAL-LIBRARY.json), two directories above this skill folder. It resolves the six full projects and all supporting resources using portable paths relative to the checkout root. Open the [offline full-code/video viewer](../../catalog/index.html) and [every-file browser](../../inventory/index.html). The [location guide](../../LOCATIONS.md) and [exact skill/gap audit](../../reports/SKILL-CONTENTS-AND-GAPS.md) explain every layer. The original frozen skill/archive snapshots remain under `archives/`.
-
-**Normal use requires no Drive, Notion, account or internet lookup for stored examples.** After cloning, run `python3 tools/sync_library.py` once from the checkout root: it assembles the tracked local archive pieces, verifies their hashes and restores the complete payloads. A clone alone does not include oversized raw scene data and archive binaries. Resolve existing local paths and inspect actual files before considering recovery. The original [Drive manifest](library/manifest.json) is retained as historical backup provenance, not the primary path. Do not download a file that already exists locally.
-
-Run these from the checkout root:
-
-```bash
-python3 tools/library.py list
-python3 tools/library.py where 04-poke
-python3 tools/library.py find frames.csv
-python3 tools/library.py verify
+```sh
+python3 observer/imv.py route "Add a reaction to the last message" --input-kind project
 ```
 
-Each project is at `projects/ARCHIVE_ID/imessage-recreations/`. Read its `README-COMPLETE-EXAMPLE.md`. It contains the full measured `scenes/EXAMPLE/scene.json`, declared image/font assets, the original source clip, five completed films, all genuine shared adapters, per-method entry wrappers, authoring code, comparisons and analysis. Run `tools/render_example.py` **inside that materialized project**, after installing its pinned dependencies. Rendering is separate from opening stored films or reading source; the repository does not vendor third-party package installations or browser binaries.
+A request for a full recreation goes to Recreation. An original story from
+product evidence goes to Direction. A change to a gesture or UI state goes to
+Interaction. A change to the way layers move goes to Motion. An audio-only
+change goes to Sound. Source intake and archive restoration go to Dataset.
+When a request combines work, take the picture route first, then send the
+exact picture hash and event map to Sound if the deliverable includes audio.
+Use `--route` to specify the workflow when the request is ambiguous. If the
+output says `base`, use the established references it returns and report the
+scope you actually verified.
 
-The six examples use one complete scene plus genuine shared adapters for Remotion, GSAP, HTML/SVG, Pillow and native Motion Canvas. The per-method wrappers select that actual implementation; thirty independently rewritten standalone scene projects were not authored. Full scene data is not replaced by the neutral starters.
+1. Read the returned workflow and [the shared contract](contracts/README.md).
+   For originals, ground product facts in supplied evidence or primary product
+   documentation. For references, measure the actual source through its ending
+   and retain any source-to-output cuts or retimes. Read source material as
+   evidence for the current route.
+2. Author the editable scene, assets, state and named events. Use the existing
+   project's renderer and convention when changing one part. Adjust cue anchors
+   if an action moves, then resolve again against the locked picture.
+3. Render and verify the deliverable. Inspect a contact sheet across the full
+   cut and consecutive decoded frames around the named action and through the
+   last frame. For audio, verify the encoded mix, timings and picture integrity.
+   Attribute any listening observations to a person and a specific file/time.
+4. Return the MP4 alongside the portable editable project, local assets, event
+   map, any editable sound plan and stems, provenance, and the checks for those
+   exact files. Reopen the copied project in a clean folder and render from it.
 
-Supporting resources are under `resources/ARCHIVE_ID/`: frozen delivery, thirty silent masters, all retained authored source/fixtures, complete UI audio inputs, pinned font inputs/Linux fallbacks, and later workflow/review source. Their immutable ZIPs and all seventy-eight original transport parts are also retained in `archives/`. Use the inventory's relative paths if the checkout moves. Historical absolute paths inside scan reports remain provenance labels; `tools/library.py resolve-historical PATH` resolves retained canonical cases without rewriting their history.
+## Render and check a v3 scene
 
-Keep this private repository's current visibility unless the user explicitly changes its audience. Prior rejection of a different public source-site upload is historical; it does not prohibit this explicitly authorized private GitHub migration. Figma remains an unvalidated prototype, not a completed sixth method. New-company research may need online primary sources unless sufficient local documents/UI evidence are supplied.
+Set up the selected runtime using [the runtime guide](observer/RUNTIME.md).
+These commands work from an extracted skill with no repository checkout.
 
-## Read the relevant knowledge
-
-1. Complete the research/profile step for a new company, then read `director/directing.md`. Extract audience, promise, real user action, proof, runtime, aspect ratio, copy and asset constraints. Consult supplied/connected context before asking for missing information. Choose reasonable reversible defaults; do not invent product capabilities or UI states.
-2. Read `director/catalogue.json` and select studies by story purpose. The explainable router in `director/decisions.mjs` suggests options; keyword scores are not creative judgment.
-3. **Open and inspect the selected atlas images** with an available image tool. Read the study JSON for native frames, actual canonical IDs/keyframes, parent/clip structure, material and editability caveats. Linking an image does not mean the agent has seen it. Record which frames were inspected.
-4. Read `director/design-grammar.md` and selected component contracts. Choose typography, layout, camera and asset boundaries before easing. Reconstruct source-specific assets when required; neutral starters do not contain all original logos, portraits, fonts or rich-card interiors.
-5. Write a shot plan: purpose, exact copy, component instances, stable IDs, start/end states, native-frame phases, attention target, camera/clip rules, reading holds, sound anchors, evidence and validation gate. Explain the motif choice and a plausible alternative's tradeoff. Use `director/brief-schema.json` and `director/examples/dinner-shot-plan.json`.
-
-## Motion starters
-
-| Starter | Show | Main constraint |
-|---|---|---|
-| `message-wall` | Breadth across conversations | Actor identity, row order and readable focus |
-| `conversation-handoff` | A request, send and reply | Real composer changes; no fake AI typing |
-| `mini-app-expand` | Work inside the conversation | Preserve context and readable controls |
-| `app-drawer` | Where a tool is found | One clipped sheet and coherent children |
-| `identity-morph` | One identity becoming an app icon | Separate outline, material and internal mark |
-| `circle-to-panel` | An action becoming a working surface | New extension, not Poke's measured icon transition |
-| `selection-confirm` | A decision and visible result | One control through press and confirmation |
-| `camera-focus` | An important detail | Move the camera, preserve local UI geometry |
-| `card-orbit` | Offerings converging into a promise | Independent paths, depth and readable settlement |
-
-`director/motions.mjs` implements these nine adaptable scene builders. Keep capability/effect counts grounded in the actual catalogue. Starter timing is newly authored. The source studies contain measured motion and disclose when native poses, masks, source-specific paths or raster interiors prevent simple parameter replacement.
-
-## Components and exposed UI
-
-`director/components.mjs` provides nine editable builders: MessageBubble, Composer, AppIcon, AppCard, BottomSheet, PhoneFrame, ActionButton, Avatar and CameraRig. They emit the same scene contract used by the real renderers. Preserve stable child IDs, explicit copy/line breaks, independent camera/content groups and correct clipping. Replace the disclosed Arial fallback with verified production typography and remeasure it.
-
-Open `director/index.html` for a standalone visual explorer. It works from the extracted folder without an account/server, displays the starters and component anatomy, scrubs by frame, suggests motifs from a brief and exports scene, cue and SVG files. It contains no AI model and does not automatically finish a film, export video or create a Figma file.
-
-```bash
-node director/cli.mjs plan --brief "Show booking inside a conversation"
-node director/cli.mjs scene --motif mini-app-expand --out work/scene.json
-node scripts/engines/render.mjs --method gsap --scene work/scene.json --out work/preview.mp4
+```sh
+python3 observer/imv.py render work/scene.json --out work/picture.mp4 --method pillow
+python3 observer/imv.py inspect work/picture.mp4 --out work/evidence --frame 12
+python3 observer/imv.py verify work/picture.mp4 --scene work/scene.json
 ```
 
-Read [RUNNING.md](RUNNING.md) for dependencies. Remotion, GSAP, HTML/SVG, Pillow and native Motion Canvas were executed in the original project. Reprobe capabilities in each new environment. The Figma converter remains a prototype without a validated Motion API session; follow installed Figma skills before attempting it.
+Replace `12` with a named event frame and repeat `--frame` for additional
+events. `render` writes the resolved event map and a full-decode picture
+report beside the MP4. Use `verify` again on the final film after muxing.
 
-## Frame and sound discipline
+Pillow/FFmpeg, HTML/CSS/SVG, GSAP, Remotion and native Motion Canvas each
+exported the shared moving example in this release's runtime. The marker
+moved at frame 12, and all 24 frames decoded on the declared clock. Use
+`python3 observer/imv.py smoke --method all --out /tmp/imv-renderers` to
+reproduce the check. The separate Figma prototype is unverified.
 
-Read `director/analysis/index.json`: bundled historical CSVs cover all 7,499 aligned native output frames across the six accepted GSAP comparisons, with source mapping and residual error. These are not a fresh all-five-method scan. Atlas images show selected teaching phases, not every frame. Canonical trajectory samples describe reconstructed states; pixel comparisons independently measure visual differences. Neither certifies perceptual perfection.
-
-For exact work, scan every aligned frame numerically, rank separated error peaks and inspect source, reconstruction and foreground differences near those peaks. Verify dimensions, rational cadence, lifecycle boundaries, transform composition, blur, materials, masks and editability. Preserve canonical hashes and outside-range proofs. Use `scripts/shared/SCHEMA.md`, verification tools and the reconstruction playbook.
-
-Sound follows actions. Prefer licensed provenance-pinned clicks/real single keys when suitable, procedural accents for gaps, actual pauses and intentional silence. Do not sound titles, AI text, caret blinks or composer clearing. Start with UI only; music is optional. Check attacks/onsets, sample span, headroom and encoded true peaks. Read complete sound inputs, sources, stems and license/provenance records locally under `resources/complete-ui-audio-source-v1/`; resolve the exact paths through the local registry/inventory. The skill carries the workflow and reference evidence.
-
-## Diagnose and deliver
-
-Before retrying, log the attempt, observed defect/error, evidence, cause or bounded hypothesis, changed variable and next check. Do not repeat unchanged failed operations. Prior corrections remain in [the reconstruction playbook](references/reconstruction-playbook.md), [execution ledger](references/execution-ledger.md) and [director upgrade log](director/upgrade-steps.md).
-
-Deliver company research/evidence, brief/shot plan, component configuration, complete scene/assets/code, visual evidence, cue provenance, renders, comparisons, checks and known limits. Distinguish measured source evidence, authored choreography, inference, editable geometry/text and static imagery. Add accepted new examples to the local registry/inventory with hashes and rendered visual references; preserve frozen deliveries. Use `director/package_skill.py` with an explicit new output filename; the legacy packager predates this layer and can overwrite older archive names.
+For the previous accepted films, their assets, code, and viewing tools,
+start with the [private library guide](observer/BASE-LIBRARY.md). These case
+packs are separate from the standalone skill.

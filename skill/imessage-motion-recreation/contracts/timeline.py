@@ -47,28 +47,50 @@ def unique(values, name):
 def ui_state(state):
     if state is None:
         return
-    shape(state, ("conversationId", "messages", "composer", "viewport"))
+    shape(state, ("conversationId", "messages", "composer", "viewport"), ("typingSenderIds",))
     identifier(state["conversationId"], "conversation ID")
+    unique(state.get("typingSenderIds", []), "typing sender ID")
     messages = state["messages"]
     require(isinstance(messages, list), "messages must be a list")
     for message in messages:
-        shape(message, ("id", "senderId", "text"), ("attachmentIds",))
+        shape(message, ("id", "senderId", "text"),
+              ("attachmentIds", "replyTo", "reactions", "page", "edited", "receipt"))
         identifier(message["senderId"], "sender ID")
         require(isinstance(message["text"], str), "message text must be a string")
-        unique(message.get("attachmentIds", []), "attachment ID")
+        attachments = unique(message.get("attachmentIds", []), "attachment ID")
+        if message.get("replyTo") is not None:
+            identifier(message["replyTo"], "reply target")
+        if "reactions" in message:
+            require(isinstance(message["reactions"], dict), "reactions must map sender IDs to marks")
+            for sender, mark in message["reactions"].items():
+                identifier(sender, "reacting sender ID")
+                require(isinstance(mark, str) and mark.strip(), "reaction mark must be a nonempty string")
+        if "page" in message:
+            require(integer(message["page"], "attachment page", 0) < len(attachments),
+                    "attachment page is out of range")
+        if "edited" in message:
+            require(type(message["edited"]) is bool, "edited must be a boolean")
+        if "receipt" in message:
+            require(isinstance(message["receipt"], str), "receipt must be a string")
     message_ids = unique([message["id"] for message in messages], "message ID")
     composer = state["composer"]
-    shape(composer, ("text", "focused"))
+    shape(composer, ("text", "focused"), ("keyboardVisible",))
     require(isinstance(composer["text"], str), "composer text must be a string")
     require(type(composer["focused"]) is bool, "composer focused must be a boolean")
+    if "keyboardVisible" in composer:
+        require(type(composer["keyboardVisible"]) is bool, "keyboardVisible must be a boolean")
     viewport = state["viewport"]
-    shape(viewport, ("surface", "anchorMessageId"), ("selection",))
+    shape(viewport, ("surface", "anchorMessageId"), ("selection", "scrollOffset"))
     identifier(viewport["surface"], "surface")
     anchor = viewport["anchorMessageId"]
     require(anchor is None or isinstance(anchor, str) and anchor in message_ids, "unknown viewport anchor message")
     if "selection" in viewport:
         unique(viewport["selection"], "selected message ID")
         require(set(viewport["selection"]) <= message_ids, "unknown selected message")
+    if "scrollOffset" in viewport:
+        offset = viewport["scrollOffset"]
+        require(type(offset) in (int, float) and math.isfinite(offset) and offset >= 0,
+                "scrollOffset must be finite and nonnegative")
 
 
 def layer_ids(layers):
