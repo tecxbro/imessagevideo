@@ -15,7 +15,7 @@ fresh-agent blind run are pending.
 | Motion | `37b72e8` | `node --test motion/tests/*.test.mjs` and `node motion/cli.mjs scene --ids conversation-handoff,heading-over-fixed-photos,conversation-handoff --out /tmp/imv-sequence.json` | All 64 selector, sequence, and editable-output tests passed. The catalog contains 77 playable entries covering 75 distinct motions. The 95 reviewed MP4s all decoded. The two shot boundaries at f72 and f144 reset state, and the heading events at f92 and f123 have null UI. | The native photo paging capture is pending. Two plain-language selector misses have a verified explicit-ID fallback and a proposed patch sent to Motion. |
 | Interaction | `5e2ff5a` | `python3 -m unittest ui.test_adapter`, `python3 -m ui.adapter ui/examples/conversation.json --out /tmp/station.scene.json`, `python3 observer/imv.py render /tmp/station.scene.json --out /tmp/station.mp4` | 136 frames at 24/1 with the reaction retained in state after scrolling. The independently edited draft clears at f19 and a retargeted f74 Wow follows its outgoing row during f80–87. | Physical-device evidence is pending for keyboard-up send, Tapback into scroll and native multi-photo paging. |
 | Sound | `1ba37bb` | `python3 sound/example.py /tmp/imv-sound` and `python3 sound/quality_controls.py /tmp/imv-sound-quality` | Six sync cases and six audio-quality controls return their expected results. The selected Moon Cue mix passes eight decoded cues with 0.0 ms measured error and −4.14 dBTP. The four Train effects land within 0.021 ms of their intended offsets. The stale seat cue fails at +166.688 ms. | Human audition is pending. |
-| Fingerprints and Dataset archives | `8f43aec` tool; integration commit for the current fingerprints | `python3 observer/test_fingerprint.py` and repository `python3 tools/sync_library.py --self-test` | Nine fingerprint checks pass, including resizing, re-encoding, cropping, padding, an overlay, and an intro with a trimmed tail. Offline archive restore passes the isolated synthetic fixture. | Dataset's intake rejection, requested captures, rights records and production archive registration are pending. The entry uses the Observer fingerprint workflow for now. |
+| Fingerprints and Dataset archives | `8f43aec` tool and the current fingerprint manifest | `python3 observer/test_fingerprint.py` and repository `python3 tools/sync_library.py --self-test` | Nine fingerprint checks pass, including resizing, re-encoding, cropping, padding, an overlay, and an intro with a trimmed tail. All three reserved films match their own fingerprints and clear the other two. The two latest references also match their re-encodes. Offline archive restore passes the isolated synthetic fixture. | Dataset's intake rejection, requested captures, rights records and production archive registration are pending. The entry uses the Observer fingerprint workflow for now. |
 
 ## Picture review and sound measurements
 
@@ -50,7 +50,9 @@ fresh Codex CLI created a thread and reached turn initialization. It
 could not reach the model endpoint. The ordinary provider request is
 blocked by the cloud proxy before authentication. Fresh agents in this
 chat share the workspace and connector permissions. Blind runs are pending.
-The inputs and restricted skill packets are staged privately. No reserved input was given to a tester. The second product brief is
-private and grounded in the first-party Keiki docs. One complete, previously unused iMessage film is sealed. Two additional complete films remain pending after screening candidates for source overlap and coverage. Only fingerprints go
-to the Dataset intake. Use a different reserved film
-when retesting after an actual failed run.
+The restricted skill packets and three complete reference films are staged
+privately. The references were screened against the base and visible
+build branches. The second product brief is grounded in the first-party
+Keiki docs. No reserved input was given to a tester. Only fingerprints
+go to the Dataset intake. Use a different reserved film when retesting
+after an actual failed run.
