@@ -21,12 +21,17 @@ ROUTES = json.loads((Path(__file__).with_name("routes.json")).read_text(encoding
 CLUES = {
     "sound": r"\b(?:audio|sound|soundtrack|music|mix|mux|sfx|stems?|foley|silence|cue|clicks?)\b",
     "interaction": r"\b(?:interaction|keyboard|composer|tapback|reaction|reply|thread|swipe|gesture|long[ -]press|conversation|interface|ui)\b",
-    "motion": r"\b(?:motion|animation|animate|ease|easing|timing|camera|zoom|transition|orbit|pan|slide|settle)\b",
+    "motion": (
+        r"\b(?:motion|animation|animate|ease|easing|timing|camera|zoom|transition|orbit|pan|slide|settle|takeoff)\b"
+        r"|\b(?:move|lift|float|pin) (?:the |this )?(?:heading|title|photos?|pictures?|snapshots?|card)\b"
+        r"|\b(?:heading|title|photos?|pictures?|snapshots?)\b.{0,40}\b(?:stays? (?:fixed|pinned)|travels?)\b"
+        r"|\bcount(?:er)? (?:climbs?|rolls?|rises?|ticks?)\b"
+    ),
     "dataset": r"\b(?:dataset|intake|footage archive|fingerprint|exclusion|scout footage|source archive)\b",
     "recreation": r"\b(?:rebuild|recreat\w*|reconstruct\w*|match (?:the|this)|reference film|reference video)\b",
     "direction": r"\b(?:product brief|launch|brand film|original film|new film|teaser|storyboard|direct|promo)\b",
 }
-SCOPED_EDIT = re.compile(r"\b(?:add|remove|replace|retime|edit|fix|tweak|slow|speed up|shorten|lengthen|tighten|change|try|make(?= .{0,48} (?:softer|quieter|faster|slower|louder)\b))\b")
+SCOPED_EDIT = re.compile(r"\b(?:add|remove|replace|retime|edit|fix|tweak|move|slow|speed up|shorten|lengthen|tighten|change|try|make(?= .{0,48} (?:softer|quieter|faster|slower|louder)\b))\b")
 FULL_FILM = re.compile(r"\b(?:create|make|build|produce|direct|deliver|design|cut|need|want)\b.{0,40}\b(?:film|video|spot|teaser|promo)\b")
 
 
@@ -52,7 +57,7 @@ def route(request, input_kind, explicit):
         name, reason = None, None
     if name is None and not full_film and (SCOPED_EDIT.search(text) or input_kind == "project"):
         edit = SCOPED_EDIT.search(text)
-        local_text = text[edit.end():] if edit else text
+        local_text = text[edit.start():] if edit else text
         choices = ("sound", "motion", "interaction")
         scoped_hits = [(hit.start(), candidate) for candidate in choices if (hit := re.search(CLUES[candidate], local_text))]
         if scoped_hits:
