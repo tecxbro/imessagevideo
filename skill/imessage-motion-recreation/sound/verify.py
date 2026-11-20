@@ -34,6 +34,25 @@ def rms_gaps(expected, decoded):
             for start, end in zip(edges[::2], edges[1::2])]
 
 
+
+def pcm_differences(expected, decoded):
+    """Find 20 ms windows whose audible-band residual exceeds codec allowance."""
+    window = MATCH_RATE // 50
+    count = min(len(expected), len(decoded)) // window
+    if not count:
+        return []
+
+    def rms(audio):
+        return np.sqrt(np.mean(audio[:count * window].reshape(count, window, 2) ** 2, axis=(1, 2)))
+
+    size = count * window
+    residual = rms(expected[:size] - decoded[:size])
+    ceiling = np.maximum(10 ** (-50 / 20), rms(expected) * .18)
+    exceeds = residual > ceiling
+    edges = np.flatnonzero(np.diff(np.r_[False, exceeds, False]))
+    return [[round(start * window / MATCH_RATE, 4), round(end * window / MATCH_RATE, 4)]
+            for start, end in zip(edges[::2], edges[1::2])]
+
 def audio_timing(export):
     content = probe(export, "-select_streams", "a:0", "-show_streams", "-show_frames",
                     "-show_entries", "stream=codec_name,channels,sample_rate,start_pts,"
@@ -160,8 +179,12 @@ def verify(plan_path, picture, export, manifest_path):
             failures.append(f"encoded audio intrudes on intended silence ({purpose})")
 
     match_audio = match_signal(decoded)
+    differences = pcm_differences(match_signal(expected), match_audio)
+    if differences:
+        failures.append("decoded audio differs materially from the approved PCM")
     source_cache = {}
     cue_results = []
+    observations = {}
     manifest_rows = {row["id"]: row for row in manifest.get("cues", [])}
     if len(manifest.get("cues", [])) != len(cues) or set(manifest_rows) != {cue.id for cue in cues}:
         failures.append("manifest cue IDs differ from the sound plan")
@@ -171,7 +194,8 @@ def verify(plan_path, picture, export, manifest_path):
                     "onset_marker_sample"):
             if row[key] != compiled.get(key):
                 failures.append(f"{cue.id}: manifest {key} differs from decoded picture resolution")
-        if sha256(cue.asset) != compiled.get("asset_sha256"):
+        asset_hash = sha256(cue.asset)
+        if asset_hash != compiled.get("asset_sha256"):
             failures.append(f"{cue.id}: source audio hash differs from manifest")
         if cue.event is None:
             continue
@@ -179,6 +203,15 @@ def verify(plan_path, picture, export, manifest_path):
             source_cache[cue.asset] = match_signal(decode(cue.asset))
         result = check_cue(cue, row["impact_sample"], source_cache[cue.asset], match_audio, start,
                            float(plan.get("bus_gain_db", {}).get(cue.bus, 0)))
+        if result["verdict"] == "pass":
+            observed = result["observed_asset_alignment_sample"]
+            matches = observations.setdefault(asset_hash, [])
+            for previous_start, previous_observed, previous_id in matches:
+                if row["asset_start_sample"] != previous_start and abs(observed - previous_observed) < 48:
+                    result["verdict"] = "ambiguous"
+                    result["shared_observation_with"] = previous_id
+                    break
+            matches.append((row["asset_start_sample"], observed, cue.id))
         cue_results.append(result)
         if result["verdict"] != "pass":
             failures.append(f"{cue.id}: {result['verdict']} against decoded picture")
@@ -186,5 +219,5 @@ def verify(plan_path, picture, export, manifest_path):
             "first_audio_sample": start, "audio_clock_max_discontinuity_samples": discontinuity,
             "audio_stream_duration_samples": duration, "decoded_audio_samples": len(decoded),
             "sample_peak_dbfs": db(peak), "estimated_true_peak_dbfs": db(true_peak),
-            "energy_dropouts_s": gaps, "silence": quiet_checks, "landmarks": landmark_rows(landmarks),
+            "energy_dropouts_s": gaps, "pcm_difference_ranges_s": differences, "silence": quiet_checks, "landmarks": landmark_rows(landmarks),
             "cues": cue_results, "human_audition": "pending unless documented separately"}

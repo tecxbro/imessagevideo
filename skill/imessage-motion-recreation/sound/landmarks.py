@@ -12,7 +12,7 @@ from PIL import Image
 
 def _picture_frames(picture):
     command = [
-        "ffprobe", "-v", "error", "-select_streams", "v:0", "-show_frames",
+        "ffprobe", "-v", "error", "-select_streams", "V:0", "-show_frames",
         "-show_entries", "stream=width,height,time_base:frame=best_effort_timestamp,width,height",
         "-of", "json", str(picture),
     ]
@@ -108,7 +108,7 @@ def _rgb_frames(picture, box, size, frame_count):
         filter_graph += f",scale={width}:{height}:flags=area"
     command = [
         "ffmpeg", "-nostdin", "-v", "error", "-xerror", "-filter_threads", "1", "-noautorotate",
-        "-i", str(picture), "-map", "0:v:0", "-vf", filter_graph, "-pix_fmt", "rgb24",
+        "-i", str(picture), "-map", "0:V:0", "-vf", filter_graph, "-pix_fmt", "rgb24",
         "-c:v", "rawvideo", "-threads:v", "1", "-fps_mode", "passthrough", "-f", "rawvideo",
         "pipe:1",
     ]

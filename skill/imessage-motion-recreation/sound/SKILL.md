@@ -17,7 +17,7 @@ Take the current silent master, its SHA-256, and Direction or Recreation's event
 
 ## Author the plan
 
-Use the [small runnable plan](../../../review/imv-v3/sound/contract/plan.json) as a starting point. Dependencies are Python 3.11+, NumPy, SciPy, Pillow, `ffmpeg` and `ffprobe`. Run commands from the repository root.
+Use the [small runnable plan](fixtures/plan.json) as a starting point. Dependencies are Python 3.11+, NumPy, SciPy, Pillow, `ffmpeg` and `ffprobe`. Run commands from the repository root.
 
 ```sh
 python3 -m pip install -r skill/imessage-motion-recreation/sound/requirements.txt
@@ -25,7 +25,7 @@ S=skill/imessage-motion-recreation/sound
 python3 "$S/example.py" /tmp/imv-sound-example
 ```
 
-The example runs six decoded exports and writes reports for the original cue, late cue, missing cue, jointly shifted manifest/audio, stale mix, and corrected picture revision. The score and audio recipe are the same for both picture versions. Its supporting [evidence](../../../review/imv-v3/sound/contract/README.md) records the exact picture files.
+The example runs six decoded exports and writes reports for the original cue, late cue, missing cue, jointly shifted manifest/audio, stale mix, and corrected picture revision. The score and audio recipe are the same for both picture versions. Both exact test pictures travel in the skill package. The repository review folder records their hashes and measured results.
 
 ### Landmark and cue fields
 
@@ -58,6 +58,6 @@ Use a zero-start H.264 MP4 with one full-frame video stream and a positive durat
 
 When a new cut arrives, preserve the prior export. Compare version hashes, run `resolve` on the new picture, inspect neighboring frames for changed landmarks, and compare cue offsets. Remap event-bound cues by running `mix` with the new picture and a new output directory. Check fixed-time beds and quiet holds against the revised scene, adjust the source edit when needed, and rerender. Review both picture and audio from the newly encoded file.
 
-`verify` decodes the MP4 to locate visible events independently of the cue sheet. It compares the muxed picture payload and presentation timestamps with the handed-off master. It finds each distinctive cue waveform in decoded AAC, compares its impact with the visible event plus the authored offset, and reports early, late or missing cues. It also checks the stream profile, audio start and duration, decoded audio frame continuity, clipping, quiet passages, and substantial energy dropouts relative to the approved PCM. A ±48-sample stream duration allowance covers MP4 rounding. Decoded AAC may expose up to 1,024 samples of final frame padding. Estimated true peak uses 4× oversampling. A wall-clock bed receives continuity and dropout checks. For timing acceptance, bind the bed's distinctive story beat to a visual landmark.
+`verify` decodes the MP4 to locate visible events independently of the cue sheet. It compares the muxed picture payload and presentation timestamps with the handed-off master. It finds each distinctive cue waveform in decoded AAC, compares its impact with the visible event plus the authored offset, and reports early, late or missing cues. It also checks the stream profile, audio start and duration, decoded audio frame continuity, clipping, quiet passages, plus substantial energy drops or changes relative to the approved PCM. A ±48-sample stream duration allowance covers MP4 rounding. Decoded AAC may expose up to 1,024 samples of final frame padding. Estimated true peak uses 4× oversampling. A wall-clock bed receives continuity and dropout checks. For timing acceptance, bind the bed's distinctive story beat to a visual landmark.
 
 Deliver the plan, source recipes or assets, separately editable stems, mix WAV and MP4, verification report, updated listening notes, and exact SHA-256. Keep old timings alongside the revised timings in the evidence. Split tracked review payloads above 24 MiB in repository archive style and verify the rejoined hash. In the team issue, include the pushed commit, run command and expected result. For a cold retiming check, supply the skill, old plan and a new silent cut with no moved-event hint.

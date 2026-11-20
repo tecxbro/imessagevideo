@@ -5,6 +5,7 @@ import json
 import math
 from pathlib import Path
 import re
+from tempfile import TemporaryDirectory
 
 import numpy as np
 from scipy.io import wavfile
@@ -43,8 +44,8 @@ class Cue:
         fixed = sample(Fraction(str(data["time_s"]))) if "time_s" in data else None
         if (anchor is None) == (fixed is None):
             raise ValueError("each cue needs exactly one of event or time_s")
-        if not re.fullmatch(r"[a-zA-Z0-9_.-]+", data["id"]):
-            raise ValueError("cue ids support only letters, digits, underscore, dot and dash")
+        if not re.fullmatch(r"[a-zA-Z0-9_.:-]+", data["id"]):
+            raise ValueError("cue ids support only letters, digits, underscore, dot, colon and dash")
         if data["bus"] not in BUSES or not data["source"].strip() or not data["purpose"].strip():
             raise ValueError(f'{data["id"]}: cue needs a supported bus, source and purpose')
         if "offset_samples" in data and "offset_ms" in data:
@@ -132,9 +133,12 @@ def mix(plan_path, picture, output, *, replace_audio=False):
     count = sample(duration)
     stems = {bus: np.zeros((count, 2), dtype=np.float32) for bus in BUSES}
     assets = {}
-    if any((output / name).resolve() == picture.resolve()
-           for name in ("mix.mp4", "mix.wav", "manifest.json", *(f"{bus}.wav" for bus in BUSES))):
-        raise ValueError("choose an output directory that does not contain the picture master")
+    names = ("mix.mp4", "mix.wav", "manifest.json", *(f"{bus}.wav" for bus in BUSES))
+    input_paths = {picture.resolve(), plan_path.resolve(), *(cue.asset.resolve() for cue in cues)}
+    input_paths.update((plan_path.parent / entry["template"]).resolve()
+                       for entry in plan["landmarks"].values() if "template" in entry)
+    if input_paths & {(output / name).resolve() for name in names}:
+        raise ValueError("output conflicts with the picture, plan or source assets")
     # Validate sources and bounds before overwriting any previous render.
     for cue, row in zip(cues, rows):
         if cue.asset not in assets:
@@ -159,16 +163,25 @@ def mix(plan_path, picture, output, *, replace_audio=False):
         if np.max(np.abs(master[start:end])) > 10 ** (limit / 20):
             raise ValueError(f"planned silence contains audio ({purpose})")
     output.mkdir(parents=True, exist_ok=True)
-    for bus, audio in stems.items():
-        wavfile.write(output / f"{bus}.wav", RATE, audio)
-    wavfile.write(output / "mix.wav", RATE, master)
-    mux(picture, output / "mix.wav", output / "mix.mp4")
-    manifest = {
-        "picture_sha256": sha256(picture), "plan_sha256": sha256(plan_path),
-        "mix_sha256": sha256(output / "mix.wav"), "export_sha256": sha256(output / "mix.mp4"),
-        "picture_time_base": stream["time_base"], "picture_duration": str(duration),
-        "sample_rate": RATE, "sample_count": count, "pcm_peak_dbfs": db(peak),
-        "landmarks": landmark_rows(landmarks), "cues": rows,
-    }
-    dump(output / "manifest.json", manifest)
+    with TemporaryDirectory(prefix=".sound-", dir=output) as temporary:
+        staging = Path(temporary)
+        for bus, audio in stems.items():
+            wavfile.write(staging / f"{bus}.wav", RATE, audio)
+        wavfile.write(staging / "mix.wav", RATE, master)
+        mux(picture, staging / "mix.wav", staging / "mix.mp4")
+        manifest = {
+            "picture_sha256": sha256(picture), "plan_sha256": sha256(plan_path),
+            "mix_sha256": sha256(staging / "mix.wav"),
+            "export_sha256": sha256(staging / "mix.mp4"),
+            "picture_time_base": stream["time_base"], "picture_duration": str(duration),
+            "sample_rate": RATE, "sample_count": count, "pcm_peak_dbfs": db(peak),
+            "stems": {bus: sha256(staging / f"{bus}.wav") for bus in BUSES},
+            "landmarks": landmark_rows(landmarks), "cues": rows,
+        }
+        dump(staging / "manifest.json", manifest)
+        # Publish the binding manifest only after the other files have been written.
+        for name in names:
+            if name != "manifest.json":
+                (staging / name).replace(output / name)
+        (staging / "manifest.json").replace(output / "manifest.json")
     return manifest

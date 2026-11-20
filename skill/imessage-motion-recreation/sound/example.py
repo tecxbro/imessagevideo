@@ -11,7 +11,7 @@ from media import RATE, dump, mux, sha256
 from project import mix
 from verify import verify
 
-FIXTURE = Path(__file__).resolve().parents[3] / "review/imv-v3/sound/contract"
+FIXTURE = Path(__file__).resolve().parent / "fixtures"
 
 
 def synthesize(path):
