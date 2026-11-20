@@ -1,0 +1,70 @@
+{
+  "pass": true,
+  "failures": [],
+  "picture_duration": "12/5",
+  "first_audio_sample": 0,
+  "audio_clock_max_discontinuity_samples": 0,
+  "audio_stream_duration_samples": 115200,
+  "decoded_audio_samples": 115712,
+  "sample_peak_dbfs": -10.35,
+  "estimated_true_peak_dbfs": -9.87,
+  "energy_dropouts_s": [],
+  "pcm_difference_ranges_s": [],
+  "silence": [
+    {
+      "start_sample": 0,
+      "end_sample": 12960,
+      "purpose": "Leave the opening number alone before it begins to change.",
+      "peak_dbfs": null,
+      "pass": true
+    },
+    {
+      "start_sample": 110880,
+      "end_sample": 115200,
+      "purpose": "Leave the final part of the registration total's hold quiet.",
+      "peak_dbfs": null,
+      "pass": true
+    }
+  ],
+  "landmarks": {
+    "motion.metric-count.count-begins": {
+      "frame": 10,
+      "pts": "1/3",
+      "score": 0.9952760270774976,
+      "sample": 16000
+    },
+    "motion.metric-count.final-value-held": {
+      "frame": 55,
+      "pts": "11/6",
+      "score": 0.9930226257169534,
+      "sample": 88000
+    }
+  },
+  "cues": [
+    {
+      "id": "paper-tick",
+      "event": "motion.metric-count.count-begins",
+      "expected_impact_sample": 15616,
+      "intended_offset_samples": -384,
+      "verdict": "pass",
+      "correlation": 1.0,
+      "observed_asset_alignment_sample": 14944,
+      "estimated_onset_marker_sample": 15136,
+      "observed_impact_marker_sample": 15616,
+      "error_ms": 0.0
+    },
+    {
+      "id": "felt-confirm",
+      "event": "motion.metric-count.final-value-held",
+      "expected_impact_sample": 88768,
+      "intended_offset_samples": 768,
+      "verdict": "pass",
+      "correlation": 1.0,
+      "observed_asset_alignment_sample": 87712,
+      "estimated_onset_marker_sample": 88192,
+      "observed_impact_marker_sample": 88768,
+      "error_ms": 0.0
+    }
+  ],
+  "human_audition": "pending unless documented separately"
+}

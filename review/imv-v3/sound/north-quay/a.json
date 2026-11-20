@@ -1,0 +1,73 @@
+{
+  "landmarks": {
+    "motion.metric-count.count-begins": {
+      "roi": [
+        0.2708333333333333,
+        0.4166666666666667,
+        0.2777777777777778,
+        0.15833333333333333
+      ],
+      "template": "assets/count-start.png",
+      "max_distance": 0.011,
+      "search_s": [
+        0.2,
+        0.55
+      ]
+    },
+    "motion.metric-count.final-value-held": {
+      "roi": [
+        0.2708333333333333,
+        0.4166666666666667,
+        0.2777777777777778,
+        0.15833333333333333
+      ],
+      "template": "assets/count-settled.png",
+      "max_distance": 0.011,
+      "search_s": [
+        1.4,
+        2.25
+      ],
+      "settle_frames": 2
+    }
+  },
+  "cues": [
+    {
+      "id": "paper-tick",
+      "event": "motion.metric-count.count-begins",
+      "asset": "assets/paper-tick.wav",
+      "source": "Original procedural audio from sound/north-quay/synthesize.py (paper-tick).",
+      "purpose": "A light tick draws the eye to the first digit change.",
+      "bus": "effects",
+      "offset_samples": -384,
+      "onset_ms": 4,
+      "impact_ms": 14,
+      "gain_db": -8,
+      "tolerance_ms": 14
+    },
+    {
+      "id": "felt-confirm",
+      "event": "motion.metric-count.final-value-held",
+      "asset": "assets/felt-confirm.wav",
+      "source": "Original procedural audio from sound/north-quay/synthesize.py (felt-confirm).",
+      "purpose": "A compact hit settles the number and hands the read back to the picture.",
+      "bus": "effects",
+      "offset_samples": 768,
+      "onset_ms": 10,
+      "impact_ms": 22,
+      "gain_db": -5,
+      "tolerance_ms": 14
+    }
+  ],
+  "silence": [
+    {
+      "start_s": 0,
+      "end_s": 0.27,
+      "purpose": "Leave the opening number alone before it begins to change."
+    },
+    {
+      "start_s": 2.31,
+      "end_s": 2.4,
+      "purpose": "Leave the final part of the registration total's hold quiet."
+    }
+  ]
+}

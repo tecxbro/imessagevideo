@@ -1,0 +1,63 @@
+{
+  "picture_sha256": "ed1e98c77c5df9928c939ae0814d6c18a883d02fdf6323cbc0c12983de36dde7",
+  "plan_sha256": "c47cf5a76e35f37cec4e64b6cbe9520e952dc4103e8fd655323ec90ad8c7d44c",
+  "mix_sha256": "b026ed33886536f105bf5f2af12e86dbf7ff93faee81e9eb205c0124f7141994",
+  "export_sha256": "ce710838d178d37b1fef415061894b4697a3ca990ac4065ad683aa6920c3a0d8",
+  "picture_time_base": "1/30000",
+  "picture_duration": "12/5",
+  "sample_rate": 48000,
+  "sample_count": 115200,
+  "pcm_peak_dbfs": -11.59,
+  "stems": {
+    "dialogue": "e5e354dd1f0c194f72171e576e04fd5e09bd586e49d2dacd799efb3dea4aa884",
+    "music": "e5e354dd1f0c194f72171e576e04fd5e09bd586e49d2dacd799efb3dea4aa884",
+    "atmosphere": "e5e354dd1f0c194f72171e576e04fd5e09bd586e49d2dacd799efb3dea4aa884",
+    "effects": "b026ed33886536f105bf5f2af12e86dbf7ff93faee81e9eb205c0124f7141994"
+  },
+  "landmarks": {
+    "motion.metric-count.count-begins": {
+      "frame": 10,
+      "pts": "1/3",
+      "score": 0.9952760270774976,
+      "sample": 16000
+    },
+    "motion.metric-count.final-value-held": {
+      "frame": 55,
+      "pts": "61/30",
+      "score": 0.9930226257169534,
+      "sample": 97600
+    }
+  },
+  "cues": [
+    {
+      "id": "paper-tick",
+      "event": "motion.metric-count.count-begins",
+      "bus": "effects",
+      "purpose": "A light tick draws the eye to the first digit change.",
+      "source": "Original procedural audio from sound/north-quay/synthesize.py (paper-tick).",
+      "event_frame": 10,
+      "offset_samples": -384,
+      "asset_start_sample": 14944,
+      "onset_marker_sample": 15136,
+      "impact_sample": 15616,
+      "asset_sha256": "6ee020d3490d6ca74cc72e8d76b40369527fa9817f6bb9facb7052f056577d3e",
+      "asset_end_sample": 19984,
+      "gain_db": -8.0
+    },
+    {
+      "id": "felt-confirm",
+      "event": "motion.metric-count.final-value-held",
+      "bus": "effects",
+      "purpose": "A compact hit settles the number and hands the read back to the picture.",
+      "source": "Original procedural audio from sound/north-quay/synthesize.py (felt-confirm).",
+      "event_frame": 55,
+      "offset_samples": 768,
+      "asset_start_sample": 97312,
+      "onset_marker_sample": 97792,
+      "impact_sample": 98368,
+      "asset_sha256": "c8c62f3f0a75ac0e86ec30cd56bffd665ffcddd9622b87b19de5e487aad78306",
+      "asset_end_sample": 104752,
+      "gain_db": -5.0
+    }
+  ]
+}

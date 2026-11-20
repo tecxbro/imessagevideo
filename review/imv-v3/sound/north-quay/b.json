@@ -1,0 +1,73 @@
+{
+  "landmarks": {
+    "motion.metric-count.count-begins": {
+      "roi": [
+        0.2708333333333333,
+        0.4166666666666667,
+        0.2777777777777778,
+        0.15833333333333333
+      ],
+      "template": "assets/count-start.png",
+      "max_distance": 0.011,
+      "search_s": [
+        0.2,
+        0.55
+      ]
+    },
+    "motion.metric-count.final-value-held": {
+      "roi": [
+        0.2708333333333333,
+        0.4166666666666667,
+        0.2777777777777778,
+        0.15833333333333333
+      ],
+      "template": "assets/count-settled.png",
+      "max_distance": 0.011,
+      "search_s": [
+        1.4,
+        2.25
+      ],
+      "settle_frames": 2
+    }
+  },
+  "cues": [
+    {
+      "id": "warm-rise",
+      "event": "motion.metric-count.count-begins",
+      "asset": "assets/warm-rise.wav",
+      "source": "Original procedural audio from sound/north-quay/synthesize.py (warm-rise).",
+      "purpose": "A soft tonal lift gives the count momentum without hitting each number.",
+      "bus": "music",
+      "offset_samples": 384,
+      "onset_ms": 13,
+      "impact_ms": 24,
+      "gain_db": -7,
+      "tolerance_ms": 14
+    },
+    {
+      "id": "open-fifth",
+      "event": "motion.metric-count.final-value-held",
+      "asset": "assets/open-fifth.wav",
+      "source": "Original procedural audio from sound/north-quay/synthesize.py (open-fifth).",
+      "purpose": "An open fifth marks the settled value and fades beneath the read.",
+      "bus": "music",
+      "offset_samples": 1248,
+      "onset_ms": 29,
+      "impact_ms": 43,
+      "gain_db": -5,
+      "tolerance_ms": 14
+    }
+  ],
+  "silence": [
+    {
+      "start_s": 0,
+      "end_s": 0.27,
+      "purpose": "Leave the opening number alone before it begins to change."
+    },
+    {
+      "start_s": 2.35,
+      "end_s": 2.4,
+      "purpose": "Leave the final part of the registration total's hold quiet."
+    }
+  ]
+}
