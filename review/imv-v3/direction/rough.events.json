@@ -1,0 +1,183 @@
+{
+  "name": "The Moon Cue",
+  "cut": "rough",
+  "width": 960,
+  "height": 540,
+  "fps": 24,
+  "duration": 15.0,
+  "layers": [],
+  "timeline": {
+    "version": 1,
+    "picture": {
+      "fpsNum": 24,
+      "fpsDen": 1,
+      "frameCount": 360
+    },
+    "initialUI": null,
+    "events": [
+      {
+        "id": "stage.rabbit.wait",
+        "kind": "puppet.pose",
+        "target": "rabbit",
+        "frame": 3
+      },
+      {
+        "id": "conversation.open",
+        "kind": "ui.enter",
+        "target": "thread.stage-crew",
+        "frame": 56,
+        "uiState": {
+          "conversationId": "thread.stage-crew",
+          "messages": [],
+          "composer": {
+            "text": "Where\u2019s the moon?",
+            "focused": false
+          },
+          "viewport": {
+            "surface": "conversation",
+            "anchorMessageId": null
+          }
+        }
+      },
+      {
+        "id": "message.question.press",
+        "kind": "ui.press",
+        "target": "composer.send",
+        "frame": 82
+      },
+      {
+        "id": "message.question.send",
+        "kind": "message.send",
+        "target": "message.question",
+        "frame": 84,
+        "uiState": {
+          "conversationId": "thread.stage-crew",
+          "messages": [
+            {
+              "id": "message.question",
+              "senderId": "customer",
+              "text": "Where\u2019s the moon?"
+            }
+          ],
+          "composer": {
+            "text": "",
+            "focused": false
+          },
+          "viewport": {
+            "surface": "conversation",
+            "anchorMessageId": "message.question"
+          }
+        }
+      },
+      {
+        "id": "message.answer.receive",
+        "kind": "message.receive",
+        "target": "message.answer",
+        "frame": 113,
+        "uiState": {
+          "conversationId": "thread.stage-crew",
+          "messages": [
+            {
+              "id": "message.question",
+              "senderId": "customer",
+              "text": "Where\u2019s the moon?"
+            },
+            {
+              "id": "message.answer",
+              "senderId": "agent.stage-crew",
+              "text": "Red tin. Under the stars."
+            }
+          ],
+          "composer": {
+            "text": "",
+            "focused": false
+          },
+          "viewport": {
+            "surface": "conversation",
+            "anchorMessageId": "message.answer"
+          }
+        }
+      },
+      {
+        "id": "prop.table.reveal",
+        "kind": "edit.cut",
+        "target": "prop.red-tin",
+        "frame": 181,
+        "uiState": null
+      },
+      {
+        "id": "prop.tin.open",
+        "kind": "prop.open",
+        "target": "prop.red-tin",
+        "frame": 197
+      },
+      {
+        "id": "prop.moon.lift",
+        "kind": "prop.lift",
+        "target": "prop.crescent",
+        "frame": 218
+      },
+      {
+        "id": "stage.return",
+        "kind": "edit.cut",
+        "target": "stage",
+        "frame": 246
+      },
+      {
+        "id": "stage.moon.enter",
+        "kind": "prop.enter",
+        "target": "stage.crescent",
+        "frame": 259
+      },
+      {
+        "id": "stage.rabbit.release",
+        "kind": "puppet.pose",
+        "target": "rabbit",
+        "frame": 281
+      },
+      {
+        "id": "brand.enter",
+        "kind": "title.enter",
+        "target": "brand.keiki",
+        "frame": 311
+      }
+    ],
+    "cues": [
+      {
+        "id": "room.start",
+        "eventId": "stage.rabbit.wait",
+        "offsetSamples": -6000
+      },
+      {
+        "id": "send.press",
+        "eventId": "message.question.press",
+        "offsetSamples": 0
+      },
+      {
+        "id": "send.release",
+        "eventId": "message.question.send",
+        "offsetSamples": 0
+      },
+      {
+        "id": "reply.arrival",
+        "eventId": "message.answer.receive",
+        "offsetSamples": 0
+      },
+      {
+        "id": "tin.contact",
+        "eventId": "prop.tin.open",
+        "offsetSamples": 0
+      },
+      {
+        "id": "paper.rustle",
+        "eventId": "prop.moon.lift",
+        "offsetSamples": 0
+      },
+      {
+        "id": "puppet.release",
+        "eventId": "stage.rabbit.release",
+        "offsetSamples": 0
+      }
+    ]
+  }
+}
