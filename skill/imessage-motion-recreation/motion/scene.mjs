@@ -28,8 +28,16 @@ function configuration(content) {
     throw Error('Content must be a JSON object');
   for (const [key, value] of Object.entries(content)) {
     if (key === 'values') {
-      if (!Array.isArray(value) || value.length < 2 || value.length > 24 || !value.every(Number.isFinite))
-        throw Error('values must contain 2–24 finite numbers');
+      if (!Array.isArray(value) || value.length < 1 || value.length > 24 || !value.every(Number.isFinite))
+        throw Error('values must contain 1–24 finite numbers');
+      continue;
+    }
+    if (key === 'swipes') {
+      if (![1, 2].includes(value)) throw Error('swipes must be 1 or 2');
+      continue;
+    }
+    if (key === 'direction') {
+      if (!['up', 'down', 'left', 'right'].includes(value)) throw Error('direction must be up, down, left or right');
       continue;
     }
     if (!Object.hasOwn(defaults, key)) throw Error(`Unknown content field: ${key}`);
@@ -52,8 +60,15 @@ function configuration(content) {
 export function buildMotion(entry, content = {}, options = {}) {
   if (!entry || typeof entry.build !== 'function') throw Error('Unknown motion entry');
   const data = configuration({...entry.defaults, ...content});
+  if (entry.photoCount && content.photos !== undefined) {
+    const {min, max} = entry.photoCount;
+    if (!numberInRange(data.photos.length, min, max))
+      throw Error(`${entry.id} needs ${min}–${max} photos`);
+  }
   const fps = options.fps ?? 30;
   const seconds = options.duration ?? 2.4;
+  if (data.direction && !entry.editable.includes('direction'))
+    delete data.direction;
   if (![24, 25, 30, 60].includes(fps)) throw Error('Use an fps of 24, 25, 30 or 60');
   if (!numberInRange(seconds, 1.6, 12)) throw Error('Duration must be 1.6–12 seconds');
   const frameCount = Math.round(seconds * fps);
@@ -94,7 +109,7 @@ export function buildMotion(entry, content = {}, options = {}) {
     event(name, fraction, target, kind = name, uiState) {
       if (!idPattern.test(name) || !idPattern.test(kind) || !numberInRange(fraction, 0, 1))
         throw Error(`Invalid event: ${name}`);
-      const frame = Math.min(frameCount - 1, Math.ceil(fraction * frameCount - 1e-8));
+      const frame = Math.max(0, Math.min(frameCount - 1, Math.ceil(fraction * frameCount - 1e-8)));
       const event = {id: `motion.${entry.id}.${name}`, kind, target, frame, layerIds: [target]};
       if (uiState !== undefined) event.uiState = uiState;
       events.push(event);

@@ -1,0 +1,77 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 72
+  },
+  "initialUI": {
+    "conversationId": "thread.motion",
+    "messages": [
+      {
+        "id": "message.photos",
+        "senderId": "account.remote",
+        "text": "",
+        "attachmentIds": [
+          "photo-1",
+          "photo-2",
+          "photo-3",
+          "photo-4"
+        ]
+      }
+    ],
+    "composer": {
+      "text": "",
+      "focused": false
+    },
+    "viewport": {
+      "surface": "conversation",
+      "anchorMessageId": "message.photos"
+    }
+  },
+  "events": [
+    {
+      "id": "motion.photos-under-fixed-heading.rail-start",
+      "kind": "media.scroll",
+      "target": "message.photos",
+      "frame": 20,
+      "uiState": {
+        "conversationId": "thread.motion",
+        "messages": [
+          {
+            "id": "message.photos",
+            "senderId": "account.remote",
+            "text": "",
+            "attachmentIds": [
+              "photo-1",
+              "photo-2",
+              "photo-3",
+              "photo-4"
+            ]
+          }
+        ],
+        "composer": {
+          "text": "",
+          "focused": false
+        },
+        "viewport": {
+          "surface": "conversation",
+          "anchorMessageId": "message.photos"
+        }
+      },
+      "layerIds": [
+        "ui.message/message.photos/media"
+      ]
+    },
+    {
+      "id": "motion.photos-under-fixed-heading.rail-settle",
+      "kind": "media.settle",
+      "target": "message.photos",
+      "layerIds": [
+        "ui.message/message.photos/media"
+      ],
+      "frame": 39
+    }
+  ],
+  "cues": []
+}

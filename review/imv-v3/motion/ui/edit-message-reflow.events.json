@@ -1,0 +1,70 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 72
+  },
+  "initialUI": {
+    "conversationId": "thread.motion",
+    "messages": [
+      {
+        "id": "message.original",
+        "senderId": "account.self",
+        "text": "Meet at the station.",
+        "attachmentIds": []
+      },
+      {
+        "id": "message.reply",
+        "senderId": "account.remote",
+        "text": "Here it is. Meet at the north gate.",
+        "attachmentIds": []
+      }
+    ],
+    "composer": {
+      "text": "",
+      "focused": false
+    },
+    "viewport": {
+      "surface": "conversation",
+      "anchorMessageId": "message.reply"
+    }
+  },
+  "events": [
+    {
+      "id": "motion.edit-message-reflow.edit-commit",
+      "kind": "edit_commit",
+      "target": "message.original",
+      "frame": 47,
+      "uiState": {
+        "conversationId": "thread.motion",
+        "messages": [
+          {
+            "id": "message.original",
+            "senderId": "account.self",
+            "text": "Meet at the station.\nBy the north entrance.",
+            "attachmentIds": []
+          },
+          {
+            "id": "message.reply",
+            "senderId": "account.remote",
+            "text": "Here it is. Meet at the north gate.",
+            "attachmentIds": []
+          }
+        ],
+        "composer": {
+          "text": "",
+          "focused": false
+        },
+        "viewport": {
+          "surface": "conversation",
+          "anchorMessageId": "message.reply"
+        }
+      },
+      "layerIds": [
+        "ui.message/message.original"
+      ]
+    }
+  ],
+  "cues": []
+}

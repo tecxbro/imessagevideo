@@ -4,8 +4,10 @@ import {spawnSync} from 'node:child_process';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {parseArgs} from 'node:util';
-import {byId, entries, metadata, methods} from './catalog.mjs';
+import {byId, describe, entries, methods} from './catalog.mjs';
 import {buildMotion} from './scene.mjs';
+import {composeScenes} from './sequence.mjs';
+import {buildUiMotion, uiIds} from './ui-bridge.mjs';
 
 const engines = fileURLToPath(new URL('../scripts/engines/', import.meta.url));
 const usage = `node motion/cli.mjs list
@@ -13,6 +15,7 @@ node motion/cli.mjs select --brief "What the viewer should see"
 node motion/cli.mjs info --id MOTION
 node motion/cli.mjs scene --id MOTION --content CONTENT.json --out SCENE.json
 node motion/cli.mjs render --id MOTION --out PREVIEW.mp4 [--method pillow]
+Use --ui for a Clone iMessage UI variant. Use --ui-root to point to a separate checkout.
 Use --ids ID1,ID2 for a sequence. Use --brief in place of --id for selection.
 Render also writes editable .scene.json and frame-addressed .events.json files.`;
 
@@ -27,6 +30,7 @@ function loadContent(filename) {
   if (!filename) return {};
   const absolute = path.resolve(filename);
   const data = JSON.parse(readFileSync(absolute, 'utf8'));
+  if (!data || typeof data !== 'object' || Array.isArray(data)) throw Error('Content must be a JSON object');
   if (Array.isArray(data?.photos)) {
     data.photos = data.photos.map(src => typeof src === 'string' ? path.resolve(path.dirname(absolute), src) : src);
   }
@@ -42,54 +46,6 @@ function requireEntry(id) {
   const entry = byId.get(id);
   if (!entry) throw Error(`Unknown motion ID: ${id}`);
   return entry;
-}
-
-function sequence(parts) {
-  if (parts.length === 1) return parts[0];
-  const first = parts[0];
-  let frames = 0;
-  const layers = [];
-  const events = [];
-  const cues = [];
-  for (const [index, part] of parts.entries()) {
-    if (part.fps !== first.fps || part.width !== first.width || part.height !== first.height)
-      throw Error('Sequence beats must share picture dimensions and frame rate');
-    const groupId = `beat-${index + 1}`;
-    const prefix = groupId + '.';
-    const start = frames / first.fps;
-    const beatFrames = part.timeline.picture.frameCount;
-    const end = (frames + beatFrames) / first.fps;
-    const offset = layer => {
-      layer.id = prefix + layer.id;
-      if (layer.start !== undefined) layer.start += start;
-      if (layer.end !== undefined) layer.end += start;
-      for (const track of Object.values(layer.keyframes ?? {}))
-        for (const key of track) key.t += start;
-      for (const child of layer.children ?? []) offset(child);
-    };
-    const background = {
-      id: prefix + 'background', type: 'rect', x: 0, y: 0,
-      width: part.width, height: part.height, fill: part.background,
-    };
-    for (const layer of part.layers) offset(layer);
-    layers.push({id: groupId, type: 'group', start, end, children: [background, ...part.layers]});
-    if (index && !part.timeline.events.some(event => event.frame === 0 && Object.hasOwn(event, 'uiState'))) {
-      events.push({id: prefix + 'cut', kind: 'shot.cut', target: groupId,
-        frame: frames, layerIds: [groupId], uiState: part.timeline.initialUI});
-    }
-    for (const event of part.timeline.events) {
-      const remapped = {...event, id: prefix + event.id, frame: event.frame + frames};
-      if (event.layerIds) remapped.layerIds = event.layerIds.map(id => prefix + id);
-      events.push(remapped);
-    }
-    for (const cue of part.timeline.cues)
-      cues.push({...cue, id: prefix + cue.id, eventId: prefix + cue.eventId});
-    frames += beatFrames;
-  }
-  return {...first, duration: frames / first.fps, title: parts.map(part => part.title).join(' / '),
-    source: {notes: parts.map(part => `${part.source.path} [${part.source.sourceStart}, ${part.source.sourceEnd})`).join(' then ')},
-    layers, timeline: {...first.timeline, picture: {...first.timeline.picture, frameCount: frames}, events, cues},
-  };
 }
 
 function render(scenePath, out, method) {
@@ -112,13 +68,22 @@ function render(scenePath, out, method) {
 async function main() {
   const [command, ...args] = process.argv.slice(2);
   if (!command || command === '--help') { console.log(usage); return; }
-  const {values: flags} = parseArgs({args, options: Object.fromEntries(
-    ['id','ids','brief','content','out','method','fps','duration'].map(name => [name, {type:'string'}]),
-  )});
+  const {values: flags} = parseArgs({args, options: {
+    ...Object.fromEntries(['id','ids','brief','content','out','method','fps','duration','ui-root'].map(name => [name, {type:'string'}])),
+    ui: {type:'boolean'},
+  }});
   const print = value => console.log(JSON.stringify(value, null, 2));
-  if (command === 'list') { print(entries.map(metadata)); return; }
-  if (command === 'info') { print(metadata(requireEntry(flags.id))); return; }
-  if (command === 'select') { print(await choose(flags.brief)); return; }
+  if (command === 'list') { print(entries.map(describe)); return; }
+  if (command === 'info') { print(describe(requireEntry(flags.id))); return; }
+  if (command === 'select') {
+    const result = await choose(flags.brief);
+    const matches = result.matches.map(id => {
+      const {title, moves, fixed, notice, preview, renderCommand} = describe(requireEntry(id));
+      return {id, title, moves, fixed, notice, preview, renderCommand};
+    });
+    print({...result, entries:matches});
+    return;
+  }
   if (!['scene', 'render'].includes(command)) throw Error(usage);
   if (!flags.out) throw Error('Supply --out');
   if ([flags.id, flags.ids, flags.brief].filter(Boolean).length !== 1)
@@ -128,12 +93,28 @@ async function main() {
     throw Error(`${recommendation.action}: ${recommendation.reason}`);
   const ids = recommendation?.matches ?? (flags.ids?.split(',').map(id => id.trim()) ?? [flags.id]);
   if (ids.length > 4) throw Error('Use up to four motions per sequence');
-  const content = loadContent(flags.content);
+  const content = {...recommendation?.content, ...loadContent(flags.content)};
   const settings = {
     fps: flags.fps === undefined ? undefined : Number(flags.fps),
     duration: flags.duration === undefined ? undefined : Number(flags.duration),
   };
-  const scene = sequence(ids.map(id => buildMotion(requireEntry(id), content, settings)));
+  const beats = recommendation?.sequence?.length
+    ? recommendation.sequence.flatMap(beat => beat.action === 'hold'
+      ? [null]
+      : beat.matches.map(id => ({id, content:beat.content})))
+    : ids.map(id => ({id}));
+  if (beats.length > 4) throw Error('Use up to four beats per sequence');
+  const useUI = Boolean(flags.ui || flags['ui-root']);
+  if (useUI && !beats.some(beat => uiIds.includes(beat?.id)))
+    throw Error(`Clone iMessage UI covers these motions: ${uiIds.join(', ')}`);
+  const scene = composeScenes(beats.map(beat => {
+    if (!beat) return null;
+    const entry = requireEntry(beat.id);
+    const data = {...beat.content, ...content};
+    return useUI && uiIds.includes(entry.id)
+      ? buildUiMotion(entry, data, {...settings, uiRoot:flags['ui-root']})
+      : buildMotion(entry, data, settings);
+  }));
   const out = path.resolve(flags.out);
   if (path.extname(out) !== (command === 'scene' ? '.json' : '.mp4'))
     throw Error(command === 'scene' ? 'Scene output must end in .json' : 'Render output must end in .mp4');

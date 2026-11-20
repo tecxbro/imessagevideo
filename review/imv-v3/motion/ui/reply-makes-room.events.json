@@ -1,0 +1,124 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 72
+  },
+  "initialUI": {
+    "conversationId": "thread.motion",
+    "messages": [
+      {
+        "id": "message.opening",
+        "senderId": "account.remote",
+        "text": "Do you have a minute?",
+        "attachmentIds": []
+      },
+      {
+        "id": "message.acknowledged",
+        "senderId": "account.self",
+        "text": "Yes, go ahead.",
+        "attachmentIds": []
+      },
+      {
+        "id": "message.prior",
+        "senderId": "account.remote",
+        "text": "I can check the details.",
+        "attachmentIds": []
+      },
+      {
+        "id": "message.context",
+        "senderId": "account.self",
+        "text": "Could you confirm what you found?",
+        "attachmentIds": []
+      },
+      {
+        "id": "message.detail",
+        "senderId": "account.remote",
+        "text": "I have the first part.",
+        "attachmentIds": []
+      },
+      {
+        "id": "message.request",
+        "senderId": "account.self",
+        "text": "Can you send the trail map?",
+        "attachmentIds": []
+      }
+    ],
+    "composer": {
+      "text": "",
+      "focused": false
+    },
+    "viewport": {
+      "surface": "conversation",
+      "anchorMessageId": "message.request"
+    }
+  },
+  "events": [
+    {
+      "id": "motion.reply-makes-room.reply-arrival",
+      "kind": "message_arrival",
+      "target": "message.reply",
+      "frame": 35,
+      "uiState": {
+        "conversationId": "thread.motion",
+        "messages": [
+          {
+            "id": "message.opening",
+            "senderId": "account.remote",
+            "text": "Do you have a minute?",
+            "attachmentIds": []
+          },
+          {
+            "id": "message.acknowledged",
+            "senderId": "account.self",
+            "text": "Yes, go ahead.",
+            "attachmentIds": []
+          },
+          {
+            "id": "message.prior",
+            "senderId": "account.remote",
+            "text": "I can check the details.",
+            "attachmentIds": []
+          },
+          {
+            "id": "message.context",
+            "senderId": "account.self",
+            "text": "Could you confirm what you found?",
+            "attachmentIds": []
+          },
+          {
+            "id": "message.detail",
+            "senderId": "account.remote",
+            "text": "I have the first part.",
+            "attachmentIds": []
+          },
+          {
+            "id": "message.request",
+            "senderId": "account.self",
+            "text": "Can you send the trail map?",
+            "attachmentIds": []
+          },
+          {
+            "id": "message.reply",
+            "senderId": "account.remote",
+            "text": "Here it is. Meet at the north gate.",
+            "attachmentIds": []
+          }
+        ],
+        "composer": {
+          "text": "",
+          "focused": false
+        },
+        "viewport": {
+          "surface": "conversation",
+          "anchorMessageId": "message.reply"
+        }
+      },
+      "layerIds": [
+        "ui.message/message.reply"
+      ]
+    }
+  ],
+  "cues": []
+}

@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 72
+  },
+  "initialUI": null,
+  "events": [
+    {
+      "id": "motion.typographic-tracking-contract.tracking-contracts",
+      "kind": "tracking-contracts",
+      "target": "tracking-title",
+      "frame": 12,
+      "layerIds": [
+        "tracking-title"
+      ]
+    },
+    {
+      "id": "motion.typographic-tracking-contract.title-readable",
+      "kind": "title-readable",
+      "target": "tracking-title",
+      "frame": 42,
+      "layerIds": [
+        "tracking-title"
+      ]
+    }
+  ],
+  "cues": []
+}

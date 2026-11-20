@@ -32,7 +32,8 @@ export const entries = [
       'Keep the shop name pinned as the storefront photos glide past',
       'Scroll images without moving the header',
     ],
-    editable: ['heading', 'detail', 'photos'],
+    editable: ['heading', 'detail', 'photos', 'direction'],
+    photoCount: {min:2, max:12},
     source: {
       kind: 'measured-adaptation',
       ref: film,
@@ -42,13 +43,15 @@ export const entries = [
     },
     build(ctx) {
       const rail = photoRail(ctx, ctx.content.photos.length);
-      const travel = Math.min(2, ctx.content.photos.length - 1) * 308;
+      const direction = ctx.content.direction ?? 'left';
+      if (!['left', 'right'].includes(direction)) throw Error('The photo rail only supports horizontal travel');
+      const travel = (ctx.content.photos.length - 1) * 308 + 296 - 440;
       if (travel === 0) throw Error('photos-under-fixed-heading needs two or more photos');
       const {frameCount} = ctx;
       const first = Math.round(frameCount * .27);
       const span = Math.min(20, Math.round(frameCount * .47));
       ctx.track(rail, 'x', photoOffsets.map((offset, i) => [
-        (first + i * span / 20) / frameCount, -(offset / 1140) * travel,
+        (first + i * span / 20) / frameCount, (direction === 'left' ? -offset / 1140 : offset / 1140 - 1) * travel,
       ]));
       ctx.label(ctx.content.detail);
       ctx.event('rail-start', (first + 1) / frameCount, rail.id, 'media.scroll');
@@ -69,14 +72,20 @@ export const entries = [
       'Keep the gallery anchored and let the header drift',
       'Do not move the photos, move the title instead',
     ],
-    editable: ['heading', 'detail', 'photos'],
+    editable: ['heading', 'detail', 'photos', 'direction'],
+    photoCount: {min:1, max:2},
     source: {kind:'authored',ref:'packs/core.mjs#heading-over-fixed-photos',range:[0,2.4]},
     build(ctx) {
       photoRail(ctx, Math.min(ctx.content.photos.length, 2));
       const title = ctx.heading.children[1];
+      const direction = ctx.content.direction ?? 'right';
+      const vertical = direction === 'up' || direction === 'down';
+      const low = vertical ? 4 : 28, high = vertical ? 26 : 150;
+      const increasing = direction === 'right' || direction === 'down';
+      const [start, end] = increasing ? [low, high] : [high, low];
       title.x = 28;
       ctx.heading.clip = {x: 0, y: 0, width: 500, height: 54};
-      ctx.track(title, 'x', [[0, 28], [.25, 28], [.70, 150, 'easeInOut']]);
+      ctx.track(title, vertical ? 'y' : 'x', [[0, start], [.25, start], [.70, end, 'easeInOut']]);
       ctx.label(ctx.content.detail);
       ctx.event('heading-start', .27, title.id, 'title.move');
       ctx.event('heading-settle', .70, title.id, 'title.settle');

@@ -1,0 +1,98 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 72
+  },
+  "initialUI": {
+    "conversationId": "thread.motion",
+    "messages": [
+      {
+        "id": "message.first",
+        "senderId": "account.self",
+        "text": "Can you send the trail map?",
+        "attachmentIds": []
+      }
+    ],
+    "composer": {
+      "text": "",
+      "focused": false
+    },
+    "viewport": {
+      "surface": "conversation",
+      "anchorMessageId": "message.first"
+    }
+  },
+  "events": [
+    {
+      "id": "motion.delivery-receipt-handoff.outgoing-arrives",
+      "kind": "send",
+      "target": "message.latest",
+      "frame": 21,
+      "uiState": {
+        "conversationId": "thread.motion",
+        "messages": [
+          {
+            "id": "message.first",
+            "senderId": "account.self",
+            "text": "Can you send the trail map?",
+            "attachmentIds": []
+          },
+          {
+            "id": "message.latest",
+            "senderId": "account.self",
+            "text": "Here it is. Meet at the north gate.",
+            "attachmentIds": []
+          }
+        ],
+        "composer": {
+          "text": "",
+          "focused": false
+        },
+        "viewport": {
+          "surface": "conversation",
+          "anchorMessageId": "message.latest"
+        }
+      },
+      "layerIds": [
+        "ui.message/message.latest"
+      ]
+    },
+    {
+      "id": "motion.delivery-receipt-handoff.receipt-reassigned",
+      "kind": "delivery_status",
+      "target": "message.latest",
+      "frame": 34,
+      "uiState": {
+        "conversationId": "thread.motion",
+        "messages": [
+          {
+            "id": "message.first",
+            "senderId": "account.self",
+            "text": "Can you send the trail map?",
+            "attachmentIds": []
+          },
+          {
+            "id": "message.latest",
+            "senderId": "account.self",
+            "text": "Here it is. Meet at the north gate.",
+            "attachmentIds": []
+          }
+        ],
+        "composer": {
+          "text": "",
+          "focused": false
+        },
+        "viewport": {
+          "surface": "conversation",
+          "anchorMessageId": "message.latest"
+        }
+      },
+      "layerIds": [
+        "ui.message/message.latest/receipt"
+      ]
+    }
+  ],
+  "cues": []
+}

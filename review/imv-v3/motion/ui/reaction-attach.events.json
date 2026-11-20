@@ -1,0 +1,116 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 72
+  },
+  "initialUI": {
+    "conversationId": "thread.motion",
+    "messages": [
+      {
+        "id": "message.prior",
+        "senderId": "account.self",
+        "text": "Here it is. Meet at the north gate.",
+        "attachmentIds": []
+      },
+      {
+        "id": "message.target",
+        "senderId": "account.remote",
+        "text": "Can you send the trail map?",
+        "attachmentIds": []
+      }
+    ],
+    "composer": {
+      "text": "",
+      "focused": false
+    },
+    "viewport": {
+      "surface": "conversation",
+      "anchorMessageId": "message.target"
+    }
+  },
+  "events": [
+    {
+      "id": "motion.reaction-attach.reaction-choices",
+      "kind": "overlay",
+      "target": "message.target",
+      "frame": 9,
+      "uiState": {
+        "conversationId": "thread.motion",
+        "messages": [
+          {
+            "id": "message.prior",
+            "senderId": "account.self",
+            "text": "Here it is. Meet at the north gate.",
+            "attachmentIds": []
+          },
+          {
+            "id": "message.target",
+            "senderId": "account.remote",
+            "text": "Can you send the trail map?",
+            "attachmentIds": []
+          }
+        ],
+        "composer": {
+          "text": "",
+          "focused": false
+        },
+        "viewport": {
+          "surface": "context",
+          "anchorMessageId": "message.target",
+          "selection": [
+            "message.target"
+          ]
+        }
+      },
+      "layerIds": [
+        "ui.overlay"
+      ]
+    },
+    {
+      "id": "motion.reaction-attach.reaction-choice",
+      "kind": "reaction_select",
+      "target": "message.target",
+      "frame": 26,
+      "uiState": {
+        "conversationId": "thread.motion",
+        "messages": [
+          {
+            "id": "message.prior",
+            "senderId": "account.self",
+            "text": "Here it is. Meet at the north gate.",
+            "attachmentIds": []
+          },
+          {
+            "id": "message.target",
+            "senderId": "account.remote",
+            "text": "Can you send the trail map?",
+            "attachmentIds": []
+          }
+        ],
+        "composer": {
+          "text": "",
+          "focused": false
+        },
+        "viewport": {
+          "surface": "conversation",
+          "anchorMessageId": "message.target"
+        }
+      },
+      "layerIds": [
+        "ui.message/message.target/reaction"
+      ]
+    },
+    {
+      "id": "motion.reaction-attach.reaction-attached",
+      "kind": "reaction_attached",
+      "target": "message.target",
+      "layerIds": [
+        "ui.message/message.target/reaction"
+      ],
+      "frame": 49
+    }
+  ],
+  "cues": []
+}

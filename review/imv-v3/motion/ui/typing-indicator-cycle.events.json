@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 72
+  },
+  "initialUI": {
+    "conversationId": "thread.motion",
+    "messages": [
+      {
+        "id": "message.sent",
+        "senderId": "account.self",
+        "text": "Can you send the trail map?",
+        "attachmentIds": []
+      }
+    ],
+    "composer": {
+      "text": "",
+      "focused": false
+    },
+    "viewport": {
+      "surface": "conversation",
+      "anchorMessageId": "message.sent"
+    }
+  },
+  "events": [
+    {
+      "id": "motion.typing-indicator-cycle.thinking-visible",
+      "kind": "typing_indicator",
+      "target": "account.remote",
+      "frame": 8,
+      "uiState": {
+        "conversationId": "thread.motion",
+        "messages": [
+          {
+            "id": "message.sent",
+            "senderId": "account.self",
+            "text": "Can you send the trail map?",
+            "attachmentIds": []
+          }
+        ],
+        "composer": {
+          "text": "",
+          "focused": false
+        },
+        "viewport": {
+          "surface": "conversation",
+          "anchorMessageId": "message.sent"
+        }
+      },
+      "layerIds": [
+        "ui.typing"
+      ]
+    }
+  ],
+  "cues": []
+}

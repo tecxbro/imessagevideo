@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 72
+  },
+  "initialUI": null,
+  "events": [
+    {
+      "id": "motion.location-question-bridge.question-readable",
+      "kind": "message.readable",
+      "target": "held-question",
+      "frame": 0,
+      "layerIds": [
+        "held-question"
+      ]
+    },
+    {
+      "id": "motion.location-question-bridge.location-control-visible",
+      "kind": "location.suggest",
+      "target": "location-control",
+      "frame": 25,
+      "layerIds": [
+        "location-control"
+      ]
+    },
+    {
+      "id": "motion.location-question-bridge.location-control-pressed",
+      "kind": "location.select",
+      "target": "location-control",
+      "frame": 44,
+      "layerIds": [
+        "location-control"
+      ]
+    },
+    {
+      "id": "motion.location-question-bridge.map-visible",
+      "kind": "location.show",
+      "target": "shared-location-map",
+      "frame": 58,
+      "layerIds": [
+        "shared-location-map"
+      ]
+    }
+  ],
+  "cues": []
+}

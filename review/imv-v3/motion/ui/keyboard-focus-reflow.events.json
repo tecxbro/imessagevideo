@@ -1,0 +1,93 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 72
+  },
+  "initialUI": {
+    "conversationId": "thread.motion",
+    "messages": [
+      {
+        "id": "message.start",
+        "senderId": "account.remote",
+        "text": "Do you have a minute?",
+        "attachmentIds": []
+      },
+      {
+        "id": "message.local",
+        "senderId": "account.self",
+        "text": "Yes, go ahead.",
+        "attachmentIds": []
+      },
+      {
+        "id": "message.reply",
+        "senderId": "account.remote",
+        "text": "Here it is. Meet at the north gate.",
+        "attachmentIds": []
+      }
+    ],
+    "composer": {
+      "text": "",
+      "focused": false
+    },
+    "viewport": {
+      "surface": "conversation",
+      "anchorMessageId": "message.reply"
+    }
+  },
+  "events": [
+    {
+      "id": "motion.keyboard-focus-reflow.composer-focus",
+      "kind": "tap",
+      "target": "thread.motion",
+      "frame": 25,
+      "uiState": {
+        "conversationId": "thread.motion",
+        "messages": [
+          {
+            "id": "message.start",
+            "senderId": "account.remote",
+            "text": "Do you have a minute?",
+            "attachmentIds": []
+          },
+          {
+            "id": "message.local",
+            "senderId": "account.self",
+            "text": "Yes, go ahead.",
+            "attachmentIds": []
+          },
+          {
+            "id": "message.reply",
+            "senderId": "account.remote",
+            "text": "Here it is. Meet at the north gate.",
+            "attachmentIds": []
+          }
+        ],
+        "composer": {
+          "text": "",
+          "focused": true
+        },
+        "viewport": {
+          "surface": "conversation",
+          "anchorMessageId": "message.reply"
+        }
+      },
+      "layerIds": [
+        "ui.composer",
+        "ui.keyboard"
+      ]
+    },
+    {
+      "id": "motion.keyboard-focus-reflow.keyboard-ready",
+      "kind": "keyboard_show",
+      "target": "thread.motion",
+      "layerIds": [
+        "ui.composer",
+        "ui.keyboard"
+      ],
+      "frame": 44
+    }
+  ],
+  "cues": []
+}

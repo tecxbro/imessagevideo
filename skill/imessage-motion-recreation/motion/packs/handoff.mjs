@@ -35,16 +35,30 @@ export const entries = [{
   editable: ['heading','copy','reply','detail'],
   source,
   build(ctx) {
-    const {scene, events} = legacy(id, {copy: ctx.content.copy, duration: ctx.duration, fps: ctx.fps});
+    const {scene, events} = legacy(id, {copy: ctx.content.copy, duration: Math.max(2, ctx.duration), fps: ctx.fps});
     const phone = scene.layers[0];
     phone.children.find(layer => layer.id === 'phone-title').text = ctx.content.heading;
-    const replyNode = phone.children.find(layer => layer.id === 'phone-screen').children.find(layer => layer.id === 'reply');
-    if (replyNode) replyNode.children.find(layer => layer.id === 'reply-copy').text = ctx.content.reply;
+    const rows = phone.children.find(layer => layer.id === 'phone-screen').children;
+    const sent = rows.find(layer => layer.id === 'sent');
+    const reply = rows.find(layer => layer.id === 'reply');
+    if (sent) {
+      sent.keyframes.y.at(-1).value = 166;
+      reply.keyframes.y[0].value = 321;
+      reply.keyframes.y[1].value = 297;
+      reply.children.find(layer => layer.id === 'reply-copy').text = ctx.content.reply;
+    }
+    const speed = ctx.duration / scene.duration;
+    const retime = layer => {
+      for (const keys of Object.values(layer.keyframes ?? {}))
+        for (const key of keys) key.t *= speed;
+      for (const child of layer.children ?? []) retime(child);
+    };
+    retime(phone);
     ctx.stage.children.push(ctx.group('handoff-scale', -46, -2, [phone], {scaleX: .62, scaleY: .58}));
     ctx.label(ctx.content.detail);
     ctx.setInitialUI(conversationState(null, null, ''));
     for (const event of events) {
-      const fraction = event.frame / ctx.frameCount;
+      const fraction = event.kind === 'message_send' ? .44 : .70;
       if (event.kind === 'message_send')
         ctx.event('send', fraction, 'sent', 'message.send', conversationState(ctx.content.copy, null, ''));
       if (event.kind === 'message_arrival')
