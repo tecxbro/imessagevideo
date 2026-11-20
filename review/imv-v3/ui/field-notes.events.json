@@ -1,0 +1,1238 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 24,
+    "fpsDen": 1,
+    "frameCount": 272
+  },
+  "sampleRate": 48000,
+  "sampleCount": 544000,
+  "initialUI": {
+    "conversationId": "field",
+    "messages": [
+      {
+        "id": "plan",
+        "senderId": "jo",
+        "text": "Which road do we take for the night survey?",
+        "attachmentIds": [],
+        "reactions": {},
+        "edited": false,
+        "receipt": ""
+      },
+      {
+        "id": "reply",
+        "senderId": "eli",
+        "text": "I can send the access notes.",
+        "attachmentIds": [],
+        "reactions": {},
+        "edited": false,
+        "receipt": "",
+        "replyTo": "plan"
+      },
+      {
+        "id": "gate",
+        "senderId": "rana",
+        "text": "The usual gate is still locked. Try the trail beside the river.",
+        "attachmentIds": [],
+        "reactions": {},
+        "edited": false,
+        "receipt": ""
+      }
+    ],
+    "composer": {
+      "text": "",
+      "focused": false,
+      "keyboardVisible": false
+    },
+    "viewport": {
+      "surface": "conversation",
+      "anchorMessageId": "gate",
+      "scrollOffset": 0
+    },
+    "typingSenderIds": []
+  },
+  "events": [
+    {
+      "id": "field.list",
+      "kind": "overlay",
+      "target": "field",
+      "frame": 0,
+      "uiState": {
+        "conversationId": "field",
+        "messages": [
+          {
+            "id": "plan",
+            "senderId": "jo",
+            "text": "Which road do we take for the night survey?",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "reply",
+            "senderId": "eli",
+            "text": "I can send the access notes.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": "",
+            "replyTo": "plan"
+          },
+          {
+            "id": "gate",
+            "senderId": "rana",
+            "text": "The usual gate is still locked. Try the trail beside the river.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          }
+        ],
+        "composer": {
+          "text": "",
+          "focused": false,
+          "keyboardVisible": false
+        },
+        "viewport": {
+          "surface": "list",
+          "anchorMessageId": null,
+          "scrollOffset": 0
+        },
+        "typingSenderIds": []
+      },
+      "layerIds": [
+        "ui.overlay",
+        "ui.inbox"
+      ],
+      "sample": 0
+    },
+    {
+      "id": "field.search",
+      "kind": "overlay",
+      "target": "field",
+      "frame": 14,
+      "uiState": {
+        "conversationId": "field",
+        "messages": [
+          {
+            "id": "plan",
+            "senderId": "jo",
+            "text": "Which road do we take for the night survey?",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "reply",
+            "senderId": "eli",
+            "text": "I can send the access notes.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": "",
+            "replyTo": "plan"
+          },
+          {
+            "id": "gate",
+            "senderId": "rana",
+            "text": "The usual gate is still locked. Try the trail beside the river.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          }
+        ],
+        "composer": {
+          "text": "",
+          "focused": false,
+          "keyboardVisible": false
+        },
+        "viewport": {
+          "surface": "search",
+          "anchorMessageId": null,
+          "scrollOffset": 0
+        },
+        "typingSenderIds": []
+      },
+      "layerIds": [
+        "ui.overlay",
+        "ui.inbox"
+      ],
+      "sample": 28000
+    },
+    {
+      "id": "field.query",
+      "kind": "search.query",
+      "target": "field",
+      "frame": 29,
+      "uiState": {
+        "conversationId": "field",
+        "messages": [
+          {
+            "id": "plan",
+            "senderId": "jo",
+            "text": "Which road do we take for the night survey?",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "reply",
+            "senderId": "eli",
+            "text": "I can send the access notes.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": "",
+            "replyTo": "plan"
+          },
+          {
+            "id": "gate",
+            "senderId": "rana",
+            "text": "The usual gate is still locked. Try the trail beside the river.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          }
+        ],
+        "composer": {
+          "text": "",
+          "focused": false,
+          "keyboardVisible": false
+        },
+        "viewport": {
+          "surface": "search",
+          "anchorMessageId": null,
+          "scrollOffset": 0
+        },
+        "typingSenderIds": []
+      },
+      "layerIds": [
+        "ui.inbox.results",
+        "ui.inbox.chrome"
+      ],
+      "sample": 58000
+    },
+    {
+      "id": "field.open",
+      "kind": "overlay",
+      "target": "field",
+      "frame": 49,
+      "uiState": {
+        "conversationId": "field",
+        "messages": [
+          {
+            "id": "plan",
+            "senderId": "jo",
+            "text": "Which road do we take for the night survey?",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "reply",
+            "senderId": "eli",
+            "text": "I can send the access notes.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": "",
+            "replyTo": "plan"
+          },
+          {
+            "id": "gate",
+            "senderId": "rana",
+            "text": "The usual gate is still locked. Try the trail beside the river.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          }
+        ],
+        "composer": {
+          "text": "",
+          "focused": false,
+          "keyboardVisible": false
+        },
+        "viewport": {
+          "surface": "conversation",
+          "anchorMessageId": "gate",
+          "scrollOffset": 0
+        },
+        "typingSenderIds": []
+      },
+      "layerIds": [
+        "ui.overlay",
+        "ui.inbox"
+      ],
+      "sample": 98000
+    },
+    {
+      "id": "field.focus",
+      "kind": "focus",
+      "target": "field",
+      "frame": 65,
+      "uiState": {
+        "conversationId": "field",
+        "messages": [
+          {
+            "id": "plan",
+            "senderId": "jo",
+            "text": "Which road do we take for the night survey?",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "reply",
+            "senderId": "eli",
+            "text": "I can send the access notes.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": "",
+            "replyTo": "plan"
+          },
+          {
+            "id": "gate",
+            "senderId": "rana",
+            "text": "The usual gate is still locked. Try the trail beside the river.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          }
+        ],
+        "composer": {
+          "text": "",
+          "focused": true,
+          "keyboardVisible": true
+        },
+        "viewport": {
+          "surface": "conversation",
+          "anchorMessageId": "gate",
+          "scrollOffset": 0
+        },
+        "typingSenderIds": []
+      },
+      "layerIds": [
+        "ui.composer",
+        "ui.keyboard"
+      ],
+      "sample": 130000
+    },
+    {
+      "id": "field.suggested",
+      "kind": "suggestion",
+      "target": "field",
+      "frame": 74,
+      "uiState": {
+        "conversationId": "field",
+        "messages": [
+          {
+            "id": "plan",
+            "senderId": "jo",
+            "text": "Which road do we take for the night survey?",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "reply",
+            "senderId": "eli",
+            "text": "I can send the access notes.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": "",
+            "replyTo": "plan"
+          },
+          {
+            "id": "gate",
+            "senderId": "rana",
+            "text": "The usual gate is still locked. Try the trail beside the river.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          }
+        ],
+        "composer": {
+          "text": "",
+          "focused": true,
+          "keyboardVisible": true
+        },
+        "viewport": {
+          "surface": "conversation",
+          "anchorMessageId": "gate",
+          "scrollOffset": 0
+        },
+        "typingSenderIds": []
+      },
+      "layerIds": [
+        "ui.suggestion"
+      ],
+      "sample": 148000
+    },
+    {
+      "id": "field.press",
+      "kind": "suggestion",
+      "target": "field",
+      "frame": 86,
+      "uiState": {
+        "conversationId": "field",
+        "messages": [
+          {
+            "id": "plan",
+            "senderId": "jo",
+            "text": "Which road do we take for the night survey?",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "reply",
+            "senderId": "eli",
+            "text": "I can send the access notes.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": "",
+            "replyTo": "plan"
+          },
+          {
+            "id": "gate",
+            "senderId": "rana",
+            "text": "The usual gate is still locked. Try the trail beside the river.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          }
+        ],
+        "composer": {
+          "text": "",
+          "focused": true,
+          "keyboardVisible": true
+        },
+        "viewport": {
+          "surface": "conversation",
+          "anchorMessageId": "gate",
+          "scrollOffset": 0
+        },
+        "typingSenderIds": []
+      },
+      "layerIds": [
+        "ui.suggestion"
+      ],
+      "sample": 172000
+    },
+    {
+      "id": "field.dismiss",
+      "kind": "suggestion",
+      "target": "field",
+      "frame": 96,
+      "uiState": {
+        "conversationId": "field",
+        "messages": [
+          {
+            "id": "plan",
+            "senderId": "jo",
+            "text": "Which road do we take for the night survey?",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "reply",
+            "senderId": "eli",
+            "text": "I can send the access notes.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": "",
+            "replyTo": "plan"
+          },
+          {
+            "id": "gate",
+            "senderId": "rana",
+            "text": "The usual gate is still locked. Try the trail beside the river.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          }
+        ],
+        "composer": {
+          "text": "",
+          "focused": false,
+          "keyboardVisible": false
+        },
+        "viewport": {
+          "surface": "conversation",
+          "anchorMessageId": "gate",
+          "scrollOffset": 0
+        },
+        "typingSenderIds": []
+      },
+      "layerIds": [
+        "ui.suggestion"
+      ],
+      "sample": 192000
+    },
+    {
+      "id": "field.photos",
+      "kind": "send",
+      "target": "photos",
+      "frame": 108,
+      "uiState": {
+        "conversationId": "field",
+        "messages": [
+          {
+            "id": "plan",
+            "senderId": "jo",
+            "text": "Which road do we take for the night survey?",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "reply",
+            "senderId": "eli",
+            "text": "I can send the access notes.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": "",
+            "replyTo": "plan"
+          },
+          {
+            "id": "gate",
+            "senderId": "rana",
+            "text": "The usual gate is still locked. Try the trail beside the river.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "photos",
+            "senderId": "eli",
+            "text": "",
+            "attachmentIds": [
+              "north",
+              "south"
+            ],
+            "reactions": {},
+            "edited": false,
+            "receipt": "",
+            "page": 0
+          }
+        ],
+        "composer": {
+          "text": "",
+          "focused": false,
+          "keyboardVisible": false
+        },
+        "viewport": {
+          "surface": "conversation",
+          "anchorMessageId": "photos",
+          "scrollOffset": 0
+        },
+        "typingSenderIds": []
+      },
+      "layerIds": [
+        "ui.message/photos"
+      ],
+      "sample": 216000
+    },
+    {
+      "id": "field.swipe",
+      "kind": "media.page",
+      "target": "photos",
+      "frame": 130,
+      "uiState": {
+        "conversationId": "field",
+        "messages": [
+          {
+            "id": "plan",
+            "senderId": "jo",
+            "text": "Which road do we take for the night survey?",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "reply",
+            "senderId": "eli",
+            "text": "I can send the access notes.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": "",
+            "replyTo": "plan"
+          },
+          {
+            "id": "gate",
+            "senderId": "rana",
+            "text": "The usual gate is still locked. Try the trail beside the river.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "photos",
+            "senderId": "eli",
+            "text": "",
+            "attachmentIds": [
+              "north",
+              "south"
+            ],
+            "reactions": {},
+            "edited": false,
+            "receipt": "",
+            "page": 1
+          }
+        ],
+        "composer": {
+          "text": "",
+          "focused": false,
+          "keyboardVisible": false
+        },
+        "viewport": {
+          "surface": "conversation",
+          "anchorMessageId": "photos",
+          "scrollOffset": 0
+        },
+        "typingSenderIds": []
+      },
+      "layerIds": [
+        "ui.message/photos/media"
+      ],
+      "sample": 260000
+    },
+    {
+      "id": "field.view",
+      "kind": "overlay",
+      "target": "photos",
+      "frame": 146,
+      "uiState": {
+        "conversationId": "field",
+        "messages": [
+          {
+            "id": "plan",
+            "senderId": "jo",
+            "text": "Which road do we take for the night survey?",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "reply",
+            "senderId": "eli",
+            "text": "I can send the access notes.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": "",
+            "replyTo": "plan"
+          },
+          {
+            "id": "gate",
+            "senderId": "rana",
+            "text": "The usual gate is still locked. Try the trail beside the river.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "photos",
+            "senderId": "eli",
+            "text": "",
+            "attachmentIds": [
+              "north",
+              "south"
+            ],
+            "reactions": {},
+            "edited": false,
+            "receipt": "",
+            "page": 1
+          }
+        ],
+        "composer": {
+          "text": "",
+          "focused": false,
+          "keyboardVisible": false
+        },
+        "viewport": {
+          "surface": "media",
+          "anchorMessageId": "photos",
+          "scrollOffset": 0,
+          "selection": [
+            "photos"
+          ]
+        },
+        "typingSenderIds": []
+      },
+      "layerIds": [
+        "ui.overlay",
+        "ui.inbox"
+      ],
+      "sample": 292000
+    },
+    {
+      "id": "field.close-photo",
+      "kind": "overlay",
+      "target": "photos",
+      "frame": 166,
+      "uiState": {
+        "conversationId": "field",
+        "messages": [
+          {
+            "id": "plan",
+            "senderId": "jo",
+            "text": "Which road do we take for the night survey?",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "reply",
+            "senderId": "eli",
+            "text": "I can send the access notes.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": "",
+            "replyTo": "plan"
+          },
+          {
+            "id": "gate",
+            "senderId": "rana",
+            "text": "The usual gate is still locked. Try the trail beside the river.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "photos",
+            "senderId": "eli",
+            "text": "",
+            "attachmentIds": [
+              "north",
+              "south"
+            ],
+            "reactions": {},
+            "edited": false,
+            "receipt": "",
+            "page": 1
+          }
+        ],
+        "composer": {
+          "text": "",
+          "focused": false,
+          "keyboardVisible": false
+        },
+        "viewport": {
+          "surface": "conversation",
+          "anchorMessageId": "photos",
+          "scrollOffset": 0
+        },
+        "typingSenderIds": []
+      },
+      "layerIds": [
+        "ui.overlay",
+        "ui.inbox"
+      ],
+      "sample": 332000
+    },
+    {
+      "id": "field.poll",
+      "kind": "receive",
+      "target": "poll",
+      "frame": 176,
+      "uiState": {
+        "conversationId": "field",
+        "messages": [
+          {
+            "id": "plan",
+            "senderId": "jo",
+            "text": "Which road do we take for the night survey?",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "reply",
+            "senderId": "eli",
+            "text": "I can send the access notes.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": "",
+            "replyTo": "plan"
+          },
+          {
+            "id": "gate",
+            "senderId": "rana",
+            "text": "The usual gate is still locked. Try the trail beside the river.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "photos",
+            "senderId": "eli",
+            "text": "",
+            "attachmentIds": [
+              "north",
+              "south"
+            ],
+            "reactions": {},
+            "edited": false,
+            "receipt": "",
+            "page": 1
+          },
+          {
+            "id": "poll",
+            "senderId": "rana",
+            "text": "",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          }
+        ],
+        "composer": {
+          "text": "",
+          "focused": false,
+          "keyboardVisible": false
+        },
+        "viewport": {
+          "surface": "conversation",
+          "anchorMessageId": "poll",
+          "scrollOffset": 0
+        },
+        "typingSenderIds": []
+      },
+      "layerIds": [
+        "ui.message/poll"
+      ],
+      "sample": 352000
+    },
+    {
+      "id": "field.vote",
+      "kind": "card.vote",
+      "target": "poll",
+      "frame": 200,
+      "uiState": {
+        "conversationId": "field",
+        "messages": [
+          {
+            "id": "plan",
+            "senderId": "jo",
+            "text": "Which road do we take for the night survey?",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "reply",
+            "senderId": "eli",
+            "text": "I can send the access notes.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": "",
+            "replyTo": "plan"
+          },
+          {
+            "id": "gate",
+            "senderId": "rana",
+            "text": "The usual gate is still locked. Try the trail beside the river.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "photos",
+            "senderId": "eli",
+            "text": "",
+            "attachmentIds": [
+              "north",
+              "south"
+            ],
+            "reactions": {},
+            "edited": false,
+            "receipt": "",
+            "page": 1
+          },
+          {
+            "id": "poll",
+            "senderId": "rana",
+            "text": "",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          }
+        ],
+        "composer": {
+          "text": "",
+          "focused": false,
+          "keyboardVisible": false
+        },
+        "viewport": {
+          "surface": "conversation",
+          "anchorMessageId": "poll",
+          "scrollOffset": 0
+        },
+        "typingSenderIds": []
+      },
+      "layerIds": [
+        "ui.message/poll/card"
+      ],
+      "sample": 400000
+    },
+    {
+      "id": "field.revise",
+      "kind": "edit",
+      "target": "reply",
+      "frame": 220,
+      "uiState": {
+        "conversationId": "field",
+        "messages": [
+          {
+            "id": "plan",
+            "senderId": "jo",
+            "text": "Which road do we take for the night survey?",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "reply",
+            "senderId": "eli",
+            "text": "I can send the updated access notes from the station. The footbridge has a clear path along the south railing.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": true,
+            "receipt": "",
+            "replyTo": "plan"
+          },
+          {
+            "id": "gate",
+            "senderId": "rana",
+            "text": "The usual gate is still locked. Try the trail beside the river.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "photos",
+            "senderId": "eli",
+            "text": "",
+            "attachmentIds": [
+              "north",
+              "south"
+            ],
+            "reactions": {},
+            "edited": false,
+            "receipt": "",
+            "page": 1
+          },
+          {
+            "id": "poll",
+            "senderId": "rana",
+            "text": "",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          }
+        ],
+        "composer": {
+          "text": "",
+          "focused": false,
+          "keyboardVisible": false
+        },
+        "viewport": {
+          "surface": "conversation",
+          "anchorMessageId": "poll",
+          "scrollOffset": 0
+        },
+        "typingSenderIds": []
+      },
+      "layerIds": [
+        "ui.message/reply"
+      ],
+      "sample": 440000
+    },
+    {
+      "id": "field.scroll",
+      "kind": "scroll",
+      "target": "field",
+      "frame": 226,
+      "uiState": {
+        "conversationId": "field",
+        "messages": [
+          {
+            "id": "plan",
+            "senderId": "jo",
+            "text": "Which road do we take for the night survey?",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "reply",
+            "senderId": "eli",
+            "text": "I can send the updated access notes from the station. The footbridge has a clear path along the south railing.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": true,
+            "receipt": "",
+            "replyTo": "plan"
+          },
+          {
+            "id": "gate",
+            "senderId": "rana",
+            "text": "The usual gate is still locked. Try the trail beside the river.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "photos",
+            "senderId": "eli",
+            "text": "",
+            "attachmentIds": [
+              "north",
+              "south"
+            ],
+            "reactions": {},
+            "edited": false,
+            "receipt": "",
+            "page": 1
+          },
+          {
+            "id": "poll",
+            "senderId": "rana",
+            "text": "",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          }
+        ],
+        "composer": {
+          "text": "",
+          "focused": false,
+          "keyboardVisible": false
+        },
+        "viewport": {
+          "surface": "conversation",
+          "anchorMessageId": "poll",
+          "scrollOffset": 28
+        },
+        "typingSenderIds": []
+      },
+      "layerIds": [
+        "ui.transcript"
+      ],
+      "sample": 452000
+    },
+    {
+      "id": "field.camera",
+      "kind": "camera",
+      "target": "field",
+      "frame": 238,
+      "layerIds": [
+        "ui.camera"
+      ],
+      "sample": 476000,
+      "uiState": {
+        "conversationId": "field",
+        "messages": [
+          {
+            "id": "plan",
+            "senderId": "jo",
+            "text": "Which road do we take for the night survey?",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "reply",
+            "senderId": "eli",
+            "text": "I can send the updated access notes from the station. The footbridge has a clear path along the south railing.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": true,
+            "receipt": "",
+            "replyTo": "plan"
+          },
+          {
+            "id": "gate",
+            "senderId": "rana",
+            "text": "The usual gate is still locked. Try the trail beside the river.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "photos",
+            "senderId": "eli",
+            "text": "",
+            "attachmentIds": [
+              "north",
+              "south"
+            ],
+            "reactions": {},
+            "edited": false,
+            "receipt": "",
+            "page": 1
+          },
+          {
+            "id": "poll",
+            "senderId": "rana",
+            "text": "",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          }
+        ],
+        "composer": {
+          "text": "",
+          "focused": false,
+          "keyboardVisible": false
+        },
+        "viewport": {
+          "surface": "conversation",
+          "anchorMessageId": "poll",
+          "scrollOffset": 28
+        },
+        "typingSenderIds": []
+      }
+    },
+    {
+      "id": "field.read",
+      "kind": "receipt",
+      "target": "photos",
+      "frame": 255,
+      "uiState": {
+        "conversationId": "field",
+        "messages": [
+          {
+            "id": "plan",
+            "senderId": "jo",
+            "text": "Which road do we take for the night survey?",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "reply",
+            "senderId": "eli",
+            "text": "I can send the updated access notes from the station. The footbridge has a clear path along the south railing.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": true,
+            "receipt": "",
+            "replyTo": "plan"
+          },
+          {
+            "id": "gate",
+            "senderId": "rana",
+            "text": "The usual gate is still locked. Try the trail beside the river.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "photos",
+            "senderId": "eli",
+            "text": "",
+            "attachmentIds": [
+              "north",
+              "south"
+            ],
+            "reactions": {},
+            "edited": false,
+            "receipt": "Read",
+            "page": 1
+          },
+          {
+            "id": "poll",
+            "senderId": "rana",
+            "text": "",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          }
+        ],
+        "composer": {
+          "text": "",
+          "focused": false,
+          "keyboardVisible": false
+        },
+        "viewport": {
+          "surface": "conversation",
+          "anchorMessageId": "poll",
+          "scrollOffset": 44
+        },
+        "typingSenderIds": []
+      },
+      "layerIds": [
+        "ui.message/photos/receipt"
+      ],
+      "sample": 510000
+    }
+  ],
+  "cues": [
+    {
+      "id": "field.photos.send",
+      "eventId": "field.photos",
+      "offsetSamples": 0,
+      "frame": 108,
+      "sample": 216000
+    },
+    {
+      "id": "field.vote.tap",
+      "eventId": "field.vote",
+      "offsetSamples": 0,
+      "frame": 200,
+      "sample": 400000
+    }
+  ]
+}

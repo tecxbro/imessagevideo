@@ -14,47 +14,68 @@
         "id": "early",
         "senderId": "morgan",
         "text": "I'm on the earlier train. Are you already near the station?",
-        "attachmentIds": []
+        "attachmentIds": [],
+        "reactions": {},
+        "edited": false,
+        "receipt": ""
       },
       {
         "id": "arrival",
         "senderId": "alex",
         "text": "Almost. The front of the station is under construction and the usual entrance is fenced off.",
-        "attachmentIds": []
+        "attachmentIds": [],
+        "reactions": {},
+        "edited": false,
+        "receipt": "Read"
       },
       {
         "id": "pickup",
         "senderId": "morgan",
         "text": "Use the side street by the newsstand. The little blue sign leads straight to the platform stairs.",
-        "attachmentIds": []
+        "attachmentIds": [],
+        "reactions": {},
+        "edited": false,
+        "receipt": ""
       },
       {
         "id": "check",
         "senderId": "alex",
         "text": "Got it. Which end of the platform should I aim for?",
-        "attachmentIds": []
+        "attachmentIds": [],
+        "reactions": {},
+        "edited": false,
+        "receipt": ""
       },
       {
         "id": "map",
         "senderId": "morgan",
         "text": "Far end, closest to the pedestrian crossing. There's a bench in front of the stairwell.",
-        "attachmentIds": []
+        "attachmentIds": [],
+        "reactions": {},
+        "edited": false,
+        "receipt": ""
       },
       {
         "id": "exit",
         "senderId": "morgan",
         "text": "I can walk up to the exit if it's crowded.",
-        "attachmentIds": []
+        "attachmentIds": [],
+        "reactions": {},
+        "edited": false,
+        "receipt": ""
       }
     ],
     "composer": {
       "text": "I'll meet you by the north exit.",
-      "focused": true
+      "focused": true,
+      "keyboardVisible": true
     },
     "viewport": {
       "surface": "conversation",
-      "anchorMessageId": "exit"
-    }
+      "anchorMessageId": "exit",
+      "scrollOffset": 0
+    },
+    "typingSenderIds": []
   },
   "events": [
     {
@@ -69,53 +90,77 @@
             "id": "early",
             "senderId": "morgan",
             "text": "I'm on the earlier train. Are you already near the station?",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
           },
           {
             "id": "arrival",
             "senderId": "alex",
             "text": "Almost. The front of the station is under construction and the usual entrance is fenced off.",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": "Read"
           },
           {
             "id": "pickup",
             "senderId": "morgan",
             "text": "Use the side street by the newsstand. The little blue sign leads straight to the platform stairs.",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
           },
           {
             "id": "check",
             "senderId": "alex",
             "text": "Got it. Which end of the platform should I aim for?",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
           },
           {
             "id": "map",
             "senderId": "morgan",
             "text": "Far end, closest to the pedestrian crossing. There's a bench in front of the stairwell.",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
           },
           {
             "id": "exit",
             "senderId": "morgan",
             "text": "I can walk up to the exit if it's crowded.",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
           },
           {
             "id": "meet",
             "senderId": "alex",
             "text": "I'll meet you by the north exit.",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
           }
         ],
         "composer": {
           "text": "",
-          "focused": true
+          "focused": true,
+          "keyboardVisible": true
         },
         "viewport": {
           "surface": "conversation",
-          "anchorMessageId": "meet"
-        }
+          "anchorMessageId": "meet",
+          "scrollOffset": 0
+        },
+        "typingSenderIds": []
       },
       "layerIds": [
         "ui.message/meet"
@@ -134,53 +179,77 @@
             "id": "early",
             "senderId": "morgan",
             "text": "I'm on the earlier train. Are you already near the station?",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
           },
           {
             "id": "arrival",
             "senderId": "alex",
             "text": "Almost. The front of the station is under construction and the usual entrance is fenced off.",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": "Read"
           },
           {
             "id": "pickup",
             "senderId": "morgan",
             "text": "Use the side street by the newsstand. The little blue sign leads straight to the platform stairs.",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
           },
           {
             "id": "check",
             "senderId": "alex",
             "text": "Got it. Which end of the platform should I aim for?",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
           },
           {
             "id": "map",
             "senderId": "morgan",
             "text": "Far end, closest to the pedestrian crossing. There's a bench in front of the stairwell.",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
           },
           {
             "id": "exit",
             "senderId": "morgan",
             "text": "I can walk up to the exit if it's crowded.",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
           },
           {
             "id": "meet",
             "senderId": "alex",
             "text": "I'll meet you by the north exit.",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": "Delivered"
           }
         ],
         "composer": {
           "text": "",
-          "focused": true
+          "focused": true,
+          "keyboardVisible": true
         },
         "viewport": {
           "surface": "conversation",
-          "anchorMessageId": "meet"
-        }
+          "anchorMessageId": "meet",
+          "scrollOffset": 0
+        },
+        "typingSenderIds": []
       },
       "layerIds": [
         "ui.message/meet/receipt"
@@ -199,53 +268,79 @@
             "id": "early",
             "senderId": "morgan",
             "text": "I'm on the earlier train. Are you already near the station?",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
           },
           {
             "id": "arrival",
             "senderId": "alex",
             "text": "Almost. The front of the station is under construction and the usual entrance is fenced off.",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": "Read"
           },
           {
             "id": "pickup",
             "senderId": "morgan",
             "text": "Use the side street by the newsstand. The little blue sign leads straight to the platform stairs.",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
           },
           {
             "id": "check",
             "senderId": "alex",
             "text": "Got it. Which end of the platform should I aim for?",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
           },
           {
             "id": "map",
             "senderId": "morgan",
             "text": "Far end, closest to the pedestrian crossing. There's a bench in front of the stairwell.",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
           },
           {
             "id": "exit",
             "senderId": "morgan",
             "text": "I can walk up to the exit if it's crowded.",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
           },
           {
             "id": "meet",
             "senderId": "alex",
             "text": "I'll meet you by the north exit.",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": "Delivered"
           }
         ],
         "composer": {
           "text": "",
-          "focused": true
+          "focused": true,
+          "keyboardVisible": true
         },
         "viewport": {
           "surface": "conversation",
-          "anchorMessageId": "meet"
-        }
+          "anchorMessageId": "meet",
+          "scrollOffset": 0
+        },
+        "typingSenderIds": [
+          "morgan"
+        ]
       },
       "layerIds": [
         "ui.typing"
@@ -264,59 +359,86 @@
             "id": "early",
             "senderId": "morgan",
             "text": "I'm on the earlier train. Are you already near the station?",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
           },
           {
             "id": "arrival",
             "senderId": "alex",
             "text": "Almost. The front of the station is under construction and the usual entrance is fenced off.",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": "Read"
           },
           {
             "id": "pickup",
             "senderId": "morgan",
             "text": "Use the side street by the newsstand. The little blue sign leads straight to the platform stairs.",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
           },
           {
             "id": "check",
             "senderId": "alex",
             "text": "Got it. Which end of the platform should I aim for?",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
           },
           {
             "id": "map",
             "senderId": "morgan",
             "text": "Far end, closest to the pedestrian crossing. There's a bench in front of the stairwell.",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
           },
           {
             "id": "exit",
             "senderId": "morgan",
             "text": "I can walk up to the exit if it's crowded.",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
           },
           {
             "id": "meet",
             "senderId": "alex",
             "text": "I'll meet you by the north exit.",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": "Delivered"
           },
           {
             "id": "reply",
             "senderId": "morgan",
             "text": "Perfect. I'll wait beside the bicycle rack.",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
           }
         ],
         "composer": {
           "text": "",
-          "focused": true
+          "focused": true,
+          "keyboardVisible": true
         },
         "viewport": {
           "surface": "conversation",
-          "anchorMessageId": "reply"
-        }
+          "anchorMessageId": "reply",
+          "scrollOffset": 0
+        },
+        "typingSenderIds": []
       },
       "layerIds": [
         "ui.message/reply"
@@ -335,65 +457,93 @@
             "id": "early",
             "senderId": "morgan",
             "text": "I'm on the earlier train. Are you already near the station?",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
           },
           {
             "id": "arrival",
             "senderId": "alex",
             "text": "Almost. The front of the station is under construction and the usual entrance is fenced off.",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": "Read"
           },
           {
             "id": "pickup",
             "senderId": "morgan",
             "text": "Use the side street by the newsstand. The little blue sign leads straight to the platform stairs.",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
           },
           {
             "id": "check",
             "senderId": "alex",
             "text": "Got it. Which end of the platform should I aim for?",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
           },
           {
             "id": "map",
             "senderId": "morgan",
             "text": "Far end, closest to the pedestrian crossing. There's a bench in front of the stairwell.",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
           },
           {
             "id": "exit",
             "senderId": "morgan",
             "text": "I can walk up to the exit if it's crowded.",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
           },
           {
             "id": "meet",
             "senderId": "alex",
             "text": "I'll meet you by the north exit.",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": "Delivered"
           },
           {
             "id": "reply",
             "senderId": "morgan",
             "text": "Perfect. I'll wait beside the bicycle rack.",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
           }
         ],
         "composer": {
           "text": "",
-          "focused": true
+          "focused": true,
+          "keyboardVisible": true
         },
         "viewport": {
           "surface": "context",
           "anchorMessageId": "reply",
+          "scrollOffset": 0,
           "selection": [
             "reply"
           ]
-        }
+        },
+        "typingSenderIds": []
       },
       "layerIds": [
-        "ui.overlay"
+        "ui.overlay",
+        "ui.inbox"
       ],
       "sample": 106000
     },
@@ -409,59 +559,88 @@
             "id": "early",
             "senderId": "morgan",
             "text": "I'm on the earlier train. Are you already near the station?",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
           },
           {
             "id": "arrival",
             "senderId": "alex",
             "text": "Almost. The front of the station is under construction and the usual entrance is fenced off.",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": "Read"
           },
           {
             "id": "pickup",
             "senderId": "morgan",
             "text": "Use the side street by the newsstand. The little blue sign leads straight to the platform stairs.",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
           },
           {
             "id": "check",
             "senderId": "alex",
             "text": "Got it. Which end of the platform should I aim for?",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
           },
           {
             "id": "map",
             "senderId": "morgan",
             "text": "Far end, closest to the pedestrian crossing. There's a bench in front of the stairwell.",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
           },
           {
             "id": "exit",
             "senderId": "morgan",
             "text": "I can walk up to the exit if it's crowded.",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
           },
           {
             "id": "meet",
             "senderId": "alex",
             "text": "I'll meet you by the north exit.",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": "Delivered"
           },
           {
             "id": "reply",
             "senderId": "morgan",
             "text": "Perfect. I'll wait beside the bicycle rack.",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {
+              "alex": "Love"
+            },
+            "edited": false,
+            "receipt": ""
           }
         ],
         "composer": {
           "text": "",
-          "focused": true
+          "focused": true,
+          "keyboardVisible": true
         },
         "viewport": {
           "surface": "conversation",
-          "anchorMessageId": "reply"
-        }
+          "anchorMessageId": "reply",
+          "scrollOffset": 0
+        },
+        "typingSenderIds": []
       },
       "layerIds": [
         "ui.message/reply/reaction"
@@ -480,59 +659,88 @@
             "id": "early",
             "senderId": "morgan",
             "text": "I'm on the earlier train. Are you already near the station?",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
           },
           {
             "id": "arrival",
             "senderId": "alex",
             "text": "Almost. The front of the station is under construction and the usual entrance is fenced off.",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": "Read"
           },
           {
             "id": "pickup",
             "senderId": "morgan",
             "text": "Use the side street by the newsstand. The little blue sign leads straight to the platform stairs.",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
           },
           {
             "id": "check",
             "senderId": "alex",
             "text": "Got it. Which end of the platform should I aim for?",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
           },
           {
             "id": "map",
             "senderId": "morgan",
             "text": "Far end, closest to the pedestrian crossing. There's a bench in front of the stairwell.",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
           },
           {
             "id": "exit",
             "senderId": "morgan",
             "text": "I can walk up to the exit if it's crowded.",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
           },
           {
             "id": "meet",
             "senderId": "alex",
             "text": "I'll meet you by the north exit.",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": "Delivered"
           },
           {
             "id": "reply",
             "senderId": "morgan",
             "text": "Perfect. I'll wait beside the bicycle rack.",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {
+              "alex": "Love"
+            },
+            "edited": false,
+            "receipt": ""
           }
         ],
         "composer": {
           "text": "",
-          "focused": true
+          "focused": true,
+          "keyboardVisible": true
         },
         "viewport": {
           "surface": "conversation",
-          "anchorMessageId": "exit"
-        }
+          "anchorMessageId": "exit",
+          "scrollOffset": 158
+        },
+        "typingSenderIds": []
       },
       "layerIds": [
         "ui.transcript"
@@ -555,59 +763,88 @@
             "id": "early",
             "senderId": "morgan",
             "text": "I'm on the earlier train. Are you already near the station?",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
           },
           {
             "id": "arrival",
             "senderId": "alex",
             "text": "Almost. The front of the station is under construction and the usual entrance is fenced off.",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": "Read"
           },
           {
             "id": "pickup",
             "senderId": "morgan",
             "text": "Use the side street by the newsstand. The little blue sign leads straight to the platform stairs.",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
           },
           {
             "id": "check",
             "senderId": "alex",
             "text": "Got it. Which end of the platform should I aim for?",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
           },
           {
             "id": "map",
             "senderId": "morgan",
             "text": "Far end, closest to the pedestrian crossing. There's a bench in front of the stairwell.",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
           },
           {
             "id": "exit",
             "senderId": "morgan",
             "text": "I can walk up to the exit if it's crowded.",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
           },
           {
             "id": "meet",
             "senderId": "alex",
             "text": "I'll meet you by the north exit.",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": "Delivered"
           },
           {
             "id": "reply",
             "senderId": "morgan",
             "text": "Perfect. I'll wait beside the bicycle rack.",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {
+              "alex": "Love"
+            },
+            "edited": false,
+            "receipt": ""
           }
         ],
         "composer": {
           "text": "",
-          "focused": true
+          "focused": true,
+          "keyboardVisible": true
         },
         "viewport": {
           "surface": "conversation",
-          "anchorMessageId": "exit"
-        }
+          "anchorMessageId": "exit",
+          "scrollOffset": 158
+        },
+        "typingSenderIds": []
       }
     },
     {
@@ -622,59 +859,88 @@
             "id": "early",
             "senderId": "morgan",
             "text": "I'm on the earlier train. Are you already near the station?",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
           },
           {
             "id": "arrival",
             "senderId": "alex",
             "text": "Almost. The front of the station is under construction and the usual entrance is fenced off.",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": "Read"
           },
           {
             "id": "pickup",
             "senderId": "morgan",
             "text": "Use the side street by the newsstand. The little blue sign leads straight to the platform stairs.",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
           },
           {
             "id": "check",
             "senderId": "alex",
             "text": "Got it. Which end of the platform should I aim for?",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
           },
           {
             "id": "map",
             "senderId": "morgan",
             "text": "Far end, closest to the pedestrian crossing. There's a bench in front of the stairwell.",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
           },
           {
             "id": "exit",
             "senderId": "morgan",
             "text": "I can walk up to the exit if it's crowded.",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
           },
           {
             "id": "meet",
             "senderId": "alex",
             "text": "I'll meet you by the north exit.",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": "Delivered"
           },
           {
             "id": "reply",
             "senderId": "morgan",
             "text": "Perfect. I'll wait beside the bicycle rack.",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {
+              "alex": "Love"
+            },
+            "edited": false,
+            "receipt": ""
           }
         ],
         "composer": {
           "text": "",
-          "focused": true
+          "focused": true,
+          "keyboardVisible": true
         },
         "viewport": {
           "surface": "conversation",
-          "anchorMessageId": "reply"
-        }
+          "anchorMessageId": "reply",
+          "scrollOffset": 0
+        },
+        "typingSenderIds": []
       },
       "layerIds": [
         "ui.transcript"
@@ -693,59 +959,88 @@
             "id": "early",
             "senderId": "morgan",
             "text": "I'm on the earlier train. Are you already near the station?",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
           },
           {
             "id": "arrival",
             "senderId": "alex",
             "text": "Almost. The front of the station is under construction and the usual entrance is fenced off.",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": "Read"
           },
           {
             "id": "pickup",
             "senderId": "morgan",
             "text": "Use the side street by the newsstand. The little blue sign leads straight to the platform stairs.",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
           },
           {
             "id": "check",
             "senderId": "alex",
             "text": "Got it. Which end of the platform should I aim for?",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
           },
           {
             "id": "map",
             "senderId": "morgan",
             "text": "Far end, closest to the pedestrian crossing. There's a bench in front of the stairwell.",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
           },
           {
             "id": "exit",
             "senderId": "morgan",
             "text": "I can walk up to the exit if it's crowded.",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
           },
           {
             "id": "meet",
             "senderId": "alex",
             "text": "I'll meet you by the north exit.",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": "Delivered"
           },
           {
             "id": "reply",
             "senderId": "morgan",
             "text": "Perfect. I'll wait beside the bicycle rack.",
-            "attachmentIds": []
+            "attachmentIds": [],
+            "reactions": {
+              "alex": "Love"
+            },
+            "edited": false,
+            "receipt": ""
           }
         ],
         "composer": {
           "text": "",
-          "focused": false
+          "focused": false,
+          "keyboardVisible": false
         },
         "viewport": {
           "surface": "conversation",
-          "anchorMessageId": "reply"
-        }
+          "anchorMessageId": "reply",
+          "scrollOffset": 0
+        },
+        "typingSenderIds": []
       },
       "layerIds": [
         "ui.composer",

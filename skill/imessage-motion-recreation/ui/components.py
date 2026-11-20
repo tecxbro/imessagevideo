@@ -18,6 +18,7 @@ LINE = "#ded1d0"
 GUTTER = 18
 HEADER = 78
 FOOTER = 14
+PALETTES = {"film-paper": (PLUM, LAVENDER), "film-ink": ("#295984", "#dfdede")}
 
 
 def rect(id, x, y, width, height, fill, radius=0, **extras):
@@ -45,7 +46,9 @@ def font_path(weight):
         ["fc-match", "-f", "%{family}\n%{file}", f"{FONT}:style={style}"], text=True
     )
     family, filename = result.split("\n", 1)
-    if FONT not in family.split(",") or not Path(filename).is_file():
+    if FONT not in family.split(",") or not Path(filename).is_file() or (
+        weight == 700 and "Bold" not in Path(filename).stem
+    ):
         raise ValueError(f"Install {FONT} regular and bold before compiling")
     return Path(filename)
 

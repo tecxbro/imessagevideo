@@ -1,0 +1,356 @@
+{
+  "reference": {
+    "file": "longpress-60fps.mp4",
+    "sha256": "8e8f3cf3194c5afbfd796056be5d37eb9e50b366f9931d02f092160b3d76f2ec",
+    "anchorFrame": 82,
+    "device": "iPhone 17 Pro simulator",
+    "os": "iOS 26.0 (23A343)",
+    "service": "SMS",
+    "logicalViewport": [
+      402,
+      874
+    ],
+    "comparisonPixelScale": 1
+  },
+  "method": "Decode without interpolating frames, scale each frame to 402 by 874, and read RGB. Measure the mean RGB channel value in logical-pixel rectangle x=25 to 64, y=440 to 507, inclusive, on the surrounding conversation backdrop. The visible milestones are labelled from a consecutive-frame strip.",
+  "render": {
+    "file": "context.mp4",
+    "sha256": "8b4c790ea9b9ad103ca43c750c0eb962c985f8210a443b5182df0598408eabc0",
+    "anchorFrame": 12,
+    "conversation": {
+      "version": 1,
+      "skin": "film-paper",
+      "conversationId": "station",
+      "title": "Morgan",
+      "service": "Messages \u00b7 Station pickup",
+      "participants": {
+        "alex": "Alex",
+        "morgan": "Morgan"
+      },
+      "localSenderId": "alex",
+      "display": {
+        "width": 402,
+        "height": 874
+      },
+      "fps": 24,
+      "frameCount": 65,
+      "initial": {
+        "focused": false,
+        "draft": "",
+        "messages": [
+          {
+            "id": "early",
+            "senderId": "morgan",
+            "text": "I'm on the earlier train. Are you already near the station?"
+          },
+          {
+            "id": "arrival",
+            "senderId": "alex",
+            "text": "Almost. The front of the station is under construction and the usual entrance is fenced off.",
+            "receipt": "Read"
+          },
+          {
+            "id": "pickup",
+            "senderId": "morgan",
+            "text": "Use the side street by the newsstand. The little blue sign leads straight to the platform stairs."
+          },
+          {
+            "id": "check",
+            "senderId": "alex",
+            "text": "Got it. Which end of the platform should I aim for?"
+          },
+          {
+            "id": "map",
+            "senderId": "morgan",
+            "text": "Far end, closest to the pedestrian crossing. There's a bench in front of the stairwell."
+          },
+          {
+            "id": "reminder",
+            "senderId": "morgan",
+            "text": "If the stairwell is crowded, the elevators across from the coffee stand also open directly onto the street."
+          },
+          {
+            "id": "ready",
+            "senderId": "alex",
+            "text": "Ready."
+          }
+        ]
+      },
+      "events": [
+        {
+          "id": "station.press",
+          "kind": "overlay",
+          "frame": 12,
+          "surface": "context",
+          "messageId": "ready"
+        }
+      ],
+      "cues": []
+    }
+  },
+  "comparison": {
+    "file": "context-motion-trace.mp4",
+    "sha256": "d733058c55480662f68040b87cad61cd9137cd30fdb9d61b85553c9cae9e8c89",
+    "frames": 51,
+    "fps": 60,
+    "anchorFrame": 12
+  },
+  "samples": [
+    {
+      "frame": 82,
+      "pts": "1383333/1000000",
+      "millisecondsFromOnset": 0.0,
+      "backdropMean": 252.0
+    },
+    {
+      "frame": 83,
+      "pts": "7/5",
+      "millisecondsFromOnset": 16.667,
+      "backdropMean": 250.0
+    },
+    {
+      "frame": 84,
+      "pts": "708333/500000",
+      "millisecondsFromOnset": 33.333,
+      "backdropMean": 250.0
+    },
+    {
+      "frame": 85,
+      "pts": "1433333/1000000",
+      "millisecondsFromOnset": 50.0,
+      "backdropMean": 244.0
+    },
+    {
+      "frame": 86,
+      "pts": "29/20",
+      "millisecondsFromOnset": 66.667,
+      "backdropMean": 236.0
+    },
+    {
+      "frame": 87,
+      "pts": "733333/500000",
+      "millisecondsFromOnset": 83.333,
+      "backdropMean": 229.67
+    },
+    {
+      "frame": 88,
+      "pts": "1483333/1000000",
+      "millisecondsFromOnset": 100.0,
+      "backdropMean": 222.67
+    },
+    {
+      "frame": 89,
+      "pts": "3/2",
+      "millisecondsFromOnset": 116.667,
+      "backdropMean": 215.67
+    },
+    {
+      "frame": 90,
+      "pts": "758333/500000",
+      "millisecondsFromOnset": 133.333,
+      "backdropMean": 206.67
+    },
+    {
+      "frame": 91,
+      "pts": "1533333/1000000",
+      "millisecondsFromOnset": 150.0,
+      "backdropMean": 203.67
+    },
+    {
+      "frame": 92,
+      "pts": "31/20",
+      "millisecondsFromOnset": 166.667,
+      "backdropMean": 202.33
+    },
+    {
+      "frame": 93,
+      "pts": "783333/500000",
+      "millisecondsFromOnset": 183.333,
+      "backdropMean": 199.67
+    },
+    {
+      "frame": 94,
+      "pts": "1583333/1000000",
+      "millisecondsFromOnset": 200.0,
+      "backdropMean": 198.67
+    },
+    {
+      "frame": 95,
+      "pts": "8/5",
+      "millisecondsFromOnset": 216.667,
+      "backdropMean": 198.67
+    },
+    {
+      "frame": 96,
+      "pts": "808333/500000",
+      "millisecondsFromOnset": 233.333,
+      "backdropMean": 197.67
+    },
+    {
+      "frame": 97,
+      "pts": "1633333/1000000",
+      "millisecondsFromOnset": 250.0,
+      "backdropMean": 197.67
+    },
+    {
+      "frame": 98,
+      "pts": "33/20",
+      "millisecondsFromOnset": 266.667,
+      "backdropMean": 197.67
+    },
+    {
+      "frame": 99,
+      "pts": "833333/500000",
+      "millisecondsFromOnset": 283.333,
+      "backdropMean": 197.67
+    },
+    {
+      "frame": 100,
+      "pts": "1683333/1000000",
+      "millisecondsFromOnset": 300.0,
+      "backdropMean": 197.67
+    },
+    {
+      "frame": 101,
+      "pts": "17/10",
+      "millisecondsFromOnset": 316.667,
+      "backdropMean": 197.67
+    },
+    {
+      "frame": 102,
+      "pts": "858333/500000",
+      "millisecondsFromOnset": 333.333,
+      "backdropMean": 197.66
+    },
+    {
+      "frame": 103,
+      "pts": "1733333/1000000",
+      "millisecondsFromOnset": 350.0,
+      "backdropMean": 197.63
+    },
+    {
+      "frame": 104,
+      "pts": "7/4",
+      "millisecondsFromOnset": 366.667,
+      "backdropMean": 197.36
+    },
+    {
+      "frame": 105,
+      "pts": "883333/500000",
+      "millisecondsFromOnset": 383.333,
+      "backdropMean": 197.26
+    },
+    {
+      "frame": 106,
+      "pts": "1783333/1000000",
+      "millisecondsFromOnset": 400.0,
+      "backdropMean": 197.16
+    },
+    {
+      "frame": 107,
+      "pts": "9/5",
+      "millisecondsFromOnset": 416.667,
+      "backdropMean": 197.14
+    },
+    {
+      "frame": 108,
+      "pts": "908333/500000",
+      "millisecondsFromOnset": 433.333,
+      "backdropMean": 197.13
+    },
+    {
+      "frame": 109,
+      "pts": "1833333/1000000",
+      "millisecondsFromOnset": 450.0,
+      "backdropMean": 197.13
+    },
+    {
+      "frame": 110,
+      "pts": "37/20",
+      "millisecondsFromOnset": 466.667,
+      "backdropMean": 197.16
+    },
+    {
+      "frame": 111,
+      "pts": "933333/500000",
+      "millisecondsFromOnset": 483.333,
+      "backdropMean": 197.18
+    },
+    {
+      "frame": 112,
+      "pts": "1883333/1000000",
+      "millisecondsFromOnset": 500.0,
+      "backdropMean": 197.18
+    },
+    {
+      "frame": 113,
+      "pts": "19/10",
+      "millisecondsFromOnset": 516.667,
+      "backdropMean": 197.18
+    },
+    {
+      "frame": 114,
+      "pts": "958333/500000",
+      "millisecondsFromOnset": 533.333,
+      "backdropMean": 197.18
+    },
+    {
+      "frame": 115,
+      "pts": "1933333/1000000",
+      "millisecondsFromOnset": 550.0,
+      "backdropMean": 197.18
+    },
+    {
+      "frame": 116,
+      "pts": "39/20",
+      "millisecondsFromOnset": 566.667,
+      "backdropMean": 197.18
+    },
+    {
+      "frame": 117,
+      "pts": "983333/500000",
+      "millisecondsFromOnset": 583.333,
+      "backdropMean": 197.17
+    },
+    {
+      "frame": 118,
+      "pts": "1983333/1000000",
+      "millisecondsFromOnset": 600.0,
+      "backdropMean": 197.17
+    },
+    {
+      "frame": 119,
+      "pts": "2",
+      "millisecondsFromOnset": 616.667,
+      "backdropMean": 197.16
+    },
+    {
+      "frame": 120,
+      "pts": "1008333/500000",
+      "millisecondsFromOnset": 633.333,
+      "backdropMean": 197.15
+    }
+  ],
+  "milestones": [
+    {
+      "sourceFrame": 82,
+      "label": "Target bubble begins to lift"
+    },
+    {
+      "sourceFrame": 83,
+      "label": "Backdrop begins to dim"
+    },
+    {
+      "sourceFrame": 90,
+      "label": "Context actions are visible"
+    },
+    {
+      "sourceFrame": 102,
+      "label": "Reaction marks are visible"
+    },
+    {
+      "sourceFrame": 117,
+      "label": "Target and both controls remain visible"
+    }
+  ]
+}

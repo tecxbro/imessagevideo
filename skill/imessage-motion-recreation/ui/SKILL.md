@@ -1,41 +1,62 @@
 ---
 name: imessage-film-interface
-description: Author an editable Messages-style conversation for a film and render it through the repository's shared engines.
+description: Author editable Messages-style interaction for films with one shared scene contract and five renderer routes.
 ---
 
 # Messages film interface
 
-Copy [the editable conversation](examples/conversation.json). Edit the title,
-participants, draft, messages and event frames in JSON. Compile after each
-edit. The adapter makes the message geometry, scroll, composer, keyboard,
-reaction, overlay and camera layers from that one input.
+Use this kit when a shot needs a Messages-style conversation, its surrounding
+surfaces, or a camera move over an editable interaction. First decide who acts,
+which message or control the action changes, and the frame where it starts.
+Give repeated actions separate event IDs and keep those IDs when editing the
+copy, camera or timing.
 
-Run from `skill/imessage-motion-recreation` with the
-[engine dependencies](../RUNNING.md), Pillow, fontconfig and DejaVu Sans regular
-and bold installed.
+## Start with a conversation
+
+Copy [the station conversation](examples/conversation.json) for text, send,
+typing, reaction and scroll. Copy [the field-notes conversation](examples/field-notes.json)
+with its assets for search, suggestion, multi-photo paging, a viewer and a
+poll. Use the [content and state contract](CONTRACT.md) to choose event kinds.
+Choose `film-paper` for plum/lavender bubbles or `film-ink` for blue/gray.
+Both share the same authored screen geometry and state.
+
+Run from `skill/imessage-motion-recreation` with Python 3.11+, Pillow,
+fontconfig and DejaVu Sans regular and bold. Install the
+[renderer requirements](../RUNNING.md) for the route you want.
 
 ```sh
 python3 -m ui.adapter ui/examples/conversation.json --out /tmp/station.scene.json
 python3 scripts/engines/render_pillow.py --scene /tmp/station.scene.json --out /tmp/station.mp4
 ```
 
-Expect 402×874, 136 frames at 24 fps. The draft clears and the outgoing
-message enters at frame 12. The remote reply enters at 44. A context menu
-opens at 53, then the reaction attaches to the reply at 64. The transcript
-scrolls at 80 and the camera starts moving at 87.
+Expect a silent 402×874 picture, 136 frames at 24 fps. Send clears the draft
+at frame 12 and the reply starts at 44. Context starts at 53. A reaction
+attaches to the reply at 64. Scroll starts at 80 and the camera starts at 87.
 
-Keep event IDs when editing words, timing or exports. To integrate from
-Python, import `compile_conversation` from `ui.adapter`. Pass the description
-dictionary and the input/output directories. Other languages can call the
-CLI and consume the same scene JSON. See [the contract](CONTRACT.md).
+For Python, import `compile_conversation` from `ui.adapter`. Pass a
+description dictionary and input and output directories for image path
+resolution. Editors using Node or shell can call the CLI and reuse the exact
+output scene. Edit the description and compile again to regenerate wrapping,
+extent, attachment placement and frame anchors.
 
-The available `film-paper` skin uses original visual styling. Crown, fonts,
-icons and colors are art direction for the film. See the
-[coverage map](COVERAGE.md) before describing motion as native.
+## Frame a shot
 
-## Use another renderer
+Set `display` to the logical interface size. The `canvas` sets the movie
+size and provides margin around the screen. For example, a 402×874 display on a
+488×968 canvas can push to 1.08× around screen center while retaining the
+whole interface. Use camera x/y offsets to select a crop on purpose. Camera
+changes move the entire screen, while `scroll` and `media.page` stay inside
+their own clips.
 
-Use the same compiled scene and change the output path per engine.
+A cue follows a visible event. Check the decoded frame before, at and after
+each action. Recheck the edited output if text wraps differently, if you
+replace media, or if the camera covers a control. Use the
+[coverage map](COVERAGE.md) and [evidence ledger](EVIDENCE.md) for supported
+behaviors, native comparisons and open evidence.
+
+## Export with another renderer
+
+Pass the same scene to any of the following.
 
 ```sh
 node scripts/engines/render.mjs --method html --scene /tmp/station.scene.json --out /tmp/station-html.mp4
@@ -44,7 +65,17 @@ node scripts/engines/render.mjs --method remotion --scene /tmp/station.scene.jso
 node scripts/engines/render_motion_canvas.mjs --scene /tmp/station.scene.json --out /tmp/station-motion-canvas.mp4
 ```
 
-Check consecutive decoded frames before, at and after the named action.
-Resolve `scene.timeline` with Observer's `contracts/timeline.py` on its branch
-or after integration. Sound can use the stable frame/sample anchors and link
-each cue to a visible event in the exported picture.
+Use `python3 contracts/timeline.py /tmp/station.scene.json` to resolve the
+shared event and cue map. If the Observer branch has yet to be integrated,
+run these commands from the skill directory to get its resolver locally.
+
+```sh
+git fetch origin refs/heads/codex-video-v3/observer
+git show FETCH_HEAD:skill/imessage-motion-recreation/contracts/timeline.py > /tmp/imv-timeline.py
+python3 /tmp/imv-timeline.py /tmp/station.scene.json
+```
+
+The event `station.send` resolves to frame 12 and audio sample 24000 at
+48 kHz. The [review exports](../../../review/imv-v3/ui/README.md) document
+decoded checks and hashes. The [source audit](SOURCES.md) records the pinned
+references and their reuse terms.

@@ -19,7 +19,7 @@ class Tracks:
         self.goals = {}
         self.parts = {}
 
-    def move(self, node, frame, duration, **targets):
+    def move(self, node, frame, duration, *, settle=False, **targets):
         """Sample new motion from the rendered value on the preceding frame."""
         for prop, goal in targets.items():
             if frame >= self.count:
@@ -46,8 +46,17 @@ class Tracks:
                 track.setdefault(0, baseline)
             for index in range(max(1, min(duration, self.count - frame))):
                 progress = min(1, (index + 1) / duration) if duration else 1
-                ease = 1 - (1 - progress) ** 3
-                track[frame + index] = round(start + (goal - start) * ease, 5)
+                distance = goal - start
+                if settle and duration > 3:
+                    progress = index / (duration - 1)
+                    peak = goal + max(-5, min(5, distance * .08))
+                    if progress <= .62:
+                        value = start + (peak - start) * (1 - (1 - progress / .62) ** 2)
+                    else:
+                        value = goal + (peak - goal) * ((1 - progress) / .38) ** 2
+                else:
+                    value = start + distance * (1 - (1 - progress) ** 3)
+                track[frame + index] = round(value, 5)
 
     def value(self, node, prop, frame):
         track = self.values.get((node["id"], prop), {})
