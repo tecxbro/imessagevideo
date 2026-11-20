@@ -9,6 +9,7 @@ from scipy.io import wavfile
 
 from media import RATE, dump, mux, sha256
 from project import mix
+from retime_control import stale_audio_control
 from verify import verify
 
 FIXTURE = Path(__file__).resolve().parent / "fixtures"
@@ -80,13 +81,8 @@ def run(output, selected_picture=None):
         corrupt(original, good, output / variant, manifest, variant)
         results[variant] = verify_export(original, output / variant)
     # Old timing against revised picture, then a new mix from the same editorial plan.
-    stale = output / "stale"
-    stale.mkdir(exist_ok=True)
-    shutil.copyfile(good / "mix.wav", stale / "mix.wav")
-    mux(corrected, stale / "mix.wav", stale / "mix.mp4")
-    dump(stale / "manifest.json", {**manifest,
-         "picture_sha256": sha256(corrected), "export_sha256": sha256(stale / "mix.mp4")})
-    results["stale"] = verify_export(corrected, stale)
+    results["stale"] = stale_audio_control(plan, corrected, good / "manifest.json",
+                                           output / "stale")
     mix(plan, corrected, output / "remapped")
     results["remapped"] = verify_export(corrected, output / "remapped")
 
