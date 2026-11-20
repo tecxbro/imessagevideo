@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "id": "qa-state-markers",
+  "classification": "fixture",
+  "source": {
+    "reference": "review/imv-v3/dataset/qa-state-markers.mp4",
+    "method": "Original FFmpeg-generated color bars and timed rectangles, encoded directly with libx264",
+    "captured_on": "2026-11-20"
+  },
+  "rights": {
+    "holder": "Dataset project fixture author",
+    "permission_ref": "review/imv-v3/dataset/fixture-rights.md",
+    "scope": "private-repo-and-team-analysis"
+  },
+  "device": {
+    "model": "Headless FFmpeg chart generator",
+    "os": "Debian GNU/Linux 13",
+    "build": "FFmpeg 7.1.5-0+deb13u1"
+  },
+  "interaction": {
+    "name": "QA marker transitions",
+    "before": "Slate marker is visible inside the chart.",
+    "action": "The marker is replaced with an amber block.",
+    "after": "The amber block gives way to a green block that holds through the last frame.",
+    "landmarks": [
+      {"name": "initial-marker", "frame": 0},
+      {"name": "amber-onset", "frame": 48},
+      {"name": "green-onset", "frame": 96},
+      {"name": "end-hold", "frame": 191}
+    ],
+    "layers": ["Fixed blue header and footer", "Fixed tan panel", "Independent slate, amber and green markers"]
+  },
+  "media_sha256": "bdb7de1c38d493bc0757175af610dfd3434255eb779589d49a8c57538e211b88",
+  "clock": {"time_base": "1/12288", "average_fps": "24/1"},
+  "range": {"start_frame": 0, "end_frame": 191, "start_pts": 0, "end_pts": 97792}
+}
