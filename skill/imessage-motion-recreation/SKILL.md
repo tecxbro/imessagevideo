@@ -1,9 +1,9 @@
 ---
-name: imessage-motion-recreation
+name: imessage-video-codex-trial
 description: Turn a reference film or a product brief into an editable messaging-motion project and finished film, or change one interaction, animation, or sound cue in an existing cut.
 ---
 
-# iMessage video
+# iMessage Video Codex Trial
 
 Start from the user's reference film, product brief, or existing project and
 the requested change. Work in a new project directory. Use reference footage to

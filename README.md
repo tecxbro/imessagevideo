@@ -105,7 +105,7 @@ Install the skill link if you want it discoverable from your local skill directo
 python3 tools/install_skill.py
 ```
 
-The default is a symlink at `~/.agents/skills/imessage-motion-recreation` pointing to this checkout. An already-correct link is accepted; a different existing destination is refused rather than overwritten. Keep the checkout available. [MAC-SETUP.md](MAC-SETUP.md) explains selecting a custom destination and opening a local Codex session.
+The installer makes one user-wide skill, `$imessage-video-codex-trial`, available from this checkout. It links `~/.agents/skills/imessage-video-codex-trial` to the skill folder and reuses any legacy link to that same folder. Keep the checkout available. [MAC-SETUP.md](MAC-SETUP.md) covers local Codex setup.
 
 ## Offline access versus rendering setup
 

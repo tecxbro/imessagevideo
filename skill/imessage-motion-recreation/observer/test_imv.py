@@ -7,9 +7,14 @@ import tempfile
 import unittest
 
 import imv
+from package import skill_files
 
 
 class EntryPointTests(unittest.TestCase):
+    def test_package_has_one_skill_entry_point(self):
+        entry_points = [path for path in skill_files(imv.ROOT) if Path(path).name == "SKILL.md"]
+        self.assertEqual(entry_points, ["SKILL.md"])
+
     def test_ordinary_requests(self):
         cases = (
             ("Rebuild this reference film with editable layers", "reference", "recreation"),
@@ -34,6 +39,7 @@ class EntryPointTests(unittest.TestCase):
             with self.subTest(request=request):
                 selected = imv.route(request, kind, None)
                 self.assertEqual(selected["route"], expected)
+                self.assertEqual(selected["workflow"], "specialist")
                 self.assertTrue(all((imv.ROOT / path).is_file() for path in selected["read"]))
 
     def test_rational_clock_and_bounds(self):

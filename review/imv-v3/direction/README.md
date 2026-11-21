@@ -6,7 +6,7 @@ text and agent reply on iMessage in an authored scenario.
 
 - [Finished film with Sound’s mix](the-moon-cue.mp4) and [editable sound project](sound/README.md)
 - [Editable picture source and render instructions](../../../skill/imessage-motion-recreation/direction/film/README.md)
-- [Direction skill](../../../skill/imessage-motion-recreation/direction/SKILL.md) and [ten optional film studies](../../../skill/imessage-motion-recreation/direction/studies/README.md)
+- [Direction skill](../../../skill/imessage-motion-recreation/direction/WORKFLOW.md) and [ten optional film studies](../../../skill/imessage-motion-recreation/direction/studies/README.md)
 - [Original rough cut](rough.mp4) and [locked silent picture](locked.mp4)
 - [Revision evidence](REVISION.md), [Keiki claim record](CLAIMS.md) and [source audit](SOURCES.md)
 - [Independent second-brief status](SECOND-BRIEF.md)

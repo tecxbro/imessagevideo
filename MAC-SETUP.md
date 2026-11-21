@@ -28,7 +28,7 @@ Choose a folder you intend to keep. For example:
 ```bash
 mkdir -p ~/Projects
 cd ~/Projects
-git clone https://github.com/tecxbro/imessagevideo.git
+git clone --branch codex-trial https://github.com/tecxbro/imessagevideo.git
 cd imessagevideo
 python3 tools/sync_library.py
 ```
@@ -87,18 +87,18 @@ Actual video decoding, seeking, audio switching and volume behavior still need c
 
 ## 4. Make the skill available to your local agent
 
-From the repository root:
+From the `codex-trial` repository root:
 
 ```bash
 python3 tools/install_skill.py
 ```
 
-The default creates `~/.agents/skills/imessage-motion-recreation` as a **symlink to this checkout's** `skill/imessage-motion-recreation` directory. It does not upload the skill or copy the full library into your prompt. An existing destination that already resolves to the same skill is accepted; a different existing destination is refused and preserved.
+The installer makes `$imessage-video-codex-trial` available across projects on your Mac. It links `~/.agents/skills/imessage-video-codex-trial` to this checkout's `skill/imessage-motion-recreation` directory. It reuses an older installation link to this same directory if one exists. Keep the checkout available and start a local Codex chat to select the skill.
 
 For an application that reads another skill directory, choose its supported destination explicitly:
 
 ```bash
-python3 tools/install_skill.py --dest /path/to/your/skills/imessage-motion-recreation
+python3 tools/install_skill.py --dest /path/to/your/skills/imessage-video-codex-trial
 ```
 
 Replace the example destination with the actual directory your application uses. Do not delete an existing skill just to make installation succeed; preserve it and choose/switch destinations deliberately. If you later move the checkout, update the link by using the helper's documented options or reinstalling to an appropriate unused destination. Do not remove the checkout while the link points into it.

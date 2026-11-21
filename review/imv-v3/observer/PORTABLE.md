@@ -32,8 +32,8 @@ Two focused examples include edited numeric or conversation inputs.
 | --- | --- | --- | --- |
 | The Moon Cue | [MP4](../direction/the-moon-cue.mp4) | [Picture-lock frames](evidence/direction-lock-strip.png) | [Editable project and audio ZIP](the-moon-cue-editable-project.zip) |
 | Train options | [Scored MP4](../recreate/train/scored.mp4) | [Full-cut contact sheet](evidence/recreation-contact-sheet.png) | [Editable project and audio ZIP](train-options-editable-project.zip) |
-| Workshop interaction | [MP4](interaction-edit/interaction.mp4) | [Consecutive frames](evidence/interaction-edit-strip.png) | [Conversation](interaction-edit/conversation.json), [events](interaction-edit/events.json), [Interaction skill](../../../skill/imessage-motion-recreation/ui/SKILL.md) |
-| Station interaction example | [MP4](../ui/station-pillow.mp4) | [Consecutive frames](../ui/station-pillow-consecutive.jpg) | [Interaction skill](../../../skill/imessage-motion-recreation/ui/SKILL.md) |
+| Workshop interaction | [MP4](interaction-edit/interaction.mp4) | [Consecutive frames](evidence/interaction-edit-strip.png) | [Conversation](interaction-edit/conversation.json), [events](interaction-edit/events.json), [Interaction skill](../../../skill/imessage-motion-recreation/ui/WORKFLOW.md) |
+| Station interaction example | [MP4](../ui/station-pillow.mp4) | [Consecutive frames](../ui/station-pillow-consecutive.jpg) | [Interaction skill](../../../skill/imessage-motion-recreation/ui/WORKFLOW.md) |
 
 The current Interaction adapter has a [keyboard-up send](../ui/sequences/send-keyboard.mp4),
 [Tapback and scroll](../ui/sequences/tapback-scroll.mp4),
@@ -41,7 +41,7 @@ The current Interaction adapter has a [keyboard-up send](../ui/sequences/send-ke
 [payment test mock](../ui/sequences/payment-mock.mp4). Open the
 [decoded frames](../ui/sequences/payment-mock-frames.jpg) and
 [pixel and timing checks](../ui/sequences/proof.json), and edit the
-[adapter inputs](../../../skill/imessage-motion-recreation/ui/SKILL.md).
+[adapter inputs](../../../skill/imessage-motion-recreation/ui/WORKFLOW.md).
 
 Extract either editable project ZIP into a working directory to change its
 timeline or sounds:
@@ -70,7 +70,7 @@ Its revised [PCM master](../sound/recreation/owner-retime/remapped/mix.wav),
 and [pass](../sound/recreation/owner-retime/remapped/verify.json) and
 [stale](../sound/recreation/owner-retime/stale.verify.json) reports are part of
 the media companion. From the release root, reproduce the remapped plan with
-the [Sound runtime](../../../skill/imessage-motion-recreation/sound/SKILL.md):
+the [Sound runtime](../../../skill/imessage-motion-recreation/sound/WORKFLOW.md):
 
 ```sh
 S=skill/imessage-motion-recreation/sound
