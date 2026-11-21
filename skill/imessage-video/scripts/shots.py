@@ -267,11 +267,77 @@ def render_shot(plan, shot, base, library, dest, issues):
             raise
 
 
+def production_state(doc, revision, results):
+    issues = {sid: r["issues"] for sid, r in results.items() if r["issues"]}
+    approved = doc.get("approval", {}).get("revision") == revision
+    required = doc["plan"]["confirmation"]
+    return {"revision": revision, "confirmation_required": required,
+            "approved": approved, "open_work": issues}
+
+
+def render_cut(doc, revision, results, destination):
+    """Join the reviewed picture files without re-encoding unaffected shots."""
+    from frames import inspect
+
+    state = production_state(doc, revision, results)
+    if state["confirmation_required"] and not state["approved"]:
+        raise ValueError("The current pitch must be approved before rendering the full cut.")
+    if state["open_work"]:
+        raise ValueError("Resolve the open work before rendering the full cut.")
+    if destination.exists() or destination.suffix.lower() != ".mp4":
+        raise ValueError("Choose a new .mp4 destination for the cut.")
+
+    plan = doc["plan"]
+    clock = Fraction(str(plan["fps"]))
+    destination.parent.mkdir(parents=True, exist_ok=True)
+    with tempfile.TemporaryDirectory(dir=destination.parent) as stage:
+        folder = Path(stage)
+        lines = ["ffconcat version 1.0"]
+        format_key = None
+        total = 0
+        for index, shot in enumerate(plan["shots"]):
+            preview = results[shot["id"]]["links"].get("preview")
+            if not preview or preview["identity"] in {"missing", "external link"}:
+                raise ValueError(f"{shot['id']}: attach the local rendered shot preview to the pitch.")
+            path = Path(preview["path"])
+            info, pts, end = inspect(path)
+            if info["sha256"] != preview["identity"]:
+                raise ValueError(f"{shot['id']}: the approved shot preview changed.")
+            if (len(pts) != shot["frames"] or end != shot["frames"] / clock
+                    or any(t != i / clock for i, t in enumerate(pts))):
+                raise ValueError(f"{shot['id']}: the reviewed picture must match the shot's frame clock.")
+            raw = subprocess.check_output([
+                "ffprobe", "-v", "error", "-show_entries",
+                "stream=codec_type,codec_name,profile,width,height,pix_fmt,time_base,sample_aspect_ratio",
+                "-of", "json", str(path),
+            ])
+            streams = json.loads(raw)["streams"]
+            if len(streams) != 1 or streams[0].get("codec_type") != "video":
+                raise ValueError(f"{shot['id']}: use a picture-only MP4 preview and mix sound against the assembled cut.")
+            if format_key is not None and streams[0] != format_key:
+                raise ValueError(f"{shot['id']}: render the reviewed shots with matching picture settings.")
+            format_key = streams[0]
+            name = f"shot-{index}.mp4"
+            (folder / name).symlink_to(path)
+            lines.append(f"file {name}")
+            total += len(pts)
+
+        manifest = folder / "shots.ffconcat"
+        manifest.write_text("\n".join(lines) + "\n", encoding="utf-8")
+        cut = folder / "cut.mp4"
+        subprocess.run(["ffmpeg", "-nostdin", "-v", "error", "-xerror", "-f", "concat", "-i", str(manifest),
+                        "-map", "0:v:0", "-c", "copy", "-movflags", "+faststart", str(cut)], check=True)
+        _, pts, end = inspect(cut)
+        if len(pts) != total or end != total / clock or any(t != i / clock for i, t in enumerate(pts)):
+            raise ValueError("Full cut changed the approved shot clock or ending.")
+        os.link(cut, destination)
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--library", type=Path, default=os.environ.get("IMESSAGE_VIDEO_MOTION_LIBRARY") or ROOT/"assets/library")
     sub = parser.add_subparsers(dest="operation", required=True)
-    for cmd in ("create", "pitch", "revise", "approve", "check", "render-shot"):
+    for cmd in ("create", "pitch", "revise", "approve", "check", "render-shot", "render-cut"):
         p = sub.add_parser(cmd)
         p.add_argument("input", type=Path)
         if cmd in {"revise", "render-shot"}:
@@ -281,7 +347,7 @@ def main():
         if cmd == "approve":
             p.add_argument("revision")
             p.add_argument("--response", required=True, help="the user's actual confirmation")
-        if cmd in {"create", "revise", "approve", "render-shot"}:
+        if cmd in {"create", "revise", "approve", "render-shot", "render-cut"}:
             p.add_argument("output", type=Path)
         if cmd == "pitch":
             p.add_argument("--out", type=Path)
@@ -313,11 +379,14 @@ def main():
             print(content, end="")
         return 0
     if cmd == "check":
-        issues = {sid: r["issues"] for sid, r in results.items() if r["issues"]}
-        approved = doc.get("approval", {}).get("revision") == revision
-        print(json.dumps({"revision": revision, "confirmation_required": plan["confirmation"],
-                          "approved": approved, "open_work": issues}, indent=2))
-        return int(args.for_production and (bool(issues) or (plan["confirmation"] and not approved)))
+        state = production_state(doc, revision, results)
+        print(json.dumps(state, indent=2))
+        return int(args.for_production and (bool(state["open_work"]) or
+                                            (state["confirmation_required"] and not state["approved"])))
+    if cmd == "render-cut":
+        render_cut(doc, revision, results, args.output.resolve())
+        print(args.output)
+        return 0
     if cmd in {"revise", "render-shot"}:
         matches = [s for s in plan["shots"] if s["id"] == args.shot]
         if not matches:

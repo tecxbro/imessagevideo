@@ -22,7 +22,8 @@ import frames
 ROOT = Path(__file__).resolve().parents[1]
 ENGINE = ROOT / 'assets/seed/runtime/scripts/engines/render_pillow.py'
 FRAMES = ROOT / 'scripts/frames.py'
-ENGINES = {'pillow': (ENGINE,), 'svg': (ENGINE.with_name('render_svg.mjs'), ENGINE.with_name('common.mjs'))}
+ENGINES = {'pillow': (ENGINE,), 'svg': tuple(ENGINE.with_name(name) for name in
+           ('render_svg.mjs', 'common.mjs', 'rasterize_svg.py'))}
 ID_PATTERN = re.compile(r'[a-z0-9][a-z0-9-]{0,79}')
 IMAGE_TYPES = {'.png': 'PNG', '.jpg': 'JPEG', '.jpeg': 'JPEG', '.webp': 'WEBP'}
 FONT_TYPES = {'.ttf', '.otf'}
@@ -175,6 +176,15 @@ def renderer_files(recipe):
     return ENGINES[name]
 
 
+def render_options(recipe):
+    if 'antialias' not in recipe:
+        return []
+    scale = recipe['antialias']
+    require(recipe.get('renderer', 'pillow') == 'pillow' and type(scale) is int and 1 <= scale <= 4,
+            'Antialias needs a Pillow scale of 1–4')
+    return ['--aa', str(scale)]
+
+
 def render(folder, recipe, overrides, replacements, out, project=None):
     with tempfile.TemporaryDirectory(prefix='motion-replay-') as temp:
         clean = Path(temp)
@@ -189,8 +199,11 @@ def render(folder, recipe, overrides, replacements, out, project=None):
         check_scene(scene, clean, recipe['assets'])
         write(clean/'scene.json',scene)
         files = renderer_files(recipe)
+        options = render_options(recipe)
         runner = ['node',str(files[0])] if recipe.get('renderer')=='svg' else [sys.executable,'-I',str(files[0])]
-        subprocess.run([*runner,'--scene',str(clean/'scene.json'),'--out',str(out)],cwd=clean,check=True,stdout=sys.stderr)
+        env = {**os.environ, 'IMESSAGE_VIDEO_PYTHON': sys.executable}
+        subprocess.run([*runner,'--scene',str(clean/'scene.json'),'--out',str(out), *options],
+                       cwd=clean,env=env,check=True,stdout=sys.stderr)
         if project:
             shutil.copytree(clean, project)
             runtime = project/'renderer'
@@ -199,7 +212,7 @@ def render(folder, recipe, overrides, replacements, out, project=None):
                 shutil.copyfile(file,runtime/file.name)
             write(project/'replay.json',{'renderer':recipe.get('renderer','pillow'),
                  'command':(['node'] if recipe.get('renderer')=='svg' else ['python3','-I']) +
-                    ['renderer/'+files[0].name, '--scene','scene.json','--out','render.mp4'],
+                    ['renderer/'+files[0].name, '--scene','scene.json','--out','render.mp4', *options],
                  'renderer_files':{f.name:digest(f) for f in files},'overrides':overrides,
                  'asset_replacements':{k:digest(file) for k,file in replacements.items()}})
 
@@ -236,6 +249,7 @@ def peak_changes(path, rois, meta):
 def validate_recipe(recipe, scene, root):
     slug(recipe['id'])
     renderer_files(recipe)
+    render_options(recipe)
     for name in ('title','description'):
         require(isinstance(recipe.get(name),str) and recipe[name].strip(), f'Missing {name}')
     for name in ('fits','avoid','moving','fixed','tags'):

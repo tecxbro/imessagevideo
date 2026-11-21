@@ -36,8 +36,18 @@ class DecisionExamples(unittest.TestCase):
         source=next(x for x in films if x['id']=='05-linq')
         linked=decide.catalog_coverage({'matches':[source]})
         rail=next(row for row in linked if row['id']=='photos-under-fixed-heading')
-        self.assertEqual(rail['source']['framesInclusive'],[1091,1111])
+        self.assertEqual(rail['source']['framesInclusive'],[1088,1134])
         self.assertTrue(Path(rail['preview']).is_file())
+
+    def test_directed_concert_goals_choose_distinct_gestures(self):
+        brief = 'Make an iMessage video about two friends getting concert tickets.'
+        self.assertTrue(decide.decision(brief)['question'])
+        for goal, motion in (('browse ticket options', 'photos-under-fixed-heading'),
+                             ('show which message I’m replying to', 'swipe-to-quote')):
+            with self.subTest(goal=goal):
+                result = decide.decision(brief, brief_ready=True, motion=goal)
+                self.assertEqual(result['next'], 'draft_shots_from_library')
+                self.assertEqual(result['motion_choices']['seed'][0]['id'], motion)
 
     def test_missing_motion_is_not_approved_from_a_low_quality_match(self):
         import tempfile

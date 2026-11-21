@@ -365,7 +365,7 @@ export const entries = [
     notice:'The next draft will reply to one specific earlier message.',
     fits:'An answer needs an explicit target in a busy conversation.',
     avoid:'A transcript-wide swipe to reveal timestamps never opens a quoted draft.',
-    intents:['Swipe right on one bubble to create a quoted reply','Pull a single message sideways then open its reply draft','Show which earlier message the next answer refers to'],
+    intents:['Swipe right on one bubble to create a quoted reply','Pull a single message sideways then open its reply draft','Show which earlier message the next answer refers to','Show which message I’m replying to'],
     editable:['heading','copy','reply','title'],
     defaults:{title:'Replying to this message'},
   }, ctx => {

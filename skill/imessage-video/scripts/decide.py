@@ -151,6 +151,9 @@ def decision(request, videos=(), donors=(), library=None, intent=None, scope=Non
                                'review_direction_with_user', 'choose_one_renderer', 'prove_hardest_shot', 'render_approved_cut']
         if not brief_ready:
             receipt['next'] = 'clarify_missing_brief' if not has_target else 'work_out_reference_role_and_brief'
+            if not has_target:
+                receipt['question'] = ('Do you have a reference, or should I start from the motion library? '
+                                       'What should the viewer understand from the main action?')
             receipt['guidance'] = ('Use known answers first. Ask only about a missing story decision. '
                                    'With a vague brief and no reference, offer the choice to supply one once; '
                                    'an empty answer or no reference proceeds to the director and saved library.')

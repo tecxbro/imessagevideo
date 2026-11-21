@@ -52,7 +52,7 @@ Render a short pilot covering entry, peak, settle and reading hold at the refere
 python3 scripts/frames.py "$REF" "$EXPORT" --out "$JOB/comparison" --require-structure-match --roi subject:X,Y,W,H --max-mae TOLERANCE
 ```
 
-The report includes every presented frame, timestamps, source/output tails, region errors and the worst pair. Inspect consecutive frames around errors and verify the audio independently. Set the error threshold from the visible event and a deliberately wrong control. Record the actual result, including any remaining difference. See [frame review](references/frame-review.md). Never use reference footage as filler in an independently authored result.
+The report includes every presented frame, timestamps, source/output tails, region errors and the worst pair. Inspect consecutive frames around errors. Add `--check-audio` for a complete reconstruction with source sound and listen to the final mux. Set the error threshold from the visible event and check deliberately delayed motion and a shortened ending. Record the actual result, including any remaining difference. See [frame review](references/frame-review.md). Never use reference footage as filler in an independently authored result.
 
 ## Direct and revise
 

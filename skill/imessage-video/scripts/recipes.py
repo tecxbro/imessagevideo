@@ -6,6 +6,7 @@ from functools import lru_cache
 import hashlib
 import json
 import mimetypes
+import os
 from pathlib import Path
 import shutil
 import subprocess
@@ -118,7 +119,7 @@ def render(scene, out, engine="pillow"):
     command = ["node", str(SVG_ENGINE)] if engine == "svg" else [sys.executable, str(ENGINE)]
     subprocess.run(
         [*command, "--scene", str(scene), "--out", str(out)],
-        stdout=sys.stderr, check=True,
+        env={**os.environ, "IMESSAGE_VIDEO_PYTHON": sys.executable}, stdout=sys.stderr, check=True,
     )
 
 

@@ -236,6 +236,11 @@ def compare(args, directory):
         write_pair(directory / "worst.png", a, b, i, label)
     offset = estimate_offset(source_signatures, output_signatures, args.shift_window)
     failures = []
+    audio = None
+    if getattr(args, 'check_audio', False):
+        from audio_review import compare as compare_audio
+        audio = compare_audio(*paths)
+        failures.extend(audio['failures'])
     if args.reject_detected_shift and (offset is None or offset["possible_constant_offset"]):
         failures.append("visual offset check is unavailable or a possible offset was detected")
     if args.require_structure_match and within_tolerance_issues:
@@ -247,7 +252,7 @@ def compare(args, directory):
     if args.max_mae is not None and (len(sp) != len(op) or not metrics or any(
             v["max_frame_mae"] > args.max_mae for v in metrics.values())):
         failures.append("native frame MAE is unavailable for one or more frames or exceeds --max-mae")
-    requested = any((args.require_structure_match, args.reject_detected_shift,
+    requested = any((args.require_structure_match, args.reject_detected_shift, audio is not None,
                      args.max_mae is not None, args.max_pts_error_ms is not None))
     return {
         "schema_version": 1, "inputs": {"source": src, "output": out}, "compared_frames": count if same_size else 0,
@@ -258,7 +263,7 @@ def compare(args, directory):
         "structure_match": not issues, "structure_issues": issues,
         "structure_within_tolerance": not within_tolerance_issues,
         "structure_tolerance_issues": within_tolerance_issues, "roi_xyxy": dict(args.roi),
-        "metrics": metrics, "possible_frame_shift": offset,
+        "metrics": metrics, "possible_frame_shift": offset, "audio": audio,
         "thresholds": {"max_mae": args.max_mae, "max_pts_error_ms": args.max_pts_error_ms,
                        "require_structure_match": args.require_structure_match, "reject_detected_shift": args.reject_detected_shift},
         "limits_passed": not failures if requested else None, "failures": failures,
@@ -283,6 +288,7 @@ def main():
     parser.add_argument("--max-mae", type=nonnegative, help="Maximum single-frame RGB MAE, 0–255, for full frame and every ROI")
     parser.add_argument("--max-pts-error-ms", type=nonnegative, help="Includes exclusive end and paired absolute PTS")
     parser.add_argument("--require-structure-match", action="store_true")
+    parser.add_argument("--check-audio", action="store_true", help="Compare presented audio coverage, cue timing and spectrum")
     parser.add_argument("--reject-detected-shift", action="store_true", help="Fail on a possible constant offset or unavailable offset check")
     parser.add_argument("--shift-window", type=int, default=5, help="Offset hint search radius in frames, 0 disables")
     args = parser.parse_args()

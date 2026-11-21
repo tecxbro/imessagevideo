@@ -16,7 +16,7 @@ const samplePhotos = Array.from({length: 4}, (_, i) =>
 export const defaults = Object.freeze({
   heading: 'Alpine field notes', copy: 'Can you send the trail map?',
   reply: 'Here it is. Meet at the north gate.', title: 'The north ridge',
-  detail: 'Field guide · Autumn', action: 'Open', photos: samplePhotos,
+  detail: 'Field guide · Autumn', action: 'Open', photos: samplePhotos, message: '',
 });
 
 const numberInRange = (value, min, max) => Number.isFinite(value) && value >= min && value <= max;

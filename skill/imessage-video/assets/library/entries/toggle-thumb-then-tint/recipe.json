@@ -67,7 +67,7 @@
     "observation": "In the native 160 × 80 pixel crop at (1320,542), the white capsule left edge moves from x=20 to x=64. It first moves at frame 297, reaches x=64 around 310, and the exposed green channel continues brightening through approximately 320.",
     "original_sha256": "82abf998073d8e09d6ac7e8e12e55d015aaff0dbda7527d04ce49e59cfaeca1a",
     "publisher": "Cash App (@CashApp)",
-    "renderer_review": "Same reference and regions, 36 frames. Worst-region frame MAE was 9.04 for Node SVG and 10.60 for Pillow. Both reproduced the thumb travel and later track brightening; the source has softer edges.",
+    "renderer_review": "Same reference and regions, 36 frames. Worst-region frame MAE was 9.04 for Node SVG and 10.60 for Pillow. Both reproduced the thumb travel and later track brightening; the source has softer edges. The CairoSVG fallback independently passed the retained 36-frame source crop and its negative control.",
     "start_frame": 290,
     "url": "https://x.com/CashApp/status/2103207687127466307"
   },

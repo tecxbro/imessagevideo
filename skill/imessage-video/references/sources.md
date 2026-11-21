@@ -27,7 +27,7 @@ The six archival identities derive from `video-sources.csv` and `upstream/LOCAL-
 
 ## Register newly verified coverage
 
-First promote each learned span through `scripts/learn.py`. Its recipe must identify the registered film by exact clip checksum or by `source.original_sha256` when it covers an excerpt. For a complete local reconstruction, run `scripts/frames.py` on the original and the independent rendered master; set the timing and visual tolerances for the project and review the resulting measurements. Place the editable project, master and report inside the chosen library. A project can be a self-contained editable archive.
+First promote each learned span through `scripts/learn.py`. Its recipe must identify the registered film by exact clip checksum or by `source.original_sha256` when it covers an excerpt. For a complete local reconstruction, run `scripts/frames.py` on the original and the independent rendered master. Set the timing and visual tolerances and add `--check-audio` if the source contains audio. Review the picture and listen to the mix. Place the editable project, master and report inside the chosen library. A project can be a self-contained editable archive.
 
 Create a named review receipt. Include either verified recipe IDs, a complete verified reconstruction, or both. Paths below are relative to the chosen library. The source hash is for the entire input film.
 

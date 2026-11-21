@@ -1,6 +1,9 @@
-const range = [36.366667, 37.066667];
+const range = [1088 / 30, 1134 / 30];
 const film = 'projects/05-linq-complete-v1/imessage-recreations/references/05-linq/source.mp4';
-const photoOffsets = [0, 22, 22, 47, 76, 109, 148, 148, 195, 252, 324, 417, 417, 542, 698, 846, 956, 956, 1035, 1094, 1140];
+// Native frame-to-frame photo translations once the lead-in camera move has settled.
+const photoOffsets = [0, 15, 32, 52, 74, 74, 99, 128, 161, 200, 200, 247, 304, 376,
+  469, 469, 594, 750, 898, 1008, 1008, 1087, 1146, 1192, 1229, 1229, 1259, 1283,
+  1303, 1320, 1320, 1334, 1346, 1356, 1364, 1364, 1370, 1375, 1379, 1382, 1382, 1384, 1385];
 
 function photoRail(ctx, count) {
   const {group, image, rect, colors, stage} = ctx;
@@ -31,8 +34,9 @@ export const entries = [
       'Slide pictures horizontally under a title that stays put',
       'Keep the shop name pinned as the storefront photos glide past',
       'Scroll images without moving the header',
+      'Browse ticket options on a card rail while the event name stays visible',
     ],
-    editable: ['heading', 'detail', 'photos', 'direction'],
+    editable: ['heading', 'detail', 'photos', 'direction', 'message'],
     example: 'motion/examples/photo-swipe.content.json',
     comparison: 'motion/PHOTO-SWIPE.md',
     photoCount: {min:2, max:12},
@@ -40,8 +44,8 @@ export const entries = [
       kind: 'measured-adaptation',
       ref: film,
       range,
-      framesInclusive: [1091, 1111],
-      note: 'Normalized Linq rail shift sampled by the earlier motion library at a23bfb2. Reproduced at a new size with authored artwork and a held header.',
+      framesInclusive: [1088, 1134],
+      note: 'Native Linq rail displacements after the entrance camera move, including the acceleration, deceleration and final hold. Replanted at a new size with independent imagery and a fixed heading.',
     },
     build(ctx) {
       const rail = photoRail(ctx, ctx.content.photos.length);
@@ -49,12 +53,20 @@ export const entries = [
       if (!['left', 'right'].includes(direction)) throw Error('The photo rail only supports horizontal travel');
       const travel = (ctx.content.photos.length - 1) * 308 + 296 - 440;
       if (travel === 0) throw Error('photos-under-fixed-heading needs two or more photos');
-      const {frameCount} = ctx;
-      const first = Math.round(frameCount * .27);
-      const span = Math.min(20, Math.round(frameCount * .47));
+      const {frameCount, fps} = ctx;
+      const lastSample = photoOffsets.length - 1;
+      const span = Math.min(Math.round(lastSample * fps / 30), Math.round(frameCount * .75));
+      const first = Math.round((frameCount - span) * .4);
       ctx.track(rail, 'x', photoOffsets.map((offset, i) => [
-        (first + i * span / 20) / frameCount, (direction === 'left' ? -offset / 1140 : offset / 1140 - 1) * travel,
+        (first + i * span / lastSample) / frameCount,
+        (direction === 'left' ? -offset / photoOffsets[lastSample] : offset / photoOffsets[lastSample] - 1) * travel,
       ]));
+      if (ctx.content.message) {
+        ctx.stage.children.push(ctx.group('pinned-message', 30, 258, [
+          ctx.rect('pinned-message-bg', 0, 0, 440, 34, ctx.colors.light, 13),
+          ctx.text('pinned-message-copy', ctx.content.message, 13, 7, 15, {fill: ctx.colors.ink}),
+        ], {clip: {x: 0, y: 0, width: 440, height: 34, radius: 13}}));
+      }
       ctx.label(ctx.content.detail);
       ctx.event('rail-start', (first + 1) / frameCount, rail.id, 'media.scroll');
       ctx.event('rail-settle', (first + span) / frameCount, rail.id, 'media.settle');

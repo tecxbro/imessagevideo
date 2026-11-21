@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-/** Render native-clock scene states to SVG; FFmpeg's librsvg decoder paints them. */
+/** Render native-clock scene states to SVG and rasterize them before encoding. */
 import {createHash} from 'node:crypto';
 import {spawnSync} from 'node:child_process';
 import {existsSync, mkdirSync, mkdtempSync, readFileSync, renameSync, rmSync, writeFileSync} from 'node:fs';
@@ -12,6 +12,7 @@ const types = {png:'image/png', jpg:'image/jpeg', jpeg:'image/jpeg', webp:'image
   ttf:'font/ttf', otf:'font/otf', woff:'font/woff', woff2:'font/woff2'};
 const layerTypes = new Set(['group', 'rect', 'circle', 'path', 'text', 'image']);
 const digest = buffer => createHash('sha256').update(buffer).digest('hex');
+const cairoRasterizer = fileURLToPath(new URL('./rasterize_svg.py', import.meta.url));
 
 function asset(src, directory) {
   const embedded = /^data:([^;,]+);base64,([\s\S]+)$/.exec(src);
@@ -89,7 +90,6 @@ function main() {
   const work = mkdtempSync(path.join(path.dirname(out), '.imv-svg-'));
   try {
     const env = prepare(scene, path.dirname(sceneFile), work);
-    const input = path.join(work, '%08d.svg');
     const frameFile = n => path.join(work, String(n).padStart(8,'0') + '.svg');
     const start = index ?? 0, end = index ?? timeline.count - 1;
     for (let frame = start; frame <= end; frame++) {
@@ -102,19 +102,32 @@ function main() {
       return;
     }
     const temporary = path.join(work, 'output' + ext);
+    const decoders = spawnSync('ffmpeg', ['-hide_banner', '-decoders'], {encoding:'utf8'});
+    if (decoders.error) throw decoders.error;
+    if (decoders.status !== 0) throw Error('Could not inspect the installed FFmpeg decoders.');
+    const directSVG = /\blibrsvg\b/.test(decoders.stdout);
+    if (!directSVG) {
+      const python = process.env.IMESSAGE_VIDEO_PYTHON || 'python3';
+      const cairo = spawnSync(python, ['-I', cairoRasterizer, work, String(start), String(end)],
+        {env, stdio:['ignore','ignore','inherit']});
+      if (cairo.error) throw cairo.error;
+      if (cairo.status !== 0) throw Error('SVG rasterization failed. Install CairoSVG and its Cairo system library.');
+    }
+    const input = path.join(work, directSVG ? '%08d.svg' : '%08d.png');
     const options = ['-hide_banner','-loglevel','error','-nostdin','-y','-framerate',timeline.rate,
-      '-threads','1','-c:v','librsvg','-start_number',String(start),'-i',input,'-frames:v',String(end-start+1),'-an'];
+      '-threads','1', ...(directSVG ? ['-c:v','librsvg'] : []),
+      '-start_number',String(start),'-i',input,'-frames:v',String(end-start+1),'-an'];
     if (ext === '.png') options.push('-threads','1','-c:v','png','-pix_fmt','rgba');
     else options.push('-c:v','libx264','-threads','2','-filter_threads','1','-vf','scale=out_color_matrix=bt709',
       '-colorspace','bt709','-color_primaries','bt709','-color_trc','bt709','-color_range','tv','-crf','16',
       '-pix_fmt',scene.width % 2 || scene.height % 2 ? 'yuv444p' : 'yuv420p','-movflags','+faststart');
     const ffmpeg = spawnSync('ffmpeg',[...options,temporary],{env,stdio:['ignore','ignore','inherit']});
     if (ffmpeg.error) throw ffmpeg.error;
-    if (ffmpeg.status !== 0) throw Error('SVG export failed; FFmpeg must include the librsvg decoder.');
+    if (ffmpeg.status !== 0) throw Error('SVG frame sequence encoding failed.');
     renameSync(temporary, out);
     if (ext === '.mp4') {
-      const implementation = [fileURLToPath(import.meta.url), fileURLToPath(new URL('./common.mjs',import.meta.url))];
-      const report = {method:'svg', sceneSha256:digest(sceneBytes), rendererFiles:Object.fromEntries(
+      const implementation = [fileURLToPath(import.meta.url), fileURLToPath(new URL('./common.mjs',import.meta.url)), cairoRasterizer];
+      const report = {method:'svg', rasterizer:directSVG ? 'librsvg' : 'cairosvg', sceneSha256:digest(sceneBytes), rendererFiles:Object.fromEntries(
         implementation.map(file => [path.basename(file),digest(readFileSync(file))])),
         width:scene.width,height:scene.height,frameRate:timeline.rate,frames:timeline.count,out};
       writeFileSync(out + '.render.json', JSON.stringify(report,null,2) + '\n');

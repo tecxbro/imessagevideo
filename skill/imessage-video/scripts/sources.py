@@ -263,6 +263,14 @@ def register(video_path, library_path=None, *, film_id, title, verification_path
         comparison = checked_artifact(library, reconstruction.get("comparison"))
         report = read_json(library / comparison["path"])
         check_comparison(report, digest, master["sha256"])
+        from audio_review import streams as audio_streams
+        source_audio = audio_streams(video_path)
+        audio = report.get("audio") or {}
+        if source_audio and (audio.get("limits_passed") is not True or audio.get("failures")
+                             or audio.get("source_stream_count") != len(source_audio)
+                             or audio.get("output_stream_count") != len(source_audio)
+                             or len(audio.get("tracks", [])) != len(source_audio)):
+            raise ValueError("A source with audio needs a passing --check-audio report on the full reconstruction")
         reconstruction = {"editable_project": project, "master": master, "comparison": comparison,
                           "verification": {"reviewed_by": receipt["reviewed_by"], "verdict": "pass"}}
     if not recipe_ids and not tokens and not reconstruction:

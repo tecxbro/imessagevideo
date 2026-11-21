@@ -17,19 +17,22 @@
         "Move the photos beneath a fixed heading",
         "Slide pictures horizontally under a title that stays put",
         "Keep the shop name pinned as the storefront photos glide past",
-        "Scroll images without moving the header"
+        "Scroll images without moving the header",
+        "Browse ticket options on a card rail while the event name stays visible"
       ],
       "editable": [
         "heading",
         "detail",
         "photos",
-        "direction"
+        "direction",
+        "message"
       ],
       "editableFields": {
         "heading": "text",
         "detail": "text",
         "photos": "array of local PNG, JPEG or WebP paths, relative to the content JSON",
-        "direction": "left, right, up or down; the photo rail supports left/right only"
+        "direction": "left or right",
+        "message": "optional stationary message beneath the photo rail"
       },
       "photoCount": {
         "min": 2,
@@ -39,25 +42,25 @@
         "kind": "measured-adaptation",
         "ref": "projects/05-linq-complete-v1/imessage-recreations/references/05-linq/source.mp4",
         "range": [
-          36.366667,
-          37.066667
+          36.266666666666666,
+          37.8
         ],
         "framesInclusive": [
-          1091,
-          1111
+          1088,
+          1134
         ],
-        "note": "Normalized Linq rail shift sampled by the earlier motion library at a23bfb2. Reproduced at a new size with authored artwork and a held header."
+        "note": "Native Linq rail displacements after the entrance camera move, including the acceleration, deceleration and final hold. Replanted at a new size with independent imagery and a fixed heading."
       },
       "events": [
         {
           "id": "motion.photos-under-fixed-heading.rail-start",
           "kind": "media.scroll",
-          "frame": 20
+          "frame": 13
         },
         {
           "id": "motion.photos-under-fixed-heading.rail-settle",
           "kind": "media.settle",
-          "frame": 39
+          "frame": 54
         }
       ],
       "picture": {
@@ -65,7 +68,7 @@
         "fpsDen": 1,
         "frameCount": 72
       },
-      "sha256": "adce3885b489d68f1b595c43d8dee4c5f4dbb1b02de8480ce351fe97b89a59dd",
+      "sha256": "fbd12bb6f99a35a45e901d053b6f466dd94791374a42cc038f9d4ff215e7b2d3",
       "implementation": "runtime/motion/packs/core.mjs",
       "preview": "previews/photos-under-fixed-heading.mp4"
     },
@@ -626,7 +629,8 @@
       "intents": [
         "Swipe right on one bubble to create a quoted reply",
         "Pull a single message sideways then open its reply draft",
-        "Show which earlier message the next answer refers to"
+        "Show which earlier message the next answer refers to",
+        "Show which message I’m replying to"
       ],
       "editable": [
         "heading",

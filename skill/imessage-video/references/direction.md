@@ -46,9 +46,10 @@ For Director, show the sequence, timing, decisive intermediate state, moving exa
 ```bash
 python3 scripts/shots.py approve project/v1.json REVISION_FROM_PITCH project/approved-v1.json --response "User's actual reply"
 python3 scripts/shots.py check project/approved-v1.json --for-production
+python3 scripts/shots.py render-cut project/approved-v1.json project/cut-v1.mp4
 ```
 
-A user can approve creative direction while a proof still needs work. The check reports both open motion work and the confirmation state. It compares the plan and local review files to the revision shown. External URLs identify links only. Save local evidence when its exact bytes matter. The user can confirm in natural language; the assistant records the reply and the revision that reply covered. Production requires separate final picture, sound and delivery review.
+A user can approve creative direction while a proof still needs work. The check reports both open motion work and the confirmation state. It compares the plan and local review files to the revision shown. External URLs identify links only. Save local evidence when its exact bytes matter. The user can confirm in natural language and the assistant records the reply and revision. For a cut of reviewed picture-only previews with matching encoding, `render-cut` enforces the current approval and joins the exact shot files without re-encoding. Inspect all cut boundaries and mix sound against the assembled picture if the film needs it.
 
 ## Revise a selected shot
 
