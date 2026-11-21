@@ -1,8 +1,0 @@
-{
-  "passed": true,
-  "qualityGateRejectedActualOpenHolds": true,
-  "packageGateRejectedCoverageOnlyFixture": true,
-  "notice": "The packaging fixture supplies only the30identity coverage rows, not fake completed media; it must reject known holds before media checks. Actual final30 validation remains pending.",
-  "packageMessage": "Known delivery holds must be resolved before packaging",
-  "qualityOutput": "Traceback (most recent call last):\n  File \"/workspace/imessage-recreations/scripts/build_final_quality.py\", line 67, in <module>\n    if __name__=='__main__':main()\n                            ^^^^^^\n  File \"/workspace/imessage-recreations/scripts/build_final_quality.py\", line 14, in main\n    if unresolved:raise ValueError('Known delivery holds remain: '+', '.join(q['reference']+'/'+q['method'] for q in unresolved))\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: Known delivery holds remain: 03-photon-mini/motion-canvas, 04-poke/motion-canvas, 05-linq/remotion\n"
-}

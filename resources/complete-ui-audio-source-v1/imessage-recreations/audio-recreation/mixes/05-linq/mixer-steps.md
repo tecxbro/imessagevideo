@@ -1,8 +1,0 @@
-# Linq mastering target correction
-
-1. Initial shared static normalization was safe at −19.05LUFS/−2.20dBTP, but missed the intended −16LUFS range. Measured new music has14.4LU dynamic range, with quiet opening sections and a much louder second half; simply increasing level would exceed the true-peak limit.
-2. Before retry, tested one linked six-channel detector/gain over musicL/R, SFXL/R and their sum. Four-times resampling,5ms lookahead,80ms release and explicit latency compensation gave exactly2,332,800 samples; stem-sum error was1.01e−14, with −16.63LUFS/−2.20dBTP. This retains13.8LU musical range without independently boosting SFX.
-3. Added a conditional path used only when a static true-peak cap misses the target by more than1LU. Other five current mixes do not meet that trigger and remain untouched with their exact source/config snapshots. An impulse acceptance test proves peak position is unchanged, sample count exact and linked stem addition preserved.
-4. Original safe-master source/config/report and former export hashes are preserved under iterations/static-master-metadata. Current report is held while final exports validate; it becomes pass only after actual PCM24/AAC checks.
-
-5. Final05 actual PCM24 master passes at−16.63LUFS/−2.20dBTP; AAC listening copy−16.69LUFS/−1.88dBTP. No extra codec gain was needed. Final sample count is exactly2,332,800; linked stems still sum within independent24-bit quantization. All six film groups now pass and36 actual export hashes/source/config snapshots were independently audited. No other accepted mix was changed by this repair.
