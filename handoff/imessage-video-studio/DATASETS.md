@@ -1,5 +1,7 @@
 # Where the footage, sound, images and code live
 
+[Download the full dataset ZIP](https://github.com/tecxbro/imessagevideo/archive/7eb234ab021f573fb8aa20eab08326f4e0e85b51.zip) or [open the dataset folder](https://github.com/tecxbro/imessagevideo/tree/dataset-pack). All 109 original packet files are on GitHub. The dataset folder also has a clone command that fetches the 99 additional launch films.
+
 Open [video-sources.csv](video-sources.csv) for 391 individually indexed records. It includes the original post or provenance, the pinned media URL, the packet or upstream location and the available file size and hashes. Some historic inventory rows are archive duplicates. The CSV’s native-ui paths describe the packet layout. The links take you directly to the corresponding upstream files.
 
 | Collection | What to open |
