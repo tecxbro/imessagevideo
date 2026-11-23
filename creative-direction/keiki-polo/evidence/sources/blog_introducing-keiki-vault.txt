@@ -1,0 +1,295 @@
+
+Keiki Vault: Face ID approvals for any tool your agent runs — Keiki Blog
+Skip to content
+Keiki
+Talk to a human
+Get started
+Announcements
+·
+October 26, 2026
+·
+6 min
+ read
+Keiki Vault: Face ID approvals for any tool your agent runs
+Keiki Vault puts a Face ID approval card in the iMessage thread before your agent sends an email, pays an invoice or runs any risky tool. Here's who it's for, how to set it up and the SDK code.
+Your agent is about to send an email as you. Or pay an invoice, or cancel a booking. In most agents, the safety check is a text that says "reply YES to confirm", and anyone holding the phone, or any message that looks like a yes, can approve it.
+Watch the demonstration
+Keiki Vault puts a Face ID button on every risky action your agent takes on iMessage.
+ The approval card opens in the thread and shows exactly what will happen. The person taps Approve, looks at their phone, and the action runs. A typed "yes" can't approve it.
+Why this matters
+An agent that can act needs a way to ask first. Asking in words works for low-stakes actions, but words are easy to fake. A forwarded message, a prompt injection in an email or a friend borrowing the phone can all produce a "yes".
+Vault replaces the typed yes with a signed one:
+Face ID, every time.
+ Approve and Decline are both protected by Face ID. Each decision is signed with a key kept on the device and checked by Keiki before anything runs.
+The card shows what will run.
+ Your tool describes the action as a card: the email with its recipient and subject, the refund with its amount, the invoice with its total. Keiki adds a footer naming the tool, so the person always knows what they're approving.
+The card updates in place.
+ After the tap, the same bubble changes to 
+Approved
+, 
+Declined
+ or 
+Didn't go through
+. There's no second message to read.
+A new phone has to prove itself.
+ The first approval from a contact enrolls their device key. If a different key shows up later, Keiki asks for a six-digit code that the contact sends from their own number before that key can decide.
+It works for any tool you build.
+ Vault isn't a fixed list of actions. If a tool asks for approval, Vault can draw its card.
+Who can use it
+Vault is for teams whose agents act for people on iMessage: personal assistants that send email and pay bills, support agents that issue refunds, and booking agents that change reservations.
+To use it, you need:
+A dedicated Keiki iMessage line.
+ Cards are sent only from a dedicated iMessage line bought through Keiki. Imported, shared and pool lines don't send cards.
+A 1:1 conversation.
+ Cards aren't sent in group chats or on other channels.
+Keiki Vault on the contact's iPhone.
+ Each person installs it once from the App Store.
+Approval cards don't need any add-on. Presentation cards, which show your own web page inside the thread, need the Dynamic UI add-on.
+How to get started
+Give your agent a dedicated iMessage line from the Keiki dashboard.
+Mark the tools that need a person's yes with 
+approval: 'ask'
+.
+Add 
+approvalProof: 'verified'
+ so only a Face ID decision can approve them.
+Optionally, describe each action as a 
+card
+, so people see an email or a receipt instead of raw arguments.
+Text your agent from your iPhone with Keiki Vault installed, and ask it to do something that needs approval.
+For SDK users
+Here's an email tool that only runs after a Face ID approval. Strings that start with 
+$.
+ are filled from the tool's arguments when the card is drawn:
+import
+ { Effect
+,
+ Schema } 
+from
+'effect'
+import
+ { defineTool } 
+from
+'@onkeiki/agents'
+export
+const
+sendEmail
+=
+defineTool
+({
+  name
+:
+'send_email'
+,
+  description
+:
+'Send an email for the user. Draft it in the thread first.'
+,
+  input
+:
+Schema
+.Struct
+({ to
+:
+Schema
+.String
+,
+ subject
+:
+Schema
+.String
+,
+ body
+:
+Schema
+.String })
+,
+  policy
+:
+ {
+    approval
+:
+'ask'
+,
+    approvalProof
+:
+'verified'
+,
+    card
+:
+ {
+      v
+:
+1
+,
+      blocks
+:
+ [
+        { kind
+:
+'header'
+,
+ title
+:
+'Send email'
+,
+ subtitle
+:
+'$.subject'
+ }
+,
+        { kind
+:
+'email'
+,
+ to
+:
+'$.to'
+,
+ subject
+:
+'$.subject'
+,
+ body
+:
+'$.body'
+ }
+,
+      ]
+,
+      theme
+:
+ { approveLabel
+:
+'Send'
+,
+ declineLabel
+:
+"Don't send"
+ }
+,
+    }
+,
+  }
+,
+execute
+:
+ (input) 
+=>
+Effect
+.promise
+(() 
+=>
+mail
+.send
+(input))
+,
+})
+mail
+ stands in for your own mail API. Add 
+sendEmail
+ to your agent's 
+tools
+ and run 
+kit.sync()
+. A card can use 
+header
+, 
+fields
+, 
+text
+, 
+email
+, 
+image
+, 
+note
+ and 
+divider
+ blocks, and 
+theme
+ sets the button labels. The card always has exactly two Face ID buttons and Keiki's footer; your card can't change those.
+If the card can't be sent, for example in a group chat, the tool doesn't run by default. If your tool has its own way to ask, such as a link to approve in the browser, set 
+approvalFallback: 'tool'
+ and it runs without Keiki's approval, so your flow decides:
+policy
+:
+ {
+  approval
+:
+'ask'
+,
+  approvalProof
+:
+'verified'
+,
+  approvalFallback
+:
+'tool'
+,
+}
+,
+Webhook tools
+Tools you register over the API take the same policy. For a webhook tool, 
+preflight: true
+ makes Keiki send the call once with 
+context.preflight: true
+ before asking, so your server can reject a bad call before anyone sees a card. When an approved call runs, 
+context.approval
+ tells your server who decided and how: 
+decidedVia
+ is 
+keiki_vault
+ for a Face ID decision.
+curl
+-X
+POST
+https://onkeiki.com/api/v1/developer/tools
+ \
+-H
+"Authorization: Bearer $KEIKI_API_KEY"
+ \
+-H
+"Content-Type: application/json"
+ \
+-d
+'{
+    "agent_id": "<agent-id>",
+    "name": "send_email",
+    "description": "Send an email for the user",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "to": { "type": "string" },
+        "subject": { "type": "string" },
+        "body": { "type": "string" }
+      },
+      "required": ["to", "subject", "body"]
+    },
+    "executionType": "webhook",
+    "webhookUrl": "https://mail.example/keiki/send",
+    "policy": {
+      "approval": "ask",
+      "approvalProof": "verified",
+      "preflight": true,
+      "card": {
+        "v": 1,
+        "blocks": [{ "kind": "email", "to": "$.to", "subject": "$.subject", "body": "$.body" }]
+      }
+    }
+  }'
+What's next
+Read 
+How to add human-in-the-loop to an iMessage agent
+ for when to ask and when to act, and the 
+Keiki Vault docs
+ for the full card schema.
+Published 
+October 26, 2026
+ · 
+Announcements
+Copy link
+Copied
+Copy link
+Keiki
+© 2026 Zero Email, Inc.

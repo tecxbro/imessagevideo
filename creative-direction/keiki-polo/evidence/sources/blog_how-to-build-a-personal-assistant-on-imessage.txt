@@ -1,0 +1,671 @@
+
+How to Build a Personal Assistant on iMessage — Keiki Blog
+Skip to content
+Keiki
+Talk to a human
+Get started
+Guides
+·
+October 26, 2026
+·
+15 min
+ read
+How to Build a Personal Assistant on iMessage
+Build an AI personal assistant on iMessage that books flights, handles email, gathers tax documents and runs errands, with or without code. Eleven steps, from the line to payments.
+It's Sunday night and you text: "find me the cheapest nonstop to Austin thursday morning, aisle seat, under $400." Four minutes later: "United 1142, 7:05am, aisle 14C, $312. Want me to book it?" You reply "yes." The confirmation number arrives a minute later, the flight is on your calendar, and your Monday 9am has moved to 11, because you'll be in the air.
+On Tuesday you text "my accountant needs my 1099s." It finds three in your inbox, sends them over, and tells you one is still missing from your brokerage. Your Wednesday starts with a short message listing your meetings, the bill that's due and a heads-up that it'll rain.
+That's a personal assistant on iMessage. There's no app to install and nothing new to learn. It lives in the thread you already open dozens of times a day, it remembers what you told it months ago, and it does real work in your accounts instead of just talking about it.
+Don't want to write code?
+ You don't have to. 
+Sign up for Keiki
+, start from the 
+personal assistant template
+, add an iMessage line and text it. In under five minutes you'll have an assistant that handles your email, calendar, reminders and a morning briefing, remembers you, browses the web, and asks before it acts. Everything below explains how it works, and how to build each part yourself when you want full control.
+In this guide you'll learn:
+What a personal assistant on iMessage can do, from flights to taxes
+Who already ships one, and what they have in common
+The seven parts every texted assistant needs
+How to set one up in minutes from a template
+How to build one step by step, from the line to payments
+This is one of the guides in 
+Building iMessage agents
+, our complete guide to building iMessage agents.
+What is a personal assistant on iMessage?
+It's an AI agent with its own phone number that works for one person. You text it the way you'd text a capable friend who has your calendar open and your card in their wallet. It reads what you send, including photos and voice notes, decides what to do, uses your email, calendar, the web and a payment card, and replies in the same thread.
+Two things separate it from a chatbot. It works between your messages, so it can check in on a schedule, watch for a price drop or keep going on a task after you've put your phone down. And it knows the difference between what it may do alone and what needs your yes first.
+iMessage is a natural home for it. It's where people already make plans, and a text needs no download, no login screen and no permission prompt.
+What can a personal assistant on iMessage do?
+More than most people expect. If you'd hand a task to a trusted human assistant with access to your inbox, your calendar, a browser and a card, a texted assistant can usually do it too, with your approval before it spends money or speaks for you.
+Travel.
+ Find and book flights and hotels, check you in, watch for gate changes, and rebook when a flight is cancelled.
+Email.
+ Triage the inbox overnight, flag what's urgent, draft replies in your voice and chase people who haven't answered.
+Calendar.
+ Find a time that works for four people, move meetings when plans change, and brief you before each call.
+Money.
+ Pay a bill, cancel a subscription you forgot about, chase a refund, and tell you where your money went this month.
+Taxes and paperwork.
+ Collect your 1099s and receipts from your inbox, remind you before estimated tax deadlines, and send your accountant what they asked for.
+Errands.
+ Order groceries, buy a gift, start a return, book the dentist, reserve a table for six.
+Home and family.
+ Track packages, fill in school forms, remember the plumber's name and when the filter needs changing.
+Memory.
+ "What was the wine we liked at Dana's?" three months later, answered in one line.
+The common thread: each task needs a mix of the same few abilities, which is why the build comes down to a handful of parts.
+Who already ships one
+Several products are a text away if you want to see the idea before you build it:
+Poke
+, from The Interaction Company of California, describes itself as an assistant that "lives in Apple Messages, Telegram, WhatsApp, and RCS." It reads and drafts email, schedules meetings and sets reminders. In 
+a customer story from its line provider, Linq
+, its co-founder put it simply: "We are treating iMessage and SMS as our first-party UI."
+Instinct
+ is an assistant you reach by text or phone call, with no new interface to learn. Coverage such as 
+this breakdown
+ describes it as invite-only and running on a persistent cloud computer that stays signed in to your connected services, so it can keep working between your messages.
+Muse
+ is Meta's personal agent, announced on September 8, 2026. 
+The Next Web reported
+ that each user gets an isolated virtual machine, and that a separate system pauses to ask before anything consequential.
+Grok Bot
+ from SpaceXAI isn't on iMessage itself. It's its own app that 
+9to5Mac describes
+ as "iMessage-style," with bots that run 
+routines on a shared cloud computer
+.
+Orchid
+ is an assistant that lives in your texts and handles your inbox, calendar and plans. It's also where we first shipped 
+swipeable carousels
+ on iMessage.
+They look different, but they share a shape: a thread, a memory, connected accounts, a schedule, a browser, a way to pay and a rule about when to ask.
+They also share a risk. In September, an Inc. columnist reported that Muse referenced his private iMessages after he says he declined to give it access. Meta 
+pushed back
+, saying the integration is opt-in and needs two switches turned on. Whoever is right about the settings, the lesson for builders is the same: an assistant with access to someone's life has to be clear about what it can read, and it must never be vague about how it knows something.
+The seven parts of a personal assistant
+Every texted assistant is built from the same seven parts:
+A line.
+ An iMessage number it sends from and receives on, online around the clock.
+Memory.
+ Durable facts about the person ("vegetarian", "Dana is my manager", "I fly United") recalled when they matter.
+Connected accounts.
+ Each person signs in to their own email and calendar, and the assistant uses that account and nobody else's.
+A schedule.
+ Briefings, reminders and watches that run without a message first.
+A browser.
+ For the large share of life that has no API: airline sites, utility portals, booking forms.
+A way to pay.
+ A card it can spend with, under limits you set, without ever seeing the number.
+Approvals.
+ A clear line between what it does alone and what waits for a yes.
+You can build each part yourself, and the step-by-step guide below explains what each one takes. Or you can start with all seven already in place.
+Set one up in minutes from a template
+If you just want a working assistant, start here. Keiki has two personal assistant templates:
+Orchid
+, an everyday assistant ported from 
+Orchid
+. It watches Gmail or Outlook for mail that matters, reminds you before calendar events, sends a morning digest, sets reminders, and hands you a live browser when only you can act. It remembers you between conversations.
+Instinct
+, an errand runner ported from Merit Systems' open-source 
+OpenInstinct
+. It orders the groceries, books the tickets, chases the refund and texts back the confirmation number. Each purchase waits for your approval of the exact total, and it never asks for a password over text.
+To set one up:
+Pick a template.
+ Open the 
+Orchid template
+ or the 
+Instinct template
+, give your assistant a name, and click 
+Create agent
+.
+Make it yours.
+ On the agent's page, edit its instructions in plain words: what it's called, how it should sound and what it must always ask about first.
+Add an iMessage line.
+ Open the agent's 
+Channels
+ and buy a dedicated iMessage line from Keiki.
+Text it.
+ Say hi from your phone. With Orchid, the first time you ask about your inbox or calendar, it texts you a link to sign in to your own Gmail, Google Calendar or Outlook, and asking for a morning briefing sets one up. Instinct connects no accounts: ask it to run an errand and it gets to work in the browser.
+If the dashboard asks for a Google OAuth app after you create Orchid, add its client ID and secret under 
+Settings → Secrets
+.
+That's the whole setup. The guide below shows how each part works, which is worth reading even if you start from a template, because it shows you what to change.
+How to build a personal assistant on iMessage, step by step
+Each step starts with the decision you have to make, whatever you build on, and then shows how we do it on Keiki, with code from our TypeScript SDK. You can do every step in the dashboard instead; the code just makes each choice visible.
+Step 1: Decide what it's for
+The fastest way to build a bad assistant is to start with "it does everything." Look at the list above and pick three jobs you'd actually hand off this week. A morning briefing, inbox triage and travel booking is a strong start. Each job tells you which parts you need: a briefing needs a calendar and a schedule, travel needs a browser and a card.
+Then write two short lists. The first is what the assistant may do on its own: read, summarize, remind, search, draft. The second is what it must ask about first: send anything as you, spend money, delete anything, accept an invitation. These lists become the rules in Step 3 and the approvals in Step 9, and they'll save you from the most common way personal assistants lose people's trust.
+Step 2: Get an iMessage line
+Apple has no public bot API for an ordinary phone number, so every assistant on iMessage runs on a real iMessage account somewhere. There are three realistic ways to get one:
+A Mac you run.
+ Sign a Mac in to an Apple ID and run a bridge such as 
+BlueBubbles
+. Fine for a personal project, but the Mac has to stay awake and signed in, and every update or power cut is an outage.
+A line provider.
+ Companies such as Linq and Photon run lines and give you an API and webhooks. You still build everything above the line: grouping bursts of messages, retries, delivery status and history.
+A platform that does both.
+ The line and the agent runtime come together, so the line is just a setting.
+Whichever you pick, treat the line with care. Apple publishes no sending rules, and lines that blast cold messages get flagged. Let people text the assistant first, keep conversations two-way, and never send a burst. Our 
+iMessage best practices
+ cover this in detail, and 
+Is there an iMessage API?
+ explains why the options look like this.
+On Keiki:
+ open the assistant's 
+Channels
+ and buy a dedicated iMessage line in a couple of clicks. We source lines from providers including Linq and Photon and run them for you, or you can import lines you already have. The same assistant can also answer on WhatsApp, SMS, Telegram, Slack and email, with the same memory and accounts, so people can reach it wherever they already text.
+Step 3: Write its personality and rules
+The system prompt is where the assistant gets a voice and where your two lists become rules. For a personal assistant, four things matter most:
+Sound like a text.
+ Short replies, no headings, no bullet-point essays. An assistant that sends four paragraphs gets muted.
+Know the time and the timezone.
+ "Tomorrow morning" means nothing without them.
+Spell out what needs a yes.
+ Copy your second list straight in.
+Be honest about access.
+ If it isn't sure how it knows something, it should say so. The Muse story is what happens when an assistant improvises an explanation.
+On Keiki:
+ describe the assistant in the dashboard or in TypeScript. Install the SDK and set your API key as 
+KEIKI_API_KEY
+:
+bun
+add
+@onkeiki/agents
+effect
+// src/assistant.ts
+import
+ { create } 
+from
+'@onkeiki/agents'
+const
+kit
+=
+create
+({
+  apiKey
+:
+process
+.
+env
+.
+KEIKI_API_KEY
+!
+,
+  name
+:
+'Personal Assistant'
+,
+  agent
+:
+ {
+    model
+:
+'google/gemini-3.5-flash'
+,
+    maxSteps
+:
+12
+,
+    historyLimit
+:
+40
+,
+systemPrompt
+:
+ ({ now
+,
+ context }) 
+=>
+ [
+'You are a personal assistant, texting one person over iMessage.'
+,
+'Write like a sharp friend: short, lowercase is fine, no bullet-point essays.'
+,
+'Ask before sending anything on their behalf, buying anything or deleting anything.'
+,
+'If you are not sure how you know something, say so. Never guess about access.'
+,
+`Current time: 
+${
+now
+.toISOString
+()
+}
+`
+,
+context
+.memorySummary 
+?
+`\nWhat you know about them:\n
+${
+context
+.memorySummary
+}
+`
+:
+''
+,
+    ]
+.join
+(
+'\n'
+)
+,
+    tools
+:
+ []
+,
+  }
+,
+})
+await
+kit
+.sync
+()
+Each step below adds one block to 
+agent
+.
+Step 4: Give it a memory
+An assistant needs two kinds of memory. The thread is short-term memory: the last few dozen messages, passed to the model on every turn. Long-term memory is a set of durable facts pulled out of conversations and recalled when they're relevant, so "I'm vegetarian" in March still shapes the restaurant it books in October, and "I always want an aisle seat" never has to be said twice.
+The usual pattern is to extract facts after each turn and retrieve the relevant ones before the next. The hard part is deciding what's worth keeping. Preferences, people, places, routines and account details ("my frequent flyer number is…") are. One-off moments ("I'm running late") mostly aren't. Sort facts into a few categories so retrieval stays focused, and keep each person's memory strictly apart from everyone else's.
+On Keiki:
+ turn on memory, and Keiki extracts and recalls facts per person. They arrive in 
+context.memorySummary
+, which the prompt in Step 3 already uses.
+memory
+:
+ {
+  enabled
+:
+true
+,
+  provider
+:
+'supermemory'
+,
+  autoRetrieve
+:
+true
+,
+  categories
+:
+ [
+'personal'
+,
+'work'
+,
+'preference'
+,
+'context'
+]
+,
+}
+,
+Step 5: Connect their accounts
+Email and calendar are where an assistant becomes indispensable, and where homemade ones most often cut corners. The rules are simple to state:
+Each person signs in to their own account.
+ Use OAuth, and send the sign-in link in the thread the first time it's needed.
+Tokens belong to that person.
+ Never share one across users, and never put one in the prompt or anywhere the model can read it.
+Start with what the jobs need.
+ Reading a calendar covers a morning briefing. Add sending and editing when a job calls for it.
+Notice when access is revoked.
+ People disconnect apps. Check that a token still works, and ask them to reconnect when it doesn't.
+On Keiki:
+ you declare a connection once, as an MCP server or an OpenAPI spec, and every person who texts the assistant authorizes their own. The assistant texts them a connect link the first time, the credential stays with that person, and the model never sees it.
+sandbox
+:
+ { enabled
+:
+true
+,
+ persistent
+:
+true
+ }
+,
+mcp
+:
+ {
+  enabled
+:
+true
+,
+  userConnections
+:
+ [
+    {
+      kind
+:
+'mcp'
+,
+      name
+:
+'notion'
+,
+      description
+:
+'Their Notion workspace: notes, to-dos and docs'
+,
+      endpoint
+:
+'https://mcp.notion.com/mcp'
+,
+    }
+,
+  ]
+,
+}
+,
+Gmail, Google Calendar and Outlook connect the same way, which is how the Orchid template works, with your OAuth app's client ID and secret stored as 
+developer secrets
+ and a health check that confirms each person's token is still alive. The 
+Lovable agent we built
+ uses this exact flow.
+Step 6: Let it text first
+An assistant that only answers is half an assistant. The morning briefing, the "your flight boards in two hours," the "that jacket dropped to $120": all of it comes from a scheduler that runs a prompt for each person at the right time. Three details make it welcome instead of annoying:
+Use their timezone.
+ 7:40 should mean 7:40 where they are.
+Stay quiet when there's nothing to say.
+ An empty day doesn't need a briefing.
+Remember the last run.
+ "Tell me if the price drops" only works if the assistant knows what the price was last time.
+Keep these messages rare and useful. Every proactive text spends a little of the person's attention, and on iMessage a little of the line's reputation.
+On Keiki:
+ loops run a prompt on a cron or interval schedule, quiet loops send nothing when there's nothing to report, and 
+diff_since_last_run
+ tells the assistant what changed. Define the briefing as a preset, so the prompt and schedule live in your code rather than in a tool call:
+loops
+:
+ {
+  enabled
+:
+true
+,
+  presets
+:
+ [
+    {
+      name
+:
+'morning_briefing'
+,
+      description
+:
+'A short text each weekday morning with the day ahead. Offer it when someone asks for a daily summary.'
+,
+      prompt
+:
+'Check today\'s calendar, anything urgent in their inbox, and the weather where they are. Send one short text: the first meeting, anything they owe someone, and one useful heads-up.'
+,
+      scheduleType
+:
+'cron'
+,
+      scheduleExpression
+:
+'40 7 * * 1-5'
+,
+      timezone
+:
+'America/New_York'
+,
+      quiet
+:
+true
+,
+    }
+,
+  ]
+,
+}
+,
+The preset's timezone is only a default. When the assistant creates the loop for someone, it can pass their own timezone, which pins 7:40 to where they are.
+People can also ask for their own: "text me every Sunday night with the week ahead" or "watch this flight and tell me if it's delayed" becomes a loop the assistant creates, lists and deletes on request.
+Step 7: Give it a browser
+Most of life has no API. Airline sites, utility portals, a restaurant's booking form, the page where you cancel a subscription: a personal assistant that can't use them can only tell you what to do. A real browser lets it do it.
+Use two tools. Search and page reading answer quick questions cheaply ("is the pharmacy open?"). A full browser session handles tasks with several steps, like comparing fares and filling in a booking. Run that browser in the cloud, never on the person's own machine, and give each task its own session.
+And keep one hard rule: the assistant never types the person's password or solves their CAPTCHA. When it reaches a login or a check only a human should pass, it hands the live page to the person, they finish that one step, and the assistant carries on.
+On Keiki:
+ turn on search and the cloud browser, which runs on 
+Browserbase
+. Each task gets a real browser session in the cloud, and with 
+handoff
+ on, the assistant texts the person a link to that live session when only they can act.
+scrape
+:
+true
+,
+browser
+:
+ { enabled
+:
+true
+,
+ handoff
+:
+true
+,
+ screenshotDelivery
+:
+true
+ }
+,
+Step 8: Let it pay
+Booking the flight is the point, not finding it. To finish a task that costs money, the assistant needs a way to pay, and this is the step to get right before anything else in this guide reaches real people.
+Three rules hold up:
+The model never sees a card number.
+ It asks to spend; something outside the model decides and pays.
+Every purchase is checked against limits.
+ A cap per purchase, daily and monthly caps, and an approval threshold above which a person decides.
+The card matches the purchase.
+ Ideally a one-time card for exactly the approved amount, so a mistake or a manipulated page can't spend more.
+On Keiki:
+ turn on the 
+agent wallet
+. Payments run on 
+Agentcard
+: the assistant creates a purchase intent, your policy authorizes it or parks it for a yes, and an approved intent becomes a one-time card for exactly that amount. The browser fills it in at checkout, and the model never sees the number. The Instinct template is built around this flow: "book it" gets an exact total back, and nothing is charged until the person approves it.
+Step 9: Put risky actions behind approval
+Payments aren't the only thing that should wait. Sort every tool into three buckets. Reads run on their own. Writes you can undo, like adding a to-do or a calendar hold, can usually run too. Anything that leaves the thread and can't be taken back, such as an email sent as the person, a cancelled reservation or an accepted invitation, waits for a yes.
+The pattern that works best over text is draft, then confirm. The assistant shows the email or the change in the thread, the person replies "send it," and only then does it happen. Log every action, so "why did you do that?" always has an answer.
+On Keiki:
+ set 
+approval: 'ask'
+ on a tool, and it won't run until the person approves. Every call is recorded in the conversation's trace.
+import
+ { Effect
+,
+ Schema } 
+from
+'effect'
+import
+ { defineTool } 
+from
+'@onkeiki/agents'
+const
+sendEmail
+=
+defineTool
+({
+  name
+:
+'send_email'
+,
+  description
+:
+'Send an email the user has approved. Draft it in the thread first.'
+,
+  input
+:
+Schema
+.Struct
+({ to
+:
+Schema
+.String
+,
+ subject
+:
+Schema
+.String
+,
+ body
+:
+Schema
+.String })
+,
+  policy
+:
+ { approval
+:
+'ask'
+ }
+,
+execute
+:
+ (input
+,
+ ctx) 
+=>
+Effect
+.promise
+(
+async
+ () 
+=>
+ {
+// Call your mail API here, scoped to the person texting (ctx.phone).
+return
+ { sent
+:
+true
+ }
+    })
+,
+})
+How to add human-in-the-loop to an iMessage agent
+ covers approvals and handoffs in depth.
+Step 10: Handle how people actually text
+People don't text in tidy single messages. They send "hey", "can you move my dentist" and "to thursday" as three texts. They add "actually friday" while the assistant is still answering. They send voice notes from the car and photos of a parking sign or a receipt. An assistant that answers each fragment separately feels broken, however smart the model is.
+So wait a moment after a message and gather a burst into one turn. Get messages that arrive mid-answer into the turn that's already running. Transcribe audio and describe images before the model sees them. And speak the thread's language: a thumbs-up tapback that says "done" beats a sentence that says the same thing.
+On Keiki:
+ steering gathers bursts and interrupts a turn when a new message lands, and media handling turns voice notes and photos into something the model can read. Tapbacks, threaded replies and 
+swipeable cards
+ work on iMessage lines, so a trip plan can arrive as a stack of cards instead of a wall of text.
+steering
+:
+ { debounceWindow
+:
+'2 seconds'
+,
+ midTurnStrategy
+:
+'interrupt'
+,
+ maxBatch
+:
+5
+ }
+,
+media
+:
+ {
+  audio
+:
+ { action
+:
+'transcribe'
+ }
+,
+  image
+:
+ { action
+:
+'describe'
+ }
+,
+}
+,
+Step 11: Ship it and read the transcripts
+Use it yourself for a week before anyone else does. You'll find the replies that run long, the reminders that fire at the wrong hour and the questions it confidently gets wrong. Read every conversation at first. Most fixes are one line in the prompt or one sentence in a tool description.
+On Keiki:
+ run 
+bun run src/assistant.ts
+ to sync. Keiki now runs the loop, memory, schedules, browser, payments and delivery, so there's no server to keep up. Text the line from your phone: "what's on my calendar tomorrow?" Every turn shows up in the dashboard as a trace with what the assistant read, the tools it called and what it cost.
+Build your own or use one?
+Use Poke, Instinct or Muse
+Build on Keiki
+Time to first text
+Minutes
+Under five minutes from a template, about an hour in code
+Code required
+No
+No with a template; TypeScript for full control
+Your own prompt and personality
+No
+Yes
+Your own tools and APIs
+Their integrations
+Anything with an API or MCP server
+Payments
+Their rules
+Your caps, approvals and one-time cards
+Channels
+Theirs
+iMessage, WhatsApp, SMS, Telegram, Slack and email
+Your own number and brand
+No
+Yes
+If you just want an assistant for yourself, try one of the products above. Build your own when you want to decide exactly what it can touch and spend, when it's for other people, or when the assistant is the product you're selling.
+FAQ
+Can I build a personal assistant on iMessage without code?
+Yes. Sign up for Keiki, start from the Orchid or Instinct template, edit its instructions in plain words and add an iMessage line. With Orchid, people connect their own Gmail, Google Calendar or Outlook from a link the assistant texts them, so there's nothing to code.
+Can a personal assistant on iMessage book flights and pay for things?
+Yes, with the right setup. It needs a browser to search and fill in the booking, and a wallet that pays with a one-time card for exactly the approved amount. On Keiki the browser runs on Browserbase and payments run on Agentcard, and nothing is charged until the person approves the total.
+Do I need a Mac to run one?
+No. On a hosted iMessage line nothing in your stack needs macOS. Keiki supplies dedicated lines and keeps them online and delivering.
+Is there an official iMessage API for personal assistants?
+No. Apple has no public server API for bots on an ordinary phone number, and Apple Messages for Business is a separate channel for verified brands. Assistants like this run on hosted lines. Our guide to 
+the iMessage API
+ explains the options.
+How does a texted assistant get into my email and calendar?
+Through per-user OAuth. The assistant texts you a sign-in link, you sign in to your own account, and the credential stays with you. On Keiki it's never shared with other users or shown to the model.
+Can it text me first?
+Yes. Loops run on a cron or interval schedule, such as a weekday morning briefing, and quiet loops send nothing when there's nothing to say. Keiki also limits how many new conversations a line can start each day, because conversations people start themselves are much safer for a line.
+Can the same assistant work on WhatsApp?
+Yes. On Keiki channels sit below the assistant, so the same assistant, memory and connected accounts can answer on iMessage, WhatsApp, SMS, Telegram, Slack and email.
+Sources
+Welcome to Poke
+, Poke documentation
+Poke customer story
+, Linq, March 11, 2025
+Server overview
+, BlueBubbles documentation
+Instinct
+, Instinct
+Official Instinct breakdown
+, Vellum, August 20, 2026
+Meta launches Muse, a personal AI agent that books, buys and negotiates for you
+, The Next Web, September 9, 2026
+Meta pushes back on claim that Muse AI read a user's messages without consent
+, Decrypt, September 30, 2026
+Grok Bot
+, 9to5Mac
+Grok Bot on mobile
+, Grok Bot documentation
+Build your assistant
+Start from the personal assistant template
+ and text it in five minutes, or 
+sign up for Keiki
+ and build it your way. The 
+developer docs
+ cover every part in this guide.
+Published 
+October 26, 2026
+ · 
+Guides
+Copy link
+Copied
+Copy link
+Keiki
+© 2026 Zero Email, Inc.

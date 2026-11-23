@@ -1,0 +1,159 @@
+
+Apple Pay in Keiki Vault: your agents get paid in Messages — Keiki Blog
+Skip to content
+Keiki
+Talk to a human
+Get started
+Announcements
+·
+October 27, 2026
+·
+5 min
+ read
+Apple Pay in Keiki Vault: your agents get paid in Messages
+A Keiki agent can now send a Pay card in iMessage that the customer pays with Apple Pay, without a link or a form. Here's how it works, who can use it and the one tool call behind it.
+A customer texts a bakery for a birthday cake. The agent quotes it, and then the sale usually stalls: a payment link opens a browser, the browser wants a card number, and the customer puts the phone down.
+Watch the demonstration
+Now the agent sends a Pay card, and the customer pays with Apple Pay without leaving the thread.
+ The card shows who's being paid, what for and the total. One double-click and a glance at Face ID, and it's paid.
+How it works
+The agent asks to be paid.
+ It calls 
+payments_request
+ with the business, a description and the line items.
+A Pay card lands in the thread.
+ The bubble reads 
+Pay $48.00
+ with the description under it.
+The customer taps it.
+ Keiki Vault opens the card inside Messages: the business name, each line item, the total and an Apple Pay button.
+Apple Pay takes over.
+ Apple's own payment sheet opens. The customer confirms with the side button and Face ID.
+The card settles in place.
+ Once the payment is confirmed, the card shows 
+Paid $48.00
+ and the bubble in the thread is rewritten to 
+Paid $48.00
+. There's no second message to read.
+Why this matters
+No link, no form, no app switch.
+ The card number never gets typed. Apple Pay already has it.
+The money goes straight to the business.
+ Payments run on 
+Grosso
+, and each business is paid through its own Stripe connected account. Keiki never holds the money.
+Paid means paid.
+ The card turns Paid only after Grosso confirms the payment, not when the customer taps. The agent is told never to say a payment went through until 
+payments_request_status
+ reports it paid.
+The owner sets the limits.
+ The agent can only request payments within a limit the business owner approved: the largest single payment and a daily total.
+Who can use it
+It's for businesses whose agent sells on iMessage: bakeries and restaurants taking orders, salons and clinics taking deposits, and services that send a quote and want it paid in the same chat.
+To use it, you need:
+The Payments ability
+ turned on for the agent.
+A Grosso account
+ connected in 
+Settings → Payments
+, with the business added as a payee that's active and can take charges.
+A dedicated Keiki iMessage line
+ and a 1:1 conversation, as with every Keiki Vault card.
+Keiki Vault on the customer's iPhone.
+ They install it once from the App Store.
+Pay cards are sent for physical goods and services. For digital goods, and on other channels, the agent sends Grosso's checkout link instead. On a phone without Apple Pay set up, the card offers 
+Pay on checkout
+, which opens the same hosted checkout.
+How to get started
+Connect your organization in 
+Settings → Payments
+. A new account starts in test mode, and cards show a 
+Test mode
+ badge until you switch to live.
+Add the business under 
+Payees
+: its owner's email, the agent that collects for it and the payment limits. Grosso emails the owner to finish onboarding and approve the limits.
+Turn on 
+Payments
+ in the agent's abilities.
+Text the agent from an iPhone with Keiki Vault installed and order something.
+For developers
+There's no card to design and no checkout page to build. The Payments ability gives the agent its tools, and this is the call it makes:
+{
+"tool"
+:
+"payments_request"
+,
+"arguments"
+:
+ {
+"payee_id"
+:
+"payee_8fK2qL7mX4aR"
+,
+"description"
+:
+"Birthday cake + delivery"
+,
+"goods_type"
+:
+"physical"
+,
+"line_items"
+:
+ [
+      { 
+"name"
+:
+"Chocolate birthday cake, 8 in"
+,
+"quantity"
+:
+1
+,
+"unit_amount"
+:
+4200
+ }
+,
+      { 
+"name"
+:
+"Delivery, Thu 4–6 pm"
+,
+"quantity"
+:
+1
+,
+"unit_amount"
+:
+600
+ }
+    ]
+  }
+}
+Amounts are integer US cents. When Grosso marks the request 
+native_apple_pay_eligible
+ and the conversation is on a Keiki iMessage line, Keiki sends the Pay card and adds 
+"pay_card": "sent"
+ to the result, along with a note telling the agent not to send the checkout link too. Everywhere else, the result carries the 
+checkout_url
+ to send. Every call uses your organization's Grosso key on the server, so the key never reaches the model, the sandbox or tool output.
+Refunds work the same way: 
+payments_request_refund
+ only asks, and the business owner approves it before any money moves.
+What's next
+Read the 
+Payments docs
+ for every tool and status, and 
+Keiki Vault: Face ID approvals for any tool your agent runs
+ for the approval cards that use the same app.
+Published 
+October 27, 2026
+ · 
+Announcements
+Copy link
+Copied
+Copy link
+Keiki
+© 2026 Zero Email, Inc.

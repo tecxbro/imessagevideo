@@ -1,0 +1,396 @@
+
+How to Add Human-in-the-Loop to an iMessage Agent — Keiki Blog
+Skip to content
+Keiki
+Talk to a human
+Get started
+Guides
+·
+October 22, 2026
+·
+12 min
+ read
+How to Add Human-in-the-Loop to an iMessage Agent
+Add human-in-the-loop to an iMessage agent: approvals before risky actions, handoffs to your team in Slack, and server updates, all in one thread.
+In February 2024, a Canadian tribunal ordered Air Canada to pay a customer its own chatbot had misled. The bot had told him he could claim a bereavement fare refund after he flew, and the airline's policy said otherwise. Air Canada argued the chatbot was 
+responsible for its own actions
+. The tribunal didn't accept that. Nobody had checked the answer before it went out, and when it turned out wrong, nobody had a way to take it back.
+That is the shape of most agent failures in production. The model doesn't fail in a lab. It makes one confident move with nobody positioned to return it. A good iMessage agent plays a rally instead. The agent serves, a person can return the shot or take over the point, and the agent plays on with what came back.
+This guide makes the case for that rally with the research behind it, then shows how to build one on Keiki. You'll learn:
+The three ways agents fail when nobody is on the other side of the net
+What OpenAI, Anthropic, LangChain and human factors research say about oversight
+The three shots that fix each failure: approvals, handoffs and notices
+The five steps to add them to an iMessage agent
+This is one of the step-by-step guides in 
+Building iMessage agents
+, our complete guide to building iMessage agents.
+Why agents fail when there is no rally
+Agents are good at a lot of things now, but they aren't reliable enough to play every point alone. On 
+τ-bench
+, a 2024 benchmark from Sierra that simulates customer service conversations with real policies and tools, state-of-the-art function-calling agents like GPT-4o solved under half of the tasks. When the same retail task was run eight times, they got it right every time on under a quarter of them. On 
+TheAgentCompany
+, a Carnegie Mellon benchmark set inside a simulated software company, the best agent completed 30% of tasks autonomously.
+Small error rates also compound. As plain arithmetic: an agent that gets each step right 95% of the time finishes a 20-step job with no mistakes only about 36% of the time. Anthropic's guide to 
+building effective agents
+ puts it the same way. The autonomy of agents means "higher costs, and the potential for compounding errors."
+In production, those errors show up as three failure modes.
+Silent wrong sends
+The agent says something false, and it reaches the customer before anyone sees it. Air Canada's bereavement answer is the textbook case. In December 2023, a Chevrolet dealer's website chatbot was talked into 
+agreeing to sell a 2024 Tahoe for $1
+. In January 2024, a system update caused the parcel company DPD's support bot to 
+swear at a customer and criticise the company
+, and DPD disabled the AI element. On a text channel the wrong answer lands on the customer's phone, in the same thread as everything you've told them that was right.
+Runaway actions
+The agent doesn't just say something wrong. It does something wrong, and keeps going. In July 2025, Replit's coding agent 
+deleted a live production database during a code freeze
+ for SaaStr founder Jason Lemkin. It wiped records for more than 1,200 executives, and it admitted to violating explicit instructions not to proceed without human approval. Note the detail: the approval rule existed, but only as an instruction to the model. In Anthropic's 
+Project Vend
+ experiment, Claude ran a small office shop. Customers cajoled it in Slack into handing out numerous discount codes. It announced it would eliminate them, and then returned to offering them within days.
+No recovery path
+When something goes wrong, there's nobody to hand the point to. The agent either keeps trying or stops, and the customer is left with a wrong answer and no human to correct it. In Air Canada's case, the customer had to take the airline to a tribunal to get one.
+What the research says about oversight
+The labs building these models agree on the fix: put a person in the loop at the points that matter, not on every message.
+OpenAI.
+A practical guide to building agents
+ calls human intervention "a critical safeguard". It names two triggers: exceeding failure thresholds, like failing to understand a customer after several tries, and high-risk actions that are "sensitive, irreversible, or have high stakes", such as canceling orders or authorizing large refunds. It also suggests rating every tool low, medium or high risk by reversibility and financial impact.
+Anthropic.
+ The same guide that warns about compounding errors says agents should get ground truth from the environment at each step and "can then pause for human feedback at checkpoints or when encountering blockers," with stopping conditions to stay in control.
+LangChain.
+ LangGraph's 
+human-in-the-loop middleware
+ pauses a tool call so a person can approve it as proposed, edit its arguments, or reject it with feedback. Pause, decide, resume has become a standard part of agent frameworks.
+Human factors research adds two warnings about how to do it. In 1983, Lisanne Bainbridge's 
+Ironies of Automation
+ argued that automating most of the work makes the remaining human part harder. The person left monitoring has the least context and is asked to step in at the worst moment. So a human shouldn't be stuck watching every thread. They should get a clear, specific ball when it's their shot.
+The second warning is about persuasion. A CHI 2021 study by Bansal and colleagues, 
+Does the Whole Exceed its Parts?
+, found that AI explanations made people more likely to accept a recommendation "regardless of its correctness." An approval step that shows the model's reasoning can turn into a rubber stamp. An approval should show the exact action that will run, so the person judges the action, not the pitch.
+Agents are getting better quickly. 
+METR measured
+ the length of tasks frontier models can finish doubling about every seven months since 2019. That makes the case for targeted checkpoints, not constant supervision. As agents improve, more points get played alone, and people stay on the shots where a mistake is expensive.
+The rally: three shots that fix each failure
+Map those failures onto a rally and the fix is three shots:
+Failure
+The shot
+What it does
+Runaway actions
+The serve: approvals
+The agent proposes a risky action. Nothing runs until a person returns it with a yes.
+No recovery path
+The return: handoffs
+The agent passes the conversation to your team. A person takes over the point, then hands it back.
+Silent wrong sends
+Play on: notices
+Facts come from your systems, not the model's memory. The agent reports them in its own words.
+The serve.
+ An approval moves the rule out of the prompt and into the tool. Replit's agent had an instruction not to proceed without approval, and it ignored it. A tool that can't run until someone approves it has nothing to ignore.
+The return.
+ A handoff is the recovery path the Air Canada customer never had. When the agent is out of its depth or a customer asks for a person, a teammate takes the conversation in the same thread. The agent stays quiet until it gets the point back.
+Play on.
+ Many wrong answers come from an agent guessing at something only your systems know, like whether a refund has gone through or an order has shipped. A notice from your server gives the agent that fact when it changes, so it plays the next shot from the truth.
+Who is on the court
+Every turn in the rally is a pass between two players:
+Agent and customer.
+ The everyday volley. Keiki groups a burst of texts into one turn, and a correction sent mid-answer, like "actually, make it Saturday", is read by the running turn at its next step. Set 
+midTurnStrategy: 'interrupt'
+ and the correction stops the turn and starts a fresh one instead.
+Agent and approver.
+ The agent serves a proposed action. A person returns it with a yes or a no.
+Agent and teammate.
+ The agent hands the conversation over. Your teammate plays a few shots, then hands it back.
+Agent and your server.
+ Your backend hits a ball into the rally when an order ships or an export finishes.
+Agent and agent.
+ In an 
+agent group
+, one agent can ask another for help with the 
+ask_agent
+ tool. The customer never sees that exchange, only the answer.
+How to add human-in-the-loop to an iMessage agent
+You'll need 
+a Keiki account
+, an agent (start from 
+a template
+ or follow 
+how to turn your API into a WhatsApp and iMessage agent
+), and an API key from 
+Settings → API keys
+.
+Step 1: Mark the tools that need a yes
+A tool that changes data or money gets 
+approval: 'ask'
+ in its policy. When the model calls it, Keiki stores the exact call and waits for a person before running anything.
+// src/tools.ts
+import
+ { Effect
+,
+ Schema } 
+from
+'effect'
+import
+ { defineTool } 
+from
+'@onkeiki/agents'
+export
+const
+refundOrder
+=
+defineTool
+({
+  name
+:
+'refund_order'
+,
+  description
+:
+'Refund an order for the customer who is texting. A person approves it before it runs.'
+,
+  input
+:
+Schema
+.Struct
+({ orderNumber
+:
+Schema
+.String })
+,
+  policy
+:
+ { approval
+:
+'ask'
+,
+ requiredScopes
+:
+ [
+'orders:refund'
+] }
+,
+execute
+:
+ (input
+,
+ ctx) 
+=>
+Effect
+.promise
+(
+async
+ () 
+=>
+ {
+const
+customer
+=
+encodeURIComponent
+(
+ctx
+.phone)
+const
+res
+=
+await
+fetch
+(
+`https://api.acme.com/customers/
+${
+customer
+}
+/orders/
+${
+encodeURIComponent
+(
+input
+.orderNumber)
+}
+/refund`
+,
+ {
+        method
+:
+'POST'
+,
+        headers
+:
+ { Authorization
+:
+`Bearer 
+${
+process
+.
+env
+.
+ACME_API_KEY
+}
+`
+ }
+,
+      })
+return
+await
+res
+.json
+()
+    })
+,
+})
+In 
+src/agent.ts
+, add 
+import { refundOrder } from './tools'
+, put it in 
+tools
+, and keep 
+kit.sync()
+ there. The call is scoped to the person texting (
+ctx.phone
+), so one customer can't refund another's order. A phone number is not a login, so 
+requiredScopes
+ only passes for a sender your 
+identity
+ webhook has matched to a customer, and any approver must hold the same scopes.
+What gets approved is what runs. The arguments are stored and hashed when the action is proposed, and approval executes that stored call. The model gets no turn in between to rephrase it. See 
+governed actions
+ for previews and freshness checks.
+Step 2: Decide who returns the serve
+A pending action can be decided in three places:
+In the thread, in words.
+ "Yes", "go ahead" or "no, leave it" from the customer decides it. The agent records their exact words, and it never approves on someone's behalf.
+In Slack.
+ A card with the summary and Approve and Decline buttons. A second press on a decided card does nothing, and two people pressing at once still runs the action once. When one turn proposes several actions, Slack offers 
+Approve all
+ and 
+Decline all
+.
+From your own tools.
+ An owner or admin can decide it through the webapp API, 
+POST /api/webapp/agents/:id/actions/:actionId/decide
+. That route only decides actions without 
+requiredScopes
+, so a scoped action like the refund above is approved in Slack or in the conversation.
+Use the customer's own yes for actions on their account, like moving their booking. Use Slack for actions your business should sign off on, like a refund over a limit. Pending actions expire after 24 hours.
+Step 3: Turn on handoffs to your team
+Escalation lets the agent pass a conversation to a person. Every escalation opens a handoff in the dashboard 
+Handoffs
+ queue, and you can also route it to Slack, email or a webhook:
+escalation
+:
+ {
+  enabled
+:
+true
+,
+  requireConfirmation
+:
+true
+,
+  routes
+:
+ {
+    slack
+:
+ { channel
+:
+'#support'
+ }
+,
+    email
+:
+'support@acme.com'
+,
+  }
+,
+}
+,
+In Slack, the handoff is a thread with 
+Reply to visitor
+, 
+Hand back to agent
+ and 
+Close thread
+. A plain message in the thread goes to the customer on iMessage and takes the conversation over in the same step. The agent stops any turn in progress and stays quiet while you hold it. Start a message with 
+//
+ to talk to your team without sending anything.
+When you're done, hand it back, or send the agent a note with 
+@<app>
+ and it answers the customer in its own words. What your teammate sent stays in the history as sent by the team, so the agent doesn't take it back or apologise for it. Until someone claims a handoff, the agent keeps answering, and it can close the handoff itself if it solves the problem. See 
+Slack agents
+ for every rule.
+Step 4: Let your server hit the next ball
+Some moves start outside the conversation. When your backend finishes something the customer is waiting on, send the agent a notice:
+curl
+-X
+POST
+"https://onkeiki.com/api/v1/developer/agents/$AGENT_ID/notice"
+ \
+-H
+"Authorization: Bearer $KEIKI_API_KEY"
+ \
+-H
+'Content-Type: application/json'
+ \
+-d
+'{"text":"Refund for order 1042 has been processed.","phone":"+15551234567"}'
+The text is written for the agent, never sent as is. The agent decides whether and how to tell the customer. 
+phone
+ must match an existing conversation. If a turn is already running, the notice waits for the next one. See the 
+agent API
+ for the full response.
+Your backend can also hand work to a person directly, with buttons that call your own webhooks or installed tools, through 
+POST /api/v1/developer/handoffs
+. See 
+cloud agents
+ for the request.
+Step 5: Play a full rally and read the trace
+Text the agent from your iPhone and play every pass:
+Ask for a refund. The agent should propose it, not run it.
+Decline it, then ask again and approve it. Check that the refund only ran once.
+Ask for a person. Reply from the Slack thread, then hand it back.
+Send a notice from your server and check how the agent words it.
+Open the conversation's trace. It shows each tool call with its arguments, who approved it, when a teammate took over, and what the agent sent after it got the conversation back.
+Common mistakes
+Approving in the prompt.
+ "Ask before refunding" in the system prompt is a suggestion. 
+approval: 'ask'
+ on the tool is a rule the model can't skip.
+Letting the phone number be the approver.
+ A number proves which conversation it is, not who is texting. Gate account actions on identity scopes.
+Replying and leaving the agent running.
+ On Keiki, sending the customer a reply is what takes the conversation over, so the agent and a person never answer at the same time.
+Sending every notice to the customer.
+ Write notices for the agent. Let it decide what the customer needs to hear.
+Gating everything.
+ If every message needs a yes, nobody gets a reply. Gate the writes, and let reads and answers run.
+FAQ
+What is human-in-the-loop for an AI agent?
+It means a person approves, corrects or takes over the agent's work at the points that matter, instead of watching every message. For an iMessage agent that means approvals before risky actions, handoffs to your team, and updates from your systems, all in the same thread.
+Can the customer approve an action by text?
+Yes. A reply like "yes" or "go ahead" in the thread decides a pending action, and the agent records the customer's exact words. Any scopes the tool requires apply to the customer too.
+Can my team reply to the customer from Slack?
+Yes. A plain message in the handoff thread goes to the customer on iMessage and takes the conversation over. Hand it back when you're done and the agent picks up where you left off.
+Does the agent keep working while a handoff is open?
+Until a teammate claims it, yes. Once someone replies or takes it over, the agent stays quiet until the conversation is handed back.
+Should an iMessage agent ever run fully autonomously?
+For reads and answers, often yes. OpenAI's agent guide suggests keeping human oversight on sensitive, irreversible or high-stakes actions until confidence in the agent's reliability grows. Start with approvals on every write, and relax them per tool as the trace shows the agent getting those calls right.
+What happens if nobody approves an action?
+Nothing runs. Pending actions expire after 24 hours.
+The takeaway: design the rally, not the solo
+An agent's failures cost the most when nobody is on the other side of the net to return the shot. The research doesn't say keep agents on a leash. It says put a person on the specific shots that are risky, irreversible or beyond the agent. Show that person the exact action, and give the conversation a way back to the agent afterwards.
+On Keiki that is three pieces you already have: 
+approval: 'ask'
+ for the serve, escalation and Slack takeover for the return, and notices from your server so the agent plays on from the truth. Let the agent play the routine points, and keep your team ready for the ones that matter.
+Start building on Keiki
+, read the 
+developer docs
+, or begin from an 
+agent template
+.
+Published 
+October 22, 2026
+ · 
+Guides
+Copy link
+Copied
+Copy link
+Keiki
+© 2026 Zero Email, Inc.
