@@ -26,7 +26,7 @@ This skill was developed against six references. Their observed scenes, access m
 
 Rebuild editable text, message bubble shapes and tails, controls, sheets, menu rows, phone screens, dividers and typography. Keep phone hardware, internal interface state and camera pan/zoom in separate nested groups. Camera motion must not be approximated by changing every child's coordinates independently.
 
-Static raster crops are appropriate for genuine raster assets: photographs, Memoji, map artwork, textured brand icons, hardware reflections or rich-link thumbnails. Static product screenshots and rich-card interiors may also be declared raster artwork when this materially improves reference fidelity; explicitly disclose that internal bitmap text is not individually editable. Preserve independent card/screen boundaries, editable outer layout, native conversation text and camera motion. Record crop rectangle, source frame/time and purpose. Whole-frame playback or a source-video layer is a reference preview, never a reconstruction.
+Use independent or authorized source artwork for genuine raster assets such as photographs, Memoji, maps, textured brand icons, hardware reflections or rich-link thumbnails. Put bitmap artwork within independent editable card and screen boundaries. Rebuild live conversation text, interface contents and controls as editable layers. Keep source UI crops and frame sequences in the analysis folder. Record each authorized raster asset's origin, purpose and editable boundary.
 
 Use a verified font binary where available and allowed. A family that resembles SF Pro is a hypothesis until glyph dimensions match. Record fallback family, weights and resulting width differences. Check missing emoji glyphs in the actual rendering environment.
 

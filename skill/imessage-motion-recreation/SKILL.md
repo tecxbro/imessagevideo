@@ -14,12 +14,14 @@ For a new company or product, start with [RESEARCH-FIRST.md](library/RESEARCH-FI
 | User goal | Start here | Timing authority |
 |---|---|---|
 | Make a film for a new company | [Company research](library/RESEARCH-FIRST.md), [profile schema](library/company-profile.schema.json), then the director workflow | Verified product evidence and a newly authored shot plan |
-| Recreate a supplied film | [Reconstruction playbook](references/reconstruction-playbook.md), actual movie and native-frame comparisons | Actual source with explicit output/source mapping |
+| Recreate a supplied film in the requested editor | [Full-film recreation](references/full-film-recreation.md), then the [reconstruction playbook](references/reconstruction-playbook.md) | Decoded source presentation timeline and explicit source/output mapping |
 | Direct a new film using these ideas | [Director workflow](director/directing.md), [visual explorer](director/index.html), [design grammar](director/design-grammar.md) | A new shot plan, labelled as authored choreography |
 | Extract or adapt a component | [Component contracts](director/component-contracts.md), [component code](director/components.mjs), chosen study | Declared editable boundary and actual source evidence |
 | Add UI sound | [UI audio workflow](references/ui-audio-workflow.md) | Visible actions in the delivered picture |
 
 For recreation, catalogue recipes help decompose the source; never replace its motion with a starter preset. For new direction, catalogue options carry tradeoffs; never claim a new starter is source-exact.
+
+For a supplied film, use the full-film route before the company research or director workflow. Establish the requested editor's capability on the hardest moving passage, preserve the first complete export, and deliver the editable project, audiovisual export and measured differences.
 
 ## Final working set and failure lessons
 
