@@ -1,0 +1,82 @@
+{
+  "prior_sha256": "d5415679aaac724b5deb3598f980c9f62cc0e318d7a7c50a37fedbffdd699c4a",
+  "candidate_sha256": "0e971a4b6307eff5f53f8817ada0be5dea23695de4da0aaa8ccd1848bc55cbcc",
+  "locked_regions": {
+    "calendar-tile-exit": {
+      "frames": 12,
+      "before_mean_rgb_error": 10.155474890978722,
+      "after_mean_rgb_error": 7.3574173560385505,
+      "regressions_over_point_15": []
+    },
+    "follow-pointer-and-yes": {
+      "frames": 26,
+      "before_mean_rgb_error": 12.947836463167228,
+      "after_mean_rgb_error": 8.074324881095224,
+      "regressions_over_point_15": []
+    },
+    "handset-left-rail": {
+      "frames": 24,
+      "before_mean_rgb_error": 38.359337332895024,
+      "after_mean_rgb_error": 19.86832264957265,
+      "regressions_over_point_15": []
+    },
+    "handset-right-rail": {
+      "frames": 24,
+      "before_mean_rgb_error": 29.686002447220396,
+      "after_mean_rgb_error": 23.822619895536562,
+      "regressions_over_point_15": [
+        672
+      ]
+    }
+  },
+  "full_comparison": {
+    "verdict": "FAIL",
+    "compared_frames": 778,
+    "mean_abs_rgb": 6.515381682519285,
+    "exact_clock": true,
+    "worst_frame": {
+      "frame": 150,
+      "mean_abs_rgb": 18.454583416666665
+    },
+    "pixel_equality": {
+      "identical_frames": 0,
+      "different_frames": 778,
+      "different_spans": [
+        [
+          0,
+          777
+        ]
+      ],
+      "changed_pixel_observations": 3090848249,
+      "first_difference": {
+        "frame": 0,
+        "changed_pixels": 3989459,
+        "max_channel_delta": 96,
+        "rect": [
+          0,
+          0,
+          2000,
+          2000
+        ]
+      },
+      "worst_frame": {
+        "frame": 622,
+        "changed_pixels": 3999960,
+        "max_channel_delta": 7
+      }
+    }
+  },
+  "cursor_tip": {
+    "matched_frames": 26,
+    "prior_mean_px": 11.977336501775044,
+    "revised_mean_px": 1.6237443672451095
+  },
+  "last_tile_streak": {
+    "frame": 621,
+    "blue_pixels": [
+      19,
+      42873,
+      0
+    ]
+  }
+}

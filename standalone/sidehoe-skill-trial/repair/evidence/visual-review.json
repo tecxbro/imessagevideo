@@ -1,0 +1,270 @@
+{
+  "plan_sha256": "eb2553613604423f7eb63a1e295f22d3fb2024d8818fb213edc3ee2c96af65c6",
+  "candidate_sha256": "96ed05bab13460e3a1a0dc2c0e03687794fe60ef4213b6fc948e7955ae245c92",
+  "results": {
+    "01-pinned-inbox-entrance": {
+      "appearance": {
+        "verdict": "fail",
+        "frames": [
+          0,
+          4
+        ],
+        "observation": "Separate portrait, header and note tracks restore the side portraits at f2. At f0 the source status marks fan outward while the candidate uses a soft translation. The f3 source tag and downward label streak still read earlier.",
+        "evidence": "final-comparison/pairs/000000.jpg"
+      }
+    },
+    "02-inbox-hold": {
+      "appearance": {
+        "verdict": "pass",
+        "frames": [
+          22,
+          22
+        ],
+        "observation": "At f22 the three portrait disks, centered note and first two inbox rows retain the held layout. The portrait artwork is independently rendered.",
+        "evidence": "final-comparison/index.html"
+      }
+    },
+    "03-inbox-scroll": {
+      "appearance": {
+        "verdict": "pass",
+        "frames": [
+          42,
+          101
+        ],
+        "observation": "Named Eleanor and Charlotte anchors agree through acceleration. The late fit tracks both the rising rows and the change in spacing and scale. Darla and El align at f95 and the leading Margot row is visible again at f101. The home bar and the strength of the departing streak around f56 still differ.",
+        "evidence": "final-comparison/index.html"
+      }
+    },
+    "04-identity": {
+      "appearance": {
+        "verdict": "fail",
+        "frames": [
+          103,
+          114
+        ],
+        "observation": "The opening and settled badge use separate measured dimensions. At f108 the leftmost original glyph is darker and the trailing part is more displaced. The independently drawn card illustration still has visibly wider pink shapes.",
+        "evidence": "final-comparison/pairs/000103.jpg"
+      }
+    },
+    "05-glossy-handset": {
+      "appearance": {
+        "verdict": "fail",
+        "frames": [
+          136,
+          150
+        ],
+        "observation": "The fitted rim and pad improve the shape and lower light. The f136 island and rainbow edge still bend and spread differently. The held lower-right wash and rim contrast at f150 differ.",
+        "evidence": "final-comparison/pairs/000136.jpg"
+      }
+    },
+    "06-personal-title": {
+      "appearance": {
+        "verdict": "fail",
+        "frames": [
+          178,
+          212
+        ],
+        "observation": "The candidate opens on ‘For’ and layers the arriving disks under the outgoing title at f212. Around f180, parts of the second line brighten in a different order and several of the tiny incoming patches remain fainter at f212.",
+        "evidence": "final-comparison/pairs/000178.jpg"
+      }
+    },
+    "07-dimensional-portrait-cluster": {
+      "appearance": {
+        "verdict": "pass",
+        "frames": [
+          213,
+          253
+        ],
+        "observation": "Individual disk tracks carry the early components into the settled 13-disk layout through f226–227. At f242 and f249 the major centers and component count correspond. The independently authored portrait expressions and final perimeter still differ.",
+        "evidence": "final-comparison/index.html"
+      }
+    },
+    "08-cluster-wipe-and-profile-reveal": {
+      "appearance": {
+        "verdict": "fail",
+        "frames": [
+          254,
+          264
+        ],
+        "observation": "Measured islands restore parts of the outgoing mosaics and a padded streak brings Lisa in at f258. The visible remnants still have different edges and the profile label fragments at f262–264 resolve differently.",
+        "evidence": "final-comparison/pairs/000254.jpg"
+      }
+    },
+    "09-profile-push": {
+      "appearance": {
+        "verdict": "fail",
+        "frames": [
+          290,
+          300
+        ],
+        "observation": "The green disk and Ella’s falloff use separate tracks. At f290 the outline on Lisa’s chip is more uniform. At f300 the source’s facial expression and Ella’s fading edge differ from the blended sprites.",
+        "evidence": "final-comparison/pairs/000290.jpg"
+      }
+    },
+    "10-first-phone-entrance": {
+      "appearance": {
+        "verdict": "fail",
+        "frames": [
+          313,
+          327
+        ],
+        "observation": "The first visible hull bottom and the later rim are closer after fitting the clipped edge. On f316–319 the source keyboard is already sharper and vertically registered differently while the candidate streak persists.",
+        "evidence": "final-comparison/pairs/000313.jpg"
+      }
+    },
+    "11-suggestion-and-controls": {
+      "appearance": {
+        "verdict": "pass",
+        "frames": [
+          336,
+          359
+        ],
+        "observation": "There is no suggestion at f335. Both blue bubbles appear separately at f336. Measured boxes preserve their spacing through the push, and the first No and Send? controls appear below the lower bubble at f341 and f343. Both controls detach below the bubble at f359.",
+        "evidence": "final-comparison/index.html"
+      }
+    },
+    "12-isolated-suggestion-and-pointer": {
+      "appearance": {
+        "verdict": "pass",
+        "frames": [
+          394,
+          394
+        ],
+        "observation": "The detached controls sit under the suggestion at f394, and the pointer reaches the Send? capsule from below.",
+        "evidence": "final-comparison/index.html"
+      }
+    },
+    "13-calendar-entry": {
+      "appearance": {
+        "verdict": "pass",
+        "frames": [
+          397,
+          429
+        ],
+        "observation": "The lower calendar band is visible at f397 with the suggestion still above it. Appointments rise through consecutive frames; by f403 the calendar has replaced the suggestion. The padded cursor follows the measured turn around f408–415 and lands beside the lower appointment.",
+        "evidence": "final-comparison/index.html"
+      }
+    },
+    "14-violet-appointment-drag": {
+      "appearance": {
+        "verdict": "pass",
+        "frames": [
+          435,
+          435
+        ],
+        "observation": "At f435 the violet appointment remains above cyan through their overlap. The grid stays registered.",
+        "evidence": "final-comparison/index.html"
+      }
+    },
+    "15-cyan-appointment-drag": {
+      "appearance": {
+        "verdict": "pass",
+        "frames": [
+          460,
+          460
+        ],
+        "observation": "At f460 cyan sits below the violet appointment on the same calendar grid.",
+        "evidence": "final-comparison/index.html"
+      }
+    },
+    "16-calendar-mosaic-and-app-entry": {
+      "appearance": {
+        "verdict": "fail",
+        "frames": [
+          475,
+          479
+        ],
+        "observation": "The ring tile leads at f478, then red and blue enter. The source still has a stronger violet block behind the ring and different holes in the outgoing calendar grid.",
+        "evidence": "final-comparison/pairs/000475.jpg"
+      }
+    },
+    "17-app-orbit": {
+      "appearance": {
+        "verdict": "fail",
+        "frames": [
+          536,
+          612
+        ],
+        "observation": "Individual centers and depth changes keep the four glyphs readable. At f536 and f612 the dark tile has different scale and edge softness, and the red and blue artwork and overlap edges still differ.",
+        "evidence": "final-comparison/pairs/000536.jpg"
+      }
+    },
+    "18-app-exit": {
+      "appearance": {
+        "verdict": "pass",
+        "frames": [
+          613,
+          623
+        ],
+        "observation": "Separate tile paths and a fitted glow move downward together. Motion streaks persist on the last occupied frame f621, and f622–623 are blank. The tile edge blur differs locally.",
+        "evidence": "final-comparison/index.html"
+      }
+    },
+    "19-second-phone-entrance": {
+      "appearance": {
+        "verdict": "fail",
+        "frames": [
+          624,
+          647
+        ],
+        "observation": "The visible bottom at f624 and the detached pointer are much closer. At f626–632 the candidate body and keyboard are streaked longer, and the settled bottom and keyboard proportions still differ.",
+        "evidence": "final-comparison/pairs/000624.jpg"
+      }
+    },
+    "20-follow-up-buttons-and-push": {
+      "appearance": {
+        "verdict": "pass",
+        "frames": [
+          648,
+          674
+        ],
+        "observation": "No and Yes become visible on f648 and f650. In the sampled fast approach, the chip and fitted pointer follow separate measured paths, with the tip just above the composer at f665–667 and nearly at Yes by f674.",
+        "evidence": "final-comparison/index.html"
+      }
+    },
+    "21-yes-contact-and-withdrawal": {
+      "appearance": {
+        "verdict": "pass",
+        "frames": [
+          675,
+          695
+        ],
+        "observation": "The decoded tip has zero gap to Yes at f675. Rim and interior offsets follow the late retreat and keep the chip and tip registered through f695. The keyboard keys and surrounding bubble type still differ.",
+        "evidence": "final-comparison/index.html"
+      }
+    },
+    "22-closing-badge-entrance": {
+      "appearance": {
+        "verdict": "fail",
+        "frames": [
+          696,
+          708
+        ],
+        "observation": "Width and height are separately fitted from the first squash to the held badge. The held center card and heart proportions still differ visibly at f703–708.",
+        "evidence": "final-comparison/pairs/000696.jpg"
+      }
+    },
+    "23-closing-copy-and-wash": {
+      "appearance": {
+        "verdict": "pass",
+        "frames": [
+          717,
+          765
+        ],
+        "observation": "Each word has separate measured bounds and opacity. ‘The’ reads first at f717, ‘iMessage’ enters on f741, and the complete second line is in place by the final set pose. Wash falloff is approximate.",
+        "evidence": "final-comparison/index.html"
+      }
+    },
+    "24-closing-fade-and-black-hold": {
+      "appearance": {
+        "verdict": "pass",
+        "frames": [
+          766,
+          777
+        ],
+        "observation": "Both movies reduce exposure into the final black frame at f777 and share the 40 ms final hold.",
+        "evidence": "final-comparison/index.html"
+      }
+    }
+  }
+}

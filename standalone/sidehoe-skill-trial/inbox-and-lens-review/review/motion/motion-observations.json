@@ -1,0 +1,601 @@
+{
+  "version": 1,
+  "sourceSHA256": "f821bb58cbdb265a75d572616d0da723e9cfb6de31e3db5f8a17d94dc15b5327",
+  "clock": {
+    "width": 2000,
+    "height": 2000,
+    "sample_aspect_ratio": "1",
+    "rotation_degrees": 0,
+    "display_matrix": [
+      65536,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      1073741824
+    ],
+    "container_crop_top_bottom_left_right": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "time_base": "1/60000",
+    "declared_rate": "25",
+    "declared_average_rate": "25/1",
+    "start_pts": 0,
+    "end_pts_exclusive": 1867200,
+    "end_basis": "stream start + stream duration",
+    "end_seconds": 31.12,
+    "frames": 778,
+    "cadence": "constant",
+    "pixel_format": "yuv420p",
+    "alpha_present": false,
+    "color_range": null,
+    "color_space": null,
+    "color_primaries": null,
+    "color_transfer": null
+  },
+  "planSHA256": "2385f0962e8e3995fa22f51b9345070094ac3087de0dd6f41298f610f8ef15ac",
+  "method": "bounded decoded RGB landmark observations",
+  "status": "needs-actor-review",
+  "tracks": [
+    {
+      "actor": "first-two-inbox-unread-dots",
+      "searchRect": [
+        318,
+        1150,
+        80,
+        620
+      ],
+      "samples": [
+        {
+          "frame": 42,
+          "pts": 100800,
+          "pixels": 1826,
+          "centroid": [
+            353.03614457831327,
+            1550.1889375684557
+          ],
+          "bounds": [
+            336,
+            1365,
+            35,
+            365
+          ],
+          "evidence": {
+            "path": "track-01/frame-000042.png",
+            "sha256": "c0b7689a8f326dcfb2f292ffc18a7cb08e8179236d4615b4b622c42d63a0dee1"
+          }
+        },
+        {
+          "frame": 43,
+          "pts": 103200,
+          "pixels": 1781,
+          "centroid": [
+            353.0056148231331,
+            1525.3093767546322
+          ],
+          "bounds": [
+            336,
+            1340,
+            35,
+            364
+          ],
+          "evidence": {
+            "path": "track-01/frame-000043.png",
+            "sha256": "e43a717f1e8da9d55d0a6ba461adbd4c43302cf02166d91649ecc16379218ba5"
+          }
+        },
+        {
+          "frame": 44,
+          "pts": 105600,
+          "pixels": 1732,
+          "centroid": [
+            353.0323325635104,
+            1498.7580831408777
+          ],
+          "bounds": [
+            336,
+            1312,
+            35,
+            364
+          ],
+          "evidence": {
+            "path": "track-01/frame-000044.png",
+            "sha256": "3771ee5831ec441dfd2c444915eea572581647b62c4b703a24a79042e6513a7f"
+          }
+        },
+        {
+          "frame": 45,
+          "pts": 108000,
+          "pixels": 1668,
+          "centroid": [
+            353.0161870503597,
+            1468.25
+          ],
+          "bounds": [
+            336,
+            1280,
+            35,
+            362
+          ],
+          "evidence": {
+            "path": "track-01/frame-000045.png",
+            "sha256": "581f7b11aeb764de880b2608e23a445b5f68096018433a12d22512c7dcf8ba71"
+          }
+        },
+        {
+          "frame": 46,
+          "pts": 110400,
+          "pixels": 1584,
+          "centroid": [
+            353.01262626262627,
+            1434.822601010101
+          ],
+          "bounds": [
+            336,
+            1244,
+            35,
+            361
+          ],
+          "evidence": {
+            "path": "track-01/frame-000046.png",
+            "sha256": "468e13730c5cbed526428de61ed6bfbd8600f6f4a7d7370a41c6c88065b23baa"
+          }
+        },
+        {
+          "frame": 47,
+          "pts": 112800,
+          "pixels": 1479,
+          "centroid": [
+            353.1196754563895,
+            1401.526707234618
+          ],
+          "bounds": [
+            336,
+            1202,
+            34,
+            360
+          ],
+          "evidence": {
+            "path": "track-01/frame-000047.png",
+            "sha256": "3e56f3ba3e26bce4c25bbcfa66cdb49b7e28556e0b69e0f697659d76605f649a"
+          }
+        }
+      ],
+      "unobservedFrames": []
+    },
+    {
+      "actor": "left-inbox-pin-through-scroll",
+      "searchRect": [
+        345,
+        566,
+        346,
+        505
+      ],
+      "samples": [
+        {
+          "frame": 43,
+          "pts": 103200,
+          "pixels": 72630,
+          "centroid": [
+            512.8230896323832,
+            868.7097480380008
+          ],
+          "bounds": [
+            352,
+            566,
+            324,
+            505
+          ],
+          "evidence": {
+            "path": "track-02/frame-000043.png",
+            "sha256": "ef2e7e872851405a168a92b08b67d9f4420925b3632e92e1d9d2bb8d043b3b24"
+          }
+        },
+        {
+          "frame": 44,
+          "pts": 105600,
+          "pixels": 72989,
+          "centroid": [
+            513.002411322254,
+            851.6250530901916
+          ],
+          "bounds": [
+            352,
+            566,
+            324,
+            505
+          ],
+          "evidence": {
+            "path": "track-02/frame-000044.png",
+            "sha256": "0920c7f1e0cab153a28c19a4c68e3d85c79d3a6bcb9cbb827bc8388297fa2a31"
+          }
+        },
+        {
+          "frame": 45,
+          "pts": 108000,
+          "pixels": 73021,
+          "centroid": [
+            513.1078319935361,
+            831.4252201421509
+          ],
+          "bounds": [
+            352,
+            669,
+            324,
+            387
+          ],
+          "evidence": {
+            "path": "track-02/frame-000045.png",
+            "sha256": "23c9e03bb167e28d8cfddec9a86b97bc294a10f808360a9efd5aba1220711fcc"
+          }
+        },
+        {
+          "frame": 46,
+          "pts": 110400,
+          "pixels": 73065,
+          "centroid": [
+            513.0533223841785,
+            806.5553411346061
+          ],
+          "bounds": [
+            352,
+            644,
+            324,
+            387
+          ],
+          "evidence": {
+            "path": "track-02/frame-000046.png",
+            "sha256": "41e4162395e17f639340cf569e30da25d079b0faa004d5ea33d61793be02ce33"
+          }
+        },
+        {
+          "frame": 47,
+          "pts": 112800,
+          "pixels": 73191,
+          "centroid": [
+            512.9828530830293,
+            777.8496399830581
+          ],
+          "bounds": [
+            352,
+            616,
+            324,
+            386
+          ],
+          "evidence": {
+            "path": "track-02/frame-000047.png",
+            "sha256": "b3eddb7bc660fb572081ff29f1cdb84c7dd6a5276f93b286f78d72c2c0773314"
+          }
+        },
+        {
+          "frame": 48,
+          "pts": 115200,
+          "pixels": 73297,
+          "centroid": [
+            513.0464957638103,
+            744.7900323342019
+          ],
+          "bounds": [
+            352,
+            584,
+            324,
+            487
+          ],
+          "evidence": {
+            "path": "track-02/frame-000048.png",
+            "sha256": "c6dc8632f3c4dccec6c8493b3d417c9fcc739c0c29f0c247484bad80c4eb0c2f"
+          }
+        }
+      ],
+      "unobservedFrames": []
+    },
+    {
+      "actor": "settled-inbox-home-indicator",
+      "searchRect": [
+        588,
+        1670,
+        810,
+        300
+      ],
+      "samples": [
+        {
+          "frame": 72,
+          "pts": 172800,
+          "pixels": 12903,
+          "centroid": [
+            999.5260017050298,
+            1804.4875610323181
+          ],
+          "bounds": [
+            639,
+            1796,
+            722,
+            18
+          ],
+          "evidence": {
+            "path": "track-03/frame-000072.png",
+            "sha256": "5498c3f2259a9c425d4ed7aa770590dab3f3a95ba98017289e75b83e4af2e020"
+          }
+        },
+        {
+          "frame": 73,
+          "pts": 175200,
+          "pixels": 12910,
+          "centroid": [
+            999.5554608830364,
+            1792.4945778466306
+          ],
+          "bounds": [
+            639,
+            1784,
+            722,
+            18
+          ],
+          "evidence": {
+            "path": "track-03/frame-000073.png",
+            "sha256": "518cdfff21d32d726f106ca0e3ab7abab367d9fa8eae21079ed2e4070a483507"
+          }
+        },
+        {
+          "frame": 74,
+          "pts": 177600,
+          "pixels": 13618,
+          "centroid": [
+            999.5527243354384,
+            1782.0020561022177
+          ],
+          "bounds": [
+            639,
+            1773,
+            722,
+            19
+          ],
+          "evidence": {
+            "path": "track-03/frame-000074.png",
+            "sha256": "0d67c513cede80feb5f464e34fa755674ccfa4273d4bdb1c8ab28aa585a44f5f"
+          }
+        },
+        {
+          "frame": 75,
+          "pts": 180000,
+          "pixels": 13625,
+          "centroid": [
+            999.4736880733944,
+            1773.0030825688073
+          ],
+          "bounds": [
+            639,
+            1764,
+            722,
+            19
+          ],
+          "evidence": {
+            "path": "track-03/frame-000075.png",
+            "sha256": "8dab048996fd6ab40366d2345d657e30877573d9f4fae37915358a860ea5fb7a"
+          }
+        },
+        {
+          "frame": 76,
+          "pts": 182400,
+          "pixels": 13626,
+          "centroid": [
+            999.499926610891,
+            1765.995009540584
+          ],
+          "bounds": [
+            639,
+            1757,
+            722,
+            19
+          ],
+          "evidence": {
+            "path": "track-03/frame-000076.png",
+            "sha256": "7556dc4e4a9f3b6700f0e0aba883441b539ae001616a769bd43df2cf466612af"
+          }
+        }
+      ],
+      "unobservedFrames": []
+    },
+    {
+      "actor": "glossy-reveal-camera-interior",
+      "searchRect": [
+        730,
+        647,
+        556,
+        480
+      ],
+      "samples": [
+        {
+          "frame": 134,
+          "pts": 321600,
+          "pixels": 78522,
+          "centroid": [
+            1003.9630167341636,
+            744.5133465780291
+          ],
+          "bounds": [
+            735,
+            666,
+            538,
+            159
+          ],
+          "evidence": {
+            "path": "track-04/frame-000134.png",
+            "sha256": "326d10e2e27634fdf5bc016b0a3d900717261a8fb441950ed9a1ba428772ae9e"
+          }
+        },
+        {
+          "frame": 135,
+          "pts": 324000,
+          "pixels": 80211,
+          "centroid": [
+            1004.5549986909526,
+            821.888830709005
+          ],
+          "bounds": [
+            743,
+            656,
+            543,
+            260
+          ],
+          "evidence": {
+            "path": "track-04/frame-000135.png",
+            "sha256": "e11efd1a3b73c3053dbc801a38b019f1a4cf2a26161b53db2c3a4d4f0c7f1274"
+          }
+        },
+        {
+          "frame": 136,
+          "pts": 326400,
+          "pixels": 104991,
+          "centroid": [
+            995.1100094293797,
+            860.8729700641007
+          ],
+          "bounds": [
+            730,
+            714,
+            534,
+            411
+          ],
+          "evidence": {
+            "path": "track-04/frame-000136.png",
+            "sha256": "96679d06deaa2f6b4bca582846fd1da96145c6ed6bfd701711354f78ce96aadf"
+          }
+        },
+        {
+          "frame": 137,
+          "pts": 328800,
+          "pixels": 115143,
+          "centroid": [
+            997.6767845201184,
+            893.3345665824236
+          ],
+          "bounds": [
+            730,
+            753,
+            556,
+            268
+          ],
+          "evidence": {
+            "path": "track-04/frame-000137.png",
+            "sha256": "59e5a31e66c476e4bf4633c7af63f955eec303c21c1bd2966af6033e0cccdd88"
+          }
+        },
+        {
+          "frame": 138,
+          "pts": 331200,
+          "pixels": 113283,
+          "centroid": [
+            993.8351385468252,
+            927.616403167289
+          ],
+          "bounds": [
+            730,
+            788,
+            556,
+            266
+          ],
+          "evidence": {
+            "path": "track-04/frame-000138.png",
+            "sha256": "dc7fa3a67f8e476df7c1620993340b7a86dbbc50536c27a6145ec07c12dfd37e"
+          }
+        },
+        {
+          "frame": 139,
+          "pts": 333600,
+          "pixels": 111860,
+          "centroid": [
+            995.9301180046486,
+            951.8967727516538
+          ],
+          "bounds": [
+            730,
+            813,
+            556,
+            263
+          ],
+          "evidence": {
+            "path": "track-04/frame-000139.png",
+            "sha256": "3ff071ec9fef5064c429487324e0925e2a9cd9d921ac1cef46665e2eac666e50"
+          }
+        },
+        {
+          "frame": 140,
+          "pts": 336000,
+          "pixels": 109495,
+          "centroid": [
+            995.6449883556327,
+            966.3107265171925
+          ],
+          "bounds": [
+            730,
+            829,
+            556,
+            260
+          ],
+          "evidence": {
+            "path": "track-04/frame-000140.png",
+            "sha256": "2df7731d201aa23240471cc6d0496bb637817b98eed0625c5b4b1ba3fe689181"
+          }
+        }
+      ],
+      "unobservedFrames": []
+    },
+    {
+      "actor": "glossy-reveal-lower-right-flare",
+      "searchRect": [
+        1780,
+        1830,
+        186,
+        170
+      ],
+      "samples": [
+        {
+          "frame": 136,
+          "pts": 326400,
+          "pixels": 15840,
+          "centroid": [
+            1836.1892045454545,
+            1912.0820707070707
+          ],
+          "bounds": [
+            1780,
+            1830,
+            138,
+            170
+          ],
+          "evidence": {
+            "path": "track-05/frame-000136.png",
+            "sha256": "c4682b61421682de18e7dbaa0a5e6f3329e9b5c2b1ac53d67e7b7e0e0c5ec243"
+          }
+        },
+        {
+          "frame": 137,
+          "pts": 328800,
+          "pixels": 12791,
+          "centroid": [
+            1841.6368540379954,
+            1919.8705339691971
+          ],
+          "bounds": [
+            1780,
+            1830,
+            186,
+            170
+          ],
+          "evidence": {
+            "path": "track-05/frame-000137.png",
+            "sha256": "f362b2bd0e6d53d3172a6f91cf8c2368fee4bf13715d1721508d543660a2322e"
+          }
+        }
+      ],
+      "unobservedFrames": []
+    }
+  ]
+}

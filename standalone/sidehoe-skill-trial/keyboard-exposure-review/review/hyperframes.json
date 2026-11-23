@@ -1,0 +1,122 @@
+{
+ "ok": true,
+ "pass": true,
+ "reference": "/Users/darshan/Downloads/sidehoe.mp4",
+ "yours": "/Users/darshan/Documents/ChatGPT/imessage-video/sidehoe-skill-trial/keyboard-exposure-review/candidate/sidehoe.mp4",
+ "mode": "video",
+ "window": [ 0, 31.12 ],
+ "thresholds": { "mean": 0.92, "p05": 0.85, "cell": 0.75 },
+ "ssim": { "frames": 778, "mean": 0.9759, "p05": 0.9536, "min": 0.9364, "cell_p05": 0.8318 },
+ "missing_content": {
+  "share": 0.0013,
+  "spans": [
+   [ 8.68, 8.72 ]
+  ],
+  "pass": true,
+  "texture": {
+   "share": 0.0051,
+   "spans": [
+    [ 4.28, 4.32 ],
+    [ 12.2, 12.24 ],
+    [ 21.28, 21.36 ]
+   ]
+  }
+ },
+ "worst": [
+  {
+   "t": 11.64,
+   "frame": 291,
+   "ssim": 0.9692,
+   "cell": {
+    "roi": [ 500, 1000, 500, 500 ],
+    "ssim": 0.834,
+    "picture": "/Users/darshan/Documents/ChatGPT/imessage-video/sidehoe-skill-trial/keyboard-exposure-review/review/hyperframes/worst-01-cell.png"
+   }
+  },
+  {
+   "t": 13.56,
+   "frame": 339,
+   "ssim": 0.9487,
+   "cell": {
+    "roi": [ 1000, 1000, 500, 500 ],
+    "ssim": 0.782,
+    "picture": "/Users/darshan/Documents/ChatGPT/imessage-video/sidehoe-skill-trial/keyboard-exposure-review/review/hyperframes/worst-02-cell.png"
+   }
+  },
+  {
+   "t": 14.64,
+   "frame": 366,
+   "ssim": 0.9616,
+   "cell": {
+    "roi": [ 1000, 500, 500, 500 ],
+    "ssim": 0.816,
+    "picture": "/Users/darshan/Documents/ChatGPT/imessage-video/sidehoe-skill-trial/keyboard-exposure-review/review/hyperframes/worst-03-cell.png"
+   }
+  },
+  {
+   "t": 15.16,
+   "frame": 379,
+   "ssim": 0.96,
+   "cell": {
+    "roi": [ 1000, 500, 500, 500 ],
+    "ssim": 0.8,
+    "picture": "/Users/darshan/Documents/ChatGPT/imessage-video/sidehoe-skill-trial/keyboard-exposure-review/review/hyperframes/worst-04-cell.png"
+   }
+  },
+  {
+   "t": 15.8,
+   "frame": 395,
+   "ssim": 0.9579,
+   "cell": {
+    "roi": [ 1000, 500, 500, 500 ],
+    "ssim": 0.76,
+    "picture": "/Users/darshan/Documents/ChatGPT/imessage-video/sidehoe-skill-trial/keyboard-exposure-review/review/hyperframes/worst-05-cell.png"
+   }
+  },
+  {
+   "t": 17.24,
+   "frame": 431,
+   "ssim": 0.9502,
+   "cell": {
+    "roi": [ 500, 500, 500, 500 ],
+    "ssim": 0.84,
+    "picture": "/Users/darshan/Documents/ChatGPT/imessage-video/sidehoe-skill-trial/keyboard-exposure-review/review/hyperframes/worst-06-cell.png"
+   }
+  },
+  {
+   "t": 22.32,
+   "frame": 558,
+   "ssim": 0.9745,
+   "cell": {
+    "roi": [ 1000, 1000, 500, 500 ],
+    "ssim": 0.802,
+    "picture": "/Users/darshan/Documents/ChatGPT/imessage-video/sidehoe-skill-trial/keyboard-exposure-review/review/hyperframes/worst-07-cell.png"
+   }
+  },
+  {
+   "t": 23.04,
+   "frame": 576,
+   "ssim": 0.9705,
+   "cell": {
+    "roi": [ 1000, 1000, 500, 500 ],
+    "ssim": 0.82,
+    "picture": "/Users/darshan/Documents/ChatGPT/imessage-video/sidehoe-skill-trial/keyboard-exposure-review/review/hyperframes/worst-08-cell.png"
+   }
+  }
+ ],
+ "cuts": {
+  "reference": [ 5.36, 6.4, 8.52, 16.04, 27.72, 30.8 ],
+  "yours": [ 5.36, 6.4, 8.52, 16.04, 27.72, 30.8 ],
+  "missing": [],
+  "extra": [],
+  "not_cuts": [],
+  "pass": true
+ },
+ "duration": { "reference": 31.12, "yours": 31.12, "pass": true },
+ "sound": { "offset_ms": null, "match": 0.06, "pass": true, "note": "too few distinct sounds to align" },
+ "sheet": "/Users/darshan/Documents/ChatGPT/imessage-video/sidehoe-skill-trial/keyboard-exposure-review/review/hyperframes/worst.jpg",
+ "log": "/Users/darshan/Documents/ChatGPT/imessage-video/sidehoe-skill-trial/keyboard-exposure-review/review/hyperframes/ssim.log",
+ "frames": "/Users/darshan/Documents/ChatGPT/imessage-video/sidehoe-skill-trial/keyboard-exposure-review/review/hyperframes/frames.tsv",
+ "warnings": [],
+ "_meta": { "version": "0.9.77", "updateAvailable": false }
+}

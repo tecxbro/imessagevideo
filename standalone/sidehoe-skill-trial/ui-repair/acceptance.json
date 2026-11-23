@@ -1,0 +1,377 @@
+{
+  "verdict": "FAIL",
+  "scope": "exact",
+  "candidate_sha256": "1703ce84a2215c3414a3a98eeeeb9744184d7427b4a7863d5d858d034fd607bf",
+  "plan_sha256": "ee4ece5f58fd163764ce51a684dc91a2fbaab1562e687b3f0c605d014b8cace6",
+  "shot_count": 24,
+  "passed_shots": 0,
+  "observed_passed_shots": 0,
+  "open_shots": {
+    "01-pinned-inbox-entrance": {
+      "appearance": "unverified"
+    },
+    "02-inbox-hold": {
+      "appearance": "unverified",
+      "inbox-cellular": "fail",
+      "inbox-wifi": "fail",
+      "inbox-battery": "fail",
+      "inbox-broken-heart": "fail"
+    },
+    "03-inbox-scroll": {
+      "appearance": "unverified"
+    },
+    "04-identity": {
+      "appearance": "unverified"
+    },
+    "05-glossy-handset": {
+      "appearance": "unverified"
+    },
+    "06-personal-title": {
+      "appearance": "unverified"
+    },
+    "07-dimensional-portrait-cluster": {
+      "appearance": "unverified"
+    },
+    "08-cluster-wipe-and-profile-reveal": {
+      "appearance": "unverified"
+    },
+    "09-profile-push": {
+      "appearance": "unverified"
+    },
+    "10-first-phone-entrance": {
+      "appearance": "unverified",
+      "first-handset-motion": "fail",
+      "handset-top": "fail",
+      "outgoing-bubble": "fail",
+      "incoming-bubble": "fail",
+      "composer-controls": "fail",
+      "keyboard-letters": "fail",
+      "keyboard-bottom-row": "fail",
+      "keyboard-emoji-key": "fail",
+      "keyboard-dictation-key": "fail",
+      "keyboard-home-indicator": "fail"
+    },
+    "11-suggestion-and-controls": {
+      "appearance": "unverified",
+      "suggestion-bubble": "fail"
+    },
+    "12-isolated-suggestion-and-pointer": {
+      "appearance": "unverified"
+    },
+    "13-calendar-entry": {
+      "appearance": "unverified"
+    },
+    "14-violet-appointment-drag": {
+      "appearance": "unverified"
+    },
+    "15-cyan-appointment-drag": {
+      "appearance": "unverified"
+    },
+    "16-calendar-mosaic-and-app-entry": {
+      "appearance": "unverified"
+    },
+    "17-app-orbit": {
+      "appearance": "unverified"
+    },
+    "18-app-exit": {
+      "appearance": "unverified"
+    },
+    "19-second-phone-entrance": {
+      "appearance": "unverified",
+      "follow-up-handset-motion": "fail"
+    },
+    "20-follow-up-buttons-and-push": {
+      "appearance": "unverified",
+      "follow-up-no-emoji": "fail",
+      "follow-up-yes-emoji": "fail"
+    },
+    "21-yes-contact-and-withdrawal": {
+      "appearance": "unverified",
+      "phone-exit-motion": "fail"
+    },
+    "22-closing-badge-entrance": {
+      "appearance": "unverified"
+    },
+    "23-closing-copy-and-wash": {
+      "appearance": "unverified"
+    },
+    "24-closing-fade-and-black-hold": {
+      "appearance": "unverified"
+    }
+  },
+  "pixel_failed_shots": [
+    "01-pinned-inbox-entrance",
+    "02-inbox-hold",
+    "03-inbox-scroll",
+    "04-identity",
+    "05-glossy-handset",
+    "06-personal-title",
+    "07-dimensional-portrait-cluster",
+    "08-cluster-wipe-and-profile-reveal",
+    "09-profile-push",
+    "10-first-phone-entrance",
+    "11-suggestion-and-controls",
+    "12-isolated-suggestion-and-pointer",
+    "13-calendar-entry",
+    "14-violet-appointment-drag",
+    "15-cyan-appointment-drag",
+    "16-calendar-mosaic-and-app-entry",
+    "17-app-orbit",
+    "18-app-exit",
+    "19-second-phone-entrance",
+    "20-follow-up-buttons-and-push",
+    "21-yes-contact-and-withdrawal",
+    "22-closing-badge-entrance",
+    "23-closing-copy-and-wash",
+    "24-closing-fade-and-black-hold"
+  ],
+  "required_comparison_failures": [
+    {
+      "check": "pixel_equality",
+      "first_difference": {
+        "frame": 0,
+        "changed_pixels": 3989459,
+        "max_channel_delta": 96,
+        "rect": [
+          0,
+          0,
+          2000,
+          2000
+        ]
+      }
+    },
+    {
+      "check": "whole_frame_mae",
+      "spans": [
+        [
+          0,
+          621
+        ],
+        [
+          624,
+          776
+        ]
+      ]
+    },
+    {
+      "check": "region",
+      "id": "inbox-cellular",
+      "spans": [
+        [
+          22,
+          22
+        ]
+      ]
+    },
+    {
+      "check": "region",
+      "id": "inbox-wifi",
+      "spans": [
+        [
+          22,
+          22
+        ]
+      ]
+    },
+    {
+      "check": "region",
+      "id": "inbox-battery",
+      "spans": [
+        [
+          22,
+          22
+        ]
+      ]
+    },
+    {
+      "check": "region",
+      "id": "inbox-broken-heart",
+      "spans": [
+        [
+          22,
+          22
+        ]
+      ]
+    },
+    {
+      "check": "region",
+      "id": "first-handset-motion",
+      "spans": [
+        [
+          313,
+          335
+        ]
+      ]
+    },
+    {
+      "check": "region_motion",
+      "id": "first-handset-motion",
+      "spans": [
+        [
+          314,
+          335
+        ]
+      ]
+    },
+    {
+      "check": "region",
+      "id": "handset-top",
+      "spans": [
+        [
+          327,
+          327
+        ]
+      ]
+    },
+    {
+      "check": "region",
+      "id": "outgoing-bubble",
+      "spans": [
+        [
+          327,
+          327
+        ]
+      ]
+    },
+    {
+      "check": "region",
+      "id": "incoming-bubble",
+      "spans": [
+        [
+          327,
+          327
+        ]
+      ]
+    },
+    {
+      "check": "region",
+      "id": "composer-controls",
+      "spans": [
+        [
+          327,
+          327
+        ]
+      ]
+    },
+    {
+      "check": "region",
+      "id": "keyboard-letters",
+      "spans": [
+        [
+          327,
+          327
+        ]
+      ]
+    },
+    {
+      "check": "region",
+      "id": "keyboard-bottom-row",
+      "spans": [
+        [
+          327,
+          327
+        ]
+      ]
+    },
+    {
+      "check": "region",
+      "id": "keyboard-emoji-key",
+      "spans": [
+        [
+          327,
+          327
+        ]
+      ]
+    },
+    {
+      "check": "region",
+      "id": "keyboard-dictation-key",
+      "spans": [
+        [
+          327,
+          327
+        ]
+      ]
+    },
+    {
+      "check": "region",
+      "id": "keyboard-home-indicator",
+      "spans": [
+        [
+          327,
+          327
+        ]
+      ]
+    },
+    {
+      "check": "region",
+      "id": "suggestion-bubble",
+      "spans": [
+        [
+          341,
+          341
+        ]
+      ]
+    },
+    {
+      "check": "region",
+      "id": "follow-up-handset-motion",
+      "spans": [
+        [
+          624,
+          647
+        ]
+      ]
+    },
+    {
+      "check": "region_motion",
+      "id": "follow-up-handset-motion",
+      "spans": [
+        [
+          625,
+          647
+        ]
+      ]
+    },
+    {
+      "check": "region",
+      "id": "follow-up-no-emoji",
+      "spans": [
+        [
+          670,
+          670
+        ]
+      ]
+    },
+    {
+      "check": "region",
+      "id": "follow-up-yes-emoji",
+      "spans": [
+        [
+          670,
+          670
+        ]
+      ]
+    },
+    {
+      "check": "region",
+      "id": "phone-exit-motion",
+      "spans": [
+        [
+          675,
+          695
+        ]
+      ]
+    },
+    {
+      "check": "region_motion",
+      "id": "phone-exit-motion",
+      "spans": [
+        [
+          676,
+          695
+        ]
+      ]
+    }
+  ]
+}
