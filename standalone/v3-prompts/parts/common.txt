@@ -1,0 +1,5 @@
+First read the team brief: the body of the GitHub issue "iMessage video skill v3 - build room". Find it with
+gh issue list -R tecxbro/imessagevideo --state all --search '"build room" in:title' --json number,url
+and read it with gh issue view. It holds your six teammates, the working rules, the table of who gives what to whom, notes for your role, and the sources. All of it is part of this goal. If you cannot read it, stop and say so.
+
+Your branch is codex-video-v3/SLUG, from base c49482aec7b8ed0b840f97c61a5e5b860c4077b6. Clone every source in the brief, copy what works, and build on top. The repo already renders through Python/Pillow with FFmpeg, GSAP, Remotion, HTML/CSS/SVG and Motion Canvas. Keep searching beyond the sources, and keep building until a fresh agent can use your work unaided and another round adds nothing.

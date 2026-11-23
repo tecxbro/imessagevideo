@@ -1,0 +1,420 @@
+{
+  "width": 720,
+  "height": 480,
+  "fps": 30,
+  "duration": 2.4,
+  "background": "#dce7f1",
+  "title": "Promote a conversation into the pinned tray",
+  "source": {
+    "path": "packs/conversation.mjs#pin-conversation-avatar",
+    "sourceStart": 0,
+    "sourceEnd": 2.4,
+    "notes": "Original editable Motion demonstration."
+  },
+  "layers": [
+    {
+      "id": "surface",
+      "type": "rect",
+      "x": 110,
+      "y": 44,
+      "width": 500,
+      "height": 392,
+      "fill": "#ffffff",
+      "radius": 18
+    },
+    {
+      "id": "stage",
+      "type": "group",
+      "x": 110,
+      "y": 98,
+      "children": [
+        {
+          "id": "pin-tray",
+          "type": "rect",
+          "x": 25,
+          "y": 16,
+          "width": 450,
+          "height": 84,
+          "fill": "#e8eef5",
+          "radius": 15
+        },
+        {
+          "id": "pin-tray-label",
+          "type": "text",
+          "text": "Pinned",
+          "x": 41,
+          "y": 46,
+          "fontSize": 15,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#516277"
+        },
+        {
+          "id": "pin-original-row",
+          "type": "group",
+          "x": 0,
+          "y": 114,
+          "children": [
+            {
+              "id": "pin-selected-row-surface",
+              "type": "rect",
+              "x": 26,
+              "y": 0,
+              "width": 448,
+              "height": 54,
+              "fill": "#deeeff",
+              "radius": 11
+            },
+            {
+              "id": "pin-selected-row-title",
+              "type": "text",
+              "text": "Trail crew",
+              "x": 94,
+              "y": 6,
+              "fontSize": 16,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#17191d",
+              "fontWeight": 600
+            },
+            {
+              "id": "pin-selected-row-summary",
+              "type": "group",
+              "x": 94,
+              "y": 27,
+              "children": [
+                {
+                  "id": "pin-selected-row-summary-copy",
+                  "type": "text",
+                  "text": "Can you send the trail map?",
+                  "x": 0,
+                  "y": 0,
+                  "fontSize": 13,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#516277"
+                }
+              ],
+              "clip": {
+                "x": 0,
+                "y": 0,
+                "width": 345,
+                "height": 20.8
+              }
+            }
+          ],
+          "keyframes": {
+            "opacity": [
+              {
+                "t": 0,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 0.84,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 1.344,
+                "value": 0,
+                "ease": "easeOut"
+              }
+            ]
+          }
+        },
+        {
+          "id": "pin-unmoved-conversations",
+          "type": "group",
+          "x": 0,
+          "y": 176,
+          "children": [
+            {
+              "id": "pin-row-two-avatar",
+              "type": "rect",
+              "x": 37,
+              "y": 8,
+              "width": 36,
+              "height": 36,
+              "fill": "#dae9df",
+              "radius": 18
+            },
+            {
+              "id": "pin-row-two-title",
+              "type": "text",
+              "text": "Weekend plans",
+              "x": 94,
+              "y": 7,
+              "fontSize": 16,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#17191d",
+              "fontWeight": 600
+            },
+            {
+              "id": "pin-row-two-summary",
+              "type": "group",
+              "x": 94,
+              "y": 28,
+              "children": [
+                {
+                  "id": "pin-row-two-summary-copy",
+                  "type": "text",
+                  "text": "Here it is. Meet at the north gate.",
+                  "x": 0,
+                  "y": 0,
+                  "fontSize": 13,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#516277"
+                }
+              ],
+              "clip": {
+                "x": 0,
+                "y": 0,
+                "width": 345,
+                "height": 20.8
+              }
+            },
+            {
+              "id": "pin-row-three-avatar",
+              "type": "rect",
+              "x": 37,
+              "y": 66,
+              "width": 36,
+              "height": 36,
+              "fill": "#e5e0f2",
+              "radius": 18
+            },
+            {
+              "id": "pin-row-three-title",
+              "type": "text",
+              "text": "Project notes",
+              "x": 94,
+              "y": 65,
+              "fontSize": 16,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#17191d",
+              "fontWeight": 600
+            },
+            {
+              "id": "pin-row-three-summary",
+              "type": "text",
+              "text": "The updated notes are ready.",
+              "x": 94,
+              "y": 86,
+              "fontSize": 13,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#516277"
+            }
+          ],
+          "keyframes": {
+            "y": [
+              {
+                "t": 0,
+                "value": 176,
+                "ease": "linear"
+              },
+              {
+                "t": 1.008,
+                "value": 176,
+                "ease": "linear"
+              },
+              {
+                "t": 1.6320000000000001,
+                "value": 115,
+                "ease": "easeInOut"
+              }
+            ]
+          }
+        },
+        {
+          "id": "pin-traveling-avatar",
+          "type": "group",
+          "x": 37,
+          "y": 122,
+          "children": [
+            {
+              "id": "pin-traveling-avatar-background",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 38,
+              "height": 38,
+              "fill": "#1478e9",
+              "radius": 19
+            },
+            {
+              "id": "pin-traveling-avatar-initial",
+              "type": "text",
+              "text": "T",
+              "x": 19,
+              "y": 8,
+              "fontSize": 17,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#ffffff",
+              "textAnchor": "middle",
+              "fontWeight": 600
+            }
+          ],
+          "originX": 19,
+          "originY": 19,
+          "keyframes": {
+            "x": [
+              {
+                "t": 0,
+                "value": 37,
+                "ease": "linear"
+              },
+              {
+                "t": 0.84,
+                "value": 37,
+                "ease": "linear"
+              },
+              {
+                "t": 1.224,
+                "value": 160,
+                "ease": "easeOut"
+              },
+              {
+                "t": 1.656,
+                "value": 249,
+                "ease": "easeOut"
+              }
+            ],
+            "y": [
+              {
+                "t": 0,
+                "value": 122,
+                "ease": "linear"
+              },
+              {
+                "t": 0.84,
+                "value": 122,
+                "ease": "linear"
+              },
+              {
+                "t": 1.344,
+                "value": 26,
+                "ease": "easeOut"
+              },
+              {
+                "t": 1.656,
+                "value": 29,
+                "ease": "easeOut"
+              }
+            ]
+          }
+        },
+        {
+          "id": "pin-final-title",
+          "type": "text",
+          "text": "Trail crew",
+          "x": 268,
+          "y": 74,
+          "fontSize": 12,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#17191d",
+          "textAnchor": "middle",
+          "keyframes": {
+            "opacity": [
+              {
+                "t": 0,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 1.488,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 1.776,
+                "value": 1,
+                "ease": "easeOut"
+              }
+            ]
+          }
+        }
+      ],
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 500,
+        "height": 298
+      }
+    },
+    {
+      "id": "footer",
+      "type": "group",
+      "x": 110,
+      "y": 396,
+      "children": [
+        {
+          "id": "footer-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 40,
+          "fill": "#f2f6fb",
+          "radius": 12
+        }
+      ]
+    },
+    {
+      "id": "heading",
+      "type": "group",
+      "x": 110,
+      "y": 44,
+      "children": [
+        {
+          "id": "heading-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 54,
+          "fill": "#f2f6fb",
+          "radius": 13
+        },
+        {
+          "id": "heading-copy",
+          "type": "text",
+          "text": "Messages",
+          "x": 26,
+          "y": 13,
+          "fontSize": 23,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#182737",
+          "fontWeight": 700
+        }
+      ]
+    }
+  ],
+  "timeline": {
+    "version": 1,
+    "picture": {
+      "fpsNum": 30,
+      "fpsDen": 1,
+      "frameCount": 72
+    },
+    "initialUI": null,
+    "events": [
+      {
+        "id": "motion.pin-conversation-avatar.pin-chat",
+        "kind": "conversation_pin",
+        "target": "pin-original-row",
+        "frame": 26,
+        "layerIds": [
+          "pin-original-row"
+        ]
+      },
+      {
+        "id": "motion.pin-conversation-avatar.pin-arrival",
+        "kind": "pin_settle",
+        "target": "pin-traveling-avatar",
+        "frame": 50,
+        "layerIds": [
+          "pin-traveling-avatar"
+        ]
+      }
+    ],
+    "cues": []
+  }
+}

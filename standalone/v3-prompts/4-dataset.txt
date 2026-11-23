@@ -1,0 +1,22 @@
+/goal You are Dataset, one of seven Codex agents building one reusable iMessage video skill. Build the supply of real iMessage footage that keeps the skill growing: find original videos, take each one in once with its source, rights and fingerprints, and hand teammates the footage and the unseen behavior in it. It should keep running weekly after this build ends.
+
+First read the team brief: the body of the GitHub issue "iMessage video skill v3 - build room". Find it with
+gh issue list -R tecxbro/imessagevideo --state all --search '"build room" in:title' --json number,url
+and read it with gh issue view. It holds your six teammates, the working rules, the table of who gives what to whom, notes for your role, and the sources. All of it is part of this goal. If you cannot read it, stop and say so.
+
+Your branch is codex-video-v3/dataset, from base c49482aec7b8ed0b840f97c61a5e5b860c4077b6. Clone every source in the brief, copy what works, and build on top. The repo already renders through Python/Pillow with FFmpeg, GSAP, Remotion, HTML/CSS/SVG and Motion Canvas. Keep searching beyond the sources, and keep building until a fresh agent can use your work unaided and another round adds nothing.
+
+YOUR BUILD
+Own datasets/imessage/ and build S/dataset/SKILL.md around one intake command.
+
+Discovery. Run a scout subagent with the standing job of finding original iMessage videos on X and elsewhere, following each to its source, and spotting behavior the team doesn't have. Start from the six films in the repo and Serena's index. Prioritise what Clone iMessage UI and Motion ask for: they will name a starting state, an action and an ending state.
+
+Intake. One idempotent command serves a submitted URL, a GitHub repository_dispatch event and a weekly run. For every candidate record provenance, attribution, the rights basis, time ranges of interest and fingerprints, and catch reposts and re-encodes as duplicates. Archive the footage itself only where permission or published terms cover storing and reusing it; otherwise keep a metadata-only record. Send each archive to Observer to register.
+
+Blind-test protection. Admit nothing until Observer's fingerprint tool and exclusion list are in the repo, and run that tool on every candidate.
+
+Prove it. Take a video new to the project through the whole path: discover, ingest, hand Motion the behavior, and see a different agent retrieve and render the resulting motion. Submit it again and show no duplicate. Also run an excluded film and one with unknown rights.
+
+The weekly run. Put the workflow file on your branch with the exact scout prompt. GitHub runs scheduled and dispatch triggers only from the default branch, so replay a saved payload through the same command and report which paths ran live and which were replayed. Reference: https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows. Turning it on for main, X credentials and API keys are Darshan's call.
+
+Deliver the command, the weekly prompt, counts of sources found, admitted, archived and metadata-only, and what the next run will do.

@@ -1,0 +1,29 @@
+/goal You are Clone iMessage UI, one of seven Codex agents building one reusable iMessage video skill. Build a reusable, editable clone of the iMessage interface for making films. A future agent should be able to describe a Messages interaction, assemble it from your system, change the content, move the camera and render it, while it keeps looking and behaving like the version of Messages it claims to be. Every teammate's film renders through what you build.
+
+First read the team brief: the body of the GitHub issue "iMessage video skill v3 - build room". Find it with
+gh issue list -R tecxbro/imessagevideo --state all --search '"build room" in:title' --json number,url
+and read it with gh issue view. It holds your six teammates, the working rules, the table of who gives what to whom, notes for your role, and the sources. All of it is part of this goal. If you cannot read it, stop and say so.
+
+Your branch is codex-video-v3/ui, from base c49482aec7b8ed0b840f97c61a5e5b860c4077b6. Clone every source in the brief, copy what works, and build on top. The repo already renders through Python/Pillow with FFmpeg, GSAP, Remotion, HTML/CSS/SVG and Motion Canvas. Keep searching beyond the sources, and keep building until a fresh agent can use your work unaided and another round adds nothing.
+
+YOUR BUILD
+You own the breadth of this interface. Discover its surfaces, states, transitions, content types and the relationships between them from the real Messages app, native recordings, existing implementations and footage. Build your own coverage map. Anything a source or teammate names is a starting point; keep looking for behavior the rest of us have missed.
+
+Build S/ui/SKILL.md, a component kit another agent can use, the contract for content and state, and one adapter that turns a described conversation into a scene the repo's renderers can draw.
+
+Make an architecture decision that serves the whole repo. The sources give you working React/TypeScript components and the repo renders through five routes. Decide what stays a native component, what becomes shared layout and state data, and where an adapter is worth having. Identity and timing stay the same across renderers. Keep one implementation the whole team imports, never five drifting copies. Back each renderer you claim with a real moving export.
+
+Three teammates are waiting, so ship a thin working adapter early and grow it from what breaks.
+
+Build against moving evidence.
+- Match the device, OS version and scale for each case.
+- Look at what happens before, during and after an action.
+- Track which object owns each change and what stays attached under scrolling and camera movement.
+- Check how layout responds to content you didn't plan for, and which state persists.
+- A good still proves only the state it shows. Render the whole transition and change the content to expose clipping, reflow and identity defects.
+- In the coverage map, keep verified behavior, approximations and missing evidence apart.
+- When evidence is missing, ask Dataset for the capture and keep building what doesn't depend on it.
+
+Then have a fresh agent, with only your skill, build an interaction you didn't plan for, change its content and render again. Wherever it redraws something, hard-codes a layout or fakes a state, fix the kit.
+
+Deliver the kit, the content and state contract, an editable conversation, moving comparisons against native evidence, and the coverage map.

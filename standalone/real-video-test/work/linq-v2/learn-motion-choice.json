@@ -1,0 +1,165 @@
+{
+  "request": "Learn this swipe.",
+  "intent": "learn",
+  "scope": "motion",
+  "library": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/run/library",
+  "sources": [
+    {
+      "path": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/inputs/05-linq.mp4",
+      "role": "reference",
+      "identity": {
+        "status": "known",
+        "sha256": "86e22e698e141c5c2a161977289be1335bb0c0a1dd98769c4c146fcd57bbf2eb",
+        "matches": [
+          {
+            "id": "05-linq",
+            "title": "Linq iMessage Apps",
+            "source": {
+              "url": "https://github.com/tecxbro/imessagevideo/blob/c49482aec7b8ed0b840f97c61a5e5b860c4077b6/projects/05-linq-complete-v1/imessage-recreations/references/05-linq/source.mp4",
+              "origin": "https://www.linkedin.com/posts/elliottpotter_your-users-never-have-to-leave-imessage-again-activity-7477784121293950976-Dlap",
+              "repository_path": "projects/05-linq-complete-v1/imessage-recreations/references/05-linq/source.mp4",
+              "sha256": "86e22e698e141c5c2a161977289be1335bb0c0a1dd98769c4c146fcd57bbf2eb"
+            },
+            "editable_project": {
+              "url": "https://github.com/tecxbro/imessagevideo/tree/c49482aec7b8ed0b840f97c61a5e5b860c4077b6/projects/05-linq-complete-v1/imessage-recreations",
+              "repository_path": "projects/05-linq-complete-v1/imessage-recreations",
+              "scene": {
+                "repository_path": "projects/05-linq-complete-v1/imessage-recreations/scenes/05-linq/scene.json",
+                "sha256": "658184bb8d05c50633f37fa0ef0bfd8a943773076f249c7e0dbf02991e6e93c6",
+                "url": "https://github.com/tecxbro/imessagevideo/blob/c49482aec7b8ed0b840f97c61a5e5b860c4077b6/projects/05-linq-complete-v1/imessage-recreations/scenes/05-linq/scene.json"
+              }
+            },
+            "reconstruction": {
+              "verification": "historical-archive",
+              "audit_url": "https://github.com/tecxbro/imessagevideo/blob/c49482aec7b8ed0b840f97c61a5e5b860c4077b6/reports/completeness-audit/README.md",
+              "source_scan_url": "https://github.com/tecxbro/imessagevideo/blob/c49482aec7b8ed0b840f97c61a5e5b860c4077b6/projects/05-linq-complete-v1/imessage-recreations/verification/timeline-scans/05-linq-v20-pc709/scan.json",
+              "master": {
+                "url": "https://github.com/tecxbro/imessagevideo/blob/c49482aec7b8ed0b840f97c61a5e5b860c4077b6/projects/05-linq-complete-v1/imessage-recreations/deliverables/05-linq/gsap.mp4",
+                "repository_path": "projects/05-linq-complete-v1/imessage-recreations/deliverables/05-linq/gsap.mp4",
+                "sha256": "309684b11463675fdce23a394f4ec2285ff267a4c7d61d492857aa0192f80268"
+              }
+            },
+            "recipe_ids": [],
+            "evidence": {
+              "kind": "sha256",
+              "sha256": "86e22e698e141c5c2a161977289be1335bb0c0a1dd98769c4c146fcd57bbf2eb"
+            },
+            "seed_bindings": [],
+            "coverage": "archived-reconstruction",
+            "next": "Open the saved scene and master, restore large scene data if needed, then compare against this brief before rebuilding."
+          }
+        ]
+      },
+      "documented_motions": [
+        {
+          "id": "photos-under-fixed-heading",
+          "title": "Slide the photos beneath a fixed heading",
+          "source": {
+            "kind": "measured-adaptation",
+            "ref": "projects/05-linq-complete-v1/imessage-recreations/references/05-linq/source.mp4",
+            "range": [
+              36.266666666666666,
+              37.8
+            ],
+            "framesInclusive": [
+              1088,
+              1134
+            ],
+            "note": "Native Linq rail displacements after the entrance camera move, including the acceleration, deceleration and final hold. Replanted at a new size with independent imagery and a fixed heading."
+          },
+          "preview": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/imessagevideo/skill/imessage-video/assets/seed/previews/photos-under-fixed-heading.mp4",
+          "implementation": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/imessagevideo/skill/imessage-video/assets/seed/runtime/motion/packs/core.mjs"
+        }
+      ],
+      "steps": [
+        "inspect_registered_coverage",
+        "reuse_matching_coverage",
+        "learn_and_replay_uncovered_motions"
+      ]
+    }
+  ],
+  "project": null,
+  "next": "resolve_motion_coverage",
+  "workflow": [
+    "isolate_requested_intervals",
+    "check_existing_recipes",
+    "author_missing_recipes",
+    "replay_saved_code_against_reference",
+    "verify_transfer_with_changed_content",
+    "return_preview_code_and_usage"
+  ],
+  "motion_choices": {
+    "query": "photos-under-fixed-heading",
+    "decision": "inspect_seed_preview",
+    "learned": [],
+    "seed": [
+      {
+        "id": "photos-under-fixed-heading",
+        "title": "Slide the photos beneath a fixed heading",
+        "moves": "Adjacent photos translate together on one horizontally clipped rail.",
+        "fixed": "The heading, viewport, divider and supporting footer stay in place.",
+        "notice": "The next photo comes into view while the place and surrounding context remain easy to read.",
+        "fits": "Browse pictures inside a place or album surface with persistent labels. Use the separate UI adapter variant for inline conversation paging.",
+        "avoid": "A stack that lifts or dismisses only its front photo needs independent layers and depth.",
+        "intents": [
+          "Move the photos beneath a fixed heading",
+          "Slide pictures horizontally under a title that stays put",
+          "Keep the shop name pinned as the storefront photos glide past",
+          "Scroll images without moving the header",
+          "Browse ticket options on a card rail while the event name stays visible"
+        ],
+        "editable": [
+          "heading",
+          "detail",
+          "photos",
+          "direction",
+          "message"
+        ],
+        "editableFields": {
+          "heading": "text",
+          "detail": "text",
+          "photos": "array of local PNG, JPEG or WebP paths, relative to the content JSON",
+          "direction": "left or right",
+          "message": "optional stationary message beneath the photo rail"
+        },
+        "photoCount": {
+          "min": 2,
+          "max": 12
+        },
+        "source": {
+          "kind": "measured-adaptation",
+          "ref": "projects/05-linq-complete-v1/imessage-recreations/references/05-linq/source.mp4",
+          "range": [
+            36.266666666666666,
+            37.8
+          ],
+          "framesInclusive": [
+            1088,
+            1134
+          ],
+          "note": "Native Linq rail displacements after the entrance camera move, including the acceleration, deceleration and final hold. Replanted at a new size with independent imagery and a fixed heading."
+        },
+        "events": [
+          {
+            "id": "motion.photos-under-fixed-heading.rail-start",
+            "kind": "media.scroll",
+            "frame": 13
+          },
+          {
+            "id": "motion.photos-under-fixed-heading.rail-settle",
+            "kind": "media.settle",
+            "frame": 54
+          }
+        ],
+        "picture": {
+          "fpsNum": 30,
+          "fpsDen": 1,
+          "frameCount": 72
+        },
+        "sha256": "fbd12bb6f99a35a45e901d053b6f466dd94791374a42cc038f9d4ff215e7b2d3",
+        "implementation": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/imessagevideo/skill/imessage-video/assets/seed/runtime/motion/packs/core.mjs",
+        "preview": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/imessagevideo/skill/imessage-video/assets/seed/previews/photos-under-fixed-heading.mp4"
+      }
+    ]
+  }
+}

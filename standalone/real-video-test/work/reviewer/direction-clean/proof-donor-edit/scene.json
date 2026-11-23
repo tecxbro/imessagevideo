@@ -1,0 +1,460 @@
+{
+  "width": 720,
+  "height": 480,
+  "fps": 30,
+  "duration": 3.2,
+  "background": "#dce7f1",
+  "title": "Slide the photos beneath a fixed heading",
+  "source": {
+    "path": "projects/05-linq-complete-v1/imessage-recreations/references/05-linq/source.mp4",
+    "sourceStart": 36.266666666666666,
+    "sourceEnd": 37.8,
+    "notes": "Native Linq rail displacements after the entrance camera move, including the acceleration, deceleration and final hold. Replanted at a new size with independent imagery and a fixed heading."
+  },
+  "layers": [
+    {
+      "id": "surface",
+      "type": "rect",
+      "x": 110,
+      "y": 44,
+      "width": 500,
+      "height": 392,
+      "fill": "#ffffff",
+      "radius": 18
+    },
+    {
+      "id": "stage",
+      "type": "group",
+      "x": 110,
+      "y": 98,
+      "children": [
+        {
+          "id": "photo-viewport",
+          "type": "group",
+          "x": 30,
+          "y": 33,
+          "children": [
+            {
+              "id": "photo-viewport-field",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 440,
+              "height": 197,
+              "fill": "#e8eef5",
+              "radius": 0
+            },
+            {
+              "id": "photo-rail",
+              "type": "group",
+              "x": 0,
+              "y": 0,
+              "children": [
+                {
+                  "id": "photo-1",
+                  "type": "image",
+                  "src": "assets/d02ec1cc3d993e66-ticket-1.png",
+                  "x": 0,
+                  "y": 0,
+                  "width": 296,
+                  "height": 197
+                },
+                {
+                  "id": "photo-2",
+                  "type": "image",
+                  "src": "assets/60ec83fa59cff781-ticket-2.png",
+                  "x": 308,
+                  "y": 0,
+                  "width": 296,
+                  "height": 197
+                },
+                {
+                  "id": "photo-3",
+                  "type": "image",
+                  "src": "assets/a94a6980b07ba773-ticket-3.png",
+                  "x": 616,
+                  "y": 0,
+                  "width": 296,
+                  "height": 197
+                },
+                {
+                  "id": "photo-4",
+                  "type": "image",
+                  "src": "assets/071625a7bdcad164-ticket-4.png",
+                  "x": 924,
+                  "y": 0,
+                  "width": 296,
+                  "height": 197
+                }
+              ],
+              "keyframes": {
+                "x": [
+                  {
+                    "t": 0.7333333333333334,
+                    "value": 0,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 0.7666666666666667,
+                    "value": -8.447653429602887,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 0.8,
+                    "value": -18.021660649819495,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 0.8333333333333335,
+                    "value": -29.28519855595668,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 0.8666666666666667,
+                    "value": -41.675090252707584,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 0.9,
+                    "value": -41.675090252707584,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 0.9333333333333335,
+                    "value": -55.754512635379065,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 0.9666666666666667,
+                    "value": -72.08664259927798,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 1,
+                    "value": -90.67148014440433,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 1.0333333333333334,
+                    "value": -112.63537906137184,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 1.0666666666666667,
+                    "value": -112.63537906137184,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 1.1,
+                    "value": -139.10469314079424,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 1.1333333333333335,
+                    "value": -171.20577617328522,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 1.1666666666666667,
+                    "value": -211.7545126353791,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 1.2000000000000002,
+                    "value": -264.12996389891697,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 1.2333333333333334,
+                    "value": -264.12996389891697,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 1.2666666666666666,
+                    "value": -334.52707581227435,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 1.3,
+                    "value": -422.38267148014444,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 1.3333333333333335,
+                    "value": -505.7328519855596,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 1.3666666666666667,
+                    "value": -567.6823104693141,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 1.4000000000000001,
+                    "value": -567.6823104693141,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 1.4333333333333336,
+                    "value": -612.173285198556,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 1.4666666666666668,
+                    "value": -645.4007220216606,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 1.5,
+                    "value": -671.3068592057762,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 1.5333333333333334,
+                    "value": -692.14440433213,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 1.5666666666666667,
+                    "value": -692.14440433213,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 1.6,
+                    "value": -709.0397111913358,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 1.6333333333333333,
+                    "value": -722.5559566787003,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 1.666666666666667,
+                    "value": -733.8194945848376,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 1.7000000000000002,
+                    "value": -743.3935018050541,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 1.7333333333333334,
+                    "value": -743.3935018050541,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 1.7666666666666668,
+                    "value": -751.2779783393502,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 1.8,
+                    "value": -758.0361010830326,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 1.8333333333333333,
+                    "value": -763.6678700361011,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 1.866666666666667,
+                    "value": -768.173285198556,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 1.9000000000000001,
+                    "value": -768.173285198556,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 1.9333333333333333,
+                    "value": -771.552346570397,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 1.9666666666666668,
+                    "value": -774.3682310469314,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 2,
+                    "value": -776.6209386281589,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 2.033333333333333,
+                    "value": -778.3104693140795,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 2.066666666666667,
+                    "value": -778.3104693140795,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 2.1,
+                    "value": -779.4368231046931,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 2.1333333333333333,
+                    "value": -780,
+                    "ease": "linear"
+                  }
+                ]
+              }
+            }
+          ],
+          "clip": {
+            "x": 0,
+            "y": 0,
+            "width": 440,
+            "height": 197,
+            "radius": 14
+          }
+        },
+        {
+          "id": "photo-rail-divider",
+          "type": "rect",
+          "x": 30,
+          "y": 250,
+          "width": 440,
+          "height": 1,
+          "fill": "#d4dfe9",
+          "radius": 0
+        },
+        {
+          "id": "pinned-message",
+          "type": "group",
+          "x": 30,
+          "y": 258,
+          "children": [
+            {
+              "id": "pinned-message-bg",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 440,
+              "height": 34,
+              "fill": "#e8eef5",
+              "radius": 13
+            },
+            {
+              "id": "pinned-message-copy",
+              "type": "text",
+              "text": "Meet at the doors",
+              "x": 13,
+              "y": 7,
+              "fontSize": 15,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#182737"
+            }
+          ],
+          "clip": {
+            "x": 0,
+            "y": 0,
+            "width": 440,
+            "height": 34,
+            "radius": 13
+          }
+        }
+      ],
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 500,
+        "height": 298
+      }
+    },
+    {
+      "id": "footer",
+      "type": "group",
+      "x": 110,
+      "y": 396,
+      "children": [
+        {
+          "id": "footer-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 40,
+          "fill": "#f2f6fb",
+          "radius": 12
+        },
+        {
+          "id": "footer-label",
+          "type": "text",
+          "text": "Afterglow · Friday",
+          "x": 26,
+          "y": 11,
+          "fontSize": 15,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#516277"
+        }
+      ]
+    },
+    {
+      "id": "heading",
+      "type": "group",
+      "x": 110,
+      "y": 44,
+      "children": [
+        {
+          "id": "heading-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 54,
+          "fill": "#f2f6fb",
+          "radius": 13
+        },
+        {
+          "id": "heading-copy",
+          "type": "text",
+          "text": "Jo + Tessa",
+          "x": 26,
+          "y": 13,
+          "fontSize": 23,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#182737",
+          "fontWeight": 700
+        }
+      ]
+    }
+  ],
+  "timeline": {
+    "version": 1,
+    "picture": {
+      "fpsNum": 30,
+      "fpsDen": 1,
+      "frameCount": 96
+    },
+    "initialUI": null,
+    "events": [
+      {
+        "id": "motion.photos-under-fixed-heading.rail-start",
+        "kind": "media.scroll",
+        "target": "photo-rail",
+        "frame": 23,
+        "layerIds": [
+          "photo-rail"
+        ]
+      },
+      {
+        "id": "motion.photos-under-fixed-heading.rail-settle",
+        "kind": "media.settle",
+        "target": "photo-rail",
+        "frame": 64,
+        "layerIds": [
+          "photo-rail"
+        ]
+      }
+    ],
+    "cues": []
+  }
+}

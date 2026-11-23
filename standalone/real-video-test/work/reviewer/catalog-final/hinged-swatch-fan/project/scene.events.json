@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 72
+  },
+  "initialUI": null,
+  "events": [
+    {
+      "id": "motion.hinged-swatch-fan.leaves-open",
+      "kind": "swatches.open",
+      "target": "leaf-left",
+      "frame": 16,
+      "layerIds": [
+        "leaf-left"
+      ]
+    },
+    {
+      "id": "motion.hinged-swatch-fan.fan-settled",
+      "kind": "swatches.settle",
+      "target": "fan-pin",
+      "frame": 47,
+      "layerIds": [
+        "fan-pin"
+      ]
+    }
+  ],
+  "cues": []
+}

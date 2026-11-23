@@ -1,0 +1,354 @@
+{
+  "width": 720,
+  "height": 480,
+  "fps": 30,
+  "duration": 2.4,
+  "background": "#dce7f1",
+  "title": "Signal a failed send and reveal retry",
+  "source": {
+    "path": "packs/conversation.mjs#send-failure-retry",
+    "sourceStart": 0,
+    "sourceEnd": 2.4,
+    "notes": "Original editable Motion demonstration."
+  },
+  "layers": [
+    {
+      "id": "surface",
+      "type": "rect",
+      "x": 110,
+      "y": 44,
+      "width": 500,
+      "height": 392,
+      "fill": "#ffffff",
+      "radius": 18
+    },
+    {
+      "id": "stage",
+      "type": "group",
+      "x": 110,
+      "y": 98,
+      "children": [
+        {
+          "id": "failed-send-context",
+          "type": "group",
+          "x": 30,
+          "y": 74,
+          "children": [
+            {
+              "id": "failed-send-context-body",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 262,
+              "height": 54,
+              "fill": "#e9e9ed",
+              "radius": 20
+            },
+            {
+              "id": "failed-send-context-tail",
+              "type": "path",
+              "d": "M 16 36 Q 3 55 -7 52 Q 3 48 2 34 Z",
+              "fill": "#e9e9ed"
+            },
+            {
+              "id": "failed-send-context-copy",
+              "type": "text",
+              "text": "Here it is. Meet at the north\ngate.",
+              "x": 17,
+              "y": 7.5,
+              "fontSize": 16,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#17191d",
+              "lineHeight": 18
+            }
+          ]
+        },
+        {
+          "id": "failed-outgoing",
+          "type": "group",
+          "x": 193,
+          "y": 153,
+          "children": [
+            {
+              "id": "failed-outgoing-body",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 240,
+              "height": 54,
+              "fill": "#1688fa",
+              "radius": 20
+            },
+            {
+              "id": "failed-outgoing-tail",
+              "type": "path",
+              "d": "M 224 36 Q 237 55 247 52 Q 237 48 238 34 Z",
+              "fill": "#1688fa"
+            },
+            {
+              "id": "failed-outgoing-copy",
+              "type": "text",
+              "text": "Can you send the trail\nmap?",
+              "x": 17,
+              "y": 7.5,
+              "fontSize": 16,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#ffffff",
+              "lineHeight": 18
+            }
+          ],
+          "keyframes": {
+            "x": [
+              {
+                "t": 0,
+                "value": 193,
+                "ease": "linear"
+              },
+              {
+                "t": 0.9839999999999999,
+                "value": 193,
+                "ease": "linear"
+              },
+              {
+                "t": 1.0512,
+                "value": 181,
+                "ease": "easeOut"
+              },
+              {
+                "t": 1.1184,
+                "value": 204,
+                "ease": "easeInOut"
+              },
+              {
+                "t": 1.188,
+                "value": 186,
+                "ease": "easeInOut"
+              },
+              {
+                "t": 1.2528,
+                "value": 197,
+                "ease": "easeInOut"
+              },
+              {
+                "t": 1.3679999999999999,
+                "value": 193,
+                "ease": "easeOut"
+              }
+            ]
+          }
+        },
+        {
+          "id": "failed-retry-control",
+          "type": "group",
+          "x": 440,
+          "y": 161,
+          "children": [
+            {
+              "id": "failed-retry-ring",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 33,
+              "height": 33,
+              "fill": "#ffffff",
+              "radius": 16,
+              "stroke": "#ba394b",
+              "strokeWidth": 2
+            },
+            {
+              "id": "failed-retry-symbol",
+              "type": "text",
+              "text": "!",
+              "x": 17,
+              "y": 4,
+              "fontSize": 19,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#ba394b",
+              "textAnchor": "middle",
+              "fontWeight": 600
+            }
+          ],
+          "keyframes": {
+            "opacity": [
+              {
+                "t": 0,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 1.152,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 1.3679999999999999,
+                "value": 1,
+                "ease": "easeOut"
+              }
+            ]
+          }
+        },
+        {
+          "id": "failed-status",
+          "type": "text",
+          "text": "Not Delivered",
+          "x": 435,
+          "y": 210,
+          "fontSize": 14,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#ba394b",
+          "textAnchor": "end",
+          "keyframes": {
+            "opacity": [
+              {
+                "t": 0,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 1.272,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 1.608,
+                "value": 1,
+                "ease": "easeOut"
+              }
+            ]
+          }
+        }
+      ],
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 500,
+        "height": 298
+      }
+    },
+    {
+      "id": "footer",
+      "type": "group",
+      "x": 110,
+      "y": 396,
+      "children": [
+        {
+          "id": "footer-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 40,
+          "fill": "#f2f6fb",
+          "radius": 12
+        },
+        {
+          "id": "failed-composer",
+          "type": "group",
+          "x": 23,
+          "y": 0,
+          "children": [
+            {
+              "id": "failed-composer-field",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 454,
+              "height": 48,
+              "fill": "#ffffff",
+              "radius": 24,
+              "stroke": "#d8dbe0",
+              "strokeWidth": 1
+            },
+            {
+              "id": "failed-composer-input",
+              "type": "text",
+              "text": "Message",
+              "x": 18,
+              "y": 14,
+              "fontSize": 17,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#777b84"
+            },
+            {
+              "id": "failed-composer-send",
+              "type": "circle",
+              "x": 414,
+              "y": 8,
+              "width": 32,
+              "height": 32,
+              "fill": "#d8dbe0"
+            },
+            {
+              "id": "failed-composer-arrow",
+              "type": "path",
+              "d": "M 430 33 L 430 16 M 423 23 L 430 16 L 437 23",
+              "fill": "none",
+              "stroke": "#ffffff",
+              "strokeWidth": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "heading",
+      "type": "group",
+      "x": 110,
+      "y": 44,
+      "children": [
+        {
+          "id": "heading-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 54,
+          "fill": "#f2f6fb",
+          "radius": 13
+        },
+        {
+          "id": "heading-copy",
+          "type": "text",
+          "text": "Alpine field notes",
+          "x": 26,
+          "y": 13,
+          "fontSize": 23,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#182737",
+          "fontWeight": 700
+        }
+      ]
+    }
+  ],
+  "timeline": {
+    "version": 1,
+    "picture": {
+      "fpsNum": 30,
+      "fpsDen": 1,
+      "frameCount": 72
+    },
+    "initialUI": null,
+    "events": [
+      {
+        "id": "motion.send-failure-retry.delivery-failed",
+        "kind": "delivery_error",
+        "target": "failed-outgoing",
+        "frame": 30,
+        "layerIds": [
+          "failed-outgoing"
+        ]
+      },
+      {
+        "id": "motion.send-failure-retry.retry-ready",
+        "kind": "retry_ready",
+        "target": "failed-retry-control",
+        "frame": 42,
+        "layerIds": [
+          "failed-retry-control"
+        ]
+      }
+    ],
+    "cues": []
+  }
+}

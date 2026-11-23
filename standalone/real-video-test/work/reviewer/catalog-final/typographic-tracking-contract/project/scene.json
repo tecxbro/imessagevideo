@@ -1,0 +1,169 @@
+{
+  "width": 720,
+  "height": 480,
+  "fps": 30,
+  "duration": 2.4,
+  "background": "#dce7f1",
+  "title": "Draw the letters of a title into reading position",
+  "source": {
+    "path": "packs/editorial.mjs#typographic-tracking-contract",
+    "sourceStart": 0,
+    "sourceEnd": 2.4,
+    "notes": "Original editable Motion demonstration."
+  },
+  "layers": [
+    {
+      "id": "surface",
+      "type": "rect",
+      "x": 110,
+      "y": 44,
+      "width": 500,
+      "height": 392,
+      "fill": "#ffffff",
+      "radius": 18
+    },
+    {
+      "id": "stage",
+      "type": "group",
+      "x": 110,
+      "y": 98,
+      "children": [
+        {
+          "id": "tracking-title",
+          "type": "text",
+          "text": "Together",
+          "x": 250,
+          "y": 109,
+          "fontSize": 44,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#182737",
+          "fontWeight": 600,
+          "textAnchor": "middle",
+          "keyframes": {
+            "letterSpacing": [
+              {
+                "t": 0,
+                "value": 14,
+                "ease": "linear"
+              },
+              {
+                "t": 0.384,
+                "value": 14,
+                "ease": "linear"
+              },
+              {
+                "t": 1.3679999999999999,
+                "value": 0,
+                "ease": "easeOut"
+              }
+            ]
+          }
+        },
+        {
+          "id": "center-axis",
+          "type": "rect",
+          "x": 249,
+          "y": 170,
+          "width": 2,
+          "height": 32,
+          "fill": "#e8eef5",
+          "radius": 0
+        }
+      ],
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 500,
+        "height": 298
+      }
+    },
+    {
+      "id": "footer",
+      "type": "group",
+      "x": 110,
+      "y": 396,
+      "children": [
+        {
+          "id": "footer-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 40,
+          "fill": "#f2f6fb",
+          "radius": 12
+        },
+        {
+          "id": "editorial-caption",
+          "type": "text",
+          "text": "The text reaches normal tracking and holds.",
+          "x": 22,
+          "y": 9,
+          "fontSize": 15,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#516277",
+          "fontWeight": 600
+        }
+      ]
+    },
+    {
+      "id": "heading",
+      "type": "group",
+      "x": 110,
+      "y": 44,
+      "children": [
+        {
+          "id": "heading-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 54,
+          "fill": "#f2f6fb",
+          "radius": 13
+        },
+        {
+          "id": "heading-copy",
+          "type": "text",
+          "text": "Title treatment",
+          "x": 26,
+          "y": 13,
+          "fontSize": 23,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#182737",
+          "fontWeight": 700
+        }
+      ]
+    }
+  ],
+  "timeline": {
+    "version": 1,
+    "picture": {
+      "fpsNum": 30,
+      "fpsDen": 1,
+      "frameCount": 72
+    },
+    "initialUI": null,
+    "events": [
+      {
+        "id": "motion.typographic-tracking-contract.tracking-contracts",
+        "kind": "tracking-contracts",
+        "target": "tracking-title",
+        "frame": 12,
+        "layerIds": [
+          "tracking-title"
+        ]
+      },
+      {
+        "id": "motion.typographic-tracking-contract.title-readable",
+        "kind": "title-readable",
+        "target": "tracking-title",
+        "frame": 42,
+        "layerIds": [
+          "tracking-title"
+        ]
+      }
+    ],
+    "cues": []
+  }
+}

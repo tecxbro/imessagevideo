@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "inputs": {
+    "source": {
+      "path": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/inputs/unseen-complete.mp4",
+      "sha256": "3d0fbab4c289b5fc1e2452d587c892bc9c17fdcf7ab9f59e2a820d504c0f9fee",
+      "width": 480,
+      "height": 270,
+      "sample_aspect_ratio": null,
+      "display_aspect_ratio": null,
+      "effective_sample_aspect_ratio": "1:1",
+      "sample_aspect_basis": "implicit square pixels",
+      "rotation": 0,
+      "average_frame_rate": "30/1",
+      "time_base": "1/15360",
+      "frame_count": 90,
+      "missing_pts": 0,
+      "strictly_increasing_pts": true,
+      "first_pts_seconds": 0.0,
+      "last_pts_seconds": 2.966666666666667,
+      "end_seconds_exclusive": 3.0
+    },
+    "output": {
+      "path": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/comparator/ending-cut.mp4",
+      "sha256": "7bef74f87fe794f6693eb6f7c9faed42192a1e7d748d0c6169f8d9a347cfc75b",
+      "width": 480,
+      "height": 270,
+      "sample_aspect_ratio": null,
+      "display_aspect_ratio": null,
+      "effective_sample_aspect_ratio": "1:1",
+      "sample_aspect_basis": "implicit square pixels",
+      "rotation": 0,
+      "average_frame_rate": "30/1",
+      "time_base": "1/15360",
+      "frame_count": 84,
+      "missing_pts": 0,
+      "strictly_increasing_pts": true,
+      "first_pts_seconds": 0.0,
+      "last_pts_seconds": 2.7666666666666666,
+      "end_seconds_exclusive": 2.8
+    }
+  },
+  "compared_frames": 84,
+  "paired_indices": 84,
+  "source_only_tail_frames": 6,
+  "output_only_tail_frames": 0,
+  "alignment": "native presentation order, paired by zero-based index, without resampling",
+  "max_paired_pts_error_ms": 0.0,
+  "exclusive_end_error_ms": 200.0,
+  "structure_match": false,
+  "structure_issues": [
+    "different frame_count",
+    "missing or different exclusive end timestamp"
+  ],
+  "structure_within_tolerance": false,
+  "structure_tolerance_issues": [
+    "different frame_count",
+    "missing or out-of-tolerance exclusive end timestamp"
+  ],
+  "roi_xyxy": {
+    "shuttle": [
+      145,
+      60,
+      395,
+      200
+    ],
+    "stationary": [
+      49,
+      49,
+      139,
+      74
+    ]
+  },
+  "metrics": {
+    "full": {
+      "mean_frame_mae": 0.05947206300215559,
+      "max_frame_mae": 0.10712962962962963,
+      "worst_frame": 51
+    },
+    "shuttle": {
+      "mean_frame_mae": 0.13274297052154194,
+      "max_frame_mae": 0.2832571428571429,
+      "worst_frame": 51
+    },
+    "stationary": {
+      "mean_frame_mae": 0.21481481481481482,
+      "max_frame_mae": 0.21481481481481482,
+      "worst_frame": 0
+    }
+  },
+  "possible_frame_shift": {
+    "best_output_minus_source_frames": 0,
+    "compared_source_frames": 74,
+    "search_radius": 5,
+    "unaligned_mean_error": 0.028974286786786787,
+    "best_mean_error": 0.028974286786786787,
+    "possible_constant_offset": false
+  },
+  "thresholds": {
+    "max_mae": 1.0,
+    "max_pts_error_ms": 0.0,
+    "require_structure_match": true,
+    "reject_detected_shift": true
+  },
+  "limits_passed": false,
+  "failures": [
+    "different frame_count",
+    "missing or out-of-tolerance exclusive end timestamp",
+    "timeline is incomplete or PTS/end exceeds the requested tolerance",
+    "native frame MAE is unavailable for one or more frames or exceeds --max-mae"
+  ],
+  "worst_pair_index": 51,
+  "artifacts": {
+    "all_frame_measurements": "frames.csv",
+    "comparison_image": "worst.png"
+  }
+}

@@ -1,0 +1,26 @@
+/goal You are Recreation, one of seven Codex agents building one reusable iMessage video skill. Build the part that takes a complete iMessage film an agent has never seen and rebuilds the whole film as editable source: it works out what happens, rebuilds it, finds where the render differs from the original, repairs it, and shows what matches. Each film should be faster and cheaper for the next agent.
+
+First read the team brief: the body of the GitHub issue "iMessage video skill v3 - build room". Find it with
+gh issue list -R tecxbro/imessagevideo --state all --search '"build room" in:title' --json number,url
+and read it with gh issue view. It holds your six teammates, the working rules, the table of who gives what to whom, notes for your role, and the sources. All of it is part of this goal. If you cannot read it, stop and say so.
+
+Your branch is codex-video-v3/recreate, from base c49482aec7b8ed0b840f97c61a5e5b860c4077b6. Clone every source in the brief, copy what works, and build on top. The repo already renders through Python/Pillow with FFmpeg, GSAP, Remotion, HTML/CSS/SVG and Motion Canvas. Keep searching beyond the sources, and keep building until a fresh agent can use your work unaided and another round adds nothing.
+
+YOUR BUILD
+Build S/recreate/SKILL.md and the tools behind the whole loop.
+- Decode the entire original. Recover its real frame clock, shots, text, objects, what moves and what stays fixed, layering, camera, interface states and sound events. Let each film tell you what else to measure.
+- Turn that into editable scene data with assets you author. The reference is something you measure: the delivered film must render with the original movie, its frames and its audio out of the renderer's reach.
+- Save measurements so one repair doesn't mean re-analysing the film.
+- Render the hardest passage first.
+- Compare the complete decoded export against the original frame by frame at native rate, including final frames, holds and the small regions around each interaction.
+- Repair, re-render the affected passage, and check the complete final encode again.
+
+Teach the agent to choose a renderer from the reference and the editor the user asked for. Claim a renderer only after it has exported for you. One requested render should not cost five.
+
+Your checker must catch what a whole-frame score misses. An export missing its last ten frames can score zero error on the rest. One small selection can land late while the frame looks nearly identical. Break your own export both ways; the checker must fail each and say where. Then have a subagent hunt for what it still misses.
+
+Prove editability by changing real text and timing and rendering again.
+
+Develop on the repo's films and others you find. For the blind test, Observer gives a fresh agent a film you have never seen plus your skill. When it wastes time or renders a bad frame, fix the skill itself and ask for a run on a different film.
+
+Deliver the skill, an editable project, first and final exports, comparison evidence and the reproducing command. Let the evidence say what matches.

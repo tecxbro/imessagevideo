@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 72
+  },
+  "initialUI": null,
+  "events": [
+    {
+      "id": "motion.step-indicator-travel.middle-step",
+      "kind": "middle-step",
+      "target": "step-dot-1",
+      "frame": 26,
+      "layerIds": [
+        "step-dot-1"
+      ]
+    },
+    {
+      "id": "motion.step-indicator-travel.final-step",
+      "kind": "final-step",
+      "target": "step-dot-2",
+      "frame": 53,
+      "layerIds": [
+        "step-dot-2"
+      ]
+    }
+  ],
+  "cues": []
+}

@@ -1,0 +1,984 @@
+{
+  "width": 720,
+  "height": 480,
+  "fps": 30,
+  "duration": 2.4,
+  "background": "#dce7f1",
+  "title": "Gather portraits around centered copy",
+  "source": {
+    "path": "projects/06-gallery-complete-v1/imessage-recreations/references/06-gallery/source.mp4",
+    "sourceStart": 20.1,
+    "sourceEnd": 21.8,
+    "notes": "The centered text scale follows historical a23bfb2 samples. Portrait routes, focus and artwork are authored."
+  },
+  "layers": [
+    {
+      "id": "surface",
+      "type": "rect",
+      "x": 110,
+      "y": 44,
+      "width": 500,
+      "height": 392,
+      "fill": "#ffffff",
+      "radius": 18
+    },
+    {
+      "id": "stage",
+      "type": "group",
+      "x": 110,
+      "y": 98,
+      "children": [
+        {
+          "id": "portrait-dark-field",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 298,
+          "fill": "#253843",
+          "radius": 0
+        },
+        {
+          "id": "anchored-copy",
+          "type": "group",
+          "x": 250,
+          "y": 149,
+          "children": [
+            {
+              "id": "centered-title",
+              "type": "text",
+              "text": "The north ridge",
+              "x": 0,
+              "y": -42,
+              "fontSize": 42,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#f4f6f7",
+              "textAnchor": "middle",
+              "fontWeight": 700
+            },
+            {
+              "id": "centered-detail",
+              "type": "text",
+              "text": "Field guide · Autumn",
+              "x": 0,
+              "y": 10,
+              "fontSize": 22,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#bddae5",
+              "textAnchor": "middle"
+            }
+          ],
+          "keyframes": {
+            "scaleX": [
+              {
+                "t": 0.5299591836734693,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 0.6857142857142856,
+                "value": 0.94,
+                "ease": "linear"
+              },
+              {
+                "t": 0.8414693877551019,
+                "value": 0.73,
+                "ease": "linear"
+              },
+              {
+                "t": 0.9453061224489794,
+                "value": 0.65,
+                "ease": "linear"
+              },
+              {
+                "t": 1.0491428571428572,
+                "value": 0.61,
+                "ease": "linear"
+              },
+              {
+                "t": 1.2048979591836735,
+                "value": 0.58,
+                "ease": "linear"
+              },
+              {
+                "t": 1.4644897959183674,
+                "value": 0.56,
+                "ease": "linear"
+              },
+              {
+                "t": 1.776,
+                "value": 0.56,
+                "ease": "linear"
+              }
+            ],
+            "scaleY": [
+              {
+                "t": 0.5299591836734693,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 0.6857142857142856,
+                "value": 0.94,
+                "ease": "linear"
+              },
+              {
+                "t": 0.8414693877551019,
+                "value": 0.73,
+                "ease": "linear"
+              },
+              {
+                "t": 0.9453061224489794,
+                "value": 0.65,
+                "ease": "linear"
+              },
+              {
+                "t": 1.0491428571428572,
+                "value": 0.61,
+                "ease": "linear"
+              },
+              {
+                "t": 1.2048979591836735,
+                "value": 0.58,
+                "ease": "linear"
+              },
+              {
+                "t": 1.4644897959183674,
+                "value": 0.56,
+                "ease": "linear"
+              },
+              {
+                "t": 1.776,
+                "value": 0.56,
+                "ease": "linear"
+              }
+            ]
+          }
+        },
+        {
+          "id": "portrait-1",
+          "type": "group",
+          "x": -76,
+          "y": -72,
+          "children": [
+            {
+              "id": "portrait-1-matte",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 88,
+              "height": 88,
+              "fill": "#ffffff",
+              "radius": 44
+            },
+            {
+              "id": "portrait-1-aperture",
+              "type": "group",
+              "x": 4,
+              "y": 4,
+              "children": [
+                {
+                  "id": "portrait-1-photo",
+                  "type": "image",
+                  "src": "assets/4db64d5acedc3877-landscape-1.png",
+                  "x": 0,
+                  "y": 0,
+                  "width": 80,
+                  "height": 80
+                }
+              ],
+              "clip": {
+                "x": 0,
+                "y": 0,
+                "width": 80,
+                "height": 80,
+                "radius": 40
+              }
+            }
+          ],
+          "originX": 44,
+          "originY": 44,
+          "keyframes": {
+            "x": [
+              {
+                "t": 0.312,
+                "value": -76,
+                "ease": "linear"
+              },
+              {
+                "t": 1.272,
+                "value": 112,
+                "ease": "easeOut"
+              },
+              {
+                "t": 1.896,
+                "value": 42,
+                "ease": "easeOut"
+              }
+            ],
+            "y": [
+              {
+                "t": 0.312,
+                "value": -72,
+                "ease": "linear"
+              },
+              {
+                "t": 1.272,
+                "value": 48,
+                "ease": "easeOut"
+              },
+              {
+                "t": 1.896,
+                "value": 25,
+                "ease": "easeOut"
+              }
+            ],
+            "opacity": [
+              {
+                "t": 0,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 0.312,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 0.648,
+                "value": 1,
+                "ease": "linear"
+              }
+            ],
+            "blur": [
+              {
+                "t": 0.312,
+                "value": 12,
+                "ease": "linear"
+              },
+              {
+                "t": 1.176,
+                "value": 3,
+                "ease": "linear"
+              },
+              {
+                "t": 1.896,
+                "value": 0,
+                "ease": "easeOut"
+              }
+            ],
+            "scaleX": [
+              {
+                "t": 0.312,
+                "value": 1.88,
+                "ease": "linear"
+              },
+              {
+                "t": 1.272,
+                "value": 1.09,
+                "ease": "easeOut"
+              },
+              {
+                "t": 1.896,
+                "value": 1,
+                "ease": "easeOut"
+              }
+            ],
+            "scaleY": [
+              {
+                "t": 0.312,
+                "value": 1.88,
+                "ease": "linear"
+              },
+              {
+                "t": 1.272,
+                "value": 1.09,
+                "ease": "easeOut"
+              },
+              {
+                "t": 1.896,
+                "value": 1,
+                "ease": "easeOut"
+              }
+            ]
+          }
+        },
+        {
+          "id": "portrait-2",
+          "type": "group",
+          "x": 251,
+          "y": -145,
+          "children": [
+            {
+              "id": "portrait-2-matte",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 88,
+              "height": 88,
+              "fill": "#ffffff",
+              "radius": 44
+            },
+            {
+              "id": "portrait-2-aperture",
+              "type": "group",
+              "x": 4,
+              "y": 4,
+              "children": [
+                {
+                  "id": "portrait-2-photo",
+                  "type": "image",
+                  "src": "assets/9746d1d0b9a195bd-landscape-2.png",
+                  "x": 0,
+                  "y": 0,
+                  "width": 80,
+                  "height": 80
+                }
+              ],
+              "clip": {
+                "x": 0,
+                "y": 0,
+                "width": 80,
+                "height": 80,
+                "radius": 40
+              }
+            }
+          ],
+          "originX": 44,
+          "originY": 44,
+          "keyframes": {
+            "x": [
+              {
+                "t": 0.396,
+                "value": 251,
+                "ease": "linear"
+              },
+              {
+                "t": 1.272,
+                "value": 268,
+                "ease": "easeOut"
+              },
+              {
+                "t": 1.896,
+                "value": 214,
+                "ease": "easeOut"
+              }
+            ],
+            "y": [
+              {
+                "t": 0.396,
+                "value": -145,
+                "ease": "linear"
+              },
+              {
+                "t": 1.272,
+                "value": 39,
+                "ease": "easeOut"
+              },
+              {
+                "t": 1.896,
+                "value": 17,
+                "ease": "easeOut"
+              }
+            ],
+            "opacity": [
+              {
+                "t": 0,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 0.396,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 0.7320000000000001,
+                "value": 1,
+                "ease": "linear"
+              }
+            ],
+            "blur": [
+              {
+                "t": 0.396,
+                "value": 12,
+                "ease": "linear"
+              },
+              {
+                "t": 1.176,
+                "value": 3,
+                "ease": "linear"
+              },
+              {
+                "t": 1.896,
+                "value": 0,
+                "ease": "easeOut"
+              }
+            ],
+            "scaleX": [
+              {
+                "t": 0.396,
+                "value": 1.88,
+                "ease": "linear"
+              },
+              {
+                "t": 1.272,
+                "value": 1.09,
+                "ease": "easeOut"
+              },
+              {
+                "t": 1.896,
+                "value": 1,
+                "ease": "easeOut"
+              }
+            ],
+            "scaleY": [
+              {
+                "t": 0.396,
+                "value": 1.88,
+                "ease": "linear"
+              },
+              {
+                "t": 1.272,
+                "value": 1.09,
+                "ease": "easeOut"
+              },
+              {
+                "t": 1.896,
+                "value": 1,
+                "ease": "easeOut"
+              }
+            ]
+          }
+        },
+        {
+          "id": "portrait-3",
+          "type": "group",
+          "x": 507,
+          "y": -31,
+          "children": [
+            {
+              "id": "portrait-3-matte",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 88,
+              "height": 88,
+              "fill": "#ffffff",
+              "radius": 44
+            },
+            {
+              "id": "portrait-3-aperture",
+              "type": "group",
+              "x": 4,
+              "y": 4,
+              "children": [
+                {
+                  "id": "portrait-3-photo",
+                  "type": "image",
+                  "src": "assets/f4829cbd13947ed2-landscape-3.png",
+                  "x": 0,
+                  "y": 0,
+                  "width": 80,
+                  "height": 80
+                }
+              ],
+              "clip": {
+                "x": 0,
+                "y": 0,
+                "width": 80,
+                "height": 80,
+                "radius": 40
+              }
+            }
+          ],
+          "originX": 44,
+          "originY": 44,
+          "keyframes": {
+            "x": [
+              {
+                "t": 0.48,
+                "value": 507,
+                "ease": "linear"
+              },
+              {
+                "t": 1.272,
+                "value": 402,
+                "ease": "easeOut"
+              },
+              {
+                "t": 1.896,
+                "value": 398,
+                "ease": "easeOut"
+              }
+            ],
+            "y": [
+              {
+                "t": 0.48,
+                "value": -31,
+                "ease": "linear"
+              },
+              {
+                "t": 1.272,
+                "value": 83,
+                "ease": "easeOut"
+              },
+              {
+                "t": 1.896,
+                "value": 42,
+                "ease": "easeOut"
+              }
+            ],
+            "opacity": [
+              {
+                "t": 0,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 0.48,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 0.8160000000000001,
+                "value": 1,
+                "ease": "linear"
+              }
+            ],
+            "blur": [
+              {
+                "t": 0.48,
+                "value": 12,
+                "ease": "linear"
+              },
+              {
+                "t": 1.176,
+                "value": 3,
+                "ease": "linear"
+              },
+              {
+                "t": 1.896,
+                "value": 0,
+                "ease": "easeOut"
+              }
+            ],
+            "scaleX": [
+              {
+                "t": 0.48,
+                "value": 1.88,
+                "ease": "linear"
+              },
+              {
+                "t": 1.272,
+                "value": 1.09,
+                "ease": "easeOut"
+              },
+              {
+                "t": 1.896,
+                "value": 1,
+                "ease": "easeOut"
+              }
+            ],
+            "scaleY": [
+              {
+                "t": 0.48,
+                "value": 1.88,
+                "ease": "linear"
+              },
+              {
+                "t": 1.272,
+                "value": 1.09,
+                "ease": "easeOut"
+              },
+              {
+                "t": 1.896,
+                "value": 1,
+                "ease": "easeOut"
+              }
+            ]
+          }
+        },
+        {
+          "id": "portrait-4",
+          "type": "group",
+          "x": 522,
+          "y": 335,
+          "children": [
+            {
+              "id": "portrait-4-matte",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 88,
+              "height": 88,
+              "fill": "#ffffff",
+              "radius": 44
+            },
+            {
+              "id": "portrait-4-aperture",
+              "type": "group",
+              "x": 4,
+              "y": 4,
+              "children": [
+                {
+                  "id": "portrait-4-photo",
+                  "type": "image",
+                  "src": "assets/68c668fb0e442a65-landscape-4.png",
+                  "x": 0,
+                  "y": 0,
+                  "width": 80,
+                  "height": 80
+                }
+              ],
+              "clip": {
+                "x": 0,
+                "y": 0,
+                "width": 80,
+                "height": 80,
+                "radius": 40
+              }
+            }
+          ],
+          "originX": 44,
+          "originY": 44,
+          "keyframes": {
+            "x": [
+              {
+                "t": 0.312,
+                "value": 522,
+                "ease": "linear"
+              },
+              {
+                "t": 1.272,
+                "value": 387,
+                "ease": "easeOut"
+              },
+              {
+                "t": 1.896,
+                "value": 365,
+                "ease": "easeOut"
+              }
+            ],
+            "y": [
+              {
+                "t": 0.312,
+                "value": 335,
+                "ease": "linear"
+              },
+              {
+                "t": 1.272,
+                "value": 194,
+                "ease": "easeOut"
+              },
+              {
+                "t": 1.896,
+                "value": 204,
+                "ease": "easeOut"
+              }
+            ],
+            "opacity": [
+              {
+                "t": 0,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 0.312,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 0.648,
+                "value": 1,
+                "ease": "linear"
+              }
+            ],
+            "blur": [
+              {
+                "t": 0.312,
+                "value": 12,
+                "ease": "linear"
+              },
+              {
+                "t": 1.176,
+                "value": 3,
+                "ease": "linear"
+              },
+              {
+                "t": 1.896,
+                "value": 0,
+                "ease": "easeOut"
+              }
+            ],
+            "scaleX": [
+              {
+                "t": 0.312,
+                "value": 1.88,
+                "ease": "linear"
+              },
+              {
+                "t": 1.272,
+                "value": 1.09,
+                "ease": "easeOut"
+              },
+              {
+                "t": 1.896,
+                "value": 1,
+                "ease": "easeOut"
+              }
+            ],
+            "scaleY": [
+              {
+                "t": 0.312,
+                "value": 1.88,
+                "ease": "linear"
+              },
+              {
+                "t": 1.272,
+                "value": 1.09,
+                "ease": "easeOut"
+              },
+              {
+                "t": 1.896,
+                "value": 1,
+                "ease": "easeOut"
+              }
+            ]
+          }
+        },
+        {
+          "id": "portrait-5",
+          "type": "group",
+          "x": -112,
+          "y": 340,
+          "children": [
+            {
+              "id": "portrait-5-matte",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 88,
+              "height": 88,
+              "fill": "#ffffff",
+              "radius": 44
+            },
+            {
+              "id": "portrait-5-aperture",
+              "type": "group",
+              "x": 4,
+              "y": 4,
+              "children": [
+                {
+                  "id": "portrait-5-photo",
+                  "type": "image",
+                  "src": "assets/4db64d5acedc3877-landscape-1.png",
+                  "x": 0,
+                  "y": 0,
+                  "width": 80,
+                  "height": 80
+                }
+              ],
+              "clip": {
+                "x": 0,
+                "y": 0,
+                "width": 80,
+                "height": 80,
+                "radius": 40
+              }
+            }
+          ],
+          "originX": 44,
+          "originY": 44,
+          "keyframes": {
+            "x": [
+              {
+                "t": 0.396,
+                "value": -112,
+                "ease": "linear"
+              },
+              {
+                "t": 1.272,
+                "value": 140,
+                "ease": "easeOut"
+              },
+              {
+                "t": 1.896,
+                "value": 56,
+                "ease": "easeOut"
+              }
+            ],
+            "y": [
+              {
+                "t": 0.396,
+                "value": 340,
+                "ease": "linear"
+              },
+              {
+                "t": 1.272,
+                "value": 190,
+                "ease": "easeOut"
+              },
+              {
+                "t": 1.896,
+                "value": 225,
+                "ease": "easeOut"
+              }
+            ],
+            "opacity": [
+              {
+                "t": 0,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 0.396,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 0.7320000000000001,
+                "value": 1,
+                "ease": "linear"
+              }
+            ],
+            "blur": [
+              {
+                "t": 0.396,
+                "value": 12,
+                "ease": "linear"
+              },
+              {
+                "t": 1.176,
+                "value": 3,
+                "ease": "linear"
+              },
+              {
+                "t": 1.896,
+                "value": 0,
+                "ease": "easeOut"
+              }
+            ],
+            "scaleX": [
+              {
+                "t": 0.396,
+                "value": 1.88,
+                "ease": "linear"
+              },
+              {
+                "t": 1.272,
+                "value": 1.09,
+                "ease": "easeOut"
+              },
+              {
+                "t": 1.896,
+                "value": 1,
+                "ease": "easeOut"
+              }
+            ],
+            "scaleY": [
+              {
+                "t": 0.396,
+                "value": 1.88,
+                "ease": "linear"
+              },
+              {
+                "t": 1.272,
+                "value": 1.09,
+                "ease": "easeOut"
+              },
+              {
+                "t": 1.896,
+                "value": 1,
+                "ease": "easeOut"
+              }
+            ]
+          }
+        }
+      ],
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 500,
+        "height": 298
+      }
+    },
+    {
+      "id": "footer",
+      "type": "group",
+      "x": 110,
+      "y": 396,
+      "children": [
+        {
+          "id": "footer-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 40,
+          "fill": "#f2f6fb",
+          "radius": 12
+        }
+      ]
+    },
+    {
+      "id": "heading",
+      "type": "group",
+      "x": 110,
+      "y": 44,
+      "children": [
+        {
+          "id": "heading-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 54,
+          "fill": "#f2f6fb",
+          "radius": 13
+        },
+        {
+          "id": "heading-copy",
+          "type": "text",
+          "text": "Alpine field notes",
+          "x": 26,
+          "y": 13,
+          "fontSize": 23,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#182737",
+          "fontWeight": 700
+        }
+      ]
+    }
+  ],
+  "timeline": {
+    "version": 1,
+    "picture": {
+      "fpsNum": 30,
+      "fpsDen": 1,
+      "frameCount": 72
+    },
+    "initialUI": null,
+    "events": [
+      {
+        "id": "motion.avatar-ring-assemble.converge",
+        "kind": "layout.assembly",
+        "target": "anchored-copy",
+        "frame": 17,
+        "layerIds": [
+          "anchored-copy"
+        ]
+      },
+      {
+        "id": "motion.avatar-ring-assemble.settled",
+        "kind": "layout.settle",
+        "target": "portrait-5",
+        "frame": 57,
+        "layerIds": [
+          "portrait-5"
+        ]
+      }
+    ],
+    "cues": []
+  }
+}

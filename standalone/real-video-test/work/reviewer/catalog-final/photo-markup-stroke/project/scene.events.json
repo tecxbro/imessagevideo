@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 72
+  },
+  "initialUI": null,
+  "events": [
+    {
+      "id": "motion.photo-markup-stroke.pen-down",
+      "kind": "stroke_start",
+      "target": "markup-pen-tip",
+      "frame": 17,
+      "layerIds": [
+        "markup-pen-tip"
+      ]
+    },
+    {
+      "id": "motion.photo-markup-stroke.pen-up",
+      "kind": "stroke_end",
+      "target": "markup-pen-tip",
+      "frame": 49,
+      "layerIds": [
+        "markup-pen-tip"
+      ]
+    }
+  ],
+  "cues": []
+}

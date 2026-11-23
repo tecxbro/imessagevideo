@@ -1,0 +1,400 @@
+{
+  "width": 720,
+  "height": 480,
+  "fps": 30,
+  "duration": 2.4,
+  "background": "#dce7f1",
+  "title": "Count between totals in place",
+  "source": {
+    "path": "skill/imessage-motion-recreation/motion/packs/attention.mjs",
+    "sourceStart": 0,
+    "sourceEnd": 2.4,
+    "notes": "Adapted from a fresh, Pillow-authored volunteer count reuse. The editable canonical recipe preserves the value trajectory and event timing."
+  },
+  "layers": [
+    {
+      "id": "surface",
+      "type": "rect",
+      "x": 110,
+      "y": 44,
+      "width": 500,
+      "height": 392,
+      "fill": "#ffffff",
+      "radius": 18
+    },
+    {
+      "id": "stage",
+      "type": "group",
+      "x": 110,
+      "y": 98,
+      "children": [
+        {
+          "id": "metric-panel",
+          "type": "rect",
+          "x": 63,
+          "y": 38,
+          "width": 374,
+          "height": 211,
+          "fill": "#f5f8f6",
+          "radius": 22,
+          "stroke": "#cbded6",
+          "strokeWidth": 1
+        },
+        {
+          "id": "metric-label",
+          "type": "text",
+          "text": "Completed trips",
+          "x": 99,
+          "y": 74,
+          "fontSize": 18,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#35524a",
+          "fontWeight": 600
+        },
+        {
+          "id": "metric-value",
+          "type": "text",
+          "text": "620",
+          "x": 98,
+          "y": 103,
+          "fontSize": 64,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#11694e",
+          "fontWeight": 700,
+          "keyframes": {
+            "text": [
+              {
+                "t": 0,
+                "value": "620",
+                "ease": "hold"
+              },
+              {
+                "t": 0.3333333333333333,
+                "value": "621",
+                "ease": "hold"
+              },
+              {
+                "t": 0.36666666666666664,
+                "value": "623",
+                "ease": "hold"
+              },
+              {
+                "t": 0.4,
+                "value": "627",
+                "ease": "hold"
+              },
+              {
+                "t": 0.43333333333333335,
+                "value": "632",
+                "ease": "hold"
+              },
+              {
+                "t": 0.4666666666666667,
+                "value": "640",
+                "ease": "hold"
+              },
+              {
+                "t": 0.5,
+                "value": "648",
+                "ease": "hold"
+              },
+              {
+                "t": 0.5333333333333333,
+                "value": "658",
+                "ease": "hold"
+              },
+              {
+                "t": 0.5666666666666667,
+                "value": "670",
+                "ease": "hold"
+              },
+              {
+                "t": 0.6,
+                "value": "682",
+                "ease": "hold"
+              },
+              {
+                "t": 0.6333333333333333,
+                "value": "696",
+                "ease": "hold"
+              },
+              {
+                "t": 0.6666666666666666,
+                "value": "711",
+                "ease": "hold"
+              },
+              {
+                "t": 0.7,
+                "value": "727",
+                "ease": "hold"
+              },
+              {
+                "t": 0.7333333333333333,
+                "value": "744",
+                "ease": "hold"
+              },
+              {
+                "t": 0.7666666666666667,
+                "value": "761",
+                "ease": "hold"
+              },
+              {
+                "t": 0.8,
+                "value": "780",
+                "ease": "hold"
+              },
+              {
+                "t": 0.8333333333333334,
+                "value": "799",
+                "ease": "hold"
+              },
+              {
+                "t": 0.8666666666666667,
+                "value": "818",
+                "ease": "hold"
+              },
+              {
+                "t": 0.9,
+                "value": "838",
+                "ease": "hold"
+              },
+              {
+                "t": 0.9333333333333333,
+                "value": "859",
+                "ease": "hold"
+              },
+              {
+                "t": 0.9666666666666667,
+                "value": "880",
+                "ease": "hold"
+              },
+              {
+                "t": 1,
+                "value": "901",
+                "ease": "hold"
+              },
+              {
+                "t": 1.0333333333333334,
+                "value": "922",
+                "ease": "hold"
+              },
+              {
+                "t": 1.0666666666666667,
+                "value": "943",
+                "ease": "hold"
+              },
+              {
+                "t": 1.1,
+                "value": "965",
+                "ease": "hold"
+              },
+              {
+                "t": 1.1333333333333333,
+                "value": "986",
+                "ease": "hold"
+              },
+              {
+                "t": 1.1666666666666667,
+                "value": "1,008",
+                "ease": "hold"
+              },
+              {
+                "t": 1.2,
+                "value": "1,029",
+                "ease": "hold"
+              },
+              {
+                "t": 1.2333333333333334,
+                "value": "1,049",
+                "ease": "hold"
+              },
+              {
+                "t": 1.2666666666666666,
+                "value": "1,070",
+                "ease": "hold"
+              },
+              {
+                "t": 1.3,
+                "value": "1,090",
+                "ease": "hold"
+              },
+              {
+                "t": 1.3333333333333333,
+                "value": "1,109",
+                "ease": "hold"
+              },
+              {
+                "t": 1.3666666666666667,
+                "value": "1,128",
+                "ease": "hold"
+              },
+              {
+                "t": 1.4,
+                "value": "1,146",
+                "ease": "hold"
+              },
+              {
+                "t": 1.4333333333333333,
+                "value": "1,163",
+                "ease": "hold"
+              },
+              {
+                "t": 1.4666666666666666,
+                "value": "1,179",
+                "ease": "hold"
+              },
+              {
+                "t": 1.5,
+                "value": "1,195",
+                "ease": "hold"
+              },
+              {
+                "t": 1.5333333333333334,
+                "value": "1,209",
+                "ease": "hold"
+              },
+              {
+                "t": 1.5666666666666667,
+                "value": "1,223",
+                "ease": "hold"
+              },
+              {
+                "t": 1.6,
+                "value": "1,235",
+                "ease": "hold"
+              },
+              {
+                "t": 1.6333333333333333,
+                "value": "1,246",
+                "ease": "hold"
+              },
+              {
+                "t": 1.6666666666666667,
+                "value": "1,255",
+                "ease": "hold"
+              },
+              {
+                "t": 1.7,
+                "value": "1,263",
+                "ease": "hold"
+              },
+              {
+                "t": 1.7333333333333334,
+                "value": "1,270",
+                "ease": "hold"
+              },
+              {
+                "t": 1.7666666666666666,
+                "value": "1,275",
+                "ease": "hold"
+              },
+              {
+                "t": 1.8,
+                "value": "1,278",
+                "ease": "hold"
+              },
+              {
+                "t": 1.8333333333333333,
+                "value": "1,280",
+                "ease": "hold"
+              }
+            ]
+          }
+        },
+        {
+          "id": "metric-unit",
+          "type": "text",
+          "text": "trips this week",
+          "x": 100,
+          "y": 195,
+          "fontSize": 15,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#35524a"
+        }
+      ],
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 500,
+        "height": 298
+      }
+    },
+    {
+      "id": "footer",
+      "type": "group",
+      "x": 110,
+      "y": 396,
+      "children": [
+        {
+          "id": "footer-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 40,
+          "fill": "#f2f6fb",
+          "radius": 12
+        }
+      ]
+    },
+    {
+      "id": "heading",
+      "type": "group",
+      "x": 110,
+      "y": 44,
+      "children": [
+        {
+          "id": "heading-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 54,
+          "fill": "#f2f6fb",
+          "radius": 13
+        },
+        {
+          "id": "heading-copy",
+          "type": "text",
+          "text": "A growing delivery total",
+          "x": 26,
+          "y": 13,
+          "fontSize": 23,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#182737",
+          "fontWeight": 700
+        }
+      ]
+    }
+  ],
+  "timeline": {
+    "version": 1,
+    "picture": {
+      "fpsNum": 30,
+      "fpsDen": 1,
+      "frameCount": 72
+    },
+    "initialUI": null,
+    "events": [
+      {
+        "id": "motion.metric-count.count-begins",
+        "kind": "metric.count.begin",
+        "target": "metric-value",
+        "frame": 10,
+        "layerIds": [
+          "metric-value"
+        ]
+      },
+      {
+        "id": "motion.metric-count.final-value-held",
+        "kind": "metric.count.hold",
+        "target": "metric-value",
+        "frame": 55,
+        "layerIds": [
+          "metric-value"
+        ]
+      }
+    ],
+    "cues": []
+  }
+}

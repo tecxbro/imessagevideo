@@ -1,0 +1,213 @@
+{
+  "width": 720,
+  "height": 480,
+  "fps": 30,
+  "duration": 2.4,
+  "background": "#dce7f1",
+  "title": "Slide a heading over still photos",
+  "source": {
+    "path": "packs/core.mjs#heading-over-fixed-photos",
+    "sourceStart": 0,
+    "sourceEnd": 2.4,
+    "notes": "Original editable Motion demonstration."
+  },
+  "layers": [
+    {
+      "id": "surface",
+      "type": "rect",
+      "x": 110,
+      "y": 44,
+      "width": 500,
+      "height": 392,
+      "fill": "#ffffff",
+      "radius": 18
+    },
+    {
+      "id": "stage",
+      "type": "group",
+      "x": 110,
+      "y": 98,
+      "children": [
+        {
+          "id": "photo-viewport",
+          "type": "group",
+          "x": 30,
+          "y": 33,
+          "children": [
+            {
+              "id": "photo-viewport-field",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 440,
+              "height": 197,
+              "fill": "#e8eef5",
+              "radius": 0
+            },
+            {
+              "id": "photo-rail",
+              "type": "group",
+              "x": 0,
+              "y": 0,
+              "children": [
+                {
+                  "id": "photo-1",
+                  "type": "image",
+                  "src": "assets/4db64d5acedc3877-landscape-1.png",
+                  "x": 0,
+                  "y": 0,
+                  "width": 296,
+                  "height": 197
+                },
+                {
+                  "id": "photo-2",
+                  "type": "image",
+                  "src": "assets/9746d1d0b9a195bd-landscape-2.png",
+                  "x": 308,
+                  "y": 0,
+                  "width": 296,
+                  "height": 197
+                }
+              ]
+            }
+          ],
+          "clip": {
+            "x": 0,
+            "y": 0,
+            "width": 440,
+            "height": 197,
+            "radius": 14
+          }
+        },
+        {
+          "id": "photo-rail-divider",
+          "type": "rect",
+          "x": 30,
+          "y": 250,
+          "width": 440,
+          "height": 1,
+          "fill": "#d4dfe9",
+          "radius": 0
+        }
+      ],
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 500,
+        "height": 298
+      }
+    },
+    {
+      "id": "footer",
+      "type": "group",
+      "x": 110,
+      "y": 396,
+      "children": [
+        {
+          "id": "footer-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 40,
+          "fill": "#f2f6fb",
+          "radius": 12
+        },
+        {
+          "id": "footer-label",
+          "type": "text",
+          "text": "Field guide · Autumn",
+          "x": 26,
+          "y": 11,
+          "fontSize": 15,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#516277"
+        }
+      ]
+    },
+    {
+      "id": "heading",
+      "type": "group",
+      "x": 110,
+      "y": 44,
+      "children": [
+        {
+          "id": "heading-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 54,
+          "fill": "#f2f6fb",
+          "radius": 13
+        },
+        {
+          "id": "heading-copy",
+          "type": "text",
+          "text": "Alpine field notes",
+          "x": 28,
+          "y": 13,
+          "fontSize": 23,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#182737",
+          "fontWeight": 700,
+          "keyframes": {
+            "x": [
+              {
+                "t": 0,
+                "value": 28,
+                "ease": "linear"
+              },
+              {
+                "t": 0.6,
+                "value": 28,
+                "ease": "linear"
+              },
+              {
+                "t": 1.68,
+                "value": 150,
+                "ease": "easeInOut"
+              }
+            ]
+          }
+        }
+      ],
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 500,
+        "height": 54
+      }
+    }
+  ],
+  "timeline": {
+    "version": 1,
+    "picture": {
+      "fpsNum": 30,
+      "fpsDen": 1,
+      "frameCount": 72
+    },
+    "initialUI": null,
+    "events": [
+      {
+        "id": "motion.heading-over-fixed-photos.heading-start",
+        "kind": "title.move",
+        "target": "heading-copy",
+        "frame": 20,
+        "layerIds": [
+          "heading-copy"
+        ]
+      },
+      {
+        "id": "motion.heading-over-fixed-photos.heading-settle",
+        "kind": "title.settle",
+        "target": "heading-copy",
+        "frame": 51,
+        "layerIds": [
+          "heading-copy"
+        ]
+      }
+    ],
+    "cues": []
+  }
+}

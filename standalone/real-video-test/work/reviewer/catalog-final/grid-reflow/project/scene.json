@@ -1,0 +1,466 @@
+{
+  "width": 720,
+  "height": 480,
+  "fps": 30,
+  "duration": 2.4,
+  "background": "#dce7f1",
+  "title": "Reflow four cards while keeping them recognizable",
+  "source": {
+    "path": "packs/editorial.mjs#grid-reflow",
+    "sourceStart": 0,
+    "sourceEnd": 2.4,
+    "notes": "Original editable Motion demonstration."
+  },
+  "layers": [
+    {
+      "id": "surface",
+      "type": "rect",
+      "x": 110,
+      "y": 44,
+      "width": 500,
+      "height": 392,
+      "fill": "#ffffff",
+      "radius": 18
+    },
+    {
+      "id": "stage",
+      "type": "group",
+      "x": 110,
+      "y": 98,
+      "children": [
+        {
+          "id": "reflow-board",
+          "type": "rect",
+          "x": 22,
+          "y": 27,
+          "width": 456,
+          "height": 244,
+          "fill": "#e8eef5",
+          "radius": 22
+        },
+        {
+          "id": "reflow-card-0",
+          "type": "group",
+          "x": 44,
+          "y": 57,
+          "children": [
+            {
+              "id": "reflow-card-0-surface",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 196,
+              "height": 70,
+              "fill": "#ffffff",
+              "radius": 16,
+              "stroke": "#e8eef5",
+              "strokeWidth": 1
+            },
+            {
+              "id": "reflow-card-0-label",
+              "type": "text",
+              "text": "Archive",
+              "x": 16,
+              "y": 14,
+              "fontSize": 18,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#182737",
+              "fontWeight": 600
+            },
+            {
+              "id": "reflow-card-0-detail",
+              "type": "rect",
+              "x": 16,
+              "y": 45,
+              "width": 152,
+              "height": 5,
+              "fill": "#e8eef5",
+              "radius": 2
+            }
+          ],
+          "keyframes": {
+            "x": [
+              {
+                "t": 0,
+                "value": 44,
+                "ease": "linear"
+              },
+              {
+                "t": 0.312,
+                "value": 44,
+                "ease": "linear"
+              },
+              {
+                "t": 0.96,
+                "value": 15,
+                "ease": "easeInOut"
+              },
+              {
+                "t": 1.608,
+                "value": 38,
+                "ease": "easeOut"
+              }
+            ],
+            "y": [
+              {
+                "t": 0,
+                "value": 57,
+                "ease": "linear"
+              },
+              {
+                "t": 0.312,
+                "value": 57,
+                "ease": "linear"
+              },
+              {
+                "t": 1.608,
+                "value": 189,
+                "ease": "easeInOut"
+              }
+            ]
+          }
+        },
+        {
+          "id": "reflow-card-1",
+          "type": "group",
+          "x": 255,
+          "y": 57,
+          "children": [
+            {
+              "id": "reflow-card-1-surface",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 196,
+              "height": 70,
+              "fill": "#ffffff",
+              "radius": 16,
+              "stroke": "#e8eef5",
+              "strokeWidth": 1
+            },
+            {
+              "id": "reflow-card-1-label",
+              "type": "text",
+              "text": "Due today",
+              "x": 16,
+              "y": 14,
+              "fontSize": 18,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#182737",
+              "fontWeight": 600
+            },
+            {
+              "id": "reflow-card-1-detail",
+              "type": "rect",
+              "x": 16,
+              "y": 45,
+              "width": 152,
+              "height": 5,
+              "fill": "#e8eef5",
+              "radius": 2
+            }
+          ],
+          "keyframes": {
+            "x": [
+              {
+                "t": 0,
+                "value": 255,
+                "ease": "linear"
+              },
+              {
+                "t": 0.40800000000000003,
+                "value": 255,
+                "ease": "linear"
+              },
+              {
+                "t": 0.96,
+                "value": 38,
+                "ease": "easeInOut"
+              },
+              {
+                "t": 1.608,
+                "value": 38,
+                "ease": "easeOut"
+              }
+            ],
+            "y": [
+              {
+                "t": 0,
+                "value": 57,
+                "ease": "linear"
+              },
+              {
+                "t": 0.40800000000000003,
+                "value": 57,
+                "ease": "linear"
+              },
+              {
+                "t": 1.608,
+                "value": 41,
+                "ease": "easeInOut"
+              }
+            ]
+          }
+        },
+        {
+          "id": "reflow-card-2",
+          "type": "group",
+          "x": 44,
+          "y": 154,
+          "children": [
+            {
+              "id": "reflow-card-2-surface",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 196,
+              "height": 70,
+              "fill": "#ffffff",
+              "radius": 16,
+              "stroke": "#e8eef5",
+              "strokeWidth": 1
+            },
+            {
+              "id": "reflow-card-2-label",
+              "type": "text",
+              "text": "Next",
+              "x": 16,
+              "y": 14,
+              "fontSize": 18,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#182737",
+              "fontWeight": 600
+            },
+            {
+              "id": "reflow-card-2-detail",
+              "type": "rect",
+              "x": 16,
+              "y": 45,
+              "width": 152,
+              "height": 5,
+              "fill": "#e8eef5",
+              "radius": 2
+            }
+          ],
+          "keyframes": {
+            "x": [
+              {
+                "t": 0,
+                "value": 44,
+                "ease": "linear"
+              },
+              {
+                "t": 0.504,
+                "value": 44,
+                "ease": "linear"
+              },
+              {
+                "t": 0.96,
+                "value": 264,
+                "ease": "easeInOut"
+              },
+              {
+                "t": 1.608,
+                "value": 264,
+                "ease": "easeOut"
+              }
+            ],
+            "y": [
+              {
+                "t": 0,
+                "value": 154,
+                "ease": "linear"
+              },
+              {
+                "t": 0.504,
+                "value": 154,
+                "ease": "linear"
+              },
+              {
+                "t": 1.608,
+                "value": 41,
+                "ease": "easeInOut"
+              }
+            ]
+          }
+        },
+        {
+          "id": "reflow-card-3",
+          "type": "group",
+          "x": 255,
+          "y": 154,
+          "children": [
+            {
+              "id": "reflow-card-3-surface",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 196,
+              "height": 70,
+              "fill": "#ffffff",
+              "radius": 16,
+              "stroke": "#e8eef5",
+              "strokeWidth": 1
+            },
+            {
+              "id": "reflow-card-3-label",
+              "type": "text",
+              "text": "Waiting",
+              "x": 16,
+              "y": 14,
+              "fontSize": 18,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#182737",
+              "fontWeight": 600
+            },
+            {
+              "id": "reflow-card-3-detail",
+              "type": "rect",
+              "x": 16,
+              "y": 45,
+              "width": 152,
+              "height": 5,
+              "fill": "#e8eef5",
+              "radius": 2
+            }
+          ],
+          "keyframes": {
+            "x": [
+              {
+                "t": 0,
+                "value": 255,
+                "ease": "linear"
+              },
+              {
+                "t": 0.6,
+                "value": 255,
+                "ease": "linear"
+              },
+              {
+                "t": 0.96,
+                "value": 264,
+                "ease": "easeInOut"
+              },
+              {
+                "t": 1.608,
+                "value": 264,
+                "ease": "easeOut"
+              }
+            ],
+            "y": [
+              {
+                "t": 0,
+                "value": 154,
+                "ease": "linear"
+              },
+              {
+                "t": 0.6,
+                "value": 154,
+                "ease": "linear"
+              },
+              {
+                "t": 1.608,
+                "value": 137,
+                "ease": "easeInOut"
+              }
+            ]
+          }
+        }
+      ],
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 500,
+        "height": 298
+      }
+    },
+    {
+      "id": "footer",
+      "type": "group",
+      "x": 110,
+      "y": 396,
+      "children": [
+        {
+          "id": "footer-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 40,
+          "fill": "#f2f6fb",
+          "radius": 12
+        },
+        {
+          "id": "editorial-caption",
+          "type": "text",
+          "text": "The same cards land in a different order.",
+          "x": 22,
+          "y": 9,
+          "fontSize": 15,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#516277",
+          "fontWeight": 600
+        }
+      ]
+    },
+    {
+      "id": "heading",
+      "type": "group",
+      "x": 110,
+      "y": 44,
+      "children": [
+        {
+          "id": "heading-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 54,
+          "fill": "#f2f6fb",
+          "radius": 13
+        },
+        {
+          "id": "heading-copy",
+          "type": "text",
+          "text": "Sort by priority",
+          "x": 26,
+          "y": 13,
+          "fontSize": 23,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#182737",
+          "fontWeight": 700
+        }
+      ]
+    }
+  ],
+  "timeline": {
+    "version": 1,
+    "picture": {
+      "fpsNum": 30,
+      "fpsDen": 1,
+      "frameCount": 72
+    },
+    "initialUI": null,
+    "events": [
+      {
+        "id": "motion.grid-reflow.layout-reflow-start",
+        "kind": "layout-reflow-start",
+        "target": "reflow-card-0",
+        "frame": 10,
+        "layerIds": [
+          "reflow-card-0"
+        ]
+      },
+      {
+        "id": "motion.grid-reflow.grid-reordered",
+        "kind": "grid-reordered",
+        "target": "reflow-board",
+        "frame": 49,
+        "layerIds": [
+          "reflow-board"
+        ]
+      }
+    ],
+    "cues": []
+  }
+}

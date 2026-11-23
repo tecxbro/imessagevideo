@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "inputs": {
+    "source": {
+      "path": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/imessagevideo/skill/imessage-video/assets/library/entries/toggle-thumb-then-tint/preview.mp4",
+      "sha256": "e7df82cd24416cbb4213a11c1a87c242f7f5e7076cc714d77a4ecb9fe1ecc7b4",
+      "width": 160,
+      "height": 80,
+      "sample_aspect_ratio": null,
+      "display_aspect_ratio": null,
+      "effective_sample_aspect_ratio": "1:1",
+      "sample_aspect_basis": "implicit square pixels",
+      "rotation": 0,
+      "average_frame_rate": "60/1",
+      "time_base": "1/15360",
+      "frame_count": 36,
+      "missing_pts": 0,
+      "strictly_increasing_pts": true,
+      "first_pts_seconds": 0.0,
+      "last_pts_seconds": 0.5833333333333334,
+      "end_seconds_exclusive": 0.6
+    },
+    "output": {
+      "path": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/toggle-final/portable-rerender.mp4",
+      "sha256": "e7df82cd24416cbb4213a11c1a87c242f7f5e7076cc714d77a4ecb9fe1ecc7b4",
+      "width": 160,
+      "height": 80,
+      "sample_aspect_ratio": null,
+      "display_aspect_ratio": null,
+      "effective_sample_aspect_ratio": "1:1",
+      "sample_aspect_basis": "implicit square pixels",
+      "rotation": 0,
+      "average_frame_rate": "60/1",
+      "time_base": "1/15360",
+      "frame_count": 36,
+      "missing_pts": 0,
+      "strictly_increasing_pts": true,
+      "first_pts_seconds": 0.0,
+      "last_pts_seconds": 0.5833333333333334,
+      "end_seconds_exclusive": 0.6
+    }
+  },
+  "compared_frames": 36,
+  "paired_indices": 36,
+  "source_only_tail_frames": 0,
+  "output_only_tail_frames": 0,
+  "alignment": "native presentation order, paired by zero-based index, without resampling",
+  "max_paired_pts_error_ms": 0.0,
+  "exclusive_end_error_ms": 0.0,
+  "structure_match": true,
+  "structure_issues": [],
+  "structure_within_tolerance": true,
+  "structure_tolerance_issues": [],
+  "roi_xyxy": {},
+  "metrics": {
+    "full": {
+      "mean_frame_mae": 0.0,
+      "max_frame_mae": 0.0,
+      "worst_frame": 0
+    }
+  },
+  "possible_frame_shift": {
+    "best_output_minus_source_frames": 0,
+    "compared_source_frames": 26,
+    "search_radius": 5,
+    "unaligned_mean_error": 0.0,
+    "best_mean_error": 0.0,
+    "possible_constant_offset": false
+  },
+  "audio": null,
+  "thresholds": {
+    "max_mae": 0.0,
+    "max_pts_error_ms": 0.0,
+    "require_structure_match": true,
+    "reject_detected_shift": false
+  },
+  "limits_passed": true,
+  "failures": [],
+  "worst_pair_index": 0,
+  "artifacts": {
+    "all_frame_measurements": "frames.csv",
+    "comparison_image": "worst.png"
+  }
+}

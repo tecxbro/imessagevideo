@@ -1,0 +1,197 @@
+{
+  "request": "Change this message to ‘Meet at the doors’ and replace this shot’s motion with the swipe from this second clip.",
+  "intent": "edit",
+  "scope": "changes",
+  "library": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/run/library",
+  "sources": [
+    {
+      "path": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/direction-v2/concert-tickets.mp4",
+      "role": "edit-target",
+      "identity": {
+        "status": "new",
+        "sha256": "387df1a46736c11357a6c10635f89729e4aeb32db49bdc6eeb8a29c213a786ff",
+        "matches": []
+      },
+      "documented_motions": [],
+      "steps": [
+        "segment_source",
+        "observe_moving_and_fixed_layers",
+        "find_or_author_each_motion",
+        "replay_from_library",
+        "compare_consecutive_frames",
+        "record_verified_coverage"
+      ],
+      "intake": {
+        "source": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/direction-v2/intake/intake/387df1a46736c11357a6c10635f89729e4aeb32db49bdc6eeb8a29c213a786ff/source.json",
+        "frames": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/direction-v2/intake/intake/387df1a46736c11357a6c10635f89729e4aeb32db49bdc6eeb8a29c213a786ff/frames.csv",
+        "overview": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/direction-v2/intake/intake/387df1a46736c11357a6c10635f89729e4aeb32db49bdc6eeb8a29c213a786ff/overview.jpg",
+        "rea_breakdown": null,
+        "next": "Open the source frames, inventory each moving layer and compare candidate recipes."
+      }
+    },
+    {
+      "path": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/inputs/linq-fixed-swipe.mp4",
+      "role": "motion-donor",
+      "identity": {
+        "status": "new",
+        "sha256": "412f827f236331c934e68d987659a67aed25ac001f6079fb8a024937c9870eec",
+        "matches": []
+      },
+      "documented_motions": [],
+      "steps": [
+        "segment_source",
+        "observe_moving_and_fixed_layers",
+        "find_or_author_each_motion",
+        "replay_from_library",
+        "compare_consecutive_frames",
+        "record_verified_coverage"
+      ],
+      "intake": {
+        "source": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/direction-v2/intake/intake/412f827f236331c934e68d987659a67aed25ac001f6079fb8a024937c9870eec/source.json",
+        "frames": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/direction-v2/intake/intake/412f827f236331c934e68d987659a67aed25ac001f6079fb8a024937c9870eec/frames.csv",
+        "overview": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/direction-v2/intake/intake/412f827f236331c934e68d987659a67aed25ac001f6079fb8a024937c9870eec/overview.jpg",
+        "rea_breakdown": null,
+        "next": "Open the source frames, inventory each moving layer and compare candidate recipes."
+      }
+    }
+  ],
+  "project": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/direction-v2/plan-reply-approved.json",
+  "next": "locate_target_shots",
+  "workflow": [
+    "open_editable_target_or_recover_its_layers",
+    "identify_changed_copy_and_motion",
+    "retrieve_selected_donor_motion",
+    "patch_named_shots",
+    "render_changed_passage",
+    "check_changed_and_unchanged_regions",
+    "deliver_revised_film"
+  ],
+  "motion_choices": {
+    "query": "Slide the photos beneath a fixed heading",
+    "decision": "inspect_candidates",
+    "seed_decision": "retrieve",
+    "seed_reason": "Browse pictures inside a place or album surface with persistent labels. Use the separate UI adapter variant for inline conversation paging.",
+    "learned": [
+      {
+        "id": "tether-extend-then-pivot-dock",
+        "title": "Extend a tether, then pivot it into a fixed dock",
+        "description": "A horizontal shuttle pulls out a tether, pauses at full reach, then turns upward on the same tether into a fixed dock.",
+        "fits": [
+          "A latched endpoint moves horizontally, holds, then pivots an attached tether into a fixed dock"
+        ],
+        "avoid": [
+          "A free particle without a fixed pivot or a static traced route"
+        ],
+        "moving": [
+          "elastic-tether",
+          "shuttle"
+        ],
+        "fixed": [
+          "board",
+          "heading-mark",
+          "heading-dash",
+          "baseline",
+          "dock",
+          "dock-center",
+          "pivot-ring",
+          "pivot-center"
+        ],
+        "parameters": {
+          "shuttle-color": "/layers/9/fill",
+          "shuttle-x-frame-24": "/layers/9/keyframes/x/24/value",
+          "tether-color": "/layers/6/fill"
+        },
+        "tags": [
+          "tether",
+          "pivot",
+          "right-angle path",
+          "docking"
+        ],
+        "source": {
+          "clip_sha256": "f3201aca2c4740bc89825d935e7e16bd8b7e159e0438ce5478a8f79cba16a34b",
+          "comparison_clip": "evidence/reference.nut",
+          "end_frame_exclusive": 90,
+          "label": "Independently authored unseen test original",
+          "observation": "Shuttle starts near (173,176), holds near (369,176), rises with the tether and lands near (369,88), then holds through frame 89.",
+          "original_sha256": "3d0fbab4c289b5fc1e2452d587c892bc9c17fdcf7ab9f59e2a820d504c0f9fee",
+          "start_frame": 0
+        },
+        "renderer": "pillow",
+        "verified": "frame-compared",
+        "preview": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/run/library/entries/tether-extend-then-pivot-dock/preview.mp4",
+        "scene": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/run/library/entries/tether-extend-then-pivot-dock/scene.json",
+        "evidence": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/run/library/entries/tether-extend-then-pivot-dock/evidence/comparison/report.json",
+        "still": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/run/library/entries/tether-extend-then-pivot-dock/evidence/comparison/worst.png"
+      }
+    ],
+    "seed": [
+      {
+        "id": "photos-under-fixed-heading",
+        "title": "Slide the photos beneath a fixed heading",
+        "moves": "Adjacent photos translate together on one horizontally clipped rail.",
+        "fixed": "The heading, viewport, divider and supporting footer stay in place.",
+        "notice": "The next photo comes into view while the place and surrounding context remain easy to read.",
+        "fits": "Browse pictures inside a place or album surface with persistent labels. Use the separate UI adapter variant for inline conversation paging.",
+        "avoid": "A stack that lifts or dismisses only its front photo needs independent layers and depth.",
+        "intents": [
+          "Move the photos beneath a fixed heading",
+          "Slide pictures horizontally under a title that stays put",
+          "Keep the shop name pinned as the storefront photos glide past",
+          "Scroll images without moving the header",
+          "Browse ticket options on a card rail while the event name stays visible"
+        ],
+        "editable": [
+          "heading",
+          "detail",
+          "photos",
+          "direction",
+          "message"
+        ],
+        "editableFields": {
+          "heading": "text",
+          "detail": "text",
+          "photos": "array of local PNG, JPEG or WebP paths, relative to the content JSON",
+          "direction": "left or right",
+          "message": "optional stationary message beneath the photo rail"
+        },
+        "photoCount": {
+          "min": 2,
+          "max": 12
+        },
+        "source": {
+          "kind": "measured-adaptation",
+          "ref": "projects/05-linq-complete-v1/imessage-recreations/references/05-linq/source.mp4",
+          "range": [
+            36.266666666666666,
+            37.8
+          ],
+          "framesInclusive": [
+            1088,
+            1134
+          ],
+          "note": "Native Linq rail displacements after the entrance camera move, including the acceleration, deceleration and final hold. Replanted at a new size with independent imagery and a fixed heading."
+        },
+        "events": [
+          {
+            "id": "motion.photos-under-fixed-heading.rail-start",
+            "kind": "media.scroll",
+            "frame": 13
+          },
+          {
+            "id": "motion.photos-under-fixed-heading.rail-settle",
+            "kind": "media.settle",
+            "frame": 54
+          }
+        ],
+        "picture": {
+          "fpsNum": 30,
+          "fpsDen": 1,
+          "frameCount": 72
+        },
+        "sha256": "fbd12bb6f99a35a45e901d053b6f466dd94791374a42cc038f9d4ff215e7b2d3",
+        "implementation": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/imessagevideo/skill/imessage-video/assets/seed/runtime/motion/packs/core.mjs",
+        "preview": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/imessagevideo/skill/imessage-video/assets/seed/previews/photos-under-fixed-heading.mp4"
+      }
+    ]
+  }
+}
