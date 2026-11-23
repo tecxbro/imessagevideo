@@ -1,0 +1,5 @@
+(version 1)
+(allow default)
+(deny network*)
+(deny file-read* (literal "/Users/darshan/Downloads/sidehoe.mp4"))
+(deny file-read* (subpath "/Users/darshan/Documents/ChatGPT/imessage-video"))

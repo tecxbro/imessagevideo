@@ -1,0 +1,716 @@
+{
+  "schema": 1,
+  "verdict": "FAIL",
+  "failures": [
+    {
+      "check": "whole_frame_mae",
+      "spans": [
+        [
+          134,
+          161
+        ],
+        [
+          196,
+          204
+        ],
+        [
+          206,
+          210
+        ],
+        [
+          232,
+          257
+        ],
+        [
+          293,
+          293
+        ],
+        [
+          308,
+          308
+        ],
+        [
+          310,
+          312
+        ],
+        [
+          319,
+          320
+        ],
+        [
+          329,
+          330
+        ],
+        [
+          335,
+          336
+        ],
+        [
+          339,
+          352
+        ],
+        [
+          354,
+          355
+        ],
+        [
+          397,
+          397
+        ],
+        [
+          667,
+          671
+        ],
+        [
+          675,
+          694
+        ]
+      ]
+    },
+    {
+      "check": "region",
+      "id": "identity",
+      "spans": [
+        [
+          113,
+          119
+        ]
+      ]
+    },
+    {
+      "check": "region",
+      "id": "assistant-hull",
+      "spans": [
+        [
+          134,
+          159
+        ]
+      ]
+    },
+    {
+      "check": "region",
+      "id": "personal-life",
+      "spans": [
+        [
+          180,
+          211
+        ]
+      ]
+    },
+    {
+      "check": "region",
+      "id": "mosaic",
+      "spans": [
+        [
+          252,
+          256
+        ]
+      ]
+    },
+    {
+      "check": "region",
+      "id": "profile-focus",
+      "spans": [
+        [
+          288,
+          310
+        ]
+      ]
+    },
+    {
+      "check": "region",
+      "id": "sofia-phone",
+      "spans": [
+        [
+          330,
+          330
+        ]
+      ]
+    },
+    {
+      "check": "region",
+      "id": "suggestion",
+      "spans": [
+        [
+          339,
+          347
+        ]
+      ]
+    },
+    {
+      "check": "region",
+      "id": "send-approach",
+      "spans": [
+        [
+          387,
+          397
+        ]
+      ]
+    },
+    {
+      "check": "region",
+      "id": "calendar-enter",
+      "spans": [
+        [
+          397,
+          398
+        ]
+      ]
+    },
+    {
+      "check": "region",
+      "id": "options-appear",
+      "spans": [
+        [
+          652,
+          654
+        ]
+      ]
+    },
+    {
+      "check": "region",
+      "id": "phone-exit",
+      "spans": [
+        [
+          690,
+          690
+        ]
+      ]
+    },
+    {
+      "check": "region",
+      "id": "end-copy",
+      "spans": [
+        [
+          716,
+          716
+        ],
+        [
+          754,
+          765
+        ]
+      ]
+    }
+  ],
+  "reference": {
+    "name": "sidehoe.mp4",
+    "sha256": "f821bb58cbdb265a75d572616d0da723e9cfb6de31e3db5f8a17d94dc15b5327",
+    "clock": {
+      "width": 2000,
+      "height": 2000,
+      "sample_aspect_ratio": "1",
+      "rotation_degrees": 0,
+      "display_matrix": [
+        65536,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        1073741824
+      ],
+      "container_crop_top_bottom_left_right": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "time_base": "1/60000",
+      "declared_rate": "25",
+      "declared_average_rate": "25/1",
+      "start_pts": 0,
+      "end_pts_exclusive": 1867200,
+      "end_basis": "stream start + stream duration",
+      "end_seconds": 31.12,
+      "frames": 778,
+      "cadence": "constant",
+      "pixel_format": "yuv420p",
+      "alpha_present": false,
+      "color_range": null,
+      "color_space": null,
+      "color_primaries": null,
+      "color_transfer": null
+    },
+    "audio": [
+      {
+        "index": 1,
+        "codec_name": "aac",
+        "sample_rate": "44100",
+        "channels": 2,
+        "channel_layout": "stereo",
+        "time_base": "1/44100",
+        "start_pts": 0,
+        "duration_ts": 1375232,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "Twitter-vork muxer",
+          "vendor_id": "[0][0][0][0]"
+        }
+      }
+    ]
+  },
+  "candidate": {
+    "name": "sidehoe.mp4",
+    "sha256": "8d8ccf251782dd7d81adf5e03580c6b8f23f96574f655f559c6a91b77b9f0995",
+    "clock": {
+      "width": 2000,
+      "height": 2000,
+      "sample_aspect_ratio": "1",
+      "rotation_degrees": 0,
+      "display_matrix": [
+        65536,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        1073741824
+      ],
+      "container_crop_top_bottom_left_right": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "time_base": "1/60000",
+      "declared_rate": "25",
+      "declared_average_rate": "25/1",
+      "start_pts": 0,
+      "end_pts_exclusive": 1867200,
+      "end_basis": "last decoded frame duration",
+      "end_seconds": 31.12,
+      "frames": 778,
+      "cadence": "constant",
+      "pixel_format": "yuv420p",
+      "alpha_present": false,
+      "color_range": null,
+      "color_space": null,
+      "color_primaries": null,
+      "color_transfer": null
+    },
+    "audio": [
+      {
+        "index": 1,
+        "codec_name": "aac",
+        "sample_rate": "48000",
+        "channels": 2,
+        "channel_layout": "stereo",
+        "time_base": "1/48000",
+        "start_pts": 0,
+        "duration_ts": 1493760,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "SoundHandler",
+          "vendor_id": "[0][0][0][0]"
+        }
+      }
+    ]
+  },
+  "compared_frames": 778,
+  "mean_abs_rgb": 13.329150752999146,
+  "worst_frame": {
+    "frame": 134,
+    "mean_abs_rgb": 40.56461683333333
+  },
+  "whole_frame_mae_limit": 18,
+  "pixel_floor": 30,
+  "clock_tolerance_seconds": "0",
+  "alignment": "display-order index with independent exact PTS gate",
+  "audio_rule": "present",
+  "audio_checks": {
+    "candidate_start_seconds": "0",
+    "cues": [],
+    "reference_start_seconds": "0"
+  },
+  "regions": {
+    "inbox-build": {
+      "expected_frames": 13,
+      "scanned_frames": 13,
+      "worst_mae": 22.043258353462157,
+      "worst_mae_frame": 11,
+      "worst_changed_pixels": 395157,
+      "worst_changed_pixels_frame": 8,
+      "mae_limit": 31,
+      "pixel_floor": 30,
+      "changed_pixels_limit": null,
+      "failed_spans": []
+    },
+    "inbox-scroll": {
+      "expected_frames": 28,
+      "scanned_frames": 28,
+      "worst_mae": 23.271267041487523,
+      "worst_mae_frame": 55,
+      "worst_changed_pixels": 734817,
+      "worst_changed_pixels_frame": 55,
+      "mae_limit": 24,
+      "pixel_floor": 30,
+      "changed_pixels_limit": null,
+      "failed_spans": []
+    },
+    "identity": {
+      "expected_frames": 18,
+      "scanned_frames": 18,
+      "worst_mae": 31.94740626428898,
+      "worst_mae_frame": 116,
+      "worst_changed_pixels": 141197,
+      "worst_changed_pixels_frame": 112,
+      "mae_limit": 30,
+      "pixel_floor": 30,
+      "changed_pixels_limit": null,
+      "failed_spans": [
+        [
+          113,
+          119
+        ]
+      ]
+    },
+    "assistant-hull": {
+      "expected_frames": 28,
+      "scanned_frames": 28,
+      "worst_mae": 54.1953687960489,
+      "worst_mae_frame": 134,
+      "worst_changed_pixels": 1181084,
+      "worst_changed_pixels_frame": 158,
+      "mae_limit": 32,
+      "pixel_floor": 30,
+      "changed_pixels_limit": null,
+      "failed_spans": [
+        [
+          134,
+          159
+        ]
+      ]
+    },
+    "personal-life": {
+      "expected_frames": 51,
+      "scanned_frames": 51,
+      "worst_mae": 41.97098935015602,
+      "worst_mae_frame": 201,
+      "worst_changed_pixels": 209208,
+      "worst_changed_pixels_frame": 208,
+      "mae_limit": 20,
+      "pixel_floor": 30,
+      "changed_pixels_limit": null,
+      "failed_spans": [
+        [
+          180,
+          211
+        ]
+      ]
+    },
+    "avatar-assemble": {
+      "expected_frames": 16,
+      "scanned_frames": 16,
+      "worst_mae": 26.635133661599944,
+      "worst_mae_frame": 228,
+      "worst_changed_pixels": 877520,
+      "worst_changed_pixels_frame": 221,
+      "mae_limit": 36,
+      "pixel_floor": 30,
+      "changed_pixels_limit": null,
+      "failed_spans": []
+    },
+    "mosaic": {
+      "expected_frames": 23,
+      "scanned_frames": 23,
+      "worst_mae": 44.90879149950579,
+      "worst_mae_frame": 255,
+      "worst_changed_pixels": 1420999,
+      "worst_changed_pixels_frame": 254,
+      "mae_limit": 39,
+      "pixel_floor": 30,
+      "changed_pixels_limit": null,
+      "failed_spans": [
+        [
+          252,
+          256
+        ]
+      ]
+    },
+    "profile-focus": {
+      "expected_frames": 31,
+      "scanned_frames": 31,
+      "worst_mae": 40.54691932624114,
+      "worst_mae_frame": 308,
+      "worst_changed_pixels": 762974,
+      "worst_changed_pixels_frame": 288,
+      "mae_limit": 31,
+      "pixel_floor": 30,
+      "changed_pixels_limit": null,
+      "failed_spans": [
+        [
+          288,
+          310
+        ]
+      ]
+    },
+    "sofia-phone": {
+      "expected_frames": 23,
+      "scanned_frames": 23,
+      "worst_mae": 35.28922712418301,
+      "worst_mae_frame": 330,
+      "worst_changed_pixels": 661799,
+      "worst_changed_pixels_frame": 335,
+      "mae_limit": 34,
+      "pixel_floor": 30,
+      "changed_pixels_limit": null,
+      "failed_spans": [
+        [
+          330,
+          330
+        ]
+      ]
+    },
+    "suggestion": {
+      "expected_frames": 17,
+      "scanned_frames": 17,
+      "worst_mae": 36.43321646948153,
+      "worst_mae_frame": 341,
+      "worst_changed_pixels": 366053,
+      "worst_changed_pixels_frame": 339,
+      "mae_limit": 27,
+      "pixel_floor": 30,
+      "changed_pixels_limit": null,
+      "failed_spans": [
+        [
+          339,
+          347
+        ]
+      ]
+    },
+    "phone-dissolve": {
+      "expected_frames": 9,
+      "scanned_frames": 9,
+      "worst_mae": 19.41650200668896,
+      "worst_mae_frame": 355,
+      "worst_changed_pixels": 632274,
+      "worst_changed_pixels_frame": 356,
+      "mae_limit": 29,
+      "pixel_floor": 30,
+      "changed_pixels_limit": null,
+      "failed_spans": []
+    },
+    "send-approach": {
+      "expected_frames": 22,
+      "scanned_frames": 22,
+      "worst_mae": 36.290262282247014,
+      "worst_mae_frame": 394,
+      "worst_changed_pixels": 743873,
+      "worst_changed_pixels_frame": 397,
+      "mae_limit": 29,
+      "pixel_floor": 30,
+      "changed_pixels_limit": null,
+      "failed_spans": [
+        [
+          387,
+          397
+        ]
+      ]
+    },
+    "calendar-enter": {
+      "expected_frames": 21,
+      "scanned_frames": 21,
+      "worst_mae": 35.20780340839927,
+      "worst_mae_frame": 397,
+      "worst_changed_pixels": 730378,
+      "worst_changed_pixels_frame": 397,
+      "mae_limit": 28,
+      "pixel_floor": 30,
+      "changed_pixels_limit": null,
+      "failed_spans": [
+        [
+          397,
+          398
+        ]
+      ]
+    },
+    "calendar-marie": {
+      "expected_frames": 17,
+      "scanned_frames": 17,
+      "worst_mae": 10.472442006762602,
+      "worst_mae_frame": 434,
+      "worst_changed_pixels": 116842,
+      "worst_changed_pixels_frame": 434,
+      "mae_limit": 18,
+      "pixel_floor": 30,
+      "changed_pixels_limit": null,
+      "failed_spans": []
+    },
+    "calendar-lisa": {
+      "expected_frames": 17,
+      "scanned_frames": 17,
+      "worst_mae": 8.660312554112554,
+      "worst_mae_frame": 452,
+      "worst_changed_pixels": 94227,
+      "worst_changed_pixels_frame": 457,
+      "mae_limit": 18,
+      "pixel_floor": 30,
+      "changed_pixels_limit": null,
+      "failed_spans": []
+    },
+    "calendar-out": {
+      "expected_frames": 16,
+      "scanned_frames": 16,
+      "worst_mae": 19.25049123804111,
+      "worst_mae_frame": 483,
+      "worst_changed_pixels": 492177,
+      "worst_changed_pixels_frame": 477,
+      "mae_limit": 30,
+      "pixel_floor": 30,
+      "changed_pixels_limit": null,
+      "failed_spans": []
+    },
+    "icons-depth": {
+      "expected_frames": 62,
+      "scanned_frames": 62,
+      "worst_mae": 30.25177976190476,
+      "worst_mae_frame": 533,
+      "worst_changed_pixels": 397305,
+      "worst_changed_pixels_frame": 533,
+      "mae_limit": 35,
+      "pixel_floor": 30,
+      "changed_pixels_limit": null,
+      "failed_spans": []
+    },
+    "phone-reentry": {
+      "expected_frames": 22,
+      "scanned_frames": 22,
+      "worst_mae": 28.637535037878788,
+      "worst_mae_frame": 633,
+      "worst_changed_pixels": 453915,
+      "worst_changed_pixels_frame": 613,
+      "mae_limit": 33,
+      "pixel_floor": 30,
+      "changed_pixels_limit": null,
+      "failed_spans": []
+    },
+    "options-appear": {
+      "expected_frames": 15,
+      "scanned_frames": 15,
+      "worst_mae": 32.71508510959939,
+      "worst_mae_frame": 653,
+      "worst_changed_pixels": 192002,
+      "worst_changed_pixels_frame": 653,
+      "mae_limit": 27,
+      "pixel_floor": 30,
+      "changed_pixels_limit": null,
+      "failed_spans": [
+        [
+          652,
+          654
+        ]
+      ]
+    },
+    "yes-approach": {
+      "expected_frames": 31,
+      "scanned_frames": 31,
+      "worst_mae": 21.239747534516766,
+      "worst_mae_frame": 666,
+      "worst_changed_pixels": 318359,
+      "worst_changed_pixels_frame": 664,
+      "mae_limit": 25,
+      "pixel_floor": 30,
+      "changed_pixels_limit": null,
+      "failed_spans": []
+    },
+    "phone-exit": {
+      "expected_frames": 15,
+      "scanned_frames": 15,
+      "worst_mae": 31.398067513862117,
+      "worst_mae_frame": 690,
+      "worst_changed_pixels": 666577,
+      "worst_changed_pixels_frame": 691,
+      "mae_limit": 31,
+      "pixel_floor": 30,
+      "changed_pixels_limit": null,
+      "failed_spans": [
+        [
+          690,
+          690
+        ]
+      ]
+    },
+    "end-copy": {
+      "expected_frames": 50,
+      "scanned_frames": 50,
+      "worst_mae": 30.451261386639676,
+      "worst_mae_frame": 764,
+      "worst_changed_pixels": 141351,
+      "worst_changed_pixels_frame": 716,
+      "mae_limit": 27,
+      "pixel_floor": 30,
+      "changed_pixels_limit": null,
+      "failed_spans": [
+        [
+          716,
+          716
+        ],
+        [
+          754,
+          765
+        ]
+      ]
+    },
+    "end-fade": {
+      "expected_frames": 12,
+      "scanned_frames": 12,
+      "worst_mae": 14.94397975,
+      "worst_mae_frame": 767,
+      "worst_changed_pixels": 835798,
+      "worst_changed_pixels_frame": 768,
+      "mae_limit": 16,
+      "pixel_floor": 30,
+      "changed_pixels_limit": null,
+      "failed_spans": []
+    }
+  },
+  "tile": null,
+  "regional_coverage": "explicit windows",
+  "decode_completed": true
+}

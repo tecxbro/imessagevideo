@@ -1,0 +1,818 @@
+{
+  "picture": {
+    "fpsNum": 25,
+    "fpsDen": 1,
+    "frameCount": 778
+  },
+  "events": [
+    {
+      "frame": 0,
+      "id": "inbox.open",
+      "kind": "entrance",
+      "target": "inbox",
+      "uiState": {
+        "conversationId": "inbox",
+        "messages": [],
+        "composer": {
+          "text": "",
+          "focused": false,
+          "keyboardVisible": false
+        },
+        "viewport": {
+          "surface": "inbox",
+          "anchorMessageId": null,
+          "selection": []
+        }
+      }
+    },
+    {
+      "frame": 2,
+      "id": "inbox.outer-pins",
+      "kind": "reveal",
+      "target": "pins"
+    },
+    {
+      "frame": 9,
+      "id": "inbox.note-legible",
+      "kind": "read",
+      "target": "pin-note"
+    },
+    {
+      "frame": 42,
+      "id": "inbox.scroll",
+      "kind": "move",
+      "target": "inbox"
+    },
+    {
+      "frame": 57,
+      "id": "inbox.scroll-fast",
+      "kind": "move",
+      "target": "inbox"
+    },
+    {
+      "frame": 75,
+      "id": "inbox.settled",
+      "kind": "settle",
+      "target": "inbox"
+    },
+    {
+      "frame": 102,
+      "id": "identity.in",
+      "kind": "cut",
+      "target": "identity"
+    },
+    {
+      "frame": 106,
+      "id": "identity.name",
+      "kind": "type",
+      "target": "identity"
+    },
+    {
+      "frame": 134,
+      "id": "assistant.in",
+      "kind": "cut",
+      "target": "assistant"
+    },
+    {
+      "frame": 141,
+      "id": "assistant.read",
+      "kind": "read",
+      "target": "copy"
+    },
+    {
+      "frame": 162,
+      "id": "personal.line-one",
+      "kind": "type",
+      "target": "copy"
+    },
+    {
+      "frame": 178,
+      "id": "personal.line-two",
+      "kind": "type",
+      "target": "copy"
+    },
+    {
+      "frame": 213,
+      "id": "profiles.cluster",
+      "kind": "assemble",
+      "target": "avatars"
+    },
+    {
+      "frame": 222,
+      "id": "profiles.cluster-settle",
+      "kind": "settle",
+      "target": "avatars"
+    },
+    {
+      "frame": 254,
+      "id": "profiles.mosaic",
+      "kind": "wipe",
+      "target": "avatars"
+    },
+    {
+      "frame": 258,
+      "id": "profiles.directory",
+      "kind": "entrance",
+      "target": "profiles"
+    },
+    {
+      "frame": 271,
+      "id": "profiles.read",
+      "kind": "read",
+      "target": "profiles"
+    },
+    {
+      "frame": 285,
+      "id": "profiles.push",
+      "kind": "move",
+      "target": "camera"
+    },
+    {
+      "frame": 290,
+      "id": "profiles.lisa-focus",
+      "kind": "select",
+      "target": "hiking-chip"
+    },
+    {
+      "frame": 313,
+      "id": "sofia.in",
+      "kind": "cut",
+      "target": "sofia",
+      "uiState": {
+        "conversationId": "sofia",
+        "messages": [
+          {
+            "id": "yesterday",
+            "senderId": "owner",
+            "text": "Yesterday was really nice:)"
+          },
+          {
+            "id": "awesome",
+            "senderId": "sofia",
+            "text": "Yes, it was awesome!"
+          },
+          {
+            "id": "again",
+            "senderId": "sofia",
+            "text": "Do you wanna go out again tmrw?"
+          },
+          {
+            "id": "yeah",
+            "senderId": "owner",
+            "text": "Yeah let's do it"
+          }
+        ],
+        "composer": {
+          "text": "",
+          "focused": true,
+          "keyboardVisible": true
+        },
+        "viewport": {
+          "surface": "thread",
+          "anchorMessageId": "yeah",
+          "selection": []
+        }
+      }
+    },
+    {
+      "frame": 336,
+      "id": "sofia.suggestion",
+      "kind": "reveal",
+      "target": "suggestion",
+      "uiState": {
+        "conversationId": "sofia",
+        "messages": [
+          {
+            "id": "yesterday",
+            "senderId": "owner",
+            "text": "Yesterday was really nice:)"
+          },
+          {
+            "id": "awesome",
+            "senderId": "sofia",
+            "text": "Yes, it was awesome!"
+          },
+          {
+            "id": "again",
+            "senderId": "sofia",
+            "text": "Do you wanna go out again tmrw?"
+          },
+          {
+            "id": "yeah",
+            "senderId": "owner",
+            "text": "Yeah let's do it"
+          }
+        ],
+        "composer": {
+          "text": "",
+          "focused": true,
+          "keyboardVisible": true
+        },
+        "viewport": {
+          "surface": "suggestion",
+          "anchorMessageId": "yeah",
+          "selection": []
+        }
+      }
+    },
+    {
+      "frame": 341,
+      "id": "sofia.no",
+      "kind": "reveal",
+      "target": "no"
+    },
+    {
+      "frame": 343,
+      "id": "sofia.send-control",
+      "kind": "reveal",
+      "target": "send"
+    },
+    {
+      "frame": 353,
+      "id": "sofia.transpose",
+      "kind": "dissolve",
+      "target": "suggestion"
+    },
+    {
+      "frame": 360,
+      "id": "sofia.isolated",
+      "kind": "settle",
+      "target": "suggestion",
+      "uiState": {
+        "conversationId": "sofia",
+        "messages": [
+          {
+            "id": "yesterday",
+            "senderId": "owner",
+            "text": "Yesterday was really nice:)"
+          },
+          {
+            "id": "awesome",
+            "senderId": "sofia",
+            "text": "Yes, it was awesome!"
+          },
+          {
+            "id": "again",
+            "senderId": "sofia",
+            "text": "Do you wanna go out again tmrw?"
+          },
+          {
+            "id": "yeah",
+            "senderId": "owner",
+            "text": "Yeah let's do it"
+          }
+        ],
+        "composer": {
+          "text": "",
+          "focused": false,
+          "keyboardVisible": false
+        },
+        "viewport": {
+          "surface": "suggestion-isolated",
+          "anchorMessageId": "yeah",
+          "selection": []
+        }
+      }
+    },
+    {
+      "frame": 382,
+      "id": "sofia.pointer",
+      "kind": "point",
+      "target": "send"
+    },
+    {
+      "frame": 393,
+      "id": "sofia.send-contact",
+      "kind": "contact",
+      "target": "send",
+      "uiState": {
+        "conversationId": "sofia",
+        "messages": [
+          {
+            "id": "yesterday",
+            "senderId": "owner",
+            "text": "Yesterday was really nice:)"
+          },
+          {
+            "id": "awesome",
+            "senderId": "sofia",
+            "text": "Yes, it was awesome!"
+          },
+          {
+            "id": "again",
+            "senderId": "sofia",
+            "text": "Do you wanna go out again tmrw?"
+          },
+          {
+            "id": "yeah",
+            "senderId": "owner",
+            "text": "Yeah let's do it"
+          }
+        ],
+        "composer": {
+          "text": "",
+          "focused": false,
+          "keyboardVisible": false
+        },
+        "viewport": {
+          "surface": "suggestion-isolated",
+          "anchorMessageId": "yeah",
+          "selection": [
+            "yeah"
+          ]
+        }
+      }
+    },
+    {
+      "frame": 397,
+      "id": "calendar.in",
+      "kind": "slide",
+      "target": "calendar",
+      "uiState": null
+    },
+    {
+      "frame": 408,
+      "id": "calendar.overlap",
+      "kind": "read",
+      "target": "appointments"
+    },
+    {
+      "frame": 430,
+      "id": "calendar.marie-start",
+      "kind": "move",
+      "target": "marie"
+    },
+    {
+      "frame": 441,
+      "id": "calendar.marie-settled",
+      "kind": "settle",
+      "target": "marie"
+    },
+    {
+      "frame": 452,
+      "id": "calendar.lisa-start",
+      "kind": "move",
+      "target": "lisa"
+    },
+    {
+      "frame": 460,
+      "id": "calendar.separate",
+      "kind": "settle",
+      "target": "lisa"
+    },
+    {
+      "frame": 474,
+      "id": "calendar.mosaic",
+      "kind": "wipe",
+      "target": "calendar"
+    },
+    {
+      "frame": 478,
+      "id": "apps.in",
+      "kind": "entrance",
+      "target": "apps"
+    },
+    {
+      "frame": 532,
+      "id": "apps.first-turn",
+      "kind": "move",
+      "target": "apps"
+    },
+    {
+      "frame": 550,
+      "id": "apps.rings-turn",
+      "kind": "move",
+      "target": "apps"
+    },
+    {
+      "frame": 573,
+      "id": "apps.date-turn",
+      "kind": "move",
+      "target": "apps"
+    },
+    {
+      "frame": 622,
+      "id": "apps.blank",
+      "kind": "cut",
+      "target": "stage"
+    },
+    {
+      "frame": 624,
+      "id": "follow.in",
+      "kind": "entrance",
+      "target": "follow",
+      "uiState": {
+        "conversationId": "follow",
+        "messages": [
+          {
+            "id": "linda",
+            "senderId": "owner",
+            "text": "Can you please schedule in a date with Linda?"
+          },
+          {
+            "id": "linda-reply",
+            "senderId": "assistant",
+            "text": "Certainly, Linda is available at 4pm. Does that work for you?"
+          },
+          {
+            "id": "liliana",
+            "senderId": "assistant",
+            "text": "It's been 6 months since you spoke to Liliana. Want me to shoot her a text?"
+          }
+        ],
+        "composer": {
+          "text": "",
+          "focused": true,
+          "keyboardVisible": true
+        },
+        "viewport": {
+          "surface": "thread",
+          "anchorMessageId": "liliana",
+          "selection": []
+        }
+      }
+    },
+    {
+      "frame": 648,
+      "id": "follow.no",
+      "kind": "reveal",
+      "target": "no"
+    },
+    {
+      "frame": 650,
+      "id": "follow.yes",
+      "kind": "reveal",
+      "target": "yes",
+      "uiState": {
+        "conversationId": "follow",
+        "messages": [
+          {
+            "id": "linda",
+            "senderId": "owner",
+            "text": "Can you please schedule in a date with Linda?"
+          },
+          {
+            "id": "linda-reply",
+            "senderId": "assistant",
+            "text": "Certainly, Linda is available at 4pm. Does that work for you?"
+          },
+          {
+            "id": "liliana",
+            "senderId": "assistant",
+            "text": "It's been 6 months since you spoke to Liliana. Want me to shoot her a text?"
+          }
+        ],
+        "composer": {
+          "text": "",
+          "focused": true,
+          "keyboardVisible": true
+        },
+        "viewport": {
+          "surface": "follow-up",
+          "anchorMessageId": "liliana",
+          "selection": []
+        }
+      }
+    },
+    {
+      "frame": 659,
+      "id": "follow.push",
+      "kind": "move",
+      "target": "camera"
+    },
+    {
+      "frame": 675,
+      "id": "follow.yes-contact",
+      "kind": "contact",
+      "target": "yes",
+      "uiState": {
+        "conversationId": "follow",
+        "messages": [
+          {
+            "id": "linda",
+            "senderId": "owner",
+            "text": "Can you please schedule in a date with Linda?"
+          },
+          {
+            "id": "linda-reply",
+            "senderId": "assistant",
+            "text": "Certainly, Linda is available at 4pm. Does that work for you?"
+          },
+          {
+            "id": "liliana",
+            "senderId": "assistant",
+            "text": "It's been 6 months since you spoke to Liliana. Want me to shoot her a text?"
+          }
+        ],
+        "composer": {
+          "text": "",
+          "focused": true,
+          "keyboardVisible": true
+        },
+        "viewport": {
+          "surface": "follow-up",
+          "anchorMessageId": "liliana",
+          "selection": [
+            "liliana"
+          ]
+        }
+      }
+    },
+    {
+      "frame": 686,
+      "id": "follow.yes-feedback",
+      "kind": "highlight",
+      "target": "yes"
+    },
+    {
+      "frame": 690,
+      "id": "follow.out",
+      "kind": "move",
+      "target": "follow"
+    },
+    {
+      "frame": 696,
+      "id": "ending.logo",
+      "kind": "cut",
+      "target": "identity",
+      "uiState": null
+    },
+    {
+      "frame": 717,
+      "id": "ending.the",
+      "kind": "type",
+      "target": "copy"
+    },
+    {
+      "frame": 721,
+      "id": "ending.most",
+      "kind": "type",
+      "target": "copy"
+    },
+    {
+      "frame": 726,
+      "id": "ending.personal",
+      "kind": "type",
+      "target": "copy"
+    },
+    {
+      "frame": 741,
+      "id": "ending.imessage",
+      "kind": "type",
+      "target": "copy"
+    },
+    {
+      "frame": 749,
+      "id": "ending.assistant",
+      "kind": "type",
+      "target": "copy"
+    },
+    {
+      "frame": 757,
+      "id": "ending.yet",
+      "kind": "type",
+      "target": "copy"
+    },
+    {
+      "frame": 765,
+      "id": "ending.last-read",
+      "kind": "hold",
+      "target": "copy"
+    },
+    {
+      "frame": 766,
+      "id": "ending.fade",
+      "kind": "fade",
+      "target": "stage"
+    },
+    {
+      "frame": 777,
+      "id": "ending.black",
+      "kind": "hold",
+      "target": "stage"
+    }
+  ],
+  "sampleRate": 48000,
+  "cues": [
+    {
+      "id": "opening",
+      "eventId": "inbox.open",
+      "offsetSamples": 0,
+      "asset": "chime",
+      "frame": 0,
+      "sample": 0,
+      "seconds": 0.0,
+      "availableSamples": 16800
+    },
+    {
+      "id": "inbox-scroll",
+      "eventId": "inbox.scroll-fast",
+      "offsetSamples": -720,
+      "asset": "swish",
+      "frame": 57,
+      "sample": 108720,
+      "seconds": 2.265,
+      "availableSamples": 13920
+    },
+    {
+      "id": "identity",
+      "eventId": "identity.in",
+      "offsetSamples": 0,
+      "asset": "chime",
+      "frame": 102,
+      "sample": 195840,
+      "seconds": 4.08,
+      "availableSamples": 16800
+    },
+    {
+      "id": "assistant-drop",
+      "eventId": "assistant.in",
+      "offsetSamples": 0,
+      "asset": "swish",
+      "frame": 134,
+      "sample": 257280,
+      "seconds": 5.36,
+      "availableSamples": 13920
+    },
+    {
+      "id": "heart-title",
+      "eventId": "personal.line-two",
+      "offsetSamples": 0,
+      "asset": "chime",
+      "frame": 178,
+      "sample": 341760,
+      "seconds": 7.12,
+      "availableSamples": 16800
+    },
+    {
+      "id": "profile-cluster",
+      "eventId": "profiles.cluster",
+      "offsetSamples": 0,
+      "asset": "chime",
+      "frame": 213,
+      "sample": 408960,
+      "seconds": 8.52,
+      "availableSamples": 16800
+    },
+    {
+      "id": "mosaic",
+      "eventId": "profiles.mosaic",
+      "offsetSamples": 0,
+      "asset": "swish",
+      "frame": 254,
+      "sample": 487680,
+      "seconds": 10.16,
+      "availableSamples": 13920
+    },
+    {
+      "id": "hiking",
+      "eventId": "profiles.lisa-focus",
+      "offsetSamples": 0,
+      "asset": "tap",
+      "frame": 290,
+      "sample": 556800,
+      "seconds": 11.6,
+      "availableSamples": 6240
+    },
+    {
+      "id": "sofia-drop",
+      "eventId": "sofia.in",
+      "offsetSamples": 0,
+      "asset": "swish",
+      "frame": 313,
+      "sample": 600960,
+      "seconds": 12.52,
+      "availableSamples": 13920
+    },
+    {
+      "id": "suggest",
+      "eventId": "sofia.suggestion",
+      "offsetSamples": 0,
+      "asset": "chime",
+      "frame": 336,
+      "sample": 645120,
+      "seconds": 13.44,
+      "availableSamples": 16800
+    },
+    {
+      "id": "send",
+      "eventId": "sofia.send-contact",
+      "offsetSamples": 0,
+      "asset": "tap",
+      "frame": 393,
+      "sample": 754560,
+      "seconds": 15.72,
+      "availableSamples": 6240
+    },
+    {
+      "id": "calendar-in",
+      "eventId": "calendar.in",
+      "offsetSamples": 0,
+      "asset": "swish",
+      "frame": 397,
+      "sample": 762240,
+      "seconds": 15.88,
+      "availableSamples": 13920
+    },
+    {
+      "id": "move-marie",
+      "eventId": "calendar.marie-start",
+      "offsetSamples": 0,
+      "asset": "swish",
+      "frame": 430,
+      "sample": 825600,
+      "seconds": 17.2,
+      "availableSamples": 13920
+    },
+    {
+      "id": "move-lisa",
+      "eventId": "calendar.lisa-start",
+      "offsetSamples": 0,
+      "asset": "swish",
+      "frame": 452,
+      "sample": 867840,
+      "seconds": 18.08,
+      "availableSamples": 13920
+    },
+    {
+      "id": "calendar-done",
+      "eventId": "calendar.separate",
+      "offsetSamples": 0,
+      "asset": "tap",
+      "frame": 460,
+      "sample": 883200,
+      "seconds": 18.4,
+      "availableSamples": 6240
+    },
+    {
+      "id": "calendar-out",
+      "eventId": "calendar.mosaic",
+      "offsetSamples": 0,
+      "asset": "swish",
+      "frame": 474,
+      "sample": 910080,
+      "seconds": 18.96,
+      "availableSamples": 13920
+    },
+    {
+      "id": "orbit",
+      "eventId": "apps.first-turn",
+      "offsetSamples": 0,
+      "asset": "chime",
+      "frame": 532,
+      "sample": 1021440,
+      "seconds": 21.28,
+      "availableSamples": 16800
+    },
+    {
+      "id": "follow-drop",
+      "eventId": "follow.in",
+      "offsetSamples": 0,
+      "asset": "swish",
+      "frame": 624,
+      "sample": 1198080,
+      "seconds": 24.96,
+      "availableSamples": 13920
+    },
+    {
+      "id": "idle-actions",
+      "eventId": "follow.yes",
+      "offsetSamples": 0,
+      "asset": "chime",
+      "frame": 650,
+      "sample": 1248000,
+      "seconds": 26.0,
+      "availableSamples": 16800
+    },
+    {
+      "id": "confirm",
+      "eventId": "follow.yes-contact",
+      "offsetSamples": 0,
+      "asset": "tap",
+      "frame": 675,
+      "sample": 1296000,
+      "seconds": 27.0,
+      "availableSamples": 6240
+    },
+    {
+      "id": "close",
+      "eventId": "ending.logo",
+      "offsetSamples": 0,
+      "asset": "chime",
+      "frame": 696,
+      "sample": 1336320,
+      "seconds": 27.84,
+      "availableSamples": 16800
+    },
+    {
+      "id": "closing-type",
+      "eventId": "ending.imessage",
+      "offsetSamples": 0,
+      "asset": "tap",
+      "frame": 741,
+      "sample": 1422720,
+      "seconds": 29.64,
+      "availableSamples": 6240
+    }
+  ]
+}
