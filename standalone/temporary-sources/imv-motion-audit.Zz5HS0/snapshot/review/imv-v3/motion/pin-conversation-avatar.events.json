@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 72
+  },
+  "initialUI": null,
+  "events": [
+    {
+      "id": "motion.pin-conversation-avatar.pin-chat",
+      "kind": "conversation_pin",
+      "target": "pin-original-row",
+      "frame": 26,
+      "layerIds": [
+        "pin-original-row"
+      ]
+    },
+    {
+      "id": "motion.pin-conversation-avatar.pin-arrival",
+      "kind": "pin_settle",
+      "target": "pin-traveling-avatar",
+      "frame": 50,
+      "layerIds": [
+        "pin-traveling-avatar"
+      ]
+    }
+  ],
+  "cues": []
+}

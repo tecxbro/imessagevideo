@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<title>Train options · authored development reference</title>
+<style>
+  html, body { margin: 0; width: 100%; height: 100%; overflow: hidden }
+  svg { display: block }
+  text { font-family: Arial, sans-serif; dominant-baseline: text-before-edge }
+</style>
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360">
+  <defs>
+    <clipPath id="window"><rect width="364" height="292" rx="28"/></clipPath>
+    <clipPath id="panel"><rect width="324" height="118" rx="25"/></clipPath>
+  </defs>
+  <rect width="640" height="360" fill="#eeedf3"/>
+  <g id="opening">
+    <rect width="640" height="360" fill="#242342"/>
+    <text x="320" y="126" fill="#c2befa" text-anchor="middle" font-size="13" font-weight="700" letter-spacing="2.2">RAIL PLANNER</text>
+    <text x="320" y="151" fill="#fff" text-anchor="middle" font-size="47" font-weight="700">Train options</text>
+  </g>
+  <g id="conversation" transform="translate(138 34)" fill="#17191d">
+    <rect width="364" height="292" rx="28" fill="#fff" stroke="#d8dbe0"/>
+    <g clip-path="url(#window)">
+      <g transform="translate(21 72)">
+        <rect width="186" height="40" rx="20" fill="#e9e9ed"/>
+        <path d="M 16 22 Q 3 41 -7 38 Q 3 34 2 20 Z" fill="#e9e9ed"/>
+        <text x="17" y="14" font-size="14">Where are we heading?</text>
+      </g>
+      <g id="request">
+        <rect width="222" height="40" rx="20" fill="#1688fa"/>
+        <path d="M 206 22 Q 219 41 229 38 Q 219 34 220 20 Z" fill="#1688fa"/>
+        <text x="17" y="14" fill="#fff" font-size="14">Two seats to Union Station.</text>
+      </g>
+      <g transform="translate(19 236)">
+        <rect width="326" height="48" rx="24" fill="#fff" stroke="#d8dbe0"/>
+        <text x="18" y="14" fill="#777b84" font-size="17">Message</text>
+        <circle cx="302" cy="24" r="16" fill="#d8dbe0"/>
+        <path d="M 302 33 L 302 16 M 295 23 L 302 16 L 309 23" fill="none" stroke="#fff" stroke-width="2"/>
+      </g>
+      <g id="drawer" clip-path="url(#panel)">
+        <rect width="324" height="118" rx="25" fill="#f5f5f7"/>
+        <rect x="143" y="10" width="38" height="4" rx="2" fill="#c4c7cc"/>
+        <text x="22" y="15" font-size="16" font-weight="600">Pick a train</text>
+        <rect x="14" y="36" width="296" height="30" rx="8" fill="#fff"/>
+        <text x="24" y="42" font-size="15" font-weight="600">18:40</text>
+        <text x="89" y="43" font-size="14" fill="#777b84">2 window seats</text>
+        <rect id="unchecked" x="274" y="41" width="18" height="18" rx="5" fill="#fff" stroke="#9b99ac" stroke-width="1.5"/>
+        <g id="checked" transform="translate(274 41)">
+          <rect width="18" height="18" rx="5" fill="#5755c6"/>
+          <path d="M 4 9 L 7.5 12.5 L 14 5.5" fill="none" stroke="#fff" stroke-width="1.7"/>
+        </g>
+        <rect x="14" y="72" width="296" height="30" rx="8" fill="#fff"/>
+        <text x="24" y="78" font-size="15" font-weight="600">19:10</text>
+        <text x="89" y="79" font-size="14" fill="#777b84">4 seats</text>
+        <rect x="274" y="77" width="18" height="18" rx="5" fill="#fff" stroke="#9b99ac" stroke-width="1.5"/>
+      </g>
+      <g id="receipt">
+        <rect width="194" height="40" rx="20" fill="#e9e9ed"/>
+        <path d="M 16 22 Q 3 41 -7 38 Q 3 34 2 20 Z" fill="#e9e9ed"/>
+        <text x="17" y="14" font-size="14">Booked for 18:40.</text>
+      </g>
+    </g>
+    <rect x="1" y="1" width="362" height="66" rx="27" fill="#f8f8fa"/>
+    <rect x="1" y="33" width="362" height="33" fill="#f8f8fa"/>
+    <text x="18" y="17" font-size="30" fill="#1688fa">‹</text>
+    <text x="182" y="25" text-anchor="middle" font-size="17" font-weight="600">Rail Planner</text>
+    <rect x="1" y="66" width="362" height="1" fill="#d8dbe0"/>
+  </g>
+</svg>
+<script>
+  const element = id => document.getElementById(id);
+  function show(id, visible) {
+    element(id).style.display = visible ? '' : 'none';
+  }
+  function slide(id, frame, first, last, x, y, travel) {
+    const remainder = 1 - (Math.max(first, Math.min(frame, last)) - first) / (last - first);
+    element(id).setAttribute('transform', `translate(${x} ${y + travel * remainder ** 3})`);
+  }
+  function paint(frame) {
+    show('opening', frame < 18);
+    show('conversation', frame >= 18);
+    show('request', frame >= 30);
+    show('drawer', frame >= 56 && frame < 89);
+    show('checked', frame >= 74);
+    show('unchecked', frame < 74);
+    show('receipt', frame >= 89);
+    slide('request', frame, 30, 38, 115, 116, 8);
+    slide('drawer', frame, 56, 66, 20, 135, 29);
+    slide('receipt', frame, 89, 96, 21, 194, 7);
+    return document.querySelector('svg').outerHTML;
+  }
+  paint(0);
+</script>
+</html>

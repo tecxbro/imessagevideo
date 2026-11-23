@@ -1,0 +1,382 @@
+{
+  "format_version": 1,
+  "id": "01-photonhq",
+  "status": "pass",
+  "reference_film_samples_reused": false,
+  "licensed_library_samples_used": true,
+  "procedural_fallbacks_used": false,
+  "schedule_sha256": "db83cd352d71af63396fa8644ee305a1833f4c777098c9e4b5ae01527fd45241",
+  "schedule_file": "ui-cues/canonical-01-photonhq.json",
+  "library_manifest_sha256": "26d5b43f764517bf027ad680e93c81ea98672f50b0bcad40f309a85eb7c0894a",
+  "code_sha256": "a4b52c44bef868ee31edb59c0f8e85e85e7cdfe82f1bd804283d415eee263204",
+  "library_api_sha256": "065a6392f327ce06b6a6321849cafe9c1d796f2bb1023483737cea95456f1b6c",
+  "codec_helpers_sha256": "411a2a5586d329a0ced74e3cf921231ce4be4d86e9362533ee19728160be03e2",
+  "music": {
+    "input_file": "mixes/01-photonhq/music.flac",
+    "sha256": "387bbcba6bb77f9e34532a5d291c945b81512a7b5f89450ef3b3afd922f7abf1",
+    "new_score_provenance": [
+      {
+        "kind": "new_AI_music_text_only",
+        "path": "audio-recreation/ai/01-photonhq/music.mp3",
+        "sha256": "bf30bc60ebe17dde7db9f1d75727cc50273bac49083ae7620cc38e8556662f92",
+        "provenance": {
+          "source_kind": "new_AI_music_text_only",
+          "provider": "fal",
+          "endpoint_id": "elevenlabs/music/v2.5",
+          "request_id": "01a1c182-4303-7c21-b88b-a58d24846c26",
+          "submission_key": "imessage-new-score-01-photonhq-v1-20261109",
+          "output_url": "https://v3b.fal.media/files/b/0ab1ce16/Wc2BtHuQitrf1wuuDCgUc_music_generated.mp3",
+          "sha256": "bf30bc60ebe17dde7db9f1d75727cc50273bac49083ae7620cc38e8556662f92",
+          "bytes": 874604,
+          "reference_audio_used_as_generation_input": false
+        },
+        "provenance_sha256": "46dd9a68521870ecd5641384913673975c15ca51c33ba0cca26c738d867d3b40"
+      }
+    ],
+    "old_sfx_stem_used": false,
+    "gain_db": -6.0
+  },
+  "picture": {
+    "frames": 655,
+    "fps_numerator": 30,
+    "fps_denominator": 1
+  },
+  "sample_rate": 48000,
+  "channels": 2,
+  "samples": 1048000,
+  "canonical_event_count": 1,
+  "rendered_event_count": 1,
+  "skipped_event_count": 0,
+  "kind_counts": {
+    "tap": 1
+  },
+  "rendered_kind_counts": {
+    "tap": 1
+  },
+  "events": [
+    {
+      "canonical_event": {
+        "frame": 70,
+        "time": 2.3333333333333335,
+        "kind": "tap",
+        "group": "blue-pill",
+        "confidence": 0.99,
+        "evidence_layer_or_source": {
+          "canonical_layer_ids": [
+            "group-6-source-pill",
+            "intro-pill-pressed",
+            "group-8-source-cursor"
+          ],
+          "source": "references/01-photonhq/source.mp4",
+          "native_source_frames": [
+            69,
+            70,
+            71,
+            72,
+            73
+          ],
+          "source_owner_helper": "references/01-photonhq/refine-intro-cursor-press.py",
+          "measurement_file": "references/01-photonhq/intro-review-elements.json",
+          "measurement_key": "measurements.pill-press-weights"
+        },
+        "observed_or_inferred": "observed_cursor_press_state",
+        "description": "Cursor rests on the blue pill; pressed-state blend jumps 0 at 69 to 0.954 at 70, with deepest press at 73. One click cue at first pressed frame; no second click on release.",
+        "gesture_visible": true,
+        "sample_offset_48000": 112000,
+        "event_id": "01-photonhq:tap:70:0"
+      },
+      "ordinal": 0,
+      "source": {
+        "kind": "licensed_library_ui_effect",
+        "asset_id": "kenney_click_001",
+        "license": "CC0-1.0",
+        "original_sha256": "ccfb7fa0cccdd9faec0eb16033c732b1e308d139d80f799161495d58f7adcdb9",
+        "prepared_sha256": "3cdcdd0a7dd41eded18064a7e36b4d320dc2c478b5aa126ec75ec6c639822ccf",
+        "source_collection": "kenney",
+        "asset_gain_db": -8.0,
+        "routing_limit": "Filename/category-based original sound design; not a proprietary-sound equivalence claim"
+      },
+      "target_peak_dbfs": -14.0,
+      "pitch": 1.0,
+      "pan": 0.0,
+      "alignment": "dominant_early_attack_peak",
+      "event_sample": 112000,
+      "clip_alignment_offset_samples": 55,
+      "clip_start_sample_unclipped": 111945,
+      "boundary_adjustment_samples": 0,
+      "clip_samples": 2529,
+      "batch_policy": "one effect for one canonical event",
+      "rendered": true,
+      "written_start_sample": 111945,
+      "written_samples": 2529,
+      "trimmed_start_samples": 0,
+      "trimmed_end_samples": 0,
+      "alignment_error_samples": 0
+    }
+  ],
+  "production_ui_before_guard": {
+    "samples_per_channel": 1048000,
+    "duration_s": 21.833333333333332,
+    "sample_peak": 0.19952623546123505,
+    "sample_peak_dbfs": -13.999999827421785,
+    "rms": 0.0007445250799869251,
+    "finite": true,
+    "clipped_samples": 0,
+    "endpoints_zero": true
+  },
+  "raw_full": {
+    "samples_per_channel": 1048000,
+    "duration_s": 21.833333333333332,
+    "sample_peak": 0.36242614692830194,
+    "sample_peak_dbfs": -8.815609561126614,
+    "rms": 0.06669093627668453,
+    "finite": true,
+    "clipped_samples": 0,
+    "endpoints_zero": true,
+    "loudness": {
+      "integrated_lufs": -21.93,
+      "true_peak_dbtp": -8.56,
+      "lra_lu": 13.4,
+      "threshold_lufs": -32.66,
+      "silent": false
+    }
+  },
+  "common_peak_guard_gain_db": 0.0,
+  "loudness_raising_applied": false,
+  "ui_preview": {
+    "whole_stem_boost_db": 8.999999827421785,
+    "target_sample_peak_dbfs": -5.0,
+    "purpose": "Clearly labelled listening boost; production UI remains separate at its designed level"
+  },
+  "exports": {
+    "ui.flac": {
+      "samples_per_channel": 1048000,
+      "duration_s": 21.833333333333332,
+      "sample_peak": 0.19952619075775146,
+      "sample_peak_dbfs": -14.000001773479491,
+      "rms": 0.000744525112390082,
+      "finite": true,
+      "clipped_samples": 0,
+      "endpoints_zero": true,
+      "raw_decoded_samples": 1048000,
+      "loudness": {
+        "integrated_lufs": -41.55,
+        "true_peak_dbtp": -13.84,
+        "lra_lu": 0.0,
+        "threshold_lufs": -51.55,
+        "silent": false
+      },
+      "stream": {
+        "codec_name": "flac",
+        "sample_rate": "48000",
+        "channels": 2,
+        "time_base": "1/48000",
+        "duration_ts": 1048000,
+        "bits_per_raw_sample": "24"
+      },
+      "file": "ui.flac",
+      "bytes": 16445,
+      "sha256": "8bd9c77ffcaf42e1f39d10c3ad10b7983dd00f60c631a929f0b2bf8251341299"
+    },
+    "ui.m4a": {
+      "file": {
+        "samples_per_channel": 1048000,
+        "duration_s": 21.833333333333332,
+        "sample_peak": 0.20024694502353668,
+        "sample_peak_dbfs": -13.968682016189437,
+        "rms": 0.0007435761311548109,
+        "finite": true,
+        "clipped_samples": 0,
+        "endpoints_zero": true,
+        "raw_decoded_samples": 1048576,
+        "loudness": {
+          "integrated_lufs": -41.65,
+          "true_peak_dbtp": -13.8,
+          "lra_lu": 0.0,
+          "threshold_lufs": -51.65,
+          "silent": false
+        },
+        "stream": {
+          "codec_name": "aac",
+          "sample_rate": "48000",
+          "channels": 2,
+          "time_base": "1/48000",
+          "duration_ts": 1048000
+        },
+        "file": "ui.m4a",
+        "bytes": 13271,
+        "sha256": "a3af2f293eef3375b0f6f58a64bf5db66a5915d3e90efe51df87d727882430a4"
+      },
+      "codec_gain_db": 0.0,
+      "first_pass_if_corrected": null,
+      "bitrate": "192k"
+    },
+    "music.flac": {
+      "samples_per_channel": 1048000,
+      "duration_s": 21.833333333333332,
+      "sample_peak": 0.36242616176605225,
+      "sample_peak_dbfs": -8.815609205525728,
+      "rms": 0.06668632130838346,
+      "finite": true,
+      "clipped_samples": 0,
+      "endpoints_zero": true,
+      "raw_decoded_samples": 1048000,
+      "loudness": {
+        "integrated_lufs": -21.93,
+        "true_peak_dbtp": -8.56,
+        "lra_lu": 13.4,
+        "threshold_lufs": -32.66,
+        "silent": false
+      },
+      "stream": {
+        "codec_name": "flac",
+        "sample_rate": "48000",
+        "channels": 2,
+        "time_base": "1/48000",
+        "duration_ts": 1048000,
+        "bits_per_raw_sample": "24"
+      },
+      "file": "music.flac",
+      "bytes": 3700985,
+      "sha256": "eec289ca2f35f058e73f4604876a0c6e54da9a807ae7d1fd2b16c33f363177be"
+    },
+    "music.m4a": {
+      "file": {
+        "samples_per_channel": 1048000,
+        "duration_s": 21.833333333333332,
+        "sample_peak": 0.40223458409309387,
+        "sample_peak_dbfs": -7.91041183067423,
+        "rms": 0.06642328481007782,
+        "finite": true,
+        "clipped_samples": 0,
+        "endpoints_zero": false,
+        "raw_decoded_samples": 1048576,
+        "loudness": {
+          "integrated_lufs": -21.97,
+          "true_peak_dbtp": -7.91,
+          "lra_lu": 13.5,
+          "threshold_lufs": -32.69,
+          "silent": false
+        },
+        "stream": {
+          "codec_name": "aac",
+          "sample_rate": "48000",
+          "channels": 2,
+          "time_base": "1/48000",
+          "duration_ts": 1048000
+        },
+        "file": "music.m4a",
+        "bytes": 367206,
+        "sha256": "d07aebc16a7bfc111d58c8bce1d2a30d90fa85e75342b8853860246b36c20ec1"
+      },
+      "codec_gain_db": 0.0,
+      "first_pass_if_corrected": null,
+      "bitrate": "128k"
+    },
+    "full_mix.flac": {
+      "samples_per_channel": 1048000,
+      "duration_s": 21.833333333333332,
+      "sample_peak": 0.36242616176605225,
+      "sample_peak_dbfs": -8.815609205525728,
+      "rms": 0.066690936296443,
+      "finite": true,
+      "clipped_samples": 0,
+      "endpoints_zero": true,
+      "raw_decoded_samples": 1048000,
+      "loudness": {
+        "integrated_lufs": -21.93,
+        "true_peak_dbtp": -8.56,
+        "lra_lu": 13.4,
+        "threshold_lufs": -32.66,
+        "silent": false
+      },
+      "stream": {
+        "codec_name": "flac",
+        "sample_rate": "48000",
+        "channels": 2,
+        "time_base": "1/48000",
+        "duration_ts": 1048000,
+        "bits_per_raw_sample": "24"
+      },
+      "file": "full_mix.flac",
+      "bytes": 3702835,
+      "sha256": "38f40909a162b4b0f7a312cc9ef5ab1082ee7c6f169c4b7b97fdcd262da68d5b"
+    },
+    "full_mix.m4a": {
+      "file": {
+        "samples_per_channel": 1048000,
+        "duration_s": 21.833333333333332,
+        "sample_peak": 0.4329690635204315,
+        "sample_peak_dbfs": -7.270862674427031,
+        "rms": 0.06646925906893705,
+        "finite": true,
+        "clipped_samples": 0,
+        "endpoints_zero": false,
+        "raw_decoded_samples": 1048576,
+        "loudness": {
+          "integrated_lufs": -21.98,
+          "true_peak_dbtp": -7.18,
+          "lra_lu": 13.5,
+          "threshold_lufs": -32.7,
+          "silent": false
+        },
+        "stream": {
+          "codec_name": "aac",
+          "sample_rate": "48000",
+          "channels": 2,
+          "time_base": "1/48000",
+          "duration_ts": 1048000
+        },
+        "file": "full_mix.m4a",
+        "bytes": 548155,
+        "sha256": "a508bef68c1a6684849faa0646766a2704dd53dbfb67c9c5e447db4d44250d76"
+      },
+      "codec_gain_db": 0.0,
+      "first_pass_if_corrected": null,
+      "bitrate": "192k"
+    },
+    "ui_preview.m4a": {
+      "file": {
+        "samples_per_channel": 1048000,
+        "duration_s": 21.833333333333332,
+        "sample_peak": 0.5649689435958862,
+        "sample_peak_dbfs": -4.959508494784173,
+        "rms": 0.00209697710275488,
+        "finite": true,
+        "clipped_samples": 0,
+        "endpoints_zero": true,
+        "raw_decoded_samples": 1048576,
+        "loudness": {
+          "integrated_lufs": -32.65,
+          "true_peak_dbtp": -4.79,
+          "lra_lu": 0.0,
+          "threshold_lufs": -42.65,
+          "silent": false
+        },
+        "stream": {
+          "codec_name": "aac",
+          "sample_rate": "48000",
+          "channels": 2,
+          "time_base": "1/48000",
+          "duration_ts": 1048000
+        },
+        "file": "ui_preview.m4a",
+        "bytes": 13353,
+        "sha256": "b09f4233060c7954cf9cdfdba67cccabfb049e1fac732280579e29a5a8886dca"
+      },
+      "codec_gain_db": 0.0,
+      "first_pass_if_corrected": null,
+      "bitrate": "192k"
+    }
+  },
+  "validation": {
+    "status": "pass",
+    "finite_no_clipping": true,
+    "picture_sample_span_exact": true,
+    "no_reference_audio_inputs": true,
+    "no_inferred_subframe_keystrokes": true,
+    "stem_sum_max_error": 1.1920928955078125e-07,
+    "stem_sum_domain": "PCM24 FLAC; AAC copies independently codec validated",
+    "production_and_boosted_preview_separate": true
+  }
+}

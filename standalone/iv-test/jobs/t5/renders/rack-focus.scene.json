@@ -1,0 +1,265 @@
+{
+  "width": 720,
+  "height": 480,
+  "fps": 30,
+  "duration": 2.4,
+  "background": "#dce7f1",
+  "title": "Transfer focus between two stationary planes",
+  "source": {
+    "path": "packs/editorial.mjs#rack-focus",
+    "sourceStart": 0,
+    "sourceEnd": 2.4,
+    "notes": "Original editable Motion demonstration."
+  },
+  "layers": [
+    {
+      "id": "surface",
+      "type": "rect",
+      "x": 110,
+      "y": 44,
+      "width": 500,
+      "height": 392,
+      "fill": "#ffffff",
+      "radius": 18
+    },
+    {
+      "id": "stage",
+      "type": "group",
+      "x": 110,
+      "y": 98,
+      "children": [
+        {
+          "id": "far-object",
+          "type": "group",
+          "x": 198,
+          "y": 53,
+          "children": [
+            {
+              "id": "far-object-surface",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 236,
+              "height": 124,
+              "fill": "#ffffff",
+              "radius": 16,
+              "stroke": "#e8eef5",
+              "strokeWidth": 1
+            },
+            {
+              "id": "far-object-label",
+              "type": "text",
+              "text": "Specific result",
+              "x": 16,
+              "y": 14,
+              "fontSize": 18,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#182737",
+              "fontWeight": 600
+            },
+            {
+              "id": "far-object-detail",
+              "type": "rect",
+              "x": 16,
+              "y": 45,
+              "width": 192,
+              "height": 5,
+              "fill": "#e8eef5",
+              "radius": 2
+            }
+          ],
+          "keyframes": {
+            "blur": [
+              {
+                "t": 0,
+                "value": 6,
+                "ease": "linear"
+              },
+              {
+                "t": 0.768,
+                "value": 6,
+                "ease": "linear"
+              },
+              {
+                "t": 1.416,
+                "value": 0,
+                "ease": "easeInOut"
+              }
+            ]
+          }
+        },
+        {
+          "id": "near-object",
+          "type": "group",
+          "x": 58,
+          "y": 128,
+          "children": [
+            {
+              "id": "near-object-surface",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 242,
+              "height": 122,
+              "fill": "#ffffff",
+              "radius": 16,
+              "stroke": "#e8eef5",
+              "strokeWidth": 1
+            },
+            {
+              "id": "near-object-label",
+              "type": "text",
+              "text": "Overview",
+              "x": 16,
+              "y": 14,
+              "fontSize": 18,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#182737",
+              "fontWeight": 600
+            },
+            {
+              "id": "near-object-detail",
+              "type": "rect",
+              "x": 16,
+              "y": 45,
+              "width": 198,
+              "height": 5,
+              "fill": "#e8eef5",
+              "radius": 2
+            }
+          ],
+          "keyframes": {
+            "blur": [
+              {
+                "t": 0,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 0.768,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 1.416,
+                "value": 6,
+                "ease": "easeInOut"
+              }
+            ],
+            "opacity": [
+              {
+                "t": 0,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 0.768,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 1.416,
+                "value": 0.58,
+                "ease": "easeInOut"
+              }
+            ]
+          }
+        }
+      ],
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 500,
+        "height": 298
+      }
+    },
+    {
+      "id": "footer",
+      "type": "group",
+      "x": 110,
+      "y": 396,
+      "children": [
+        {
+          "id": "footer-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 40,
+          "fill": "#f2f6fb",
+          "radius": 12
+        },
+        {
+          "id": "editorial-caption",
+          "type": "text",
+          "text": "Focus moves toward the result behind the overview.",
+          "x": 22,
+          "y": 9,
+          "fontSize": 15,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#516277",
+          "fontWeight": 600
+        }
+      ]
+    },
+    {
+      "id": "heading",
+      "type": "group",
+      "x": 110,
+      "y": 44,
+      "children": [
+        {
+          "id": "heading-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 54,
+          "fill": "#f2f6fb",
+          "radius": 13
+        },
+        {
+          "id": "heading-copy",
+          "type": "text",
+          "text": "Two planes",
+          "x": 26,
+          "y": 13,
+          "fontSize": 23,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#182737",
+          "fontWeight": 700
+        }
+      ]
+    }
+  ],
+  "timeline": {
+    "version": 1,
+    "picture": {
+      "fpsNum": 30,
+      "fpsDen": 1,
+      "frameCount": 72
+    },
+    "initialUI": null,
+    "events": [
+      {
+        "id": "motion.rack-focus.focus-shift-start",
+        "kind": "focus-shift-start",
+        "target": "near-object",
+        "frame": 24,
+        "layerIds": [
+          "near-object"
+        ]
+      },
+      {
+        "id": "motion.rack-focus.far-object-sharp",
+        "kind": "far-object-sharp",
+        "target": "far-object",
+        "frame": 43,
+        "layerIds": [
+          "far-object"
+        ]
+      }
+    ],
+    "cues": []
+  }
+}

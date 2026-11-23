@@ -1,0 +1,337 @@
+{
+  "width": 960,
+  "height": 540,
+  "fps": 30,
+  "duration": 4,
+  "background": "#f7f7f5",
+  "title": "mini-app-expand",
+  "source": {
+    "notes": "New reusable starter, not an exact reference recreation. Arial fallback; replace and remeasure typography for production."
+  },
+  "layers": [
+    {
+      "id": "phone",
+      "type": "group",
+      "x": 260,
+      "y": 18,
+      "children": [
+        {
+          "id": "phone-matte",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 440,
+          "height": 500,
+          "fill": "#ffffff",
+          "radius": 28,
+          "stroke": "#d8dbe0",
+          "strokeWidth": 1
+        },
+        {
+          "id": "phone-screen",
+          "type": "group",
+          "x": 0,
+          "y": 0,
+          "children": [
+            {
+              "id": "request",
+              "type": "group",
+              "x": 142,
+              "y": 90,
+              "children": [
+                {
+                  "id": "request-body",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 270,
+                  "height": 62,
+                  "fill": "#1688fa",
+                  "radius": 20
+                },
+                {
+                  "id": "request-tail",
+                  "type": "path",
+                  "d": "M 254 44 Q 267 63 277 60 Q 267 56 268 42 Z",
+                  "fill": "#1688fa"
+                },
+                {
+                  "id": "request-copy",
+                  "type": "text",
+                  "text": "Find a table for two.",
+                  "x": 17,
+                  "y": 14,
+                  "fontSize": 17,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#ffffff",
+                  "lineHeight": 24
+                }
+              ]
+            },
+            {
+              "id": "mini-app",
+              "type": "group",
+              "x": 36,
+              "y": 180,
+              "children": [
+                {
+                  "id": "mini-app-surface",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 368,
+                  "height": 240,
+                  "fill": "#ffffff",
+                  "radius": 22,
+                  "stroke": "#d8dbe0",
+                  "strokeWidth": 1
+                },
+                {
+                  "id": "mini-app-art",
+                  "type": "rect",
+                  "x": 12,
+                  "y": 12,
+                  "width": 344,
+                  "height": 86.39999999999999,
+                  "fill": "#e1eddc",
+                  "radius": 14
+                },
+                {
+                  "id": "mini-app-title",
+                  "type": "text",
+                  "text": "Friday dinner",
+                  "x": 20,
+                  "y": 110.4,
+                  "fontSize": 23,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#17191d",
+                  "fontWeight": 600
+                },
+                {
+                  "id": "mini-app-detail",
+                  "type": "text",
+                  "text": "For two · 7:00 PM",
+                  "x": 20,
+                  "y": 143.4,
+                  "fontSize": 16,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#777b84"
+                },
+                {
+                  "id": "mini-app-action",
+                  "type": "group",
+                  "x": 20,
+                  "y": 182,
+                  "children": [
+                    {
+                      "id": "mini-app-action-shape",
+                      "type": "rect",
+                      "x": 0,
+                      "y": 0,
+                      "width": 328,
+                      "height": 42,
+                      "fill": "#1688fa",
+                      "radius": 21
+                    },
+                    {
+                      "id": "mini-app-action-label",
+                      "type": "text",
+                      "text": "Reserve",
+                      "x": 164,
+                      "y": 11,
+                      "fontSize": 16,
+                      "fontFamily": "Arial, sans-serif",
+                      "fill": "#ffffff",
+                      "textAnchor": "middle",
+                      "fontWeight": 600
+                    }
+                  ]
+                }
+              ],
+              "keyframes": {
+                "y": [
+                  {
+                    "t": 0,
+                    "value": 220,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 1.8,
+                    "value": 154,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 3.2,
+                    "value": 154,
+                    "ease": "easeInOut"
+                  }
+                ],
+                "scaleX": [
+                  {
+                    "t": 0,
+                    "value": 0.58,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 1.8,
+                    "value": 1,
+                    "ease": "easeInOut"
+                  }
+                ],
+                "scaleY": [
+                  {
+                    "t": 0,
+                    "value": 0.58,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 1.8,
+                    "value": 1,
+                    "ease": "easeInOut"
+                  }
+                ],
+                "originX": [
+                  {
+                    "t": 0,
+                    "value": 184,
+                    "ease": "easeInOut"
+                  }
+                ],
+                "originY": [
+                  {
+                    "t": 0,
+                    "value": 240,
+                    "ease": "easeInOut"
+                  }
+                ],
+                "opacity": [
+                  {
+                    "t": 0,
+                    "value": 0,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 0,
+                    "value": 0,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 0.48,
+                    "value": 1,
+                    "ease": "easeOut"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "composer",
+              "type": "group",
+              "x": 20,
+              "y": 428,
+              "children": [
+                {
+                  "id": "composer-field",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 400,
+                  "height": 48,
+                  "fill": "#ffffff",
+                  "radius": 24,
+                  "stroke": "#d8dbe0",
+                  "strokeWidth": 1
+                },
+                {
+                  "id": "composer-input",
+                  "type": "text",
+                  "text": "Message",
+                  "x": 18,
+                  "y": 14,
+                  "fontSize": 17,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#777b84"
+                },
+                {
+                  "id": "composer-send",
+                  "type": "circle",
+                  "x": 360,
+                  "y": 8,
+                  "width": 32,
+                  "height": 32,
+                  "fill": "#d8dbe0"
+                },
+                {
+                  "id": "composer-arrow",
+                  "type": "path",
+                  "d": "M 376 33 L 376 16 M 369 23 L 376 16 L 383 23",
+                  "fill": "none",
+                  "stroke": "#ffffff",
+                  "strokeWidth": 2
+                }
+              ]
+            }
+          ],
+          "clip": {
+            "x": 0,
+            "y": 0,
+            "width": 440,
+            "height": 500,
+            "radius": 28
+          }
+        },
+        {
+          "id": "phone-bar",
+          "type": "rect",
+          "x": 1,
+          "y": 1,
+          "width": 438,
+          "height": 66,
+          "fill": "#f8f8fa",
+          "radius": 27
+        },
+        {
+          "id": "phone-bar-square",
+          "type": "rect",
+          "x": 1,
+          "y": 33,
+          "width": 438,
+          "height": 33,
+          "fill": "#f8f8fa",
+          "radius": 0
+        },
+        {
+          "id": "phone-back",
+          "type": "text",
+          "text": "‹",
+          "x": 18,
+          "y": 17,
+          "fontSize": 30,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#1688fa"
+        },
+        {
+          "id": "phone-title",
+          "type": "text",
+          "text": "A conversation",
+          "x": 220,
+          "y": 25,
+          "fontSize": 17,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#17191d",
+          "textAnchor": "middle",
+          "fontWeight": 600
+        },
+        {
+          "id": "phone-divider",
+          "type": "rect",
+          "x": 1,
+          "y": 66,
+          "width": 438,
+          "height": 1,
+          "fill": "#d8dbe0",
+          "radius": 0
+        }
+      ]
+    }
+  ]
+}

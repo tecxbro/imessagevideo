@@ -1,0 +1,4194 @@
+{
+  "width": 720,
+  "height": 480,
+  "fps": 30,
+  "duration": 2.4,
+  "background": "#27212a",
+  "title": "Type a draft in place",
+  "layers": [
+    {
+      "id": "motion.ui-fit",
+      "type": "group",
+      "x": 131.33333333333334,
+      "y": 16,
+      "scaleX": 0.9333333333333333,
+      "scaleY": 0.9333333333333333,
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 490,
+        "height": 480
+      },
+      "children": [
+        {
+          "id": "ui.camera",
+          "type": "group",
+          "x": 0,
+          "y": 0,
+          "children": [
+            {
+              "id": "ui.screen",
+              "type": "group",
+              "x": 0,
+              "y": 0,
+              "children": [
+                {
+                  "id": "ui.paper",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 490,
+                  "height": 480,
+                  "fill": "#f6f0e7",
+                  "radius": 0
+                },
+                {
+                  "id": "ui.context.shade",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 490,
+                  "height": 480,
+                  "fill": "#2a2631",
+                  "radius": 0,
+                  "opacity": 0
+                },
+                {
+                  "id": "ui.viewport",
+                  "type": "group",
+                  "x": 0,
+                  "y": 78,
+                  "children": [
+                    {
+                      "id": "ui.transcript",
+                      "type": "group",
+                      "x": 0,
+                      "y": 0,
+                      "children": [
+                        {
+                          "id": "ui.typing",
+                          "type": "group",
+                          "x": 18,
+                          "y": 0,
+                          "children": [],
+                          "opacity": 0
+                        }
+                      ]
+                    }
+                  ],
+                  "clip": {
+                    "x": 0,
+                    "y": 0,
+                    "width": 490,
+                    "height": 388,
+                    "radius": 0
+                  }
+                },
+                {
+                  "id": "ui.keyboard",
+                  "type": "group",
+                  "x": 0,
+                  "y": 466,
+                  "children": [
+                    {
+                      "id": "ui.keyboard.panel",
+                      "type": "rect",
+                      "x": 0,
+                      "y": 0,
+                      "width": 490,
+                      "height": 208,
+                      "fill": "#e8dbe8",
+                      "radius": 0
+                    },
+                    {
+                      "id": "ui.keyboard.divider",
+                      "type": "rect",
+                      "x": 0,
+                      "y": 0,
+                      "width": 490,
+                      "height": 1,
+                      "fill": "#d0c0d0",
+                      "radius": 0
+                    },
+                    {
+                      "id": "ui.keyboard.key.q",
+                      "type": "group",
+                      "x": 14.699999999999989,
+                      "y": 18,
+                      "children": [
+                        {
+                          "id": "ui.keyboard.key.q.body",
+                          "type": "rect",
+                          "x": 0,
+                          "y": 0,
+                          "width": 40.660000000000004,
+                          "height": 38,
+                          "fill": "#f6f0e7",
+                          "radius": 8
+                        },
+                        {
+                          "id": "ui.keyboard.key.q.label",
+                          "type": "text",
+                          "text": "Q",
+                          "x": 20.330000000000002,
+                          "y": 10,
+                          "fontSize": 16,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#2a2631",
+                          "textAnchor": "middle",
+                          "fontWeight": 700
+                        }
+                      ]
+                    },
+                    {
+                      "id": "ui.keyboard.key.w",
+                      "type": "group",
+                      "x": 61.35999999999999,
+                      "y": 18,
+                      "children": [
+                        {
+                          "id": "ui.keyboard.key.w.body",
+                          "type": "rect",
+                          "x": 0,
+                          "y": 0,
+                          "width": 40.660000000000004,
+                          "height": 38,
+                          "fill": "#f6f0e7",
+                          "radius": 8
+                        },
+                        {
+                          "id": "ui.keyboard.key.w.label",
+                          "type": "text",
+                          "text": "W",
+                          "x": 20.330000000000002,
+                          "y": 10,
+                          "fontSize": 16,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#2a2631",
+                          "textAnchor": "middle",
+                          "fontWeight": 700
+                        }
+                      ]
+                    },
+                    {
+                      "id": "ui.keyboard.key.e",
+                      "type": "group",
+                      "x": 108.02,
+                      "y": 18,
+                      "children": [
+                        {
+                          "id": "ui.keyboard.key.e.body",
+                          "type": "rect",
+                          "x": 0,
+                          "y": 0,
+                          "width": 40.660000000000004,
+                          "height": 38,
+                          "fill": "#f6f0e7",
+                          "radius": 8
+                        },
+                        {
+                          "id": "ui.keyboard.key.e.label",
+                          "type": "text",
+                          "text": "E",
+                          "x": 20.330000000000002,
+                          "y": 10,
+                          "fontSize": 16,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#2a2631",
+                          "textAnchor": "middle",
+                          "fontWeight": 700
+                        }
+                      ]
+                    },
+                    {
+                      "id": "ui.keyboard.key.r",
+                      "type": "group",
+                      "x": 154.68,
+                      "y": 18,
+                      "children": [
+                        {
+                          "id": "ui.keyboard.key.r.body",
+                          "type": "rect",
+                          "x": 0,
+                          "y": 0,
+                          "width": 40.660000000000004,
+                          "height": 38,
+                          "fill": "#f6f0e7",
+                          "radius": 8
+                        },
+                        {
+                          "id": "ui.keyboard.key.r.label",
+                          "type": "text",
+                          "text": "R",
+                          "x": 20.330000000000002,
+                          "y": 10,
+                          "fontSize": 16,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#2a2631",
+                          "textAnchor": "middle",
+                          "fontWeight": 700
+                        }
+                      ]
+                    },
+                    {
+                      "id": "ui.keyboard.key.t",
+                      "type": "group",
+                      "x": 201.34,
+                      "y": 18,
+                      "children": [
+                        {
+                          "id": "ui.keyboard.key.t.body",
+                          "type": "rect",
+                          "x": 0,
+                          "y": 0,
+                          "width": 40.660000000000004,
+                          "height": 38,
+                          "fill": "#f6f0e7",
+                          "radius": 8
+                        },
+                        {
+                          "id": "ui.keyboard.key.t.label",
+                          "type": "text",
+                          "text": "T",
+                          "x": 20.330000000000002,
+                          "y": 10,
+                          "fontSize": 16,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#2a2631",
+                          "textAnchor": "middle",
+                          "fontWeight": 700
+                        }
+                      ]
+                    },
+                    {
+                      "id": "ui.keyboard.key.y",
+                      "type": "group",
+                      "x": 248,
+                      "y": 18,
+                      "children": [
+                        {
+                          "id": "ui.keyboard.key.y.body",
+                          "type": "rect",
+                          "x": 0,
+                          "y": 0,
+                          "width": 40.660000000000004,
+                          "height": 38,
+                          "fill": "#f6f0e7",
+                          "radius": 8
+                        },
+                        {
+                          "id": "ui.keyboard.key.y.label",
+                          "type": "text",
+                          "text": "Y",
+                          "x": 20.330000000000002,
+                          "y": 10,
+                          "fontSize": 16,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#2a2631",
+                          "textAnchor": "middle",
+                          "fontWeight": 700
+                        }
+                      ]
+                    },
+                    {
+                      "id": "ui.keyboard.key.u",
+                      "type": "group",
+                      "x": 294.66,
+                      "y": 18,
+                      "children": [
+                        {
+                          "id": "ui.keyboard.key.u.body",
+                          "type": "rect",
+                          "x": 0,
+                          "y": 0,
+                          "width": 40.660000000000004,
+                          "height": 38,
+                          "fill": "#f6f0e7",
+                          "radius": 8
+                        },
+                        {
+                          "id": "ui.keyboard.key.u.label",
+                          "type": "text",
+                          "text": "U",
+                          "x": 20.330000000000002,
+                          "y": 10,
+                          "fontSize": 16,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#2a2631",
+                          "textAnchor": "middle",
+                          "fontWeight": 700
+                        }
+                      ]
+                    },
+                    {
+                      "id": "ui.keyboard.key.i",
+                      "type": "group",
+                      "x": 341.32000000000005,
+                      "y": 18,
+                      "children": [
+                        {
+                          "id": "ui.keyboard.key.i.body",
+                          "type": "rect",
+                          "x": 0,
+                          "y": 0,
+                          "width": 40.660000000000004,
+                          "height": 38,
+                          "fill": "#f6f0e7",
+                          "radius": 8
+                        },
+                        {
+                          "id": "ui.keyboard.key.i.label",
+                          "type": "text",
+                          "text": "I",
+                          "x": 20.330000000000002,
+                          "y": 10,
+                          "fontSize": 16,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#2a2631",
+                          "textAnchor": "middle",
+                          "fontWeight": 700
+                        }
+                      ]
+                    },
+                    {
+                      "id": "ui.keyboard.key.o",
+                      "type": "group",
+                      "x": 387.9800000000001,
+                      "y": 18,
+                      "children": [
+                        {
+                          "id": "ui.keyboard.key.o.body",
+                          "type": "rect",
+                          "x": 0,
+                          "y": 0,
+                          "width": 40.660000000000004,
+                          "height": 38,
+                          "fill": "#f6f0e7",
+                          "radius": 8
+                        },
+                        {
+                          "id": "ui.keyboard.key.o.label",
+                          "type": "text",
+                          "text": "O",
+                          "x": 20.330000000000002,
+                          "y": 10,
+                          "fontSize": 16,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#2a2631",
+                          "textAnchor": "middle",
+                          "fontWeight": 700
+                        }
+                      ]
+                    },
+                    {
+                      "id": "ui.keyboard.key.p",
+                      "type": "group",
+                      "x": 434.6400000000001,
+                      "y": 18,
+                      "children": [
+                        {
+                          "id": "ui.keyboard.key.p.body",
+                          "type": "rect",
+                          "x": 0,
+                          "y": 0,
+                          "width": 40.660000000000004,
+                          "height": 38,
+                          "fill": "#f6f0e7",
+                          "radius": 8
+                        },
+                        {
+                          "id": "ui.keyboard.key.p.label",
+                          "type": "text",
+                          "text": "P",
+                          "x": 20.330000000000002,
+                          "y": 10,
+                          "fontSize": 16,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#2a2631",
+                          "textAnchor": "middle",
+                          "fontWeight": 700
+                        }
+                      ]
+                    },
+                    {
+                      "id": "ui.keyboard.key.a",
+                      "type": "group",
+                      "x": 38.02999999999997,
+                      "y": 63,
+                      "children": [
+                        {
+                          "id": "ui.keyboard.key.a.body",
+                          "type": "rect",
+                          "x": 0,
+                          "y": 0,
+                          "width": 40.660000000000004,
+                          "height": 38,
+                          "fill": "#f6f0e7",
+                          "radius": 8
+                        },
+                        {
+                          "id": "ui.keyboard.key.a.label",
+                          "type": "text",
+                          "text": "A",
+                          "x": 20.330000000000002,
+                          "y": 10,
+                          "fontSize": 16,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#2a2631",
+                          "textAnchor": "middle",
+                          "fontWeight": 700
+                        }
+                      ]
+                    },
+                    {
+                      "id": "ui.keyboard.key.s",
+                      "type": "group",
+                      "x": 84.68999999999997,
+                      "y": 63,
+                      "children": [
+                        {
+                          "id": "ui.keyboard.key.s.body",
+                          "type": "rect",
+                          "x": 0,
+                          "y": 0,
+                          "width": 40.660000000000004,
+                          "height": 38,
+                          "fill": "#f6f0e7",
+                          "radius": 8
+                        },
+                        {
+                          "id": "ui.keyboard.key.s.label",
+                          "type": "text",
+                          "text": "S",
+                          "x": 20.330000000000002,
+                          "y": 10,
+                          "fontSize": 16,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#2a2631",
+                          "textAnchor": "middle",
+                          "fontWeight": 700
+                        }
+                      ]
+                    },
+                    {
+                      "id": "ui.keyboard.key.d",
+                      "type": "group",
+                      "x": 131.34999999999997,
+                      "y": 63,
+                      "children": [
+                        {
+                          "id": "ui.keyboard.key.d.body",
+                          "type": "rect",
+                          "x": 0,
+                          "y": 0,
+                          "width": 40.660000000000004,
+                          "height": 38,
+                          "fill": "#f6f0e7",
+                          "radius": 8
+                        },
+                        {
+                          "id": "ui.keyboard.key.d.label",
+                          "type": "text",
+                          "text": "D",
+                          "x": 20.330000000000002,
+                          "y": 10,
+                          "fontSize": 16,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#2a2631",
+                          "textAnchor": "middle",
+                          "fontWeight": 700
+                        }
+                      ]
+                    },
+                    {
+                      "id": "ui.keyboard.key.f",
+                      "type": "group",
+                      "x": 178.00999999999996,
+                      "y": 63,
+                      "children": [
+                        {
+                          "id": "ui.keyboard.key.f.body",
+                          "type": "rect",
+                          "x": 0,
+                          "y": 0,
+                          "width": 40.660000000000004,
+                          "height": 38,
+                          "fill": "#f6f0e7",
+                          "radius": 8
+                        },
+                        {
+                          "id": "ui.keyboard.key.f.label",
+                          "type": "text",
+                          "text": "F",
+                          "x": 20.330000000000002,
+                          "y": 10,
+                          "fontSize": 16,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#2a2631",
+                          "textAnchor": "middle",
+                          "fontWeight": 700
+                        }
+                      ]
+                    },
+                    {
+                      "id": "ui.keyboard.key.g",
+                      "type": "group",
+                      "x": 224.66999999999996,
+                      "y": 63,
+                      "children": [
+                        {
+                          "id": "ui.keyboard.key.g.body",
+                          "type": "rect",
+                          "x": 0,
+                          "y": 0,
+                          "width": 40.660000000000004,
+                          "height": 38,
+                          "fill": "#f6f0e7",
+                          "radius": 8
+                        },
+                        {
+                          "id": "ui.keyboard.key.g.label",
+                          "type": "text",
+                          "text": "G",
+                          "x": 20.330000000000002,
+                          "y": 10,
+                          "fontSize": 16,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#2a2631",
+                          "textAnchor": "middle",
+                          "fontWeight": 700
+                        }
+                      ]
+                    },
+                    {
+                      "id": "ui.keyboard.key.h",
+                      "type": "group",
+                      "x": 271.33,
+                      "y": 63,
+                      "children": [
+                        {
+                          "id": "ui.keyboard.key.h.body",
+                          "type": "rect",
+                          "x": 0,
+                          "y": 0,
+                          "width": 40.660000000000004,
+                          "height": 38,
+                          "fill": "#f6f0e7",
+                          "radius": 8
+                        },
+                        {
+                          "id": "ui.keyboard.key.h.label",
+                          "type": "text",
+                          "text": "H",
+                          "x": 20.330000000000002,
+                          "y": 10,
+                          "fontSize": 16,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#2a2631",
+                          "textAnchor": "middle",
+                          "fontWeight": 700
+                        }
+                      ]
+                    },
+                    {
+                      "id": "ui.keyboard.key.j",
+                      "type": "group",
+                      "x": 317.99,
+                      "y": 63,
+                      "children": [
+                        {
+                          "id": "ui.keyboard.key.j.body",
+                          "type": "rect",
+                          "x": 0,
+                          "y": 0,
+                          "width": 40.660000000000004,
+                          "height": 38,
+                          "fill": "#f6f0e7",
+                          "radius": 8
+                        },
+                        {
+                          "id": "ui.keyboard.key.j.label",
+                          "type": "text",
+                          "text": "J",
+                          "x": 20.330000000000002,
+                          "y": 10,
+                          "fontSize": 16,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#2a2631",
+                          "textAnchor": "middle",
+                          "fontWeight": 700
+                        }
+                      ]
+                    },
+                    {
+                      "id": "ui.keyboard.key.k",
+                      "type": "group",
+                      "x": 364.65000000000003,
+                      "y": 63,
+                      "children": [
+                        {
+                          "id": "ui.keyboard.key.k.body",
+                          "type": "rect",
+                          "x": 0,
+                          "y": 0,
+                          "width": 40.660000000000004,
+                          "height": 38,
+                          "fill": "#f6f0e7",
+                          "radius": 8
+                        },
+                        {
+                          "id": "ui.keyboard.key.k.label",
+                          "type": "text",
+                          "text": "K",
+                          "x": 20.330000000000002,
+                          "y": 10,
+                          "fontSize": 16,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#2a2631",
+                          "textAnchor": "middle",
+                          "fontWeight": 700
+                        }
+                      ]
+                    },
+                    {
+                      "id": "ui.keyboard.key.l",
+                      "type": "group",
+                      "x": 411.31000000000006,
+                      "y": 63,
+                      "children": [
+                        {
+                          "id": "ui.keyboard.key.l.body",
+                          "type": "rect",
+                          "x": 0,
+                          "y": 0,
+                          "width": 40.660000000000004,
+                          "height": 38,
+                          "fill": "#f6f0e7",
+                          "radius": 8
+                        },
+                        {
+                          "id": "ui.keyboard.key.l.label",
+                          "type": "text",
+                          "text": "L",
+                          "x": 20.330000000000002,
+                          "y": 10,
+                          "fontSize": 16,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#2a2631",
+                          "textAnchor": "middle",
+                          "fontWeight": 700
+                        }
+                      ]
+                    },
+                    {
+                      "id": "ui.keyboard.key.shift",
+                      "type": "group",
+                      "x": 23.798999999999978,
+                      "y": 108,
+                      "children": [
+                        {
+                          "id": "ui.keyboard.key.shift.body",
+                          "type": "rect",
+                          "x": 0,
+                          "y": 0,
+                          "width": 54.891000000000005,
+                          "height": 38,
+                          "fill": "#623864",
+                          "radius": 8
+                        },
+                        {
+                          "id": "ui.keyboard.key.shift.label",
+                          "type": "text",
+                          "text": "⇧",
+                          "x": 27.445500000000003,
+                          "y": 10,
+                          "fontSize": 16,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#f6f0e7",
+                          "textAnchor": "middle",
+                          "fontWeight": 700
+                        }
+                      ]
+                    },
+                    {
+                      "id": "ui.keyboard.key.z",
+                      "type": "group",
+                      "x": 84.68999999999998,
+                      "y": 108,
+                      "children": [
+                        {
+                          "id": "ui.keyboard.key.z.body",
+                          "type": "rect",
+                          "x": 0,
+                          "y": 0,
+                          "width": 40.660000000000004,
+                          "height": 38,
+                          "fill": "#f6f0e7",
+                          "radius": 8
+                        },
+                        {
+                          "id": "ui.keyboard.key.z.label",
+                          "type": "text",
+                          "text": "Z",
+                          "x": 20.330000000000002,
+                          "y": 10,
+                          "fontSize": 16,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#2a2631",
+                          "textAnchor": "middle",
+                          "fontWeight": 700
+                        }
+                      ]
+                    },
+                    {
+                      "id": "ui.keyboard.key.x",
+                      "type": "group",
+                      "x": 131.35,
+                      "y": 108,
+                      "children": [
+                        {
+                          "id": "ui.keyboard.key.x.body",
+                          "type": "rect",
+                          "x": 0,
+                          "y": 0,
+                          "width": 40.660000000000004,
+                          "height": 38,
+                          "fill": "#f6f0e7",
+                          "radius": 8
+                        },
+                        {
+                          "id": "ui.keyboard.key.x.label",
+                          "type": "text",
+                          "text": "X",
+                          "x": 20.330000000000002,
+                          "y": 10,
+                          "fontSize": 16,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#2a2631",
+                          "textAnchor": "middle",
+                          "fontWeight": 700
+                        }
+                      ]
+                    },
+                    {
+                      "id": "ui.keyboard.key.c",
+                      "type": "group",
+                      "x": 178.01,
+                      "y": 108,
+                      "children": [
+                        {
+                          "id": "ui.keyboard.key.c.body",
+                          "type": "rect",
+                          "x": 0,
+                          "y": 0,
+                          "width": 40.660000000000004,
+                          "height": 38,
+                          "fill": "#f6f0e7",
+                          "radius": 8
+                        },
+                        {
+                          "id": "ui.keyboard.key.c.label",
+                          "type": "text",
+                          "text": "C",
+                          "x": 20.330000000000002,
+                          "y": 10,
+                          "fontSize": 16,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#2a2631",
+                          "textAnchor": "middle",
+                          "fontWeight": 700
+                        }
+                      ]
+                    },
+                    {
+                      "id": "ui.keyboard.key.v",
+                      "type": "group",
+                      "x": 224.67,
+                      "y": 108,
+                      "children": [
+                        {
+                          "id": "ui.keyboard.key.v.body",
+                          "type": "rect",
+                          "x": 0,
+                          "y": 0,
+                          "width": 40.660000000000004,
+                          "height": 38,
+                          "fill": "#f6f0e7",
+                          "radius": 8
+                        },
+                        {
+                          "id": "ui.keyboard.key.v.label",
+                          "type": "text",
+                          "text": "V",
+                          "x": 20.330000000000002,
+                          "y": 10,
+                          "fontSize": 16,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#2a2631",
+                          "textAnchor": "middle",
+                          "fontWeight": 700
+                        }
+                      ]
+                    },
+                    {
+                      "id": "ui.keyboard.key.b",
+                      "type": "group",
+                      "x": 271.33,
+                      "y": 108,
+                      "children": [
+                        {
+                          "id": "ui.keyboard.key.b.body",
+                          "type": "rect",
+                          "x": 0,
+                          "y": 0,
+                          "width": 40.660000000000004,
+                          "height": 38,
+                          "fill": "#f6f0e7",
+                          "radius": 8
+                        },
+                        {
+                          "id": "ui.keyboard.key.b.label",
+                          "type": "text",
+                          "text": "B",
+                          "x": 20.330000000000002,
+                          "y": 10,
+                          "fontSize": 16,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#2a2631",
+                          "textAnchor": "middle",
+                          "fontWeight": 700
+                        }
+                      ]
+                    },
+                    {
+                      "id": "ui.keyboard.key.n",
+                      "type": "group",
+                      "x": 317.99,
+                      "y": 108,
+                      "children": [
+                        {
+                          "id": "ui.keyboard.key.n.body",
+                          "type": "rect",
+                          "x": 0,
+                          "y": 0,
+                          "width": 40.660000000000004,
+                          "height": 38,
+                          "fill": "#f6f0e7",
+                          "radius": 8
+                        },
+                        {
+                          "id": "ui.keyboard.key.n.label",
+                          "type": "text",
+                          "text": "N",
+                          "x": 20.330000000000002,
+                          "y": 10,
+                          "fontSize": 16,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#2a2631",
+                          "textAnchor": "middle",
+                          "fontWeight": 700
+                        }
+                      ]
+                    },
+                    {
+                      "id": "ui.keyboard.key.m",
+                      "type": "group",
+                      "x": 364.65000000000003,
+                      "y": 108,
+                      "children": [
+                        {
+                          "id": "ui.keyboard.key.m.body",
+                          "type": "rect",
+                          "x": 0,
+                          "y": 0,
+                          "width": 40.660000000000004,
+                          "height": 38,
+                          "fill": "#f6f0e7",
+                          "radius": 8
+                        },
+                        {
+                          "id": "ui.keyboard.key.m.label",
+                          "type": "text",
+                          "text": "M",
+                          "x": 20.330000000000002,
+                          "y": 10,
+                          "fontSize": 16,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#2a2631",
+                          "textAnchor": "middle",
+                          "fontWeight": 700
+                        }
+                      ]
+                    },
+                    {
+                      "id": "ui.keyboard.key.delete",
+                      "type": "group",
+                      "x": 411.31000000000006,
+                      "y": 108,
+                      "children": [
+                        {
+                          "id": "ui.keyboard.key.delete.body",
+                          "type": "rect",
+                          "x": 0,
+                          "y": 0,
+                          "width": 54.891000000000005,
+                          "height": 38,
+                          "fill": "#623864",
+                          "radius": 8
+                        },
+                        {
+                          "id": "ui.keyboard.key.delete.label",
+                          "type": "text",
+                          "text": "⌫",
+                          "x": 27.445500000000003,
+                          "y": 10,
+                          "fontSize": 16,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#f6f0e7",
+                          "textAnchor": "middle",
+                          "fontWeight": 700
+                        }
+                      ]
+                    },
+                    {
+                      "id": "ui.keyboard.key.numbers",
+                      "type": "group",
+                      "x": 56.12899999999999,
+                      "y": 153,
+                      "children": [
+                        {
+                          "id": "ui.keyboard.key.numbers.body",
+                          "type": "rect",
+                          "x": 0,
+                          "y": 0,
+                          "width": 58.957,
+                          "height": 38,
+                          "fill": "#623864",
+                          "radius": 8
+                        },
+                        {
+                          "id": "ui.keyboard.key.numbers.label",
+                          "type": "text",
+                          "text": "123",
+                          "x": 29.4785,
+                          "y": 12.5,
+                          "fontSize": 11,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#f6f0e7",
+                          "textAnchor": "middle",
+                          "fontWeight": 700
+                        }
+                      ]
+                    },
+                    {
+                      "id": "ui.keyboard.key.comma",
+                      "type": "group",
+                      "x": 121.08599999999998,
+                      "y": 153,
+                      "children": [
+                        {
+                          "id": "ui.keyboard.key.comma.body",
+                          "type": "rect",
+                          "x": 0,
+                          "y": 0,
+                          "width": 32.528000000000006,
+                          "height": 38,
+                          "fill": "#f6f0e7",
+                          "radius": 8
+                        },
+                        {
+                          "id": "ui.keyboard.key.comma.label",
+                          "type": "text",
+                          "text": ",",
+                          "x": 16.264000000000003,
+                          "y": 10,
+                          "fontSize": 16,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#2a2631",
+                          "textAnchor": "middle",
+                          "fontWeight": 700
+                        }
+                      ]
+                    },
+                    {
+                      "id": "ui.keyboard.key.space",
+                      "type": "group",
+                      "x": 159.61399999999998,
+                      "y": 153,
+                      "children": [
+                        {
+                          "id": "ui.keyboard.key.space.body",
+                          "type": "rect",
+                          "x": 0,
+                          "y": 0,
+                          "width": 170.77200000000002,
+                          "height": 38,
+                          "fill": "#f6f0e7",
+                          "radius": 8
+                        },
+                        {
+                          "id": "ui.keyboard.key.space.label",
+                          "type": "text",
+                          "text": "space",
+                          "x": 85.38600000000001,
+                          "y": 12.5,
+                          "fontSize": 11,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#2a2631",
+                          "textAnchor": "middle",
+                          "fontWeight": 700
+                        }
+                      ]
+                    },
+                    {
+                      "id": "ui.keyboard.key.period",
+                      "type": "group",
+                      "x": 336.38599999999997,
+                      "y": 153,
+                      "children": [
+                        {
+                          "id": "ui.keyboard.key.period.body",
+                          "type": "rect",
+                          "x": 0,
+                          "y": 0,
+                          "width": 32.528000000000006,
+                          "height": 38,
+                          "fill": "#f6f0e7",
+                          "radius": 8
+                        },
+                        {
+                          "id": "ui.keyboard.key.period.label",
+                          "type": "text",
+                          "text": ".",
+                          "x": 16.264000000000003,
+                          "y": 10,
+                          "fontSize": 16,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#2a2631",
+                          "textAnchor": "middle",
+                          "fontWeight": 700
+                        }
+                      ]
+                    },
+                    {
+                      "id": "ui.keyboard.key.return",
+                      "type": "group",
+                      "x": 374.914,
+                      "y": 153,
+                      "children": [
+                        {
+                          "id": "ui.keyboard.key.return.body",
+                          "type": "rect",
+                          "x": 0,
+                          "y": 0,
+                          "width": 58.957,
+                          "height": 38,
+                          "fill": "#623864",
+                          "radius": 8
+                        },
+                        {
+                          "id": "ui.keyboard.key.return.label",
+                          "type": "text",
+                          "text": "↵",
+                          "x": 29.4785,
+                          "y": 10,
+                          "fontSize": 16,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#f6f0e7",
+                          "textAnchor": "middle",
+                          "fontWeight": 700
+                        }
+                      ]
+                    }
+                  ],
+                  "opacity": 1
+                },
+                {
+                  "id": "ui.composer",
+                  "type": "group",
+                  "x": 0,
+                  "y": 410,
+                  "children": [
+                    {
+                      "id": "ui.composer@0",
+                      "type": "group",
+                      "x": 0,
+                      "y": 0,
+                      "children": [
+                        {
+                          "id": "ui.composer.paper",
+                          "type": "rect",
+                          "x": 0,
+                          "y": 0,
+                          "width": 490,
+                          "height": 56,
+                          "fill": "#f6f0e7",
+                          "radius": 0
+                        },
+                        {
+                          "id": "ui.composer.rule",
+                          "type": "rect",
+                          "x": 18,
+                          "y": 0,
+                          "width": 454,
+                          "height": 1,
+                          "fill": "#ded1d0",
+                          "radius": 0
+                        },
+                        {
+                          "id": "ui.composer.add",
+                          "type": "rect",
+                          "x": 18,
+                          "y": 17,
+                          "width": 29,
+                          "height": 29,
+                          "fill": "#e8dbe8",
+                          "radius": 8
+                        },
+                        {
+                          "id": "ui.composer.plus",
+                          "type": "text",
+                          "text": "+",
+                          "x": 32.5,
+                          "y": 20,
+                          "fontSize": 18,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#623864",
+                          "textAnchor": "middle"
+                        },
+                        {
+                          "id": "ui.composer.field",
+                          "type": "rect",
+                          "x": 54,
+                          "y": 10,
+                          "width": 374,
+                          "height": 36,
+                          "fill": "#fffaf4",
+                          "radius": 11,
+                          "stroke": "#ded1d0",
+                          "strokeWidth": 1
+                        },
+                        {
+                          "id": "ui.composer.draft",
+                          "type": "text",
+                          "text": "Write a message",
+                          "x": 65,
+                          "y": 19,
+                          "fontSize": 14,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#655965",
+                          "lineHeight": 17
+                        },
+                        {
+                          "id": "ui.composer.send",
+                          "type": "rect",
+                          "x": 434,
+                          "y": 17,
+                          "width": 38,
+                          "height": 29,
+                          "fill": "#e8dbe8",
+                          "radius": 8
+                        },
+                        {
+                          "id": "ui.composer.send-label",
+                          "type": "text",
+                          "text": "Send",
+                          "x": 453,
+                          "y": 25,
+                          "fontSize": 10,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#623864",
+                          "textAnchor": "middle",
+                          "fontWeight": 700
+                        }
+                      ],
+                      "start": 0,
+                      "end": 0.4
+                    },
+                    {
+                      "id": "ui.composer@12",
+                      "type": "group",
+                      "x": 0,
+                      "y": 0,
+                      "children": [
+                        {
+                          "id": "ui.composer.paper@12",
+                          "type": "rect",
+                          "x": 0,
+                          "y": 0,
+                          "width": 490,
+                          "height": 56,
+                          "fill": "#f6f0e7",
+                          "radius": 0
+                        },
+                        {
+                          "id": "ui.composer.rule@12",
+                          "type": "rect",
+                          "x": 18,
+                          "y": 0,
+                          "width": 454,
+                          "height": 1,
+                          "fill": "#ded1d0",
+                          "radius": 0
+                        },
+                        {
+                          "id": "ui.composer.add@12",
+                          "type": "rect",
+                          "x": 18,
+                          "y": 17,
+                          "width": 29,
+                          "height": 29,
+                          "fill": "#e8dbe8",
+                          "radius": 8
+                        },
+                        {
+                          "id": "ui.composer.plus@12",
+                          "type": "text",
+                          "text": "+",
+                          "x": 32.5,
+                          "y": 20,
+                          "fontSize": 18,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#623864",
+                          "textAnchor": "middle"
+                        },
+                        {
+                          "id": "ui.composer.field@12",
+                          "type": "rect",
+                          "x": 54,
+                          "y": 10,
+                          "width": 374,
+                          "height": 36,
+                          "fill": "#fffaf4",
+                          "radius": 11,
+                          "stroke": "#ded1d0",
+                          "strokeWidth": 1
+                        },
+                        {
+                          "id": "ui.composer.draft@12",
+                          "type": "text",
+                          "text": "C",
+                          "x": 65,
+                          "y": 19,
+                          "fontSize": 14,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#2a2631",
+                          "lineHeight": 17
+                        },
+                        {
+                          "id": "ui.composer.send@12",
+                          "type": "rect",
+                          "x": 434,
+                          "y": 17,
+                          "width": 38,
+                          "height": 29,
+                          "fill": "#623864",
+                          "radius": 8
+                        },
+                        {
+                          "id": "ui.composer.send-label@12",
+                          "type": "text",
+                          "text": "Send",
+                          "x": 453,
+                          "y": 25,
+                          "fontSize": 10,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#ffffff",
+                          "textAnchor": "middle",
+                          "fontWeight": 700
+                        }
+                      ],
+                      "start": 0.4,
+                      "end": 0.43333333333333335
+                    },
+                    {
+                      "id": "ui.composer@13",
+                      "type": "group",
+                      "x": 0,
+                      "y": 0,
+                      "children": [
+                        {
+                          "id": "ui.composer.paper@13",
+                          "type": "rect",
+                          "x": 0,
+                          "y": 0,
+                          "width": 490,
+                          "height": 56,
+                          "fill": "#f6f0e7",
+                          "radius": 0
+                        },
+                        {
+                          "id": "ui.composer.rule@13",
+                          "type": "rect",
+                          "x": 18,
+                          "y": 0,
+                          "width": 454,
+                          "height": 1,
+                          "fill": "#ded1d0",
+                          "radius": 0
+                        },
+                        {
+                          "id": "ui.composer.add@13",
+                          "type": "rect",
+                          "x": 18,
+                          "y": 17,
+                          "width": 29,
+                          "height": 29,
+                          "fill": "#e8dbe8",
+                          "radius": 8
+                        },
+                        {
+                          "id": "ui.composer.plus@13",
+                          "type": "text",
+                          "text": "+",
+                          "x": 32.5,
+                          "y": 20,
+                          "fontSize": 18,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#623864",
+                          "textAnchor": "middle"
+                        },
+                        {
+                          "id": "ui.composer.field@13",
+                          "type": "rect",
+                          "x": 54,
+                          "y": 10,
+                          "width": 374,
+                          "height": 36,
+                          "fill": "#fffaf4",
+                          "radius": 11,
+                          "stroke": "#ded1d0",
+                          "strokeWidth": 1
+                        },
+                        {
+                          "id": "ui.composer.draft@13",
+                          "type": "text",
+                          "text": "Ca",
+                          "x": 65,
+                          "y": 19,
+                          "fontSize": 14,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#2a2631",
+                          "lineHeight": 17
+                        },
+                        {
+                          "id": "ui.composer.send@13",
+                          "type": "rect",
+                          "x": 434,
+                          "y": 17,
+                          "width": 38,
+                          "height": 29,
+                          "fill": "#623864",
+                          "radius": 8
+                        },
+                        {
+                          "id": "ui.composer.send-label@13",
+                          "type": "text",
+                          "text": "Send",
+                          "x": 453,
+                          "y": 25,
+                          "fontSize": 10,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#ffffff",
+                          "textAnchor": "middle",
+                          "fontWeight": 700
+                        }
+                      ],
+                      "start": 0.43333333333333335,
+                      "end": 0.5
+                    },
+                    {
+                      "id": "ui.composer@15",
+                      "type": "group",
+                      "x": 0,
+                      "y": 0,
+                      "children": [
+                        {
+                          "id": "ui.composer.paper@15",
+                          "type": "rect",
+                          "x": 0,
+                          "y": 0,
+                          "width": 490,
+                          "height": 56,
+                          "fill": "#f6f0e7",
+                          "radius": 0
+                        },
+                        {
+                          "id": "ui.composer.rule@15",
+                          "type": "rect",
+                          "x": 18,
+                          "y": 0,
+                          "width": 454,
+                          "height": 1,
+                          "fill": "#ded1d0",
+                          "radius": 0
+                        },
+                        {
+                          "id": "ui.composer.add@15",
+                          "type": "rect",
+                          "x": 18,
+                          "y": 17,
+                          "width": 29,
+                          "height": 29,
+                          "fill": "#e8dbe8",
+                          "radius": 8
+                        },
+                        {
+                          "id": "ui.composer.plus@15",
+                          "type": "text",
+                          "text": "+",
+                          "x": 32.5,
+                          "y": 20,
+                          "fontSize": 18,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#623864",
+                          "textAnchor": "middle"
+                        },
+                        {
+                          "id": "ui.composer.field@15",
+                          "type": "rect",
+                          "x": 54,
+                          "y": 10,
+                          "width": 374,
+                          "height": 36,
+                          "fill": "#fffaf4",
+                          "radius": 11,
+                          "stroke": "#ded1d0",
+                          "strokeWidth": 1
+                        },
+                        {
+                          "id": "ui.composer.draft@15",
+                          "type": "text",
+                          "text": "Can",
+                          "x": 65,
+                          "y": 19,
+                          "fontSize": 14,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#2a2631",
+                          "lineHeight": 17
+                        },
+                        {
+                          "id": "ui.composer.send@15",
+                          "type": "rect",
+                          "x": 434,
+                          "y": 17,
+                          "width": 38,
+                          "height": 29,
+                          "fill": "#623864",
+                          "radius": 8
+                        },
+                        {
+                          "id": "ui.composer.send-label@15",
+                          "type": "text",
+                          "text": "Send",
+                          "x": 453,
+                          "y": 25,
+                          "fontSize": 10,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#ffffff",
+                          "textAnchor": "middle",
+                          "fontWeight": 700
+                        }
+                      ],
+                      "start": 0.5,
+                      "end": 0.6333333333333333
+                    },
+                    {
+                      "id": "ui.composer@19",
+                      "type": "group",
+                      "x": 0,
+                      "y": 0,
+                      "children": [
+                        {
+                          "id": "ui.composer.paper@19",
+                          "type": "rect",
+                          "x": 0,
+                          "y": 0,
+                          "width": 490,
+                          "height": 56,
+                          "fill": "#f6f0e7",
+                          "radius": 0
+                        },
+                        {
+                          "id": "ui.composer.rule@19",
+                          "type": "rect",
+                          "x": 18,
+                          "y": 0,
+                          "width": 454,
+                          "height": 1,
+                          "fill": "#ded1d0",
+                          "radius": 0
+                        },
+                        {
+                          "id": "ui.composer.add@19",
+                          "type": "rect",
+                          "x": 18,
+                          "y": 17,
+                          "width": 29,
+                          "height": 29,
+                          "fill": "#e8dbe8",
+                          "radius": 8
+                        },
+                        {
+                          "id": "ui.composer.plus@19",
+                          "type": "text",
+                          "text": "+",
+                          "x": 32.5,
+                          "y": 20,
+                          "fontSize": 18,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#623864",
+                          "textAnchor": "middle"
+                        },
+                        {
+                          "id": "ui.composer.field@19",
+                          "type": "rect",
+                          "x": 54,
+                          "y": 10,
+                          "width": 374,
+                          "height": 36,
+                          "fill": "#fffaf4",
+                          "radius": 11,
+                          "stroke": "#ded1d0",
+                          "strokeWidth": 1
+                        },
+                        {
+                          "id": "ui.composer.draft@19",
+                          "type": "text",
+                          "text": "Can y",
+                          "x": 65,
+                          "y": 19,
+                          "fontSize": 14,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#2a2631",
+                          "lineHeight": 17
+                        },
+                        {
+                          "id": "ui.composer.send@19",
+                          "type": "rect",
+                          "x": 434,
+                          "y": 17,
+                          "width": 38,
+                          "height": 29,
+                          "fill": "#623864",
+                          "radius": 8
+                        },
+                        {
+                          "id": "ui.composer.send-label@19",
+                          "type": "text",
+                          "text": "Send",
+                          "x": 453,
+                          "y": 25,
+                          "fontSize": 10,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#ffffff",
+                          "textAnchor": "middle",
+                          "fontWeight": 700
+                        }
+                      ],
+                      "start": 0.6333333333333333,
+                      "end": 0.7
+                    },
+                    {
+                      "id": "ui.composer@21",
+                      "type": "group",
+                      "x": 0,
+                      "y": 0,
+                      "children": [
+                        {
+                          "id": "ui.composer.paper@21",
+                          "type": "rect",
+                          "x": 0,
+                          "y": 0,
+                          "width": 490,
+                          "height": 56,
+                          "fill": "#f6f0e7",
+                          "radius": 0
+                        },
+                        {
+                          "id": "ui.composer.rule@21",
+                          "type": "rect",
+                          "x": 18,
+                          "y": 0,
+                          "width": 454,
+                          "height": 1,
+                          "fill": "#ded1d0",
+                          "radius": 0
+                        },
+                        {
+                          "id": "ui.composer.add@21",
+                          "type": "rect",
+                          "x": 18,
+                          "y": 17,
+                          "width": 29,
+                          "height": 29,
+                          "fill": "#e8dbe8",
+                          "radius": 8
+                        },
+                        {
+                          "id": "ui.composer.plus@21",
+                          "type": "text",
+                          "text": "+",
+                          "x": 32.5,
+                          "y": 20,
+                          "fontSize": 18,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#623864",
+                          "textAnchor": "middle"
+                        },
+                        {
+                          "id": "ui.composer.field@21",
+                          "type": "rect",
+                          "x": 54,
+                          "y": 10,
+                          "width": 374,
+                          "height": 36,
+                          "fill": "#fffaf4",
+                          "radius": 11,
+                          "stroke": "#ded1d0",
+                          "strokeWidth": 1
+                        },
+                        {
+                          "id": "ui.composer.draft@21",
+                          "type": "text",
+                          "text": "Can yo",
+                          "x": 65,
+                          "y": 19,
+                          "fontSize": 14,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#2a2631",
+                          "lineHeight": 17
+                        },
+                        {
+                          "id": "ui.composer.send@21",
+                          "type": "rect",
+                          "x": 434,
+                          "y": 17,
+                          "width": 38,
+                          "height": 29,
+                          "fill": "#623864",
+                          "radius": 8
+                        },
+                        {
+                          "id": "ui.composer.send-label@21",
+                          "type": "text",
+                          "text": "Send",
+                          "x": 453,
+                          "y": 25,
+                          "fontSize": 10,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#ffffff",
+                          "textAnchor": "middle",
+                          "fontWeight": 700
+                        }
+                      ],
+                      "start": 0.7,
+                      "end": 0.7666666666666667
+                    },
+                    {
+                      "id": "ui.composer@23",
+                      "type": "group",
+                      "x": 0,
+                      "y": 0,
+                      "children": [
+                        {
+                          "id": "ui.composer.paper@23",
+                          "type": "rect",
+                          "x": 0,
+                          "y": 0,
+                          "width": 490,
+                          "height": 56,
+                          "fill": "#f6f0e7",
+                          "radius": 0
+                        },
+                        {
+                          "id": "ui.composer.rule@23",
+                          "type": "rect",
+                          "x": 18,
+                          "y": 0,
+                          "width": 454,
+                          "height": 1,
+                          "fill": "#ded1d0",
+                          "radius": 0
+                        },
+                        {
+                          "id": "ui.composer.add@23",
+                          "type": "rect",
+                          "x": 18,
+                          "y": 17,
+                          "width": 29,
+                          "height": 29,
+                          "fill": "#e8dbe8",
+                          "radius": 8
+                        },
+                        {
+                          "id": "ui.composer.plus@23",
+                          "type": "text",
+                          "text": "+",
+                          "x": 32.5,
+                          "y": 20,
+                          "fontSize": 18,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#623864",
+                          "textAnchor": "middle"
+                        },
+                        {
+                          "id": "ui.composer.field@23",
+                          "type": "rect",
+                          "x": 54,
+                          "y": 10,
+                          "width": 374,
+                          "height": 36,
+                          "fill": "#fffaf4",
+                          "radius": 11,
+                          "stroke": "#ded1d0",
+                          "strokeWidth": 1
+                        },
+                        {
+                          "id": "ui.composer.draft@23",
+                          "type": "text",
+                          "text": "Can you",
+                          "x": 65,
+                          "y": 19,
+                          "fontSize": 14,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#2a2631",
+                          "lineHeight": 17
+                        },
+                        {
+                          "id": "ui.composer.send@23",
+                          "type": "rect",
+                          "x": 434,
+                          "y": 17,
+                          "width": 38,
+                          "height": 29,
+                          "fill": "#623864",
+                          "radius": 8
+                        },
+                        {
+                          "id": "ui.composer.send-label@23",
+                          "type": "text",
+                          "text": "Send",
+                          "x": 453,
+                          "y": 25,
+                          "fontSize": 10,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#ffffff",
+                          "textAnchor": "middle",
+                          "fontWeight": 700
+                        }
+                      ],
+                      "start": 0.7666666666666667,
+                      "end": 0.8666666666666667
+                    },
+                    {
+                      "id": "ui.composer@26",
+                      "type": "group",
+                      "x": 0,
+                      "y": 0,
+                      "children": [
+                        {
+                          "id": "ui.composer.paper@26",
+                          "type": "rect",
+                          "x": 0,
+                          "y": 0,
+                          "width": 490,
+                          "height": 56,
+                          "fill": "#f6f0e7",
+                          "radius": 0
+                        },
+                        {
+                          "id": "ui.composer.rule@26",
+                          "type": "rect",
+                          "x": 18,
+                          "y": 0,
+                          "width": 454,
+                          "height": 1,
+                          "fill": "#ded1d0",
+                          "radius": 0
+                        },
+                        {
+                          "id": "ui.composer.add@26",
+                          "type": "rect",
+                          "x": 18,
+                          "y": 17,
+                          "width": 29,
+                          "height": 29,
+                          "fill": "#e8dbe8",
+                          "radius": 8
+                        },
+                        {
+                          "id": "ui.composer.plus@26",
+                          "type": "text",
+                          "text": "+",
+                          "x": 32.5,
+                          "y": 20,
+                          "fontSize": 18,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#623864",
+                          "textAnchor": "middle"
+                        },
+                        {
+                          "id": "ui.composer.field@26",
+                          "type": "rect",
+                          "x": 54,
+                          "y": 10,
+                          "width": 374,
+                          "height": 36,
+                          "fill": "#fffaf4",
+                          "radius": 11,
+                          "stroke": "#ded1d0",
+                          "strokeWidth": 1
+                        },
+                        {
+                          "id": "ui.composer.draft@26",
+                          "type": "text",
+                          "text": "Can you s",
+                          "x": 65,
+                          "y": 19,
+                          "fontSize": 14,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#2a2631",
+                          "lineHeight": 17
+                        },
+                        {
+                          "id": "ui.composer.send@26",
+                          "type": "rect",
+                          "x": 434,
+                          "y": 17,
+                          "width": 38,
+                          "height": 29,
+                          "fill": "#623864",
+                          "radius": 8
+                        },
+                        {
+                          "id": "ui.composer.send-label@26",
+                          "type": "text",
+                          "text": "Send",
+                          "x": 453,
+                          "y": 25,
+                          "fontSize": 10,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#ffffff",
+                          "textAnchor": "middle",
+                          "fontWeight": 700
+                        }
+                      ],
+                      "start": 0.8666666666666667,
+                      "end": 0.9333333333333333
+                    },
+                    {
+                      "id": "ui.composer@28",
+                      "type": "group",
+                      "x": 0,
+                      "y": 0,
+                      "children": [
+                        {
+                          "id": "ui.composer.paper@28",
+                          "type": "rect",
+                          "x": 0,
+                          "y": 0,
+                          "width": 490,
+                          "height": 56,
+                          "fill": "#f6f0e7",
+                          "radius": 0
+                        },
+                        {
+                          "id": "ui.composer.rule@28",
+                          "type": "rect",
+                          "x": 18,
+                          "y": 0,
+                          "width": 454,
+                          "height": 1,
+                          "fill": "#ded1d0",
+                          "radius": 0
+                        },
+                        {
+                          "id": "ui.composer.add@28",
+                          "type": "rect",
+                          "x": 18,
+                          "y": 17,
+                          "width": 29,
+                          "height": 29,
+                          "fill": "#e8dbe8",
+                          "radius": 8
+                        },
+                        {
+                          "id": "ui.composer.plus@28",
+                          "type": "text",
+                          "text": "+",
+                          "x": 32.5,
+                          "y": 20,
+                          "fontSize": 18,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#623864",
+                          "textAnchor": "middle"
+                        },
+                        {
+                          "id": "ui.composer.field@28",
+                          "type": "rect",
+                          "x": 54,
+                          "y": 10,
+                          "width": 374,
+                          "height": 36,
+                          "fill": "#fffaf4",
+                          "radius": 11,
+                          "stroke": "#ded1d0",
+                          "strokeWidth": 1
+                        },
+                        {
+                          "id": "ui.composer.draft@28",
+                          "type": "text",
+                          "text": "Can you se",
+                          "x": 65,
+                          "y": 19,
+                          "fontSize": 14,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#2a2631",
+                          "lineHeight": 17
+                        },
+                        {
+                          "id": "ui.composer.send@28",
+                          "type": "rect",
+                          "x": 434,
+                          "y": 17,
+                          "width": 38,
+                          "height": 29,
+                          "fill": "#623864",
+                          "radius": 8
+                        },
+                        {
+                          "id": "ui.composer.send-label@28",
+                          "type": "text",
+                          "text": "Send",
+                          "x": 453,
+                          "y": 25,
+                          "fontSize": 10,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#ffffff",
+                          "textAnchor": "middle",
+                          "fontWeight": 700
+                        }
+                      ],
+                      "start": 0.9333333333333333,
+                      "end": 1
+                    },
+                    {
+                      "id": "ui.composer@30",
+                      "type": "group",
+                      "x": 0,
+                      "y": 0,
+                      "children": [
+                        {
+                          "id": "ui.composer.paper@30",
+                          "type": "rect",
+                          "x": 0,
+                          "y": 0,
+                          "width": 490,
+                          "height": 56,
+                          "fill": "#f6f0e7",
+                          "radius": 0
+                        },
+                        {
+                          "id": "ui.composer.rule@30",
+                          "type": "rect",
+                          "x": 18,
+                          "y": 0,
+                          "width": 454,
+                          "height": 1,
+                          "fill": "#ded1d0",
+                          "radius": 0
+                        },
+                        {
+                          "id": "ui.composer.add@30",
+                          "type": "rect",
+                          "x": 18,
+                          "y": 17,
+                          "width": 29,
+                          "height": 29,
+                          "fill": "#e8dbe8",
+                          "radius": 8
+                        },
+                        {
+                          "id": "ui.composer.plus@30",
+                          "type": "text",
+                          "text": "+",
+                          "x": 32.5,
+                          "y": 20,
+                          "fontSize": 18,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#623864",
+                          "textAnchor": "middle"
+                        },
+                        {
+                          "id": "ui.composer.field@30",
+                          "type": "rect",
+                          "x": 54,
+                          "y": 10,
+                          "width": 374,
+                          "height": 36,
+                          "fill": "#fffaf4",
+                          "radius": 11,
+                          "stroke": "#ded1d0",
+                          "strokeWidth": 1
+                        },
+                        {
+                          "id": "ui.composer.draft@30",
+                          "type": "text",
+                          "text": "Can you sen",
+                          "x": 65,
+                          "y": 19,
+                          "fontSize": 14,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#2a2631",
+                          "lineHeight": 17
+                        },
+                        {
+                          "id": "ui.composer.send@30",
+                          "type": "rect",
+                          "x": 434,
+                          "y": 17,
+                          "width": 38,
+                          "height": 29,
+                          "fill": "#623864",
+                          "radius": 8
+                        },
+                        {
+                          "id": "ui.composer.send-label@30",
+                          "type": "text",
+                          "text": "Send",
+                          "x": 453,
+                          "y": 25,
+                          "fontSize": 10,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#ffffff",
+                          "textAnchor": "middle",
+                          "fontWeight": 700
+                        }
+                      ],
+                      "start": 1,
+                      "end": 1.0666666666666667
+                    },
+                    {
+                      "id": "ui.composer@32",
+                      "type": "group",
+                      "x": 0,
+                      "y": 0,
+                      "children": [
+                        {
+                          "id": "ui.composer.paper@32",
+                          "type": "rect",
+                          "x": 0,
+                          "y": 0,
+                          "width": 490,
+                          "height": 56,
+                          "fill": "#f6f0e7",
+                          "radius": 0
+                        },
+                        {
+                          "id": "ui.composer.rule@32",
+                          "type": "rect",
+                          "x": 18,
+                          "y": 0,
+                          "width": 454,
+                          "height": 1,
+                          "fill": "#ded1d0",
+                          "radius": 0
+                        },
+                        {
+                          "id": "ui.composer.add@32",
+                          "type": "rect",
+                          "x": 18,
+                          "y": 17,
+                          "width": 29,
+                          "height": 29,
+                          "fill": "#e8dbe8",
+                          "radius": 8
+                        },
+                        {
+                          "id": "ui.composer.plus@32",
+                          "type": "text",
+                          "text": "+",
+                          "x": 32.5,
+                          "y": 20,
+                          "fontSize": 18,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#623864",
+                          "textAnchor": "middle"
+                        },
+                        {
+                          "id": "ui.composer.field@32",
+                          "type": "rect",
+                          "x": 54,
+                          "y": 10,
+                          "width": 374,
+                          "height": 36,
+                          "fill": "#fffaf4",
+                          "radius": 11,
+                          "stroke": "#ded1d0",
+                          "strokeWidth": 1
+                        },
+                        {
+                          "id": "ui.composer.draft@32",
+                          "type": "text",
+                          "text": "Can you send",
+                          "x": 65,
+                          "y": 19,
+                          "fontSize": 14,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#2a2631",
+                          "lineHeight": 17
+                        },
+                        {
+                          "id": "ui.composer.send@32",
+                          "type": "rect",
+                          "x": 434,
+                          "y": 17,
+                          "width": 38,
+                          "height": 29,
+                          "fill": "#623864",
+                          "radius": 8
+                        },
+                        {
+                          "id": "ui.composer.send-label@32",
+                          "type": "text",
+                          "text": "Send",
+                          "x": 453,
+                          "y": 25,
+                          "fontSize": 10,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#ffffff",
+                          "textAnchor": "middle",
+                          "fontWeight": 700
+                        }
+                      ],
+                      "start": 1.0666666666666667,
+                      "end": 1.2
+                    },
+                    {
+                      "id": "ui.composer@36",
+                      "type": "group",
+                      "x": 0,
+                      "y": 0,
+                      "children": [
+                        {
+                          "id": "ui.composer.paper@36",
+                          "type": "rect",
+                          "x": 0,
+                          "y": 0,
+                          "width": 490,
+                          "height": 56,
+                          "fill": "#f6f0e7",
+                          "radius": 0
+                        },
+                        {
+                          "id": "ui.composer.rule@36",
+                          "type": "rect",
+                          "x": 18,
+                          "y": 0,
+                          "width": 454,
+                          "height": 1,
+                          "fill": "#ded1d0",
+                          "radius": 0
+                        },
+                        {
+                          "id": "ui.composer.add@36",
+                          "type": "rect",
+                          "x": 18,
+                          "y": 17,
+                          "width": 29,
+                          "height": 29,
+                          "fill": "#e8dbe8",
+                          "radius": 8
+                        },
+                        {
+                          "id": "ui.composer.plus@36",
+                          "type": "text",
+                          "text": "+",
+                          "x": 32.5,
+                          "y": 20,
+                          "fontSize": 18,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#623864",
+                          "textAnchor": "middle"
+                        },
+                        {
+                          "id": "ui.composer.field@36",
+                          "type": "rect",
+                          "x": 54,
+                          "y": 10,
+                          "width": 374,
+                          "height": 36,
+                          "fill": "#fffaf4",
+                          "radius": 11,
+                          "stroke": "#ded1d0",
+                          "strokeWidth": 1
+                        },
+                        {
+                          "id": "ui.composer.draft@36",
+                          "type": "text",
+                          "text": "Can you send t",
+                          "x": 65,
+                          "y": 19,
+                          "fontSize": 14,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#2a2631",
+                          "lineHeight": 17
+                        },
+                        {
+                          "id": "ui.composer.send@36",
+                          "type": "rect",
+                          "x": 434,
+                          "y": 17,
+                          "width": 38,
+                          "height": 29,
+                          "fill": "#623864",
+                          "radius": 8
+                        },
+                        {
+                          "id": "ui.composer.send-label@36",
+                          "type": "text",
+                          "text": "Send",
+                          "x": 453,
+                          "y": 25,
+                          "fontSize": 10,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#ffffff",
+                          "textAnchor": "middle",
+                          "fontWeight": 700
+                        }
+                      ],
+                      "start": 1.2,
+                      "end": 1.2333333333333334
+                    },
+                    {
+                      "id": "ui.composer@37",
+                      "type": "group",
+                      "x": 0,
+                      "y": 0,
+                      "children": [
+                        {
+                          "id": "ui.composer.paper@37",
+                          "type": "rect",
+                          "x": 0,
+                          "y": 0,
+                          "width": 490,
+                          "height": 56,
+                          "fill": "#f6f0e7",
+                          "radius": 0
+                        },
+                        {
+                          "id": "ui.composer.rule@37",
+                          "type": "rect",
+                          "x": 18,
+                          "y": 0,
+                          "width": 454,
+                          "height": 1,
+                          "fill": "#ded1d0",
+                          "radius": 0
+                        },
+                        {
+                          "id": "ui.composer.add@37",
+                          "type": "rect",
+                          "x": 18,
+                          "y": 17,
+                          "width": 29,
+                          "height": 29,
+                          "fill": "#e8dbe8",
+                          "radius": 8
+                        },
+                        {
+                          "id": "ui.composer.plus@37",
+                          "type": "text",
+                          "text": "+",
+                          "x": 32.5,
+                          "y": 20,
+                          "fontSize": 18,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#623864",
+                          "textAnchor": "middle"
+                        },
+                        {
+                          "id": "ui.composer.field@37",
+                          "type": "rect",
+                          "x": 54,
+                          "y": 10,
+                          "width": 374,
+                          "height": 36,
+                          "fill": "#fffaf4",
+                          "radius": 11,
+                          "stroke": "#ded1d0",
+                          "strokeWidth": 1
+                        },
+                        {
+                          "id": "ui.composer.draft@37",
+                          "type": "text",
+                          "text": "Can you send th",
+                          "x": 65,
+                          "y": 19,
+                          "fontSize": 14,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#2a2631",
+                          "lineHeight": 17
+                        },
+                        {
+                          "id": "ui.composer.send@37",
+                          "type": "rect",
+                          "x": 434,
+                          "y": 17,
+                          "width": 38,
+                          "height": 29,
+                          "fill": "#623864",
+                          "radius": 8
+                        },
+                        {
+                          "id": "ui.composer.send-label@37",
+                          "type": "text",
+                          "text": "Send",
+                          "x": 453,
+                          "y": 25,
+                          "fontSize": 10,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#ffffff",
+                          "textAnchor": "middle",
+                          "fontWeight": 700
+                        }
+                      ],
+                      "start": 1.2333333333333334,
+                      "end": 1.3
+                    },
+                    {
+                      "id": "ui.composer@39",
+                      "type": "group",
+                      "x": 0,
+                      "y": 0,
+                      "children": [
+                        {
+                          "id": "ui.composer.paper@39",
+                          "type": "rect",
+                          "x": 0,
+                          "y": 0,
+                          "width": 490,
+                          "height": 56,
+                          "fill": "#f6f0e7",
+                          "radius": 0
+                        },
+                        {
+                          "id": "ui.composer.rule@39",
+                          "type": "rect",
+                          "x": 18,
+                          "y": 0,
+                          "width": 454,
+                          "height": 1,
+                          "fill": "#ded1d0",
+                          "radius": 0
+                        },
+                        {
+                          "id": "ui.composer.add@39",
+                          "type": "rect",
+                          "x": 18,
+                          "y": 17,
+                          "width": 29,
+                          "height": 29,
+                          "fill": "#e8dbe8",
+                          "radius": 8
+                        },
+                        {
+                          "id": "ui.composer.plus@39",
+                          "type": "text",
+                          "text": "+",
+                          "x": 32.5,
+                          "y": 20,
+                          "fontSize": 18,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#623864",
+                          "textAnchor": "middle"
+                        },
+                        {
+                          "id": "ui.composer.field@39",
+                          "type": "rect",
+                          "x": 54,
+                          "y": 10,
+                          "width": 374,
+                          "height": 36,
+                          "fill": "#fffaf4",
+                          "radius": 11,
+                          "stroke": "#ded1d0",
+                          "strokeWidth": 1
+                        },
+                        {
+                          "id": "ui.composer.draft@39",
+                          "type": "text",
+                          "text": "Can you send the",
+                          "x": 65,
+                          "y": 19,
+                          "fontSize": 14,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#2a2631",
+                          "lineHeight": 17
+                        },
+                        {
+                          "id": "ui.composer.send@39",
+                          "type": "rect",
+                          "x": 434,
+                          "y": 17,
+                          "width": 38,
+                          "height": 29,
+                          "fill": "#623864",
+                          "radius": 8
+                        },
+                        {
+                          "id": "ui.composer.send-label@39",
+                          "type": "text",
+                          "text": "Send",
+                          "x": 453,
+                          "y": 25,
+                          "fontSize": 10,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#ffffff",
+                          "textAnchor": "middle",
+                          "fontWeight": 700
+                        }
+                      ],
+                      "start": 1.3,
+                      "end": 1.4333333333333333
+                    },
+                    {
+                      "id": "ui.composer@43",
+                      "type": "group",
+                      "x": 0,
+                      "y": 0,
+                      "children": [
+                        {
+                          "id": "ui.composer.paper@43",
+                          "type": "rect",
+                          "x": 0,
+                          "y": 0,
+                          "width": 490,
+                          "height": 56,
+                          "fill": "#f6f0e7",
+                          "radius": 0
+                        },
+                        {
+                          "id": "ui.composer.rule@43",
+                          "type": "rect",
+                          "x": 18,
+                          "y": 0,
+                          "width": 454,
+                          "height": 1,
+                          "fill": "#ded1d0",
+                          "radius": 0
+                        },
+                        {
+                          "id": "ui.composer.add@43",
+                          "type": "rect",
+                          "x": 18,
+                          "y": 17,
+                          "width": 29,
+                          "height": 29,
+                          "fill": "#e8dbe8",
+                          "radius": 8
+                        },
+                        {
+                          "id": "ui.composer.plus@43",
+                          "type": "text",
+                          "text": "+",
+                          "x": 32.5,
+                          "y": 20,
+                          "fontSize": 18,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#623864",
+                          "textAnchor": "middle"
+                        },
+                        {
+                          "id": "ui.composer.field@43",
+                          "type": "rect",
+                          "x": 54,
+                          "y": 10,
+                          "width": 374,
+                          "height": 36,
+                          "fill": "#fffaf4",
+                          "radius": 11,
+                          "stroke": "#ded1d0",
+                          "strokeWidth": 1
+                        },
+                        {
+                          "id": "ui.composer.draft@43",
+                          "type": "text",
+                          "text": "Can you send the t",
+                          "x": 65,
+                          "y": 19,
+                          "fontSize": 14,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#2a2631",
+                          "lineHeight": 17
+                        },
+                        {
+                          "id": "ui.composer.send@43",
+                          "type": "rect",
+                          "x": 434,
+                          "y": 17,
+                          "width": 38,
+                          "height": 29,
+                          "fill": "#623864",
+                          "radius": 8
+                        },
+                        {
+                          "id": "ui.composer.send-label@43",
+                          "type": "text",
+                          "text": "Send",
+                          "x": 453,
+                          "y": 25,
+                          "fontSize": 10,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#ffffff",
+                          "textAnchor": "middle",
+                          "fontWeight": 700
+                        }
+                      ],
+                      "start": 1.4333333333333333,
+                      "end": 1.5
+                    },
+                    {
+                      "id": "ui.composer@45",
+                      "type": "group",
+                      "x": 0,
+                      "y": 0,
+                      "children": [
+                        {
+                          "id": "ui.composer.paper@45",
+                          "type": "rect",
+                          "x": 0,
+                          "y": 0,
+                          "width": 490,
+                          "height": 56,
+                          "fill": "#f6f0e7",
+                          "radius": 0
+                        },
+                        {
+                          "id": "ui.composer.rule@45",
+                          "type": "rect",
+                          "x": 18,
+                          "y": 0,
+                          "width": 454,
+                          "height": 1,
+                          "fill": "#ded1d0",
+                          "radius": 0
+                        },
+                        {
+                          "id": "ui.composer.add@45",
+                          "type": "rect",
+                          "x": 18,
+                          "y": 17,
+                          "width": 29,
+                          "height": 29,
+                          "fill": "#e8dbe8",
+                          "radius": 8
+                        },
+                        {
+                          "id": "ui.composer.plus@45",
+                          "type": "text",
+                          "text": "+",
+                          "x": 32.5,
+                          "y": 20,
+                          "fontSize": 18,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#623864",
+                          "textAnchor": "middle"
+                        },
+                        {
+                          "id": "ui.composer.field@45",
+                          "type": "rect",
+                          "x": 54,
+                          "y": 10,
+                          "width": 374,
+                          "height": 36,
+                          "fill": "#fffaf4",
+                          "radius": 11,
+                          "stroke": "#ded1d0",
+                          "strokeWidth": 1
+                        },
+                        {
+                          "id": "ui.composer.draft@45",
+                          "type": "text",
+                          "text": "Can you send the tr",
+                          "x": 65,
+                          "y": 19,
+                          "fontSize": 14,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#2a2631",
+                          "lineHeight": 17
+                        },
+                        {
+                          "id": "ui.composer.send@45",
+                          "type": "rect",
+                          "x": 434,
+                          "y": 17,
+                          "width": 38,
+                          "height": 29,
+                          "fill": "#623864",
+                          "radius": 8
+                        },
+                        {
+                          "id": "ui.composer.send-label@45",
+                          "type": "text",
+                          "text": "Send",
+                          "x": 453,
+                          "y": 25,
+                          "fontSize": 10,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#ffffff",
+                          "textAnchor": "middle",
+                          "fontWeight": 700
+                        }
+                      ],
+                      "start": 1.5,
+                      "end": 1.5666666666666667
+                    },
+                    {
+                      "id": "ui.composer@47",
+                      "type": "group",
+                      "x": 0,
+                      "y": 0,
+                      "children": [
+                        {
+                          "id": "ui.composer.paper@47",
+                          "type": "rect",
+                          "x": 0,
+                          "y": 0,
+                          "width": 490,
+                          "height": 56,
+                          "fill": "#f6f0e7",
+                          "radius": 0
+                        },
+                        {
+                          "id": "ui.composer.rule@47",
+                          "type": "rect",
+                          "x": 18,
+                          "y": 0,
+                          "width": 454,
+                          "height": 1,
+                          "fill": "#ded1d0",
+                          "radius": 0
+                        },
+                        {
+                          "id": "ui.composer.add@47",
+                          "type": "rect",
+                          "x": 18,
+                          "y": 17,
+                          "width": 29,
+                          "height": 29,
+                          "fill": "#e8dbe8",
+                          "radius": 8
+                        },
+                        {
+                          "id": "ui.composer.plus@47",
+                          "type": "text",
+                          "text": "+",
+                          "x": 32.5,
+                          "y": 20,
+                          "fontSize": 18,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#623864",
+                          "textAnchor": "middle"
+                        },
+                        {
+                          "id": "ui.composer.field@47",
+                          "type": "rect",
+                          "x": 54,
+                          "y": 10,
+                          "width": 374,
+                          "height": 36,
+                          "fill": "#fffaf4",
+                          "radius": 11,
+                          "stroke": "#ded1d0",
+                          "strokeWidth": 1
+                        },
+                        {
+                          "id": "ui.composer.draft@47",
+                          "type": "text",
+                          "text": "Can you send the tra",
+                          "x": 65,
+                          "y": 19,
+                          "fontSize": 14,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#2a2631",
+                          "lineHeight": 17
+                        },
+                        {
+                          "id": "ui.composer.send@47",
+                          "type": "rect",
+                          "x": 434,
+                          "y": 17,
+                          "width": 38,
+                          "height": 29,
+                          "fill": "#623864",
+                          "radius": 8
+                        },
+                        {
+                          "id": "ui.composer.send-label@47",
+                          "type": "text",
+                          "text": "Send",
+                          "x": 453,
+                          "y": 25,
+                          "fontSize": 10,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#ffffff",
+                          "textAnchor": "middle",
+                          "fontWeight": 700
+                        }
+                      ],
+                      "start": 1.5666666666666667,
+                      "end": 1.6
+                    },
+                    {
+                      "id": "ui.composer@48",
+                      "type": "group",
+                      "x": 0,
+                      "y": 0,
+                      "children": [
+                        {
+                          "id": "ui.composer.paper@48",
+                          "type": "rect",
+                          "x": 0,
+                          "y": 0,
+                          "width": 490,
+                          "height": 56,
+                          "fill": "#f6f0e7",
+                          "radius": 0
+                        },
+                        {
+                          "id": "ui.composer.rule@48",
+                          "type": "rect",
+                          "x": 18,
+                          "y": 0,
+                          "width": 454,
+                          "height": 1,
+                          "fill": "#ded1d0",
+                          "radius": 0
+                        },
+                        {
+                          "id": "ui.composer.add@48",
+                          "type": "rect",
+                          "x": 18,
+                          "y": 17,
+                          "width": 29,
+                          "height": 29,
+                          "fill": "#e8dbe8",
+                          "radius": 8
+                        },
+                        {
+                          "id": "ui.composer.plus@48",
+                          "type": "text",
+                          "text": "+",
+                          "x": 32.5,
+                          "y": 20,
+                          "fontSize": 18,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#623864",
+                          "textAnchor": "middle"
+                        },
+                        {
+                          "id": "ui.composer.field@48",
+                          "type": "rect",
+                          "x": 54,
+                          "y": 10,
+                          "width": 374,
+                          "height": 36,
+                          "fill": "#fffaf4",
+                          "radius": 11,
+                          "stroke": "#ded1d0",
+                          "strokeWidth": 1
+                        },
+                        {
+                          "id": "ui.composer.draft@48",
+                          "type": "text",
+                          "text": "Can you send the trai",
+                          "x": 65,
+                          "y": 19,
+                          "fontSize": 14,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#2a2631",
+                          "lineHeight": 17
+                        },
+                        {
+                          "id": "ui.composer.send@48",
+                          "type": "rect",
+                          "x": 434,
+                          "y": 17,
+                          "width": 38,
+                          "height": 29,
+                          "fill": "#623864",
+                          "radius": 8
+                        },
+                        {
+                          "id": "ui.composer.send-label@48",
+                          "type": "text",
+                          "text": "Send",
+                          "x": 453,
+                          "y": 25,
+                          "fontSize": 10,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#ffffff",
+                          "textAnchor": "middle",
+                          "fontWeight": 700
+                        }
+                      ],
+                      "start": 1.6,
+                      "end": 1.6666666666666667
+                    },
+                    {
+                      "id": "ui.composer@50",
+                      "type": "group",
+                      "x": 0,
+                      "y": 0,
+                      "children": [
+                        {
+                          "id": "ui.composer.paper@50",
+                          "type": "rect",
+                          "x": 0,
+                          "y": 0,
+                          "width": 490,
+                          "height": 56,
+                          "fill": "#f6f0e7",
+                          "radius": 0
+                        },
+                        {
+                          "id": "ui.composer.rule@50",
+                          "type": "rect",
+                          "x": 18,
+                          "y": 0,
+                          "width": 454,
+                          "height": 1,
+                          "fill": "#ded1d0",
+                          "radius": 0
+                        },
+                        {
+                          "id": "ui.composer.add@50",
+                          "type": "rect",
+                          "x": 18,
+                          "y": 17,
+                          "width": 29,
+                          "height": 29,
+                          "fill": "#e8dbe8",
+                          "radius": 8
+                        },
+                        {
+                          "id": "ui.composer.plus@50",
+                          "type": "text",
+                          "text": "+",
+                          "x": 32.5,
+                          "y": 20,
+                          "fontSize": 18,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#623864",
+                          "textAnchor": "middle"
+                        },
+                        {
+                          "id": "ui.composer.field@50",
+                          "type": "rect",
+                          "x": 54,
+                          "y": 10,
+                          "width": 374,
+                          "height": 36,
+                          "fill": "#fffaf4",
+                          "radius": 11,
+                          "stroke": "#ded1d0",
+                          "strokeWidth": 1
+                        },
+                        {
+                          "id": "ui.composer.draft@50",
+                          "type": "text",
+                          "text": "Can you send the trail",
+                          "x": 65,
+                          "y": 19,
+                          "fontSize": 14,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#2a2631",
+                          "lineHeight": 17
+                        },
+                        {
+                          "id": "ui.composer.send@50",
+                          "type": "rect",
+                          "x": 434,
+                          "y": 17,
+                          "width": 38,
+                          "height": 29,
+                          "fill": "#623864",
+                          "radius": 8
+                        },
+                        {
+                          "id": "ui.composer.send-label@50",
+                          "type": "text",
+                          "text": "Send",
+                          "x": 453,
+                          "y": 25,
+                          "fontSize": 10,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#ffffff",
+                          "textAnchor": "middle",
+                          "fontWeight": 700
+                        }
+                      ],
+                      "start": 1.6666666666666667,
+                      "end": 1.8
+                    },
+                    {
+                      "id": "ui.composer@54",
+                      "type": "group",
+                      "x": 0,
+                      "y": 0,
+                      "children": [
+                        {
+                          "id": "ui.composer.paper@54",
+                          "type": "rect",
+                          "x": 0,
+                          "y": 0,
+                          "width": 490,
+                          "height": 56,
+                          "fill": "#f6f0e7",
+                          "radius": 0
+                        },
+                        {
+                          "id": "ui.composer.rule@54",
+                          "type": "rect",
+                          "x": 18,
+                          "y": 0,
+                          "width": 454,
+                          "height": 1,
+                          "fill": "#ded1d0",
+                          "radius": 0
+                        },
+                        {
+                          "id": "ui.composer.add@54",
+                          "type": "rect",
+                          "x": 18,
+                          "y": 17,
+                          "width": 29,
+                          "height": 29,
+                          "fill": "#e8dbe8",
+                          "radius": 8
+                        },
+                        {
+                          "id": "ui.composer.plus@54",
+                          "type": "text",
+                          "text": "+",
+                          "x": 32.5,
+                          "y": 20,
+                          "fontSize": 18,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#623864",
+                          "textAnchor": "middle"
+                        },
+                        {
+                          "id": "ui.composer.field@54",
+                          "type": "rect",
+                          "x": 54,
+                          "y": 10,
+                          "width": 374,
+                          "height": 36,
+                          "fill": "#fffaf4",
+                          "radius": 11,
+                          "stroke": "#ded1d0",
+                          "strokeWidth": 1
+                        },
+                        {
+                          "id": "ui.composer.draft@54",
+                          "type": "text",
+                          "text": "Can you send the trail m",
+                          "x": 65,
+                          "y": 19,
+                          "fontSize": 14,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#2a2631",
+                          "lineHeight": 17
+                        },
+                        {
+                          "id": "ui.composer.send@54",
+                          "type": "rect",
+                          "x": 434,
+                          "y": 17,
+                          "width": 38,
+                          "height": 29,
+                          "fill": "#623864",
+                          "radius": 8
+                        },
+                        {
+                          "id": "ui.composer.send-label@54",
+                          "type": "text",
+                          "text": "Send",
+                          "x": 453,
+                          "y": 25,
+                          "fontSize": 10,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#ffffff",
+                          "textAnchor": "middle",
+                          "fontWeight": 700
+                        }
+                      ],
+                      "start": 1.8,
+                      "end": 1.8666666666666667
+                    },
+                    {
+                      "id": "ui.composer@56",
+                      "type": "group",
+                      "x": 0,
+                      "y": 0,
+                      "children": [
+                        {
+                          "id": "ui.composer.paper@56",
+                          "type": "rect",
+                          "x": 0,
+                          "y": 0,
+                          "width": 490,
+                          "height": 56,
+                          "fill": "#f6f0e7",
+                          "radius": 0
+                        },
+                        {
+                          "id": "ui.composer.rule@56",
+                          "type": "rect",
+                          "x": 18,
+                          "y": 0,
+                          "width": 454,
+                          "height": 1,
+                          "fill": "#ded1d0",
+                          "radius": 0
+                        },
+                        {
+                          "id": "ui.composer.add@56",
+                          "type": "rect",
+                          "x": 18,
+                          "y": 17,
+                          "width": 29,
+                          "height": 29,
+                          "fill": "#e8dbe8",
+                          "radius": 8
+                        },
+                        {
+                          "id": "ui.composer.plus@56",
+                          "type": "text",
+                          "text": "+",
+                          "x": 32.5,
+                          "y": 20,
+                          "fontSize": 18,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#623864",
+                          "textAnchor": "middle"
+                        },
+                        {
+                          "id": "ui.composer.field@56",
+                          "type": "rect",
+                          "x": 54,
+                          "y": 10,
+                          "width": 374,
+                          "height": 36,
+                          "fill": "#fffaf4",
+                          "radius": 11,
+                          "stroke": "#ded1d0",
+                          "strokeWidth": 1
+                        },
+                        {
+                          "id": "ui.composer.draft@56",
+                          "type": "text",
+                          "text": "Can you send the trail ma",
+                          "x": 65,
+                          "y": 19,
+                          "fontSize": 14,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#2a2631",
+                          "lineHeight": 17
+                        },
+                        {
+                          "id": "ui.composer.send@56",
+                          "type": "rect",
+                          "x": 434,
+                          "y": 17,
+                          "width": 38,
+                          "height": 29,
+                          "fill": "#623864",
+                          "radius": 8
+                        },
+                        {
+                          "id": "ui.composer.send-label@56",
+                          "type": "text",
+                          "text": "Send",
+                          "x": 453,
+                          "y": 25,
+                          "fontSize": 10,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#ffffff",
+                          "textAnchor": "middle",
+                          "fontWeight": 700
+                        }
+                      ],
+                      "start": 1.8666666666666667,
+                      "end": 1.9333333333333333
+                    },
+                    {
+                      "id": "ui.composer@58",
+                      "type": "group",
+                      "x": 0,
+                      "y": 0,
+                      "children": [
+                        {
+                          "id": "ui.composer.paper@58",
+                          "type": "rect",
+                          "x": 0,
+                          "y": 0,
+                          "width": 490,
+                          "height": 56,
+                          "fill": "#f6f0e7",
+                          "radius": 0
+                        },
+                        {
+                          "id": "ui.composer.rule@58",
+                          "type": "rect",
+                          "x": 18,
+                          "y": 0,
+                          "width": 454,
+                          "height": 1,
+                          "fill": "#ded1d0",
+                          "radius": 0
+                        },
+                        {
+                          "id": "ui.composer.add@58",
+                          "type": "rect",
+                          "x": 18,
+                          "y": 17,
+                          "width": 29,
+                          "height": 29,
+                          "fill": "#e8dbe8",
+                          "radius": 8
+                        },
+                        {
+                          "id": "ui.composer.plus@58",
+                          "type": "text",
+                          "text": "+",
+                          "x": 32.5,
+                          "y": 20,
+                          "fontSize": 18,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#623864",
+                          "textAnchor": "middle"
+                        },
+                        {
+                          "id": "ui.composer.field@58",
+                          "type": "rect",
+                          "x": 54,
+                          "y": 10,
+                          "width": 374,
+                          "height": 36,
+                          "fill": "#fffaf4",
+                          "radius": 11,
+                          "stroke": "#ded1d0",
+                          "strokeWidth": 1
+                        },
+                        {
+                          "id": "ui.composer.draft@58",
+                          "type": "text",
+                          "text": "Can you send the trail map",
+                          "x": 65,
+                          "y": 19,
+                          "fontSize": 14,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#2a2631",
+                          "lineHeight": 17
+                        },
+                        {
+                          "id": "ui.composer.send@58",
+                          "type": "rect",
+                          "x": 434,
+                          "y": 17,
+                          "width": 38,
+                          "height": 29,
+                          "fill": "#623864",
+                          "radius": 8
+                        },
+                        {
+                          "id": "ui.composer.send-label@58",
+                          "type": "text",
+                          "text": "Send",
+                          "x": 453,
+                          "y": 25,
+                          "fontSize": 10,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#ffffff",
+                          "textAnchor": "middle",
+                          "fontWeight": 700
+                        }
+                      ],
+                      "start": 1.9333333333333333,
+                      "end": 2
+                    },
+                    {
+                      "id": "ui.composer@60",
+                      "type": "group",
+                      "x": 0,
+                      "y": 0,
+                      "children": [
+                        {
+                          "id": "ui.composer.paper@60",
+                          "type": "rect",
+                          "x": 0,
+                          "y": 0,
+                          "width": 490,
+                          "height": 56,
+                          "fill": "#f6f0e7",
+                          "radius": 0
+                        },
+                        {
+                          "id": "ui.composer.rule@60",
+                          "type": "rect",
+                          "x": 18,
+                          "y": 0,
+                          "width": 454,
+                          "height": 1,
+                          "fill": "#ded1d0",
+                          "radius": 0
+                        },
+                        {
+                          "id": "ui.composer.add@60",
+                          "type": "rect",
+                          "x": 18,
+                          "y": 17,
+                          "width": 29,
+                          "height": 29,
+                          "fill": "#e8dbe8",
+                          "radius": 8
+                        },
+                        {
+                          "id": "ui.composer.plus@60",
+                          "type": "text",
+                          "text": "+",
+                          "x": 32.5,
+                          "y": 20,
+                          "fontSize": 18,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#623864",
+                          "textAnchor": "middle"
+                        },
+                        {
+                          "id": "ui.composer.field@60",
+                          "type": "rect",
+                          "x": 54,
+                          "y": 10,
+                          "width": 374,
+                          "height": 36,
+                          "fill": "#fffaf4",
+                          "radius": 11,
+                          "stroke": "#ded1d0",
+                          "strokeWidth": 1
+                        },
+                        {
+                          "id": "ui.composer.draft@60",
+                          "type": "text",
+                          "text": "Can you send the trail map?",
+                          "x": 65,
+                          "y": 19,
+                          "fontSize": 14,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#2a2631",
+                          "lineHeight": 17
+                        },
+                        {
+                          "id": "ui.composer.send@60",
+                          "type": "rect",
+                          "x": 434,
+                          "y": 17,
+                          "width": 38,
+                          "height": 29,
+                          "fill": "#623864",
+                          "radius": 8
+                        },
+                        {
+                          "id": "ui.composer.send-label@60",
+                          "type": "text",
+                          "text": "Send",
+                          "x": 453,
+                          "y": 25,
+                          "fontSize": 10,
+                          "fontFamily": "DejaVu Sans",
+                          "fill": "#ffffff",
+                          "textAnchor": "middle",
+                          "fontWeight": 700
+                        }
+                      ],
+                      "start": 2
+                    }
+                  ],
+                  "opacity": 1
+                },
+                {
+                  "id": "ui.suggestion",
+                  "type": "group",
+                  "x": 0,
+                  "y": 410,
+                  "children": [],
+                  "opacity": 0
+                },
+                {
+                  "id": "ui.footer",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 466,
+                  "width": 490,
+                  "height": 14,
+                  "fill": "#f6f0e7",
+                  "radius": 0
+                },
+                {
+                  "id": "ui.header",
+                  "type": "group",
+                  "x": 0,
+                  "y": 0,
+                  "children": [
+                    {
+                      "id": "ui.header.paper",
+                      "type": "rect",
+                      "x": 0,
+                      "y": 0,
+                      "width": 490,
+                      "height": 78,
+                      "fill": "#f6f0e7",
+                      "radius": 0
+                    },
+                    {
+                      "id": "ui.header.rule",
+                      "type": "rect",
+                      "x": 18,
+                      "y": 77,
+                      "width": 454,
+                      "height": 1,
+                      "fill": "#ded1d0",
+                      "radius": 0
+                    },
+                    {
+                      "id": "ui.header.badge",
+                      "type": "rect",
+                      "x": 18,
+                      "y": 19,
+                      "width": 39,
+                      "height": 39,
+                      "fill": "#623864",
+                      "radius": 10
+                    },
+                    {
+                      "id": "ui.header.initial",
+                      "type": "text",
+                      "text": "A",
+                      "x": 37.5,
+                      "y": 29,
+                      "fontSize": 15,
+                      "fontFamily": "DejaVu Sans",
+                      "fill": "#ffffff",
+                      "textAnchor": "middle",
+                      "fontWeight": 700
+                    },
+                    {
+                      "id": "ui.header.title",
+                      "type": "text",
+                      "text": "Alpine field notes",
+                      "x": 70,
+                      "y": 17,
+                      "fontSize": 19,
+                      "fontFamily": "DejaVu Sans",
+                      "fill": "#2a2631",
+                      "fontWeight": 700
+                    },
+                    {
+                      "id": "ui.header.service",
+                      "type": "text",
+                      "text": "Field guide · Autumn",
+                      "x": 70,
+                      "y": 43,
+                      "fontSize": 11,
+                      "fontFamily": "DejaVu Sans",
+                      "fill": "#655965"
+                    }
+                  ],
+                  "opacity": 1
+                },
+                {
+                  "id": "ui.overlay",
+                  "type": "group",
+                  "x": 0,
+                  "y": 480,
+                  "children": [],
+                  "opacity": 0
+                },
+                {
+                  "id": "ui.inbox",
+                  "type": "group",
+                  "x": 0,
+                  "y": 0,
+                  "children": [
+                    {
+                      "id": "ui.inbox.paper",
+                      "type": "rect",
+                      "x": 0,
+                      "y": 0,
+                      "width": 490,
+                      "height": 480,
+                      "fill": "#f6f0e7",
+                      "radius": 0
+                    },
+                    {
+                      "id": "ui.inbox.viewport",
+                      "type": "group",
+                      "x": 0,
+                      "y": 78,
+                      "children": [
+                        {
+                          "id": "ui.inbox.rows",
+                          "type": "group",
+                          "x": 0,
+                          "y": 0,
+                          "children": [],
+                          "opacity": 0
+                        },
+                        {
+                          "id": "ui.inbox.results",
+                          "type": "group",
+                          "x": 0,
+                          "y": 0,
+                          "children": [],
+                          "opacity": 0
+                        }
+                      ],
+                      "clip": {
+                        "x": 0,
+                        "y": 0,
+                        "width": 490,
+                        "height": 334,
+                        "radius": 0
+                      }
+                    },
+                    {
+                      "id": "ui.inbox.chrome",
+                      "type": "group",
+                      "x": 0,
+                      "y": 0,
+                      "children": []
+                    }
+                  ],
+                  "opacity": 0
+                }
+              ],
+              "clip": {
+                "x": 0,
+                "y": 0,
+                "width": 490,
+                "height": 480,
+                "radius": 0
+              }
+            }
+          ],
+          "originX": 245,
+          "originY": 240
+        }
+      ]
+    }
+  ],
+  "fonts": [
+    {
+      "family": "DejaVu Sans",
+      "weight": 400,
+      "src": "/tmp/imv-ui-matrix.rS4TSx/dejavu-fonts-ttf-2.37/ttf/DejaVuSans.ttf"
+    },
+    {
+      "family": "DejaVu Sans",
+      "weight": 700,
+      "src": "/tmp/imv-ui-matrix.rS4TSx/dejavu-fonts-ttf-2.37/ttf/DejaVuSans-Bold.ttf"
+    }
+  ],
+  "timeline": {
+    "version": 1,
+    "picture": {
+      "fpsNum": 30,
+      "fpsDen": 1,
+      "frameCount": 72
+    },
+    "initialUI": {
+      "conversationId": "thread.motion",
+      "messages": [],
+      "composer": {
+        "text": "",
+        "focused": false,
+        "keyboardVisible": false
+      },
+      "viewport": {
+        "surface": "conversation",
+        "anchorMessageId": null,
+        "scrollOffset": 0
+      },
+      "typingSenderIds": []
+    },
+    "events": [
+      {
+        "id": "motion.composer-type.first-character",
+        "kind": "typing",
+        "target": "thread.motion",
+        "frame": 12,
+        "uiState": {
+          "conversationId": "thread.motion",
+          "messages": [],
+          "composer": {
+            "text": "C",
+            "focused": false,
+            "keyboardVisible": false
+          },
+          "viewport": {
+            "surface": "conversation",
+            "anchorMessageId": null,
+            "scrollOffset": 0
+          },
+          "typingSenderIds": []
+        },
+        "layerIds": [
+          "ui.composer"
+        ]
+      },
+      {
+        "id": "motion.composer-type.draft-2",
+        "kind": "draft",
+        "target": "thread.motion",
+        "frame": 13,
+        "uiState": {
+          "conversationId": "thread.motion",
+          "messages": [],
+          "composer": {
+            "text": "Ca",
+            "focused": false,
+            "keyboardVisible": false
+          },
+          "viewport": {
+            "surface": "conversation",
+            "anchorMessageId": null,
+            "scrollOffset": 0
+          },
+          "typingSenderIds": []
+        },
+        "layerIds": [
+          "ui.composer"
+        ]
+      },
+      {
+        "id": "motion.composer-type.draft-3",
+        "kind": "draft",
+        "target": "thread.motion",
+        "frame": 15,
+        "uiState": {
+          "conversationId": "thread.motion",
+          "messages": [],
+          "composer": {
+            "text": "Can",
+            "focused": false,
+            "keyboardVisible": false
+          },
+          "viewport": {
+            "surface": "conversation",
+            "anchorMessageId": null,
+            "scrollOffset": 0
+          },
+          "typingSenderIds": []
+        },
+        "layerIds": [
+          "ui.composer"
+        ]
+      },
+      {
+        "id": "motion.composer-type.draft-4",
+        "kind": "draft",
+        "target": "thread.motion",
+        "frame": 17,
+        "uiState": {
+          "conversationId": "thread.motion",
+          "messages": [],
+          "composer": {
+            "text": "Can ",
+            "focused": false,
+            "keyboardVisible": false
+          },
+          "viewport": {
+            "surface": "conversation",
+            "anchorMessageId": null,
+            "scrollOffset": 0
+          },
+          "typingSenderIds": []
+        },
+        "layerIds": [
+          "ui.composer"
+        ]
+      },
+      {
+        "id": "motion.composer-type.draft-5",
+        "kind": "draft",
+        "target": "thread.motion",
+        "frame": 19,
+        "uiState": {
+          "conversationId": "thread.motion",
+          "messages": [],
+          "composer": {
+            "text": "Can y",
+            "focused": false,
+            "keyboardVisible": false
+          },
+          "viewport": {
+            "surface": "conversation",
+            "anchorMessageId": null,
+            "scrollOffset": 0
+          },
+          "typingSenderIds": []
+        },
+        "layerIds": [
+          "ui.composer"
+        ]
+      },
+      {
+        "id": "motion.composer-type.draft-6",
+        "kind": "draft",
+        "target": "thread.motion",
+        "frame": 21,
+        "uiState": {
+          "conversationId": "thread.motion",
+          "messages": [],
+          "composer": {
+            "text": "Can yo",
+            "focused": false,
+            "keyboardVisible": false
+          },
+          "viewport": {
+            "surface": "conversation",
+            "anchorMessageId": null,
+            "scrollOffset": 0
+          },
+          "typingSenderIds": []
+        },
+        "layerIds": [
+          "ui.composer"
+        ]
+      },
+      {
+        "id": "motion.composer-type.draft-7",
+        "kind": "draft",
+        "target": "thread.motion",
+        "frame": 23,
+        "uiState": {
+          "conversationId": "thread.motion",
+          "messages": [],
+          "composer": {
+            "text": "Can you",
+            "focused": false,
+            "keyboardVisible": false
+          },
+          "viewport": {
+            "surface": "conversation",
+            "anchorMessageId": null,
+            "scrollOffset": 0
+          },
+          "typingSenderIds": []
+        },
+        "layerIds": [
+          "ui.composer"
+        ]
+      },
+      {
+        "id": "motion.composer-type.draft-8",
+        "kind": "draft",
+        "target": "thread.motion",
+        "frame": 24,
+        "uiState": {
+          "conversationId": "thread.motion",
+          "messages": [],
+          "composer": {
+            "text": "Can you ",
+            "focused": false,
+            "keyboardVisible": false
+          },
+          "viewport": {
+            "surface": "conversation",
+            "anchorMessageId": null,
+            "scrollOffset": 0
+          },
+          "typingSenderIds": []
+        },
+        "layerIds": [
+          "ui.composer"
+        ]
+      },
+      {
+        "id": "motion.composer-type.draft-9",
+        "kind": "draft",
+        "target": "thread.motion",
+        "frame": 26,
+        "uiState": {
+          "conversationId": "thread.motion",
+          "messages": [],
+          "composer": {
+            "text": "Can you s",
+            "focused": false,
+            "keyboardVisible": false
+          },
+          "viewport": {
+            "surface": "conversation",
+            "anchorMessageId": null,
+            "scrollOffset": 0
+          },
+          "typingSenderIds": []
+        },
+        "layerIds": [
+          "ui.composer"
+        ]
+      },
+      {
+        "id": "motion.composer-type.draft-10",
+        "kind": "draft",
+        "target": "thread.motion",
+        "frame": 28,
+        "uiState": {
+          "conversationId": "thread.motion",
+          "messages": [],
+          "composer": {
+            "text": "Can you se",
+            "focused": false,
+            "keyboardVisible": false
+          },
+          "viewport": {
+            "surface": "conversation",
+            "anchorMessageId": null,
+            "scrollOffset": 0
+          },
+          "typingSenderIds": []
+        },
+        "layerIds": [
+          "ui.composer"
+        ]
+      },
+      {
+        "id": "motion.composer-type.draft-11",
+        "kind": "draft",
+        "target": "thread.motion",
+        "frame": 30,
+        "uiState": {
+          "conversationId": "thread.motion",
+          "messages": [],
+          "composer": {
+            "text": "Can you sen",
+            "focused": false,
+            "keyboardVisible": false
+          },
+          "viewport": {
+            "surface": "conversation",
+            "anchorMessageId": null,
+            "scrollOffset": 0
+          },
+          "typingSenderIds": []
+        },
+        "layerIds": [
+          "ui.composer"
+        ]
+      },
+      {
+        "id": "motion.composer-type.draft-12",
+        "kind": "draft",
+        "target": "thread.motion",
+        "frame": 32,
+        "uiState": {
+          "conversationId": "thread.motion",
+          "messages": [],
+          "composer": {
+            "text": "Can you send",
+            "focused": false,
+            "keyboardVisible": false
+          },
+          "viewport": {
+            "surface": "conversation",
+            "anchorMessageId": null,
+            "scrollOffset": 0
+          },
+          "typingSenderIds": []
+        },
+        "layerIds": [
+          "ui.composer"
+        ]
+      },
+      {
+        "id": "motion.composer-type.draft-13",
+        "kind": "draft",
+        "target": "thread.motion",
+        "frame": 34,
+        "uiState": {
+          "conversationId": "thread.motion",
+          "messages": [],
+          "composer": {
+            "text": "Can you send ",
+            "focused": false,
+            "keyboardVisible": false
+          },
+          "viewport": {
+            "surface": "conversation",
+            "anchorMessageId": null,
+            "scrollOffset": 0
+          },
+          "typingSenderIds": []
+        },
+        "layerIds": [
+          "ui.composer"
+        ]
+      },
+      {
+        "id": "motion.composer-type.draft-14",
+        "kind": "draft",
+        "target": "thread.motion",
+        "frame": 36,
+        "uiState": {
+          "conversationId": "thread.motion",
+          "messages": [],
+          "composer": {
+            "text": "Can you send t",
+            "focused": false,
+            "keyboardVisible": false
+          },
+          "viewport": {
+            "surface": "conversation",
+            "anchorMessageId": null,
+            "scrollOffset": 0
+          },
+          "typingSenderIds": []
+        },
+        "layerIds": [
+          "ui.composer"
+        ]
+      },
+      {
+        "id": "motion.composer-type.draft-15",
+        "kind": "draft",
+        "target": "thread.motion",
+        "frame": 37,
+        "uiState": {
+          "conversationId": "thread.motion",
+          "messages": [],
+          "composer": {
+            "text": "Can you send th",
+            "focused": false,
+            "keyboardVisible": false
+          },
+          "viewport": {
+            "surface": "conversation",
+            "anchorMessageId": null,
+            "scrollOffset": 0
+          },
+          "typingSenderIds": []
+        },
+        "layerIds": [
+          "ui.composer"
+        ]
+      },
+      {
+        "id": "motion.composer-type.draft-16",
+        "kind": "draft",
+        "target": "thread.motion",
+        "frame": 39,
+        "uiState": {
+          "conversationId": "thread.motion",
+          "messages": [],
+          "composer": {
+            "text": "Can you send the",
+            "focused": false,
+            "keyboardVisible": false
+          },
+          "viewport": {
+            "surface": "conversation",
+            "anchorMessageId": null,
+            "scrollOffset": 0
+          },
+          "typingSenderIds": []
+        },
+        "layerIds": [
+          "ui.composer"
+        ]
+      },
+      {
+        "id": "motion.composer-type.draft-17",
+        "kind": "draft",
+        "target": "thread.motion",
+        "frame": 41,
+        "uiState": {
+          "conversationId": "thread.motion",
+          "messages": [],
+          "composer": {
+            "text": "Can you send the ",
+            "focused": false,
+            "keyboardVisible": false
+          },
+          "viewport": {
+            "surface": "conversation",
+            "anchorMessageId": null,
+            "scrollOffset": 0
+          },
+          "typingSenderIds": []
+        },
+        "layerIds": [
+          "ui.composer"
+        ]
+      },
+      {
+        "id": "motion.composer-type.draft-18",
+        "kind": "draft",
+        "target": "thread.motion",
+        "frame": 43,
+        "uiState": {
+          "conversationId": "thread.motion",
+          "messages": [],
+          "composer": {
+            "text": "Can you send the t",
+            "focused": false,
+            "keyboardVisible": false
+          },
+          "viewport": {
+            "surface": "conversation",
+            "anchorMessageId": null,
+            "scrollOffset": 0
+          },
+          "typingSenderIds": []
+        },
+        "layerIds": [
+          "ui.composer"
+        ]
+      },
+      {
+        "id": "motion.composer-type.draft-19",
+        "kind": "draft",
+        "target": "thread.motion",
+        "frame": 45,
+        "uiState": {
+          "conversationId": "thread.motion",
+          "messages": [],
+          "composer": {
+            "text": "Can you send the tr",
+            "focused": false,
+            "keyboardVisible": false
+          },
+          "viewport": {
+            "surface": "conversation",
+            "anchorMessageId": null,
+            "scrollOffset": 0
+          },
+          "typingSenderIds": []
+        },
+        "layerIds": [
+          "ui.composer"
+        ]
+      },
+      {
+        "id": "motion.composer-type.draft-20",
+        "kind": "draft",
+        "target": "thread.motion",
+        "frame": 47,
+        "uiState": {
+          "conversationId": "thread.motion",
+          "messages": [],
+          "composer": {
+            "text": "Can you send the tra",
+            "focused": false,
+            "keyboardVisible": false
+          },
+          "viewport": {
+            "surface": "conversation",
+            "anchorMessageId": null,
+            "scrollOffset": 0
+          },
+          "typingSenderIds": []
+        },
+        "layerIds": [
+          "ui.composer"
+        ]
+      },
+      {
+        "id": "motion.composer-type.draft-21",
+        "kind": "draft",
+        "target": "thread.motion",
+        "frame": 48,
+        "uiState": {
+          "conversationId": "thread.motion",
+          "messages": [],
+          "composer": {
+            "text": "Can you send the trai",
+            "focused": false,
+            "keyboardVisible": false
+          },
+          "viewport": {
+            "surface": "conversation",
+            "anchorMessageId": null,
+            "scrollOffset": 0
+          },
+          "typingSenderIds": []
+        },
+        "layerIds": [
+          "ui.composer"
+        ]
+      },
+      {
+        "id": "motion.composer-type.draft-22",
+        "kind": "draft",
+        "target": "thread.motion",
+        "frame": 50,
+        "uiState": {
+          "conversationId": "thread.motion",
+          "messages": [],
+          "composer": {
+            "text": "Can you send the trail",
+            "focused": false,
+            "keyboardVisible": false
+          },
+          "viewport": {
+            "surface": "conversation",
+            "anchorMessageId": null,
+            "scrollOffset": 0
+          },
+          "typingSenderIds": []
+        },
+        "layerIds": [
+          "ui.composer"
+        ]
+      },
+      {
+        "id": "motion.composer-type.draft-23",
+        "kind": "draft",
+        "target": "thread.motion",
+        "frame": 52,
+        "uiState": {
+          "conversationId": "thread.motion",
+          "messages": [],
+          "composer": {
+            "text": "Can you send the trail ",
+            "focused": false,
+            "keyboardVisible": false
+          },
+          "viewport": {
+            "surface": "conversation",
+            "anchorMessageId": null,
+            "scrollOffset": 0
+          },
+          "typingSenderIds": []
+        },
+        "layerIds": [
+          "ui.composer"
+        ]
+      },
+      {
+        "id": "motion.composer-type.draft-24",
+        "kind": "draft",
+        "target": "thread.motion",
+        "frame": 54,
+        "uiState": {
+          "conversationId": "thread.motion",
+          "messages": [],
+          "composer": {
+            "text": "Can you send the trail m",
+            "focused": false,
+            "keyboardVisible": false
+          },
+          "viewport": {
+            "surface": "conversation",
+            "anchorMessageId": null,
+            "scrollOffset": 0
+          },
+          "typingSenderIds": []
+        },
+        "layerIds": [
+          "ui.composer"
+        ]
+      },
+      {
+        "id": "motion.composer-type.draft-25",
+        "kind": "draft",
+        "target": "thread.motion",
+        "frame": 56,
+        "uiState": {
+          "conversationId": "thread.motion",
+          "messages": [],
+          "composer": {
+            "text": "Can you send the trail ma",
+            "focused": false,
+            "keyboardVisible": false
+          },
+          "viewport": {
+            "surface": "conversation",
+            "anchorMessageId": null,
+            "scrollOffset": 0
+          },
+          "typingSenderIds": []
+        },
+        "layerIds": [
+          "ui.composer"
+        ]
+      },
+      {
+        "id": "motion.composer-type.draft-26",
+        "kind": "draft",
+        "target": "thread.motion",
+        "frame": 58,
+        "uiState": {
+          "conversationId": "thread.motion",
+          "messages": [],
+          "composer": {
+            "text": "Can you send the trail map",
+            "focused": false,
+            "keyboardVisible": false
+          },
+          "viewport": {
+            "surface": "conversation",
+            "anchorMessageId": null,
+            "scrollOffset": 0
+          },
+          "typingSenderIds": []
+        },
+        "layerIds": [
+          "ui.composer"
+        ]
+      },
+      {
+        "id": "motion.composer-type.draft-27",
+        "kind": "draft",
+        "target": "thread.motion",
+        "frame": 60,
+        "uiState": {
+          "conversationId": "thread.motion",
+          "messages": [],
+          "composer": {
+            "text": "Can you send the trail map?",
+            "focused": false,
+            "keyboardVisible": false
+          },
+          "viewport": {
+            "surface": "conversation",
+            "anchorMessageId": null,
+            "scrollOffset": 0
+          },
+          "typingSenderIds": []
+        },
+        "layerIds": [
+          "ui.composer"
+        ]
+      },
+      {
+        "id": "motion.composer-type.draft-complete",
+        "kind": "typing_end",
+        "target": "thread.motion",
+        "layerIds": [
+          "ui.composer"
+        ],
+        "frame": 60
+      }
+    ],
+    "cues": []
+  },
+  "source": {
+    "path": "packs/conversation.mjs#composer-type",
+    "sourceStart": 0,
+    "sourceEnd": 2.4,
+    "notes": "Clone iMessage UI film-paper adaptation. The typing beat uses frame-addressed draft revisions and the adapter’s composer. Longer input wraps in the field."
+  }
+}

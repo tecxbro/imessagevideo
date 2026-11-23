@@ -1,0 +1,102 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 72
+  },
+  "initialUI": {
+    "conversationId": "thread.motion",
+    "messages": [
+      {
+        "id": "message.prior",
+        "senderId": "account.remote",
+        "text": "Here it is. Meet at the north gate.",
+        "attachmentIds": [],
+        "reactions": {},
+        "edited": false,
+        "receipt": ""
+      },
+      {
+        "id": "message.target",
+        "senderId": "account.self",
+        "text": "Can you send the trail map?",
+        "attachmentIds": [],
+        "reactions": {},
+        "edited": false,
+        "receipt": ""
+      }
+    ],
+    "composer": {
+      "text": "",
+      "focused": false,
+      "keyboardVisible": false
+    },
+    "viewport": {
+      "surface": "conversation",
+      "anchorMessageId": "message.target",
+      "scrollOffset": 0
+    },
+    "typingSenderIds": []
+  },
+  "events": [
+    {
+      "id": "motion.long-press-actions.hold-threshold",
+      "kind": "long_press",
+      "target": "message.target",
+      "frame": 20,
+      "uiState": {
+        "conversationId": "thread.motion",
+        "messages": [
+          {
+            "id": "message.prior",
+            "senderId": "account.remote",
+            "text": "Here it is. Meet at the north gate.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "message.target",
+            "senderId": "account.self",
+            "text": "Can you send the trail map?",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          }
+        ],
+        "composer": {
+          "text": "",
+          "focused": false,
+          "keyboardVisible": false
+        },
+        "viewport": {
+          "surface": "context",
+          "anchorMessageId": "message.target",
+          "scrollOffset": 0,
+          "selection": [
+            "message.target"
+          ]
+        },
+        "typingSenderIds": []
+      },
+      "layerIds": [
+        "ui.overlay",
+        "ui.inbox"
+      ]
+    },
+    {
+      "id": "motion.long-press-actions.actions-ready",
+      "kind": "menu_open",
+      "target": "message.target",
+      "layerIds": [
+        "ui.overlay",
+        "ui.inbox"
+      ],
+      "frame": 31
+    }
+  ],
+  "cues": []
+}

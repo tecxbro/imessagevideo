@@ -1,0 +1,364 @@
+{
+  "width": 720,
+  "height": 480,
+  "fps": 30,
+  "duration": 2.4,
+  "background": "#dce7f1",
+  "title": "Track transfer progress to a usable attachment",
+  "source": {
+    "path": "packs/media.mjs#attachment-download-progress",
+    "sourceStart": 0,
+    "sourceEnd": 2.4,
+    "notes": "Motion-authored shot. Gesture and timing are illustrative."
+  },
+  "layers": [
+    {
+      "id": "surface",
+      "type": "rect",
+      "x": 110,
+      "y": 44,
+      "width": 500,
+      "height": 392,
+      "fill": "#ffffff",
+      "radius": 18
+    },
+    {
+      "id": "stage",
+      "type": "group",
+      "x": 110,
+      "y": 98,
+      "children": [
+        {
+          "id": "download-card",
+          "type": "rect",
+          "x": 51,
+          "y": 76,
+          "width": 398,
+          "height": 132,
+          "fill": "#ffffff",
+          "radius": 17,
+          "stroke": "#e8eef5",
+          "strokeWidth": 1
+        },
+        {
+          "id": "download-icon",
+          "type": "group",
+          "x": 67,
+          "y": 93,
+          "children": [
+            {
+              "id": "download-icon-image",
+              "type": "image",
+              "src": "/Users/darshan/Documents/ChatGPT/imessage-video/codex-trial/skill/imessage-motion-recreation/motion/assets/landscape-1.png",
+              "x": 0,
+              "y": 0,
+              "width": 88,
+              "height": 96
+            }
+          ],
+          "clip": {
+            "x": 0,
+            "y": 0,
+            "width": 88,
+            "height": 96,
+            "radius": 9
+          }
+        },
+        {
+          "id": "download-title",
+          "type": "text",
+          "text": "The north ridge",
+          "x": 173,
+          "y": 101,
+          "fontSize": 19,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#17191d",
+          "fontWeight": 600
+        },
+        {
+          "id": "download-rail",
+          "type": "rect",
+          "x": 173,
+          "y": 149,
+          "width": 253,
+          "height": 5,
+          "fill": "#e8eef5",
+          "radius": 2.5
+        },
+        {
+          "id": "download-progress",
+          "type": "rect",
+          "x": 173,
+          "y": 149,
+          "width": 0,
+          "height": 5,
+          "fill": "#1478e9",
+          "radius": 2.5,
+          "keyframes": {
+            "width": [
+              {
+                "t": 0,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 0.48,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 0.84,
+                "value": 68.31,
+                "ease": "linear"
+              },
+              {
+                "t": 1.008,
+                "value": 68.31,
+                "ease": "linear"
+              },
+              {
+                "t": 1.3679999999999999,
+                "value": 169.51000000000002,
+                "ease": "linear"
+              },
+              {
+                "t": 1.512,
+                "value": 169.51000000000002,
+                "ease": "linear"
+              },
+              {
+                "t": 1.896,
+                "value": 253,
+                "ease": "linear"
+              }
+            ],
+            "fill": [
+              {
+                "t": 0,
+                "value": "#1478e9",
+                "ease": "linear"
+              },
+              {
+                "t": 1.896,
+                "value": "#16815f",
+                "ease": "hold"
+              }
+            ]
+          }
+        },
+        {
+          "id": "download-status",
+          "type": "text",
+          "text": "Download",
+          "x": 173,
+          "y": 167,
+          "fontSize": 15,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#516277",
+          "keyframes": {
+            "text": [
+              {
+                "t": 0,
+                "value": "Download",
+                "ease": "hold"
+              },
+              {
+                "t": 0.48,
+                "value": "0%",
+                "ease": "hold"
+              },
+              {
+                "t": 0.5466666666666666,
+                "value": "5%",
+                "ease": "hold"
+              },
+              {
+                "t": 0.6133333333333333,
+                "value": "10%",
+                "ease": "hold"
+              },
+              {
+                "t": 0.6799999999999999,
+                "value": "15%",
+                "ease": "hold"
+              },
+              {
+                "t": 0.7466666666666667,
+                "value": "20%",
+                "ease": "hold"
+              },
+              {
+                "t": 0.8133333333333334,
+                "value": "25%",
+                "ease": "hold"
+              },
+              {
+                "t": 0.84,
+                "value": "27%",
+                "ease": "hold"
+              },
+              {
+                "t": 1.053,
+                "value": "32%",
+                "ease": "hold"
+              },
+              {
+                "t": 1.0979999999999999,
+                "value": "37%",
+                "ease": "hold"
+              },
+              {
+                "t": 1.1429999999999998,
+                "value": "42%",
+                "ease": "hold"
+              },
+              {
+                "t": 1.188,
+                "value": "47%",
+                "ease": "hold"
+              },
+              {
+                "t": 1.2329999999999999,
+                "value": "52%",
+                "ease": "hold"
+              },
+              {
+                "t": 1.2779999999999998,
+                "value": "57%",
+                "ease": "hold"
+              },
+              {
+                "t": 1.323,
+                "value": "62%",
+                "ease": "hold"
+              },
+              {
+                "t": 1.3679999999999999,
+                "value": "67%",
+                "ease": "hold"
+              },
+              {
+                "t": 1.5701818181818183,
+                "value": "72%",
+                "ease": "hold"
+              },
+              {
+                "t": 1.6283636363636362,
+                "value": "77%",
+                "ease": "hold"
+              },
+              {
+                "t": 1.6865454545454546,
+                "value": "82%",
+                "ease": "hold"
+              },
+              {
+                "t": 1.744727272727273,
+                "value": "87%",
+                "ease": "hold"
+              },
+              {
+                "t": 1.8029090909090908,
+                "value": "92%",
+                "ease": "hold"
+              },
+              {
+                "t": 1.8610909090909091,
+                "value": "97%",
+                "ease": "hold"
+              },
+              {
+                "t": 1.896,
+                "value": "Available to open",
+                "ease": "hold"
+              }
+            ]
+          }
+        }
+      ],
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 500,
+        "height": 298
+      }
+    },
+    {
+      "id": "footer",
+      "type": "group",
+      "x": 110,
+      "y": 396,
+      "children": [
+        {
+          "id": "footer-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 40,
+          "fill": "#f2f6fb",
+          "radius": 12
+        }
+      ]
+    },
+    {
+      "id": "heading",
+      "type": "group",
+      "x": 110,
+      "y": 44,
+      "children": [
+        {
+          "id": "heading-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 54,
+          "fill": "#f2f6fb",
+          "radius": 13
+        },
+        {
+          "id": "heading-copy",
+          "type": "text",
+          "text": "Alpine field notes",
+          "x": 26,
+          "y": 13,
+          "fontSize": 23,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#182737",
+          "fontWeight": 700
+        }
+      ]
+    }
+  ],
+  "timeline": {
+    "version": 1,
+    "picture": {
+      "fpsNum": 30,
+      "fpsDen": 1,
+      "frameCount": 72
+    },
+    "initialUI": null,
+    "events": [
+      {
+        "id": "motion.attachment-download-progress.transfer-start",
+        "kind": "download_start",
+        "target": "download-progress",
+        "frame": 15,
+        "layerIds": [
+          "download-progress"
+        ]
+      },
+      {
+        "id": "motion.attachment-download-progress.transfer-complete",
+        "kind": "download_complete",
+        "target": "download-progress",
+        "frame": 57,
+        "layerIds": [
+          "download-progress"
+        ]
+      }
+    ],
+    "cues": []
+  }
+}

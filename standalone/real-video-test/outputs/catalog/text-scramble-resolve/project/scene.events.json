@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 72
+  },
+  "initialUI": null,
+  "events": [
+    {
+      "id": "motion.text-scramble-resolve.scramble-start",
+      "kind": "label.decode.begin",
+      "target": "decoded-title",
+      "frame": 11,
+      "layerIds": [
+        "decoded-title"
+      ]
+    },
+    {
+      "id": "motion.text-scramble-resolve.title-readable",
+      "kind": "label.decode.readable",
+      "target": "decoded-title",
+      "frame": 46,
+      "layerIds": [
+        "decoded-title"
+      ]
+    }
+  ],
+  "cues": []
+}

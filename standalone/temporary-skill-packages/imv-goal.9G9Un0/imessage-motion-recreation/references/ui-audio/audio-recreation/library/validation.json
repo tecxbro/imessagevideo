@@ -1,0 +1,940 @@
+{
+  "status": "pass",
+  "assets": 37,
+  "checks": [
+    "archive/source/prepared provenance",
+    "PCM24 48k stereo",
+    "finite/no clipping",
+    "\u22126dBFS peak headroom",
+    "zero endpoints/DC/clean tails",
+    "deterministic bandlimited pitch/gain/pan variations",
+    "hard-pan silent opposite channel"
+  ],
+  "reports": [
+    {
+      "id": "kenney_click_001",
+      "prepared_sha256": "3cdcdd0a7dd41eded18064a7e36b4d320dc2c478b5aa126ec75ec6c639822ccf",
+      "statistics": {
+        "samples": 2529,
+        "duration_s": 0.0526875,
+        "sample_rate": 48000,
+        "channels": 2,
+        "peak": 0.5011871458515103,
+        "peak_dbfs": -6.000001521209236,
+        "rms": 0.03807022825341041,
+        "dc": [
+          3.7709550015985527e-10,
+          3.7709550015985527e-10
+        ],
+        "peak_time_ms": 1.1458333333333333,
+        "attack_peak_sample": 55,
+        "attack_peak_window_s": 0.08,
+        "spectral_centroid_hz": 3883.977531887536,
+        "finite": true,
+        "clipped_samples": 0,
+        "endpoints_zero": true,
+        "last_half_ms_peak": 1.2159348983687041e-05
+      }
+    },
+    {
+      "id": "kenney_click_002",
+      "prepared_sha256": "70005ee56bbfa7366e4d0e5f93f574b97054f6f7a97f02439110dbec6bb101cb",
+      "statistics": {
+        "samples": 558,
+        "duration_s": 0.011625,
+        "sample_rate": 48000,
+        "channels": 2,
+        "peak": 0.5011871458515103,
+        "peak_dbfs": -6.000001521209236,
+        "rms": 0.10118217039466439,
+        "dc": [
+          2.1363673666501211e-10,
+          2.1363673666501211e-10
+        ],
+        "peak_time_ms": 0.5,
+        "attack_peak_sample": 24,
+        "attack_peak_window_s": 0.08,
+        "spectral_centroid_hz": 939.0601017574164,
+        "finite": true,
+        "clipped_samples": 0,
+        "endpoints_zero": true,
+        "last_half_ms_peak": 2.6226046827560285e-05
+      }
+    },
+    {
+      "id": "kenney_click_003",
+      "prepared_sha256": "a192162c9ab394c89908f5cd8f0024b6b940962dfb7ea0a30b55849482ba8d31",
+      "statistics": {
+        "samples": 342,
+        "duration_s": 0.007125,
+        "sample_rate": 48000,
+        "channels": 2,
+        "peak": 0.5011871458515103,
+        "peak_dbfs": -6.000001521209236,
+        "rms": 0.12682391094376622,
+        "dc": [
+          -1.7428260740350645e-09,
+          -1.7428260740350645e-09
+        ],
+        "peak_time_ms": 0.5208333333333334,
+        "attack_peak_sample": 25,
+        "attack_peak_window_s": 0.08,
+        "spectral_centroid_hz": 1839.8308034590714,
+        "finite": true,
+        "clipped_samples": 0,
+        "endpoints_zero": true,
+        "last_half_ms_peak": 0.001353860062820919
+      }
+    },
+    {
+      "id": "kenney_click_004",
+      "prepared_sha256": "20e315e253fbebf37ee8bbb0b4a7295a419904a78aafe07369a85839a3f03a91",
+      "statistics": {
+        "samples": 1019,
+        "duration_s": 0.021229166666666667,
+        "sample_rate": 48000,
+        "channels": 2,
+        "peak": 0.5011871458515103,
+        "peak_dbfs": -6.000001521209236,
+        "rms": 0.04988419910149961,
+        "dc": [
+          3.5095967731456834e-10,
+          3.5095967731456834e-10
+        ],
+        "peak_time_ms": 0.3333333333333333,
+        "attack_peak_sample": 16,
+        "attack_peak_window_s": 0.08,
+        "spectral_centroid_hz": 10792.142314203924,
+        "finite": true,
+        "clipped_samples": 0,
+        "endpoints_zero": true,
+        "last_half_ms_peak": 3.3378605053258545e-06
+      }
+    },
+    {
+      "id": "kenney_click_005",
+      "prepared_sha256": "0a455972aa0fa1ceb1c280132d5f0f9433a0d87d00549c9235042eb561024ac6",
+      "statistics": {
+        "samples": 342,
+        "duration_s": 0.007125,
+        "sample_rate": 48000,
+        "channels": 2,
+        "peak": 0.5011871458515103,
+        "peak_dbfs": -6.000001521209236,
+        "rms": 0.1333344758935199,
+        "dc": [
+          -3.48565217066717e-09,
+          -3.48565217066717e-09
+        ],
+        "peak_time_ms": 1.3333333333333333,
+        "attack_peak_sample": 64,
+        "attack_peak_window_s": 0.08,
+        "spectral_centroid_hz": 3015.0091712421067,
+        "finite": true,
+        "clipped_samples": 0,
+        "endpoints_zero": true,
+        "last_half_ms_peak": 0.0014605523896875847
+      }
+    },
+    {
+      "id": "kenney_tick_001",
+      "prepared_sha256": "d665d6e126ded580b46085f4f75f5c1b17e6e74598e3288b1b5099a6364fd9c7",
+      "statistics": {
+        "samples": 1123,
+        "duration_s": 0.023395833333333334,
+        "sample_rate": 48000,
+        "channels": 2,
+        "peak": 0.5011871458515103,
+        "peak_dbfs": -6.000001521209236,
+        "rms": 0.04856261269853742,
+        "dc": [
+          2.123050821495949e-10,
+          2.123050821495949e-10
+        ],
+        "peak_time_ms": 0.5833333333333334,
+        "attack_peak_sample": 28,
+        "attack_peak_window_s": 0.08,
+        "spectral_centroid_hz": 7858.402070557575,
+        "finite": true,
+        "clipped_samples": 0,
+        "endpoints_zero": true,
+        "last_half_ms_peak": 2.145767467709478e-06
+      }
+    },
+    {
+      "id": "kenney_tick_002",
+      "prepared_sha256": "5f337a9b7593bf5153f6b47696a33b36f87bc2388d8a9410a1bc03e6c25c6c9b",
+      "statistics": {
+        "samples": 976,
+        "duration_s": 0.02033333333333333,
+        "sample_rate": 48000,
+        "channels": 2,
+        "peak": 0.5011871458515103,
+        "peak_dbfs": -6.000001521209236,
+        "rms": 0.05944089135917924,
+        "dc": [
+          1.2214068066408837e-10,
+          1.2214068066408837e-10
+        ],
+        "peak_time_ms": 0.5833333333333334,
+        "attack_peak_sample": 28,
+        "attack_peak_window_s": 0.08,
+        "spectral_centroid_hz": 6226.488229643024,
+        "finite": true,
+        "clipped_samples": 0,
+        "endpoints_zero": true,
+        "last_half_ms_peak": 1.3113023413780143e-05
+      }
+    },
+    {
+      "id": "kenney_tick_004",
+      "prepared_sha256": "7c8d55e3e052c90e895c44b4c6bb163a9d48a102ebb94c2a22a6eab8704d288a",
+      "statistics": {
+        "samples": 2648,
+        "duration_s": 0.05516666666666667,
+        "sample_rate": 48000,
+        "channels": 2,
+        "peak": 0.5011871458515103,
+        "peak_dbfs": -6.000001521209236,
+        "rms": 0.09324404962916119,
+        "dc": [
+          -4.5018611204499687e-10,
+          -4.5018611204499687e-10
+        ],
+        "peak_time_ms": 47.1875,
+        "attack_peak_sample": 2265,
+        "attack_peak_window_s": 0.08,
+        "spectral_centroid_hz": 3786.2961662991665,
+        "finite": true,
+        "clipped_samples": 0,
+        "endpoints_zero": true,
+        "last_half_ms_peak": 0.00024640563087530506
+      }
+    },
+    {
+      "id": "kenney_select_001",
+      "prepared_sha256": "a723d741dbe9f653c807f0eb8e3ab5e3799c81635bfbdb1f23868ace2a45d0b6",
+      "statistics": {
+        "samples": 1939,
+        "duration_s": 0.04039583333333333,
+        "sample_rate": 48000,
+        "channels": 2,
+        "peak": 0.5011871458515103,
+        "peak_dbfs": -6.000001521209236,
+        "rms": 0.07669308480119533,
+        "dc": [
+          7.992372087937164e-10,
+          7.992372087937164e-10
+        ],
+        "peak_time_ms": 1.8541666666666667,
+        "attack_peak_sample": 89,
+        "attack_peak_window_s": 0.08,
+        "spectral_centroid_hz": 3182.6298110645225,
+        "finite": true,
+        "clipped_samples": 0,
+        "endpoints_zero": true,
+        "last_half_ms_peak": 2.145767467709478e-06
+      }
+    },
+    {
+      "id": "kenney_select_002",
+      "prepared_sha256": "eee6f14af4d34190814b01e4385653ae36a5393913edf9da0b5479aade9f05d7",
+      "statistics": {
+        "samples": 1939,
+        "duration_s": 0.04039583333333333,
+        "sample_rate": 48000,
+        "channels": 2,
+        "peak": 0.5011871458515103,
+        "peak_dbfs": -6.000001521209236,
+        "rms": 0.08911679312941424,
+        "dc": [
+          2.459191434586998e-10,
+          2.459191434586998e-10
+        ],
+        "peak_time_ms": 2.2083333333333335,
+        "attack_peak_sample": 106,
+        "attack_peak_window_s": 0.08,
+        "spectral_centroid_hz": 2602.4793198856146,
+        "finite": true,
+        "clipped_samples": 0,
+        "endpoints_zero": true,
+        "last_half_ms_peak": 2.5391581701228823e-05
+      }
+    },
+    {
+      "id": "kenney_select_005",
+      "prepared_sha256": "fac5258ba752bf3ec0e198771f916e7da47b9edda94bd24d9ec3ff280cd64bfd",
+      "statistics": {
+        "samples": 10908,
+        "duration_s": 0.22725,
+        "sample_rate": 48000,
+        "channels": 2,
+        "peak": 0.5011871458515103,
+        "peak_dbfs": -6.000001521209236,
+        "rms": 0.08785426986832943,
+        "dc": [
+          -1.092861246620898e-10,
+          -1.092861246620898e-10
+        ],
+        "peak_time_ms": 12.208333333333334,
+        "attack_peak_sample": 586,
+        "attack_peak_window_s": 0.08,
+        "spectral_centroid_hz": 2370.537929925293,
+        "finite": true,
+        "clipped_samples": 0,
+        "endpoints_zero": true,
+        "last_half_ms_peak": 2.02655816394784e-06
+      }
+    },
+    {
+      "id": "kenney_switch_001",
+      "prepared_sha256": "26f93bda0aa46e1881af6cf9900b3316fd0bc024851c0a2666db2fe956578a50",
+      "statistics": {
+        "samples": 6972,
+        "duration_s": 0.14525,
+        "sample_rate": 48000,
+        "channels": 2,
+        "peak": 0.5011871458515103,
+        "peak_dbfs": -6.000001521209236,
+        "rms": 0.04993825421269112,
+        "dc": [
+          -9.660535947427804e-09,
+          -9.660535947427804e-09
+        ],
+        "peak_time_ms": 107.83333333333334,
+        "attack_peak_sample": 20,
+        "attack_peak_window_s": 0.08,
+        "spectral_centroid_hz": 4356.181893064031,
+        "finite": true,
+        "clipped_samples": 0,
+        "endpoints_zero": true,
+        "last_half_ms_peak": 2.384186075232753e-07
+      }
+    },
+    {
+      "id": "kenney_switch_004",
+      "prepared_sha256": "104d3d17dfcdf9cd7c946eb41d92d47474690463d8c73262894662416095dfd4",
+      "statistics": {
+        "samples": 7763,
+        "duration_s": 0.16172916666666667,
+        "sample_rate": 48000,
+        "channels": 2,
+        "peak": 0.5011871458515103,
+        "peak_dbfs": -6.000001521209236,
+        "rms": 0.061627151709865685,
+        "dc": [
+          -7.063799697290837e-10,
+          -7.063799697290837e-10
+        ],
+        "peak_time_ms": 107.39583333333333,
+        "attack_peak_sample": 12,
+        "attack_peak_window_s": 0.08,
+        "spectral_centroid_hz": 4976.004786967535,
+        "finite": true,
+        "clipped_samples": 0,
+        "endpoints_zero": true,
+        "last_half_ms_peak": 3.57627911284913e-07
+      }
+    },
+    {
+      "id": "kenney_toggle_001",
+      "prepared_sha256": "b0165b15f78eaff1a07dd33d8b6e739b62ce42cccafb900ec671c68fe5d408fc",
+      "statistics": {
+        "samples": 5432,
+        "duration_s": 0.11316666666666667,
+        "sample_rate": 48000,
+        "channels": 2,
+        "peak": 0.5011871458515103,
+        "peak_dbfs": -6.000001521209236,
+        "rms": 0.1218679487499092,
+        "dc": [
+          5.925351988516655e-10,
+          5.925351988516655e-10
+        ],
+        "peak_time_ms": 6.583333333333333,
+        "attack_peak_sample": 316,
+        "attack_peak_window_s": 0.08,
+        "spectral_centroid_hz": 5223.432038733072,
+        "finite": true,
+        "clipped_samples": 0,
+        "endpoints_zero": true,
+        "last_half_ms_peak": 5.960465188081883e-07
+      }
+    },
+    {
+      "id": "kenney_toggle_004",
+      "prepared_sha256": "f946dd6463bcc9f5c4e9893493eb2aaabc512613b9a54f26af044864d7620ff9",
+      "statistics": {
+        "samples": 3037,
+        "duration_s": 0.06327083333333333,
+        "sample_rate": 48000,
+        "channels": 2,
+        "peak": 0.5011871458515103,
+        "peak_dbfs": -6.000001521209236,
+        "rms": 0.13541247649146537,
+        "dc": [
+          5.495325160204241e-10,
+          5.495325160204241e-10
+        ],
+        "peak_time_ms": 0.14583333333333334,
+        "attack_peak_sample": 7,
+        "attack_peak_window_s": 0.08,
+        "spectral_centroid_hz": 6375.964571952063,
+        "finite": true,
+        "clipped_samples": 0,
+        "endpoints_zero": true,
+        "last_half_ms_peak": 2.9802325940409415e-06
+      }
+    },
+    {
+      "id": "kenney_drop_001",
+      "prepared_sha256": "5536fb305fbce91643f485fc784cce11051975708d8407421fa2f409ad172fa7",
+      "statistics": {
+        "samples": 5894,
+        "duration_s": 0.12279166666666666,
+        "sample_rate": 48000,
+        "channels": 2,
+        "peak": 0.5011871458515103,
+        "peak_dbfs": -6.000001521209236,
+        "rms": 0.04965229533855875,
+        "dc": [
+          -1.0517278043501205e-09,
+          -1.0517278043501205e-09
+        ],
+        "peak_time_ms": 0.2708333333333333,
+        "attack_peak_sample": 13,
+        "attack_peak_window_s": 0.08,
+        "spectral_centroid_hz": 4303.2459044123625,
+        "finite": true,
+        "clipped_samples": 0,
+        "endpoints_zero": true,
+        "last_half_ms_peak": 5.960465188081883e-07
+      }
+    },
+    {
+      "id": "kenney_drop_002",
+      "prepared_sha256": "7ab049f022ead15d09850a4f648f4785e5e66ec5f5f8ca8d393c013e50f08655",
+      "statistics": {
+        "samples": 9033,
+        "duration_s": 0.1881875,
+        "sample_rate": 48000,
+        "channels": 2,
+        "peak": 0.5011871458515103,
+        "peak_dbfs": -6.000001521209236,
+        "rms": 0.05810088713849112,
+        "dc": [
+          -2.6394155803292053e-11,
+          -2.6394155803292053e-11
+        ],
+        "peak_time_ms": 0.4583333333333333,
+        "attack_peak_sample": 22,
+        "attack_peak_window_s": 0.08,
+        "spectral_centroid_hz": 870.0578107564492,
+        "finite": true,
+        "clipped_samples": 0,
+        "endpoints_zero": true,
+        "last_half_ms_peak": 7.62939544074481e-06
+      }
+    },
+    {
+      "id": "kenney_pluck_001",
+      "prepared_sha256": "4701c8aa1f7e1596762a25f9c869ba882087b3e9fd7e8927b1e4861772eff918",
+      "statistics": {
+        "samples": 4778,
+        "duration_s": 0.09954166666666667,
+        "sample_rate": 48000,
+        "channels": 2,
+        "peak": 0.5011871458515103,
+        "peak_dbfs": -6.000001521209236,
+        "rms": 0.044925182480286395,
+        "dc": [
+          -4.740428577987002e-10,
+          -4.740428577987002e-10
+        ],
+        "peak_time_ms": 1.7708333333333333,
+        "attack_peak_sample": 85,
+        "attack_peak_window_s": 0.08,
+        "spectral_centroid_hz": 3870.019626161699,
+        "finite": true,
+        "clipped_samples": 0,
+        "endpoints_zero": true,
+        "last_half_ms_peak": 1.5497209489012896e-06
+      }
+    },
+    {
+      "id": "kenney_scroll_001",
+      "prepared_sha256": "24c5796a4cb4e7d3dc6093932f79fa51488b3a703dd6783342da516f3fcc18e4",
+      "statistics": {
+        "samples": 46589,
+        "duration_s": 0.9706041666666667,
+        "sample_rate": 48000,
+        "channels": 2,
+        "peak": 0.5011871458515103,
+        "peak_dbfs": -6.000001521209236,
+        "rms": 0.04285952541176794,
+        "dc": [
+          4.70808819748073e-10,
+          4.70808819748073e-10
+        ],
+        "peak_time_ms": 0.3958333333333333,
+        "attack_peak_sample": 19,
+        "attack_peak_window_s": 0.08,
+        "spectral_centroid_hz": 10272.628623308217,
+        "finite": true,
+        "clipped_samples": 0,
+        "endpoints_zero": true,
+        "last_half_ms_peak": 2.2649767714711155e-06
+      }
+    },
+    {
+      "id": "kenney_open_001",
+      "prepared_sha256": "a5d28f1cde16e60797d4914638af232e556b736b0b368a63c3c8252fdb371851",
+      "statistics": {
+        "samples": 7089,
+        "duration_s": 0.1476875,
+        "sample_rate": 48000,
+        "channels": 2,
+        "peak": 0.5011871458515103,
+        "peak_dbfs": -6.000001521209236,
+        "rms": 0.13713265744307693,
+        "dc": [
+          -7.230921223789966e-10,
+          -7.230921223789966e-10
+        ],
+        "peak_time_ms": 102.66666666666667,
+        "attack_peak_sample": 4059,
+        "attack_peak_window_s": 0.08,
+        "spectral_centroid_hz": 12148.761306233142,
+        "finite": true,
+        "clipped_samples": 0,
+        "endpoints_zero": true,
+        "last_half_ms_peak": 0.0021107199324035563
+      }
+    },
+    {
+      "id": "kenney_close_001",
+      "prepared_sha256": "887e571ea15fa31ac038ecb9fe47716397288f44809ad4110e1b51702b785a69",
+      "statistics": {
+        "samples": 7094,
+        "duration_s": 0.14779166666666665,
+        "sample_rate": 48000,
+        "channels": 2,
+        "peak": 0.5011871458515103,
+        "peak_dbfs": -6.000001521209236,
+        "rms": 0.09934311224370979,
+        "dc": [
+          1.5123819269985071e-10,
+          1.5123819269985071e-10
+        ],
+        "peak_time_ms": 0.5,
+        "attack_peak_sample": 24,
+        "attack_peak_window_s": 0.08,
+        "spectral_centroid_hz": 12153.81319765057,
+        "finite": true,
+        "clipped_samples": 0,
+        "endpoints_zero": true,
+        "last_half_ms_peak": 4.768372150465506e-07
+      }
+    },
+    {
+      "id": "kenney_maximize_001",
+      "prepared_sha256": "3533b11746803e4fd3ec96169048761bb7a05d8d9338ab08c1130e67db5afd75",
+      "statistics": {
+        "samples": 12365,
+        "duration_s": 0.2576041666666667,
+        "sample_rate": 48000,
+        "channels": 2,
+        "peak": 0.5011871458515103,
+        "peak_dbfs": -6.000001521209236,
+        "rms": 0.13184036490658335,
+        "dc": [
+          -3.663528948381069e-10,
+          -3.663528948381069e-10
+        ],
+        "peak_time_ms": 245.33333333333331,
+        "attack_peak_sample": 4489,
+        "attack_peak_window_s": 0.08,
+        "spectral_centroid_hz": 5286.399449177663,
+        "finite": true,
+        "clipped_samples": 0,
+        "endpoints_zero": true,
+        "last_half_ms_peak": 0.0017966034169916412
+      }
+    },
+    {
+      "id": "kenney_minimize_001",
+      "prepared_sha256": "471d86d2a4c54cbaf534cb9c1afafb6023ea2f3f3e8a7c7cd1bd9b5a65135c2e",
+      "statistics": {
+        "samples": 12403,
+        "duration_s": 0.2583958333333333,
+        "sample_rate": 48000,
+        "channels": 2,
+        "peak": 0.5011871458515103,
+        "peak_dbfs": -6.000001521209236,
+        "rms": 0.12461422236989414,
+        "dc": [
+          2.0183789241764553e-10,
+          2.0183789241764553e-10
+        ],
+        "peak_time_ms": 0.5208333333333334,
+        "attack_peak_sample": 25,
+        "attack_peak_window_s": 0.08,
+        "spectral_centroid_hz": 5282.489660555091,
+        "finite": true,
+        "clipped_samples": 0,
+        "endpoints_zero": true,
+        "last_half_ms_peak": 0.0
+      }
+    },
+    {
+      "id": "kenney_glass_001",
+      "prepared_sha256": "a202801b11ab6382fd0c635077803e7e70ef8036d4c94d21c374b10b3afd473b",
+      "statistics": {
+        "samples": 13226,
+        "duration_s": 0.2755416666666667,
+        "sample_rate": 48000,
+        "channels": 2,
+        "peak": 0.5011871458515103,
+        "peak_dbfs": -6.000001521209236,
+        "rms": 0.060997197144446076,
+        "dc": [
+          -3.064506466453753e-10,
+          -3.064506466453753e-10
+        ],
+        "peak_time_ms": 0.6666666666666666,
+        "attack_peak_sample": 32,
+        "attack_peak_window_s": 0.08,
+        "spectral_centroid_hz": 1986.3593135137362,
+        "finite": true,
+        "clipped_samples": 0,
+        "endpoints_zero": true,
+        "last_half_ms_peak": 2.741813986517666e-06
+      }
+    },
+    {
+      "id": "kenney_confirmation_001",
+      "prepared_sha256": "b9bf77c0edf2235043622d2b0546ff7d9f416eac277b71ab8f010398e210b497",
+      "statistics": {
+        "samples": 13913,
+        "duration_s": 0.2898541666666667,
+        "sample_rate": 48000,
+        "channels": 2,
+        "peak": 0.5011871458515103,
+        "peak_dbfs": -6.000001521209236,
+        "rms": 0.15159243577350068,
+        "dc": [
+          2.570458654812894e-11,
+          2.570458654812894e-11
+        ],
+        "peak_time_ms": 0.6666666666666666,
+        "attack_peak_sample": 32,
+        "attack_peak_window_s": 0.08,
+        "spectral_centroid_hz": 709.431159867755,
+        "finite": true,
+        "clipped_samples": 0,
+        "endpoints_zero": true,
+        "last_half_ms_peak": 2.503395378994391e-06
+      }
+    },
+    {
+      "id": "key_001",
+      "prepared_sha256": "b991e0ef9b337d8a6c9da0e8653fee550a40387f5340aefa02cebf3edd210c3c",
+      "statistics": {
+        "samples": 12000,
+        "duration_s": 0.25,
+        "sample_rate": 48000,
+        "channels": 2,
+        "peak": 0.5011871458515103,
+        "peak_dbfs": -6.000001521209236,
+        "rms": 0.02221720133141303,
+        "dc": [
+          -1.688798470241645e-10,
+          -1.688798470241645e-10
+        ],
+        "peak_time_ms": 39.04166666666667,
+        "attack_peak_sample": 1874,
+        "attack_peak_window_s": 0.08,
+        "spectral_centroid_hz": 4787.873837365263,
+        "finite": true,
+        "clipped_samples": 0,
+        "endpoints_zero": true,
+        "last_half_ms_peak": 1.3113023413780143e-06
+      }
+    },
+    {
+      "id": "key_003",
+      "prepared_sha256": "87daffcdfd03aaf9a4720099ed5c61003281138b1ff70709010cf378c3b0371e",
+      "statistics": {
+        "samples": 11457,
+        "duration_s": 0.2386875,
+        "sample_rate": 48000,
+        "channels": 2,
+        "peak": 0.5011871458515103,
+        "peak_dbfs": -6.000001521209236,
+        "rms": 0.042649055647249724,
+        "dc": [
+          -1.0404931763071757e-10,
+          -1.0404931763071757e-10
+        ],
+        "peak_time_ms": 16.395833333333332,
+        "attack_peak_sample": 787,
+        "attack_peak_window_s": 0.08,
+        "spectral_centroid_hz": 4773.746996546013,
+        "finite": true,
+        "clipped_samples": 0,
+        "endpoints_zero": true,
+        "last_half_ms_peak": 2.6226046827560285e-06
+      }
+    },
+    {
+      "id": "key_005",
+      "prepared_sha256": "d9bff161250eae8ebf1098d582ddaad8bd81975127c29a65cf1a1a140795e8aa",
+      "statistics": {
+        "samples": 12000,
+        "duration_s": 0.25,
+        "sample_rate": 48000,
+        "channels": 2,
+        "peak": 0.5011871458515103,
+        "peak_dbfs": -6.000001521209236,
+        "rms": 0.030517393810458354,
+        "dc": [
+          -1.1920930352747101e-10,
+          -1.1920930352747101e-10
+        ],
+        "peak_time_ms": 32.0,
+        "attack_peak_sample": 1536,
+        "attack_peak_window_s": 0.08,
+        "spectral_centroid_hz": 5954.799392424429,
+        "finite": true,
+        "clipped_samples": 0,
+        "endpoints_zero": true,
+        "last_half_ms_peak": 3.457069809087492e-06
+      }
+    },
+    {
+      "id": "key_008",
+      "prepared_sha256": "3a577465b37ee37130e5f28db6ca496f94b2922b1fc08673b4f7ba08cb599d1b",
+      "statistics": {
+        "samples": 12000,
+        "duration_s": 0.25,
+        "sample_rate": 48000,
+        "channels": 2,
+        "peak": 0.5011871458515103,
+        "peak_dbfs": -6.000001521209236,
+        "rms": 0.038734588780559485,
+        "dc": [
+          1.3907752047978302e-10,
+          1.3907752047978302e-10
+        ],
+        "peak_time_ms": 57.354166666666664,
+        "attack_peak_sample": 2753,
+        "attack_peak_window_s": 0.08,
+        "spectral_centroid_hz": 4847.272811110694,
+        "finite": true,
+        "clipped_samples": 0,
+        "endpoints_zero": true,
+        "last_half_ms_peak": 4.887581454227144e-06
+      }
+    },
+    {
+      "id": "key_011",
+      "prepared_sha256": "e0a4ea04e982ad4140d38724811d275a963318934bb4902c955d9f2bfc7bd525",
+      "statistics": {
+        "samples": 12000,
+        "duration_s": 0.25,
+        "sample_rate": 48000,
+        "channels": 2,
+        "peak": 0.5011871458515103,
+        "peak_dbfs": -6.000001521209236,
+        "rms": 0.03267333510194772,
+        "dc": [
+          1.788139556417865e-10,
+          1.788139556417865e-10
+        ],
+        "peak_time_ms": 47.5625,
+        "attack_peak_sample": 2283,
+        "attack_peak_window_s": 0.08,
+        "spectral_centroid_hz": 4605.386050062879,
+        "finite": true,
+        "clipped_samples": 0,
+        "endpoints_zero": true,
+        "last_half_ms_peak": 3.3378605053258545e-06
+      }
+    },
+    {
+      "id": "key_014",
+      "prepared_sha256": "7bfb2af145952e6f009175c5faf1bdd69c29aa2c1ae4d733e1f464825e1e0d18",
+      "statistics": {
+        "samples": 11755,
+        "duration_s": 0.24489583333333334,
+        "sample_rate": 48000,
+        "channels": 2,
+        "peak": 0.5011871458515103,
+        "peak_dbfs": -6.000001521209236,
+        "rms": 0.035301526225835655,
+        "dc": [
+          -9.127041577160021e-11,
+          -9.127041577160021e-11
+        ],
+        "peak_time_ms": 19.791666666666664,
+        "attack_peak_sample": 950,
+        "attack_peak_window_s": 0.08,
+        "spectral_centroid_hz": 5010.322571901322,
+        "finite": true,
+        "clipped_samples": 0,
+        "endpoints_zero": true,
+        "last_half_ms_peak": 1.1920930376163766e-06
+      }
+    },
+    {
+      "id": "key_017",
+      "prepared_sha256": "c9c59e16fe97e589cde29bf385019427427e100e41505da879df887ce1871f69",
+      "statistics": {
+        "samples": 9976,
+        "duration_s": 0.20783333333333334,
+        "sample_rate": 48000,
+        "channels": 2,
+        "peak": 0.5011871458515103,
+        "peak_dbfs": -6.000001521209236,
+        "rms": 0.0280747449522325,
+        "dc": [
+          -3.9433711156989854e-10,
+          -3.9433711156989854e-10
+        ],
+        "peak_time_ms": 10.041666666666668,
+        "attack_peak_sample": 482,
+        "attack_peak_window_s": 0.08,
+        "spectral_centroid_hz": 5183.304069008433,
+        "finite": true,
+        "clipped_samples": 0,
+        "endpoints_zero": true,
+        "last_half_ms_peak": 3.3378605053258545e-06
+      }
+    },
+    {
+      "id": "key_020",
+      "prepared_sha256": "048d952a6ee7e2483143653eb50b37caf656b94f48fdc25bc584b8694114af23",
+      "statistics": {
+        "samples": 12000,
+        "duration_s": 0.25,
+        "sample_rate": 48000,
+        "channels": 2,
+        "peak": 0.5011871458515103,
+        "peak_dbfs": -6.000001521209236,
+        "rms": 0.04097802683837538,
+        "dc": [
+          4.9670542181114915e-11,
+          4.9670542181114915e-11
+        ],
+        "peak_time_ms": 25.0625,
+        "attack_peak_sample": 1203,
+        "attack_peak_window_s": 0.08,
+        "spectral_centroid_hz": 5333.960877899015,
+        "finite": true,
+        "clipped_samples": 0,
+        "endpoints_zero": true,
+        "last_half_ms_peak": 6.914139618174984e-06
+      }
+    },
+    {
+      "id": "key_023",
+      "prepared_sha256": "08456f9ecaadc8c01d0f652277a5c5acb00bcf3255486fc5cc91a35f6f33ad50",
+      "statistics": {
+        "samples": 12000,
+        "duration_s": 0.25,
+        "sample_rate": 48000,
+        "channels": 2,
+        "peak": 0.5011871458515103,
+        "peak_dbfs": -6.000001521209236,
+        "rms": 0.03285107192099561,
+        "dc": [
+          -3.6756201990386256e-10,
+          -3.6756201990386256e-10
+        ],
+        "peak_time_ms": 71.22916666666666,
+        "attack_peak_sample": 3419,
+        "attack_peak_window_s": 0.08,
+        "spectral_centroid_hz": 4903.084877918893,
+        "finite": true,
+        "clipped_samples": 0,
+        "endpoints_zero": true,
+        "last_half_ms_peak": 1.1086465249832302e-05
+      }
+    },
+    {
+      "id": "key_026",
+      "prepared_sha256": "56712bdf2a67d4dbcf20a474fc61c7a92022dae7e7d3cd4364a8f96511997d4c",
+      "statistics": {
+        "samples": 12000,
+        "duration_s": 0.25,
+        "sample_rate": 48000,
+        "channels": 2,
+        "peak": 0.5011871458515103,
+        "peak_dbfs": -6.000001521209236,
+        "rms": 0.027039307651257935,
+        "dc": [
+          2.086162815312916e-10,
+          2.086162815312916e-10
+        ],
+        "peak_time_ms": 58.5625,
+        "attack_peak_sample": 2811,
+        "attack_peak_window_s": 0.08,
+        "spectral_centroid_hz": 5044.928293426008,
+        "finite": true,
+        "clipped_samples": 0,
+        "endpoints_zero": true,
+        "last_half_ms_peak": 2.6226046827560285e-06
+      }
+    },
+    {
+      "id": "key_029",
+      "prepared_sha256": "4a7d5ca583f4be1772caf4297afd65b557da20dd4f6f22431712b4681d0939ba",
+      "statistics": {
+        "samples": 11842,
+        "duration_s": 0.24670833333333334,
+        "sample_rate": 48000,
+        "channels": 2,
+        "peak": 0.5011871458515103,
+        "peak_dbfs": -6.000001521209236,
+        "rms": 0.027733612395988497,
+        "dc": [
+          1.0066652890149993e-10,
+          1.0066652890149993e-10
+        ],
+        "peak_time_ms": 57.354166666666664,
+        "attack_peak_sample": 2753,
+        "attack_peak_window_s": 0.08,
+        "spectral_centroid_hz": 4798.0569812699305,
+        "finite": true,
+        "clipped_samples": 0,
+        "endpoints_zero": true,
+        "last_half_ms_peak": 3.099441897802579e-06
+      }
+    },
+    {
+      "id": "key_032",
+      "prepared_sha256": "537091a5b9c078d0a77c251b0138f4ea2923ed977e609ec76904ac627e9cf747",
+      "statistics": {
+        "samples": 12000,
+        "duration_s": 0.25,
+        "sample_rate": 48000,
+        "channels": 2,
+        "peak": 0.5011871458515103,
+        "peak_dbfs": -6.000001521209236,
+        "rms": 0.028035737718634213,
+        "dc": [
+          -1.6887984652403134e-10,
+          -1.6887984652403134e-10
+        ],
+        "peak_time_ms": 60.270833333333336,
+        "attack_peak_sample": 2893,
+        "attack_peak_window_s": 0.08,
+        "spectral_centroid_hz": 4589.556868796596,
+        "finite": true,
+        "clipped_samples": 0,
+        "endpoints_zero": true,
+        "last_half_ms_peak": 4.05311632789568e-06
+      }
+    }
+  ]
+}

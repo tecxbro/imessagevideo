@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 72
+  },
+  "initialUI": null,
+  "events": [
+    {
+      "id": "motion.trend-line-trace.plot-trace-start",
+      "kind": "plot-trace-start",
+      "target": "trend-segment-1",
+      "frame": 11,
+      "layerIds": [
+        "trend-segment-1"
+      ]
+    },
+    {
+      "id": "motion.trend-line-trace.plot-final-point",
+      "kind": "plot-final-point",
+      "target": "active-plot-point",
+      "frame": 50,
+      "layerIds": [
+        "active-plot-point"
+      ]
+    }
+  ],
+  "cues": []
+}

@@ -1,0 +1,39 @@
+{
+  "status": "Completed measured recreations: six frozen scenes, five rendering methods and 30 validated reference-audio versions. Residual visual differences are documented; pixel identity is not claimed.",
+  "scenes": {
+    "01-photonhq": {
+      "scene": "outputs/01-photonhq/final-v10/scene.json",
+      "timeline_scan": "verification/timeline-scans/01-photonhq-v10/scan.json",
+      "source_report": "verification/final/01-photonhq/source-gsap-v10/index.html"
+    },
+    "02-danieltian": {
+      "scene": "outputs/02-danieltian/final-v19/scene.json",
+      "source_report": "verification/final/02-danieltian/source-gsap-v19/report.json",
+      "timeline_scan": "verification/timeline-scans/02-danieltian-v19/scan.json",
+      "source_visual_gate": "outputs/02-danieltian/final-v19/source-qualification.json"
+    },
+    "03-photon-mini": {
+      "scene": "outputs/03-photon-mini/final-v18/scene.json",
+      "source_report": "verification/final/03-photon-mini/source-gsap-v18-pc709/report.json",
+      "timeline_scan": "verification/timeline-scans/03-photon-mini-v18-pc709/scan.json"
+    },
+    "04-poke": {
+      "scene": "outputs/04-poke/final-v19/scene.json",
+      "source_report": "verification/final/04-poke/source-gsap-v19/report.json",
+      "timeline_scan": "verification/timeline-scans/04-poke-v19/scan.json"
+    },
+    "05-linq": {
+      "scene": "outputs/05-linq/final-v20/scene.json",
+      "source_report": "verification/final/05-linq/source-gsap-v20-pc709/index.html",
+      "timeline_scan": "verification/timeline-scans/05-linq-v20-pc709/scan.json",
+      "source_visual_gate": "verification/final/05-linq/source-gsap-v20-pc709/source-gate.json"
+    },
+    "06-gallery": {
+      "scene": "outputs/06-gallery/final-v23/scene.json",
+      "timeline_scan": "verification/timeline-scans/06-gallery-v23/scan.json",
+      "source_report": "verification/final/06-gallery/source-gsap-v23/index.html",
+      "source_visual_gate": "verification/final/06-gallery/v23/source-gate.json"
+    }
+  },
+  "encoding_profile": "full-range-bt709-v1"
+}

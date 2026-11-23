@@ -1,0 +1,170 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 40
+  },
+  "sampleRate": 48000,
+  "sampleCount": 64000,
+  "initialUI": {
+    "conversationId": "thread.meeting",
+    "messages": [
+      {
+        "id": "north-door",
+        "senderId": "remote",
+        "text": "I’m at the north door.",
+        "attachmentIds": [],
+        "reactions": {},
+        "edited": false,
+        "receipt": ""
+      }
+    ],
+    "composer": {
+      "text": "",
+      "focused": false,
+      "keyboardVisible": false
+    },
+    "viewport": {
+      "surface": "conversation",
+      "anchorMessageId": "north-door",
+      "scrollOffset": 0
+    },
+    "typingSenderIds": []
+  },
+  "events": [
+    {
+      "id": "type-now",
+      "kind": "draft",
+      "target": "thread.meeting",
+      "frame": 8,
+      "uiState": {
+        "conversationId": "thread.meeting",
+        "messages": [
+          {
+            "id": "north-door",
+            "senderId": "remote",
+            "text": "I’m at the north door.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          }
+        ],
+        "composer": {
+          "text": "Meet by the bench.",
+          "focused": false,
+          "keyboardVisible": false
+        },
+        "viewport": {
+          "surface": "conversation",
+          "anchorMessageId": "north-door",
+          "scrollOffset": 0
+        },
+        "typingSenderIds": []
+      },
+      "layerIds": [
+        "ui.composer"
+      ],
+      "sample": 12800
+    },
+    {
+      "id": "send-now",
+      "kind": "send",
+      "target": "in-transit",
+      "frame": 18,
+      "uiState": {
+        "conversationId": "thread.meeting",
+        "messages": [
+          {
+            "id": "north-door",
+            "senderId": "remote",
+            "text": "I’m at the north door.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "in-transit",
+            "senderId": "local",
+            "text": "Meet by the bench.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          }
+        ],
+        "composer": {
+          "text": "",
+          "focused": false,
+          "keyboardVisible": false
+        },
+        "viewport": {
+          "surface": "conversation",
+          "anchorMessageId": "in-transit",
+          "scrollOffset": 0
+        },
+        "typingSenderIds": []
+      },
+      "layerIds": [
+        "ui.message/in-transit"
+      ],
+      "sample": 28800
+    },
+    {
+      "id": "reply-now",
+      "kind": "receive",
+      "target": "ready",
+      "frame": 25,
+      "uiState": {
+        "conversationId": "thread.meeting",
+        "messages": [
+          {
+            "id": "north-door",
+            "senderId": "remote",
+            "text": "I’m at the north door.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "in-transit",
+            "senderId": "local",
+            "text": "Meet by the bench.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "ready",
+            "senderId": "remote",
+            "text": "See you there.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          }
+        ],
+        "composer": {
+          "text": "",
+          "focused": false,
+          "keyboardVisible": false
+        },
+        "viewport": {
+          "surface": "conversation",
+          "anchorMessageId": "ready",
+          "scrollOffset": 0
+        },
+        "typingSenderIds": []
+      },
+      "layerIds": [
+        "ui.message/ready"
+      ],
+      "sample": 40000
+    }
+  ],
+  "cues": []
+}

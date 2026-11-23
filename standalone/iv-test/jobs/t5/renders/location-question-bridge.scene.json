@@ -1,0 +1,1241 @@
+{
+  "width": 720,
+  "height": 480,
+  "fps": 30,
+  "duration": 2.4,
+  "background": "#dce7f1",
+  "title": "Hold the location question while switching from keyboard to map",
+  "source": {
+    "path": "projects/04-poke-complete-v1/imessage-recreations/references/04-poke/source.mp4",
+    "sourceStart": 13.780433333333333,
+    "sourceEnd": 17.350666666666665,
+    "notes": "Recreation measured readable question f413–414, keyboard push f449–450, location control f455–457, dim f485, question held during gap f512 and map readable f513–514. The map card carries the measured pin rise f513–519 (centroid y 697.44 to 590.22) mapped onto a new travel distance. Other geometry and compressed timing are authored."
+  },
+  "layers": [
+    {
+      "id": "surface",
+      "type": "rect",
+      "x": 110,
+      "y": 44,
+      "width": 500,
+      "height": 392,
+      "fill": "#ffffff",
+      "radius": 18
+    },
+    {
+      "id": "stage",
+      "type": "group",
+      "x": 110,
+      "y": 98,
+      "children": [
+        {
+          "id": "location-composer-plane",
+          "type": "group",
+          "x": 0,
+          "y": 112,
+          "children": [
+            {
+              "id": "keyboard-matte",
+              "type": "rect",
+              "x": 10,
+              "y": 43,
+              "width": 480,
+              "height": 128,
+              "fill": "#d6e1eb",
+              "radius": 14
+            },
+            {
+              "id": "location-composer",
+              "type": "group",
+              "x": 23,
+              "y": 39,
+              "children": [
+                {
+                  "id": "location-composer-field",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 454,
+                  "height": 48,
+                  "fill": "#ffffff",
+                  "radius": 24,
+                  "stroke": "#d8dbe0",
+                  "strokeWidth": 1
+                },
+                {
+                  "id": "location-composer-input",
+                  "type": "text",
+                  "text": "Message",
+                  "x": 18,
+                  "y": 14,
+                  "fontSize": 17,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#777b84"
+                },
+                {
+                  "id": "location-composer-send",
+                  "type": "circle",
+                  "x": 414,
+                  "y": 8,
+                  "width": 32,
+                  "height": 32,
+                  "fill": "#d8dbe0"
+                },
+                {
+                  "id": "location-composer-arrow",
+                  "type": "path",
+                  "d": "M 430 33 L 430 16 M 423 23 L 430 16 L 437 23",
+                  "fill": "none",
+                  "stroke": "#ffffff",
+                  "strokeWidth": 2
+                }
+              ]
+            },
+            {
+              "id": "key-0",
+              "type": "group",
+              "x": 24,
+              "y": 96,
+              "children": [
+                {
+                  "id": "key-0-surface",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 37,
+                  "height": 21,
+                  "fill": "#ffffff",
+                  "radius": 4
+                },
+                {
+                  "id": "key-0-text",
+                  "type": "text",
+                  "text": "Q",
+                  "x": 14,
+                  "y": 3,
+                  "fontSize": 12,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#182737"
+                }
+              ]
+            },
+            {
+              "id": "key-1",
+              "type": "group",
+              "x": 66,
+              "y": 96,
+              "children": [
+                {
+                  "id": "key-1-surface",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 37,
+                  "height": 21,
+                  "fill": "#ffffff",
+                  "radius": 4
+                },
+                {
+                  "id": "key-1-text",
+                  "type": "text",
+                  "text": "W",
+                  "x": 14,
+                  "y": 3,
+                  "fontSize": 12,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#182737"
+                }
+              ]
+            },
+            {
+              "id": "key-2",
+              "type": "group",
+              "x": 108,
+              "y": 96,
+              "children": [
+                {
+                  "id": "key-2-surface",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 37,
+                  "height": 21,
+                  "fill": "#ffffff",
+                  "radius": 4
+                },
+                {
+                  "id": "key-2-text",
+                  "type": "text",
+                  "text": "E",
+                  "x": 14,
+                  "y": 3,
+                  "fontSize": 12,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#182737"
+                }
+              ]
+            },
+            {
+              "id": "key-3",
+              "type": "group",
+              "x": 150,
+              "y": 96,
+              "children": [
+                {
+                  "id": "key-3-surface",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 37,
+                  "height": 21,
+                  "fill": "#ffffff",
+                  "radius": 4
+                },
+                {
+                  "id": "key-3-text",
+                  "type": "text",
+                  "text": "R",
+                  "x": 14,
+                  "y": 3,
+                  "fontSize": 12,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#182737"
+                }
+              ]
+            },
+            {
+              "id": "key-4",
+              "type": "group",
+              "x": 192,
+              "y": 96,
+              "children": [
+                {
+                  "id": "key-4-surface",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 37,
+                  "height": 21,
+                  "fill": "#ffffff",
+                  "radius": 4
+                },
+                {
+                  "id": "key-4-text",
+                  "type": "text",
+                  "text": "T",
+                  "x": 14,
+                  "y": 3,
+                  "fontSize": 12,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#182737"
+                }
+              ]
+            },
+            {
+              "id": "key-5",
+              "type": "group",
+              "x": 234,
+              "y": 96,
+              "children": [
+                {
+                  "id": "key-5-surface",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 37,
+                  "height": 21,
+                  "fill": "#ffffff",
+                  "radius": 4
+                },
+                {
+                  "id": "key-5-text",
+                  "type": "text",
+                  "text": "Y",
+                  "x": 14,
+                  "y": 3,
+                  "fontSize": 12,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#182737"
+                }
+              ]
+            },
+            {
+              "id": "key-6",
+              "type": "group",
+              "x": 276,
+              "y": 96,
+              "children": [
+                {
+                  "id": "key-6-surface",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 37,
+                  "height": 21,
+                  "fill": "#ffffff",
+                  "radius": 4
+                },
+                {
+                  "id": "key-6-text",
+                  "type": "text",
+                  "text": "U",
+                  "x": 14,
+                  "y": 3,
+                  "fontSize": 12,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#182737"
+                }
+              ]
+            },
+            {
+              "id": "key-7",
+              "type": "group",
+              "x": 318,
+              "y": 96,
+              "children": [
+                {
+                  "id": "key-7-surface",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 37,
+                  "height": 21,
+                  "fill": "#ffffff",
+                  "radius": 4
+                },
+                {
+                  "id": "key-7-text",
+                  "type": "text",
+                  "text": "I",
+                  "x": 14,
+                  "y": 3,
+                  "fontSize": 12,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#182737"
+                }
+              ]
+            },
+            {
+              "id": "key-8",
+              "type": "group",
+              "x": 360,
+              "y": 96,
+              "children": [
+                {
+                  "id": "key-8-surface",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 37,
+                  "height": 21,
+                  "fill": "#ffffff",
+                  "radius": 4
+                },
+                {
+                  "id": "key-8-text",
+                  "type": "text",
+                  "text": "O",
+                  "x": 14,
+                  "y": 3,
+                  "fontSize": 12,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#182737"
+                }
+              ]
+            },
+            {
+              "id": "key-9",
+              "type": "group",
+              "x": 402,
+              "y": 96,
+              "children": [
+                {
+                  "id": "key-9-surface",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 37,
+                  "height": 21,
+                  "fill": "#ffffff",
+                  "radius": 4
+                },
+                {
+                  "id": "key-9-text",
+                  "type": "text",
+                  "text": "P",
+                  "x": 14,
+                  "y": 3,
+                  "fontSize": 12,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#182737"
+                }
+              ]
+            },
+            {
+              "id": "key-10",
+              "type": "group",
+              "x": 34,
+              "y": 122,
+              "children": [
+                {
+                  "id": "key-10-surface",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 37,
+                  "height": 21,
+                  "fill": "#ffffff",
+                  "radius": 4
+                },
+                {
+                  "id": "key-10-text",
+                  "type": "text",
+                  "text": "A",
+                  "x": 14,
+                  "y": 3,
+                  "fontSize": 12,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#182737"
+                }
+              ]
+            },
+            {
+              "id": "key-11",
+              "type": "group",
+              "x": 76,
+              "y": 122,
+              "children": [
+                {
+                  "id": "key-11-surface",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 37,
+                  "height": 21,
+                  "fill": "#ffffff",
+                  "radius": 4
+                },
+                {
+                  "id": "key-11-text",
+                  "type": "text",
+                  "text": "S",
+                  "x": 14,
+                  "y": 3,
+                  "fontSize": 12,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#182737"
+                }
+              ]
+            },
+            {
+              "id": "key-12",
+              "type": "group",
+              "x": 118,
+              "y": 122,
+              "children": [
+                {
+                  "id": "key-12-surface",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 37,
+                  "height": 21,
+                  "fill": "#ffffff",
+                  "radius": 4
+                },
+                {
+                  "id": "key-12-text",
+                  "type": "text",
+                  "text": "D",
+                  "x": 14,
+                  "y": 3,
+                  "fontSize": 12,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#182737"
+                }
+              ]
+            },
+            {
+              "id": "key-13",
+              "type": "group",
+              "x": 160,
+              "y": 122,
+              "children": [
+                {
+                  "id": "key-13-surface",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 37,
+                  "height": 21,
+                  "fill": "#ffffff",
+                  "radius": 4
+                },
+                {
+                  "id": "key-13-text",
+                  "type": "text",
+                  "text": "F",
+                  "x": 14,
+                  "y": 3,
+                  "fontSize": 12,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#182737"
+                }
+              ]
+            },
+            {
+              "id": "key-14",
+              "type": "group",
+              "x": 202,
+              "y": 122,
+              "children": [
+                {
+                  "id": "key-14-surface",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 37,
+                  "height": 21,
+                  "fill": "#ffffff",
+                  "radius": 4
+                },
+                {
+                  "id": "key-14-text",
+                  "type": "text",
+                  "text": "G",
+                  "x": 14,
+                  "y": 3,
+                  "fontSize": 12,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#182737"
+                }
+              ]
+            },
+            {
+              "id": "key-15",
+              "type": "group",
+              "x": 244,
+              "y": 122,
+              "children": [
+                {
+                  "id": "key-15-surface",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 37,
+                  "height": 21,
+                  "fill": "#ffffff",
+                  "radius": 4
+                },
+                {
+                  "id": "key-15-text",
+                  "type": "text",
+                  "text": "H",
+                  "x": 14,
+                  "y": 3,
+                  "fontSize": 12,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#182737"
+                }
+              ]
+            },
+            {
+              "id": "key-16",
+              "type": "group",
+              "x": 286,
+              "y": 122,
+              "children": [
+                {
+                  "id": "key-16-surface",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 37,
+                  "height": 21,
+                  "fill": "#ffffff",
+                  "radius": 4
+                },
+                {
+                  "id": "key-16-text",
+                  "type": "text",
+                  "text": "J",
+                  "x": 14,
+                  "y": 3,
+                  "fontSize": 12,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#182737"
+                }
+              ]
+            },
+            {
+              "id": "key-17",
+              "type": "group",
+              "x": 328,
+              "y": 122,
+              "children": [
+                {
+                  "id": "key-17-surface",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 37,
+                  "height": 21,
+                  "fill": "#ffffff",
+                  "radius": 4
+                },
+                {
+                  "id": "key-17-text",
+                  "type": "text",
+                  "text": "K",
+                  "x": 14,
+                  "y": 3,
+                  "fontSize": 12,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#182737"
+                }
+              ]
+            },
+            {
+              "id": "key-18",
+              "type": "group",
+              "x": 370,
+              "y": 122,
+              "children": [
+                {
+                  "id": "key-18-surface",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 37,
+                  "height": 21,
+                  "fill": "#ffffff",
+                  "radius": 4
+                },
+                {
+                  "id": "key-18-text",
+                  "type": "text",
+                  "text": "L",
+                  "x": 14,
+                  "y": 3,
+                  "fontSize": 12,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#182737"
+                }
+              ]
+            },
+            {
+              "id": "key-19",
+              "type": "group",
+              "x": 44,
+              "y": 148,
+              "children": [
+                {
+                  "id": "key-19-surface",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 37,
+                  "height": 21,
+                  "fill": "#ffffff",
+                  "radius": 4
+                },
+                {
+                  "id": "key-19-text",
+                  "type": "text",
+                  "text": "Z",
+                  "x": 14,
+                  "y": 3,
+                  "fontSize": 12,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#182737"
+                }
+              ]
+            },
+            {
+              "id": "key-20",
+              "type": "group",
+              "x": 86,
+              "y": 148,
+              "children": [
+                {
+                  "id": "key-20-surface",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 37,
+                  "height": 21,
+                  "fill": "#ffffff",
+                  "radius": 4
+                },
+                {
+                  "id": "key-20-text",
+                  "type": "text",
+                  "text": "X",
+                  "x": 14,
+                  "y": 3,
+                  "fontSize": 12,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#182737"
+                }
+              ]
+            },
+            {
+              "id": "key-21",
+              "type": "group",
+              "x": 128,
+              "y": 148,
+              "children": [
+                {
+                  "id": "key-21-surface",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 37,
+                  "height": 21,
+                  "fill": "#ffffff",
+                  "radius": 4
+                },
+                {
+                  "id": "key-21-text",
+                  "type": "text",
+                  "text": "C",
+                  "x": 14,
+                  "y": 3,
+                  "fontSize": 12,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#182737"
+                }
+              ]
+            },
+            {
+              "id": "key-22",
+              "type": "group",
+              "x": 170,
+              "y": 148,
+              "children": [
+                {
+                  "id": "key-22-surface",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 37,
+                  "height": 21,
+                  "fill": "#ffffff",
+                  "radius": 4
+                },
+                {
+                  "id": "key-22-text",
+                  "type": "text",
+                  "text": "V",
+                  "x": 14,
+                  "y": 3,
+                  "fontSize": 12,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#182737"
+                }
+              ]
+            },
+            {
+              "id": "key-23",
+              "type": "group",
+              "x": 212,
+              "y": 148,
+              "children": [
+                {
+                  "id": "key-23-surface",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 37,
+                  "height": 21,
+                  "fill": "#ffffff",
+                  "radius": 4
+                },
+                {
+                  "id": "key-23-text",
+                  "type": "text",
+                  "text": "B",
+                  "x": 14,
+                  "y": 3,
+                  "fontSize": 12,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#182737"
+                }
+              ]
+            },
+            {
+              "id": "key-24",
+              "type": "group",
+              "x": 254,
+              "y": 148,
+              "children": [
+                {
+                  "id": "key-24-surface",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 37,
+                  "height": 21,
+                  "fill": "#ffffff",
+                  "radius": 4
+                },
+                {
+                  "id": "key-24-text",
+                  "type": "text",
+                  "text": "N",
+                  "x": 14,
+                  "y": 3,
+                  "fontSize": 12,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#182737"
+                }
+              ]
+            },
+            {
+              "id": "key-25",
+              "type": "group",
+              "x": 296,
+              "y": 148,
+              "children": [
+                {
+                  "id": "key-25-surface",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 37,
+                  "height": 21,
+                  "fill": "#ffffff",
+                  "radius": 4
+                },
+                {
+                  "id": "key-25-text",
+                  "type": "text",
+                  "text": "M",
+                  "x": 14,
+                  "y": 3,
+                  "fontSize": 12,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#182737"
+                }
+              ]
+            },
+            {
+              "id": "location-control",
+              "type": "group",
+              "x": 26,
+              "y": 4,
+              "children": [
+                {
+                  "id": "location-control-back",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 240,
+                  "height": 30,
+                  "fill": "#d5e7f8",
+                  "radius": 14
+                },
+                {
+                  "id": "location-control-copy",
+                  "type": "text",
+                  "text": "Current location",
+                  "x": 15,
+                  "y": 6,
+                  "fontSize": 14,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#174675",
+                  "fontWeight": 700
+                }
+              ],
+              "keyframes": {
+                "opacity": [
+                  {
+                    "t": 0,
+                    "value": 0,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 0.792,
+                    "value": 0,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 0.96,
+                    "value": 1,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 1.416,
+                    "value": 1,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 1.608,
+                    "value": 0.35,
+                    "ease": "linear"
+                  }
+                ]
+              }
+            }
+          ],
+          "originX": 250,
+          "originY": 44,
+          "keyframes": {
+            "scaleX": [
+              {
+                "t": 0,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 0.576,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 0.888,
+                "value": 1.08,
+                "ease": "easeOut"
+              }
+            ],
+            "scaleY": [
+              {
+                "t": 0,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 0.576,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 0.888,
+                "value": 1.08,
+                "ease": "easeOut"
+              }
+            ],
+            "y": [
+              {
+                "t": 0,
+                "value": 112,
+                "ease": "linear"
+              },
+              {
+                "t": 0.576,
+                "value": 112,
+                "ease": "linear"
+              },
+              {
+                "t": 0.888,
+                "value": 91,
+                "ease": "easeOut"
+              },
+              {
+                "t": 1.608,
+                "value": 91,
+                "ease": "linear"
+              },
+              {
+                "t": 1.8239999999999998,
+                "value": 311,
+                "ease": "easeIn"
+              }
+            ]
+          }
+        },
+        {
+          "id": "shared-location-map",
+          "type": "group",
+          "x": 26,
+          "y": 75,
+          "children": [
+            {
+              "id": "shared-map-surface",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 448,
+              "height": 191,
+              "fill": "#dbe7da",
+              "radius": 18
+            },
+            {
+              "id": "shared-map-roads",
+              "type": "path",
+              "d": "M -4 123 C 61 96 129 99 190 137 S 303 119 452 46 M 230 -4 C 213 60 286 125 313 194 M 27 -7 C 53 50 129 74 107 191",
+              "fill": "none",
+              "stroke": "#ffffff",
+              "strokeWidth": 9
+            },
+            {
+              "id": "map-nameplate",
+              "type": "rect",
+              "x": 20,
+              "y": 117,
+              "width": 220,
+              "height": 54,
+              "fill": "#ffffff",
+              "radius": 9
+            },
+            {
+              "id": "map-title",
+              "type": "text",
+              "text": "Shared location",
+              "x": 29,
+              "y": 124,
+              "fontSize": 17,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#17191d",
+              "fontWeight": 700
+            },
+            {
+              "id": "map-location",
+              "type": "text",
+              "text": "North gate",
+              "x": 29,
+              "y": 149,
+              "fontSize": 15,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#516277"
+            },
+            {
+              "id": "shared-map-pin",
+              "type": "circle",
+              "x": 294,
+              "y": 62,
+              "width": 20,
+              "height": 20,
+              "fill": "#1478e9",
+              "stroke": "#ffffff",
+              "strokeWidth": 2
+            }
+          ],
+          "clip": {
+            "x": 0,
+            "y": 0,
+            "width": 448,
+            "height": 191,
+            "radius": 18
+          },
+          "keyframes": {
+            "opacity": [
+              {
+                "t": 0,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 1.92,
+                "value": 1,
+                "ease": "hold"
+              }
+            ],
+            "y": [
+              {
+                "t": 1.9333333333333333,
+                "value": 110,
+                "ease": "linear"
+              },
+              {
+                "t": 1.9777777777777776,
+                "value": 91.14302368961017,
+                "ease": "linear"
+              },
+              {
+                "t": 2.022222222222222,
+                "value": 84.64638127215073,
+                "ease": "linear"
+              },
+              {
+                "t": 2.066666666666667,
+                "value": 80.89470248088043,
+                "ease": "linear"
+              },
+              {
+                "t": 2.111111111111111,
+                "value": 78.27737362432384,
+                "ease": "linear"
+              },
+              {
+                "t": 2.155555555555556,
+                "value": 76.4258533855624,
+                "ease": "linear"
+              },
+              {
+                "t": 2.1999999999999997,
+                "value": 75,
+                "ease": "linear"
+              }
+            ]
+          }
+        },
+        {
+          "id": "held-question",
+          "type": "group",
+          "x": 30,
+          "y": 18,
+          "children": [
+            {
+              "id": "held-question-body",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 351,
+              "height": 46,
+              "fill": "#e9e9ed",
+              "radius": 20
+            },
+            {
+              "id": "held-question-tail",
+              "type": "path",
+              "d": "M 16 28 Q 3 47 -7 44 Q 3 40 2 26 Z",
+              "fill": "#e9e9ed"
+            },
+            {
+              "id": "held-question-copy",
+              "type": "text",
+              "text": "Where should we meet?",
+              "x": 17,
+              "y": 14,
+              "fontSize": 16,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#17191d",
+              "lineHeight": 24
+            }
+          ],
+          "keyframes": {
+            "y": [
+              {
+                "t": 0,
+                "value": 18,
+                "ease": "linear"
+              },
+              {
+                "t": 0.576,
+                "value": 18,
+                "ease": "linear"
+              },
+              {
+                "t": 0.888,
+                "value": 10,
+                "ease": "easeOut"
+              }
+            ]
+          }
+        }
+      ],
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 500,
+        "height": 298
+      }
+    },
+    {
+      "id": "footer",
+      "type": "group",
+      "x": 110,
+      "y": 396,
+      "children": [
+        {
+          "id": "footer-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 40,
+          "fill": "#f2f6fb",
+          "radius": 12
+        },
+        {
+          "id": "footer-label",
+          "type": "text",
+          "text": "Shared location",
+          "x": 26,
+          "y": 11,
+          "fontSize": 15,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#516277"
+        }
+      ]
+    },
+    {
+      "id": "heading",
+      "type": "group",
+      "x": 110,
+      "y": 44,
+      "children": [
+        {
+          "id": "heading-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 54,
+          "fill": "#f2f6fb",
+          "radius": 13
+        },
+        {
+          "id": "heading-copy",
+          "type": "text",
+          "text": "Alpine field notes",
+          "x": 26,
+          "y": 13,
+          "fontSize": 23,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#182737",
+          "fontWeight": 700
+        }
+      ]
+    }
+  ],
+  "timeline": {
+    "version": 1,
+    "picture": {
+      "fpsNum": 30,
+      "fpsDen": 1,
+      "frameCount": 72
+    },
+    "initialUI": null,
+    "events": [
+      {
+        "id": "motion.location-question-bridge.question-readable",
+        "kind": "message.readable",
+        "target": "held-question",
+        "frame": 0,
+        "layerIds": [
+          "held-question"
+        ]
+      },
+      {
+        "id": "motion.location-question-bridge.location-control-visible",
+        "kind": "location.suggest",
+        "target": "location-control",
+        "frame": 25,
+        "layerIds": [
+          "location-control"
+        ]
+      },
+      {
+        "id": "motion.location-question-bridge.location-control-pressed",
+        "kind": "location.select",
+        "target": "location-control",
+        "frame": 44,
+        "layerIds": [
+          "location-control"
+        ]
+      },
+      {
+        "id": "motion.location-question-bridge.map-visible",
+        "kind": "location.show",
+        "target": "shared-location-map",
+        "frame": 58,
+        "layerIds": [
+          "shared-location-map"
+        ]
+      }
+    ],
+    "cues": []
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 72
+  },
+  "initialUI": null,
+  "events": [
+    {
+      "id": "motion.edit-message-reflow.edit-begin",
+      "kind": "edit_open",
+      "target": "edit-original",
+      "frame": 20,
+      "layerIds": [
+        "edit-original"
+      ]
+    },
+    {
+      "id": "motion.edit-message-reflow.edit-commit",
+      "kind": "edit_commit",
+      "target": "edit-original",
+      "frame": 47,
+      "layerIds": [
+        "edit-original"
+      ]
+    }
+  ],
+  "cues": []
+}

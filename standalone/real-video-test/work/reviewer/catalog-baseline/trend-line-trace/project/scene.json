@@ -1,0 +1,379 @@
+{
+  "width": 720,
+  "height": 480,
+  "fps": 30,
+  "duration": 2.4,
+  "background": "#dce7f1",
+  "title": "Trace a trend through the points of a chart",
+  "source": {
+    "path": "packs/editorial.mjs#trend-line-trace",
+    "sourceStart": 0,
+    "sourceEnd": 2.4,
+    "notes": "Original editable Motion demonstration."
+  },
+  "layers": [
+    {
+      "id": "surface",
+      "type": "rect",
+      "x": 110,
+      "y": 44,
+      "width": 500,
+      "height": 392,
+      "fill": "#ffffff",
+      "radius": 18
+    },
+    {
+      "id": "stage",
+      "type": "group",
+      "x": 110,
+      "y": 98,
+      "children": [
+        {
+          "id": "reference-grid-65",
+          "type": "rect",
+          "x": 50,
+          "y": 65,
+          "width": 398,
+          "height": 1,
+          "fill": "#e8eef5",
+          "radius": 0
+        },
+        {
+          "id": "reference-grid-118",
+          "type": "rect",
+          "x": 50,
+          "y": 118,
+          "width": 398,
+          "height": 1,
+          "fill": "#e8eef5",
+          "radius": 0
+        },
+        {
+          "id": "reference-grid-171",
+          "type": "rect",
+          "x": 50,
+          "y": 171,
+          "width": 398,
+          "height": 1,
+          "fill": "#e8eef5",
+          "radius": 0
+        },
+        {
+          "id": "reference-grid-224",
+          "type": "rect",
+          "x": 50,
+          "y": 224,
+          "width": 398,
+          "height": 1,
+          "fill": "#e8eef5",
+          "radius": 0
+        },
+        {
+          "id": "vertical-axis",
+          "type": "rect",
+          "x": 50,
+          "y": 60,
+          "width": 2,
+          "height": 168,
+          "fill": "#516277",
+          "radius": 0
+        },
+        {
+          "id": "trend-segment-1",
+          "type": "rect",
+          "x": 53,
+          "y": 220,
+          "width": 111.13955191559845,
+          "height": 4,
+          "fill": "#1478e9",
+          "radius": 2,
+          "originY": 2,
+          "rotation": -30.256437163529274,
+          "keyframes": {
+            "scaleX": [
+              {
+                "t": 0,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 0.336,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 0.696,
+                "value": 1,
+                "ease": "linear"
+              }
+            ]
+          }
+        },
+        {
+          "id": "trend-segment-2",
+          "type": "rect",
+          "x": 149,
+          "y": 164,
+          "width": 90.93404203047392,
+          "height": 4,
+          "fill": "#1478e9",
+          "radius": 2,
+          "originY": 2,
+          "rotation": 8.21920924889906,
+          "keyframes": {
+            "scaleX": [
+              {
+                "t": 0,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 0.696,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 0.9839999999999999,
+                "value": 1,
+                "ease": "linear"
+              }
+            ]
+          }
+        },
+        {
+          "id": "trend-segment-3",
+          "type": "rect",
+          "x": 239,
+          "y": 177,
+          "width": 120.80149005703531,
+          "height": 4,
+          "fill": "#1478e9",
+          "radius": 2,
+          "originY": 2,
+          "rotation": -36.585318299693405,
+          "keyframes": {
+            "scaleX": [
+              {
+                "t": 0,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 0.9839999999999999,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 1.32,
+                "value": 1,
+                "ease": "linear"
+              }
+            ]
+          }
+        },
+        {
+          "id": "trend-segment-4",
+          "type": "rect",
+          "x": 336,
+          "y": 105,
+          "width": 118.68024266911488,
+          "height": 4,
+          "fill": "#1478e9",
+          "radius": 2,
+          "originY": 2,
+          "rotation": -20.72555886556054,
+          "keyframes": {
+            "scaleX": [
+              {
+                "t": 0,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 1.32,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 1.656,
+                "value": 1,
+                "ease": "linear"
+              }
+            ]
+          }
+        },
+        {
+          "id": "active-plot-point",
+          "type": "circle",
+          "x": 46.5,
+          "y": 215.5,
+          "width": 13,
+          "height": 13,
+          "fill": "#1478e9",
+          "keyframes": {
+            "x": [
+              {
+                "t": 0.336,
+                "value": 46.5,
+                "ease": "linear"
+              },
+              {
+                "t": 0.696,
+                "value": 142.5,
+                "ease": "linear"
+              },
+              {
+                "t": 0.9839999999999999,
+                "value": 232.5,
+                "ease": "linear"
+              },
+              {
+                "t": 1.32,
+                "value": 329.5,
+                "ease": "linear"
+              },
+              {
+                "t": 1.656,
+                "value": 440.5,
+                "ease": "linear"
+              }
+            ],
+            "y": [
+              {
+                "t": 0.336,
+                "value": 215.5,
+                "ease": "linear"
+              },
+              {
+                "t": 0.696,
+                "value": 159.5,
+                "ease": "linear"
+              },
+              {
+                "t": 0.9839999999999999,
+                "value": 172.5,
+                "ease": "linear"
+              },
+              {
+                "t": 1.32,
+                "value": 100.5,
+                "ease": "linear"
+              },
+              {
+                "t": 1.656,
+                "value": 58.5,
+                "ease": "linear"
+              }
+            ]
+          }
+        },
+        {
+          "id": "trend-result",
+          "type": "text",
+          "text": "Weekly trend",
+          "x": 437,
+          "y": 30,
+          "fontSize": 18,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#182737",
+          "fontWeight": 600,
+          "textAnchor": "end"
+        }
+      ],
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 500,
+        "height": 298
+      }
+    },
+    {
+      "id": "footer",
+      "type": "group",
+      "x": 110,
+      "y": 396,
+      "children": [
+        {
+          "id": "footer-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 40,
+          "fill": "#f2f6fb",
+          "radius": 12
+        },
+        {
+          "id": "editorial-caption",
+          "type": "text",
+          "text": "The trace keeps the earlier changes visible.",
+          "x": 22,
+          "y": 9,
+          "fontSize": 15,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#516277",
+          "fontWeight": 600
+        }
+      ]
+    },
+    {
+      "id": "heading",
+      "type": "group",
+      "x": 110,
+      "y": 44,
+      "children": [
+        {
+          "id": "heading-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 54,
+          "fill": "#f2f6fb",
+          "radius": 13
+        },
+        {
+          "id": "heading-copy",
+          "type": "text",
+          "text": "Booking activity",
+          "x": 26,
+          "y": 13,
+          "fontSize": 23,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#182737",
+          "fontWeight": 700
+        }
+      ]
+    }
+  ],
+  "timeline": {
+    "version": 1,
+    "picture": {
+      "fpsNum": 30,
+      "fpsDen": 1,
+      "frameCount": 72
+    },
+    "initialUI": null,
+    "events": [
+      {
+        "id": "motion.trend-line-trace.plot-trace-start",
+        "kind": "plot-trace-start",
+        "target": "trend-segment-1",
+        "frame": 11,
+        "layerIds": [
+          "trend-segment-1"
+        ]
+      },
+      {
+        "id": "motion.trend-line-trace.plot-final-point",
+        "kind": "plot-final-point",
+        "target": "active-plot-point",
+        "frame": 50,
+        "layerIds": [
+          "active-plot-point"
+        ]
+      }
+    ],
+    "cues": []
+  }
+}

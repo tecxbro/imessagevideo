@@ -1,0 +1,82 @@
+{
+  "status": "pass",
+  "total": 185,
+  "records": [
+    {
+      "id": "01-photonhq",
+      "file": "audio-recreation/ui-cues/canonical-01-photonhq.json",
+      "sha256": "db83cd352d71af63396fa8644ee305a1833f4c777098c9e4b5ae01527fd45241",
+      "events": 1,
+      "counts": {
+        "tap": 1
+      }
+    },
+    {
+      "id": "02-danieltian",
+      "file": "audio-recreation/ui-cues/canonical-02-danieltian.json",
+      "sha256": "0ab83d585cb75d766bcf76883734b71c7ebb818ce67325adb03d45a72075fa51",
+      "events": 45,
+      "counts": {
+        "typing": 22,
+        "typing_burst": 10,
+        "message_send": 3,
+        "message_arrival": 10
+      }
+    },
+    {
+      "id": "03-photon-mini",
+      "file": "audio-recreation/ui-cues/canonical-03-photon-mini.json",
+      "sha256": "423a0d30c6f38f571a005e71d1a1c7b84a3f74b9c326b41b2af5a133a1e67ea7",
+      "events": 45,
+      "counts": {
+        "message_send": 3,
+        "message_arrival": 8,
+        "tap": 2,
+        "panel_open": 2,
+        "text_select": 1,
+        "delete": 1,
+        "typing": 23,
+        "control_appear": 1,
+        "cart_update": 3,
+        "panel_close": 1
+      }
+    },
+    {
+      "id": "04-poke",
+      "file": "audio-recreation/ui-cues/canonical-04-poke.json",
+      "sha256": "b2b44c5d35fff0f441b1216c2e388599cbd42f0804c9ae743f8fffcf5b87ad00",
+      "events": 35,
+      "counts": {
+        "typing": 14,
+        "message_arrival": 11,
+        "panel_open": 2,
+        "tap": 3,
+        "message_send": 4,
+        "control_appear": 1
+      }
+    },
+    {
+      "id": "05-linq",
+      "file": "audio-recreation/ui-cues/canonical-05-linq.json",
+      "sha256": "af2eae90e240ff5cf1a50a5407d9a99c8e35e0c1a904ff330dd2bb292b5f9595",
+      "events": 41,
+      "counts": {
+        "typing": 23,
+        "message_send": 4,
+        "tap": 6,
+        "message_arrival": 8
+      }
+    },
+    {
+      "id": "06-gallery",
+      "file": "audio-recreation/ui-cues/canonical-06-gallery.json",
+      "sha256": "6a40982cf6ecdaaea56805bb30b3a469afb826ef22c2deee2474d67c779be88f",
+      "events": 18,
+      "counts": {
+        "message_arrival": 13,
+        "message_send": 5
+      }
+    }
+  ],
+  "policy": "Use actual visible UI actions; no music-beat timing, title/AI typing, invented backspaces, or inferred optional gestures."
+}

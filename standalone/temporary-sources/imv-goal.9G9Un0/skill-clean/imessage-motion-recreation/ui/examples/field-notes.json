@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "skin": "film-ink",
+  "conversationId": "field",
+  "title": "Field team",
+  "service": "Messages · Night survey",
+  "participants": {"eli": "Eli", "rana": "Rana", "jo": "Jo"},
+  "localSenderId": "eli",
+  "display": {"width": 402, "height": 874, "textSize": 17},
+  "canvas": {"width": 488, "height": 968},
+  "fps": 24,
+  "frameCount": 272,
+  "assets": {
+    "north": "assets/north-log.png",
+    "south": "assets/south-log.png"
+  },
+  "inbox": [
+    {"id": "garden", "title": "Garden committee", "preview": "Seeds are on the porch"},
+    {"id": "field", "title": "Field team", "preview": "Tonight's night survey"},
+    {"id": "cafeteria", "title": "Café crew", "preview": "Tomorrow's menu"}
+  ],
+  "initial": {
+    "messages": [
+      {"id": "plan", "senderId": "jo", "text": "Which road do we take for the night survey?"},
+      {"id": "reply", "senderId": "eli", "text": "I can send the access notes.", "replyTo": "plan"},
+      {"id": "gate", "senderId": "rana", "text": "The usual gate is still locked. Try the trail beside the river."}
+    ]
+  },
+  "events": [
+    {"id": "field.list", "kind": "overlay", "frame": 0, "durationFrames": 0, "surface": "list"},
+    {"id": "field.search", "kind": "overlay", "frame": 14, "surface": "search", "query": ""},
+    {"id": "field.query", "kind": "search.query", "frame": 29, "query": "night survey"},
+    {"id": "field.open", "kind": "overlay", "frame": 49, "surface": "conversation"},
+    {"id": "field.focus", "kind": "focus", "frame": 65, "focused": true},
+    {"id": "field.suggested", "kind": "suggestion", "frame": 74, "phase": "visible", "label": "Use observation notes"},
+    {"id": "field.press", "kind": "suggestion", "frame": 86, "phase": "pressed"},
+    {"id": "field.dismiss", "kind": "suggestion", "frame": 96, "phase": "hidden", "dismissKeyboard": true},
+    {"id": "field.photos", "kind": "send", "frame": 108, "message": {"id": "photos", "attachmentIds": ["north", "south"]}},
+    {"id": "field.swipe", "kind": "media.page", "frame": 130, "messageId": "photos", "index": 1},
+    {"id": "field.view", "kind": "overlay", "frame": 146, "surface": "media", "messageId": "photos"},
+    {"id": "field.close-photo", "kind": "overlay", "frame": 166, "durationFrames": 0, "surface": "conversation"},
+    {"id": "field.poll", "kind": "receive", "frame": 176, "message": {
+      "id": "poll", "senderId": "rana", "card": {
+        "kind": "poll", "title": "Last stop for the survey?", "detail": "Pick a place with a clear view above the trees.",
+        "options": [
+          {"id": "river", "label": "River overlook", "votes": 2},
+          {"id": "bridge", "label": "Footbridge at the south bend", "votes": 1}
+        ]
+      }
+    }},
+    {"id": "field.vote", "kind": "card.vote", "frame": 200, "messageId": "poll", "optionId": "bridge", "votes": 2},
+    {"id": "field.revise", "kind": "edit", "frame": 220, "messageId": "reply", "text": "I can send the updated access notes from the station. The footbridge has a clear path along the south railing."},
+    {"id": "field.scroll", "kind": "scroll", "frame": 226, "offset": 260},
+    {"id": "field.camera", "kind": "camera", "frame": 238, "scale": 1.08, "x": 0, "y": 0},
+    {"id": "field.read", "kind": "receipt", "frame": 255, "messageId": "photos", "status": "Read"}
+  ],
+  "cues": [
+    {"id": "field.photos.send", "eventId": "field.photos", "offsetSamples": 0},
+    {"id": "field.vote.tap", "eventId": "field.vote", "offsetSamples": 0}
+  ]
+}

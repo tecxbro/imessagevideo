@@ -1,0 +1,1267 @@
+{
+  "schema": "message-motion-ui-events/1",
+  "id": "05-linq",
+  "fps_numerator": 30,
+  "fps_denominator": 1,
+  "fps": 30.0,
+  "frames": 1458,
+  "sample_count": 2332800,
+  "duration": 48.6,
+  "scheduling_picture": "accepted GSAP reconstruction; zero-based native frame",
+  "canonical_scene": "outputs/05-linq/final-v20/scene.json",
+  "canonical_scene_sha256": "658184bb8d05c50633f37fa0ef0bfd8a943773076f249c7e0dbf02991e6e93c6",
+  "source_cues": "05-linq-ui-cues.json",
+  "source_cues_sha256": "263b49818ec8374d38ca795625249e4a2b91c0bb468b631b3d6671b7a497b2d8",
+  "music_transients_used_as_timing": false,
+  "reference_audio_samples_used": false,
+  "hardware_keypress_timing_claimed": false,
+  "one_key_per_visible_batch": true,
+  "optional_inferred_events_rendered": false,
+  "events": [
+    {
+      "frame": 23,
+      "time": 0.7666666666666667,
+      "kind": "typing",
+      "group": "05.initial_human_composer",
+      "confidence": 0.99,
+      "observed_vs_inferred": "observed_visible_glyph_reveal",
+      "evidence_layer_or_source": [
+        {
+          "node_id": "v19-type-glyph-0",
+          "json_pointer": "/layers/1/children/5/children/0",
+          "property": "start/semanticText"
+        },
+        {
+          "node_id": "v19-composer-typed-glyphs",
+          "json_pointer": "/layers/1/children/5",
+          "property": "semanticText"
+        }
+      ],
+      "action_evidence": "First rendered native frame of this independently measured human draft glyph.",
+      "source_frame": 23,
+      "sample_offset_48000": 36800,
+      "character_or_delta": "Y",
+      "visible_character": "Y",
+      "draft_before": "",
+      "draft_after": "Y",
+      "intervening_whitespace_without_exact_timing": "",
+      "one_sound_at_this_frame": true,
+      "physical_key_down_observed": false,
+      "timing_precision_frames": 1,
+      "id": "05-linq-ui-001",
+      "event_id": "05-linq-ui-001"
+    },
+    {
+      "frame": 25,
+      "time": 0.8333333333333334,
+      "kind": "typing",
+      "group": "05.initial_human_composer",
+      "confidence": 0.99,
+      "observed_vs_inferred": "observed_visible_glyph_reveal",
+      "evidence_layer_or_source": [
+        {
+          "node_id": "v19-type-glyph-1",
+          "json_pointer": "/layers/1/children/5/children/1",
+          "property": "start/semanticText"
+        },
+        {
+          "node_id": "v19-composer-typed-glyphs",
+          "json_pointer": "/layers/1/children/5",
+          "property": "semanticText"
+        }
+      ],
+      "action_evidence": "First rendered native frame of this independently measured human draft glyph.",
+      "source_frame": 25,
+      "sample_offset_48000": 40000,
+      "character_or_delta": "o",
+      "visible_character": "o",
+      "draft_before": "Y",
+      "draft_after": "Yo",
+      "intervening_whitespace_without_exact_timing": "",
+      "one_sound_at_this_frame": true,
+      "physical_key_down_observed": false,
+      "timing_precision_frames": 1,
+      "id": "05-linq-ui-002",
+      "event_id": "05-linq-ui-002"
+    },
+    {
+      "frame": 30,
+      "time": 1.0,
+      "kind": "typing",
+      "group": "05.initial_human_composer",
+      "confidence": 0.99,
+      "observed_vs_inferred": "observed_visible_glyph_reveal",
+      "evidence_layer_or_source": [
+        {
+          "node_id": "v19-type-glyph-2",
+          "json_pointer": "/layers/1/children/5/children/2",
+          "property": "start/semanticText"
+        },
+        {
+          "node_id": "v19-composer-typed-glyphs",
+          "json_pointer": "/layers/1/children/5",
+          "property": "semanticText"
+        }
+      ],
+      "action_evidence": "First rendered native frame of this independently measured human draft glyph.",
+      "source_frame": 30,
+      "sample_offset_48000": 48000,
+      "character_or_delta": "i",
+      "visible_character": "i",
+      "draft_before": "Yo",
+      "draft_after": "Yo i",
+      "intervening_whitespace_without_exact_timing": " ",
+      "one_sound_at_this_frame": true,
+      "physical_key_down_observed": false,
+      "timing_precision_frames": 1,
+      "id": "05-linq-ui-003",
+      "event_id": "05-linq-ui-003"
+    },
+    {
+      "frame": 31,
+      "time": 1.0333333333333334,
+      "kind": "typing",
+      "group": "05.initial_human_composer",
+      "confidence": 0.99,
+      "observed_vs_inferred": "observed_visible_glyph_reveal",
+      "evidence_layer_or_source": [
+        {
+          "node_id": "v19-type-glyph-3",
+          "json_pointer": "/layers/1/children/5/children/3",
+          "property": "start/semanticText"
+        },
+        {
+          "node_id": "v19-composer-typed-glyphs",
+          "json_pointer": "/layers/1/children/5",
+          "property": "semanticText"
+        }
+      ],
+      "action_evidence": "First rendered native frame of this independently measured human draft glyph.",
+      "source_frame": 31,
+      "sample_offset_48000": 49600,
+      "character_or_delta": "'",
+      "visible_character": "'",
+      "draft_before": "Yo i",
+      "draft_after": "Yo i'",
+      "intervening_whitespace_without_exact_timing": "",
+      "one_sound_at_this_frame": true,
+      "physical_key_down_observed": false,
+      "timing_precision_frames": 1,
+      "id": "05-linq-ui-004",
+      "event_id": "05-linq-ui-004"
+    },
+    {
+      "frame": 34,
+      "time": 1.1333333333333333,
+      "kind": "typing",
+      "group": "05.initial_human_composer",
+      "confidence": 0.99,
+      "observed_vs_inferred": "observed_visible_glyph_reveal",
+      "evidence_layer_or_source": [
+        {
+          "node_id": "v19-type-glyph-4",
+          "json_pointer": "/layers/1/children/5/children/4",
+          "property": "start/semanticText"
+        },
+        {
+          "node_id": "v19-composer-typed-glyphs",
+          "json_pointer": "/layers/1/children/5",
+          "property": "semanticText"
+        }
+      ],
+      "action_evidence": "First rendered native frame of this independently measured human draft glyph.",
+      "source_frame": 34,
+      "sample_offset_48000": 54400,
+      "character_or_delta": "m",
+      "visible_character": "m",
+      "draft_before": "Yo i'",
+      "draft_after": "Yo i'm",
+      "intervening_whitespace_without_exact_timing": "",
+      "one_sound_at_this_frame": true,
+      "physical_key_down_observed": false,
+      "timing_precision_frames": 1,
+      "id": "05-linq-ui-005",
+      "event_id": "05-linq-ui-005"
+    },
+    {
+      "frame": 39,
+      "time": 1.3,
+      "kind": "typing",
+      "group": "05.initial_human_composer",
+      "confidence": 0.99,
+      "observed_vs_inferred": "observed_visible_glyph_reveal",
+      "evidence_layer_or_source": [
+        {
+          "node_id": "v19-type-glyph-5",
+          "json_pointer": "/layers/1/children/5/children/5",
+          "property": "start/semanticText"
+        },
+        {
+          "node_id": "v19-composer-typed-glyphs",
+          "json_pointer": "/layers/1/children/5",
+          "property": "semanticText"
+        }
+      ],
+      "action_evidence": "First rendered native frame of this independently measured human draft glyph.",
+      "source_frame": 39,
+      "sample_offset_48000": 62400,
+      "character_or_delta": "b",
+      "visible_character": "b",
+      "draft_before": "Yo i'm",
+      "draft_after": "Yo i'm b",
+      "intervening_whitespace_without_exact_timing": " ",
+      "one_sound_at_this_frame": true,
+      "physical_key_down_observed": false,
+      "timing_precision_frames": 1,
+      "id": "05-linq-ui-006",
+      "event_id": "05-linq-ui-006"
+    },
+    {
+      "frame": 40,
+      "time": 1.3333333333333333,
+      "kind": "typing",
+      "group": "05.initial_human_composer",
+      "confidence": 0.99,
+      "observed_vs_inferred": "observed_visible_glyph_reveal",
+      "evidence_layer_or_source": [
+        {
+          "node_id": "v19-type-glyph-6",
+          "json_pointer": "/layers/1/children/5/children/6",
+          "property": "start/semanticText"
+        },
+        {
+          "node_id": "v19-composer-typed-glyphs",
+          "json_pointer": "/layers/1/children/5",
+          "property": "semanticText"
+        }
+      ],
+      "action_evidence": "First rendered native frame of this independently measured human draft glyph.",
+      "source_frame": 40,
+      "sample_offset_48000": 64000,
+      "character_or_delta": "o",
+      "visible_character": "o",
+      "draft_before": "Yo i'm b",
+      "draft_after": "Yo i'm bo",
+      "intervening_whitespace_without_exact_timing": "",
+      "one_sound_at_this_frame": true,
+      "physical_key_down_observed": false,
+      "timing_precision_frames": 1,
+      "id": "05-linq-ui-007",
+      "event_id": "05-linq-ui-007"
+    },
+    {
+      "frame": 43,
+      "time": 1.4333333333333333,
+      "kind": "typing",
+      "group": "05.initial_human_composer",
+      "confidence": 0.99,
+      "observed_vs_inferred": "observed_visible_glyph_reveal",
+      "evidence_layer_or_source": [
+        {
+          "node_id": "v19-type-glyph-7",
+          "json_pointer": "/layers/1/children/5/children/7",
+          "property": "start/semanticText"
+        },
+        {
+          "node_id": "v19-composer-typed-glyphs",
+          "json_pointer": "/layers/1/children/5",
+          "property": "semanticText"
+        }
+      ],
+      "action_evidence": "First rendered native frame of this independently measured human draft glyph.",
+      "source_frame": 43,
+      "sample_offset_48000": 68800,
+      "character_or_delta": "r",
+      "visible_character": "r",
+      "draft_before": "Yo i'm bo",
+      "draft_after": "Yo i'm bor",
+      "intervening_whitespace_without_exact_timing": "",
+      "one_sound_at_this_frame": true,
+      "physical_key_down_observed": false,
+      "timing_precision_frames": 1,
+      "id": "05-linq-ui-008",
+      "event_id": "05-linq-ui-008"
+    },
+    {
+      "frame": 45,
+      "time": 1.5,
+      "kind": "typing",
+      "group": "05.initial_human_composer",
+      "confidence": 0.99,
+      "observed_vs_inferred": "observed_visible_glyph_reveal",
+      "evidence_layer_or_source": [
+        {
+          "node_id": "v19-type-glyph-8",
+          "json_pointer": "/layers/1/children/5/children/8",
+          "property": "start/semanticText"
+        },
+        {
+          "node_id": "v19-composer-typed-glyphs",
+          "json_pointer": "/layers/1/children/5",
+          "property": "semanticText"
+        }
+      ],
+      "action_evidence": "First rendered native frame of this independently measured human draft glyph.",
+      "source_frame": 45,
+      "sample_offset_48000": 72000,
+      "character_or_delta": "e",
+      "visible_character": "e",
+      "draft_before": "Yo i'm bor",
+      "draft_after": "Yo i'm bore",
+      "intervening_whitespace_without_exact_timing": "",
+      "one_sound_at_this_frame": true,
+      "physical_key_down_observed": false,
+      "timing_precision_frames": 1,
+      "id": "05-linq-ui-009",
+      "event_id": "05-linq-ui-009"
+    },
+    {
+      "frame": 48,
+      "time": 1.6,
+      "kind": "typing",
+      "group": "05.initial_human_composer",
+      "confidence": 0.99,
+      "observed_vs_inferred": "observed_visible_glyph_reveal",
+      "evidence_layer_or_source": [
+        {
+          "node_id": "v19-type-glyph-9",
+          "json_pointer": "/layers/1/children/5/children/9",
+          "property": "start/semanticText"
+        },
+        {
+          "node_id": "v19-composer-typed-glyphs",
+          "json_pointer": "/layers/1/children/5",
+          "property": "semanticText"
+        }
+      ],
+      "action_evidence": "First rendered native frame of this independently measured human draft glyph.",
+      "source_frame": 48,
+      "sample_offset_48000": 76800,
+      "character_or_delta": "d",
+      "visible_character": "d",
+      "draft_before": "Yo i'm bore",
+      "draft_after": "Yo i'm bored",
+      "intervening_whitespace_without_exact_timing": "",
+      "one_sound_at_this_frame": true,
+      "physical_key_down_observed": false,
+      "timing_precision_frames": 1,
+      "id": "05-linq-ui-010",
+      "event_id": "05-linq-ui-010"
+    },
+    {
+      "frame": 50,
+      "time": 1.6666666666666667,
+      "kind": "typing",
+      "group": "05.initial_human_composer",
+      "confidence": 0.99,
+      "observed_vs_inferred": "observed_visible_glyph_reveal",
+      "evidence_layer_or_source": [
+        {
+          "node_id": "v19-type-glyph-10",
+          "json_pointer": "/layers/1/children/5/children/10",
+          "property": "start/semanticText"
+        },
+        {
+          "node_id": "v19-composer-typed-glyphs",
+          "json_pointer": "/layers/1/children/5",
+          "property": "semanticText"
+        }
+      ],
+      "action_evidence": "First rendered native frame of this independently measured human draft glyph.",
+      "source_frame": 50,
+      "sample_offset_48000": 80000,
+      "character_or_delta": ",",
+      "visible_character": ",",
+      "draft_before": "Yo i'm bored",
+      "draft_after": "Yo i'm bored,",
+      "intervening_whitespace_without_exact_timing": "",
+      "one_sound_at_this_frame": true,
+      "physical_key_down_observed": false,
+      "timing_precision_frames": 1,
+      "id": "05-linq-ui-011",
+      "event_id": "05-linq-ui-011"
+    },
+    {
+      "frame": 54,
+      "time": 1.8,
+      "kind": "typing",
+      "group": "05.initial_human_composer",
+      "confidence": 0.99,
+      "observed_vs_inferred": "observed_visible_glyph_reveal",
+      "evidence_layer_or_source": [
+        {
+          "node_id": "v19-type-glyph-11",
+          "json_pointer": "/layers/1/children/5/children/11",
+          "property": "start/semanticText"
+        },
+        {
+          "node_id": "v19-composer-typed-glyphs",
+          "json_pointer": "/layers/1/children/5",
+          "property": "semanticText"
+        }
+      ],
+      "action_evidence": "First rendered native frame of this independently measured human draft glyph.",
+      "source_frame": 54,
+      "sample_offset_48000": 86400,
+      "character_or_delta": "c",
+      "visible_character": "c",
+      "draft_before": "Yo i'm bored,",
+      "draft_after": "Yo i'm bored, c",
+      "intervening_whitespace_without_exact_timing": " ",
+      "one_sound_at_this_frame": true,
+      "physical_key_down_observed": false,
+      "timing_precision_frames": 1,
+      "id": "05-linq-ui-012",
+      "event_id": "05-linq-ui-012"
+    },
+    {
+      "frame": 56,
+      "time": 1.8666666666666667,
+      "kind": "typing",
+      "group": "05.initial_human_composer",
+      "confidence": 0.99,
+      "observed_vs_inferred": "observed_visible_glyph_reveal",
+      "evidence_layer_or_source": [
+        {
+          "node_id": "v19-type-glyph-12",
+          "json_pointer": "/layers/1/children/5/children/12",
+          "property": "start/semanticText"
+        },
+        {
+          "node_id": "v19-composer-typed-glyphs",
+          "json_pointer": "/layers/1/children/5",
+          "property": "semanticText"
+        }
+      ],
+      "action_evidence": "First rendered native frame of this independently measured human draft glyph.",
+      "source_frame": 56,
+      "sample_offset_48000": 89600,
+      "character_or_delta": "h",
+      "visible_character": "h",
+      "draft_before": "Yo i'm bored, c",
+      "draft_after": "Yo i'm bored, ch",
+      "intervening_whitespace_without_exact_timing": "",
+      "one_sound_at_this_frame": true,
+      "physical_key_down_observed": false,
+      "timing_precision_frames": 1,
+      "id": "05-linq-ui-013",
+      "event_id": "05-linq-ui-013"
+    },
+    {
+      "frame": 59,
+      "time": 1.9666666666666666,
+      "kind": "typing",
+      "group": "05.initial_human_composer",
+      "confidence": 0.99,
+      "observed_vs_inferred": "observed_visible_glyph_reveal",
+      "evidence_layer_or_source": [
+        {
+          "node_id": "v19-type-glyph-13",
+          "json_pointer": "/layers/1/children/5/children/13",
+          "property": "start/semanticText"
+        },
+        {
+          "node_id": "v19-composer-typed-glyphs",
+          "json_pointer": "/layers/1/children/5",
+          "property": "semanticText"
+        }
+      ],
+      "action_evidence": "First rendered native frame of this independently measured human draft glyph.",
+      "source_frame": 59,
+      "sample_offset_48000": 94400,
+      "character_or_delta": "e",
+      "visible_character": "e",
+      "draft_before": "Yo i'm bored, ch",
+      "draft_after": "Yo i'm bored, che",
+      "intervening_whitespace_without_exact_timing": "",
+      "one_sound_at_this_frame": true,
+      "physical_key_down_observed": false,
+      "timing_precision_frames": 1,
+      "id": "05-linq-ui-014",
+      "event_id": "05-linq-ui-014"
+    },
+    {
+      "frame": 61,
+      "time": 2.033333333333333,
+      "kind": "typing",
+      "group": "05.initial_human_composer",
+      "confidence": 0.99,
+      "observed_vs_inferred": "observed_visible_glyph_reveal",
+      "evidence_layer_or_source": [
+        {
+          "node_id": "v19-type-glyph-14",
+          "json_pointer": "/layers/1/children/5/children/14",
+          "property": "start/semanticText"
+        },
+        {
+          "node_id": "v19-composer-typed-glyphs",
+          "json_pointer": "/layers/1/children/5",
+          "property": "semanticText"
+        }
+      ],
+      "action_evidence": "First rendered native frame of this independently measured human draft glyph.",
+      "source_frame": 61,
+      "sample_offset_48000": 97600,
+      "character_or_delta": "s",
+      "visible_character": "s",
+      "draft_before": "Yo i'm bored, che",
+      "draft_after": "Yo i'm bored, ches",
+      "intervening_whitespace_without_exact_timing": "",
+      "one_sound_at_this_frame": true,
+      "physical_key_down_observed": false,
+      "timing_precision_frames": 1,
+      "id": "05-linq-ui-015",
+      "event_id": "05-linq-ui-015"
+    },
+    {
+      "frame": 64,
+      "time": 2.1333333333333333,
+      "kind": "typing",
+      "group": "05.initial_human_composer",
+      "confidence": 0.99,
+      "observed_vs_inferred": "observed_visible_glyph_reveal",
+      "evidence_layer_or_source": [
+        {
+          "node_id": "v19-type-glyph-15",
+          "json_pointer": "/layers/1/children/5/children/15",
+          "property": "start/semanticText"
+        },
+        {
+          "node_id": "v19-composer-typed-glyphs",
+          "json_pointer": "/layers/1/children/5",
+          "property": "semanticText"
+        }
+      ],
+      "action_evidence": "First rendered native frame of this independently measured human draft glyph.",
+      "source_frame": 64,
+      "sample_offset_48000": 102400,
+      "character_or_delta": "s",
+      "visible_character": "s",
+      "draft_before": "Yo i'm bored, ches",
+      "draft_after": "Yo i'm bored, chess",
+      "intervening_whitespace_without_exact_timing": "",
+      "one_sound_at_this_frame": true,
+      "physical_key_down_observed": false,
+      "timing_precision_frames": 1,
+      "id": "05-linq-ui-016",
+      "event_id": "05-linq-ui-016"
+    },
+    {
+      "frame": 69,
+      "time": 2.3,
+      "kind": "typing",
+      "group": "05.initial_human_composer",
+      "confidence": 0.99,
+      "observed_vs_inferred": "observed_visible_glyph_reveal",
+      "evidence_layer_or_source": [
+        {
+          "node_id": "v19-type-glyph-16",
+          "json_pointer": "/layers/1/children/5/children/16",
+          "property": "start/semanticText"
+        },
+        {
+          "node_id": "v19-composer-typed-glyphs",
+          "json_pointer": "/layers/1/children/5",
+          "property": "semanticText"
+        }
+      ],
+      "action_evidence": "First rendered native frame of this independently measured human draft glyph.",
+      "source_frame": 69,
+      "sample_offset_48000": 110400,
+      "character_or_delta": "b",
+      "visible_character": "b",
+      "draft_before": "Yo i'm bored, chess",
+      "draft_after": "Yo i'm bored, chess b",
+      "intervening_whitespace_without_exact_timing": " ",
+      "one_sound_at_this_frame": true,
+      "physical_key_down_observed": false,
+      "timing_precision_frames": 1,
+      "id": "05-linq-ui-017",
+      "event_id": "05-linq-ui-017"
+    },
+    {
+      "frame": 70,
+      "time": 2.3333333333333335,
+      "kind": "typing",
+      "group": "05.initial_human_composer",
+      "confidence": 0.99,
+      "observed_vs_inferred": "observed_visible_glyph_reveal",
+      "evidence_layer_or_source": [
+        {
+          "node_id": "v19-type-glyph-17",
+          "json_pointer": "/layers/1/children/5/children/17",
+          "property": "start/semanticText"
+        },
+        {
+          "node_id": "v19-composer-typed-glyphs",
+          "json_pointer": "/layers/1/children/5",
+          "property": "semanticText"
+        }
+      ],
+      "action_evidence": "First rendered native frame of this independently measured human draft glyph.",
+      "source_frame": 70,
+      "sample_offset_48000": 112000,
+      "character_or_delta": "a",
+      "visible_character": "a",
+      "draft_before": "Yo i'm bored, chess b",
+      "draft_after": "Yo i'm bored, chess ba",
+      "intervening_whitespace_without_exact_timing": "",
+      "one_sound_at_this_frame": true,
+      "physical_key_down_observed": false,
+      "timing_precision_frames": 1,
+      "id": "05-linq-ui-018",
+      "event_id": "05-linq-ui-018"
+    },
+    {
+      "frame": 73,
+      "time": 2.433333333333333,
+      "kind": "typing",
+      "group": "05.initial_human_composer",
+      "confidence": 0.99,
+      "observed_vs_inferred": "observed_visible_glyph_reveal",
+      "evidence_layer_or_source": [
+        {
+          "node_id": "v19-type-glyph-18",
+          "json_pointer": "/layers/1/children/5/children/18",
+          "property": "start/semanticText"
+        },
+        {
+          "node_id": "v19-composer-typed-glyphs",
+          "json_pointer": "/layers/1/children/5",
+          "property": "semanticText"
+        }
+      ],
+      "action_evidence": "First rendered native frame of this independently measured human draft glyph.",
+      "source_frame": 73,
+      "sample_offset_48000": 116800,
+      "character_or_delta": "t",
+      "visible_character": "t",
+      "draft_before": "Yo i'm bored, chess ba",
+      "draft_after": "Yo i'm bored, chess bat",
+      "intervening_whitespace_without_exact_timing": "",
+      "one_sound_at_this_frame": true,
+      "physical_key_down_observed": false,
+      "timing_precision_frames": 1,
+      "id": "05-linq-ui-019",
+      "event_id": "05-linq-ui-019"
+    },
+    {
+      "frame": 75,
+      "time": 2.5,
+      "kind": "typing",
+      "group": "05.initial_human_composer",
+      "confidence": 0.99,
+      "observed_vs_inferred": "observed_visible_glyph_reveal",
+      "evidence_layer_or_source": [
+        {
+          "node_id": "v19-type-glyph-19",
+          "json_pointer": "/layers/1/children/5/children/19",
+          "property": "start/semanticText"
+        },
+        {
+          "node_id": "v19-composer-typed-glyphs",
+          "json_pointer": "/layers/1/children/5",
+          "property": "semanticText"
+        }
+      ],
+      "action_evidence": "First rendered native frame of this independently measured human draft glyph.",
+      "source_frame": 75,
+      "sample_offset_48000": 120000,
+      "character_or_delta": "t",
+      "visible_character": "t",
+      "draft_before": "Yo i'm bored, chess bat",
+      "draft_after": "Yo i'm bored, chess batt",
+      "intervening_whitespace_without_exact_timing": "",
+      "one_sound_at_this_frame": true,
+      "physical_key_down_observed": false,
+      "timing_precision_frames": 1,
+      "id": "05-linq-ui-020",
+      "event_id": "05-linq-ui-020"
+    },
+    {
+      "frame": 78,
+      "time": 2.6,
+      "kind": "typing",
+      "group": "05.initial_human_composer",
+      "confidence": 0.99,
+      "observed_vs_inferred": "observed_visible_glyph_reveal",
+      "evidence_layer_or_source": [
+        {
+          "node_id": "v19-type-glyph-20",
+          "json_pointer": "/layers/1/children/5/children/20",
+          "property": "start/semanticText"
+        },
+        {
+          "node_id": "v19-composer-typed-glyphs",
+          "json_pointer": "/layers/1/children/5",
+          "property": "semanticText"
+        }
+      ],
+      "action_evidence": "First rendered native frame of this independently measured human draft glyph.",
+      "source_frame": 78,
+      "sample_offset_48000": 124800,
+      "character_or_delta": "l",
+      "visible_character": "l",
+      "draft_before": "Yo i'm bored, chess batt",
+      "draft_after": "Yo i'm bored, chess battl",
+      "intervening_whitespace_without_exact_timing": "",
+      "one_sound_at_this_frame": true,
+      "physical_key_down_observed": false,
+      "timing_precision_frames": 1,
+      "id": "05-linq-ui-021",
+      "event_id": "05-linq-ui-021"
+    },
+    {
+      "frame": 80,
+      "time": 2.6666666666666665,
+      "kind": "typing",
+      "group": "05.initial_human_composer",
+      "confidence": 0.99,
+      "observed_vs_inferred": "observed_visible_glyph_reveal",
+      "evidence_layer_or_source": [
+        {
+          "node_id": "v19-type-glyph-21",
+          "json_pointer": "/layers/1/children/5/children/21",
+          "property": "start/semanticText"
+        },
+        {
+          "node_id": "v19-composer-typed-glyphs",
+          "json_pointer": "/layers/1/children/5",
+          "property": "semanticText"
+        }
+      ],
+      "action_evidence": "First rendered native frame of this independently measured human draft glyph.",
+      "source_frame": 80,
+      "sample_offset_48000": 128000,
+      "character_or_delta": "e",
+      "visible_character": "e",
+      "draft_before": "Yo i'm bored, chess battl",
+      "draft_after": "Yo i'm bored, chess battle",
+      "intervening_whitespace_without_exact_timing": "",
+      "one_sound_at_this_frame": true,
+      "physical_key_down_observed": false,
+      "timing_precision_frames": 1,
+      "id": "05-linq-ui-022",
+      "event_id": "05-linq-ui-022"
+    },
+    {
+      "frame": 83,
+      "time": 2.7666666666666666,
+      "kind": "typing",
+      "group": "05.initial_human_composer",
+      "confidence": 0.99,
+      "observed_vs_inferred": "observed_visible_glyph_reveal",
+      "evidence_layer_or_source": [
+        {
+          "node_id": "v19-type-glyph-22",
+          "json_pointer": "/layers/1/children/5/children/22",
+          "property": "start/semanticText"
+        },
+        {
+          "node_id": "v19-composer-typed-glyphs",
+          "json_pointer": "/layers/1/children/5",
+          "property": "semanticText"
+        }
+      ],
+      "action_evidence": "First rendered native frame of this independently measured human draft glyph.",
+      "source_frame": 83,
+      "sample_offset_48000": 132800,
+      "character_or_delta": "?",
+      "visible_character": "?",
+      "draft_before": "Yo i'm bored, chess battle",
+      "draft_after": "Yo i'm bored, chess battle?",
+      "intervening_whitespace_without_exact_timing": "",
+      "one_sound_at_this_frame": true,
+      "physical_key_down_observed": false,
+      "timing_precision_frames": 1,
+      "id": "05-linq-ui-023",
+      "event_id": "05-linq-ui-023"
+    },
+    {
+      "frame": 149,
+      "time": 4.966666666666667,
+      "kind": "message_send",
+      "group": "05.chess_outgoing_bundle",
+      "confidence": 0.9,
+      "observed_vs_inferred": "observed_visible_ui_response",
+      "evidence_layer_or_source": [
+        {
+          "node_id": "v16-preview-directional-shutter",
+          "json_pointer": "/layers/7"
+        }
+      ],
+      "action_evidence": "Outgoing chess app/message bundle first enters. Question copy begins151; treat attachment+copy as one send cue, not two simultaneous sends.",
+      "source_frame": 149,
+      "sample_offset_48000": 238400,
+      "character_or_delta": "Yo i'm bored, chess battle?",
+      "physical_touch_observed": false,
+      "timing_window_frames": [
+        149,
+        151
+      ],
+      "control_press_frame_unknown": true,
+      "id": "05-linq-ui-024",
+      "event_id": "05-linq-ui-024"
+    },
+    {
+      "frame": 216,
+      "time": 7.2,
+      "kind": "tap",
+      "group": "05.chess_select_f2",
+      "confidence": 0.94,
+      "observed_vs_inferred": "observed_visible_ui_response",
+      "evidence_layer_or_source": [
+        {
+          "node_id": "v10-selection-art",
+          "json_pointer": "/layers/10/children/0/children/1"
+        }
+      ],
+      "action_evidence": "Selection opacity jumps from~.017 at215 to~.980 at216. Audible click aligned to visible cell-selection response; no finger/pointer is shown.",
+      "source_frame": 216,
+      "sample_offset_48000": 345600,
+      "character_or_delta": "select f2",
+      "physical_touch_observed": false,
+      "timing_precision_frames": 1,
+      "id": "05-linq-ui-025",
+      "event_id": "05-linq-ui-025"
+    },
+    {
+      "frame": 228,
+      "time": 7.6,
+      "kind": "tap",
+      "group": "05.chess_move_f2_f3",
+      "confidence": 0.91,
+      "observed_vs_inferred": "observed_visible_ui_response",
+      "evidence_layer_or_source": [
+        {
+          "node_id": "root-white-pawn-post-move-selection-v19",
+          "json_pointer": "/layers/10/children/0/children/2"
+        }
+      ],
+      "action_evidence": "Selected-cell/undo UI switches and the independently measured white pawn begins moving228; not the earlier discarded226 trajectory.",
+      "source_frame": 228,
+      "sample_offset_48000": 364800,
+      "character_or_delta": "move f2 to f3",
+      "physical_touch_observed": false,
+      "timing_window_frames": [
+        227,
+        228
+      ],
+      "id": "05-linq-ui-026",
+      "event_id": "05-linq-ui-026"
+    },
+    {
+      "frame": 257,
+      "time": 8.566666666666666,
+      "kind": "message_send",
+      "group": "05.flight_question",
+      "confidence": 0.94,
+      "observed_vs_inferred": "observed_visible_ui_response",
+      "evidence_layer_or_source": [
+        {
+          "node_id": "g-357",
+          "json_pointer": "/layers/9"
+        }
+      ],
+      "action_evidence": "First native rendered entry of the complete outgoing/incoming message or card. This is a bubble/card cue, not typing body text.",
+      "source_frame": 257,
+      "sample_offset_48000": 411200,
+      "character_or_delta": "hey can you find me a one way flight from Atlanta to San Francisco in July? looking for something cheap",
+      "physical_touch_observed": false,
+      "id": "05-linq-ui-027",
+      "event_id": "05-linq-ui-027"
+    },
+    {
+      "frame": 314,
+      "time": 10.466666666666667,
+      "kind": "message_arrival",
+      "group": "05.flight_reply",
+      "confidence": 0.94,
+      "observed_vs_inferred": "observed_visible_ui_response",
+      "evidence_layer_or_source": [
+        {
+          "node_id": "v10-flight-reply",
+          "json_pointer": "/layers/11/children/0"
+        }
+      ],
+      "action_evidence": "First native rendered entry of the complete outgoing/incoming message or card. This is a bubble/card cue, not typing body text.",
+      "source_frame": 314,
+      "sample_offset_48000": 502400,
+      "character_or_delta": "On it! Found a few options, here\u2019s the cheapest one way:",
+      "physical_touch_observed": false,
+      "id": "05-linq-ui-028",
+      "event_id": "05-linq-ui-028"
+    },
+    {
+      "frame": 477,
+      "time": 15.9,
+      "kind": "message_arrival",
+      "group": "05.flight_booked",
+      "confidence": 0.94,
+      "observed_vs_inferred": "observed_visible_ui_response",
+      "evidence_layer_or_source": [
+        {
+          "node_id": "g-567",
+          "json_pointer": "/layers/14"
+        }
+      ],
+      "action_evidence": "First native rendered entry of the complete outgoing/incoming message or card. This is a bubble/card cue, not typing body text.",
+      "source_frame": 477,
+      "sample_offset_48000": 763200,
+      "character_or_delta": "Your flight is booked!",
+      "physical_touch_observed": false,
+      "id": "05-linq-ui-029",
+      "event_id": "05-linq-ui-029"
+    },
+    {
+      "frame": 511,
+      "time": 17.033333333333335,
+      "kind": "message_send",
+      "group": "05.necklace_question",
+      "confidence": 0.94,
+      "observed_vs_inferred": "observed_visible_ui_response",
+      "evidence_layer_or_source": [
+        {
+          "node_id": "g-572",
+          "json_pointer": "/layers/15"
+        }
+      ],
+      "action_evidence": "First native rendered entry of the complete outgoing/incoming message or card. This is a bubble/card cue, not typing body text.",
+      "source_frame": 511,
+      "sample_offset_48000": 817600,
+      "character_or_delta": "i wanna check out some necklaces",
+      "physical_touch_observed": false,
+      "id": "05-linq-ui-030",
+      "event_id": "05-linq-ui-030"
+    },
+    {
+      "frame": 538,
+      "time": 17.933333333333334,
+      "kind": "message_arrival",
+      "group": "05.jewelry_reply",
+      "confidence": 0.94,
+      "observed_vs_inferred": "observed_visible_ui_response",
+      "evidence_layer_or_source": [
+        {
+          "node_id": "v11-hot-reply",
+          "json_pointer": "/layers/16/children/0"
+        }
+      ],
+      "action_evidence": "First native rendered entry of the complete outgoing/incoming message or card. This is a bubble/card cue, not typing body text.",
+      "source_frame": 538,
+      "sample_offset_48000": 860800,
+      "character_or_delta": "Here\u2019s what\u2019s hot right now",
+      "physical_touch_observed": false,
+      "id": "05-linq-ui-031",
+      "event_id": "05-linq-ui-031"
+    },
+    {
+      "frame": 651,
+      "time": 21.7,
+      "kind": "message_arrival",
+      "group": "05.order_confirmed",
+      "confidence": 0.94,
+      "observed_vs_inferred": "observed_visible_ui_response",
+      "evidence_layer_or_source": [
+        {
+          "node_id": "g-595",
+          "json_pointer": "/layers/17"
+        }
+      ],
+      "action_evidence": "First native rendered entry of the complete outgoing/incoming message or card. This is a bubble/card cue, not typing body text.",
+      "source_frame": 651,
+      "sample_offset_48000": 1041600,
+      "character_or_delta": "Order confirmed, I\u2019ll ping you when tracking\u2019s ready",
+      "physical_touch_observed": false,
+      "id": "05-linq-ui-032",
+      "event_id": "05-linq-ui-032"
+    },
+    {
+      "frame": 686,
+      "time": 22.866666666666667,
+      "kind": "message_send",
+      "group": "05.groceries_question",
+      "confidence": 0.94,
+      "observed_vs_inferred": "observed_visible_ui_response",
+      "evidence_layer_or_source": [
+        {
+          "node_id": "broad-v5-group-25",
+          "json_pointer": "/layers/18"
+        }
+      ],
+      "action_evidence": "First native rendered entry of the complete outgoing/incoming message or card. This is a bubble/card cue, not typing body text.",
+      "source_frame": 686,
+      "sample_offset_48000": 1097600,
+      "character_or_delta": "can you order my weekly groceries?",
+      "physical_touch_observed": false,
+      "id": "05-linq-ui-033",
+      "event_id": "05-linq-ui-033"
+    },
+    {
+      "frame": 699,
+      "time": 23.3,
+      "kind": "message_arrival",
+      "group": "05.groceries_quote",
+      "confidence": 0.94,
+      "observed_vs_inferred": "observed_visible_ui_response",
+      "evidence_layer_or_source": [
+        {
+          "node_id": "v10-cash-reply",
+          "json_pointer": "/layers/19/children/0"
+        }
+      ],
+      "action_evidence": "First native rendered entry of the complete outgoing/incoming message or card. This is a bubble/card cue, not typing body text.",
+      "source_frame": 699,
+      "sample_offset_48000": 1118400,
+      "character_or_delta": "Sure, it\u2019ll be $166.89",
+      "physical_touch_observed": false,
+      "id": "05-linq-ui-034",
+      "event_id": "05-linq-ui-034"
+    },
+    {
+      "frame": 711,
+      "time": 23.7,
+      "kind": "message_arrival",
+      "group": "05.cash_request_card",
+      "confidence": 0.94,
+      "observed_vs_inferred": "observed_visible_ui_response",
+      "evidence_layer_or_source": [
+        {
+          "node_id": "v10-cash-request",
+          "json_pointer": "/layers/19/children/1"
+        }
+      ],
+      "action_evidence": "First native rendered entry of the complete outgoing/incoming message or card. This is a bubble/card cue, not typing body text.",
+      "source_frame": 711,
+      "sample_offset_48000": 1137600,
+      "character_or_delta": "$166.89 Cash request",
+      "physical_touch_observed": false,
+      "id": "05-linq-ui-035",
+      "event_id": "05-linq-ui-035"
+    },
+    {
+      "frame": 786,
+      "time": 26.2,
+      "kind": "tap",
+      "group": "05.cash_plus_1",
+      "confidence": 0.96,
+      "observed_vs_inferred": "observed_visible_ui_response",
+      "evidence_layer_or_source": [
+        {
+          "node_id": "root-cash-control-disc-v19",
+          "json_pointer": "/layers/55/children/1/children/1/children/1"
+        }
+      ],
+      "action_evidence": "Distinct brighter plus-control response, followed by the next measured native amount-rail increment. Click alignment is observed UI response, not an observed physical contact.",
+      "source_frame": 786,
+      "sample_offset_48000": 1257600,
+      "character_or_delta": "$162.89 \u2192 $163.89",
+      "physical_touch_observed": false,
+      "timing_window_frames": [
+        786,
+        787
+      ],
+      "amount_change_frame": 787,
+      "amount_rail_evidence": {
+        "node_id": "v10-cash-units-rail",
+        "json_pointer": "/layers/55/children/1/children/2/children/1/children/0",
+        "property": "keyframes.y"
+      },
+      "control_fill_before": "#1f1f1f",
+      "control_fill_at_event": "#3b3b3b",
+      "id": "05-linq-ui-036",
+      "event_id": "05-linq-ui-036"
+    },
+    {
+      "frame": 791,
+      "time": 26.366666666666667,
+      "kind": "tap",
+      "group": "05.cash_plus_2",
+      "confidence": 0.96,
+      "observed_vs_inferred": "observed_visible_ui_response",
+      "evidence_layer_or_source": [
+        {
+          "node_id": "root-cash-control-disc-v19",
+          "json_pointer": "/layers/55/children/1/children/1/children/1"
+        }
+      ],
+      "action_evidence": "Distinct brighter plus-control response, followed by the next measured native amount-rail increment. Click alignment is observed UI response, not an observed physical contact.",
+      "source_frame": 791,
+      "sample_offset_48000": 1265600,
+      "character_or_delta": "$163.89 \u2192 $164.89",
+      "physical_touch_observed": false,
+      "timing_window_frames": [
+        791,
+        792
+      ],
+      "amount_change_frame": 792,
+      "amount_rail_evidence": {
+        "node_id": "v10-cash-units-rail",
+        "json_pointer": "/layers/55/children/1/children/2/children/1/children/0",
+        "property": "keyframes.y"
+      },
+      "control_fill_before": "#424242",
+      "control_fill_at_event": "#4b4b4b",
+      "id": "05-linq-ui-037",
+      "event_id": "05-linq-ui-037"
+    },
+    {
+      "frame": 796,
+      "time": 26.533333333333335,
+      "kind": "tap",
+      "group": "05.cash_plus_3",
+      "confidence": 0.96,
+      "observed_vs_inferred": "observed_visible_ui_response",
+      "evidence_layer_or_source": [
+        {
+          "node_id": "root-cash-control-disc-v19",
+          "json_pointer": "/layers/55/children/1/children/1/children/1"
+        }
+      ],
+      "action_evidence": "Distinct brighter plus-control response, followed by the next measured native amount-rail increment. Click alignment is observed UI response, not an observed physical contact.",
+      "source_frame": 796,
+      "sample_offset_48000": 1273600,
+      "character_or_delta": "$164.89 \u2192 $165.89",
+      "physical_touch_observed": false,
+      "timing_window_frames": [
+        796,
+        797
+      ],
+      "amount_change_frame": 797,
+      "amount_rail_evidence": {
+        "node_id": "v10-cash-units-rail",
+        "json_pointer": "/layers/55/children/1/children/2/children/1/children/0",
+        "property": "keyframes.y"
+      },
+      "control_fill_before": "#525252",
+      "control_fill_at_event": "#5e5e5e",
+      "id": "05-linq-ui-038",
+      "event_id": "05-linq-ui-038"
+    },
+    {
+      "frame": 802,
+      "time": 26.733333333333334,
+      "kind": "tap",
+      "group": "05.cash_plus_4",
+      "confidence": 0.96,
+      "observed_vs_inferred": "observed_visible_ui_response",
+      "evidence_layer_or_source": [
+        {
+          "node_id": "root-cash-control-disc-v19",
+          "json_pointer": "/layers/55/children/1/children/1/children/1"
+        }
+      ],
+      "action_evidence": "Distinct brighter plus-control response, followed by the next measured native amount-rail increment. Click alignment is observed UI response, not an observed physical contact.",
+      "source_frame": 802,
+      "sample_offset_48000": 1283200,
+      "character_or_delta": "$165.89 \u2192 $166.89",
+      "physical_touch_observed": false,
+      "timing_window_frames": [
+        802,
+        803
+      ],
+      "amount_change_frame": 803,
+      "amount_rail_evidence": {
+        "node_id": "v10-cash-units-rail",
+        "json_pointer": "/layers/55/children/1/children/2/children/1/children/0",
+        "property": "keyframes.y"
+      },
+      "control_fill_before": "#474747",
+      "control_fill_at_event": "#4b4b4b",
+      "id": "05-linq-ui-039",
+      "event_id": "05-linq-ui-039"
+    },
+    {
+      "frame": 830,
+      "time": 27.666666666666668,
+      "kind": "message_arrival",
+      "group": "05.groceries_ordering",
+      "confidence": 0.94,
+      "observed_vs_inferred": "observed_visible_ui_response",
+      "evidence_layer_or_source": [
+        {
+          "node_id": "g-631",
+          "json_pointer": "/layers/20"
+        }
+      ],
+      "action_evidence": "First native rendered entry of the complete outgoing/incoming message or card. This is a bubble/card cue, not typing body text.",
+      "source_frame": 830,
+      "sample_offset_48000": 1328000,
+      "character_or_delta": "Got it, ordering now",
+      "physical_touch_observed": false,
+      "id": "05-linq-ui-040",
+      "event_id": "05-linq-ui-040"
+    },
+    {
+      "frame": 1150,
+      "time": 38.333333333333336,
+      "kind": "message_arrival",
+      "group": "05.flight_checkin",
+      "confidence": 0.94,
+      "observed_vs_inferred": "observed_visible_ui_response",
+      "evidence_layer_or_source": [
+        {
+          "node_id": "g-925",
+          "json_pointer": "/layers/27"
+        }
+      ],
+      "action_evidence": "First native rendered entry of the complete outgoing/incoming message or card. This is a bubble/card cue, not typing body text.",
+      "source_frame": 1150,
+      "sample_offset_48000": 1840000,
+      "character_or_delta": "Check-in just opened; tap to get your boarding pass",
+      "physical_touch_observed": false,
+      "id": "05-linq-ui-041",
+      "event_id": "05-linq-ui-041"
+    }
+  ],
+  "counts": {
+    "typing": 23,
+    "message_send": 4,
+    "tap": 6,
+    "message_arrival": 8
+  },
+  "exclusions": [
+    {
+      "span_frames": [
+        0,
+        22
+      ],
+      "reason": "Placeholder iMessage/mic/send readiness is not typed human text."
+    },
+    {
+      "span_frames": [
+        84,
+        149
+      ],
+      "reason": "Completed draft is held, moved away and sent. No backspace/deletion sound is justified."
+    },
+    {
+      "span_frames": [
+        99,
+        109
+      ],
+      "reason": "Composer repeats the already completed same draft under camera motion; no duplicate typing."
+    },
+    {
+      "span_frames": [
+        257,
+        1150
+      ],
+      "reason": "Whole outgoing paragraphs and AI responses/cards appear as message bodies; no human composer character sequence is visible. Their body reveal must not become keyboard sounds."
+    },
+    {
+      "span_frames": [
+        773,
+        810
+      ],
+      "reason": "Cash numeric rail is changed by four plus responses, not typing. Caret blink and rolling digits are excluded from keyboard cues."
+    },
+    {
+      "span_frames": [
+        1268,
+        1457
+      ],
+      "reason": "Closing title/CTA/brand glyph animations are marketing copy, not human input."
+    }
+  ]
+}

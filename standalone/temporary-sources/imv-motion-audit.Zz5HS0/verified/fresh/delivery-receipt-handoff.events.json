@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 72
+  },
+  "initialUI": null,
+  "events": [
+    {
+      "id": "motion.delivery-receipt-handoff.receipt-reassigned",
+      "kind": "delivery_status",
+      "target": "receipt-new-status",
+      "frame": 34,
+      "layerIds": [
+        "receipt-new-status"
+      ]
+    }
+  ],
+  "cues": []
+}

@@ -1,0 +1,1276 @@
+{
+  "width": 720,
+  "height": 480,
+  "fps": 30,
+  "duration": 2.4,
+  "background": "#dce7f1",
+  "title": "Draw a markup stroke over a stationary photo",
+  "source": {
+    "path": "packs/media.mjs#photo-markup-stroke",
+    "sourceStart": 0,
+    "sourceEnd": 2.4,
+    "notes": "Motion-authored shot. Gesture and timing are illustrative."
+  },
+  "layers": [
+    {
+      "id": "surface",
+      "type": "rect",
+      "x": 110,
+      "y": 44,
+      "width": 500,
+      "height": 392,
+      "fill": "#ffffff",
+      "radius": 18
+    },
+    {
+      "id": "stage",
+      "type": "group",
+      "x": 110,
+      "y": 98,
+      "children": [
+        {
+          "id": "markup-photo",
+          "type": "group",
+          "x": 60,
+          "y": 26,
+          "children": [
+            {
+              "id": "markup-photo-image",
+              "type": "image",
+              "src": "/Users/darshan/Documents/ChatGPT/imessage-video/codex-trial/skill/imessage-motion-recreation/motion/assets/landscape-1.png",
+              "x": 0,
+              "y": 0,
+              "width": 380,
+              "height": 229
+            }
+          ],
+          "clip": {
+            "x": 0,
+            "y": 0,
+            "width": 380,
+            "height": 229,
+            "radius": 14
+          }
+        },
+        {
+          "id": "markup-segment-1",
+          "type": "rect",
+          "x": 136,
+          "y": 148,
+          "width": 6,
+          "height": 6,
+          "fill": "#f8de66",
+          "radius": 3,
+          "originX": 3,
+          "originY": 3,
+          "rotation": -75.96375653207353,
+          "keyframes": {
+            "width": [
+              {
+                "t": 0,
+                "value": 6,
+                "ease": "linear"
+              },
+              {
+                "t": 0.552,
+                "value": 6,
+                "ease": "linear"
+              },
+              {
+                "t": 0.6048,
+                "value": 26.615528128088304,
+                "ease": "linear"
+              }
+            ],
+            "opacity": [
+              {
+                "t": 0,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 0.552,
+                "value": 1,
+                "ease": "hold"
+              }
+            ]
+          }
+        },
+        {
+          "id": "markup-segment-2",
+          "type": "rect",
+          "x": 141,
+          "y": 128,
+          "width": 6,
+          "height": 6,
+          "fill": "#f8de66",
+          "radius": 3,
+          "originX": 3,
+          "originY": 3,
+          "rotation": -58.57043438516149,
+          "keyframes": {
+            "width": [
+              {
+                "t": 0,
+                "value": 6,
+                "ease": "linear"
+              },
+              {
+                "t": 0.6048,
+                "value": 6,
+                "ease": "linear"
+              },
+              {
+                "t": 0.6576000000000001,
+                "value": 27.095023109728988,
+                "ease": "linear"
+              }
+            ],
+            "opacity": [
+              {
+                "t": 0,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 0.6048,
+                "value": 1,
+                "ease": "hold"
+              }
+            ]
+          }
+        },
+        {
+          "id": "markup-segment-3",
+          "type": "rect",
+          "x": 152,
+          "y": 110,
+          "width": 6,
+          "height": 6,
+          "fill": "#f8de66",
+          "radius": 3,
+          "originX": 3,
+          "originY": 3,
+          "rotation": -43.1523897340054,
+          "keyframes": {
+            "width": [
+              {
+                "t": 0,
+                "value": 6,
+                "ease": "linear"
+              },
+              {
+                "t": 0.6576000000000001,
+                "value": 6,
+                "ease": "linear"
+              },
+              {
+                "t": 0.7104,
+                "value": 27.93171219946131,
+                "ease": "linear"
+              }
+            ],
+            "opacity": [
+              {
+                "t": 0,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 0.6576000000000001,
+                "value": 1,
+                "ease": "hold"
+              }
+            ]
+          }
+        },
+        {
+          "id": "markup-segment-4",
+          "type": "rect",
+          "x": 168,
+          "y": 95,
+          "width": 6,
+          "height": 6,
+          "fill": "#f8de66",
+          "radius": 3,
+          "originX": 3,
+          "originY": 3,
+          "rotation": -32.27564431457763,
+          "keyframes": {
+            "width": [
+              {
+                "t": 0,
+                "value": 6,
+                "ease": "linear"
+              },
+              {
+                "t": 0.7104,
+                "value": 6,
+                "ease": "linear"
+              },
+              {
+                "t": 0.7632,
+                "value": 28.47220505424423,
+                "ease": "linear"
+              }
+            ],
+            "opacity": [
+              {
+                "t": 0,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 0.7104,
+                "value": 1,
+                "ease": "hold"
+              }
+            ]
+          }
+        },
+        {
+          "id": "markup-segment-5",
+          "type": "rect",
+          "x": 187,
+          "y": 83,
+          "width": 6,
+          "height": 6,
+          "fill": "#f8de66",
+          "radius": 3,
+          "originX": 3,
+          "originY": 3,
+          "rotation": -19.98310652189998,
+          "keyframes": {
+            "width": [
+              {
+                "t": 0,
+                "value": 6,
+                "ease": "linear"
+              },
+              {
+                "t": 0.7632,
+                "value": 6,
+                "ease": "linear"
+              },
+              {
+                "t": 0.8160000000000001,
+                "value": 29.40939982143925,
+                "ease": "linear"
+              }
+            ],
+            "opacity": [
+              {
+                "t": 0,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 0.7632,
+                "value": 1,
+                "ease": "hold"
+              }
+            ]
+          }
+        },
+        {
+          "id": "markup-segment-6",
+          "type": "rect",
+          "x": 209,
+          "y": 75,
+          "width": 6,
+          "height": 6,
+          "fill": "#f8de66",
+          "radius": 3,
+          "originX": 3,
+          "originY": 3,
+          "rotation": -7.125016348901798,
+          "keyframes": {
+            "width": [
+              {
+                "t": 0,
+                "value": 6,
+                "ease": "linear"
+              },
+              {
+                "t": 0.8160000000000001,
+                "value": 6,
+                "ease": "linear"
+              },
+              {
+                "t": 0.8687999999999999,
+                "value": 30.186773244895647,
+                "ease": "linear"
+              }
+            ],
+            "opacity": [
+              {
+                "t": 0,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 0.8160000000000001,
+                "value": 1,
+                "ease": "hold"
+              }
+            ]
+          }
+        },
+        {
+          "id": "markup-segment-7",
+          "type": "rect",
+          "x": 233,
+          "y": 72,
+          "width": 6,
+          "height": 6,
+          "fill": "#f8de66",
+          "radius": 3,
+          "originX": 3,
+          "originY": 3,
+          "rotation": 7.125016348901798,
+          "keyframes": {
+            "width": [
+              {
+                "t": 0,
+                "value": 6,
+                "ease": "linear"
+              },
+              {
+                "t": 0.8687999999999999,
+                "value": 6,
+                "ease": "linear"
+              },
+              {
+                "t": 0.9216,
+                "value": 30.186773244895647,
+                "ease": "linear"
+              }
+            ],
+            "opacity": [
+              {
+                "t": 0,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 0.8687999999999999,
+                "value": 1,
+                "ease": "hold"
+              }
+            ]
+          }
+        },
+        {
+          "id": "markup-segment-8",
+          "type": "rect",
+          "x": 257,
+          "y": 75,
+          "width": 6,
+          "height": 6,
+          "fill": "#f8de66",
+          "radius": 3,
+          "originX": 3,
+          "originY": 3,
+          "rotation": 23.19859051364819,
+          "keyframes": {
+            "width": [
+              {
+                "t": 0,
+                "value": 6,
+                "ease": "linear"
+              },
+              {
+                "t": 0.9216,
+                "value": 6,
+                "ease": "linear"
+              },
+              {
+                "t": 0.9744,
+                "value": 28.847319317591726,
+                "ease": "linear"
+              }
+            ],
+            "opacity": [
+              {
+                "t": 0,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 0.9216,
+                "value": 1,
+                "ease": "hold"
+              }
+            ]
+          }
+        },
+        {
+          "id": "markup-segment-9",
+          "type": "rect",
+          "x": 278,
+          "y": 84,
+          "width": 6,
+          "height": 6,
+          "fill": "#f8de66",
+          "radius": 3,
+          "originX": 3,
+          "originY": 3,
+          "rotation": 35.83765295427829,
+          "keyframes": {
+            "width": [
+              {
+                "t": 0,
+                "value": 6,
+                "ease": "linear"
+              },
+              {
+                "t": 0.9744,
+                "value": 6,
+                "ease": "linear"
+              },
+              {
+                "t": 1.0272000000000001,
+                "value": 28.203603311174515,
+                "ease": "linear"
+              }
+            ],
+            "opacity": [
+              {
+                "t": 0,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 0.9744,
+                "value": 1,
+                "ease": "hold"
+              }
+            ]
+          }
+        },
+        {
+          "id": "markup-segment-10",
+          "type": "rect",
+          "x": 296,
+          "y": 97,
+          "width": 6,
+          "height": 6,
+          "fill": "#f8de66",
+          "radius": 3,
+          "originX": 3,
+          "originY": 3,
+          "rotation": 48.81407483429035,
+          "keyframes": {
+            "width": [
+              {
+                "t": 0,
+                "value": 6,
+                "ease": "linear"
+              },
+              {
+                "t": 1.0272000000000001,
+                "value": 6,
+                "ease": "linear"
+              },
+              {
+                "t": 1.08,
+                "value": 27.2602916254693,
+                "ease": "linear"
+              }
+            ],
+            "opacity": [
+              {
+                "t": 0,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 1.0272000000000001,
+                "value": 1,
+                "ease": "hold"
+              }
+            ]
+          }
+        },
+        {
+          "id": "markup-segment-11",
+          "type": "rect",
+          "x": 310,
+          "y": 113,
+          "width": 6,
+          "height": 6,
+          "fill": "#f8de66",
+          "radius": 3,
+          "originX": 3,
+          "originY": 3,
+          "rotation": 71.56505117707799,
+          "keyframes": {
+            "width": [
+              {
+                "t": 0,
+                "value": 6,
+                "ease": "linear"
+              },
+              {
+                "t": 1.08,
+                "value": 6,
+                "ease": "linear"
+              },
+              {
+                "t": 1.1327999999999998,
+                "value": 24.973665961010276,
+                "ease": "linear"
+              }
+            ],
+            "opacity": [
+              {
+                "t": 0,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 1.08,
+                "value": 1,
+                "ease": "hold"
+              }
+            ]
+          }
+        },
+        {
+          "id": "markup-segment-12",
+          "type": "rect",
+          "x": 316,
+          "y": 131,
+          "width": 6,
+          "height": 6,
+          "fill": "#f8de66",
+          "radius": 3,
+          "originX": 3,
+          "originY": 3,
+          "rotation": 93.17983011986425,
+          "keyframes": {
+            "width": [
+              {
+                "t": 0,
+                "value": 6,
+                "ease": "linear"
+              },
+              {
+                "t": 1.1327999999999998,
+                "value": 6,
+                "ease": "linear"
+              },
+              {
+                "t": 1.1856,
+                "value": 24.027756377319946,
+                "ease": "linear"
+              }
+            ],
+            "opacity": [
+              {
+                "t": 0,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 1.1327999999999998,
+                "value": 1,
+                "ease": "hold"
+              }
+            ]
+          }
+        },
+        {
+          "id": "markup-segment-13",
+          "type": "rect",
+          "x": 315,
+          "y": 149,
+          "width": 6,
+          "height": 6,
+          "fill": "#f8de66",
+          "radius": 3,
+          "originX": 3,
+          "originY": 3,
+          "rotation": 120.96375653207352,
+          "keyframes": {
+            "width": [
+              {
+                "t": 0,
+                "value": 6,
+                "ease": "linear"
+              },
+              {
+                "t": 1.1856,
+                "value": 6,
+                "ease": "linear"
+              },
+              {
+                "t": 1.2384,
+                "value": 23.4928556845359,
+                "ease": "linear"
+              }
+            ],
+            "opacity": [
+              {
+                "t": 0,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 1.1856,
+                "value": 1,
+                "ease": "hold"
+              }
+            ]
+          }
+        },
+        {
+          "id": "markup-segment-14",
+          "type": "rect",
+          "x": 306,
+          "y": 164,
+          "width": 6,
+          "height": 6,
+          "fill": "#f8de66",
+          "radius": 3,
+          "originX": 3,
+          "originY": 3,
+          "rotation": 136.97493401088198,
+          "keyframes": {
+            "width": [
+              {
+                "t": 0,
+                "value": 6,
+                "ease": "linear"
+              },
+              {
+                "t": 1.2384,
+                "value": 6,
+                "ease": "linear"
+              },
+              {
+                "t": 1.2912000000000001,
+                "value": 26.518284528683193,
+                "ease": "linear"
+              }
+            ],
+            "opacity": [
+              {
+                "t": 0,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 1.2384,
+                "value": 1,
+                "ease": "hold"
+              }
+            ]
+          }
+        },
+        {
+          "id": "markup-segment-15",
+          "type": "rect",
+          "x": 291,
+          "y": 178,
+          "width": 6,
+          "height": 6,
+          "fill": "#f8de66",
+          "radius": 3,
+          "originX": 3,
+          "originY": 3,
+          "rotation": 152.35402463626133,
+          "keyframes": {
+            "width": [
+              {
+                "t": 0,
+                "value": 6,
+                "ease": "linear"
+              },
+              {
+                "t": 1.2912000000000001,
+                "value": 6,
+                "ease": "linear"
+              },
+              {
+                "t": 1.3439999999999999,
+                "value": 29.706539182259394,
+                "ease": "linear"
+              }
+            ],
+            "opacity": [
+              {
+                "t": 0,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 1.2912000000000001,
+                "value": 1,
+                "ease": "hold"
+              }
+            ]
+          }
+        },
+        {
+          "id": "markup-segment-16",
+          "type": "rect",
+          "x": 270,
+          "y": 189,
+          "width": 6,
+          "height": 6,
+          "fill": "#f8de66",
+          "radius": 3,
+          "originX": 3,
+          "originY": 3,
+          "rotation": 163.73979529168807,
+          "keyframes": {
+            "width": [
+              {
+                "t": 0,
+                "value": 6,
+                "ease": "linear"
+              },
+              {
+                "t": 1.3439999999999999,
+                "value": 6,
+                "ease": "linear"
+              },
+              {
+                "t": 1.3967999999999998,
+                "value": 31,
+                "ease": "linear"
+              }
+            ],
+            "opacity": [
+              {
+                "t": 0,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 1.3439999999999999,
+                "value": 1,
+                "ease": "hold"
+              }
+            ]
+          }
+        },
+        {
+          "id": "markup-segment-17",
+          "type": "rect",
+          "x": 246,
+          "y": 196,
+          "width": 6,
+          "height": 6,
+          "fill": "#f8de66",
+          "radius": 3,
+          "originX": 3,
+          "originY": 3,
+          "rotation": 173.15722658736905,
+          "keyframes": {
+            "width": [
+              {
+                "t": 0,
+                "value": 6,
+                "ease": "linear"
+              },
+              {
+                "t": 1.3967999999999998,
+                "value": 6,
+                "ease": "linear"
+              },
+              {
+                "t": 1.4496,
+                "value": 31.179356624028344,
+                "ease": "linear"
+              }
+            ],
+            "opacity": [
+              {
+                "t": 0,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 1.3967999999999998,
+                "value": 1,
+                "ease": "hold"
+              }
+            ]
+          }
+        },
+        {
+          "id": "markup-segment-18",
+          "type": "rect",
+          "x": 221,
+          "y": 199,
+          "width": 6,
+          "height": 6,
+          "fill": "#f8de66",
+          "radius": 3,
+          "originX": 3,
+          "originY": 3,
+          "rotation": -173.15722658736905,
+          "keyframes": {
+            "width": [
+              {
+                "t": 0,
+                "value": 6,
+                "ease": "linear"
+              },
+              {
+                "t": 1.4496,
+                "value": 6,
+                "ease": "linear"
+              },
+              {
+                "t": 1.5024,
+                "value": 31.179356624028344,
+                "ease": "linear"
+              }
+            ],
+            "opacity": [
+              {
+                "t": 0,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 1.4496,
+                "value": 1,
+                "ease": "hold"
+              }
+            ]
+          }
+        },
+        {
+          "id": "markup-segment-19",
+          "type": "rect",
+          "x": 196,
+          "y": 196,
+          "width": 6,
+          "height": 6,
+          "fill": "#f8de66",
+          "radius": 3,
+          "originX": 3,
+          "originY": 3,
+          "rotation": -161.56505117707798,
+          "keyframes": {
+            "width": [
+              {
+                "t": 0,
+                "value": 6,
+                "ease": "linear"
+              },
+              {
+                "t": 1.5024,
+                "value": 6,
+                "ease": "linear"
+              },
+              {
+                "t": 1.5552,
+                "value": 28.135943621178658,
+                "ease": "linear"
+              }
+            ],
+            "opacity": [
+              {
+                "t": 0,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 1.5024,
+                "value": 1,
+                "ease": "hold"
+              }
+            ]
+          }
+        },
+        {
+          "id": "markup-segment-20",
+          "type": "rect",
+          "x": 175,
+          "y": 189,
+          "width": 6,
+          "height": 6,
+          "fill": "#f8de66",
+          "radius": 3,
+          "originX": 3,
+          "originY": 3,
+          "rotation": -152.10272896905238,
+          "keyframes": {
+            "width": [
+              {
+                "t": 0,
+                "value": 6,
+                "ease": "linear"
+              },
+              {
+                "t": 1.5552,
+                "value": 6,
+                "ease": "linear"
+              },
+              {
+                "t": 1.608,
+                "value": 25.235384061671343,
+                "ease": "linear"
+              }
+            ],
+            "opacity": [
+              {
+                "t": 0,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 1.5552,
+                "value": 1,
+                "ease": "hold"
+              }
+            ]
+          }
+        },
+        {
+          "id": "markup-pen-tip",
+          "type": "rect",
+          "x": 132,
+          "y": 144,
+          "width": 14,
+          "height": 14,
+          "fill": "#ffffff",
+          "radius": 7,
+          "stroke": "#1478e9",
+          "strokeWidth": 2,
+          "keyframes": {
+            "x": [
+              {
+                "t": 0.552,
+                "value": 132,
+                "ease": "linear"
+              },
+              {
+                "t": 0.6048,
+                "value": 137,
+                "ease": "linear"
+              },
+              {
+                "t": 0.6576000000000001,
+                "value": 148,
+                "ease": "linear"
+              },
+              {
+                "t": 0.7104,
+                "value": 164,
+                "ease": "linear"
+              },
+              {
+                "t": 0.7632,
+                "value": 183,
+                "ease": "linear"
+              },
+              {
+                "t": 0.8160000000000001,
+                "value": 205,
+                "ease": "linear"
+              },
+              {
+                "t": 0.8687999999999999,
+                "value": 229,
+                "ease": "linear"
+              },
+              {
+                "t": 0.9216,
+                "value": 253,
+                "ease": "linear"
+              },
+              {
+                "t": 0.9744,
+                "value": 274,
+                "ease": "linear"
+              },
+              {
+                "t": 1.0272000000000001,
+                "value": 292,
+                "ease": "linear"
+              },
+              {
+                "t": 1.08,
+                "value": 306,
+                "ease": "linear"
+              },
+              {
+                "t": 1.1327999999999998,
+                "value": 312,
+                "ease": "linear"
+              },
+              {
+                "t": 1.1856,
+                "value": 311,
+                "ease": "linear"
+              },
+              {
+                "t": 1.2384,
+                "value": 302,
+                "ease": "linear"
+              },
+              {
+                "t": 1.2912000000000001,
+                "value": 287,
+                "ease": "linear"
+              },
+              {
+                "t": 1.3439999999999999,
+                "value": 266,
+                "ease": "linear"
+              },
+              {
+                "t": 1.3967999999999998,
+                "value": 242,
+                "ease": "linear"
+              },
+              {
+                "t": 1.4496,
+                "value": 217,
+                "ease": "linear"
+              },
+              {
+                "t": 1.5024,
+                "value": 192,
+                "ease": "linear"
+              },
+              {
+                "t": 1.5552,
+                "value": 171,
+                "ease": "linear"
+              },
+              {
+                "t": 1.608,
+                "value": 154,
+                "ease": "linear"
+              }
+            ],
+            "y": [
+              {
+                "t": 0.552,
+                "value": 144,
+                "ease": "linear"
+              },
+              {
+                "t": 0.6048,
+                "value": 124,
+                "ease": "linear"
+              },
+              {
+                "t": 0.6576000000000001,
+                "value": 106,
+                "ease": "linear"
+              },
+              {
+                "t": 0.7104,
+                "value": 91,
+                "ease": "linear"
+              },
+              {
+                "t": 0.7632,
+                "value": 79,
+                "ease": "linear"
+              },
+              {
+                "t": 0.8160000000000001,
+                "value": 71,
+                "ease": "linear"
+              },
+              {
+                "t": 0.8687999999999999,
+                "value": 68,
+                "ease": "linear"
+              },
+              {
+                "t": 0.9216,
+                "value": 71,
+                "ease": "linear"
+              },
+              {
+                "t": 0.9744,
+                "value": 80,
+                "ease": "linear"
+              },
+              {
+                "t": 1.0272000000000001,
+                "value": 93,
+                "ease": "linear"
+              },
+              {
+                "t": 1.08,
+                "value": 109,
+                "ease": "linear"
+              },
+              {
+                "t": 1.1327999999999998,
+                "value": 127,
+                "ease": "linear"
+              },
+              {
+                "t": 1.1856,
+                "value": 145,
+                "ease": "linear"
+              },
+              {
+                "t": 1.2384,
+                "value": 160,
+                "ease": "linear"
+              },
+              {
+                "t": 1.2912000000000001,
+                "value": 174,
+                "ease": "linear"
+              },
+              {
+                "t": 1.3439999999999999,
+                "value": 185,
+                "ease": "linear"
+              },
+              {
+                "t": 1.3967999999999998,
+                "value": 192,
+                "ease": "linear"
+              },
+              {
+                "t": 1.4496,
+                "value": 195,
+                "ease": "linear"
+              },
+              {
+                "t": 1.5024,
+                "value": 192,
+                "ease": "linear"
+              },
+              {
+                "t": 1.5552,
+                "value": 185,
+                "ease": "linear"
+              },
+              {
+                "t": 1.608,
+                "value": 176,
+                "ease": "linear"
+              }
+            ],
+            "opacity": [
+              {
+                "t": 0,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 0.45599999999999996,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 0.552,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 1.608,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 1.776,
+                "value": 0,
+                "ease": "linear"
+              }
+            ]
+          }
+        }
+      ],
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 500,
+        "height": 298
+      }
+    },
+    {
+      "id": "footer",
+      "type": "group",
+      "x": 110,
+      "y": 396,
+      "children": [
+        {
+          "id": "footer-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 40,
+          "fill": "#f2f6fb",
+          "radius": 12
+        }
+      ]
+    },
+    {
+      "id": "heading",
+      "type": "group",
+      "x": 110,
+      "y": 44,
+      "children": [
+        {
+          "id": "heading-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 54,
+          "fill": "#f2f6fb",
+          "radius": 13
+        },
+        {
+          "id": "heading-copy",
+          "type": "text",
+          "text": "Alpine field notes",
+          "x": 26,
+          "y": 13,
+          "fontSize": 23,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#182737",
+          "fontWeight": 700
+        }
+      ]
+    }
+  ],
+  "timeline": {
+    "version": 1,
+    "picture": {
+      "fpsNum": 30,
+      "fpsDen": 1,
+      "frameCount": 72
+    },
+    "initialUI": null,
+    "events": [
+      {
+        "id": "motion.photo-markup-stroke.pen-down",
+        "kind": "stroke_start",
+        "target": "markup-pen-tip",
+        "frame": 17,
+        "layerIds": [
+          "markup-pen-tip"
+        ]
+      },
+      {
+        "id": "motion.photo-markup-stroke.pen-up",
+        "kind": "stroke_end",
+        "target": "markup-pen-tip",
+        "frame": 49,
+        "layerIds": [
+          "markup-pen-tip"
+        ]
+      }
+    ],
+    "cues": []
+  }
+}

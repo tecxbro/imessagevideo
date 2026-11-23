@@ -1,0 +1,200 @@
+{
+  "schema": 1,
+  "verdict": "FAIL",
+  "failures": [
+    {
+      "check": "audio_relative_start",
+      "delta_seconds": "-1/4"
+    }
+  ],
+  "checks_sha256": "9ea926ebea8dd69318348db340fd0ea43669d388cfbe906f00d377a5036fee0e",
+  "reference": {
+    "name": "audio-base.mp4",
+    "sha256": "933741413f7d121e1351cfaa2247f5bad38bf0ff2f619e234ee5f7923cfa08be",
+    "clock": {
+      "width": 160,
+      "height": 90,
+      "sample_aspect_ratio": "1",
+      "rotation_degrees": 0,
+      "display_matrix": [
+        65536,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        1073741824
+      ],
+      "container_crop_top_bottom_left_right": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "time_base": "1/30000",
+      "declared_rate": "30",
+      "declared_average_rate": "30/1",
+      "start_pts": 0,
+      "end_pts_exclusive": 64000,
+      "end_basis": "last decoded frame duration",
+      "end_seconds": 2.1333333333333333,
+      "frames": 64,
+      "cadence": "constant",
+      "pixel_format": "gbrp",
+      "alpha_present": false,
+      "color_range": "pc",
+      "color_space": "gbr",
+      "color_primaries": null,
+      "color_transfer": null
+    },
+    "audio": [
+      {
+        "index": 1,
+        "codec_name": "aac",
+        "sample_rate": "48000",
+        "channels": 1,
+        "channel_layout": "mono",
+        "time_base": "1/48000",
+        "start_pts": 0,
+        "duration_ts": 144000,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "SoundHandler",
+          "vendor_id": "[0][0][0][0]"
+        }
+      }
+    ]
+  },
+  "candidate": {
+    "name": "audio-picture-delayed.mp4",
+    "sha256": "cc43522c28ac1bc4624be0c7208d5f97e35ef40767445420fe64c5057ee516ab",
+    "clock": {
+      "width": 160,
+      "height": 90,
+      "sample_aspect_ratio": "1",
+      "rotation_degrees": 0,
+      "display_matrix": [
+        65536,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        1073741824
+      ],
+      "container_crop_top_bottom_left_right": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "time_base": "1/30000",
+      "declared_rate": "30",
+      "declared_average_rate": "30/1",
+      "start_pts": 7500,
+      "end_pts_exclusive": 71500,
+      "end_basis": "last decoded frame duration",
+      "end_seconds": 2.1333333333333333,
+      "frames": 64,
+      "cadence": "constant",
+      "pixel_format": "gbrp",
+      "alpha_present": false,
+      "color_range": "pc",
+      "color_space": "gbr",
+      "color_primaries": null,
+      "color_transfer": null
+    },
+    "audio": [
+      {
+        "index": 1,
+        "codec_name": "aac",
+        "sample_rate": "48000",
+        "channels": 1,
+        "channel_layout": "mono",
+        "time_base": "1/48000",
+        "start_pts": 0,
+        "duration_ts": 144000,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "SoundHandler",
+          "vendor_id": "[0][0][0][0]"
+        }
+      }
+    ]
+  },
+  "compared_frames": 64,
+  "mean_abs_rgb": 0.0,
+  "worst_frame": {
+    "frame": 0,
+    "mean_abs_rgb": 0.0
+  },
+  "exact_clock": true,
+  "pixel_equality": {
+    "identical_frames": 64,
+    "different_frames": 0,
+    "different_spans": [],
+    "changed_pixel_observations": 0,
+    "first_difference": null,
+    "worst_frame": null
+  },
+  "whole_frame_mae_limit": 2,
+  "pixel_floor": 20,
+  "clock_tolerance_seconds": "0",
+  "alignment": "display-order index with independent exact PTS gate",
+  "audio_rule": "present",
+  "audio_checks": {
+    "candidate_start_seconds": "-1/4",
+    "cues": [],
+    "reference_start_seconds": "0"
+  },
+  "regions": {},
+  "tile": null,
+  "regional_coverage": "picture-level checks only; no interaction windows supplied",
+  "decode_completed": true
+}

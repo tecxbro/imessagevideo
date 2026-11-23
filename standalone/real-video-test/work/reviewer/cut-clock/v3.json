@@ -1,0 +1,40 @@
+{
+  "format": 1,
+  "plan": {
+    "mode": "director",
+    "fps": 30,
+    "confirmation": false,
+    "brief": "Probe the exact approved cut clock at a non-millisecond shot boundary",
+    "shots": [
+      {
+        "id": "a",
+        "frames": 49,
+        "purpose": "First movement",
+        "visual": "Move between adjacent cards",
+        "motion": {
+          "kind": "seed",
+          "id": "camera-truck-between"
+        },
+        "preview": "shot-a/preview.mp4",
+        "code": "shot-a/scene.json"
+      },
+      {
+        "id": "b",
+        "frames": 49,
+        "purpose": "Second movement",
+        "visual": "Grow the two bars",
+        "motion": {
+          "kind": "seed",
+          "id": "comparison-bars-grow"
+        },
+        "preview": "shot-b/preview.mp4",
+        "code": "shot-b/scene.json"
+      }
+    ]
+  },
+  "project_root": ".",
+  "derived_from": {
+    "revision": "20dbf75eeaf5127b5287f1e404de95ba7ba1c06d31256c6b7ba99ac56889aedf",
+    "changed_shot": "b"
+  }
+}

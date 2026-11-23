@@ -1,0 +1,93 @@
+{
+  "format": 1,
+  "plan": {
+    "mode": "director",
+    "fps": 30,
+    "confirmation": false,
+    "brief": "Two friends, Alex and Maya, lock in concert tickets over iMessage: Alex proposes grabbing Neon Pines tickets, the seating options get browsed under one pinned heading, the booking is celebrated in the thread, and the finished ticket is in hand.",
+    "shots": [
+      {
+        "id": "ask",
+        "frames": 72,
+        "purpose": "Open the story: Alex proposes grabbing tickets and Maya says yes, establishing both friends and the goal.",
+        "visual": "Alex's draft types into the composer, flies into the transcript as a blue bubble, and Maya's gray reply arrives after a quiet beat. Header and composer stay fixed.",
+        "motion": {
+          "kind": "seed",
+          "id": "conversation-handoff"
+        },
+        "copy": "Meet at the doors",
+        "copy_key": "copy",
+        "bindings": {
+          "heading": "Maya",
+          "reply": "YES. Get us in!",
+          "detail": "iMessage - Today"
+        }
+      },
+      {
+        "id": "browse",
+        "frames": 72,
+        "purpose": "Show exactly which message is being answered before the reply sends.",
+        "visual": "Maya's 'YES. Get us in!' bubble follows the swipe; an arrow appears behind it, the row springs back, and a quote draft opens above the composer naming the answered message.",
+        "motion": {
+          "kind": "seed",
+          "id": "swipe-to-quote"
+        },
+        "copy": "YES. Get us in!",
+        "copy_key": "copy",
+        "bindings": {
+          "heading": "Maya",
+          "reply": "Neon Pines tickets drop at 10 - grab us two?",
+          "title": "Replying to Maya"
+        },
+        "preview": "proof-quote/preview.mp4",
+        "code": "proof-quote/scene.json",
+        "board": "board-quote.png"
+      },
+      {
+        "id": "celebrate",
+        "frames": 72,
+        "purpose": "Pay off the booking emotionally: Alex's 'booked' news earns Maya's excited reply and it gets hearted.",
+        "visual": "Alex's outgoing 'booked' bubble sits above Maya's incoming reply; the Love reaction arcs in and lands on Maya's bubble as a badge while the rest of the transcript stays put.",
+        "motion": {
+          "kind": "seed",
+          "id": "reaction-attach"
+        },
+        "copy": "You're the BEST!",
+        "copy_key": "copy",
+        "bindings": {
+          "heading": "Maya",
+          "reply": "Booked - two GA floor tickets",
+          "action": "Love"
+        },
+        "preview": "proof-celebrate/preview.mp4",
+        "code": "proof-celebrate/scene.json",
+        "board": "board-celebrate.png"
+      },
+      {
+        "id": "ticket",
+        "frames": 72,
+        "purpose": "Close with the secured ticket itself: the stub tears free, so the ticket is real and usable.",
+        "visual": "A Neon Pines ticket fills the card; its perforated stub tilts along the seam and drops away while the main ticket and backdrop stay pinned.",
+        "motion": {
+          "kind": "seed",
+          "id": "tear-perforated-ticket"
+        },
+        "copy": "The Neon Pines",
+        "copy_key": "title",
+        "bindings": {
+          "heading": "Maya",
+          "detail": "GA Floor - 2 tickets - Fri Jun 12",
+          "action": "Open"
+        },
+        "preview": "proof-ticket/preview.mp4",
+        "code": "proof-ticket/scene.json",
+        "board": "board-ticket.png"
+      }
+    ]
+  },
+  "project_root": ".",
+  "derived_from": {
+    "revision": "ae60a9003faea4542b5e5dfc9d084e164312f0a323658decffe9efcb331e69be",
+    "changed_shot": "ask"
+  }
+}

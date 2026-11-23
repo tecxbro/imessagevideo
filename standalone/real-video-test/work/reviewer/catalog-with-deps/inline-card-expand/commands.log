@@ -1,0 +1,22 @@
+$ ['/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/venv/bin/python', '/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/imessagevideo/skill/imessage-video/scripts/recipes.py', 'preview', 'inline-card-expand', '--out', '/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/catalog-with-deps/inline-card-expand/preview.mp4'] exit=0
+{
+  "id": "inline-card-expand",
+  "preview": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/catalog-with-deps/inline-card-expand/preview.mp4"
+}
+
+$ ['/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/venv/bin/python', '/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/imessagevideo/skill/imessage-video/scripts/recipes.py', 'export', 'inline-card-expand', '--out', '/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/catalog-with-deps/inline-card-expand/project'] exit=0
+{
+  "id": "inline-card-expand",
+  "scene": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/catalog-with-deps/inline-card-expand/project/scene.json",
+  "events": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/catalog-with-deps/inline-card-expand/project/scene.events.json",
+  "engine": "pillow",
+  "renderCommand": "python3 render_pillow.py --scene scene.json --out film.mp4"
+}
+
+$ ['/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/venv/bin/python', '/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/catalog-with-deps/inline-card-expand/project/render_pillow.py', '--scene', '/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/catalog-with-deps/inline-card-expand/project/scene.json', '--out', '/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/catalog-with-deps/inline-card-expand/project/replay.mp4'] exit=0
+{"method": "pillow", "frame": 0, "total": 72}
+{"captureHistory": [], "method": "pillow", "engineSha256": "046458f0f51b4a514594a4dc5b64eeb797a554e971453a4b630b107a83f57a64", "scene": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/catalog-with-deps/inline-card-expand/project/scene.json", "sceneSha256": "c76e4c75c91236b8603a38be82cb500581d45852bdb202000c3923c37c4ffb5d", "out": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/catalog-with-deps/inline-card-expand/project/replay.mp4", "width": 720, "height": 480, "fps": 30, "frames": 72, "duration": 2.4, "source": {"path": "projects/03-photon-mini-complete-v1/imessage-recreations/references/03-photon-mini/source.mp4", "sourceStart": 7.033333, "sourceEnd": 8.033333, "notes": "Historical grabber y samples from a23bfb2 mapped into a new detail sheet. The scrim and content are authored."}, "antialias": 1, "frameDirectory": null, "capturedFrameRanges": [[0, 71]], "uniqueFramesCaptured": 37}
+
+$ ['/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/venv/bin/python', '/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/imessagevideo/skill/imessage-video/scripts/frames.py', '/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/catalog-with-deps/inline-card-expand/preview.mp4', '/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/catalog-with-deps/inline-card-expand/project/replay.mp4', '--out', '/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/catalog-with-deps/inline-card-expand/compare', '--require-structure-match', '--max-pts-error-ms', '0', '--max-mae', '3'] exit=0
+{"report": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/catalog-with-deps/inline-card-expand/compare/report.json", "compared_frames": 72, "limits_passed": true, "failures": []}
+

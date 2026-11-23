@@ -1,0 +1,213 @@
+{
+  "width": 720,
+  "height": 480,
+  "fps": 30,
+  "duration": 2.4,
+  "background": "#dce7f1",
+  "title": "Slide a heading over still photos",
+  "source": {
+    "path": "packs/core.mjs#heading-over-fixed-photos",
+    "sourceStart": 0,
+    "sourceEnd": 2.4,
+    "notes": "Original editable Motion demonstration."
+  },
+  "layers": [
+    {
+      "id": "surface",
+      "type": "rect",
+      "x": 110,
+      "y": 44,
+      "width": 500,
+      "height": 392,
+      "fill": "#ffffff",
+      "radius": 18
+    },
+    {
+      "id": "stage",
+      "type": "group",
+      "x": 110,
+      "y": 98,
+      "children": [
+        {
+          "id": "photo-viewport",
+          "type": "group",
+          "x": 30,
+          "y": 33,
+          "children": [
+            {
+              "id": "photo-viewport-field",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 440,
+              "height": 197,
+              "fill": "#e8eef5",
+              "radius": 0
+            },
+            {
+              "id": "photo-rail",
+              "type": "group",
+              "x": 0,
+              "y": 0,
+              "children": [
+                {
+                  "id": "photo-1",
+                  "type": "image",
+                  "src": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAYAAAAEACAIAAAA1FTYwAAALHUlEQVR42u3dSY9cZxWH8Xvbt5vAiiWrCAchQ4xYJSAkBhvEZ2AdxgCLICG78xFslhnJ4ITxM7BAjEIKIUYijkdsx1FWLGEDNXQ7LBpQu3EP1V33nc7vkTfutqu6/u85T51TU/f/+MX3OwDIwYoIAORi6LpeCgAyCYh/AFjBAFjBAMAEBKD9CcgABCCXgHoGAmAFA0BAAJBqBet6KxgAExAAAgKAVCuYZ8EAZBMQ/wCwggGwggGACQhA+xOQAQiAFQyAFQwACAhA8ytY771gAExAAAgIAFKtYJ4FA5BPQPwDwAoGgIAAINkKZgcDkE1A/APACgbACgYAJiAA7U9ABiAAVjAAVjAASDUB1TX/rH3iS7t9a3b5V44TqG0FK/7zgNZOfnFRN82u/NrRAjUIqH717PYfaQggoKTqoSGgLgEVt4KtnTy9XJfNrvzGSQNFCqgw/6w9fHr5l3ny9OwqBwFWsLTq2XHhNARYwe4riFNpHDe7+lunDhSCFyICyDgBFTAArX38VLrrevjU7JohCLCC/cc+X0jvu9m13zl7IPoKlt4+ea8XQEECAhB7Bcv3XrC1j30+7/A1u/57FQCYgACEnIByzT+rWcef/41gc0MQkHMFi/6JiD4QEsgoIP4BkAmPAQEItoKtnvhsIbd/9cTn5jf+oA4AExCAaBOQB0EkAIRawRgIgBUMAAEBCLqC9eEXEAkAJiAABAQAyVawHM8BzW++tvrRz5Rw++c3X/MsGJBPQN4LBiCXgPgHQKwVjIIAdBkfhN649cfsN76EnwGIPQFFngBMP0DYFWzj9uvDRz6d8doZCAi6ggFAZgFt3H491PUCuHcFy/1OqI23/zQ89KnE1+j9X4AJaJsRWrwuABUICEDUFayMZ4I23n5jeOjRBNfimS+gJAEV048bd97oum44/uh4F04+gBXsAKYo/jIBtLOC3euLi8PxR5Z4aSYfoFgBlcjGnYtd1x1RQ1sXAqBcAZX8gpjNdy52XXfsw48c7j96rQ9gAlqOhrbYQ0bb/xmAWgRU05yw+c6fd/+mgQeoDC9EBJBxAjI3ALCCAbCCAQABAWh/BfNqGQAmIAAEBADJVjDPggHIJiD+AWAFA2AFA4BUAqIfAPkmIAYCquXJVz9w7rF/1vvz95O/POMUgQrV8/7tfz332L8ICLhPn1TaG1V4ZwfVRU1ASNQtNDSqeirVUD9581lHi1Ea5pUH7t8eX50I5+gx7q+hGnImoAXqQOcssW2EOZ56KsqZgBauA52zxM4R5njqqSLkfvLmc857z1J43/1OdCqZhRLbr0Pkecjoag+5n1wioF2q4cI+1XDua9pmscT2b5KokR49ukoTJqAjVQMHjdFCoVJNpp4yE+4nl57XPPcWxNrixzkT2ghNMpPYyBrKnzABLacmIjto7F5qLNsS1FNOvP3kLQLqnnx5OTVx7usz0Y3VJ5VnmyyouuLtJ2/9MLx9Vpd6kHPRjdkncym1FG8/DSyg9dEq43wADa3n66ta4l2vRz254g0qoDSV0bCGCmmtMhOu1DtZsu2nl1+IpZ6XhqSn+I0NGcYJubRkyg82loBy1UdLGiq2xzKG3Jh3UgYbRUDZS6QBB9XSZimjbls9CVLtp5dfbF09x0o6xU0xthF1dYGUmWo/vdKygNZfLK5Kzn9zU4z1pl1vFGWm2qyACi+UijTURssdPXDqGaOG++mVl5pTz0ol53dXmFVk3lgIRZVxawKqrlZK1lCrjXfAzHknQRn306uNCGj9hVrL5fy37sqzqNibv+3lVHI/vfpy/erpmzi890SaN/lQt7qQSq5eQI0VTQka0odIVskVC6jVPsnrIPZBykrup9cu1KeeAO+fPf+4VNF+Jfez2gR0Nkyf/OBxqaLxYq5JQDGbJIGG2Ae5irmfXXulBvW8F/vYetmiyXruZ9eLFtDZ57XHf4/t27140Vg9Fy0g7TGqg8SL7PSz668WqZ67zmZ3Da1IGAREPbVqSMgohJWu78r5ozEWk4iQUf0EdONHRbTTc5sO45Cj0HeOybkofvm3S1/+0CflUIeAtEQaB8k5jXp2fIWJihaQrkijoT1ydnc9nn2Y6AAC+mseAZ19lnpGcNB3jx086u0Noz3GUw8N7S2gH6f1zobQx9fQsHfguzWM9hjVPqLOJiDeyeKgheyjMdKoR+DpBMQ7NgVhynwvAc1v/mTpF3rmmbkCrb1bOCiZeiInv0wB8U573UJDKdUTMPwlCIh32u4WDspinyD59/ObPz2sd2aKMk6rRNZQLvVEOIJ+fmsxAZ15mneCdktMBxVin1YPYgEBUY9WCaWhAtXT3ln081s/2887U72tVUI5qHz1NHMiuwqId7RKTA1VZ5+qD6Wf375HQGee4h19EtRBVaun0nPp57d/3nXdmacmWlqfRNZQM/ap62j67z1xQUvrk8gOalI9tRzQoKX1ybJ+tho1FME+229maWdEQJpkmT9nRQ4Kop7CTURAmiScg2Kqp0wTEZAmibWOsU9R50VAmiTKKEQ9BQ5EBEQ9IUYh9inTRAREPY2PQtRTsokIiHpaHoXYp3ATERD1tDkKUU8VJiIg6mltFKKeis5xRZrs09LNZ5+U57j1p80JqMlfGaw9xhuFZFvjalbWm1H3qKHaZaQ9Rj1W8VZ6rPkFtGjpVGcivTHqmYq36pPNI6AgvzFGb4x6lOJt4HzTCWjUcvGq/2gaknAb5zuugLJUSXYZ6Y1Rj0+8LZ3y8gVUVH0klpHeGPvgJNwYQ9uNl+yddRpj6XnuODIJE1DF1bD9B/byk4qObOuwWg158u6dBx48HvmUF1jB/NoA6sES1fP/XwwooyF4jx1uR6MeLFc9O74Vx0SD7lp0R2MfLNc7e//jtmU0aKqDj0VSwtjqiTYW9Se/8oQSAQpUzx40IyOfBwTUpJ7GdjQCAqrxTns7GgEBtaqngbGIgIDq1VPvWERAQFPqqWssIiAkbYYGnr6pwju1jEUEhKTtuvXXSjVUr3qKHYsICBl6tbonbppRT2kyIiDk7NLyB6KG1VPCHQMBIX9/FjgQhfJOxrGIgFBQf5YwEAVXT+K7h6Hkmx38s5rCLiO5BiLqST8WDSWXeJwPJSCdvAMR9eSS0VBLlZNR2FlgvIGId7If0FBjiQf84DgLyHIHIuopZCwaqq5yY1HAPjzi3Q/1FHVMQzNVTkbRmnDRgYh6ChyLhiZLnIzitN++97S8U/JhDc1XeeQHjAK+inf7KVNP+ZU5xKnyOGNR5MYjnboYYp50ezLSeKNy4sEPdl13492/iyKngJqs8nplRDppvEM9mQUUp9CrkBHvJPMO9WQTkCov6tFrx5FSOtSTR0CqvKixyHFk8Q71pBaQQi9KRo4ji3SoJ4+AlHsJMnIKGaVDPaWsYDi6QbwzoC7vsA8BxRqLeKcQ6VAPAQWSEYryDvUQEJBaOtRDQEA2+1APAQHUAwJCDPtQDwEBGexDPQQEZLAP9RAQQD0gIMSwD/UQEJDBPtRDQEAG+1APAQHUg0OyIgKwD0xAwP72oR4CAqgHBIQY9qEeAgIy2Id6CAjIYB/qISCAejAunoZHWWsXCAjIYx/jjxUMMPjABAT2AQEBaexj/yIgwOyDdHgMCEWox/hjAgIMPiAgsA8ICEhjH/tXWDwGBIMPTEBgHxAQkNg+9i8rGGDwgQkIwexj/CEgwOwDAgL7IBgeA0I29di/YAKCwQcEBPaBFQxIox77F0xAMPiAgMA+ICAgjX3sX9jCY0Aw+MAEhDD2Mf6AgGD2AQGBfRAYjwEhqXrsX9jOvwEj4XZxrab1XQAAAABJRU5ErkJggg==",
+                  "x": 0,
+                  "y": 0,
+                  "width": 296,
+                  "height": 197
+                },
+                {
+                  "id": "photo-2",
+                  "type": "image",
+                  "src": "data:image/png;base64,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",
+                  "x": 308,
+                  "y": 0,
+                  "width": 296,
+                  "height": 197
+                }
+              ]
+            }
+          ],
+          "clip": {
+            "x": 0,
+            "y": 0,
+            "width": 440,
+            "height": 197,
+            "radius": 14
+          }
+        },
+        {
+          "id": "photo-rail-divider",
+          "type": "rect",
+          "x": 30,
+          "y": 250,
+          "width": 440,
+          "height": 1,
+          "fill": "#d4dfe9",
+          "radius": 0
+        }
+      ],
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 500,
+        "height": 298
+      }
+    },
+    {
+      "id": "footer",
+      "type": "group",
+      "x": 110,
+      "y": 396,
+      "children": [
+        {
+          "id": "footer-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 40,
+          "fill": "#f2f6fb",
+          "radius": 12
+        },
+        {
+          "id": "footer-label",
+          "type": "text",
+          "text": "Field guide · Autumn",
+          "x": 26,
+          "y": 11,
+          "fontSize": 15,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#516277"
+        }
+      ]
+    },
+    {
+      "id": "heading",
+      "type": "group",
+      "x": 110,
+      "y": 44,
+      "children": [
+        {
+          "id": "heading-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 54,
+          "fill": "#f2f6fb",
+          "radius": 13
+        },
+        {
+          "id": "heading-copy",
+          "type": "text",
+          "text": "Alpine field notes",
+          "x": 28,
+          "y": 13,
+          "fontSize": 23,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#182737",
+          "fontWeight": 700,
+          "keyframes": {
+            "x": [
+              {
+                "t": 0,
+                "value": 28,
+                "ease": "linear"
+              },
+              {
+                "t": 0.6,
+                "value": 28,
+                "ease": "linear"
+              },
+              {
+                "t": 1.68,
+                "value": 150,
+                "ease": "easeInOut"
+              }
+            ]
+          }
+        }
+      ],
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 500,
+        "height": 54
+      }
+    }
+  ],
+  "timeline": {
+    "version": 1,
+    "picture": {
+      "fpsNum": 30,
+      "fpsDen": 1,
+      "frameCount": 72
+    },
+    "initialUI": null,
+    "events": [
+      {
+        "id": "motion.heading-over-fixed-photos.heading-start",
+        "kind": "title.move",
+        "target": "heading-copy",
+        "frame": 20,
+        "layerIds": [
+          "heading-copy"
+        ]
+      },
+      {
+        "id": "motion.heading-over-fixed-photos.heading-settle",
+        "kind": "title.settle",
+        "target": "heading-copy",
+        "frame": 51,
+        "layerIds": [
+          "heading-copy"
+        ]
+      }
+    ],
+    "cues": []
+  }
+}

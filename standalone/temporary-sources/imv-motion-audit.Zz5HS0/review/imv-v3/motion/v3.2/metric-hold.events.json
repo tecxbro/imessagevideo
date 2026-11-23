@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 72
+  },
+  "initialUI": null,
+  "events": [
+    {
+      "id": "motion.metric-count.count-begins",
+      "kind": "metric.count.begin",
+      "target": "metric-value",
+      "frame": 10,
+      "layerIds": [
+        "metric-value"
+      ]
+    },
+    {
+      "id": "motion.metric-count.final-value-held",
+      "kind": "metric.count.hold",
+      "target": "metric-value",
+      "frame": 55,
+      "layerIds": [
+        "metric-value"
+      ]
+    }
+  ],
+  "cues": []
+}

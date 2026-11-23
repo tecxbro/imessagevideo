@@ -1,0 +1,33 @@
+{
+  "id": "typing-indicator-cycle",
+  "sourceSHA256": "45d348eee1e4da8cfa485f904379517a07f776de1298d067cfe83fce950d8be4",
+  "sceneSHA256": "d3177810d420af9f7d3fd919a54020daa779afe238ca5b9e18037d038f078277",
+  "events": [
+    {
+      "id": "pickup.typing",
+      "frame": 56,
+      "roleLayers": [
+        "ui.typing"
+      ]
+    }
+  ],
+  "bindings": {
+    "viewport": "ui.viewport",
+    "transcript": "ui.transcript",
+    "typing": "ui.typing",
+    "screen": "ui.screen",
+    "header": "ui.header",
+    "composer": "ui.composer"
+  },
+  "verification": {
+    "ok": true,
+    "mode": "adapter-recipe",
+    "issues": [],
+    "evidence": "structural-only"
+  },
+  "window": [
+    55,
+    60
+  ],
+  "status": "compiled-messages-interaction"
+}

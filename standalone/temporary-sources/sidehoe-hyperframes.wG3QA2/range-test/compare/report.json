@@ -1,0 +1,290 @@
+{
+  "schema": 1,
+  "verdict": "FAIL",
+  "failures": [
+    {
+      "check": "pixel_equality",
+      "first_difference": {
+        "frame": 0,
+        "changed_pixels": 351383,
+        "max_channel_delta": 95,
+        "rect": [
+          340,
+          530,
+          1308,
+          1380
+        ]
+      }
+    },
+    {
+      "check": "whole_frame_mae",
+      "spans": [
+        [
+          2,
+          101
+        ],
+        [
+          103,
+          104
+        ],
+        [
+          111,
+          161
+        ],
+        [
+          166,
+          167
+        ],
+        [
+          170,
+          175
+        ],
+        [
+          181,
+          199
+        ],
+        [
+          202,
+          212
+        ],
+        [
+          216,
+          258
+        ],
+        [
+          262,
+          620
+        ],
+        [
+          624,
+          695
+        ],
+        [
+          698,
+          698
+        ],
+        [
+          728,
+          773
+        ]
+      ]
+    }
+  ],
+  "checks_sha256": null,
+  "reference": {
+    "name": "sidehoe.mp4",
+    "sha256": "f821bb58cbdb265a75d572616d0da723e9cfb6de31e3db5f8a17d94dc15b5327",
+    "clock": {
+      "width": 2000,
+      "height": 2000,
+      "sample_aspect_ratio": "1",
+      "rotation_degrees": 0,
+      "display_matrix": [
+        65536,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        1073741824
+      ],
+      "container_crop_top_bottom_left_right": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "time_base": "1/60000",
+      "declared_rate": "25",
+      "declared_average_rate": "25/1",
+      "start_pts": 0,
+      "end_pts_exclusive": 1867200,
+      "end_basis": "stream start + stream duration",
+      "end_seconds": 31.12,
+      "frames": 778,
+      "cadence": "constant",
+      "pixel_format": "yuv420p",
+      "alpha_present": false,
+      "color_range": null,
+      "color_space": null,
+      "color_primaries": null,
+      "color_transfer": null
+    },
+    "audio": [
+      {
+        "index": 1,
+        "codec_name": "aac",
+        "sample_rate": "44100",
+        "channels": 2,
+        "channel_layout": "stereo",
+        "time_base": "1/44100",
+        "start_pts": 0,
+        "duration_ts": 1375232,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "Twitter-vork muxer",
+          "vendor_id": "[0][0][0][0]"
+        }
+      }
+    ]
+  },
+  "candidate": {
+    "name": "sidehoe.mp4",
+    "sha256": "bada8929bc62384176e7e84727ea2ad7577cb6900b72aaf725ab421591991c80",
+    "clock": {
+      "width": 2000,
+      "height": 2000,
+      "sample_aspect_ratio": "1",
+      "rotation_degrees": 0,
+      "display_matrix": [
+        65536,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        1073741824
+      ],
+      "container_crop_top_bottom_left_right": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "time_base": "1/60000",
+      "declared_rate": "25",
+      "declared_average_rate": "25/1",
+      "start_pts": 0,
+      "end_pts_exclusive": 1867200,
+      "end_basis": "last decoded frame duration",
+      "end_seconds": 31.12,
+      "frames": 778,
+      "cadence": "constant",
+      "pixel_format": "yuvj420p",
+      "alpha_present": false,
+      "color_range": "pc",
+      "color_space": null,
+      "color_primaries": null,
+      "color_transfer": null
+    },
+    "audio": [
+      {
+        "index": 1,
+        "codec_name": "aac",
+        "sample_rate": "48000",
+        "channels": 2,
+        "channel_layout": "stereo",
+        "time_base": "1/48000",
+        "start_pts": 0,
+        "duration_ts": 1493760,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "SoundHandler",
+          "vendor_id": "[0][0][0][0]"
+        }
+      }
+    ]
+  },
+  "compared_frames": 778,
+  "mean_abs_rgb": 4.830019158097682,
+  "worst_frame": {
+    "frame": 355,
+    "mean_abs_rgb": 15.76024725
+  },
+  "exact_clock": true,
+  "pixel_equality": {
+    "identical_frames": 0,
+    "different_frames": 778,
+    "different_spans": [
+      [
+        0,
+        777
+      ]
+    ],
+    "changed_pixel_observations": 1290721736,
+    "first_difference": {
+      "frame": 0,
+      "changed_pixels": 351383,
+      "max_channel_delta": 95,
+      "rect": [
+        340,
+        530,
+        1308,
+        1380
+      ]
+    },
+    "worst_frame": {
+      "frame": 766,
+      "changed_pixels": 3990502,
+      "max_channel_delta": 255
+    }
+  },
+  "whole_frame_mae_limit": 2,
+  "pixel_floor": 20,
+  "clock_tolerance_seconds": "0",
+  "alignment": "display-order index with independent exact PTS gate",
+  "audio_rule": "observe",
+  "audio_checks": null,
+  "regions": {},
+  "tile": null,
+  "regional_coverage": "picture-level checks only; no interaction windows supplied",
+  "decode_completed": true,
+  "evidence": {
+    "frames.csv": {
+      "region": null,
+      "spans": [
+        [
+          0,
+          777
+        ]
+      ],
+      "sha256": "b11376c93f894d9befd8433cec82283e86d548ec117db854c092eeef975f9c6d"
+    }
+  }
+}

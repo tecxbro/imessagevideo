@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 72
+  },
+  "initialUI": null,
+  "events": [
+    {
+      "id": "motion.long-press-actions.hold-threshold",
+      "kind": "long_press",
+      "target": "actions-selected",
+      "frame": 20,
+      "layerIds": [
+        "actions-selected"
+      ]
+    },
+    {
+      "id": "motion.long-press-actions.actions-ready",
+      "kind": "menu_open",
+      "target": "actions-reaction-rail",
+      "frame": 31,
+      "layerIds": [
+        "actions-reaction-rail"
+      ]
+    }
+  ],
+  "cues": []
+}

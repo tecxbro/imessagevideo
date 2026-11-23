@@ -1,0 +1,22 @@
+$ ['/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/venv/bin/python', '/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/imessagevideo/skill/imessage-video/scripts/recipes.py', 'preview', 'metric-count', '--out', '/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/catalog-baseline/metric-count/preview.mp4'] exit=0
+{
+  "id": "metric-count",
+  "preview": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/catalog-baseline/metric-count/preview.mp4"
+}
+
+$ ['/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/venv/bin/python', '/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/imessagevideo/skill/imessage-video/scripts/recipes.py', 'export', 'metric-count', '--out', '/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/catalog-baseline/metric-count/project'] exit=0
+{
+  "id": "metric-count",
+  "scene": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/catalog-baseline/metric-count/project/scene.json",
+  "events": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/catalog-baseline/metric-count/project/scene.events.json",
+  "engine": "pillow",
+  "renderCommand": "python3 render_pillow.py --scene scene.json --out film.mp4"
+}
+
+$ ['/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/venv/bin/python', '/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/catalog-baseline/metric-count/project/render_pillow.py', '--scene', '/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/catalog-baseline/metric-count/project/scene.json', '--out', '/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/catalog-baseline/metric-count/project/replay.mp4'] exit=0
+{"method": "pillow", "frame": 0, "total": 72}
+{"captureHistory": [], "method": "pillow", "engineSha256": "046458f0f51b4a514594a4dc5b64eeb797a554e971453a4b630b107a83f57a64", "scene": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/catalog-baseline/metric-count/project/scene.json", "sceneSha256": "79f25307b06639e952319c25ff2d4a8ac65923222717bb0d94de0799c89051ac", "out": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/catalog-baseline/metric-count/project/replay.mp4", "width": 720, "height": 480, "fps": 30, "frames": 72, "duration": 2.4, "source": {"path": "skill/imessage-motion-recreation/motion/packs/attention.mjs", "sourceStart": 0, "sourceEnd": 2.4, "notes": "Adapted from a fresh, Pillow-authored volunteer count reuse. The editable canonical recipe preserves the value trajectory and event timing."}, "antialias": 1, "frameDirectory": null, "capturedFrameRanges": [[0, 71]], "uniqueFramesCaptured": 47}
+
+$ ['/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/venv/bin/python', '/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/imessagevideo/skill/imessage-video/scripts/frames.py', '/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/catalog-baseline/metric-count/preview.mp4', '/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/catalog-baseline/metric-count/project/replay.mp4', '--out', '/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/catalog-baseline/metric-count/compare', '--require-structure-match', '--max-pts-error-ms', '0', '--max-mae', '3'] exit=0
+{"report": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/catalog-baseline/metric-count/compare/report.json", "compared_frames": 72, "limits_passed": true, "failures": []}
+

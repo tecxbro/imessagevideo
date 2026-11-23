@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "inputs": {
+    "source": {
+      "path": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/catalog-with-deps/comparison-bars-grow/preview.mp4",
+      "sha256": "311465def388171eed211307f0f073af8209d9bbe73291c57eeab4067bf57910",
+      "width": 720,
+      "height": 480,
+      "sample_aspect_ratio": null,
+      "display_aspect_ratio": null,
+      "effective_sample_aspect_ratio": "1:1",
+      "sample_aspect_basis": "implicit square pixels",
+      "rotation": 0,
+      "average_frame_rate": "30/1",
+      "time_base": "1/15360",
+      "frame_count": 72,
+      "missing_pts": 0,
+      "strictly_increasing_pts": true,
+      "first_pts_seconds": 0.0,
+      "last_pts_seconds": 2.3666666666666667,
+      "end_seconds_exclusive": 2.4
+    },
+    "output": {
+      "path": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/catalog-with-deps/comparison-bars-grow/project/replay.mp4",
+      "sha256": "e9c1ab7a21c9689278a53233f1b16c42f6dd32caf074a9369ced00450963de1e",
+      "width": 720,
+      "height": 480,
+      "sample_aspect_ratio": null,
+      "display_aspect_ratio": null,
+      "effective_sample_aspect_ratio": "1:1",
+      "sample_aspect_basis": "implicit square pixels",
+      "rotation": 0,
+      "average_frame_rate": "30/1",
+      "time_base": "1/15360",
+      "frame_count": 72,
+      "missing_pts": 0,
+      "strictly_increasing_pts": true,
+      "first_pts_seconds": 0.0,
+      "last_pts_seconds": 2.3666666666666667,
+      "end_seconds_exclusive": 2.4
+    }
+  },
+  "compared_frames": 72,
+  "paired_indices": 72,
+  "source_only_tail_frames": 0,
+  "output_only_tail_frames": 0,
+  "alignment": "native presentation order, paired by zero-based index, without resampling",
+  "max_paired_pts_error_ms": 0.0,
+  "exclusive_end_error_ms": 0.0,
+  "structure_match": true,
+  "structure_issues": [],
+  "structure_within_tolerance": true,
+  "structure_tolerance_issues": [],
+  "roi_xyxy": {},
+  "metrics": {
+    "full": {
+      "mean_frame_mae": 0.6502838327331961,
+      "max_frame_mae": 0.6695814043209877,
+      "worst_frame": 55
+    }
+  },
+  "possible_frame_shift": {
+    "best_output_minus_source_frames": 0,
+    "compared_source_frames": 62,
+    "search_radius": 5,
+    "unaligned_mean_error": 0.38183243727598565,
+    "best_mean_error": 0.38183243727598565,
+    "possible_constant_offset": false
+  },
+  "thresholds": {
+    "max_mae": 3.0,
+    "max_pts_error_ms": 0.0,
+    "require_structure_match": true,
+    "reject_detected_shift": false
+  },
+  "limits_passed": true,
+  "failures": [],
+  "worst_pair_index": 55,
+  "artifacts": {
+    "all_frame_measurements": "frames.csv",
+    "comparison_image": "worst.png"
+  }
+}

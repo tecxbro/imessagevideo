@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 72
+  },
+  "initialUI": {
+    "conversationId": "thread.motion",
+    "messages": [
+      {
+        "id": "message.context",
+        "senderId": "account.remote",
+        "text": "Can you send the trail map?",
+        "attachmentIds": [],
+        "reactions": {},
+        "edited": false,
+        "receipt": ""
+      }
+    ],
+    "composer": {
+      "text": "",
+      "focused": false,
+      "keyboardVisible": false
+    },
+    "viewport": {
+      "surface": "conversation",
+      "anchorMessageId": "message.context",
+      "scrollOffset": 0
+    },
+    "typingSenderIds": []
+  },
+  "events": [
+    {
+      "id": "motion.app-drawer.drawer-open",
+      "kind": "drawer-open",
+      "target": "thread.motion",
+      "frame": 31,
+      "uiState": {
+        "conversationId": "thread.motion",
+        "messages": [
+          {
+            "id": "message.context",
+            "senderId": "account.remote",
+            "text": "Can you send the trail map?",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          }
+        ],
+        "composer": {
+          "text": "",
+          "focused": false,
+          "keyboardVisible": false
+        },
+        "viewport": {
+          "surface": "tray",
+          "anchorMessageId": "message.context",
+          "scrollOffset": 0
+        },
+        "typingSenderIds": []
+      },
+      "layerIds": [
+        "ui.overlay",
+        "ui.inbox"
+      ]
+    }
+  ],
+  "cues": []
+}

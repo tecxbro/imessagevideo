@@ -1,0 +1,270 @@
+{
+  "schema": 1,
+  "verdict": "FAIL",
+  "failures": [
+    {
+      "check": "missing_candidate_frames",
+      "spans": [
+        [
+          110,
+          119
+        ]
+      ]
+    },
+    {
+      "check": "final_hold",
+      "frame": 119,
+      "reference_end_seconds_rational": "4",
+      "candidate_end_seconds_rational": "11/3"
+    },
+    {
+      "check": "incomplete_region",
+      "id": "last-hold"
+    }
+  ],
+  "checks_sha256": "57a3778532312040d0a342c389dd41e027b59c3ba034aa64891ef71132ff7ad0",
+  "reference": {
+    "name": "final.mp4",
+    "sha256": "ddad4995d49f61f81670a2a6e95659319e0dd65ca95156917a396bd836ed7f95",
+    "clock": {
+      "width": 640,
+      "height": 360,
+      "sample_aspect_ratio": "1",
+      "rotation_degrees": 0,
+      "display_matrix": [
+        65536,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        1073741824
+      ],
+      "container_crop_top_bottom_left_right": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "time_base": "1/15360",
+      "declared_rate": "30",
+      "declared_average_rate": "30/1",
+      "start_pts": 0,
+      "end_pts_exclusive": 61440,
+      "end_basis": "last decoded frame duration",
+      "end_seconds": 4.0,
+      "frames": 120,
+      "cadence": "constant",
+      "pixel_format": "yuv420p",
+      "alpha_present": false,
+      "color_range": "tv",
+      "color_space": "bt709",
+      "color_primaries": null,
+      "color_transfer": null
+    },
+    "audio": []
+  },
+  "candidate": {
+    "name": "truncated.mp4",
+    "sha256": "4e2612430380db3cadc77ea1909002fc30854f8b7ab885cf9cbebd10a8e65c78",
+    "clock": {
+      "width": 640,
+      "height": 360,
+      "sample_aspect_ratio": "1",
+      "rotation_degrees": 0,
+      "display_matrix": [
+        65536,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        1073741824
+      ],
+      "container_crop_top_bottom_left_right": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "time_base": "1/15360",
+      "declared_rate": "30",
+      "declared_average_rate": "30/1",
+      "start_pts": 0,
+      "end_pts_exclusive": 56320,
+      "end_basis": "last decoded frame duration",
+      "end_seconds": 3.6666666666666665,
+      "frames": 110,
+      "cadence": "constant",
+      "pixel_format": "yuv420p",
+      "alpha_present": false,
+      "color_range": "tv",
+      "color_space": "bt709",
+      "color_primaries": null,
+      "color_transfer": null
+    },
+    "audio": []
+  },
+  "compared_frames": 110,
+  "mean_abs_rgb": 0.0,
+  "worst_frame": {
+    "frame": 0,
+    "mean_abs_rgb": 0.0
+  },
+  "exact_clock": false,
+  "pixel_equality": {
+    "identical_frames": 110,
+    "different_frames": 0,
+    "different_spans": [],
+    "changed_pixel_observations": 0,
+    "first_difference": null,
+    "worst_frame": null
+  },
+  "whole_frame_mae_limit": 0.3,
+  "pixel_floor": 24,
+  "clock_tolerance_seconds": "0",
+  "alignment": "display-order index with independent exact PTS gate",
+  "audio_rule": "silent",
+  "audio_checks": null,
+  "regions": {
+    "title-cut": {
+      "expected_frames": 6,
+      "scanned_frames": 6,
+      "frames": [
+        15,
+        20
+      ],
+      "worst_mae": 0.0,
+      "worst_mae_frame": 15,
+      "worst_changed_pixels": 0,
+      "worst_changed_pixels_frame": 15,
+      "mae_limit": 1.5,
+      "pixel_floor": 24,
+      "changed_pixels_limit": null,
+      "step_mae_limit": null,
+      "worst_step": null,
+      "worst_pixel_difference": null,
+      "first_difference": null,
+      "failed_spans": [],
+      "failed_step_spans": [],
+      "candidate_hold_spans": []
+    },
+    "request-bubble": {
+      "expected_frames": 13,
+      "scanned_frames": 13,
+      "frames": [
+        28,
+        40
+      ],
+      "worst_mae": 0.0,
+      "worst_mae_frame": 28,
+      "worst_changed_pixels": 0,
+      "worst_changed_pixels_frame": 28,
+      "mae_limit": 1.5,
+      "pixel_floor": 24,
+      "changed_pixels_limit": null,
+      "step_mae_limit": null,
+      "worst_step": null,
+      "worst_pixel_difference": null,
+      "first_difference": null,
+      "failed_spans": [],
+      "failed_step_spans": [],
+      "candidate_hold_spans": []
+    },
+    "drawer-reveal": {
+      "expected_frames": 15,
+      "scanned_frames": 15,
+      "frames": [
+        54,
+        68
+      ],
+      "worst_mae": 0.0,
+      "worst_mae_frame": 54,
+      "worst_changed_pixels": 0,
+      "worst_changed_pixels_frame": 54,
+      "mae_limit": 1.5,
+      "pixel_floor": 24,
+      "changed_pixels_limit": null,
+      "step_mae_limit": null,
+      "worst_step": null,
+      "worst_pixel_difference": null,
+      "first_difference": null,
+      "failed_spans": [],
+      "failed_step_spans": [],
+      "candidate_hold_spans": []
+    },
+    "seat-selection": {
+      "expected_frames": 11,
+      "scanned_frames": 11,
+      "frames": [
+        71,
+        81
+      ],
+      "worst_mae": 0.0,
+      "worst_mae_frame": 71,
+      "worst_changed_pixels": 0,
+      "worst_changed_pixels_frame": 71,
+      "mae_limit": 3,
+      "pixel_floor": 24,
+      "changed_pixels_limit": 15,
+      "step_mae_limit": null,
+      "worst_step": null,
+      "worst_pixel_difference": null,
+      "first_difference": null,
+      "failed_spans": [],
+      "failed_step_spans": [],
+      "candidate_hold_spans": []
+    },
+    "receipt": {
+      "expected_frames": 12,
+      "scanned_frames": 12,
+      "frames": [
+        87,
+        98
+      ],
+      "worst_mae": 0.0,
+      "worst_mae_frame": 87,
+      "worst_changed_pixels": 0,
+      "worst_changed_pixels_frame": 87,
+      "mae_limit": 1.5,
+      "pixel_floor": 24,
+      "changed_pixels_limit": null,
+      "step_mae_limit": null,
+      "worst_step": null,
+      "worst_pixel_difference": null,
+      "first_difference": null,
+      "failed_spans": [],
+      "failed_step_spans": [],
+      "candidate_hold_spans": []
+    },
+    "last-hold": {
+      "expected_frames": 5,
+      "scanned_frames": 0,
+      "frames": [
+        115,
+        119
+      ],
+      "worst_mae": 0,
+      "worst_mae_frame": null,
+      "worst_changed_pixels": 0,
+      "worst_changed_pixels_frame": null,
+      "mae_limit": 1.5,
+      "pixel_floor": 24,
+      "changed_pixels_limit": null,
+      "step_mae_limit": null,
+      "worst_step": null,
+      "worst_pixel_difference": null,
+      "first_difference": null,
+      "failed_spans": [],
+      "failed_step_spans": [],
+      "candidate_hold_spans": []
+    }
+  },
+  "tile": null,
+  "regional_coverage": "explicit windows",
+  "decode_completed": true
+}

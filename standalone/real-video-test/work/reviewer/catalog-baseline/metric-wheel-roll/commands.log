@@ -1,0 +1,22 @@
+$ ['/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/venv/bin/python', '/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/imessagevideo/skill/imessage-video/scripts/recipes.py', 'preview', 'metric-wheel-roll', '--out', '/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/catalog-baseline/metric-wheel-roll/preview.mp4'] exit=0
+{
+  "id": "metric-wheel-roll",
+  "preview": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/catalog-baseline/metric-wheel-roll/preview.mp4"
+}
+
+$ ['/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/venv/bin/python', '/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/imessagevideo/skill/imessage-video/scripts/recipes.py', 'export', 'metric-wheel-roll', '--out', '/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/catalog-baseline/metric-wheel-roll/project'] exit=0
+{
+  "id": "metric-wheel-roll",
+  "scene": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/catalog-baseline/metric-wheel-roll/project/scene.json",
+  "events": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/catalog-baseline/metric-wheel-roll/project/scene.events.json",
+  "engine": "pillow",
+  "renderCommand": "python3 render_pillow.py --scene scene.json --out film.mp4"
+}
+
+$ ['/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/venv/bin/python', '/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/catalog-baseline/metric-wheel-roll/project/render_pillow.py', '--scene', '/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/catalog-baseline/metric-wheel-roll/project/scene.json', '--out', '/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/catalog-baseline/metric-wheel-roll/project/replay.mp4'] exit=0
+{"method": "pillow", "frame": 0, "total": 72}
+{"captureHistory": [], "method": "pillow", "engineSha256": "046458f0f51b4a514594a4dc5b64eeb797a554e971453a4b630b107a83f57a64", "scene": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/catalog-baseline/metric-wheel-roll/project/scene.json", "sceneSha256": "8e1b04a7edbed5d2f632693302125e304c1bb6c8d69dcc160d0bf9797d5c6816", "out": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/catalog-baseline/metric-wheel-roll/project/replay.mp4", "width": 720, "height": 480, "fps": 30, "frames": 72, "duration": 2.4, "source": {"path": "packs/editorial.mjs#metric-wheel-roll", "sourceStart": 0, "sourceEnd": 2.4, "notes": "Original editable Motion demonstration."}, "antialias": 1, "frameDirectory": null, "capturedFrameRanges": [[0, 71]], "uniqueFramesCaptured": 29}
+
+$ ['/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/venv/bin/python', '/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/imessagevideo/skill/imessage-video/scripts/frames.py', '/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/catalog-baseline/metric-wheel-roll/preview.mp4', '/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/catalog-baseline/metric-wheel-roll/project/replay.mp4', '--out', '/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/catalog-baseline/metric-wheel-roll/compare', '--require-structure-match', '--max-pts-error-ms', '0', '--max-mae', '3'] exit=0
+{"report": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/catalog-baseline/metric-wheel-roll/compare/report.json", "compared_frames": 72, "limits_passed": true, "failures": []}
+

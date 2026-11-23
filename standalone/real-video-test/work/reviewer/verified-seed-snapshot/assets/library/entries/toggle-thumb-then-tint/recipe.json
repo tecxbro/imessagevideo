@@ -1,0 +1,82 @@
+{
+  "assets": {},
+  "avoid": [
+    "reveal an entire settings panel",
+    "indicate continuous slider value"
+  ],
+  "checks": {
+    "max_mae": 12,
+    "max_pts_error_ms": 0,
+    "negative_control": {
+      "reason": "Returning the thumb to its OFF position while the background remains enabled must fail the thumb-travel region.",
+      "set": {
+        "ending-thumb-x": 20
+      }
+    },
+    "reason": "A 12/255 maximum local per-frame error allows soft compressed edges on bright small geometry. Each moving component must satisfy the same bound.",
+    "rois": {
+      "knob-travel": [
+        17,
+        15,
+        124,
+        52
+      ],
+      "track-fill": [
+        22,
+        32,
+        17,
+        16
+      ]
+    }
+  },
+  "description": "Move the thumb right in steps, settle it, then finish filling the switch with the enabled color.",
+  "fits": [
+    "toggle an optional checkout or notifications setting",
+    "give a small state change a readable finish"
+  ],
+  "fixed": [
+    "off-track"
+  ],
+  "id": "toggle-thumb-then-tint",
+  "moving": [
+    "thumb",
+    "active-track"
+  ],
+  "parameters": {
+    "enabled-color": "/layers/1/fill",
+    "ending-thumb-x": "/layers/2/keyframes/x/15/value",
+    "first-motion-time": "/layers/2/keyframes/x/2/t",
+    "off-color": "/layers/0/fill",
+    "thumb-color": "/layers/2/fill",
+    "thumb-width": "/layers/2/width"
+  },
+  "renderer": "svg",
+  "scene": "scene.json",
+  "source": {
+    "clip_sha256": "dbf19f9cd1de3b1bb9db58ae8e0c45bc2fca7b7bf317ef7c10bd5c5c679b444e",
+    "comparison_clip": "evidence/reference.nut",
+    "crop_xywh": [
+      1320,
+      542,
+      160,
+      80
+    ],
+    "end_frame_exclusive": 326,
+    "label": "Cash App — Weekly Bitcoin Rewards, published by @CashApp",
+    "media_url": "https://github.com/serenakeyitan/awesome-ai-clonable-launch-videos/blob/6a02fa07dfa5696ba3191dd905a06dbedc932e38/videos/cash-app-weekly-bitcoin-rewards.mp4",
+    "observation": "In the native 160 × 80 pixel crop at (1320,542), the white capsule left edge moves from x=20 to x=64. It first moves at frame 297, reaches x=64 around 310, and the exposed green channel continues brightening through approximately 320.",
+    "original_sha256": "82abf998073d8e09d6ac7e8e12e55d015aaff0dbda7527d04ce49e59cfaeca1a",
+    "publisher": "Cash App (@CashApp)",
+    "renderer_review": "Same reference and regions, 36 frames. Worst-region frame MAE was 9.04 for Node SVG and 10.60 for Pillow. Both reproduced the thumb travel and later track brightening; the source has softer edges.",
+    "start_frame": 290,
+    "url": "https://x.com/CashApp/status/2103207687127466307"
+  },
+  "tags": [
+    "switch",
+    "toggle",
+    "enable",
+    "two-beat",
+    "settings"
+  ],
+  "title": "Turn a switch on in two beats"
+}

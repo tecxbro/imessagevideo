@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 72
+  },
+  "initialUI": null,
+  "events": [
+    {
+      "id": "motion.inline-thread-open.thread-expand",
+      "kind": "thread_open",
+      "target": "thread-parent",
+      "frame": 23,
+      "layerIds": [
+        "thread-parent"
+      ]
+    },
+    {
+      "id": "motion.inline-thread-open.thread-readable",
+      "kind": "thread_ready",
+      "target": "thread-reply-second",
+      "frame": 51,
+      "layerIds": [
+        "thread-reply-second"
+      ]
+    }
+  ],
+  "cues": []
+}

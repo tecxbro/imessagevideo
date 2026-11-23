@@ -1,0 +1,79 @@
+{
+  "status": "BOUNDED_CAUSAL_PROBE_FOUND_CONSISTENT_POLICY",
+  "productionChanged": false,
+  "mediaOrCachesChanged": false,
+  "scope": {
+    "frames": [
+      932,
+      958
+    ],
+    "runs": [
+      "p0432: Send, reply, and forward messages",
+      "p0438: View, create, and reschedule events"
+    ],
+    "headerControls": [
+      "p0431: Email",
+      "p0437: Calendar"
+    ],
+    "fps": "30000/1001"
+  },
+  "sceneSHA256": "bf46102ecdc578cdadac244ba85dec7e5ab19fe07b80277a2fdcdb4c2b191df1",
+  "currentPictureSHA256": "2423f1be2099458c548fc6ebc236c9b0518489189bdaf31da0ed7165da259a06",
+  "currentEngineSHA256": "7080c58ce151d1966b44671dc9db0801f81cb514200a3e8ed8a6cd1401777195",
+  "result": "Explicit Canvas fontKerning normal makes both actual-pose text-only canvases pixel-identical to SVG, including unchanged headers. Auto reproduces the current subtitle advance; none is worse.",
+  "defaultProperties": "SVG computed fontKerning auto/textRendering auto/letterSpacing normal; Canvas defaults auto/auto/0px. All modes retain textRendering auto, so the isolated change is fontKerning.",
+  "policyComparison": [
+    {
+      "frame": 932,
+      "policies": {
+        "svg": {
+          "maeVsSVG": 0.0,
+          "maxDelta": 0,
+          "changedPixels": 0
+        },
+        "auto": {
+          "maeVsSVG": 0.49472093621399177,
+          "maxDelta": 100,
+          "changedPixels": 11622
+        },
+        "normal": {
+          "maeVsSVG": 0.0,
+          "maxDelta": 0,
+          "changedPixels": 0
+        },
+        "none": {
+          "maeVsSVG": 0.5143769290123457,
+          "maxDelta": 100,
+          "changedPixels": 12869
+        }
+      }
+    },
+    {
+      "frame": 958,
+      "policies": {
+        "svg": {
+          "maeVsSVG": 0.0,
+          "maxDelta": 0,
+          "changedPixels": 0
+        },
+        "auto": {
+          "maeVsSVG": 0.49879308127572014,
+          "maxDelta": 100,
+          "changedPixels": 11633
+        },
+        "normal": {
+          "maeVsSVG": 0.0,
+          "maxDelta": 0,
+          "changedPixels": 0
+        },
+        "none": {
+          "maeVsSVG": 0.5161786265432099,
+          "maxDelta": 100,
+          "changedPixels": 12623
+        }
+      }
+    }
+  ],
+  "exactStylesAndAdvances": "probe.json",
+  "qualification": "This proves a consistent policy for these two poses and two copy runs only. It does not certify a global default or authorize production changes. Current delivered media remains unchanged."
+}

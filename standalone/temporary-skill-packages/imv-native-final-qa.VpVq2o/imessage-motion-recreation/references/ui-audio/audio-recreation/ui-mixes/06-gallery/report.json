@@ -1,0 +1,1282 @@
+{
+  "format_version": 1,
+  "id": "06-gallery",
+  "status": "pass",
+  "reference_film_samples_reused": false,
+  "licensed_library_samples_used": true,
+  "procedural_fallbacks_used": true,
+  "schedule_sha256": "6a40982cf6ecdaaea56805bb30b3a469afb826ef22c2deee2474d67c779be88f",
+  "schedule_file": "ui-cues/canonical-06-gallery.json",
+  "library_manifest_sha256": "26d5b43f764517bf027ad680e93c81ea98672f50b0bcad40f309a85eb7c0894a",
+  "code_sha256": "a4b52c44bef868ee31edb59c0f8e85e85e7cdfe82f1bd804283d415eee263204",
+  "library_api_sha256": "065a6392f327ce06b6a6321849cafe9c1d796f2bb1023483737cea95456f1b6c",
+  "codec_helpers_sha256": "411a2a5586d329a0ced74e3cf921231ce4be4d86e9362533ee19728160be03e2",
+  "music": {
+    "input_file": "mixes/06-gallery/music.flac",
+    "sha256": "086740c4b0aaae24ead80e6cbc9d07d8bffd5afcbf12951b519b09b022321292",
+    "new_score_provenance": [
+      {
+        "kind": "new_AI_music_text_only",
+        "path": "audio-recreation/ai/06-gallery/music.mp3",
+        "sha256": "a5d4d829f8e12b6eb4c146f13929855162f436ea0fee9cf79ebc8c2a3b32a9ad",
+        "provenance": {
+          "source_kind": "new_AI_music_text_only",
+          "provider": "fal",
+          "endpoint_id": "elevenlabs/music/v2.5",
+          "request_id": "01a1c185-d9c1-7540-86d1-e5ee355998b6",
+          "submission_key": "imessage-new-score-06-gallery-v1-20261109",
+          "input": {
+            "prompt": "Create a newly composed49.434-second instrumental electronic-pop / modern lounge cue at134 BPM with a relaxed67-BPM half-time feel. A controlled clean synth bass locking into a crisp electronic kick and soft clap/snare, bright restrained plucky synth arpeggios, and light warm filtered pads for an airy optimistic mood. Add a very sparse vowel-shaped synthesizer tone for rhythmic texture, produced entirely electronically without human vocal samples. Energetic and polished from the opening but never frantic; first-middle grows a little wider, then become more spacious in the last third. Ease out into a short clear soft cadence over the final3 seconds. Leave ample room for separately mixed UI accents. No speech, no singing, no voice chops, no notification effects, no existing melody. Original instrumental music only.",
+            "music_length_ms": 49434,
+            "force_instrumental": true,
+            "output_format": "mp3_48000_320"
+          },
+          "output_url": "https://v3b.fal.media/files/b/0ab1ce2e/h2kFBI6xpqypnRBrWZ54p_music_generated.mp3",
+          "sha256": "a5d4d829f8e12b6eb4c146f13929855162f436ea0fee9cf79ebc8c2a3b32a9ad",
+          "bytes": 1978604,
+          "reference_audio_used_as_generation_input": false
+        },
+        "provenance_sha256": "6891c70ecdd5830fec55873984016765be370bda6fbbf89b2e14c1b8c7642c4d"
+      }
+    ],
+    "old_sfx_stem_used": false,
+    "gain_db": -6.0
+  },
+  "picture": {
+    "frames": 1483,
+    "fps_numerator": 30,
+    "fps_denominator": 1
+  },
+  "sample_rate": 48000,
+  "channels": 2,
+  "samples": 2372800,
+  "canonical_event_count": 18,
+  "rendered_event_count": 18,
+  "skipped_event_count": 0,
+  "kind_counts": {
+    "message_arrival": 13,
+    "message_send": 5
+  },
+  "rendered_kind_counts": {
+    "message_arrival": 13,
+    "message_send": 5
+  },
+  "events": [
+    {
+      "canonical_event": {
+        "frame": 30,
+        "time": 1.0,
+        "kind": "message_arrival",
+        "group": "06.cabin_priya_first",
+        "confidence": 0.96,
+        "observed_vs_inferred": "observed_visible_message_entry",
+        "evidence_layer_or_source": [
+          {
+            "node_id": "rene-intro-priya-precut-hires",
+            "json_pointer": "/layers/0/children/8"
+          }
+        ],
+        "action_evidence": "Native visible message/component entry; body copy is not a typing schedule.",
+        "source_frame": 30,
+        "sample_offset_48000": 48000,
+        "character_or_delta": "Someone just pick a weekend, I\u2019m not the mom of this group",
+        "physical_touch_observed": false,
+        "control_press_frame_unknown": false,
+        "timing_precision_frames": 1,
+        "id": "06-gallery-ui-001",
+        "event_id": "06-gallery-ui-001"
+      },
+      "ordinal": 0,
+      "source": {
+        "kind": "licensed_library_ui_effect",
+        "asset_id": "kenney_drop_001",
+        "license": "CC0-1.0",
+        "original_sha256": "692ee3a6f1821402ca649ff735bee9591dc4846c8098fc7d6a90fd15fa57c1af",
+        "prepared_sha256": "5536fb305fbce91643f485fc784cce11051975708d8407421fa2f409ad172fa7",
+        "source_collection": "kenney",
+        "asset_gain_db": -6.0,
+        "routing_limit": "Filename/category-based original sound design; not a proprietary-sound equivalence claim"
+      },
+      "target_peak_dbfs": -12.0,
+      "pitch": 1.0,
+      "pan": 0.0,
+      "alignment": "dominant_early_attack_peak",
+      "event_sample": 48000,
+      "clip_alignment_offset_samples": 13,
+      "clip_start_sample_unclipped": 47987,
+      "boundary_adjustment_samples": 0,
+      "clip_samples": 5894,
+      "batch_policy": "one effect for one canonical event",
+      "rendered": true,
+      "written_start_sample": 47987,
+      "written_samples": 5894,
+      "trimmed_start_samples": 0,
+      "trimmed_end_samples": 0,
+      "alignment_error_samples": 0
+    },
+    {
+      "canonical_event": {
+        "frame": 56,
+        "time": 1.8666666666666667,
+        "kind": "message_arrival",
+        "group": "06.cabin_dan",
+        "confidence": 0.96,
+        "observed_vs_inferred": "observed_visible_message_entry",
+        "evidence_layer_or_source": [
+          {
+            "node_id": "rene-intro-dan",
+            "json_pointer": "/layers/0/children/10"
+          }
+        ],
+        "action_evidence": "Native visible message/component entry; body copy is not a typing schedule.",
+        "source_frame": 56,
+        "sample_offset_48000": 89600,
+        "character_or_delta": "Not me, I organized the last one",
+        "physical_touch_observed": false,
+        "control_press_frame_unknown": false,
+        "timing_precision_frames": 1,
+        "id": "06-gallery-ui-002",
+        "event_id": "06-gallery-ui-002"
+      },
+      "ordinal": 1,
+      "source": {
+        "kind": "licensed_library_ui_effect",
+        "asset_id": "kenney_drop_001",
+        "license": "CC0-1.0",
+        "original_sha256": "692ee3a6f1821402ca649ff735bee9591dc4846c8098fc7d6a90fd15fa57c1af",
+        "prepared_sha256": "5536fb305fbce91643f485fc784cce11051975708d8407421fa2f409ad172fa7",
+        "source_collection": "kenney",
+        "asset_gain_db": -6.0,
+        "routing_limit": "Filename/category-based original sound design; not a proprietary-sound equivalence claim"
+      },
+      "target_peak_dbfs": -12.0,
+      "pitch": 1.0,
+      "pan": 0.0,
+      "alignment": "dominant_early_attack_peak",
+      "event_sample": 89600,
+      "clip_alignment_offset_samples": 13,
+      "clip_start_sample_unclipped": 89587,
+      "boundary_adjustment_samples": 0,
+      "clip_samples": 5894,
+      "batch_policy": "one effect for one canonical event",
+      "rendered": true,
+      "written_start_sample": 89587,
+      "written_samples": 5894,
+      "trimmed_start_samples": 0,
+      "trimmed_end_samples": 0,
+      "alignment_error_samples": 0
+    },
+    {
+      "canonical_event": {
+        "frame": 83,
+        "time": 2.7666666666666666,
+        "kind": "message_arrival",
+        "group": "06.cabin_oct17",
+        "confidence": 0.96,
+        "observed_vs_inferred": "observed_visible_message_entry",
+        "evidence_layer_or_source": [
+          {
+            "node_id": "rene-intro-rene",
+            "json_pointer": "/layers/0/children/11"
+          }
+        ],
+        "action_evidence": "Native visible message/component entry; body copy is not a typing schedule.",
+        "source_frame": 83,
+        "sample_offset_48000": 132800,
+        "character_or_delta": "Oct17 is the first weekend all of you are free",
+        "physical_touch_observed": false,
+        "control_press_frame_unknown": false,
+        "timing_precision_frames": 1,
+        "id": "06-gallery-ui-003",
+        "event_id": "06-gallery-ui-003"
+      },
+      "ordinal": 2,
+      "source": {
+        "kind": "licensed_library_ui_effect",
+        "asset_id": "kenney_drop_001",
+        "license": "CC0-1.0",
+        "original_sha256": "692ee3a6f1821402ca649ff735bee9591dc4846c8098fc7d6a90fd15fa57c1af",
+        "prepared_sha256": "5536fb305fbce91643f485fc784cce11051975708d8407421fa2f409ad172fa7",
+        "source_collection": "kenney",
+        "asset_gain_db": -6.0,
+        "routing_limit": "Filename/category-based original sound design; not a proprietary-sound equivalence claim"
+      },
+      "target_peak_dbfs": -12.0,
+      "pitch": 1.0,
+      "pan": 0.0,
+      "alignment": "dominant_early_attack_peak",
+      "event_sample": 132800,
+      "clip_alignment_offset_samples": 13,
+      "clip_start_sample_unclipped": 132787,
+      "boundary_adjustment_samples": 0,
+      "clip_samples": 5894,
+      "batch_policy": "one effect for one canonical event",
+      "rendered": true,
+      "written_start_sample": 132787,
+      "written_samples": 5894,
+      "trimmed_start_samples": 0,
+      "trimmed_end_samples": 0,
+      "alignment_error_samples": 0
+    },
+    {
+      "canonical_event": {
+        "frame": 108,
+        "time": 3.6,
+        "kind": "message_arrival",
+        "group": "06.cabin_want",
+        "confidence": 0.96,
+        "observed_vs_inferred": "observed_visible_message_entry",
+        "evidence_layer_or_source": [
+          {
+            "node_id": "source-message-art-Want",
+            "json_pointer": "/layers/1095/children/4/children/5"
+          }
+        ],
+        "action_evidence": "Native visible message/component entry; body copy is not a typing schedule.",
+        "source_frame": 108,
+        "sample_offset_48000": 172800,
+        "character_or_delta": "Want me to book the lakeside cabin Dan sent? Before someone gets busy again",
+        "physical_touch_observed": false,
+        "control_press_frame_unknown": false,
+        "timing_precision_frames": 1,
+        "id": "06-gallery-ui-004",
+        "event_id": "06-gallery-ui-004"
+      },
+      "ordinal": 3,
+      "source": {
+        "kind": "licensed_library_ui_effect",
+        "asset_id": "kenney_drop_001",
+        "license": "CC0-1.0",
+        "original_sha256": "692ee3a6f1821402ca649ff735bee9591dc4846c8098fc7d6a90fd15fa57c1af",
+        "prepared_sha256": "5536fb305fbce91643f485fc784cce11051975708d8407421fa2f409ad172fa7",
+        "source_collection": "kenney",
+        "asset_gain_db": -6.0,
+        "routing_limit": "Filename/category-based original sound design; not a proprietary-sound equivalence claim"
+      },
+      "target_peak_dbfs": -12.0,
+      "pitch": 1.0,
+      "pan": 0.0,
+      "alignment": "dominant_early_attack_peak",
+      "event_sample": 172800,
+      "clip_alignment_offset_samples": 13,
+      "clip_start_sample_unclipped": 172787,
+      "boundary_adjustment_samples": 0,
+      "clip_samples": 5894,
+      "batch_policy": "one effect for one canonical event",
+      "rendered": true,
+      "written_start_sample": 172787,
+      "written_samples": 5894,
+      "trimmed_start_samples": 0,
+      "trimmed_end_samples": 0,
+      "alignment_error_samples": 0
+    },
+    {
+      "canonical_event": {
+        "frame": 148,
+        "time": 4.933333333333334,
+        "kind": "message_arrival",
+        "group": "06.cabin_priya_commit",
+        "confidence": 0.96,
+        "observed_vs_inferred": "observed_visible_message_entry",
+        "evidence_layer_or_source": [
+          {
+            "node_id": "rene-final11-group-24",
+            "json_pointer": "/layers/1095/children/4/children/7"
+          }
+        ],
+        "action_evidence": "Native visible message/component entry; body copy is not a typing schedule.",
+        "source_frame": 148,
+        "sample_offset_48000": 236800,
+        "character_or_delta": "Ok we gotta commit",
+        "physical_touch_observed": false,
+        "control_press_frame_unknown": false,
+        "timing_precision_frames": 1,
+        "id": "06-gallery-ui-005",
+        "event_id": "06-gallery-ui-005"
+      },
+      "ordinal": 4,
+      "source": {
+        "kind": "licensed_library_ui_effect",
+        "asset_id": "kenney_drop_001",
+        "license": "CC0-1.0",
+        "original_sha256": "692ee3a6f1821402ca649ff735bee9591dc4846c8098fc7d6a90fd15fa57c1af",
+        "prepared_sha256": "5536fb305fbce91643f485fc784cce11051975708d8407421fa2f409ad172fa7",
+        "source_collection": "kenney",
+        "asset_gain_db": -6.0,
+        "routing_limit": "Filename/category-based original sound design; not a proprietary-sound equivalence claim"
+      },
+      "target_peak_dbfs": -12.0,
+      "pitch": 1.0,
+      "pan": 0.0,
+      "alignment": "dominant_early_attack_peak",
+      "event_sample": 236800,
+      "clip_alignment_offset_samples": 13,
+      "clip_start_sample_unclipped": 236787,
+      "boundary_adjustment_samples": 0,
+      "clip_samples": 5894,
+      "batch_policy": "one effect for one canonical event",
+      "rendered": true,
+      "written_start_sample": 236787,
+      "written_samples": 5894,
+      "trimmed_start_samples": 0,
+      "trimmed_end_samples": 0,
+      "alignment_error_samples": 0
+    },
+    {
+      "canonical_event": {
+        "frame": 179,
+        "time": 5.966666666666667,
+        "kind": "message_send",
+        "group": "06.cabin_book",
+        "confidence": 0.96,
+        "observed_vs_inferred": "observed_visible_message_entry",
+        "evidence_layer_or_source": [
+          {
+            "node_id": "rene-final11-group-29",
+            "json_pointer": "/layers/1095/children/4/children/8"
+          }
+        ],
+        "action_evidence": "Native visible message/component entry; body copy is not a typing schedule.",
+        "source_frame": 179,
+        "sample_offset_48000": 286400,
+        "character_or_delta": "Let\u2019s go! Book it",
+        "physical_touch_observed": false,
+        "control_press_frame_unknown": true,
+        "timing_precision_frames": 1,
+        "id": "06-gallery-ui-006",
+        "event_id": "06-gallery-ui-006"
+      },
+      "ordinal": 5,
+      "source": {
+        "kind": "original_procedural_fallback",
+        "effect": "air_whoosh",
+        "seed": 2167363383,
+        "parameters": {
+          "pitch": 1.12,
+          "duration": 0.14,
+          "energy": 0.75,
+          "pan": 0.0
+        },
+        "code_sha256": "4797a0e736e8115975398a7c4acf5289a89d23bb0222420d7dc7d89a2f40f23c",
+        "recorded_samples_used": false
+      },
+      "target_peak_dbfs": -12.0,
+      "pitch": 1.12,
+      "pan": 0.0,
+      "alignment": "onset",
+      "event_sample": 286400,
+      "clip_alignment_offset_samples": 0,
+      "clip_start_sample_unclipped": 286400,
+      "boundary_adjustment_samples": 0,
+      "clip_samples": 6720,
+      "batch_policy": "one effect for one canonical event",
+      "rendered": true,
+      "written_start_sample": 286400,
+      "written_samples": 6720,
+      "trimmed_start_samples": 0,
+      "trimmed_end_samples": 0,
+      "alignment_error_samples": 0
+    },
+    {
+      "canonical_event": {
+        "frame": 208,
+        "time": 6.933333333333334,
+        "kind": "message_arrival",
+        "group": "06.cabin_done",
+        "confidence": 0.96,
+        "observed_vs_inferred": "observed_visible_message_entry",
+        "evidence_layer_or_source": [
+          {
+            "node_id": "rene-final11-group-37",
+            "json_pointer": "/layers/1095/children/4/children/9"
+          }
+        ],
+        "action_evidence": "Native visible message/component entry; body copy is not a typing schedule.",
+        "source_frame": 208,
+        "sample_offset_48000": 332800,
+        "character_or_delta": "Done. Cabin booked",
+        "physical_touch_observed": false,
+        "control_press_frame_unknown": false,
+        "timing_precision_frames": 1,
+        "id": "06-gallery-ui-007",
+        "event_id": "06-gallery-ui-007"
+      },
+      "ordinal": 6,
+      "source": {
+        "kind": "licensed_library_ui_effect",
+        "asset_id": "kenney_drop_001",
+        "license": "CC0-1.0",
+        "original_sha256": "692ee3a6f1821402ca649ff735bee9591dc4846c8098fc7d6a90fd15fa57c1af",
+        "prepared_sha256": "5536fb305fbce91643f485fc784cce11051975708d8407421fa2f409ad172fa7",
+        "source_collection": "kenney",
+        "asset_gain_db": -6.0,
+        "routing_limit": "Filename/category-based original sound design; not a proprietary-sound equivalence claim"
+      },
+      "target_peak_dbfs": -12.0,
+      "pitch": 1.0,
+      "pan": 0.0,
+      "alignment": "dominant_early_attack_peak",
+      "event_sample": 332800,
+      "clip_alignment_offset_samples": 13,
+      "clip_start_sample_unclipped": 332787,
+      "boundary_adjustment_samples": 0,
+      "clip_samples": 5894,
+      "batch_policy": "one effect for one canonical event",
+      "rendered": true,
+      "written_start_sample": 332787,
+      "written_samples": 5894,
+      "trimmed_start_samples": 0,
+      "trimmed_end_samples": 0,
+      "alignment_error_samples": 0
+    },
+    {
+      "canonical_event": {
+        "frame": 485,
+        "time": 16.166666666666668,
+        "kind": "message_arrival",
+        "group": "06.rent_comparables",
+        "confidence": 0.98,
+        "observed_vs_inferred": "observed_visible_message_entry",
+        "evidence_layer_or_source": [
+          {
+            "node_id": "root-rene-gray-1-body-485",
+            "json_pointer": "/layers/7/children/463"
+          }
+        ],
+        "action_evidence": "Native visible message/component entry; body copy is not a typing schedule.",
+        "source_frame": 485,
+        "sample_offset_48000": 776000,
+        "character_or_delta": "3 similar units in your building are listed lower. Want me to write a pushback?",
+        "physical_touch_observed": false,
+        "control_press_frame_unknown": false,
+        "timing_precision_frames": 1,
+        "id": "06-gallery-ui-008",
+        "event_id": "06-gallery-ui-008"
+      },
+      "ordinal": 7,
+      "source": {
+        "kind": "licensed_library_ui_effect",
+        "asset_id": "kenney_drop_001",
+        "license": "CC0-1.0",
+        "original_sha256": "692ee3a6f1821402ca649ff735bee9591dc4846c8098fc7d6a90fd15fa57c1af",
+        "prepared_sha256": "5536fb305fbce91643f485fc784cce11051975708d8407421fa2f409ad172fa7",
+        "source_collection": "kenney",
+        "asset_gain_db": -6.0,
+        "routing_limit": "Filename/category-based original sound design; not a proprietary-sound equivalence claim"
+      },
+      "target_peak_dbfs": -12.0,
+      "pitch": 1.0,
+      "pan": 0.0,
+      "alignment": "dominant_early_attack_peak",
+      "event_sample": 776000,
+      "clip_alignment_offset_samples": 13,
+      "clip_start_sample_unclipped": 775987,
+      "boundary_adjustment_samples": 0,
+      "clip_samples": 5894,
+      "batch_policy": "one effect for one canonical event",
+      "rendered": true,
+      "written_start_sample": 775987,
+      "written_samples": 5894,
+      "trimmed_start_samples": 0,
+      "trimmed_end_samples": 0,
+      "alignment_error_samples": 0
+    },
+    {
+      "canonical_event": {
+        "frame": 499,
+        "time": 16.633333333333333,
+        "kind": "message_send",
+        "group": "06.rent_yes",
+        "confidence": 0.98,
+        "observed_vs_inferred": "observed_visible_message_entry",
+        "evidence_layer_or_source": [
+          {
+            "node_id": "root-rene-yes-body-499",
+            "json_pointer": "/layers/7/children/831"
+          }
+        ],
+        "action_evidence": "Native visible message/component entry; body copy is not a typing schedule.",
+        "source_frame": 499,
+        "sample_offset_48000": 798400,
+        "character_or_delta": "Yes plz",
+        "physical_touch_observed": false,
+        "control_press_frame_unknown": true,
+        "timing_precision_frames": 1,
+        "id": "06-gallery-ui-009",
+        "event_id": "06-gallery-ui-009"
+      },
+      "ordinal": 8,
+      "source": {
+        "kind": "original_procedural_fallback",
+        "effect": "air_whoosh",
+        "seed": 1516970151,
+        "parameters": {
+          "pitch": 1.12,
+          "duration": 0.14,
+          "energy": 0.75,
+          "pan": 0.0
+        },
+        "code_sha256": "4797a0e736e8115975398a7c4acf5289a89d23bb0222420d7dc7d89a2f40f23c",
+        "recorded_samples_used": false
+      },
+      "target_peak_dbfs": -12.0,
+      "pitch": 1.12,
+      "pan": 0.0,
+      "alignment": "onset",
+      "event_sample": 798400,
+      "clip_alignment_offset_samples": 0,
+      "clip_start_sample_unclipped": 798400,
+      "boundary_adjustment_samples": 0,
+      "clip_samples": 6720,
+      "batch_policy": "one effect for one canonical event",
+      "rendered": true,
+      "written_start_sample": 798400,
+      "written_samples": 6720,
+      "trimmed_start_samples": 0,
+      "trimmed_end_samples": 0,
+      "alignment_error_samples": 0
+    },
+    {
+      "canonical_event": {
+        "frame": 512,
+        "time": 17.066666666666666,
+        "kind": "message_arrival",
+        "group": "06.rent_draft_ready",
+        "confidence": 0.98,
+        "observed_vs_inferred": "observed_visible_message_entry",
+        "evidence_layer_or_source": [
+          {
+            "node_id": "root-rene-gray-2-body-512",
+            "json_pointer": "/layers/7/children/573"
+          }
+        ],
+        "action_evidence": "Native visible message/component entry; body copy is not a typing schedule.",
+        "source_frame": 512,
+        "sample_offset_48000": 819200,
+        "character_or_delta": "It's in your drafts. Friendly but firm. You've got this",
+        "physical_touch_observed": false,
+        "control_press_frame_unknown": false,
+        "timing_precision_frames": 1,
+        "id": "06-gallery-ui-010",
+        "event_id": "06-gallery-ui-010"
+      },
+      "ordinal": 9,
+      "source": {
+        "kind": "licensed_library_ui_effect",
+        "asset_id": "kenney_drop_001",
+        "license": "CC0-1.0",
+        "original_sha256": "692ee3a6f1821402ca649ff735bee9591dc4846c8098fc7d6a90fd15fa57c1af",
+        "prepared_sha256": "5536fb305fbce91643f485fc784cce11051975708d8407421fa2f409ad172fa7",
+        "source_collection": "kenney",
+        "asset_gain_db": -6.0,
+        "routing_limit": "Filename/category-based original sound design; not a proprietary-sound equivalence claim"
+      },
+      "target_peak_dbfs": -12.0,
+      "pitch": 1.0,
+      "pan": 0.0,
+      "alignment": "dominant_early_attack_peak",
+      "event_sample": 819200,
+      "clip_alignment_offset_samples": 13,
+      "clip_start_sample_unclipped": 819187,
+      "boundary_adjustment_samples": 0,
+      "clip_samples": 5894,
+      "batch_policy": "one effect for one canonical event",
+      "rendered": true,
+      "written_start_sample": 819187,
+      "written_samples": 5894,
+      "trimmed_start_samples": 0,
+      "trimmed_end_samples": 0,
+      "alignment_error_samples": 0
+    },
+    {
+      "canonical_event": {
+        "frame": 714,
+        "time": 23.8,
+        "kind": "message_arrival",
+        "group": "06.birthday_fuji",
+        "confidence": 0.98,
+        "observed_vs_inferred": "observed_visible_message_entry",
+        "evidence_layer_or_source": [
+          {
+            "node_id": "phone-v17-message-Fuji",
+            "json_pointer": "/layers/20/children/4"
+          }
+        ],
+        "action_evidence": "Native visible message/component entry; body copy is not a typing schedule.",
+        "source_frame": 714,
+        "sample_offset_48000": 1142400,
+        "character_or_delta": "She\u2019s been wanting to try film photography \u2013 found a Fuji half frame, $189, arrives Friday",
+        "physical_touch_observed": false,
+        "control_press_frame_unknown": false,
+        "timing_precision_frames": 1,
+        "id": "06-gallery-ui-011",
+        "event_id": "06-gallery-ui-011"
+      },
+      "ordinal": 10,
+      "source": {
+        "kind": "licensed_library_ui_effect",
+        "asset_id": "kenney_drop_001",
+        "license": "CC0-1.0",
+        "original_sha256": "692ee3a6f1821402ca649ff735bee9591dc4846c8098fc7d6a90fd15fa57c1af",
+        "prepared_sha256": "5536fb305fbce91643f485fc784cce11051975708d8407421fa2f409ad172fa7",
+        "source_collection": "kenney",
+        "asset_gain_db": -6.0,
+        "routing_limit": "Filename/category-based original sound design; not a proprietary-sound equivalence claim"
+      },
+      "target_peak_dbfs": -12.0,
+      "pitch": 1.0,
+      "pan": 0.0,
+      "alignment": "dominant_early_attack_peak",
+      "event_sample": 1142400,
+      "clip_alignment_offset_samples": 13,
+      "clip_start_sample_unclipped": 1142387,
+      "boundary_adjustment_samples": 0,
+      "clip_samples": 5894,
+      "batch_policy": "one effect for one canonical event",
+      "rendered": true,
+      "written_start_sample": 1142387,
+      "written_samples": 5894,
+      "trimmed_start_samples": 0,
+      "trimmed_end_samples": 0,
+      "alignment_error_samples": 0
+    },
+    {
+      "canonical_event": {
+        "frame": 734,
+        "time": 24.466666666666665,
+        "kind": "message_send",
+        "group": "06.birthday_wait",
+        "confidence": 0.98,
+        "observed_vs_inferred": "observed_visible_message_entry",
+        "evidence_layer_or_source": [
+          {
+            "node_id": "phone-v17-message-Wait",
+            "json_pointer": "/layers/20/children/5"
+          }
+        ],
+        "action_evidence": "Native visible message/component entry; body copy is not a typing schedule.",
+        "source_frame": 734,
+        "sample_offset_48000": 1174400,
+        "character_or_delta": "Wait, you remember that?",
+        "physical_touch_observed": false,
+        "control_press_frame_unknown": true,
+        "timing_precision_frames": 1,
+        "id": "06-gallery-ui-012",
+        "event_id": "06-gallery-ui-012"
+      },
+      "ordinal": 11,
+      "source": {
+        "kind": "original_procedural_fallback",
+        "effect": "air_whoosh",
+        "seed": 1989389049,
+        "parameters": {
+          "pitch": 1.12,
+          "duration": 0.14,
+          "energy": 0.75,
+          "pan": 0.0
+        },
+        "code_sha256": "4797a0e736e8115975398a7c4acf5289a89d23bb0222420d7dc7d89a2f40f23c",
+        "recorded_samples_used": false
+      },
+      "target_peak_dbfs": -12.0,
+      "pitch": 1.12,
+      "pan": 0.0,
+      "alignment": "onset",
+      "event_sample": 1174400,
+      "clip_alignment_offset_samples": 0,
+      "clip_start_sample_unclipped": 1174400,
+      "boundary_adjustment_samples": 0,
+      "clip_samples": 6720,
+      "batch_policy": "one effect for one canonical event",
+      "rendered": true,
+      "written_start_sample": 1174400,
+      "written_samples": 6720,
+      "trimmed_start_samples": 0,
+      "trimmed_end_samples": 0,
+      "alignment_error_samples": 0
+    },
+    {
+      "canonical_event": {
+        "frame": 745,
+        "time": 24.833333333333332,
+        "kind": "message_send",
+        "group": "06.birthday_order",
+        "confidence": 0.98,
+        "observed_vs_inferred": "observed_visible_message_entry",
+        "evidence_layer_or_source": [
+          {
+            "node_id": "phone-v17-message-Order",
+            "json_pointer": "/layers/20/children/6"
+          }
+        ],
+        "action_evidence": "Native visible message/component entry; body copy is not a typing schedule.",
+        "source_frame": 745,
+        "sample_offset_48000": 1192000,
+        "character_or_delta": "Order it. She\u2019s gonna cry",
+        "physical_touch_observed": false,
+        "control_press_frame_unknown": true,
+        "timing_precision_frames": 1,
+        "id": "06-gallery-ui-013",
+        "event_id": "06-gallery-ui-013"
+      },
+      "ordinal": 12,
+      "source": {
+        "kind": "original_procedural_fallback",
+        "effect": "air_whoosh",
+        "seed": 3455963530,
+        "parameters": {
+          "pitch": 1.12,
+          "duration": 0.14,
+          "energy": 0.75,
+          "pan": 0.0
+        },
+        "code_sha256": "4797a0e736e8115975398a7c4acf5289a89d23bb0222420d7dc7d89a2f40f23c",
+        "recorded_samples_used": false
+      },
+      "target_peak_dbfs": -12.0,
+      "pitch": 1.12,
+      "pan": 0.0,
+      "alignment": "onset",
+      "event_sample": 1192000,
+      "clip_alignment_offset_samples": 0,
+      "clip_start_sample_unclipped": 1192000,
+      "boundary_adjustment_samples": 0,
+      "clip_samples": 6720,
+      "batch_policy": "one effect for one canonical event",
+      "rendered": true,
+      "written_start_sample": 1192000,
+      "written_samples": 6720,
+      "trimmed_start_samples": 0,
+      "trimmed_end_samples": 0,
+      "alignment_error_samples": 0
+    },
+    {
+      "canonical_event": {
+        "frame": 770,
+        "time": 25.666666666666668,
+        "kind": "message_arrival",
+        "group": "06.birthday_done",
+        "confidence": 0.98,
+        "observed_vs_inferred": "observed_visible_message_entry",
+        "evidence_layer_or_source": [
+          {
+            "node_id": "phone-v17-message-Done",
+            "json_pointer": "/layers/20/children/7"
+          }
+        ],
+        "action_evidence": "Native visible message/component entry; body copy is not a typing schedule.",
+        "source_frame": 770,
+        "sample_offset_48000": 1232000,
+        "character_or_delta": "Done. Gift wrap on \ud83c\udf89",
+        "physical_touch_observed": false,
+        "control_press_frame_unknown": false,
+        "timing_precision_frames": 1,
+        "id": "06-gallery-ui-014",
+        "event_id": "06-gallery-ui-014"
+      },
+      "ordinal": 13,
+      "source": {
+        "kind": "licensed_library_ui_effect",
+        "asset_id": "kenney_drop_001",
+        "license": "CC0-1.0",
+        "original_sha256": "692ee3a6f1821402ca649ff735bee9591dc4846c8098fc7d6a90fd15fa57c1af",
+        "prepared_sha256": "5536fb305fbce91643f485fc784cce11051975708d8407421fa2f409ad172fa7",
+        "source_collection": "kenney",
+        "asset_gain_db": -6.0,
+        "routing_limit": "Filename/category-based original sound design; not a proprietary-sound equivalence claim"
+      },
+      "target_peak_dbfs": -12.0,
+      "pitch": 1.0,
+      "pan": 0.0,
+      "alignment": "dominant_early_attack_peak",
+      "event_sample": 1232000,
+      "clip_alignment_offset_samples": 13,
+      "clip_start_sample_unclipped": 1231987,
+      "boundary_adjustment_samples": 0,
+      "clip_samples": 5894,
+      "batch_policy": "one effect for one canonical event",
+      "rendered": true,
+      "written_start_sample": 1231987,
+      "written_samples": 5894,
+      "trimmed_start_samples": 0,
+      "trimmed_end_samples": 0,
+      "alignment_error_samples": 0
+    },
+    {
+      "canonical_event": {
+        "frame": 781,
+        "time": 26.033333333333335,
+        "kind": "message_arrival",
+        "group": "06.birthday_remember",
+        "confidence": 0.98,
+        "observed_vs_inferred": "observed_visible_message_entry",
+        "evidence_layer_or_source": [
+          {
+            "node_id": "phone-v17-message-Remember",
+            "json_pointer": "/layers/20/children/8"
+          }
+        ],
+        "action_evidence": "Native visible message/component entry; body copy is not a typing schedule.",
+        "source_frame": 781,
+        "sample_offset_48000": 1249600,
+        "character_or_delta": "I remember everything \ud83d\ude0c",
+        "physical_touch_observed": false,
+        "control_press_frame_unknown": false,
+        "timing_precision_frames": 1,
+        "id": "06-gallery-ui-015",
+        "event_id": "06-gallery-ui-015"
+      },
+      "ordinal": 14,
+      "source": {
+        "kind": "licensed_library_ui_effect",
+        "asset_id": "kenney_drop_001",
+        "license": "CC0-1.0",
+        "original_sha256": "692ee3a6f1821402ca649ff735bee9591dc4846c8098fc7d6a90fd15fa57c1af",
+        "prepared_sha256": "5536fb305fbce91643f485fc784cce11051975708d8407421fa2f409ad172fa7",
+        "source_collection": "kenney",
+        "asset_gain_db": -6.0,
+        "routing_limit": "Filename/category-based original sound design; not a proprietary-sound equivalence claim"
+      },
+      "target_peak_dbfs": -12.0,
+      "pitch": 1.0,
+      "pan": 0.0,
+      "alignment": "dominant_early_attack_peak",
+      "event_sample": 1249600,
+      "clip_alignment_offset_samples": 13,
+      "clip_start_sample_unclipped": 1249587,
+      "boundary_adjustment_samples": 0,
+      "clip_samples": 5894,
+      "batch_policy": "one effect for one canonical event",
+      "rendered": true,
+      "written_start_sample": 1249587,
+      "written_samples": 5894,
+      "trimmed_start_samples": 0,
+      "trimmed_end_samples": 0,
+      "alignment_error_samples": 0
+    },
+    {
+      "canonical_event": {
+        "frame": 929,
+        "time": 30.966666666666665,
+        "kind": "message_arrival",
+        "group": "06.soccer_news",
+        "confidence": 0.98,
+        "observed_vs_inferred": "observed_visible_message_entry",
+        "evidence_layer_or_source": [
+          {
+            "node_id": "v19-soccer-first-message",
+            "json_pointer": "/layers/1147"
+          }
+        ],
+        "action_evidence": "Native visible message/component entry; body copy is not a typing schedule.",
+        "source_frame": 929,
+        "sample_offset_48000": 1486400,
+        "character_or_delta": "It\u2019s official: United signed their striker. Announced2min ago",
+        "physical_touch_observed": false,
+        "control_press_frame_unknown": false,
+        "timing_precision_frames": 1,
+        "id": "06-gallery-ui-016",
+        "event_id": "06-gallery-ui-016"
+      },
+      "ordinal": 15,
+      "source": {
+        "kind": "licensed_library_ui_effect",
+        "asset_id": "kenney_drop_001",
+        "license": "CC0-1.0",
+        "original_sha256": "692ee3a6f1821402ca649ff735bee9591dc4846c8098fc7d6a90fd15fa57c1af",
+        "prepared_sha256": "5536fb305fbce91643f485fc784cce11051975708d8407421fa2f409ad172fa7",
+        "source_collection": "kenney",
+        "asset_gain_db": -6.0,
+        "routing_limit": "Filename/category-based original sound design; not a proprietary-sound equivalence claim"
+      },
+      "target_peak_dbfs": -12.0,
+      "pitch": 1.0,
+      "pan": 0.0,
+      "alignment": "dominant_early_attack_peak",
+      "event_sample": 1486400,
+      "clip_alignment_offset_samples": 13,
+      "clip_start_sample_unclipped": 1486387,
+      "boundary_adjustment_samples": 0,
+      "clip_samples": 5894,
+      "batch_policy": "one effect for one canonical event",
+      "rendered": true,
+      "written_start_sample": 1486387,
+      "written_samples": 5894,
+      "trimmed_start_samples": 0,
+      "trimmed_end_samples": 0,
+      "alignment_error_samples": 0
+    },
+    {
+      "canonical_event": {
+        "frame": 991,
+        "time": 33.03333333333333,
+        "kind": "message_send",
+        "group": "06.soccer_reaction",
+        "confidence": 0.98,
+        "observed_vs_inferred": "observed_visible_message_entry",
+        "evidence_layer_or_source": [
+          {
+            "node_id": "v19-soccer-blue-message",
+            "json_pointer": "/layers/1148"
+          }
+        ],
+        "action_evidence": "Native visible message/component entry; body copy is not a typing schedule.",
+        "source_frame": 991,
+        "sample_offset_48000": 1585600,
+        "character_or_delta": "LETS GOOOO",
+        "physical_touch_observed": false,
+        "control_press_frame_unknown": true,
+        "timing_precision_frames": 1,
+        "id": "06-gallery-ui-017",
+        "event_id": "06-gallery-ui-017"
+      },
+      "ordinal": 16,
+      "source": {
+        "kind": "original_procedural_fallback",
+        "effect": "air_whoosh",
+        "seed": 1802473993,
+        "parameters": {
+          "pitch": 1.12,
+          "duration": 0.14,
+          "energy": 0.75,
+          "pan": 0.0
+        },
+        "code_sha256": "4797a0e736e8115975398a7c4acf5289a89d23bb0222420d7dc7d89a2f40f23c",
+        "recorded_samples_used": false
+      },
+      "target_peak_dbfs": -12.0,
+      "pitch": 1.12,
+      "pan": 0.0,
+      "alignment": "onset",
+      "event_sample": 1585600,
+      "clip_alignment_offset_samples": 0,
+      "clip_start_sample_unclipped": 1585600,
+      "boundary_adjustment_samples": 0,
+      "clip_samples": 6720,
+      "batch_policy": "one effect for one canonical event",
+      "rendered": true,
+      "written_start_sample": 1585600,
+      "written_samples": 6720,
+      "trimmed_start_samples": 0,
+      "trimmed_end_samples": 0,
+      "alignment_error_samples": 0
+    },
+    {
+      "canonical_event": {
+        "frame": 1013,
+        "time": 33.766666666666666,
+        "kind": "message_arrival",
+        "group": "06.soccer_terms",
+        "confidence": 0.98,
+        "observed_vs_inferred": "observed_visible_message_entry",
+        "evidence_layer_or_source": [
+          {
+            "node_id": "v19-soccer-second-message",
+            "json_pointer": "/layers/1149"
+          }
+        ],
+        "action_evidence": "Native visible message/component entry; body copy is not a typing schedule.",
+        "source_frame": 1013,
+        "sample_offset_48000": 1620800,
+        "character_or_delta": "\u20ac85M, five years. You called this back in June, btw",
+        "physical_touch_observed": false,
+        "control_press_frame_unknown": false,
+        "timing_precision_frames": 1,
+        "id": "06-gallery-ui-018",
+        "event_id": "06-gallery-ui-018"
+      },
+      "ordinal": 17,
+      "source": {
+        "kind": "licensed_library_ui_effect",
+        "asset_id": "kenney_drop_001",
+        "license": "CC0-1.0",
+        "original_sha256": "692ee3a6f1821402ca649ff735bee9591dc4846c8098fc7d6a90fd15fa57c1af",
+        "prepared_sha256": "5536fb305fbce91643f485fc784cce11051975708d8407421fa2f409ad172fa7",
+        "source_collection": "kenney",
+        "asset_gain_db": -6.0,
+        "routing_limit": "Filename/category-based original sound design; not a proprietary-sound equivalence claim"
+      },
+      "target_peak_dbfs": -12.0,
+      "pitch": 1.0,
+      "pan": 0.0,
+      "alignment": "dominant_early_attack_peak",
+      "event_sample": 1620800,
+      "clip_alignment_offset_samples": 13,
+      "clip_start_sample_unclipped": 1620787,
+      "boundary_adjustment_samples": 0,
+      "clip_samples": 5894,
+      "batch_policy": "one effect for one canonical event",
+      "rendered": true,
+      "written_start_sample": 1620787,
+      "written_samples": 5894,
+      "trimmed_start_samples": 0,
+      "trimmed_end_samples": 0,
+      "alignment_error_samples": 0
+    }
+  ],
+  "production_ui_before_guard": {
+    "samples_per_channel": 2372800,
+    "duration_s": 49.43333333333333,
+    "sample_peak": 0.25118863582611084,
+    "sample_peak_dbfs": -12.000000253286988,
+    "rms": 0.007109297521087502,
+    "finite": true,
+    "clipped_samples": 0,
+    "endpoints_zero": true
+  },
+  "raw_full": {
+    "samples_per_channel": 2372800,
+    "duration_s": 49.43333333333333,
+    "sample_peak": 0.3929178613551808,
+    "sample_peak_dbfs": -8.113964569517002,
+    "rms": 0.06688162104714525,
+    "finite": true,
+    "clipped_samples": 0,
+    "endpoints_zero": true,
+    "loudness": {
+      "integrated_lufs": -21.87,
+      "true_peak_dbtp": -8.11,
+      "lra_lu": 1.5,
+      "threshold_lufs": -32.34,
+      "silent": false
+    }
+  },
+  "common_peak_guard_gain_db": 0.0,
+  "loudness_raising_applied": false,
+  "ui_preview": {
+    "whole_stem_boost_db": 7.000000253286988,
+    "target_sample_peak_dbfs": -5.0,
+    "purpose": "Clearly labelled listening boost; production UI remains separate at its designed level"
+  },
+  "exports": {
+    "ui.flac": {
+      "samples_per_channel": 2372800,
+      "duration_s": 49.43333333333333,
+      "sample_peak": 0.25118863582611084,
+      "sample_peak_dbfs": -12.000000253286988,
+      "rms": 0.007109297587968961,
+      "finite": true,
+      "clipped_samples": 0,
+      "endpoints_zero": true,
+      "raw_decoded_samples": 2372800,
+      "loudness": {
+        "integrated_lufs": -29.72,
+        "true_peak_dbtp": -11.57,
+        "lra_lu": 10.4,
+        "threshold_lufs": -40.26,
+        "silent": false
+      },
+      "stream": {
+        "codec_name": "flac",
+        "sample_rate": "48000",
+        "channels": 2,
+        "time_base": "1/48000",
+        "duration_ts": 2372800,
+        "bits_per_raw_sample": "24"
+      },
+      "file": "ui.flac",
+      "bytes": 273399,
+      "sha256": "e95f8f8be69b1fd4c3d536c0dc08e844165b210371002df1aa1f2385de8e23d4"
+    },
+    "ui.m4a": {
+      "file": {
+        "samples_per_channel": 2372800,
+        "duration_s": 49.43333333333333,
+        "sample_peak": 0.25162357091903687,
+        "sample_peak_dbfs": -11.98497357291438,
+        "rms": 0.007005368777963658,
+        "finite": true,
+        "clipped_samples": 0,
+        "endpoints_zero": true,
+        "raw_decoded_samples": 2373632,
+        "loudness": {
+          "integrated_lufs": -29.86,
+          "true_peak_dbtp": -11.75,
+          "lra_lu": 10.2,
+          "threshold_lufs": -40.46,
+          "silent": false
+        },
+        "stream": {
+          "codec_name": "aac",
+          "sample_rate": "48000",
+          "channels": 2,
+          "time_base": "1/48000",
+          "duration_ts": 2372800
+        },
+        "file": "ui.m4a",
+        "bytes": 91352,
+        "sha256": "b559d912125e95a02026819f9d2c84ce2fa9ab046babbff8804d9991f3b10ba6"
+      },
+      "codec_gain_db": 0.0,
+      "first_pass_if_corrected": null,
+      "bitrate": "192k"
+    },
+    "music.flac": {
+      "samples_per_channel": 2372800,
+      "duration_s": 49.43333333333333,
+      "sample_peak": 0.3486058712005615,
+      "sample_peak_dbfs": -9.153306056021727,
+      "rms": 0.06648503079045903,
+      "finite": true,
+      "clipped_samples": 0,
+      "endpoints_zero": true,
+      "raw_decoded_samples": 2372800,
+      "loudness": {
+        "integrated_lufs": -21.99,
+        "true_peak_dbtp": -9.15,
+        "lra_lu": 1.5,
+        "threshold_lufs": -32.46,
+        "silent": false
+      },
+      "stream": {
+        "codec_name": "flac",
+        "sample_rate": "48000",
+        "channels": 2,
+        "time_base": "1/48000",
+        "duration_ts": 2372800,
+        "bits_per_raw_sample": "24"
+      },
+      "file": "music.flac",
+      "bytes": 8921457,
+      "sha256": "a280e37ffcf923c3dd35d10bfc2e8ce2e174f9371cc342e17553cd136a7886dc"
+    },
+    "music.m4a": {
+      "file": {
+        "samples_per_channel": 2372800,
+        "duration_s": 49.43333333333333,
+        "sample_peak": 0.3430710732936859,
+        "sample_peak_dbfs": -9.292317975719529,
+        "rms": 0.06620565951658258,
+        "finite": true,
+        "clipped_samples": 0,
+        "endpoints_zero": false,
+        "raw_decoded_samples": 2373632,
+        "loudness": {
+          "integrated_lufs": -22.02,
+          "true_peak_dbtp": -9.25,
+          "lra_lu": 1.5,
+          "threshold_lufs": -32.5,
+          "silent": false
+        },
+        "stream": {
+          "codec_name": "aac",
+          "sample_rate": "48000",
+          "channels": 2,
+          "time_base": "1/48000",
+          "duration_ts": 2372800
+        },
+        "file": "music.m4a",
+        "bytes": 815456,
+        "sha256": "328554bf45e01a619e5684bcc837e7b9fbdb7085a8eb9a7dbf563aa868bc5cee"
+      },
+      "codec_gain_db": 0.0,
+      "first_pass_if_corrected": null,
+      "bitrate": "128k"
+    },
+    "full_mix.flac": {
+      "samples_per_channel": 2372800,
+      "duration_s": 49.43333333333333,
+      "sample_peak": 0.3929178714752197,
+      "sample_peak_dbfs": -8.113964345802204,
+      "rms": 0.06688162109688896,
+      "finite": true,
+      "clipped_samples": 0,
+      "endpoints_zero": true,
+      "raw_decoded_samples": 2372800,
+      "loudness": {
+        "integrated_lufs": -21.87,
+        "true_peak_dbtp": -8.11,
+        "lra_lu": 1.5,
+        "threshold_lufs": -32.34,
+        "silent": false
+      },
+      "stream": {
+        "codec_name": "flac",
+        "sample_rate": "48000",
+        "channels": 2,
+        "time_base": "1/48000",
+        "duration_ts": 2372800,
+        "bits_per_raw_sample": "24"
+      },
+      "file": "full_mix.flac",
+      "bytes": 8952691,
+      "sha256": "f016970f967d1dadbaa6499a301490bf4a9c7646f8283b461c5d0c2947645520"
+    },
+    "full_mix.m4a": {
+      "file": {
+        "samples_per_channel": 2372800,
+        "duration_s": 49.43333333333333,
+        "sample_peak": 0.39075595140457153,
+        "sample_peak_dbfs": -8.161887974813665,
+        "rms": 0.06665892497535553,
+        "finite": true,
+        "clipped_samples": 0,
+        "endpoints_zero": false,
+        "raw_decoded_samples": 2373632,
+        "loudness": {
+          "integrated_lufs": -21.91,
+          "true_peak_dbtp": -8.15,
+          "lra_lu": 1.4,
+          "threshold_lufs": -32.38,
+          "silent": false
+        },
+        "stream": {
+          "codec_name": "aac",
+          "sample_rate": "48000",
+          "channels": 2,
+          "time_base": "1/48000",
+          "duration_ts": 2372800
+        },
+        "file": "full_mix.m4a",
+        "bytes": 1236150,
+        "sha256": "a1ac446d9380ec93fdd8eace81cee434c26296f76f00f3d1508dbd8622631d9e"
+      },
+      "codec_gain_db": 0.0,
+      "first_pass_if_corrected": null,
+      "bitrate": "192k"
+    },
+    "ui_preview.m4a": {
+      "file": {
+        "samples_per_channel": 2372800,
+        "duration_s": 49.43333333333333,
+        "sample_peak": 0.5715107917785645,
+        "sample_peak_dbfs": -4.859511289078978,
+        "rms": 0.015684860456798205,
+        "finite": true,
+        "clipped_samples": 0,
+        "endpoints_zero": true,
+        "raw_decoded_samples": 2373632,
+        "loudness": {
+          "integrated_lufs": -22.87,
+          "true_peak_dbtp": -4.74,
+          "lra_lu": 10.2,
+          "threshold_lufs": -33.46,
+          "silent": false
+        },
+        "stream": {
+          "codec_name": "aac",
+          "sample_rate": "48000",
+          "channels": 2,
+          "time_base": "1/48000",
+          "duration_ts": 2372800
+        },
+        "file": "ui_preview.m4a",
+        "bytes": 91459,
+        "sha256": "80561d4e82ca23ab218c3793b458f2a5f75928619fa7e6ed5d07525538145cce"
+      },
+      "codec_gain_db": 0.0,
+      "first_pass_if_corrected": null,
+      "bitrate": "192k"
+    }
+  },
+  "validation": {
+    "status": "pass",
+    "finite_no_clipping": true,
+    "picture_sample_span_exact": true,
+    "no_reference_audio_inputs": true,
+    "no_inferred_subframe_keystrokes": true,
+    "stem_sum_max_error": 2.384185791015625e-07,
+    "stem_sum_domain": "PCM24 FLAC; AAC copies independently codec validated",
+    "production_and_boosted_preview_separate": true
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 72
+  },
+  "initialUI": null,
+  "events": [
+    {
+      "id": "motion.photo-crop-reframe.crop-drag",
+      "kind": "drag",
+      "target": "crop-photo",
+      "frame": 18,
+      "layerIds": [
+        "crop-photo"
+      ]
+    },
+    {
+      "id": "motion.photo-crop-reframe.crop-settle",
+      "kind": "gesture_end",
+      "target": "crop-photo",
+      "frame": 47,
+      "layerIds": [
+        "crop-photo"
+      ]
+    }
+  ],
+  "cues": []
+}

@@ -1,0 +1,411 @@
+{
+  "width": 720,
+  "height": 480,
+  "fps": 30,
+  "duration": 2.4,
+  "background": "#dce7f1",
+  "title": "Shift foreground, middle and background at different rates",
+  "source": {
+    "path": "packs/editorial.mjs#depth-parallax",
+    "sourceStart": 0,
+    "sourceEnd": 2.4,
+    "notes": "Original editable Motion demonstration."
+  },
+  "layers": [
+    {
+      "id": "surface",
+      "type": "rect",
+      "x": 110,
+      "y": 44,
+      "width": 500,
+      "height": 392,
+      "fill": "#ffffff",
+      "radius": 18
+    },
+    {
+      "id": "stage",
+      "type": "group",
+      "x": 110,
+      "y": 98,
+      "children": [
+        {
+          "id": "far-grid",
+          "type": "group",
+          "x": 0,
+          "y": 0,
+          "children": [
+            {
+              "id": "grid-line-0",
+              "type": "rect",
+              "x": 24,
+              "y": 30,
+              "width": 1,
+              "height": 238,
+              "fill": "#e8eef5",
+              "radius": 0
+            },
+            {
+              "id": "grid-line-1",
+              "type": "rect",
+              "x": 75,
+              "y": 30,
+              "width": 1,
+              "height": 238,
+              "fill": "#e8eef5",
+              "radius": 0
+            },
+            {
+              "id": "grid-line-2",
+              "type": "rect",
+              "x": 126,
+              "y": 30,
+              "width": 1,
+              "height": 238,
+              "fill": "#e8eef5",
+              "radius": 0
+            },
+            {
+              "id": "grid-line-3",
+              "type": "rect",
+              "x": 177,
+              "y": 30,
+              "width": 1,
+              "height": 238,
+              "fill": "#e8eef5",
+              "radius": 0
+            },
+            {
+              "id": "grid-line-4",
+              "type": "rect",
+              "x": 228,
+              "y": 30,
+              "width": 1,
+              "height": 238,
+              "fill": "#e8eef5",
+              "radius": 0
+            },
+            {
+              "id": "grid-line-5",
+              "type": "rect",
+              "x": 279,
+              "y": 30,
+              "width": 1,
+              "height": 238,
+              "fill": "#e8eef5",
+              "radius": 0
+            },
+            {
+              "id": "grid-line-6",
+              "type": "rect",
+              "x": 330,
+              "y": 30,
+              "width": 1,
+              "height": 238,
+              "fill": "#e8eef5",
+              "radius": 0
+            },
+            {
+              "id": "grid-line-7",
+              "type": "rect",
+              "x": 381,
+              "y": 30,
+              "width": 1,
+              "height": 238,
+              "fill": "#e8eef5",
+              "radius": 0
+            },
+            {
+              "id": "grid-line-8",
+              "type": "rect",
+              "x": 432,
+              "y": 30,
+              "width": 1,
+              "height": 238,
+              "fill": "#e8eef5",
+              "radius": 0
+            },
+            {
+              "id": "grid-line-9",
+              "type": "rect",
+              "x": 483,
+              "y": 30,
+              "width": 1,
+              "height": 238,
+              "fill": "#e8eef5",
+              "radius": 0
+            }
+          ],
+          "keyframes": {
+            "x": [
+              {
+                "t": 0,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 0.24,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 1.776,
+                "value": -11,
+                "ease": "easeInOut"
+              }
+            ]
+          }
+        },
+        {
+          "id": "middle-cards",
+          "type": "group",
+          "x": 0,
+          "y": 0,
+          "children": [
+            {
+              "id": "far-card",
+              "type": "group",
+              "x": 75,
+              "y": 78,
+              "children": [
+                {
+                  "id": "far-card-surface",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 180,
+                  "height": 108,
+                  "fill": "#ffffff",
+                  "radius": 16,
+                  "stroke": "#e8eef5",
+                  "strokeWidth": 1
+                },
+                {
+                  "id": "far-card-label",
+                  "type": "text",
+                  "text": "Workspace",
+                  "x": 16,
+                  "y": 14,
+                  "fontSize": 18,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#182737",
+                  "fontWeight": 600
+                },
+                {
+                  "id": "far-card-detail",
+                  "type": "rect",
+                  "x": 16,
+                  "y": 45,
+                  "width": 136,
+                  "height": 5,
+                  "fill": "#e8eef5",
+                  "radius": 2
+                }
+              ]
+            },
+            {
+              "id": "mid-card",
+              "type": "group",
+              "x": 236,
+              "y": 108,
+              "children": [
+                {
+                  "id": "mid-card-surface",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 180,
+                  "height": 107,
+                  "fill": "#ffffff",
+                  "radius": 16,
+                  "stroke": "#e8eef5",
+                  "strokeWidth": 1
+                },
+                {
+                  "id": "mid-card-label",
+                  "type": "text",
+                  "text": "Controls",
+                  "x": 16,
+                  "y": 14,
+                  "fontSize": 18,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#182737",
+                  "fontWeight": 600
+                },
+                {
+                  "id": "mid-card-detail",
+                  "type": "rect",
+                  "x": 16,
+                  "y": 45,
+                  "width": 136,
+                  "height": 5,
+                  "fill": "#e8eef5",
+                  "radius": 2
+                }
+              ]
+            }
+          ],
+          "keyframes": {
+            "x": [
+              {
+                "t": 0,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 0.24,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 1.776,
+                "value": -41,
+                "ease": "easeInOut"
+              }
+            ]
+          }
+        },
+        {
+          "id": "near-frame",
+          "type": "group",
+          "x": 0,
+          "y": 0,
+          "children": [
+            {
+              "id": "foreground-edge",
+              "type": "rect",
+              "x": 12,
+              "y": 49,
+              "width": 44,
+              "height": 205,
+              "fill": "#1478e9",
+              "radius": 16
+            },
+            {
+              "id": "foreground-dot",
+              "type": "rect",
+              "x": 26,
+              "y": 67,
+              "width": 16,
+              "height": 16,
+              "fill": "#ffffff",
+              "radius": 8
+            }
+          ],
+          "keyframes": {
+            "x": [
+              {
+                "t": 0,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 0.24,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 1.776,
+                "value": -94,
+                "ease": "easeInOut"
+              }
+            ]
+          }
+        }
+      ],
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 500,
+        "height": 298
+      }
+    },
+    {
+      "id": "footer",
+      "type": "group",
+      "x": 110,
+      "y": 396,
+      "children": [
+        {
+          "id": "footer-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 40,
+          "fill": "#f2f6fb",
+          "radius": 12
+        },
+        {
+          "id": "editorial-caption",
+          "type": "text",
+          "text": "Near objects cover more distance.",
+          "x": 22,
+          "y": 9,
+          "fontSize": 15,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#516277",
+          "fontWeight": 600
+        }
+      ]
+    },
+    {
+      "id": "heading",
+      "type": "group",
+      "x": 110,
+      "y": 44,
+      "children": [
+        {
+          "id": "heading-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 54,
+          "fill": "#f2f6fb",
+          "radius": 13
+        },
+        {
+          "id": "heading-copy",
+          "type": "text",
+          "text": "Layered workspace",
+          "x": 26,
+          "y": 13,
+          "fontSize": 23,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#182737",
+          "fontWeight": 700
+        }
+      ]
+    }
+  ],
+  "timeline": {
+    "version": 1,
+    "picture": {
+      "fpsNum": 30,
+      "fpsDen": 1,
+      "frameCount": 72
+    },
+    "initialUI": null,
+    "events": [
+      {
+        "id": "motion.depth-parallax.depth-shift-start",
+        "kind": "depth-shift-start",
+        "target": "near-frame",
+        "frame": 8,
+        "layerIds": [
+          "near-frame"
+        ]
+      },
+      {
+        "id": "motion.depth-parallax.planes-settle",
+        "kind": "planes-settle",
+        "target": "middle-cards",
+        "frame": 54,
+        "layerIds": [
+          "middle-cards"
+        ]
+      }
+    ],
+    "cues": []
+  }
+}

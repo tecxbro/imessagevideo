@@ -1,0 +1,51 @@
+{
+  "id": "tether-extend-then-pivot-dock",
+  "title": "Extend a tether, then pivot it into a fixed dock",
+  "description": "A horizontal shuttle pulls out a tether, pauses at full reach, then turns upward on the same tether into a fixed dock.",
+  "fits": [
+    "A latched endpoint moves horizontally, holds, then pivots an attached tether into a fixed dock"
+  ],
+  "avoid": [
+    "A free particle without a fixed pivot or a static traced route"
+  ],
+  "moving": [
+    "elastic-tether",
+    "shuttle"
+  ],
+  "fixed": [
+    "board",
+    "heading-mark",
+    "heading-dash",
+    "baseline",
+    "dock",
+    "dock-center",
+    "pivot-ring",
+    "pivot-center"
+  ],
+  "parameters": {
+    "shuttle-color": "/layers/9/fill",
+    "shuttle-x-frame-24": "/layers/9/keyframes/x/24/value",
+    "tether-color": "/layers/6/fill"
+  },
+  "tags": [
+    "tether",
+    "pivot",
+    "right-angle path",
+    "docking"
+  ],
+  "source": {
+    "clip_sha256": "f3201aca2c4740bc89825d935e7e16bd8b7e159e0438ce5478a8f79cba16a34b",
+    "comparison_clip": "evidence/reference.nut",
+    "end_frame_exclusive": 90,
+    "label": "Independently authored unseen test original",
+    "observation": "Shuttle starts near (173,176), holds near (369,176), rises with the tether and lands near (369,88), then holds through frame 89.",
+    "original_sha256": "3d0fbab4c289b5fc1e2452d587c892bc9c17fdcf7ab9f59e2a820d504c0f9fee",
+    "start_frame": 0
+  },
+  "renderer": "pillow",
+  "verified": "frame-compared",
+  "preview": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/run/library/entries/tether-extend-then-pivot-dock/preview.mp4",
+  "scene": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/run/library/entries/tether-extend-then-pivot-dock/scene.json",
+  "evidence": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/run/library/entries/tether-extend-then-pivot-dock/evidence/comparison/report.json",
+  "still": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/run/library/entries/tether-extend-then-pivot-dock/evidence/comparison/worst.png"
+}

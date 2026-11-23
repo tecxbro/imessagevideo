@@ -1,0 +1,75 @@
+{
+  "request": "Recreate this.",
+  "intent": "recreate",
+  "scope": "film",
+  "library": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/final-run/library",
+  "sources": [
+    {
+      "path": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/inputs/unseen-complete.mp4",
+      "role": "reference",
+      "identity": {
+        "status": "known",
+        "sha256": "3d0fbab4c289b5fc1e2452d587c892bc9c17fdcf7ab9f59e2a820d504c0f9fee",
+        "matches": [
+          {
+            "id": "source-3d0fbab4c289b5fc1e2452d5",
+            "title": "unseen-complete",
+            "source": {
+              "sha256": "3d0fbab4c289b5fc1e2452d587c892bc9c17fdcf7ab9f59e2a820d504c0f9fee",
+              "filename": "unseen-complete.mp4"
+            },
+            "editable_project": {
+              "path": "projects/source-3d0fbab4c289b5fc1e2452d5/editable.zip",
+              "sha256": "772b92b1539b3dd9519d9e89c02043023f4889bca3599443b7d4f4568f94977a"
+            },
+            "reconstruction": {
+              "editable_project": {
+                "path": "projects/source-3d0fbab4c289b5fc1e2452d5/editable.zip",
+                "sha256": "772b92b1539b3dd9519d9e89c02043023f4889bca3599443b7d4f4568f94977a"
+              },
+              "master": {
+                "path": "projects/source-3d0fbab4c289b5fc1e2452d5/recreated.mp4",
+                "sha256": "d2436c906bed057c0f3afab665ca4c81375264add38f786d1d77b81d95892606"
+              },
+              "comparison": {
+                "path": "projects/source-3d0fbab4c289b5fc1e2452d5/report.json",
+                "sha256": "34a1f340b9448d2ff0280404cce1566e753b0d77f1d68d55b228fe2d5995430f"
+              },
+              "verification": {
+                "reviewed_by": "Independent reviewer /root/reviewer",
+                "verdict": "pass"
+              }
+            },
+            "recipe_ids": [
+              "tether-extend-then-pivot-dock"
+            ],
+            "evidence": {
+              "kind": "sha256",
+              "sha256": "3d0fbab4c289b5fc1e2452d587c892bc9c17fdcf7ab9f59e2a820d504c0f9fee"
+            },
+            "seed_bindings": [],
+            "coverage": "verified-local-reconstruction",
+            "next": "Inspect the verified local master and editable project for the requested changes."
+          }
+        ]
+      },
+      "documented_motions": [],
+      "steps": [
+        "inspect_registered_coverage",
+        "reuse_matching_coverage",
+        "learn_and_replay_uncovered_motions"
+      ]
+    }
+  ],
+  "project": null,
+  "workflow": [
+    "check_exact_requested_deliverable",
+    "reuse_existing_verified_result_when_available",
+    "learn_and_verify_missing_motions",
+    "choose_one_renderer",
+    "recreate_from_saved_recipes",
+    "compare_every_frame_and_audio",
+    "deliver_editable_result"
+  ],
+  "next": "return_verified_editable_project_and_master"
+}

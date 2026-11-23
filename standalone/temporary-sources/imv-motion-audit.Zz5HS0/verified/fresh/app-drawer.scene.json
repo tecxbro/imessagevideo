@@ -1,0 +1,490 @@
+{
+  "width": 720,
+  "height": 480,
+  "fps": 30,
+  "duration": 2.4,
+  "background": "#dce7f1",
+  "title": "Raise the app drawer as one clipped sheet",
+  "source": {
+    "path": "skill/imessage-motion-recreation/director/motions.mjs#app-drawer",
+    "sourceStart": 0,
+    "sourceEnd": 4,
+    "notes": "Original editable motion starter at c49482a, fit into the library stage with the same keyframe choreography."
+  },
+  "layers": [
+    {
+      "id": "surface",
+      "type": "rect",
+      "x": 110,
+      "y": 44,
+      "width": 500,
+      "height": 392,
+      "fill": "#ffffff",
+      "radius": 18
+    },
+    {
+      "id": "stage",
+      "type": "group",
+      "x": 110,
+      "y": 98,
+      "children": [
+        {
+          "id": "base-motion",
+          "type": "group",
+          "x": 0,
+          "y": 8,
+          "children": [
+            {
+              "id": "phone",
+              "type": "group",
+              "x": 260,
+              "y": 18,
+              "children": [
+                {
+                  "id": "phone-matte",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 440,
+                  "height": 500,
+                  "fill": "#ffffff",
+                  "radius": 28,
+                  "stroke": "#d8dbe0",
+                  "strokeWidth": 1
+                },
+                {
+                  "id": "phone-screen",
+                  "type": "group",
+                  "x": 0,
+                  "y": 0,
+                  "children": [
+                    {
+                      "id": "message",
+                      "type": "group",
+                      "x": 135,
+                      "y": 100,
+                      "children": [
+                        {
+                          "id": "message-body",
+                          "type": "rect",
+                          "x": 0,
+                          "y": 0,
+                          "width": 276,
+                          "height": 64,
+                          "fill": "#1688fa",
+                          "radius": 20
+                        },
+                        {
+                          "id": "message-tail",
+                          "type": "path",
+                          "d": "M 260 46 Q 273 65 283 62 Q 273 58 274 44 Z",
+                          "fill": "#1688fa"
+                        },
+                        {
+                          "id": "message-copy",
+                          "type": "text",
+                          "text": "Everything, right here.",
+                          "x": 17,
+                          "y": 14,
+                          "fontSize": 17,
+                          "fontFamily": "Arial, sans-serif",
+                          "fill": "#ffffff",
+                          "lineHeight": 24
+                        }
+                      ]
+                    },
+                    {
+                      "id": "drawer",
+                      "type": "group",
+                      "x": 5,
+                      "y": 205,
+                      "children": [
+                        {
+                          "id": "drawer-surface",
+                          "type": "rect",
+                          "x": 0,
+                          "y": 0,
+                          "width": 430,
+                          "height": 300,
+                          "fill": "#f5f5f7",
+                          "radius": 25
+                        },
+                        {
+                          "id": "drawer-handle",
+                          "type": "rect",
+                          "x": 196,
+                          "y": 10,
+                          "width": 38,
+                          "height": 4,
+                          "fill": "#c4c7cc",
+                          "radius": 2
+                        },
+                        {
+                          "id": "drawer-heading",
+                          "type": "text",
+                          "text": "Apps",
+                          "x": 22,
+                          "y": 33,
+                          "fontSize": 24,
+                          "fontFamily": "Arial, sans-serif",
+                          "fill": "#17191d",
+                          "fontWeight": 600
+                        },
+                        {
+                          "id": "app-0",
+                          "type": "group",
+                          "x": 22,
+                          "y": 92,
+                          "children": [
+                            {
+                              "id": "app-0-shape",
+                              "type": "rect",
+                              "x": 0,
+                              "y": 0,
+                              "width": 64,
+                              "height": 64,
+                              "fill": "#252a31",
+                              "radius": 15.36
+                            },
+                            {
+                              "id": "app-0-mark",
+                              "type": "text",
+                              "text": "A",
+                              "x": 32,
+                              "y": 14.72,
+                              "fontSize": 26.88,
+                              "fontFamily": "Arial, sans-serif",
+                              "fill": "#ffffff",
+                              "textAnchor": "middle",
+                              "fontWeight": 600
+                            }
+                          ]
+                        },
+                        {
+                          "id": "app-1",
+                          "type": "group",
+                          "x": 154,
+                          "y": 92,
+                          "children": [
+                            {
+                              "id": "app-1-shape",
+                              "type": "rect",
+                              "x": 0,
+                              "y": 0,
+                              "width": 64,
+                              "height": 64,
+                              "fill": "#1688fa",
+                              "radius": 15.36
+                            },
+                            {
+                              "id": "app-1-mark",
+                              "type": "text",
+                              "text": "B",
+                              "x": 32,
+                              "y": 14.72,
+                              "fontSize": 26.88,
+                              "fontFamily": "Arial, sans-serif",
+                              "fill": "#ffffff",
+                              "textAnchor": "middle",
+                              "fontWeight": 600
+                            }
+                          ]
+                        },
+                        {
+                          "id": "app-2",
+                          "type": "group",
+                          "x": 286,
+                          "y": 92,
+                          "children": [
+                            {
+                              "id": "app-2-shape",
+                              "type": "rect",
+                              "x": 0,
+                              "y": 0,
+                              "width": 64,
+                              "height": 64,
+                              "fill": "#6e9c74",
+                              "radius": 15.36
+                            },
+                            {
+                              "id": "app-2-mark",
+                              "type": "text",
+                              "text": "C",
+                              "x": 32,
+                              "y": 14.72,
+                              "fontSize": 26.88,
+                              "fontFamily": "Arial, sans-serif",
+                              "fill": "#ffffff",
+                              "textAnchor": "middle",
+                              "fontWeight": 600
+                            }
+                          ]
+                        },
+                        {
+                          "id": "app-3",
+                          "type": "group",
+                          "x": 22,
+                          "y": 198,
+                          "children": [
+                            {
+                              "id": "app-3-shape",
+                              "type": "rect",
+                              "x": 0,
+                              "y": 0,
+                              "width": 64,
+                              "height": 64,
+                              "fill": "#252a31",
+                              "radius": 15.36
+                            },
+                            {
+                              "id": "app-3-mark",
+                              "type": "text",
+                              "text": "D",
+                              "x": 32,
+                              "y": 14.72,
+                              "fontSize": 26.88,
+                              "fontFamily": "Arial, sans-serif",
+                              "fill": "#ffffff",
+                              "textAnchor": "middle",
+                              "fontWeight": 600
+                            }
+                          ]
+                        },
+                        {
+                          "id": "app-4",
+                          "type": "group",
+                          "x": 154,
+                          "y": 198,
+                          "children": [
+                            {
+                              "id": "app-4-shape",
+                              "type": "rect",
+                              "x": 0,
+                              "y": 0,
+                              "width": 64,
+                              "height": 64,
+                              "fill": "#1688fa",
+                              "radius": 15.36
+                            },
+                            {
+                              "id": "app-4-mark",
+                              "type": "text",
+                              "text": "E",
+                              "x": 32,
+                              "y": 14.72,
+                              "fontSize": 26.88,
+                              "fontFamily": "Arial, sans-serif",
+                              "fill": "#ffffff",
+                              "textAnchor": "middle",
+                              "fontWeight": 600
+                            }
+                          ]
+                        },
+                        {
+                          "id": "app-5",
+                          "type": "group",
+                          "x": 286,
+                          "y": 198,
+                          "children": [
+                            {
+                              "id": "app-5-shape",
+                              "type": "rect",
+                              "x": 0,
+                              "y": 0,
+                              "width": 64,
+                              "height": 64,
+                              "fill": "#6e9c74",
+                              "radius": 15.36
+                            },
+                            {
+                              "id": "app-5-mark",
+                              "type": "text",
+                              "text": "F",
+                              "x": 32,
+                              "y": 14.72,
+                              "fontSize": 26.88,
+                              "fontFamily": "Arial, sans-serif",
+                              "fill": "#ffffff",
+                              "textAnchor": "middle",
+                              "fontWeight": 600
+                            }
+                          ]
+                        }
+                      ],
+                      "clip": {
+                        "x": 0,
+                        "y": 0,
+                        "width": 430,
+                        "height": 300,
+                        "radius": 25
+                      },
+                      "keyframes": {
+                        "y": [
+                          {
+                            "t": 0,
+                            "value": 500,
+                            "ease": "easeInOut"
+                          },
+                          {
+                            "t": 1.008,
+                            "value": 205,
+                            "ease": "easeOut"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "clip": {
+                    "x": 0,
+                    "y": 0,
+                    "width": 440,
+                    "height": 500,
+                    "radius": 28
+                  }
+                },
+                {
+                  "id": "phone-bar",
+                  "type": "rect",
+                  "x": 1,
+                  "y": 1,
+                  "width": 438,
+                  "height": 66,
+                  "fill": "#f8f8fa",
+                  "radius": 27
+                },
+                {
+                  "id": "phone-bar-square",
+                  "type": "rect",
+                  "x": 1,
+                  "y": 33,
+                  "width": 438,
+                  "height": 33,
+                  "fill": "#f8f8fa",
+                  "radius": 0
+                },
+                {
+                  "id": "phone-back",
+                  "type": "text",
+                  "text": "‹",
+                  "x": 18,
+                  "y": 17,
+                  "fontSize": 30,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#1688fa"
+                },
+                {
+                  "id": "phone-title",
+                  "type": "text",
+                  "text": "A conversation",
+                  "x": 220,
+                  "y": 25,
+                  "fontSize": 17,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#17191d",
+                  "textAnchor": "middle",
+                  "fontWeight": 600
+                },
+                {
+                  "id": "phone-divider",
+                  "type": "rect",
+                  "x": 1,
+                  "y": 66,
+                  "width": 438,
+                  "height": 1,
+                  "fill": "#d8dbe0",
+                  "radius": 0
+                }
+              ]
+            }
+          ],
+          "scaleX": 0.52,
+          "scaleY": 0.52
+        }
+      ],
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 500,
+        "height": 298
+      }
+    },
+    {
+      "id": "footer",
+      "type": "group",
+      "x": 110,
+      "y": 396,
+      "children": [
+        {
+          "id": "footer-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 40,
+          "fill": "#f2f6fb",
+          "radius": 12
+        },
+        {
+          "id": "footer-label",
+          "type": "text",
+          "text": "Field guide · Autumn",
+          "x": 26,
+          "y": 11,
+          "fontSize": 15,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#516277"
+        }
+      ]
+    },
+    {
+      "id": "heading",
+      "type": "group",
+      "x": 110,
+      "y": 44,
+      "children": [
+        {
+          "id": "heading-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 54,
+          "fill": "#f2f6fb",
+          "radius": 13
+        },
+        {
+          "id": "heading-copy",
+          "type": "text",
+          "text": "Alpine field notes",
+          "x": 26,
+          "y": 13,
+          "fontSize": 23,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#182737",
+          "fontWeight": 700
+        }
+      ]
+    }
+  ],
+  "timeline": {
+    "version": 1,
+    "picture": {
+      "fpsNum": 30,
+      "fpsDen": 1,
+      "frameCount": 72
+    },
+    "initialUI": null,
+    "events": [
+      {
+        "id": "motion.app-drawer.drawer-open",
+        "kind": "drawer-open",
+        "target": "drawer",
+        "frame": 31,
+        "layerIds": [
+          "drawer"
+        ]
+      }
+    ],
+    "cues": []
+  }
+}

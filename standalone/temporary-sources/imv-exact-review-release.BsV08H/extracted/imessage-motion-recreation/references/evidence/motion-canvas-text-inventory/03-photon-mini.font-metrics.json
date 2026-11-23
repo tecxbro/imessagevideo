@@ -1,0 +1,2044 @@
+{
+  "reference": "03-photon-mini",
+  "input": "/workspace/imessage-recreations/outputs/03-photon-mini/final-v18/scene.json",
+  "sceneSha256": "b720b3a955688bd464e8fbdd2662e5119575ba9f80c8b00e61919caf07c9e646",
+  "inventorySha256": "3988b25bb791e8e797861389c407fdcb3e6eaf600950f10f86486c0cbb4fd75e",
+  "fontSha256": [
+    {
+      "family": "Recreation UI",
+      "weight": 400,
+      "sha256": "3ae7c78687cf31c0442d704594e94c82f3acdc8b7b0b6f4e833faec07a57214b"
+    },
+    {
+      "family": "Recreation UI",
+      "weight": 600,
+      "sha256": "4551df1a8842e6eb7301f440b2f3901110879d9b639fe073824dc3b761738eaa"
+    },
+    {
+      "family": "Recreation UI",
+      "weight": 700,
+      "sha256": "d0808b5ffa97db90c4445b7a142b85d8031c76d78ff6882bd06e5b10da0b2dea"
+    },
+    {
+      "family": "Recreation Text UI",
+      "weight": 400,
+      "sha256": "e1e64d7427d7ce3fd4159213d5d1dc2b62d50f0aa865ec0d818f38244704191d"
+    },
+    {
+      "family": "Recreation Text UI",
+      "weight": 600,
+      "sha256": "bf798588ed279ad823ea0f1861d8f9a4a16c0d5818d87ced5bab704d9949d4f7"
+    },
+    {
+      "family": "Recreation Text UI",
+      "weight": 700,
+      "sha256": "deddf5abed82383da0e1031dde5cf5c60c9214f657547d79044f521f96290874"
+    }
+  ],
+  "loadedFonts": [
+    {
+      "family": "\"Recreation UI\"",
+      "weight": "400",
+      "style": "normal",
+      "status": "loaded"
+    },
+    {
+      "family": "\"Recreation UI\"",
+      "weight": "600",
+      "style": "normal",
+      "status": "loaded"
+    },
+    {
+      "family": "\"Recreation UI\"",
+      "weight": "700",
+      "style": "normal",
+      "status": "loaded"
+    },
+    {
+      "family": "\"Recreation Text UI\"",
+      "weight": "400",
+      "style": "normal",
+      "status": "loaded"
+    },
+    {
+      "family": "\"Recreation Text UI\"",
+      "weight": "600",
+      "style": "normal",
+      "status": "loaded"
+    },
+    {
+      "family": "\"Recreation Text UI\"",
+      "weight": "700",
+      "style": "normal",
+      "status": "loaded"
+    }
+  ],
+  "measurements": [
+    {
+      "styleId": 0,
+      "fontCSS": "600 32px / 37.44px \"Recreation UI\", Arial, sans-serif",
+      "fontFamily": "\"Recreation UI\", Arial, sans-serif",
+      "fontWeight": "600",
+      "fontSize": "32px",
+      "actualLineHeightPx": 37.44,
+      "fontBoundingBoxAscent": 36.46875,
+      "fontBoundingBoxDescent": 1.53125,
+      "naturalFontBoxHeight": 38,
+      "domLeading": -1,
+      "formulaDelta": 1,
+      "formulaMatchesDOM": true,
+      "example": "Agent"
+    },
+    {
+      "styleId": 1,
+      "fontCSS": "44px / 51.48px \"Recreation UI\", Arial, sans-serif",
+      "fontFamily": "\"Recreation UI\", Arial, sans-serif",
+      "fontWeight": "400",
+      "fontSize": "44px",
+      "actualLineHeightPx": 51.48,
+      "fontBoundingBoxAscent": 50.890625,
+      "fontBoundingBoxDescent": 2.109375,
+      "naturalFontBoxHeight": 53,
+      "domLeading": -1,
+      "formulaDelta": 1,
+      "formulaMatchesDOM": true,
+      "example": "›"
+    },
+    {
+      "styleId": 2,
+      "fontCSS": "23px / 26.91px \"Recreation UI\", Arial, sans-serif",
+      "fontFamily": "\"Recreation UI\", Arial, sans-serif",
+      "fontWeight": "400",
+      "fontSize": "23px",
+      "actualLineHeightPx": 26.91,
+      "fontBoundingBoxAscent": 26.65625,
+      "fontBoundingBoxDescent": 1.34375,
+      "naturalFontBoxHeight": 28,
+      "domLeading": -1,
+      "formulaDelta": 1,
+      "formulaMatchesDOM": true,
+      "example": "Today 9:41 AM"
+    },
+    {
+      "styleId": 3,
+      "fontCSS": "55px / 64.35px \"Recreation UI\", Arial, sans-serif",
+      "fontFamily": "\"Recreation UI\", Arial, sans-serif",
+      "fontWeight": "400",
+      "fontSize": "55px",
+      "actualLineHeightPx": 64.35,
+      "fontBoundingBoxAscent": 63.109375,
+      "fontBoundingBoxDescent": 1.890625,
+      "naturalFontBoxHeight": 65,
+      "domLeading": -1,
+      "formulaDelta": 1,
+      "formulaMatchesDOM": true,
+      "example": "×"
+    },
+    {
+      "styleId": 4,
+      "fontCSS": "32.4px / 39.2px \"Recreation Text UI\"",
+      "fontFamily": "\"Recreation Text UI\"",
+      "fontWeight": "400",
+      "fontSize": "32.4px",
+      "actualLineHeightPx": 39.2,
+      "fontBoundingBoxAscent": 37.5625,
+      "fontBoundingBoxDescent": 1.4375,
+      "naturalFontBoxHeight": 39,
+      "domLeading": 0,
+      "formulaDelta": 0,
+      "formulaMatchesDOM": true,
+      "example": "Can someone order lunch for us?"
+    },
+    {
+      "styleId": 5,
+      "fontCSS": "23px / 26.91px \"Recreation UI\", Arial, sans-serif",
+      "fontFamily": "\"Recreation UI\", Arial, sans-serif",
+      "fontWeight": "400",
+      "fontSize": "23px",
+      "actualLineHeightPx": 26.91,
+      "fontBoundingBoxAscent": 26.65625,
+      "fontBoundingBoxDescent": 1.34375,
+      "naturalFontBoxHeight": 28,
+      "domLeading": -1,
+      "formulaDelta": 1,
+      "formulaMatchesDOM": true,
+      "example": "Alice"
+    },
+    {
+      "styleId": 6,
+      "fontCSS": "600 28.8px / 33.7px \"Recreation Text UI\"",
+      "fontFamily": "\"Recreation Text UI\"",
+      "fontWeight": "600",
+      "fontSize": "28.8px",
+      "actualLineHeightPx": 33.7,
+      "fontBoundingBoxAscent": 32.8125,
+      "fontBoundingBoxDescent": 1.1875,
+      "naturalFontBoxHeight": 34,
+      "domLeading": -1,
+      "formulaDelta": 1,
+      "formulaMatchesDOM": true,
+      "example": "Uber Eats"
+    },
+    {
+      "styleId": 7,
+      "fontCSS": "21.8px / 25.5px \"Recreation Text UI\"",
+      "fontFamily": "\"Recreation Text UI\"",
+      "fontWeight": "400",
+      "fontSize": "21.8px",
+      "actualLineHeightPx": 25.5,
+      "fontBoundingBoxAscent": 25.40625,
+      "fontBoundingBoxDescent": 0.59375,
+      "naturalFontBoxHeight": 26,
+      "domLeading": -1,
+      "formulaDelta": 1,
+      "formulaMatchesDOM": true,
+      "example": "Lanespan Pizza & Pub (Emeryville)"
+    },
+    {
+      "styleId": 8,
+      "fontCSS": "600 31px / 36.27px \"Recreation Text UI\"",
+      "fontFamily": "\"Recreation Text UI\"",
+      "fontWeight": "600",
+      "fontSize": "31px",
+      "actualLineHeightPx": 36.27,
+      "fontBoundingBoxAscent": 36.265625,
+      "fontBoundingBoxDescent": 0.734375,
+      "naturalFontBoxHeight": 37,
+      "domLeading": -1,
+      "formulaDelta": 1,
+      "formulaMatchesDOM": true,
+      "example": "Uber Eats"
+    },
+    {
+      "styleId": 9,
+      "fontCSS": "23px / 26.91px \"Recreation Text UI\"",
+      "fontFamily": "\"Recreation Text UI\"",
+      "fontWeight": "400",
+      "fontSize": "23px",
+      "actualLineHeightPx": 26.91,
+      "fontBoundingBoxAscent": 26.65625,
+      "fontBoundingBoxDescent": 1.34375,
+      "naturalFontBoxHeight": 28,
+      "domLeading": -1,
+      "formulaDelta": 1,
+      "formulaMatchesDOM": true,
+      "example": "Lanespan Pizza & Pub (Emeryville)"
+    },
+    {
+      "styleId": 10,
+      "fontCSS": "600 47px / 54.99px \"Recreation Text UI\"",
+      "fontFamily": "\"Recreation Text UI\"",
+      "fontWeight": "600",
+      "fontSize": "47px",
+      "actualLineHeightPx": 54.99,
+      "fontBoundingBoxAscent": 54.5,
+      "fontBoundingBoxDescent": 1.5,
+      "naturalFontBoxHeight": 56,
+      "domLeading": -1,
+      "formulaDelta": 1,
+      "formulaMatchesDOM": true,
+      "example": "+"
+    },
+    {
+      "styleId": 11,
+      "fontCSS": "30px / 36px \"Recreation Text UI\"",
+      "fontFamily": "\"Recreation Text UI\"",
+      "fontWeight": "400",
+      "fontSize": "30px",
+      "actualLineHeightPx": 36,
+      "fontBoundingBoxAscent": 35.0625,
+      "fontBoundingBoxDescent": 0.9375,
+      "naturalFontBoxHeight": 36,
+      "domLeading": 0,
+      "formulaDelta": 0,
+      "formulaMatchesDOM": true,
+      "example": "Order!"
+    },
+    {
+      "styleId": 12,
+      "fontCSS": "23px / 27.6px \"Recreation Text UI\"",
+      "fontFamily": "\"Recreation Text UI\"",
+      "fontWeight": "400",
+      "fontSize": "23px",
+      "actualLineHeightPx": 27.6,
+      "fontBoundingBoxAscent": 26.65625,
+      "fontBoundingBoxDescent": 1.34375,
+      "naturalFontBoxHeight": 28,
+      "domLeading": -1,
+      "formulaDelta": 1,
+      "formulaMatchesDOM": true,
+      "example": "Order!"
+    },
+    {
+      "styleId": 13,
+      "fontCSS": "16px / 19.2px \"Recreation Text UI\"",
+      "fontFamily": "\"Recreation Text UI\"",
+      "fontWeight": "400",
+      "fontSize": "16px",
+      "actualLineHeightPx": 19.2,
+      "fontBoundingBoxAscent": 18.234375,
+      "fontBoundingBoxDescent": 0.765625,
+      "naturalFontBoxHeight": 19,
+      "domLeading": 0,
+      "formulaDelta": 0,
+      "formulaMatchesDOM": true,
+      "example": "Order!"
+    },
+    {
+      "styleId": 14,
+      "fontCSS": "49px / 57.33px \"Recreation UI\", Arial, sans-serif",
+      "fontFamily": "\"Recreation UI\", Arial, sans-serif",
+      "fontWeight": "400",
+      "fontSize": "49px",
+      "actualLineHeightPx": 57.33,
+      "fontBoundingBoxAscent": 56.90625,
+      "fontBoundingBoxDescent": 2.09375,
+      "naturalFontBoxHeight": 59,
+      "domLeading": -1,
+      "formulaDelta": 1,
+      "formulaMatchesDOM": true,
+      "example": "+"
+    },
+    {
+      "styleId": 15,
+      "fontCSS": "31px / 36.27px \"Recreation UI\", Arial, sans-serif",
+      "fontFamily": "\"Recreation UI\", Arial, sans-serif",
+      "fontWeight": "400",
+      "fontSize": "31px",
+      "actualLineHeightPx": 36.27,
+      "fontBoundingBoxAscent": 36.265625,
+      "fontBoundingBoxDescent": 0.734375,
+      "naturalFontBoxHeight": 37,
+      "domLeading": -1,
+      "formulaDelta": 1,
+      "formulaMatchesDOM": true,
+      "example": "iMessage"
+    },
+    {
+      "styleId": 16,
+      "fontCSS": "35px / 40.95px \"Recreation UI\", Arial, sans-serif",
+      "fontFamily": "\"Recreation UI\", Arial, sans-serif",
+      "fontWeight": "400",
+      "fontSize": "35px",
+      "actualLineHeightPx": 40.95,
+      "fontBoundingBoxAscent": 40.078125,
+      "fontBoundingBoxDescent": 0.921875,
+      "naturalFontBoxHeight": 41,
+      "domLeading": -1,
+      "formulaDelta": 1,
+      "formulaMatchesDOM": true,
+      "example": "♩"
+    },
+    {
+      "styleId": 17,
+      "fontCSS": "600 19px / 22.23px \"Recreation UI\", Arial, sans-serif",
+      "fontFamily": "\"Recreation UI\", Arial, sans-serif",
+      "fontWeight": "600",
+      "fontSize": "19px",
+      "actualLineHeightPx": 22.23,
+      "fontBoundingBoxAscent": 21.84375,
+      "fontBoundingBoxDescent": 1.15625,
+      "naturalFontBoxHeight": 23,
+      "domLeading": -1,
+      "formulaDelta": 1,
+      "formulaMatchesDOM": true,
+      "example": "Emily, 27"
+    },
+    {
+      "styleId": 18,
+      "fontCSS": "600 24px / 28.08px \"Recreation UI\", Arial, sans-serif",
+      "fontFamily": "\"Recreation UI\", Arial, sans-serif",
+      "fontWeight": "600",
+      "fontSize": "24px",
+      "actualLineHeightPx": 28.08,
+      "fontBoundingBoxAscent": 27.84375,
+      "fontBoundingBoxDescent": 1.15625,
+      "naturalFontBoxHeight": 29,
+      "domLeading": -1,
+      "formulaDelta": 1,
+      "formulaMatchesDOM": true,
+      "example": "Love2night"
+    },
+    {
+      "styleId": 19,
+      "fontCSS": "19px / 22.23px \"Recreation UI\", Arial, sans-serif",
+      "fontFamily": "\"Recreation UI\", Arial, sans-serif",
+      "fontWeight": "400",
+      "fontSize": "19px",
+      "actualLineHeightPx": 22.23,
+      "fontBoundingBoxAscent": 21.84375,
+      "fontBoundingBoxDescent": 1.15625,
+      "naturalFontBoxHeight": 23,
+      "domLeading": -1,
+      "formulaDelta": 1,
+      "formulaMatchesDOM": true,
+      "example": "Your match for tonight"
+    },
+    {
+      "styleId": 20,
+      "fontCSS": "15px / 17.55px \"Recreation UI\", Arial, sans-serif",
+      "fontFamily": "\"Recreation UI\", Arial, sans-serif",
+      "fontWeight": "400",
+      "fontSize": "15px",
+      "actualLineHeightPx": 17.55,
+      "fontBoundingBoxAscent": 17.03125,
+      "fontBoundingBoxDescent": 0.96875,
+      "naturalFontBoxHeight": 18,
+      "domLeading": -1,
+      "formulaDelta": 1,
+      "formulaMatchesDOM": true,
+      "example": "311EAST91STREET"
+    },
+    {
+      "styleId": 21,
+      "fontCSS": "500 21px / 24.57px \"Recreation UI\", Arial, sans-serif",
+      "fontFamily": "\"Recreation UI\", Arial, sans-serif",
+      "fontWeight": "500",
+      "fontSize": "21px",
+      "actualLineHeightPx": 24.57,
+      "fontBoundingBoxAscent": 24.25,
+      "fontBoundingBoxDescent": 0.75,
+      "naturalFontBoxHeight": 25,
+      "domLeading": -1,
+      "formulaDelta": 1,
+      "formulaMatchesDOM": true,
+      "example": "⌂ House manual"
+    },
+    {
+      "styleId": 22,
+      "fontCSS": "16px / 18.72px \"Recreation UI\", Arial, sans-serif",
+      "fontFamily": "\"Recreation UI\", Arial, sans-serif",
+      "fontWeight": "400",
+      "fontSize": "16px",
+      "actualLineHeightPx": 18.72,
+      "fontBoundingBoxAscent": 18.234375,
+      "fontBoundingBoxDescent": 0.765625,
+      "naturalFontBoxHeight": 19,
+      "domLeading": -1,
+      "formulaDelta": 1,
+      "formulaMatchesDOM": true,
+      "example": "Instructions and house rules"
+    },
+    {
+      "styleId": 23,
+      "fontCSS": "600 21px / 24.57px \"Recreation UI\", Arial, sans-serif",
+      "fontFamily": "\"Recreation UI\", Arial, sans-serif",
+      "fontWeight": "600",
+      "fontSize": "21px",
+      "actualLineHeightPx": 24.57,
+      "fontBoundingBoxAscent": 24.25,
+      "fontBoundingBoxDescent": 0.75,
+      "naturalFontBoxHeight": 25,
+      "domLeading": -1,
+      "formulaDelta": 1,
+      "formulaMatchesDOM": true,
+      "example": "Preparing your order"
+    },
+    {
+      "styleId": 24,
+      "fontCSS": "17px / 19.89px \"Recreation UI\", Arial, sans-serif",
+      "fontFamily": "\"Recreation UI\", Arial, sans-serif",
+      "fontWeight": "400",
+      "fontSize": "17px",
+      "actualLineHeightPx": 19.89,
+      "fontBoundingBoxAscent": 19.4375,
+      "fontBoundingBoxDescent": 0.5625,
+      "naturalFontBoxHeight": 20,
+      "domLeading": -1,
+      "formulaDelta": 1,
+      "formulaMatchesDOM": true,
+      "example": "Arriving in 20–30 minutes"
+    },
+    {
+      "styleId": 25,
+      "fontCSS": "14px / 16.38px \"Recreation UI\", Arial, sans-serif",
+      "fontFamily": "\"Recreation UI\", Arial, sans-serif",
+      "fontWeight": "400",
+      "fontSize": "14px",
+      "actualLineHeightPx": 16.38,
+      "fontBoundingBoxAscent": 15.828125,
+      "fontBoundingBoxDescent": 0.171875,
+      "naturalFontBoxHeight": 16,
+      "domLeading": 0,
+      "formulaDelta": 0,
+      "formulaMatchesDOM": true,
+      "example": "Burger King is preparing your order."
+    },
+    {
+      "styleId": 26,
+      "fontCSS": "600 26px / 30.42px \"Recreation UI\", Arial, sans-serif",
+      "fontFamily": "\"Recreation UI\", Arial, sans-serif",
+      "fontWeight": "600",
+      "fontSize": "26px",
+      "actualLineHeightPx": 30.42,
+      "fontBoundingBoxAscent": 30.25,
+      "fontBoundingBoxDescent": 0.75,
+      "naturalFontBoxHeight": 31,
+      "domLeading": -1,
+      "formulaDelta": 1,
+      "formulaMatchesDOM": true,
+      "example": "STARBUCKS"
+    },
+    {
+      "styleId": 27,
+      "fontCSS": "18px / 21.06px \"Recreation UI\", Arial, sans-serif",
+      "fontFamily": "\"Recreation UI\", Arial, sans-serif",
+      "fontWeight": "400",
+      "fontSize": "18px",
+      "actualLineHeightPx": 21.06,
+      "fontBoundingBoxAscent": 20.640625,
+      "fontBoundingBoxDescent": 0.359375,
+      "naturalFontBoxHeight": 21,
+      "domLeading": 0,
+      "formulaDelta": 0,
+      "formulaMatchesDOM": true,
+      "example": "Venti"
+    },
+    {
+      "styleId": 28,
+      "fontCSS": "13px / 15.21px \"Recreation UI\", Arial, sans-serif",
+      "fontFamily": "\"Recreation UI\", Arial, sans-serif",
+      "fontWeight": "400",
+      "fontSize": "13px",
+      "actualLineHeightPx": 15.21,
+      "fontBoundingBoxAscent": 14.625,
+      "fontBoundingBoxDescent": 0.375,
+      "naturalFontBoxHeight": 15,
+      "domLeading": 0,
+      "formulaDelta": 0,
+      "formulaMatchesDOM": true,
+      "example": "BOARDING PASS"
+    },
+    {
+      "styleId": 29,
+      "fontCSS": "20px / 23.4px \"Recreation UI\", Arial, sans-serif",
+      "fontFamily": "\"Recreation UI\", Arial, sans-serif",
+      "fontWeight": "400",
+      "fontSize": "20px",
+      "actualLineHeightPx": 23.4,
+      "fontBoundingBoxAscent": 23.046875,
+      "fontBoundingBoxDescent": 0.953125,
+      "naturalFontBoxHeight": 24,
+      "domLeading": -1,
+      "formulaDelta": 1,
+      "formulaMatchesDOM": true,
+      "example": "NIKKI PARKER"
+    },
+    {
+      "styleId": 30,
+      "fontCSS": "24px / 28.08px \"Recreation UI\", Arial, sans-serif",
+      "fontFamily": "\"Recreation UI\", Arial, sans-serif",
+      "fontWeight": "400",
+      "fontSize": "24px",
+      "actualLineHeightPx": 28.08,
+      "fontBoundingBoxAscent": 27.84375,
+      "fontBoundingBoxDescent": 1.15625,
+      "naturalFontBoxHeight": 29,
+      "domLeading": -1,
+      "formulaDelta": 1,
+      "formulaMatchesDOM": true,
+      "example": "SFO      →      ATL"
+    },
+    {
+      "styleId": 31,
+      "fontCSS": "12px / 14.04px \"Recreation UI\", Arial, sans-serif",
+      "fontFamily": "\"Recreation UI\", Arial, sans-serif",
+      "fontWeight": "400",
+      "fontSize": "12px",
+      "actualLineHeightPx": 14.04,
+      "fontBoundingBoxAscent": 13.421875,
+      "fontBoundingBoxDescent": 0.578125,
+      "naturalFontBoxHeight": 14,
+      "domLeading": 0,
+      "formulaDelta": 0,
+      "formulaMatchesDOM": true,
+      "example": "DL409   May22,2024"
+    },
+    {
+      "styleId": 32,
+      "fontCSS": "600 22px / 25.74px \"Recreation UI\", Arial, sans-serif",
+      "fontFamily": "\"Recreation UI\", Arial, sans-serif",
+      "fontWeight": "600",
+      "fontSize": "22px",
+      "actualLineHeightPx": 25.74,
+      "fontBoundingBoxAscent": 25.453125,
+      "fontBoundingBoxDescent": 0.546875,
+      "naturalFontBoxHeight": 26,
+      "domLeading": -1,
+      "formulaDelta": 1,
+      "formulaMatchesDOM": true,
+      "example": "Midweek Check-in"
+    },
+    {
+      "styleId": 33,
+      "fontCSS": "600 25px / 29.25px \"Recreation UI\", Arial, sans-serif",
+      "fontFamily": "\"Recreation UI\", Arial, sans-serif",
+      "fontWeight": "600",
+      "fontSize": "25px",
+      "actualLineHeightPx": 29.25,
+      "fontBoundingBoxAscent": 29.046875,
+      "fontBoundingBoxDescent": 0.953125,
+      "naturalFontBoxHeight": 30,
+      "domLeading": -1,
+      "formulaDelta": 1,
+      "formulaMatchesDOM": true,
+      "example": "Restaurant Nova"
+    },
+    {
+      "styleId": 34,
+      "fontCSS": "600 20px / 23.4px \"Recreation UI\", Arial, sans-serif",
+      "fontFamily": "\"Recreation UI\", Arial, sans-serif",
+      "fontWeight": "600",
+      "fontSize": "20px",
+      "actualLineHeightPx": 23.4,
+      "fontBoundingBoxAscent": 23.046875,
+      "fontBoundingBoxDescent": 0.953125,
+      "naturalFontBoxHeight": 24,
+      "domLeading": -1,
+      "formulaDelta": 1,
+      "formulaMatchesDOM": true,
+      "example": "Wolf Inn Hotel"
+    },
+    {
+      "styleId": 35,
+      "fontCSS": "500 18px / 21.06px \"Recreation UI\", Arial, sans-serif",
+      "fontFamily": "\"Recreation UI\", Arial, sans-serif",
+      "fontWeight": "500",
+      "fontSize": "18px",
+      "actualLineHeightPx": 21.06,
+      "fontBoundingBoxAscent": 20.640625,
+      "fontBoundingBoxDescent": 0.359375,
+      "naturalFontBoxHeight": 21,
+      "domLeading": 0,
+      "formulaDelta": 0,
+      "formulaMatchesDOM": true,
+      "example": "Senso-ji Temple"
+    },
+    {
+      "styleId": 36,
+      "fontCSS": "33px / 38.61px \"Recreation UI\", Arial, sans-serif",
+      "fontFamily": "\"Recreation UI\", Arial, sans-serif",
+      "fontWeight": "400",
+      "fontSize": "33px",
+      "actualLineHeightPx": 38.61,
+      "fontBoundingBoxAscent": 37.671875,
+      "fontBoundingBoxDescent": 1.328125,
+      "naturalFontBoxHeight": 39,
+      "domLeading": -1,
+      "formulaDelta": 1,
+      "formulaMatchesDOM": true,
+      "example": "▢"
+    },
+    {
+      "styleId": 37,
+      "fontCSS": "57px / 66.69px \"Recreation UI\", Arial, sans-serif",
+      "fontFamily": "\"Recreation UI\", Arial, sans-serif",
+      "fontWeight": "400",
+      "fontSize": "57px",
+      "actualLineHeightPx": 66.69,
+      "fontBoundingBoxAscent": 65.515625,
+      "fontBoundingBoxDescent": 2.484375,
+      "naturalFontBoxHeight": 68,
+      "domLeading": -1,
+      "formulaDelta": 1,
+      "formulaMatchesDOM": true,
+      "example": "£16.59"
+    },
+    {
+      "styleId": 38,
+      "fontCSS": "600 23px / 26.91px \"Recreation UI\", Arial, sans-serif",
+      "fontFamily": "\"Recreation UI\", Arial, sans-serif",
+      "fontWeight": "600",
+      "fontSize": "23px",
+      "actualLineHeightPx": 26.91,
+      "fontBoundingBoxAscent": 26.65625,
+      "fontBoundingBoxDescent": 1.34375,
+      "naturalFontBoxHeight": 28,
+      "domLeading": -1,
+      "formulaDelta": 1,
+      "formulaMatchesDOM": true,
+      "example": "Delivery info"
+    },
+    {
+      "styleId": 39,
+      "fontCSS": "600 17px / 19.89px \"Recreation UI\", Arial, sans-serif",
+      "fontFamily": "\"Recreation UI\", Arial, sans-serif",
+      "fontWeight": "600",
+      "fontSize": "17px",
+      "actualLineHeightPx": 19.89,
+      "fontBoundingBoxAscent": 19.4375,
+      "fontBoundingBoxDescent": 0.5625,
+      "naturalFontBoxHeight": 20,
+      "domLeading": -1,
+      "formulaDelta": 1,
+      "formulaMatchesDOM": true,
+      "example": "●"
+    },
+    {
+      "styleId": 40,
+      "fontCSS": "600 28px / 32.76px \"Recreation UI\", Arial, sans-serif",
+      "fontFamily": "\"Recreation UI\", Arial, sans-serif",
+      "fontWeight": "600",
+      "fontSize": "28px",
+      "actualLineHeightPx": 32.76,
+      "fontBoundingBoxAscent": 32.65625,
+      "fontBoundingBoxDescent": 1.34375,
+      "naturalFontBoxHeight": 34,
+      "domLeading": -1,
+      "formulaDelta": 1,
+      "formulaMatchesDOM": true,
+      "example": "Barry Shawn"
+    },
+    {
+      "styleId": 41,
+      "fontCSS": "500 17px / 19.89px \"Recreation UI\", Arial, sans-serif",
+      "fontFamily": "\"Recreation UI\", Arial, sans-serif",
+      "fontWeight": "500",
+      "fontSize": "17px",
+      "actualLineHeightPx": 19.89,
+      "fontBoundingBoxAscent": 19.4375,
+      "fontBoundingBoxDescent": 0.5625,
+      "naturalFontBoxHeight": 20,
+      "domLeading": -1,
+      "formulaDelta": 1,
+      "formulaMatchesDOM": true,
+      "example": "WINTER LATTE"
+    }
+  ],
+  "candidateNodes": [
+    {
+      "id": "p03-21",
+      "frameRanges": [
+        [
+          59,
+          413
+        ]
+      ],
+      "frameCount": 355,
+      "styleIds": [
+        0
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "p03-22",
+      "frameRanges": [
+        [
+          59,
+          413
+        ]
+      ],
+      "frameCount": 355,
+      "styleIds": [
+        1
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "p03-23",
+      "frameRanges": [
+        [
+          84,
+          413
+        ]
+      ],
+      "frameCount": 330,
+      "styleIds": [
+        2
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "p03-56",
+      "frameRanges": [
+        [
+          212,
+          344
+        ]
+      ],
+      "frameCount": 133,
+      "styleIds": [
+        3
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "mail14-p03-21",
+      "frameRanges": [
+        [
+          414,
+          428
+        ]
+      ],
+      "frameCount": 15,
+      "styleIds": [
+        0
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "mail14-p03-22",
+      "frameRanges": [
+        [
+          414,
+          428
+        ]
+      ],
+      "frameCount": 15,
+      "styleIds": [
+        1
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "mail14-p03-23",
+      "frameRanges": [
+        [
+          414,
+          428
+        ]
+      ],
+      "frameCount": 15,
+      "styleIds": [
+        2
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "p03-113",
+      "frameRanges": [
+        [
+          495,
+          617
+        ]
+      ],
+      "frameCount": 123,
+      "styleIds": [
+        5
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "p03-119",
+      "frameRanges": [
+        [
+          495,
+          617
+        ]
+      ],
+      "frameCount": 123,
+      "styleIds": [
+        5
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "p03-129",
+      "frameRanges": [
+        [
+          534,
+          617
+        ]
+      ],
+      "frameCount": 84,
+      "styleIds": [
+        5
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "p03-146",
+      "frameRanges": [
+        [
+          546,
+          617
+        ]
+      ],
+      "frameCount": 72,
+      "styleIds": [
+        6
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "p03-147",
+      "frameRanges": [
+        [
+          546,
+          617
+        ]
+      ],
+      "frameCount": 72,
+      "styleIds": [
+        7
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "return-settle-v16-lunch13-p03-104",
+      "frameRanges": [
+        [
+          735,
+          799
+        ]
+      ],
+      "frameCount": 65,
+      "styleIds": [
+        0
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "return-settle-v16-lunch13-p03-105",
+      "frameRanges": [
+        [
+          735,
+          799
+        ]
+      ],
+      "frameCount": 65,
+      "styleIds": [
+        1
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "return-settle-v16-lunch13-p03-106",
+      "frameRanges": [
+        [
+          735,
+          799
+        ]
+      ],
+      "frameCount": 65,
+      "styleIds": [
+        2
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "return-settle-v16-lunch13-p03-113",
+      "frameRanges": [
+        [
+          735,
+          799
+        ]
+      ],
+      "frameCount": 65,
+      "styleIds": [
+        5
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "return-settle-v16-lunch13-p03-119",
+      "frameRanges": [
+        [
+          735,
+          799
+        ]
+      ],
+      "frameCount": 65,
+      "styleIds": [
+        5
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "return-settle-v16-lunch13-p03-129",
+      "frameRanges": [
+        [
+          735,
+          799
+        ]
+      ],
+      "frameCount": 65,
+      "styleIds": [
+        5
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "return-settle-v16-lunch13-p03-146",
+      "frameRanges": [
+        [
+          735,
+          799
+        ]
+      ],
+      "frameCount": 65,
+      "styleIds": [
+        6
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "return-settle-v16-lunch13-p03-147",
+      "frameRanges": [
+        [
+          735,
+          799
+        ]
+      ],
+      "frameCount": 65,
+      "styleIds": [
+        7
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "menu13-p03-154",
+      "frameRanges": [
+        [
+          618,
+          733
+        ]
+      ],
+      "frameCount": 116,
+      "styleIds": [
+        8
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "menu13-p03-155",
+      "frameRanges": [
+        [
+          618,
+          733
+        ]
+      ],
+      "frameCount": 116,
+      "styleIds": [
+        9
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "menu13-p03-193",
+      "frameRanges": [
+        [
+          636,
+          667
+        ]
+      ],
+      "frameCount": 32,
+      "styleIds": [
+        10
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "menu13-p03-200",
+      "frameRanges": [
+        [
+          639,
+          691
+        ]
+      ],
+      "frameCount": 53,
+      "styleIds": [
+        10
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "p03-223",
+      "frameRanges": [
+        [
+          734,
+          773
+        ],
+        [
+          779,
+          784
+        ],
+        [
+          799,
+          799
+        ]
+      ],
+      "frameCount": 47,
+      "styleIds": [
+        12
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "p03-242",
+      "frameRanges": [
+        [
+          850,
+          890
+        ]
+      ],
+      "frameCount": 41,
+      "styleIds": [
+        0
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "p03-243",
+      "frameRanges": [
+        [
+          850,
+          890
+        ]
+      ],
+      "frameCount": 41,
+      "styleIds": [
+        1
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "p03-244",
+      "frameRanges": [
+        [
+          850,
+          890
+        ]
+      ],
+      "frameCount": 41,
+      "styleIds": [
+        2
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "p03-246",
+      "frameRanges": [
+        [
+          850,
+          890
+        ]
+      ],
+      "frameCount": 41,
+      "styleIds": [
+        14
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "p03-248",
+      "frameRanges": [
+        [
+          850,
+          890
+        ]
+      ],
+      "frameCount": 41,
+      "styleIds": [
+        15
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "p03-249",
+      "frameRanges": [
+        [
+          850,
+          890
+        ]
+      ],
+      "frameCount": 41,
+      "styleIds": [
+        16
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "v15-camera-collage13-p03-376",
+      "frameRanges": [
+        [
+          903,
+          955
+        ]
+      ],
+      "frameCount": 53,
+      "styleIds": [
+        17
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "v15-camera-collage13-p03-379",
+      "frameRanges": [
+        [
+          903,
+          955
+        ]
+      ],
+      "frameCount": 53,
+      "styleIds": [
+        18
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "v15-camera-collage13-p03-380",
+      "frameRanges": [
+        [
+          903,
+          955
+        ]
+      ],
+      "frameCount": 53,
+      "styleIds": [
+        19
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "v15-camera-collage13-p03-385",
+      "frameRanges": [
+        [
+          903,
+          951
+        ]
+      ],
+      "frameCount": 49,
+      "styleIds": [
+        20
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "v15-camera-collage13-p03-386",
+      "frameRanges": [
+        [
+          903,
+          951
+        ]
+      ],
+      "frameCount": 49,
+      "styleIds": [
+        21
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "v15-camera-collage13-p03-387",
+      "frameRanges": [
+        [
+          903,
+          951
+        ]
+      ],
+      "frameCount": 49,
+      "styleIds": [
+        22
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "v15-camera-collage13-p03-396",
+      "frameRanges": [
+        [
+          903,
+          962
+        ]
+      ],
+      "frameCount": 60,
+      "styleIds": [
+        23
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "v15-camera-collage13-p03-397",
+      "frameRanges": [
+        [
+          903,
+          962
+        ]
+      ],
+      "frameCount": 60,
+      "styleIds": [
+        24
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "v15-camera-collage13-p03-400",
+      "frameRanges": [
+        [
+          903,
+          962
+        ]
+      ],
+      "frameCount": 60,
+      "styleIds": [
+        22
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "v15-camera-collage13-p03-402",
+      "frameRanges": [
+        [
+          903,
+          962
+        ]
+      ],
+      "frameCount": 60,
+      "styleIds": [
+        22
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "v15-camera-collage13-p03-404",
+      "frameRanges": [
+        [
+          903,
+          962
+        ]
+      ],
+      "frameCount": 60,
+      "styleIds": [
+        22
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "v15-camera-collage13-p03-406",
+      "frameRanges": [
+        [
+          903,
+          962
+        ]
+      ],
+      "frameCount": 60,
+      "styleIds": [
+        22
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "v15-camera-collage13-p03-417",
+      "frameRanges": [
+        [
+          903,
+          959
+        ]
+      ],
+      "frameCount": 57,
+      "styleIds": [
+        26
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "v15-camera-collage13-p03-429",
+      "frameRanges": [
+        [
+          903,
+          946
+        ]
+      ],
+      "frameCount": 44,
+      "styleIds": [
+        24
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "v15-camera-collage13-p03-430",
+      "frameRanges": [
+        [
+          903,
+          946
+        ]
+      ],
+      "frameCount": 44,
+      "styleIds": [
+        24
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "v15-camera-collage13-p03-431",
+      "frameRanges": [
+        [
+          903,
+          946
+        ]
+      ],
+      "frameCount": 44,
+      "styleIds": [
+        24
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "v15-camera-collage13-p03-432",
+      "frameRanges": [
+        [
+          903,
+          946
+        ]
+      ],
+      "frameCount": 44,
+      "styleIds": [
+        20
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "v15-camera-collage13-p03-435",
+      "frameRanges": [
+        [
+          903,
+          946
+        ]
+      ],
+      "frameCount": 44,
+      "styleIds": [
+        18
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "v15-camera-collage13-p03-436",
+      "frameRanges": [
+        [
+          903,
+          946
+        ]
+      ],
+      "frameCount": 44,
+      "styleIds": [
+        19
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "v15-camera-collage13-p03-444",
+      "frameRanges": [
+        [
+          903,
+          955
+        ]
+      ],
+      "frameCount": 53,
+      "styleIds": [
+        29
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "v15-camera-collage13-p03-445",
+      "frameRanges": [
+        [
+          903,
+          955
+        ]
+      ],
+      "frameCount": 53,
+      "styleIds": [
+        19
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "v15-camera-collage13-p03-446",
+      "frameRanges": [
+        [
+          903,
+          955
+        ]
+      ],
+      "frameCount": 53,
+      "styleIds": [
+        30
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "v15-camera-collage13-p03-457",
+      "frameRanges": [
+        [
+          903,
+          946
+        ]
+      ],
+      "frameCount": 44,
+      "styleIds": [
+        22
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "v15-camera-collage13-p03-458",
+      "frameRanges": [
+        [
+          903,
+          946
+        ]
+      ],
+      "frameCount": 44,
+      "styleIds": [
+        5
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "v15-camera-collage13-p03-459",
+      "frameRanges": [
+        [
+          903,
+          946
+        ]
+      ],
+      "frameCount": 44,
+      "styleIds": [
+        20
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "v15-camera-collage13-p03-469",
+      "frameRanges": [
+        [
+          903,
+          959
+        ]
+      ],
+      "frameCount": 57,
+      "styleIds": [
+        32
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "v15-camera-collage13-p03-470",
+      "frameRanges": [
+        [
+          903,
+          959
+        ]
+      ],
+      "frameCount": 57,
+      "styleIds": [
+        24
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "v15-camera-collage13-p03-479",
+      "frameRanges": [
+        [
+          903,
+          961
+        ]
+      ],
+      "frameCount": 59,
+      "styleIds": [
+        24
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "v15-camera-collage13-p03-480",
+      "frameRanges": [
+        [
+          903,
+          961
+        ]
+      ],
+      "frameCount": 59,
+      "styleIds": [
+        33
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "v15-camera-collage13-p03-481",
+      "frameRanges": [
+        [
+          903,
+          961
+        ]
+      ],
+      "frameCount": 59,
+      "styleIds": [
+        22
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "v15-camera-collage13-p03-482",
+      "frameRanges": [
+        [
+          903,
+          961
+        ]
+      ],
+      "frameCount": 59,
+      "styleIds": [
+        20
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "v15-camera-collage13-p03-491",
+      "frameRanges": [
+        [
+          903,
+          971
+        ]
+      ],
+      "frameCount": 69,
+      "styleIds": [
+        34
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "v15-camera-collage13-p03-492",
+      "frameRanges": [
+        [
+          903,
+          971
+        ]
+      ],
+      "frameCount": 69,
+      "styleIds": [
+        24
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "v15-camera-collage13-p03-493",
+      "frameRanges": [
+        [
+          903,
+          971
+        ]
+      ],
+      "frameCount": 69,
+      "styleIds": [
+        20
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "v15-camera-collage13-p03-494",
+      "frameRanges": [
+        [
+          903,
+          971
+        ]
+      ],
+      "frameCount": 69,
+      "styleIds": [
+        20
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "v15-camera-collage13-p03-505",
+      "frameRanges": [
+        [
+          903,
+          958
+        ]
+      ],
+      "frameCount": 56,
+      "styleIds": [
+        5
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "v15-camera-collage13-p03-508",
+      "frameRanges": [
+        [
+          903,
+          958
+        ]
+      ],
+      "frameCount": 56,
+      "styleIds": [
+        5
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "v15-camera-collage13-p03-511",
+      "frameRanges": [
+        [
+          903,
+          958
+        ]
+      ],
+      "frameCount": 56,
+      "styleIds": [
+        5
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "v15-camera-collage13-p03-536",
+      "frameRanges": [
+        [
+          903,
+          959
+        ]
+      ],
+      "frameCount": 57,
+      "styleIds": [
+        18
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "v15-camera-collage13-p03-547",
+      "frameRanges": [
+        [
+          903,
+          965
+        ]
+      ],
+      "frameCount": 63,
+      "styleIds": [
+        23
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "v15-camera-collage13-p03-548",
+      "frameRanges": [
+        [
+          903,
+          965
+        ]
+      ],
+      "frameCount": 63,
+      "styleIds": [
+        23
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "v15-camera-collage13-p03-549",
+      "frameRanges": [
+        [
+          903,
+          965
+        ]
+      ],
+      "frameCount": 63,
+      "styleIds": [
+        20
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "v15-camera-collage13-p03-560",
+      "frameRanges": [
+        [
+          903,
+          967
+        ]
+      ],
+      "frameCount": 65,
+      "styleIds": [
+        36
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "v15-camera-collage13-p03-562",
+      "frameRanges": [
+        [
+          903,
+          967
+        ]
+      ],
+      "frameCount": 65,
+      "styleIds": [
+        37
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "v15-camera-collage13-p03-574",
+      "frameRanges": [
+        [
+          903,
+          952
+        ]
+      ],
+      "frameCount": 50,
+      "styleIds": [
+        18
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "v15-camera-collage13-p03-575",
+      "frameRanges": [
+        [
+          903,
+          952
+        ]
+      ],
+      "frameCount": 50,
+      "styleIds": [
+        19
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "v15-camera-collage13-p03-580",
+      "frameRanges": [
+        [
+          903,
+          961
+        ]
+      ],
+      "frameCount": 59,
+      "styleIds": [
+        38
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "v15-camera-collage13-p03-581",
+      "frameRanges": [
+        [
+          903,
+          961
+        ]
+      ],
+      "frameCount": 59,
+      "styleIds": [
+        24
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "v15-camera-collage13-p03-582",
+      "frameRanges": [
+        [
+          903,
+          961
+        ]
+      ],
+      "frameCount": 59,
+      "styleIds": [
+        20
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "v15-camera-collage13-p03-584",
+      "frameRanges": [
+        [
+          903,
+          961
+        ]
+      ],
+      "frameCount": 59,
+      "styleIds": [
+        39
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "v15-camera-collage13-p03-586",
+      "frameRanges": [
+        [
+          903,
+          961
+        ]
+      ],
+      "frameCount": 59,
+      "styleIds": [
+        18
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "v15-camera-collage13-p03-587",
+      "frameRanges": [
+        [
+          903,
+          961
+        ]
+      ],
+      "frameCount": 59,
+      "styleIds": [
+        19
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "v15-camera-collage13-p03-613",
+      "frameRanges": [
+        [
+          903,
+          955
+        ]
+      ],
+      "frameCount": 53,
+      "styleIds": [
+        22
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "v15-camera-collage13-p03-614",
+      "frameRanges": [
+        [
+          903,
+          955
+        ]
+      ],
+      "frameCount": 53,
+      "styleIds": [
+        40
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "v15-camera-collage13-p03-623",
+      "frameRanges": [
+        [
+          903,
+          966
+        ]
+      ],
+      "frameCount": 64,
+      "styleIds": [
+        41
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "v15-camera-collage13-p03-624",
+      "frameRanges": [
+        [
+          903,
+          966
+        ]
+      ],
+      "frameCount": 64,
+      "styleIds": [
+        22
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    }
+  ],
+  "candidateFrameRanges": [
+    [
+      59,
+      428
+    ],
+    [
+      495,
+      799
+    ],
+    [
+      850,
+      890
+    ],
+    [
+      903,
+      971
+    ]
+  ],
+  "candidateFrameCount": 785,
+  "formulaMismatches": [],
+  "note": "Candidate actor visibility is exact lifecycle/positive opacity, conservatively includes offscreen/occluded actors. No production runtime or native PNG changed."
+}

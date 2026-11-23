@@ -1,0 +1,37 @@
+{
+  "id": "typing-indicator-cycle",
+  "sourceSHA256": "c6fb81a1eafb1d0f955e408c9eee12535cb490ff1c36ec815e47752f5298ccee",
+  "sceneSHA256": "6d2f6163887829d57150f1a0c6973dc3a4ebd9275d41ecb56b8d0fc8ac6aa156",
+  "events": [
+    {
+      "id": "remote-typing",
+      "frame": 10,
+      "roleLayers": [
+        "ui.typing"
+      ]
+    }
+  ],
+  "bindings": {
+    "viewport": "ui.viewport",
+    "transcript": "ui.transcript",
+    "typing": "ui.typing",
+    "screen": "ui.screen",
+    "header": "ui.header",
+    "composer": "ui.composer"
+  },
+  "verification": {
+    "ok": true,
+    "mode": "adapter-recipe",
+    "issues": [],
+    "evidence": "structural-only",
+    "checkedWindow": [
+      9,
+      33
+    ]
+  },
+  "window": [
+    9,
+    33
+  ],
+  "status": "compiled-messages-interaction"
+}

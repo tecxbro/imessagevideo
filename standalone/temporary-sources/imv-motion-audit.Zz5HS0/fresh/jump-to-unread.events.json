@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 72
+  },
+  "initialUI": null,
+  "events": [
+    {
+      "id": "motion.jump-to-unread.unread-jump",
+      "kind": "tap",
+      "target": "unread-jump-control",
+      "frame": 21,
+      "layerIds": [
+        "unread-jump-control"
+      ]
+    },
+    {
+      "id": "motion.jump-to-unread.unread-destination",
+      "kind": "scroll_settle",
+      "target": "unread-destination",
+      "frame": 52,
+      "layerIds": [
+        "unread-destination"
+      ]
+    }
+  ],
+  "cues": []
+}

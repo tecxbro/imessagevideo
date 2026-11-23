@@ -1,0 +1,100 @@
+{
+  "version": 1,
+  "skin": "film-ink",
+  "conversationId": "press-room",
+  "title": "Print room",
+  "participants": {
+    "amy": "Amy",
+    "leo": "Leo"
+  },
+  "localSenderId": "amy",
+  "display": {
+    "width": 402,
+    "height": 720
+  },
+  "fps": 24,
+  "frameCount": 94,
+  "initial": {
+    "messages": [
+      {
+        "id": "ink",
+        "senderId": "amy",
+        "text": "The new ink arrived with the afternoon order."
+      },
+      {
+        "id": "cabinets",
+        "senderId": "leo",
+        "text": "I moved it to the lower cabinet beside the sample paper."
+      },
+      {
+        "id": "size",
+        "senderId": "amy",
+        "text": "Thanks. Are we making the tall handouts or the shorter folded maps?"
+      },
+      {
+        "id": "map",
+        "senderId": "leo",
+        "text": "Folded maps this time. Keep the margins wide so people can write notes."
+      },
+      {
+        "id": "stack",
+        "senderId": "amy",
+        "text": "I cut an extra stack in case a few sheets get damaged."
+      },
+      {
+        "id": "lights",
+        "senderId": "leo",
+        "text": "The back room lamp is on. The window by the sink can stay closed."
+      },
+      {
+        "id": "arrival",
+        "senderId": "amy",
+        "text": "I’ll come in through the courtyard."
+      },
+      {
+        "id": "ready",
+        "senderId": "leo",
+        "text": "Your first proof is ready."
+      },
+      {
+        "id": "table",
+        "senderId": "amy",
+        "text": "I’ll check it at the long table."
+      },
+      {
+        "id": "wait",
+        "senderId": "leo",
+        "text": "I’ll leave the pencil on top."
+      }
+    ]
+  },
+  "events": [
+    {
+      "id": "ui.tapback-scroll.context",
+      "kind": "overlay",
+      "frame": 14,
+      "surface": "context",
+      "messageId": "arrival"
+    },
+    {
+      "id": "ui.tapback-scroll.apply",
+      "kind": "reaction",
+      "frame": 34,
+      "messageId": "arrival",
+      "mark": "Wow"
+    },
+    {
+      "id": "ui.tapback-scroll.scroll",
+      "kind": "scroll",
+      "frame": 54,
+      "offset": 62
+    }
+  ],
+  "cues": [
+    {
+      "id": "ui.tapback-scroll.apply-cue",
+      "eventId": "ui.tapback-scroll.apply",
+      "offsetSamples": 0
+    }
+  ]
+}

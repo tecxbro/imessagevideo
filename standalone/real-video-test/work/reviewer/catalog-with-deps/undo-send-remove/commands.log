@@ -1,0 +1,22 @@
+$ ['/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/venv/bin/python', '/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/imessagevideo/skill/imessage-video/scripts/recipes.py', 'preview', 'undo-send-remove', '--out', '/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/catalog-with-deps/undo-send-remove/preview.mp4'] exit=0
+{
+  "id": "undo-send-remove",
+  "preview": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/catalog-with-deps/undo-send-remove/preview.mp4"
+}
+
+$ ['/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/venv/bin/python', '/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/imessagevideo/skill/imessage-video/scripts/recipes.py', 'export', 'undo-send-remove', '--out', '/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/catalog-with-deps/undo-send-remove/project'] exit=0
+{
+  "id": "undo-send-remove",
+  "scene": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/catalog-with-deps/undo-send-remove/project/scene.json",
+  "events": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/catalog-with-deps/undo-send-remove/project/scene.events.json",
+  "engine": "pillow",
+  "renderCommand": "python3 render_pillow.py --scene scene.json --out film.mp4"
+}
+
+$ ['/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/venv/bin/python', '/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/catalog-with-deps/undo-send-remove/project/render_pillow.py', '--scene', '/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/catalog-with-deps/undo-send-remove/project/scene.json', '--out', '/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/catalog-with-deps/undo-send-remove/project/replay.mp4'] exit=0
+{"method": "pillow", "frame": 0, "total": 72}
+{"captureHistory": [], "method": "pillow", "engineSha256": "046458f0f51b4a514594a4dc5b64eeb797a554e971453a4b630b107a83f57a64", "scene": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/catalog-with-deps/undo-send-remove/project/scene.json", "sceneSha256": "a56b205408b3e88345e2248d27ff110461525875d110a4a1a3678ad9eb79ef63", "out": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/catalog-with-deps/undo-send-remove/project/replay.mp4", "width": 720, "height": 480, "fps": 30, "frames": 72, "duration": 2.4, "source": {"path": "packs/conversation.mjs#undo-send-remove", "sourceStart": 0, "sourceEnd": 2.4, "notes": "Original editable Motion demonstration."}, "antialias": 1, "frameDirectory": null, "capturedFrameRanges": [[0, 71]], "uniqueFramesCaptured": 31}
+
+$ ['/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/venv/bin/python', '/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/imessagevideo/skill/imessage-video/scripts/frames.py', '/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/catalog-with-deps/undo-send-remove/preview.mp4', '/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/catalog-with-deps/undo-send-remove/project/replay.mp4', '--out', '/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/catalog-with-deps/undo-send-remove/compare', '--require-structure-match', '--max-pts-error-ms', '0', '--max-mae', '3'] exit=0
+{"report": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/catalog-with-deps/undo-send-remove/compare/report.json", "compared_frames": 72, "limits_passed": true, "failures": []}
+

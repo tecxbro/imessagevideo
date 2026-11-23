@@ -1,0 +1,306 @@
+{
+  "id": "photos-under-fixed-heading",
+  "title": "Slide the photos beneath a fixed heading",
+  "moves": "Adjacent photos translate together on one horizontally clipped rail.",
+  "fixed": "The heading, viewport, divider and supporting footer stay in place.",
+  "notice": "The next photo comes into view while the place and surrounding context remain easy to read.",
+  "fits": "Browse pictures inside a place or album surface with persistent labels. Use the separate UI adapter variant for inline conversation paging.",
+  "avoid": "A stack that lifts or dismisses only its front photo needs independent layers and depth.",
+  "intents": [
+    "Move the photos beneath a fixed heading",
+    "Slide pictures horizontally under a title that stays put",
+    "Keep the shop name pinned as the storefront photos glide past",
+    "Scroll images without moving the header"
+  ],
+  "editable": [
+    "heading",
+    "detail",
+    "photos",
+    "direction"
+  ],
+  "example": "motion/examples/photo-swipe.content.json",
+  "comparison": "motion/PHOTO-SWIPE.md",
+  "photoCount": {
+    "min": 2,
+    "max": 12
+  },
+  "source": {
+    "kind": "measured-adaptation",
+    "ref": "projects/05-linq-complete-v1/imessage-recreations/references/05-linq/source.mp4",
+    "range": [
+      36.366667,
+      37.066667
+    ],
+    "framesInclusive": [
+      1091,
+      1111
+    ],
+    "note": "Normalized Linq rail shift sampled by the earlier motion library at a23bfb2. Reproduced at a new size with authored artwork and a held header."
+  },
+  "implementation": "packs/core.mjs",
+  "preview": "review/imv-v3/motion/photos-under-fixed-heading.mp4",
+  "sha256": "adce3885b489d68f1b595c43d8dee4c5f4dbb1b02de8480ce351fe97b89a59dd",
+  "eventMap": "review/imv-v3/motion/photos-under-fixed-heading.events.json",
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 72
+  },
+  "events": [
+    {
+      "id": "motion.photos-under-fixed-heading.rail-start",
+      "kind": "media.scroll",
+      "frame": 20
+    },
+    {
+      "id": "motion.photos-under-fixed-heading.rail-settle",
+      "kind": "media.settle",
+      "frame": 39
+    }
+  ],
+  "renderers": [
+    {
+      "method": "pillow",
+      "evidence": "full-preview",
+      "frames": 72
+    },
+    {
+      "method": "html",
+      "evidence": "retimed-nine-frame-probe",
+      "distinctFrames": 9
+    },
+    {
+      "method": "gsap",
+      "evidence": "retimed-nine-frame-probe",
+      "distinctFrames": 9
+    },
+    {
+      "method": "remotion",
+      "evidence": "retimed-nine-frame-probe",
+      "distinctFrames": 9
+    },
+    {
+      "method": "motion-canvas",
+      "evidence": "retimed-nine-frame-probe",
+      "distinctFrames": 9
+    }
+  ],
+  "ui": {
+    "preview": "review/imv-v3/motion/ui/photos-under-fixed-heading.mp4",
+    "sha256": "5d88c42d71ae7baab94fa17d3732c4540ef86673e27b0b1b7b5892c3b098873c",
+    "eventMap": "review/imv-v3/motion/ui/photos-under-fixed-heading.events.json",
+    "picture": {
+      "fpsNum": 30,
+      "fpsDen": 1,
+      "frameCount": 72
+    },
+    "events": [
+      {
+        "id": "motion.photos-under-fixed-heading.rail-start",
+        "kind": "media.scroll",
+        "frame": 20
+      },
+      {
+        "id": "motion.photos-under-fixed-heading.rail-settle",
+        "kind": "media.settle",
+        "frame": 39
+      }
+    ],
+    "adapter": "Clone iMessage UI at 5e2ff5a",
+    "renderCommand": "node motion/cli.mjs render --id photos-under-fixed-heading --method pillow --out /tmp/photos-under-fixed-heading.mp4 --ui"
+  },
+  "editableFields": {
+    "heading": "text",
+    "detail": "text",
+    "photos": "array of local PNG, JPEG or WebP paths, relative to the content JSON",
+    "direction": "left, right, up or down; the photo rail supports left/right only"
+  },
+  "renderCommand": "node motion/cli.mjs render --id photos-under-fixed-heading --method pillow --out /tmp/photos-under-fixed-heading.mp4",
+  "components": {
+    "id": "photos-under-fixed-heading",
+    "implementation": "motion/packs/core.mjs",
+    "whenToUse": "Browse pictures inside a place or album surface with persistent labels. Use the separate UI adapter variant for inline conversation paging.",
+    "avoidWhen": "A stack that lifts or dismisses only its front photo needs independent layers and depth.",
+    "source": {
+      "kind": "measured-adaptation",
+      "ref": "projects/05-linq-complete-v1/imessage-recreations/references/05-linq/source.mp4",
+      "range": [
+        36.366667,
+        37.066667
+      ],
+      "framesInclusive": [
+        1091,
+        1111
+      ],
+      "note": "Normalized Linq rail shift sampled by the earlier motion library at a23bfb2. Reproduced at a new size with authored artwork and a held header."
+    },
+    "preview": {
+      "path": "review/imv-v3/motion/photos-under-fixed-heading.mp4",
+      "sha256": "adce3885b489d68f1b595c43d8dee4c5f4dbb1b02de8480ce351fe97b89a59dd",
+      "evidence": "published-demo"
+    },
+    "adapterPreview": {
+      "path": "review/imv-v3/motion/ui/photos-under-fixed-heading.mp4",
+      "sha256": "5d88c42d71ae7baab94fa17d3732c4540ef86673e27b0b1b7b5892c3b098873c",
+      "evidence": "published-adapter-demo"
+    },
+    "demo": {
+      "moving": [
+        {
+          "id": "photo-rail",
+          "parent": "photo-viewport",
+          "type": "group",
+          "channels": [
+            "x"
+          ],
+          "role": "carousel"
+        }
+      ],
+      "fixed": [
+        {
+          "id": "heading",
+          "parent": null,
+          "type": "group",
+          "role": "header",
+          "scope": "local-position"
+        },
+        {
+          "id": "photo-viewport",
+          "parent": "stage",
+          "type": "group",
+          "role": "attachmentViewport",
+          "scope": "local-position"
+        },
+        {
+          "id": "photo-rail-divider",
+          "parent": "stage",
+          "type": "rect",
+          "role": "divider",
+          "scope": "local-position"
+        },
+        {
+          "id": "footer-label",
+          "parent": "footer",
+          "type": "text",
+          "role": "caption",
+          "scope": "local-position"
+        }
+      ],
+      "events": [
+        {
+          "id": "motion.photos-under-fixed-heading.rail-start",
+          "kind": "media.scroll",
+          "frame": 20,
+          "target": "photo-rail",
+          "layerIds": [
+            "photo-rail"
+          ]
+        },
+        {
+          "id": "motion.photos-under-fixed-heading.rail-settle",
+          "kind": "media.settle",
+          "frame": 39,
+          "target": "photo-rail",
+          "layerIds": [
+            "photo-rail"
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "path": "skill-clean/imessage-motion-recreation/motion/assets/landscape-1.png",
+          "sha256": "4db64d5acedc3877e848c16b45d428d5505a5044b4a6a24cefbf336c732e23a9"
+        },
+        {
+          "path": "skill-clean/imessage-motion-recreation/motion/assets/landscape-2.png",
+          "sha256": "9746d1d0b9a195bde0a3e3cc97d0bcd6cc357e2625cf99d9fc1ef09f734d1aeb"
+        },
+        {
+          "path": "skill-clean/imessage-motion-recreation/motion/assets/landscape-3.png",
+          "sha256": "f4829cbd13947ed207a829281ccb0c2144c05b6afab7dfc3999f975839ca2c69"
+        },
+        {
+          "path": "skill-clean/imessage-motion-recreation/motion/assets/landscape-4.png",
+          "sha256": "68c668fb0e442a65f8895509e8aac6019ed47b232c05a765b25fea3ca57c40f6"
+        }
+      ]
+    },
+    "production": {
+      "mode": "adapter-recipe",
+      "moving": [
+        "carousel"
+      ],
+      "fixed": [
+        "screen",
+        "header",
+        "composer",
+        "transcript",
+        "attachmentViewport"
+      ],
+      "required": [
+        "viewport",
+        "message",
+        "attachment",
+        "carousel",
+        "screen",
+        "header",
+        "composer",
+        "transcript",
+        "attachmentViewport"
+      ],
+      "transitionKinds": [
+        "media.page"
+      ],
+      "verification": "Validate explicit bindings on the compiled scene and review decoded frames from that candidate.",
+      "bindings": {
+        "viewport": {
+          "id": "ui.viewport",
+          "type": "group",
+          "parent": "screen",
+          "clip": true
+        },
+        "message": {
+          "pattern": "^ui\\.message\\/[^/@]+$",
+          "type": "group",
+          "parent": "transcript"
+        },
+        "attachment": {
+          "suffix": "media",
+          "type": "group",
+          "parent": "message"
+        },
+        "carousel": {
+          "suffix": "rail",
+          "type": "group",
+          "parent": "attachmentViewport"
+        },
+        "screen": {
+          "id": "ui.screen",
+          "type": "group",
+          "clip": true
+        },
+        "header": {
+          "id": "ui.header",
+          "type": "group",
+          "parent": "screen"
+        },
+        "composer": {
+          "id": "ui.composer",
+          "type": "group",
+          "parent": "screen"
+        },
+        "transcript": {
+          "id": "ui.transcript",
+          "type": "group",
+          "parent": "viewport"
+        },
+        "attachmentViewport": {
+          "suffix": "media-window",
+          "type": "group",
+          "parent": "attachment",
+          "clip": true
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+[
+  {
+    "id": "native-slam-impact",
+    "moves": "A bubble arrives enlarged, then compresses sharply into its resting slot.",
+    "fixed": "The resting bubble position and conversation field define the collision target.",
+    "source": "https://github.com/theswerd/imessage-ui/blob/1f132909792ff540501385f91d37ef20629c55b7/references/ios/motion/effects.md#slam-640-ms",
+    "rangeSeconds": [0, 0.64],
+    "gap": "Intermediate peak scale is clipped in the recording. The library has no verified full-screen crop and impact behavior for this effect."
+  },
+  {
+    "id": "native-invisible-ink",
+    "moves": "A concealment layer changes over a bubble without altering its geometry.",
+    "fixed": "The message's resting bubble silhouette stays in place.",
+    "source": "https://github.com/theswerd/imessage-ui/blob/1f132909792ff540501385f91d37ef20629c55b7/references/ios/motion/effects.md#invisible-ink-no-motion",
+    "rangeSeconds": null,
+    "gap": "The published reference does not include a timed interactive reveal. The media sharpen stroke is a different actor and reveal mechanic."
+  },
+  {
+    "id": "native-search-list-exchange",
+    "moves": "The message-list content exchanges with search results on opening and follows a different path on dismissal.",
+    "fixed": "The lower search field acts as the positional anchor.",
+    "source": "https://github.com/theswerd/imessage-ui/blob/1f132909792ff540501385f91d37ef20629c55b7/references/SPEC.md",
+    "rangeSeconds": { "open": [0, 0.267], "dismiss": [0, 0.292] },
+    "gap": "The team adapter has authored search states. This source window still needs a calibrated reusable opening and dismissal with the measured fixed-field ownership."
+  },
+  {
+    "id": "sheet-readiness-and-restore",
+    "moves": "The host reflows before the sheet finishes opening; spinner, blank and app content follow separate clocks. The composer restores after the compact transition.",
+    "fixed": "The parent conversation provides continuity while the panel changes from loading to ready.",
+    "source": "https://github.com/tecxbro/imessagedemo/blob/807e86e03e4a7e95ae6954b4a8c4dd5e031854bc/docs/imessage-sheet-apps.md",
+    "rangeSeconds": { "captureA": [0.666667, 1.366667], "captureB": [2.766667, 5.033333] },
+    "gap": "A translating sheet is available. The readiness and compact-restoration lifecycle still needs independently editable app content and exact host transitions."
+  },
+  {
+    "id": "payment-card-expansion",
+    "moves": "A bank card grows inside a settled payment sheet while an independently dimmed chat remains behind it.",
+    "fixed": "The underlying chat and eventually the sheet hold while the bank card grows.",
+    "source": "https://github.com/tecxbro/imessagedemo/blob/807e86e03e4a7e95ae6954b4a8c4dd5e031854bc/docs/apple-pay-presentation.md",
+    "rangeSeconds": [3.366667, 4.066667],
+    "gap": "The source supports presentation and cancellation. A useful native state recipe needs separate card, payment sheet and close behavior; authorization and success lack captured evidence."
+  },
+  {
+    "id": "ambient-night-to-morning",
+    "moves": "A phone sleeps while the room and exterior light advance from moonlight to sunrise, then the phone relights with an update.",
+    "fixed": "The bedroom composition and phone placement persist across the time jump.",
+    "source": "https://serenatan.org/launchvideo/#video-51",
+    "rangeFrames": [220, 284],
+    "gap": "A new editable example needs original room and changing illumination tracks. No third-party clip is included."
+  },
+  {
+    "id": "rich-card-detaches-into-world",
+    "moves": "Rich media leaves the phone's moving coordinate system and continues in world space while the camera and conversation diverge.",
+    "fixed": "The active item retains its visible identity during the parent-space change.",
+    "source": "projects/03-photon-mini-complete-v1/imessage-recreations/references/03-photon-mini/source.mp4",
+    "rangeSeconds": [24.333333, 26.666667],
+    "gap": "The library has a registered hard cut and a sheet reveal. The continuous transfer still needs measured parent-space alignment and an editable depth treatment."
+  }
+]

@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 72
+  },
+  "initialUI": null,
+  "events": [
+    {
+      "id": "motion.attachment-peek-release.peek-lift",
+      "kind": "long_press",
+      "target": "peek-attachment",
+      "frame": 17,
+      "layerIds": [
+        "peek-attachment"
+      ]
+    },
+    {
+      "id": "motion.attachment-peek-release.peek-release",
+      "kind": "gesture_end",
+      "target": "peek-attachment",
+      "frame": 47,
+      "layerIds": [
+        "peek-attachment"
+      ]
+    },
+    {
+      "id": "motion.attachment-peek-release.peek-return",
+      "kind": "layout_settle",
+      "target": "peek-attachment",
+      "frame": 61,
+      "layerIds": [
+        "peek-attachment"
+      ]
+    }
+  ],
+  "cues": []
+}

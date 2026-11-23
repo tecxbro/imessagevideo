@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 72
+  },
+  "initialUI": null,
+  "events": [
+    {
+      "id": "motion.exploded-layer-view.assembly-separates",
+      "kind": "assembly-separates",
+      "target": "layer-plane-2",
+      "frame": 13,
+      "layerIds": [
+        "layer-plane-2"
+      ]
+    },
+    {
+      "id": "motion.exploded-layer-view.layers-separated",
+      "kind": "layers-separated",
+      "target": "layer-plane-0",
+      "frame": 47,
+      "layerIds": [
+        "layer-plane-0"
+      ]
+    }
+  ],
+  "cues": []
+}

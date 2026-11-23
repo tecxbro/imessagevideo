@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 72
+  },
+  "initialUI": null,
+  "events": [
+    {
+      "id": "motion.photo-open-continuity.thumbnail-open",
+      "kind": "tap",
+      "target": "chosen-thumbnail",
+      "frame": 18,
+      "layerIds": [
+        "chosen-thumbnail"
+      ]
+    },
+    {
+      "id": "motion.photo-open-continuity.preview-settle",
+      "kind": "viewer_open",
+      "target": "chosen-thumbnail",
+      "frame": 47,
+      "layerIds": [
+        "chosen-thumbnail"
+      ]
+    }
+  ],
+  "cues": []
+}

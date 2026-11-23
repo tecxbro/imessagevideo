@@ -1,0 +1,22 @@
+$ ['/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/venv/bin/python', '/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/imessagevideo/skill/imessage-video/scripts/recipes.py', 'preview', 'text-scramble-resolve', '--out', '/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/catalog-with-deps/text-scramble-resolve/preview.mp4'] exit=0
+{
+  "id": "text-scramble-resolve",
+  "preview": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/catalog-with-deps/text-scramble-resolve/preview.mp4"
+}
+
+$ ['/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/venv/bin/python', '/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/imessagevideo/skill/imessage-video/scripts/recipes.py', 'export', 'text-scramble-resolve', '--out', '/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/catalog-with-deps/text-scramble-resolve/project'] exit=0
+{
+  "id": "text-scramble-resolve",
+  "scene": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/catalog-with-deps/text-scramble-resolve/project/scene.json",
+  "events": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/catalog-with-deps/text-scramble-resolve/project/scene.events.json",
+  "engine": "pillow",
+  "renderCommand": "python3 render_pillow.py --scene scene.json --out film.mp4"
+}
+
+$ ['/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/venv/bin/python', '/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/catalog-with-deps/text-scramble-resolve/project/render_pillow.py', '--scene', '/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/catalog-with-deps/text-scramble-resolve/project/scene.json', '--out', '/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/catalog-with-deps/text-scramble-resolve/project/replay.mp4'] exit=0
+{"method": "pillow", "frame": 0, "total": 72}
+{"captureHistory": [], "method": "pillow", "engineSha256": "046458f0f51b4a514594a4dc5b64eeb797a554e971453a4b630b107a83f57a64", "scene": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/catalog-with-deps/text-scramble-resolve/project/scene.json", "sceneSha256": "08a793a436a677bb351a12343fd9cd5a212ca7cad3a4240777c6f6b52a6d5ffd", "out": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/catalog-with-deps/text-scramble-resolve/project/replay.mp4", "width": 720, "height": 480, "fps": 30, "frames": 72, "duration": 2.4, "source": {"path": "skill/imessage-motion-recreation/motion/packs/attention.mjs", "sourceStart": 0, "sourceEnd": 2.4, "notes": "Authored from the editorial motion pack\u2019s deterministic glyph progression."}, "antialias": 1, "frameDirectory": null, "capturedFrameRanges": [[0, 71]], "uniqueFramesCaptured": 14}
+
+$ ['/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/venv/bin/python', '/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/imessagevideo/skill/imessage-video/scripts/frames.py', '/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/catalog-with-deps/text-scramble-resolve/preview.mp4', '/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/catalog-with-deps/text-scramble-resolve/project/replay.mp4', '--out', '/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/catalog-with-deps/text-scramble-resolve/compare', '--require-structure-match', '--max-pts-error-ms', '0', '--max-mae', '3'] exit=0
+{"report": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/catalog-with-deps/text-scramble-resolve/compare/report.json", "compared_frames": 72, "limits_passed": true, "failures": []}
+

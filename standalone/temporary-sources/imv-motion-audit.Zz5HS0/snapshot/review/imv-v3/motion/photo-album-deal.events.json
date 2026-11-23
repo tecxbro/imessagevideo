@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 72
+  },
+  "initialUI": null,
+  "events": [
+    {
+      "id": "motion.photo-album-deal.album-open",
+      "kind": "tap",
+      "target": "album-tile-0",
+      "frame": 17,
+      "layerIds": [
+        "album-tile-0"
+      ]
+    },
+    {
+      "id": "motion.photo-album-deal.album-dealt",
+      "kind": "layout_settle",
+      "target": "album-tile-2",
+      "frame": 47,
+      "layerIds": [
+        "album-tile-2"
+      ]
+    }
+  ],
+  "cues": []
+}

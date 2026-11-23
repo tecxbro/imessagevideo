@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 72
+  },
+  "initialUI": null,
+  "events": [
+    {
+      "id": "motion.tear-perforated-ticket.tear-start",
+      "kind": "ticket.tear",
+      "target": "perforation-0",
+      "frame": 18,
+      "layerIds": [
+        "perforation-0"
+      ]
+    },
+    {
+      "id": "motion.tear-perforated-ticket.stub-detaches",
+      "kind": "ticket.detach",
+      "target": "ticket-stub",
+      "frame": 44,
+      "layerIds": [
+        "ticket-stub"
+      ]
+    }
+  ],
+  "cues": []
+}

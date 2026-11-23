@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 72
+  },
+  "initialUI": null,
+  "events": [
+    {
+      "id": "motion.photo-grid-density.density-change",
+      "kind": "layout_change",
+      "target": "density-tile-0",
+      "frame": 17,
+      "layerIds": [
+        "density-tile-0"
+      ]
+    },
+    {
+      "id": "motion.photo-grid-density.density-settle",
+      "kind": "layout_settle",
+      "target": "density-tile-5",
+      "frame": 53,
+      "layerIds": [
+        "density-tile-5"
+      ]
+    }
+  ],
+  "cues": []
+}

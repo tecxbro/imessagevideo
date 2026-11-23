@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 72
+  },
+  "initialUI": null,
+  "events": [
+    {
+      "id": "motion.media-caption-disclosure.caption-toggle",
+      "kind": "tap",
+      "target": "caption-control",
+      "frame": 17,
+      "layerIds": [
+        "caption-control"
+      ]
+    },
+    {
+      "id": "motion.media-caption-disclosure.caption-settle",
+      "kind": "layout_settle",
+      "target": "caption-card",
+      "frame": 42,
+      "layerIds": [
+        "caption-card"
+      ]
+    }
+  ],
+  "cues": []
+}

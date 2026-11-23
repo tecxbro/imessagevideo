@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 72
+  },
+  "initialUI": null,
+  "events": [
+    {
+      "id": "motion.freeze-around-live-detail.surroundings-freeze",
+      "kind": "surroundings-freeze",
+      "target": "ambient-point-0",
+      "frame": 24,
+      "layerIds": [
+        "ambient-point-0"
+      ]
+    },
+    {
+      "id": "motion.freeze-around-live-detail.live-point-arrives",
+      "kind": "live-point-arrives",
+      "target": "live-point",
+      "frame": 53,
+      "layerIds": [
+        "live-point"
+      ]
+    }
+  ],
+  "cues": []
+}

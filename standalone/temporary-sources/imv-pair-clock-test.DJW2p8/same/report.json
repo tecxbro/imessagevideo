@@ -1,0 +1,107 @@
+{
+  "schema": 1,
+  "verdict": "PASS",
+  "failures": [],
+  "reference": {
+    "name": "source.mp4",
+    "sha256": "68260b63e874f32c4cbf8d9fddf266c5718efd28d3432bbeb7ff8e4ca6cfc42a",
+    "clock": {
+      "width": 96,
+      "height": 64,
+      "sample_aspect_ratio": "1",
+      "rotation_degrees": 0,
+      "display_matrix": [
+        65536,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        1073741824
+      ],
+      "container_crop_top_bottom_left_right": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "time_base": "1/12800",
+      "declared_rate": "25",
+      "declared_average_rate": "25/1",
+      "start_pts": 0,
+      "end_pts_exclusive": 1536,
+      "end_basis": "last decoded frame duration",
+      "end_seconds": 0.12,
+      "frames": 3,
+      "cadence": "constant",
+      "pixel_format": "yuv420p",
+      "alpha_present": false,
+      "color_range": null,
+      "color_space": null,
+      "color_primaries": null,
+      "color_transfer": null
+    },
+    "audio": []
+  },
+  "candidate": {
+    "name": "source.mp4",
+    "sha256": "68260b63e874f32c4cbf8d9fddf266c5718efd28d3432bbeb7ff8e4ca6cfc42a",
+    "clock": {
+      "width": 96,
+      "height": 64,
+      "sample_aspect_ratio": "1",
+      "rotation_degrees": 0,
+      "display_matrix": [
+        65536,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        1073741824
+      ],
+      "container_crop_top_bottom_left_right": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "time_base": "1/12800",
+      "declared_rate": "25",
+      "declared_average_rate": "25/1",
+      "start_pts": 0,
+      "end_pts_exclusive": 1536,
+      "end_basis": "last decoded frame duration",
+      "end_seconds": 0.12,
+      "frames": 3,
+      "cadence": "constant",
+      "pixel_format": "yuv420p",
+      "alpha_present": false,
+      "color_range": null,
+      "color_space": null,
+      "color_primaries": null,
+      "color_transfer": null
+    },
+    "audio": []
+  },
+  "compared_frames": 3,
+  "mean_abs_rgb": 0.0,
+  "worst_frame": {
+    "frame": 0,
+    "mean_abs_rgb": 0.0
+  },
+  "whole_frame_mae_limit": 2,
+  "pixel_floor": 20,
+  "clock_tolerance_seconds": "0",
+  "alignment": "display-order index with independent exact PTS gate",
+  "audio_rule": "observe",
+  "audio_checks": null,
+  "regions": {},
+  "tile": null,
+  "regional_coverage": "picture-level checks only; no interaction windows supplied",
+  "decode_completed": true
+}

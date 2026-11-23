@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "inputs": {
+    "source": {
+      "path": "/Users/darshan/Documents/video-analysis/iv-test/jobs/t1/reference.nut",
+      "sha256": "ebbc0f0861b5f8e78dccb5f3a3346c2ca86aa905bc71cd7fa84a5be37373b8c4",
+      "width": 960,
+      "height": 720,
+      "sample_aspect_ratio": null,
+      "display_aspect_ratio": null,
+      "effective_sample_aspect_ratio": "1:1",
+      "sample_aspect_basis": "implicit square pixels",
+      "rotation": 0,
+      "average_frame_rate": "30/1",
+      "time_base": "1/61440",
+      "frame_count": 135,
+      "missing_pts": 0,
+      "strictly_increasing_pts": true,
+      "first_pts_seconds": 0.0,
+      "last_pts_seconds": 4.466666666666667,
+      "end_seconds_exclusive": 4.5
+    },
+    "output": {
+      "path": "/Users/darshan/Documents/video-analysis/iv-test/jobs/t1/learn_preview.mp4",
+      "sha256": "dcbea1044cbbe3aa4013e49a86b0da013086f729ed777c776c4baf7e7c4f1229",
+      "width": 960,
+      "height": 720,
+      "sample_aspect_ratio": null,
+      "display_aspect_ratio": null,
+      "effective_sample_aspect_ratio": "1:1",
+      "sample_aspect_basis": "implicit square pixels",
+      "rotation": 0,
+      "average_frame_rate": "30/1",
+      "time_base": "1/15360",
+      "frame_count": 135,
+      "missing_pts": 0,
+      "strictly_increasing_pts": true,
+      "first_pts_seconds": 0.0,
+      "last_pts_seconds": 4.466666666666667,
+      "end_seconds_exclusive": 4.5
+    }
+  },
+  "compared_frames": 135,
+  "paired_indices": 135,
+  "source_only_tail_frames": 0,
+  "output_only_tail_frames": 0,
+  "alignment": "native presentation order, paired by zero-based index, without resampling",
+  "max_paired_pts_error_ms": 0.0,
+  "exclusive_end_error_ms": 0.0,
+  "structure_match": true,
+  "structure_issues": [],
+  "structure_within_tolerance": true,
+  "structure_tolerance_issues": [],
+  "roi_xyxy": {
+    "doors": [
+      40,
+      340,
+      370,
+      510
+    ],
+    "chrome": [
+      0,
+      0,
+      960,
+      130
+    ],
+    "anchor-bubble": [
+      50,
+      265,
+      380,
+      340
+    ]
+  },
+  "metrics": {
+    "full": {
+      "mean_frame_mae": 2.4482211076817557,
+      "max_frame_mae": 2.526106770833333,
+      "worst_frame": 0
+    },
+    "doors": {
+      "mean_frame_mae": 2.327328579916815,
+      "max_frame_mae": 3.2836125965537732,
+      "worst_frame": 0
+    },
+    "chrome": {
+      "mean_frame_mae": 2.0350498377651154,
+      "max_frame_mae": 2.035763888888889,
+      "worst_frame": 0
+    },
+    "anchor-bubble": {
+      "mean_frame_mae": 2.9170199775533106,
+      "max_frame_mae": 2.9195690235690233,
+      "worst_frame": 1
+    }
+  },
+  "possible_frame_shift": {
+    "best_output_minus_source_frames": 0,
+    "compared_source_frames": 125,
+    "search_radius": 5,
+    "unaligned_mean_error": 2.0957777777777777,
+    "best_mean_error": 2.0957777777777777,
+    "possible_constant_offset": false
+  },
+  "thresholds": {
+    "max_mae": 6.0,
+    "max_pts_error_ms": 0.0,
+    "require_structure_match": true,
+    "reject_detected_shift": false
+  },
+  "limits_passed": true,
+  "failures": [],
+  "worst_pair_index": 0,
+  "artifacts": {
+    "all_frame_measurements": "frames.csv",
+    "comparison_image": "worst.png"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 72
+  },
+  "initialUI": null,
+  "events": [
+    {
+      "id": "motion.media-progressive-sharpen.first-region-resolves",
+      "kind": "load_visible",
+      "target": "decode-band-0",
+      "frame": 18,
+      "layerIds": [
+        "decode-band-0"
+      ]
+    },
+    {
+      "id": "motion.media-progressive-sharpen.full-resolution",
+      "kind": "load_complete",
+      "target": "decode-photo",
+      "frame": 54,
+      "layerIds": [
+        "decode-photo"
+      ]
+    }
+  ],
+  "cues": []
+}

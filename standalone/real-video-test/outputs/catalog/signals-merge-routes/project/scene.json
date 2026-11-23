@@ -1,0 +1,347 @@
+{
+  "width": 720,
+  "height": 480,
+  "fps": 30,
+  "duration": 2.4,
+  "background": "#dce7f1",
+  "title": "Merge two incoming routes into one outgoing result",
+  "source": {
+    "path": "packs/editorial.mjs#signals-merge-routes",
+    "sourceStart": 0,
+    "sourceEnd": 2.4,
+    "notes": "Original editable Motion demonstration."
+  },
+  "layers": [
+    {
+      "id": "surface",
+      "type": "rect",
+      "x": 110,
+      "y": 44,
+      "width": 500,
+      "height": 392,
+      "fill": "#ffffff",
+      "radius": 18
+    },
+    {
+      "id": "stage",
+      "type": "group",
+      "x": 110,
+      "y": 98,
+      "children": [
+        {
+          "id": "branch-0",
+          "type": "rect",
+          "x": 77,
+          "y": 78,
+          "width": 191.63767896736798,
+          "height": 2,
+          "fill": "#516277",
+          "radius": 1,
+          "originY": 1,
+          "rotation": 21.745890337533453
+        },
+        {
+          "id": "branch-1",
+          "type": "rect",
+          "x": 77,
+          "y": 219,
+          "width": 191.2694434560837,
+          "height": 2,
+          "fill": "#516277",
+          "radius": 1,
+          "originY": 1,
+          "rotation": -21.467651439098987
+        },
+        {
+          "id": "shared-route",
+          "type": "rect",
+          "x": 255,
+          "y": 149,
+          "width": 166,
+          "height": 2,
+          "fill": "#516277",
+          "radius": 1,
+          "originY": 1,
+          "rotation": 0
+        },
+        {
+          "id": "input-0",
+          "type": "circle",
+          "x": 67.5,
+          "y": 69.5,
+          "width": 19,
+          "height": 19,
+          "fill": "#1478e9",
+          "keyframes": {
+            "x": [
+              {
+                "t": 0,
+                "value": 67.5,
+                "ease": "linear"
+              },
+              {
+                "t": 0.36,
+                "value": 67.5,
+                "ease": "linear"
+              },
+              {
+                "t": 1.248,
+                "value": 245.5,
+                "ease": "easeInOut"
+              }
+            ],
+            "y": [
+              {
+                "t": 0,
+                "value": 69.5,
+                "ease": "linear"
+              },
+              {
+                "t": 0.36,
+                "value": 69.5,
+                "ease": "linear"
+              },
+              {
+                "t": 1.248,
+                "value": 140.5,
+                "ease": "easeInOut"
+              }
+            ],
+            "opacity": [
+              {
+                "t": 0,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 1.248,
+                "value": 0,
+                "ease": "hold"
+              }
+            ]
+          }
+        },
+        {
+          "id": "input-1",
+          "type": "circle",
+          "x": 67.5,
+          "y": 210.5,
+          "width": 19,
+          "height": 19,
+          "fill": "#16815f",
+          "keyframes": {
+            "x": [
+              {
+                "t": 0,
+                "value": 67.5,
+                "ease": "linear"
+              },
+              {
+                "t": 0.5519999999999999,
+                "value": 67.5,
+                "ease": "linear"
+              },
+              {
+                "t": 1.248,
+                "value": 245.5,
+                "ease": "easeInOut"
+              }
+            ],
+            "y": [
+              {
+                "t": 0,
+                "value": 210.5,
+                "ease": "linear"
+              },
+              {
+                "t": 0.5519999999999999,
+                "value": 210.5,
+                "ease": "linear"
+              },
+              {
+                "t": 1.248,
+                "value": 140.5,
+                "ease": "easeInOut"
+              }
+            ],
+            "opacity": [
+              {
+                "t": 0,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 1.248,
+                "value": 0,
+                "ease": "hold"
+              }
+            ]
+          }
+        },
+        {
+          "id": "joined-pulse",
+          "type": "circle",
+          "x": 244.5,
+          "y": 139.5,
+          "width": 21,
+          "height": 21,
+          "fill": "#1478e9",
+          "keyframes": {
+            "opacity": [
+              {
+                "t": 0,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 1.248,
+                "value": 1,
+                "ease": "hold"
+              }
+            ],
+            "x": [
+              {
+                "t": 1.248,
+                "value": 244.5,
+                "ease": "linear"
+              },
+              {
+                "t": 1.896,
+                "value": 410.5,
+                "ease": "easeInOut"
+              }
+            ]
+          }
+        },
+        {
+          "id": "input-upper",
+          "type": "text",
+          "text": "Availability",
+          "x": 33,
+          "y": 37,
+          "fontSize": 17,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#182737",
+          "fontWeight": 600
+        },
+        {
+          "id": "input-lower",
+          "type": "text",
+          "text": "Preferences",
+          "x": 33,
+          "y": 245,
+          "fontSize": 17,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#182737",
+          "fontWeight": 600
+        },
+        {
+          "id": "output",
+          "type": "text",
+          "text": "Reservation",
+          "x": 418,
+          "y": 103,
+          "fontSize": 18,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#182737",
+          "fontWeight": 600,
+          "textAnchor": "middle"
+        }
+      ],
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 500,
+        "height": 298
+      }
+    },
+    {
+      "id": "footer",
+      "type": "group",
+      "x": 110,
+      "y": 396,
+      "children": [
+        {
+          "id": "footer-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 40,
+          "fill": "#f2f6fb",
+          "radius": 12
+        },
+        {
+          "id": "editorial-caption",
+          "type": "text",
+          "text": "The inputs meet before the result moves on.",
+          "x": 22,
+          "y": 9,
+          "fontSize": 15,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#516277",
+          "fontWeight": 600
+        }
+      ]
+    },
+    {
+      "id": "heading",
+      "type": "group",
+      "x": 110,
+      "y": 44,
+      "children": [
+        {
+          "id": "heading-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 54,
+          "fill": "#f2f6fb",
+          "radius": 13
+        },
+        {
+          "id": "heading-copy",
+          "type": "text",
+          "text": "Booking workflow",
+          "x": 26,
+          "y": 13,
+          "fontSize": 23,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#182737",
+          "fontWeight": 700
+        }
+      ]
+    }
+  ],
+  "timeline": {
+    "version": 1,
+    "picture": {
+      "fpsNum": 30,
+      "fpsDen": 1,
+      "frameCount": 72
+    },
+    "initialUI": null,
+    "events": [
+      {
+        "id": "motion.signals-merge-routes.inputs-merge",
+        "kind": "inputs-merge",
+        "target": "joined-pulse",
+        "frame": 38,
+        "layerIds": [
+          "joined-pulse"
+        ]
+      },
+      {
+        "id": "motion.signals-merge-routes.result-arrives",
+        "kind": "result-arrives",
+        "target": "joined-pulse",
+        "frame": 57,
+        "layerIds": [
+          "joined-pulse"
+        ]
+      }
+    ],
+    "cues": []
+  }
+}

@@ -1,0 +1,405 @@
+{
+  "width": 720,
+  "height": 480,
+  "fps": 30,
+  "duration": 2.4,
+  "background": "#dce7f1",
+  "title": "Edit a message at its existing position",
+  "source": {
+    "path": "packs/conversation.mjs#edit-message-reflow",
+    "sourceStart": 0,
+    "sourceEnd": 2.4,
+    "notes": "Original editable Motion demonstration."
+  },
+  "layers": [
+    {
+      "id": "surface",
+      "type": "rect",
+      "x": 110,
+      "y": 44,
+      "width": 500,
+      "height": 392,
+      "fill": "#ffffff",
+      "radius": 18
+    },
+    {
+      "id": "stage",
+      "type": "group",
+      "x": 110,
+      "y": 98,
+      "children": [
+        {
+          "id": "edit-original",
+          "type": "group",
+          "x": 221,
+          "y": 64,
+          "children": [
+            {
+              "id": "edit-original-body",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 240,
+              "height": 51,
+              "fill": "#1688fa",
+              "radius": 20,
+              "keyframes": {
+                "height": [
+                  {
+                    "t": 0,
+                    "value": 51,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 0.648,
+                    "value": 51,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 1.176,
+                    "value": 78,
+                    "ease": "easeOut"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "edit-original-tail",
+              "type": "path",
+              "d": "M 224 33 Q 237 52 247 49 Q 237 45 238 31 Z",
+              "fill": "#1688fa",
+              "keyframes": {
+                "y": [
+                  {
+                    "t": 0,
+                    "value": 0,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 0.648,
+                    "value": 0,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 1.176,
+                    "value": 27,
+                    "ease": "easeOut"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "edit-original-copy",
+              "type": "text",
+              "text": "Meet at the station.",
+              "x": 17,
+              "y": 14,
+              "fontSize": 16,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#ffffff",
+              "lineHeight": 18,
+              "keyframes": {
+                "opacity": [
+                  {
+                    "t": 0,
+                    "value": 1,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 0.648,
+                    "value": 1,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 1.008,
+                    "value": 0.71,
+                    "ease": "easeOut"
+                  },
+                  {
+                    "t": 1.464,
+                    "value": 1,
+                    "ease": "easeOut"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "edit-line-insert",
+              "type": "group",
+              "x": 17,
+              "y": 36,
+              "children": [
+                {
+                  "id": "edit-line-insert-copy",
+                  "type": "text",
+                  "text": "By the north entrance.",
+                  "x": 0,
+                  "y": 0,
+                  "fontSize": 16,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#ffffff"
+                }
+              ],
+              "clip": {
+                "x": 0,
+                "y": 0,
+                "width": 202,
+                "height": 25.6
+              },
+              "keyframes": {
+                "opacity": [
+                  {
+                    "t": 0,
+                    "value": 0,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 0.8160000000000001,
+                    "value": 0,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 1.128,
+                    "value": 1,
+                    "ease": "easeOut"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "edit-status",
+          "type": "text",
+          "text": "Edited",
+          "x": 461,
+          "y": 122,
+          "fontSize": 12,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#516277",
+          "textAnchor": "end",
+          "keyframes": {
+            "y": [
+              {
+                "t": 0,
+                "value": 122,
+                "ease": "linear"
+              },
+              {
+                "t": 0.648,
+                "value": 122,
+                "ease": "linear"
+              },
+              {
+                "t": 1.176,
+                "value": 145,
+                "ease": "easeOut"
+              }
+            ],
+            "opacity": [
+              {
+                "t": 0,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 1.536,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 1.7999999999999998,
+                "value": 1,
+                "ease": "easeOut"
+              }
+            ]
+          }
+        },
+        {
+          "id": "edit-later-message",
+          "type": "group",
+          "x": 29,
+          "y": 142,
+          "children": [
+            {
+              "id": "edit-later-message-body",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 262,
+              "height": 54,
+              "fill": "#e9e9ed",
+              "radius": 20
+            },
+            {
+              "id": "edit-later-message-tail",
+              "type": "path",
+              "d": "M 16 36 Q 3 55 -7 52 Q 3 48 2 34 Z",
+              "fill": "#e9e9ed"
+            },
+            {
+              "id": "edit-later-message-copy",
+              "type": "text",
+              "text": "Here it is. Meet at the north\ngate.",
+              "x": 17,
+              "y": 7.5,
+              "fontSize": 16,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#17191d",
+              "lineHeight": 18
+            }
+          ],
+          "keyframes": {
+            "y": [
+              {
+                "t": 0,
+                "value": 142,
+                "ease": "linear"
+              },
+              {
+                "t": 0.648,
+                "value": 142,
+                "ease": "linear"
+              },
+              {
+                "t": 1.176,
+                "value": 169,
+                "ease": "easeOut"
+              }
+            ]
+          }
+        }
+      ],
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 500,
+        "height": 298
+      }
+    },
+    {
+      "id": "footer",
+      "type": "group",
+      "x": 110,
+      "y": 396,
+      "children": [
+        {
+          "id": "footer-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 40,
+          "fill": "#f2f6fb",
+          "radius": 12
+        },
+        {
+          "id": "edit-composer",
+          "type": "group",
+          "x": 23,
+          "y": 0,
+          "children": [
+            {
+              "id": "edit-composer-field",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 454,
+              "height": 48,
+              "fill": "#ffffff",
+              "radius": 24,
+              "stroke": "#d8dbe0",
+              "strokeWidth": 1
+            },
+            {
+              "id": "edit-composer-input",
+              "type": "text",
+              "text": "Message",
+              "x": 18,
+              "y": 14,
+              "fontSize": 17,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#777b84"
+            },
+            {
+              "id": "edit-composer-send",
+              "type": "circle",
+              "x": 414,
+              "y": 8,
+              "width": 32,
+              "height": 32,
+              "fill": "#d8dbe0"
+            },
+            {
+              "id": "edit-composer-arrow",
+              "type": "path",
+              "d": "M 430 33 L 430 16 M 423 23 L 430 16 L 437 23",
+              "fill": "none",
+              "stroke": "#ffffff",
+              "strokeWidth": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "heading",
+      "type": "group",
+      "x": 110,
+      "y": 44,
+      "children": [
+        {
+          "id": "heading-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 54,
+          "fill": "#f2f6fb",
+          "radius": 13
+        },
+        {
+          "id": "heading-copy",
+          "type": "text",
+          "text": "Alpine field notes",
+          "x": 26,
+          "y": 13,
+          "fontSize": 23,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#182737",
+          "fontWeight": 700
+        }
+      ]
+    }
+  ],
+  "timeline": {
+    "version": 1,
+    "picture": {
+      "fpsNum": 30,
+      "fpsDen": 1,
+      "frameCount": 72
+    },
+    "initialUI": null,
+    "events": [
+      {
+        "id": "motion.edit-message-reflow.edit-begin",
+        "kind": "edit_open",
+        "target": "edit-original",
+        "frame": 20,
+        "layerIds": [
+          "edit-original"
+        ]
+      },
+      {
+        "id": "motion.edit-message-reflow.edit-commit",
+        "kind": "edit_commit",
+        "target": "edit-original",
+        "frame": 47,
+        "layerIds": [
+          "edit-original"
+        ]
+      }
+    ],
+    "cues": []
+  }
+}

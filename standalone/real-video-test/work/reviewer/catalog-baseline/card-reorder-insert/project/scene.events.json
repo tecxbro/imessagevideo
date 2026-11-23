@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 72
+  },
+  "initialUI": null,
+  "events": [
+    {
+      "id": "motion.card-reorder-insert.reorder-pickup",
+      "kind": "drag",
+      "target": "reorder-first",
+      "frame": 17,
+      "layerIds": [
+        "reorder-first"
+      ]
+    },
+    {
+      "id": "motion.card-reorder-insert.reorder-drop",
+      "kind": "drop",
+      "target": "reorder-first",
+      "frame": 58,
+      "layerIds": [
+        "reorder-first"
+      ]
+    }
+  ],
+  "cues": []
+}

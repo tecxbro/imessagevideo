@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 72
+  },
+  "initialUI": null,
+  "events": [
+    {
+      "id": "motion.registered-shape-cut.registered-cut",
+      "kind": "registered-cut",
+      "target": "matched-feature-button",
+      "frame": 36,
+      "layerIds": [
+        "matched-feature-button"
+      ]
+    },
+    {
+      "id": "motion.registered-shape-cut.new-context-readable",
+      "kind": "new-context-readable",
+      "target": "new-context-description",
+      "frame": 52,
+      "layerIds": [
+        "new-context-description"
+      ]
+    }
+  ],
+  "cues": []
+}

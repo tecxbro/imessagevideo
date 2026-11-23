@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 72
+  },
+  "initialUI": null,
+  "events": [
+    {
+      "id": "motion.photo-pinch-detail.pinch-start",
+      "kind": "pinch",
+      "target": "pinch-frame",
+      "frame": 19,
+      "layerIds": [
+        "pinch-frame"
+      ]
+    },
+    {
+      "id": "motion.photo-pinch-detail.pinch-end",
+      "kind": "gesture_end",
+      "target": "pinch-frame",
+      "frame": 48,
+      "layerIds": [
+        "pinch-frame"
+      ]
+    }
+  ],
+  "cues": []
+}

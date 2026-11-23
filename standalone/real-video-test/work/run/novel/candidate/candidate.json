@@ -1,0 +1,82 @@
+{
+  "id": "tether-extend-then-pivot-dock",
+  "title": "Extend a tether, then pivot it into a fixed dock",
+  "description": "A horizontal shuttle pulls out a tether, pauses at full reach, then turns upward on the same tether into a fixed dock.",
+  "scene": "scene.json",
+  "assets": {},
+  "renderer": "pillow",
+  "antialias": 3,
+  "fits": [
+    "A latched endpoint moves horizontally, holds, then pivots an attached tether into a fixed dock"
+  ],
+  "avoid": [
+    "A free particle without a fixed pivot or a static traced route"
+  ],
+  "moving": [
+    "elastic-tether",
+    "shuttle"
+  ],
+  "fixed": [
+    "board",
+    "heading-mark",
+    "heading-dash",
+    "baseline",
+    "dock",
+    "dock-center",
+    "pivot-ring",
+    "pivot-center"
+  ],
+  "tags": [
+    "tether",
+    "pivot",
+    "right-angle path",
+    "docking"
+  ],
+  "parameters": {
+    "shuttle-color": "/layers/9/fill",
+    "tether-color": "/layers/6/fill",
+    "shuttle-x-frame-24": "/layers/9/keyframes/x/24/value"
+  },
+  "source": {
+    "label": "Independently authored unseen test original",
+    "start_frame": 0,
+    "observation": "Shuttle starts near (173,176), holds near (369,176), rises with the tether and lands near (369,88), then holds through frame 89."
+  },
+  "checks": {
+    "rois": {
+      "shuttle-and-tether": [
+        92,
+        69,
+        302,
+        123
+      ],
+      "swipe-midpoint": [
+        219,
+        161,
+        75,
+        31
+      ],
+      "fixed-heading": [
+        47,
+        50,
+        92,
+        20
+      ],
+      "fixed-baseline": [
+        48,
+        202,
+        383,
+        19
+      ]
+    },
+    "max_mae": 6,
+    "max_pts_error_ms": 0,
+    "reason": "Allows renderer anti-alias and MP4 color conversion error. ROIs include both shuttle phases and the fixed marks.",
+    "negative_control": {
+      "set": {
+        "shuttle-x-frame-24": 155.5
+      },
+      "reason": "A one-frame shuttle snap breaks the moving ROI."
+    }
+  }
+}

@@ -1,0 +1,600 @@
+{
+  "width": 720,
+  "height": 480,
+  "fps": 30,
+  "duration": 2.4,
+  "background": "#dce7f1",
+  "title": "Convert individual items into a tally",
+  "source": {
+    "path": "packs/editorial.mjs#items-collapse-into-count",
+    "sourceStart": 0,
+    "sourceEnd": 2.4,
+    "notes": "Original editable Motion demonstration."
+  },
+  "layers": [
+    {
+      "id": "surface",
+      "type": "rect",
+      "x": 110,
+      "y": 44,
+      "width": 500,
+      "height": 392,
+      "fill": "#ffffff",
+      "radius": 18
+    },
+    {
+      "id": "stage",
+      "type": "group",
+      "x": 110,
+      "y": 98,
+      "children": [
+        {
+          "id": "tally-surface",
+          "type": "rect",
+          "x": 339,
+          "y": 82,
+          "width": 112,
+          "height": 142,
+          "fill": "#e8eef5",
+          "radius": 22
+        },
+        {
+          "id": "total-value",
+          "type": "text",
+          "text": "0",
+          "x": 395,
+          "y": 108,
+          "fontSize": 48,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#1478e9",
+          "fontWeight": 600,
+          "textAnchor": "middle",
+          "keyframes": {
+            "text": [
+              {
+                "t": 0,
+                "value": "0",
+                "ease": "linear"
+              },
+              {
+                "t": 1.032,
+                "value": "1",
+                "ease": "hold"
+              },
+              {
+                "t": 1.344,
+                "value": "2",
+                "ease": "hold"
+              },
+              {
+                "t": 1.656,
+                "value": "3",
+                "ease": "hold"
+              }
+            ]
+          }
+        },
+        {
+          "id": "tally-label",
+          "type": "text",
+          "text": "Completed",
+          "x": 395,
+          "y": 177,
+          "fontSize": 15,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#182737",
+          "fontWeight": 600,
+          "textAnchor": "middle"
+        },
+        {
+          "id": "counted-item-0",
+          "type": "group",
+          "x": 42,
+          "y": 145,
+          "children": [
+            {
+              "id": "counted-item-0-surface",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 115,
+              "height": 72,
+              "fill": "#ffffff",
+              "radius": 16,
+              "stroke": "#e8eef5",
+              "strokeWidth": 1
+            },
+            {
+              "id": "counted-item-0-label",
+              "type": "text",
+              "text": "Verify",
+              "x": 16,
+              "y": 14,
+              "fontSize": 18,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#182737",
+              "fontWeight": 600
+            },
+            {
+              "id": "counted-item-0-detail",
+              "type": "rect",
+              "x": 16,
+              "y": 45,
+              "width": 71,
+              "height": 5,
+              "fill": "#e8eef5",
+              "radius": 2
+            }
+          ],
+          "originX": 57.5,
+          "originY": 36,
+          "keyframes": {
+            "x": [
+              {
+                "t": 0,
+                "value": 42,
+                "ease": "linear"
+              },
+              {
+                "t": 0.36,
+                "value": 42,
+                "ease": "linear"
+              },
+              {
+                "t": 1.032,
+                "value": 337.5,
+                "ease": "easeInOut"
+              }
+            ],
+            "y": [
+              {
+                "t": 0,
+                "value": 145,
+                "ease": "linear"
+              },
+              {
+                "t": 0.36,
+                "value": 145,
+                "ease": "linear"
+              },
+              {
+                "t": 0.696,
+                "value": 75,
+                "ease": "easeOut"
+              },
+              {
+                "t": 1.032,
+                "value": 112,
+                "ease": "easeIn"
+              }
+            ],
+            "scaleX": [
+              {
+                "t": 0,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 0.36,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 1.032,
+                "value": 0.12,
+                "ease": "easeIn"
+              }
+            ],
+            "scaleY": [
+              {
+                "t": 0,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 0.36,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 1.032,
+                "value": 0.12,
+                "ease": "easeIn"
+              }
+            ],
+            "opacity": [
+              {
+                "t": 0,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 0.9359999999999999,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 1.032,
+                "value": 0,
+                "ease": "easeIn"
+              }
+            ]
+          }
+        },
+        {
+          "id": "counted-item-1",
+          "type": "group",
+          "x": 116,
+          "y": 145,
+          "children": [
+            {
+              "id": "counted-item-1-surface",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 115,
+              "height": 72,
+              "fill": "#ffffff",
+              "radius": 16,
+              "stroke": "#e8eef5",
+              "strokeWidth": 1
+            },
+            {
+              "id": "counted-item-1-label",
+              "type": "text",
+              "text": "Route",
+              "x": 16,
+              "y": 14,
+              "fontSize": 18,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#182737",
+              "fontWeight": 600
+            },
+            {
+              "id": "counted-item-1-detail",
+              "type": "rect",
+              "x": 16,
+              "y": 45,
+              "width": 71,
+              "height": 5,
+              "fill": "#e8eef5",
+              "radius": 2
+            }
+          ],
+          "originX": 57.5,
+          "originY": 36,
+          "keyframes": {
+            "x": [
+              {
+                "t": 0,
+                "value": 116,
+                "ease": "linear"
+              },
+              {
+                "t": 0.576,
+                "value": 116,
+                "ease": "linear"
+              },
+              {
+                "t": 1.344,
+                "value": 337.5,
+                "ease": "easeInOut"
+              }
+            ],
+            "y": [
+              {
+                "t": 0,
+                "value": 145,
+                "ease": "linear"
+              },
+              {
+                "t": 0.576,
+                "value": 145,
+                "ease": "linear"
+              },
+              {
+                "t": 0.96,
+                "value": 75,
+                "ease": "easeOut"
+              },
+              {
+                "t": 1.344,
+                "value": 112,
+                "ease": "easeIn"
+              }
+            ],
+            "scaleX": [
+              {
+                "t": 0,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 0.576,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 1.344,
+                "value": 0.12,
+                "ease": "easeIn"
+              }
+            ],
+            "scaleY": [
+              {
+                "t": 0,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 0.576,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 1.344,
+                "value": 0.12,
+                "ease": "easeIn"
+              }
+            ],
+            "opacity": [
+              {
+                "t": 0,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 1.248,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 1.344,
+                "value": 0,
+                "ease": "easeIn"
+              }
+            ]
+          }
+        },
+        {
+          "id": "counted-item-2",
+          "type": "group",
+          "x": 190,
+          "y": 145,
+          "children": [
+            {
+              "id": "counted-item-2-surface",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 115,
+              "height": 72,
+              "fill": "#ffffff",
+              "radius": 16,
+              "stroke": "#e8eef5",
+              "strokeWidth": 1
+            },
+            {
+              "id": "counted-item-2-label",
+              "type": "text",
+              "text": "Send",
+              "x": 16,
+              "y": 14,
+              "fontSize": 18,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#182737",
+              "fontWeight": 600
+            },
+            {
+              "id": "counted-item-2-detail",
+              "type": "rect",
+              "x": 16,
+              "y": 45,
+              "width": 71,
+              "height": 5,
+              "fill": "#e8eef5",
+              "radius": 2
+            }
+          ],
+          "originX": 57.5,
+          "originY": 36,
+          "keyframes": {
+            "x": [
+              {
+                "t": 0,
+                "value": 190,
+                "ease": "linear"
+              },
+              {
+                "t": 0.7919999999999999,
+                "value": 190,
+                "ease": "linear"
+              },
+              {
+                "t": 1.656,
+                "value": 337.5,
+                "ease": "easeInOut"
+              }
+            ],
+            "y": [
+              {
+                "t": 0,
+                "value": 145,
+                "ease": "linear"
+              },
+              {
+                "t": 0.7919999999999999,
+                "value": 145,
+                "ease": "linear"
+              },
+              {
+                "t": 1.224,
+                "value": 75,
+                "ease": "easeOut"
+              },
+              {
+                "t": 1.656,
+                "value": 112,
+                "ease": "easeIn"
+              }
+            ],
+            "scaleX": [
+              {
+                "t": 0,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 0.7919999999999999,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 1.656,
+                "value": 0.12,
+                "ease": "easeIn"
+              }
+            ],
+            "scaleY": [
+              {
+                "t": 0,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 0.7919999999999999,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 1.656,
+                "value": 0.12,
+                "ease": "easeIn"
+              }
+            ],
+            "opacity": [
+              {
+                "t": 0,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 1.5599999999999998,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 1.656,
+                "value": 0,
+                "ease": "easeIn"
+              }
+            ]
+          }
+        }
+      ],
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 500,
+        "height": 298
+      }
+    },
+    {
+      "id": "footer",
+      "type": "group",
+      "x": 110,
+      "y": 396,
+      "children": [
+        {
+          "id": "footer-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 40,
+          "fill": "#f2f6fb",
+          "radius": 12
+        },
+        {
+          "id": "editorial-caption",
+          "type": "text",
+          "text": "One arrival produces one count increase.",
+          "x": 22,
+          "y": 9,
+          "fontSize": 15,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#516277",
+          "fontWeight": 600
+        }
+      ]
+    },
+    {
+      "id": "heading",
+      "type": "group",
+      "x": 110,
+      "y": 44,
+      "children": [
+        {
+          "id": "heading-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 54,
+          "fill": "#f2f6fb",
+          "radius": 13
+        },
+        {
+          "id": "heading-copy",
+          "type": "text",
+          "text": "Processed tasks",
+          "x": 26,
+          "y": 13,
+          "fontSize": 23,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#182737",
+          "fontWeight": 700
+        }
+      ]
+    }
+  ],
+  "timeline": {
+    "version": 1,
+    "picture": {
+      "fpsNum": 30,
+      "fpsDen": 1,
+      "frameCount": 72
+    },
+    "initialUI": null,
+    "events": [
+      {
+        "id": "motion.items-collapse-into-count.item-1-counted",
+        "kind": "item-1-counted",
+        "target": "total-value",
+        "frame": 31,
+        "layerIds": [
+          "total-value"
+        ]
+      },
+      {
+        "id": "motion.items-collapse-into-count.item-2-counted",
+        "kind": "item-2-counted",
+        "target": "total-value",
+        "frame": 41,
+        "layerIds": [
+          "total-value"
+        ]
+      },
+      {
+        "id": "motion.items-collapse-into-count.item-3-counted",
+        "kind": "item-3-counted",
+        "target": "total-value",
+        "frame": 50,
+        "layerIds": [
+          "total-value"
+        ]
+      }
+    ],
+    "cues": []
+  }
+}

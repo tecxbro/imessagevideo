@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 72
+  },
+  "initialUI": null,
+  "events": [
+    {
+      "id": "motion.photo-iris-reveal.iris-opens",
+      "kind": "reveal_start",
+      "target": "iris-mask",
+      "frame": 17,
+      "layerIds": [
+        "iris-mask"
+      ]
+    },
+    {
+      "id": "motion.photo-iris-reveal.iris-clears-frame",
+      "kind": "reveal_complete",
+      "target": "iris-viewport",
+      "frame": 50,
+      "layerIds": [
+        "iris-viewport"
+      ]
+    }
+  ],
+  "cues": []
+}

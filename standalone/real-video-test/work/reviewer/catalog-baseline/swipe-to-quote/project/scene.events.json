@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 72
+  },
+  "initialUI": null,
+  "events": [
+    {
+      "id": "motion.swipe-to-quote.reply-gesture-commit",
+      "kind": "swipe_commit",
+      "target": "quote-message",
+      "frame": 35,
+      "layerIds": [
+        "quote-message"
+      ]
+    },
+    {
+      "id": "motion.swipe-to-quote.reply-draft-open",
+      "kind": "reply_compose_open",
+      "target": "quote-draft-preview",
+      "frame": 47,
+      "layerIds": [
+        "quote-draft-preview"
+      ]
+    }
+  ],
+  "cues": []
+}

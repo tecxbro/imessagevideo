@@ -1,0 +1,279 @@
+{
+  "width": 720,
+  "height": 480,
+  "fps": 30,
+  "duration": 2.4,
+  "background": "#dce7f1",
+  "title": "Grow a small control into a working surface",
+  "source": {
+    "path": "skill/imessage-motion-recreation/director/motions.mjs#circle-to-panel",
+    "sourceStart": 0,
+    "sourceEnd": 4,
+    "notes": "Original editable motion starter at c49482a, fit into the library stage with the same keyframe choreography."
+  },
+  "layers": [
+    {
+      "id": "surface",
+      "type": "rect",
+      "x": 110,
+      "y": 44,
+      "width": 500,
+      "height": 392,
+      "fill": "#ffffff",
+      "radius": 18
+    },
+    {
+      "id": "stage",
+      "type": "group",
+      "x": 110,
+      "y": 98,
+      "children": [
+        {
+          "id": "base-motion",
+          "type": "group",
+          "x": 0,
+          "y": 8,
+          "children": [
+            {
+              "id": "morph-surface",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 128,
+              "height": 128,
+              "fill": "#1688fa",
+              "radius": 64,
+              "keyframes": {
+                "x": [
+                  {
+                    "t": 0,
+                    "value": 416,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 1.44,
+                    "value": 280,
+                    "ease": "easeInOut"
+                  }
+                ],
+                "y": [
+                  {
+                    "t": 0,
+                    "value": 206,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 1.44,
+                    "value": 126,
+                    "ease": "easeInOut"
+                  }
+                ],
+                "width": [
+                  {
+                    "t": 0,
+                    "value": 128,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 1.44,
+                    "value": 400,
+                    "ease": "easeInOut"
+                  }
+                ],
+                "height": [
+                  {
+                    "t": 0,
+                    "value": 128,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 1.44,
+                    "value": 288,
+                    "ease": "easeInOut"
+                  }
+                ],
+                "radius": [
+                  {
+                    "t": 0,
+                    "value": 64,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 1.44,
+                    "value": 26,
+                    "ease": "easeInOut"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "morph-contents",
+              "type": "group",
+              "x": 304,
+              "y": 154,
+              "children": [
+                {
+                  "id": "morph-title",
+                  "type": "text",
+                  "text": "The north ridge",
+                  "x": 0,
+                  "y": 0,
+                  "fontSize": 30,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#ffffff",
+                  "fontWeight": 600
+                },
+                {
+                  "id": "morph-detail",
+                  "type": "text",
+                  "text": "From a small action\nto something useful.",
+                  "x": 0,
+                  "y": 55,
+                  "fontSize": 21,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#ffffff",
+                  "lineHeight": 29
+                },
+                {
+                  "id": "morph-action",
+                  "type": "group",
+                  "x": 0,
+                  "y": 166,
+                  "children": [
+                    {
+                      "id": "morph-action-shape",
+                      "type": "rect",
+                      "x": 0,
+                      "y": 0,
+                      "width": 352,
+                      "height": 42,
+                      "fill": "#172c45",
+                      "radius": 21
+                    },
+                    {
+                      "id": "morph-action-label",
+                      "type": "text",
+                      "text": "Open app",
+                      "x": 176,
+                      "y": 11,
+                      "fontSize": 16,
+                      "fontFamily": "Arial, sans-serif",
+                      "fill": "#ffffff",
+                      "textAnchor": "middle",
+                      "fontWeight": 600
+                    }
+                  ]
+                }
+              ],
+              "keyframes": {
+                "opacity": [
+                  {
+                    "t": 0,
+                    "value": 0,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 1.152,
+                    "value": 0,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 1.68,
+                    "value": 1,
+                    "ease": "easeOut"
+                  }
+                ]
+              }
+            }
+          ],
+          "scaleX": 0.52,
+          "scaleY": 0.52
+        }
+      ],
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 500,
+        "height": 298
+      }
+    },
+    {
+      "id": "footer",
+      "type": "group",
+      "x": 110,
+      "y": 396,
+      "children": [
+        {
+          "id": "footer-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 40,
+          "fill": "#f2f6fb",
+          "radius": 12
+        },
+        {
+          "id": "footer-label",
+          "type": "text",
+          "text": "Field guide · Autumn",
+          "x": 26,
+          "y": 11,
+          "fontSize": 15,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#516277"
+        }
+      ]
+    },
+    {
+      "id": "heading",
+      "type": "group",
+      "x": 110,
+      "y": 44,
+      "children": [
+        {
+          "id": "heading-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 54,
+          "fill": "#f2f6fb",
+          "radius": 13
+        },
+        {
+          "id": "heading-copy",
+          "type": "text",
+          "text": "Alpine field notes",
+          "x": 26,
+          "y": 13,
+          "fontSize": 23,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#182737",
+          "fontWeight": 700
+        }
+      ]
+    }
+  ],
+  "timeline": {
+    "version": 1,
+    "picture": {
+      "fpsNum": 30,
+      "fpsDen": 1,
+      "frameCount": 72
+    },
+    "initialUI": null,
+    "events": [
+      {
+        "id": "motion.circle-to-panel.panel-ready",
+        "kind": "panel-ready",
+        "target": "morph-contents",
+        "frame": 51,
+        "layerIds": [
+          "morph-contents"
+        ]
+      }
+    ],
+    "cues": []
+  }
+}

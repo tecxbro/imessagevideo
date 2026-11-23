@@ -1,0 +1,745 @@
+{
+  "width": 720,
+  "height": 480,
+  "fps": 30,
+  "duration": 2.4,
+  "background": "#dce7f1",
+  "title": "Swipe the front attachment off a stack",
+  "source": {
+    "path": "a23bfb294fbc65739811a84f264ad306ca192fe1:skill/imessage-motion-recreation/director/motion-library/blocks.mjs#attachmentStack",
+    "sourceStart": 0,
+    "sourceEnd": 4,
+    "notes": "The earlier recipe supplies rank-by-rank translation, rotation and scale. Inline promotion and gesture timing are authored."
+  },
+  "layers": [
+    {
+      "id": "surface",
+      "type": "rect",
+      "x": 110,
+      "y": 44,
+      "width": 500,
+      "height": 392,
+      "fill": "#ffffff",
+      "radius": 18
+    },
+    {
+      "id": "stage",
+      "type": "group",
+      "x": 110,
+      "y": 98,
+      "children": [
+        {
+          "id": "stack-copy",
+          "type": "text",
+          "text": "Can you send the trail map?",
+          "x": 22,
+          "y": 11,
+          "fontSize": 15,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#17191d"
+        },
+        {
+          "id": "attachment-4",
+          "type": "group",
+          "x": 152,
+          "y": 36,
+          "children": [
+            {
+              "id": "attachment-4-rim",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 272,
+              "height": 174,
+              "fill": "#ffffff",
+              "radius": 13,
+              "shadow": {
+                "x": 0,
+                "y": 3,
+                "blur": 8,
+                "color": "#8290a1"
+              }
+            },
+            {
+              "id": "attachment-4-clip",
+              "type": "group",
+              "x": 5,
+              "y": 5,
+              "children": [
+                {
+                  "id": "attachment-4-image",
+                  "type": "image",
+                  "src": "/Users/darshan/Documents/ChatGPT/imessage-video/codex-trial/skill/imessage-motion-recreation/motion/assets/landscape-4.png",
+                  "x": 0,
+                  "y": 0,
+                  "width": 262,
+                  "height": 164
+                }
+              ],
+              "clip": {
+                "x": 0,
+                "y": 0,
+                "width": 262,
+                "height": 164,
+                "radius": 9
+              }
+            }
+          ],
+          "originX": 136,
+          "originY": 87,
+          "rotation": -12,
+          "scaleX": 0.874,
+          "scaleY": 0.874,
+          "keyframes": {
+            "x": [
+              {
+                "t": 0,
+                "value": 152,
+                "ease": "linear"
+              },
+              {
+                "t": 0.96,
+                "value": 152,
+                "ease": "hold"
+              },
+              {
+                "t": 1.8479999999999999,
+                "value": 136,
+                "ease": "easeOut"
+              }
+            ],
+            "y": [
+              {
+                "t": 0,
+                "value": 36,
+                "ease": "linear"
+              },
+              {
+                "t": 0.96,
+                "value": 36,
+                "ease": "hold"
+              },
+              {
+                "t": 1.8479999999999999,
+                "value": 44,
+                "ease": "easeOut"
+              }
+            ],
+            "rotation": [
+              {
+                "t": 0,
+                "value": -12,
+                "ease": "linear"
+              },
+              {
+                "t": 0.96,
+                "value": -12,
+                "ease": "hold"
+              },
+              {
+                "t": 1.8479999999999999,
+                "value": -8,
+                "ease": "easeOut"
+              }
+            ],
+            "scaleX": [
+              {
+                "t": 0,
+                "value": 0.874,
+                "ease": "linear"
+              },
+              {
+                "t": 0.96,
+                "value": 0.874,
+                "ease": "hold"
+              },
+              {
+                "t": 1.8479999999999999,
+                "value": 0.916,
+                "ease": "easeOut"
+              }
+            ],
+            "scaleY": [
+              {
+                "t": 0,
+                "value": 0.874,
+                "ease": "linear"
+              },
+              {
+                "t": 0.96,
+                "value": 0.874,
+                "ease": "hold"
+              },
+              {
+                "t": 1.8479999999999999,
+                "value": 0.916,
+                "ease": "easeOut"
+              }
+            ]
+          }
+        },
+        {
+          "id": "attachment-3",
+          "type": "group",
+          "x": 136,
+          "y": 44,
+          "children": [
+            {
+              "id": "attachment-3-rim",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 272,
+              "height": 174,
+              "fill": "#ffffff",
+              "radius": 13,
+              "shadow": {
+                "x": 0,
+                "y": 3,
+                "blur": 8,
+                "color": "#8290a1"
+              }
+            },
+            {
+              "id": "attachment-3-clip",
+              "type": "group",
+              "x": 5,
+              "y": 5,
+              "children": [
+                {
+                  "id": "attachment-3-image",
+                  "type": "image",
+                  "src": "/Users/darshan/Documents/ChatGPT/imessage-video/codex-trial/skill/imessage-motion-recreation/motion/assets/landscape-3.png",
+                  "x": 0,
+                  "y": 0,
+                  "width": 262,
+                  "height": 164
+                }
+              ],
+              "clip": {
+                "x": 0,
+                "y": 0,
+                "width": 262,
+                "height": 164,
+                "radius": 9
+              }
+            }
+          ],
+          "originX": 136,
+          "originY": 87,
+          "rotation": -8,
+          "scaleX": 0.916,
+          "scaleY": 0.916,
+          "keyframes": {
+            "x": [
+              {
+                "t": 0,
+                "value": 136,
+                "ease": "linear"
+              },
+              {
+                "t": 0.96,
+                "value": 136,
+                "ease": "hold"
+              },
+              {
+                "t": 1.8479999999999999,
+                "value": 120,
+                "ease": "easeOut"
+              }
+            ],
+            "y": [
+              {
+                "t": 0,
+                "value": 44,
+                "ease": "linear"
+              },
+              {
+                "t": 0.96,
+                "value": 44,
+                "ease": "hold"
+              },
+              {
+                "t": 1.8479999999999999,
+                "value": 52,
+                "ease": "easeOut"
+              }
+            ],
+            "rotation": [
+              {
+                "t": 0,
+                "value": -8,
+                "ease": "linear"
+              },
+              {
+                "t": 0.96,
+                "value": -8,
+                "ease": "hold"
+              },
+              {
+                "t": 1.8479999999999999,
+                "value": -4,
+                "ease": "easeOut"
+              }
+            ],
+            "scaleX": [
+              {
+                "t": 0,
+                "value": 0.916,
+                "ease": "linear"
+              },
+              {
+                "t": 0.96,
+                "value": 0.916,
+                "ease": "hold"
+              },
+              {
+                "t": 1.8479999999999999,
+                "value": 0.958,
+                "ease": "easeOut"
+              }
+            ],
+            "scaleY": [
+              {
+                "t": 0,
+                "value": 0.916,
+                "ease": "linear"
+              },
+              {
+                "t": 0.96,
+                "value": 0.916,
+                "ease": "hold"
+              },
+              {
+                "t": 1.8479999999999999,
+                "value": 0.958,
+                "ease": "easeOut"
+              }
+            ]
+          }
+        },
+        {
+          "id": "attachment-2",
+          "type": "group",
+          "x": 120,
+          "y": 52,
+          "children": [
+            {
+              "id": "attachment-2-rim",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 272,
+              "height": 174,
+              "fill": "#ffffff",
+              "radius": 13,
+              "shadow": {
+                "x": 0,
+                "y": 3,
+                "blur": 8,
+                "color": "#8290a1"
+              }
+            },
+            {
+              "id": "attachment-2-clip",
+              "type": "group",
+              "x": 5,
+              "y": 5,
+              "children": [
+                {
+                  "id": "attachment-2-image",
+                  "type": "image",
+                  "src": "/Users/darshan/Documents/ChatGPT/imessage-video/codex-trial/skill/imessage-motion-recreation/motion/assets/landscape-2.png",
+                  "x": 0,
+                  "y": 0,
+                  "width": 262,
+                  "height": 164
+                }
+              ],
+              "clip": {
+                "x": 0,
+                "y": 0,
+                "width": 262,
+                "height": 164,
+                "radius": 9
+              }
+            }
+          ],
+          "originX": 136,
+          "originY": 87,
+          "rotation": -4,
+          "scaleX": 0.958,
+          "scaleY": 0.958,
+          "keyframes": {
+            "x": [
+              {
+                "t": 0,
+                "value": 120,
+                "ease": "linear"
+              },
+              {
+                "t": 0.96,
+                "value": 120,
+                "ease": "hold"
+              },
+              {
+                "t": 1.8479999999999999,
+                "value": 104,
+                "ease": "easeOut"
+              }
+            ],
+            "y": [
+              {
+                "t": 0,
+                "value": 52,
+                "ease": "linear"
+              },
+              {
+                "t": 0.96,
+                "value": 52,
+                "ease": "hold"
+              },
+              {
+                "t": 1.8479999999999999,
+                "value": 60,
+                "ease": "easeOut"
+              }
+            ],
+            "rotation": [
+              {
+                "t": 0,
+                "value": -4,
+                "ease": "linear"
+              },
+              {
+                "t": 0.96,
+                "value": -4,
+                "ease": "hold"
+              },
+              {
+                "t": 1.8479999999999999,
+                "value": 0,
+                "ease": "easeOut"
+              }
+            ],
+            "scaleX": [
+              {
+                "t": 0,
+                "value": 0.958,
+                "ease": "linear"
+              },
+              {
+                "t": 0.96,
+                "value": 0.958,
+                "ease": "hold"
+              },
+              {
+                "t": 1.8479999999999999,
+                "value": 1,
+                "ease": "easeOut"
+              }
+            ],
+            "scaleY": [
+              {
+                "t": 0,
+                "value": 0.958,
+                "ease": "linear"
+              },
+              {
+                "t": 0.96,
+                "value": 0.958,
+                "ease": "hold"
+              },
+              {
+                "t": 1.8479999999999999,
+                "value": 1,
+                "ease": "easeOut"
+              }
+            ]
+          }
+        },
+        {
+          "id": "attachment-1",
+          "type": "group",
+          "x": 104,
+          "y": 60,
+          "children": [
+            {
+              "id": "attachment-1-rim",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 272,
+              "height": 174,
+              "fill": "#ffffff",
+              "radius": 13,
+              "shadow": {
+                "x": 0,
+                "y": 3,
+                "blur": 8,
+                "color": "#8290a1"
+              }
+            },
+            {
+              "id": "attachment-1-clip",
+              "type": "group",
+              "x": 5,
+              "y": 5,
+              "children": [
+                {
+                  "id": "attachment-1-image",
+                  "type": "image",
+                  "src": "/Users/darshan/Documents/ChatGPT/imessage-video/codex-trial/skill/imessage-motion-recreation/motion/assets/landscape-1.png",
+                  "x": 0,
+                  "y": 0,
+                  "width": 262,
+                  "height": 164
+                }
+              ],
+              "clip": {
+                "x": 0,
+                "y": 0,
+                "width": 262,
+                "height": 164,
+                "radius": 9
+              }
+            }
+          ],
+          "originX": 136,
+          "originY": 87,
+          "rotation": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "keyframes": {
+            "x": [
+              {
+                "t": 0,
+                "value": 104,
+                "ease": "linear"
+              },
+              {
+                "t": 0.648,
+                "value": 104,
+                "ease": "hold"
+              },
+              {
+                "t": 1.8479999999999999,
+                "value": -288,
+                "ease": "easeIn"
+              }
+            ],
+            "y": [
+              {
+                "t": 0,
+                "value": 60,
+                "ease": "linear"
+              },
+              {
+                "t": 0.648,
+                "value": 60,
+                "ease": "hold"
+              },
+              {
+                "t": 1.8479999999999999,
+                "value": 88,
+                "ease": "easeIn"
+              }
+            ],
+            "rotation": [
+              {
+                "t": 0,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 0.648,
+                "value": 0,
+                "ease": "hold"
+              },
+              {
+                "t": 1.8479999999999999,
+                "value": -15,
+                "ease": "easeIn"
+              }
+            ],
+            "scaleX": [
+              {
+                "t": 0,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 0.648,
+                "value": 1,
+                "ease": "hold"
+              },
+              {
+                "t": 1.8479999999999999,
+                "value": 1,
+                "ease": "easeIn"
+              }
+            ],
+            "scaleY": [
+              {
+                "t": 0,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 0.648,
+                "value": 1,
+                "ease": "hold"
+              },
+              {
+                "t": 1.8479999999999999,
+                "value": 1,
+                "ease": "easeIn"
+              }
+            ]
+          }
+        },
+        {
+          "id": "stack-count",
+          "type": "text",
+          "text": "4 attachments",
+          "x": 105,
+          "y": 255,
+          "fontSize": 15,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#516277"
+        }
+      ],
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 500,
+        "height": 298
+      }
+    },
+    {
+      "id": "footer",
+      "type": "group",
+      "x": 110,
+      "y": 396,
+      "children": [
+        {
+          "id": "footer-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 40,
+          "fill": "#f2f6fb",
+          "radius": 12
+        },
+        {
+          "id": "stack-composer",
+          "type": "group",
+          "x": 24,
+          "y": 1,
+          "children": [
+            {
+              "id": "stack-composer-field",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 450,
+              "height": 48,
+              "fill": "#ffffff",
+              "radius": 24,
+              "stroke": "#d8dbe0",
+              "strokeWidth": 1
+            },
+            {
+              "id": "stack-composer-input",
+              "type": "text",
+              "text": "Message",
+              "x": 18,
+              "y": 14,
+              "fontSize": 17,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#777b84"
+            },
+            {
+              "id": "stack-composer-send",
+              "type": "circle",
+              "x": 410,
+              "y": 8,
+              "width": 32,
+              "height": 32,
+              "fill": "#d8dbe0"
+            },
+            {
+              "id": "stack-composer-arrow",
+              "type": "path",
+              "d": "M 426 33 L 426 16 M 419 23 L 426 16 L 433 23",
+              "fill": "none",
+              "stroke": "#ffffff",
+              "strokeWidth": 2
+            }
+          ],
+          "scaleY": 0.76
+        }
+      ]
+    },
+    {
+      "id": "heading",
+      "type": "group",
+      "x": 110,
+      "y": 44,
+      "children": [
+        {
+          "id": "heading-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 54,
+          "fill": "#f2f6fb",
+          "radius": 13
+        },
+        {
+          "id": "heading-copy",
+          "type": "text",
+          "text": "Alpine field notes",
+          "x": 26,
+          "y": 13,
+          "fontSize": 23,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#182737",
+          "fontWeight": 700
+        }
+      ]
+    }
+  ],
+  "timeline": {
+    "version": 1,
+    "picture": {
+      "fpsNum": 30,
+      "fpsDen": 1,
+      "frameCount": 72
+    },
+    "initialUI": null,
+    "events": [
+      {
+        "id": "motion.messages-attachment-stack.swipe",
+        "kind": "media.swipe",
+        "target": "attachment-1",
+        "frame": 21,
+        "layerIds": [
+          "attachment-1"
+        ]
+      },
+      {
+        "id": "motion.messages-attachment-stack.promoted",
+        "kind": "media.promote",
+        "target": "attachment-2",
+        "frame": 56,
+        "layerIds": [
+          "attachment-2"
+        ]
+      }
+    ],
+    "cues": []
+  }
+}

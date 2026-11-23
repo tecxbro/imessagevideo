@@ -1,0 +1,161 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 24,
+    "fpsDen": 1,
+    "frameCount": 68
+  },
+  "sampleRate": 48000,
+  "sampleCount": 136000,
+  "initialUI": {
+    "conversationId": "workshop",
+    "messages": [
+      {
+        "id": "question",
+        "senderId": "sam",
+        "text": "Can we pick up the key after six?",
+        "attachmentIds": [],
+        "reactions": {},
+        "edited": false,
+        "receipt": ""
+      },
+      {
+        "id": "prior",
+        "senderId": "alex",
+        "text": "Yes, the workshop stays open.",
+        "attachmentIds": [],
+        "reactions": {},
+        "edited": false,
+        "receipt": "Delivered"
+      }
+    ],
+    "composer": {
+      "text": "I’ll leave the key at the front desk.",
+      "focused": true,
+      "keyboardVisible": true
+    },
+    "viewport": {
+      "surface": "conversation",
+      "anchorMessageId": "prior",
+      "scrollOffset": 0
+    },
+    "typingSenderIds": []
+  },
+  "events": [
+    {
+      "id": "ui.send-keyboard.send",
+      "kind": "send",
+      "target": "outgoing",
+      "frame": 24,
+      "uiState": {
+        "conversationId": "workshop",
+        "messages": [
+          {
+            "id": "question",
+            "senderId": "sam",
+            "text": "Can we pick up the key after six?",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "prior",
+            "senderId": "alex",
+            "text": "Yes, the workshop stays open.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": "Delivered"
+          },
+          {
+            "id": "outgoing",
+            "senderId": "alex",
+            "text": "I’ll leave the key at the front desk.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          }
+        ],
+        "composer": {
+          "text": "",
+          "focused": true,
+          "keyboardVisible": true
+        },
+        "viewport": {
+          "surface": "conversation",
+          "anchorMessageId": "outgoing",
+          "scrollOffset": 0
+        },
+        "typingSenderIds": []
+      },
+      "layerIds": [
+        "ui.message/outgoing"
+      ],
+      "sample": 48000
+    },
+    {
+      "id": "ui.send-keyboard.delivered",
+      "kind": "receipt",
+      "target": "outgoing",
+      "frame": 47,
+      "uiState": {
+        "conversationId": "workshop",
+        "messages": [
+          {
+            "id": "question",
+            "senderId": "sam",
+            "text": "Can we pick up the key after six?",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "prior",
+            "senderId": "alex",
+            "text": "Yes, the workshop stays open.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": "Delivered"
+          },
+          {
+            "id": "outgoing",
+            "senderId": "alex",
+            "text": "I’ll leave the key at the front desk.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": "Delivered"
+          }
+        ],
+        "composer": {
+          "text": "",
+          "focused": true,
+          "keyboardVisible": true
+        },
+        "viewport": {
+          "surface": "conversation",
+          "anchorMessageId": "outgoing",
+          "scrollOffset": 0
+        },
+        "typingSenderIds": []
+      },
+      "layerIds": [
+        "ui.message/outgoing/receipt"
+      ],
+      "sample": 94000
+    }
+  ],
+  "cues": [
+    {
+      "id": "ui.send-keyboard.send-cue",
+      "eventId": "ui.send-keyboard.send",
+      "offsetSamples": 0,
+      "frame": 24,
+      "sample": 48000
+    }
+  ]
+}

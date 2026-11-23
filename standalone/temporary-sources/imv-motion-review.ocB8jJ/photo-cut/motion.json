@@ -1,0 +1,40 @@
+{
+  "id": "photos-under-fixed-heading",
+  "sourceSHA256": "201efc52bc654ef80575145369b5da61e796f7994f9b3791e7a911359f327922",
+  "sceneSHA256": "4182862c5235a9836e692789d4dd0622f41c4716fd5319837abf5060fbe86afd",
+  "events": [
+    {
+      "id": "page-now",
+      "frame": 12,
+      "roleLayers": [
+        "ui.message/album/media"
+      ]
+    }
+  ],
+  "bindings": {
+    "viewport": "ui.viewport",
+    "message": "ui.message/album",
+    "attachment": "ui.message/album/media",
+    "carousel": "ui.message/album/rail",
+    "screen": "ui.screen",
+    "header": "ui.header",
+    "composer": "ui.composer",
+    "transcript": "ui.transcript",
+    "attachmentViewport": "ui.message/album/media-window"
+  },
+  "verification": {
+    "ok": true,
+    "mode": "adapter-recipe",
+    "issues": [],
+    "evidence": "structural-only",
+    "checkedWindow": [
+      11,
+      12
+    ]
+  },
+  "window": [
+    11,
+    12
+  ],
+  "status": "compiled-messages-interaction"
+}

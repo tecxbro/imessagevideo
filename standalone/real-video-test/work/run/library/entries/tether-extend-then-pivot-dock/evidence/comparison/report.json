@@ -1,0 +1,128 @@
+{
+  "alignment": "native presentation order, paired by zero-based index, without resampling",
+  "artifacts": {
+    "all_frame_measurements": "frames.csv",
+    "comparison_image": "worst.png"
+  },
+  "compared_frames": 90,
+  "exclusive_end_error_ms": 0.0,
+  "failures": [],
+  "inputs": {
+    "output": {
+      "average_frame_rate": "30/1",
+      "display_aspect_ratio": null,
+      "effective_sample_aspect_ratio": "1:1",
+      "end_seconds_exclusive": 3.0,
+      "first_pts_seconds": 0.0,
+      "frame_count": 90,
+      "height": 270,
+      "last_pts_seconds": 2.966666666666667,
+      "missing_pts": 0,
+      "path": "preview.mp4",
+      "rotation": 0,
+      "sample_aspect_basis": "implicit square pixels",
+      "sample_aspect_ratio": null,
+      "sha256": "2351b35f029ab667112f80f5733acbb2335ea3844bdfac06765b6c9e0ea3f21c",
+      "strictly_increasing_pts": true,
+      "time_base": "1/15360",
+      "width": 480
+    },
+    "source": {
+      "average_frame_rate": "30/1",
+      "display_aspect_ratio": null,
+      "effective_sample_aspect_ratio": "1:1",
+      "end_seconds_exclusive": 3.0,
+      "first_pts_seconds": 0.0,
+      "frame_count": 90,
+      "height": 270,
+      "last_pts_seconds": 2.966666666666667,
+      "missing_pts": 0,
+      "path": "evidence/reference.nut",
+      "rotation": 0,
+      "sample_aspect_basis": "implicit square pixels",
+      "sample_aspect_ratio": null,
+      "sha256": "f3201aca2c4740bc89825d935e7e16bd8b7e159e0438ce5478a8f79cba16a34b",
+      "strictly_increasing_pts": true,
+      "time_base": "1/61440",
+      "width": 480
+    }
+  },
+  "limits_passed": true,
+  "max_paired_pts_error_ms": 0.0,
+  "metrics": {
+    "fixed-baseline": {
+      "max_frame_mae": 1.0099858000091613,
+      "mean_frame_mae": 0.9635930557464156,
+      "worst_frame": 59
+    },
+    "fixed-heading": {
+      "max_frame_mae": 5.72554347826087,
+      "mean_frame_mae": 5.718285024154589,
+      "worst_frame": 1
+    },
+    "full": {
+      "max_frame_mae": 0.9021733539094651,
+      "mean_frame_mae": 0.7686544067215364,
+      "worst_frame": 46
+    },
+    "shuttle-and-tether": {
+      "max_frame_mae": 1.4380283206805577,
+      "mean_frame_mae": 0.9733877931126624,
+      "worst_frame": 46
+    },
+    "swipe-midpoint": {
+      "max_frame_mae": 4.196129032258065,
+      "mean_frame_mae": 0.6219864595778575,
+      "worst_frame": 46
+    }
+  },
+  "output_only_tail_frames": 0,
+  "paired_indices": 90,
+  "possible_frame_shift": {
+    "best_mean_error": 0.5176323784722222,
+    "best_output_minus_source_frames": 0,
+    "compared_source_frames": 80,
+    "possible_constant_offset": false,
+    "search_radius": 5,
+    "unaligned_mean_error": 0.5176323784722222
+  },
+  "roi_xyxy": {
+    "fixed-baseline": [
+      48,
+      202,
+      431,
+      221
+    ],
+    "fixed-heading": [
+      47,
+      50,
+      139,
+      70
+    ],
+    "shuttle-and-tether": [
+      92,
+      69,
+      394,
+      192
+    ],
+    "swipe-midpoint": [
+      219,
+      161,
+      294,
+      192
+    ]
+  },
+  "schema_version": 1,
+  "source_only_tail_frames": 0,
+  "structure_issues": [],
+  "structure_match": true,
+  "structure_tolerance_issues": [],
+  "structure_within_tolerance": true,
+  "thresholds": {
+    "max_mae": 6.0,
+    "max_pts_error_ms": 0.0,
+    "reject_detected_shift": false,
+    "require_structure_match": true
+  },
+  "worst_pair_index": 1
+}

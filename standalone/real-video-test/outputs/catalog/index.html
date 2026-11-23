@@ -1,0 +1,499 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>iMessage Video motion audit</title>
+<style>
+:root{color-scheme:dark;--background:#101520;--panel:#1b2637;--ink:#f2f7ff;--muted:#b6c7df;--link:#97cafb}
+body{margin:auto;max-width:1120px;padding:32px 24px 68px;font:16px/1.5 system-ui,sans-serif;background:var(--background);color:var(--ink)}
+header{padding-bottom:32px} h1{margin-bottom:8px;font-size:clamp(30px,5vw,47px);line-height:1.12}
+h2{font-size:1.2rem;margin:0 0 8px} p{max-width:70ch;margin:8px 0} a{color:var(--link)}
+input{box-sizing:border-box;width:min(420px,100%);margin:20px 0 4px;padding:11px;font:inherit;border:1px solid #788ba2;border-radius:8px;background:var(--panel);color:var(--ink)}
+main{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,375px),1fr));gap:16px}
+article{padding:18px;background:var(--panel);border-radius:12px} .muted{color:var(--muted)} .videos{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+video{width:100%;aspect-ratio:3/2;background:#101520;border-radius:6px} .links{display:flex;gap:14px;flex-wrap:wrap;margin-top:12px}
+</style><body>
+<header><h1>iMessage Video motion audit</h1><p>78 shipped motions passed. The newly learned tether makes 79 verified entries in the benchmark library.</p>
+<p><a href="../Report.md">Verification report</a> · <a href="results.csv">Results CSV</a></p>
+<label for="filter">Find a motion</label><br><input id="filter" type="search" placeholder="Try swipe, toggle or tether">
+</header><main>
+<article><h2>photos under fixed heading</h2>
+<p class="muted">Seed · 72 frames · PASS</p>
+<p>Adjacent photos translate together on one horizontally clipped rail.</p><p class="muted">Fixed layers — The heading, viewport, divider and supporting footer stay in place.</p>
+<div class="videos"><div><video controls preload="none" src="photos-under-fixed-heading/preview.mp4" aria-label="Saved preview"></video><div>Saved preview</div></div>
+<div><video controls preload="none" src="photos-under-fixed-heading/project/replay.mp4" aria-label="Fresh replay"></video><div>Fresh replay</div></div></div>
+<div class="links"><a href="photos-under-fixed-heading/project/scene.json">Editable scene</a><a href="photos-under-fixed-heading/compare/report.json">Comparison</a><a href="photos-under-fixed-heading/strip.jpg">Frame strip</a></div></article>
+<article><h2>heading over fixed photos</h2>
+<p class="muted">Seed · 72 frames · PASS</p>
+<p>The heading text glides within its own clipped band.</p><p class="muted">Fixed layers — Photo positions, their crop, the heading backdrop and bottom caption hold still.</p>
+<div class="videos"><div><video controls preload="none" src="heading-over-fixed-photos/preview.mp4" aria-label="Saved preview"></video><div>Saved preview</div></div>
+<div><video controls preload="none" src="heading-over-fixed-photos/project/replay.mp4" aria-label="Fresh replay"></video><div>Fresh replay</div></div></div>
+<div class="links"><a href="heading-over-fixed-photos/project/scene.json">Editable scene</a><a href="heading-over-fixed-photos/compare/report.json">Comparison</a><a href="heading-over-fixed-photos/strip.jpg">Frame strip</a></div></article>
+<article><h2>conversation handoff</h2>
+<p class="muted">Seed · 72 frames · PASS</p>
+<p>Draft characters arrive in the composer, transfer into an outgoing blue bubble, and an incoming gray reply arrives after a pause.</p><p class="muted">Fixed layers — The phone, conversation header, composer field and reading area stay in place.</p>
+<div class="videos"><div><video controls preload="none" src="conversation-handoff/preview.mp4" aria-label="Saved preview"></video><div>Saved preview</div></div>
+<div><video controls preload="none" src="conversation-handoff/project/replay.mp4" aria-label="Fresh replay"></video><div>Fresh replay</div></div></div>
+<div class="links"><a href="conversation-handoff/project/scene.json">Editable scene</a><a href="conversation-handoff/compare/report.json">Comparison</a><a href="conversation-handoff/strip.jpg">Frame strip</a></div></article>
+<article><h2>composer type</h2>
+<p class="muted">Seed · 72 frames · PASS</p>
+<p>The composer gains characters at uneven intervals as the caret advances.</p><p class="muted">Fixed layers — The draft field, transcript, heading, and phone viewport are stationary.</p>
+<div class="videos"><div><video controls preload="none" src="composer-type/preview.mp4" aria-label="Saved preview"></video><div>Saved preview</div></div>
+<div><video controls preload="none" src="composer-type/project/replay.mp4" aria-label="Fresh replay"></video><div>Fresh replay</div></div></div>
+<div class="links"><a href="composer-type/project/scene.json">Editable scene</a><a href="composer-type/compare/report.json">Comparison</a><a href="composer-type/strip.jpg">Frame strip</a></div></article>
+<article><h2>draft send flight</h2>
+<p class="muted">Seed · 72 frames · PASS</p>
+<p>The draft box collapses toward its right edge while the outgoing balloon rises, slightly overshoots, then settles into its transcript slot.</p><p class="muted">Fixed layers — The conversation heading, prior reply, and composer field stay fixed. The send control disappears at the trigger.</p>
+<div class="videos"><div><video controls preload="none" src="draft-send-flight/preview.mp4" aria-label="Saved preview"></video><div>Saved preview</div></div>
+<div><video controls preload="none" src="draft-send-flight/project/replay.mp4" aria-label="Fresh replay"></video><div>Fresh replay</div></div></div>
+<div class="links"><a href="draft-send-flight/project/scene.json">Editable scene</a><a href="draft-send-flight/compare/report.json">Comparison</a><a href="draft-send-flight/strip.jpg">Frame strip</a></div></article>
+<article><h2>typing indicator cycle</h2>
+<p class="muted">Seed · 72 frames · PASS</p>
+<p>Three dots lift and dim in staggered phases inside a stationary bubble.</p><p class="muted">Fixed layers — The dots’ container, prior outgoing message, composer and heading.</p>
+<div class="videos"><div><video controls preload="none" src="typing-indicator-cycle/preview.mp4" aria-label="Saved preview"></video><div>Saved preview</div></div>
+<div><video controls preload="none" src="typing-indicator-cycle/project/replay.mp4" aria-label="Fresh replay"></video><div>Fresh replay</div></div></div>
+<div class="links"><a href="typing-indicator-cycle/project/scene.json">Editable scene</a><a href="typing-indicator-cycle/compare/report.json">Comparison</a><a href="typing-indicator-cycle/strip.jpg">Frame strip</a></div></article>
+<article><h2>reply makes room</h2>
+<p class="muted">Seed · 72 frames · PASS</p>
+<p>The previous rows lift together. The complete incoming reply rises a shorter distance into the bottom slot.</p><p class="muted">Fixed layers — The header, composer, and bottom resting line of the transcript.</p>
+<div class="videos"><div><video controls preload="none" src="reply-makes-room/preview.mp4" aria-label="Saved preview"></video><div>Saved preview</div></div>
+<div><video controls preload="none" src="reply-makes-room/project/replay.mp4" aria-label="Fresh replay"></video><div>Fresh replay</div></div></div>
+<div class="links"><a href="reply-makes-room/project/scene.json">Editable scene</a><a href="reply-makes-room/compare/report.json">Comparison</a><a href="reply-makes-room/strip.jpg">Frame strip</a></div></article>
+<article><h2>delivery receipt handoff</h2>
+<p class="muted">Seed · 72 frames · PASS</p>
+<p>The old receipt fades under the first bubble. The latest bubble rises toward its final slot as its receipt resolves.</p><p class="muted">Fixed layers — The first bubble, the composer and the conversation heading.</p>
+<div class="videos"><div><video controls preload="none" src="delivery-receipt-handoff/preview.mp4" aria-label="Saved preview"></video><div>Saved preview</div></div>
+<div><video controls preload="none" src="delivery-receipt-handoff/project/replay.mp4" aria-label="Fresh replay"></video><div>Fresh replay</div></div></div>
+<div class="links"><a href="delivery-receipt-handoff/project/scene.json">Editable scene</a><a href="delivery-receipt-handoff/compare/report.json">Comparison</a><a href="delivery-receipt-handoff/strip.jpg">Frame strip</a></div></article>
+<article><h2>long press actions</h2>
+<p class="muted">Seed · 72 frames · PASS</p>
+<p>Context dims while the option tray opens below the held row and the reaction rail grows above it.</p><p class="muted">Fixed layers — The selected message stays centered on its original slot throughout the reveal.</p>
+<div class="videos"><div><video controls preload="none" src="long-press-actions/preview.mp4" aria-label="Saved preview"></video><div>Saved preview</div></div>
+<div><video controls preload="none" src="long-press-actions/project/replay.mp4" aria-label="Fresh replay"></video><div>Fresh replay</div></div></div>
+<div class="links"><a href="long-press-actions/project/scene.json">Editable scene</a><a href="long-press-actions/compare/report.json">Comparison</a><a href="long-press-actions/strip.jpg">Frame strip</a></div></article>
+<article><h2>reaction attach</h2>
+<p class="muted">Seed · 72 frames · PASS</p>
+<p>The selected reaction follows a curved approach, shrinks into a corner badge and settles as the nearby text row makes room.</p><p class="muted">Fixed layers — Message copy, heading and composer. Earlier messages stay put.</p>
+<div class="videos"><div><video controls preload="none" src="reaction-attach/preview.mp4" aria-label="Saved preview"></video><div>Saved preview</div></div>
+<div><video controls preload="none" src="reaction-attach/project/replay.mp4" aria-label="Fresh replay"></video><div>Fresh replay</div></div></div>
+<div class="links"><a href="reaction-attach/project/scene.json">Editable scene</a><a href="reaction-attach/compare/report.json">Comparison</a><a href="reaction-attach/strip.jpg">Frame strip</a></div></article>
+<article><h2>transcript timestamp peek</h2>
+<p class="muted">Seed · 72 frames · PASS</p>
+<p>Every bubble shifts left once and springs back on release, exposing small times in a stationary gutter.</p><p class="muted">Fixed layers — Times remain on the trailing edge. The heading, composer, and individual vertical positions stay fixed.</p>
+<div class="videos"><div><video controls preload="none" src="transcript-timestamp-peek/preview.mp4" aria-label="Saved preview"></video><div>Saved preview</div></div>
+<div><video controls preload="none" src="transcript-timestamp-peek/project/replay.mp4" aria-label="Fresh replay"></video><div>Fresh replay</div></div></div>
+<div class="links"><a href="transcript-timestamp-peek/project/scene.json">Editable scene</a><a href="transcript-timestamp-peek/compare/report.json">Comparison</a><a href="transcript-timestamp-peek/strip.jpg">Frame strip</a></div></article>
+<article><h2>swipe to quote</h2>
+<p class="muted">Seed · 72 frames · PASS</p>
+<p>Only the chosen bubble follows the drag. An arrow appears behind it, then the row returns and its quote opens above the composer.</p><p class="muted">Fixed layers — Other transcript rows, header and reply input position.</p>
+<div class="videos"><div><video controls preload="none" src="swipe-to-quote/preview.mp4" aria-label="Saved preview"></video><div>Saved preview</div></div>
+<div><video controls preload="none" src="swipe-to-quote/project/replay.mp4" aria-label="Fresh replay"></video><div>Fresh replay</div></div></div>
+<div class="links"><a href="swipe-to-quote/project/scene.json">Editable scene</a><a href="swipe-to-quote/compare/report.json">Comparison</a><a href="swipe-to-quote/strip.jpg">Frame strip</a></div></article>
+<article><h2>inline thread open</h2>
+<p class="muted">Seed · 72 frames · PASS</p>
+<p>A connector grows from the parent while two indented replies emerge in sequence. The next unrelated row moves down.</p><p class="muted">Fixed layers — The parent message, heading and composer.</p>
+<div class="videos"><div><video controls preload="none" src="inline-thread-open/preview.mp4" aria-label="Saved preview"></video><div>Saved preview</div></div>
+<div><video controls preload="none" src="inline-thread-open/project/replay.mp4" aria-label="Fresh replay"></video><div>Fresh replay</div></div></div>
+<div class="links"><a href="inline-thread-open/project/scene.json">Editable scene</a><a href="inline-thread-open/compare/report.json">Comparison</a><a href="inline-thread-open/strip.jpg">Frame strip</a></div></article>
+<article><h2>edit message reflow</h2>
+<p class="muted">Seed · 72 frames · PASS</p>
+<p>The original bubble deepens to fit an editable second line. Nearby content reflows and the edit marker appears on commit.</p><p class="muted">Fixed layers — The same message retains its identity and leading row. The header and main composer do not move.</p>
+<div class="videos"><div><video controls preload="none" src="edit-message-reflow/preview.mp4" aria-label="Saved preview"></video><div>Saved preview</div></div>
+<div><video controls preload="none" src="edit-message-reflow/project/replay.mp4" aria-label="Fresh replay"></video><div>Fresh replay</div></div></div>
+<div class="links"><a href="edit-message-reflow/project/scene.json">Editable scene</a><a href="edit-message-reflow/compare/report.json">Comparison</a><a href="edit-message-reflow/strip.jpg">Frame strip</a></div></article>
+<article><h2>undo send remove</h2>
+<p class="muted">Seed · 72 frames · PASS</p>
+<p>The outgoing bubble contracts toward its own tail and fades. Nearby rows close the gap, then a quiet history status appears.</p><p class="muted">Fixed layers — The header, composer and surviving messages’ copy.</p>
+<div class="videos"><div><video controls preload="none" src="undo-send-remove/preview.mp4" aria-label="Saved preview"></video><div>Saved preview</div></div>
+<div><video controls preload="none" src="undo-send-remove/project/replay.mp4" aria-label="Fresh replay"></video><div>Fresh replay</div></div></div>
+<div class="links"><a href="undo-send-remove/project/scene.json">Editable scene</a><a href="undo-send-remove/compare/report.json">Comparison</a><a href="undo-send-remove/strip.jpg">Frame strip</a></div></article>
+<article><h2>history prepend anchor</h2>
+<p class="muted">Seed · 72 frames · PASS</p>
+<p>History appears above the visible rows. The rows stay put through insertion and then follow the next drag together.</p><p class="muted">Fixed layers — The currently read bubble stays at the same position during insertion. The heading and composer remain fixed throughout.</p>
+<div class="videos"><div><video controls preload="none" src="history-prepend-anchor/preview.mp4" aria-label="Saved preview"></video><div>Saved preview</div></div>
+<div><video controls preload="none" src="history-prepend-anchor/project/replay.mp4" aria-label="Fresh replay"></video><div>Fresh replay</div></div></div>
+<div class="links"><a href="history-prepend-anchor/project/scene.json">Editable scene</a><a href="history-prepend-anchor/compare/report.json">Comparison</a><a href="history-prepend-anchor/strip.jpg">Frame strip</a></div></article>
+<article><h2>jump to unread</h2>
+<p class="muted">Seed · 72 frames · PASS</p>
+<p>A single controlled scroll advances past intervening rows. The unread divider comes to rest at a predictable spot and the jump control clears.</p><p class="muted">Fixed layers — The reading frame, composer and header stay anchored while the transcript travels.</p>
+<div class="videos"><div><video controls preload="none" src="jump-to-unread/preview.mp4" aria-label="Saved preview"></video><div>Saved preview</div></div>
+<div><video controls preload="none" src="jump-to-unread/project/replay.mp4" aria-label="Fresh replay"></video><div>Fresh replay</div></div></div>
+<div class="links"><a href="jump-to-unread/project/scene.json">Editable scene</a><a href="jump-to-unread/compare/report.json">Comparison</a><a href="jump-to-unread/strip.jpg">Frame strip</a></div></article>
+<article><h2>keyboard focus reflow</h2>
+<p class="muted">Seed · 72 frames · PASS</p>
+<p>The keyboard pushes up from below, lifting the composer and the last message to keep both reachable.</p><p class="muted">Fixed layers — The conversation header and textarea contents. No characters are entered.</p>
+<div class="videos"><div><video controls preload="none" src="keyboard-focus-reflow/preview.mp4" aria-label="Saved preview"></video><div>Saved preview</div></div>
+<div><video controls preload="none" src="keyboard-focus-reflow/project/replay.mp4" aria-label="Fresh replay"></video><div>Fresh replay</div></div></div>
+<div class="links"><a href="keyboard-focus-reflow/project/scene.json">Editable scene</a><a href="keyboard-focus-reflow/compare/report.json">Comparison</a><a href="keyboard-focus-reflow/strip.jpg">Frame strip</a></div></article>
+<article><h2>link preview upgrade</h2>
+<p class="muted">Seed · 72 frames · PASS</p>
+<p>The link card extends horizontally and the source metadata slides in behind a clipping boundary.</p><p class="muted">Fixed layers — The URL, message row height, adjacent reply, heading and composer.</p>
+<div class="videos"><div><video controls preload="none" src="link-preview-upgrade/preview.mp4" aria-label="Saved preview"></video><div>Saved preview</div></div>
+<div><video controls preload="none" src="link-preview-upgrade/project/replay.mp4" aria-label="Fresh replay"></video><div>Fresh replay</div></div></div>
+<div class="links"><a href="link-preview-upgrade/project/scene.json">Editable scene</a><a href="link-preview-upgrade/compare/report.json">Comparison</a><a href="link-preview-upgrade/strip.jpg">Frame strip</a></div></article>
+<article><h2>send failure retry</h2>
+<p class="muted">Seed · 72 frames · PASS</p>
+<p>One outgoing bubble gives a short damped shake. The retry control and failure status then appear beside and below it.</p><p class="muted">Fixed layers — Existing conversation rows, recipient, heading and composer.</p>
+<div class="videos"><div><video controls preload="none" src="send-failure-retry/preview.mp4" aria-label="Saved preview"></video><div>Saved preview</div></div>
+<div><video controls preload="none" src="send-failure-retry/project/replay.mp4" aria-label="Fresh replay"></video><div>Fresh replay</div></div></div>
+<div class="links"><a href="send-failure-retry/project/scene.json">Editable scene</a><a href="send-failure-retry/compare/report.json">Comparison</a><a href="send-failure-retry/strip.jpg">Frame strip</a></div></article>
+<article><h2>schedule send wheel</h2>
+<p class="muted">Seed · 72 frames · PASS</p>
+<p>A time wheel rolls behind a fixed selection band. The selected time persists in a small schedule chip as the wheel closes.</p><p class="muted">Fixed layers — Selection band, draft copy and conversation history.</p>
+<div class="videos"><div><video controls preload="none" src="schedule-send-wheel/preview.mp4" aria-label="Saved preview"></video><div>Saved preview</div></div>
+<div><video controls preload="none" src="schedule-send-wheel/project/replay.mp4" aria-label="Fresh replay"></video><div>Fresh replay</div></div></div>
+<div class="links"><a href="schedule-send-wheel/project/scene.json">Editable scene</a><a href="schedule-send-wheel/compare/report.json">Comparison</a><a href="schedule-send-wheel/strip.jpg">Frame strip</a></div></article>
+<article><h2>batch select messages</h2>
+<p class="muted">Seed · 72 frames · PASS</p>
+<p>The transcript shifts to make room for a check rail. Two rows gain checks separately, then an action bar replaces the composer.</p><p class="muted">Fixed layers — Header, transcript order, and each message’s text.</p>
+<div class="videos"><div><video controls preload="none" src="batch-select-messages/preview.mp4" aria-label="Saved preview"></video><div>Saved preview</div></div>
+<div><video controls preload="none" src="batch-select-messages/project/replay.mp4" aria-label="Fresh replay"></video><div>Fresh replay</div></div></div>
+<div class="links"><a href="batch-select-messages/project/scene.json">Editable scene</a><a href="batch-select-messages/compare/report.json">Comparison</a><a href="batch-select-messages/strip.jpg">Frame strip</a></div></article>
+<article><h2>pin conversation avatar</h2>
+<p class="muted">Seed · 72 frames · PASS</p>
+<p>The avatar follows a short arc from its row into the pinned tray. Its old row collapses and lower rows slide up.</p><p class="muted">Fixed layers — The inbox header, the pin lane, and other conversations’ names and preview copy.</p>
+<div class="videos"><div><video controls preload="none" src="pin-conversation-avatar/preview.mp4" aria-label="Saved preview"></video><div>Saved preview</div></div>
+<div><video controls preload="none" src="pin-conversation-avatar/project/replay.mp4" aria-label="Fresh replay"></video><div>Fresh replay</div></div></div>
+<div class="links"><a href="pin-conversation-avatar/project/scene.json">Editable scene</a><a href="pin-conversation-avatar/compare/report.json">Comparison</a><a href="pin-conversation-avatar/strip.jpg">Frame strip</a></div></article>
+<article><h2>camera push in</h2>
+<p class="muted">Seed · 72 frames · PASS</p>
+<p>The camera plane scales around a chosen detail, taking its neighboring cards toward the edges.</p><p class="muted">Fixed layers — The focal point, the cards’ arrangement within the camera plane, and the surrounding frame.</p>
+<div class="videos"><div><video controls preload="none" src="camera-push-in/preview.mp4" aria-label="Saved preview"></video><div>Saved preview</div></div>
+<div><video controls preload="none" src="camera-push-in/project/replay.mp4" aria-label="Fresh replay"></video><div>Fresh replay</div></div></div>
+<div class="links"><a href="camera-push-in/project/scene.json">Editable scene</a><a href="camera-push-in/compare/report.json">Comparison</a><a href="camera-push-in/strip.jpg">Frame strip</a></div></article>
+<article><h2>camera truck between</h2>
+<p class="muted">Seed · 72 frames · PASS</p>
+<p>A horizontal camera pan moves the view between adjacent panels. A small index marks the next destination.</p><p class="muted">Fixed layers — Magnification, destination sizes and spacing, the viewing window, and the surrounding heading.</p>
+<div class="videos"><div><video controls preload="none" src="camera-truck-between/preview.mp4" aria-label="Saved preview"></video><div>Saved preview</div></div>
+<div><video controls preload="none" src="camera-truck-between/project/replay.mp4" aria-label="Fresh replay"></video><div>Fresh replay</div></div></div>
+<div class="links"><a href="camera-truck-between/project/scene.json">Editable scene</a><a href="camera-truck-between/compare/report.json">Comparison</a><a href="camera-truck-between/strip.jpg">Frame strip</a></div></article>
+<article><h2>depth parallax</h2>
+<p class="muted">Seed · 72 frames · PASS</p>
+<p>The foreground crosses quickly, the middle cards move a shorter distance, and the grid barely shifts.</p><p class="muted">Fixed layers — The drawing window and the relative arrangement of objects on each plane.</p>
+<div class="videos"><div><video controls preload="none" src="depth-parallax/preview.mp4" aria-label="Saved preview"></video><div>Saved preview</div></div>
+<div><video controls preload="none" src="depth-parallax/project/replay.mp4" aria-label="Fresh replay"></video><div>Fresh replay</div></div></div>
+<div class="links"><a href="depth-parallax/project/scene.json">Editable scene</a><a href="depth-parallax/compare/report.json">Comparison</a><a href="depth-parallax/strip.jpg">Frame strip</a></div></article>
+<article><h2>rack focus</h2>
+<p class="muted">Seed · 72 frames · PASS</p>
+<p>Sharpness shifts from the near card to the far card. The near card softens in place.</p><p class="muted">Fixed layers — Both cards’ positions and silhouettes, the frame, and the heading.</p>
+<div class="videos"><div><video controls preload="none" src="rack-focus/preview.mp4" aria-label="Saved preview"></video><div>Saved preview</div></div>
+<div><video controls preload="none" src="rack-focus/project/replay.mp4" aria-label="Fresh replay"></video><div>Fresh replay</div></div></div>
+<div class="links"><a href="rack-focus/project/scene.json">Editable scene</a><a href="rack-focus/compare/report.json">Comparison</a><a href="rack-focus/strip.jpg">Frame strip</a></div></article>
+<article><h2>typographic tracking contract</h2>
+<p class="muted">Seed · 72 frames · PASS</p>
+<p>Letter spacing contracts toward the center without changing the word or type size.</p><p class="muted">Fixed layers — The title’s center and baseline, its wording, and the axis underneath.</p>
+<div class="videos"><div><video controls preload="none" src="typographic-tracking-contract/preview.mp4" aria-label="Saved preview"></video><div>Saved preview</div></div>
+<div><video controls preload="none" src="typographic-tracking-contract/project/replay.mp4" aria-label="Fresh replay"></video><div>Fresh replay</div></div></div>
+<div class="links"><a href="typographic-tracking-contract/project/scene.json">Editable scene</a><a href="typographic-tracking-contract/compare/report.json">Comparison</a><a href="typographic-tracking-contract/strip.jpg">Frame strip</a></div></article>
+<article><h2>step indicator travel</h2>
+<p class="muted">Seed · 72 frames · PASS</p>
+<p>An underline travels to the second step, holds, then travels to the third.</p><p class="muted">Fixed layers — All step labels, the rail, and the explanatory line.</p>
+<div class="videos"><div><video controls preload="none" src="step-indicator-travel/preview.mp4" aria-label="Saved preview"></video><div>Saved preview</div></div>
+<div><video controls preload="none" src="step-indicator-travel/project/replay.mp4" aria-label="Fresh replay"></video><div>Fresh replay</div></div></div>
+<div class="links"><a href="step-indicator-travel/project/scene.json">Editable scene</a><a href="step-indicator-travel/compare/report.json">Comparison</a><a href="step-indicator-travel/strip.jpg">Frame strip</a></div></article>
+<article><h2>metric wheel roll</h2>
+<p class="muted">Seed · 72 frames · PASS</p>
+<p>Three values roll upward through a narrow clipped readout and stop at the final value.</p><p class="muted">Fixed layers — Width and position of the readout, its baseline, and the metric label.</p>
+<div class="videos"><div><video controls preload="none" src="metric-wheel-roll/preview.mp4" aria-label="Saved preview"></video><div>Saved preview</div></div>
+<div><video controls preload="none" src="metric-wheel-roll/project/replay.mp4" aria-label="Fresh replay"></video><div>Fresh replay</div></div></div>
+<div class="links"><a href="metric-wheel-roll/project/scene.json">Editable scene</a><a href="metric-wheel-roll/compare/report.json">Comparison</a><a href="metric-wheel-roll/strip.jpg">Frame strip</a></div></article>
+<article><h2>comparison bars grow</h2>
+<p class="muted">Seed · 72 frames · PASS</p>
+<p>Both bars grow upward from the same baseline and stop at their own value.</p><p class="muted">Fixed layers — The baseline, the target line, and the two category labels.</p>
+<div class="videos"><div><video controls preload="none" src="comparison-bars-grow/preview.mp4" aria-label="Saved preview"></video><div>Saved preview</div></div>
+<div><video controls preload="none" src="comparison-bars-grow/project/replay.mp4" aria-label="Fresh replay"></video><div>Fresh replay</div></div></div>
+<div class="links"><a href="comparison-bars-grow/project/scene.json">Editable scene</a><a href="comparison-bars-grow/compare/report.json">Comparison</a><a href="comparison-bars-grow/strip.jpg">Frame strip</a></div></article>
+<article><h2>trend line trace</h2>
+<p class="muted">Seed · 72 frames · PASS</p>
+<p>A leading point traverses the chart and leaves the completed segments behind.</p><p class="muted">Fixed layers — Grid lines, axes, and the endpoints of the plotted values.</p>
+<div class="videos"><div><video controls preload="none" src="trend-line-trace/preview.mp4" aria-label="Saved preview"></video><div>Saved preview</div></div>
+<div><video controls preload="none" src="trend-line-trace/project/replay.mp4" aria-label="Fresh replay"></video><div>Fresh replay</div></div></div>
+<div class="links"><a href="trend-line-trace/project/scene.json">Editable scene</a><a href="trend-line-trace/compare/report.json">Comparison</a><a href="trend-line-trace/strip.jpg">Frame strip</a></div></article>
+<article><h2>grid reflow</h2>
+<p class="muted">Seed · 72 frames · PASS</p>
+<p>Each card follows an individual path into a changed grid order.</p><p class="muted">Fixed layers — Card copy and proportions, the board, and the heading.</p>
+<div class="videos"><div><video controls preload="none" src="grid-reflow/preview.mp4" aria-label="Saved preview"></video><div>Saved preview</div></div>
+<div><video controls preload="none" src="grid-reflow/project/replay.mp4" aria-label="Fresh replay"></video><div>Fresh replay</div></div></div>
+<div class="links"><a href="grid-reflow/project/scene.json">Editable scene</a><a href="grid-reflow/compare/report.json">Comparison</a><a href="grid-reflow/strip.jpg">Frame strip</a></div></article>
+<article><h2>accordion displaces row</h2>
+<p class="muted">Seed · 72 frames · PASS</p>
+<p>The first row grows down, its indicator rotates, and the following row makes space below it.</p><p class="muted">Fixed layers — The top edge of the first row, the row titles, and the surrounding viewport.</p>
+<div class="videos"><div><video controls preload="none" src="accordion-displaces-row/preview.mp4" aria-label="Saved preview"></video><div>Saved preview</div></div>
+<div><video controls preload="none" src="accordion-displaces-row/project/replay.mp4" aria-label="Fresh replay"></video><div>Fresh replay</div></div></div>
+<div class="links"><a href="accordion-displaces-row/project/scene.json">Editable scene</a><a href="accordion-displaces-row/compare/report.json">Comparison</a><a href="accordion-displaces-row/strip.jpg">Frame strip</a></div></article>
+<article><h2>exploded layer view</h2>
+<p class="muted">Seed · 72 frames · PASS</p>
+<p>Three stacked planes spread diagonally, keeping a shared orientation as their edges separate.</p><p class="muted">Fixed layers — Each layer’s own geometry, border, and label.</p>
+<div class="videos"><div><video controls preload="none" src="exploded-layer-view/preview.mp4" aria-label="Saved preview"></video><div>Saved preview</div></div>
+<div><video controls preload="none" src="exploded-layer-view/project/replay.mp4" aria-label="Fresh replay"></video><div>Fresh replay</div></div></div>
+<div class="links"><a href="exploded-layer-view/project/scene.json">Editable scene</a><a href="exploded-layer-view/compare/report.json">Comparison</a><a href="exploded-layer-view/strip.jpg">Frame strip</a></div></article>
+<article><h2>spotlight cross text</h2>
+<p class="muted">Seed · 72 frames · PASS</p>
+<p>A bounded opening in a dim overlay travels from one phrase to the next.</p><p class="muted">Fixed layers — All the text, its position, type, and spacing. The overlay keeps its height.</p>
+<div class="videos"><div><video controls preload="none" src="spotlight-cross-text/preview.mp4" aria-label="Saved preview"></video><div>Saved preview</div></div>
+<div><video controls preload="none" src="spotlight-cross-text/project/replay.mp4" aria-label="Fresh replay"></video><div>Fresh replay</div></div></div>
+<div class="links"><a href="spotlight-cross-text/project/scene.json">Editable scene</a><a href="spotlight-cross-text/compare/report.json">Comparison</a><a href="spotlight-cross-text/strip.jpg">Frame strip</a></div></article>
+<article><h2>signals merge routes</h2>
+<p class="muted">Seed · 72 frames · PASS</p>
+<p>Two signals travel along separate pathways and combine at the junction. One outgoing packet continues along the shared route.</p><p class="muted">Fixed layers — The branch geometry, junction, endpoints and labels.</p>
+<div class="videos"><div><video controls preload="none" src="signals-merge-routes/preview.mp4" aria-label="Saved preview"></video><div>Saved preview</div></div>
+<div><video controls preload="none" src="signals-merge-routes/project/replay.mp4" aria-label="Fresh replay"></video><div>Fresh replay</div></div></div>
+<div class="links"><a href="signals-merge-routes/project/scene.json">Editable scene</a><a href="signals-merge-routes/compare/report.json">Comparison</a><a href="signals-merge-routes/strip.jpg">Frame strip</a></div></article>
+<article><h2>signal radiation</h2>
+<p class="muted">Seed · 72 frames · PASS</p>
+<p>Thin rings grow out from one source and fade at successive distances.</p><p class="muted">Fixed layers — The source itself, heading, and explanatory text.</p>
+<div class="videos"><div><video controls preload="none" src="signal-radiation/preview.mp4" aria-label="Saved preview"></video><div>Saved preview</div></div>
+<div><video controls preload="none" src="signal-radiation/project/replay.mp4" aria-label="Fresh replay"></video><div>Fresh replay</div></div></div>
+<div class="links"><a href="signal-radiation/project/scene.json">Editable scene</a><a href="signal-radiation/compare/report.json">Comparison</a><a href="signal-radiation/strip.jpg">Frame strip</a></div></article>
+<article><h2>freeze around live detail</h2>
+<p class="muted">Seed · 72 frames · PASS</p>
+<p>Peripheral activity stops mid-travel. One point in the center keeps moving to its destination.</p><p class="muted">Fixed layers — The tracks stay fixed throughout. After the stop, all peripheral points hold their exact positions.</p>
+<div class="videos"><div><video controls preload="none" src="freeze-around-live-detail/preview.mp4" aria-label="Saved preview"></video><div>Saved preview</div></div>
+<div><video controls preload="none" src="freeze-around-live-detail/project/replay.mp4" aria-label="Fresh replay"></video><div>Fresh replay</div></div></div>
+<div class="links"><a href="freeze-around-live-detail/project/scene.json">Editable scene</a><a href="freeze-around-live-detail/compare/report.json">Comparison</a><a href="freeze-around-live-detail/strip.jpg">Frame strip</a></div></article>
+<article><h2>items collapse into count</h2>
+<p class="muted">Seed · 72 frames · PASS</p>
+<p>Each item takes a short arc into a counter, shrinks away at arrival, and advances the count.</p><p class="muted">Fixed layers — The count surface, the label underneath it, and the overall framing.</p>
+<div class="videos"><div><video controls preload="none" src="items-collapse-into-count/preview.mp4" aria-label="Saved preview"></video><div>Saved preview</div></div>
+<div><video controls preload="none" src="items-collapse-into-count/project/replay.mp4" aria-label="Fresh replay"></video><div>Fresh replay</div></div></div>
+<div class="links"><a href="items-collapse-into-count/project/scene.json">Editable scene</a><a href="items-collapse-into-count/compare/report.json">Comparison</a><a href="items-collapse-into-count/strip.jpg">Frame strip</a></div></article>
+<article><h2>registered shape cut</h2>
+<p class="muted">Seed · 72 frames · PASS</p>
+<p>An abrupt cut changes the surrounding shot in one frame. The supporting line appears after the cut.</p><p class="muted">Fixed layers — The matched action shape, its position and size, and the action wording.</p>
+<div class="videos"><div><video controls preload="none" src="registered-shape-cut/preview.mp4" aria-label="Saved preview"></video><div>Saved preview</div></div>
+<div><video controls preload="none" src="registered-shape-cut/project/replay.mp4" aria-label="Fresh replay"></video><div>Fresh replay</div></div></div>
+<div class="links"><a href="registered-shape-cut/project/scene.json">Editable scene</a><a href="registered-shape-cut/compare/report.json">Comparison</a><a href="registered-shape-cut/strip.jpg">Frame strip</a></div></article>
+<article><h2>objects pass behind</h2>
+<p class="muted">Seed · 72 frames · PASS</p>
+<p>The objects travel toward each other, disappear behind a central cover, and emerge on opposite sides.</p><p class="muted">Fixed layers — The central cover, both travel lanes, and the heading.</p>
+<div class="videos"><div><video controls preload="none" src="objects-pass-behind/preview.mp4" aria-label="Saved preview"></video><div>Saved preview</div></div>
+<div><video controls preload="none" src="objects-pass-behind/project/replay.mp4" aria-label="Fresh replay"></video><div>Fresh replay</div></div></div>
+<div class="links"><a href="objects-pass-behind/project/scene.json">Editable scene</a><a href="objects-pass-behind/compare/report.json">Comparison</a><a href="objects-pass-behind/strip.jpg">Frame strip</a></div></article>
+<article><h2>needle sweeps threshold</h2>
+<p class="muted">Seed · 72 frames · PASS</p>
+<p>A single meter pointer rotates about its pivot, overshoots briefly, and settles at the desired reading.</p><p class="muted">Fixed layers — Gauge ticks, the threshold region, the pivot and the labels.</p>
+<div class="videos"><div><video controls preload="none" src="needle-sweeps-threshold/preview.mp4" aria-label="Saved preview"></video><div>Saved preview</div></div>
+<div><video controls preload="none" src="needle-sweeps-threshold/project/replay.mp4" aria-label="Fresh replay"></video><div>Fresh replay</div></div></div>
+<div class="links"><a href="needle-sweeps-threshold/project/scene.json">Editable scene</a><a href="needle-sweeps-threshold/compare/report.json">Comparison</a><a href="needle-sweeps-threshold/strip.jpg">Frame strip</a></div></article>
+<article><h2>message wall</h2>
+<p class="muted">Seed · 72 frames · PASS</p>
+<p>Conversation tiles enter in a stagger while a common camera glides through the wall.</p><p class="muted">Fixed layers — The cells retain their columns; the layout order and each message identity stay readable.</p>
+<div class="videos"><div><video controls preload="none" src="message-wall/preview.mp4" aria-label="Saved preview"></video><div>Saved preview</div></div>
+<div><video controls preload="none" src="message-wall/project/replay.mp4" aria-label="Fresh replay"></video><div>Fresh replay</div></div></div>
+<div class="links"><a href="message-wall/project/scene.json">Editable scene</a><a href="message-wall/compare/report.json">Comparison</a><a href="message-wall/strip.jpg">Frame strip</a></div></article>
+<article><h2>app drawer</h2>
+<p class="muted">Seed · 72 frames · PASS</p>
+<p>The drawer carries a handle and icons upward together from offscreen.</p><p class="muted">Fixed layers — The phone header and underlying message remain in place.</p>
+<div class="videos"><div><video controls preload="none" src="app-drawer/preview.mp4" aria-label="Saved preview"></video><div>Saved preview</div></div>
+<div><video controls preload="none" src="app-drawer/project/replay.mp4" aria-label="Fresh replay"></video><div>Fresh replay</div></div></div>
+<div class="links"><a href="app-drawer/project/scene.json">Editable scene</a><a href="app-drawer/compare/report.json">Comparison</a><a href="app-drawer/strip.jpg">Frame strip</a></div></article>
+<article><h2>identity morph</h2>
+<p class="muted">Seed · 72 frames · PASS</p>
+<p>The surface changes radius, size, and color while two distinct marks exchange at its center.</p><p class="muted">Fixed layers — The central identity anchor and background plane hold.</p>
+<div class="videos"><div><video controls preload="none" src="identity-morph/preview.mp4" aria-label="Saved preview"></video><div>Saved preview</div></div>
+<div><video controls preload="none" src="identity-morph/project/replay.mp4" aria-label="Fresh replay"></video><div>Fresh replay</div></div></div>
+<div class="links"><a href="identity-morph/project/scene.json">Editable scene</a><a href="identity-morph/compare/report.json">Comparison</a><a href="identity-morph/strip.jpg">Frame strip</a></div></article>
+<article><h2>circle to panel</h2>
+<p class="muted">Seed · 72 frames · PASS</p>
+<p>One circle widens into a panel while the corner radius changes; contents appear after the surface has room.</p><p class="muted">Fixed layers — The transformation remains centered on the same stage anchor.</p>
+<div class="videos"><div><video controls preload="none" src="circle-to-panel/preview.mp4" aria-label="Saved preview"></video><div>Saved preview</div></div>
+<div><video controls preload="none" src="circle-to-panel/project/replay.mp4" aria-label="Fresh replay"></video><div>Fresh replay</div></div></div>
+<div class="links"><a href="circle-to-panel/project/scene.json">Editable scene</a><a href="circle-to-panel/compare/report.json">Comparison</a><a href="circle-to-panel/strip.jpg">Frame strip</a></div></article>
+<article><h2>mini app expand</h2>
+<p class="muted">Seed · 72 frames · PASS</p>
+<p>An embedded card scales from its bottom anchor into reading size inside its conversation.</p><p class="muted">Fixed layers — The request, composer, phone silhouette, and conversation header hold.</p>
+<div class="videos"><div><video controls preload="none" src="mini-app-expand/preview.mp4" aria-label="Saved preview"></video><div>Saved preview</div></div>
+<div><video controls preload="none" src="mini-app-expand/project/replay.mp4" aria-label="Fresh replay"></video><div>Fresh replay</div></div></div>
+<div class="links"><a href="mini-app-expand/project/scene.json">Editable scene</a><a href="mini-app-expand/compare/report.json">Comparison</a><a href="mini-app-expand/strip.jpg">Frame strip</a></div></article>
+<article><h2>selection confirm</h2>
+<p class="muted">Seed · 72 frames · PASS</p>
+<p>One control transitions from action color to pressed styling to confirmation wording and color.</p><p class="muted">Fixed layers — The button position, geometry and parent card stay fixed.</p>
+<div class="videos"><div><video controls preload="none" src="selection-confirm/preview.mp4" aria-label="Saved preview"></video><div>Saved preview</div></div>
+<div><video controls preload="none" src="selection-confirm/project/replay.mp4" aria-label="Fresh replay"></video><div>Fresh replay</div></div></div>
+<div class="links"><a href="selection-confirm/project/scene.json">Editable scene</a><a href="selection-confirm/compare/report.json">Comparison</a><a href="selection-confirm/strip.jpg">Frame strip</a></div></article>
+<article><h2>card orbit</h2>
+<p class="muted">Seed · 72 frames · PASS</p>
+<p>Independent cards arrive from separate angles with distinct rotations and settle into an ordered row.</p><p class="muted">Fixed layers — The destination row establishes a common baseline against a stationary field.</p>
+<div class="videos"><div><video controls preload="none" src="card-orbit/preview.mp4" aria-label="Saved preview"></video><div>Saved preview</div></div>
+<div><video controls preload="none" src="card-orbit/project/replay.mp4" aria-label="Fresh replay"></video><div>Fresh replay</div></div></div>
+<div class="links"><a href="card-orbit/project/scene.json">Editable scene</a><a href="card-orbit/compare/report.json">Comparison</a><a href="card-orbit/strip.jpg">Frame strip</a></div></article>
+<article><h2>messages attachment stack</h2>
+<p class="muted">Seed · 72 frames · PASS</p>
+<p>The top card translates and rotates off the deck; the next card advances in depth and turns back toward zero.</p><p class="muted">Fixed layers — The attachment count, conversation label, composer, and backdrop remain fixed.</p>
+<div class="videos"><div><video controls preload="none" src="messages-attachment-stack/preview.mp4" aria-label="Saved preview"></video><div>Saved preview</div></div>
+<div><video controls preload="none" src="messages-attachment-stack/project/replay.mp4" aria-label="Fresh replay"></video><div>Fresh replay</div></div></div>
+<div class="links"><a href="messages-attachment-stack/project/scene.json">Editable scene</a><a href="messages-attachment-stack/compare/report.json">Comparison</a><a href="messages-attachment-stack/strip.jpg">Frame strip</a></div></article>
+<article><h2>inline card expand</h2>
+<p class="muted">Seed · 72 frames · PASS</p>
+<p>A distinct grabber and sheet rise together and settle while the chat dims below.</p><p class="muted">Fixed layers — The header and underlying message/card stay put in the conversation.</p>
+<div class="videos"><div><video controls preload="none" src="inline-card-expand/preview.mp4" aria-label="Saved preview"></video><div>Saved preview</div></div>
+<div><video controls preload="none" src="inline-card-expand/project/replay.mp4" aria-label="Fresh replay"></video><div>Fresh replay</div></div></div>
+<div class="links"><a href="inline-card-expand/project/scene.json">Editable scene</a><a href="inline-card-expand/compare/report.json">Comparison</a><a href="inline-card-expand/strip.jpg">Frame strip</a></div></article>
+<article><h2>avatar ring assemble</h2>
+<p class="muted">Seed · 72 frames · PASS</p>
+<p>Portraits approach on separate trajectories, sharpen and settle around shrinking headline copy.</p><p class="muted">Fixed layers — The center of the copy remains anchored and the backdrop holds.</p>
+<div class="videos"><div><video controls preload="none" src="avatar-ring-assemble/preview.mp4" aria-label="Saved preview"></video><div>Saved preview</div></div>
+<div><video controls preload="none" src="avatar-ring-assemble/project/replay.mp4" aria-label="Fresh replay"></video><div>Fresh replay</div></div></div>
+<div class="links"><a href="avatar-ring-assemble/project/scene.json">Editable scene</a><a href="avatar-ring-assemble/compare/report.json">Comparison</a><a href="avatar-ring-assemble/strip.jpg">Frame strip</a></div></article>
+<article><h2>tear perforated ticket</h2>
+<p class="muted">Seed · 72 frames · PASS</p>
+<p>A perforated seam parts left to right as the stub tilts around the still-joined edge, then drops once detached.</p><p class="muted">Fixed layers — The main ticket, its copy and the backdrop stay pinned.</p>
+<div class="videos"><div><video controls preload="none" src="tear-perforated-ticket/preview.mp4" aria-label="Saved preview"></video><div>Saved preview</div></div>
+<div><video controls preload="none" src="tear-perforated-ticket/project/replay.mp4" aria-label="Fresh replay"></video><div>Fresh replay</div></div></div>
+<div class="links"><a href="tear-perforated-ticket/project/scene.json">Editable scene</a><a href="tear-perforated-ticket/compare/report.json">Comparison</a><a href="tear-perforated-ticket/strip.jpg">Frame strip</a></div></article>
+<article><h2>message pin landing</h2>
+<p class="muted">Seed · 72 frames · PASS</p>
+<p>A dot leaves the inline location cue, travels into the map, and compresses before it becomes an anchored pin.</p><p class="muted">Fixed layers — The question, stage map, route, and heading remain stationary throughout the travel.</p>
+<div class="videos"><div><video controls preload="none" src="message-pin-landing/preview.mp4" aria-label="Saved preview"></video><div>Saved preview</div></div>
+<div><video controls preload="none" src="message-pin-landing/project/replay.mp4" aria-label="Fresh replay"></video><div>Fresh replay</div></div></div>
+<div class="links"><a href="message-pin-landing/project/scene.json">Editable scene</a><a href="message-pin-landing/compare/report.json">Comparison</a><a href="message-pin-landing/strip.jpg">Frame strip</a></div></article>
+<article><h2>photo open continuity</h2>
+<p class="muted">Seed · 72 frames · PASS</p>
+<p>The chosen thumbnail grows and moves into a raised preview while its neighbors dim.</p><p class="muted">Fixed layers — The other thumbnail boxes, heading, footer, and viewport hold position.</p>
+<div class="videos"><div><video controls preload="none" src="photo-open-continuity/preview.mp4" aria-label="Saved preview"></video><div>Saved preview</div></div>
+<div><video controls preload="none" src="photo-open-continuity/project/replay.mp4" aria-label="Fresh replay"></video><div>Fresh replay</div></div></div>
+<div class="links"><a href="photo-open-continuity/project/scene.json">Editable scene</a><a href="photo-open-continuity/compare/report.json">Comparison</a><a href="photo-open-continuity/strip.jpg">Frame strip</a></div></article>
+<article><h2>photo pinch detail</h2>
+<p class="muted">Seed · 72 frames · PASS</p>
+<p>The picture scales around a focal point inside a clipped viewer as the gesture markers spread.</p><p class="muted">Fixed layers — The image window, control below it, heading, and footer hold position.</p>
+<div class="videos"><div><video controls preload="none" src="photo-pinch-detail/preview.mp4" aria-label="Saved preview"></video><div>Saved preview</div></div>
+<div><video controls preload="none" src="photo-pinch-detail/project/replay.mp4" aria-label="Fresh replay"></video><div>Fresh replay</div></div></div>
+<div class="links"><a href="photo-pinch-detail/project/scene.json">Editable scene</a><a href="photo-pinch-detail/compare/report.json">Comparison</a><a href="photo-pinch-detail/strip.jpg">Frame strip</a></div></article>
+<article><h2>photo crop reframe</h2>
+<p class="muted">Seed · 72 frames · PASS</p>
+<p>An oversized picture eases sideways underneath a stationary portrait crop frame.</p><p class="muted">Fixed layers — The crop bounds, grid lines, heading, and footer hold position.</p>
+<div class="videos"><div><video controls preload="none" src="photo-crop-reframe/preview.mp4" aria-label="Saved preview"></video><div>Saved preview</div></div>
+<div><video controls preload="none" src="photo-crop-reframe/project/replay.mp4" aria-label="Fresh replay"></video><div>Fresh replay</div></div></div>
+<div class="links"><a href="photo-crop-reframe/project/scene.json">Editable scene</a><a href="photo-crop-reframe/compare/report.json">Comparison</a><a href="photo-crop-reframe/strip.jpg">Frame strip</a></div></article>
+<article><h2>photo compare wipe</h2>
+<p class="muted">Seed · 72 frames · PASS</p>
+<p>A divider increases the visible fraction of the second image from the same crop origin.</p><p class="muted">Fixed layers — Both photo grids, the surrounding crop frame, and the outside controls hold position.</p>
+<div class="videos"><div><video controls preload="none" src="photo-compare-wipe/preview.mp4" aria-label="Saved preview"></video><div>Saved preview</div></div>
+<div><video controls preload="none" src="photo-compare-wipe/project/replay.mp4" aria-label="Fresh replay"></video><div>Fresh replay</div></div></div>
+<div class="links"><a href="photo-compare-wipe/project/scene.json">Editable scene</a><a href="photo-compare-wipe/compare/report.json">Comparison</a><a href="photo-compare-wipe/strip.jpg">Frame strip</a></div></article>
+<article><h2>photo album deal</h2>
+<p class="muted">Seed · 72 frames · PASS</p>
+<p>The three already stacked thumbnails separate on staggered paths and straighten into a row.</p><p class="muted">Fixed layers — Heading, footer, and the album label hold position.</p>
+<div class="videos"><div><video controls preload="none" src="photo-album-deal/preview.mp4" aria-label="Saved preview"></video><div>Saved preview</div></div>
+<div><video controls preload="none" src="photo-album-deal/project/replay.mp4" aria-label="Fresh replay"></video><div>Fresh replay</div></div></div>
+<div class="links"><a href="photo-album-deal/project/scene.json">Editable scene</a><a href="photo-album-deal/compare/report.json">Comparison</a><a href="photo-album-deal/strip.jpg">Frame strip</a></div></article>
+<article><h2>media video scrub</h2>
+<p class="muted">Seed · 72 frames · PASS</p>
+<p>The playhead drags forward, pauses, and backtracks; the sample shown in the fixed viewer follows its position.</p><p class="muted">Fixed layers — The preview frame, timeline baseline, and interface chrome hold position.</p>
+<div class="videos"><div><video controls preload="none" src="media-video-scrub/preview.mp4" aria-label="Saved preview"></video><div>Saved preview</div></div>
+<div><video controls preload="none" src="media-video-scrub/project/replay.mp4" aria-label="Fresh replay"></video><div>Fresh replay</div></div></div>
+<div class="links"><a href="media-video-scrub/project/scene.json">Editable scene</a><a href="media-video-scrub/compare/report.json">Comparison</a><a href="media-video-scrub/strip.jpg">Frame strip</a></div></article>
+<article><h2>media trim range</h2>
+<p class="muted">Seed · 72 frames · PASS</p>
+<p>The two range handles advance inward in separate gestures around a fixed filmstrip.</p><p class="muted">Fixed layers — The filmstrip image positions, heading, footer, and time axis hold position.</p>
+<div class="videos"><div><video controls preload="none" src="media-trim-range/preview.mp4" aria-label="Saved preview"></video><div>Saved preview</div></div>
+<div><video controls preload="none" src="media-trim-range/project/replay.mp4" aria-label="Fresh replay"></video><div>Fresh replay</div></div></div>
+<div class="links"><a href="media-trim-range/project/scene.json">Editable scene</a><a href="media-trim-range/compare/report.json">Comparison</a><a href="media-trim-range/strip.jpg">Frame strip</a></div></article>
+<article><h2>attachment peek release</h2>
+<p class="muted">Seed · 72 frames · PASS</p>
+<p>One attachment rises and grows a little during a hold, then settles into exactly the original grid slot.</p><p class="muted">Fixed layers — Neighboring thumbnails and interface chrome hold position.</p>
+<div class="videos"><div><video controls preload="none" src="attachment-peek-release/preview.mp4" aria-label="Saved preview"></video><div>Saved preview</div></div>
+<div><video controls preload="none" src="attachment-peek-release/project/replay.mp4" aria-label="Fresh replay"></video><div>Fresh replay</div></div></div>
+<div class="links"><a href="attachment-peek-release/project/scene.json">Editable scene</a><a href="attachment-peek-release/compare/report.json">Comparison</a><a href="attachment-peek-release/strip.jpg">Frame strip</a></div></article>
+<article><h2>card reorder insert</h2>
+<p class="muted">Seed · 72 frames · PASS</p>
+<p>The lifted tile follows a path over the row, its neighbors shift into the vacated space, and it docks in the new order.</p><p class="muted">Fixed layers — The thumbnail row bounds, heading, and footer hold position.</p>
+<div class="videos"><div><video controls preload="none" src="card-reorder-insert/preview.mp4" aria-label="Saved preview"></video><div>Saved preview</div></div>
+<div><video controls preload="none" src="card-reorder-insert/project/replay.mp4" aria-label="Fresh replay"></video><div>Fresh replay</div></div></div>
+<div class="links"><a href="card-reorder-insert/project/scene.json">Editable scene</a><a href="card-reorder-insert/compare/report.json">Comparison</a><a href="card-reorder-insert/strip.jpg">Frame strip</a></div></article>
+<article><h2>media progressive sharpen</h2>
+<p class="muted">Seed · 72 frames · PASS</p>
+<p>Successive bands sharpen over a soft version of the same photo.</p><p class="muted">Fixed layers — The picture geometry, window, heading, and footer hold position.</p>
+<div class="videos"><div><video controls preload="none" src="media-progressive-sharpen/preview.mp4" aria-label="Saved preview"></video><div>Saved preview</div></div>
+<div><video controls preload="none" src="media-progressive-sharpen/project/replay.mp4" aria-label="Fresh replay"></video><div>Fresh replay</div></div></div>
+<div class="links"><a href="media-progressive-sharpen/project/scene.json">Editable scene</a><a href="media-progressive-sharpen/compare/report.json">Comparison</a><a href="media-progressive-sharpen/strip.jpg">Frame strip</a></div></article>
+<article><h2>media caption disclosure</h2>
+<p class="muted">Seed · 72 frames · PASS</p>
+<p>The caption window gains height, the full caption appears, and the neighboring row below is pushed down.</p><p class="muted">Fixed layers — The photo bounds, disclosure control, heading, and footer hold position.</p>
+<div class="videos"><div><video controls preload="none" src="media-caption-disclosure/preview.mp4" aria-label="Saved preview"></video><div>Saved preview</div></div>
+<div><video controls preload="none" src="media-caption-disclosure/project/replay.mp4" aria-label="Fresh replay"></video><div>Fresh replay</div></div></div>
+<div class="links"><a href="media-caption-disclosure/project/scene.json">Editable scene</a><a href="media-caption-disclosure/compare/report.json">Comparison</a><a href="media-caption-disclosure/strip.jpg">Frame strip</a></div></article>
+<article><h2>photo iris reveal</h2>
+<p class="muted">Seed · 72 frames · PASS</p>
+<p>A circular mask expands from a chosen point and opens to all four corners of the frame.</p><p class="muted">Fixed layers — The underlying picture geometry, reveal origin, crop frame, and interface chrome hold position.</p>
+<div class="videos"><div><video controls preload="none" src="photo-iris-reveal/preview.mp4" aria-label="Saved preview"></video><div>Saved preview</div></div>
+<div><video controls preload="none" src="photo-iris-reveal/project/replay.mp4" aria-label="Fresh replay"></video><div>Fresh replay</div></div></div>
+<div class="links"><a href="photo-iris-reveal/project/scene.json">Editable scene</a><a href="photo-iris-reveal/compare/report.json">Comparison</a><a href="photo-iris-reveal/strip.jpg">Frame strip</a></div></article>
+<article><h2>album page turn</h2>
+<p class="muted">Seed · 72 frames · PASS</p>
+<p>The departing right leaf compresses toward the seam; its reverse side opens over the left page.</p><p class="muted">Fixed layers — The album cover and center seam hold position, and content on resting pages has no free translation.</p>
+<div class="videos"><div><video controls preload="none" src="album-page-turn/preview.mp4" aria-label="Saved preview"></video><div>Saved preview</div></div>
+<div><video controls preload="none" src="album-page-turn/project/replay.mp4" aria-label="Fresh replay"></video><div>Fresh replay</div></div></div>
+<div class="links"><a href="album-page-turn/project/scene.json">Editable scene</a><a href="album-page-turn/compare/report.json">Comparison</a><a href="album-page-turn/strip.jpg">Frame strip</a></div></article>
+<article><h2>photo grid density</h2>
+<p class="muted">Seed · 72 frames · PASS</p>
+<p>Existing images shrink and converge to new rows and columns while secondary tiles appear in the now reachable cells.</p><p class="muted">Fixed layers — The grid region, headings, and footer hold position.</p>
+<div class="videos"><div><video controls preload="none" src="photo-grid-density/preview.mp4" aria-label="Saved preview"></video><div>Saved preview</div></div>
+<div><video controls preload="none" src="photo-grid-density/project/replay.mp4" aria-label="Fresh replay"></video><div>Fresh replay</div></div></div>
+<div class="links"><a href="photo-grid-density/project/scene.json">Editable scene</a><a href="photo-grid-density/compare/report.json">Comparison</a><a href="photo-grid-density/strip.jpg">Frame strip</a></div></article>
+<article><h2>attachment download progress</h2>
+<p class="muted">Seed · 72 frames · PASS</p>
+<p>A determinate progress bar fills with two pauses; the status becomes available only at completion.</p><p class="muted">Fixed layers — The attachment thumbnail, filename, card geometry, and interface chrome hold position.</p>
+<div class="videos"><div><video controls preload="none" src="attachment-download-progress/preview.mp4" aria-label="Saved preview"></video><div>Saved preview</div></div>
+<div><video controls preload="none" src="attachment-download-progress/project/replay.mp4" aria-label="Fresh replay"></video><div>Fresh replay</div></div></div>
+<div class="links"><a href="attachment-download-progress/project/scene.json">Editable scene</a><a href="attachment-download-progress/compare/report.json">Comparison</a><a href="attachment-download-progress/strip.jpg">Frame strip</a></div></article>
+<article><h2>photo markup stroke</h2>
+<p class="muted">Seed · 72 frames · PASS</p>
+<p>A curved annotation accumulates in drawing order with the pen tip moving along the growing stroke.</p><p class="muted">Fixed layers — The photograph, viewport, heading, and footer hold position.</p>
+<div class="videos"><div><video controls preload="none" src="photo-markup-stroke/preview.mp4" aria-label="Saved preview"></video><div>Saved preview</div></div>
+<div><video controls preload="none" src="photo-markup-stroke/project/replay.mp4" aria-label="Fresh replay"></video><div>Fresh replay</div></div></div>
+<div class="links"><a href="photo-markup-stroke/project/scene.json">Editable scene</a><a href="photo-markup-stroke/compare/report.json">Comparison</a><a href="photo-markup-stroke/strip.jpg">Frame strip</a></div></article>
+<article><h2>location question bridge</h2>
+<p class="muted">Seed · 72 frames · PASS</p>
+<p>The lower camera pushes toward a location control; the keyboard and composer clear, and a map occupies their former region.</p><p class="muted">Fixed layers — The question remains the readable anchor. It nudges with the camera push, then holds through the change of surfaces.</p>
+<div class="videos"><div><video controls preload="none" src="location-question-bridge/preview.mp4" aria-label="Saved preview"></video><div>Saved preview</div></div>
+<div><video controls preload="none" src="location-question-bridge/project/replay.mp4" aria-label="Fresh replay"></video><div>Fresh replay</div></div></div>
+<div class="links"><a href="location-question-bridge/project/scene.json">Editable scene</a><a href="location-question-bridge/compare/report.json">Comparison</a><a href="location-question-bridge/strip.jpg">Frame strip</a></div></article>
+<article><h2>screen to physical prop</h2>
+<p class="muted">Seed · 72 frames · PASS</p>
+<p>The phone falls away to the left and loses focus as the physical prop on the right sharpens. The camera cuts to a tighter continuation, pushes in a little farther, then holds.</p><p class="muted">Fixed layers — The prop stays put on the table. The reply and its conversation layout move together with the phone.</p>
+<div class="videos"><div><video controls preload="none" src="screen-to-physical-prop/preview.mp4" aria-label="Saved preview"></video><div>Saved preview</div></div>
+<div><video controls preload="none" src="screen-to-physical-prop/project/replay.mp4" aria-label="Fresh replay"></video><div>Fresh replay</div></div></div>
+<div class="links"><a href="screen-to-physical-prop/project/scene.json">Editable scene</a><a href="screen-to-physical-prop/compare/report.json">Comparison</a><a href="screen-to-physical-prop/strip.jpg">Frame strip</a></div></article>
+<article><h2>metric count</h2>
+<p class="muted">Seed · 72 frames · PASS</p>
+<p>Only the numeric value steps through intermediate whole numbers, then the final value holds.</p><p class="muted">Fixed layers — The heading, metric label, optional unit and field stay in place.</p>
+<div class="videos"><div><video controls preload="none" src="metric-count/preview.mp4" aria-label="Saved preview"></video><div>Saved preview</div></div>
+<div><video controls preload="none" src="metric-count/project/replay.mp4" aria-label="Fresh replay"></video><div>Fresh replay</div></div></div>
+<div class="links"><a href="metric-count/project/scene.json">Editable scene</a><a href="metric-count/compare/report.json">Comparison</a><a href="metric-count/strip.jpg">Frame strip</a></div></article>
+<article><h2>text scramble resolve</h2>
+<p class="muted">Seed · 72 frames · PASS</p>
+<p>Unsettled character slots change while their positions stay fixed, then resolve into a readable title left to right.</p><p class="muted">Fixed layers — The title field, heading and camera hold steady.</p>
+<div class="videos"><div><video controls preload="none" src="text-scramble-resolve/preview.mp4" aria-label="Saved preview"></video><div>Saved preview</div></div>
+<div><video controls preload="none" src="text-scramble-resolve/project/replay.mp4" aria-label="Fresh replay"></video><div>Fresh replay</div></div></div>
+<div class="links"><a href="text-scramble-resolve/project/scene.json">Editable scene</a><a href="text-scramble-resolve/compare/report.json">Comparison</a><a href="text-scramble-resolve/strip.jpg">Frame strip</a></div></article>
+<article><h2>center gutter open</h2>
+<p class="muted">Seed · 72 frames · PASS</p>
+<p>Two separate picture planes slide outward in opposite directions and open a gutter for a label.</p><p class="muted">Fixed layers — The original frame and revealed text stay centered.</p>
+<div class="videos"><div><video controls preload="none" src="center-gutter-open/preview.mp4" aria-label="Saved preview"></video><div>Saved preview</div></div>
+<div><video controls preload="none" src="center-gutter-open/project/replay.mp4" aria-label="Fresh replay"></video><div>Fresh replay</div></div></div>
+<div class="links"><a href="center-gutter-open/project/scene.json">Editable scene</a><a href="center-gutter-open/compare/report.json">Comparison</a><a href="center-gutter-open/strip.jpg">Frame strip</a></div></article>
+<article><h2>hinged swatch fan</h2>
+<p class="muted">Seed · 72 frames · PASS</p>
+<p>The outer leaves rotate in opposite directions around a common pin and stop in a standing fan.</p><p class="muted">Fixed layers — The center leaf, visible pivot, heading and camera are fixed.</p>
+<div class="videos"><div><video controls preload="none" src="hinged-swatch-fan/preview.mp4" aria-label="Saved preview"></video><div>Saved preview</div></div>
+<div><video controls preload="none" src="hinged-swatch-fan/project/replay.mp4" aria-label="Fresh replay"></video><div>Fresh replay</div></div></div>
+<div class="links"><a href="hinged-swatch-fan/project/scene.json">Editable scene</a><a href="hinged-swatch-fan/compare/report.json">Comparison</a><a href="hinged-swatch-fan/strip.jpg">Frame strip</a></div></article>
+<article><h2>toggle thumb then tint</h2>
+<p class="muted">Shipped learned · 36 frames · PASS</p>
+<p>Move the thumb right in steps, settle it, then finish filling the switch with the enabled color.</p><p class="muted">Fixed layers — off-track</p>
+<div class="videos"><div><video controls preload="none" src="toggle-thumb-then-tint/preview.mp4" aria-label="Saved preview"></video><div>Saved preview</div></div>
+<div><video controls preload="none" src="toggle-thumb-then-tint/project/replay.mp4" aria-label="Fresh replay"></video><div>Fresh replay</div></div></div>
+<div class="links"><a href="toggle-thumb-then-tint/project/scene.json">Editable scene</a><a href="toggle-thumb-then-tint/compare/report.json">Comparison</a><a href="toggle-thumb-then-tint/strip.png">Frame strip</a></div></article>
+<article><h2>tether extend then pivot dock</h2>
+<p class="muted">New in benchmark · 90 frames · PASS</p>
+<p>A horizontal shuttle pulls out a tether, pauses at full reach, then turns upward on the same tether into a fixed dock.</p><p class="muted">Fixed layers — board, heading-mark, heading-dash, baseline, dock, dock-center, pivot-ring, pivot-center</p>
+<div class="videos"><div><video controls preload="none" src="tether-extend-then-pivot-dock/preview.mp4" aria-label="Saved preview"></video><div>Saved preview</div></div>
+<div><video controls preload="none" src="tether-extend-then-pivot-dock/project/replay.mp4" aria-label="Fresh replay"></video><div>Fresh replay</div></div></div>
+<div class="links"><a href="tether-extend-then-pivot-dock/project/scene.json">Editable scene</a><a href="tether-extend-then-pivot-dock/compare/report.json">Comparison</a><a href="tether-extend-then-pivot-dock/strip.jpg">Frame strip</a></div></article>
+</main><script>
+const input = document.getElementById('filter');
+const cards = Array.from(document.querySelectorAll('article'));
+input.addEventListener('input', () => {
+  const query = input.value.toLowerCase().trim();
+  for (const card of cards) card.hidden = !card.textContent.toLowerCase().includes(query);
+});
+</script></body></html>

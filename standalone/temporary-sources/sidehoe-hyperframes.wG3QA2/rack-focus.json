@@ -1,0 +1,178 @@
+{
+  "id": "rack-focus",
+  "title": "Transfer focus between two stationary planes",
+  "moves": "Sharpness shifts from the near card to the far card. The near card softens in place.",
+  "fixed": "Both cards’ positions and silhouettes, the frame, and the heading.",
+  "notice": "The subject in the back becomes the point of attention even though its position never changes.",
+  "fits": "Pass attention between subjects while preserving their positions and sense of depth.",
+  "avoid": "Blur makes wording temporarily unreadable. Keep both clear for simultaneous comparisons.",
+  "intents": [
+    "pull focus from the front object to the one behind it",
+    "keep both cards in place and rack focus to the far card",
+    "blur the foreground as the background sharpens"
+  ],
+  "editable": [
+    "heading",
+    "copy",
+    "title",
+    "detail"
+  ],
+  "defaults": {
+    "heading": "Two planes",
+    "copy": "Overview",
+    "title": "Specific result",
+    "detail": "Focus moves toward the result behind the overview."
+  },
+  "source": {
+    "kind": "authored",
+    "ref": "packs/editorial.mjs#rack-focus",
+    "range": [
+      0,
+      2.4
+    ]
+  },
+  "implementation": "packs/editorial.mjs",
+  "preview": "review/imv-v3/motion/rack-focus.mp4",
+  "sha256": "9a883348eeca68d962a1dd0bebfef7cff32bb4c0700e34b9e38337b0d4bfa0ad",
+  "eventMap": "review/imv-v3/motion/rack-focus.events.json",
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 72
+  },
+  "events": [
+    {
+      "id": "motion.rack-focus.focus-shift-start",
+      "kind": "focus-shift-start",
+      "frame": 24
+    },
+    {
+      "id": "motion.rack-focus.far-object-sharp",
+      "kind": "far-object-sharp",
+      "frame": 43
+    }
+  ],
+  "renderers": [
+    {
+      "method": "pillow",
+      "evidence": "full-preview",
+      "frames": 72
+    },
+    {
+      "method": "html",
+      "evidence": "retimed-nine-frame-probe",
+      "distinctFrames": 9
+    },
+    {
+      "method": "gsap",
+      "evidence": "retimed-nine-frame-probe",
+      "distinctFrames": 9
+    },
+    {
+      "method": "remotion",
+      "evidence": "retimed-nine-frame-probe",
+      "distinctFrames": 9
+    },
+    {
+      "method": "motion-canvas",
+      "evidence": "retimed-nine-frame-probe",
+      "distinctFrames": 9
+    }
+  ],
+  "editableFields": {
+    "heading": "text",
+    "copy": "text",
+    "title": "text",
+    "detail": "text"
+  },
+  "renderCommand": "node motion/cli.mjs render --id rack-focus --method pillow --out /tmp/rack-focus.mp4",
+  "components": {
+    "id": "rack-focus",
+    "implementation": "motion/packs/editorial.mjs",
+    "whenToUse": "Pass attention between subjects while preserving their positions and sense of depth.",
+    "avoidWhen": "Blur makes wording temporarily unreadable. Keep both clear for simultaneous comparisons.",
+    "source": {
+      "kind": "authored",
+      "ref": "packs/editorial.mjs#rack-focus",
+      "range": [
+        0,
+        2.4
+      ]
+    },
+    "preview": {
+      "path": "review/imv-v3/motion/rack-focus.mp4",
+      "sha256": "9a883348eeca68d962a1dd0bebfef7cff32bb4c0700e34b9e38337b0d4bfa0ad",
+      "evidence": "published-demo"
+    },
+    "adapterPreview": null,
+    "demo": {
+      "moving": [
+        {
+          "id": "far-object",
+          "parent": "stage",
+          "type": "group",
+          "channels": [
+            "blur"
+          ],
+          "role": "focusPlanes"
+        },
+        {
+          "id": "near-object",
+          "parent": "stage",
+          "type": "group",
+          "channels": [
+            "blur",
+            "opacity"
+          ],
+          "role": "focusPlanes"
+        }
+      ],
+      "fixed": [
+        {
+          "id": "stage",
+          "parent": null,
+          "type": "group",
+          "role": "cameraViewport",
+          "scope": "local-position"
+        }
+      ],
+      "events": [
+        {
+          "id": "motion.rack-focus.focus-shift-start",
+          "kind": "focus-shift-start",
+          "frame": 24,
+          "target": "near-object",
+          "layerIds": [
+            "near-object"
+          ]
+        },
+        {
+          "id": "motion.rack-focus.far-object-sharp",
+          "kind": "far-object-sharp",
+          "frame": 43,
+          "target": "far-object",
+          "layerIds": [
+            "far-object"
+          ]
+        }
+      ],
+      "assets": []
+    },
+    "production": {
+      "mode": "primitive-only",
+      "moving": [
+        "focusPlanes"
+      ],
+      "fixed": [
+        "cameraViewport"
+      ],
+      "required": [
+        "focusPlanes",
+        "cameraViewport"
+      ],
+      "transitionKinds": [],
+      "verification": "Requires a separately authored binding and visual proof on a Messages scene.",
+      "bindings": null
+    }
+  }
+}

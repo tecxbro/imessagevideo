@@ -1,0 +1,775 @@
+{
+  "width": 720,
+  "height": 480,
+  "fps": 30,
+  "duration": 2.4,
+  "background": "#dce7f1",
+  "title": "Bring a wall of messages into view",
+  "source": {
+    "path": "skill/imessage-motion-recreation/director/motions.mjs#message-wall",
+    "sourceStart": 0,
+    "sourceEnd": 4,
+    "notes": "Original editable motion starter at c49482a, fit into the library stage with the same keyframe choreography."
+  },
+  "layers": [
+    {
+      "id": "surface",
+      "type": "rect",
+      "x": 110,
+      "y": 44,
+      "width": 500,
+      "height": 392,
+      "fill": "#ffffff",
+      "radius": 18
+    },
+    {
+      "id": "stage",
+      "type": "group",
+      "x": 110,
+      "y": 98,
+      "children": [
+        {
+          "id": "base-motion",
+          "type": "group",
+          "x": 0,
+          "y": 8,
+          "children": [
+            {
+              "id": "camera",
+              "type": "group",
+              "x": 0,
+              "y": 0,
+              "children": [
+                {
+                  "id": "wall-message-0",
+                  "type": "group",
+                  "x": 18,
+                  "y": 26,
+                  "children": [
+                    {
+                      "id": "wall-message-0-body",
+                      "type": "rect",
+                      "x": 0,
+                      "y": 0,
+                      "width": 264,
+                      "height": 80,
+                      "fill": "#1688fa",
+                      "radius": 20
+                    },
+                    {
+                      "id": "wall-message-0-tail",
+                      "type": "path",
+                      "d": "M 248 62 Q 261 81 271 78 Q 261 74 262 60 Z",
+                      "fill": "#1688fa"
+                    },
+                    {
+                      "id": "wall-message-0-copy",
+                      "type": "text",
+                      "text": "Can you send the trail map?",
+                      "x": 17,
+                      "y": 14,
+                      "fontSize": 18,
+                      "fontFamily": "Arial, sans-serif",
+                      "fill": "#ffffff",
+                      "lineHeight": 24
+                    }
+                  ],
+                  "keyframes": {
+                    "y": [
+                      {
+                        "t": 0.12,
+                        "value": 81,
+                        "ease": "easeInOut"
+                      },
+                      {
+                        "t": 0.45599999999999996,
+                        "value": 26,
+                        "ease": "easeOut"
+                      }
+                    ],
+                    "opacity": [
+                      {
+                        "t": 0,
+                        "value": 0,
+                        "ease": "easeInOut"
+                      },
+                      {
+                        "t": 0.12,
+                        "value": 0,
+                        "ease": "easeInOut"
+                      },
+                      {
+                        "t": 0.36000000000000004,
+                        "value": 1,
+                        "ease": "easeOut"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "wall-message-1",
+                  "type": "group",
+                  "x": 320,
+                  "y": 26,
+                  "children": [
+                    {
+                      "id": "wall-message-1-body",
+                      "type": "rect",
+                      "x": 0,
+                      "y": 0,
+                      "width": 264,
+                      "height": 80,
+                      "fill": "#e9e9ed",
+                      "radius": 20
+                    },
+                    {
+                      "id": "wall-message-1-tail",
+                      "type": "path",
+                      "d": "M 16 62 Q 3 81 -7 78 Q 3 74 2 60 Z",
+                      "fill": "#e9e9ed"
+                    },
+                    {
+                      "id": "wall-message-1-copy",
+                      "type": "text",
+                      "text": "Your table is ready.",
+                      "x": 17,
+                      "y": 14,
+                      "fontSize": 18,
+                      "fontFamily": "Arial, sans-serif",
+                      "fill": "#17191d",
+                      "lineHeight": 24
+                    }
+                  ],
+                  "keyframes": {
+                    "y": [
+                      {
+                        "t": 0.18000000000000002,
+                        "value": 81,
+                        "ease": "easeInOut"
+                      },
+                      {
+                        "t": 0.516,
+                        "value": 26,
+                        "ease": "easeOut"
+                      }
+                    ],
+                    "opacity": [
+                      {
+                        "t": 0,
+                        "value": 0,
+                        "ease": "easeInOut"
+                      },
+                      {
+                        "t": 0.18000000000000002,
+                        "value": 0,
+                        "ease": "easeInOut"
+                      },
+                      {
+                        "t": 0.42000000000000004,
+                        "value": 1,
+                        "ease": "easeOut"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "wall-message-2",
+                  "type": "group",
+                  "x": 622,
+                  "y": 26,
+                  "children": [
+                    {
+                      "id": "wall-message-2-body",
+                      "type": "rect",
+                      "x": 0,
+                      "y": 0,
+                      "width": 264,
+                      "height": 80,
+                      "fill": "#e9e9ed",
+                      "radius": 20
+                    },
+                    {
+                      "id": "wall-message-2-tail",
+                      "type": "path",
+                      "d": "M 16 62 Q 3 81 -7 78 Q 3 74 2 60 Z",
+                      "fill": "#e9e9ed"
+                    },
+                    {
+                      "id": "wall-message-2-copy",
+                      "type": "text",
+                      "text": "Let’s make it happen.",
+                      "x": 17,
+                      "y": 14,
+                      "fontSize": 18,
+                      "fontFamily": "Arial, sans-serif",
+                      "fill": "#17191d",
+                      "lineHeight": 24
+                    }
+                  ],
+                  "keyframes": {
+                    "y": [
+                      {
+                        "t": 0.24,
+                        "value": 81,
+                        "ease": "easeInOut"
+                      },
+                      {
+                        "t": 0.5760000000000001,
+                        "value": 26,
+                        "ease": "easeOut"
+                      }
+                    ],
+                    "opacity": [
+                      {
+                        "t": 0,
+                        "value": 0,
+                        "ease": "easeInOut"
+                      },
+                      {
+                        "t": 0.24,
+                        "value": 0,
+                        "ease": "easeInOut"
+                      },
+                      {
+                        "t": 0.48,
+                        "value": 1,
+                        "ease": "easeOut"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "wall-message-3",
+                  "type": "group",
+                  "x": 18,
+                  "y": 140,
+                  "children": [
+                    {
+                      "id": "wall-message-3-body",
+                      "type": "rect",
+                      "x": 0,
+                      "y": 0,
+                      "width": 264,
+                      "height": 80,
+                      "fill": "#1688fa",
+                      "radius": 20
+                    },
+                    {
+                      "id": "wall-message-3-tail",
+                      "type": "path",
+                      "d": "M 248 62 Q 261 81 271 78 Q 261 74 262 60 Z",
+                      "fill": "#1688fa"
+                    },
+                    {
+                      "id": "wall-message-3-copy",
+                      "type": "text",
+                      "text": "On it.",
+                      "x": 17,
+                      "y": 14,
+                      "fontSize": 18,
+                      "fontFamily": "Arial, sans-serif",
+                      "fill": "#ffffff",
+                      "lineHeight": 24
+                    }
+                  ],
+                  "keyframes": {
+                    "y": [
+                      {
+                        "t": 0.3,
+                        "value": 195,
+                        "ease": "easeInOut"
+                      },
+                      {
+                        "t": 0.636,
+                        "value": 140,
+                        "ease": "easeOut"
+                      }
+                    ],
+                    "opacity": [
+                      {
+                        "t": 0,
+                        "value": 0,
+                        "ease": "easeInOut"
+                      },
+                      {
+                        "t": 0.3,
+                        "value": 0,
+                        "ease": "easeInOut"
+                      },
+                      {
+                        "t": 0.54,
+                        "value": 1,
+                        "ease": "easeOut"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "wall-message-4",
+                  "type": "group",
+                  "x": 320,
+                  "y": 140,
+                  "children": [
+                    {
+                      "id": "wall-message-4-body",
+                      "type": "rect",
+                      "x": 0,
+                      "y": 0,
+                      "width": 264,
+                      "height": 80,
+                      "fill": "#e9e9ed",
+                      "radius": 20
+                    },
+                    {
+                      "id": "wall-message-4-tail",
+                      "type": "path",
+                      "d": "M 16 62 Q 3 81 -7 78 Q 3 74 2 60 Z",
+                      "fill": "#e9e9ed"
+                    },
+                    {
+                      "id": "wall-message-4-copy",
+                      "type": "text",
+                      "text": "Your table is ready.",
+                      "x": 17,
+                      "y": 14,
+                      "fontSize": 18,
+                      "fontFamily": "Arial, sans-serif",
+                      "fill": "#17191d",
+                      "lineHeight": 24
+                    }
+                  ],
+                  "keyframes": {
+                    "y": [
+                      {
+                        "t": 0.36000000000000004,
+                        "value": 195,
+                        "ease": "easeInOut"
+                      },
+                      {
+                        "t": 0.6960000000000001,
+                        "value": 140,
+                        "ease": "easeOut"
+                      }
+                    ],
+                    "opacity": [
+                      {
+                        "t": 0,
+                        "value": 0,
+                        "ease": "easeInOut"
+                      },
+                      {
+                        "t": 0.36000000000000004,
+                        "value": 0,
+                        "ease": "easeInOut"
+                      },
+                      {
+                        "t": 0.6,
+                        "value": 1,
+                        "ease": "easeOut"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "wall-message-5",
+                  "type": "group",
+                  "x": 622,
+                  "y": 140,
+                  "children": [
+                    {
+                      "id": "wall-message-5-body",
+                      "type": "rect",
+                      "x": 0,
+                      "y": 0,
+                      "width": 264,
+                      "height": 80,
+                      "fill": "#e9e9ed",
+                      "radius": 20
+                    },
+                    {
+                      "id": "wall-message-5-tail",
+                      "type": "path",
+                      "d": "M 16 62 Q 3 81 -7 78 Q 3 74 2 60 Z",
+                      "fill": "#e9e9ed"
+                    },
+                    {
+                      "id": "wall-message-5-copy",
+                      "type": "text",
+                      "text": "Let’s make it happen.",
+                      "x": 17,
+                      "y": 14,
+                      "fontSize": 18,
+                      "fontFamily": "Arial, sans-serif",
+                      "fill": "#17191d",
+                      "lineHeight": 24
+                    }
+                  ],
+                  "keyframes": {
+                    "y": [
+                      {
+                        "t": 0.42,
+                        "value": 195,
+                        "ease": "easeInOut"
+                      },
+                      {
+                        "t": 0.756,
+                        "value": 140,
+                        "ease": "easeOut"
+                      }
+                    ],
+                    "opacity": [
+                      {
+                        "t": 0,
+                        "value": 0,
+                        "ease": "easeInOut"
+                      },
+                      {
+                        "t": 0.42,
+                        "value": 0,
+                        "ease": "easeInOut"
+                      },
+                      {
+                        "t": 0.66,
+                        "value": 1,
+                        "ease": "easeOut"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "wall-message-6",
+                  "type": "group",
+                  "x": 18,
+                  "y": 254,
+                  "children": [
+                    {
+                      "id": "wall-message-6-body",
+                      "type": "rect",
+                      "x": 0,
+                      "y": 0,
+                      "width": 264,
+                      "height": 80,
+                      "fill": "#1688fa",
+                      "radius": 20
+                    },
+                    {
+                      "id": "wall-message-6-tail",
+                      "type": "path",
+                      "d": "M 248 62 Q 261 81 271 78 Q 261 74 262 60 Z",
+                      "fill": "#1688fa"
+                    },
+                    {
+                      "id": "wall-message-6-copy",
+                      "type": "text",
+                      "text": "On it.",
+                      "x": 17,
+                      "y": 14,
+                      "fontSize": 18,
+                      "fontFamily": "Arial, sans-serif",
+                      "fill": "#ffffff",
+                      "lineHeight": 24
+                    }
+                  ],
+                  "keyframes": {
+                    "y": [
+                      {
+                        "t": 0.48,
+                        "value": 309,
+                        "ease": "easeInOut"
+                      },
+                      {
+                        "t": 0.8160000000000001,
+                        "value": 254,
+                        "ease": "easeOut"
+                      }
+                    ],
+                    "opacity": [
+                      {
+                        "t": 0,
+                        "value": 0,
+                        "ease": "easeInOut"
+                      },
+                      {
+                        "t": 0.48,
+                        "value": 0,
+                        "ease": "easeInOut"
+                      },
+                      {
+                        "t": 0.7200000000000001,
+                        "value": 1,
+                        "ease": "easeOut"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "wall-message-7",
+                  "type": "group",
+                  "x": 320,
+                  "y": 254,
+                  "children": [
+                    {
+                      "id": "wall-message-7-body",
+                      "type": "rect",
+                      "x": 0,
+                      "y": 0,
+                      "width": 264,
+                      "height": 80,
+                      "fill": "#e9e9ed",
+                      "radius": 20
+                    },
+                    {
+                      "id": "wall-message-7-tail",
+                      "type": "path",
+                      "d": "M 16 62 Q 3 81 -7 78 Q 3 74 2 60 Z",
+                      "fill": "#e9e9ed"
+                    },
+                    {
+                      "id": "wall-message-7-copy",
+                      "type": "text",
+                      "text": "Your table is ready.",
+                      "x": 17,
+                      "y": 14,
+                      "fontSize": 18,
+                      "fontFamily": "Arial, sans-serif",
+                      "fill": "#17191d",
+                      "lineHeight": 24
+                    }
+                  ],
+                  "keyframes": {
+                    "y": [
+                      {
+                        "t": 0.54,
+                        "value": 309,
+                        "ease": "easeInOut"
+                      },
+                      {
+                        "t": 0.8760000000000001,
+                        "value": 254,
+                        "ease": "easeOut"
+                      }
+                    ],
+                    "opacity": [
+                      {
+                        "t": 0,
+                        "value": 0,
+                        "ease": "easeInOut"
+                      },
+                      {
+                        "t": 0.54,
+                        "value": 0,
+                        "ease": "easeInOut"
+                      },
+                      {
+                        "t": 0.7800000000000001,
+                        "value": 1,
+                        "ease": "easeOut"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "wall-message-8",
+                  "type": "group",
+                  "x": 622,
+                  "y": 254,
+                  "children": [
+                    {
+                      "id": "wall-message-8-body",
+                      "type": "rect",
+                      "x": 0,
+                      "y": 0,
+                      "width": 264,
+                      "height": 80,
+                      "fill": "#e9e9ed",
+                      "radius": 20
+                    },
+                    {
+                      "id": "wall-message-8-tail",
+                      "type": "path",
+                      "d": "M 16 62 Q 3 81 -7 78 Q 3 74 2 60 Z",
+                      "fill": "#e9e9ed"
+                    },
+                    {
+                      "id": "wall-message-8-copy",
+                      "type": "text",
+                      "text": "Let’s make it happen.",
+                      "x": 17,
+                      "y": 14,
+                      "fontSize": 18,
+                      "fontFamily": "Arial, sans-serif",
+                      "fill": "#17191d",
+                      "lineHeight": 24
+                    }
+                  ],
+                  "keyframes": {
+                    "y": [
+                      {
+                        "t": 0.6,
+                        "value": 309,
+                        "ease": "easeInOut"
+                      },
+                      {
+                        "t": 0.9359999999999999,
+                        "value": 254,
+                        "ease": "easeOut"
+                      }
+                    ],
+                    "opacity": [
+                      {
+                        "t": 0,
+                        "value": 0,
+                        "ease": "easeInOut"
+                      },
+                      {
+                        "t": 0.6,
+                        "value": 0,
+                        "ease": "easeInOut"
+                      },
+                      {
+                        "t": 0.84,
+                        "value": 1,
+                        "ease": "easeOut"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "originX": 480,
+              "originY": 270,
+              "keyframes": {
+                "y": [
+                  {
+                    "t": 0,
+                    "value": 130,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 1.68,
+                    "value": -35,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 2.4,
+                    "value": -65,
+                    "ease": "easeInOut"
+                  }
+                ],
+                "scaleX": [
+                  {
+                    "t": 0,
+                    "value": 0.9,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 2.4,
+                    "value": 1.02,
+                    "ease": "easeInOut"
+                  }
+                ],
+                "scaleY": [
+                  {
+                    "t": 0,
+                    "value": 0.9,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 2.4,
+                    "value": 1.02,
+                    "ease": "easeInOut"
+                  }
+                ]
+              }
+            }
+          ],
+          "scaleX": 0.52,
+          "scaleY": 0.52
+        }
+      ],
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 500,
+        "height": 298
+      }
+    },
+    {
+      "id": "footer",
+      "type": "group",
+      "x": 110,
+      "y": 396,
+      "children": [
+        {
+          "id": "footer-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 40,
+          "fill": "#f2f6fb",
+          "radius": 12
+        },
+        {
+          "id": "footer-label",
+          "type": "text",
+          "text": "Field guide · Autumn",
+          "x": 26,
+          "y": 11,
+          "fontSize": 15,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#516277"
+        }
+      ]
+    },
+    {
+      "id": "heading",
+      "type": "group",
+      "x": 110,
+      "y": 44,
+      "children": [
+        {
+          "id": "heading-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 54,
+          "fill": "#f2f6fb",
+          "radius": 13
+        },
+        {
+          "id": "heading-copy",
+          "type": "text",
+          "text": "Alpine field notes",
+          "x": 26,
+          "y": 13,
+          "fontSize": 23,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#182737",
+          "fontWeight": 700
+        }
+      ]
+    }
+  ],
+  "timeline": {
+    "version": 1,
+    "picture": {
+      "fpsNum": 30,
+      "fpsDen": 1,
+      "frameCount": 72
+    },
+    "initialUI": null,
+    "events": [
+      {
+        "id": "motion.message-wall.wall-settles",
+        "kind": "wall-settles",
+        "target": "wall-message-8",
+        "frame": 52,
+        "layerIds": [
+          "wall-message-8"
+        ]
+      }
+    ],
+    "cues": []
+  }
+}

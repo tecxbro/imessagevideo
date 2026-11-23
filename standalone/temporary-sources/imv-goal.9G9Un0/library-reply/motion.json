@@ -1,0 +1,33 @@
+{
+  "id": "reply-makes-room",
+  "sourceSHA256": "5442602fb9da71577ee4797f239d1014102da7394bc659fbf259d58db3aa5dfb",
+  "sceneSHA256": "d9962f0aa3343708293abb357188b53cd08744aae13ecda44b3a378108d9a44c",
+  "events": [
+    {
+      "id": "pickup.reply",
+      "frame": 88,
+      "roleLayers": [
+        "ui.message/ready"
+      ]
+    }
+  ],
+  "bindings": {
+    "reply": "ui.message/ready",
+    "transcript": "ui.transcript",
+    "screen": "ui.screen",
+    "header": "ui.header",
+    "viewport": "ui.viewport",
+    "composer": "ui.composer"
+  },
+  "verification": {
+    "ok": true,
+    "mode": "adapter-recipe",
+    "issues": [],
+    "evidence": "structural-only"
+  },
+  "window": [
+    87,
+    94
+  ],
+  "status": "compiled-messages-interaction"
+}

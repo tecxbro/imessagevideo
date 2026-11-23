@@ -1,0 +1,301 @@
+{
+  "id": "draft-send-flight",
+  "source": {
+    "kind": "measured-adaptation",
+    "ref": "https://github.com/theswerd/imessage-ui/blob/1f132909792ff540501385f91d37ef20629c55b7/references/ios/motion/send-60fps.mp4",
+    "range": [
+      1.2166666666666666,
+      1.9166666666666667
+    ],
+    "frames": [
+      73,
+      114
+    ],
+    "note": "Source frames are zero-based. Geometry is fitted to the editable preview layout using the measured collapse ratios, rise and overshoot. Color, text timing outside the flight and resting geometry are adapted."
+  },
+  "title": "Send from the composer into history",
+  "moves": "The draft box collapses toward its right edge while the outgoing balloon rises, slightly overshoots, then settles into its transcript slot.",
+  "fixed": "The conversation heading, prior reply, and composer field stay fixed. The send control disappears at the trigger.",
+  "notice": "The text the viewer just read in the field becomes a real outgoing message.",
+  "fits": "Establish the exact send moment without cutting away from the conversation.",
+  "avoid": "A send flight implies committing the draft. Avoid it while composing, reviewing, or receiving a message.",
+  "intents": [
+    "Show the typed draft becoming a sent bubble",
+    "Watch the message fly out of the composer",
+    "Tap send and turn the input into an outgoing message",
+    "Turn the line we typed into a blue message in the conversation"
+  ],
+  "editable": [
+    "heading",
+    "copy",
+    "reply"
+  ],
+  "implementation": "packs/conversation.mjs",
+  "preview": "review/imv-v3/motion/draft-send-flight.mp4",
+  "sha256": "5ee402f4340a1180b3ca0d911a65218f4a1971076ece7248c522c6a4ecb77c50",
+  "eventMap": "review/imv-v3/motion/draft-send-flight.events.json",
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 72
+  },
+  "events": [
+    {
+      "id": "motion.draft-send-flight.send",
+      "kind": "message_send",
+      "frame": 14
+    },
+    {
+      "id": "motion.draft-send-flight.settle",
+      "kind": "message_settle",
+      "frame": 35
+    }
+  ],
+  "renderers": [
+    {
+      "method": "pillow",
+      "evidence": "full-preview",
+      "frames": 72
+    },
+    {
+      "method": "html",
+      "evidence": "retimed-nine-frame-probe",
+      "distinctFrames": 9
+    },
+    {
+      "method": "gsap",
+      "evidence": "retimed-nine-frame-probe",
+      "distinctFrames": 9
+    },
+    {
+      "method": "remotion",
+      "evidence": "retimed-nine-frame-probe",
+      "distinctFrames": 9
+    },
+    {
+      "method": "motion-canvas",
+      "evidence": "retimed-nine-frame-probe",
+      "distinctFrames": 9
+    }
+  ],
+  "ui": {
+    "preview": "review/imv-v3/motion/ui/draft-send-flight.mp4",
+    "sha256": "bf78899cddd69705d681d8b46a830b9f53fe7b34b99edee08db7e7e66900fdea",
+    "eventMap": "review/imv-v3/motion/ui/draft-send-flight.events.json",
+    "picture": {
+      "fpsNum": 30,
+      "fpsDen": 1,
+      "frameCount": 72
+    },
+    "events": [
+      {
+        "id": "motion.draft-send-flight.send",
+        "kind": "message_send",
+        "frame": 14
+      },
+      {
+        "id": "motion.draft-send-flight.settle",
+        "kind": "message_settle",
+        "frame": 35
+      }
+    ],
+    "adapter": "Clone iMessage UI at 5e2ff5a",
+    "renderCommand": "node motion/cli.mjs render --id draft-send-flight --method pillow --out /tmp/draft-send-flight.mp4 --ui"
+  },
+  "editableFields": {
+    "heading": "text",
+    "copy": "text",
+    "reply": "text"
+  },
+  "renderCommand": "node motion/cli.mjs render --id draft-send-flight --method pillow --out /tmp/draft-send-flight.mp4",
+  "components": {
+    "id": "draft-send-flight",
+    "implementation": "motion/packs/conversation.mjs",
+    "whenToUse": "Establish the exact send moment without cutting away from the conversation.",
+    "avoidWhen": "A send flight implies committing the draft. Avoid it while composing, reviewing, or receiving a message.",
+    "source": {
+      "kind": "measured-adaptation",
+      "ref": "https://github.com/theswerd/imessage-ui/blob/1f132909792ff540501385f91d37ef20629c55b7/references/ios/motion/send-60fps.mp4",
+      "range": [
+        1.2166666666666666,
+        1.9166666666666667
+      ],
+      "frames": [
+        73,
+        114
+      ],
+      "note": "Source frames are zero-based. Geometry is fitted to the editable preview layout using the measured collapse ratios, rise and overshoot. Color, text timing outside the flight and resting geometry are adapted."
+    },
+    "preview": {
+      "path": "review/imv-v3/motion/draft-send-flight.mp4",
+      "sha256": "5ee402f4340a1180b3ca0d911a65218f4a1971076ece7248c522c6a4ecb77c50",
+      "evidence": "published-demo"
+    },
+    "adapterPreview": {
+      "path": "review/imv-v3/motion/ui/draft-send-flight.mp4",
+      "sha256": "bf78899cddd69705d681d8b46a830b9f53fe7b34b99edee08db7e7e66900fdea",
+      "evidence": "published-adapter-demo"
+    },
+    "demo": {
+      "moving": [
+        {
+          "id": "send-draft-input",
+          "parent": "send-draft",
+          "type": "text",
+          "channels": [
+            "text",
+            "fill"
+          ],
+          "role": "supportingActor"
+        },
+        {
+          "id": "send-draft-send",
+          "parent": "send-draft",
+          "type": "circle",
+          "channels": [
+            "opacity"
+          ],
+          "role": "supportingActor"
+        },
+        {
+          "id": "send-draft-arrow",
+          "parent": "send-draft",
+          "type": "path",
+          "channels": [
+            "opacity"
+          ],
+          "role": "supportingActor"
+        },
+        {
+          "id": "send-field-collapse",
+          "parent": "stage",
+          "type": "rect",
+          "channels": [
+            "width",
+            "x",
+            "opacity"
+          ],
+          "role": "supportingActor"
+        },
+        {
+          "id": "send-outgoing",
+          "parent": "stage",
+          "type": "group",
+          "channels": [
+            "y",
+            "scaleX",
+            "scaleY",
+            "opacity"
+          ],
+          "role": "message"
+        }
+      ],
+      "fixed": [
+        {
+          "id": "send-draft",
+          "parent": "stage",
+          "type": "group",
+          "role": "composer",
+          "scope": "local-position"
+        },
+        {
+          "id": "heading",
+          "parent": null,
+          "type": "group",
+          "role": "header",
+          "scope": "local-position"
+        }
+      ],
+      "events": [
+        {
+          "id": "motion.draft-send-flight.send",
+          "kind": "message_send",
+          "frame": 14,
+          "target": "send-outgoing",
+          "layerIds": [
+            "send-outgoing"
+          ]
+        },
+        {
+          "id": "motion.draft-send-flight.settle",
+          "kind": "message_settle",
+          "frame": 35,
+          "target": "send-outgoing",
+          "layerIds": [
+            "send-outgoing"
+          ]
+        }
+      ],
+      "assets": []
+    },
+    "production": {
+      "mode": "adapter-recipe",
+      "moving": [
+        "draft",
+        "sendButton",
+        "message"
+      ],
+      "fixed": [
+        "screen",
+        "header"
+      ],
+      "required": [
+        "viewport",
+        "composer",
+        "transcript",
+        "draft",
+        "sendButton",
+        "message",
+        "screen",
+        "header"
+      ],
+      "transitionKinds": [
+        "send"
+      ],
+      "verification": "Validate explicit bindings on the compiled scene and review decoded frames from that candidate.",
+      "bindings": {
+        "viewport": {
+          "id": "ui.viewport",
+          "type": "group",
+          "parent": "screen",
+          "clip": true
+        },
+        "composer": {
+          "id": "ui.composer",
+          "type": "group",
+          "parent": "screen"
+        },
+        "transcript": {
+          "id": "ui.transcript",
+          "type": "group",
+          "parent": "viewport"
+        },
+        "draft": {
+          "id": "ui.composer.draft",
+          "type": "group",
+          "parent": "composer"
+        },
+        "sendButton": {
+          "id": "ui.composer.send",
+          "type": "group",
+          "parent": "composer"
+        },
+        "message": {
+          "pattern": "^ui\\.message\\/[^/@]+$",
+          "type": "group",
+          "parent": "transcript"
+        },
+        "screen": {
+          "id": "ui.screen",
+          "type": "group",
+          "clip": true
+        },
+        "header": {
+          "id": "ui.header",
+          "type": "group",
+          "parent": "screen"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,170 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 120
+  },
+  "initialUI": null,
+  "events": [
+    {
+      "id": "recreate.train.conversation",
+      "kind": "conversation.open",
+      "target": "thread.rail-planner",
+      "frame": 18,
+      "layerIds": [
+        "phone"
+      ],
+      "uiState": {
+        "conversationId": "thread.rail-planner",
+        "messages": [
+          {
+            "id": "message.offer",
+            "senderId": "account.planner",
+            "text": "Where are we heading?"
+          }
+        ],
+        "composer": {
+          "text": "",
+          "focused": false
+        },
+        "viewport": {
+          "surface": "conversation",
+          "anchorMessageId": "message.offer"
+        }
+      }
+    },
+    {
+      "id": "recreate.train.request",
+      "kind": "message.send",
+      "target": "message.request",
+      "frame": 30,
+      "layerIds": [
+        "request"
+      ],
+      "uiState": {
+        "conversationId": "thread.rail-planner",
+        "messages": [
+          {
+            "id": "message.offer",
+            "senderId": "account.planner",
+            "text": "Where are we heading?"
+          },
+          {
+            "id": "message.request",
+            "senderId": "account.self",
+            "text": "Two seats to Northgate."
+          }
+        ],
+        "composer": {
+          "text": "",
+          "focused": false
+        },
+        "viewport": {
+          "surface": "conversation",
+          "anchorMessageId": "message.request"
+        }
+      }
+    },
+    {
+      "id": "recreate.train.drawer",
+      "kind": "picker.open",
+      "target": "train-picker",
+      "frame": 56,
+      "layerIds": [
+        "drawer"
+      ],
+      "uiState": {
+        "conversationId": "thread.rail-planner",
+        "messages": [
+          {
+            "id": "message.offer",
+            "senderId": "account.planner",
+            "text": "Where are we heading?"
+          },
+          {
+            "id": "message.request",
+            "senderId": "account.self",
+            "text": "Two seats to Northgate."
+          }
+        ],
+        "composer": {
+          "text": "",
+          "focused": false
+        },
+        "viewport": {
+          "surface": "train-picker",
+          "anchorMessageId": "message.request"
+        }
+      }
+    },
+    {
+      "id": "recreate.train.seat-selection",
+      "kind": "picker.select",
+      "target": "train.first",
+      "frame": 69,
+      "layerIds": [
+        "seat-selection-checked"
+      ]
+    },
+    {
+      "id": "recreate.train.receipt",
+      "kind": "message.receive",
+      "target": "message.receipt",
+      "frame": 89,
+      "layerIds": [
+        "receipt"
+      ],
+      "uiState": {
+        "conversationId": "thread.rail-planner",
+        "messages": [
+          {
+            "id": "message.offer",
+            "senderId": "account.planner",
+            "text": "Where are we heading?"
+          },
+          {
+            "id": "message.request",
+            "senderId": "account.self",
+            "text": "Two seats to Northgate."
+          },
+          {
+            "id": "message.receipt",
+            "senderId": "account.planner",
+            "text": "Booked for 18:40."
+          }
+        ],
+        "composer": {
+          "text": "",
+          "focused": false
+        },
+        "viewport": {
+          "surface": "conversation",
+          "anchorMessageId": "message.receipt"
+        }
+      }
+    }
+  ],
+  "cues": [
+    {
+      "id": "recreate.train.request.cue",
+      "eventId": "recreate.train.request",
+      "offsetSamples": 0
+    },
+    {
+      "id": "recreate.train.drawer.cue",
+      "eventId": "recreate.train.drawer",
+      "offsetSamples": 0
+    },
+    {
+      "id": "recreate.train.seat-selection.cue",
+      "eventId": "recreate.train.seat-selection",
+      "offsetSamples": 0
+    },
+    {
+      "id": "recreate.train.receipt.cue",
+      "eventId": "recreate.train.receipt",
+      "offsetSamples": 0
+    }
+  ]
+}

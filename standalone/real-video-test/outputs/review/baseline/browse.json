@@ -1,0 +1,26 @@
+{
+  "request": "Make an iMessage video about two friends getting concert tickets.",
+  "intent": "direct",
+  "scope": "film",
+  "library": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/imessagevideo/skill/imessage-video/assets/library",
+  "sources": [],
+  "project": null,
+  "workflow": [
+    "establish_brief",
+    "search_library_for_each_shot",
+    "show_shots_with_motion_previews_and_code",
+    "review_direction_with_user",
+    "choose_one_renderer",
+    "prove_hardest_shot",
+    "render_approved_cut"
+  ],
+  "next": "draft_shots_from_library",
+  "motion_choices": {
+    "query": "browse ticket options",
+    "decision": "author_motion",
+    "seed_decision": "missing",
+    "seed_reason": "The wording has close alternatives. Specify which layer moves, which layer stays fixed, and what the viewer should notice.",
+    "learned": [],
+    "seed": []
+  }
+}

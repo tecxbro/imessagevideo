@@ -1,0 +1,12 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "title":"Source-backed company video research",
+  "type":"object",
+  "required":["company","official_domain","audience","promise","real_user_action","proof_of_success","sources","claims","brand_assets","ui_states","unresolved"],
+  "properties":{
+    "company":{"type":"string"},"official_domain":{"type":"string"},"audience":{"type":"string"},"promise":{"type":"string"},"real_user_action":{"type":"string"},"proof_of_success":{"type":"string"},
+    "sources":{"type":"array","minItems":1,"items":{"type":"object","required":["id","url","title","retrieved_utc"],"properties":{"id":{"type":"string"},"url":{"type":"string"},"title":{"type":"string"},"retrieved_utc":{"type":"string"}}}},
+    "claims":{"type":"array","items":{"type":"object","required":["text","source_ids","evidence","status"],"properties":{"text":{"type":"string"},"source_ids":{"type":"array","items":{"type":"string"}},"evidence":{"type":"string"},"status":{"enum":["observed","inferred","unresolved"]}}}},
+    "brand_assets":{"type":"array"},"ui_states":{"type":"array"},"unresolved":{"type":"array"}
+  }
+}

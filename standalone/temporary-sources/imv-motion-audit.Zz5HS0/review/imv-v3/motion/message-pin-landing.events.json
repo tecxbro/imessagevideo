@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 72
+  },
+  "initialUI": null,
+  "events": [
+    {
+      "id": "motion.message-pin-landing.location-leaves",
+      "kind": "location.transfer",
+      "target": "mapped-cue",
+      "frame": 21,
+      "layerIds": [
+        "mapped-cue"
+      ]
+    },
+    {
+      "id": "motion.message-pin-landing.location-lands",
+      "kind": "location.mark",
+      "target": "mapped-cue",
+      "frame": 50,
+      "layerIds": [
+        "mapped-cue"
+      ]
+    }
+  ],
+  "cues": []
+}

@@ -1,0 +1,269 @@
+{
+  "width": 720,
+  "height": 480,
+  "fps": 30,
+  "duration": 2.4,
+  "background": "#dce7f1",
+  "title": "Expand a disclosure and make room for its details",
+  "source": {
+    "path": "packs/editorial.mjs#accordion-displaces-row",
+    "sourceStart": 0,
+    "sourceEnd": 2.4,
+    "notes": "Original editable Motion demonstration."
+  },
+  "layers": [
+    {
+      "id": "surface",
+      "type": "rect",
+      "x": 110,
+      "y": 44,
+      "width": 500,
+      "height": 392,
+      "fill": "#ffffff",
+      "radius": 18
+    },
+    {
+      "id": "stage",
+      "type": "group",
+      "x": 110,
+      "y": 98,
+      "children": [
+        {
+          "id": "accordion-surface",
+          "type": "rect",
+          "x": 63,
+          "y": 70,
+          "width": 374,
+          "height": 48,
+          "fill": "#e8eef5",
+          "radius": 14,
+          "keyframes": {
+            "height": [
+              {
+                "t": 0,
+                "value": 48,
+                "ease": "linear"
+              },
+              {
+                "t": 0.432,
+                "value": 48,
+                "ease": "linear"
+              },
+              {
+                "t": 1.3679999999999999,
+                "value": 122,
+                "ease": "easeInOut"
+              }
+            ]
+          }
+        },
+        {
+          "id": "accordion-title",
+          "type": "text",
+          "text": "Timing",
+          "x": 85,
+          "y": 82,
+          "fontSize": 18,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#182737",
+          "fontWeight": 600
+        },
+        {
+          "id": "following-row",
+          "type": "group",
+          "x": 63,
+          "y": 128,
+          "children": [
+            {
+              "id": "following-surface",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 374,
+              "height": 48,
+              "fill": "#ffffff",
+              "radius": 14,
+              "stroke": "#e8eef5",
+              "strokeWidth": 1
+            },
+            {
+              "id": "following-label",
+              "type": "text",
+              "text": "Travel information",
+              "x": 22,
+              "y": 12,
+              "fontSize": 18,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#182737",
+              "fontWeight": 600
+            }
+          ],
+          "keyframes": {
+            "y": [
+              {
+                "t": 0,
+                "value": 128,
+                "ease": "linear"
+              },
+              {
+                "t": 0.432,
+                "value": 128,
+                "ease": "linear"
+              },
+              {
+                "t": 1.3679999999999999,
+                "value": 202,
+                "ease": "easeInOut"
+              }
+            ]
+          }
+        },
+        {
+          "id": "expanded-copy",
+          "type": "text",
+          "text": "Hold expires after fifteen minutes.",
+          "x": 85,
+          "y": 125,
+          "fontSize": 18,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#182737",
+          "fontWeight": 600,
+          "keyframes": {
+            "opacity": [
+              {
+                "t": 0,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 0.864,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 1.464,
+                "value": 1,
+                "ease": "easeOut"
+              }
+            ]
+          }
+        },
+        {
+          "id": "disclosure-caret",
+          "type": "rect",
+          "x": 391,
+          "y": 93,
+          "width": 19,
+          "height": 4,
+          "fill": "#1478e9",
+          "radius": 2,
+          "originY": 2,
+          "rotation": 0,
+          "originX": 9.5,
+          "keyframes": {
+            "rotation": [
+              {
+                "t": 0,
+                "value": 90,
+                "ease": "linear"
+              },
+              {
+                "t": 0.432,
+                "value": 90,
+                "ease": "linear"
+              },
+              {
+                "t": 1.3679999999999999,
+                "value": 0,
+                "ease": "easeInOut"
+              }
+            ]
+          }
+        }
+      ],
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 500,
+        "height": 298
+      }
+    },
+    {
+      "id": "footer",
+      "type": "group",
+      "x": 110,
+      "y": 396,
+      "children": [
+        {
+          "id": "footer-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 40,
+          "fill": "#f2f6fb",
+          "radius": 12
+        }
+      ]
+    },
+    {
+      "id": "heading",
+      "type": "group",
+      "x": 110,
+      "y": 44,
+      "children": [
+        {
+          "id": "heading-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 54,
+          "fill": "#f2f6fb",
+          "radius": 13
+        },
+        {
+          "id": "heading-copy",
+          "type": "text",
+          "text": "Reservation details",
+          "x": 26,
+          "y": 13,
+          "fontSize": 23,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#182737",
+          "fontWeight": 700
+        }
+      ]
+    }
+  ],
+  "timeline": {
+    "version": 1,
+    "picture": {
+      "fpsNum": 30,
+      "fpsDen": 1,
+      "frameCount": 72
+    },
+    "initialUI": null,
+    "events": [
+      {
+        "id": "motion.accordion-displaces-row.accordion-opens",
+        "kind": "accordion-opens",
+        "target": "accordion-surface",
+        "frame": 13,
+        "layerIds": [
+          "accordion-surface"
+        ]
+      },
+      {
+        "id": "motion.accordion-displaces-row.detail-exposed",
+        "kind": "detail-exposed",
+        "target": "expanded-copy",
+        "frame": 44,
+        "layerIds": [
+          "expanded-copy"
+        ]
+      }
+    ],
+    "cues": []
+  }
+}

@@ -1,0 +1,200 @@
+{
+  "schema": 1,
+  "verdict": "FAIL",
+  "failures": [
+    {
+      "check": "pixel_equality",
+      "first_difference": {
+        "frame": 0,
+        "changed_pixels": 2312,
+        "max_channel_delta": 59,
+        "rect": [
+          186,
+          128,
+          285,
+          74
+        ]
+      }
+    }
+  ],
+  "checks_sha256": null,
+  "reference": {
+    "name": "reference.mp4",
+    "sha256": "659bb5af8d67b9fa89f0709cb559e251000e04f47d68bf02c1b3c1b85c8c1562",
+    "clock": {
+      "width": 640,
+      "height": 360,
+      "sample_aspect_ratio": "1",
+      "rotation_degrees": 0,
+      "display_matrix": [
+        65536,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        1073741824
+      ],
+      "container_crop_top_bottom_left_right": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "time_base": "1/15360",
+      "declared_rate": "30",
+      "declared_average_rate": "30/1",
+      "start_pts": 0,
+      "end_pts_exclusive": 61440,
+      "end_basis": "last decoded frame duration",
+      "end_seconds": 4.0,
+      "frames": 120,
+      "cadence": "constant",
+      "pixel_format": "yuv420p",
+      "alpha_present": false,
+      "color_range": "tv",
+      "color_space": "bt709",
+      "color_primaries": null,
+      "color_transfer": null
+    },
+    "audio": [
+      {
+        "index": 1,
+        "codec_name": "aac",
+        "sample_rate": "48000",
+        "channels": 1,
+        "channel_layout": "mono",
+        "time_base": "1/48000",
+        "start_pts": 0,
+        "duration_ts": 192000,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "SoundHandler",
+          "vendor_id": "[0][0][0][0]"
+        }
+      }
+    ]
+  },
+  "candidate": {
+    "name": "final.mp4",
+    "sha256": "ddad4995d49f61f81670a2a6e95659319e0dd65ca95156917a396bd836ed7f95",
+    "clock": {
+      "width": 640,
+      "height": 360,
+      "sample_aspect_ratio": "1",
+      "rotation_degrees": 0,
+      "display_matrix": [
+        65536,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        1073741824
+      ],
+      "container_crop_top_bottom_left_right": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "time_base": "1/15360",
+      "declared_rate": "30",
+      "declared_average_rate": "30/1",
+      "start_pts": 0,
+      "end_pts_exclusive": 61440,
+      "end_basis": "last decoded frame duration",
+      "end_seconds": 4.0,
+      "frames": 120,
+      "cadence": "constant",
+      "pixel_format": "yuv420p",
+      "alpha_present": false,
+      "color_range": "tv",
+      "color_space": "bt709",
+      "color_primaries": null,
+      "color_transfer": null
+    },
+    "audio": []
+  },
+  "compared_frames": 120,
+  "mean_abs_rgb": 0.06027804301697537,
+  "worst_frame": {
+    "frame": 61,
+    "mean_abs_rgb": 0.13726417824074075
+  },
+  "exact_clock": true,
+  "pixel_equality": {
+    "identical_frames": 0,
+    "different_frames": 120,
+    "different_spans": [
+      [
+        0,
+        119
+      ]
+    ],
+    "changed_pixel_observations": 987386,
+    "first_difference": {
+      "frame": 0,
+      "changed_pixels": 2312,
+      "max_channel_delta": 59,
+      "rect": [
+        186,
+        128,
+        285,
+        74
+      ]
+    },
+    "worst_frame": {
+      "frame": 62,
+      "changed_pixels": 17499,
+      "max_channel_delta": 62
+    }
+  },
+  "whole_frame_mae_limit": 2,
+  "pixel_floor": 20,
+  "clock_tolerance_seconds": "0",
+  "alignment": "display-order index with independent exact PTS gate",
+  "audio_rule": "observe",
+  "audio_checks": null,
+  "regions": {},
+  "tile": null,
+  "regional_coverage": "picture-level checks only; no interaction windows supplied",
+  "decode_completed": true,
+  "evidence": {
+    "frames.csv": {
+      "region": null,
+      "spans": [
+        [
+          0,
+          119
+        ]
+      ],
+      "sha256": "57e4ff15e3547bb12e631b113cd115a481ec7a83b9e747920f7f8c11b94ee055"
+    }
+  }
+}

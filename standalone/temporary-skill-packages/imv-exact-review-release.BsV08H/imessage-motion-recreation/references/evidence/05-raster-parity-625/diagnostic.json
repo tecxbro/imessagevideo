@@ -1,0 +1,21 @@
+{
+  "frame": 625,
+  "immutableScene": "outputs/05-linq/final-v17/scene.json",
+  "comparisons": [
+    {
+      "kind": "legacy",
+      "path": "verification/05-raster-parity-625/legacy-remotion625.png",
+      "sha256": "462ec338e32ad8503b2b84873411a8951e5f084d0f96737d025c56a38cff858c",
+      "maeToGsap": 2.185417148919753,
+      "maxChannelDelta": 239
+    },
+    {
+      "kind": "fresh",
+      "path": "verification/05-raster-parity-625/fresh-remotion625.png",
+      "sha256": "1a15b282dc38695ceca0ed7799d33711ed4e17ae5d5be121c94057c2180829ce",
+      "maeToGsap": 0.0,
+      "maxChannelDelta": 0
+    }
+  ],
+  "diagnosis": "Observed legacy retained frame truncation; fresh independent Remotion capture tests persistence. Original defect cause has not been established."
+}

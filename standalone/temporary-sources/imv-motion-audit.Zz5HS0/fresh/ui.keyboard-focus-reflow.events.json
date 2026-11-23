@@ -1,0 +1,117 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 72
+  },
+  "initialUI": {
+    "conversationId": "thread.motion",
+    "messages": [
+      {
+        "id": "message.start",
+        "senderId": "account.remote",
+        "text": "Do you have a minute?",
+        "attachmentIds": [],
+        "reactions": {},
+        "edited": false,
+        "receipt": ""
+      },
+      {
+        "id": "message.local",
+        "senderId": "account.self",
+        "text": "Yes, go ahead.",
+        "attachmentIds": [],
+        "reactions": {},
+        "edited": false,
+        "receipt": ""
+      },
+      {
+        "id": "message.reply",
+        "senderId": "account.remote",
+        "text": "Here it is. Meet at the north gate.",
+        "attachmentIds": [],
+        "reactions": {},
+        "edited": false,
+        "receipt": ""
+      }
+    ],
+    "composer": {
+      "text": "",
+      "focused": false,
+      "keyboardVisible": false
+    },
+    "viewport": {
+      "surface": "conversation",
+      "anchorMessageId": "message.reply",
+      "scrollOffset": 0
+    },
+    "typingSenderIds": []
+  },
+  "events": [
+    {
+      "id": "motion.keyboard-focus-reflow.composer-focus",
+      "kind": "tap",
+      "target": "thread.motion",
+      "frame": 25,
+      "uiState": {
+        "conversationId": "thread.motion",
+        "messages": [
+          {
+            "id": "message.start",
+            "senderId": "account.remote",
+            "text": "Do you have a minute?",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "message.local",
+            "senderId": "account.self",
+            "text": "Yes, go ahead.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "message.reply",
+            "senderId": "account.remote",
+            "text": "Here it is. Meet at the north gate.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          }
+        ],
+        "composer": {
+          "text": "",
+          "focused": true,
+          "keyboardVisible": true
+        },
+        "viewport": {
+          "surface": "conversation",
+          "anchorMessageId": "message.reply",
+          "scrollOffset": 0
+        },
+        "typingSenderIds": []
+      },
+      "layerIds": [
+        "ui.composer",
+        "ui.keyboard"
+      ]
+    },
+    {
+      "id": "motion.keyboard-focus-reflow.keyboard-ready",
+      "kind": "keyboard_show",
+      "target": "thread.motion",
+      "layerIds": [
+        "ui.composer",
+        "ui.keyboard"
+      ],
+      "frame": 44
+    }
+  ],
+  "cues": []
+}

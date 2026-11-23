@@ -1,0 +1,440 @@
+{
+  "video": "/Users/darshan/Documents/video-analysis/iv-test/inputs/05-linq.mp4",
+  "frame_size": [
+    960,
+    720
+  ],
+  "catalog_claimed_interval": [
+    1091,
+    1111
+  ],
+  "observed_rail_motion_span_frames": [
+    1079,
+    1131
+  ],
+  "cadence_note": "Animation advances every other frame (15 fps content in 30 fps container): identical frame pairs give ~0 MAE alternation.",
+  "heading_roi": [
+    190,
+    15,
+    560,
+    100
+  ],
+  "rail_roi": [
+    190,
+    295,
+    780,
+    640
+  ],
+  "per_frame": [
+    {
+      "frame": 1090,
+      "heading_roi_mae": 19.0437,
+      "rail_roi_mae": 58.4807
+    },
+    {
+      "frame": 1091,
+      "heading_roi_mae": 2.2732,
+      "rail_roi_mae": 37.1968
+    },
+    {
+      "frame": 1093,
+      "heading_roi_mae": 0.4249,
+      "rail_roi_mae": 43.5378
+    },
+    {
+      "frame": 1095,
+      "heading_roi_mae": 1.8183,
+      "rail_roi_mae": 60.762
+    },
+    {
+      "frame": 1097,
+      "heading_roi_mae": 0.7132,
+      "rail_roi_mae": 66.3279
+    },
+    {
+      "frame": 1099,
+      "heading_roi_mae": 0.3098,
+      "rail_roi_mae": 64.4962
+    },
+    {
+      "frame": 1101,
+      "heading_roi_mae": 0.0547,
+      "rail_roi_mae": 74.5624
+    },
+    {
+      "frame": 1103,
+      "heading_roi_mae": 0.0,
+      "rail_roi_mae": 66.3525
+    },
+    {
+      "frame": 1105,
+      "heading_roi_mae": 0.0311,
+      "rail_roi_mae": 78.3296
+    },
+    {
+      "frame": 1107,
+      "heading_roi_mae": 0.2531,
+      "rail_roi_mae": 83.2746
+    },
+    {
+      "frame": 1109,
+      "heading_roi_mae": 0.7905,
+      "rail_roi_mae": 71.0244
+    },
+    {
+      "frame": 1111,
+      "heading_roi_mae": 1.5512,
+      "rail_roi_mae": 71.9242
+    },
+    {
+      "frame": 1112,
+      "heading_roi_mae": 0.2743,
+      "rail_roi_mae": 49.3913
+    },
+    {
+      "frame": 1130,
+      "heading_roi_mae": 5.7184,
+      "rail_roi_mae": 69.3305
+    }
+  ],
+  "title_dark_pixel_bbox_by_frame": {
+    "1080": [
+      199,
+      26,
+      406,
+      54
+    ],
+    "1090": [
+      199,
+      24,
+      406,
+      52
+    ],
+    "1091": [
+      199,
+      24,
+      406,
+      52
+    ],
+    "1093": [
+      199,
+      24,
+      406,
+      52
+    ],
+    "1095": [
+      199,
+      23,
+      406,
+      52
+    ],
+    "1097": [
+      199,
+      23,
+      406,
+      52
+    ],
+    "1099": [
+      199,
+      23,
+      406,
+      52
+    ],
+    "1101": [
+      199,
+      23,
+      406,
+      52
+    ],
+    "1103": [
+      199,
+      23,
+      406,
+      52
+    ],
+    "1105": [
+      199,
+      23,
+      406,
+      52
+    ],
+    "1107": [
+      199,
+      23,
+      406,
+      52
+    ],
+    "1109": [
+      199,
+      23,
+      406,
+      52
+    ],
+    "1111": [
+      199,
+      24,
+      406,
+      52
+    ],
+    "1112": [
+      199,
+      24,
+      406,
+      52
+    ],
+    "1130": [
+      199,
+      24,
+      406,
+      52
+    ]
+  },
+  "catalog_interval_summary": {
+    "heading_roi_mean_mae": 0.5947,
+    "heading_roi_max_mae": 1.8183,
+    "rail_roi_mean_mae": 68.0592,
+    "rail_roi_max_mae": 83.2746
+  },
+  "confound": "Whole-card foreground fades slightly during the swipe (Directions button black -> dark grey); title pixel bbox stays identical, so the heading is positionally fixed even though long-range pixel MAE is nonzero.",
+  "conclusion": "rail ROI changes 40-140x the heading ROI per frame and the title bbox is constant => photos move under a fixed heading. This is photos-under-fixed-heading, not a generic slide.",
+  "rail_translation_measurement": {
+    "method": "1-D column-profile shift search on rail band (190,300,780,630)",
+    "per_frame_pairs": [
+      {
+        "pair": [
+          1091,
+          1092
+        ],
+        "shift_px": 22,
+        "match_err": 2.082,
+        "cumulative_px": 22
+      },
+      {
+        "pair": [
+          1092,
+          1093
+        ],
+        "shift_px": 0,
+        "match_err": 0.099,
+        "cumulative_px": 22
+      },
+      {
+        "pair": [
+          1093,
+          1094
+        ],
+        "shift_px": 25,
+        "match_err": 4.409,
+        "cumulative_px": 47
+      },
+      {
+        "pair": [
+          1094,
+          1095
+        ],
+        "shift_px": 29,
+        "match_err": 3.697,
+        "cumulative_px": 76
+      },
+      {
+        "pair": [
+          1095,
+          1096
+        ],
+        "shift_px": 33,
+        "match_err": 4.097,
+        "cumulative_px": 109
+      },
+      {
+        "pair": [
+          1096,
+          1097
+        ],
+        "shift_px": 39,
+        "match_err": 4.346,
+        "cumulative_px": 148
+      },
+      {
+        "pair": [
+          1097,
+          1098
+        ],
+        "shift_px": 0,
+        "match_err": 0.054,
+        "cumulative_px": 148
+      },
+      {
+        "pair": [
+          1098,
+          1099
+        ],
+        "shift_px": 47,
+        "match_err": 3.9,
+        "cumulative_px": 195
+      },
+      {
+        "pair": [
+          1099,
+          1100
+        ],
+        "shift_px": 57,
+        "match_err": 4.138,
+        "cumulative_px": 252
+      },
+      {
+        "pair": [
+          1100,
+          1101
+        ],
+        "shift_px": 72,
+        "match_err": 4.59,
+        "cumulative_px": 324
+      },
+      {
+        "pair": [
+          1101,
+          1102
+        ],
+        "shift_px": 93,
+        "match_err": 4.451,
+        "cumulative_px": 417
+      },
+      {
+        "pair": [
+          1102,
+          1103
+        ],
+        "shift_px": 0,
+        "match_err": 0.25,
+        "cumulative_px": 417
+      },
+      {
+        "pair": [
+          1103,
+          1104
+        ],
+        "shift_px": 125,
+        "match_err": 3.58,
+        "cumulative_px": 542
+      },
+      {
+        "pair": [
+          1104,
+          1105
+        ],
+        "shift_px": 156,
+        "match_err": 4.764,
+        "cumulative_px": 698
+      },
+      {
+        "pair": [
+          1105,
+          1106
+        ],
+        "shift_px": 148,
+        "match_err": 4.286,
+        "cumulative_px": 846
+      },
+      {
+        "pair": [
+          1106,
+          1107
+        ],
+        "shift_px": 110,
+        "match_err": 4.937,
+        "cumulative_px": 956
+      },
+      {
+        "pair": [
+          1107,
+          1108
+        ],
+        "shift_px": 0,
+        "match_err": 0.042,
+        "cumulative_px": 956
+      },
+      {
+        "pair": [
+          1108,
+          1109
+        ],
+        "shift_px": 79,
+        "match_err": 5.494,
+        "cumulative_px": 1035
+      },
+      {
+        "pair": [
+          1109,
+          1110
+        ],
+        "shift_px": 59,
+        "match_err": 3.602,
+        "cumulative_px": 1094
+      },
+      {
+        "pair": [
+          1110,
+          1111
+        ],
+        "shift_px": 46,
+        "match_err": 4.276,
+        "cumulative_px": 1140
+      },
+      {
+        "pair": [
+          1111,
+          1112
+        ],
+        "shift_px": 37,
+        "match_err": 4.732,
+        "cumulative_px": 1177
+      }
+    ],
+    "seed_photoOffsets_deltas": [
+      22,
+      0,
+      25,
+      29,
+      33,
+      39,
+      0,
+      47,
+      57,
+      72,
+      93,
+      0,
+      125,
+      156,
+      148,
+      110,
+      0,
+      79,
+      59,
+      46
+    ],
+    "measured_deltas_first20": [
+      22,
+      0,
+      25,
+      29,
+      33,
+      39,
+      0,
+      47,
+      57,
+      72,
+      93,
+      0,
+      125,
+      156,
+      148,
+      110,
+      0,
+      79,
+      59,
+      46
+    ],
+    "exact_match": true,
+    "note": "The bundled seed's photoOffsets array IS this source interval's measured per-frame trajectory (cumulative offsets 0..1140); frame 1111->1112 continues at 37px beyond the catalog window."
+  }
+}

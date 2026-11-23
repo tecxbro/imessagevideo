@@ -1,0 +1,381 @@
+{
+  "width": 720,
+  "height": 480,
+  "fps": 30,
+  "duration": 2.4,
+  "background": "#dce7f1",
+  "title": "Peek at timestamps by dragging the transcript",
+  "source": {
+    "path": "https://github.com/theswerd/imessage-ui/blob/1f132909792ff540501385f91d37ef20629c55b7/references/ios/captures/swipe-timestamps-light.png",
+    "sourceStart": 0,
+    "sourceEnd": 0,
+    "notes": "A still at t=0 establishes the 58 pt displacement and timestamp alignment. Drag and return timing are authored."
+  },
+  "layers": [
+    {
+      "id": "surface",
+      "type": "rect",
+      "x": 110,
+      "y": 44,
+      "width": 500,
+      "height": 392,
+      "fill": "#ffffff",
+      "radius": 18
+    },
+    {
+      "id": "stage",
+      "type": "group",
+      "x": 110,
+      "y": 98,
+      "children": [
+        {
+          "id": "peek-time-gutter",
+          "type": "group",
+          "x": 0,
+          "y": 0,
+          "children": [
+            {
+              "id": "peek-time-0",
+              "type": "text",
+              "text": "1:25 PM",
+              "x": 486,
+              "y": 68,
+              "fontSize": 12,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#516277",
+              "textAnchor": "end"
+            },
+            {
+              "id": "peek-time-1",
+              "type": "text",
+              "text": "1:26 PM",
+              "x": 486,
+              "y": 144,
+              "fontSize": 12,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#516277",
+              "textAnchor": "end"
+            },
+            {
+              "id": "peek-time-2",
+              "type": "text",
+              "text": "1:28 PM",
+              "x": 486,
+              "y": 220,
+              "fontSize": 12,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#516277",
+              "textAnchor": "end"
+            }
+          ],
+          "keyframes": {
+            "opacity": [
+              {
+                "t": 0,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 0.624,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 1.08,
+                "value": 1,
+                "ease": "easeOut"
+              },
+              {
+                "t": 1.536,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 1.7999999999999998,
+                "value": 0,
+                "ease": "easeIn"
+              }
+            ]
+          }
+        },
+        {
+          "id": "peek-bubble-column",
+          "type": "group",
+          "x": 0,
+          "y": 0,
+          "children": [
+            {
+              "id": "peek-message-0",
+              "type": "group",
+              "x": 70,
+              "y": 49,
+              "children": [
+                {
+                  "id": "peek-message-0-body",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 226,
+                  "height": 54,
+                  "fill": "#e9e9ed",
+                  "radius": 20
+                },
+                {
+                  "id": "peek-message-0-tail",
+                  "type": "path",
+                  "d": "M 16 36 Q 3 55 -7 52 Q 3 48 2 34 Z",
+                  "fill": "#e9e9ed"
+                },
+                {
+                  "id": "peek-message-0-copy",
+                  "type": "text",
+                  "text": "Can you send the trail\nmap?",
+                  "x": 17,
+                  "y": 7.5,
+                  "fontSize": 16,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#17191d",
+                  "lineHeight": 18
+                }
+              ]
+            },
+            {
+              "id": "peek-message-1",
+              "type": "group",
+              "x": 241,
+              "y": 125,
+              "children": [
+                {
+                  "id": "peek-message-1-body",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 226,
+                  "height": 54,
+                  "fill": "#1688fa",
+                  "radius": 20
+                },
+                {
+                  "id": "peek-message-1-tail",
+                  "type": "path",
+                  "d": "M 210 36 Q 223 55 233 52 Q 223 48 224 34 Z",
+                  "fill": "#1688fa"
+                },
+                {
+                  "id": "peek-message-1-copy",
+                  "type": "text",
+                  "text": "Here it is. Meet at the\nnorth gate.",
+                  "x": 17,
+                  "y": 7.5,
+                  "fontSize": 16,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#ffffff",
+                  "lineHeight": 18
+                }
+              ]
+            },
+            {
+              "id": "peek-message-2",
+              "type": "group",
+              "x": 70,
+              "y": 201,
+              "children": [
+                {
+                  "id": "peek-message-2-body",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 226,
+                  "height": 54,
+                  "fill": "#e9e9ed",
+                  "radius": 20
+                },
+                {
+                  "id": "peek-message-2-tail",
+                  "type": "path",
+                  "d": "M 16 36 Q 3 55 -7 52 Q 3 48 2 34 Z",
+                  "fill": "#e9e9ed"
+                },
+                {
+                  "id": "peek-message-2-copy",
+                  "type": "text",
+                  "text": "That works for me.",
+                  "x": 17,
+                  "y": 14,
+                  "fontSize": 16,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#17191d",
+                  "lineHeight": 18
+                }
+              ]
+            }
+          ],
+          "keyframes": {
+            "x": [
+              {
+                "t": 0,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 0.528,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 1.08,
+                "value": -58,
+                "ease": "linear"
+              },
+              {
+                "t": 1.536,
+                "value": -58,
+                "ease": "linear"
+              },
+              {
+                "t": 1.728,
+                "value": -3,
+                "ease": "easeOut"
+              },
+              {
+                "t": 1.8479999999999999,
+                "value": 0,
+                "ease": "easeOut"
+              }
+            ]
+          }
+        }
+      ],
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 500,
+        "height": 298
+      }
+    },
+    {
+      "id": "footer",
+      "type": "group",
+      "x": 110,
+      "y": 396,
+      "children": [
+        {
+          "id": "footer-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 40,
+          "fill": "#f2f6fb",
+          "radius": 12
+        },
+        {
+          "id": "peek-composer",
+          "type": "group",
+          "x": 23,
+          "y": 0,
+          "children": [
+            {
+              "id": "peek-composer-field",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 454,
+              "height": 48,
+              "fill": "#ffffff",
+              "radius": 24,
+              "stroke": "#d8dbe0",
+              "strokeWidth": 1
+            },
+            {
+              "id": "peek-composer-input",
+              "type": "text",
+              "text": "Message",
+              "x": 18,
+              "y": 14,
+              "fontSize": 17,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#777b84"
+            },
+            {
+              "id": "peek-composer-send",
+              "type": "circle",
+              "x": 414,
+              "y": 8,
+              "width": 32,
+              "height": 32,
+              "fill": "#d8dbe0"
+            },
+            {
+              "id": "peek-composer-arrow",
+              "type": "path",
+              "d": "M 430 33 L 430 16 M 423 23 L 430 16 L 437 23",
+              "fill": "none",
+              "stroke": "#ffffff",
+              "strokeWidth": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "heading",
+      "type": "group",
+      "x": 110,
+      "y": 44,
+      "children": [
+        {
+          "id": "heading-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 54,
+          "fill": "#f2f6fb",
+          "radius": 13
+        },
+        {
+          "id": "heading-copy",
+          "type": "text",
+          "text": "Alpine field notes",
+          "x": 26,
+          "y": 13,
+          "fontSize": 23,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#182737",
+          "fontWeight": 700
+        }
+      ]
+    }
+  ],
+  "timeline": {
+    "version": 1,
+    "picture": {
+      "fpsNum": 30,
+      "fpsDen": 1,
+      "frameCount": 72
+    },
+    "initialUI": null,
+    "events": [
+      {
+        "id": "motion.transcript-timestamp-peek.peek-begin",
+        "kind": "gesture_begin",
+        "target": "peek-bubble-column",
+        "frame": 16,
+        "layerIds": [
+          "peek-bubble-column"
+        ]
+      },
+      {
+        "id": "motion.transcript-timestamp-peek.peek-release",
+        "kind": "gesture_end",
+        "target": "peek-bubble-column",
+        "frame": 47,
+        "layerIds": [
+          "peek-bubble-column"
+        ]
+      }
+    ],
+    "cues": []
+  }
+}

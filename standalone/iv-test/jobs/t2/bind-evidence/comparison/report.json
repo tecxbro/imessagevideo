@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "inputs": {
+    "source": {
+      "path": "/Users/darshan/Documents/video-analysis/iv-test/jobs/t2/bind-evidence/reference.nut",
+      "sha256": "e3afc06e247599378b4f12c9ba56e4a81e84fc80424e2328cb21764ae2956291",
+      "width": 720,
+      "height": 480,
+      "sample_aspect_ratio": "1:1",
+      "display_aspect_ratio": "3:2",
+      "effective_sample_aspect_ratio": "1:1",
+      "sample_aspect_basis": "sample_aspect_ratio",
+      "rotation": 0,
+      "average_frame_rate": "30/1",
+      "time_base": "1/61440",
+      "frame_count": 49,
+      "missing_pts": 0,
+      "strictly_increasing_pts": true,
+      "first_pts_seconds": 0.0,
+      "last_pts_seconds": 1.6,
+      "end_seconds_exclusive": 1.6333333333333333
+    },
+    "output": {
+      "path": "/Users/darshan/Documents/video-analysis/iv-test/jobs/t2/bind-evidence/preview.mp4",
+      "sha256": "40f2733db2b34b87694d261a4b40027cb0b02eff8a64ddedf2cbf20395ea6046",
+      "width": 720,
+      "height": 480,
+      "sample_aspect_ratio": null,
+      "display_aspect_ratio": null,
+      "effective_sample_aspect_ratio": "1:1",
+      "sample_aspect_basis": "implicit square pixels",
+      "rotation": 0,
+      "average_frame_rate": "30/1",
+      "time_base": "1/15360",
+      "frame_count": 49,
+      "missing_pts": 0,
+      "strictly_increasing_pts": true,
+      "first_pts_seconds": 0.0,
+      "last_pts_seconds": 1.6,
+      "end_seconds_exclusive": 1.6333333333333333
+    }
+  },
+  "compared_frames": 49,
+  "paired_indices": 49,
+  "source_only_tail_frames": 0,
+  "output_only_tail_frames": 0,
+  "alignment": "native presentation order, paired by zero-based index, without resampling",
+  "max_paired_pts_error_ms": 0.0,
+  "exclusive_end_error_ms": 0.0,
+  "structure_match": true,
+  "structure_issues": [],
+  "structure_within_tolerance": true,
+  "structure_tolerance_issues": [],
+  "roi_xyxy": {
+    "rail": [
+      140,
+      131,
+      580,
+      328
+    ]
+  },
+  "metrics": {
+    "full": {
+      "mean_frame_mae": 82.21951959719073,
+      "max_frame_mae": 86.00340470679014,
+      "worst_frame": 45
+    },
+    "rail": {
+      "mean_frame_mae": 79.22937742702065,
+      "max_frame_mae": 90.62667666512844,
+      "worst_frame": 0
+    }
+  },
+  "possible_frame_shift": {
+    "best_output_minus_source_frames": 5,
+    "compared_source_frames": 39,
+    "search_radius": 5,
+    "unaligned_mean_error": 73.07051282051282,
+    "best_mean_error": 72.87916221509971,
+    "possible_constant_offset": false
+  },
+  "thresholds": {
+    "max_mae": 8.0,
+    "max_pts_error_ms": null,
+    "require_structure_match": true,
+    "reject_detected_shift": false
+  },
+  "limits_passed": false,
+  "failures": [
+    "native frame MAE is unavailable for one or more frames or exceeds --max-mae"
+  ],
+  "worst_pair_index": 0,
+  "artifacts": {
+    "all_frame_measurements": "frames.csv",
+    "comparison_image": "worst.png"
+  }
+}

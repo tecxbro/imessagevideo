@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 72
+  },
+  "initialUI": null,
+  "events": [
+    {
+      "id": "motion.camera-push-in.push-start",
+      "kind": "push-start",
+      "target": "camera-plane",
+      "frame": 12,
+      "layerIds": [
+        "camera-plane"
+      ]
+    },
+    {
+      "id": "motion.camera-push-in.detail-in-frame",
+      "kind": "detail-in-frame",
+      "target": "detail",
+      "frame": 49,
+      "layerIds": [
+        "detail"
+      ]
+    }
+  ],
+  "cues": []
+}

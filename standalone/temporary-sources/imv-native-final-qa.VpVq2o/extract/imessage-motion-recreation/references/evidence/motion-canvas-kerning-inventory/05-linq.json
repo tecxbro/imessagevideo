@@ -1,0 +1,92 @@
+{
+  "reference": "05-linq",
+  "input": "/workspace/imessage-recreations/outputs/05-linq/final-v20/scene.json",
+  "sceneSha256": "658184bb8d05c50633f37fa0ef0bfd8a943773076f249c7e0dbf02991e6e93c6",
+  "fps": 30,
+  "frames": 1458,
+  "sourceMapping": null,
+  "fonts": [
+    {
+      "family": "SF Pro Display",
+      "weight": 400,
+      "style": "normal",
+      "source": "/workspace/imessage-recreations/outputs/05-linq/final-v20/assets/ee0d4bfd9ae39ccd-ee0d4bfd9ae39ccd-ee0d4bfd9ae39ccd-ee0d4bfd9ae39ccd-ee0d4bfd9ae39ccd-ee0d4bfd9ae39ccd-ee0d4bfd9ae39ccd-ee0d4bfd9ae39ccd-ee0d4bfd9ae39ccd-ee0d4bfd9ae39ccd-sf-pro-display-used-regular.otf",
+      "sha256": "ee0d4bfd9ae39ccdd339455cc111af72e9e0c53ef21cb48a4c279502bbc7d41b",
+      "bytes": 42776
+    },
+    {
+      "family": "SF Pro Display",
+      "weight": 500,
+      "style": "normal",
+      "source": "/workspace/imessage-recreations/outputs/05-linq/final-v20/assets/5fe5870a608122ab-5fe5870a608122ab-5fe5870a608122ab-5fe5870a608122ab-5fe5870a608122ab-5fe5870a608122ab-5fe5870a608122ab-5fe5870a608122ab-5fe5870a608122ab-5fe5870a608122ab-sf-pro-display-used-medium.otf",
+      "sha256": "5fe5870a608122ab0e17221d540e7a5b8f2d69b282e68d6242a61bd26264a2ff",
+      "bytes": 49900
+    },
+    {
+      "family": "SF Pro Display",
+      "weight": 600,
+      "style": "normal",
+      "source": "/workspace/imessage-recreations/outputs/05-linq/final-v20/assets/fd3e3effe74b791a-fd3e3effe74b791a-fd3e3effe74b791a-fd3e3effe74b791a-fd3e3effe74b791a-fd3e3effe74b791a-fd3e3effe74b791a-fd3e3effe74b791a-fd3e3effe74b791a-fd3e3effe74b791a-sf-pro-display-used-semibold.otf",
+      "sha256": "fd3e3effe74b791ac61845eb68393f7c85391d4d49262132e5299b4cad6f9a32",
+      "bytes": 48832
+    },
+    {
+      "family": "SF Pro Display",
+      "weight": 700,
+      "style": "normal",
+      "source": "/workspace/imessage-recreations/outputs/05-linq/final-v20/assets/1ec90c59da73a8fb-1ec90c59da73a8fb-1ec90c59da73a8fb-1ec90c59da73a8fb-1ec90c59da73a8fb-1ec90c59da73a8fb-1ec90c59da73a8fb-1ec90c59da73a8fb-1ec90c59da73a8fb-1ec90c59da73a8fb-sf-pro-display-used-bold.otf",
+      "sha256": "1ec90c59da73a8fba1457c5c574c6a176cbbd41f956ef3213354a5be078163b2",
+      "bytes": 47264
+    }
+  ],
+  "declaredTxtNodes": 1,
+  "activeTxtNodes": 0,
+  "activeStyles": 0,
+  "nodes": [
+    {
+      "id": "broad-v5-text-8",
+      "ancestors": [
+        {
+          "id": "broad-v5-group-9",
+          "hasClip": false
+        }
+      ],
+      "declared": {
+        "fontFamily": "SF Pro Display",
+        "fontWeight": 700,
+        "fontSize": 26,
+        "lineHeight": 30.68,
+        "textDecoration": null,
+        "textAnchor": null
+      },
+      "trackedProperties": [],
+      "runs": [],
+      "styleIds": [],
+      "flags": {
+        "multiline": false,
+        "emoji": false,
+        "underline": false,
+        "animatedFontSize": false,
+        "animatedLineHeight": false,
+        "animatedFontFamily": false,
+        "animatedDecoration": false
+      },
+      "activeFrameRanges": [],
+      "inkFrameRanges": [],
+      "activeFrameCount": 0,
+      "inkFrameCount": 0,
+      "fontSizeRange": null,
+      "defaultLineHeightWithAnimatedFontSize": false
+    }
+  ],
+  "styles": [],
+  "transforms": [],
+  "texts": [],
+  "conventions": {
+    "frameTime": "candidate frame / fps",
+    "visibility": "Exact declared lifecycle and positive own/ancestor opacity. No guessed viewport/font clipping; active frame bounds are conservative for actual ink.",
+    "lineHeight": "Default is fontSize*1.2; numeric is authored pixels; percentage converted for inventory only, raw value retained.",
+    "worldLinear": "[a,b,c,d] maps local dx/dy to world[a*dx+c*dy,b*dx+d*dy]. worldYCorrectionVector maps a local text-y correction to worlddx/dy.",
+    "ancestorScales": "Triples [scaleX,scaleY,rotation] correspond in order to nodes[].ancestors; own node scale is separate."
+  }
+}

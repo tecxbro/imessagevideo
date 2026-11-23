@@ -1,0 +1,425 @@
+{
+  "width": 960,
+  "height": 540,
+  "fps": 30,
+  "duration": 4,
+  "background": "#f7f7f5",
+  "title": "conversation-handoff",
+  "source": {
+    "notes": "New reusable starter, not an exact reference recreation. Arial fallback; replace and remeasure typography for production."
+  },
+  "layers": [
+    {
+      "id": "phone",
+      "type": "group",
+      "x": 260,
+      "y": 18,
+      "children": [
+        {
+          "id": "phone-matte",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 440,
+          "height": 500,
+          "fill": "#ffffff",
+          "radius": 28,
+          "stroke": "#d8dbe0",
+          "strokeWidth": 1
+        },
+        {
+          "id": "phone-screen",
+          "type": "group",
+          "x": 0,
+          "y": 0,
+          "children": [
+            {
+              "id": "contact",
+              "type": "group",
+              "x": 23,
+              "y": 92,
+              "children": [
+                {
+                  "id": "contact-disc",
+                  "type": "circle",
+                  "width": 42,
+                  "height": 42,
+                  "fill": "#d8e2f0"
+                },
+                {
+                  "id": "contact-initials",
+                  "type": "text",
+                  "text": "AI",
+                  "x": 21,
+                  "y": 11.34,
+                  "fontSize": 13.44,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#17191d",
+                  "textAnchor": "middle",
+                  "fontWeight": 600
+                }
+              ]
+            },
+            {
+              "id": "sent",
+              "type": "group",
+              "x": 143,
+              "y": 294,
+              "children": [
+                {
+                  "id": "sent-body",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 272,
+                  "height": 72,
+                  "fill": "#1688fa",
+                  "radius": 20
+                },
+                {
+                  "id": "sent-tail",
+                  "type": "path",
+                  "d": "M 256 54 Q 269 73 279 70 Q 269 66 270 52 Z",
+                  "fill": "#1688fa"
+                },
+                {
+                  "id": "sent-copy",
+                  "type": "text",
+                  "text": "Can you book a table?",
+                  "x": 17,
+                  "y": 14,
+                  "fontSize": 17,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#ffffff",
+                  "lineHeight": 24
+                }
+              ],
+              "keyframes": {
+                "y": [
+                  {
+                    "t": 1.76,
+                    "value": 365,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 2.32,
+                    "value": 294,
+                    "ease": "easeOut"
+                  }
+                ],
+                "opacity": [
+                  {
+                    "t": 0,
+                    "value": 0,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 1.76,
+                    "value": 0,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 1.92,
+                    "value": 1,
+                    "ease": "easeOut"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "reply",
+              "type": "group",
+              "x": 22,
+              "y": 95,
+              "children": [
+                {
+                  "id": "reply-body",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 280,
+                  "height": 82,
+                  "fill": "#e9e9ed",
+                  "radius": 20
+                },
+                {
+                  "id": "reply-tail",
+                  "type": "path",
+                  "d": "M 16 64 Q 3 83 -7 80 Q 3 76 2 62 Z",
+                  "fill": "#e9e9ed"
+                },
+                {
+                  "id": "reply-copy",
+                  "type": "text",
+                  "text": "A table for two.\nReady to confirm?",
+                  "x": 17,
+                  "y": 14,
+                  "fontSize": 17,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#17191d",
+                  "lineHeight": 24
+                }
+              ],
+              "keyframes": {
+                "opacity": [
+                  {
+                    "t": 0,
+                    "value": 0,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 2.8,
+                    "value": 0,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 3.04,
+                    "value": 1,
+                    "ease": "easeOut"
+                  }
+                ],
+                "y": [
+                  {
+                    "t": 2.8,
+                    "value": 115,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 3.36,
+                    "value": 95,
+                    "ease": "easeOut"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "composer",
+              "type": "group",
+              "x": 20,
+              "y": 428,
+              "children": [
+                {
+                  "id": "composer-field",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 400,
+                  "height": 48,
+                  "fill": "#ffffff",
+                  "radius": 24,
+                  "stroke": "#d8dbe0",
+                  "strokeWidth": 1
+                },
+                {
+                  "id": "composer-input",
+                  "type": "text",
+                  "text": "Message",
+                  "x": 18,
+                  "y": 14,
+                  "fontSize": 17,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#777b84",
+                  "keyframes": {
+                    "text": [
+                      {
+                        "t": 0,
+                        "value": "",
+                        "ease": "easeInOut"
+                      },
+                      {
+                        "t": 0.44952380952380955,
+                        "value": "C",
+                        "ease": "hold"
+                      },
+                      {
+                        "t": 0.4990476190476191,
+                        "value": "Ca",
+                        "ease": "hold"
+                      },
+                      {
+                        "t": 0.5485714285714286,
+                        "value": "Can",
+                        "ease": "hold"
+                      },
+                      {
+                        "t": 0.5980952380952381,
+                        "value": "Can ",
+                        "ease": "hold"
+                      },
+                      {
+                        "t": 0.6476190476190476,
+                        "value": "Can y",
+                        "ease": "hold"
+                      },
+                      {
+                        "t": 0.6971428571428572,
+                        "value": "Can yo",
+                        "ease": "hold"
+                      },
+                      {
+                        "t": 0.7466666666666667,
+                        "value": "Can you",
+                        "ease": "hold"
+                      },
+                      {
+                        "t": 0.7961904761904762,
+                        "value": "Can you ",
+                        "ease": "hold"
+                      },
+                      {
+                        "t": 0.8457142857142856,
+                        "value": "Can you b",
+                        "ease": "hold"
+                      },
+                      {
+                        "t": 0.8952380952380953,
+                        "value": "Can you bo",
+                        "ease": "hold"
+                      },
+                      {
+                        "t": 0.9447619047619048,
+                        "value": "Can you boo",
+                        "ease": "hold"
+                      },
+                      {
+                        "t": 0.9942857142857143,
+                        "value": "Can you book",
+                        "ease": "hold"
+                      },
+                      {
+                        "t": 1.0438095238095237,
+                        "value": "Can you book ",
+                        "ease": "hold"
+                      },
+                      {
+                        "t": 1.0933333333333333,
+                        "value": "Can you book a",
+                        "ease": "hold"
+                      },
+                      {
+                        "t": 1.1428571428571428,
+                        "value": "Can you book a ",
+                        "ease": "hold"
+                      },
+                      {
+                        "t": 1.1923809523809523,
+                        "value": "Can you book a t",
+                        "ease": "hold"
+                      },
+                      {
+                        "t": 1.2419047619047618,
+                        "value": "Can you book a ta",
+                        "ease": "hold"
+                      },
+                      {
+                        "t": 1.2914285714285714,
+                        "value": "Can you book a tab",
+                        "ease": "hold"
+                      },
+                      {
+                        "t": 1.340952380952381,
+                        "value": "Can you book a tabl",
+                        "ease": "hold"
+                      },
+                      {
+                        "t": 1.3904761904761904,
+                        "value": "Can you book a table",
+                        "ease": "hold"
+                      },
+                      {
+                        "t": 1.44,
+                        "value": "Can you book a table?",
+                        "ease": "hold"
+                      },
+                      {
+                        "t": 1.76,
+                        "value": "",
+                        "ease": "hold"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "composer-send",
+                  "type": "circle",
+                  "x": 360,
+                  "y": 8,
+                  "width": 32,
+                  "height": 32,
+                  "fill": "#1688fa"
+                },
+                {
+                  "id": "composer-arrow",
+                  "type": "path",
+                  "d": "M 376 33 L 376 16 M 369 23 L 376 16 L 383 23",
+                  "fill": "none",
+                  "stroke": "#ffffff",
+                  "strokeWidth": 2
+                }
+              ]
+            }
+          ],
+          "clip": {
+            "x": 0,
+            "y": 0,
+            "width": 440,
+            "height": 500,
+            "radius": 28
+          }
+        },
+        {
+          "id": "phone-bar",
+          "type": "rect",
+          "x": 1,
+          "y": 1,
+          "width": 438,
+          "height": 66,
+          "fill": "#f8f8fa",
+          "radius": 27
+        },
+        {
+          "id": "phone-bar-square",
+          "type": "rect",
+          "x": 1,
+          "y": 33,
+          "width": 438,
+          "height": 33,
+          "fill": "#f8f8fa",
+          "radius": 0
+        },
+        {
+          "id": "phone-back",
+          "type": "text",
+          "text": "‹",
+          "x": 18,
+          "y": 17,
+          "fontSize": 30,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#1688fa"
+        },
+        {
+          "id": "phone-title",
+          "type": "text",
+          "text": "Your assistant",
+          "x": 220,
+          "y": 25,
+          "fontSize": 17,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#17191d",
+          "textAnchor": "middle",
+          "fontWeight": 600
+        },
+        {
+          "id": "phone-divider",
+          "type": "rect",
+          "x": 1,
+          "y": 66,
+          "width": 438,
+          "height": 1,
+          "fill": "#d8dbe0",
+          "radius": 0
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "mode": "original-direction",
+  "promise": "Reserve a table inside the conversation",
+  "fps": 30,
+  "notice": "Authored example; timing and holds are new design choices, not source measurements.",
+  "rejected_alternative": "A message wall emphasizes breadth while this brief needs one readable action.",
+  "shots": [
+    {"id":"request","intent":"Establish a real user need","motif":"conversation-handoff","start_frame":0,"end_frame_exclusive":120,"components":["Composer","MessageBubble","PhoneFrame"],"evidence_kind":"authored-adaptation","reading_hold_frames":24,"sound_events":[{"kind":"typing","authority":"actual generated composer states"},{"kind":"message_send","frame":53}],"validation":"Typed request clears on send; assistant reply is not keyboard-typed."},
+    {"id":"reserve","intent":"Prove the action stays inside chat","motif":"mini-app-expand","start_frame":120,"end_frame_exclusive":240,"components":["AppCard","PhoneFrame","MessageBubble"],"evidence_kind":"authored-adaptation","reading_hold_frames":36,"sound_events":[{"kind":"panel_open","frame":120}],"validation":"Conversation context remains visible and app controls remain readable."},
+    {"id":"result","intent":"Make the outcome unmistakable","motif":"selection-confirm","start_frame":240,"end_frame_exclusive":330,"components":["AppCard","ActionButton"],"evidence_kind":"authored-adaptation","reading_hold_frames":36,"sound_events":[{"kind":"tap","frame":281}],"validation":"A single stable action control changes to the correct confirmation state."}
+  ]
+}

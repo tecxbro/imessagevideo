@@ -1,0 +1,78 @@
+{
+  "format": 1,
+  "plan": {
+    "mode": "director",
+    "fps": 30,
+    "brief": "Jo and Tessa get Afterglow tickets. Show how they decide where to sit and confirm both tickets.",
+    "shots": [
+      {
+        "id": "open",
+        "frames": 108,
+        "purpose": "Establish a concrete invitation.",
+        "visual": "Jo sends a draft into the conversation.",
+        "motion": {
+          "kind": "seed",
+          "id": "draft-send-flight"
+        },
+        "copy": "Tickets for Afterglow?",
+        "copy_key": "copy",
+        "bindings": {
+          "heading": "Jo + Tessa",
+          "reply": "Presale just opened."
+        },
+        "preview": "proof-open/preview.mp4",
+        "code": "proof-open/scene.json",
+        "board": "proof-open/board.png"
+      },
+      {
+        "id": "choice",
+        "frames": 96,
+        "purpose": "Make it clear exactly which earlier message the answer refers to.",
+        "visual": "Tessa drags only the seating question. It returns to its slot while the quoted copy opens above the composer.",
+        "motion": {
+          "kind": "seed",
+          "id": "swipe-to-quote"
+        },
+        "copy": "Floor or balcony?",
+        "copy_key": "copy",
+        "bindings": {
+          "heading": "Jo + Tessa",
+          "reply": "Tickets for Afterglow?",
+          "title": "Replying to Jo"
+        },
+        "preview": "proof-reply/preview.mp4",
+        "code": "proof-reply/scene.json",
+        "board": "proof-reply/board.png"
+      },
+      {
+        "id": "payoff",
+        "frames": 108,
+        "purpose": "Confirm that both friends have a ticket.",
+        "visual": "The confirmation leaves the composer and settles below the plan.",
+        "motion": {
+          "kind": "seed",
+          "id": "draft-send-flight"
+        },
+        "copy": "Got both tickets!",
+        "copy_key": "copy",
+        "bindings": {
+          "heading": "Jo + Tessa",
+          "reply": "Floor works for me."
+        },
+        "preview": "proof-payoff/preview.mp4",
+        "code": "proof-payoff/scene.json",
+        "board": "proof-payoff/board.png"
+      }
+    ],
+    "confirmation": true
+  },
+  "project_root": ".",
+  "derived_from": {
+    "revision": "716f8ae9c4387ed8a4cc793cef25d1b25970125606b75a8a83072bce7036c21c",
+    "changed_shot": "choice"
+  },
+  "approval": {
+    "revision": "6c011e9afa31beeb095f4e826fcb5050903c4f2a9bff44ef33083c79f5b0f1d0",
+    "response": "Approved. Show which message I’m replying to, then finish the film."
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "prior_sha256": "d5415679aaac724b5deb3598f980c9f62cc0e318d7a7c50a37fedbffdd699c4a",
+  "candidate_sha256": "0aae8f2894b0200abe3b98dc3704d97dd15c0820dd3ac5cc9f29f5067d2d5b85",
+  "locked_regions": {
+    "calendar-tile-exit": {
+      "frames": 12,
+      "before_mean_rgb_error": 10.155474890978722,
+      "after_mean_rgb_error": 7.3574173560385505,
+      "regressions_over_point_15": []
+    },
+    "follow-pointer-and-yes": {
+      "frames": 26,
+      "before_mean_rgb_error": 12.947836463167228,
+      "after_mean_rgb_error": 8.077606387848823,
+      "regressions_over_point_15": []
+    },
+    "handset-left-rail": {
+      "frames": 24,
+      "before_mean_rgb_error": 38.359337332895024,
+      "after_mean_rgb_error": 19.889678756665937,
+      "regressions_over_point_15": []
+    },
+    "handset-right-rail": {
+      "frames": 24,
+      "before_mean_rgb_error": 29.686002447220396,
+      "after_mean_rgb_error": 23.94992329607714,
+      "regressions_over_point_15": [
+        672,
+        690
+      ]
+    }
+  },
+  "full_comparison": {
+    "verdict": "FAIL",
+    "compared_frames": 778,
+    "mean_abs_rgb": 6.515689600257077,
+    "exact_clock": true,
+    "worst_frame": {
+      "frame": 150,
+      "mean_abs_rgb": 18.454583416666665
+    },
+    "pixel_equality": {
+      "identical_frames": 0,
+      "different_frames": 778,
+      "different_spans": [
+        [
+          0,
+          777
+        ]
+      ],
+      "changed_pixel_observations": 3090859427,
+      "first_difference": {
+        "frame": 0,
+        "changed_pixels": 3989459,
+        "max_channel_delta": 96,
+        "rect": [
+          0,
+          0,
+          2000,
+          2000
+        ]
+      },
+      "worst_frame": {
+        "frame": 622,
+        "changed_pixels": 3999960,
+        "max_channel_delta": 7
+      }
+    }
+  }
+}

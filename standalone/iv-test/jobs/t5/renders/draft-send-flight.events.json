@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 72
+  },
+  "initialUI": null,
+  "events": [
+    {
+      "id": "motion.draft-send-flight.send",
+      "kind": "message_send",
+      "target": "send-outgoing",
+      "frame": 14,
+      "layerIds": [
+        "send-outgoing"
+      ]
+    },
+    {
+      "id": "motion.draft-send-flight.settle",
+      "kind": "message_settle",
+      "target": "send-outgoing",
+      "frame": 35,
+      "layerIds": [
+        "send-outgoing"
+      ]
+    }
+  ],
+  "cues": []
+}

@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 72
+  },
+  "initialUI": null,
+  "events": [
+    {
+      "id": "motion.keyboard-focus-reflow.composer-focus",
+      "kind": "tap",
+      "target": "focus-composer",
+      "frame": 25,
+      "layerIds": [
+        "focus-composer"
+      ]
+    },
+    {
+      "id": "motion.keyboard-focus-reflow.keyboard-ready",
+      "kind": "keyboard_show",
+      "target": "focus-keyboard",
+      "frame": 44,
+      "layerIds": [
+        "focus-keyboard"
+      ]
+    }
+  ],
+  "cues": []
+}

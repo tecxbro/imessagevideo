@@ -1,0 +1,493 @@
+{
+  "status": "SUPERSEDED_BY_QUANTIZATION_SAFE_DOM_MAPPING",
+  "productionSceneSHA256": "abc87b6e69314e5df3ef75a81efd216011fa1604872aec66c1eb2a39f69658b2",
+  "candidateFormula": "-Math.floor((actualCssLineHeight-(fontBoundingBoxAscent+fontBoundingBoxDescent))/2)",
+  "source06CandidateRanges": [
+    [
+      108,
+      239
+    ],
+    [
+      1050,
+      1150
+    ]
+  ],
+  "candidateFrames": 233,
+  "outsideFrames": 1250,
+  "actualTests": [
+    {
+      "frame": 1067,
+      "files": {
+        "gsap": {
+          "path": "/workspace/imessage-recreations/outputs/06-gallery/frames-gsap/001067.png",
+          "sha256": "59693ccd938495c762bea2db57aa77cd3ca245a285b489b07393360294e2a9d2"
+        },
+        "actualMC": {
+          "path": "/workspace/imessage-recreations/outputs/06-gallery/cache/motion-canvas/001067.png",
+          "sha256": "301aa67310bdfc64d403ed03c024363b73fc5f35347ab65c6ed2e1800fcfe7ab"
+        },
+        "before": {
+          "path": "/workspace/imessage-recreations/verification/final/06-gallery/v23/text-metric-diagnosis/actual/1067-off.png",
+          "sha256": "301aa67310bdfc64d403ed03c024363b73fc5f35347ab65c6ed2e1800fcfe7ab"
+        },
+        "prototype": {
+          "path": "/workspace/imessage-recreations/verification/final/06-gallery/v23/text-metric-diagnosis/actual/1067-formula.png",
+          "sha256": "6bd59bc72db771c06fe337c64d4101ac967c795b296af862616bc924d3c56b01"
+        }
+      },
+      "comparisons": {
+        "beforeVsactualMC": {
+          "mae": 0.0,
+          "max": 0,
+          "changedPixels": 0
+        },
+        "prototypeVsbefore": {
+          "mae": 1.2965625,
+          "max": 246,
+          "changedPixels": 15683
+        },
+        "beforeVsgsap": {
+          "mae": 1.5223722029320987,
+          "max": 246,
+          "changedPixels": 18253
+        },
+        "prototypeVsgsap": {
+          "mae": 0.23618007330246912,
+          "max": 246,
+          "changedPixels": 6854
+        }
+      },
+      "whiteGlyphBoxes": {
+        "gsap": [
+          [
+            395,
+            496,
+            654,
+            584
+          ],
+          [
+            686,
+            502,
+            719,
+            583
+          ],
+          [
+            731,
+            495,
+            851,
+            583
+          ],
+          [
+            886,
+            498,
+            1142,
+            585
+          ],
+          [
+            1170,
+            496,
+            1310,
+            584
+          ],
+          [
+            1341,
+            522,
+            1525,
+            610
+          ]
+        ],
+        "actualMC": [
+          [
+            395,
+            491,
+            654,
+            579
+          ],
+          [
+            686,
+            498,
+            719,
+            579
+          ],
+          [
+            731,
+            491,
+            851,
+            579
+          ],
+          [
+            886,
+            493,
+            1142,
+            580
+          ],
+          [
+            1170,
+            492,
+            1310,
+            580
+          ],
+          [
+            1341,
+            517,
+            1525,
+            605
+          ]
+        ],
+        "before": [
+          [
+            395,
+            491,
+            654,
+            579
+          ],
+          [
+            686,
+            498,
+            719,
+            579
+          ],
+          [
+            731,
+            491,
+            851,
+            579
+          ],
+          [
+            886,
+            493,
+            1142,
+            580
+          ],
+          [
+            1170,
+            492,
+            1310,
+            580
+          ],
+          [
+            1341,
+            517,
+            1525,
+            605
+          ]
+        ],
+        "prototype": [
+          [
+            395,
+            495,
+            654,
+            583
+          ],
+          [
+            686,
+            502,
+            719,
+            583
+          ],
+          [
+            731,
+            495,
+            851,
+            583
+          ],
+          [
+            886,
+            497,
+            1142,
+            584
+          ],
+          [
+            1170,
+            496,
+            1310,
+            584
+          ],
+          [
+            1341,
+            521,
+            1525,
+            609
+          ]
+        ]
+      }
+    },
+    {
+      "frame": 1106,
+      "files": {
+        "gsap": {
+          "path": "/workspace/imessage-recreations/outputs/06-gallery/frames-gsap/001106.png",
+          "sha256": "0cb7b801ba69d8a6502c3e4777b7e6feb2601117645855af7f3f69b863d0ee14"
+        },
+        "actualMC": {
+          "path": "/workspace/imessage-recreations/outputs/06-gallery/cache/motion-canvas/001106.png",
+          "sha256": "46b1ac5834acfc2a60b29ea784455d9417a44be02bd5f9f52c6b48c178cfe4d6"
+        },
+        "before": {
+          "path": "/workspace/imessage-recreations/verification/final/06-gallery/v23/text-metric-diagnosis/actual/1106-off.png",
+          "sha256": "46b1ac5834acfc2a60b29ea784455d9417a44be02bd5f9f52c6b48c178cfe4d6"
+        },
+        "prototype": {
+          "path": "/workspace/imessage-recreations/verification/final/06-gallery/v23/text-metric-diagnosis/actual/1106-formula.png",
+          "sha256": "111603cb8789efc5273376d86e2ced5fcbc65adefaeb3f47351069d1d104b48a"
+        }
+      },
+      "comparisons": {
+        "beforeVsactualMC": {
+          "mae": 0.0,
+          "max": 0,
+          "changedPixels": 0
+        },
+        "prototypeVsbefore": {
+          "mae": 1.299333526234568,
+          "max": 246,
+          "changedPixels": 15739
+        },
+        "beforeVsgsap": {
+          "mae": 1.4119642168209876,
+          "max": 246,
+          "changedPixels": 17342
+        },
+        "prototypeVsgsap": {
+          "mae": 0.12276186342592593,
+          "max": 246,
+          "changedPixels": 5348
+        }
+      },
+      "whiteGlyphBoxes": {
+        "gsap": [
+          [
+            321,
+            495,
+            580,
+            583
+          ],
+          [
+            612,
+            501,
+            645,
+            582
+          ],
+          [
+            657,
+            494,
+            777,
+            582
+          ],
+          [
+            828,
+            498,
+            911,
+            581
+          ],
+          [
+            962,
+            496,
+            1217,
+            584
+          ],
+          [
+            1245,
+            495,
+            1385,
+            583
+          ],
+          [
+            1416,
+            519,
+            1600,
+            607
+          ]
+        ],
+        "actualMC": [
+          [
+            321,
+            490,
+            580,
+            578
+          ],
+          [
+            612,
+            497,
+            645,
+            578
+          ],
+          [
+            657,
+            490,
+            777,
+            578
+          ],
+          [
+            828,
+            498,
+            911,
+            581
+          ],
+          [
+            962,
+            492,
+            1217,
+            580
+          ],
+          [
+            1245,
+            491,
+            1385,
+            579
+          ],
+          [
+            1416,
+            515,
+            1600,
+            603
+          ]
+        ],
+        "before": [
+          [
+            321,
+            490,
+            580,
+            578
+          ],
+          [
+            612,
+            497,
+            645,
+            578
+          ],
+          [
+            657,
+            490,
+            777,
+            578
+          ],
+          [
+            828,
+            498,
+            911,
+            581
+          ],
+          [
+            962,
+            492,
+            1217,
+            580
+          ],
+          [
+            1245,
+            491,
+            1385,
+            579
+          ],
+          [
+            1416,
+            515,
+            1600,
+            603
+          ]
+        ],
+        "prototype": [
+          [
+            321,
+            494,
+            580,
+            582
+          ],
+          [
+            612,
+            501,
+            645,
+            582
+          ],
+          [
+            657,
+            494,
+            777,
+            582
+          ],
+          [
+            828,
+            498,
+            911,
+            581
+          ],
+          [
+            962,
+            496,
+            1217,
+            584
+          ],
+          [
+            1245,
+            495,
+            1385,
+            583
+          ],
+          [
+            1416,
+            519,
+            1600,
+            607
+          ]
+        ]
+      }
+    },
+    {
+      "frame": 552,
+      "files": {
+        "gsap": {
+          "path": "/workspace/imessage-recreations/outputs/06-gallery/frames-gsap/000552.png",
+          "sha256": "1721347c6ba4aae60385b7501fe41a0aace0961bdbb1b3faada7ceaf96b0898a"
+        },
+        "actualMC": {
+          "path": "/workspace/imessage-recreations/outputs/06-gallery/cache/motion-canvas/000552.png",
+          "sha256": "3e50b11f7b4b25a94e4c5d92771705bd205c0b402a1811a5063099dc288a3286"
+        },
+        "before": {
+          "path": "/workspace/imessage-recreations/verification/final/06-gallery/v23/text-metric-diagnosis/actual/552-off.png",
+          "sha256": "3e50b11f7b4b25a94e4c5d92771705bd205c0b402a1811a5063099dc288a3286"
+        },
+        "prototype": {
+          "path": "/workspace/imessage-recreations/verification/final/06-gallery/v23/text-metric-diagnosis/actual/552-formula.png",
+          "sha256": "3e50b11f7b4b25a94e4c5d92771705bd205c0b402a1811a5063099dc288a3286"
+        }
+      },
+      "comparisons": {
+        "beforeVsactualMC": {
+          "mae": 0.0,
+          "max": 0,
+          "changedPixels": 0
+        },
+        "prototypeVsbefore": {
+          "mae": 0.0,
+          "max": 0,
+          "changedPixels": 0
+        },
+        "beforeVsgsap": {
+          "mae": 0.12738377700617284,
+          "max": 22,
+          "changedPixels": 300882
+        },
+        "prototypeVsgsap": {
+          "mae": 0.12738377700617284,
+          "max": 22,
+          "changedPixels": 300882
+        }
+      },
+      "whiteGlyphBoxes": {}
+    }
+  ],
+  "fixtureTests": "correction-measurements.json",
+  "prototypeEquivalence": "native-prototype-equivalence.json",
+  "productionProtection": "production-protection.json",
+  "allSixAuthoredInventory": "outputs/alternative-methods/motion-canvas-text-inventory/summary.json",
+  "allSixMetricSupplement": "pending",
+  "limitations": [
+    "nonuniform raster residual",
+    "existing separate underline mismatch; no active underlined production text",
+    "04 p0015 omitted-lineHeight/fontSize animation has capture-history dependent actualCSS lineHeight",
+    "no all-six promotion from source06 fixture evidence alone"
+  ],
+  "supersededBy": "robust-release-proposal.md"
+}

@@ -1,0 +1,15 @@
+# Native sampling and release lessons from Linq final20
+
+Do not dismiss a native-method outlier as sampling before testing whether the available renderer settings improve the reference. The worst native Pillow menu frames retained all internal artwork, but paired extreme inverse transforms magnified coarse local raster samples. The existing `--aa4` option improved actual source error, so a dense bounded study was warranted. No engine or scene rewrite was needed.
+
+Derive the true authored phase before changing cached frames. Here it was101–126 plus outgoing127, not an assumed99–129 interval. Composer-only99/100 and Games129/130 became worse atAA4 and remained guarded AA1 states. Compare every affected native frame to original source, the canonical browser method and the current native cache. Use fresh AA1 controls to prove that an observed improvement is caused by the sampling choice, rather than a changed dependency or stale input. All three AA1 controls here were exactRGB0.
+
+Report tradeoffs directly.23 of27 phase frames improved, while four small losses were explicitly quantified and natively inspected. Phase source mean improved14.77%, with worst tradeoff.024249 MAE. A coherent scoped change can be accepted with small evidenced tradeoffs; neither an average gain nor a parity score alone establishes1:1 source fidelity.
+
+Preserve evaluation inputs before promoting into a live cache. Mutable cache links otherwise make an old/new viewer silently show the same new pixels in both columns. Freeze baseline PNGs, source/native hashes and numerical reports, then promote only successful native-produced captures atomically. Journal the actual AA1 baseline plus bounded AA4 override instead of describing the whole mixed cache asAA4. Verify every outside frame's hash and file metadata. Retain old picture and sidecar; then encode, hash-bind a fresh all-frame report and mux. No source/G PNG may be substituted for the native output.
+
+Use the documented renderer interpreter. SystemPython lackedCairoSVG and stopped before rendering; the venv completed. Diagnose that setup failure before retrying. Freeze completed quarantine scripts/artifacts so a later rerun cannot accidentally recompute a baseline against an already promoted cache.
+
+Observed capture anomalies require evidence, not a named cause. Remotion607's old all-white native PNG was preserved; exact same-process/chunk606–608 probes reproduced valid neighbors and a populated607. The blank was not reproduced, so no cache/browser/decode origin was established. Only the genuine fresh607 was promoted with guards and a journal. A legacy625 truncation had similarly become pixel-exact on a fresh render. Those observations must not become an unsupported universal renderer explanation.
+
+Reproducible evidence is under `verification/method-parity/05-linq/native-review/aa4-lifecycle/` and `verification/05-raster-parity-607/`. Final20 scene and all methods still have explicit static internal-UI artwork, camera/material/filter and source-optics limits; no100% claim is supported.

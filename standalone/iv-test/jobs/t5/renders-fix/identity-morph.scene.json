@@ -1,0 +1,272 @@
+{
+  "width": 720,
+  "height": 480,
+  "fps": 30,
+  "duration": 2.4,
+  "background": "#dce7f1",
+  "title": "Morph an identity into an app tile",
+  "source": {
+    "path": "skill/imessage-motion-recreation/director/motions.mjs#identity-morph",
+    "sourceStart": 0,
+    "sourceEnd": 4,
+    "notes": "Original editable motion starter at c49482a, fit into the library stage with the same keyframe choreography."
+  },
+  "layers": [
+    {
+      "id": "surface",
+      "type": "rect",
+      "x": 110,
+      "y": 44,
+      "width": 500,
+      "height": 392,
+      "fill": "#ffffff",
+      "radius": 18
+    },
+    {
+      "id": "stage",
+      "type": "group",
+      "x": 110,
+      "y": 98,
+      "children": [
+        {
+          "id": "base-motion",
+          "type": "group",
+          "x": 0,
+          "y": 8,
+          "children": [
+            {
+              "id": "identity-surface",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 128,
+              "height": 128,
+              "fill": "#1688fa",
+              "radius": 64,
+              "keyframes": {
+                "x": [
+                  {
+                    "t": 0,
+                    "value": 416,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 1.32,
+                    "value": 396,
+                    "ease": "easeInOut"
+                  }
+                ],
+                "y": [
+                  {
+                    "t": 0,
+                    "value": 206,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 1.32,
+                    "value": 186,
+                    "ease": "easeInOut"
+                  }
+                ],
+                "width": [
+                  {
+                    "t": 0,
+                    "value": 128,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 1.32,
+                    "value": 168,
+                    "ease": "easeInOut"
+                  }
+                ],
+                "height": [
+                  {
+                    "t": 0,
+                    "value": 128,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 1.32,
+                    "value": 168,
+                    "ease": "easeInOut"
+                  }
+                ],
+                "radius": [
+                  {
+                    "t": 0,
+                    "value": 64,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 1.32,
+                    "value": 34,
+                    "ease": "easeInOut"
+                  }
+                ],
+                "fill": [
+                  {
+                    "t": 0,
+                    "value": "#1688fa",
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 1.32,
+                    "value": "#17252c",
+                    "ease": "easeInOut"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "identity-old-mark",
+              "type": "path",
+              "x": 480,
+              "y": 270,
+              "d": "M -22 0 L -6 16 L 24 -18",
+              "fill": "none",
+              "stroke": "#ffffff",
+              "strokeWidth": 7,
+              "keyframes": {
+                "opacity": [
+                  {
+                    "t": 0,
+                    "value": 1,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 0.6,
+                    "value": 1,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 1.152,
+                    "value": 0,
+                    "ease": "easeInOut"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "identity-new-mark",
+              "type": "text",
+              "text": "A",
+              "x": 480,
+              "y": 235,
+              "fontSize": 64,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#ffffff",
+              "textAnchor": "middle",
+              "fontWeight": 600,
+              "keyframes": {
+                "opacity": [
+                  {
+                    "t": 0,
+                    "value": 0,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 0.9119999999999999,
+                    "value": 0,
+                    "ease": "easeInOut"
+                  },
+                  {
+                    "t": 1.44,
+                    "value": 1,
+                    "ease": "easeOut"
+                  }
+                ]
+              }
+            }
+          ],
+          "scaleX": 0.52,
+          "scaleY": 0.52
+        }
+      ],
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 500,
+        "height": 298
+      }
+    },
+    {
+      "id": "footer",
+      "type": "group",
+      "x": 110,
+      "y": 396,
+      "children": [
+        {
+          "id": "footer-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 40,
+          "fill": "#f2f6fb",
+          "radius": 12
+        },
+        {
+          "id": "footer-label",
+          "type": "text",
+          "text": "Field guide · Autumn",
+          "x": 26,
+          "y": 11,
+          "fontSize": 15,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#516277"
+        }
+      ]
+    },
+    {
+      "id": "heading",
+      "type": "group",
+      "x": 110,
+      "y": 44,
+      "children": [
+        {
+          "id": "heading-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 54,
+          "fill": "#f2f6fb",
+          "radius": 13
+        },
+        {
+          "id": "heading-copy",
+          "type": "text",
+          "text": "Alpine field notes",
+          "x": 26,
+          "y": 13,
+          "fontSize": 23,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#182737",
+          "fontWeight": 700
+        }
+      ]
+    }
+  ],
+  "timeline": {
+    "version": 1,
+    "picture": {
+      "fpsNum": 30,
+      "fpsDen": 1,
+      "frameCount": 72
+    },
+    "initialUI": null,
+    "events": [
+      {
+        "id": "motion.identity-morph.identity-resolved",
+        "kind": "identity-resolved",
+        "target": "identity-new-mark",
+        "frame": 44,
+        "layerIds": [
+          "identity-new-mark"
+        ]
+      }
+    ],
+    "cues": []
+  }
+}

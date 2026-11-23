@@ -1,0 +1,1 @@
+These are complete source copies of the project tools. Execute the tools/ copies already supplied by a materialized example/audio pack, or copy these files into that project's tools/ directory before use. They resolve the project root relative to tools/. The skill-local materialize.py is the retrieval entrypoint.

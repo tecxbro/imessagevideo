@@ -1,0 +1,599 @@
+{
+  "width": 720,
+  "height": 480,
+  "fps": 30,
+  "duration": 3.6,
+  "background": "#dce7f1",
+  "title": "Send from the composer into history",
+  "source": {
+    "path": "https://github.com/theswerd/imessage-ui/blob/1f132909792ff540501385f91d37ef20629c55b7/references/ios/motion/send-60fps.mp4",
+    "sourceStart": 1.2166666666666666,
+    "sourceEnd": 1.9166666666666667,
+    "notes": "Source frames are zero-based. Geometry is fitted to the editable preview layout using the measured collapse ratios, rise and overshoot. Color, text timing outside the flight and resting geometry are adapted."
+  },
+  "layers": [
+    {
+      "id": "surface",
+      "type": "rect",
+      "x": 110,
+      "y": 44,
+      "width": 500,
+      "height": 392,
+      "fill": "#ffffff",
+      "radius": 18
+    },
+    {
+      "id": "stage",
+      "type": "group",
+      "x": 110,
+      "y": 98,
+      "children": [
+        {
+          "id": "send-prior-reply",
+          "type": "group",
+          "x": 28,
+          "y": 42,
+          "children": [
+            {
+              "id": "send-prior-reply-body",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 262,
+              "height": 54,
+              "fill": "#e9e9ed",
+              "radius": 20
+            },
+            {
+              "id": "send-prior-reply-tail",
+              "type": "path",
+              "d": "M 16 36 Q 3 55 -7 52 Q 3 48 2 34 Z",
+              "fill": "#e9e9ed"
+            },
+            {
+              "id": "send-prior-reply-copy",
+              "type": "text",
+              "text": "Presale just opened.",
+              "x": 17,
+              "y": 14,
+              "fontSize": 16,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#17191d",
+              "lineHeight": 18
+            }
+          ]
+        },
+        {
+          "id": "send-draft",
+          "type": "group",
+          "x": 23,
+          "y": 248,
+          "children": [
+            {
+              "id": "send-draft-field",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 454,
+              "height": 48,
+              "fill": "#ffffff",
+              "radius": 24,
+              "stroke": "#d8dbe0",
+              "strokeWidth": 1
+            },
+            {
+              "id": "send-draft-input",
+              "type": "text",
+              "text": "Tickets for Afterglow?",
+              "x": 18,
+              "y": 14,
+              "fontSize": 17,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#17191d",
+              "keyframes": {
+                "text": [
+                  {
+                    "t": 0,
+                    "value": "Tickets for Afterglow?",
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 0.684,
+                    "value": "Message",
+                    "ease": "hold"
+                  }
+                ],
+                "fill": [
+                  {
+                    "t": 0,
+                    "value": "#182737",
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 0.684,
+                    "value": "#516277",
+                    "ease": "hold"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "send-draft-send",
+              "type": "circle",
+              "x": 414,
+              "y": 8,
+              "width": 32,
+              "height": 32,
+              "fill": "#1688fa",
+              "keyframes": {
+                "opacity": [
+                  {
+                    "t": 0,
+                    "value": 1,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 0.684,
+                    "value": 0,
+                    "ease": "hold"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "send-draft-arrow",
+              "type": "path",
+              "d": "M 430 33 L 430 16 M 423 23 L 430 16 L 437 23",
+              "fill": "none",
+              "stroke": "#ffffff",
+              "strokeWidth": 2,
+              "keyframes": {
+                "opacity": [
+                  {
+                    "t": 0,
+                    "value": 1,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 0.684,
+                    "value": 0,
+                    "ease": "hold"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "send-field-collapse",
+          "type": "rect",
+          "x": 24,
+          "y": 248,
+          "width": 452,
+          "height": 47,
+          "fill": "#91c5fe",
+          "radius": 23,
+          "opacity": 0,
+          "keyframes": {
+            "width": [
+              {
+                "t": 0.684,
+                "value": 452,
+                "ease": "linear"
+              },
+              {
+                "t": 0.701,
+                "value": 455.0937713894593,
+                "ease": "linear"
+              },
+              {
+                "t": 0.717,
+                "value": 420.13415468856954,
+                "ease": "linear"
+              },
+              {
+                "t": 0.7340000000000001,
+                "value": 389.3511293634497,
+                "ease": "linear"
+              },
+              {
+                "t": 0.751,
+                "value": 349.28678986995214,
+                "ease": "linear"
+              },
+              {
+                "t": 0.767,
+                "value": 301.17864476386035,
+                "ease": "linear"
+              },
+              {
+                "t": 0.784,
+                "value": 238.22039698836414,
+                "ease": "linear"
+              },
+              {
+                "t": 0.801,
+                "value": 190.2669404517454,
+                "ease": "linear"
+              },
+              {
+                "t": 0.8170000000000001,
+                "value": 151.59479808350446,
+                "ease": "linear"
+              },
+              {
+                "t": 0.834,
+                "value": 126.38056125941137,
+                "ease": "linear"
+              },
+              {
+                "t": 0.8670000000000001,
+                "value": 105.03353867214238,
+                "ease": "linear"
+              }
+            ],
+            "x": [
+              {
+                "t": 0.684,
+                "value": 24,
+                "ease": "linear"
+              },
+              {
+                "t": 0.701,
+                "value": 20.906228610540722,
+                "ease": "linear"
+              },
+              {
+                "t": 0.717,
+                "value": 55.86584531143046,
+                "ease": "linear"
+              },
+              {
+                "t": 0.7340000000000001,
+                "value": 86.64887063655033,
+                "ease": "linear"
+              },
+              {
+                "t": 0.751,
+                "value": 126.71321013004786,
+                "ease": "linear"
+              },
+              {
+                "t": 0.767,
+                "value": 174.82135523613965,
+                "ease": "linear"
+              },
+              {
+                "t": 0.784,
+                "value": 237.77960301163586,
+                "ease": "linear"
+              },
+              {
+                "t": 0.801,
+                "value": 285.7330595482546,
+                "ease": "linear"
+              },
+              {
+                "t": 0.8170000000000001,
+                "value": 324.40520191649557,
+                "ease": "linear"
+              },
+              {
+                "t": 0.834,
+                "value": 349.61943874058863,
+                "ease": "linear"
+              },
+              {
+                "t": 0.8670000000000001,
+                "value": 370.9664613278576,
+                "ease": "linear"
+              }
+            ],
+            "opacity": [
+              {
+                "t": 0,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 0.684,
+                "value": 0.64,
+                "ease": "hold"
+              },
+              {
+                "t": 0.754,
+                "value": 0.5,
+                "ease": "linear"
+              },
+              {
+                "t": 0.8670000000000001,
+                "value": 0,
+                "ease": "linear"
+              }
+            ]
+          }
+        },
+        {
+          "id": "send-outgoing",
+          "type": "group",
+          "x": 242,
+          "y": 248,
+          "children": [
+            {
+              "id": "send-outgoing-body",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 228,
+              "height": 48,
+              "fill": "#1688fa",
+              "radius": 20
+            },
+            {
+              "id": "send-outgoing-tail",
+              "type": "path",
+              "d": "M 212 30 Q 225 49 235 46 Q 225 42 226 28 Z",
+              "fill": "#1688fa"
+            },
+            {
+              "id": "send-outgoing-copy",
+              "type": "text",
+              "text": "Tickets for Afterglow?",
+              "x": 17,
+              "y": 14,
+              "fontSize": 16,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#ffffff",
+              "lineHeight": 18
+            }
+          ],
+          "originX": 228,
+          "originY": 48,
+          "keyframes": {
+            "y": [
+              {
+                "t": 0.684,
+                "value": 248,
+                "ease": "linear"
+              },
+              {
+                "t": 0.717,
+                "value": 248,
+                "ease": "linear"
+              },
+              {
+                "t": 0.834,
+                "value": 207,
+                "ease": "linear"
+              },
+              {
+                "t": 0.8670000000000001,
+                "value": 186,
+                "ease": "linear"
+              },
+              {
+                "t": 0.917,
+                "value": 162,
+                "ease": "linear"
+              },
+              {
+                "t": 1.0010000000000001,
+                "value": 133,
+                "ease": "linear"
+              },
+              {
+                "t": 1.034,
+                "value": 128,
+                "ease": "linear"
+              },
+              {
+                "t": 1.101,
+                "value": 124,
+                "ease": "linear"
+              },
+              {
+                "t": 1.1340000000000001,
+                "value": 124,
+                "ease": "linear"
+              },
+              {
+                "t": 1.3170000000000002,
+                "value": 128,
+                "ease": "linear"
+              },
+              {
+                "t": 1.3739999999999999,
+                "value": 128,
+                "ease": "linear"
+              }
+            ],
+            "scaleX": [
+              {
+                "t": 0.717,
+                "value": 0.5,
+                "ease": "linear"
+              },
+              {
+                "t": 0.754,
+                "value": 0.7,
+                "ease": "linear"
+              },
+              {
+                "t": 0.834,
+                "value": 0.87,
+                "ease": "linear"
+              },
+              {
+                "t": 0.8670000000000001,
+                "value": 0.772,
+                "ease": "linear"
+              },
+              {
+                "t": 0.9440000000000001,
+                "value": 0.91,
+                "ease": "linear"
+              },
+              {
+                "t": 1.044,
+                "value": 0.98,
+                "ease": "linear"
+              },
+              {
+                "t": 1.1840000000000002,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 1.3739999999999999,
+                "value": 1,
+                "ease": "linear"
+              }
+            ],
+            "scaleY": [
+              {
+                "t": 0.717,
+                "value": 0.5,
+                "ease": "linear"
+              },
+              {
+                "t": 0.754,
+                "value": 0.7,
+                "ease": "linear"
+              },
+              {
+                "t": 0.834,
+                "value": 0.87,
+                "ease": "linear"
+              },
+              {
+                "t": 0.8670000000000001,
+                "value": 0.772,
+                "ease": "linear"
+              },
+              {
+                "t": 0.9440000000000001,
+                "value": 0.91,
+                "ease": "linear"
+              },
+              {
+                "t": 1.044,
+                "value": 0.98,
+                "ease": "linear"
+              },
+              {
+                "t": 1.1840000000000002,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 1.3739999999999999,
+                "value": 1,
+                "ease": "linear"
+              }
+            ],
+            "opacity": [
+              {
+                "t": 0,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 0.717,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 0.754,
+                "value": 1,
+                "ease": "easeOut"
+              }
+            ]
+          }
+        }
+      ],
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 500,
+        "height": 298
+      }
+    },
+    {
+      "id": "footer",
+      "type": "group",
+      "x": 110,
+      "y": 396,
+      "children": [
+        {
+          "id": "footer-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 40,
+          "fill": "#f2f6fb",
+          "radius": 12
+        }
+      ]
+    },
+    {
+      "id": "heading",
+      "type": "group",
+      "x": 110,
+      "y": 44,
+      "children": [
+        {
+          "id": "heading-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 54,
+          "fill": "#f2f6fb",
+          "radius": 13
+        },
+        {
+          "id": "heading-copy",
+          "type": "text",
+          "text": "Jo + Tessa",
+          "x": 26,
+          "y": 13,
+          "fontSize": 23,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#182737",
+          "fontWeight": 700
+        }
+      ]
+    }
+  ],
+  "timeline": {
+    "version": 1,
+    "picture": {
+      "fpsNum": 30,
+      "fpsDen": 1,
+      "frameCount": 108
+    },
+    "initialUI": null,
+    "events": [
+      {
+        "id": "motion.draft-send-flight.send",
+        "kind": "message_send",
+        "target": "send-outgoing",
+        "frame": 21,
+        "layerIds": [
+          "send-outgoing"
+        ]
+      },
+      {
+        "id": "motion.draft-send-flight.settle",
+        "kind": "message_settle",
+        "target": "send-outgoing",
+        "frame": 42,
+        "layerIds": [
+          "send-outgoing"
+        ]
+      }
+    ],
+    "cues": []
+  }
+}

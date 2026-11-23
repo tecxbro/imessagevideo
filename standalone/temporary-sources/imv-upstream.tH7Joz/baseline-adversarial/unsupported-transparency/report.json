@@ -1,0 +1,123 @@
+{
+  "schema": 1,
+  "verdict": "FAIL",
+  "failures": [
+    {
+      "check": "unsupported_alpha_comparison",
+      "reference_alpha": true,
+      "candidate_alpha": true
+    }
+  ],
+  "checks_sha256": null,
+  "reference": {
+    "name": "alpha-opaque.mov",
+    "sha256": "6d22fa5639f005e0eb34ee8e475eedf9f10f179840644ce7d78dacbecb84c594",
+    "clock": {
+      "width": 160,
+      "height": 90,
+      "sample_aspect_ratio": "1",
+      "rotation_degrees": 0,
+      "display_matrix": [
+        65536,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        1073741824
+      ],
+      "container_crop_top_bottom_left_right": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "time_base": "1/30000",
+      "declared_rate": "30",
+      "declared_average_rate": "30/1",
+      "start_pts": 0,
+      "end_pts_exclusive": 8000,
+      "end_basis": "last decoded frame duration",
+      "end_seconds": 0.26666666666666666,
+      "frames": 8,
+      "cadence": "constant",
+      "pixel_format": "argb",
+      "alpha_present": true,
+      "color_range": null,
+      "color_space": null,
+      "color_primaries": null,
+      "color_transfer": null
+    },
+    "audio": []
+  },
+  "candidate": {
+    "name": "alpha-transparent.mov",
+    "sha256": "e2a9cd44b70eb7a421d8bcc6a41321d4320790476fb2ee947be8a5ccb6ad9c56",
+    "clock": {
+      "width": 160,
+      "height": 90,
+      "sample_aspect_ratio": "1",
+      "rotation_degrees": 0,
+      "display_matrix": [
+        65536,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        1073741824
+      ],
+      "container_crop_top_bottom_left_right": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "time_base": "1/30000",
+      "declared_rate": "30",
+      "declared_average_rate": "30/1",
+      "start_pts": 0,
+      "end_pts_exclusive": 8000,
+      "end_basis": "last decoded frame duration",
+      "end_seconds": 0.26666666666666666,
+      "frames": 8,
+      "cadence": "constant",
+      "pixel_format": "argb",
+      "alpha_present": true,
+      "color_range": null,
+      "color_space": null,
+      "color_primaries": null,
+      "color_transfer": null
+    },
+    "audio": []
+  },
+  "compared_frames": 8,
+  "mean_abs_rgb": 0.0,
+  "worst_frame": {
+    "frame": 0,
+    "mean_abs_rgb": 0.0
+  },
+  "exact_clock": true,
+  "pixel_equality": {
+    "identical_frames": 8,
+    "different_frames": 0,
+    "different_spans": [],
+    "changed_pixel_observations": 0,
+    "first_difference": null,
+    "worst_frame": null
+  },
+  "whole_frame_mae_limit": 2,
+  "pixel_floor": 20,
+  "clock_tolerance_seconds": "0",
+  "alignment": "display-order index with independent exact PTS gate",
+  "audio_rule": "observe",
+  "audio_checks": null,
+  "regions": {},
+  "tile": null,
+  "regional_coverage": "picture-level checks only; no interaction windows supplied",
+  "decode_completed": true
+}

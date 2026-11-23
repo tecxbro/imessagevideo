@@ -1,0 +1,208 @@
+{
+  "metricHold": {
+    "sha256": "e83be9a147c453e1430625f70f7773a1f7e9e429c2ee8b6098c4f2901c813e8d",
+    "fps": 30,
+    "frames": 72,
+    "ocr": {
+      "0": "86",
+      "9": "86",
+      "10": "88",
+      "53": "2,131",
+      "54": "2,142",
+      "55": "2,147",
+      "56": "2,147",
+      "57": "2,147",
+      "58": "2,147",
+      "59": "2,147",
+      "60": "2,147",
+      "61": "2,147",
+      "62": "2,147",
+      "63": "2,147",
+      "64": "2,147",
+      "65": "2,147",
+      "66": "2,147",
+      "67": "2,147",
+      "68": "2,147",
+      "69": "2,147",
+      "70": "2,147",
+      "71": "2,147"
+    },
+    "sameValueCropFramesInclusive": [
+      55,
+      71
+    ],
+    "maxMeanRgbChangeInHold": 0.01092,
+    "valueCropXYWH": [
+      202,
+      190,
+      383,
+      96
+    ]
+  },
+  "photoSwipe": {
+    "sha256": "bc74b385ae591111fdcf0a76ba34e50321031e4712034ec739e7e12cac4514ef",
+    "fps": 24,
+    "frames": 84,
+    "swipeComparisonFramesInclusive": [
+      31,
+      43
+    ],
+    "maxMeanRgbChange": {
+      "header": 0.0,
+      "composer": 0.00551,
+      "priorRow": 0.0,
+      "media": 47.30053
+    },
+    "mediaFirstFrameMeanRgbChange": 25.57994,
+    "mediaAfterSettleMeanRgbChange": 0.0122,
+    "mediaAfterReturnMeanRgbChange": 0.67902,
+    "selectedPages": [
+      0,
+      1,
+      1,
+      1
+    ],
+    "surfaces": [
+      "conversation",
+      "conversation",
+      "media",
+      "conversation"
+    ],
+    "comparisonCropsXYWH": {
+      "header": [
+        8,
+        8,
+        386,
+        66
+      ],
+      "composer": [
+        8,
+        808,
+        386,
+        47
+      ],
+      "priorRow": [
+        12,
+        100,
+        376,
+        35
+      ],
+      "media": [
+        145,
+        165,
+        235,
+        150
+      ]
+    }
+  },
+  "comparisonVariants": {
+    "venue-rail": {
+      "fps": 30,
+      "frames": 72,
+      "sha256": "a053dbc6263aa7095b4a6e976636607941bc3e684427d082d5a109098c2ca871",
+      "comparisonFrames": [
+        19,
+        39
+      ],
+      "headerMaxMeanRgbChange": 0.0,
+      "footerMaxMeanRgbChange": 0.0,
+      "mediaMaxMeanRgbChange": 45.89431,
+      "comparisonCropsXYWH": {
+        "header": [
+          113,
+          46,
+          490,
+          49
+        ],
+        "footer": [
+          114,
+          408,
+          486,
+          22
+        ],
+        "media": [
+          160,
+          140,
+          380,
+          173
+        ]
+      }
+    },
+    "attachment-stack": {
+      "fps": 30,
+      "frames": 72,
+      "sha256": "79ed726a873db691207c11380382b22739d74aa2bd3237f571f9ad57a23b3fc3",
+      "comparisonFrames": [
+        20,
+        57
+      ],
+      "headerMaxMeanRgbChange": 0.0,
+      "footerMaxMeanRgbChange": 0.00266,
+      "mediaMaxMeanRgbChange": 50.27611,
+      "comparisonCropsXYWH": {
+        "header": [
+          113,
+          46,
+          490,
+          49
+        ],
+        "footer": [
+          133,
+          403,
+          449,
+          26
+        ],
+        "media": [
+          200,
+          164,
+          292,
+          177
+        ]
+      }
+    },
+    "conversation-rail": {
+      "fps": 30,
+      "frames": 72,
+      "sha256": "7a2114c0ce3365db2394db08bf08283cc85936751623d0bb7377b3ff28adab81",
+      "comparisonFrames": [
+        19,
+        39
+      ],
+      "headerMaxMeanRgbChange": 0.0123,
+      "footerMaxMeanRgbChange": 0.02114,
+      "mediaMaxMeanRgbChange": 47.9523,
+      "comparisonCropsXYWH": {
+        "header": [
+          140,
+          26,
+          427,
+          60
+        ],
+        "footer": [
+          150,
+          402,
+          415,
+          44
+        ],
+        "media": [
+          151,
+          101,
+          214,
+          137
+        ]
+      }
+    }
+  },
+  "linqReference": {
+    "sha256": "86e22e698e141c5c2a161977289be1335bb0c0a1dd98769c4c146fcd57bbf2eb",
+    "sourceFps": 30,
+    "reviewedFrames": [
+      1090,
+      1091,
+      1100,
+      1111,
+      1134
+    ]
+  },
+  "measurementNote": "Maximum mean absolute RGB channel difference against the first comparison frame in each fixed or moving crop."
+}

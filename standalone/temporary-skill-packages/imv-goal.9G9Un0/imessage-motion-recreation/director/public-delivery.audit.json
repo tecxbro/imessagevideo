@@ -1,0 +1,625 @@
+{
+  "utc": "2026-11-09T19:43:32.085961+00:00",
+  "pass": true,
+  "passed": 77,
+  "total": 77,
+  "scope": "Unauthenticated HTTP exact byte verification, not interactive browser QA",
+  "results": [
+    {
+      "path": "director/README.md",
+      "status": 200,
+      "content_type": "text/markdown",
+      "bytes": 5060,
+      "sha256": "003445f7a5db8ad87a2865d3a08bad6b06788bdf4743ae321afcbad0ddc808f6",
+      "pass": true
+    },
+    {
+      "path": "director/analysis/01-photonhq/frames.csv",
+      "status": 200,
+      "content_type": "text/csv",
+      "bytes": 39252,
+      "sha256": "2e12ccf422743fa8ff86ecb90ba90359d6c6a5b51b6a057f962116c44a7d1def",
+      "pass": true
+    },
+    {
+      "path": "director/analysis/01-photonhq/scan.json",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 5900,
+      "sha256": "15db43ef54c54eeb90bab7ab8f292b6b645108203a00f15497dbf78d03899f14",
+      "pass": true
+    },
+    {
+      "path": "director/analysis/02-danieltian/frames.csv",
+      "status": 200,
+      "content_type": "text/csv",
+      "bytes": 82176,
+      "sha256": "1682e06cfe28b7901f33d762f1bda56071672da6186d1f8d3204835f07a521d2",
+      "pass": true
+    },
+    {
+      "path": "director/analysis/02-danieltian/scan.json",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 5847,
+      "sha256": "23b63db53d28e0296e73040386da74d29cb2b5ed14a9de9582e05f15983bf186",
+      "pass": true
+    },
+    {
+      "path": "director/analysis/03-photon-mini/frames.csv",
+      "status": 200,
+      "content_type": "text/csv",
+      "bytes": 75915,
+      "sha256": "b2dc49de39822819113d41a52319b6ce30b46337fe7cb59bc0e734a818bb3bce",
+      "pass": true
+    },
+    {
+      "path": "director/analysis/03-photon-mini/scan.json",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 5826,
+      "sha256": "a7d3a0382e5c29b23623dd08b7264d7c34c7c732f10816b6e26f9a33b2ac15a3",
+      "pass": true
+    },
+    {
+      "path": "director/analysis/04-poke/frames.csv",
+      "status": 200,
+      "content_type": "text/csv",
+      "bytes": 82334,
+      "sha256": "9f2e40235de4a4f38a50bbc2ae15d8eb03da73a19ff00d4765f1ea6a245bf78a",
+      "pass": true
+    },
+    {
+      "path": "director/analysis/04-poke/scan.json",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 5942,
+      "sha256": "fa574efcd092d6078c0180106b13eef704c6b217bf89e011e2c8777668d88e34",
+      "pass": true
+    },
+    {
+      "path": "director/analysis/05-linq/frames.csv",
+      "status": 200,
+      "content_type": "text/csv",
+      "bytes": 87842,
+      "sha256": "e642bab45da219bd09bc53132adac0d634778ea485f7dc667b495eea01f48dba",
+      "pass": true
+    },
+    {
+      "path": "director/analysis/05-linq/scan.json",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 5861,
+      "sha256": "2ec79686575085a7d7849b4fdf3b097ebb75670ba8976af7bb6351307c0be0f0",
+      "pass": true
+    },
+    {
+      "path": "director/analysis/06-gallery/frames.csv",
+      "status": 200,
+      "content_type": "text/csv",
+      "bytes": 89887,
+      "sha256": "334fc095932d3a9c79a6d7b34443d836d789fe6e7296557122c42cc2b602f825",
+      "pass": true
+    },
+    {
+      "path": "director/analysis/06-gallery/scan.json",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 5856,
+      "sha256": "1d68f7d124b4188671c4622a02d3b11523163f939e7bf98f29cc77692a5889b8",
+      "pass": true
+    },
+    {
+      "path": "director/analysis/index.json",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 4266,
+      "sha256": "58d38ee6edf08ca5e4edc76d83abdd037a966c35caf9288707d3efb90968224c",
+      "pass": true
+    },
+    {
+      "path": "director/atlas/linq-chat-to-mini-app.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": 173643,
+      "sha256": "368e369e9c02d58ef13688d3001f988984fd36503930568c1507c2cd5a2b4ebc",
+      "pass": true
+    },
+    {
+      "path": "director/atlas/linq-native-control-and-amount.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": 106154,
+      "sha256": "523906a606ccc4fa7efdf634c9280935d798f8dce5766d20bfe032885ae811d5",
+      "pass": true
+    },
+    {
+      "path": "director/atlas/mini-rich_card_arrival.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": 169058,
+      "sha256": "1b82c64b55482e35b5f8ebae6c6f1fba3218dbfb67b5e057fe6e419ec891e7b1",
+      "pass": true
+    },
+    {
+      "path": "director/atlas/mini-sheet_depth.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": 164430,
+      "sha256": "621c59b717cc60c9902f89a98e5b83ed2447103eab1760edc59dcf38348a333d",
+      "pass": true
+    },
+    {
+      "path": "director/atlas/mini-world_release.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": 164399,
+      "sha256": "a9a33a6fddf1782625edaa2f242261c5fae7e1dd71fb6e3bf20e973982588a93",
+      "pass": true
+    },
+    {
+      "path": "director/atlas/photon-agent-convergence.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": 109507,
+      "sha256": "7379b2c46f7625f32aeae3998ebe3b358d11c464e9492e1819ea24419d08c025",
+      "pass": true
+    },
+    {
+      "path": "director/atlas/photon-channel-walls.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": 258506,
+      "sha256": "fb563452b91cb7422905636e31abde4b84a634893f48e294e20f737c85449339",
+      "pass": true
+    },
+    {
+      "path": "director/atlas/photon-compose-send.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": 91850,
+      "sha256": "3c7ed97df4f99213f0a0e48681014afff6166f5dd49eb24dbfcff8e723916680",
+      "pass": true
+    },
+    {
+      "path": "director/atlas/photon-press-release.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": 87530,
+      "sha256": "60d8b0af0364ccf170a434b1ccb966b286b216bd2f68fa9aecb62c90d789fedb",
+      "pass": true
+    },
+    {
+      "path": "director/atlas/photon-thread-camera-overlap.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": 150628,
+      "sha256": "64bdffd23b4c0db4c6311f908547d6754973adf2c2152334d58915d026e278a4",
+      "pass": true
+    },
+    {
+      "path": "director/atlas/poke-choice_to_message.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": 156114,
+      "sha256": "e19d3c923a0c9c7d5ddee2ca9684dcefb756a0ec5a4efb74f1bdbe70721a853e",
+      "pass": true
+    },
+    {
+      "path": "director/atlas/poke-identity_circle_to_app.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": 145033,
+      "sha256": "429e4da66e8fb2844ee243c91843b29f1b640a05af91706c9deb952dd019328f",
+      "pass": true
+    },
+    {
+      "path": "director/atlas/rene-message-to-action-cascade.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": 123780,
+      "sha256": "0e5f99bd33e2aebb538f9b4bef993ead69adf22a1ba0302ce459c9ebc9f6d80d",
+      "pass": true
+    },
+    {
+      "path": "director/atlas/rene-word-prop-message-bridge.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": 105794,
+      "sha256": "dcc08238f9c5f6e64c2e30dba67a7b70249d244c27d2498ed2528786cee41646",
+      "pass": true
+    },
+    {
+      "path": "director/brief-schema.json",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 1127,
+      "sha256": "9e517dd576bc5729be8adaeebd1b6de2401dec12e3251af447679f2913644bf8",
+      "pass": true
+    },
+    {
+      "path": "director/catalogue.json",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 216105,
+      "sha256": "2a55ca95243fd20647bbdb7b5785396f41d704bcb05a48517c4997a88f09497c",
+      "pass": true
+    },
+    {
+      "path": "director/cli.mjs",
+      "status": 200,
+      "content_type": "text/javascript",
+      "bytes": 2746,
+      "sha256": "8e6fea54d93e9b8cb423095c94e989ff9aee64e7a3016987e7542de3361e7899",
+      "pass": true
+    },
+    {
+      "path": "director/component-contracts.md",
+      "status": 200,
+      "content_type": "text/markdown",
+      "bytes": 3825,
+      "sha256": "9099ed1910c186dd117296d80665b9fb959e67ba07a230098e8579b4b60c55e3",
+      "pass": true
+    },
+    {
+      "path": "director/components.mjs",
+      "status": 200,
+      "content_type": "text/javascript",
+      "bytes": 6121,
+      "sha256": "2908012013993a5ada6ef840071d3fc757864e70976554e51551d622e1a4af5d",
+      "pass": true
+    },
+    {
+      "path": "director/decisions.mjs",
+      "status": 200,
+      "content_type": "text/javascript",
+      "bytes": 5631,
+      "sha256": "a01f4690793bc726b360c9c265a0bd81087001964c7156c55f7b7d4b41b9e97e",
+      "pass": true
+    },
+    {
+      "path": "director/design-grammar.md",
+      "status": 200,
+      "content_type": "text/markdown",
+      "bytes": 5299,
+      "sha256": "b931cfc6dc6ad84d2d13a470c092754b092ed27b2baf73f6ebb4379ee8301d0d",
+      "pass": true
+    },
+    {
+      "path": "director/directing.md",
+      "status": 200,
+      "content_type": "text/markdown",
+      "bytes": 4763,
+      "sha256": "4156cc2dc09c4ffd652de5766513424a8cdc9b2e61fdd1503389aa50ca51a948",
+      "pass": true
+    },
+    {
+      "path": "director/examples/dinner-shot-plan.json",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 1541,
+      "sha256": "945d081aa2c6569490bd579a87e9894883d8c24538e631f30d32f2bc2c775abc",
+      "pass": true
+    },
+    {
+      "path": "director/examples/scenes/app-drawer.events.json",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 243,
+      "sha256": "52b2c1cf79bb3e1aafaae95ffb81a7c5715e93ce6e5fb0fbe3b62661df7a8c50",
+      "pass": true
+    },
+    {
+      "path": "director/examples/scenes/app-drawer.json",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 10922,
+      "sha256": "2729ce4847eef576d54af52822b706f2119a6205e76111fae8d335a19cd8c61b",
+      "pass": true
+    },
+    {
+      "path": "director/examples/scenes/camera-focus.events.json",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 65,
+      "sha256": "717759c0ce0e288431083df2e105dff740d8f554062793e98ea9da67d2f98558",
+      "pass": true
+    },
+    {
+      "path": "director/examples/scenes/camera-focus.json",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 4671,
+      "sha256": "12f9ce1d74445da86d5d34525e580ac9bc103fec529586a647e2c93d6c2cd6ec",
+      "pass": true
+    },
+    {
+      "path": "director/examples/scenes/card-orbit.events.json",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 65,
+      "sha256": "717759c0ce0e288431083df2e105dff740d8f554062793e98ea9da67d2f98558",
+      "pass": true
+    },
+    {
+      "path": "director/examples/scenes/card-orbit.json",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 9562,
+      "sha256": "8d85ff6fa358a31f8cd85a7a19f2f6ce142e3062cfaafa65de35dc0035eef26d",
+      "pass": true
+    },
+    {
+      "path": "director/examples/scenes/circle-to-panel.events.json",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 243,
+      "sha256": "cfa5cc12354f9f7923ae8b7ca7439f8d537249dac51c30e8a024d45da33f4211",
+      "pass": true
+    },
+    {
+      "path": "director/examples/scenes/circle-to-panel.json",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 3532,
+      "sha256": "223274e0610f4b956e1f9ca9d974dd3bc8a02f9e0a0d896fb71d742b6a0607fa",
+      "pass": true
+    },
+    {
+      "path": "director/examples/scenes/conversation-handoff.events.json",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 5227,
+      "sha256": "0b7d857f76f14cbeade2c1f1f886cb0c4810ecd02bcc81f30762738de1c43a39",
+      "pass": true
+    },
+    {
+      "path": "director/examples/scenes/conversation-handoff.json",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 12549,
+      "sha256": "d0ddfa999790326bd6269d9e33de26a5ad6c41194c830db2d90e664d35e17d90",
+      "pass": true
+    },
+    {
+      "path": "director/examples/scenes/identity-morph.events.json",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 65,
+      "sha256": "717759c0ce0e288431083df2e105dff740d8f554062793e98ea9da67d2f98558",
+      "pass": true
+    },
+    {
+      "path": "director/examples/scenes/identity-morph.json",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 3134,
+      "sha256": "7a0cc42f9946ad943fafc38529467d96c852ec7949b60432109c207e871d4f04",
+      "pass": true
+    },
+    {
+      "path": "director/examples/scenes/message-wall.events.json",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 65,
+      "sha256": "717759c0ce0e288431083df2e105dff740d8f554062793e98ea9da67d2f98558",
+      "pass": true
+    },
+    {
+      "path": "director/examples/scenes/message-wall.json",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 16516,
+      "sha256": "37de7034c7bd9a4039cf9b1d964bd3aabbf4c1cd41618da269feeef3a9ecc5f6",
+      "pass": true
+    },
+    {
+      "path": "director/examples/scenes/mini-app-expand.events.json",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 245,
+      "sha256": "fc0bfc8a2362ddd950c23513dc6180ab0d801b1e4b6c52c17aa1f2b74e161024",
+      "pass": true
+    },
+    {
+      "path": "director/examples/scenes/mini-app-expand.json",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 9342,
+      "sha256": "91fa44544dc9006cc19f7a47fa79c8a8939a4933daa0608ce00b6ea4b8ac4871",
+      "pass": true
+    },
+    {
+      "path": "director/examples/scenes/selection-confirm.events.json",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 269,
+      "sha256": "27b71fa87a65a0355b4dacbab79bfb55cef0325efe75eb8dec31c75f52b4edf8",
+      "pass": true
+    },
+    {
+      "path": "director/examples/scenes/selection-confirm.json",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 3371,
+      "sha256": "6720bd2e76e2e79eff395785c2da6b4e69bbd6dac5fd9666eb0608e6d3b4eeb7",
+      "pass": true
+    },
+    {
+      "path": "director/explorer-template.html",
+      "status": 200,
+      "content_type": "text/html",
+      "bytes": 4890,
+      "sha256": "9e79f43a4b31b215c21a4bc1709260a8748c4aafb639a782fe2265be18bab2fb",
+      "pass": true
+    },
+    {
+      "path": "director/explorer.css",
+      "status": 200,
+      "content_type": "text/css",
+      "bytes": 5243,
+      "sha256": "205f7bfd032d77fcc1e009ddc470ff2cf4a51e9d3e68f7c4a7aba9538b3dcf12",
+      "pass": true
+    },
+    {
+      "path": "director/explorer.js",
+      "status": 200,
+      "content_type": "text/javascript",
+      "bytes": 7417,
+      "sha256": "c3d191f2da40bb1cc2eeb8f96bfafc95457facd0dfee320f1b98f3885df6626f",
+      "pass": true
+    },
+    {
+      "path": "director/index.html",
+      "status": 200,
+      "content_type": "text/html",
+      "bytes": 175946,
+      "sha256": "e41609be4dd0a23a71bab3a97308c2c8456d66c91ad61392ada273e2317ad595",
+      "pass": true
+    },
+    {
+      "path": "director/motions.mjs",
+      "status": 200,
+      "content_type": "text/javascript",
+      "bytes": 9515,
+      "sha256": "7b04c1dc6e1d4b91c2e5314c90d85ebdc8ebe6f9db8136d95ef39b04d07f3591",
+      "pass": true
+    },
+    {
+      "path": "director/package_skill.py",
+      "status": 200,
+      "content_type": "text/x-python",
+      "bytes": 2081,
+      "sha256": "e3627b22bb546f635c03c0c170d54fadb82914643ee86141edc3706156c8b580",
+      "pass": true
+    },
+    {
+      "path": "director/source-studies/linq-rene-recipes.json",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 129496,
+      "sha256": "65fd7ef490cd25a805440f93c65460ebb318ffa52266091d60c5d01a76a4a272",
+      "pass": true
+    },
+    {
+      "path": "director/source-studies/mini-poke-recipes.json",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 1653122,
+      "sha256": "96dba1e6c6d74e2badfa21add800b9f17dad890277b03d12353a49ee65be6ac9",
+      "pass": true
+    },
+    {
+      "path": "director/source-studies/photon-recipes.json",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 195665,
+      "sha256": "a4984f55f19915bab41423e582586998db1b61489e0eb879be6502c1a1df7738",
+      "pass": true
+    },
+    {
+      "path": "director/test_toolkit.mjs",
+      "status": 200,
+      "content_type": "text/javascript",
+      "bytes": 16469,
+      "sha256": "c4419af6ee61ff37be201542043f76d225ef6de2396cb75a99f99fcc9a0c99c9",
+      "pass": true
+    },
+    {
+      "path": "director/upgrade-steps.md",
+      "status": 200,
+      "content_type": "text/markdown",
+      "bytes": 3107,
+      "sha256": "dc073ffea00fd0cb5b3790eb657a45a00ce1f28459cb8be00d55b227d621b4bd",
+      "pass": true
+    },
+    {
+      "path": "director/validation.json",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 1169,
+      "sha256": "a089528802d9e1da3653fef5ca4e34bc64ed8e2fd573ebb7a2d1ed52da79f3a4",
+      "pass": true
+    },
+    {
+      "path": "director/version.json",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 245,
+      "sha256": "96456f8aec6eb94f07da0b2535ace870652b23ba0211a62806c2b5d79c20cf8d",
+      "pass": true
+    },
+    {
+      "path": "director/visuals/component-anatomy.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": 64817,
+      "sha256": "118821e0bbcc45f5d335807ab80fdbd238fdb749151ba42bf28aba0f717dad8c",
+      "pass": true
+    },
+    {
+      "path": "director/visuals/component-anatomy.svg",
+      "status": 200,
+      "content_type": "image/svg+xml",
+      "bytes": 23339,
+      "sha256": "6bfa3fa8ac5925dc52372c980f83b930ba693de4ac7442184811c5af385b13d1",
+      "pass": true
+    },
+    {
+      "path": "director/visuals/starter-overview.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": 230342,
+      "sha256": "e552eff015472ffea62a9b42e55ddc70ccc682f15f68d086560f264bc9221e9d",
+      "pass": true
+    },
+    {
+      "path": "imessage-motion-recreation-skill.zip",
+      "status": 200,
+      "content_type": "application/zip",
+      "bytes": 7086096,
+      "sha256": "1f38593f2cc52542fc7f84e04c78caebc9f9a08685f8a661e90c76085cf19312",
+      "pass": true
+    },
+    {
+      "path": "index.html",
+      "status": 200,
+      "content_type": "text/html",
+      "bytes": 13869,
+      "sha256": "f8b7617223f1fe4013c5d4a416f85bbdef1391557987bbf86db95c20b80454cf",
+      "pass": true
+    },
+    {
+      "path": "references/ui-audio-workflow.md",
+      "status": 200,
+      "content_type": "text/markdown",
+      "bytes": 5716,
+      "sha256": "00140de7792ce64d5ee38fc9079529ff3729927672a394e1f6935124990f0caf",
+      "pass": true
+    },
+    {
+      "path": "review.html",
+      "status": 200,
+      "content_type": "text/html",
+      "bytes": 13869,
+      "sha256": "f8b7617223f1fe4013c5d4a416f85bbdef1391557987bbf86db95c20b80454cf",
+      "pass": true
+    },
+    {
+      "path": "sound.html",
+      "status": 200,
+      "content_type": "text/html",
+      "bytes": 11095,
+      "sha256": "0a3faa6f02b39a20b126a10b10e5f0f1d9977303bc93744a536fa5ea993b65db",
+      "pass": true
+    },
+    {
+      "path": "styles.css",
+      "status": 200,
+      "content_type": "text/css",
+      "bytes": 14083,
+      "sha256": "5e8714ff6b97f35bfdebab729fef5c07b9a9f072ffc4dafed3ccd0ec4f45d8b4",
+      "pass": true
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "format": 1,
+  "plan": {
+    "mode": "director",
+    "fps": 30,
+    "confirmation": true,
+    "brief": "Two friends, Alex and Maya, lock in concert tickets over iMessage: Alex proposes grabbing Neon Pines tickets, the seating options get browsed under one pinned heading, the booking is celebrated in the thread, and the finished ticket is in hand.",
+    "shots": [
+      {
+        "id": "ask",
+        "frames": 72,
+        "purpose": "Open the story: Alex proposes grabbing tickets and Maya says yes, establishing both friends and the goal.",
+        "visual": "Alex's draft types into the composer, flies into the transcript as a blue bubble, and Maya's gray reply arrives after a quiet beat. Header and composer stay fixed.",
+        "motion": {
+          "kind": "seed",
+          "id": "conversation-handoff"
+        },
+        "copy": "Neon Pines tickets drop at 10 - grab us two?",
+        "copy_key": "copy",
+        "bindings": {
+          "heading": "Maya",
+          "reply": "YES. Get us in!",
+          "detail": "iMessage - Today"
+        },
+        "preview": "proof-ask/preview.mp4",
+        "code": "proof-ask/scene.json",
+        "board": "board-ask.png"
+      },
+      {
+        "id": "browse",
+        "frames": 72,
+        "purpose": "Show the ticket options being compared while the screen context stays pinned.",
+        "visual": "A clipped rail of ticket-option cards slides left beneath the fixed 'Ticket options' heading; the GA Floor card gives way to Lower Bowl as the rail settles.",
+        "motion": {
+          "kind": "seed",
+          "id": "photos-under-fixed-heading"
+        },
+        "copy": "Ticket options",
+        "copy_key": "heading",
+        "bindings": {
+          "detail": "The Neon Pines - Fri Jun 12",
+          "direction": "left",
+          "photos": [
+            "assets/ticket-ga-floor.png",
+            "assets/ticket-lower-bowl.png",
+            "assets/ticket-balcony.png",
+            "assets/ticket-vip-pit.png"
+          ]
+        },
+        "preview": "proof-browse/preview.mp4",
+        "code": "proof-browse/scene.json",
+        "board": "board-browse.png"
+      },
+      {
+        "id": "celebrate",
+        "frames": 72,
+        "purpose": "Pay off the booking emotionally: Alex's 'booked' news earns Maya's excited reply and it gets hearted.",
+        "visual": "Alex's outgoing 'booked' bubble sits above Maya's incoming reply; the Love reaction arcs in and lands on Maya's bubble as a badge while the rest of the transcript stays put.",
+        "motion": {
+          "kind": "seed",
+          "id": "reaction-attach"
+        },
+        "copy": "You're the BEST!",
+        "copy_key": "copy",
+        "bindings": {
+          "heading": "Maya",
+          "reply": "Booked - two GA floor tickets",
+          "action": "Love"
+        },
+        "preview": "proof-celebrate/preview.mp4",
+        "code": "proof-celebrate/scene.json",
+        "board": "board-celebrate.png"
+      },
+      {
+        "id": "ticket",
+        "frames": 72,
+        "purpose": "Close with the secured ticket itself: the stub tears free, so the ticket is real and usable.",
+        "visual": "A Neon Pines ticket fills the card; its perforated stub tilts along the seam and drops away while the main ticket and backdrop stay pinned.",
+        "motion": {
+          "kind": "seed",
+          "id": "tear-perforated-ticket"
+        },
+        "copy": "The Neon Pines",
+        "copy_key": "title",
+        "bindings": {
+          "heading": "Maya",
+          "detail": "GA Floor - 2 tickets - Fri Jun 12",
+          "action": "Open"
+        }
+      }
+    ]
+  },
+  "project_root": ".",
+  "derived_from": {
+    "revision": "b28a6786c16a96cc32c51075703dd8986142af29eea0172b03145a6aac472f87",
+    "changed_shot": "celebrate"
+  }
+}

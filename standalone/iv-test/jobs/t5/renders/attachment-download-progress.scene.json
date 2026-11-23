@@ -1,0 +1,364 @@
+{
+  "width": 720,
+  "height": 480,
+  "fps": 30,
+  "duration": 2.4,
+  "background": "#dce7f1",
+  "title": "Track transfer progress to a usable attachment",
+  "source": {
+    "path": "packs/media.mjs#attachment-download-progress",
+    "sourceStart": 0,
+    "sourceEnd": 2.4,
+    "notes": "Motion-authored shot. Gesture and timing are illustrative."
+  },
+  "layers": [
+    {
+      "id": "surface",
+      "type": "rect",
+      "x": 110,
+      "y": 44,
+      "width": 500,
+      "height": 392,
+      "fill": "#ffffff",
+      "radius": 18
+    },
+    {
+      "id": "stage",
+      "type": "group",
+      "x": 110,
+      "y": 98,
+      "children": [
+        {
+          "id": "download-card",
+          "type": "rect",
+          "x": 51,
+          "y": 76,
+          "width": 398,
+          "height": 132,
+          "fill": "#ffffff",
+          "radius": 17,
+          "stroke": "#e8eef5",
+          "strokeWidth": 1
+        },
+        {
+          "id": "download-icon",
+          "type": "group",
+          "x": 67,
+          "y": 93,
+          "children": [
+            {
+              "id": "download-icon-image",
+              "type": "image",
+              "src": "data:image/png;base64,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",
+              "x": 0,
+              "y": 0,
+              "width": 88,
+              "height": 96
+            }
+          ],
+          "clip": {
+            "x": 0,
+            "y": 0,
+            "width": 88,
+            "height": 96,
+            "radius": 9
+          }
+        },
+        {
+          "id": "download-title",
+          "type": "text",
+          "text": "The north ridge",
+          "x": 173,
+          "y": 101,
+          "fontSize": 19,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#17191d",
+          "fontWeight": 600
+        },
+        {
+          "id": "download-rail",
+          "type": "rect",
+          "x": 173,
+          "y": 149,
+          "width": 253,
+          "height": 5,
+          "fill": "#e8eef5",
+          "radius": 2.5
+        },
+        {
+          "id": "download-progress",
+          "type": "rect",
+          "x": 173,
+          "y": 149,
+          "width": 0,
+          "height": 5,
+          "fill": "#1478e9",
+          "radius": 2.5,
+          "keyframes": {
+            "width": [
+              {
+                "t": 0,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 0.48,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 0.84,
+                "value": 68.31,
+                "ease": "linear"
+              },
+              {
+                "t": 1.008,
+                "value": 68.31,
+                "ease": "linear"
+              },
+              {
+                "t": 1.3679999999999999,
+                "value": 169.51000000000002,
+                "ease": "linear"
+              },
+              {
+                "t": 1.512,
+                "value": 169.51000000000002,
+                "ease": "linear"
+              },
+              {
+                "t": 1.896,
+                "value": 253,
+                "ease": "linear"
+              }
+            ],
+            "fill": [
+              {
+                "t": 0,
+                "value": "#1478e9",
+                "ease": "linear"
+              },
+              {
+                "t": 1.896,
+                "value": "#16815f",
+                "ease": "hold"
+              }
+            ]
+          }
+        },
+        {
+          "id": "download-status",
+          "type": "text",
+          "text": "Download",
+          "x": 173,
+          "y": 167,
+          "fontSize": 15,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#516277",
+          "keyframes": {
+            "text": [
+              {
+                "t": 0,
+                "value": "Download",
+                "ease": "hold"
+              },
+              {
+                "t": 0.48,
+                "value": "0%",
+                "ease": "hold"
+              },
+              {
+                "t": 0.5466666666666666,
+                "value": "5%",
+                "ease": "hold"
+              },
+              {
+                "t": 0.6133333333333333,
+                "value": "10%",
+                "ease": "hold"
+              },
+              {
+                "t": 0.6799999999999999,
+                "value": "15%",
+                "ease": "hold"
+              },
+              {
+                "t": 0.7466666666666667,
+                "value": "20%",
+                "ease": "hold"
+              },
+              {
+                "t": 0.8133333333333334,
+                "value": "25%",
+                "ease": "hold"
+              },
+              {
+                "t": 0.84,
+                "value": "27%",
+                "ease": "hold"
+              },
+              {
+                "t": 1.053,
+                "value": "32%",
+                "ease": "hold"
+              },
+              {
+                "t": 1.0979999999999999,
+                "value": "37%",
+                "ease": "hold"
+              },
+              {
+                "t": 1.1429999999999998,
+                "value": "42%",
+                "ease": "hold"
+              },
+              {
+                "t": 1.188,
+                "value": "47%",
+                "ease": "hold"
+              },
+              {
+                "t": 1.2329999999999999,
+                "value": "52%",
+                "ease": "hold"
+              },
+              {
+                "t": 1.2779999999999998,
+                "value": "57%",
+                "ease": "hold"
+              },
+              {
+                "t": 1.323,
+                "value": "62%",
+                "ease": "hold"
+              },
+              {
+                "t": 1.3679999999999999,
+                "value": "67%",
+                "ease": "hold"
+              },
+              {
+                "t": 1.5701818181818183,
+                "value": "72%",
+                "ease": "hold"
+              },
+              {
+                "t": 1.6283636363636362,
+                "value": "77%",
+                "ease": "hold"
+              },
+              {
+                "t": 1.6865454545454546,
+                "value": "82%",
+                "ease": "hold"
+              },
+              {
+                "t": 1.744727272727273,
+                "value": "87%",
+                "ease": "hold"
+              },
+              {
+                "t": 1.8029090909090908,
+                "value": "92%",
+                "ease": "hold"
+              },
+              {
+                "t": 1.8610909090909091,
+                "value": "97%",
+                "ease": "hold"
+              },
+              {
+                "t": 1.896,
+                "value": "Available to open",
+                "ease": "hold"
+              }
+            ]
+          }
+        }
+      ],
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 500,
+        "height": 298
+      }
+    },
+    {
+      "id": "footer",
+      "type": "group",
+      "x": 110,
+      "y": 396,
+      "children": [
+        {
+          "id": "footer-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 40,
+          "fill": "#f2f6fb",
+          "radius": 12
+        }
+      ]
+    },
+    {
+      "id": "heading",
+      "type": "group",
+      "x": 110,
+      "y": 44,
+      "children": [
+        {
+          "id": "heading-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 54,
+          "fill": "#f2f6fb",
+          "radius": 13
+        },
+        {
+          "id": "heading-copy",
+          "type": "text",
+          "text": "Alpine field notes",
+          "x": 26,
+          "y": 13,
+          "fontSize": 23,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#182737",
+          "fontWeight": 700
+        }
+      ]
+    }
+  ],
+  "timeline": {
+    "version": 1,
+    "picture": {
+      "fpsNum": 30,
+      "fpsDen": 1,
+      "frameCount": 72
+    },
+    "initialUI": null,
+    "events": [
+      {
+        "id": "motion.attachment-download-progress.transfer-start",
+        "kind": "download_start",
+        "target": "download-progress",
+        "frame": 15,
+        "layerIds": [
+          "download-progress"
+        ]
+      },
+      {
+        "id": "motion.attachment-download-progress.transfer-complete",
+        "kind": "download_complete",
+        "target": "download-progress",
+        "frame": 57,
+        "layerIds": [
+          "download-progress"
+        ]
+      }
+    ],
+    "cues": []
+  }
+}

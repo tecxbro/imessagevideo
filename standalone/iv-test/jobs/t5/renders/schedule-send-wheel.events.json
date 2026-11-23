@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 72
+  },
+  "initialUI": null,
+  "events": [
+    {
+      "id": "motion.schedule-send-wheel.time-wheel-start",
+      "kind": "picker_scroll",
+      "target": "schedule-wheel",
+      "frame": 18,
+      "layerIds": [
+        "schedule-wheel"
+      ]
+    },
+    {
+      "id": "motion.schedule-send-wheel.schedule-committed",
+      "kind": "send_scheduled",
+      "target": "schedule-confirmed-chip",
+      "frame": 49,
+      "layerIds": [
+        "schedule-confirmed-chip"
+      ]
+    }
+  ],
+  "cues": []
+}

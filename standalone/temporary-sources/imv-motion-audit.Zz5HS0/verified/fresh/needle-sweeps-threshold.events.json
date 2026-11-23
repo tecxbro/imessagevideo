@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 72
+  },
+  "initialUI": null,
+  "events": [
+    {
+      "id": "motion.needle-sweeps-threshold.needle-start",
+      "kind": "needle-start",
+      "target": "gauge-needle",
+      "frame": 13,
+      "layerIds": [
+        "gauge-needle"
+      ]
+    },
+    {
+      "id": "motion.needle-sweeps-threshold.needle-settled",
+      "kind": "needle-settled",
+      "target": "gauge-needle",
+      "frame": 52,
+      "layerIds": [
+        "gauge-needle"
+      ]
+    }
+  ],
+  "cues": []
+}

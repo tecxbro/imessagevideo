@@ -1,0 +1,282 @@
+{
+  "width": 720,
+  "height": 480,
+  "fps": 30,
+  "duration": 2.4,
+  "background": "#dce7f1",
+  "title": "Unfold a caption below a stationary photo",
+  "source": {
+    "path": "packs/media.mjs#media-caption-disclosure",
+    "sourceStart": 0,
+    "sourceEnd": 2.4,
+    "notes": "Motion-authored shot. Gesture and timing are illustrative."
+  },
+  "layers": [
+    {
+      "id": "surface",
+      "type": "rect",
+      "x": 110,
+      "y": 44,
+      "width": 500,
+      "height": 392,
+      "fill": "#ffffff",
+      "radius": 18
+    },
+    {
+      "id": "stage",
+      "type": "group",
+      "x": 110,
+      "y": 98,
+      "children": [
+        {
+          "id": "caption-card",
+          "type": "rect",
+          "x": 112,
+          "y": 9,
+          "width": 275,
+          "height": 163,
+          "fill": "#ffffff",
+          "radius": 17,
+          "stroke": "#e8eef5",
+          "strokeWidth": 1,
+          "keyframes": {
+            "height": [
+              {
+                "t": 0,
+                "value": 163,
+                "ease": "linear"
+              },
+              {
+                "t": 0.552,
+                "value": 163,
+                "ease": "linear"
+              },
+              {
+                "t": 1.392,
+                "value": 216,
+                "ease": "easeOut"
+              }
+            ]
+          }
+        },
+        {
+          "id": "caption-photo",
+          "type": "group",
+          "x": 124,
+          "y": 20,
+          "children": [
+            {
+              "id": "caption-photo-image",
+              "type": "image",
+              "src": "assets/4db64d5acedc3877-landscape-1.png",
+              "x": 0,
+              "y": 0,
+              "width": 251,
+              "height": 105
+            }
+          ],
+          "clip": {
+            "x": 0,
+            "y": 0,
+            "width": 251,
+            "height": 105,
+            "radius": 14
+          }
+        },
+        {
+          "id": "caption-control",
+          "type": "text",
+          "text": "Open",
+          "x": 126,
+          "y": 134,
+          "fontSize": 16,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#1478e9",
+          "fontWeight": 600
+        },
+        {
+          "id": "caption-content",
+          "type": "group",
+          "x": 112,
+          "y": 160,
+          "children": [
+            {
+              "id": "caption-detail",
+              "type": "text",
+              "text": "Field guide · Autumn",
+              "x": 14,
+              "y": 4,
+              "fontSize": 14,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#17191d",
+              "fontWeight": 500,
+              "lineHeight": 15,
+              "keyframes": {
+                "opacity": [
+                  {
+                    "t": 0,
+                    "value": 0,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 0.72,
+                    "value": 0,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 1.296,
+                    "value": 1,
+                    "ease": "easeOut"
+                  }
+                ]
+              }
+            }
+          ],
+          "clip": {
+            "x": 0,
+            "y": 0,
+            "width": 275,
+            "height": 53
+          }
+        },
+        {
+          "id": "caption-next-row",
+          "type": "group",
+          "x": 112,
+          "y": 185,
+          "children": [
+            {
+              "id": "caption-next-row-body",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 275,
+              "height": 34,
+              "fill": "#e8eef5",
+              "radius": 9
+            },
+            {
+              "id": "caption-next-row-text",
+              "type": "text",
+              "text": "Here it is. Meet at the north gate.",
+              "x": 14,
+              "y": 7,
+              "fontSize": 13,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#17191d"
+            }
+          ],
+          "clip": {
+            "x": 0,
+            "y": 0,
+            "width": 275,
+            "height": 34,
+            "radius": 9
+          },
+          "keyframes": {
+            "y": [
+              {
+                "t": 0,
+                "value": 185,
+                "ease": "linear"
+              },
+              {
+                "t": 0.552,
+                "value": 185,
+                "ease": "linear"
+              },
+              {
+                "t": 1.392,
+                "value": 238,
+                "ease": "easeOut"
+              }
+            ]
+          }
+        }
+      ],
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 500,
+        "height": 298
+      }
+    },
+    {
+      "id": "footer",
+      "type": "group",
+      "x": 110,
+      "y": 396,
+      "children": [
+        {
+          "id": "footer-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 40,
+          "fill": "#f2f6fb",
+          "radius": 12
+        }
+      ]
+    },
+    {
+      "id": "heading",
+      "type": "group",
+      "x": 110,
+      "y": 44,
+      "children": [
+        {
+          "id": "heading-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 54,
+          "fill": "#f2f6fb",
+          "radius": 13
+        },
+        {
+          "id": "heading-copy",
+          "type": "text",
+          "text": "Alpine field notes",
+          "x": 26,
+          "y": 13,
+          "fontSize": 23,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#182737",
+          "fontWeight": 700
+        }
+      ]
+    }
+  ],
+  "timeline": {
+    "version": 1,
+    "picture": {
+      "fpsNum": 30,
+      "fpsDen": 1,
+      "frameCount": 72
+    },
+    "initialUI": null,
+    "events": [
+      {
+        "id": "motion.media-caption-disclosure.caption-toggle",
+        "kind": "tap",
+        "target": "caption-control",
+        "frame": 17,
+        "layerIds": [
+          "caption-control"
+        ]
+      },
+      {
+        "id": "motion.media-caption-disclosure.caption-settle",
+        "kind": "layout_settle",
+        "target": "caption-card",
+        "frame": 42,
+        "layerIds": [
+          "caption-card"
+        ]
+      }
+    ],
+    "cues": []
+  }
+}

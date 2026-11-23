@@ -1,0 +1,125 @@
+{
+ "ok": true,
+ "pass": true,
+ "reference": "/Users/darshan/Downloads/sidehoe.mp4",
+ "yours": "/Users/darshan/Documents/ChatGPT/imessage-video/sidehoe-skill-trial/continuity-review/candidate/sidehoe.mp4",
+ "mode": "video",
+ "window": [ 0, 31.12 ],
+ "thresholds": { "mean": 0.92, "p05": 0.85, "cell": 0.75 },
+ "ssim": { "frames": 778, "mean": 0.9647, "p05": 0.9349, "min": 0.9214, "cell_p05": 0.7941 },
+ "missing_content": {
+  "share": 0.0026,
+  "spans": [
+   [ 8.68, 8.72 ],
+   [ 25.08, 25.12 ]
+  ],
+  "pass": true,
+  "texture": {
+   "share": 0.0077,
+   "spans": [
+    [ 0.36, 0.4 ],
+    [ 4.28, 4.32 ],
+    [ 10.56, 10.6 ],
+    [ 12.64, 12.68 ],
+    [ 21.28, 21.36 ]
+   ]
+  }
+ },
+ "worst": [
+  {
+   "t": 8.96,
+   "frame": 224,
+   "ssim": 0.9457,
+   "cell": {
+    "roi": [ 1000, 1000, 500, 500 ],
+    "ssim": 0.771,
+    "picture": "/Users/darshan/Documents/ChatGPT/imessage-video/sidehoe-skill-trial/continuity-review/review/hyperframes/worst-01-cell.png"
+   }
+  },
+  {
+   "t": 9.48,
+   "frame": 237,
+   "ssim": 0.9489,
+   "cell": {
+    "roi": [ 500, 500, 500, 500 ],
+    "ssim": 0.756,
+    "picture": "/Users/darshan/Documents/ChatGPT/imessage-video/sidehoe-skill-trial/continuity-review/review/hyperframes/worst-02-cell.png"
+   }
+  },
+  {
+   "t": 10,
+   "frame": 250,
+   "ssim": 0.9445,
+   "cell": {
+    "roi": [ 1000, 1000, 500, 500 ],
+    "ssim": 0.788,
+    "picture": "/Users/darshan/Documents/ChatGPT/imessage-video/sidehoe-skill-trial/continuity-review/review/hyperframes/worst-03-cell.png"
+   }
+  },
+  {
+   "t": 11.6,
+   "frame": 290,
+   "ssim": 0.9575,
+   "cell": {
+    "roi": [ 500, 1000, 500, 500 ],
+    "ssim": 0.791,
+    "picture": "/Users/darshan/Documents/ChatGPT/imessage-video/sidehoe-skill-trial/continuity-review/review/hyperframes/worst-04-cell.png"
+   }
+  },
+  {
+   "t": 12.72,
+   "frame": 318,
+   "ssim": 0.9215,
+   "cell": {
+    "roi": [ 500, 1000, 500, 500 ],
+    "ssim": 0.775,
+    "picture": "/Users/darshan/Documents/ChatGPT/imessage-video/sidehoe-skill-trial/continuity-review/review/hyperframes/worst-05-cell.png"
+   }
+  },
+  {
+   "t": 13.64,
+   "frame": 341,
+   "ssim": 0.9264,
+   "cell": {
+    "roi": [ 1000, 1000, 500, 500 ],
+    "ssim": 0.758,
+    "picture": "/Users/darshan/Documents/ChatGPT/imessage-video/sidehoe-skill-trial/continuity-review/review/hyperframes/worst-06-cell.png"
+   }
+  },
+  {
+   "t": 14.32,
+   "frame": 358,
+   "ssim": 0.9512,
+   "cell": {
+    "roi": [ 1000, 1000, 500, 500 ],
+    "ssim": 0.8,
+    "picture": "/Users/darshan/Documents/ChatGPT/imessage-video/sidehoe-skill-trial/continuity-review/review/hyperframes/worst-07-cell.png"
+   }
+  },
+  {
+   "t": 15.8,
+   "frame": 395,
+   "ssim": 0.9553,
+   "cell": {
+    "roi": [ 1000, 500, 500, 500 ],
+    "ssim": 0.76,
+    "picture": "/Users/darshan/Documents/ChatGPT/imessage-video/sidehoe-skill-trial/continuity-review/review/hyperframes/worst-08-cell.png"
+   }
+  }
+ ],
+ "cuts": {
+  "reference": [ 5.36, 6.4, 8.52, 16.04, 27.72, 30.8 ],
+  "yours": [ 5.36, 6.4, 8.52, 16.04, 27.72, 30.8 ],
+  "missing": [],
+  "extra": [],
+  "not_cuts": [],
+  "pass": true
+ },
+ "duration": { "reference": 31.12, "yours": 31.12, "pass": true },
+ "sound": { "offset_ms": null, "match": 0.06, "pass": true, "note": "too few distinct sounds to align" },
+ "sheet": "/Users/darshan/Documents/ChatGPT/imessage-video/sidehoe-skill-trial/continuity-review/review/hyperframes/worst.jpg",
+ "log": "/Users/darshan/Documents/ChatGPT/imessage-video/sidehoe-skill-trial/continuity-review/review/hyperframes/ssim.log",
+ "frames": "/Users/darshan/Documents/ChatGPT/imessage-video/sidehoe-skill-trial/continuity-review/review/hyperframes/frames.tsv",
+ "warnings": [],
+ "_meta": { "version": "0.9.77", "updateAvailable": false }
+}

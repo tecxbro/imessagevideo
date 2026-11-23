@@ -1,0 +1,711 @@
+{
+  "width": 720,
+  "height": 480,
+  "fps": 30,
+  "duration": 2.4,
+  "background": "#dce7f1",
+  "title": "Separate a ticket along its perforation",
+  "source": {
+    "path": "packs/inherited.mjs#tear-perforated-ticket",
+    "sourceStart": 0,
+    "sourceEnd": 2.4,
+    "notes": "Original editable Motion demonstration."
+  },
+  "layers": [
+    {
+      "id": "surface",
+      "type": "rect",
+      "x": 110,
+      "y": 44,
+      "width": 500,
+      "height": 392,
+      "fill": "#ffffff",
+      "radius": 18
+    },
+    {
+      "id": "stage",
+      "type": "group",
+      "x": 110,
+      "y": 98,
+      "children": [
+        {
+          "id": "ticket-stub",
+          "type": "group",
+          "x": 56,
+          "y": 164,
+          "children": [
+            {
+              "id": "stub-surface",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 388,
+              "height": 63,
+              "fill": "#e6c784",
+              "radius": 12
+            },
+            {
+              "id": "stub-copy",
+              "type": "text",
+              "text": "Open",
+              "x": 30,
+              "y": 23,
+              "fontSize": 16,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#3d2d16",
+              "fontWeight": 700
+            }
+          ],
+          "originX": 386,
+          "originY": 0,
+          "keyframes": {
+            "rotation": [
+              {
+                "t": 0,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 0.576,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 1.44,
+                "value": -12,
+                "ease": "easeIn"
+              },
+              {
+                "t": 2.04,
+                "value": -7,
+                "ease": "easeOut"
+              }
+            ],
+            "y": [
+              {
+                "t": 0,
+                "value": 164,
+                "ease": "linear"
+              },
+              {
+                "t": 1.464,
+                "value": 164,
+                "ease": "linear"
+              },
+              {
+                "t": 2.04,
+                "value": 206,
+                "ease": "easeOut"
+              }
+            ],
+            "x": [
+              {
+                "t": 0,
+                "value": 56,
+                "ease": "linear"
+              },
+              {
+                "t": 1.464,
+                "value": 56,
+                "ease": "linear"
+              },
+              {
+                "t": 2.04,
+                "value": 30,
+                "ease": "easeOut"
+              }
+            ]
+          }
+        },
+        {
+          "id": "main-ticket",
+          "type": "group",
+          "x": 56,
+          "y": 36,
+          "children": [
+            {
+              "id": "ticket-matte",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 388,
+              "height": 129,
+              "fill": "#f8e5ae",
+              "radius": 15
+            },
+            {
+              "id": "ticket-title",
+              "type": "text",
+              "text": "The Neon Pines",
+              "x": 28,
+              "y": 25,
+              "fontSize": 26,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#3d2d16",
+              "fontWeight": 700
+            },
+            {
+              "id": "ticket-detail",
+              "type": "text",
+              "text": "GA Floor - 2 tickets - Fri Jun 12",
+              "x": 30,
+              "y": 70,
+              "fontSize": 16,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#574522"
+            }
+          ]
+        },
+        {
+          "id": "perforation-0",
+          "type": "rect",
+          "x": 67,
+          "y": 160,
+          "width": 10,
+          "height": 6,
+          "fill": "#ad9154",
+          "radius": 3,
+          "keyframes": {
+            "opacity": [
+              {
+                "t": 0,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 0.6,
+                "value": 0,
+                "ease": "hold"
+              }
+            ]
+          }
+        },
+        {
+          "id": "perforation-1",
+          "type": "rect",
+          "x": 87,
+          "y": 160,
+          "width": 10,
+          "height": 6,
+          "fill": "#ad9154",
+          "radius": 3,
+          "keyframes": {
+            "opacity": [
+              {
+                "t": 0,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 0.648,
+                "value": 0,
+                "ease": "hold"
+              }
+            ]
+          }
+        },
+        {
+          "id": "perforation-2",
+          "type": "rect",
+          "x": 107,
+          "y": 160,
+          "width": 10,
+          "height": 6,
+          "fill": "#ad9154",
+          "radius": 3,
+          "keyframes": {
+            "opacity": [
+              {
+                "t": 0,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 0.696,
+                "value": 0,
+                "ease": "hold"
+              }
+            ]
+          }
+        },
+        {
+          "id": "perforation-3",
+          "type": "rect",
+          "x": 127,
+          "y": 160,
+          "width": 10,
+          "height": 6,
+          "fill": "#ad9154",
+          "radius": 3,
+          "keyframes": {
+            "opacity": [
+              {
+                "t": 0,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 0.744,
+                "value": 0,
+                "ease": "hold"
+              }
+            ]
+          }
+        },
+        {
+          "id": "perforation-4",
+          "type": "rect",
+          "x": 147,
+          "y": 160,
+          "width": 10,
+          "height": 6,
+          "fill": "#ad9154",
+          "radius": 3,
+          "keyframes": {
+            "opacity": [
+              {
+                "t": 0,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 0.792,
+                "value": 0,
+                "ease": "hold"
+              }
+            ]
+          }
+        },
+        {
+          "id": "perforation-5",
+          "type": "rect",
+          "x": 167,
+          "y": 160,
+          "width": 10,
+          "height": 6,
+          "fill": "#ad9154",
+          "radius": 3,
+          "keyframes": {
+            "opacity": [
+              {
+                "t": 0,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 0.84,
+                "value": 0,
+                "ease": "hold"
+              }
+            ]
+          }
+        },
+        {
+          "id": "perforation-6",
+          "type": "rect",
+          "x": 187,
+          "y": 160,
+          "width": 10,
+          "height": 6,
+          "fill": "#ad9154",
+          "radius": 3,
+          "keyframes": {
+            "opacity": [
+              {
+                "t": 0,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 0.888,
+                "value": 0,
+                "ease": "hold"
+              }
+            ]
+          }
+        },
+        {
+          "id": "perforation-7",
+          "type": "rect",
+          "x": 207,
+          "y": 160,
+          "width": 10,
+          "height": 6,
+          "fill": "#ad9154",
+          "radius": 3,
+          "keyframes": {
+            "opacity": [
+              {
+                "t": 0,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 0.9359999999999999,
+                "value": 0,
+                "ease": "hold"
+              }
+            ]
+          }
+        },
+        {
+          "id": "perforation-8",
+          "type": "rect",
+          "x": 227,
+          "y": 160,
+          "width": 10,
+          "height": 6,
+          "fill": "#ad9154",
+          "radius": 3,
+          "keyframes": {
+            "opacity": [
+              {
+                "t": 0,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 0.984,
+                "value": 0,
+                "ease": "hold"
+              }
+            ]
+          }
+        },
+        {
+          "id": "perforation-9",
+          "type": "rect",
+          "x": 247,
+          "y": 160,
+          "width": 10,
+          "height": 6,
+          "fill": "#ad9154",
+          "radius": 3,
+          "keyframes": {
+            "opacity": [
+              {
+                "t": 0,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 1.032,
+                "value": 0,
+                "ease": "hold"
+              }
+            ]
+          }
+        },
+        {
+          "id": "perforation-10",
+          "type": "rect",
+          "x": 267,
+          "y": 160,
+          "width": 10,
+          "height": 6,
+          "fill": "#ad9154",
+          "radius": 3,
+          "keyframes": {
+            "opacity": [
+              {
+                "t": 0,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 1.08,
+                "value": 0,
+                "ease": "hold"
+              }
+            ]
+          }
+        },
+        {
+          "id": "perforation-11",
+          "type": "rect",
+          "x": 287,
+          "y": 160,
+          "width": 10,
+          "height": 6,
+          "fill": "#ad9154",
+          "radius": 3,
+          "keyframes": {
+            "opacity": [
+              {
+                "t": 0,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 1.128,
+                "value": 0,
+                "ease": "hold"
+              }
+            ]
+          }
+        },
+        {
+          "id": "perforation-12",
+          "type": "rect",
+          "x": 307,
+          "y": 160,
+          "width": 10,
+          "height": 6,
+          "fill": "#ad9154",
+          "radius": 3,
+          "keyframes": {
+            "opacity": [
+              {
+                "t": 0,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 1.176,
+                "value": 0,
+                "ease": "hold"
+              }
+            ]
+          }
+        },
+        {
+          "id": "perforation-13",
+          "type": "rect",
+          "x": 327,
+          "y": 160,
+          "width": 10,
+          "height": 6,
+          "fill": "#ad9154",
+          "radius": 3,
+          "keyframes": {
+            "opacity": [
+              {
+                "t": 0,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 1.224,
+                "value": 0,
+                "ease": "hold"
+              }
+            ]
+          }
+        },
+        {
+          "id": "perforation-14",
+          "type": "rect",
+          "x": 347,
+          "y": 160,
+          "width": 10,
+          "height": 6,
+          "fill": "#ad9154",
+          "radius": 3,
+          "keyframes": {
+            "opacity": [
+              {
+                "t": 0,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 1.272,
+                "value": 0,
+                "ease": "hold"
+              }
+            ]
+          }
+        },
+        {
+          "id": "perforation-15",
+          "type": "rect",
+          "x": 367,
+          "y": 160,
+          "width": 10,
+          "height": 6,
+          "fill": "#ad9154",
+          "radius": 3,
+          "keyframes": {
+            "opacity": [
+              {
+                "t": 0,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 1.32,
+                "value": 0,
+                "ease": "hold"
+              }
+            ]
+          }
+        },
+        {
+          "id": "perforation-16",
+          "type": "rect",
+          "x": 387,
+          "y": 160,
+          "width": 10,
+          "height": 6,
+          "fill": "#ad9154",
+          "radius": 3,
+          "keyframes": {
+            "opacity": [
+              {
+                "t": 0,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 1.368,
+                "value": 0,
+                "ease": "hold"
+              }
+            ]
+          }
+        },
+        {
+          "id": "perforation-17",
+          "type": "rect",
+          "x": 407,
+          "y": 160,
+          "width": 10,
+          "height": 6,
+          "fill": "#ad9154",
+          "radius": 3,
+          "keyframes": {
+            "opacity": [
+              {
+                "t": 0,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 1.4160000000000001,
+                "value": 0,
+                "ease": "hold"
+              }
+            ]
+          }
+        },
+        {
+          "id": "perforation-18",
+          "type": "rect",
+          "x": 427,
+          "y": 160,
+          "width": 10,
+          "height": 6,
+          "fill": "#ad9154",
+          "radius": 3,
+          "keyframes": {
+            "opacity": [
+              {
+                "t": 0,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 1.464,
+                "value": 0,
+                "ease": "hold"
+              }
+            ]
+          }
+        }
+      ],
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 500,
+        "height": 298
+      }
+    },
+    {
+      "id": "footer",
+      "type": "group",
+      "x": 110,
+      "y": 396,
+      "children": [
+        {
+          "id": "footer-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 40,
+          "fill": "#f2f6fb",
+          "radius": 12
+        },
+        {
+          "id": "footer-label",
+          "type": "text",
+          "text": "GA Floor - 2 tickets - Fri Jun 12",
+          "x": 26,
+          "y": 11,
+          "fontSize": 15,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#516277"
+        }
+      ]
+    },
+    {
+      "id": "heading",
+      "type": "group",
+      "x": 110,
+      "y": 44,
+      "children": [
+        {
+          "id": "heading-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 54,
+          "fill": "#f2f6fb",
+          "radius": 13
+        },
+        {
+          "id": "heading-copy",
+          "type": "text",
+          "text": "Maya",
+          "x": 26,
+          "y": 13,
+          "fontSize": 23,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#182737",
+          "fontWeight": 700
+        }
+      ]
+    }
+  ],
+  "timeline": {
+    "version": 1,
+    "picture": {
+      "fpsNum": 30,
+      "fpsDen": 1,
+      "frameCount": 72
+    },
+    "initialUI": null,
+    "events": [
+      {
+        "id": "motion.tear-perforated-ticket.tear-start",
+        "kind": "ticket.tear",
+        "target": "perforation-0",
+        "frame": 18,
+        "layerIds": [
+          "perforation-0"
+        ]
+      },
+      {
+        "id": "motion.tear-perforated-ticket.stub-detaches",
+        "kind": "ticket.detach",
+        "target": "ticket-stub",
+        "frame": 44,
+        "layerIds": [
+          "ticket-stub"
+        ]
+      }
+    ],
+    "cues": []
+  }
+}

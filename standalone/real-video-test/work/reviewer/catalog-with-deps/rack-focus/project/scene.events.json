@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 72
+  },
+  "initialUI": null,
+  "events": [
+    {
+      "id": "motion.rack-focus.focus-shift-start",
+      "kind": "focus-shift-start",
+      "target": "near-object",
+      "frame": 24,
+      "layerIds": [
+        "near-object"
+      ]
+    },
+    {
+      "id": "motion.rack-focus.far-object-sharp",
+      "kind": "far-object-sharp",
+      "target": "far-object",
+      "frame": 43,
+      "layerIds": [
+        "far-object"
+      ]
+    }
+  ],
+  "cues": []
+}

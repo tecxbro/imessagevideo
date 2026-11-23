@@ -1,0 +1,306 @@
+[
+  {
+    "id": "photos-under-fixed-heading",
+    "eventIds": [
+      "page-now"
+    ],
+    "window": [
+      12,
+      16
+    ],
+    "bindings": {
+      "viewport": "ui.viewport",
+      "message": "ui.message/selected-photo",
+      "attachment": "ui.message/selected-photo/media",
+      "carousel": "ui.message/selected-photo/rail",
+      "screen": "ui.screen",
+      "header": "ui.header",
+      "composer": "ui.composer",
+      "transcript": "ui.transcript",
+      "attachmentViewport": "ui.message/selected-photo/media-window"
+    },
+    "ok": true,
+    "mode": "adapter-recipe",
+    "issues": [],
+    "evidence": "structural-only"
+  },
+  {
+    "id": "conversation-handoff",
+    "eventIds": [
+      "type-now",
+      "send-now",
+      "reply-now"
+    ],
+    "window": [
+      8,
+      29
+    ],
+    "bindings": {
+      "viewport": "ui.viewport",
+      "composer": "ui.composer",
+      "transcript": "ui.transcript",
+      "draft": "ui.composer.draft@8",
+      "sendButton": "ui.composer.send@8",
+      "message": "ui.message/in-transit",
+      "reply": "ui.message/ready",
+      "screen": "ui.screen",
+      "header": "ui.header"
+    },
+    "ok": true,
+    "mode": "adapter-recipe",
+    "issues": [],
+    "evidence": "structural-only"
+  },
+  {
+    "id": "composer-type",
+    "eventIds": [
+      "type-start",
+      "type-now"
+    ],
+    "window": [
+      5,
+      12
+    ],
+    "bindings": {
+      "viewport": "ui.viewport",
+      "composer": "ui.composer",
+      "draft": "ui.composer.draft@8",
+      "sendButton": "ui.composer.send@8",
+      "screen": "ui.screen",
+      "header": "ui.header",
+      "transcript": "ui.transcript"
+    },
+    "ok": true,
+    "mode": "adapter-recipe",
+    "issues": [],
+    "evidence": "structural-only"
+  },
+  {
+    "id": "draft-send-flight",
+    "eventIds": [
+      "send-now"
+    ],
+    "window": [
+      18,
+      22
+    ],
+    "bindings": {
+      "viewport": "ui.viewport",
+      "composer": "ui.composer",
+      "transcript": "ui.transcript",
+      "draft": "ui.composer.draft",
+      "sendButton": "ui.composer.send",
+      "message": "ui.message/in-transit",
+      "screen": "ui.screen",
+      "header": "ui.header"
+    },
+    "ok": true,
+    "mode": "adapter-recipe",
+    "issues": [],
+    "evidence": "structural-only"
+  },
+  {
+    "id": "typing-indicator-cycle",
+    "eventIds": [
+      "typing-now"
+    ],
+    "window": [
+      8,
+      12
+    ],
+    "bindings": {
+      "viewport": "ui.viewport",
+      "transcript": "ui.transcript",
+      "typing": "ui.typing",
+      "screen": "ui.screen",
+      "header": "ui.header",
+      "composer": "ui.composer"
+    },
+    "ok": true,
+    "mode": "adapter-recipe",
+    "issues": [],
+    "evidence": "structural-only"
+  },
+  {
+    "id": "reply-makes-room",
+    "eventIds": [
+      "reply-now"
+    ],
+    "window": [
+      8,
+      12
+    ],
+    "bindings": {
+      "reply": "ui.message/ready",
+      "transcript": "ui.transcript",
+      "screen": "ui.screen",
+      "header": "ui.header",
+      "viewport": "ui.viewport",
+      "composer": "ui.composer"
+    },
+    "ok": true,
+    "mode": "adapter-recipe",
+    "issues": [],
+    "evidence": "structural-only"
+  },
+  {
+    "id": "delivery-receipt-handoff",
+    "eventIds": [
+      "send-now",
+      "confirm-delivery"
+    ],
+    "window": [
+      18,
+      28
+    ],
+    "bindings": {
+      "viewport": "ui.viewport",
+      "composer": "ui.composer",
+      "transcript": "ui.transcript",
+      "message": "ui.message/in-transit",
+      "receipt": "ui.message/in-transit/receipt",
+      "screen": "ui.screen",
+      "header": "ui.header"
+    },
+    "ok": true,
+    "mode": "adapter-recipe",
+    "issues": [],
+    "evidence": "structural-only"
+  },
+  {
+    "id": "long-press-actions",
+    "eventIds": [
+      "open-actions"
+    ],
+    "window": [
+      8,
+      13
+    ],
+    "bindings": {
+      "viewport": "ui.viewport",
+      "transcript": "ui.transcript",
+      "message": "ui.message/north-door",
+      "contextMenu": "ui.overlay",
+      "screen": "ui.screen",
+      "header": "ui.header",
+      "composer": "ui.composer"
+    },
+    "ok": true,
+    "mode": "adapter-recipe",
+    "issues": [],
+    "evidence": "structural-only"
+  },
+  {
+    "id": "reaction-attach",
+    "eventIds": [
+      "open-actions",
+      "mark-now"
+    ],
+    "window": [
+      8,
+      23
+    ],
+    "bindings": {
+      "viewport": "ui.viewport",
+      "transcript": "ui.transcript",
+      "message": "ui.message/north-door",
+      "contextMenu": "ui.overlay",
+      "reaction": "ui.message/north-door/reaction",
+      "screen": "ui.screen",
+      "header": "ui.header",
+      "composer": "ui.composer"
+    },
+    "ok": true,
+    "mode": "adapter-recipe",
+    "issues": [],
+    "evidence": "structural-only"
+  },
+  {
+    "id": "edit-message-reflow",
+    "eventIds": [
+      "correct-text"
+    ],
+    "window": [
+      8,
+      12
+    ],
+    "bindings": {
+      "viewport": "ui.viewport",
+      "transcript": "ui.transcript",
+      "message": "ui.message/in-transit",
+      "screen": "ui.screen",
+      "header": "ui.header",
+      "composer": "ui.composer"
+    },
+    "ok": true,
+    "mode": "adapter-recipe",
+    "issues": [],
+    "evidence": "structural-only"
+  },
+  {
+    "id": "undo-send-remove",
+    "eventIds": [
+      "remove-send"
+    ],
+    "window": [
+      8,
+      12
+    ],
+    "bindings": {
+      "viewport": "ui.viewport",
+      "transcript": "ui.transcript",
+      "message": "ui.message/in-transit",
+      "screen": "ui.screen",
+      "header": "ui.header",
+      "composer": "ui.composer"
+    },
+    "ok": true,
+    "mode": "adapter-recipe",
+    "issues": [],
+    "evidence": "structural-only"
+  },
+  {
+    "id": "keyboard-focus-reflow",
+    "eventIds": [
+      "open-keyboard"
+    ],
+    "window": [
+      8,
+      12
+    ],
+    "bindings": {
+      "viewport": "ui.viewport",
+      "keyboard": "ui.keyboard",
+      "composer": "ui.composer",
+      "transcript": "ui.transcript",
+      "screen": "ui.screen",
+      "header": "ui.header"
+    },
+    "ok": true,
+    "mode": "adapter-recipe",
+    "issues": [],
+    "evidence": "structural-only"
+  },
+  {
+    "id": "app-drawer",
+    "eventIds": [
+      "open-drawer"
+    ],
+    "window": [
+      8,
+      12
+    ],
+    "bindings": {
+      "viewport": "ui.viewport",
+      "transcript": "ui.transcript",
+      "appDrawer": "ui.overlay",
+      "screen": "ui.screen",
+      "header": "ui.header",
+      "composer": "ui.composer"
+    },
+    "ok": true,
+    "mode": "adapter-recipe",
+    "issues": [],
+    "evidence": "structural-only"
+  }
+]

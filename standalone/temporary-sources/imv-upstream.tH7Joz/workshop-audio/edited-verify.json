@@ -1,0 +1,37 @@
+{
+  "pass": true,
+  "failures": [],
+  "picture_duration": "17/6",
+  "first_audio_sample": 0,
+  "audio_clock_max_discontinuity_samples": 0,
+  "audio_stream_duration_samples": 135984,
+  "decoded_audio_samples": 136192,
+  "sample_peak_dbfs": -16.68,
+  "estimated_true_peak_dbfs": -16.21,
+  "energy_dropouts_s": [],
+  "pcm_difference_ranges_s": [],
+  "silence": [],
+  "landmarks": {
+    "ui.send-keyboard.send": {
+      "frame": 24,
+      "pts": "1",
+      "score": 0.019752358490566037,
+      "sample": 48000
+    }
+  },
+  "cues": [
+    {
+      "id": "ui.send-keyboard.send-cue",
+      "event": "ui.send-keyboard.send",
+      "expected_impact_sample": 48000,
+      "intended_offset_samples": 0,
+      "verdict": "pass",
+      "correlation": 1.0,
+      "observed_asset_alignment_sample": 46560,
+      "estimated_onset_marker_sample": 47136,
+      "observed_impact_marker_sample": 48000,
+      "error_ms": 0.0
+    }
+  ],
+  "human_audition": "pending unless documented separately"
+}

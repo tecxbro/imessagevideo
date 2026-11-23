@@ -1,0 +1,4215 @@
+{
+  "schema_version": "visual-motion-recipe-contribution/1",
+  "implementation_status": "Reference/design/director/component proposals only; root integrates current skill/API. No new media/browser/current-skill edits.",
+  "coordinate_contract": {
+    "units": "canonical source-size pixels",
+    "keyframe_time": "global OUTPUT seconds",
+    "layer_lifecycle": "[start,end) exclusive",
+    "recipe_ranges": "inclusive native frame endpoints",
+    "snippets": "Literal selected canonical keys,not standalone full animations. Load full nodes for exact replay. Re-time intentionally for new design.",
+    "source_identity_claim": false
+  },
+  "sources": [
+    {
+      "id": "linq",
+      "canonical_scene": "outputs/05-linq/final-v20/scene.json",
+      "sceneSHA256": "658184bb8d05c50633f37fa0ef0bfd8a943773076f249c7e0dbf02991e6e93c6",
+      "dimensions": [
+        960,
+        720
+      ],
+      "fps": 30,
+      "framecount": 1458,
+      "source_url": "https://www.linkedin.com/posts/elliottpotter_your-users-never-have-to-leave-imessage-again-activity-7477784121293950976-Dlap",
+      "source_report": "verification/final/05-linq/source-gsap-v20-pc709/index.html",
+      "source_frame_mapping": [
+        {
+          "output": [
+            0,
+            1457
+          ],
+          "source_offset": 0
+        }
+      ],
+      "omitted_source_frames": []
+    },
+    {
+      "id": "rene",
+      "canonical_scene": "outputs/06-gallery/final-v23/scene.json",
+      "sceneSHA256": "abc87b6e69314e5df3ef75a81efd216011fa1604872aec66c1eb2a39f69658b2",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "fps": 30,
+      "framecount": 1483,
+      "source_url": "https://launchvideos.gallery/videos/1724779c-9543-4a4e-bd12-bafceb1cc90f",
+      "source_report": "verification/final/06-gallery/source-gsap-v23/index.html",
+      "source_frame_mapping": [
+        {
+          "output": [
+            0,
+            1048
+          ],
+          "source_offset": 0
+        },
+        {
+          "output": [
+            1049,
+            1482
+          ],
+          "source_offset": 181
+        }
+      ],
+      "omitted_source_frames": [
+        1049,
+        1229
+      ]
+    }
+  ],
+  "director_rules": [
+    "Give each scene one job:compare,adjust,consent/complete,or bridge into proof.",
+    "Separate shared camera,local response and content so cause/effect stays readable.",
+    "Keep readable holds and independent optical baselines; do not stretch internal source glyphs.",
+    "Static rich-UI internals are declared bitmaps; native outer motion does not make internal words editable text.",
+    "Sound anchors are visible UI response,not original-audio evidence. Music/body/title animation never establishes a keypress."
+  ],
+  "sound_evidence": [
+    {
+      "path": "audio-recreation/ui-cues/05-linq-ui-cues.json",
+      "sha256": "263b49818ec8374d38ca795625249e4a2b91c0bb468b631b3d6671b7a497b2d8"
+    },
+    {
+      "path": "audio-recreation/ui-cues/06-gallery-ui-cues.json",
+      "sha256": "5471d0d34fafc4513abfc737771f0bc181ef9112e3e35de6ec99ee0a972d5cd4"
+    },
+    {
+      "path": "audio-recreation/ui-cues/05-06-evidence-and-validation.json",
+      "sha256": "6c3edfaf92c4766e0c85b320de04e6729ea6c22bd1a04073f90d21510d5c7d19"
+    }
+  ],
+  "recipes": [
+    {
+      "id": "linq-chat-to-mini-app",
+      "name": "Chat card expands into a clipped mini-app document",
+      "reference": "linq",
+      "tags": [
+        "mini-app",
+        "nested-scroll",
+        "carousel",
+        "context-preserving-focus"
+      ],
+      "study_window": {
+        "output_frames_inclusive": [
+          351,
+          510
+        ],
+        "source_frames_inclusive": [
+          351,
+          510
+        ],
+        "output_seconds": [
+          11.7,
+          17.0
+        ],
+        "source_seconds": [
+          11.7,
+          17.0
+        ]
+      },
+      "focus_window": {
+        "output_frames_inclusive": [
+          351,
+          477
+        ],
+        "source_frames_inclusive": [
+          351,
+          477
+        ],
+        "output_seconds": [
+          11.7,
+          15.9
+        ],
+        "source_seconds": [
+          11.7,
+          15.9
+        ]
+      },
+      "director_intent": "Move from conversational context to comparison and selection, then return the result to chat. Suppress background detail while the foreground grows; do not scale every object together.",
+      "visual_anatomy": [
+        "A gray assistant reply and compact flight preview sit on a white message field; the settled chat stays behind the app.",
+        "The app is a centered vertical portal: entrance/document clip x188,width584 in a960×720 stage, later fare/seat clip x188,width582. The2px phase difference is measured, not interchangeable geometry.",
+        "One tall blue sky-like document holds white rounded UI cards. Its clip radius is64 with local height2000. The flight summary stays horizontally fixed while only the fare rail pans.",
+        "Basic/Economy use strong card name/price hierarchy, gray policy copy, green included-state marks and a blue Select pill. A clipped neighboring card makes the rail readable.",
+        "Background blur rises0→12px with a slight white wash. Seat grid/sky and outgoing fare material are separate layers; the grid fades above the fares.",
+        "The app clears and booking confirmation returns as a gray message at477."
+      ],
+      "phases": [
+        {
+          "name": "context/focus preparation",
+          "output_frames_inclusive": [
+            351,
+            354
+          ],
+          "source_frames_inclusive": [
+            351,
+            354
+          ],
+          "output_seconds": [
+            11.7,
+            11.8
+          ],
+          "source_seconds": [
+            11.7,
+            11.8
+          ]
+        },
+        {
+          "name": "five first entrance poses",
+          "output_frames_inclusive": [
+            355,
+            359
+          ],
+          "source_frames_inclusive": [
+            355,
+            359
+          ],
+          "output_seconds": [
+            11.833333333333334,
+            11.966666666666667
+          ],
+          "source_seconds": [
+            11.833333333333334,
+            11.966666666666667
+          ]
+        },
+        {
+          "name": "tall document/shutter composite",
+          "output_frames_inclusive": [
+            360,
+            397
+          ],
+          "source_frames_inclusive": [
+            360,
+            397
+          ],
+          "output_seconds": [
+            12.0,
+            13.233333333333333
+          ],
+          "source_seconds": [
+            12.0,
+            13.233333333333333
+          ],
+          "detail": "Center documentY=78 through369,44 at370/371,-17 at372, then-418 at380. The fare rail pans independently."
+        },
+        {
+          "name": "settled panned fare view",
+          "output_frames_inclusive": [
+            398,
+            413
+          ],
+          "source_frames_inclusive": [
+            398,
+            413
+          ],
+          "output_seconds": [
+            13.266666666666667,
+            13.766666666666667
+          ],
+          "source_seconds": [
+            13.266666666666667,
+            13.766666666666667
+          ],
+          "detail": "The later bounded interior already contains the pan; localx=0 does not visually reset the carousel."
+        },
+        {
+          "name": "fare-to-seat layering",
+          "output_frames_inclusive": [
+            414,
+            422
+          ],
+          "source_frames_inclusive": [
+            414,
+            422
+          ],
+          "output_seconds": [
+            13.8,
+            14.066666666666666
+          ],
+          "source_seconds": [
+            13.8,
+            14.066666666666666
+          ],
+          "detail": "At418 fare imagex=-156; grid opacity=.611921544643255 above the fare."
+        },
+        {
+          "name": "seat detail",
+          "output_frames_inclusive": [
+            423,
+            467
+          ],
+          "source_frames_inclusive": [
+            423,
+            467
+          ],
+          "output_seconds": [
+            14.1,
+            15.566666666666666
+          ],
+          "source_seconds": [
+            14.1,
+            15.566666666666666
+          ]
+        },
+        {
+          "name": "app exit",
+          "output_frames_inclusive": [
+            468,
+            474
+          ],
+          "source_frames_inclusive": [
+            468,
+            474
+          ],
+          "output_seconds": [
+            15.6,
+            15.8
+          ],
+          "source_seconds": [
+            15.6,
+            15.8
+          ]
+        },
+        {
+          "name": "confirmation",
+          "output_frames_inclusive": [
+            477,
+            510
+          ],
+          "source_frames_inclusive": [
+            477,
+            510
+          ],
+          "output_seconds": [
+            15.9,
+            17.0
+          ],
+          "source_seconds": [
+            15.9,
+            17.0
+          ],
+          "detail": "475/476 are the gap before the confirmation entry."
+        }
+      ],
+      "component_roles": [
+        {
+          "node_id": "broad-v5-background-45",
+          "json_pointer": "/layers/0",
+          "ancestor_ids": [],
+          "role": "blur/wash context",
+          "static_properties": {
+            "type": "group",
+            "id": "broad-v5-background-45",
+            "x": 0,
+            "y": 0,
+            "start": 11.733333333333333,
+            "end": 15.6,
+            "blur": 0,
+            "opacity": 1
+          },
+          "path_geometry_omitted": false,
+          "full_node_in_canonical_manifest": true
+        },
+        {
+          "node_id": "flight-review-continuous-document",
+          "json_pointer": "/layers/38",
+          "ancestor_ids": [],
+          "role": "portal clip and shutter composite",
+          "static_properties": {
+            "id": "flight-review-continuous-document",
+            "type": "group",
+            "start": 12,
+            "end": 13.266666666666667,
+            "clip": {
+              "x": 188,
+              "y": 0,
+              "width": 584,
+              "height": 720
+            }
+          },
+          "path_geometry_omitted": false,
+          "full_node_in_canonical_manifest": true
+        },
+        {
+          "node_id": "rich-group-4",
+          "json_pointer": "/layers/48",
+          "ancestor_ids": [],
+          "role": "settled clipped fares",
+          "static_properties": {
+            "type": "group",
+            "id": "rich-group-4",
+            "start": 13.266666666666667,
+            "end": 14.1,
+            "clip": {
+              "x": 188,
+              "y": 0,
+              "width": 582,
+              "height": 720
+            }
+          },
+          "path_geometry_omitted": false,
+          "full_node_in_canonical_manifest": true
+        },
+        {
+          "node_id": "seat-review-frame-418",
+          "json_pointer": "/layers/45",
+          "ancestor_ids": [],
+          "role": "accepted seat handoff",
+          "static_properties": {
+            "id": "seat-review-frame-418",
+            "type": "group",
+            "start": 13.933333333333334,
+            "end": 13.966666666666667,
+            "clip": {
+              "x": 188,
+              "y": 0,
+              "width": 582,
+              "height": 720
+            }
+          },
+          "path_geometry_omitted": false,
+          "full_node_in_canonical_manifest": true
+        },
+        {
+          "node_id": "rich-group-6",
+          "json_pointer": "/layers/12",
+          "ancestor_ids": [],
+          "role": "seat detail/summary",
+          "static_properties": {
+            "id": "rich-group-6",
+            "type": "group",
+            "x": 0,
+            "y": 0,
+            "start": 13.8,
+            "end": 15.6
+          },
+          "path_geometry_omitted": false,
+          "full_node_in_canonical_manifest": true
+        },
+        {
+          "node_id": "v11-seat-exit",
+          "json_pointer": "/layers/13",
+          "ancestor_ids": [],
+          "role": "app exit",
+          "static_properties": {
+            "type": "group",
+            "id": "v11-seat-exit",
+            "start": 15.6,
+            "end": 15.833333333333334
+          },
+          "path_geometry_omitted": false,
+          "full_node_in_canonical_manifest": true
+        },
+        {
+          "node_id": "g-567",
+          "json_pointer": "/layers/14",
+          "ancestor_ids": [],
+          "role": "confirmation",
+          "static_properties": {
+            "type": "group",
+            "id": "g-567",
+            "x": 95,
+            "start": 15.9,
+            "end": 17.033333333333335
+          },
+          "path_geometry_omitted": false,
+          "full_node_in_canonical_manifest": true
+        }
+      ],
+      "property_keyframe_snippets": [
+        {
+          "node_id": "broad-v5-background-45",
+          "json_pointer": "/layers/0",
+          "ancestor_ids": [],
+          "role": "focus",
+          "static_properties": {
+            "type": "group",
+            "id": "broad-v5-background-45",
+            "x": 0,
+            "y": 0,
+            "start": 11.733333333333333,
+            "end": 15.6,
+            "blur": 0,
+            "opacity": 1
+          },
+          "path_geometry_omitted": false,
+          "full_node_in_canonical_manifest": true,
+          "keyframes": {
+            "blur": [
+              {
+                "t": 11.766666666666667,
+                "value": 0.0,
+                "ease": "linear"
+              },
+              {
+                "t": 11.833333333333334,
+                "value": 1.5,
+                "ease": "linear"
+              },
+              {
+                "t": 12.0,
+                "value": 7.0,
+                "ease": "linear"
+              },
+              {
+                "t": 12.2,
+                "value": 11.0,
+                "ease": "linear"
+              },
+              {
+                "t": 12.9,
+                "value": 12.0,
+                "ease": "linear"
+              },
+              {
+                "t": 13.233333333333333,
+                "value": 12.0,
+                "ease": "linear"
+              },
+              {
+                "t": 13.266666666666667,
+                "value": 10,
+                "ease": "linear"
+              }
+            ],
+            "opacity": [
+              {
+                "t": 11.766666666666667,
+                "value": 0.988895058631897,
+                "ease": "linear"
+              },
+              {
+                "t": 11.833333333333334,
+                "value": 0.9743646383285522,
+                "ease": "linear"
+              },
+              {
+                "t": 12.0,
+                "value": 0.965255856513977,
+                "ease": "linear"
+              },
+              {
+                "t": 12.2,
+                "value": 0.9512425065040588,
+                "ease": "linear"
+              },
+              {
+                "t": 12.9,
+                "value": 0.9556761980056763,
+                "ease": "linear"
+              },
+              {
+                "t": 13.233333333333333,
+                "value": 0.9556812047958374,
+                "ease": "linear"
+              },
+              {
+                "t": 13.266666666666667,
+                "value": 1,
+                "ease": "linear"
+              }
+            ]
+          },
+          "sampled_frames_by_property": {
+            "blur": [
+              353.0,
+              355.0,
+              360.0,
+              366.0,
+              387.0,
+              397.0,
+              398.0
+            ],
+            "opacity": [
+              353.0,
+              355.0,
+              360.0,
+              366.0,
+              387.0,
+              397.0,
+              398.0
+            ]
+          },
+          "excerpt_only": true,
+          "note": "Selected literal canonical keys. Omitted native samples remain necessary for exact reference replay."
+        },
+        {
+          "node_id": "flight-review-shutter-10-document",
+          "json_pointer": "/layers/38/children/10/children/2",
+          "ancestor_ids": [
+            "flight-review-continuous-document",
+            "flight-review-shutter-10-sample"
+          ],
+          "role": "center document geometry",
+          "static_properties": {
+            "id": "flight-review-shutter-10-document",
+            "type": "group",
+            "x": 188,
+            "clip": {
+              "width": 584,
+              "height": 2000,
+              "radius": 64
+            }
+          },
+          "path_geometry_omitted": false,
+          "full_node_in_canonical_manifest": true,
+          "keyframes": {
+            "y": [
+              {
+                "t": 12.0,
+                "value": 97.0,
+                "ease": "linear"
+              },
+              {
+                "t": 12.2,
+                "value": 78.0,
+                "ease": "linear"
+              },
+              {
+                "t": 12.333333333333334,
+                "value": 44.0,
+                "ease": "linear"
+              },
+              {
+                "t": 12.4,
+                "value": -17.0,
+                "ease": "linear"
+              },
+              {
+                "t": 12.5,
+                "value": -257.0,
+                "ease": "linear"
+              },
+              {
+                "t": 12.666666666666666,
+                "value": -418.0,
+                "ease": "linear"
+              },
+              {
+                "t": 12.9,
+                "value": -418.0,
+                "ease": "linear"
+              },
+              {
+                "t": 13.233333333333333,
+                "value": -418.0,
+                "ease": "linear"
+              }
+            ]
+          },
+          "sampled_frames_by_property": {
+            "y": [
+              360.0,
+              366.0,
+              370.0,
+              372.0,
+              375.0,
+              380.0,
+              387.0,
+              397.0
+            ]
+          },
+          "excerpt_only": true,
+          "note": "This is the center geometric shutter sample, not a complete standalone visible app. Its sample opacity is0 in held frames. Import the whole root for reference replay."
+        },
+        {
+          "node_id": "flight-review-shutter-10-fare-carousel",
+          "json_pointer": "/layers/38/children/10/children/2/children/3",
+          "ancestor_ids": [
+            "flight-review-continuous-document",
+            "flight-review-shutter-10-sample",
+            "flight-review-shutter-10-document"
+          ],
+          "role": "cards-only pan",
+          "static_properties": {
+            "id": "flight-review-shutter-10-fare-carousel",
+            "type": "group"
+          },
+          "path_geometry_omitted": false,
+          "full_node_in_canonical_manifest": true,
+          "keyframes": {
+            "x": [
+              {
+                "t": 12.0,
+                "value": 0.0,
+                "ease": "linear"
+              },
+              {
+                "t": 12.2,
+                "value": 0.0,
+                "ease": "linear"
+              },
+              {
+                "t": 12.9,
+                "value": -8.196290574430122,
+                "ease": "linear"
+              },
+              {
+                "t": 13.233333333333333,
+                "value": -161.99966977363954,
+                "ease": "linear"
+              }
+            ]
+          },
+          "sampled_frames_by_property": {
+            "x": [
+              360.0,
+              366.0,
+              387.0,
+              397.0
+            ]
+          },
+          "excerpt_only": true,
+          "note": "Selected literal canonical keys. Omitted native samples remain necessary for exact reference replay."
+        },
+        {
+          "node_id": "seat-review-fares-418",
+          "json_pointer": "/layers/45/children/1",
+          "ancestor_ids": [
+            "seat-review-frame-418"
+          ],
+          "role": "accepted outgoing fare placement",
+          "static_properties": {
+            "id": "seat-review-fares-418",
+            "type": "image",
+            "src": "assets/d3076063d61166a4-d3076063d61166a4-d3076063d61166a4-d3076063d61166a4-d3076063d61166a4-d3076063d61166a4-fare-repaired-clipped-button.png",
+            "x": -156,
+            "y": 0,
+            "width": 582,
+            "height": 720,
+            "assetSHA256": "d3076063d61166a46232d6c19c2d08c1afe3a0d79a59af47ddc54e26c7468798"
+          },
+          "path_geometry_omitted": false,
+          "full_node_in_canonical_manifest": true
+        },
+        {
+          "node_id": "seat-review-grid-418",
+          "json_pointer": "/layers/45/children/2",
+          "ancestor_ids": [
+            "seat-review-frame-418"
+          ],
+          "role": "transparent incoming grid",
+          "static_properties": {
+            "id": "seat-review-grid-418",
+            "type": "image",
+            "src": "assets/831dd8a50c98aac4-831dd8a50c98aac4-831dd8a50c98aac4-831dd8a50c98aac4-831dd8a50c98aac4-831dd8a50c98aac4-seat-ui-linear-color-418.png",
+            "x": 188,
+            "y": 0,
+            "width": 582,
+            "height": 720,
+            "opacity": 0.611921544643255,
+            "assetSHA256": "831dd8a50c98aac441d27b3f76f0f18dfb53cf238d9308540057b4b87bf1e19c"
+          },
+          "path_geometry_omitted": false,
+          "full_node_in_canonical_manifest": true
+        }
+      ],
+      "suggested_component_api": {
+        "status": "proposal for root integration",
+        "primitive": "ChatToMiniApp",
+        "slots": [
+          "contextChat",
+          "previewCard",
+          "documentTop",
+          "fareCards[]",
+          "seatGrid",
+          "confirmationBubble"
+        ],
+        "controls": [
+          {
+            "name": "viewport",
+            "type": "clip rect+radius",
+            "reference": {
+              "stage": [
+                960,
+                720
+              ],
+              "x": 188,
+              "width": 584,
+              "radius": 64
+            },
+            "invariant": "Keep a deliberate clipped neighboring card."
+          },
+          {
+            "name": "documentY",
+            "type": "frame track",
+            "anchors": [
+              [
+                366,
+                78
+              ],
+              [
+                372,
+                -17
+              ],
+              [
+                380,
+                -418
+              ]
+            ],
+            "invariant": "Vertical motion belongs to the tall document."
+          },
+          {
+            "name": "carouselX",
+            "type": "independent track",
+            "anchors": [
+              [
+                387,
+                -8.196290574430122
+              ],
+              [
+                397,
+                -161.99966977363954
+              ]
+            ],
+            "invariant": "Do not pan the fixed summary."
+          },
+          {
+            "name": "focus",
+            "type": "blur+wash",
+            "invariant": "Foreground stays readable while context recedes."
+          },
+          {
+            "name": "handoffLayers",
+            "type": "ordered slots",
+            "reference": [
+              "sky",
+              "outgoingFare",
+              "transparentGrid"
+            ],
+            "invariant": "Do not hide grid marks below an opaque fare."
+          }
+        ]
+      },
+      "choose_when": [
+        "A chat recommendation becomes a browsable application.",
+        "Comparison detail should retain its conversational context.",
+        "The app decomposes into a tall document plus independent horizontal cards."
+      ],
+      "avoid_when": [
+        "Current internal labels must all be freely editable text: the rich interiors here are bitmap components.",
+        "The source screenshot has no extra document content; stretching it cannot substitute for a scroll.",
+        "The expansion has no compare/select narrative purpose."
+      ],
+      "failure_traps": [
+        "Do not jump directly from preview to the late fare crop; show the initial Flight Details/ATL summary.",
+        "Do not move the entire app with the fare carousel.",
+        "Do not put the seat grid below an opaque fare.",
+        "The canonical root includes weighted shutter samples and bounded linear-light material corrections. One sample or one late bitmap is not equivalent."
+      ],
+      "editability": {
+        "native": [
+          "outer clip/geometry",
+          "document/carousel cameras",
+          "backdrop blur/wash",
+          "seat fade/layer order",
+          "confirmation outline/camera"
+        ],
+        "bounded_bitmap": [
+          "rich UI internal copy/art",
+          "five entrance material poses",
+          "calibrated UI material interiors"
+        ],
+        "source_video_layer": false
+      },
+      "recommended_stills": [
+        {
+          "output_frame": 351,
+          "source_frame": 351,
+          "time": 11.7,
+          "caption": "Chat preview",
+          "inspect": "Context and compact preview scale",
+          "selection_kind": "existing native frame index; no media generated"
+        },
+        {
+          "output_frame": 357,
+          "source_frame": 357,
+          "time": 11.9,
+          "caption": "App entrance",
+          "inspect": "Portal and focus separation",
+          "selection_kind": "existing native frame index; no media generated"
+        },
+        {
+          "output_frame": 366,
+          "source_frame": 366,
+          "time": 12.2,
+          "caption": "Initial document",
+          "inspect": "Flight Details top and framing",
+          "selection_kind": "existing native frame index; no media generated"
+        },
+        {
+          "output_frame": 399,
+          "source_frame": 399,
+          "time": 13.3,
+          "caption": "Economy comparison",
+          "inspect": "Fixed summary and clipped neighbor",
+          "selection_kind": "existing native frame index; no media generated"
+        },
+        {
+          "output_frame": 418,
+          "source_frame": 418,
+          "time": 13.933333333333334,
+          "caption": "Seat transition",
+          "inspect": "Grid above outgoing fares",
+          "selection_kind": "existing native frame index; no media generated"
+        },
+        {
+          "output_frame": 477,
+          "source_frame": 477,
+          "time": 15.9,
+          "caption": "Booking confirmation",
+          "inspect": "Return from app to chat",
+          "selection_kind": "existing native frame index; no media generated"
+        }
+      ],
+      "sound_anchors": [
+        {
+          "frame": 355,
+          "time": 11.833333333333334,
+          "source_frame": 355,
+          "kind": "tap",
+          "group": "05.flight_app_open",
+          "confidence": 0.6,
+          "observed_vs_inferred": "inferred_action_from_visible_navigation",
+          "action_evidence": "First measured flight-app entrance after the chat preview; an activating tap is plausible but no control contact is shown.",
+          "cue_identifier": "05.flight_app_open",
+          "default_enabled": false,
+          "original_sound_observed": false
+        },
+        {
+          "frame": 477,
+          "time": 15.9,
+          "source_frame": 477,
+          "kind": "message_arrival",
+          "group": "05.flight_booked",
+          "confidence": 0.94,
+          "observed_vs_inferred": "observed_visible_ui_response",
+          "action_evidence": "First native rendered entry of the complete outgoing/incoming message or card. This is a bubble/card cue, not typing body text.",
+          "cue_identifier": "05-linq-ui-029",
+          "default_enabled": true,
+          "original_sound_observed": false
+        }
+      ],
+      "sound_direction": "Tap355 is inferred from navigation and disabled by default; confirmation477 is a visible arrival. Scrolling and internal UI text are not keyboard events.",
+      "evidence": [
+        {
+          "path": "references/05-linq/apply-flight-document-review.py",
+          "sha256": "7ad03042d8732f72672d941a6dacb2052f760b97d9aff325246eb48ea4f5c05a"
+        },
+        {
+          "path": "outputs/05-linq/flight-document-review-05/flight-document-review-elements.json",
+          "sha256": "b9fee04db0e22cbca22ccc6fa689992a6a49fe4e43e6e8b235d18af1629a59d2"
+        },
+        {
+          "path": "references/05-linq/apply-seat-entrance-review.py",
+          "sha256": "68995c6ccd6b4803db09a7e0e8d566835e570302e5bedd029b6769aa7205863c"
+        },
+        {
+          "path": "outputs/05-linq/seat-entrance-review-04/seat-entrance-review-elements.json",
+          "sha256": "b9bda5f5e97fd77d583b74db84a6dc9749a778baa46c5cf1f050e2ea858cfe7d"
+        },
+        {
+          "path": "verification/final/05-linq/source-gsap-v20-pc709/source-gate.json",
+          "sha256": "ceb0c7d4482c334e78adb274c07ea4691f6a61d377556653d7b0ec8ac06a020d"
+        }
+      ]
+    },
+    {
+      "id": "linq-native-control-and-amount",
+      "name": "A control pulse drives an independent rolling amount",
+      "reference": "linq",
+      "tags": [
+        "micro-interaction",
+        "control-response",
+        "digit-rail",
+        "shared-camera"
+      ],
+      "study_window": {
+        "output_frames_inclusive": [
+          768,
+          837
+        ],
+        "source_frames_inclusive": [
+          768,
+          837
+        ],
+        "output_seconds": [
+          25.6,
+          27.9
+        ],
+        "source_seconds": [
+          25.6,
+          27.9
+        ]
+      },
+      "containing_root_window": {
+        "output_frames_inclusive": [
+          768,
+          839
+        ],
+        "source_frames_inclusive": [
+          768,
+          839
+        ],
+        "output_seconds": [
+          25.6,
+          27.966666666666665
+        ],
+        "source_seconds": [
+          25.6,
+          27.966666666666665
+        ]
+      },
+      "director_intent": "Make a small action read as cause and effect: plus brightens/expands, amount advances, action resolves. Separate local control response, digits and panel camera.",
+      "visual_anatomy": [
+        "White empty composer/plus/mic above a dark floating rounded panel; the caret blink is not typing.",
+        "Panel interior begins at local(182,230),size596×471. ParentY333 at773 places its top near563, not333.",
+        "The plus uses native backing ellipse and native pulse circle plus one40×40 static authentic plus-alpha detail. Gray,stroke,diameter and position are independent.",
+        "Fixed $16 prefix and .89 suffix surround a41×94 clipped units rail. Original digits2–6 are spaced94px apart.",
+        "Request/Send pills and Show Keypad remain bounded bitmap UI. Their presence is not evidence of an actual filmed press."
+      ],
+      "phases": [
+        {
+          "name": "composer context",
+          "output_frames_inclusive": [
+            768,
+            772
+          ],
+          "source_frames_inclusive": [
+            768,
+            772
+          ],
+          "output_seconds": [
+            25.6,
+            25.733333333333334
+          ],
+          "source_seconds": [
+            25.6,
+            25.733333333333334
+          ]
+        },
+        {
+          "name": "panel rises/plane becomes opaque",
+          "output_frames_inclusive": [
+            773,
+            785
+          ],
+          "source_frames_inclusive": [
+            773,
+            785
+          ],
+          "output_seconds": [
+            25.766666666666666,
+            26.166666666666668
+          ],
+          "source_seconds": [
+            25.766666666666666,
+            26.166666666666668
+          ],
+          "detail": "ParentY333→about1; body origin adds230. Held plane opacity is about.996."
+        },
+        {
+          "name": "four discrete plus responses",
+          "output_frames_inclusive": [
+            786,
+            803
+          ],
+          "source_frames_inclusive": [
+            786,
+            803
+          ],
+          "output_seconds": [
+            26.2,
+            26.766666666666666
+          ],
+          "source_seconds": [
+            26.2,
+            26.766666666666666
+          ],
+          "detail": "Control responses786/791/796/802 precede digit steps787/792/797/803 by one frame."
+        },
+        {
+          "name": "completed value hold",
+          "output_frames_inclusive": [
+            804,
+            817
+          ],
+          "source_frames_inclusive": [
+            804,
+            817
+          ],
+          "output_seconds": [
+            26.8,
+            27.233333333333334
+          ],
+          "source_seconds": [
+            26.8,
+            27.233333333333334
+          ]
+        },
+        {
+          "name": "independent composer exit",
+          "output_frames_inclusive": [
+            818,
+            826
+          ],
+          "source_frames_inclusive": [
+            818,
+            826
+          ],
+          "output_seconds": [
+            27.266666666666666,
+            27.533333333333335
+          ],
+          "source_seconds": [
+            27.266666666666666,
+            27.533333333333335
+          ]
+        },
+        {
+          "name": "panel clears upward",
+          "output_frames_inclusive": [
+            827,
+            837
+          ],
+          "source_frames_inclusive": [
+            827,
+            837
+          ],
+          "output_seconds": [
+            27.566666666666666,
+            27.9
+          ],
+          "source_seconds": [
+            27.566666666666666,
+            27.9
+          ],
+          "detail": "Upward scroll/clearance, not a downward sheet dismissal. Next gray reply enters830."
+        }
+      ],
+      "component_roles": [
+        {
+          "node_id": "linq-measured-v6-group-36",
+          "json_pointer": "/layers/55",
+          "ancestor_ids": [],
+          "role": "episode lifecycle",
+          "static_properties": {
+            "type": "group",
+            "id": "linq-measured-v6-group-36",
+            "start": 25.6,
+            "end": 28.0
+          },
+          "path_geometry_omitted": false,
+          "full_node_in_canonical_manifest": true
+        },
+        {
+          "node_id": "v10-cash-composer",
+          "json_pointer": "/layers/55/children/0",
+          "ancestor_ids": [
+            "linq-measured-v6-group-36"
+          ],
+          "role": "composer/caret camera",
+          "static_properties": {
+            "type": "group",
+            "id": "v10-cash-composer",
+            "start": 25.6,
+            "end": 27.566666666666666
+          },
+          "path_geometry_omitted": false,
+          "full_node_in_canonical_manifest": true
+        },
+        {
+          "node_id": "v10-cash-panel",
+          "json_pointer": "/layers/55/children/1",
+          "ancestor_ids": [
+            "linq-measured-v6-group-36"
+          ],
+          "role": "shared panel camera/plane",
+          "static_properties": {
+            "type": "group",
+            "id": "v10-cash-panel",
+            "start": 25.766666666666666,
+            "end": 27.933333333333334
+          },
+          "path_geometry_omitted": false,
+          "full_node_in_canonical_manifest": true
+        },
+        {
+          "node_id": "root-cash-native-control-v19",
+          "json_pointer": "/layers/55/children/1/children/1",
+          "ancestor_ids": [
+            "linq-measured-v6-group-36",
+            "v10-cash-panel"
+          ],
+          "role": "three-actor plus",
+          "static_properties": {
+            "id": "root-cash-native-control-v19",
+            "type": "group",
+            "start": 25.8,
+            "end": 27.733333333333334,
+            "semanticText": "Cash plus control pulse / hover",
+            "editability": "Native backing, circle, grayscale/radius/position/stroke tracks plus one authentic static plus-alpha detail. Original amount glyphs are painted above it; panel/input cameras unchanged."
+          },
+          "path_geometry_omitted": false,
+          "full_node_in_canonical_manifest": true
+        },
+        {
+          "node_id": "v10-cash-units-viewport",
+          "json_pointer": "/layers/55/children/1/children/2/children/1",
+          "ancestor_ids": [
+            "linq-measured-v6-group-36",
+            "v10-cash-panel",
+            "v10-cash-amount"
+          ],
+          "role": "units clip",
+          "static_properties": {
+            "type": "group",
+            "id": "v10-cash-units-viewport",
+            "x": 468,
+            "y": 344,
+            "clip": {
+              "x": 0,
+              "y": 0,
+              "width": 41,
+              "height": 94
+            }
+          },
+          "path_geometry_omitted": false,
+          "full_node_in_canonical_manifest": true
+        },
+        {
+          "node_id": "v10-cash-units-rail",
+          "json_pointer": "/layers/55/children/1/children/2/children/1/children/0",
+          "ancestor_ids": [
+            "linq-measured-v6-group-36",
+            "v10-cash-panel",
+            "v10-cash-amount",
+            "v10-cash-units-viewport"
+          ],
+          "role": "digit stack",
+          "static_properties": {
+            "type": "group",
+            "id": "v10-cash-units-rail"
+          },
+          "path_geometry_omitted": false,
+          "full_node_in_canonical_manifest": true
+        },
+        {
+          "node_id": "g-631",
+          "json_pointer": "/layers/20",
+          "ancestor_ids": [],
+          "role": "result message",
+          "static_properties": {
+            "type": "group",
+            "id": "g-631",
+            "x": 99,
+            "y": 0,
+            "start": 27.666666666666668,
+            "end": 29.1
+          },
+          "path_geometry_omitted": false,
+          "full_node_in_canonical_manifest": true
+        }
+      ],
+      "property_keyframe_snippets": [
+        {
+          "node_id": "v10-cash-panel",
+          "json_pointer": "/layers/55/children/1",
+          "ancestor_ids": [
+            "linq-measured-v6-group-36"
+          ],
+          "role": "panel camera/tone",
+          "static_properties": {
+            "type": "group",
+            "id": "v10-cash-panel",
+            "start": 25.766666666666666,
+            "end": 27.933333333333334
+          },
+          "path_geometry_omitted": false,
+          "full_node_in_canonical_manifest": true,
+          "keyframes": {
+            "y": [
+              {
+                "t": 25.766666666666666,
+                "value": 333.0,
+                "ease": "linear"
+              },
+              {
+                "t": 26.0,
+                "value": 98.0,
+                "ease": "linear"
+              },
+              {
+                "t": 26.233333333333334,
+                "value": 0.0,
+                "ease": "linear"
+              },
+              {
+                "t": 27.333333333333332,
+                "value": -20.0,
+                "ease": "linear"
+              },
+              {
+                "t": 27.6,
+                "value": -303.0,
+                "ease": "linear"
+              },
+              {
+                "t": 27.8,
+                "value": -554.0,
+                "ease": "linear"
+              },
+              {
+                "t": 27.9,
+                "value": -669.0,
+                "ease": "linear"
+              }
+            ],
+            "opacity": [
+              {
+                "t": 25.766666666666666,
+                "value": 0.2605042016806723,
+                "ease": "linear"
+              },
+              {
+                "t": 26.0,
+                "value": 0.996078431372549,
+                "ease": "linear"
+              },
+              {
+                "t": 26.233333333333334,
+                "value": 0.996078431372549,
+                "ease": "linear"
+              },
+              {
+                "t": 27.333333333333332,
+                "value": 0.9915966386554622,
+                "ease": "linear"
+              },
+              {
+                "t": 27.6,
+                "value": 0.9921568627450981,
+                "ease": "linear"
+              },
+              {
+                "t": 27.8,
+                "value": 0.9921568627450981,
+                "ease": "linear"
+              },
+              {
+                "t": 27.9,
+                "value": 0.9915966386554622,
+                "ease": "linear"
+              }
+            ]
+          },
+          "sampled_frames_by_property": {
+            "y": [
+              773.0,
+              780.0,
+              787.0,
+              820.0,
+              828.0,
+              834.0,
+              837.0
+            ],
+            "opacity": [
+              773.0,
+              780.0,
+              787.0,
+              820.0,
+              828.0,
+              834.0,
+              837.0
+            ]
+          },
+          "excerpt_only": true,
+          "note": "Selected literal canonical keys. Omitted native samples remain necessary for exact reference replay."
+        },
+        {
+          "node_id": "root-cash-control-disc-v19",
+          "json_pointer": "/layers/55/children/1/children/1/children/1",
+          "ancestor_ids": [
+            "linq-measured-v6-group-36",
+            "v10-cash-panel",
+            "root-cash-native-control-v19"
+          ],
+          "role": "native plus response",
+          "static_properties": {
+            "id": "root-cash-control-disc-v19",
+            "type": "circle"
+          },
+          "path_geometry_omitted": false,
+          "full_node_in_canonical_manifest": true,
+          "keyframes": {
+            "width": [
+              {
+                "t": 26.166666666666668,
+                "value": 72.1528312602195,
+                "ease": "linear"
+              },
+              {
+                "t": 26.2,
+                "value": 73.4633194114272,
+                "ease": "linear"
+              },
+              {
+                "t": 26.233333333333334,
+                "value": 84.19058567370116,
+                "ease": "linear"
+              },
+              {
+                "t": 26.333333333333332,
+                "value": 76.43190862258145,
+                "ease": "linear"
+              },
+              {
+                "t": 26.366666666666667,
+                "value": 73.79275094273646,
+                "ease": "linear"
+              },
+              {
+                "t": 26.4,
+                "value": 80.52104458152678,
+                "ease": "linear"
+              },
+              {
+                "t": 26.5,
+                "value": 77.44384071429582,
+                "ease": "linear"
+              },
+              {
+                "t": 26.533333333333335,
+                "value": 74.99790146096522,
+                "ease": "linear"
+              },
+              {
+                "t": 26.566666666666666,
+                "value": 82.63243611916786,
+                "ease": "linear"
+              },
+              {
+                "t": 26.7,
+                "value": 75.4656903319194,
+                "ease": "linear"
+              },
+              {
+                "t": 26.733333333333334,
+                "value": 71.08963063701165,
+                "ease": "linear"
+              },
+              {
+                "t": 26.766666666666666,
+                "value": 80.75021713827475,
+                "ease": "linear"
+              },
+              {
+                "t": 27.0,
+                "value": 66.68790276155916,
+                "ease": "linear"
+              },
+              {
+                "t": 27.333333333333332,
+                "value": 67.61744968097635,
+                "ease": "linear"
+              }
+            ],
+            "height": [
+              {
+                "t": 26.166666666666668,
+                "value": 70.71911474098972,
+                "ease": "linear"
+              },
+              {
+                "t": 26.2,
+                "value": 73.84329829237822,
+                "ease": "linear"
+              },
+              {
+                "t": 26.233333333333334,
+                "value": 84.80124027383951,
+                "ease": "linear"
+              },
+              {
+                "t": 26.333333333333332,
+                "value": 76.76845038888153,
+                "ease": "linear"
+              },
+              {
+                "t": 26.366666666666667,
+                "value": 73.1418336082685,
+                "ease": "linear"
+              },
+              {
+                "t": 26.4,
+                "value": 80.97547866859519,
+                "ease": "linear"
+              },
+              {
+                "t": 26.5,
+                "value": 78.08091350662586,
+                "ease": "linear"
+              },
+              {
+                "t": 26.533333333333335,
+                "value": 75.13060840511787,
+                "ease": "linear"
+              },
+              {
+                "t": 26.566666666666666,
+                "value": 82.84764157564248,
+                "ease": "linear"
+              },
+              {
+                "t": 26.7,
+                "value": 75.21191314948658,
+                "ease": "linear"
+              },
+              {
+                "t": 26.733333333333334,
+                "value": 70.39603266901068,
+                "ease": "linear"
+              },
+              {
+                "t": 26.766666666666666,
+                "value": 81.08836817650432,
+                "ease": "linear"
+              },
+              {
+                "t": 27.0,
+                "value": 66.2998926006099,
+                "ease": "linear"
+              },
+              {
+                "t": 27.333333333333332,
+                "value": 67.33377333130402,
+                "ease": "linear"
+              }
+            ],
+            "fill": [
+              {
+                "t": 26.166666666666668,
+                "value": "#1f1f1f",
+                "ease": "linear"
+              },
+              {
+                "t": 26.2,
+                "value": "#3b3b3b",
+                "ease": "linear"
+              },
+              {
+                "t": 26.233333333333334,
+                "value": "#535353",
+                "ease": "linear"
+              },
+              {
+                "t": 26.333333333333332,
+                "value": "#424242",
+                "ease": "linear"
+              },
+              {
+                "t": 26.366666666666667,
+                "value": "#4b4b4b",
+                "ease": "linear"
+              },
+              {
+                "t": 26.4,
+                "value": "#757575",
+                "ease": "linear"
+              },
+              {
+                "t": 26.5,
+                "value": "#525252",
+                "ease": "linear"
+              },
+              {
+                "t": 26.533333333333335,
+                "value": "#5e5e5e",
+                "ease": "linear"
+              },
+              {
+                "t": 26.566666666666666,
+                "value": "#828282",
+                "ease": "linear"
+              },
+              {
+                "t": 26.7,
+                "value": "#474747",
+                "ease": "linear"
+              },
+              {
+                "t": 26.733333333333334,
+                "value": "#4b4b4b",
+                "ease": "linear"
+              },
+              {
+                "t": 26.766666666666666,
+                "value": "#737373",
+                "ease": "linear"
+              },
+              {
+                "t": 27.0,
+                "value": "#2e2e2e",
+                "ease": "linear"
+              },
+              {
+                "t": 27.333333333333332,
+                "value": "#212121",
+                "ease": "linear"
+              }
+            ]
+          },
+          "sampled_frames_by_property": {
+            "width": [
+              785.0,
+              786.0,
+              787.0,
+              790.0,
+              791.0,
+              792.0,
+              795.0,
+              796.0,
+              797.0,
+              801.0,
+              802.0,
+              803.0,
+              810.0,
+              820.0
+            ],
+            "height": [
+              785.0,
+              786.0,
+              787.0,
+              790.0,
+              791.0,
+              792.0,
+              795.0,
+              796.0,
+              797.0,
+              801.0,
+              802.0,
+              803.0,
+              810.0,
+              820.0
+            ],
+            "fill": [
+              785.0,
+              786.0,
+              787.0,
+              790.0,
+              791.0,
+              792.0,
+              795.0,
+              796.0,
+              797.0,
+              801.0,
+              802.0,
+              803.0,
+              810.0,
+              820.0
+            ]
+          },
+          "excerpt_only": true,
+          "note": "Selected literal canonical keys. Omitted native samples remain necessary for exact reference replay."
+        },
+        {
+          "node_id": "v10-cash-units-rail",
+          "json_pointer": "/layers/55/children/1/children/2/children/1/children/0",
+          "ancestor_ids": [
+            "linq-measured-v6-group-36",
+            "v10-cash-panel",
+            "v10-cash-amount",
+            "v10-cash-units-viewport"
+          ],
+          "role": "units-only movement",
+          "static_properties": {
+            "type": "group",
+            "id": "v10-cash-units-rail"
+          },
+          "path_geometry_omitted": false,
+          "full_node_in_canonical_manifest": true,
+          "keyframes": {
+            "y": [
+              {
+                "t": 26.0,
+                "value": 0.0,
+                "ease": "linear"
+              },
+              {
+                "t": 26.2,
+                "value": -0.533620920727488,
+                "ease": "linear"
+              },
+              {
+                "t": 26.233333333333334,
+                "value": -93.64159727438837,
+                "ease": "linear"
+              },
+              {
+                "t": 26.366666666666667,
+                "value": -94.16905416498503,
+                "ease": "linear"
+              },
+              {
+                "t": 26.4,
+                "value": -187.99503010922035,
+                "ease": "linear"
+              },
+              {
+                "t": 26.533333333333335,
+                "value": -188.00182565713493,
+                "ease": "linear"
+              },
+              {
+                "t": 26.566666666666666,
+                "value": -281.99713830522313,
+                "ease": "linear"
+              },
+              {
+                "t": 26.733333333333334,
+                "value": -282.1701065996329,
+                "ease": "linear"
+              },
+              {
+                "t": 26.766666666666666,
+                "value": -376.0,
+                "ease": "linear"
+              },
+              {
+                "t": 27.0,
+                "value": -376.0,
+                "ease": "linear"
+              }
+            ]
+          },
+          "sampled_frames_by_property": {
+            "y": [
+              780.0,
+              786.0,
+              787.0,
+              791.0,
+              792.0,
+              796.0,
+              797.0,
+              802.0,
+              803.0,
+              810.0
+            ]
+          },
+          "excerpt_only": true,
+          "note": "Selected literal canonical keys. Omitted native samples remain necessary for exact reference replay."
+        },
+        {
+          "node_id": "root-cash-control-plus-v19",
+          "json_pointer": "/layers/55/children/1/children/1/children/2",
+          "ancestor_ids": [
+            "linq-measured-v6-group-36",
+            "v10-cash-panel",
+            "root-cash-native-control-v19"
+          ],
+          "role": "static glyph detail with native pose",
+          "static_properties": {
+            "id": "root-cash-control-plus-v19",
+            "type": "image",
+            "src": "assets/ec3556e7b4350d7e-plus-static-820.png",
+            "width": 40,
+            "height": 40,
+            "sourceFrame": 820,
+            "semanticText": "+",
+            "editability": "One authentic static40×40 plus-alpha detail; native numeric position/size tracks, disc and material remain editable.",
+            "assetSHA256": "ec3556e7b4350d7e550596442e30640adb9b46aecbef934deb8f800fa5bab743"
+          },
+          "path_geometry_omitted": false,
+          "full_node_in_canonical_manifest": true
+        }
+      ],
+      "suggested_component_api": {
+        "status": "proposal",
+        "primitive": "ActionPanelWithAmount",
+        "slots": [
+          "composer",
+          "panelMaterial",
+          "PulseControl",
+          "prefix",
+          "DigitRail",
+          "suffix",
+          "actionButtons",
+          "resultBubble"
+        ],
+        "controls": [
+          {
+            "name": "PulseControl.responses",
+            "type": "responseFrame,gray,diameter",
+            "response_frames": [
+              786,
+              791,
+              796,
+              802
+            ],
+            "invariant": "Maintain optical center; plus glyph follows the circle."
+          },
+          {
+            "name": "DigitRail",
+            "type": "clipped stack",
+            "reference": {
+              "digitHeight": 94,
+              "clip": [
+                0,
+                0,
+                41,
+                94
+              ],
+              "values": [
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "stepFrames": [
+                787,
+                792,
+                797,
+                803
+              ]
+            },
+            "invariant": "Prefix/suffix remain fixed."
+          },
+          {
+            "name": "panelY",
+            "type": "shared frame track",
+            "invariant": "Panel contents share a camera; composer may exit separately."
+          },
+          {
+            "name": "planeAndControlTone",
+            "type": "coupled displayed-material calibration",
+            "invariant": "A correct dark local backing must not sit over a falsely faded brighter parent plane."
+          }
+        ]
+      },
+      "choose_when": [
+        "A quantity/money adjustment must read as separate taps.",
+        "The audience should see state response before confirmation.",
+        "Dense UI can stay static while its important control/value remain separate."
+      ],
+      "avoid_when": [
+        "The action is typed into a field rather than incremented.",
+        "Arbitrary live text editing is required without regenerating bitmap internals.",
+        "The panel/background changed but dependent calibrated backing is reused."
+      ],
+      "failure_traps": [
+        "A guessed global fade exposed the dark backing as a halo. Correct parent plane and local material together.",
+        "Match actual quantized/premultiplied display response rather than only a continuous alpha ratio.",
+        "Caret blinks/number rolls are not keystrokes.",
+        "Do not slide the entire amount when only the units change."
+      ],
+      "editability": {
+        "native": [
+          "panel/input cameras",
+          "circle/backing geometry and gray/stroke",
+          "glyph-detail position",
+          "clipped rail motion/lifetimes"
+        ],
+        "bounded_bitmap": [
+          "panel copy/action rows",
+          "one plus detail",
+          "digit/prefix/suffix ink"
+        ],
+        "diagnostic_control_crops_in_runtime": false
+      },
+      "recommended_stills": [
+        {
+          "output_frame": 773,
+          "source_frame": 773,
+          "time": 25.766666666666666,
+          "caption": "First panel picture",
+          "inspect": "Shared camera and initial plane opacity",
+          "selection_kind": "existing native frame index; no media generated"
+        },
+        {
+          "output_frame": 780,
+          "source_frame": 780,
+          "time": 26.0,
+          "caption": "$162.89 during rise",
+          "inspect": "Prefix/suffix and composer separation",
+          "selection_kind": "existing native frame index; no media generated"
+        },
+        {
+          "output_frame": 787,
+          "source_frame": 787,
+          "time": 26.233333333333334,
+          "caption": "First increment",
+          "inspect": "Plus response and units movement",
+          "selection_kind": "existing native frame index; no media generated"
+        },
+        {
+          "output_frame": 797,
+          "source_frame": 797,
+          "time": 26.566666666666666,
+          "caption": "Third step",
+          "inspect": "Repeated response rhythm",
+          "selection_kind": "existing native frame index; no media generated"
+        },
+        {
+          "output_frame": 820,
+          "source_frame": 820,
+          "time": 27.333333333333332,
+          "caption": "Control dark again",
+          "inspect": "No false pressed-state hold or halo",
+          "selection_kind": "existing native frame index; no media generated"
+        },
+        {
+          "output_frame": 834,
+          "source_frame": 834,
+          "time": 27.8,
+          "caption": "Upward clearance",
+          "inspect": "Consistent plane tone through exit",
+          "selection_kind": "existing native frame index; no media generated"
+        }
+      ],
+      "sound_anchors": [
+        {
+          "frame": 786,
+          "time": 26.2,
+          "source_frame": 786,
+          "kind": "tap",
+          "group": "05.cash_plus_1",
+          "confidence": 0.96,
+          "observed_vs_inferred": "observed_visible_ui_response",
+          "action_evidence": "Distinct brighter plus-control response, followed by the next measured native amount-rail increment. Click alignment is observed UI response, not an observed physical contact.",
+          "cue_identifier": "05-linq-ui-036",
+          "default_enabled": true,
+          "original_sound_observed": false
+        },
+        {
+          "frame": 791,
+          "time": 26.366666666666667,
+          "source_frame": 791,
+          "kind": "tap",
+          "group": "05.cash_plus_2",
+          "confidence": 0.96,
+          "observed_vs_inferred": "observed_visible_ui_response",
+          "action_evidence": "Distinct brighter plus-control response, followed by the next measured native amount-rail increment. Click alignment is observed UI response, not an observed physical contact.",
+          "cue_identifier": "05-linq-ui-037",
+          "default_enabled": true,
+          "original_sound_observed": false
+        },
+        {
+          "frame": 796,
+          "time": 26.533333333333335,
+          "source_frame": 796,
+          "kind": "tap",
+          "group": "05.cash_plus_3",
+          "confidence": 0.96,
+          "observed_vs_inferred": "observed_visible_ui_response",
+          "action_evidence": "Distinct brighter plus-control response, followed by the next measured native amount-rail increment. Click alignment is observed UI response, not an observed physical contact.",
+          "cue_identifier": "05-linq-ui-038",
+          "default_enabled": true,
+          "original_sound_observed": false
+        },
+        {
+          "frame": 802,
+          "time": 26.733333333333334,
+          "source_frame": 802,
+          "kind": "tap",
+          "group": "05.cash_plus_4",
+          "confidence": 0.96,
+          "observed_vs_inferred": "observed_visible_ui_response",
+          "action_evidence": "Distinct brighter plus-control response, followed by the next measured native amount-rail increment. Click alignment is observed UI response, not an observed physical contact.",
+          "cue_identifier": "05-linq-ui-039",
+          "default_enabled": true,
+          "original_sound_observed": false
+        },
+        {
+          "frame": 830,
+          "time": 27.666666666666668,
+          "source_frame": 830,
+          "kind": "message_arrival",
+          "group": "05.groceries_ordering",
+          "confidence": 0.94,
+          "observed_vs_inferred": "observed_visible_ui_response",
+          "action_evidence": "First native rendered entry of the complete outgoing/incoming message or card. This is a bubble/card cue, not typing body text.",
+          "cue_identifier": "05-linq-ui-040",
+          "default_enabled": true,
+          "original_sound_observed": false
+        }
+      ],
+      "sound_direction": "Four tap sounds follow visible response; each digit change is one frame later. Arrival830 is a separate cue. No Cash typing/burst/delete or invented Send contact.",
+      "evidence": [
+        {
+          "path": "outputs/05-linq/root-cash-control-v19/native-release.json",
+          "sha256": "27fe33396e339e4c8afd15524a56b3afe26881c79e47e54cca9ed64bc2a22936"
+        },
+        {
+          "path": "outputs/05-linq/root-cash-plane-v20/release.json",
+          "sha256": "fad33fee603c298cbb33b812dfb3c53c6f19d3e5dfeaa20c5383e67cb4aa1910"
+        },
+        {
+          "path": "references/05-linq/build_transition_v10.py",
+          "sha256": "571794b770b779edc23c2254737722d00582c435e3df6dd3ed22d25130f8b668"
+        }
+      ]
+    },
+    {
+      "id": "rene-message-to-action-cascade",
+      "name": "A centered device carries consent and completion",
+      "reference": "rene",
+      "tags": [
+        "message-to-action",
+        "conversation",
+        "anchored-device",
+        "independent-entry"
+      ],
+      "study_window": {
+        "output_frames_inclusive": [
+          680,
+          830
+        ],
+        "source_frames_inclusive": [
+          680,
+          830
+        ],
+        "output_seconds": [
+          22.666666666666668,
+          27.666666666666668
+        ],
+        "source_seconds": [
+          22.666666666666668,
+          27.666666666666668
+        ]
+      },
+      "core_message_window": {
+        "output_frames_inclusive": [
+          714,
+          795
+        ],
+        "source_frames_inclusive": [
+          714,
+          795
+        ],
+        "output_seconds": [
+          23.8,
+          26.5
+        ],
+        "source_seconds": [
+          23.8,
+          26.5
+        ]
+      },
+      "director_intent": "Present proactive context, human reaction/consent and completed action through bubble order. Keep one phone grammar while independent message births carry the narrative.",
+      "visual_anatomy": [
+        "Front-facing phone is horizontally centered: x620 plus682px width gives center961 in the1920px stage. One parent Y track is shared; the device is not perfectly stationary.",
+        "White screen and original hardware/header supply a stable reading field. Header clip: localx29,y24,w622,h1456,radius110.",
+        "Incoming gray Fuji bubble: x44,baseliney403,w501,h159. Outgoing blue Wait: x268,baseliney569,w370,h77. Maintain side/margin grammar instead of recentering each message.",
+        "A new message is active at its exact first frame with opacity.5, full next picture. Body starts about28px below baseline and settles over a15-frame keyed window.",
+        "Recommendation714 → human surprise734 → human order745 → done770 → memory follow-up781. Emma context already travels with the entering phone, not a new UI birth."
+      ],
+      "phases": [
+        {
+          "name": "early device continuity",
+          "output_frames_inclusive": [
+            680,
+            689
+          ],
+          "source_frames_inclusive": [
+            680,
+            689
+          ],
+          "output_seconds": [
+            22.666666666666668,
+            22.966666666666665
+          ],
+          "source_seconds": [
+            22.666666666666668,
+            22.966666666666665
+          ],
+          "detail": "Early foreground phone must meet the main device at690."
+        },
+        {
+          "name": "device/existing context settles",
+          "output_frames_inclusive": [
+            690,
+            713
+          ],
+          "source_frames_inclusive": [
+            690,
+            713
+          ],
+          "output_seconds": [
+            23.0,
+            23.766666666666666
+          ],
+          "source_seconds": [
+            23.0,
+            23.766666666666666
+          ]
+        },
+        {
+          "name": "recommendation",
+          "output_frames_inclusive": [
+            714,
+            733
+          ],
+          "source_frames_inclusive": [
+            714,
+            733
+          ],
+          "output_seconds": [
+            23.8,
+            24.433333333333334
+          ],
+          "source_seconds": [
+            23.8,
+            24.433333333333334
+          ]
+        },
+        {
+          "name": "human reaction",
+          "output_frames_inclusive": [
+            734,
+            744
+          ],
+          "source_frames_inclusive": [
+            734,
+            744
+          ],
+          "output_seconds": [
+            24.466666666666665,
+            24.8
+          ],
+          "source_seconds": [
+            24.466666666666665,
+            24.8
+          ]
+        },
+        {
+          "name": "human order",
+          "output_frames_inclusive": [
+            745,
+            769
+          ],
+          "source_frames_inclusive": [
+            745,
+            769
+          ],
+          "output_seconds": [
+            24.833333333333332,
+            25.633333333333333
+          ],
+          "source_seconds": [
+            24.833333333333332,
+            25.633333333333333
+          ]
+        },
+        {
+          "name": "completion",
+          "output_frames_inclusive": [
+            770,
+            780
+          ],
+          "source_frames_inclusive": [
+            770,
+            780
+          ],
+          "output_seconds": [
+            25.666666666666668,
+            26.0
+          ],
+          "source_seconds": [
+            25.666666666666668,
+            26.0
+          ]
+        },
+        {
+          "name": "follow-up/read hold",
+          "output_frames_inclusive": [
+            781,
+            812
+          ],
+          "source_frames_inclusive": [
+            781,
+            812
+          ],
+          "output_seconds": [
+            26.033333333333335,
+            27.066666666666666
+          ],
+          "source_seconds": [
+            26.033333333333335,
+            27.066666666666666
+          ]
+        },
+        {
+          "name": "shared phone exits; next heading begins",
+          "output_frames_inclusive": [
+            813,
+            830
+          ],
+          "source_frames_inclusive": [
+            813,
+            830
+          ],
+          "output_seconds": [
+            27.1,
+            27.666666666666668
+          ],
+          "source_seconds": [
+            27.1,
+            27.666666666666668
+          ]
+        }
+      ],
+      "component_roles": [
+        {
+          "node_id": "early-v18-birthday-phone-early-foreground",
+          "json_pointer": "/layers/1128",
+          "ancestor_ids": [],
+          "role": "pre690 continuity",
+          "static_properties": {
+            "type": "group",
+            "id": "early-v18-birthday-phone-early-foreground",
+            "x": 620,
+            "y": 0,
+            "start": 22.666666666666668,
+            "end": 23.0
+          },
+          "path_geometry_omitted": false,
+          "full_node_in_canonical_manifest": true
+        },
+        {
+          "node_id": "g-1306",
+          "json_pointer": "/layers/20",
+          "ancestor_ids": [],
+          "role": "device/world camera",
+          "static_properties": {
+            "type": "group",
+            "id": "g-1306",
+            "x": 620,
+            "y": 0,
+            "start": 23.0,
+            "end": 27.7
+          },
+          "path_geometry_omitted": false,
+          "full_node_in_canonical_manifest": true
+        },
+        {
+          "node_id": "phone-v17-hardware",
+          "json_pointer": "/layers/20/children/1",
+          "ancestor_ids": [
+            "g-1306"
+          ],
+          "role": "hardware",
+          "static_properties": {
+            "type": "image",
+            "id": "phone-v17-hardware",
+            "src": "assets/f5d928633bd44fbc-birthday-hardware-original.png",
+            "x": 0,
+            "y": 0,
+            "width": 682,
+            "height": 1080,
+            "assetSHA256": "f5d928633bd44fbc6d0b14ab5e4700552ee2c54ccb92e264bd819b39d5ce9d5b"
+          },
+          "path_geometry_omitted": false,
+          "full_node_in_canonical_manifest": true
+        },
+        {
+          "node_id": "phone-v17-header-clip",
+          "json_pointer": "/layers/20/children/2",
+          "ancestor_ids": [
+            "g-1306"
+          ],
+          "role": "screen/header clip",
+          "static_properties": {
+            "type": "group",
+            "id": "phone-v17-header-clip",
+            "clip": {
+              "x": 29,
+              "y": 24,
+              "width": 622,
+              "height": 1456,
+              "radius": 110
+            }
+          },
+          "path_geometry_omitted": false,
+          "full_node_in_canonical_manifest": true
+        },
+        {
+          "node_id": "phone-v17-message-Emma",
+          "json_pointer": "/layers/20/children/3",
+          "ancestor_ids": [
+            "g-1306"
+          ],
+          "role": "preexisting context",
+          "static_properties": {
+            "type": "image",
+            "id": "phone-v17-message-Emma",
+            "src": "assets/04697552d051e185-birthday-message-emma.png",
+            "x": 44,
+            "y": 325,
+            "width": 451,
+            "height": 76,
+            "start": 22.9,
+            "assetSHA256": "04697552d051e18585759d25fe35d404f7beb8c8e92c2f0f0c6a9b735ec5cd68"
+          },
+          "path_geometry_omitted": false,
+          "full_node_in_canonical_manifest": true
+        },
+        {
+          "node_id": "phone-v17-message-Fuji",
+          "json_pointer": "/layers/20/children/4",
+          "ancestor_ids": [
+            "g-1306"
+          ],
+          "role": "recommendation",
+          "static_properties": {
+            "type": "image",
+            "id": "phone-v17-message-Fuji",
+            "src": "assets/02d8c1dab21ec856-birthday-message-fuji.png",
+            "x": 44,
+            "y": 403,
+            "width": 501,
+            "height": 159,
+            "start": 23.8,
+            "assetSHA256": "02d8c1dab21ec856ad4f425d3d995baf0bc0954dbda4d37459d04ee41b1dbf47"
+          },
+          "path_geometry_omitted": false,
+          "full_node_in_canonical_manifest": true
+        },
+        {
+          "node_id": "phone-v17-message-Wait",
+          "json_pointer": "/layers/20/children/5",
+          "ancestor_ids": [
+            "g-1306"
+          ],
+          "role": "human reaction",
+          "static_properties": {
+            "type": "image",
+            "id": "phone-v17-message-Wait",
+            "src": "assets/208aad3b79a45068-birthday-message-wait.png",
+            "x": 268,
+            "y": 569,
+            "width": 370,
+            "height": 77,
+            "start": 24.466666666666665,
+            "assetSHA256": "208aad3b79a45068c4a9aa5732cfafc52f91b73c02fef0d12ff8283214b7f1a1"
+          },
+          "path_geometry_omitted": false,
+          "full_node_in_canonical_manifest": true
+        },
+        {
+          "node_id": "phone-v17-message-Order",
+          "json_pointer": "/layers/20/children/6",
+          "ancestor_ids": [
+            "g-1306"
+          ],
+          "role": "consent/order",
+          "static_properties": {
+            "type": "image",
+            "id": "phone-v17-message-Order",
+            "src": "assets/79dc87aee502c0f6-birthday-message-order.png",
+            "x": 276,
+            "y": 648,
+            "width": 362,
+            "height": 90,
+            "start": 24.833333333333332,
+            "assetSHA256": "79dc87aee502c0f6da652e45d6aa24c249ca51b48b3244e3537d818a20c966e7"
+          },
+          "path_geometry_omitted": false,
+          "full_node_in_canonical_manifest": true
+        },
+        {
+          "node_id": "phone-v17-message-Done",
+          "json_pointer": "/layers/20/children/7",
+          "ancestor_ids": [
+            "g-1306"
+          ],
+          "role": "completed action",
+          "static_properties": {
+            "type": "image",
+            "id": "phone-v17-message-Done",
+            "src": "assets/5db7be72c996eb50-birthday-message-done.png",
+            "x": 44,
+            "y": 733,
+            "width": 314,
+            "height": 76,
+            "start": 25.666666666666668,
+            "assetSHA256": "5db7be72c996eb50ae0baf64f0c681c8d037af3ff2d340cf222c05758bc4e0e8"
+          },
+          "path_geometry_omitted": false,
+          "full_node_in_canonical_manifest": true
+        },
+        {
+          "node_id": "phone-v17-message-Remember",
+          "json_pointer": "/layers/20/children/8",
+          "ancestor_ids": [
+            "g-1306"
+          ],
+          "role": "follow-up",
+          "static_properties": {
+            "type": "image",
+            "id": "phone-v17-message-Remember",
+            "src": "assets/3cb7d5ff0c459ffd-birthday-message-remember.png",
+            "x": 44,
+            "y": 812,
+            "width": 369,
+            "height": 91,
+            "start": 26.033333333333335,
+            "assetSHA256": "3cb7d5ff0c459ffdac6e28e205054702068d20f545222b42423b625ad6e79d8f"
+          },
+          "path_geometry_omitted": false,
+          "full_node_in_canonical_manifest": true
+        }
+      ],
+      "property_keyframe_snippets": [
+        {
+          "node_id": "g-1306",
+          "json_pointer": "/layers/20",
+          "ancestor_ids": [],
+          "role": "shared camera",
+          "static_properties": {
+            "type": "group",
+            "id": "g-1306",
+            "x": 620,
+            "y": 0,
+            "start": 23.0,
+            "end": 27.7
+          },
+          "path_geometry_omitted": false,
+          "full_node_in_canonical_manifest": true,
+          "keyframes": {
+            "y": [
+              {
+                "t": 23.0,
+                "value": 262.26048521422365,
+                "ease": "linear"
+              },
+              {
+                "t": 23.6,
+                "value": 37.14969394384981,
+                "ease": "linear"
+              },
+              {
+                "t": 23.8,
+                "value": 32.84856393294838,
+                "ease": "linear"
+              },
+              {
+                "t": 24.466666666666665,
+                "value": 21.94766773884608,
+                "ease": "linear"
+              },
+              {
+                "t": 24.833333333333332,
+                "value": 17.101647607444505,
+                "ease": "linear"
+              },
+              {
+                "t": 25.666666666666668,
+                "value": 7.380110402812558,
+                "ease": "linear"
+              },
+              {
+                "t": 26.033333333333335,
+                "value": 3.8043177453997847,
+                "ease": "linear"
+              },
+              {
+                "t": 27.1,
+                "value": 133.619253485849,
+                "ease": "linear"
+              },
+              {
+                "t": 27.666666666666668,
+                "value": 1100,
+                "ease": "linear"
+              }
+            ]
+          },
+          "sampled_frames_by_property": {
+            "y": [
+              690.0,
+              708.0,
+              714.0,
+              734.0,
+              745.0,
+              770.0,
+              781.0,
+              813.0,
+              830.0
+            ]
+          },
+          "excerpt_only": true,
+          "note": "Selected literal canonical keys. Omitted native samples remain necessary for exact reference replay."
+        },
+        {
+          "node_id": "phone-v17-message-Fuji",
+          "json_pointer": "/layers/20/children/4",
+          "ancestor_ids": [
+            "g-1306"
+          ],
+          "role": "recommendation entry",
+          "static_properties": {
+            "type": "image",
+            "id": "phone-v17-message-Fuji",
+            "src": "assets/02d8c1dab21ec856-birthday-message-fuji.png",
+            "x": 44,
+            "y": 403,
+            "width": 501,
+            "height": 159,
+            "start": 23.8,
+            "assetSHA256": "02d8c1dab21ec856ad4f425d3d995baf0bc0954dbda4d37459d04ee41b1dbf47"
+          },
+          "path_geometry_omitted": false,
+          "full_node_in_canonical_manifest": true,
+          "keyframes": {
+            "y": [
+              {
+                "t": 23.8,
+                "value": 431.0,
+                "ease": "linear"
+              },
+              {
+                "t": 23.833333333333332,
+                "value": 422.0,
+                "ease": "linear"
+              },
+              {
+                "t": 23.9,
+                "value": 413.25,
+                "ease": "linear"
+              },
+              {
+                "t": 24.0,
+                "value": 407.5,
+                "ease": "linear"
+              },
+              {
+                "t": 24.133333333333333,
+                "value": 404.5,
+                "ease": "linear"
+              },
+              {
+                "t": 24.266666666666666,
+                "value": 403,
+                "ease": "linear"
+              }
+            ],
+            "opacity": [
+              {
+                "t": 23.8,
+                "value": 0.5,
+                "ease": "linear"
+              },
+              {
+                "t": 23.833333333333332,
+                "value": 1,
+                "ease": "linear"
+              }
+            ]
+          },
+          "sampled_frames_by_property": {
+            "y": [
+              714.0,
+              715.0,
+              717.0,
+              720.0,
+              724.0,
+              728.0
+            ],
+            "opacity": [
+              714.0,
+              715.0
+            ]
+          },
+          "excerpt_only": true,
+          "note": "start23.8 gates frame714. Prior713 opacity1 belongs to an inactive pre-birth state; removing the lifetime gate would expose it."
+        },
+        {
+          "node_id": "phone-v17-message-Wait",
+          "json_pointer": "/layers/20/children/5",
+          "ancestor_ids": [
+            "g-1306"
+          ],
+          "role": "human entry",
+          "static_properties": {
+            "type": "image",
+            "id": "phone-v17-message-Wait",
+            "src": "assets/208aad3b79a45068-birthday-message-wait.png",
+            "x": 268,
+            "y": 569,
+            "width": 370,
+            "height": 77,
+            "start": 24.466666666666665,
+            "assetSHA256": "208aad3b79a45068c4a9aa5732cfafc52f91b73c02fef0d12ff8283214b7f1a1"
+          },
+          "path_geometry_omitted": false,
+          "full_node_in_canonical_manifest": true,
+          "keyframes": {
+            "y": [
+              {
+                "t": 24.466666666666665,
+                "value": 597.25,
+                "ease": "linear"
+              },
+              {
+                "t": 24.5,
+                "value": 587.75,
+                "ease": "linear"
+              },
+              {
+                "t": 24.566666666666666,
+                "value": 579.0,
+                "ease": "linear"
+              },
+              {
+                "t": 24.666666666666668,
+                "value": 573.75,
+                "ease": "linear"
+              },
+              {
+                "t": 24.8,
+                "value": 570.25,
+                "ease": "linear"
+              },
+              {
+                "t": 24.933333333333334,
+                "value": 569,
+                "ease": "linear"
+              }
+            ],
+            "opacity": [
+              {
+                "t": 24.466666666666665,
+                "value": 0.5,
+                "ease": "linear"
+              },
+              {
+                "t": 24.5,
+                "value": 1,
+                "ease": "linear"
+              }
+            ]
+          },
+          "sampled_frames_by_property": {
+            "y": [
+              734.0,
+              735.0,
+              737.0,
+              740.0,
+              744.0,
+              748.0
+            ],
+            "opacity": [
+              734.0,
+              735.0
+            ]
+          },
+          "excerpt_only": true,
+          "note": "Selected literal canonical keys. Omitted native samples remain necessary for exact reference replay."
+        },
+        {
+          "node_id": "phone-v17-message-Done",
+          "json_pointer": "/layers/20/children/7",
+          "ancestor_ids": [
+            "g-1306"
+          ],
+          "role": "completion entry",
+          "static_properties": {
+            "type": "image",
+            "id": "phone-v17-message-Done",
+            "src": "assets/5db7be72c996eb50-birthday-message-done.png",
+            "x": 44,
+            "y": 733,
+            "width": 314,
+            "height": 76,
+            "start": 25.666666666666668,
+            "assetSHA256": "5db7be72c996eb50ae0baf64f0c681c8d037af3ff2d340cf222c05758bc4e0e8"
+          },
+          "path_geometry_omitted": false,
+          "full_node_in_canonical_manifest": true,
+          "keyframes": {
+            "y": [
+              {
+                "t": 25.666666666666668,
+                "value": 761.0,
+                "ease": "linear"
+              },
+              {
+                "t": 25.7,
+                "value": 752.0,
+                "ease": "linear"
+              },
+              {
+                "t": 25.766666666666666,
+                "value": 743.25,
+                "ease": "linear"
+              },
+              {
+                "t": 25.866666666666667,
+                "value": 737.5,
+                "ease": "linear"
+              },
+              {
+                "t": 26.0,
+                "value": 734.5,
+                "ease": "linear"
+              },
+              {
+                "t": 26.133333333333333,
+                "value": 733,
+                "ease": "linear"
+              }
+            ],
+            "opacity": [
+              {
+                "t": 25.666666666666668,
+                "value": 0.5,
+                "ease": "linear"
+              },
+              {
+                "t": 25.7,
+                "value": 1,
+                "ease": "linear"
+              }
+            ]
+          },
+          "sampled_frames_by_property": {
+            "y": [
+              770.0,
+              771.0,
+              773.0,
+              776.0,
+              780.0,
+              784.0
+            ],
+            "opacity": [
+              770.0,
+              771.0
+            ]
+          },
+          "excerpt_only": true,
+          "note": "Selected literal canonical keys. Omitted native samples remain necessary for exact reference replay."
+        }
+      ],
+      "suggested_component_api": {
+        "status": "proposal",
+        "primitive": "ConversationActionStack",
+        "slots": [
+          "deviceHardware",
+          "header",
+          "contextMessages[]",
+          "messages[]"
+        ],
+        "controls": [
+          {
+            "name": "deviceAnchor",
+            "type": "centerX,width,parentYTrack",
+            "reference": {
+              "x": 620,
+              "width": 682,
+              "stageWidth": 1920
+            },
+            "invariant": "Share camera and preserve689→690 continuity."
+          },
+          {
+            "name": "messages[]",
+            "type": "speaker,contentAssetOrNativeText,startFrame,baseline,width,entryTrack",
+            "reference_starts": [
+              714,
+              734,
+              745,
+              770,
+              781
+            ],
+            "invariant": "Keep speaker side/color,screen margins and reading order."
+          },
+          {
+            "name": "entry",
+            "type": "lifetime+opacity+localY",
+            "reference": {
+              "firstPictureOpacity": 0.5,
+              "nextPictureOpacity": 1,
+              "initialOffsetPx": 28,
+              "keyedWindowFrames": 15
+            },
+            "invariant": "Do not remove active lifetime gates."
+          },
+          {
+            "name": "contentReplacement",
+            "type": "asset regeneration or native typeset bubble",
+            "invariant": "Longer text requires new height and following-message reflow,not glyph-image stretching."
+          }
+        ]
+      },
+      "choose_when": [
+        "An assistant demonstrates context,consent and result in one short scene.",
+        "Actual message order can prove the product benefit.",
+        "A front-facing device and consistent bubble layout fit the story."
+      ],
+      "avoid_when": [
+        "Typing is implied solely by a static empty composer/keyboard.",
+        "Longer copy is forced into an unchanged stretched bitmap.",
+        "A new perspective is expected from the same front-facing raster hardware."
+      ],
+      "failure_traps": [
+        "Camera entrance does not establish a new message arrival.",
+        "Do not duplicate pings for preexisting content carried into view.",
+        "An inactive pre-birth key must not cause early appearance.",
+        "AI body copy is not a human keyboard schedule."
+      ],
+      "editability": {
+        "native": [
+          "device camera",
+          "message lifetime/opacity/entry motion",
+          "header clip/layer order"
+        ],
+        "bounded_bitmap": [
+          "hardware/header",
+          "internal message glyphs,emoji and body pixels"
+        ],
+        "rule": "Current internal copy is artwork; replace its asset or build a new typeset/native counterpart."
+      },
+      "recommended_stills": [
+        {
+          "output_frame": 708,
+          "source_frame": 708,
+          "time": 23.6,
+          "caption": "Existing Emma context",
+          "inspect": "Device anchor before new births",
+          "selection_kind": "existing native frame index; no media generated"
+        },
+        {
+          "output_frame": 714,
+          "source_frame": 714,
+          "time": 23.8,
+          "caption": "Fuji first picture",
+          "inspect": "Half-opacity birth and initial offset",
+          "selection_kind": "existing native frame index; no media generated"
+        },
+        {
+          "output_frame": 734,
+          "source_frame": 734,
+          "time": 24.466666666666665,
+          "caption": "Human reaction",
+          "inspect": "Opposite-side blue margin",
+          "selection_kind": "existing native frame index; no media generated"
+        },
+        {
+          "output_frame": 745,
+          "source_frame": 745,
+          "time": 24.833333333333332,
+          "caption": "Human order",
+          "inspect": "Distinct entry without typing",
+          "selection_kind": "existing native frame index; no media generated"
+        },
+        {
+          "output_frame": 770,
+          "source_frame": 770,
+          "time": 25.666666666666668,
+          "caption": "Done",
+          "inspect": "Result follows consent",
+          "selection_kind": "existing native frame index; no media generated"
+        },
+        {
+          "output_frame": 781,
+          "source_frame": 781,
+          "time": 26.033333333333335,
+          "caption": "Memory follow-up",
+          "inspect": "Final beat and consistent margins",
+          "selection_kind": "existing native frame index; no media generated"
+        }
+      ],
+      "sound_anchors": [
+        {
+          "frame": 714,
+          "time": 23.8,
+          "source_frame": 714,
+          "kind": "message_arrival",
+          "group": "06.birthday_fuji",
+          "confidence": 0.98,
+          "observed_vs_inferred": "observed_visible_message_entry",
+          "action_evidence": "Native visible message/component entry; body copy is not a typing schedule.",
+          "cue_identifier": "06-gallery-ui-011",
+          "default_enabled": true,
+          "original_sound_observed": false
+        },
+        {
+          "frame": 734,
+          "time": 24.466666666666665,
+          "source_frame": 734,
+          "kind": "message_send",
+          "group": "06.birthday_wait",
+          "confidence": 0.98,
+          "observed_vs_inferred": "observed_visible_message_entry",
+          "action_evidence": "Native visible message/component entry; body copy is not a typing schedule.",
+          "cue_identifier": "06-gallery-ui-012",
+          "default_enabled": true,
+          "original_sound_observed": false
+        },
+        {
+          "frame": 745,
+          "time": 24.833333333333332,
+          "source_frame": 745,
+          "kind": "message_send",
+          "group": "06.birthday_order",
+          "confidence": 0.98,
+          "observed_vs_inferred": "observed_visible_message_entry",
+          "action_evidence": "Native visible message/component entry; body copy is not a typing schedule.",
+          "cue_identifier": "06-gallery-ui-013",
+          "default_enabled": true,
+          "original_sound_observed": false
+        },
+        {
+          "frame": 770,
+          "time": 25.666666666666668,
+          "source_frame": 770,
+          "kind": "message_arrival",
+          "group": "06.birthday_done",
+          "confidence": 0.98,
+          "observed_vs_inferred": "observed_visible_message_entry",
+          "action_evidence": "Native visible message/component entry; body copy is not a typing schedule.",
+          "cue_identifier": "06-gallery-ui-014",
+          "default_enabled": true,
+          "original_sound_observed": false
+        },
+        {
+          "frame": 781,
+          "time": 26.033333333333335,
+          "source_frame": 781,
+          "kind": "message_arrival",
+          "group": "06.birthday_remember",
+          "confidence": 0.98,
+          "observed_vs_inferred": "observed_visible_message_entry",
+          "action_evidence": "Native visible message/component entry; body copy is not a typing schedule.",
+          "cue_identifier": "06-gallery-ui-015",
+          "default_enabled": true,
+          "original_sound_observed": false
+        }
+      ],
+      "sound_direction": "Use the five actual arrival/send births. No additional Emma ping and no keyboard sound from static composer presence.",
+      "evidence": [
+        {
+          "path": "references/06-gallery/birthday-birth-v23-elements.json",
+          "sha256": "d08eabc0eb88cee56b632e9f1d98da5d14b142cad82e576adf508ae7f6695e28"
+        },
+        {
+          "path": "outputs/06-gallery/final-v23/build-birthday-birth-v23.py",
+          "sha256": "22e56e82a485bc9cfebb37f886dcc9d0ff1a2dbf1ccbc11f53308b9eafe186a5"
+        },
+        {
+          "path": "outputs/06-gallery/final-v23/accepted-helper-provenance.json",
+          "sha256": "b33289249d94a8c2ac5cbfaf504726a274b0832f29dee1c1b021686c62a0cf44"
+        },
+        {
+          "path": "verification/final/06-gallery/v23/source-gate.json",
+          "sha256": "575c070fd3ffeeac414011c1bb9e2c87039bd0bf967f8da40f02db17a28378c8"
+        }
+      ]
+    },
+    {
+      "id": "rene-word-prop-message-bridge",
+      "name": "A letter-slot prop leaves the word and leads into messages",
+      "reference": "rene",
+      "tags": [
+        "semantic-transition",
+        "type-and-object",
+        "optical-baseline",
+        "prop-motion"
+      ],
+      "study_window": {
+        "output_frames_inclusive": [
+          846,
+          1048
+        ],
+        "source_frames_inclusive": [
+          846,
+          1048
+        ],
+        "output_seconds": [
+          28.2,
+          34.93333333333333
+        ],
+        "source_seconds": [
+          28.2,
+          34.93333333333333
+        ]
+      },
+      "next_segment_guard": {
+        "output_frame": 1049,
+        "source_frame": 1230
+      },
+      "director_intent": "Make a promise concrete: football replaces the o in love,then becomes an independent prop leading toward football news. Let the viewer read the word before following the object.",
+      "visual_anatomy": [
+        "Black original glyph outlines and one photoreal ball on a sparse white1920×1080 stage. Negative space makes the semantic substitution readable.",
+        "You remains through890. Love and ball are fully opaque at891; there is no fade-from-zero or blank handoff picture.",
+        "At891 ball parentx765,y535,size156 with origin(78,78). Its painted circle aligns with ve x-height/baseline; l rises above. A single whole-word shift cannot repair independent letter/ball optical baseline errors.",
+        "l has its own origin/rotation/kicked exit. ve retreats left separately. Ball has independent x/y/scale/rotation/opacity across158 native keyed samples.",
+        "Gray news enters from the right at929 as letters retreat left; ball leads the eye around its top. Blue reaction991 and gray terms1013 keep their own entry timing."
+      ],
+      "phases": [
+        {
+          "name": "you reveal/hold",
+          "output_frames_inclusive": [
+            846,
+            890
+          ],
+          "source_frames_inclusive": [
+            846,
+            890
+          ],
+          "output_seconds": [
+            28.2,
+            29.666666666666668
+          ],
+          "source_seconds": [
+            28.2,
+            29.666666666666668
+          ],
+          "detail": "880 is a readable hold; initial846 is only faint."
+        },
+        {
+          "name": "immediate love/object handoff",
+          "output_frames_inclusive": [
+            891,
+            900
+          ],
+          "source_frames_inclusive": [
+            891,
+            900
+          ],
+          "output_seconds": [
+            29.7,
+            30.0
+          ],
+          "source_seconds": [
+            29.7,
+            30.0
+          ]
+        },
+        {
+          "name": "prop action/word retreat",
+          "output_frames_inclusive": [
+            901,
+            928
+          ],
+          "source_frames_inclusive": [
+            901,
+            928
+          ],
+          "output_seconds": [
+            30.033333333333335,
+            30.933333333333334
+          ],
+          "source_seconds": [
+            30.033333333333335,
+            30.933333333333334
+          ]
+        },
+        {
+          "name": "news entry and typography exit",
+          "output_frames_inclusive": [
+            929,
+            952
+          ],
+          "source_frames_inclusive": [
+            929,
+            952
+          ],
+          "output_seconds": [
+            30.966666666666665,
+            31.733333333333334
+          ],
+          "source_seconds": [
+            30.966666666666665,
+            31.733333333333334
+          ],
+          "detail": "l is inactive after934; ve continues through952."
+        },
+        {
+          "name": "topic reading/action field",
+          "output_frames_inclusive": [
+            953,
+            990
+          ],
+          "source_frames_inclusive": [
+            953,
+            990
+          ],
+          "output_seconds": [
+            31.766666666666666,
+            33.0
+          ],
+          "source_seconds": [
+            31.766666666666666,
+            33.0
+          ]
+        },
+        {
+          "name": "human reaction",
+          "output_frames_inclusive": [
+            991,
+            1012
+          ],
+          "source_frames_inclusive": [
+            991,
+            1012
+          ],
+          "output_seconds": [
+            33.03333333333333,
+            33.733333333333334
+          ],
+          "source_seconds": [
+            33.03333333333333,
+            33.733333333333334
+          ]
+        },
+        {
+          "name": "terms and hold",
+          "output_frames_inclusive": [
+            1013,
+            1048
+          ],
+          "source_frames_inclusive": [
+            1013,
+            1048
+          ],
+          "output_seconds": [
+            33.766666666666666,
+            34.93333333333333
+          ],
+          "source_seconds": [
+            33.766666666666666,
+            34.93333333333333
+          ],
+          "detail": "Ball positive through1042,zero1043–1048. The next output1049 maps to source1230 after omitted live action."
+        }
+      ],
+      "component_roles": [
+        {
+          "node_id": "v19-you-glyph-0",
+          "json_pointer": "/layers/1142",
+          "ancestor_ids": [],
+          "role": "y",
+          "static_properties": {
+            "type": "path",
+            "id": "v19-you-glyph-0",
+            "fill": "#000000",
+            "semanticText": "y",
+            "start": 28.2,
+            "end": 29.7
+          },
+          "path_geometry_omitted": true,
+          "full_node_in_canonical_manifest": true
+        },
+        {
+          "node_id": "v19-you-glyph-1",
+          "json_pointer": "/layers/1143",
+          "ancestor_ids": [],
+          "role": "o",
+          "static_properties": {
+            "type": "path",
+            "id": "v19-you-glyph-1",
+            "fill": "#000000",
+            "semanticText": "o",
+            "start": 28.2,
+            "end": 29.7
+          },
+          "path_geometry_omitted": true,
+          "full_node_in_canonical_manifest": true
+        },
+        {
+          "node_id": "v19-you-glyph-2",
+          "json_pointer": "/layers/1144",
+          "ancestor_ids": [],
+          "role": "u",
+          "static_properties": {
+            "type": "path",
+            "id": "v19-you-glyph-2",
+            "fill": "#000000",
+            "semanticText": "u",
+            "start": 28.2,
+            "end": 29.7
+          },
+          "path_geometry_omitted": true,
+          "full_node_in_canonical_manifest": true
+        },
+        {
+          "node_id": "v19-love-kicked-l",
+          "json_pointer": "/layers/1146",
+          "ancestor_ids": [],
+          "role": "independent l",
+          "static_properties": {
+            "type": "group",
+            "id": "v19-love-kicked-l",
+            "start": 29.7,
+            "end": 31.166666666666668,
+            "originX": 706.5045611827619,
+            "originY": 580.5
+          },
+          "path_geometry_omitted": false,
+          "full_node_in_canonical_manifest": true
+        },
+        {
+          "node_id": "v19-love-measured-letters",
+          "json_pointer": "/layers/1145",
+          "ancestor_ids": [],
+          "role": "ve fragment",
+          "static_properties": {
+            "type": "group",
+            "id": "v19-love-measured-letters",
+            "start": 29.7,
+            "end": 31.766666666666666
+          },
+          "path_geometry_omitted": false,
+          "full_node_in_canonical_manifest": true
+        },
+        {
+          "node_id": "v19-soccer-measured-ball",
+          "json_pointer": "/layers/1150",
+          "ancestor_ids": [],
+          "role": "physical prop",
+          "static_properties": {
+            "type": "group",
+            "id": "v19-soccer-measured-ball",
+            "start": 29.7,
+            "end": 34.96666666666667,
+            "originX": 78,
+            "originY": 78
+          },
+          "path_geometry_omitted": false,
+          "full_node_in_canonical_manifest": true
+        },
+        {
+          "node_id": "v19-soccer-first-message",
+          "json_pointer": "/layers/1147",
+          "ancestor_ids": [],
+          "role": "topic proof",
+          "static_properties": {
+            "type": "group",
+            "id": "v19-soccer-first-message",
+            "start": 30.966666666666665,
+            "end": 34.96666666666667,
+            "originX": 655.1219495467185,
+            "originY": 275.3930018829574
+          },
+          "path_geometry_omitted": false,
+          "full_node_in_canonical_manifest": true
+        },
+        {
+          "node_id": "v19-soccer-blue-message",
+          "json_pointer": "/layers/1148",
+          "ancestor_ids": [],
+          "role": "human response",
+          "static_properties": {
+            "type": "group",
+            "id": "v19-soccer-blue-message",
+            "start": 33.03333333333333,
+            "end": 34.96666666666667,
+            "originX": 1345.089762723233,
+            "originY": 519.9423157541712
+          },
+          "path_geometry_omitted": false,
+          "full_node_in_canonical_manifest": true
+        },
+        {
+          "node_id": "v19-soccer-second-message",
+          "json_pointer": "/layers/1149",
+          "ancestor_ids": [],
+          "role": "follow-up",
+          "static_properties": {
+            "type": "group",
+            "id": "v19-soccer-second-message",
+            "start": 33.766666666666666,
+            "end": 34.96666666666667,
+            "originX": 629.3244854804193,
+            "originY": 777.1488217326975
+          },
+          "path_geometry_omitted": false,
+          "full_node_in_canonical_manifest": true
+        }
+      ],
+      "property_keyframe_snippets": [
+        {
+          "node_id": "v19-love-measured-letters",
+          "json_pointer": "/layers/1145",
+          "ancestor_ids": [],
+          "role": "ve settle/retreat",
+          "static_properties": {
+            "type": "group",
+            "id": "v19-love-measured-letters",
+            "start": 29.7,
+            "end": 31.766666666666666
+          },
+          "path_geometry_omitted": false,
+          "full_node_in_canonical_manifest": true,
+          "keyframes": {
+            "x": [
+              {
+                "t": 29.7,
+                "value": 0.0,
+                "ease": "linear"
+              },
+              {
+                "t": 29.733333333333334,
+                "value": 0.0,
+                "ease": "linear"
+              },
+              {
+                "t": 30.0,
+                "value": -8.0,
+                "ease": "linear"
+              },
+              {
+                "t": 30.5,
+                "value": -90.0,
+                "ease": "linear"
+              },
+              {
+                "t": 30.966666666666665,
+                "value": -774.0,
+                "ease": "linear"
+              },
+              {
+                "t": 31.333333333333332,
+                "value": -998.0,
+                "ease": "linear"
+              },
+              {
+                "t": 31.733333333333334,
+                "value": -1196.816469394542,
+                "ease": "linear"
+              }
+            ],
+            "y": [
+              {
+                "t": 29.7,
+                "value": 0.0,
+                "ease": "linear"
+              },
+              {
+                "t": 29.733333333333334,
+                "value": -24.0,
+                "ease": "linear"
+              },
+              {
+                "t": 30.0,
+                "value": -42.0,
+                "ease": "linear"
+              },
+              {
+                "t": 30.5,
+                "value": -43.0,
+                "ease": "linear"
+              },
+              {
+                "t": 30.966666666666665,
+                "value": -43.0,
+                "ease": "linear"
+              },
+              {
+                "t": 31.333333333333332,
+                "value": -43.0,
+                "ease": "linear"
+              },
+              {
+                "t": 31.733333333333334,
+                "value": -43.02086208475706,
+                "ease": "linear"
+              }
+            ],
+            "opacity": [
+              {
+                "t": 29.7,
+                "value": 1.0,
+                "ease": "linear"
+              },
+              {
+                "t": 29.733333333333334,
+                "value": 1.0,
+                "ease": "linear"
+              },
+              {
+                "t": 30.0,
+                "value": 1.0,
+                "ease": "linear"
+              },
+              {
+                "t": 30.5,
+                "value": 1.0,
+                "ease": "linear"
+              },
+              {
+                "t": 30.966666666666665,
+                "value": 1.0,
+                "ease": "linear"
+              },
+              {
+                "t": 31.333333333333332,
+                "value": 1.0,
+                "ease": "linear"
+              },
+              {
+                "t": 31.733333333333334,
+                "value": 1.0,
+                "ease": "linear"
+              }
+            ]
+          },
+          "sampled_frames_by_property": {
+            "x": [
+              891.0,
+              892.0,
+              900.0,
+              915.0,
+              929.0,
+              940.0,
+              952.0
+            ],
+            "y": [
+              891.0,
+              892.0,
+              900.0,
+              915.0,
+              929.0,
+              940.0,
+              952.0
+            ],
+            "opacity": [
+              891.0,
+              892.0,
+              900.0,
+              915.0,
+              929.0,
+              940.0,
+              952.0
+            ]
+          },
+          "excerpt_only": true,
+          "note": "Selected literal canonical keys. Omitted native samples remain necessary for exact reference replay."
+        },
+        {
+          "node_id": "v19-love-kicked-l",
+          "json_pointer": "/layers/1146",
+          "ancestor_ids": [],
+          "role": "independent l motion",
+          "static_properties": {
+            "type": "group",
+            "id": "v19-love-kicked-l",
+            "start": 29.7,
+            "end": 31.166666666666668,
+            "originX": 706.5045611827619,
+            "originY": 580.5
+          },
+          "path_geometry_omitted": false,
+          "full_node_in_canonical_manifest": true,
+          "keyframes": {
+            "x": [
+              {
+                "t": 29.7,
+                "value": 0.0,
+                "ease": "linear"
+              },
+              {
+                "t": 29.733333333333334,
+                "value": -0.004561182761904092,
+                "ease": "linear"
+              },
+              {
+                "t": 30.0,
+                "value": -8.004561182761904,
+                "ease": "linear"
+              },
+              {
+                "t": 30.5,
+                "value": -82.00559539119467,
+                "ease": "linear"
+              },
+              {
+                "t": 30.966666666666665,
+                "value": -774.4936170580327,
+                "ease": "linear"
+              },
+              {
+                "t": 31.133333333333333,
+                "value": -1138.7352672457328,
+                "ease": "linear"
+              }
+            ],
+            "y": [
+              {
+                "t": 29.7,
+                "value": 0.0,
+                "ease": "linear"
+              },
+              {
+                "t": 29.733333333333334,
+                "value": -23.5,
+                "ease": "linear"
+              },
+              {
+                "t": 30.0,
+                "value": -42.0,
+                "ease": "linear"
+              },
+              {
+                "t": 30.5,
+                "value": -43.383691328560076,
+                "ease": "linear"
+              },
+              {
+                "t": 30.966666666666665,
+                "value": -44.87913333352844,
+                "ease": "linear"
+              },
+              {
+                "t": 31.133333333333333,
+                "value": -46.24853841408844,
+                "ease": "linear"
+              }
+            ],
+            "rotation": [
+              {
+                "t": 29.7,
+                "value": 0.0,
+                "ease": "linear"
+              },
+              {
+                "t": 29.733333333333334,
+                "value": 0.0,
+                "ease": "linear"
+              },
+              {
+                "t": 30.0,
+                "value": 0.0,
+                "ease": "linear"
+              },
+              {
+                "t": 30.5,
+                "value": -5.515825891493211,
+                "ease": "linear"
+              },
+              {
+                "t": 30.966666666666665,
+                "value": -3.5289184179532236,
+                "ease": "linear"
+              },
+              {
+                "t": 31.133333333333333,
+                "value": -3.5289184179532236,
+                "ease": "linear"
+              }
+            ],
+            "opacity": [
+              {
+                "t": 29.7,
+                "value": 1.0,
+                "ease": "linear"
+              },
+              {
+                "t": 29.733333333333334,
+                "value": 1.0,
+                "ease": "linear"
+              },
+              {
+                "t": 30.0,
+                "value": 1.0,
+                "ease": "linear"
+              },
+              {
+                "t": 30.5,
+                "value": 1.0,
+                "ease": "linear"
+              },
+              {
+                "t": 30.966666666666665,
+                "value": 1.0,
+                "ease": "linear"
+              },
+              {
+                "t": 31.133333333333333,
+                "value": 0.0,
+                "ease": "linear"
+              }
+            ]
+          },
+          "sampled_frames_by_property": {
+            "x": [
+              891.0,
+              892.0,
+              900.0,
+              915.0,
+              929.0,
+              934.0
+            ],
+            "y": [
+              891.0,
+              892.0,
+              900.0,
+              915.0,
+              929.0,
+              934.0
+            ],
+            "rotation": [
+              891.0,
+              892.0,
+              900.0,
+              915.0,
+              929.0,
+              934.0
+            ],
+            "opacity": [
+              891.0,
+              892.0,
+              900.0,
+              915.0,
+              929.0,
+              934.0
+            ]
+          },
+          "excerpt_only": true,
+          "note": "Selected literal canonical keys. Omitted native samples remain necessary for exact reference replay."
+        },
+        {
+          "node_id": "v19-soccer-measured-ball",
+          "json_pointer": "/layers/1150",
+          "ancestor_ids": [],
+          "role": "ball and explicit retirement",
+          "static_properties": {
+            "type": "group",
+            "id": "v19-soccer-measured-ball",
+            "start": 29.7,
+            "end": 34.96666666666667,
+            "originX": 78,
+            "originY": 78
+          },
+          "path_geometry_omitted": false,
+          "full_node_in_canonical_manifest": true,
+          "keyframes": {
+            "x": [
+              {
+                "t": 29.7,
+                "value": 765.0,
+                "ease": "linear"
+              },
+              {
+                "t": 29.733333333333334,
+                "value": 764.5661782368702,
+                "ease": "linear"
+              },
+              {
+                "t": 30.0,
+                "value": 755.8752905588971,
+                "ease": "linear"
+              },
+              {
+                "t": 30.766666666666666,
+                "value": 502.6327261774503,
+                "ease": "linear"
+              },
+              {
+                "t": 31.666666666666668,
+                "value": 799.0470155956194,
+                "ease": "linear"
+              },
+              {
+                "t": 33.03333333333333,
+                "value": 1069.1562096087596,
+                "ease": "linear"
+              },
+              {
+                "t": 33.766666666666666,
+                "value": 1210.3052179319507,
+                "ease": "linear"
+              },
+              {
+                "t": 34.733333333333334,
+                "value": 1886.583896220543,
+                "ease": "linear"
+              },
+              {
+                "t": 34.766666666666666,
+                "value": 1906.3824204217462,
+                "ease": "linear"
+              },
+              {
+                "t": 34.93333333333333,
+                "value": 2005.375041427762,
+                "ease": "linear"
+              }
+            ],
+            "y": [
+              {
+                "t": 29.7,
+                "value": 535.0,
+                "ease": "linear"
+              },
+              {
+                "t": 29.733333333333334,
+                "value": 488.4793536659716,
+                "ease": "linear"
+              },
+              {
+                "t": 30.0,
+                "value": 449.30733331892134,
+                "ease": "linear"
+              },
+              {
+                "t": 30.766666666666666,
+                "value": 491.8644998069169,
+                "ease": "linear"
+              },
+              {
+                "t": 31.666666666666668,
+                "value": 251.9935527160913,
+                "ease": "linear"
+              },
+              {
+                "t": 33.03333333333333,
+                "value": 78.24807889572273,
+                "ease": "linear"
+              },
+              {
+                "t": 33.766666666666666,
+                "value": 310.95478189581286,
+                "ease": "linear"
+              },
+              {
+                "t": 34.733333333333334,
+                "value": 469.0641803483992,
+                "ease": "linear"
+              },
+              {
+                "t": 34.766666666666666,
+                "value": 484.22838318103607,
+                "ease": "linear"
+              },
+              {
+                "t": 34.93333333333333,
+                "value": 560.0493973442204,
+                "ease": "linear"
+              }
+            ],
+            "scaleX": [
+              {
+                "t": 29.7,
+                "value": 1.0,
+                "ease": "linear"
+              },
+              {
+                "t": 29.733333333333334,
+                "value": 1.0014650480569343,
+                "ease": "linear"
+              },
+              {
+                "t": 30.0,
+                "value": 1.0011013459777414,
+                "ease": "linear"
+              },
+              {
+                "t": 30.766666666666666,
+                "value": 1.0019255962568938,
+                "ease": "linear"
+              },
+              {
+                "t": 31.666666666666668,
+                "value": 0.993994465127264,
+                "ease": "linear"
+              },
+              {
+                "t": 33.03333333333333,
+                "value": 0.8899347644156487,
+                "ease": "linear"
+              },
+              {
+                "t": 33.766666666666666,
+                "value": 0.8725634319081461,
+                "ease": "linear"
+              },
+              {
+                "t": 34.733333333333334,
+                "value": 0.8148840415499256,
+                "ease": "linear"
+              },
+              {
+                "t": 34.766666666666666,
+                "value": 0.8148840415499256,
+                "ease": "linear"
+              },
+              {
+                "t": 34.93333333333333,
+                "value": 0.8148840415499256,
+                "ease": "linear"
+              }
+            ],
+            "rotation": [
+              {
+                "t": 29.7,
+                "value": -0.00394087778865999,
+                "ease": "linear"
+              },
+              {
+                "t": 29.733333333333334,
+                "value": -8.735337674868106,
+                "ease": "linear"
+              },
+              {
+                "t": 30.0,
+                "value": -19.35189649973296,
+                "ease": "linear"
+              },
+              {
+                "t": 30.766666666666666,
+                "value": -31.026915298880624,
+                "ease": "linear"
+              },
+              {
+                "t": 31.666666666666668,
+                "value": -537.3747280363418,
+                "ease": "linear"
+              },
+              {
+                "t": 33.03333333333333,
+                "value": -410.0104925225887,
+                "ease": "linear"
+              },
+              {
+                "t": 33.766666666666666,
+                "value": -265.6547846948023,
+                "ease": "linear"
+              },
+              {
+                "t": 34.733333333333334,
+                "value": 58.53454183117755,
+                "ease": "linear"
+              },
+              {
+                "t": 34.766666666666666,
+                "value": 58.53454183117755,
+                "ease": "linear"
+              },
+              {
+                "t": 34.93333333333333,
+                "value": 58.53454183117755,
+                "ease": "linear"
+              }
+            ],
+            "opacity": [
+              {
+                "t": 29.7,
+                "value": 1.0,
+                "ease": "linear"
+              },
+              {
+                "t": 29.733333333333334,
+                "value": 1.0,
+                "ease": "linear"
+              },
+              {
+                "t": 30.0,
+                "value": 1.0,
+                "ease": "linear"
+              },
+              {
+                "t": 30.766666666666666,
+                "value": 1.0,
+                "ease": "linear"
+              },
+              {
+                "t": 31.666666666666668,
+                "value": 1.0,
+                "ease": "linear"
+              },
+              {
+                "t": 33.03333333333333,
+                "value": 1.0,
+                "ease": "linear"
+              },
+              {
+                "t": 33.766666666666666,
+                "value": 1.0,
+                "ease": "linear"
+              },
+              {
+                "t": 34.733333333333334,
+                "value": 1.0,
+                "ease": "linear"
+              },
+              {
+                "t": 34.766666666666666,
+                "value": 0.0,
+                "ease": "linear"
+              },
+              {
+                "t": 34.93333333333333,
+                "value": 0.0,
+                "ease": "linear"
+              }
+            ]
+          },
+          "sampled_frames_by_property": {
+            "x": [
+              891.0,
+              892.0,
+              900.0,
+              923.0,
+              950.0,
+              991.0,
+              1013.0,
+              1042.0,
+              1043.0,
+              1048.0
+            ],
+            "y": [
+              891.0,
+              892.0,
+              900.0,
+              923.0,
+              950.0,
+              991.0,
+              1013.0,
+              1042.0,
+              1043.0,
+              1048.0
+            ],
+            "scaleX": [
+              891.0,
+              892.0,
+              900.0,
+              923.0,
+              950.0,
+              991.0,
+              1013.0,
+              1042.0,
+              1043.0,
+              1048.0
+            ],
+            "rotation": [
+              891.0,
+              892.0,
+              900.0,
+              923.0,
+              950.0,
+              991.0,
+              1013.0,
+              1042.0,
+              1043.0,
+              1048.0
+            ],
+            "opacity": [
+              891.0,
+              892.0,
+              900.0,
+              923.0,
+              950.0,
+              991.0,
+              1013.0,
+              1042.0,
+              1043.0,
+              1048.0
+            ]
+          },
+          "excerpt_only": true,
+          "note": "Selected literal canonical keys. Omitted native samples remain necessary for exact reference replay."
+        },
+        {
+          "node_id": "v19-soccer-blue-message",
+          "json_pointer": "/layers/1148",
+          "ancestor_ids": [],
+          "role": "human response,not input typing",
+          "static_properties": {
+            "type": "group",
+            "id": "v19-soccer-blue-message",
+            "start": 33.03333333333333,
+            "end": 34.96666666666667,
+            "originX": 1345.089762723233,
+            "originY": 519.9423157541712
+          },
+          "path_geometry_omitted": false,
+          "full_node_in_canonical_manifest": true,
+          "keyframes": {
+            "y": [
+              {
+                "t": 33.03333333333333,
+                "value": 102.6150296688055,
+                "ease": "linear"
+              },
+              {
+                "t": 33.06666666666667,
+                "value": 76.4047471559021,
+                "ease": "linear"
+              },
+              {
+                "t": 33.1,
+                "value": 61.51940025851536,
+                "ease": "linear"
+              },
+              {
+                "t": 33.733333333333334,
+                "value": 0.11738521575068717,
+                "ease": "linear"
+              }
+            ],
+            "opacity": [
+              {
+                "t": 33.03333333333333,
+                "value": 0.2590909004211426,
+                "ease": "linear"
+              },
+              {
+                "t": 33.06666666666667,
+                "value": 0.7409090995788574,
+                "ease": "linear"
+              },
+              {
+                "t": 33.1,
+                "value": 1.0,
+                "ease": "linear"
+              },
+              {
+                "t": 33.733333333333334,
+                "value": 1.0,
+                "ease": "linear"
+              }
+            ]
+          },
+          "sampled_frames_by_property": {
+            "y": [
+              991.0,
+              992.0,
+              993.0,
+              1012.0
+            ],
+            "opacity": [
+              991.0,
+              992.0,
+              993.0,
+              1012.0
+            ]
+          },
+          "excerpt_only": true,
+          "note": "Selected literal canonical keys. Omitted native samples remain necessary for exact reference replay."
+        }
+      ],
+      "suggested_component_api": {
+        "status": "proposal",
+        "primitive": "WordPropBridge",
+        "slots": [
+          "beforeGlyphs[]",
+          "afterGlyphFragments[]",
+          "transparentProp",
+          "incomingMessage",
+          "humanReaction",
+          "followup"
+        ],
+        "controls": [
+          {
+            "name": "handoffFrame",
+            "type": "native frame",
+            "reference": 891,
+            "invariant": "Old word ends891 exclusive; replacement is fully visible891."
+          },
+          {
+            "name": "opticalAnchors",
+            "type": "per-fragment origin/baseline",
+            "reference": {
+              "propXY": [
+                765,
+                535
+              ],
+              "propSize": [
+                156,
+                156
+              ],
+              "propOrigin": [
+                78,
+                78
+              ]
+            },
+            "invariant": "Fit l,ve and ball separately."
+          },
+          {
+            "name": "propTrack",
+            "type": "x/y/scale/rotation/opacity",
+            "invariant": "Lead the gaze toward real next information,not purposeless motion."
+          },
+          {
+            "name": "wordRetreat",
+            "type": "independent fragments",
+            "invariant": "Maintain enough reading time before fragments leave."
+          },
+          {
+            "name": "messageEntries",
+            "type": "independent lifetimes/pop tracks",
+            "reference": [
+              929,
+              991,
+              1013
+            ],
+            "invariant": "Proof,response and follow-up keep separate causal beats."
+          }
+        ]
+      },
+      "choose_when": [
+        "A concrete object can naturally replace part of a promise/interest word.",
+        "A terse marketing line should bridge into topic-specific UI proof.",
+        "Sparse composition supports both large type and later chat."
+      ],
+      "avoid_when": [
+        "The icon makes the word ambiguous or changes its meaning.",
+        "The prop has no relationship to the next information.",
+        "One word bitmap/global transform is expected to preserve different optical baselines."
+      ],
+      "failure_traps": [
+        "Earlier fade-from-zero made891 blank; the proper handoff is immediate presence plus independent motion.",
+        "Letters were previously about42–45px too low while ball was too high. A global shift could not fix both; fit components separately.",
+        "Word animation is not a keyboard event.",
+        "Do not continue the source clock identically across the live-action cut."
+      ],
+      "editability": {
+        "native": [
+          "original glyph outlines/semantic strings",
+          "l/ve transforms and lifetimes",
+          "ball pose/rotation/opacity",
+          "message bodies/outlined copy/entry motion"
+        ],
+        "bounded_bitmap": [
+          "one genuine static transparent football",
+          "authentic siren/emoji detail where declared"
+        ],
+        "rule": "Fitted motion is not recovered original project physics. No source-video or full-frame playback layer."
+      },
+      "recommended_stills": [
+        {
+          "output_frame": 880,
+          "source_frame": 880,
+          "time": 29.333333333333332,
+          "caption": "Readable you",
+          "inspect": "Starting semantic composition",
+          "selection_kind": "existing native frame index; no media generated"
+        },
+        {
+          "output_frame": 891,
+          "source_frame": 891,
+          "time": 29.7,
+          "caption": "Love with football o",
+          "inspect": "Immediate handoff and optical baseline",
+          "selection_kind": "existing native frame index; no media generated"
+        },
+        {
+          "output_frame": 923,
+          "source_frame": 923,
+          "time": 30.766666666666666,
+          "caption": "Prop before UI",
+          "inspect": "Separate object/word motion",
+          "selection_kind": "existing native frame index; no media generated"
+        },
+        {
+          "output_frame": 950,
+          "source_frame": 950,
+          "time": 31.666666666666668,
+          "caption": "News enters under ball",
+          "inspect": "Transition into product proof",
+          "selection_kind": "existing native frame index; no media generated"
+        },
+        {
+          "output_frame": 991,
+          "source_frame": 991,
+          "time": 33.03333333333333,
+          "caption": "Blue reaction",
+          "inspect": "Topic becomes a conversation",
+          "selection_kind": "existing native frame index; no media generated"
+        },
+        {
+          "output_frame": 1013,
+          "source_frame": 1013,
+          "time": 33.766666666666666,
+          "caption": "Terms follow-up",
+          "inspect": "Independent next beat before the cut",
+          "selection_kind": "existing native frame index; no media generated"
+        }
+      ],
+      "sound_anchors": [
+        {
+          "frame": 929,
+          "time": 30.966666666666665,
+          "source_frame": 929,
+          "kind": "message_arrival",
+          "group": "06.soccer_news",
+          "confidence": 0.98,
+          "observed_vs_inferred": "observed_visible_message_entry",
+          "action_evidence": "Native visible message/component entry; body copy is not a typing schedule.",
+          "cue_identifier": "06-gallery-ui-016",
+          "default_enabled": true,
+          "original_sound_observed": false
+        },
+        {
+          "frame": 991,
+          "time": 33.03333333333333,
+          "source_frame": 991,
+          "kind": "message_send",
+          "group": "06.soccer_reaction",
+          "confidence": 0.98,
+          "observed_vs_inferred": "observed_visible_message_entry",
+          "action_evidence": "Native visible message/component entry; body copy is not a typing schedule.",
+          "cue_identifier": "06-gallery-ui-017",
+          "default_enabled": true,
+          "original_sound_observed": false
+        },
+        {
+          "frame": 1013,
+          "time": 33.766666666666666,
+          "source_frame": 1013,
+          "kind": "message_arrival",
+          "group": "06.soccer_terms",
+          "confidence": 0.98,
+          "observed_vs_inferred": "observed_visible_message_entry",
+          "action_evidence": "Native visible message/component entry; body copy is not a typing schedule.",
+          "cue_identifier": "06-gallery-ui-018",
+          "default_enabled": true,
+          "original_sound_observed": false
+        }
+      ],
+      "sound_direction": "Default cues are message entries929/991/1013. An accent at891 or a ball bounce is optional creative motion sound,not observed original UI audio. No word keystrokes/music-beat tap inference.",
+      "evidence": [
+        {
+          "path": "references/06-gallery/word-v19-patch.json",
+          "sha256": "90c53875bba9b0c6915144c58c90d313613fde665b59e8e83e96c5e6f727f570"
+        },
+        {
+          "path": "references/06-gallery/soccer-v19-patch.json",
+          "sha256": "a1ad4a092de4e49da8301ac054af531b3a7845486f3f26808502d64e9a610850"
+        },
+        {
+          "path": "verification/final/06-gallery/v23/source-gate.json",
+          "sha256": "575c070fd3ffeeac414011c1bb9e2c87039bd0bf967f8da40f02db17a28378c8"
+        }
+      ]
+    }
+  ],
+  "derivation_note": {
+    "inspection": "Accepted manifests,existing native stills and source/evidence/helper data read only.",
+    "corrected_integration_failure": "First serialization attempt expected id on optional inferred sound events. Those intentionally expose group but no id,causing a KeyError before file write. Retry uses group as optional cue identifier; required visual/source fields remain exact."
+  },
+  "validation": {
+    "recipes": 4,
+    "recommended_stills": 24,
+    "node_pointer_checks": 50,
+    "literal_keyframe_checks": 228,
+    "canonical_hashes_unchanged": true,
+    "all_sound_anchors_inside_study_windows": true,
+    "source_output_mapping_checked": true,
+    "no_new_still_or_media_render": true,
+    "only_output_file": "skill-upgrade/linq-rene-recipes.json"
+  }
+}

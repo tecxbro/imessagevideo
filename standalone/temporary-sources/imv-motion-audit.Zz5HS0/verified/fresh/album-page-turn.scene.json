@@ -1,0 +1,311 @@
+{
+  "width": 720,
+  "height": 480,
+  "fps": 30,
+  "duration": 2.4,
+  "background": "#dce7f1",
+  "title": "Turn one album leaf across a visible spine",
+  "source": {
+    "path": "packs/media.mjs#album-page-turn",
+    "sourceStart": 0,
+    "sourceEnd": 2.4,
+    "notes": "Motion-authored shot. Gesture and timing are illustrative."
+  },
+  "layers": [
+    {
+      "id": "surface",
+      "type": "rect",
+      "x": 110,
+      "y": 44,
+      "width": 500,
+      "height": 392,
+      "fill": "#ffffff",
+      "radius": 18
+    },
+    {
+      "id": "stage",
+      "type": "group",
+      "x": 110,
+      "y": 98,
+      "children": [
+        {
+          "id": "page-cover",
+          "type": "rect",
+          "x": 81,
+          "y": 48,
+          "width": 338,
+          "height": 196,
+          "fill": "#243344",
+          "radius": 17
+        },
+        {
+          "id": "static-old-left",
+          "type": "group",
+          "x": 92,
+          "y": 57,
+          "children": [
+            {
+              "id": "static-old-left-image",
+              "type": "image",
+              "src": "/Users/darshan/Documents/ChatGPT/imessage-video/codex-trial/skill/imessage-motion-recreation/motion/assets/landscape-1.png",
+              "x": 0,
+              "y": 0,
+              "width": 158,
+              "height": 178
+            }
+          ],
+          "clip": {
+            "x": 0,
+            "y": 0,
+            "width": 158,
+            "height": 178,
+            "radius": 5
+          }
+        },
+        {
+          "id": "static-new-right",
+          "type": "group",
+          "x": 250,
+          "y": 57,
+          "children": [
+            {
+              "id": "static-new-right-image",
+              "type": "image",
+              "src": "/Users/darshan/Documents/ChatGPT/imessage-video/codex-trial/skill/imessage-motion-recreation/motion/assets/landscape-2.png",
+              "x": 0,
+              "y": 0,
+              "width": 158,
+              "height": 178
+            }
+          ],
+          "clip": {
+            "x": 0,
+            "y": 0,
+            "width": 158,
+            "height": 178,
+            "radius": 5
+          }
+        },
+        {
+          "id": "turning-front",
+          "type": "group",
+          "x": 250,
+          "y": 57,
+          "children": [
+            {
+              "id": "turning-front-image",
+              "type": "image",
+              "src": "/Users/darshan/Documents/ChatGPT/imessage-video/codex-trial/skill/imessage-motion-recreation/motion/assets/landscape-3.png",
+              "x": 0,
+              "y": 0,
+              "width": 158,
+              "height": 178
+            }
+          ],
+          "clip": {
+            "x": 0,
+            "y": 0,
+            "width": 158,
+            "height": 178,
+            "radius": 5
+          },
+          "keyframes": {
+            "scaleX": [
+              {
+                "t": 0,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 0.552,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 1.152,
+                "value": 0.008,
+                "ease": "easeIn"
+              }
+            ],
+            "opacity": [
+              {
+                "t": 0,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 1.152,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 1.176,
+                "value": 0,
+                "ease": "hold"
+              }
+            ]
+          }
+        },
+        {
+          "id": "turning-back",
+          "type": "group",
+          "x": 92,
+          "y": 57,
+          "children": [
+            {
+              "id": "turning-back-image",
+              "type": "image",
+              "src": "/Users/darshan/Documents/ChatGPT/imessage-video/codex-trial/skill/imessage-motion-recreation/motion/assets/landscape-4.png",
+              "x": 0,
+              "y": 0,
+              "width": 158,
+              "height": 178
+            }
+          ],
+          "clip": {
+            "x": 0,
+            "y": 0,
+            "width": 158,
+            "height": 178,
+            "radius": 5
+          },
+          "originX": 158,
+          "keyframes": {
+            "scaleX": [
+              {
+                "t": 0,
+                "value": 0.008,
+                "ease": "linear"
+              },
+              {
+                "t": 1.176,
+                "value": 0.008,
+                "ease": "linear"
+              },
+              {
+                "t": 1.7999999999999998,
+                "value": 1,
+                "ease": "easeOut"
+              }
+            ],
+            "opacity": [
+              {
+                "t": 0,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 1.176,
+                "value": 1,
+                "ease": "hold"
+              }
+            ]
+          }
+        },
+        {
+          "id": "album-crease",
+          "type": "rect",
+          "x": 247,
+          "y": 56,
+          "width": 6,
+          "height": 180,
+          "fill": "#142031",
+          "radius": 2,
+          "opacity": 0.6
+        }
+      ],
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 500,
+        "height": 298
+      }
+    },
+    {
+      "id": "footer",
+      "type": "group",
+      "x": 110,
+      "y": 396,
+      "children": [
+        {
+          "id": "footer-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 40,
+          "fill": "#f2f6fb",
+          "radius": 12
+        }
+      ]
+    },
+    {
+      "id": "heading",
+      "type": "group",
+      "x": 110,
+      "y": 44,
+      "children": [
+        {
+          "id": "heading-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 54,
+          "fill": "#f2f6fb",
+          "radius": 13
+        },
+        {
+          "id": "heading-copy",
+          "type": "text",
+          "text": "Alpine field notes",
+          "x": 26,
+          "y": 13,
+          "fontSize": 23,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#182737",
+          "fontWeight": 700
+        }
+      ]
+    }
+  ],
+  "timeline": {
+    "version": 1,
+    "picture": {
+      "fpsNum": 30,
+      "fpsDen": 1,
+      "frameCount": 72
+    },
+    "initialUI": null,
+    "events": [
+      {
+        "id": "motion.album-page-turn.page-edge-lift",
+        "kind": "drag",
+        "target": "turning-front",
+        "frame": 17,
+        "layerIds": [
+          "turning-front"
+        ]
+      },
+      {
+        "id": "motion.album-page-turn.page-spine-cross",
+        "kind": "gesture_change",
+        "target": "turning-back",
+        "frame": 36,
+        "layerIds": [
+          "turning-back"
+        ]
+      },
+      {
+        "id": "motion.album-page-turn.page-settle",
+        "kind": "gesture_end",
+        "target": "turning-back",
+        "frame": 54,
+        "layerIds": [
+          "turning-back"
+        ]
+      }
+    ],
+    "cues": []
+  }
+}

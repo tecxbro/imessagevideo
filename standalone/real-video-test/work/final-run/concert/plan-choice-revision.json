@@ -1,0 +1,71 @@
+{
+  "format": 1,
+  "plan": {
+    "mode": "director",
+    "fps": 30,
+    "brief": "Jo and Tessa get Afterglow tickets. Show how they decide where to sit and confirm both tickets.",
+    "shots": [
+      {
+        "id": "open",
+        "frames": 108,
+        "purpose": "Establish a concrete invitation.",
+        "visual": "Jo sends a draft into the conversation.",
+        "motion": {
+          "kind": "seed",
+          "id": "draft-send-flight"
+        },
+        "copy": "Tickets for Afterglow?",
+        "copy_key": "copy",
+        "bindings": {
+          "heading": "Jo + Tessa",
+          "reply": "Presale just opened."
+        },
+        "preview": "proof-open/preview.mp4",
+        "code": "proof-open/scene.json",
+        "board": "proof-open/board.png"
+      },
+      {
+        "id": "choice",
+        "frames": 96,
+        "purpose": "Make it clear exactly which earlier message the answer refers to.",
+        "visual": "Tessa drags only the seating question. It returns to its slot while the quoted copy opens above the composer.",
+        "motion": {
+          "kind": "seed",
+          "id": "swipe-to-quote"
+        },
+        "copy": "Floor or balcony?",
+        "copy_key": "copy",
+        "bindings": {
+          "heading": "Jo + Tessa",
+          "reply": "Tickets for Afterglow?",
+          "title": "Replying to Jo"
+        }
+      },
+      {
+        "id": "payoff",
+        "frames": 108,
+        "purpose": "Confirm that both friends have a ticket.",
+        "visual": "The confirmation leaves the composer and settles below the plan.",
+        "motion": {
+          "kind": "seed",
+          "id": "draft-send-flight"
+        },
+        "copy": "Got both tickets!",
+        "copy_key": "copy",
+        "bindings": {
+          "heading": "Jo + Tessa",
+          "reply": "Floor works for me."
+        },
+        "preview": "proof-payoff/preview.mp4",
+        "code": "proof-payoff/scene.json",
+        "board": "proof-payoff/board.png"
+      }
+    ],
+    "confirmation": true
+  },
+  "project_root": ".",
+  "derived_from": {
+    "revision": "5effbeb9a5e10b338abcbfa31de4b35b589712e9817ed7fdc2cb8a21070956ba",
+    "changed_shot": "choice"
+  }
+}

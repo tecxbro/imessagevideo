@@ -1,0 +1,93 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 24,
+    "fpsDen": 1,
+    "frameCount": 114
+  },
+  "sampleRate": 48000,
+  "sampleCount": 228000,
+  "initialUI": {
+    "conversationId": "pickup",
+    "messages": [
+      {
+        "id": "arriving",
+        "senderId": "jamie",
+        "text": "I’m outside the library.",
+        "attachmentIds": [],
+        "reactions": {},
+        "edited": false,
+        "receipt": ""
+      },
+      {
+        "id": "door",
+        "senderId": "jamie",
+        "text": "Near the blue doors.",
+        "attachmentIds": [],
+        "reactions": {},
+        "edited": false,
+        "receipt": ""
+      }
+    ],
+    "composer": {
+      "text": "",
+      "focused": false,
+      "keyboardVisible": false
+    },
+    "viewport": {
+      "surface": "conversation",
+      "anchorMessageId": "door",
+      "scrollOffset": 0
+    },
+    "typingSenderIds": []
+  },
+  "events": [
+    {
+      "id": "remote-typing",
+      "kind": "typing",
+      "target": "jamie",
+      "frame": 10,
+      "uiState": {
+        "conversationId": "pickup",
+        "messages": [
+          {
+            "id": "arriving",
+            "senderId": "jamie",
+            "text": "I’m outside the library.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "door",
+            "senderId": "jamie",
+            "text": "Near the blue doors.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          }
+        ],
+        "composer": {
+          "text": "",
+          "focused": false,
+          "keyboardVisible": false
+        },
+        "viewport": {
+          "surface": "conversation",
+          "anchorMessageId": "door",
+          "scrollOffset": 0
+        },
+        "typingSenderIds": [
+          "jamie"
+        ]
+      },
+      "layerIds": [
+        "ui.typing"
+      ],
+      "sample": 20000
+    }
+  ],
+  "cues": []
+}

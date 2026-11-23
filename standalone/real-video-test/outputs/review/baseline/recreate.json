@@ -1,0 +1,44 @@
+{
+  "request": "Recreate this.",
+  "intent": "recreate",
+  "scope": "film",
+  "library": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/imessagevideo/skill/imessage-video/assets/library",
+  "sources": [
+    {
+      "path": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/inputs/unseen-complete.mp4",
+      "role": "reference",
+      "identity": {
+        "status": "new",
+        "sha256": "3d0fbab4c289b5fc1e2452d587c892bc9c17fdcf7ab9f59e2a820d504c0f9fee",
+        "matches": []
+      },
+      "documented_motions": [],
+      "steps": [
+        "segment_source",
+        "observe_moving_and_fixed_layers",
+        "find_or_author_each_motion",
+        "replay_from_library",
+        "compare_consecutive_frames",
+        "record_verified_coverage"
+      ],
+      "intake": {
+        "source": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/baseline/recreate/intake/3d0fbab4c289b5fc1e2452d587c892bc9c17fdcf7ab9f59e2a820d504c0f9fee/source.json",
+        "frames": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/baseline/recreate/intake/3d0fbab4c289b5fc1e2452d587c892bc9c17fdcf7ab9f59e2a820d504c0f9fee/frames.csv",
+        "overview": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/baseline/recreate/intake/3d0fbab4c289b5fc1e2452d587c892bc9c17fdcf7ab9f59e2a820d504c0f9fee/overview.jpg",
+        "rea_breakdown": null,
+        "next": "Open the source frames, inventory each moving layer and compare candidate recipes."
+      }
+    }
+  ],
+  "project": null,
+  "workflow": [
+    "check_exact_requested_deliverable",
+    "reuse_existing_verified_result_when_available",
+    "learn_and_verify_missing_motions",
+    "choose_one_renderer",
+    "recreate_from_saved_recipes",
+    "compare_every_frame_and_audio",
+    "deliver_editable_result"
+  ],
+  "next": "learn_before_recreating"
+}

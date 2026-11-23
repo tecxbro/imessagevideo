@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 72
+  },
+  "initialUI": null,
+  "events": [
+    {
+      "id": "motion.composer-type.first-character",
+      "kind": "typing",
+      "target": "type-draft-input",
+      "frame": 11,
+      "layerIds": [
+        "type-draft-input"
+      ]
+    },
+    {
+      "id": "motion.composer-type.draft-complete",
+      "kind": "typing_end",
+      "target": "type-draft-input",
+      "frame": 60,
+      "layerIds": [
+        "type-draft-input"
+      ]
+    }
+  ],
+  "cues": []
+}

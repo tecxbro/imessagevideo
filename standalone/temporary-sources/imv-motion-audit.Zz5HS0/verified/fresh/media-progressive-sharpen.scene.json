@@ -1,0 +1,324 @@
+{
+  "width": 720,
+  "height": 480,
+  "fps": 30,
+  "duration": 2.4,
+  "background": "#dce7f1",
+  "title": "Resolve a soft preview in successive regions",
+  "source": {
+    "path": "packs/media.mjs#media-progressive-sharpen",
+    "sourceStart": 0,
+    "sourceEnd": 2.4,
+    "notes": "Motion-authored shot. Gesture and timing are illustrative."
+  },
+  "layers": [
+    {
+      "id": "surface",
+      "type": "rect",
+      "x": 110,
+      "y": 44,
+      "width": 500,
+      "height": 392,
+      "fill": "#ffffff",
+      "radius": 18
+    },
+    {
+      "id": "stage",
+      "type": "group",
+      "x": 110,
+      "y": 98,
+      "children": [
+        {
+          "id": "decode-backing",
+          "type": "rect",
+          "x": 75,
+          "y": 38,
+          "width": 350,
+          "height": 211,
+          "fill": "#d8e0e9",
+          "radius": 13
+        },
+        {
+          "id": "decode-photo",
+          "type": "group",
+          "x": 75,
+          "y": 38,
+          "children": [
+            {
+              "id": "decode-placeholder",
+              "type": "image",
+              "src": "/Users/darshan/Documents/ChatGPT/imessage-video/codex-trial/skill/imessage-motion-recreation/motion/assets/landscape-1.png",
+              "x": 0,
+              "y": 0,
+              "width": 350,
+              "height": 211,
+              "blur": 13
+            },
+            {
+              "id": "decode-band-0",
+              "type": "group",
+              "x": 0,
+              "y": 0,
+              "children": [
+                {
+                  "id": "decode-crisp-0",
+                  "type": "image",
+                  "src": "/Users/darshan/Documents/ChatGPT/imessage-video/codex-trial/skill/imessage-motion-recreation/motion/assets/landscape-1.png",
+                  "x": 0,
+                  "y": 0,
+                  "width": 350,
+                  "height": 211
+                }
+              ],
+              "clip": {
+                "x": 0,
+                "y": 0,
+                "width": 350,
+                "height": 53.05
+              },
+              "opacity": 0,
+              "keyframes": {
+                "opacity": [
+                  {
+                    "t": 0,
+                    "value": 0,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 0.6,
+                    "value": 0,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 0.9119999999999999,
+                    "value": 1,
+                    "ease": "easeOut"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "decode-band-1",
+              "type": "group",
+              "x": 0,
+              "y": 52.75,
+              "children": [
+                {
+                  "id": "decode-crisp-1",
+                  "type": "image",
+                  "src": "/Users/darshan/Documents/ChatGPT/imessage-video/codex-trial/skill/imessage-motion-recreation/motion/assets/landscape-1.png",
+                  "x": 0,
+                  "y": -52.75,
+                  "width": 350,
+                  "height": 211
+                }
+              ],
+              "clip": {
+                "x": 0,
+                "y": 0,
+                "width": 350,
+                "height": 53.05
+              },
+              "opacity": 0,
+              "keyframes": {
+                "opacity": [
+                  {
+                    "t": 0,
+                    "value": 0,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 0.888,
+                    "value": 0,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 1.2,
+                    "value": 1,
+                    "ease": "easeOut"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "decode-band-2",
+              "type": "group",
+              "x": 0,
+              "y": 105.5,
+              "children": [
+                {
+                  "id": "decode-crisp-2",
+                  "type": "image",
+                  "src": "/Users/darshan/Documents/ChatGPT/imessage-video/codex-trial/skill/imessage-motion-recreation/motion/assets/landscape-1.png",
+                  "x": 0,
+                  "y": -105.5,
+                  "width": 350,
+                  "height": 211
+                }
+              ],
+              "clip": {
+                "x": 0,
+                "y": 0,
+                "width": 350,
+                "height": 53.05
+              },
+              "opacity": 0,
+              "keyframes": {
+                "opacity": [
+                  {
+                    "t": 0,
+                    "value": 0,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 1.176,
+                    "value": 0,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 1.488,
+                    "value": 1,
+                    "ease": "easeOut"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "decode-band-3",
+              "type": "group",
+              "x": 0,
+              "y": 158.25,
+              "children": [
+                {
+                  "id": "decode-crisp-3",
+                  "type": "image",
+                  "src": "/Users/darshan/Documents/ChatGPT/imessage-video/codex-trial/skill/imessage-motion-recreation/motion/assets/landscape-1.png",
+                  "x": 0,
+                  "y": -158.25,
+                  "width": 350,
+                  "height": 211
+                }
+              ],
+              "clip": {
+                "x": 0,
+                "y": 0,
+                "width": 350,
+                "height": 53.05
+              },
+              "opacity": 0,
+              "keyframes": {
+                "opacity": [
+                  {
+                    "t": 0,
+                    "value": 0,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 1.464,
+                    "value": 0,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 1.776,
+                    "value": 1,
+                    "ease": "easeOut"
+                  }
+                ]
+              }
+            }
+          ],
+          "clip": {
+            "x": 0,
+            "y": 0,
+            "width": 350,
+            "height": 211,
+            "radius": 13
+          }
+        }
+      ],
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 500,
+        "height": 298
+      }
+    },
+    {
+      "id": "footer",
+      "type": "group",
+      "x": 110,
+      "y": 396,
+      "children": [
+        {
+          "id": "footer-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 40,
+          "fill": "#f2f6fb",
+          "radius": 12
+        }
+      ]
+    },
+    {
+      "id": "heading",
+      "type": "group",
+      "x": 110,
+      "y": 44,
+      "children": [
+        {
+          "id": "heading-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 54,
+          "fill": "#f2f6fb",
+          "radius": 13
+        },
+        {
+          "id": "heading-copy",
+          "type": "text",
+          "text": "Alpine field notes",
+          "x": 26,
+          "y": 13,
+          "fontSize": 23,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#182737",
+          "fontWeight": 700
+        }
+      ]
+    }
+  ],
+  "timeline": {
+    "version": 1,
+    "picture": {
+      "fpsNum": 30,
+      "fpsDen": 1,
+      "frameCount": 72
+    },
+    "initialUI": null,
+    "events": [
+      {
+        "id": "motion.media-progressive-sharpen.first-region-resolves",
+        "kind": "load_visible",
+        "target": "decode-band-0",
+        "frame": 18,
+        "layerIds": [
+          "decode-band-0"
+        ]
+      },
+      {
+        "id": "motion.media-progressive-sharpen.full-resolution",
+        "kind": "load_complete",
+        "target": "decode-photo",
+        "frame": 54,
+        "layerIds": [
+          "decode-photo"
+        ]
+      }
+    ],
+    "cues": []
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 72
+  },
+  "initialUI": null,
+  "events": [
+    {
+      "id": "motion.heading-over-fixed-photos.heading-start",
+      "kind": "title.move",
+      "target": "heading-copy",
+      "frame": 20,
+      "layerIds": [
+        "heading-copy"
+      ]
+    },
+    {
+      "id": "motion.heading-over-fixed-photos.heading-settle",
+      "kind": "title.settle",
+      "target": "heading-copy",
+      "frame": 51,
+      "layerIds": [
+        "heading-copy"
+      ]
+    }
+  ],
+  "cues": []
+}

@@ -1,0 +1,167 @@
+{
+  "schema_version": 1,
+  "inputs": {
+    "source": {
+      "path": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/inputs/unseen-complete.mp4",
+      "sha256": "3d0fbab4c289b5fc1e2452d587c892bc9c17fdcf7ab9f59e2a820d504c0f9fee",
+      "width": 480,
+      "height": 270,
+      "sample_aspect_ratio": null,
+      "display_aspect_ratio": null,
+      "effective_sample_aspect_ratio": "1:1",
+      "sample_aspect_basis": "implicit square pixels",
+      "rotation": 0,
+      "average_frame_rate": "30/1",
+      "time_base": "1/15360",
+      "frame_count": 90,
+      "missing_pts": 0,
+      "strictly_increasing_pts": true,
+      "first_pts_seconds": 0.0,
+      "last_pts_seconds": 2.966666666666667,
+      "end_seconds_exclusive": 3.0
+    },
+    "output": {
+      "path": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/reviewer/final-controls/ending-cut.mp4",
+      "sha256": "bf806d3618ac468875834e31df0c3ea3a6b6f3c0f4f330048c2d9fd59e253708",
+      "width": 480,
+      "height": 270,
+      "sample_aspect_ratio": null,
+      "display_aspect_ratio": null,
+      "effective_sample_aspect_ratio": "1:1",
+      "sample_aspect_basis": "implicit square pixels",
+      "rotation": 0,
+      "average_frame_rate": "30/1",
+      "time_base": "1/15360",
+      "frame_count": 84,
+      "missing_pts": 0,
+      "strictly_increasing_pts": true,
+      "first_pts_seconds": 0.0,
+      "last_pts_seconds": 2.7666666666666666,
+      "end_seconds_exclusive": 2.8
+    }
+  },
+  "compared_frames": 84,
+  "paired_indices": 84,
+  "source_only_tail_frames": 6,
+  "output_only_tail_frames": 0,
+  "alignment": "native presentation order, paired by zero-based index, without resampling",
+  "max_paired_pts_error_ms": 0.0,
+  "exclusive_end_error_ms": 200.0,
+  "structure_match": false,
+  "structure_issues": [
+    "different frame_count",
+    "missing or different exclusive end timestamp"
+  ],
+  "structure_within_tolerance": false,
+  "structure_tolerance_issues": [
+    "different frame_count",
+    "missing or out-of-tolerance exclusive end timestamp"
+  ],
+  "roi_xyxy": {
+    "shuttle-and-tether": [
+      92,
+      69,
+      394,
+      192
+    ],
+    "swipe-midpoint": [
+      219,
+      161,
+      294,
+      192
+    ],
+    "fixed-heading": [
+      47,
+      50,
+      139,
+      70
+    ],
+    "fixed-baseline": [
+      48,
+      202,
+      431,
+      221
+    ]
+  },
+  "metrics": {
+    "full": {
+      "mean_frame_mae": 0.7894200102880659,
+      "max_frame_mae": 0.9205684156378601,
+      "worst_frame": 46
+    },
+    "shuttle-and-tether": {
+      "mean_frame_mae": 1.000847898340226,
+      "max_frame_mae": 1.45757282076132,
+      "worst_frame": 46
+    },
+    "swipe-midpoint": {
+      "mean_frame_mae": 0.6959481140126302,
+      "max_frame_mae": 4.2061648745519715,
+      "worst_frame": 46
+    },
+    "fixed-heading": {
+      "mean_frame_mae": 5.705518892339544,
+      "max_frame_mae": 5.721376811594204,
+      "worst_frame": 60
+    },
+    "fixed-baseline": {
+      "mean_frame_mae": 1.1955585220666987,
+      "max_frame_mae": 1.276029499335807,
+      "worst_frame": 59
+    }
+  },
+  "possible_frame_shift": {
+    "best_output_minus_source_frames": 0,
+    "compared_source_frames": 74,
+    "search_radius": 5,
+    "unaligned_mean_error": 0.5365521771771772,
+    "best_mean_error": 0.5365521771771772,
+    "possible_constant_offset": false
+  },
+  "audio": {
+    "source_stream_count": 1,
+    "output_stream_count": 1,
+    "tracks": [
+      {
+        "index": 0,
+        "channels": 1,
+        "start_error_ms": 0.0,
+        "end_error_ms": 200.0,
+        "decoded_samples": [
+          144000,
+          134400
+        ],
+        "compared_windows": 150,
+        "audible_channel_windows": 20,
+        "max_envelope_error": 0.032231540428685694,
+        "mean_spectrum_similarity": 0.9999893066180071
+      }
+    ],
+    "failures": [
+      "audio track 0: start or ending differs by more than 20 ms"
+    ],
+    "clock_tolerance_ms": 20.0,
+    "max_allowed_envelope_error": 0.22,
+    "min_allowed_spectrum_similarity": 0.8,
+    "limits_passed": false
+  },
+  "thresholds": {
+    "max_mae": 6.0,
+    "max_pts_error_ms": 0.0,
+    "require_structure_match": true,
+    "reject_detected_shift": false
+  },
+  "limits_passed": false,
+  "failures": [
+    "audio track 0: start or ending differs by more than 20 ms",
+    "different frame_count",
+    "missing or out-of-tolerance exclusive end timestamp",
+    "timeline is incomplete or PTS/end exceeds the requested tolerance",
+    "native frame MAE is unavailable for one or more frames or exceeds --max-mae"
+  ],
+  "worst_pair_index": 60,
+  "artifacts": {
+    "all_frame_measurements": "frames.csv",
+    "comparison_image": "worst.png"
+  }
+}

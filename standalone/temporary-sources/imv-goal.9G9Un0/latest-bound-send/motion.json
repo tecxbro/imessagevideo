@@ -1,0 +1,39 @@
+{
+  "id": "draft-send-flight",
+  "sourceSHA256": "5f175f1bea228d5fdc090ea2d04469775f98492729ca339affeb7b2cbdae5f5e",
+  "sceneSHA256": "57740fab5ce583aaac481f87d08e6c288d20a81f74500923a4b452de34d521d6",
+  "events": [
+    {
+      "id": "ui.send-keyboard.send",
+      "frame": 24,
+      "roleLayers": [
+        "ui.message/outgoing"
+      ]
+    }
+  ],
+  "bindings": {
+    "viewport": "ui.viewport",
+    "composer": "ui.composer",
+    "transcript": "ui.transcript",
+    "draft": "ui.composer.draft",
+    "sendButton": "ui.composer.send",
+    "message": "ui.message/outgoing",
+    "screen": "ui.screen",
+    "header": "ui.header"
+  },
+  "verification": {
+    "ok": true,
+    "mode": "adapter-recipe",
+    "issues": [],
+    "evidence": "structural-only",
+    "checkedWindow": [
+      23,
+      37
+    ]
+  },
+  "window": [
+    23,
+    37
+  ],
+  "status": "compiled-messages-interaction"
+}

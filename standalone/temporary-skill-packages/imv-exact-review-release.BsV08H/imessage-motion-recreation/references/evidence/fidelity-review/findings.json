@@ -1,0 +1,165 @@
+{
+  "gate": "Major reviewed regressions corrected at selected native stills; no one-to-one full-timeline certification. Encoded final outputs require aligned scene-wide QA.",
+  "scope": "Initial native still previews, not final renders. Builder corrections require another paired comparison.",
+  "findings": [
+    {
+      "id": "01-title",
+      "source": "01-photonhq",
+      "time": 0.5,
+      "severity": "minor",
+      "observation": "Initial title candidate is about16px narrower overall and glyph top5px too high.",
+      "evidence": "01-photonhq/test-title-pair.jpg",
+      "status": "sent; typography refit in progress"
+    },
+    {
+      "id": "02-title",
+      "source": "02-danieltian",
+      "time": 1.0,
+      "severity": "minor",
+      "observation": "Text is9\u201314px too high; inline pictorial icon y is already close.",
+      "evidence": "02-danieltian/test-title-pair.jpg",
+      "status": "sent; typography refit in progress"
+    },
+    {
+      "id": "05-flight-bubble",
+      "source": "05-linq",
+      "time": 9.2,
+      "severity": "major",
+      "observation": "Blue bbox reference[325,262,863,487] vs initial candidate[326,70,862,487]. Candidate has nearly twice area, incorrect top/height.",
+      "evidence": "05-linq/frame-009.20-pair.jpg",
+      "status": "Verified immutable v4 at9.2s: major bounds corrected. Smaller glyph-baseline/tail-shape differences remain."
+    },
+    {
+      "id": "05-composer",
+      "source": "05-linq",
+      "time": 2.9,
+      "severity": "moderate",
+      "observation": "Text about25px too short; send circle is77px high versus source ellipse57px high.",
+      "evidence": "05-linq/frame-002.90-pair.jpg",
+      "status": "builder raised font32 and changed ellipse77x57; v2 verification pending"
+    },
+    {
+      "id": "06-title-weight",
+      "source": "06-gallery",
+      "time": 12.4,
+      "severity": "moderate",
+      "observation": "Similar bounds, but candidate dark ink48,250px vs source60,223px (~20% less). Text needs heavier weight and y correction.",
+      "evidence": "06-gallery/frame-012.40-pair.jpg",
+      "status": "Verified immutable v4 at12.4s: dark pixels58544 vs reference60223 (initial48250). Bounds close; second line about7px high and total right edge18px too far."
+    },
+    {
+      "id": "06-phone",
+      "source": "06-gallery",
+      "time": 26.5,
+      "severity": "moderate",
+      "observation": "Candidate bezel is9\u201315px right of source, outgoing bubble bottom16px lower.",
+      "evidence": "06-gallery/frame-026.50-pair.jpg",
+      "status": "Verified immutable v4 at26.5s: hardware bezel and header/status/camera details improved. Small text baseline/emoji/tail differences remain."
+    },
+    {
+      "id": "01-email-type",
+      "source": "01-photonhq",
+      "time": 10,
+      "severity": "major",
+      "observation": "Notification card names stretch horizontally far wider than source; many glyphs roughly double source width.",
+      "evidence": "01-photonhq/phase-10-pair.jpg",
+      "status": "Verified v3 still at10s: glyph stretch and exact card-order/layout corrected using declared per-card artwork crops; full-motion correspondence remains unverified."
+    },
+    {
+      "id": "02-chat-timing",
+      "source": "02-danieltian",
+      "time": 24.5,
+      "severity": "major",
+      "observation": "Chat scroll/camera is roughly350\u2013450px ahead. Source Budget is at bottom near1035 while candidate around600; source initial kickoff visible but candidate gone.",
+      "evidence": "02-danieltian/chat-v4-pair.jpg",
+      "status": "Verifiedv4 at24.5s: main body scroll, header scale/placement, Muse avatar, blue/bold mentions and reaction attachment corrected. Minor weight/wrap/bubblewidth/emoji differences remain. Full timeline not certified."
+    },
+    {
+      "id": "03-grid",
+      "source": "03-photon-mini",
+      "time": 31,
+      "severity": "major",
+      "observation": "Source collage has fourth row and partial edge cards; initial candidate has5x3 grid with blank bottom area, wrong ordering and simplified pictorial bodies.",
+      "evidence": "03-photon-mini/phase-31-pair.jpg",
+      "status": "Verified check-31-final.png:20-card/four-row layout, edge crop, order, major offsets and pictorial artwork corrected using declared per-card art; native containers/footer labels remain. Individual width/text differences persist."
+    },
+    {
+      "id": "05-fare",
+      "source": "05-linq",
+      "time": 13.3,
+      "severity": "moderate",
+      "observation": "Economy card bounds close, but Basic card extends outside modal rather than clipping; blue background flat instead of vertical gradient; source underlying blurred chat omitted.",
+      "evidence": "05-linq/phase-13.3-pair.jpg",
+      "status": "Verified immutable v4 at13.3s: bounded UI artwork now matches panel content, clipping and gradient closely. Reference blurred underlying chat remains absent."
+    },
+    {
+      "id": "06-word-timing",
+      "source": "06-gallery",
+      "time": 29.4,
+      "severity": "major",
+      "observation": "Reference still shows you; candidate already shows love with football. Love transition is early.",
+      "evidence": "06-gallery/final-v6/29.70-pair.jpg",
+      "status": "Verifiedv6 at29.7s closes blank/geometry errors: l/ve boundswithin1pixel, isolatedball bbox/pixelcount exact; globalMAE.519vs4.592v5. You29.4bboxwithin3horizontalpixels/exactverticalbounds, MAE.703. Builderv7batchesblackfill/1pxcorrections; finalencodedtimelinepending."
+    },
+    {
+      "id": "04-message-width",
+      "source": "04-poke",
+      "time": 5.005,
+      "severity": "moderate",
+      "observation": "Initial candidate dark ink bbox[179,540,1186,607] vs reference[179,539,1263,606],77px too short. Bubble geometry close.",
+      "evidence": "04-poke/check-5s-pair.jpg",
+      "status": "Updated27s checkpoint uses normal source-like compositor typography and control sizes; full5s glyph equality remains unverified."
+    }
+  ],
+  "followup_findings": [
+    {
+      "source": "04-poke",
+      "time": 27,
+      "severity": "major",
+      "observation": "Incorrect giant CurrentLocation banner; source shows keyboard letters, partial Zareens mapcard at top missing. Composer plus/microphone too large, placeholder squashed.",
+      "status": "Verified updated27s checkpoint: giant banner removed, partial mapcard and normal composer proportions restored. Moderate keyboard y/tails/hardware continuation seam remain; builder reports final blend fix pending encoded verification.",
+      "evidence": "04-poke/phase-27-v2-pair.jpg"
+    },
+    {
+      "source": "06-gallery",
+      "time": 29.7,
+      "severity": "major",
+      "observation": "Opacity fade starts at0 while source first love frame is already visible.",
+      "status": "Verifiedv6 majorblank/geometryfix. lsource[692,475,722,687]candidate[692,474,721,686]; ball EXACT[766,536,920,689]/16753pixels; vesource[943,533,1228,690]candidate[944,534,1228,691]. Remaining1px/filldetailsbatchedv7; wholemotionnotcertified.",
+      "evidence": "06-gallery/final-v6/29.70-pair.jpg"
+    },
+    {
+      "source": "05-linq",
+      "time": 12.4,
+      "severity": "Scoped corrected native motion",
+      "observation": "Old flight header/fare crossfade replaced with one measured vertical document, static sky, independent lower fare pan, native exposure samples and local linear-light color correction. Exact final delta353\u2013397.",
+      "status": "Released frozen flight-document-review-05: native372 MAE27.99\u21923.39,37424.77\u21923.48. All1413 outside states unchanged. Native398/399/413/414 controls pixel-identical. Residual motion-shutter/AA remains; full encoded/adapters QA belongs to merged gate.",
+      "evidence": "05-flight/comparison-v5.jpg"
+    },
+    {
+      "source": "05-linq",
+      "time": 4.9,
+      "severity": "Scoped corrected exit state",
+      "observation": "Games tile146 was already faded, then147/148 opacity faded it again. Missing animated147 material, early header fade and148 chess entry were corrected; WORDGAMES baseline shifted4px.",
+      "status": "Released frozen games-exit-review-03, exact146\u2013148 and all1455 outside states unchanged. Native14714.90\u21921.01,14812.53\u21921.05. Controls145/149 pixel-identical; no100% claim.",
+      "evidence": "05-games-exit/comparison-v3.jpg"
+    },
+    {
+      "source": "02-danieltian",
+      "time": 17.8333333333333,
+      "severity": "Scoped corrected capsule/query transition",
+      "observation": "Measured rounded capsule widths, row poses, growing check circles and upward search pose; reuse accepted540\u2013547 logo tracks and remove548\u2013550 stale capsules. Exact526\u2013550 scope.",
+      "status": "Released frozen capsule-collapse-review-02; nativeGSAP5353.9969\u2192.30866. All1335 outside SVG states identical; fresh525/551 native controls identical. Encoding253\u2192252 flat-background shift separately explains~.9 added whole-frameMAE. Later query fade540+ preserved and declared.",
+      "evidence": "02-capsule-collapse/comparison-v2.jpg"
+    },
+    {
+      "source": "05-linq",
+      "time": 39.7,
+      "severity": "Scoped native boarding exposure correction",
+      "observation": "Replaced a sharp card/ink step with measured bounded native exposure samples and local linear-light masks, preserving original smooth fields and check-in. Rejected unconstrained faint ghost weights using observed ink/edge support.",
+      "status": "Released boarding-exposure-review-02. Native11917.495\u21922.544,11994.709\u21922.460; all18 frames checked. Only13frames change;1445 outside states identical;1190/1195 exact controls. Source AA/chroma/shadow and encoded contribution remain explicit.",
+      "evidence": "05-boarding/comparison-v2.jpg"
+    }
+  ],
+  "raster_assistance": "Updated scenes include declared bounded UI artwork crops, not only photographs/logos. Editable geometry and text coexist with raster UI interiors/cards. These are not whole-source-frame playback."
+}

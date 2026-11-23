@@ -1,0 +1,492 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 24,
+    "fpsDen": 1,
+    "frameCount": 114
+  },
+  "sampleRate": 48000,
+  "sampleCount": 228000,
+  "initialUI": {
+    "conversationId": "pickup",
+    "messages": [
+      {
+        "id": "arriving",
+        "senderId": "jamie",
+        "text": "I’m outside the library.",
+        "attachmentIds": [],
+        "reactions": {},
+        "edited": false,
+        "receipt": ""
+      },
+      {
+        "id": "door",
+        "senderId": "jamie",
+        "text": "Near the blue doors.",
+        "attachmentIds": [],
+        "reactions": {},
+        "edited": false,
+        "receipt": ""
+      }
+    ],
+    "composer": {
+      "text": "",
+      "focused": false,
+      "keyboardVisible": false
+    },
+    "viewport": {
+      "surface": "conversation",
+      "anchorMessageId": "door",
+      "scrollOffset": 0
+    },
+    "typingSenderIds": []
+  },
+  "events": [
+    {
+      "id": "pickup.focus",
+      "kind": "focus",
+      "target": "pickup",
+      "frame": 6,
+      "uiState": {
+        "conversationId": "pickup",
+        "messages": [
+          {
+            "id": "arriving",
+            "senderId": "jamie",
+            "text": "I’m outside the library.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "door",
+            "senderId": "jamie",
+            "text": "Near the blue doors.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          }
+        ],
+        "composer": {
+          "text": "",
+          "focused": true,
+          "keyboardVisible": true
+        },
+        "viewport": {
+          "surface": "conversation",
+          "anchorMessageId": "door",
+          "scrollOffset": 0
+        },
+        "typingSenderIds": []
+      },
+      "layerIds": [
+        "ui.composer",
+        "ui.keyboard"
+      ],
+      "sample": 12000
+    },
+    {
+      "id": "pickup.draft",
+      "kind": "draft",
+      "target": "pickup",
+      "frame": 14,
+      "uiState": {
+        "conversationId": "pickup",
+        "messages": [
+          {
+            "id": "arriving",
+            "senderId": "jamie",
+            "text": "I’m outside the library.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "door",
+            "senderId": "jamie",
+            "text": "Near the blue doors.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          }
+        ],
+        "composer": {
+          "text": "On my way down.",
+          "focused": true,
+          "keyboardVisible": true
+        },
+        "viewport": {
+          "surface": "conversation",
+          "anchorMessageId": "door",
+          "scrollOffset": 0
+        },
+        "typingSenderIds": []
+      },
+      "layerIds": [
+        "ui.composer"
+      ],
+      "sample": 28000
+    },
+    {
+      "id": "pickup.send",
+      "kind": "send",
+      "target": "coming",
+      "frame": 38,
+      "uiState": {
+        "conversationId": "pickup",
+        "messages": [
+          {
+            "id": "arriving",
+            "senderId": "jamie",
+            "text": "I’m outside the library.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "door",
+            "senderId": "jamie",
+            "text": "Near the blue doors.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "coming",
+            "senderId": "casey",
+            "text": "On my way down.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          }
+        ],
+        "composer": {
+          "text": "",
+          "focused": true,
+          "keyboardVisible": true
+        },
+        "viewport": {
+          "surface": "conversation",
+          "anchorMessageId": "coming",
+          "scrollOffset": 0
+        },
+        "typingSenderIds": []
+      },
+      "layerIds": [
+        "ui.message/coming"
+      ],
+      "sample": 76000
+    },
+    {
+      "id": "pickup.blur",
+      "kind": "focus",
+      "target": "pickup",
+      "frame": 48,
+      "uiState": {
+        "conversationId": "pickup",
+        "messages": [
+          {
+            "id": "arriving",
+            "senderId": "jamie",
+            "text": "I’m outside the library.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "door",
+            "senderId": "jamie",
+            "text": "Near the blue doors.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "coming",
+            "senderId": "casey",
+            "text": "On my way down.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          }
+        ],
+        "composer": {
+          "text": "",
+          "focused": false,
+          "keyboardVisible": false
+        },
+        "viewport": {
+          "surface": "conversation",
+          "anchorMessageId": "coming",
+          "scrollOffset": 0
+        },
+        "typingSenderIds": []
+      },
+      "layerIds": [
+        "ui.composer",
+        "ui.keyboard"
+      ],
+      "sample": 96000
+    },
+    {
+      "id": "pickup.typing",
+      "kind": "typing",
+      "target": "jamie",
+      "frame": 56,
+      "uiState": {
+        "conversationId": "pickup",
+        "messages": [
+          {
+            "id": "arriving",
+            "senderId": "jamie",
+            "text": "I’m outside the library.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "door",
+            "senderId": "jamie",
+            "text": "Near the blue doors.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "coming",
+            "senderId": "casey",
+            "text": "On my way down.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          }
+        ],
+        "composer": {
+          "text": "",
+          "focused": false,
+          "keyboardVisible": false
+        },
+        "viewport": {
+          "surface": "conversation",
+          "anchorMessageId": "coming",
+          "scrollOffset": 0
+        },
+        "typingSenderIds": [
+          "jamie"
+        ]
+      },
+      "layerIds": [
+        "ui.typing"
+      ],
+      "sample": 112000
+    },
+    {
+      "id": "pickup.camera",
+      "kind": "camera",
+      "target": "pickup",
+      "frame": 62,
+      "layerIds": [
+        "ui.camera"
+      ],
+      "sample": 124000,
+      "uiState": {
+        "conversationId": "pickup",
+        "messages": [
+          {
+            "id": "arriving",
+            "senderId": "jamie",
+            "text": "I’m outside the library.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "door",
+            "senderId": "jamie",
+            "text": "Near the blue doors.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "coming",
+            "senderId": "casey",
+            "text": "On my way down.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          }
+        ],
+        "composer": {
+          "text": "",
+          "focused": false,
+          "keyboardVisible": false
+        },
+        "viewport": {
+          "surface": "conversation",
+          "anchorMessageId": "coming",
+          "scrollOffset": 0
+        },
+        "typingSenderIds": [
+          "jamie"
+        ]
+      }
+    },
+    {
+      "id": "pickup.reply",
+      "kind": "receive",
+      "target": "ready",
+      "frame": 88,
+      "uiState": {
+        "conversationId": "pickup",
+        "messages": [
+          {
+            "id": "arriving",
+            "senderId": "jamie",
+            "text": "I’m outside the library.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "door",
+            "senderId": "jamie",
+            "text": "Near the blue doors.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "coming",
+            "senderId": "casey",
+            "text": "On my way down.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "ready",
+            "senderId": "jamie",
+            "text": "Great, I’ll wait here.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          }
+        ],
+        "composer": {
+          "text": "",
+          "focused": false,
+          "keyboardVisible": false
+        },
+        "viewport": {
+          "surface": "conversation",
+          "anchorMessageId": "ready",
+          "scrollOffset": 0
+        },
+        "typingSenderIds": []
+      },
+      "layerIds": [
+        "ui.message/ready"
+      ],
+      "sample": 176000
+    },
+    {
+      "id": "pickup.receipt",
+      "kind": "receipt",
+      "target": "coming",
+      "frame": 94,
+      "uiState": {
+        "conversationId": "pickup",
+        "messages": [
+          {
+            "id": "arriving",
+            "senderId": "jamie",
+            "text": "I’m outside the library.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "door",
+            "senderId": "jamie",
+            "text": "Near the blue doors.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "coming",
+            "senderId": "casey",
+            "text": "On my way down.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": "Delivered"
+          },
+          {
+            "id": "ready",
+            "senderId": "jamie",
+            "text": "Great, I’ll wait here.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          }
+        ],
+        "composer": {
+          "text": "",
+          "focused": false,
+          "keyboardVisible": false
+        },
+        "viewport": {
+          "surface": "conversation",
+          "anchorMessageId": "ready",
+          "scrollOffset": 0
+        },
+        "typingSenderIds": []
+      },
+      "layerIds": [
+        "ui.message/coming/receipt"
+      ],
+      "sample": 188000
+    }
+  ],
+  "cues": [
+    {
+      "id": "pickup.send.sound",
+      "eventId": "pickup.send",
+      "offsetSamples": 0,
+      "frame": 38,
+      "sample": 76000
+    },
+    {
+      "id": "pickup.reply.sound",
+      "eventId": "pickup.reply",
+      "offsetSamples": 0,
+      "frame": 88,
+      "sample": 176000
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "title": "Contract example",
+  "width": 320,
+  "height": 180,
+  "fps": 24,
+  "duration": 1,
+  "background": "#191f2a",
+  "layers": [
+    {
+      "id": "message.card",
+      "type": "rect",
+      "x": 24,
+      "y": 68,
+      "width": 64,
+      "height": 44,
+      "radius": 8,
+      "fill": "#f6bd60",
+      "keyframes": {
+        "x": [
+          {"t": 0, "value": 24},
+          {"t": 0.5, "value": 224, "ease": "hold"}
+        ]
+      }
+    }
+  ],
+  "timeline": {
+    "version": 1,
+    "picture": {"fpsNum": 24, "fpsDen": 1, "frameCount": 24},
+    "initialUI": {
+      "conversationId": "thread.demo",
+      "messages": [],
+      "composer": {"text": "Ready", "focused": true},
+      "viewport": {"surface": "conversation", "anchorMessageId": null}
+    },
+    "events": [
+      {
+        "id": "demo.message.send",
+        "kind": "message.send",
+        "target": "message.ready",
+        "frame": 12,
+        "layerIds": ["message.card"],
+        "uiState": {
+          "conversationId": "thread.demo",
+          "messages": [{"id": "message.ready", "senderId": "account.demo", "text": "Ready"}],
+          "composer": {"text": "", "focused": false},
+          "viewport": {"surface": "conversation", "anchorMessageId": "message.ready"}
+        }
+      }
+    ],
+    "cues": [{"id": "demo.send.click", "eventId": "demo.message.send", "offsetSamples": 120}]
+  }
+}

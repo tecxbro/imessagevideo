@@ -1,0 +1,92 @@
+{
+ "ok": true,
+ "pass": false,
+ "reference": "/Users/darshan/Downloads/sidehoe.mp4",
+ "yours": "/Users/darshan/Documents/ChatGPT/imessage-video/sidehoe-skill-trial/ui-repair/final/sidehoe.mp4",
+ "mode": "video",
+ "window": [ 0, 31.12 ],
+ "thresholds": { "mean": 0.92, "p05": 0.85, "cell": 0.75 },
+ "ssim": { "frames": 778, "mean": 0.9543, "p05": 0.8992, "min": 0.861, "cell_p05": 0.7348 },
+ "missing_content": {
+  "share": 0.0103,
+  "spans": [
+   [ 2.12, 2.2 ],
+   [ 2.24, 2.32 ],
+   [ 8.08, 8.12 ],
+   [ 8.68, 8.72 ],
+   [ 15.92, 15.96 ],
+   [ 25.08, 25.12 ]
+  ],
+  "pass": true,
+  "texture": {
+   "share": 0.0231,
+   "spans": [
+    [ 0.36, 0.4 ],
+    [ 1.8, 1.88 ],
+    [ 4.28, 4.32 ],
+    [ 8.12, 8.2 ],
+    [ 10.56, 10.6 ],
+    [ 12.64, 12.68 ],
+    [ 15.68, 15.72 ],
+    [ 21, 21.36 ]
+   ]
+  }
+ },
+ "worst": [
+  {
+   "t": 13.84,
+   "frame": 346,
+   "ssim": 0.8758,
+   "cell": {
+    "roi": [ 1000, 1000, 500, 500 ],
+    "ssim": 0.717,
+    "picture": "/tmp/imv-upstream.tH7Joz/sidehoe-diff/worst-01-cell.png"
+   }
+  },
+  {
+   "t": 15.44,
+   "frame": 386,
+   "ssim": 0.9406,
+   "cell": {
+    "roi": [ 1000, 500, 500, 500 ],
+    "ssim": 0.721,
+    "picture": "/tmp/imv-upstream.tH7Joz/sidehoe-diff/worst-02-cell.png"
+   }
+  },
+  {
+   "t": 15.96,
+   "frame": 399,
+   "ssim": 0.9166,
+   "cell": {
+    "roi": [ 1000, 500, 500, 500 ],
+    "ssim": 0.583,
+    "picture": "/tmp/imv-upstream.tH7Joz/sidehoe-diff/worst-03-cell.png"
+   }
+  },
+  {
+   "t": 26.2,
+   "frame": 655,
+   "ssim": 0.8999,
+   "cell": {
+    "roi": [ 500, 1000, 500, 500 ],
+    "ssim": 0.706,
+    "picture": "/tmp/imv-upstream.tH7Joz/sidehoe-diff/worst-04-cell.png"
+   }
+  }
+ ],
+ "cuts": {
+  "reference": [ 5.36, 6.4, 8.52, 16.04, 27.72, 30.8 ],
+  "yours": [ 5.36, 6.4, 8.52, 27.68, 30.8 ],
+  "missing": [ 16.04 ],
+  "extra": [],
+  "not_cuts": [],
+  "pass": false
+ },
+ "duration": { "reference": 31.12, "yours": 31.12, "pass": true },
+ "sound": { "offset_ms": null, "match": 0.06, "pass": true, "note": "too few distinct sounds to align" },
+ "sheet": "/tmp/imv-upstream.tH7Joz/sidehoe-diff/worst.jpg",
+ "log": "/tmp/imv-upstream.tH7Joz/sidehoe-diff/ssim.log",
+ "frames": "/tmp/imv-upstream.tH7Joz/sidehoe-diff/frames.tsv",
+ "warnings": [ "2% of frames lack fine texture or small detail the original has (0.36–0.4 s, 1.8–1.88 s, 4.28–4.32 s, 8.12–8.2 s, 10.56–10.6 s, 12.64–12.68 s, 15.68–15.72 s, 21–21.36 s): reported, not failed" ],
+ "_meta": { "version": "0.9.77", "updateAvailable": false }
+}

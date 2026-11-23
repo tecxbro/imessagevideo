@@ -1,0 +1,164 @@
+{
+  "width": 960,
+  "height": 540,
+  "fps": 30,
+  "duration": 4,
+  "background": "#f7f7f5",
+  "title": "circle-to-panel",
+  "source": {
+    "notes": "New reusable starter, not an exact reference recreation. Arial fallback; replace and remeasure typography for production."
+  },
+  "layers": [
+    {
+      "id": "morph-surface",
+      "type": "rect",
+      "x": 0,
+      "y": 0,
+      "width": 128,
+      "height": 128,
+      "fill": "#1688fa",
+      "radius": 64,
+      "keyframes": {
+        "x": [
+          {
+            "t": 0,
+            "value": 416,
+            "ease": "easeInOut"
+          },
+          {
+            "t": 2.4,
+            "value": 280,
+            "ease": "easeInOut"
+          }
+        ],
+        "y": [
+          {
+            "t": 0,
+            "value": 206,
+            "ease": "easeInOut"
+          },
+          {
+            "t": 2.4,
+            "value": 126,
+            "ease": "easeInOut"
+          }
+        ],
+        "width": [
+          {
+            "t": 0,
+            "value": 128,
+            "ease": "easeInOut"
+          },
+          {
+            "t": 2.4,
+            "value": 400,
+            "ease": "easeInOut"
+          }
+        ],
+        "height": [
+          {
+            "t": 0,
+            "value": 128,
+            "ease": "easeInOut"
+          },
+          {
+            "t": 2.4,
+            "value": 288,
+            "ease": "easeInOut"
+          }
+        ],
+        "radius": [
+          {
+            "t": 0,
+            "value": 64,
+            "ease": "easeInOut"
+          },
+          {
+            "t": 2.4,
+            "value": 26,
+            "ease": "easeInOut"
+          }
+        ]
+      }
+    },
+    {
+      "id": "morph-contents",
+      "type": "group",
+      "x": 304,
+      "y": 154,
+      "children": [
+        {
+          "id": "morph-title",
+          "type": "text",
+          "text": "Friday dinner",
+          "x": 0,
+          "y": 0,
+          "fontSize": 30,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#ffffff",
+          "fontWeight": 600
+        },
+        {
+          "id": "morph-detail",
+          "type": "text",
+          "text": "From a small action\nto something useful.",
+          "x": 0,
+          "y": 55,
+          "fontSize": 21,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#ffffff",
+          "lineHeight": 29
+        },
+        {
+          "id": "morph-action",
+          "type": "group",
+          "x": 0,
+          "y": 166,
+          "children": [
+            {
+              "id": "morph-action-shape",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 352,
+              "height": 42,
+              "fill": "#172c45",
+              "radius": 21
+            },
+            {
+              "id": "morph-action-label",
+              "type": "text",
+              "text": "Open app",
+              "x": 176,
+              "y": 11,
+              "fontSize": 16,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#ffffff",
+              "textAnchor": "middle",
+              "fontWeight": 600
+            }
+          ]
+        }
+      ],
+      "keyframes": {
+        "opacity": [
+          {
+            "t": 0,
+            "value": 0,
+            "ease": "easeInOut"
+          },
+          {
+            "t": 1.92,
+            "value": 0,
+            "ease": "easeInOut"
+          },
+          {
+            "t": 2.8,
+            "value": 1,
+            "ease": "easeOut"
+          }
+        ]
+      }
+    }
+  ]
+}

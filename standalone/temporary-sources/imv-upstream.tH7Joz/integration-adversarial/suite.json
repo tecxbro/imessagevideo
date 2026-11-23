@@ -1,0 +1,443 @@
+[
+  {
+    "case": "identity",
+    "meets_expectation": true,
+    "expected_verdict": "PASS",
+    "expected_check": null,
+    "expected_span": null,
+    "exit_code": 0,
+    "verdict": "PASS",
+    "compared_frames": 64,
+    "mean_abs_rgb": 0.0,
+    "failures": [],
+    "error": null
+  },
+  {
+    "case": "identity-exact",
+    "meets_expectation": true,
+    "expected_verdict": "PASS",
+    "expected_check": null,
+    "expected_span": null,
+    "exit_code": 0,
+    "verdict": "PASS",
+    "compared_frames": 64,
+    "mean_abs_rgb": 0.0,
+    "failures": [],
+    "error": null
+  },
+  {
+    "case": "pixel-diagnostic",
+    "meets_expectation": true,
+    "expected_verdict": "PASS",
+    "expected_check": null,
+    "expected_span": null,
+    "exit_code": 0,
+    "verdict": "PASS",
+    "compared_frames": 64,
+    "mean_abs_rgb": 3.616898148148148e-07,
+    "failures": [],
+    "error": null
+  },
+  {
+    "case": "pixel-exact",
+    "meets_expectation": true,
+    "expected_verdict": "FAIL",
+    "expected_check": "pixel_equality",
+    "expected_span": null,
+    "exit_code": 1,
+    "verdict": "FAIL",
+    "compared_frames": 64,
+    "mean_abs_rgb": 3.616898148148148e-07,
+    "failures": [
+      {
+        "check": "pixel_equality",
+        "first_difference": {
+          "frame": 17,
+          "changed_pixels": 1,
+          "max_channel_delta": 1,
+          "rect": [
+            159,
+            89,
+            1,
+            1
+          ]
+        }
+      }
+    ],
+    "error": null
+  },
+  {
+    "case": "b-frames-preserve-display-order",
+    "meets_expectation": true,
+    "expected_verdict": "PASS",
+    "expected_check": null,
+    "expected_span": null,
+    "exit_code": 0,
+    "verdict": "PASS",
+    "compared_frames": 64,
+    "mean_abs_rgb": 0.0012944878472222225,
+    "failures": [],
+    "error": null
+  },
+  {
+    "case": "interior-frame-loss",
+    "meets_expectation": true,
+    "expected_verdict": "FAIL",
+    "expected_check": "whole_frame_mae",
+    "expected_span": [
+      18,
+      18
+    ],
+    "exit_code": 1,
+    "verdict": "FAIL",
+    "compared_frames": 64,
+    "mean_abs_rgb": 0.22929036458333335,
+    "failures": [
+      {
+        "check": "whole_frame_mae",
+        "spans": [
+          [
+            18,
+            18
+          ]
+        ]
+      }
+    ],
+    "error": null
+  },
+  {
+    "case": "extra-tail-frames",
+    "meets_expectation": true,
+    "expected_verdict": "FAIL",
+    "expected_check": "extra_candidate_frames",
+    "expected_span": [
+      64,
+      66
+    ],
+    "exit_code": 1,
+    "verdict": "FAIL",
+    "compared_frames": 64,
+    "mean_abs_rgb": 0.0,
+    "failures": [
+      {
+        "check": "extra_candidate_frames",
+        "spans": [
+          [
+            64,
+            66
+          ]
+        ]
+      },
+      {
+        "check": "final_hold",
+        "frame": 63,
+        "reference_end_seconds_rational": "32/15",
+        "candidate_end_seconds_rational": "67/30"
+      }
+    ],
+    "error": null
+  },
+  {
+    "case": "variable-pts",
+    "meets_expectation": true,
+    "expected_verdict": "FAIL",
+    "expected_check": "presentation_clock",
+    "expected_span": [
+      17,
+      17
+    ],
+    "exit_code": 1,
+    "verdict": "FAIL",
+    "compared_frames": 64,
+    "mean_abs_rgb": 0.0,
+    "failures": [
+      {
+        "check": "presentation_clock",
+        "spans": [
+          [
+            17,
+            17
+          ]
+        ]
+      }
+    ],
+    "error": null
+  },
+  {
+    "case": "extended-final-hold",
+    "meets_expectation": true,
+    "expected_verdict": "FAIL",
+    "expected_check": "final_hold",
+    "expected_span": null,
+    "exit_code": 1,
+    "verdict": "FAIL",
+    "compared_frames": 64,
+    "mean_abs_rgb": 0.0,
+    "failures": [
+      {
+        "check": "final_hold",
+        "frame": 63,
+        "reference_end_seconds_rational": "32/15",
+        "candidate_end_seconds_rational": "71/30"
+      }
+    ],
+    "error": null
+  },
+  {
+    "case": "late-selection-roi",
+    "meets_expectation": true,
+    "expected_verdict": "FAIL",
+    "expected_check": "region",
+    "expected_span": [
+      29,
+      30
+    ],
+    "exit_code": 1,
+    "verdict": "FAIL",
+    "compared_frames": 64,
+    "mean_abs_rgb": 0.0028515625,
+    "failures": [
+      {
+        "check": "region",
+        "id": "mark",
+        "spans": [
+          [
+            29,
+            30
+          ]
+        ]
+      }
+    ],
+    "error": null
+  },
+  {
+    "case": "late-selection-motion",
+    "meets_expectation": true,
+    "expected_verdict": "FAIL",
+    "expected_check": "region_motion",
+    "expected_span": [
+      29,
+      29
+    ],
+    "exit_code": 1,
+    "verdict": "FAIL",
+    "compared_frames": 64,
+    "mean_abs_rgb": 0.0028515625,
+    "failures": [
+      {
+        "check": "region_motion",
+        "id": "mark",
+        "spans": [
+          [
+            29,
+            29
+          ],
+          [
+            31,
+            31
+          ]
+        ]
+      }
+    ],
+    "error": null
+  },
+  {
+    "case": "late-selection-tile",
+    "meets_expectation": true,
+    "expected_verdict": "FAIL",
+    "expected_check": "local_tile_mae",
+    "expected_span": [
+      29,
+      30
+    ],
+    "exit_code": 1,
+    "verdict": "FAIL",
+    "compared_frames": 64,
+    "mean_abs_rgb": 0.0028515625,
+    "failures": [
+      {
+        "check": "local_tile_mae",
+        "spans": [
+          [
+            29,
+            30
+          ]
+        ]
+      }
+    ],
+    "error": null
+  },
+  {
+    "case": "invalid-roi",
+    "meets_expectation": true,
+    "expected_verdict": "ERROR",
+    "expected_check": null,
+    "expected_span": null,
+    "exit_code": 2,
+    "verdict": "ERROR",
+    "compared_frames": null,
+    "mean_abs_rgb": null,
+    "failures": [],
+    "error": "mark: window must be an inclusive span of reference frames"
+  },
+  {
+    "case": "vertical-display-reflection",
+    "meets_expectation": true,
+    "expected_verdict": "FAIL",
+    "expected_check": "display_geometry",
+    "expected_span": null,
+    "exit_code": 1,
+    "verdict": "FAIL",
+    "compared_frames": 0,
+    "mean_abs_rgb": null,
+    "failures": [
+      {
+        "check": "display_geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "case": "pq-display-tag",
+    "meets_expectation": true,
+    "expected_verdict": "FAIL",
+    "expected_check": "display_color",
+    "expected_span": null,
+    "exit_code": 1,
+    "verdict": "FAIL",
+    "compared_frames": 64,
+    "mean_abs_rgb": 0.0,
+    "failures": [
+      {
+        "check": "display_color",
+        "tags": {
+          "color_transfer": {
+            "reference": null,
+            "candidate": "smpte2084"
+          },
+          "color_primaries": {
+            "reference": null,
+            "candidate": "bt2020"
+          }
+        }
+      }
+    ],
+    "error": null
+  },
+  {
+    "case": "clean-aperture-identity",
+    "meets_expectation": true,
+    "expected_verdict": "PASS",
+    "expected_check": null,
+    "expected_span": null,
+    "exit_code": 0,
+    "verdict": "PASS",
+    "compared_frames": 64,
+    "mean_abs_rgb": 0.0,
+    "failures": [],
+    "error": null
+  },
+  {
+    "case": "unexpected-clean-aperture",
+    "meets_expectation": true,
+    "expected_verdict": "FAIL",
+    "expected_check": "display_geometry",
+    "expected_span": null,
+    "exit_code": 1,
+    "verdict": "FAIL",
+    "compared_frames": 0,
+    "mean_abs_rgb": null,
+    "failures": [
+      {
+        "check": "display_geometry"
+      }
+    ],
+    "error": null
+  },
+  {
+    "case": "unsupported-transparency",
+    "meets_expectation": true,
+    "expected_verdict": "FAIL",
+    "expected_check": "unsupported_alpha_comparison",
+    "expected_span": null,
+    "exit_code": 1,
+    "verdict": "FAIL",
+    "compared_frames": 8,
+    "mean_abs_rgb": 0.0,
+    "failures": [
+      {
+        "check": "unsupported_alpha_comparison",
+        "reference_alpha": true,
+        "candidate_alpha": true
+      }
+    ],
+    "error": null
+  },
+  {
+    "case": "video-delayed-from-audio",
+    "meets_expectation": true,
+    "expected_verdict": "FAIL",
+    "expected_check": "audio_relative_start",
+    "expected_span": null,
+    "exit_code": 1,
+    "verdict": "FAIL",
+    "compared_frames": 64,
+    "mean_abs_rgb": 0.0,
+    "failures": [
+      {
+        "check": "audio_relative_start",
+        "delta_seconds": "-1/4"
+      }
+    ],
+    "error": null
+  },
+  {
+    "case": "one-pixel-cannot-pass-review",
+    "meets_expectation": true,
+    "result": {
+      "verdict": "FAIL",
+      "scope": "exact",
+      "candidate_sha256": "339ee62ec14aa86d74331f7e29d744f85342ef56eaa45e428b70a3339f14fb28",
+      "plan_sha256": "ee936b89e8c9bec0d8760d0b77dc1a3a30688e9e85735f00a532635c0dcfc381",
+      "shot_count": 1,
+      "passed_shots": 0,
+      "observed_passed_shots": 1,
+      "open_shots": {},
+      "pixel_failed_shots": [
+        "shot"
+      ],
+      "required_comparison_failures": [
+        {
+          "check": "pixel_equality",
+          "first_difference": {
+            "frame": 17,
+            "changed_pixels": 1,
+            "max_channel_delta": 1,
+            "rect": [
+              159,
+              89,
+              1,
+              1
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "case": "identity-can-pass-review",
+    "meets_expectation": true,
+    "result": {
+      "verdict": "PASS",
+      "scope": "exact",
+      "candidate_sha256": "0275258672d5c72aab94ecf6fae762142986a3180c4bf60f01fb1c09e2021448",
+      "plan_sha256": "ee936b89e8c9bec0d8760d0b77dc1a3a30688e9e85735f00a532635c0dcfc381",
+      "shot_count": 1,
+      "passed_shots": 1,
+      "observed_passed_shots": 1,
+      "open_shots": {},
+      "pixel_failed_shots": [],
+      "required_comparison_failures": []
+    }
+  }
+]

@@ -1,0 +1,460 @@
+{
+  "width": 720,
+  "height": 480,
+  "fps": 30,
+  "duration": 2.4,
+  "background": "#dce7f1",
+  "title": "Attach a chosen reaction to its message",
+  "source": {
+    "path": "packs/conversation.mjs#reaction-attach",
+    "sourceStart": 0,
+    "sourceEnd": 2.4,
+    "notes": "Original editable Motion demonstration."
+  },
+  "layers": [
+    {
+      "id": "surface",
+      "type": "rect",
+      "x": 110,
+      "y": 44,
+      "width": 500,
+      "height": 392,
+      "fill": "#ffffff",
+      "radius": 18
+    },
+    {
+      "id": "stage",
+      "type": "group",
+      "x": 110,
+      "y": 98,
+      "children": [
+        {
+          "id": "reaction-prior",
+          "type": "group",
+          "x": 216,
+          "y": 41,
+          "children": [
+            {
+              "id": "reaction-prior-body",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 250,
+              "height": 54,
+              "fill": "#1688fa",
+              "radius": 20
+            },
+            {
+              "id": "reaction-prior-tail",
+              "type": "path",
+              "d": "M 234 36 Q 247 55 257 52 Q 247 48 248 34 Z",
+              "fill": "#1688fa"
+            },
+            {
+              "id": "reaction-prior-copy",
+              "type": "text",
+              "text": "Booked - two GA floor\ntickets",
+              "x": 17,
+              "y": 7.5,
+              "fontSize": 16,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#ffffff",
+              "lineHeight": 18
+            }
+          ]
+        },
+        {
+          "id": "reaction-target",
+          "type": "group",
+          "x": 32,
+          "y": 151,
+          "children": [
+            {
+              "id": "reaction-target-body",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 262,
+              "height": 54,
+              "fill": "#e9e9ed",
+              "radius": 20
+            },
+            {
+              "id": "reaction-target-tail",
+              "type": "path",
+              "d": "M 16 36 Q 3 55 -7 52 Q 3 48 2 34 Z",
+              "fill": "#e9e9ed"
+            },
+            {
+              "id": "reaction-target-copy",
+              "type": "text",
+              "text": "You're the BEST!",
+              "x": 17,
+              "y": 14,
+              "fontSize": 16,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#17191d",
+              "lineHeight": 18
+            }
+          ],
+          "keyframes": {
+            "y": [
+              {
+                "t": 0,
+                "value": 151,
+                "ease": "linear"
+              },
+              {
+                "t": 1.344,
+                "value": 151,
+                "ease": "linear"
+              },
+              {
+                "t": 1.6320000000000001,
+                "value": 168,
+                "ease": "easeOut"
+              }
+            ]
+          }
+        },
+        {
+          "id": "reaction-picker",
+          "type": "group",
+          "x": 237,
+          "y": 83,
+          "children": [
+            {
+              "id": "reaction-picker-body",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 230,
+              "height": 42,
+              "fill": "#e8eef5",
+              "radius": 20
+            },
+            {
+              "id": "reaction-picker-label",
+              "type": "text",
+              "text": "Love",
+              "x": 115,
+              "y": 11,
+              "fontSize": 16,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#17191d",
+              "textAnchor": "middle"
+            }
+          ],
+          "keyframes": {
+            "opacity": [
+              {
+                "t": 0,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 0.84,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 1.176,
+                "value": 0,
+                "ease": "easeOut"
+              }
+            ]
+          }
+        },
+        {
+          "id": "reaction-badge",
+          "type": "group",
+          "x": 350,
+          "y": 104,
+          "children": [
+            {
+              "id": "reaction-badge-body",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 92,
+              "height": 35,
+              "fill": "#1478e9",
+              "radius": 17
+            },
+            {
+              "id": "reaction-badge-label",
+              "type": "text",
+              "text": "Love",
+              "x": 46,
+              "y": 8,
+              "fontSize": 15,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#ffffff",
+              "textAnchor": "middle",
+              "fontWeight": 600
+            },
+            {
+              "id": "reaction-badge-mark-one",
+              "type": "rect",
+              "x": 73,
+              "y": 29,
+              "width": 9,
+              "height": 9,
+              "fill": "#1478e9",
+              "radius": 5
+            },
+            {
+              "id": "reaction-badge-mark-two",
+              "type": "rect",
+              "x": 85,
+              "y": 37,
+              "width": 5,
+              "height": 5,
+              "fill": "#1478e9",
+              "radius": 3
+            }
+          ],
+          "originX": 46,
+          "originY": 17,
+          "keyframes": {
+            "x": [
+              {
+                "t": 0,
+                "value": 350,
+                "ease": "linear"
+              },
+              {
+                "t": 0.84,
+                "value": 350,
+                "ease": "linear"
+              },
+              {
+                "t": 1.224,
+                "value": 309,
+                "ease": "easeOut"
+              },
+              {
+                "t": 1.608,
+                "value": 227,
+                "ease": "easeInOut"
+              }
+            ],
+            "y": [
+              {
+                "t": 0,
+                "value": 86,
+                "ease": "linear"
+              },
+              {
+                "t": 0.84,
+                "value": 86,
+                "ease": "linear"
+              },
+              {
+                "t": 1.2,
+                "value": 68,
+                "ease": "easeOut"
+              },
+              {
+                "t": 1.512,
+                "value": 134,
+                "ease": "easeIn"
+              },
+              {
+                "t": 1.608,
+                "value": 131,
+                "ease": "easeOut"
+              }
+            ],
+            "scaleX": [
+              {
+                "t": 0,
+                "value": 1.09,
+                "ease": "linear"
+              },
+              {
+                "t": 0.84,
+                "value": 1.09,
+                "ease": "linear"
+              },
+              {
+                "t": 1.488,
+                "value": 0.79,
+                "ease": "easeInOut"
+              },
+              {
+                "t": 1.6320000000000001,
+                "value": 0.83,
+                "ease": "easeOut"
+              }
+            ],
+            "scaleY": [
+              {
+                "t": 0,
+                "value": 1.09,
+                "ease": "linear"
+              },
+              {
+                "t": 0.84,
+                "value": 1.09,
+                "ease": "linear"
+              },
+              {
+                "t": 1.488,
+                "value": 0.79,
+                "ease": "easeInOut"
+              },
+              {
+                "t": 1.6320000000000001,
+                "value": 0.83,
+                "ease": "easeOut"
+              }
+            ],
+            "opacity": [
+              {
+                "t": 0,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 0.84,
+                "value": 1,
+                "ease": "hold"
+              }
+            ]
+          }
+        }
+      ],
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 500,
+        "height": 298
+      }
+    },
+    {
+      "id": "footer",
+      "type": "group",
+      "x": 110,
+      "y": 396,
+      "children": [
+        {
+          "id": "footer-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 40,
+          "fill": "#f2f6fb",
+          "radius": 12
+        },
+        {
+          "id": "reaction-composer",
+          "type": "group",
+          "x": 23,
+          "y": 0,
+          "children": [
+            {
+              "id": "reaction-composer-field",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 454,
+              "height": 48,
+              "fill": "#ffffff",
+              "radius": 24,
+              "stroke": "#d8dbe0",
+              "strokeWidth": 1
+            },
+            {
+              "id": "reaction-composer-input",
+              "type": "text",
+              "text": "Message",
+              "x": 18,
+              "y": 14,
+              "fontSize": 17,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#777b84"
+            },
+            {
+              "id": "reaction-composer-send",
+              "type": "circle",
+              "x": 414,
+              "y": 8,
+              "width": 32,
+              "height": 32,
+              "fill": "#d8dbe0"
+            },
+            {
+              "id": "reaction-composer-arrow",
+              "type": "path",
+              "d": "M 430 33 L 430 16 M 423 23 L 430 16 L 437 23",
+              "fill": "none",
+              "stroke": "#ffffff",
+              "strokeWidth": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "heading",
+      "type": "group",
+      "x": 110,
+      "y": 44,
+      "children": [
+        {
+          "id": "heading-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 54,
+          "fill": "#f2f6fb",
+          "radius": 13
+        },
+        {
+          "id": "heading-copy",
+          "type": "text",
+          "text": "Maya",
+          "x": 26,
+          "y": 13,
+          "fontSize": 23,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#182737",
+          "fontWeight": 700
+        }
+      ]
+    }
+  ],
+  "timeline": {
+    "version": 1,
+    "picture": {
+      "fpsNum": 30,
+      "fpsDen": 1,
+      "frameCount": 72
+    },
+    "initialUI": null,
+    "events": [
+      {
+        "id": "motion.reaction-attach.reaction-choice",
+        "kind": "reaction_select",
+        "target": "reaction-badge",
+        "frame": 26,
+        "layerIds": [
+          "reaction-badge"
+        ]
+      },
+      {
+        "id": "motion.reaction-attach.reaction-attached",
+        "kind": "reaction_attached",
+        "target": "reaction-target",
+        "frame": 49,
+        "layerIds": [
+          "reaction-target"
+        ]
+      }
+    ],
+    "cues": []
+  }
+}

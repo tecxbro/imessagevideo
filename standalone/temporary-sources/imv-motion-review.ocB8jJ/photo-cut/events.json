@@ -1,0 +1,81 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 24,
+    "fpsDen": 1,
+    "frameCount": 114
+  },
+  "sampleRate": 48000,
+  "sampleCount": 228000,
+  "initialUI": {
+    "conversationId": "pickup",
+    "messages": [
+      {
+        "id": "album",
+        "senderId": "jamie",
+        "text": "Two views",
+        "attachmentIds": [
+          "one",
+          "two"
+        ],
+        "reactions": {},
+        "edited": false,
+        "receipt": "",
+        "page": 0
+      }
+    ],
+    "composer": {
+      "text": "",
+      "focused": false,
+      "keyboardVisible": false
+    },
+    "viewport": {
+      "surface": "conversation",
+      "anchorMessageId": "album",
+      "scrollOffset": 0
+    },
+    "typingSenderIds": []
+  },
+  "events": [
+    {
+      "id": "page-now",
+      "kind": "media.page",
+      "target": "album",
+      "frame": 12,
+      "uiState": {
+        "conversationId": "pickup",
+        "messages": [
+          {
+            "id": "album",
+            "senderId": "jamie",
+            "text": "Two views",
+            "attachmentIds": [
+              "one",
+              "two"
+            ],
+            "reactions": {},
+            "edited": false,
+            "receipt": "",
+            "page": 1
+          }
+        ],
+        "composer": {
+          "text": "",
+          "focused": false,
+          "keyboardVisible": false
+        },
+        "viewport": {
+          "surface": "conversation",
+          "anchorMessageId": "album",
+          "scrollOffset": 0
+        },
+        "typingSenderIds": []
+      },
+      "layerIds": [
+        "ui.message/album/media"
+      ],
+      "sample": 24000
+    }
+  ],
+  "cues": []
+}

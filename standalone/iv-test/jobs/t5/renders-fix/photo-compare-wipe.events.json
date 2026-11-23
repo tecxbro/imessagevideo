@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 72
+  },
+  "initialUI": null,
+  "events": [
+    {
+      "id": "motion.photo-compare-wipe.divider-drag",
+      "kind": "drag",
+      "target": "comparison-divider",
+      "frame": 17,
+      "layerIds": [
+        "comparison-divider"
+      ]
+    },
+    {
+      "id": "motion.photo-compare-wipe.divider-stop",
+      "kind": "gesture_end",
+      "target": "comparison-divider",
+      "frame": 51,
+      "layerIds": [
+        "comparison-divider"
+      ]
+    }
+  ],
+  "cues": []
+}

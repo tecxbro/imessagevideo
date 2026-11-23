@@ -1,0 +1,113 @@
+{
+  "version": 1,
+  "skin": "contact-thread",
+  "conversationId": "pickup",
+  "title": "Jamie Rivera",
+  "service": "Messages",
+  "participants": {
+    "casey": "Casey",
+    "jamie": "Jamie Rivera"
+  },
+  "localSenderId": "casey",
+  "display": {
+    "width": 390,
+    "height": 700,
+    "handset": true,
+    "statusTime": "4:18"
+  },
+  "canvas": {
+    "width": 480,
+    "height": 790
+  },
+  "assets": {
+    "jamie-avatar": "assets/contact-thread-avatar.png"
+  },
+  "avatarAssetId": "jamie-avatar",
+  "fps": 24,
+  "frameCount": 114,
+  "initial": {
+    "messages": [
+      {
+        "id": "arriving",
+        "senderId": "jamie",
+        "text": "I’m outside the library."
+      },
+      {
+        "id": "door",
+        "senderId": "jamie",
+        "text": "Near the blue doors."
+      }
+    ]
+  },
+  "events": [
+    {
+      "id": "pickup.focus",
+      "kind": "focus",
+      "frame": 6,
+      "focused": true
+    },
+    {
+      "id": "pickup.draft",
+      "kind": "draft",
+      "frame": 14,
+      "text": "On my way down."
+    },
+    {
+      "id": "pickup.send",
+      "kind": "send",
+      "frame": 38,
+      "message": {
+        "id": "coming"
+      },
+      "durationFrames": 12
+    },
+    {
+      "id": "pickup.blur",
+      "kind": "focus",
+      "frame": 48,
+      "focused": false
+    },
+    {
+      "id": "pickup.typing",
+      "kind": "typing",
+      "frame": 52,
+      "senderId": "jamie",
+      "active": true
+    },
+    {
+      "id": "pickup.camera",
+      "kind": "camera",
+      "frame": 62,
+      "scale": 1.04
+    },
+    {
+      "id": "pickup.reply",
+      "kind": "receive",
+      "frame": 86,
+      "message": {
+        "id": "ready",
+        "senderId": "jamie",
+        "text": "Great, I’ll wait here."
+      }
+    },
+    {
+      "id": "pickup.receipt",
+      "kind": "receipt",
+      "frame": 94,
+      "messageId": "coming",
+      "status": "Delivered"
+    }
+  ],
+  "cues": [
+    {
+      "id": "pickup.send.sound",
+      "eventId": "pickup.send",
+      "offsetSamples": 0
+    },
+    {
+      "id": "pickup.reply.sound",
+      "eventId": "pickup.reply",
+      "offsetSamples": 0
+    }
+  ]
+}

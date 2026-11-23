@@ -1,0 +1,278 @@
+{
+  "width": 720,
+  "height": 480,
+  "fps": 30,
+  "duration": 2.4,
+  "background": "#dce7f1",
+  "title": "Cut between two contexts on a matched shape",
+  "source": {
+    "path": "packs/editorial.mjs#registered-shape-cut",
+    "sourceStart": 0,
+    "sourceEnd": 2.4,
+    "notes": "Original editable Motion demonstration."
+  },
+  "layers": [
+    {
+      "id": "surface",
+      "type": "rect",
+      "x": 110,
+      "y": 44,
+      "width": 500,
+      "height": 392,
+      "fill": "#ffffff",
+      "radius": 18
+    },
+    {
+      "id": "stage",
+      "type": "group",
+      "x": 110,
+      "y": 98,
+      "children": [
+        {
+          "id": "from-scene",
+          "type": "group",
+          "x": 0,
+          "y": 0,
+          "children": [
+            {
+              "id": "project-window",
+              "type": "rect",
+              "x": 41,
+              "y": 45,
+              "width": 418,
+              "height": 211,
+              "fill": "#e8eef5",
+              "radius": 26
+            },
+            {
+              "id": "old-surface-title",
+              "type": "text",
+              "text": "In a message",
+              "x": 69,
+              "y": 69,
+              "fontSize": 21,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#182737",
+              "fontWeight": 600
+            },
+            {
+              "id": "app-glyph",
+              "type": "rect",
+              "x": 185,
+              "y": 119,
+              "width": 130,
+              "height": 60,
+              "fill": "#1478e9",
+              "radius": 29
+            },
+            {
+              "id": "app-glyph-label",
+              "type": "text",
+              "text": "Approve",
+              "x": 250,
+              "y": 135,
+              "fontSize": 18,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#ffffff",
+              "fontWeight": 600,
+              "textAnchor": "middle"
+            }
+          ],
+          "keyframes": {
+            "opacity": [
+              {
+                "t": 0,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 1.176,
+                "value": 0,
+                "ease": "hold"
+              }
+            ]
+          }
+        },
+        {
+          "id": "to-scene",
+          "type": "group",
+          "x": 0,
+          "y": 0,
+          "children": [
+            {
+              "id": "next-scene-window",
+              "type": "rect",
+              "x": 41,
+              "y": 45,
+              "width": 418,
+              "height": 211,
+              "fill": "#182737",
+              "radius": 26
+            },
+            {
+              "id": "next-surface-title",
+              "type": "text",
+              "text": "In the workspace",
+              "x": 69,
+              "y": 69,
+              "fontSize": 21,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#ffffff",
+              "fontWeight": 600
+            },
+            {
+              "id": "matched-feature-button",
+              "type": "rect",
+              "x": 185,
+              "y": 119,
+              "width": 130,
+              "height": 60,
+              "fill": "#1478e9",
+              "radius": 29
+            },
+            {
+              "id": "matched-action-label",
+              "type": "text",
+              "text": "Approve",
+              "x": 250,
+              "y": 135,
+              "fontSize": 18,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#ffffff",
+              "fontWeight": 600,
+              "textAnchor": "middle"
+            },
+            {
+              "id": "new-context-description",
+              "type": "text",
+              "text": "The same action is available here.",
+              "x": 250,
+              "y": 197,
+              "fontSize": 18,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#ffffff",
+              "fontWeight": 600,
+              "textAnchor": "middle",
+              "keyframes": {
+                "opacity": [
+                  {
+                    "t": 0,
+                    "value": 0,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 1.32,
+                    "value": 0,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 1.704,
+                    "value": 1,
+                    "ease": "easeOut"
+                  }
+                ]
+              }
+            }
+          ],
+          "keyframes": {
+            "opacity": [
+              {
+                "t": 0,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 1.176,
+                "value": 1,
+                "ease": "hold"
+              }
+            ]
+          }
+        }
+      ],
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 500,
+        "height": 298
+      }
+    },
+    {
+      "id": "footer",
+      "type": "group",
+      "x": 110,
+      "y": 396,
+      "children": [
+        {
+          "id": "footer-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 40,
+          "fill": "#f2f6fb",
+          "radius": 12
+        }
+      ]
+    },
+    {
+      "id": "heading",
+      "type": "group",
+      "x": 110,
+      "y": 44,
+      "children": [
+        {
+          "id": "heading-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 54,
+          "fill": "#f2f6fb",
+          "radius": 13
+        },
+        {
+          "id": "heading-copy",
+          "type": "text",
+          "text": "One familiar action",
+          "x": 26,
+          "y": 13,
+          "fontSize": 23,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#182737",
+          "fontWeight": 700
+        }
+      ]
+    }
+  ],
+  "timeline": {
+    "version": 1,
+    "picture": {
+      "fpsNum": 30,
+      "fpsDen": 1,
+      "frameCount": 72
+    },
+    "initialUI": null,
+    "events": [
+      {
+        "id": "motion.registered-shape-cut.registered-cut",
+        "kind": "registered-cut",
+        "target": "matched-feature-button",
+        "frame": 36,
+        "layerIds": [
+          "matched-feature-button"
+        ]
+      },
+      {
+        "id": "motion.registered-shape-cut.new-context-readable",
+        "kind": "new-context-readable",
+        "target": "new-context-description",
+        "frame": 52,
+        "layerIds": [
+          "new-context-description"
+        ]
+      }
+    ],
+    "cues": []
+  }
+}

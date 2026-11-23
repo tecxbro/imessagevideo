@@ -1,0 +1,457 @@
+{
+  "width": 720,
+  "height": 480,
+  "fps": 30,
+  "duration": 2.4,
+  "background": "#dce7f1",
+  "title": "Raise a detail sheet above a dimmed conversation",
+  "source": {
+    "path": "projects/03-photon-mini-complete-v1/imessage-recreations/references/03-photon-mini/source.mp4",
+    "sourceStart": 7.033333,
+    "sourceEnd": 8.033333,
+    "notes": "Historical grabber y samples from a23bfb2 mapped into a new detail sheet. The scrim and content are authored."
+  },
+  "layers": [
+    {
+      "id": "surface",
+      "type": "rect",
+      "x": 110,
+      "y": 44,
+      "width": 500,
+      "height": 392,
+      "fill": "#ffffff",
+      "radius": 18
+    },
+    {
+      "id": "stage",
+      "type": "group",
+      "x": 110,
+      "y": 98,
+      "children": [
+        {
+          "id": "existing-message",
+          "type": "group",
+          "x": 25,
+          "y": 16,
+          "children": [
+            {
+              "id": "existing-message-body",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 300,
+              "height": 42,
+              "fill": "#e9e9ed",
+              "radius": 20
+            },
+            {
+              "id": "existing-message-tail",
+              "type": "path",
+              "d": "M 16 24 Q 3 43 -7 40 Q 3 36 2 22 Z",
+              "fill": "#e9e9ed"
+            },
+            {
+              "id": "existing-message-copy",
+              "type": "text",
+              "text": "Can you send the trail map?",
+              "x": 17,
+              "y": 14,
+              "fontSize": 15,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#17191d",
+              "lineHeight": 24
+            }
+          ]
+        },
+        {
+          "id": "inline-preview",
+          "type": "group",
+          "x": 38,
+          "y": 80,
+          "children": [
+            {
+              "id": "preview-material",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 266,
+              "height": 170,
+              "fill": "#e8eef5",
+              "radius": 18
+            },
+            {
+              "id": "preview-art",
+              "type": "image",
+              "src": "/Users/darshan/Documents/ChatGPT/imessage-video/codex-trial/skill/imessage-motion-recreation/motion/assets/landscape-1.png",
+              "x": 12,
+              "y": 12,
+              "width": 242,
+              "height": 110
+            },
+            {
+              "id": "preview-title",
+              "type": "text",
+              "text": "The north ridge",
+              "x": 12,
+              "y": 130,
+              "fontSize": 21,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#17191d",
+              "fontWeight": 700
+            }
+          ]
+        },
+        {
+          "id": "sheet-scrim",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 298,
+          "fill": "#132333",
+          "radius": 0,
+          "opacity": 0,
+          "keyframes": {
+            "opacity": [
+              {
+                "t": 0,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 0.672,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 1.056,
+                "value": 0.42,
+                "ease": "easeOut"
+              }
+            ]
+          }
+        },
+        {
+          "id": "detail-sheet",
+          "type": "group",
+          "x": 0,
+          "y": 298,
+          "children": [
+            {
+              "id": "sheet-surface",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 500,
+              "height": 305,
+              "fill": "#ffffff",
+              "radius": 24
+            },
+            {
+              "id": "sheet-grabber",
+              "type": "rect",
+              "x": 224,
+              "y": 10,
+              "width": 52,
+              "height": 5,
+              "fill": "#9aa9ba",
+              "radius": 2.5
+            },
+            {
+              "id": "sheet-title",
+              "type": "text",
+              "text": "The north ridge",
+              "x": 26,
+              "y": 33,
+              "fontSize": 25,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#17191d",
+              "fontWeight": 700
+            },
+            {
+              "id": "sheet-detail",
+              "type": "text",
+              "text": "Field guide · Autumn",
+              "x": 27,
+              "y": 66,
+              "fontSize": 16,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#516277"
+            },
+            {
+              "id": "sheet-art",
+              "type": "image",
+              "src": "/Users/darshan/Documents/ChatGPT/imessage-video/codex-trial/skill/imessage-motion-recreation/motion/assets/landscape-1.png",
+              "x": 26,
+              "y": 95,
+              "width": 448,
+              "height": 92
+            },
+            {
+              "id": "sheet-action",
+              "type": "group",
+              "x": 26,
+              "y": 195,
+              "children": [
+                {
+                  "id": "sheet-action-shape",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 448,
+                  "height": 42,
+                  "fill": "#1688fa",
+                  "radius": 21
+                },
+                {
+                  "id": "sheet-action-label",
+                  "type": "text",
+                  "text": "Open",
+                  "x": 224,
+                  "y": 11,
+                  "fontSize": 16,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#ffffff",
+                  "textAnchor": "middle",
+                  "fontWeight": 600
+                }
+              ]
+            }
+          ],
+          "keyframes": {
+            "y": [
+              {
+                "t": 0,
+                "value": 298,
+                "ease": "linear"
+              },
+              {
+                "t": 0.72,
+                "value": 298,
+                "ease": "linear"
+              },
+              {
+                "t": 0.768,
+                "value": 249.72910662824208,
+                "ease": "linear"
+              },
+              {
+                "t": 0.8086153846153846,
+                "value": 192.33237271853986,
+                "ease": "linear"
+              },
+              {
+                "t": 0.8492307692307692,
+                "value": 154.388088376561,
+                "ease": "linear"
+              },
+              {
+                "t": 0.8898461538461538,
+                "value": 128.45148895292988,
+                "ease": "linear"
+              },
+              {
+                "t": 0.9304615384615383,
+                "value": 109.2391930835735,
+                "ease": "linear"
+              },
+              {
+                "t": 0.971076923076923,
+                "value": 94.34966378482228,
+                "ease": "linear"
+              },
+              {
+                "t": 1.0116923076923077,
+                "value": 82.5821325648415,
+                "ease": "linear"
+              },
+              {
+                "t": 1.0523076923076922,
+                "value": 73.21613832853026,
+                "ease": "linear"
+              },
+              {
+                "t": 1.0929230769230769,
+                "value": 65.77137367915466,
+                "ease": "linear"
+              },
+              {
+                "t": 1.1335384615384616,
+                "value": 60.00768491834774,
+                "ease": "linear"
+              },
+              {
+                "t": 1.174153846153846,
+                "value": 55.20461095100865,
+                "ease": "linear"
+              },
+              {
+                "t": 1.2147692307692308,
+                "value": 51.60230547550432,
+                "ease": "linear"
+              },
+              {
+                "t": 1.2553846153846153,
+                "value": 48.96061479346782,
+                "ease": "linear"
+              },
+              {
+                "t": 1.296,
+                "value": 47.279538904899134,
+                "ease": "linear"
+              },
+              {
+                "t": 1.3366153846153848,
+                "value": 46.07877041306436,
+                "ease": "linear"
+              },
+              {
+                "t": 1.3772307692307693,
+                "value": 45.59846301633045,
+                "ease": "linear"
+              },
+              {
+                "t": 1.4178461538461538,
+                "value": 45.83861671469741,
+                "ease": "linear"
+              },
+              {
+                "t": 1.4584615384615385,
+                "value": 46.07877041306436,
+                "ease": "linear"
+              },
+              {
+                "t": 1.499076923076923,
+                "value": 46.55907780979827,
+                "ease": "linear"
+              },
+              {
+                "t": 1.5396923076923075,
+                "value": 46.79923150816523,
+                "ease": "linear"
+              },
+              {
+                "t": 1.5803076923076922,
+                "value": 47.03938520653218,
+                "ease": "linear"
+              },
+              {
+                "t": 1.6209230769230771,
+                "value": 47.279538904899134,
+                "ease": "linear"
+              },
+              {
+                "t": 1.6615384615384614,
+                "value": 47.279538904899134,
+                "ease": "linear"
+              },
+              {
+                "t": 1.7021538461538461,
+                "value": 47.51969260326609,
+                "ease": "linear"
+              },
+              {
+                "t": 1.7427692307692306,
+                "value": 47.75984630163305,
+                "ease": "linear"
+              },
+              {
+                "t": 1.7833846153846153,
+                "value": 47.75984630163305,
+                "ease": "linear"
+              },
+              {
+                "t": 1.8239999999999998,
+                "value": 48,
+                "ease": "linear"
+              }
+            ]
+          }
+        }
+      ],
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 500,
+        "height": 298
+      }
+    },
+    {
+      "id": "footer",
+      "type": "group",
+      "x": 110,
+      "y": 396,
+      "children": [
+        {
+          "id": "footer-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 40,
+          "fill": "#f2f6fb",
+          "radius": 12
+        }
+      ]
+    },
+    {
+      "id": "heading",
+      "type": "group",
+      "x": 110,
+      "y": 44,
+      "children": [
+        {
+          "id": "heading-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 54,
+          "fill": "#f2f6fb",
+          "radius": 13
+        },
+        {
+          "id": "heading-copy",
+          "type": "text",
+          "text": "Alpine field notes",
+          "x": 26,
+          "y": 13,
+          "fontSize": 23,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#182737",
+          "fontWeight": 700
+        }
+      ]
+    }
+  ],
+  "timeline": {
+    "version": 1,
+    "picture": {
+      "fpsNum": 30,
+      "fpsDen": 1,
+      "frameCount": 72
+    },
+    "initialUI": null,
+    "events": [
+      {
+        "id": "motion.inline-card-expand.sheet-enter",
+        "kind": "panel.open",
+        "target": "detail-sheet",
+        "frame": 24,
+        "layerIds": [
+          "detail-sheet"
+        ]
+      },
+      {
+        "id": "motion.inline-card-expand.sheet-settle",
+        "kind": "panel.settle",
+        "target": "detail-sheet",
+        "frame": 55,
+        "layerIds": [
+          "detail-sheet"
+        ]
+      }
+    ],
+    "cues": []
+  }
+}

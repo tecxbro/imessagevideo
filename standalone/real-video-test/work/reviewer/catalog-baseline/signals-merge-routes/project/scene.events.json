@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 72
+  },
+  "initialUI": null,
+  "events": [
+    {
+      "id": "motion.signals-merge-routes.inputs-merge",
+      "kind": "inputs-merge",
+      "target": "joined-pulse",
+      "frame": 38,
+      "layerIds": [
+        "joined-pulse"
+      ]
+    },
+    {
+      "id": "motion.signals-merge-routes.result-arrives",
+      "kind": "result-arrives",
+      "target": "joined-pulse",
+      "frame": 57,
+      "layerIds": [
+        "joined-pulse"
+      ]
+    }
+  ],
+  "cues": []
+}

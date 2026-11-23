@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 72
+  },
+  "initialUI": null,
+  "events": [
+    {
+      "id": "motion.media-trim-range.trim-in-drag",
+      "kind": "drag",
+      "target": "trim-in-handle",
+      "frame": 18,
+      "layerIds": [
+        "trim-in-handle"
+      ]
+    },
+    {
+      "id": "motion.media-trim-range.trim-out-drag",
+      "kind": "drag",
+      "target": "trim-out-handle",
+      "frame": 38,
+      "layerIds": [
+        "trim-out-handle"
+      ]
+    },
+    {
+      "id": "motion.media-trim-range.trim-range-settle",
+      "kind": "selection_change",
+      "target": "trim-out-handle",
+      "frame": 53,
+      "layerIds": [
+        "trim-out-handle"
+      ]
+    }
+  ],
+  "cues": []
+}

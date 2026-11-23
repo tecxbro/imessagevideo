@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "skin": "contact-thread",
+  "conversationId": "pickup",
+  "title": "Jamie Rivera",
+  "service": "Messages",
+  "participants": {
+    "casey": "Casey",
+    "jamie": "Jamie Rivera"
+  },
+  "localSenderId": "casey",
+  "display": {
+    "width": 390,
+    "height": 700,
+    "handset": true,
+    "statusTime": "4:18"
+  },
+  "canvas": {
+    "width": 480,
+    "height": 790
+  },
+  "fps": 24,
+  "frameCount": 114,
+  "initial": {
+    "messages": [
+      {
+        "id": "arriving",
+        "senderId": "jamie",
+        "text": "I’m outside the library."
+      },
+      {
+        "id": "door",
+        "senderId": "jamie",
+        "text": "Near the blue doors."
+      }
+    ]
+  },
+  "events": [
+    {
+      "id": "remote-typing",
+      "kind": "typing",
+      "frame": 10,
+      "senderId": "jamie",
+      "active": true,
+      "durationFrames": 24
+    }
+  ],
+  "cues": []
+}

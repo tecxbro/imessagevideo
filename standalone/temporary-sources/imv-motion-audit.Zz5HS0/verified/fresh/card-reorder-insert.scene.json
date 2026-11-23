@@ -1,0 +1,440 @@
+{
+  "width": 720,
+  "height": 480,
+  "fps": 30,
+  "duration": 2.4,
+  "background": "#dce7f1",
+  "title": "Drag a photo into a new grid position",
+  "source": {
+    "path": "packs/media.mjs#card-reorder-insert",
+    "sourceStart": 0,
+    "sourceEnd": 2.4,
+    "notes": "Motion-authored shot. Gesture and timing are illustrative."
+  },
+  "layers": [
+    {
+      "id": "surface",
+      "type": "rect",
+      "x": 110,
+      "y": 44,
+      "width": 500,
+      "height": 392,
+      "fill": "#ffffff",
+      "radius": 18
+    },
+    {
+      "id": "stage",
+      "type": "group",
+      "x": 110,
+      "y": 98,
+      "children": [
+        {
+          "id": "reorder-destination",
+          "type": "rect",
+          "x": 341,
+          "y": 110,
+          "width": 115,
+          "height": 85,
+          "fill": "#e4efff",
+          "radius": 14,
+          "stroke": "#1478e9",
+          "strokeWidth": 2,
+          "opacity": 0,
+          "keyframes": {
+            "opacity": [
+              {
+                "t": 0,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 1.128,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 1.44,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 1.776,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 1.944,
+                "value": 0,
+                "ease": "linear"
+              }
+            ]
+          }
+        },
+        {
+          "id": "reorder-second",
+          "type": "group",
+          "x": 195,
+          "y": 112,
+          "children": [
+            {
+              "id": "reorder-second-surface",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 111,
+              "height": 81,
+              "fill": "#ffffff",
+              "radius": 12,
+              "stroke": "#e8eef5",
+              "strokeWidth": 1
+            },
+            {
+              "id": "reorder-second-photo",
+              "type": "group",
+              "x": 4,
+              "y": 4,
+              "children": [
+                {
+                  "id": "reorder-second-photo-image",
+                  "type": "image",
+                  "src": "/Users/darshan/Documents/ChatGPT/imessage-video/codex-trial/skill/imessage-motion-recreation/motion/assets/landscape-2.png",
+                  "x": 0,
+                  "y": 0,
+                  "width": 103,
+                  "height": 73
+                }
+              ],
+              "clip": {
+                "x": 0,
+                "y": 0,
+                "width": 103,
+                "height": 73,
+                "radius": 8
+              }
+            }
+          ],
+          "originX": 55.5,
+          "originY": 40.5,
+          "keyframes": {
+            "x": [
+              {
+                "t": 0,
+                "value": 195,
+                "ease": "linear"
+              },
+              {
+                "t": 1.056,
+                "value": 195,
+                "ease": "linear"
+              },
+              {
+                "t": 1.44,
+                "value": 47,
+                "ease": "easeOut"
+              }
+            ]
+          }
+        },
+        {
+          "id": "reorder-third",
+          "type": "group",
+          "x": 343,
+          "y": 112,
+          "children": [
+            {
+              "id": "reorder-third-surface",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 111,
+              "height": 81,
+              "fill": "#ffffff",
+              "radius": 12,
+              "stroke": "#e8eef5",
+              "strokeWidth": 1
+            },
+            {
+              "id": "reorder-third-photo",
+              "type": "group",
+              "x": 4,
+              "y": 4,
+              "children": [
+                {
+                  "id": "reorder-third-photo-image",
+                  "type": "image",
+                  "src": "/Users/darshan/Documents/ChatGPT/imessage-video/codex-trial/skill/imessage-motion-recreation/motion/assets/landscape-3.png",
+                  "x": 0,
+                  "y": 0,
+                  "width": 103,
+                  "height": 73
+                }
+              ],
+              "clip": {
+                "x": 0,
+                "y": 0,
+                "width": 103,
+                "height": 73,
+                "radius": 8
+              }
+            }
+          ],
+          "originX": 55.5,
+          "originY": 40.5,
+          "keyframes": {
+            "x": [
+              {
+                "t": 0,
+                "value": 343,
+                "ease": "linear"
+              },
+              {
+                "t": 1.2,
+                "value": 343,
+                "ease": "linear"
+              },
+              {
+                "t": 1.584,
+                "value": 195,
+                "ease": "easeOut"
+              }
+            ]
+          }
+        },
+        {
+          "id": "reorder-first",
+          "type": "group",
+          "x": 47,
+          "y": 112,
+          "children": [
+            {
+              "id": "reorder-first-surface",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 111,
+              "height": 81,
+              "fill": "#ffffff",
+              "radius": 12,
+              "stroke": "#e8eef5",
+              "strokeWidth": 1
+            },
+            {
+              "id": "reorder-first-photo",
+              "type": "group",
+              "x": 4,
+              "y": 4,
+              "children": [
+                {
+                  "id": "reorder-first-photo-image",
+                  "type": "image",
+                  "src": "/Users/darshan/Documents/ChatGPT/imessage-video/codex-trial/skill/imessage-motion-recreation/motion/assets/landscape-1.png",
+                  "x": 0,
+                  "y": 0,
+                  "width": 103,
+                  "height": 73
+                }
+              ],
+              "clip": {
+                "x": 0,
+                "y": 0,
+                "width": 103,
+                "height": 73,
+                "radius": 8
+              }
+            }
+          ],
+          "originX": 55.5,
+          "originY": 40.5,
+          "keyframes": {
+            "x": [
+              {
+                "t": 0,
+                "value": 47,
+                "ease": "linear"
+              },
+              {
+                "t": 0.72,
+                "value": 47,
+                "ease": "linear"
+              },
+              {
+                "t": 1.224,
+                "value": 216,
+                "ease": "easeInOut"
+              },
+              {
+                "t": 1.584,
+                "value": 343,
+                "ease": "easeOut"
+              }
+            ],
+            "y": [
+              {
+                "t": 0,
+                "value": 112,
+                "ease": "linear"
+              },
+              {
+                "t": 0.552,
+                "value": 112,
+                "ease": "linear"
+              },
+              {
+                "t": 0.8160000000000001,
+                "value": 46,
+                "ease": "easeOut"
+              },
+              {
+                "t": 1.536,
+                "value": 46,
+                "ease": "linear"
+              },
+              {
+                "t": 1.92,
+                "value": 112,
+                "ease": "easeIn"
+              }
+            ],
+            "scaleX": [
+              {
+                "t": 0,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 0.552,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 0.84,
+                "value": 1.1,
+                "ease": "easeOut"
+              },
+              {
+                "t": 1.56,
+                "value": 1.1,
+                "ease": "linear"
+              },
+              {
+                "t": 1.92,
+                "value": 1,
+                "ease": "linear"
+              }
+            ],
+            "scaleY": [
+              {
+                "t": 0,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 0.552,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 0.84,
+                "value": 1.1,
+                "ease": "easeOut"
+              },
+              {
+                "t": 1.56,
+                "value": 1.1,
+                "ease": "linear"
+              },
+              {
+                "t": 1.92,
+                "value": 1,
+                "ease": "linear"
+              }
+            ]
+          }
+        }
+      ],
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 500,
+        "height": 298
+      }
+    },
+    {
+      "id": "footer",
+      "type": "group",
+      "x": 110,
+      "y": 396,
+      "children": [
+        {
+          "id": "footer-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 40,
+          "fill": "#f2f6fb",
+          "radius": 12
+        }
+      ]
+    },
+    {
+      "id": "heading",
+      "type": "group",
+      "x": 110,
+      "y": 44,
+      "children": [
+        {
+          "id": "heading-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 54,
+          "fill": "#f2f6fb",
+          "radius": 13
+        },
+        {
+          "id": "heading-copy",
+          "type": "text",
+          "text": "Alpine field notes",
+          "x": 26,
+          "y": 13,
+          "fontSize": 23,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#182737",
+          "fontWeight": 700
+        }
+      ]
+    }
+  ],
+  "timeline": {
+    "version": 1,
+    "picture": {
+      "fpsNum": 30,
+      "fpsDen": 1,
+      "frameCount": 72
+    },
+    "initialUI": null,
+    "events": [
+      {
+        "id": "motion.card-reorder-insert.reorder-pickup",
+        "kind": "drag",
+        "target": "reorder-first",
+        "frame": 17,
+        "layerIds": [
+          "reorder-first"
+        ]
+      },
+      {
+        "id": "motion.card-reorder-insert.reorder-drop",
+        "kind": "drop",
+        "target": "reorder-first",
+        "frame": 58,
+        "layerIds": [
+          "reorder-first"
+        ]
+      }
+    ],
+    "cues": []
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 72
+  },
+  "initialUI": null,
+  "events": [
+    {
+      "id": "motion.grid-reflow.layout-reflow-start",
+      "kind": "layout-reflow-start",
+      "target": "reflow-card-0",
+      "frame": 10,
+      "layerIds": [
+        "reflow-card-0"
+      ]
+    },
+    {
+      "id": "motion.grid-reflow.grid-reordered",
+      "kind": "grid-reordered",
+      "target": "reflow-board",
+      "frame": 49,
+      "layerIds": [
+        "reflow-board"
+      ]
+    }
+  ],
+  "cues": []
+}

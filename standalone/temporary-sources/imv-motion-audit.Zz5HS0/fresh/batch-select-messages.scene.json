@@ -1,0 +1,548 @@
+{
+  "width": 720,
+  "height": 480,
+  "fps": 30,
+  "duration": 2.4,
+  "background": "#dce7f1",
+  "title": "Select messages for one batch action",
+  "source": {
+    "path": "packs/conversation.mjs#batch-select-messages",
+    "sourceStart": 0,
+    "sourceEnd": 2.4,
+    "notes": "Original editable Motion demonstration."
+  },
+  "layers": [
+    {
+      "id": "surface",
+      "type": "rect",
+      "x": 110,
+      "y": 44,
+      "width": 500,
+      "height": 392,
+      "fill": "#ffffff",
+      "radius": 18
+    },
+    {
+      "id": "stage",
+      "type": "group",
+      "x": 110,
+      "y": 98,
+      "children": [
+        {
+          "id": "batch-transcript",
+          "type": "group",
+          "x": 0,
+          "y": 0,
+          "children": [
+            {
+              "id": "batch-row-one",
+              "type": "group",
+              "x": 28,
+              "y": 47,
+              "children": [
+                {
+                  "id": "batch-row-one-body",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 256,
+                  "height": 54,
+                  "fill": "#e9e9ed",
+                  "radius": 20
+                },
+                {
+                  "id": "batch-row-one-tail",
+                  "type": "path",
+                  "d": "M 16 36 Q 3 55 -7 52 Q 3 48 2 34 Z",
+                  "fill": "#e9e9ed"
+                },
+                {
+                  "id": "batch-row-one-copy",
+                  "type": "text",
+                  "text": "Can you send the trail map?",
+                  "x": 17,
+                  "y": 14,
+                  "fontSize": 16,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#17191d",
+                  "lineHeight": 18
+                }
+              ]
+            },
+            {
+              "id": "batch-row-two",
+              "type": "group",
+              "x": 181,
+              "y": 124,
+              "children": [
+                {
+                  "id": "batch-row-two-body",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 251,
+                  "height": 54,
+                  "fill": "#1688fa",
+                  "radius": 20
+                },
+                {
+                  "id": "batch-row-two-tail",
+                  "type": "path",
+                  "d": "M 235 36 Q 248 55 258 52 Q 248 48 249 34 Z",
+                  "fill": "#1688fa"
+                },
+                {
+                  "id": "batch-row-two-copy",
+                  "type": "text",
+                  "text": "Here it is. Meet at the\nnorth gate.",
+                  "x": 17,
+                  "y": 7.5,
+                  "fontSize": 16,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#ffffff",
+                  "lineHeight": 18
+                }
+              ]
+            },
+            {
+              "id": "batch-row-three",
+              "type": "group",
+              "x": 28,
+              "y": 201,
+              "children": [
+                {
+                  "id": "batch-row-three-body",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 256,
+                  "height": 54,
+                  "fill": "#e9e9ed",
+                  "radius": 20
+                },
+                {
+                  "id": "batch-row-three-tail",
+                  "type": "path",
+                  "d": "M 16 36 Q 3 55 -7 52 Q 3 48 2 34 Z",
+                  "fill": "#e9e9ed"
+                },
+                {
+                  "id": "batch-row-three-copy",
+                  "type": "text",
+                  "text": "We are set for tomorrow.",
+                  "x": 17,
+                  "y": 14,
+                  "fontSize": 16,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#17191d",
+                  "lineHeight": 18
+                }
+              ]
+            }
+          ],
+          "keyframes": {
+            "x": [
+              {
+                "t": 0,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 0.45599999999999996,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 0.9359999999999999,
+                "value": 38,
+                "ease": "easeOut"
+              }
+            ]
+          }
+        },
+        {
+          "id": "batch-selection-rail",
+          "type": "group",
+          "x": 0,
+          "y": 0,
+          "children": [
+            {
+              "id": "batch-row-check-0",
+              "type": "rect",
+              "x": 20,
+              "y": 63,
+              "width": 21,
+              "height": 21,
+              "fill": "#ffffff",
+              "radius": 11,
+              "stroke": "#516277",
+              "strokeWidth": 1.5
+            },
+            {
+              "id": "batch-row-check-1",
+              "type": "rect",
+              "x": 20,
+              "y": 140,
+              "width": 21,
+              "height": 21,
+              "fill": "#ffffff",
+              "radius": 11,
+              "stroke": "#516277",
+              "strokeWidth": 1.5
+            },
+            {
+              "id": "batch-row-check-2",
+              "type": "rect",
+              "x": 20,
+              "y": 217,
+              "width": 21,
+              "height": 21,
+              "fill": "#ffffff",
+              "radius": 11,
+              "stroke": "#516277",
+              "strokeWidth": 1.5
+            }
+          ],
+          "keyframes": {
+            "opacity": [
+              {
+                "t": 0,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 0.45599999999999996,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 0.864,
+                "value": 1,
+                "ease": "easeOut"
+              }
+            ]
+          }
+        },
+        {
+          "id": "batch-selected-0",
+          "type": "group",
+          "x": 20,
+          "y": 63,
+          "children": [
+            {
+              "id": "batch-selected-fill-0",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 21,
+              "height": 21,
+              "fill": "#1478e9",
+              "radius": 11
+            },
+            {
+              "id": "batch-selected-check-0",
+              "x": 0,
+              "y": 0,
+              "d": "M 5 10 L 9 14 L 16 7",
+              "type": "path",
+              "fill": "none",
+              "stroke": "#ffffff",
+              "strokeWidth": 2,
+              "lineCap": "round",
+              "lineJoin": "round"
+            }
+          ],
+          "keyframes": {
+            "opacity": [
+              {
+                "t": 0,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 1.032,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 1.152,
+                "value": 1,
+                "ease": "easeOut"
+              }
+            ]
+          }
+        },
+        {
+          "id": "batch-selected-1",
+          "type": "group",
+          "x": 20,
+          "y": 140,
+          "children": [
+            {
+              "id": "batch-selected-fill-1",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 21,
+              "height": 21,
+              "fill": "#1478e9",
+              "radius": 11
+            },
+            {
+              "id": "batch-selected-check-1",
+              "x": 0,
+              "y": 0,
+              "d": "M 5 10 L 9 14 L 16 7",
+              "type": "path",
+              "fill": "none",
+              "stroke": "#ffffff",
+              "strokeWidth": 2,
+              "lineCap": "round",
+              "lineJoin": "round"
+            }
+          ],
+          "keyframes": {
+            "opacity": [
+              {
+                "t": 0,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 1.488,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 1.6079999999999999,
+                "value": 1,
+                "ease": "easeOut"
+              }
+            ]
+          }
+        }
+      ],
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 500,
+        "height": 298
+      }
+    },
+    {
+      "id": "footer",
+      "type": "group",
+      "x": 110,
+      "y": 396,
+      "children": [
+        {
+          "id": "footer-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 40,
+          "fill": "#f2f6fb",
+          "radius": 12
+        },
+        {
+          "id": "batch-composer",
+          "type": "group",
+          "x": 23,
+          "y": 0,
+          "children": [
+            {
+              "id": "batch-composer-field",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 454,
+              "height": 48,
+              "fill": "#ffffff",
+              "radius": 24,
+              "stroke": "#d8dbe0",
+              "strokeWidth": 1
+            },
+            {
+              "id": "batch-composer-input",
+              "type": "text",
+              "text": "Message",
+              "x": 18,
+              "y": 14,
+              "fontSize": 17,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#777b84"
+            },
+            {
+              "id": "batch-composer-send",
+              "type": "circle",
+              "x": 414,
+              "y": 8,
+              "width": 32,
+              "height": 32,
+              "fill": "#d8dbe0"
+            },
+            {
+              "id": "batch-composer-arrow",
+              "type": "path",
+              "d": "M 430 33 L 430 16 M 423 23 L 430 16 L 437 23",
+              "fill": "none",
+              "stroke": "#ffffff",
+              "strokeWidth": 2
+            }
+          ],
+          "keyframes": {
+            "opacity": [
+              {
+                "t": 0,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 1.032,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 1.392,
+                "value": 0,
+                "ease": "easeOut"
+              }
+            ]
+          }
+        },
+        {
+          "id": "batch-toolbar",
+          "type": "group",
+          "x": 23,
+          "y": 12,
+          "children": [
+            {
+              "id": "batch-selection-count",
+              "type": "text",
+              "text": "1 selected",
+              "x": 0,
+              "y": 0,
+              "fontSize": 15,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#516277",
+              "keyframes": {
+                "text": [
+                  {
+                    "t": 0,
+                    "value": "1 selected",
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 1.488,
+                    "value": "2 selected",
+                    "ease": "hold"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "batch-toolbar-action",
+              "type": "text",
+              "text": "Forward",
+              "x": 454,
+              "y": 0,
+              "fontSize": 16,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#1478e9",
+              "textAnchor": "end",
+              "fontWeight": 600
+            }
+          ],
+          "keyframes": {
+            "opacity": [
+              {
+                "t": 0,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 1.128,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 1.464,
+                "value": 1,
+                "ease": "easeOut"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "heading",
+      "type": "group",
+      "x": 110,
+      "y": 44,
+      "children": [
+        {
+          "id": "heading-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 54,
+          "fill": "#f2f6fb",
+          "radius": 13
+        },
+        {
+          "id": "heading-copy",
+          "type": "text",
+          "text": "Alpine field notes",
+          "x": 26,
+          "y": 13,
+          "fontSize": 23,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#182737",
+          "fontWeight": 700
+        }
+      ]
+    }
+  ],
+  "timeline": {
+    "version": 1,
+    "picture": {
+      "fpsNum": 30,
+      "fpsDen": 1,
+      "frameCount": 72
+    },
+    "initialUI": null,
+    "events": [
+      {
+        "id": "motion.batch-select-messages.selection-mode",
+        "kind": "selection_open",
+        "target": "batch-selection-rail",
+        "frame": 14,
+        "layerIds": [
+          "batch-selection-rail"
+        ]
+      },
+      {
+        "id": "motion.batch-select-messages.selection-first",
+        "kind": "select",
+        "target": "batch-selected-0",
+        "frame": 31,
+        "layerIds": [
+          "batch-selected-0"
+        ]
+      },
+      {
+        "id": "motion.batch-select-messages.selection-second",
+        "kind": "select",
+        "target": "batch-selected-1",
+        "frame": 45,
+        "layerIds": [
+          "batch-selected-1"
+        ]
+      }
+    ],
+    "cues": []
+  }
+}

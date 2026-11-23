@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 72
+  },
+  "initialUI": null,
+  "events": [
+    {
+      "id": "motion.signal-radiation.signal-emitted",
+      "kind": "signal-emitted",
+      "target": "signal-source",
+      "frame": 11,
+      "layerIds": [
+        "signal-source"
+      ]
+    },
+    {
+      "id": "motion.signal-radiation.last-wave-clears",
+      "kind": "last-wave-clears",
+      "target": "signal-ring-2",
+      "frame": 53,
+      "layerIds": [
+        "signal-ring-2"
+      ]
+    }
+  ],
+  "cues": []
+}

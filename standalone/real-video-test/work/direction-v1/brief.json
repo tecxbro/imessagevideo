@@ -1,0 +1,61 @@
+{
+  "mode": "director",
+  "fps": 30,
+  "brief": "Jo and Tessa get Afterglow tickets. Show how they decide where to sit and confirm both tickets.",
+  "shots": [
+    {
+      "id": "open",
+      "frames": 108,
+      "purpose": "Establish a concrete invitation.",
+      "visual": "Jo sends a draft into the conversation.",
+      "motion": {
+        "kind": "seed",
+        "id": "draft-send-flight"
+      },
+      "copy": "Tickets for Afterglow?",
+      "copy_key": "copy",
+      "bindings": {
+        "heading": "Jo + Tessa",
+        "reply": "Presale just opened."
+      }
+    },
+    {
+      "id": "choice",
+      "frames": 96,
+      "purpose": "Give the two friends a choice.",
+      "visual": "Browse the available tickets beneath the fixed event heading.",
+      "motion": {
+        "kind": "seed",
+        "id": "photos-under-fixed-heading"
+      },
+      "copy": "Afterglow · Friday",
+      "copy_key": "heading",
+      "bindings": {
+        "heading": "Jo + Tessa",
+        "detail": "Compare the venue sections",
+        "photos": [
+          "art/ticket-1.png",
+          "art/ticket-2.png",
+          "art/ticket-3.png",
+          "art/ticket-4.png"
+        ]
+      }
+    },
+    {
+      "id": "payoff",
+      "frames": 108,
+      "purpose": "Confirm that both friends have a ticket.",
+      "visual": "The confirmation leaves the composer and settles below the plan.",
+      "motion": {
+        "kind": "seed",
+        "id": "draft-send-flight"
+      },
+      "copy": "Got both tickets!",
+      "copy_key": "copy",
+      "bindings": {
+        "heading": "Jo + Tessa",
+        "reply": "Floor works for me."
+      }
+    }
+  ]
+}

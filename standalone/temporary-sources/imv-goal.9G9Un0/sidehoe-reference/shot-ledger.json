@@ -1,0 +1,1073 @@
+{
+  "reference_sha256": "f821bb58cbdb265a75d572616d0da723e9cfb6de31e3db5f8a17d94dc15b5327",
+  "breakdown_sha256": "60646b44c490a31884a6355ad818ba512fd7cef912058a6f2fecea802f86f94a",
+  "clock": {
+    "width": 2000,
+    "height": 2000,
+    "sample_aspect_ratio": "1",
+    "rotation_degrees": 0,
+    "display_matrix": [
+      65536,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      1073741824
+    ],
+    "container_crop_top_bottom_left_right": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "time_base": "1/60000",
+    "declared_rate": "25",
+    "declared_average_rate": "25/1",
+    "start_pts": 0,
+    "end_pts_exclusive": 1867200,
+    "end_basis": "stream start + stream duration",
+    "end_seconds": 31.12,
+    "frames": 778,
+    "cadence": "constant",
+    "pixel_format": "yuv420p",
+    "alpha_present": false,
+    "color_range": null,
+    "color_space": null,
+    "color_primaries": null,
+    "color_transfer": null
+  },
+  "renderer": {
+    "route": "hyperframes",
+    "reason": "constant measured frame grid and opaque SDR geometry"
+  },
+  "shots": [
+    {
+      "id": "shot_001",
+      "frames": [
+        0,
+        102
+      ],
+      "source_pts": [
+        0,
+        247200
+      ],
+      "suggested_method": "code_render",
+      "confidence": 0.616,
+      "reviewed": false,
+      "boundary_review": "inspect consecutive frames around the cut",
+      "transition": "start",
+      "keyframes": [
+        {
+          "t": 0.0,
+          "frame": 0,
+          "role": "first",
+          "by": "tool",
+          "source_pts": 0
+        },
+        {
+          "t": 0.56,
+          "frame": 14,
+          "role": "change",
+          "by": "tool",
+          "source_pts": 33600
+        },
+        {
+          "t": 1.32,
+          "frame": 33,
+          "role": "change",
+          "by": "tool",
+          "source_pts": 79200
+        },
+        {
+          "t": 1.84,
+          "frame": 46,
+          "role": "change",
+          "by": "tool",
+          "source_pts": 110400
+        },
+        {
+          "t": 2.32,
+          "frame": 58,
+          "role": "change",
+          "by": "tool",
+          "source_pts": 139200
+        },
+        {
+          "t": 2.8,
+          "frame": 70,
+          "role": "change",
+          "by": "tool",
+          "source_pts": 168000
+        },
+        {
+          "t": 3.24,
+          "frame": 81,
+          "role": "change",
+          "by": "tool",
+          "source_pts": 194400
+        },
+        {
+          "t": 3.76,
+          "frame": 94,
+          "role": "change",
+          "by": "tool",
+          "source_pts": 225600
+        },
+        {
+          "t": 4.04,
+          "frame": 101,
+          "role": "change",
+          "by": "tool",
+          "source_pts": 242400
+        },
+        {
+          "t": 4.08,
+          "frame": 102,
+          "role": "change",
+          "by": "tool",
+          "source_pts": 244800
+        }
+      ],
+      "assessment": {
+        "label": "code_render",
+        "label_zh": "code / template render",
+        "confidence": 0.616,
+        "probs": {
+          "live_action": 0.0121,
+          "ai_video": 0.1117,
+          "avatar": 0.0083,
+          "cg_3d": 0.1057,
+          "code_render": 0.6159,
+          "screen_capture": 0.118,
+          "still_motion": 0.0071,
+          "static_hold": 0.0071,
+          "anim_2d": 0.0071,
+          "stop_motion": 0.0071,
+          "film_footage": 0.0
+        },
+        "image_source": null,
+        "generator_guess": null,
+        "decided_by": "deterministic",
+        "evidence": [
+          "Rendered texture: 78% flat colour blocks, 95% of pixels use only 14 colours, 19% axis-aligned edges",
+          "Per-frame sharpness oscillates periodically (period 2 frames, correlation 0.52) with no duplicate frames: frame interpolation / rate conversion, or just the rhythm of a re-encode (transcodes whose platform tags were stripped show it too); not enough on its own to call AI",
+          "Nearly colourless frame (saturation 0.02) with only 14 colours: a flat UI / document picture, not a shaded 3D render"
+        ],
+        "seen": [],
+        "measured": [
+          "Rendered texture: 78% flat colour blocks, 95% of pixels use only 14 colours, 19% axis-aligned edges",
+          "Per-frame sharpness oscillates periodically (period 2 frames, correlation 0.52) with no duplicate frames: frame interpolation / rate conversion, or just the rhythm of a re-encode (transcodes whose platform tags were stripped show it too); not enough on its own to call AI",
+          "Nearly colourless frame (saturation 0.02) with only 14 colours: a flat UI / document picture, not a shaded 3D render"
+        ]
+      },
+      "observation": null,
+      "assets": [],
+      "layers": []
+    },
+    {
+      "id": "shot_002",
+      "frames": [
+        103,
+        135
+      ],
+      "source_pts": [
+        247200,
+        326400
+      ],
+      "suggested_method": "code_render",
+      "confidence": 0.759,
+      "reviewed": false,
+      "boundary_review": "inspect consecutive frames around the cut",
+      "transition": "fade",
+      "keyframes": [
+        {
+          "t": 4.12,
+          "frame": 103,
+          "role": "first",
+          "by": "tool",
+          "source_pts": 247200
+        },
+        {
+          "t": 4.76,
+          "frame": 119,
+          "role": "change",
+          "by": "tool",
+          "source_pts": 285600
+        },
+        {
+          "t": 4.84,
+          "frame": 121,
+          "role": "change",
+          "by": "tool",
+          "source_pts": 290400
+        },
+        {
+          "t": 5.36,
+          "frame": 134,
+          "role": "change",
+          "by": "tool",
+          "source_pts": 321600
+        },
+        {
+          "t": 5.4,
+          "frame": 135,
+          "role": "change",
+          "by": "tool",
+          "source_pts": 324000
+        }
+      ],
+      "assessment": {
+        "label": "code_render",
+        "label_zh": "code / template render",
+        "confidence": 0.759,
+        "probs": {
+          "live_action": 0.0077,
+          "ai_video": 0.1198,
+          "avatar": 0.0091,
+          "cg_3d": 0.0514,
+          "code_render": 0.7591,
+          "screen_capture": 0.0221,
+          "still_motion": 0.0077,
+          "static_hold": 0.0077,
+          "anim_2d": 0.0077,
+          "stop_motion": 0.0077,
+          "film_footage": 0.0
+        },
+        "image_source": null,
+        "generator_guess": null,
+        "decided_by": "deterministic",
+        "evidence": [
+          "Rendered texture: 93% flat colour blocks, 95% of pixels use only 2 colours, 24% axis-aligned edges",
+          "96% of background pixels never change frame to frame while local elements move: 2D compositing / code-driven motion graphics",
+          "Per-frame sharpness oscillates periodically (period 2 frames, correlation 0.49) with no duplicate frames: frame interpolation / rate conversion, or just the rhythm of a re-encode (transcodes whose platform tags were stripped show it too); not enough on its own to call AI",
+          "Nearly colourless frame (saturation 0.00) with only 2 colours: a flat UI / document picture, not a shaded 3D render"
+        ],
+        "seen": [],
+        "measured": [
+          "Rendered texture: 93% flat colour blocks, 95% of pixels use only 2 colours, 24% axis-aligned edges",
+          "96% of background pixels never change frame to frame while local elements move: 2D compositing / code-driven motion graphics",
+          "Per-frame sharpness oscillates periodically (period 2 frames, correlation 0.49) with no duplicate frames: frame interpolation / rate conversion, or just the rhythm of a re-encode (transcodes whose platform tags were stripped show it too); not enough on its own to call AI",
+          "Nearly colourless frame (saturation 0.00) with only 2 colours: a flat UI / document picture, not a shaded 3D render"
+        ]
+      },
+      "observation": null,
+      "assets": [],
+      "layers": []
+    },
+    {
+      "id": "shot_003",
+      "frames": [
+        136,
+        212
+      ],
+      "source_pts": [
+        326400,
+        511200
+      ],
+      "suggested_method": "cg_3d",
+      "confidence": 0.55,
+      "reviewed": false,
+      "boundary_review": "inspect consecutive frames around the cut",
+      "transition": "slide",
+      "keyframes": [
+        {
+          "t": 5.44,
+          "frame": 136,
+          "role": "first",
+          "by": "tool",
+          "source_pts": 326400
+        },
+        {
+          "t": 5.92,
+          "frame": 148,
+          "role": "change",
+          "by": "tool",
+          "source_pts": 355200
+        },
+        {
+          "t": 6.4,
+          "frame": 160,
+          "role": "change",
+          "by": "tool",
+          "source_pts": 384000
+        },
+        {
+          "t": 6.76,
+          "frame": 169,
+          "role": "change",
+          "by": "tool",
+          "source_pts": 405600
+        },
+        {
+          "t": 6.96,
+          "frame": 174,
+          "role": "change",
+          "by": "tool",
+          "source_pts": 417600
+        },
+        {
+          "t": 7.48,
+          "frame": 187,
+          "role": "change",
+          "by": "tool",
+          "source_pts": 448800
+        },
+        {
+          "t": 7.96,
+          "frame": 199,
+          "role": "change",
+          "by": "tool",
+          "source_pts": 477600
+        },
+        {
+          "t": 8.44,
+          "frame": 211,
+          "role": "change",
+          "by": "tool",
+          "source_pts": 506400
+        },
+        {
+          "t": 8.48,
+          "frame": 212,
+          "role": "change",
+          "by": "tool",
+          "source_pts": 508800
+        }
+      ],
+      "assessment": {
+        "label": "cg_3d",
+        "label_zh": "3D render",
+        "confidence": 0.55,
+        "probs": {
+          "live_action": 0.0084,
+          "ai_video": 0.0901,
+          "avatar": 0.0093,
+          "cg_3d": 0.55,
+          "code_render": 0.278,
+          "screen_capture": 0.0307,
+          "still_motion": 0.0084,
+          "static_hold": 0.0084,
+          "anim_2d": 0.0084,
+          "stop_motion": 0.0084,
+          "film_footage": 0.0
+        },
+        "image_source": null,
+        "generator_guess": null,
+        "decided_by": "deterministic",
+        "evidence": [
+          "Rendered texture: 72% flat colour blocks, 95% of pixels use only 5 colours, 31% axis-aligned edges",
+          "Per-frame sharpness oscillates periodically (period 5 frames, correlation 0.29) with no duplicate frames: frame interpolation / rate conversion, or just the rhythm of a re-encode (transcodes whose platform tags were stripped show it too); not enough on its own to call AI"
+        ],
+        "seen": [],
+        "measured": [
+          "Rendered texture: 72% flat colour blocks, 95% of pixels use only 5 colours, 31% axis-aligned edges",
+          "Per-frame sharpness oscillates periodically (period 5 frames, correlation 0.29) with no duplicate frames: frame interpolation / rate conversion, or just the rhythm of a re-encode (transcodes whose platform tags were stripped show it too); not enough on its own to call AI"
+        ],
+        "scene_text": [
+          "Your personal",
+          "assistant",
+          "For a very active",
+          "7:13",
+          "'per"
+        ]
+      },
+      "observation": null,
+      "assets": [],
+      "layers": []
+    },
+    {
+      "id": "shot_004",
+      "frames": [
+        213,
+        312
+      ],
+      "source_pts": [
+        511200,
+        751200
+      ],
+      "suggested_method": "cg_3d",
+      "confidence": 0.596,
+      "reviewed": false,
+      "boundary_review": "inspect consecutive frames around the cut",
+      "transition": "whip",
+      "keyframes": [
+        {
+          "t": 8.52,
+          "frame": 213,
+          "role": "first",
+          "by": "tool",
+          "source_pts": 511200
+        },
+        {
+          "t": 9.0,
+          "frame": 225,
+          "role": "change",
+          "by": "tool",
+          "source_pts": 540000
+        },
+        {
+          "t": 9.48,
+          "frame": 237,
+          "role": "change",
+          "by": "tool",
+          "source_pts": 568800
+        },
+        {
+          "t": 9.96,
+          "frame": 249,
+          "role": "change",
+          "by": "tool",
+          "source_pts": 597600
+        },
+        {
+          "t": 10.44,
+          "frame": 261,
+          "role": "change",
+          "by": "tool",
+          "source_pts": 626400
+        },
+        {
+          "t": 10.92,
+          "frame": 273,
+          "role": "change",
+          "by": "tool",
+          "source_pts": 655200
+        },
+        {
+          "t": 11.04,
+          "frame": 276,
+          "role": "change",
+          "by": "tool",
+          "source_pts": 662400
+        },
+        {
+          "t": 11.4,
+          "frame": 285,
+          "role": "change",
+          "by": "tool",
+          "source_pts": 684000
+        },
+        {
+          "t": 11.88,
+          "frame": 297,
+          "role": "change",
+          "by": "tool",
+          "source_pts": 712800
+        },
+        {
+          "t": 12.44,
+          "frame": 311,
+          "role": "change",
+          "by": "tool",
+          "source_pts": 746400
+        },
+        {
+          "t": 12.48,
+          "frame": 312,
+          "role": "change",
+          "by": "tool",
+          "source_pts": 748800
+        }
+      ],
+      "assessment": {
+        "label": "cg_3d",
+        "label_zh": "3D render",
+        "confidence": 0.596,
+        "probs": {
+          "live_action": 0.0084,
+          "ai_video": 0.1442,
+          "avatar": 0.0101,
+          "cg_3d": 0.5956,
+          "code_render": 0.1809,
+          "screen_capture": 0.0271,
+          "still_motion": 0.0084,
+          "static_hold": 0.0084,
+          "anim_2d": 0.0084,
+          "stop_motion": 0.0084,
+          "film_footage": 0.0
+        },
+        "image_source": null,
+        "generator_guess": null,
+        "decided_by": "deterministic",
+        "evidence": [
+          "Rendered texture: 81% flat colour blocks, 95% of pixels use only 25 colours, 19% axis-aligned edges",
+          "Per-frame sharpness oscillates periodically (period 2 frames, correlation 0.70) with no duplicate frames: frame interpolation / rate conversion, or just the rhythm of a re-encode (transcodes whose platform tags were stripped show it too); not enough on its own to call AI"
+        ],
+        "seen": [],
+        "measured": [
+          "Rendered texture: 81% flat colour blocks, 95% of pixels use only 25 colours, 19% axis-aligned edges",
+          "Per-frame sharpness oscillates periodically (period 2 frames, correlation 0.70) with no duplicate frames: frame interpolation / rate conversion, or just the rhythm of a re-encode (transcodes whose platform tags were stripped show it too); not enough on its own to call AI"
+        ],
+        "scene_text": [
+          "\u56fd",
+          "Lisa",
+          "Ella",
+          "Mar",
+          "likes art",
+          "likes hiking",
+          "likes dancing"
+        ]
+      },
+      "observation": null,
+      "assets": [],
+      "layers": []
+    },
+    {
+      "id": "shot_005",
+      "frames": [
+        313,
+        477
+      ],
+      "source_pts": [
+        751200,
+        1147200
+      ],
+      "suggested_method": "code_render",
+      "confidence": 0.588,
+      "reviewed": false,
+      "boundary_review": "inspect consecutive frames around the cut",
+      "transition": "slide",
+      "keyframes": [
+        {
+          "t": 12.52,
+          "frame": 313,
+          "role": "first",
+          "by": "tool",
+          "source_pts": 751200
+        },
+        {
+          "t": 13.0,
+          "frame": 325,
+          "role": "change",
+          "by": "tool",
+          "source_pts": 780000
+        },
+        {
+          "t": 13.48,
+          "frame": 337,
+          "role": "change",
+          "by": "tool",
+          "source_pts": 808800
+        },
+        {
+          "t": 13.96,
+          "frame": 349,
+          "role": "change",
+          "by": "tool",
+          "source_pts": 837600
+        },
+        {
+          "t": 14.36,
+          "frame": 359,
+          "role": "change",
+          "by": "tool",
+          "source_pts": 861600
+        },
+        {
+          "t": 15.16,
+          "frame": 379,
+          "role": "change",
+          "by": "tool",
+          "source_pts": 909600
+        },
+        {
+          "t": 15.68,
+          "frame": 392,
+          "role": "change",
+          "by": "tool",
+          "source_pts": 940800
+        },
+        {
+          "t": 16.16,
+          "frame": 404,
+          "role": "change",
+          "by": "tool",
+          "source_pts": 969600
+        },
+        {
+          "t": 16.88,
+          "frame": 422,
+          "role": "change",
+          "by": "tool",
+          "source_pts": 1012800
+        },
+        {
+          "t": 18.04,
+          "frame": 451,
+          "role": "change",
+          "by": "tool",
+          "source_pts": 1082400
+        },
+        {
+          "t": 18.36,
+          "frame": 459,
+          "role": "change",
+          "by": "tool",
+          "source_pts": 1101600
+        },
+        {
+          "t": 19.08,
+          "frame": 477,
+          "role": "change",
+          "by": "tool",
+          "source_pts": 1144800
+        }
+      ],
+      "assessment": {
+        "label": "code_render",
+        "label_zh": "code / template render",
+        "confidence": 0.588,
+        "probs": {
+          "live_action": 0.007,
+          "ai_video": 0.0094,
+          "avatar": 0.007,
+          "cg_3d": 0.3208,
+          "code_render": 0.5879,
+          "screen_capture": 0.04,
+          "still_motion": 0.007,
+          "static_hold": 0.007,
+          "anim_2d": 0.007,
+          "stop_motion": 0.007,
+          "film_footage": 0.0
+        },
+        "image_source": null,
+        "generator_guess": null,
+        "decided_by": "deterministic",
+        "evidence": [
+          "Rendered texture: 78% flat colour blocks, 95% of pixels use only 5 colours, 54% axis-aligned edges",
+          "Per-frame sharpness oscillates periodically (period 2 frames, correlation 0.54) with no duplicate frames: frame interpolation / rate conversion, or just the rhythm of a re-encode (transcodes whose platform tags were stripped show it too); not enough on its own to call AI",
+          "Nearly colourless frame (saturation 0.03) with only 5 colours: a flat UI / document picture, not a shaded 3D render"
+        ],
+        "seen": [],
+        "measured": [
+          "Rendered texture: 78% flat colour blocks, 95% of pixels use only 5 colours, 54% axis-aligned edges",
+          "Per-frame sharpness oscillates periodically (period 2 frames, correlation 0.54) with no duplicate frames: frame interpolation / rate conversion, or just the rhythm of a re-encode (transcodes whose platform tags were stripped show it too); not enough on its own to call AI",
+          "Nearly colourless frame (saturation 0.03) with only 5 colours: a flat UI / document picture, not a shaded 3D render"
+        ]
+      },
+      "observation": null,
+      "assets": [],
+      "layers": []
+    },
+    {
+      "id": "shot_006",
+      "frames": [
+        478,
+        623
+      ],
+      "source_pts": [
+        1147200,
+        1497600
+      ],
+      "suggested_method": "cg_3d",
+      "confidence": 0.615,
+      "reviewed": false,
+      "boundary_review": "inspect consecutive frames around the cut",
+      "transition": "wipe",
+      "keyframes": [
+        {
+          "t": 19.12,
+          "frame": 478,
+          "role": "first",
+          "by": "tool",
+          "source_pts": 1147200
+        },
+        {
+          "t": 19.88,
+          "frame": 497,
+          "role": "change",
+          "by": "tool",
+          "source_pts": 1192800
+        },
+        {
+          "t": 21.12,
+          "frame": 528,
+          "role": "change",
+          "by": "tool",
+          "source_pts": 1267200
+        },
+        {
+          "t": 21.64,
+          "frame": 541,
+          "role": "change",
+          "by": "tool",
+          "source_pts": 1298400
+        },
+        {
+          "t": 22.12,
+          "frame": 553,
+          "role": "change",
+          "by": "tool",
+          "source_pts": 1327200
+        },
+        {
+          "t": 22.6,
+          "frame": 565,
+          "role": "change",
+          "by": "tool",
+          "source_pts": 1356000
+        },
+        {
+          "t": 23.08,
+          "frame": 577,
+          "role": "change",
+          "by": "tool",
+          "source_pts": 1384800
+        },
+        {
+          "t": 23.56,
+          "frame": 589,
+          "role": "change",
+          "by": "tool",
+          "source_pts": 1413600
+        },
+        {
+          "t": 23.8,
+          "frame": 595,
+          "role": "change",
+          "by": "tool",
+          "source_pts": 1428000
+        },
+        {
+          "t": 24.04,
+          "frame": 601,
+          "role": "change",
+          "by": "tool",
+          "source_pts": 1442400
+        },
+        {
+          "t": 24.56,
+          "frame": 614,
+          "role": "change",
+          "by": "tool",
+          "source_pts": 1473600
+        },
+        {
+          "t": 24.92,
+          "frame": 623,
+          "role": "change",
+          "by": "tool",
+          "source_pts": 1495200
+        }
+      ],
+      "assessment": {
+        "label": "cg_3d",
+        "label_zh": "3D render",
+        "confidence": 0.615,
+        "probs": {
+          "live_action": 0.0072,
+          "ai_video": 0.0168,
+          "avatar": 0.0073,
+          "cg_3d": 0.6149,
+          "code_render": 0.3025,
+          "screen_capture": 0.0225,
+          "still_motion": 0.0072,
+          "static_hold": 0.0072,
+          "anim_2d": 0.0072,
+          "stop_motion": 0.0072,
+          "film_footage": 0.0
+        },
+        "image_source": null,
+        "generator_guess": null,
+        "decided_by": "deterministic",
+        "evidence": [
+          "Rendered texture: 71% flat colour blocks, 95% of pixels use only 10 colours, 41% axis-aligned edges",
+          "Per-frame sharpness oscillates periodically (period 2 frames, correlation 0.38) with no duplicate frames: frame interpolation / rate conversion, or just the rhythm of a re-encode (transcodes whose platform tags were stripped show it too); not enough on its own to call AI"
+        ],
+        "seen": [],
+        "measured": [
+          "Rendered texture: 71% flat colour blocks, 95% of pixels use only 10 colours, 41% axis-aligned edges",
+          "Per-frame sharpness oscillates periodically (period 2 frames, correlation 0.38) with no duplicate frames: frame interpolation / rate conversion, or just the rhythm of a re-encode (transcodes whose platform tags were stripped show it too); not enough on its own to call AI"
+        ],
+        "scene_text": [
+          "31",
+          "H"
+        ]
+      },
+      "observation": null,
+      "assets": [],
+      "layers": []
+    },
+    {
+      "id": "shot_007",
+      "frames": [
+        624,
+        695
+      ],
+      "source_pts": [
+        1497600,
+        1670400
+      ],
+      "suggested_method": "code_render",
+      "confidence": 0.847,
+      "reviewed": false,
+      "boundary_review": "inspect consecutive frames around the cut",
+      "transition": "fade",
+      "keyframes": [
+        {
+          "t": 24.96,
+          "frame": 624,
+          "role": "first",
+          "by": "tool",
+          "source_pts": 1497600
+        },
+        {
+          "t": 25.44,
+          "frame": 636,
+          "role": "change",
+          "by": "tool",
+          "source_pts": 1526400
+        },
+        {
+          "t": 25.92,
+          "frame": 648,
+          "role": "change",
+          "by": "tool",
+          "source_pts": 1555200
+        },
+        {
+          "t": 26.4,
+          "frame": 660,
+          "role": "change",
+          "by": "tool",
+          "source_pts": 1584000
+        },
+        {
+          "t": 26.88,
+          "frame": 672,
+          "role": "change",
+          "by": "tool",
+          "source_pts": 1612800
+        },
+        {
+          "t": 27.36,
+          "frame": 684,
+          "role": "change",
+          "by": "tool",
+          "source_pts": 1641600
+        },
+        {
+          "t": 27.76,
+          "frame": 694,
+          "role": "change",
+          "by": "tool",
+          "source_pts": 1665600
+        },
+        {
+          "t": 27.8,
+          "frame": 695,
+          "role": "change",
+          "by": "tool",
+          "source_pts": 1668000
+        }
+      ],
+      "assessment": {
+        "label": "code_render",
+        "label_zh": "code / template render",
+        "confidence": 0.847,
+        "probs": {
+          "live_action": 0.0039,
+          "ai_video": 0.0056,
+          "avatar": 0.0037,
+          "cg_3d": 0.0213,
+          "code_render": 0.8466,
+          "screen_capture": 0.104,
+          "still_motion": 0.0037,
+          "static_hold": 0.0037,
+          "anim_2d": 0.0037,
+          "stop_motion": 0.0037,
+          "film_footage": 0.0
+        },
+        "image_source": null,
+        "generator_guess": null,
+        "decided_by": "deterministic",
+        "evidence": [
+          "On a light ground the dark part is almost all thin lines / dots (only 16% shade gently): line art, generative strokes or dot graphics, not a shaded photo or 3D surface",
+          "Rendered texture: 61% flat colour blocks, 95% of pixels use only 12 colours, 62% axis-aligned edges",
+          "Per-frame sharpness oscillates periodically (period 2 frames, correlation 0.46) with no duplicate frames: frame interpolation / rate conversion, or just the rhythm of a re-encode (transcodes whose platform tags were stripped show it too); not enough on its own to call AI",
+          "Nearly colourless frame (saturation 0.01) with only 12 colours: a flat UI / document picture, not a shaded 3D render"
+        ],
+        "seen": [],
+        "measured": [
+          "On a light ground the dark part is almost all thin lines / dots (only 16% shade gently): line art, generative strokes or dot graphics, not a shaded photo or 3D surface",
+          "Rendered texture: 61% flat colour blocks, 95% of pixels use only 12 colours, 62% axis-aligned edges",
+          "Per-frame sharpness oscillates periodically (period 2 frames, correlation 0.46) with no duplicate frames: frame interpolation / rate conversion, or just the rhythm of a re-encode (transcodes whose platform tags were stripped show it too); not enough on its own to call AI",
+          "Nearly colourless frame (saturation 0.01) with only 12 colours: a flat UI / document picture, not a shaded 3D render"
+        ]
+      },
+      "observation": null,
+      "assets": [],
+      "layers": []
+    },
+    {
+      "id": "shot_008",
+      "frames": [
+        696,
+        729
+      ],
+      "source_pts": [
+        1670400,
+        1752000
+      ],
+      "suggested_method": "code_render",
+      "confidence": 0.752,
+      "reviewed": false,
+      "boundary_review": "inspect consecutive frames around the cut",
+      "transition": "cut",
+      "keyframes": [
+        {
+          "t": 27.84,
+          "frame": 696,
+          "role": "first",
+          "by": "tool",
+          "source_pts": 1670400
+        },
+        {
+          "t": 28.2,
+          "frame": 705,
+          "role": "change",
+          "by": "tool",
+          "source_pts": 1692000
+        },
+        {
+          "t": 28.48,
+          "frame": 712,
+          "role": "change",
+          "by": "tool",
+          "source_pts": 1708800
+        },
+        {
+          "t": 29.0,
+          "frame": 725,
+          "role": "change",
+          "by": "tool",
+          "source_pts": 1740000
+        },
+        {
+          "t": 29.16,
+          "frame": 729,
+          "role": "change",
+          "by": "tool",
+          "source_pts": 1749600
+        }
+      ],
+      "assessment": {
+        "label": "code_render",
+        "label_zh": "code / template render",
+        "confidence": 0.752,
+        "probs": {
+          "live_action": 0.0074,
+          "ai_video": 0.0116,
+          "avatar": 0.0074,
+          "cg_3d": 0.1675,
+          "code_render": 0.7523,
+          "screen_capture": 0.0241,
+          "still_motion": 0.0074,
+          "static_hold": 0.0074,
+          "anim_2d": 0.0074,
+          "stop_motion": 0.0074,
+          "film_footage": 0.0
+        },
+        "image_source": null,
+        "generator_guess": null,
+        "decided_by": "deterministic",
+        "evidence": [
+          "Rendered texture: 95% flat colour blocks, 95% of pixels use only 2 colours, 45% axis-aligned edges",
+          "Per-frame sharpness oscillates periodically (period 2 frames, correlation 0.71) with no duplicate frames: frame interpolation / rate conversion, or just the rhythm of a re-encode (transcodes whose platform tags were stripped show it too); not enough on its own to call AI",
+          "Nearly colourless frame (saturation 0.01) with only 2 colours: a flat UI / document picture, not a shaded 3D render"
+        ],
+        "seen": [],
+        "measured": [
+          "Rendered texture: 95% flat colour blocks, 95% of pixels use only 2 colours, 45% axis-aligned edges",
+          "Per-frame sharpness oscillates periodically (period 2 frames, correlation 0.71) with no duplicate frames: frame interpolation / rate conversion, or just the rhythm of a re-encode (transcodes whose platform tags were stripped show it too); not enough on its own to call AI",
+          "Nearly colourless frame (saturation 0.01) with only 2 colours: a flat UI / document picture, not a shaded 3D render"
+        ]
+      },
+      "observation": null,
+      "assets": [],
+      "layers": []
+    },
+    {
+      "id": "shot_009",
+      "frames": [
+        730,
+        777
+      ],
+      "source_pts": [
+        1752000,
+        1867200
+      ],
+      "suggested_method": "cg_3d",
+      "confidence": 0.4,
+      "reviewed": false,
+      "boundary_review": "inspect consecutive frames around the cut",
+      "transition": "slide",
+      "keyframes": [
+        {
+          "t": 29.2,
+          "frame": 730,
+          "role": "first",
+          "by": "tool",
+          "source_pts": 1752000
+        },
+        {
+          "t": 30.64,
+          "frame": 766,
+          "role": "change",
+          "by": "tool",
+          "source_pts": 1838400
+        },
+        {
+          "t": 31.04,
+          "frame": 776,
+          "role": "change",
+          "by": "tool",
+          "source_pts": 1862400
+        },
+        {
+          "t": 31.08,
+          "frame": 777,
+          "role": "change",
+          "by": "tool",
+          "source_pts": 1864800
+        }
+      ],
+      "assessment": {
+        "label": "cg_3d",
+        "label_zh": "3D render",
+        "confidence": 0.4,
+        "probs": {
+          "live_action": 0.0096,
+          "ai_video": 0.0791,
+          "avatar": 0.0105,
+          "cg_3d": 0.4002,
+          "code_render": 0.3854,
+          "screen_capture": 0.0848,
+          "still_motion": 0.0076,
+          "static_hold": 0.0076,
+          "anim_2d": 0.0076,
+          "stop_motion": 0.0076,
+          "film_footage": 0.0
+        },
+        "image_source": null,
+        "generator_guess": null,
+        "decided_by": "deterministic",
+        "evidence": [
+          "Rendered texture: 62% flat colour blocks, 95% of pixels use only 9 colours, 32% axis-aligned edges",
+          "Per-frame sharpness oscillates periodically (period 2 frames, correlation 0.60) with no duplicate frames: frame interpolation / rate conversion, or just the rhythm of a re-encode (transcodes whose platform tags were stripped show it too); not enough on its own to call AI"
+        ],
+        "seen": [],
+        "measured": [
+          "Rendered texture: 62% flat colour blocks, 95% of pixels use only 9 colours, 32% axis-aligned edges",
+          "Per-frame sharpness oscillates periodically (period 2 frames, correlation 0.60) with no duplicate frames: frame interpolation / rate conversion, or just the rhythm of a re-encode (transcodes whose platform tags were stripped show it too); not enough on its own to call AI"
+        ]
+      },
+      "observation": null,
+      "assets": [],
+      "layers": []
+    }
+  ]
+}

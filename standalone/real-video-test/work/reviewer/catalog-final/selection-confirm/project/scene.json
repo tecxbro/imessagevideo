@@ -1,0 +1,256 @@
+{
+  "width": 720,
+  "height": 480,
+  "fps": 30,
+  "duration": 2.4,
+  "background": "#dce7f1",
+  "title": "Resolve a button press in place",
+  "source": {
+    "path": "skill/imessage-motion-recreation/director/motions.mjs#selection-confirm",
+    "sourceStart": 0,
+    "sourceEnd": 4,
+    "notes": "Original editable motion starter at c49482a, fit into the library stage with the same keyframe choreography."
+  },
+  "layers": [
+    {
+      "id": "surface",
+      "type": "rect",
+      "x": 110,
+      "y": 44,
+      "width": 500,
+      "height": 392,
+      "fill": "#ffffff",
+      "radius": 18
+    },
+    {
+      "id": "stage",
+      "type": "group",
+      "x": 110,
+      "y": 98,
+      "children": [
+        {
+          "id": "base-motion",
+          "type": "group",
+          "x": 0,
+          "y": 8,
+          "children": [
+            {
+              "id": "selection-card",
+              "type": "group",
+              "x": 300,
+              "y": 124,
+              "children": [
+                {
+                  "id": "selection-card-surface",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 360,
+                  "height": 280,
+                  "fill": "#ffffff",
+                  "radius": 22,
+                  "stroke": "#d8dbe0",
+                  "strokeWidth": 1
+                },
+                {
+                  "id": "selection-card-art",
+                  "type": "rect",
+                  "x": 12,
+                  "y": 12,
+                  "width": 336,
+                  "height": 100.8,
+                  "fill": "#edf0e6",
+                  "radius": 14
+                },
+                {
+                  "id": "selection-card-title",
+                  "type": "text",
+                  "text": "The north ridge",
+                  "x": 20,
+                  "y": 128.8,
+                  "fontSize": 23,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#17191d",
+                  "fontWeight": 600
+                },
+                {
+                  "id": "selection-card-detail",
+                  "type": "text",
+                  "text": "For two · Friday",
+                  "x": 20,
+                  "y": 161.8,
+                  "fontSize": 16,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#777b84"
+                },
+                {
+                  "id": "selection-card-action",
+                  "type": "group",
+                  "x": 20,
+                  "y": 222,
+                  "children": [
+                    {
+                      "id": "selection-card-action-shape",
+                      "type": "rect",
+                      "x": 0,
+                      "y": 0,
+                      "width": 320,
+                      "height": 42,
+                      "fill": "#1688fa",
+                      "radius": 21,
+                      "keyframes": {
+                        "fill": [
+                          {
+                            "t": 0,
+                            "value": "#1688fa",
+                            "ease": "easeInOut"
+                          },
+                          {
+                            "t": 1.104,
+                            "value": "#1688fa",
+                            "ease": "hold"
+                          },
+                          {
+                            "t": 1.2,
+                            "value": "#193627",
+                            "ease": "easeInOut"
+                          },
+                          {
+                            "t": 1.3679999999999999,
+                            "value": "#3f8057",
+                            "ease": "easeInOut"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "id": "selection-card-action-label",
+                      "type": "text",
+                      "text": "Confirm",
+                      "x": 160,
+                      "y": 11,
+                      "fontSize": 16,
+                      "fontFamily": "Arial, sans-serif",
+                      "fill": "#ffffff",
+                      "textAnchor": "middle",
+                      "fontWeight": 600,
+                      "keyframes": {
+                        "text": [
+                          {
+                            "t": 0,
+                            "value": "Confirm",
+                            "ease": "easeInOut"
+                          },
+                          {
+                            "t": 1.3679999999999999,
+                            "value": "Confirmed",
+                            "ease": "hold"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "scaleX": 0.52,
+          "scaleY": 0.52
+        }
+      ],
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 500,
+        "height": 298
+      }
+    },
+    {
+      "id": "footer",
+      "type": "group",
+      "x": 110,
+      "y": 396,
+      "children": [
+        {
+          "id": "footer-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 40,
+          "fill": "#f2f6fb",
+          "radius": 12
+        },
+        {
+          "id": "footer-label",
+          "type": "text",
+          "text": "Field guide · Autumn",
+          "x": 26,
+          "y": 11,
+          "fontSize": 15,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#516277"
+        }
+      ]
+    },
+    {
+      "id": "heading",
+      "type": "group",
+      "x": 110,
+      "y": 44,
+      "children": [
+        {
+          "id": "heading-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 54,
+          "fill": "#f2f6fb",
+          "radius": 13
+        },
+        {
+          "id": "heading-copy",
+          "type": "text",
+          "text": "Alpine field notes",
+          "x": 26,
+          "y": 13,
+          "fontSize": 23,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#182737",
+          "fontWeight": 700
+        }
+      ]
+    }
+  ],
+  "timeline": {
+    "version": 1,
+    "picture": {
+      "fpsNum": 30,
+      "fpsDen": 1,
+      "frameCount": 72
+    },
+    "initialUI": null,
+    "events": [
+      {
+        "id": "motion.selection-confirm.press",
+        "kind": "press",
+        "target": "selection-card-action",
+        "frame": 36,
+        "layerIds": [
+          "selection-card-action"
+        ]
+      },
+      {
+        "id": "motion.selection-confirm.confirmed",
+        "kind": "confirmed",
+        "target": "selection-card-action",
+        "frame": 42,
+        "layerIds": [
+          "selection-card-action"
+        ]
+      }
+    ],
+    "cues": []
+  }
+}

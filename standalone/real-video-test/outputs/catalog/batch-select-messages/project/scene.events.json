@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 72
+  },
+  "initialUI": null,
+  "events": [
+    {
+      "id": "motion.batch-select-messages.selection-mode",
+      "kind": "selection_open",
+      "target": "batch-selection-rail",
+      "frame": 14,
+      "layerIds": [
+        "batch-selection-rail"
+      ]
+    },
+    {
+      "id": "motion.batch-select-messages.selection-first",
+      "kind": "select",
+      "target": "batch-selected-0",
+      "frame": 31,
+      "layerIds": [
+        "batch-selected-0"
+      ]
+    },
+    {
+      "id": "motion.batch-select-messages.selection-second",
+      "kind": "select",
+      "target": "batch-selected-1",
+      "frame": 45,
+      "layerIds": [
+        "batch-selected-1"
+      ]
+    }
+  ],
+  "cues": []
+}

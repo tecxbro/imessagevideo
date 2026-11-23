@@ -1,0 +1,139 @@
+{
+  "schema": 1,
+  "verdict": "FAIL",
+  "failures": [
+    {
+      "check": "presentation_clock",
+      "spans": [
+        [
+          17,
+          17
+        ]
+      ]
+    }
+  ],
+  "checks_sha256": null,
+  "reference": {
+    "name": "base.mp4",
+    "sha256": "0275258672d5c72aab94ecf6fae762142986a3180c4bf60f01fb1c09e2021448",
+    "clock": {
+      "width": 160,
+      "height": 90,
+      "sample_aspect_ratio": "1",
+      "rotation_degrees": 0,
+      "display_matrix": [
+        65536,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        1073741824
+      ],
+      "container_crop_top_bottom_left_right": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "time_base": "1/30000",
+      "declared_rate": "30",
+      "declared_average_rate": "30/1",
+      "start_pts": 0,
+      "end_pts_exclusive": 64000,
+      "end_basis": "last decoded frame duration",
+      "end_seconds": 2.1333333333333333,
+      "frames": 64,
+      "cadence": "constant",
+      "pixel_format": "gbrp",
+      "alpha_present": false,
+      "color_range": "pc",
+      "color_space": "gbr",
+      "color_primaries": null,
+      "color_transfer": null
+    },
+    "audio": []
+  },
+  "candidate": {
+    "name": "off-grid.mp4",
+    "sha256": "4d17714476f692b54f7fd7ba7f35a78825e046685e3b54425fd09808af92fa13",
+    "clock": {
+      "width": 160,
+      "height": 90,
+      "sample_aspect_ratio": "1",
+      "rotation_degrees": 0,
+      "display_matrix": [
+        65536,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        1073741824
+      ],
+      "container_crop_top_bottom_left_right": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "time_base": "1/30000",
+      "declared_rate": "60",
+      "declared_average_rate": "30/1",
+      "start_pts": 0,
+      "end_pts_exclusive": 64000,
+      "end_basis": "last decoded frame duration",
+      "end_seconds": 2.1333333333333333,
+      "frames": 64,
+      "cadence": "variable",
+      "pixel_format": "gbrp",
+      "alpha_present": false,
+      "color_range": "pc",
+      "color_space": "gbr",
+      "color_primaries": null,
+      "color_transfer": null
+    },
+    "audio": []
+  },
+  "compared_frames": 64,
+  "mean_abs_rgb": 0.0,
+  "worst_frame": {
+    "frame": 0,
+    "mean_abs_rgb": 0.0
+  },
+  "exact_clock": false,
+  "pixel_equality": {
+    "identical_frames": 64,
+    "different_frames": 0,
+    "different_spans": [],
+    "changed_pixel_observations": 0,
+    "first_difference": null,
+    "worst_frame": null
+  },
+  "whole_frame_mae_limit": 2,
+  "pixel_floor": 20,
+  "clock_tolerance_seconds": "0",
+  "alignment": "display-order index with independent exact PTS gate",
+  "audio_rule": "observe",
+  "audio_checks": null,
+  "regions": {},
+  "tile": null,
+  "regional_coverage": "picture-level checks only; no interaction windows supplied",
+  "decode_completed": true,
+  "evidence": {
+    "frames.csv": {
+      "region": null,
+      "spans": [
+        [
+          0,
+          63
+        ]
+      ],
+      "sha256": "0bae13c2b635621eef88baa5ba6c93e211cc0ebc2f28fbbe5ed2d5df5c3d86c0"
+    }
+  }
+}

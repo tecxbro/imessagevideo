@@ -1,0 +1,413 @@
+{
+  "width": 640,
+  "height": 460,
+  "background": "#f7f7f5",
+  "fps": 30,
+  "duration": 2.4,
+  "title": "Anchored rich-card arrival",
+  "source": {
+    "sourceStart": 18.2,
+    "sourceEnd": 20.6,
+    "notes": "Source-informed authored adaptation"
+  },
+  "layers": [
+    {
+      "id": "mini-anchored-rich-card",
+      "type": "group",
+      "x": 0,
+      "y": 0,
+      "children": [
+        {
+          "id": "mini-anchored-rich-card-thread",
+          "type": "group",
+          "x": 92,
+          "y": 10,
+          "children": [
+            {
+              "id": "mini-anchored-rich-card-thread-matte",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 456,
+              "height": 440,
+              "fill": "#ffffff",
+              "radius": 28,
+              "stroke": "#d8dbe0",
+              "strokeWidth": 1
+            },
+            {
+              "id": "mini-anchored-rich-card-thread-screen",
+              "type": "group",
+              "x": 0,
+              "y": 0,
+              "children": [
+                {
+                  "id": "mini-anchored-rich-card-message-stack",
+                  "type": "group",
+                  "x": 0,
+                  "y": 0,
+                  "children": [
+                    {
+                      "id": "mini-anchored-rich-card-request",
+                      "type": "group",
+                      "x": 147,
+                      "y": 87,
+                      "children": [
+                        {
+                          "id": "mini-anchored-rich-card-request-body",
+                          "type": "rect",
+                          "x": 0,
+                          "y": 0,
+                          "width": 276,
+                          "height": 55,
+                          "fill": "#256795",
+                          "radius": 20
+                        },
+                        {
+                          "id": "mini-anchored-rich-card-request-tail",
+                          "type": "path",
+                          "d": "M 260 37 Q 273 56 283 53 Q 273 49 274 35 Z",
+                          "fill": "#256795"
+                        },
+                        {
+                          "id": "mini-anchored-rich-card-request-copy",
+                          "type": "text",
+                          "text": "Find a place for us to eat.",
+                          "x": 17,
+                          "y": 14,
+                          "fontSize": 16,
+                          "fontFamily": "Arial, sans-serif",
+                          "fill": "#ffffff",
+                          "lineHeight": 24
+                        }
+                      ]
+                    },
+                    {
+                      "id": "mini-anchored-rich-card-card",
+                      "type": "group",
+                      "x": 35,
+                      "y": 170,
+                      "children": [
+                        {
+                          "id": "mini-anchored-rich-card-card-surface",
+                          "type": "rect",
+                          "x": 0,
+                          "y": 0,
+                          "width": 318,
+                          "height": 203,
+                          "fill": "#ffffff",
+                          "radius": 22,
+                          "stroke": "#d8dbe0",
+                          "strokeWidth": 1
+                        },
+                        {
+                          "id": "mini-anchored-rich-card-card-art",
+                          "type": "rect",
+                          "x": 12,
+                          "y": 12,
+                          "width": 294,
+                          "height": 73.08,
+                          "fill": "#cddfd6",
+                          "radius": 14
+                        },
+                        {
+                          "id": "mini-anchored-rich-card-card-title",
+                          "type": "text",
+                          "text": "Team lunch",
+                          "x": 20,
+                          "y": 93.38000000000001,
+                          "fontSize": 23,
+                          "fontFamily": "Arial, sans-serif",
+                          "fill": "#17191d",
+                          "fontWeight": 600
+                        },
+                        {
+                          "id": "mini-anchored-rich-card-card-detail",
+                          "type": "text",
+                          "text": "Three places the team can try",
+                          "x": 20,
+                          "y": 126.38000000000001,
+                          "fontSize": 16,
+                          "fontFamily": "Arial, sans-serif",
+                          "fill": "#777b84"
+                        },
+                        {
+                          "id": "mini-anchored-rich-card-card-action",
+                          "type": "group",
+                          "x": 20,
+                          "y": 145,
+                          "children": [
+                            {
+                              "id": "mini-anchored-rich-card-card-action-shape",
+                              "type": "rect",
+                              "x": 0,
+                              "y": 0,
+                              "width": 278,
+                              "height": 42,
+                              "fill": "#1688fa",
+                              "radius": 21
+                            },
+                            {
+                              "id": "mini-anchored-rich-card-card-action-label",
+                              "type": "text",
+                              "text": "View menu",
+                              "x": 139,
+                              "y": 11,
+                              "fontSize": 16,
+                              "fontFamily": "Arial, sans-serif",
+                              "fill": "#ffffff",
+                              "textAnchor": "middle",
+                              "fontWeight": 600
+                            }
+                          ]
+                        },
+                        {
+                          "id": "mini-anchored-rich-card-card-press",
+                          "type": "rect",
+                          "x": 0,
+                          "y": 0,
+                          "width": 318,
+                          "height": 203,
+                          "fill": "#07151e",
+                          "radius": 22,
+                          "keyframes": {
+                            "opacity": [
+                              {
+                                "t": 1.9333333333333333,
+                                "value": 0,
+                                "ease": "linear"
+                              },
+                              {
+                                "t": 1.9666666666666666,
+                                "value": 0.13,
+                                "ease": "linear"
+                              },
+                              {
+                                "t": 2.066666666666667,
+                                "value": 0.22,
+                                "ease": "linear"
+                              },
+                              {
+                                "t": 2.1,
+                                "value": 0.17,
+                                "ease": "linear"
+                              },
+                              {
+                                "t": 2.2666666666666666,
+                                "value": 0,
+                                "ease": "linear"
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "keyframes": {
+                        "opacity": [
+                          {
+                            "t": 0,
+                            "value": 0.18,
+                            "ease": "linear"
+                          },
+                          {
+                            "t": 0.13333333333333333,
+                            "value": 1,
+                            "ease": "linear"
+                          }
+                        ],
+                        "scaleX": [
+                          {
+                            "t": 0,
+                            "value": 0.15,
+                            "ease": "linear"
+                          },
+                          {
+                            "t": 0.06666666666666667,
+                            "value": 0.55,
+                            "ease": "linear"
+                          },
+                          {
+                            "t": 0.16666666666666666,
+                            "value": 0.98,
+                            "ease": "linear"
+                          },
+                          {
+                            "t": 0.3,
+                            "value": 1.035,
+                            "ease": "linear"
+                          },
+                          {
+                            "t": 0.6666666666666666,
+                            "value": 1,
+                            "ease": "linear"
+                          }
+                        ],
+                        "scaleY": [
+                          {
+                            "t": 0,
+                            "value": 0.15,
+                            "ease": "linear"
+                          },
+                          {
+                            "t": 0.06666666666666667,
+                            "value": 0.55,
+                            "ease": "linear"
+                          },
+                          {
+                            "t": 0.16666666666666666,
+                            "value": 0.98,
+                            "ease": "linear"
+                          },
+                          {
+                            "t": 0.3,
+                            "value": 1.035,
+                            "ease": "linear"
+                          },
+                          {
+                            "t": 0.6666666666666666,
+                            "value": 1,
+                            "ease": "linear"
+                          }
+                        ]
+                      },
+                      "originX": 9,
+                      "originY": 11
+                    }
+                  ],
+                  "keyframes": {
+                    "y": [
+                      {
+                        "t": 0,
+                        "value": 20,
+                        "ease": "linear"
+                      },
+                      {
+                        "t": 0.6666666666666666,
+                        "value": 14,
+                        "ease": "linear"
+                      },
+                      {
+                        "t": 1.9,
+                        "value": 0,
+                        "ease": "linear"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "mini-anchored-rich-card-composer",
+                  "type": "group",
+                  "x": 27,
+                  "y": 380,
+                  "children": [
+                    {
+                      "id": "mini-anchored-rich-card-composer-field",
+                      "type": "rect",
+                      "x": 0,
+                      "y": 0,
+                      "width": 402,
+                      "height": 48,
+                      "fill": "#ffffff",
+                      "radius": 24,
+                      "stroke": "#d8dbe0",
+                      "strokeWidth": 1
+                    },
+                    {
+                      "id": "mini-anchored-rich-card-composer-input",
+                      "type": "text",
+                      "text": "Message",
+                      "x": 18,
+                      "y": 14,
+                      "fontSize": 17,
+                      "fontFamily": "Arial, sans-serif",
+                      "fill": "#777b84"
+                    },
+                    {
+                      "id": "mini-anchored-rich-card-composer-send",
+                      "type": "circle",
+                      "x": 362,
+                      "y": 8,
+                      "width": 32,
+                      "height": 32,
+                      "fill": "#d8dbe0"
+                    },
+                    {
+                      "id": "mini-anchored-rich-card-composer-arrow",
+                      "type": "path",
+                      "d": "M 378 33 L 378 16 M 371 23 L 378 16 L 385 23",
+                      "fill": "none",
+                      "stroke": "#ffffff",
+                      "strokeWidth": 2
+                    }
+                  ]
+                }
+              ],
+              "clip": {
+                "x": 0,
+                "y": 0,
+                "width": 456,
+                "height": 440,
+                "radius": 28
+              }
+            },
+            {
+              "id": "mini-anchored-rich-card-thread-bar",
+              "type": "rect",
+              "x": 1,
+              "y": 1,
+              "width": 454,
+              "height": 66,
+              "fill": "#f8f8fa",
+              "radius": 27
+            },
+            {
+              "id": "mini-anchored-rich-card-thread-bar-square",
+              "type": "rect",
+              "x": 1,
+              "y": 33,
+              "width": 454,
+              "height": 33,
+              "fill": "#f8f8fa",
+              "radius": 0
+            },
+            {
+              "id": "mini-anchored-rich-card-thread-back",
+              "type": "text",
+              "text": "‹",
+              "x": 18,
+              "y": 17,
+              "fontSize": 30,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#1688fa"
+            },
+            {
+              "id": "mini-anchored-rich-card-thread-title",
+              "type": "text",
+              "text": "Team chat",
+              "x": 228,
+              "y": 25,
+              "fontSize": 17,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#17191d",
+              "textAnchor": "middle",
+              "fontWeight": 600
+            },
+            {
+              "id": "mini-anchored-rich-card-thread-divider",
+              "type": "rect",
+              "x": 1,
+              "y": 66,
+              "width": 454,
+              "height": 1,
+              "fill": "#d8dbe0",
+              "radius": 0
+            }
+          ]
+        }
+      ],
+      "start": 0,
+      "end": 2.4,
+      "scaleX": 1,
+      "scaleY": 1
+    }
+  ]
+}

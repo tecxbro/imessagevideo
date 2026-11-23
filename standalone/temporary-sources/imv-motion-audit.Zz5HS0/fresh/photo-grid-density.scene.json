@@ -1,0 +1,715 @@
+{
+  "width": 720,
+  "height": 480,
+  "fps": 30,
+  "duration": 2.4,
+  "background": "#dce7f1",
+  "title": "Reflow the same photo tiles into a denser grid",
+  "source": {
+    "path": "packs/media.mjs#photo-grid-density",
+    "sourceStart": 0,
+    "sourceEnd": 2.4,
+    "notes": "Motion-authored shot. Gesture and timing are illustrative."
+  },
+  "layers": [
+    {
+      "id": "surface",
+      "type": "rect",
+      "x": 110,
+      "y": 44,
+      "width": 500,
+      "height": 392,
+      "fill": "#ffffff",
+      "radius": 18
+    },
+    {
+      "id": "stage",
+      "type": "group",
+      "x": 110,
+      "y": 98,
+      "children": [
+        {
+          "id": "density-tile-0",
+          "type": "group",
+          "x": 96,
+          "y": 30,
+          "children": [
+            {
+              "id": "density-tile-0-surface",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 155,
+              "height": 110,
+              "fill": "#ffffff",
+              "radius": 12,
+              "stroke": "#e8eef5",
+              "strokeWidth": 1
+            },
+            {
+              "id": "density-tile-0-photo",
+              "type": "group",
+              "x": 4,
+              "y": 4,
+              "children": [
+                {
+                  "id": "density-tile-0-photo-image",
+                  "type": "image",
+                  "src": "/Users/darshan/Documents/ChatGPT/imessage-video/codex-trial/skill/imessage-motion-recreation/motion/assets/landscape-1.png",
+                  "x": 0,
+                  "y": 0,
+                  "width": 147,
+                  "height": 102
+                }
+              ],
+              "clip": {
+                "x": 0,
+                "y": 0,
+                "width": 147,
+                "height": 102,
+                "radius": 8
+              }
+            }
+          ],
+          "originX": 0,
+          "originY": 0,
+          "keyframes": {
+            "x": [
+              {
+                "t": 0,
+                "value": 96,
+                "ease": "linear"
+              },
+              {
+                "t": 0.552,
+                "value": 96,
+                "ease": "linear"
+              },
+              {
+                "t": 1.464,
+                "value": 77,
+                "ease": "easeInOut"
+              }
+            ],
+            "y": [
+              {
+                "t": 0,
+                "value": 30,
+                "ease": "linear"
+              },
+              {
+                "t": 0.552,
+                "value": 30,
+                "ease": "linear"
+              },
+              {
+                "t": 1.464,
+                "value": 43,
+                "ease": "easeInOut"
+              }
+            ],
+            "scaleX": [
+              {
+                "t": 0,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 0.552,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 1.464,
+                "value": 0.72,
+                "ease": "easeInOut"
+              }
+            ],
+            "scaleY": [
+              {
+                "t": 0,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 0.552,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 1.464,
+                "value": 0.72,
+                "ease": "easeInOut"
+              }
+            ]
+          }
+        },
+        {
+          "id": "density-tile-1",
+          "type": "group",
+          "x": 248,
+          "y": 30,
+          "children": [
+            {
+              "id": "density-tile-1-surface",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 155,
+              "height": 110,
+              "fill": "#ffffff",
+              "radius": 12,
+              "stroke": "#e8eef5",
+              "strokeWidth": 1
+            },
+            {
+              "id": "density-tile-1-photo",
+              "type": "group",
+              "x": 4,
+              "y": 4,
+              "children": [
+                {
+                  "id": "density-tile-1-photo-image",
+                  "type": "image",
+                  "src": "/Users/darshan/Documents/ChatGPT/imessage-video/codex-trial/skill/imessage-motion-recreation/motion/assets/landscape-2.png",
+                  "x": 0,
+                  "y": 0,
+                  "width": 147,
+                  "height": 102
+                }
+              ],
+              "clip": {
+                "x": 0,
+                "y": 0,
+                "width": 147,
+                "height": 102,
+                "radius": 8
+              }
+            }
+          ],
+          "originX": 0,
+          "originY": 0,
+          "keyframes": {
+            "x": [
+              {
+                "t": 0,
+                "value": 248,
+                "ease": "linear"
+              },
+              {
+                "t": 0.552,
+                "value": 248,
+                "ease": "linear"
+              },
+              {
+                "t": 1.464,
+                "value": 209,
+                "ease": "easeInOut"
+              }
+            ],
+            "y": [
+              {
+                "t": 0,
+                "value": 30,
+                "ease": "linear"
+              },
+              {
+                "t": 0.552,
+                "value": 30,
+                "ease": "linear"
+              },
+              {
+                "t": 1.464,
+                "value": 43,
+                "ease": "easeInOut"
+              }
+            ],
+            "scaleX": [
+              {
+                "t": 0,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 0.552,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 1.464,
+                "value": 0.72,
+                "ease": "easeInOut"
+              }
+            ],
+            "scaleY": [
+              {
+                "t": 0,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 0.552,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 1.464,
+                "value": 0.72,
+                "ease": "easeInOut"
+              }
+            ]
+          }
+        },
+        {
+          "id": "density-tile-2",
+          "type": "group",
+          "x": 96,
+          "y": 144,
+          "children": [
+            {
+              "id": "density-tile-2-surface",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 155,
+              "height": 110,
+              "fill": "#ffffff",
+              "radius": 12,
+              "stroke": "#e8eef5",
+              "strokeWidth": 1
+            },
+            {
+              "id": "density-tile-2-photo",
+              "type": "group",
+              "x": 4,
+              "y": 4,
+              "children": [
+                {
+                  "id": "density-tile-2-photo-image",
+                  "type": "image",
+                  "src": "/Users/darshan/Documents/ChatGPT/imessage-video/codex-trial/skill/imessage-motion-recreation/motion/assets/landscape-3.png",
+                  "x": 0,
+                  "y": 0,
+                  "width": 147,
+                  "height": 102
+                }
+              ],
+              "clip": {
+                "x": 0,
+                "y": 0,
+                "width": 147,
+                "height": 102,
+                "radius": 8
+              }
+            }
+          ],
+          "originX": 0,
+          "originY": 0,
+          "keyframes": {
+            "x": [
+              {
+                "t": 0,
+                "value": 96,
+                "ease": "linear"
+              },
+              {
+                "t": 0.552,
+                "value": 96,
+                "ease": "linear"
+              },
+              {
+                "t": 1.464,
+                "value": 341,
+                "ease": "easeInOut"
+              }
+            ],
+            "y": [
+              {
+                "t": 0,
+                "value": 144,
+                "ease": "linear"
+              },
+              {
+                "t": 0.552,
+                "value": 144,
+                "ease": "linear"
+              },
+              {
+                "t": 1.464,
+                "value": 43,
+                "ease": "easeInOut"
+              }
+            ],
+            "scaleX": [
+              {
+                "t": 0,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 0.552,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 1.464,
+                "value": 0.72,
+                "ease": "easeInOut"
+              }
+            ],
+            "scaleY": [
+              {
+                "t": 0,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 0.552,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 1.464,
+                "value": 0.72,
+                "ease": "easeInOut"
+              }
+            ]
+          }
+        },
+        {
+          "id": "density-tile-3",
+          "type": "group",
+          "x": 248,
+          "y": 144,
+          "children": [
+            {
+              "id": "density-tile-3-surface",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 155,
+              "height": 110,
+              "fill": "#ffffff",
+              "radius": 12,
+              "stroke": "#e8eef5",
+              "strokeWidth": 1
+            },
+            {
+              "id": "density-tile-3-photo",
+              "type": "group",
+              "x": 4,
+              "y": 4,
+              "children": [
+                {
+                  "id": "density-tile-3-photo-image",
+                  "type": "image",
+                  "src": "/Users/darshan/Documents/ChatGPT/imessage-video/codex-trial/skill/imessage-motion-recreation/motion/assets/landscape-4.png",
+                  "x": 0,
+                  "y": 0,
+                  "width": 147,
+                  "height": 102
+                }
+              ],
+              "clip": {
+                "x": 0,
+                "y": 0,
+                "width": 147,
+                "height": 102,
+                "radius": 8
+              }
+            }
+          ],
+          "originX": 0,
+          "originY": 0,
+          "keyframes": {
+            "x": [
+              {
+                "t": 0,
+                "value": 248,
+                "ease": "linear"
+              },
+              {
+                "t": 0.552,
+                "value": 248,
+                "ease": "linear"
+              },
+              {
+                "t": 1.464,
+                "value": 77,
+                "ease": "easeInOut"
+              }
+            ],
+            "y": [
+              {
+                "t": 0,
+                "value": 144,
+                "ease": "linear"
+              },
+              {
+                "t": 0.552,
+                "value": 144,
+                "ease": "linear"
+              },
+              {
+                "t": 1.464,
+                "value": 155,
+                "ease": "easeInOut"
+              }
+            ],
+            "scaleX": [
+              {
+                "t": 0,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 0.552,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 1.464,
+                "value": 0.72,
+                "ease": "easeInOut"
+              }
+            ],
+            "scaleY": [
+              {
+                "t": 0,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 0.552,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 1.464,
+                "value": 0.72,
+                "ease": "easeInOut"
+              }
+            ]
+          }
+        },
+        {
+          "id": "density-tile-4",
+          "type": "group",
+          "x": 209,
+          "y": 155,
+          "children": [
+            {
+              "id": "density-tile-4-surface",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 155,
+              "height": 110,
+              "fill": "#ffffff",
+              "radius": 12,
+              "stroke": "#e8eef5",
+              "strokeWidth": 1
+            },
+            {
+              "id": "density-tile-4-photo",
+              "type": "group",
+              "x": 4,
+              "y": 4,
+              "children": [
+                {
+                  "id": "density-tile-4-photo-image",
+                  "type": "image",
+                  "src": "/Users/darshan/Documents/ChatGPT/imessage-video/codex-trial/skill/imessage-motion-recreation/motion/assets/landscape-1.png",
+                  "x": 0,
+                  "y": 0,
+                  "width": 147,
+                  "height": 102
+                }
+              ],
+              "clip": {
+                "x": 0,
+                "y": 0,
+                "width": 147,
+                "height": 102,
+                "radius": 8
+              }
+            }
+          ],
+          "originX": 0,
+          "originY": 0,
+          "scaleY": 0.72,
+          "scaleX": 0.72,
+          "keyframes": {
+            "opacity": [
+              {
+                "t": 0,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 1.464,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 1.752,
+                "value": 1,
+                "ease": "easeOut"
+              }
+            ]
+          }
+        },
+        {
+          "id": "density-tile-5",
+          "type": "group",
+          "x": 341,
+          "y": 155,
+          "children": [
+            {
+              "id": "density-tile-5-surface",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 155,
+              "height": 110,
+              "fill": "#ffffff",
+              "radius": 12,
+              "stroke": "#e8eef5",
+              "strokeWidth": 1
+            },
+            {
+              "id": "density-tile-5-photo",
+              "type": "group",
+              "x": 4,
+              "y": 4,
+              "children": [
+                {
+                  "id": "density-tile-5-photo-image",
+                  "type": "image",
+                  "src": "/Users/darshan/Documents/ChatGPT/imessage-video/codex-trial/skill/imessage-motion-recreation/motion/assets/landscape-2.png",
+                  "x": 0,
+                  "y": 0,
+                  "width": 147,
+                  "height": 102
+                }
+              ],
+              "clip": {
+                "x": 0,
+                "y": 0,
+                "width": 147,
+                "height": 102,
+                "radius": 8
+              }
+            }
+          ],
+          "originX": 0,
+          "originY": 0,
+          "scaleY": 0.72,
+          "scaleX": 0.72,
+          "keyframes": {
+            "opacity": [
+              {
+                "t": 0,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 1.464,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 1.752,
+                "value": 1,
+                "ease": "easeOut"
+              }
+            ]
+          }
+        }
+      ],
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 500,
+        "height": 298
+      }
+    },
+    {
+      "id": "footer",
+      "type": "group",
+      "x": 110,
+      "y": 396,
+      "children": [
+        {
+          "id": "footer-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 40,
+          "fill": "#f2f6fb",
+          "radius": 12
+        }
+      ]
+    },
+    {
+      "id": "heading",
+      "type": "group",
+      "x": 110,
+      "y": 44,
+      "children": [
+        {
+          "id": "heading-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 54,
+          "fill": "#f2f6fb",
+          "radius": 13
+        },
+        {
+          "id": "heading-copy",
+          "type": "text",
+          "text": "Alpine field notes",
+          "x": 26,
+          "y": 13,
+          "fontSize": 23,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#182737",
+          "fontWeight": 700
+        }
+      ]
+    }
+  ],
+  "timeline": {
+    "version": 1,
+    "picture": {
+      "fpsNum": 30,
+      "fpsDen": 1,
+      "frameCount": 72
+    },
+    "initialUI": null,
+    "events": [
+      {
+        "id": "motion.photo-grid-density.density-change",
+        "kind": "layout_change",
+        "target": "density-tile-0",
+        "frame": 17,
+        "layerIds": [
+          "density-tile-0"
+        ]
+      },
+      {
+        "id": "motion.photo-grid-density.density-settle",
+        "kind": "layout_settle",
+        "target": "density-tile-5",
+        "frame": 53,
+        "layerIds": [
+          "density-tile-5"
+        ]
+      }
+    ],
+    "cues": []
+  }
+}

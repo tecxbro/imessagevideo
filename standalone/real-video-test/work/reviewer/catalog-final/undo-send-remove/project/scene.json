@@ -1,0 +1,343 @@
+{
+  "width": 720,
+  "height": 480,
+  "fps": 30,
+  "duration": 2.4,
+  "background": "#dce7f1",
+  "title": "Undo a send and retract its row",
+  "source": {
+    "path": "packs/conversation.mjs#undo-send-remove",
+    "sourceStart": 0,
+    "sourceEnd": 2.4,
+    "notes": "Original editable Motion demonstration."
+  },
+  "layers": [
+    {
+      "id": "surface",
+      "type": "rect",
+      "x": 110,
+      "y": 44,
+      "width": 500,
+      "height": 392,
+      "fill": "#ffffff",
+      "radius": 18
+    },
+    {
+      "id": "stage",
+      "type": "group",
+      "x": 110,
+      "y": 98,
+      "children": [
+        {
+          "id": "undo-prior",
+          "type": "group",
+          "x": 29,
+          "y": 113,
+          "children": [
+            {
+              "id": "undo-prior-body",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 262,
+              "height": 54,
+              "fill": "#e9e9ed",
+              "radius": 20
+            },
+            {
+              "id": "undo-prior-tail",
+              "type": "path",
+              "d": "M 16 36 Q 3 55 -7 52 Q 3 48 2 34 Z",
+              "fill": "#e9e9ed"
+            },
+            {
+              "id": "undo-prior-copy",
+              "type": "text",
+              "text": "Here it is. Meet at the north\ngate.",
+              "x": 17,
+              "y": 7.5,
+              "fontSize": 16,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#17191d",
+              "lineHeight": 18
+            }
+          ],
+          "keyframes": {
+            "y": [
+              {
+                "t": 0,
+                "value": 113,
+                "ease": "linear"
+              },
+              {
+                "t": 1.152,
+                "value": 113,
+                "ease": "linear"
+              },
+              {
+                "t": 1.6320000000000001,
+                "value": 164,
+                "ease": "easeOut"
+              }
+            ]
+          }
+        },
+        {
+          "id": "undo-outgoing",
+          "type": "group",
+          "x": 223,
+          "y": 193,
+          "children": [
+            {
+              "id": "undo-outgoing-body",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 244,
+              "height": 54,
+              "fill": "#1688fa",
+              "radius": 20
+            },
+            {
+              "id": "undo-outgoing-tail",
+              "type": "path",
+              "d": "M 228 36 Q 241 55 251 52 Q 241 48 242 34 Z",
+              "fill": "#1688fa"
+            },
+            {
+              "id": "undo-outgoing-copy",
+              "type": "text",
+              "text": "Can you send the trail\nmap?",
+              "x": 17,
+              "y": 7.5,
+              "fontSize": 16,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#ffffff",
+              "lineHeight": 18
+            }
+          ],
+          "originX": 241,
+          "originY": 47,
+          "keyframes": {
+            "scaleX": [
+              {
+                "t": 0,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 0.864,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 1.032,
+                "value": 1.035,
+                "ease": "easeOut"
+              },
+              {
+                "t": 1.3679999999999999,
+                "value": 0.065,
+                "ease": "easeIn"
+              }
+            ],
+            "scaleY": [
+              {
+                "t": 0,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 1.008,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 1.3679999999999999,
+                "value": 0.48,
+                "ease": "easeIn"
+              }
+            ],
+            "opacity": [
+              {
+                "t": 0,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 1.056,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 1.3679999999999999,
+                "value": 0,
+                "ease": "easeIn"
+              }
+            ]
+          }
+        },
+        {
+          "id": "undo-history-note",
+          "type": "text",
+          "text": "You unsent a message",
+          "x": 250,
+          "y": 237,
+          "fontSize": 13,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#516277",
+          "textAnchor": "middle",
+          "keyframes": {
+            "opacity": [
+              {
+                "t": 0,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 1.488,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 1.776,
+                "value": 1,
+                "ease": "easeOut"
+              }
+            ]
+          }
+        }
+      ],
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 500,
+        "height": 298
+      }
+    },
+    {
+      "id": "footer",
+      "type": "group",
+      "x": 110,
+      "y": 396,
+      "children": [
+        {
+          "id": "footer-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 40,
+          "fill": "#f2f6fb",
+          "radius": 12
+        },
+        {
+          "id": "undo-composer",
+          "type": "group",
+          "x": 23,
+          "y": 0,
+          "children": [
+            {
+              "id": "undo-composer-field",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 454,
+              "height": 48,
+              "fill": "#ffffff",
+              "radius": 24,
+              "stroke": "#d8dbe0",
+              "strokeWidth": 1
+            },
+            {
+              "id": "undo-composer-input",
+              "type": "text",
+              "text": "Message",
+              "x": 18,
+              "y": 14,
+              "fontSize": 17,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#777b84"
+            },
+            {
+              "id": "undo-composer-send",
+              "type": "circle",
+              "x": 414,
+              "y": 8,
+              "width": 32,
+              "height": 32,
+              "fill": "#d8dbe0"
+            },
+            {
+              "id": "undo-composer-arrow",
+              "type": "path",
+              "d": "M 430 33 L 430 16 M 423 23 L 430 16 L 437 23",
+              "fill": "none",
+              "stroke": "#ffffff",
+              "strokeWidth": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "heading",
+      "type": "group",
+      "x": 110,
+      "y": 44,
+      "children": [
+        {
+          "id": "heading-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 54,
+          "fill": "#f2f6fb",
+          "radius": 13
+        },
+        {
+          "id": "heading-copy",
+          "type": "text",
+          "text": "Alpine field notes",
+          "x": 26,
+          "y": 13,
+          "fontSize": 23,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#182737",
+          "fontWeight": 700
+        }
+      ]
+    }
+  ],
+  "timeline": {
+    "version": 1,
+    "picture": {
+      "fpsNum": 30,
+      "fpsDen": 1,
+      "frameCount": 72
+    },
+    "initialUI": null,
+    "events": [
+      {
+        "id": "motion.undo-send-remove.undo-send",
+        "kind": "unsend",
+        "target": "undo-outgoing",
+        "frame": 26,
+        "layerIds": [
+          "undo-outgoing"
+        ]
+      },
+      {
+        "id": "motion.undo-send-remove.row-removed",
+        "kind": "message_removed",
+        "target": "undo-outgoing",
+        "frame": 42,
+        "layerIds": [
+          "undo-outgoing"
+        ]
+      }
+    ],
+    "cues": []
+  }
+}

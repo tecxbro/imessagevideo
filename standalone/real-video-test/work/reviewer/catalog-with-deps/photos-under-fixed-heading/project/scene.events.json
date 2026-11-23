@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 72
+  },
+  "initialUI": null,
+  "events": [
+    {
+      "id": "motion.photos-under-fixed-heading.rail-start",
+      "kind": "media.scroll",
+      "target": "photo-rail",
+      "frame": 20,
+      "layerIds": [
+        "photo-rail"
+      ]
+    },
+    {
+      "id": "motion.photos-under-fixed-heading.rail-settle",
+      "kind": "media.settle",
+      "target": "photo-rail",
+      "frame": 39,
+      "layerIds": [
+        "photo-rail"
+      ]
+    }
+  ],
+  "cues": []
+}

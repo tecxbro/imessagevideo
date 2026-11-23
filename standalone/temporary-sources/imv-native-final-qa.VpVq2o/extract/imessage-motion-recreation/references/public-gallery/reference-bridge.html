@@ -1,0 +1,26 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>message studies — media loader</title><script>
+'use strict';
+const galleryOrigin = 'https://message-motion-studio.orchidhq.chatgpt.site';
+const allowed = new Set(['01-photonhq','02-danieltian','03-photon-mini','04-poke','05-linq','06-gallery']);
+const requests = new Map();
+window.addEventListener('message', async event => {
+  if (event.source !== parent || event.origin !== galleryOrigin || !event.data || typeof event.data.id !== 'string') return;
+  const {id, type, film} = event.data;
+  if (type === 'cancel') { requests.get(id)?.abort(); requests.delete(id); return; }
+  if (type !== 'load' || !allowed.has(film) || requests.has(id)) return;
+  const controller = new AbortController(); requests.set(id,controller);
+  try {
+    const response = await fetch('references/'+film+'/source.mp4',{signal:controller.signal,credentials:'omit'});
+    if (!response.ok || !response.headers.get('content-type')?.startsWith('video/mp4')) throw new Error('Original video unavailable');
+    const size=Number(response.headers.get('content-length'));
+    if (Number.isFinite(size) && size > 20*1024*1024) throw new Error('Unexpected media size');
+    const bytes=await response.arrayBuffer();
+    if (bytes.byteLength > 20*1024*1024) throw new Error('Unexpected media size');
+    if (requests.get(id)!==controller || controller.signal.aborted) return;
+    parent.postMessage({type:'loaded',id,bytes},galleryOrigin,[bytes]);
+  } catch(error) {
+    if (error.name!=='AbortError') parent.postMessage({type:'error',id,message:'The original could not be loaded.'},galleryOrigin);
+  } finally { if(requests.get(id)===controller)requests.delete(id); }
+});
+parent.postMessage({type:'ready'},galleryOrigin);
+</script></html>

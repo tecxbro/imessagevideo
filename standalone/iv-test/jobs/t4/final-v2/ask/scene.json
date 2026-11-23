@@ -1,0 +1,581 @@
+{
+  "width": 720,
+  "height": 480,
+  "fps": 30,
+  "duration": 2.4,
+  "background": "#dce7f1",
+  "title": "Send an outgoing text and receive a reply",
+  "source": {
+    "path": "skill/imessage-motion-recreation/director/motions.mjs",
+    "sourceStart": 0,
+    "sourceEnd": 4,
+    "notes": "The accepted base starter supplies the draft-to-send and reply choreography. This example replants it in the Motion stage with editable copy and v3 events."
+  },
+  "layers": [
+    {
+      "id": "surface",
+      "type": "rect",
+      "x": 110,
+      "y": 44,
+      "width": 500,
+      "height": 392,
+      "fill": "#ffffff",
+      "radius": 18
+    },
+    {
+      "id": "stage",
+      "type": "group",
+      "x": 110,
+      "y": 98,
+      "children": [
+        {
+          "id": "handoff-scale",
+          "type": "group",
+          "x": -46,
+          "y": -2,
+          "children": [
+            {
+              "id": "phone",
+              "type": "group",
+              "x": 260,
+              "y": 18,
+              "children": [
+                {
+                  "id": "phone-matte",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 440,
+                  "height": 500,
+                  "fill": "#ffffff",
+                  "radius": 28,
+                  "stroke": "#d8dbe0",
+                  "strokeWidth": 1
+                },
+                {
+                  "id": "phone-screen",
+                  "type": "group",
+                  "x": 0,
+                  "y": 0,
+                  "children": [
+                    {
+                      "id": "contact",
+                      "type": "group",
+                      "x": 23,
+                      "y": 92,
+                      "children": [
+                        {
+                          "id": "contact-disc",
+                          "type": "circle",
+                          "width": 42,
+                          "height": 42,
+                          "fill": "#d8e2f0"
+                        },
+                        {
+                          "id": "contact-initials",
+                          "type": "text",
+                          "text": "AI",
+                          "x": 21,
+                          "y": 11.34,
+                          "fontSize": 13.44,
+                          "fontFamily": "Arial, sans-serif",
+                          "fill": "#17191d",
+                          "textAnchor": "middle",
+                          "fontWeight": 600
+                        }
+                      ]
+                    },
+                    {
+                      "id": "sent",
+                      "type": "group",
+                      "x": 143,
+                      "y": 294,
+                      "children": [
+                        {
+                          "id": "sent-body",
+                          "type": "rect",
+                          "x": 0,
+                          "y": 0,
+                          "width": 272,
+                          "height": 72,
+                          "fill": "#1688fa",
+                          "radius": 20
+                        },
+                        {
+                          "id": "sent-tail",
+                          "type": "path",
+                          "d": "M 256 54 Q 269 73 279 70 Q 269 66 270 52 Z",
+                          "fill": "#1688fa"
+                        },
+                        {
+                          "id": "sent-copy",
+                          "type": "text",
+                          "text": "Meet at the doors",
+                          "x": 17,
+                          "y": 14,
+                          "fontSize": 17,
+                          "fontFamily": "Arial, sans-serif",
+                          "fill": "#ffffff",
+                          "lineHeight": 24
+                        }
+                      ],
+                      "keyframes": {
+                        "y": [
+                          {
+                            "t": 1.056,
+                            "value": 365,
+                            "ease": "easeInOut"
+                          },
+                          {
+                            "t": 1.392,
+                            "value": 166,
+                            "ease": "easeOut"
+                          }
+                        ],
+                        "opacity": [
+                          {
+                            "t": 0,
+                            "value": 0,
+                            "ease": "easeInOut"
+                          },
+                          {
+                            "t": 1.056,
+                            "value": 0,
+                            "ease": "easeInOut"
+                          },
+                          {
+                            "t": 1.152,
+                            "value": 1,
+                            "ease": "easeOut"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "id": "reply",
+                      "type": "group",
+                      "x": 22,
+                      "y": 95,
+                      "children": [
+                        {
+                          "id": "reply-body",
+                          "type": "rect",
+                          "x": 0,
+                          "y": 0,
+                          "width": 280,
+                          "height": 82,
+                          "fill": "#e9e9ed",
+                          "radius": 20
+                        },
+                        {
+                          "id": "reply-tail",
+                          "type": "path",
+                          "d": "M 16 64 Q 3 83 -7 80 Q 3 76 2 62 Z",
+                          "fill": "#e9e9ed"
+                        },
+                        {
+                          "id": "reply-copy",
+                          "type": "text",
+                          "text": "YES. Get us in!",
+                          "x": 17,
+                          "y": 14,
+                          "fontSize": 17,
+                          "fontFamily": "Arial, sans-serif",
+                          "fill": "#17191d",
+                          "lineHeight": 24
+                        }
+                      ],
+                      "keyframes": {
+                        "opacity": [
+                          {
+                            "t": 0,
+                            "value": 0,
+                            "ease": "easeInOut"
+                          },
+                          {
+                            "t": 1.68,
+                            "value": 0,
+                            "ease": "easeInOut"
+                          },
+                          {
+                            "t": 1.8239999999999998,
+                            "value": 1,
+                            "ease": "easeOut"
+                          }
+                        ],
+                        "y": [
+                          {
+                            "t": 1.68,
+                            "value": 321,
+                            "ease": "easeInOut"
+                          },
+                          {
+                            "t": 2.016,
+                            "value": 297,
+                            "ease": "easeOut"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "id": "composer",
+                      "type": "group",
+                      "x": 20,
+                      "y": 428,
+                      "children": [
+                        {
+                          "id": "composer-field",
+                          "type": "rect",
+                          "x": 0,
+                          "y": 0,
+                          "width": 400,
+                          "height": 48,
+                          "fill": "#ffffff",
+                          "radius": 24,
+                          "stroke": "#d8dbe0",
+                          "strokeWidth": 1
+                        },
+                        {
+                          "id": "composer-input",
+                          "type": "text",
+                          "text": "Message",
+                          "x": 18,
+                          "y": 14,
+                          "fontSize": 17,
+                          "fontFamily": "Arial, sans-serif",
+                          "fill": "#777b84",
+                          "keyframes": {
+                            "text": [
+                              {
+                                "t": 0,
+                                "value": "",
+                                "ease": "easeInOut"
+                              },
+                              {
+                                "t": 0.2767058823529412,
+                                "value": "M",
+                                "ease": "hold"
+                              },
+                              {
+                                "t": 0.31341176470588233,
+                                "value": "Me",
+                                "ease": "hold"
+                              },
+                              {
+                                "t": 0.3501176470588235,
+                                "value": "Mee",
+                                "ease": "hold"
+                              },
+                              {
+                                "t": 0.38682352941176473,
+                                "value": "Meet",
+                                "ease": "hold"
+                              },
+                              {
+                                "t": 0.4235294117647059,
+                                "value": "Meet ",
+                                "ease": "hold"
+                              },
+                              {
+                                "t": 0.4602352941176471,
+                                "value": "Meet a",
+                                "ease": "hold"
+                              },
+                              {
+                                "t": 0.4969411764705882,
+                                "value": "Meet at",
+                                "ease": "hold"
+                              },
+                              {
+                                "t": 0.5336470588235294,
+                                "value": "Meet at ",
+                                "ease": "hold"
+                              },
+                              {
+                                "t": 0.5703529411764705,
+                                "value": "Meet at t",
+                                "ease": "hold"
+                              },
+                              {
+                                "t": 0.6070588235294118,
+                                "value": "Meet at th",
+                                "ease": "hold"
+                              },
+                              {
+                                "t": 0.6437647058823529,
+                                "value": "Meet at the",
+                                "ease": "hold"
+                              },
+                              {
+                                "t": 0.6804705882352942,
+                                "value": "Meet at the ",
+                                "ease": "hold"
+                              },
+                              {
+                                "t": 0.7171764705882353,
+                                "value": "Meet at the d",
+                                "ease": "hold"
+                              },
+                              {
+                                "t": 0.7538823529411763,
+                                "value": "Meet at the do",
+                                "ease": "hold"
+                              },
+                              {
+                                "t": 0.7905882352941177,
+                                "value": "Meet at the doo",
+                                "ease": "hold"
+                              },
+                              {
+                                "t": 0.8272941176470588,
+                                "value": "Meet at the door",
+                                "ease": "hold"
+                              },
+                              {
+                                "t": 0.864,
+                                "value": "Meet at the doors",
+                                "ease": "hold"
+                              },
+                              {
+                                "t": 1.056,
+                                "value": "",
+                                "ease": "hold"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "id": "composer-send",
+                          "type": "circle",
+                          "x": 360,
+                          "y": 8,
+                          "width": 32,
+                          "height": 32,
+                          "fill": "#1688fa"
+                        },
+                        {
+                          "id": "composer-arrow",
+                          "type": "path",
+                          "d": "M 376 33 L 376 16 M 369 23 L 376 16 L 383 23",
+                          "fill": "none",
+                          "stroke": "#ffffff",
+                          "strokeWidth": 2
+                        }
+                      ]
+                    }
+                  ],
+                  "clip": {
+                    "x": 0,
+                    "y": 0,
+                    "width": 440,
+                    "height": 500,
+                    "radius": 28
+                  }
+                },
+                {
+                  "id": "phone-bar",
+                  "type": "rect",
+                  "x": 1,
+                  "y": 1,
+                  "width": 438,
+                  "height": 66,
+                  "fill": "#f8f8fa",
+                  "radius": 27
+                },
+                {
+                  "id": "phone-bar-square",
+                  "type": "rect",
+                  "x": 1,
+                  "y": 33,
+                  "width": 438,
+                  "height": 33,
+                  "fill": "#f8f8fa",
+                  "radius": 0
+                },
+                {
+                  "id": "phone-back",
+                  "type": "text",
+                  "text": "‹",
+                  "x": 18,
+                  "y": 17,
+                  "fontSize": 30,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#1688fa"
+                },
+                {
+                  "id": "phone-title",
+                  "type": "text",
+                  "text": "Maya",
+                  "x": 220,
+                  "y": 25,
+                  "fontSize": 17,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#17191d",
+                  "textAnchor": "middle",
+                  "fontWeight": 600
+                },
+                {
+                  "id": "phone-divider",
+                  "type": "rect",
+                  "x": 1,
+                  "y": 66,
+                  "width": 438,
+                  "height": 1,
+                  "fill": "#d8dbe0",
+                  "radius": 0
+                }
+              ]
+            }
+          ],
+          "scaleX": 0.62,
+          "scaleY": 0.58
+        }
+      ],
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 500,
+        "height": 298
+      }
+    },
+    {
+      "id": "footer",
+      "type": "group",
+      "x": 110,
+      "y": 396,
+      "children": [
+        {
+          "id": "footer-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 40,
+          "fill": "#f2f6fb",
+          "radius": 12
+        },
+        {
+          "id": "footer-label",
+          "type": "text",
+          "text": "iMessage - Today",
+          "x": 26,
+          "y": 11,
+          "fontSize": 15,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#516277"
+        }
+      ]
+    },
+    {
+      "id": "heading",
+      "type": "group",
+      "x": 110,
+      "y": 44,
+      "children": [
+        {
+          "id": "heading-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 54,
+          "fill": "#f2f6fb",
+          "radius": 13
+        },
+        {
+          "id": "heading-copy",
+          "type": "text",
+          "text": "Maya",
+          "x": 26,
+          "y": 13,
+          "fontSize": 23,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#182737",
+          "fontWeight": 700
+        }
+      ]
+    }
+  ],
+  "timeline": {
+    "version": 1,
+    "picture": {
+      "fpsNum": 30,
+      "fpsDen": 1,
+      "frameCount": 72
+    },
+    "initialUI": {
+      "conversationId": "thread.motion",
+      "messages": [],
+      "composer": {
+        "text": "",
+        "focused": true
+      },
+      "viewport": {
+        "surface": "conversation",
+        "anchorMessageId": null
+      }
+    },
+    "events": [
+      {
+        "id": "motion.conversation-handoff.send",
+        "kind": "message.send",
+        "target": "sent",
+        "frame": 32,
+        "layerIds": [
+          "sent"
+        ],
+        "uiState": {
+          "conversationId": "thread.motion",
+          "messages": [
+            {
+              "id": "message.sent",
+              "senderId": "account.self",
+              "text": "Meet at the doors"
+            }
+          ],
+          "composer": {
+            "text": "",
+            "focused": true
+          },
+          "viewport": {
+            "surface": "conversation",
+            "anchorMessageId": "message.sent"
+          }
+        }
+      },
+      {
+        "id": "motion.conversation-handoff.receive",
+        "kind": "message.receive",
+        "target": "reply",
+        "frame": 51,
+        "layerIds": [
+          "reply"
+        ],
+        "uiState": {
+          "conversationId": "thread.motion",
+          "messages": [
+            {
+              "id": "message.sent",
+              "senderId": "account.self",
+              "text": "Meet at the doors"
+            },
+            {
+              "id": "message.reply",
+              "senderId": "account.remote",
+              "text": "YES. Get us in!"
+            }
+          ],
+          "composer": {
+            "text": "",
+            "focused": true
+          },
+          "viewport": {
+            "surface": "conversation",
+            "anchorMessageId": "message.reply"
+          }
+        }
+      }
+    ],
+    "cues": []
+  }
+}

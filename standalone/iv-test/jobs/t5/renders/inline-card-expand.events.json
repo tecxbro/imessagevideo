@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 72
+  },
+  "initialUI": null,
+  "events": [
+    {
+      "id": "motion.inline-card-expand.sheet-enter",
+      "kind": "panel.open",
+      "target": "detail-sheet",
+      "frame": 24,
+      "layerIds": [
+        "detail-sheet"
+      ]
+    },
+    {
+      "id": "motion.inline-card-expand.sheet-settle",
+      "kind": "panel.settle",
+      "target": "detail-sheet",
+      "frame": 55,
+      "layerIds": [
+        "detail-sheet"
+      ]
+    }
+  ],
+  "cues": []
+}

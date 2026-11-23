@@ -1,0 +1,120 @@
+{
+  "reference": "02-danieltian",
+  "input": "/workspace/imessage-recreations/outputs/02-danieltian/final-v19/scene.json",
+  "sceneSha256": "729c783aa3a13f87c2e61d9a409a492adff9d27208ae6e092c3edfc2c2e8abee",
+  "inventorySha256": "af5bca369ad8745bb746eca45297cdf36b671c3a8746ea5eaf3b6a18f129a3cf",
+  "fontSha256": [
+    {
+      "family": "Photon Sans",
+      "weight": 600,
+      "sha256": "26979ed4d4c9b6b9540984948908a6ee297d7a20536053a4bfa4340c3b1235a7"
+    },
+    {
+      "family": "Photon Sans",
+      "weight": 400,
+      "sha256": "61f098d27338e94119354c69c884dbbeb2b9d9090ff583a5c7062d98732a6f14"
+    }
+  ],
+  "loadedFonts": [
+    {
+      "family": "\"Photon Sans\"",
+      "weight": "600",
+      "style": "normal",
+      "status": "loaded"
+    },
+    {
+      "family": "\"Photon Sans\"",
+      "weight": "400",
+      "style": "normal",
+      "status": "loaded"
+    }
+  ],
+  "measurements": [
+    {
+      "styleId": 0,
+      "fontCSS": "600 60px / 72px \"Photon Sans\"",
+      "fontFamily": "\"Photon Sans\"",
+      "fontWeight": "600",
+      "fontSize": "60px",
+      "actualLineHeightPx": 72,
+      "fontBoundingBoxAscent": 69.96875,
+      "fontBoundingBoxDescent": 2.03125,
+      "naturalFontBoxHeight": 72,
+      "domLeading": 0,
+      "formulaDelta": 0,
+      "formulaMatchesDOM": true,
+      "example": "+"
+    },
+    {
+      "styleId": 1,
+      "fontCSS": "54px / 64.8px \"Photon Sans\"",
+      "fontFamily": "\"Photon Sans\"",
+      "fontWeight": "400",
+      "fontSize": "54px",
+      "actualLineHeightPx": 64.8,
+      "fontBoundingBoxAscent": 62.765625,
+      "fontBoundingBoxDescent": 2.234375,
+      "naturalFontBoxHeight": 65,
+      "domLeading": -1,
+      "formulaDelta": 1,
+      "formulaMatchesDOM": true,
+      "example": "iMessage"
+    },
+    {
+      "styleId": 2,
+      "fontCSS": "600 60px / 80px \"Photon Sans\"",
+      "fontFamily": "\"Photon Sans\"",
+      "fontWeight": "600",
+      "fontSize": "60px",
+      "actualLineHeightPx": 80,
+      "fontBoundingBoxAscent": 69.96875,
+      "fontBoundingBoxDescent": 2.03125,
+      "naturalFontBoxHeight": 72,
+      "domLeading": 4,
+      "formulaDelta": -4,
+      "formulaMatchesDOM": true,
+      "example": "m"
+    }
+  ],
+  "candidateNodes": [
+    {
+      "id": "text-802",
+      "frameRanges": [
+        [
+          93,
+          94
+        ]
+      ],
+      "frameCount": 2,
+      "styleIds": [
+        2
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    },
+    {
+      "id": "text-854",
+      "frameRanges": [
+        [
+          80,
+          94
+        ]
+      ],
+      "frameCount": 15,
+      "styleIds": [
+        1
+      ],
+      "historyDependent": false,
+      "reason": "Nonzero measured DOM inline-font-box correction on exact active ink runs."
+    }
+  ],
+  "candidateFrameRanges": [
+    [
+      80,
+      94
+    ]
+  ],
+  "candidateFrameCount": 15,
+  "formulaMismatches": [],
+  "note": "Candidate actor visibility is exact lifecycle/positive opacity, conservatively includes offscreen/occluded actors. No production runtime or native PNG changed."
+}

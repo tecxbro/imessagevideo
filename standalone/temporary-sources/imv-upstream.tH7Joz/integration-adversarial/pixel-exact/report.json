@@ -1,0 +1,163 @@
+{
+  "schema": 1,
+  "verdict": "FAIL",
+  "failures": [
+    {
+      "check": "pixel_equality",
+      "first_difference": {
+        "frame": 17,
+        "changed_pixels": 1,
+        "max_channel_delta": 1,
+        "rect": [
+          159,
+          89,
+          1,
+          1
+        ]
+      }
+    }
+  ],
+  "checks_sha256": null,
+  "reference": {
+    "name": "base.mp4",
+    "sha256": "0275258672d5c72aab94ecf6fae762142986a3180c4bf60f01fb1c09e2021448",
+    "clock": {
+      "width": 160,
+      "height": 90,
+      "sample_aspect_ratio": "1",
+      "rotation_degrees": 0,
+      "display_matrix": [
+        65536,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        1073741824
+      ],
+      "container_crop_top_bottom_left_right": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "time_base": "1/30000",
+      "declared_rate": "30",
+      "declared_average_rate": "30/1",
+      "start_pts": 0,
+      "end_pts_exclusive": 64000,
+      "end_basis": "last decoded frame duration",
+      "end_seconds": 2.1333333333333333,
+      "frames": 64,
+      "cadence": "constant",
+      "pixel_format": "gbrp",
+      "alpha_present": false,
+      "color_range": "pc",
+      "color_space": "gbr",
+      "color_primaries": null,
+      "color_transfer": null
+    },
+    "audio": []
+  },
+  "candidate": {
+    "name": "one-pixel.mp4",
+    "sha256": "339ee62ec14aa86d74331f7e29d744f85342ef56eaa45e428b70a3339f14fb28",
+    "clock": {
+      "width": 160,
+      "height": 90,
+      "sample_aspect_ratio": "1",
+      "rotation_degrees": 0,
+      "display_matrix": [
+        65536,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        1073741824
+      ],
+      "container_crop_top_bottom_left_right": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "time_base": "1/30000",
+      "declared_rate": "30",
+      "declared_average_rate": "30/1",
+      "start_pts": 0,
+      "end_pts_exclusive": 64000,
+      "end_basis": "last decoded frame duration",
+      "end_seconds": 2.1333333333333333,
+      "frames": 64,
+      "cadence": "constant",
+      "pixel_format": "gbrp",
+      "alpha_present": false,
+      "color_range": "pc",
+      "color_space": "gbr",
+      "color_primaries": null,
+      "color_transfer": null
+    },
+    "audio": []
+  },
+  "compared_frames": 64,
+  "mean_abs_rgb": 3.616898148148148e-07,
+  "worst_frame": {
+    "frame": 17,
+    "mean_abs_rgb": 2.3148148148148147e-05
+  },
+  "exact_clock": true,
+  "pixel_equality": {
+    "identical_frames": 63,
+    "different_frames": 1,
+    "different_spans": [
+      [
+        17,
+        17
+      ]
+    ],
+    "changed_pixel_observations": 1,
+    "first_difference": {
+      "frame": 17,
+      "changed_pixels": 1,
+      "max_channel_delta": 1,
+      "rect": [
+        159,
+        89,
+        1,
+        1
+      ]
+    },
+    "worst_frame": {
+      "frame": 17,
+      "changed_pixels": 1,
+      "max_channel_delta": 1
+    }
+  },
+  "whole_frame_mae_limit": 2,
+  "pixel_floor": 20,
+  "clock_tolerance_seconds": "0",
+  "alignment": "display-order index with independent exact PTS gate",
+  "audio_rule": "observe",
+  "audio_checks": null,
+  "regions": {},
+  "tile": null,
+  "regional_coverage": "picture-level checks only; no interaction windows supplied",
+  "decode_completed": true,
+  "evidence": {
+    "frames.csv": {
+      "region": null,
+      "spans": [
+        [
+          0,
+          63
+        ]
+      ],
+      "sha256": "ace2caad52061b965ce2dbab55b9c313041d79a138d58dac4ffd965e0ac2b34c"
+    }
+  }
+}

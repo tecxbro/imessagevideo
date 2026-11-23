@@ -1,0 +1,86 @@
+{
+  "antialias": 3,
+  "assets": {},
+  "avoid": [
+    "A free particle without a fixed pivot or a static traced route"
+  ],
+  "checks": {
+    "max_mae": 6,
+    "max_pts_error_ms": 0,
+    "negative_control": {
+      "reason": "A one-frame shuttle snap breaks the moving ROI.",
+      "set": {
+        "shuttle-x-frame-24": 155.5
+      }
+    },
+    "reason": "Allows renderer anti-alias and MP4 color conversion error. ROIs include both shuttle phases and the fixed marks.",
+    "rois": {
+      "fixed-baseline": [
+        48,
+        202,
+        383,
+        19
+      ],
+      "fixed-heading": [
+        47,
+        50,
+        92,
+        20
+      ],
+      "shuttle-and-tether": [
+        92,
+        69,
+        302,
+        123
+      ],
+      "swipe-midpoint": [
+        219,
+        161,
+        75,
+        31
+      ]
+    }
+  },
+  "description": "A horizontal shuttle pulls out a tether, pauses at full reach, then turns upward on the same tether into a fixed dock.",
+  "fits": [
+    "A latched endpoint moves horizontally, holds, then pivots an attached tether into a fixed dock"
+  ],
+  "fixed": [
+    "board",
+    "heading-mark",
+    "heading-dash",
+    "baseline",
+    "dock",
+    "dock-center",
+    "pivot-ring",
+    "pivot-center"
+  ],
+  "id": "tether-extend-then-pivot-dock",
+  "moving": [
+    "elastic-tether",
+    "shuttle"
+  ],
+  "parameters": {
+    "shuttle-color": "/layers/9/fill",
+    "shuttle-x-frame-24": "/layers/9/keyframes/x/24/value",
+    "tether-color": "/layers/6/fill"
+  },
+  "renderer": "pillow",
+  "scene": "scene.json",
+  "source": {
+    "clip_sha256": "f3201aca2c4740bc89825d935e7e16bd8b7e159e0438ce5478a8f79cba16a34b",
+    "comparison_clip": "evidence/reference.nut",
+    "end_frame_exclusive": 90,
+    "label": "Independently authored unseen test original",
+    "observation": "Shuttle starts near (173,176), holds near (369,176), rises with the tether and lands near (369,88), then holds through frame 89.",
+    "original_sha256": "3d0fbab4c289b5fc1e2452d587c892bc9c17fdcf7ab9f59e2a820d504c0f9fee",
+    "start_frame": 0
+  },
+  "tags": [
+    "tether",
+    "pivot",
+    "right-angle path",
+    "docking"
+  ],
+  "title": "Extend a tether, then pivot it into a fixed dock"
+}

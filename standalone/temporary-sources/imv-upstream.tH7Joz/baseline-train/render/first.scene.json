@@ -1,0 +1,666 @@
+{
+  "width": 640,
+  "height": 360,
+  "fps": 30,
+  "duration": 4,
+  "background": "#eeedf3",
+  "timeline": {
+    "version": 1,
+    "picture": {
+      "fpsNum": 30,
+      "fpsDen": 1,
+      "frameCount": 120
+    },
+    "initialUI": null,
+    "events": [
+      {
+        "id": "recreate.train.conversation",
+        "kind": "conversation.open",
+        "target": "thread.rail-planner",
+        "frame": 18,
+        "layerIds": [
+          "phone"
+        ],
+        "uiState": {
+          "conversationId": "thread.rail-planner",
+          "messages": [
+            {
+              "id": "message.offer",
+              "senderId": "account.planner",
+              "text": "Where are we heading?"
+            }
+          ],
+          "composer": {
+            "text": "",
+            "focused": false
+          },
+          "viewport": {
+            "surface": "conversation",
+            "anchorMessageId": "message.offer"
+          }
+        }
+      },
+      {
+        "id": "recreate.train.request",
+        "kind": "message.send",
+        "target": "message.request",
+        "frame": 30,
+        "layerIds": [
+          "request"
+        ],
+        "uiState": {
+          "conversationId": "thread.rail-planner",
+          "messages": [
+            {
+              "id": "message.offer",
+              "senderId": "account.planner",
+              "text": "Where are we heading?"
+            },
+            {
+              "id": "message.request",
+              "senderId": "account.self",
+              "text": "Two seats to Union Station."
+            }
+          ],
+          "composer": {
+            "text": "",
+            "focused": false
+          },
+          "viewport": {
+            "surface": "conversation",
+            "anchorMessageId": "message.request"
+          }
+        }
+      },
+      {
+        "id": "recreate.train.drawer",
+        "kind": "picker.open",
+        "target": "train-picker",
+        "frame": 56,
+        "layerIds": [
+          "drawer"
+        ],
+        "uiState": {
+          "conversationId": "thread.rail-planner",
+          "messages": [
+            {
+              "id": "message.offer",
+              "senderId": "account.planner",
+              "text": "Where are we heading?"
+            },
+            {
+              "id": "message.request",
+              "senderId": "account.self",
+              "text": "Two seats to Union Station."
+            }
+          ],
+          "composer": {
+            "text": "",
+            "focused": false
+          },
+          "viewport": {
+            "surface": "train-picker",
+            "anchorMessageId": "message.request"
+          }
+        }
+      },
+      {
+        "id": "recreate.train.seat-selection",
+        "kind": "picker.select",
+        "target": "train.first",
+        "frame": 78,
+        "layerIds": [
+          "seat-selection-checked"
+        ]
+      },
+      {
+        "id": "recreate.train.receipt",
+        "kind": "message.receive",
+        "target": "message.receipt",
+        "frame": 89,
+        "layerIds": [
+          "receipt"
+        ],
+        "uiState": {
+          "conversationId": "thread.rail-planner",
+          "messages": [
+            {
+              "id": "message.offer",
+              "senderId": "account.planner",
+              "text": "Where are we heading?"
+            },
+            {
+              "id": "message.request",
+              "senderId": "account.self",
+              "text": "Two seats to Union Station."
+            },
+            {
+              "id": "message.receipt",
+              "senderId": "account.planner",
+              "text": "Booked for 18:40."
+            }
+          ],
+          "composer": {
+            "text": "",
+            "focused": false
+          },
+          "viewport": {
+            "surface": "conversation",
+            "anchorMessageId": "message.receipt"
+          }
+        }
+      }
+    ],
+    "cues": [
+      {
+        "id": "recreate.train.request.cue",
+        "eventId": "recreate.train.request",
+        "offsetSamples": 0
+      },
+      {
+        "id": "recreate.train.drawer.cue",
+        "eventId": "recreate.train.drawer",
+        "offsetSamples": 0
+      },
+      {
+        "id": "recreate.train.seat-selection.cue",
+        "eventId": "recreate.train.seat-selection",
+        "offsetSamples": 0
+      },
+      {
+        "id": "recreate.train.receipt.cue",
+        "eventId": "recreate.train.receipt",
+        "offsetSamples": 0
+      }
+    ]
+  },
+  "layers": [
+    {
+      "id": "title-shot",
+      "type": "group",
+      "x": 0,
+      "y": 0,
+      "children": [
+        {
+          "id": "title-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 640,
+          "height": 360,
+          "fill": "#242342",
+          "radius": 0
+        },
+        {
+          "id": "title-kicker",
+          "type": "text",
+          "text": "RAIL PLANNER",
+          "x": 320,
+          "y": 126,
+          "fontSize": 13,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#c2befa",
+          "textAnchor": "middle",
+          "letterSpacing": 2.2,
+          "fontWeight": 700
+        },
+        {
+          "id": "title-copy",
+          "type": "text",
+          "text": "Train options",
+          "x": 320,
+          "y": 151,
+          "fontSize": 47,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#ffffff",
+          "textAnchor": "middle",
+          "fontWeight": 700
+        }
+      ],
+      "end": 0.6
+    },
+    {
+      "id": "phone",
+      "type": "group",
+      "x": 138,
+      "y": 34,
+      "children": [
+        {
+          "id": "phone-matte",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 364,
+          "height": 292,
+          "fill": "#ffffff",
+          "radius": 28,
+          "stroke": "#d8dbe0",
+          "strokeWidth": 1
+        },
+        {
+          "id": "phone-screen",
+          "type": "group",
+          "x": 0,
+          "y": 0,
+          "children": [
+            {
+              "id": "offer",
+              "type": "group",
+              "x": 21,
+              "y": 72,
+              "children": [
+                {
+                  "id": "offer-body",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 186,
+                  "height": 40,
+                  "fill": "#e9e9ed",
+                  "radius": 20
+                },
+                {
+                  "id": "offer-tail",
+                  "type": "path",
+                  "d": "M 16 22 Q 3 41 -7 38 Q 3 34 2 20 Z",
+                  "fill": "#e9e9ed"
+                },
+                {
+                  "id": "offer-copy",
+                  "type": "text",
+                  "text": "Where are we heading?",
+                  "x": 17,
+                  "y": 14,
+                  "fontSize": 14,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#17191d",
+                  "lineHeight": 24
+                }
+              ]
+            },
+            {
+              "id": "request",
+              "type": "group",
+              "x": 115,
+              "y": 116,
+              "children": [
+                {
+                  "id": "request-body",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 222,
+                  "height": 40,
+                  "fill": "#1688fa",
+                  "radius": 20
+                },
+                {
+                  "id": "request-tail",
+                  "type": "path",
+                  "d": "M 206 22 Q 219 41 229 38 Q 219 34 220 20 Z",
+                  "fill": "#1688fa"
+                },
+                {
+                  "id": "request-copy",
+                  "type": "text",
+                  "text": "Two seats to Union Station.",
+                  "x": 17,
+                  "y": 14,
+                  "fontSize": 14,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#ffffff",
+                  "lineHeight": 24
+                }
+              ],
+              "start": 1,
+              "keyframes": {
+                "y": [
+                  {
+                    "t": 1,
+                    "value": 124
+                  },
+                  {
+                    "t": 1.2666666666666666,
+                    "value": 116,
+                    "ease": "easeOut"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "composer",
+              "type": "group",
+              "x": 19,
+              "y": 236,
+              "children": [
+                {
+                  "id": "composer-field",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 326,
+                  "height": 48,
+                  "fill": "#ffffff",
+                  "radius": 24,
+                  "stroke": "#d8dbe0",
+                  "strokeWidth": 1
+                },
+                {
+                  "id": "composer-input",
+                  "type": "text",
+                  "text": "Message",
+                  "x": 18,
+                  "y": 14,
+                  "fontSize": 17,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#777b84"
+                },
+                {
+                  "id": "composer-send",
+                  "type": "circle",
+                  "x": 286,
+                  "y": 8,
+                  "width": 32,
+                  "height": 32,
+                  "fill": "#d8dbe0"
+                },
+                {
+                  "id": "composer-arrow",
+                  "type": "path",
+                  "d": "M 302 33 L 302 16 M 295 23 L 302 16 L 309 23",
+                  "fill": "none",
+                  "stroke": "#ffffff",
+                  "strokeWidth": 2
+                }
+              ]
+            },
+            {
+              "id": "drawer",
+              "type": "group",
+              "x": 20,
+              "y": 135,
+              "children": [
+                {
+                  "id": "drawer-surface",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 324,
+                  "height": 118,
+                  "fill": "#f5f5f7",
+                  "radius": 25
+                },
+                {
+                  "id": "drawer-handle",
+                  "type": "rect",
+                  "x": 143,
+                  "y": 10,
+                  "width": 38,
+                  "height": 4,
+                  "fill": "#c4c7cc",
+                  "radius": 2
+                },
+                {
+                  "id": "drawer-heading",
+                  "type": "text",
+                  "text": "Pick a train",
+                  "x": 22,
+                  "y": 15,
+                  "fontSize": 16,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#17191d",
+                  "fontWeight": 600
+                },
+                {
+                  "id": "first-train-background",
+                  "type": "rect",
+                  "x": 14,
+                  "y": 36,
+                  "width": 296,
+                  "height": 30,
+                  "fill": "#ffffff",
+                  "radius": 8
+                },
+                {
+                  "id": "first-train-time",
+                  "type": "text",
+                  "text": "18:40",
+                  "x": 24,
+                  "y": 42,
+                  "fontSize": 15,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#17191d",
+                  "fontWeight": 600
+                },
+                {
+                  "id": "first-train-seats",
+                  "type": "text",
+                  "text": "2 window seats",
+                  "x": 89,
+                  "y": 43,
+                  "fontSize": 14,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#777b84"
+                },
+                {
+                  "id": "seat-selection-body",
+                  "type": "rect",
+                  "x": 274,
+                  "y": 41,
+                  "width": 18,
+                  "height": 18,
+                  "fill": "#ffffff",
+                  "radius": 5,
+                  "stroke": "#9b99ac",
+                  "strokeWidth": 1.5,
+                  "end": 2.6
+                },
+                {
+                  "id": "seat-selection-checked",
+                  "type": "group",
+                  "x": 274,
+                  "y": 41,
+                  "children": [
+                    {
+                      "id": "seat-selection-fill",
+                      "type": "rect",
+                      "x": 0,
+                      "y": 0,
+                      "width": 18,
+                      "height": 18,
+                      "fill": "#5755c6",
+                      "radius": 5
+                    },
+                    {
+                      "id": "seat-selection-mark",
+                      "type": "path",
+                      "d": "M 4 9 L 7.5 12.5 L 14 5.5",
+                      "fill": "none",
+                      "stroke": "#ffffff",
+                      "strokeWidth": 1.7
+                    }
+                  ],
+                  "start": 2.6
+                },
+                {
+                  "id": "second-train-background",
+                  "type": "rect",
+                  "x": 14,
+                  "y": 72,
+                  "width": 296,
+                  "height": 30,
+                  "fill": "#ffffff",
+                  "radius": 8
+                },
+                {
+                  "id": "second-train-time",
+                  "type": "text",
+                  "text": "19:10",
+                  "x": 24,
+                  "y": 78,
+                  "fontSize": 15,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#17191d",
+                  "fontWeight": 600
+                },
+                {
+                  "id": "second-train-seats",
+                  "type": "text",
+                  "text": "4 seats",
+                  "x": 89,
+                  "y": 79,
+                  "fontSize": 14,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#777b84"
+                },
+                {
+                  "id": "second-train-selection",
+                  "type": "rect",
+                  "x": 274,
+                  "y": 77,
+                  "width": 18,
+                  "height": 18,
+                  "fill": "#ffffff",
+                  "radius": 5,
+                  "stroke": "#9b99ac",
+                  "strokeWidth": 1.5
+                }
+              ],
+              "clip": {
+                "x": 0,
+                "y": 0,
+                "width": 324,
+                "height": 118,
+                "radius": 25
+              },
+              "start": 1.8666666666666667,
+              "keyframes": {
+                "y": [
+                  {
+                    "t": 1.8666666666666667,
+                    "value": 164
+                  },
+                  {
+                    "t": 2.2,
+                    "value": 135,
+                    "ease": "easeOut"
+                  }
+                ]
+              },
+              "end": 2.966666666666667
+            },
+            {
+              "id": "receipt",
+              "type": "group",
+              "x": 21,
+              "y": 194,
+              "children": [
+                {
+                  "id": "receipt-body",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 194,
+                  "height": 40,
+                  "fill": "#e9e9ed",
+                  "radius": 20
+                },
+                {
+                  "id": "receipt-tail",
+                  "type": "path",
+                  "d": "M 16 22 Q 3 41 -7 38 Q 3 34 2 20 Z",
+                  "fill": "#e9e9ed"
+                },
+                {
+                  "id": "receipt-copy",
+                  "type": "text",
+                  "text": "Booked for 18:40.",
+                  "x": 17,
+                  "y": 14,
+                  "fontSize": 14,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#17191d",
+                  "lineHeight": 24
+                }
+              ],
+              "start": 2.966666666666667,
+              "keyframes": {
+                "y": [
+                  {
+                    "t": 2.966666666666667,
+                    "value": 201
+                  },
+                  {
+                    "t": 3.2,
+                    "value": 194,
+                    "ease": "easeOut"
+                  }
+                ]
+              }
+            }
+          ],
+          "clip": {
+            "x": 0,
+            "y": 0,
+            "width": 364,
+            "height": 292,
+            "radius": 28
+          }
+        },
+        {
+          "id": "phone-bar",
+          "type": "rect",
+          "x": 1,
+          "y": 1,
+          "width": 362,
+          "height": 66,
+          "fill": "#f8f8fa",
+          "radius": 27
+        },
+        {
+          "id": "phone-bar-square",
+          "type": "rect",
+          "x": 1,
+          "y": 33,
+          "width": 362,
+          "height": 33,
+          "fill": "#f8f8fa",
+          "radius": 0
+        },
+        {
+          "id": "phone-back",
+          "type": "text",
+          "text": "‹",
+          "x": 18,
+          "y": 17,
+          "fontSize": 30,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#1688fa"
+        },
+        {
+          "id": "phone-title",
+          "type": "text",
+          "text": "Rail Planner",
+          "x": 182,
+          "y": 25,
+          "fontSize": 17,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#17191d",
+          "textAnchor": "middle",
+          "fontWeight": 600
+        },
+        {
+          "id": "phone-divider",
+          "type": "rect",
+          "x": 1,
+          "y": 66,
+          "width": 362,
+          "height": 1,
+          "fill": "#d8dbe0",
+          "radius": 0
+        }
+      ],
+      "start": 0.6
+    }
+  ]
+}

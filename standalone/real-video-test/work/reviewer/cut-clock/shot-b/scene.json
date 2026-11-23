@@ -1,0 +1,277 @@
+{
+  "width": 720,
+  "height": 480,
+  "fps": 30,
+  "duration": 1.6333333333333333,
+  "background": "#dce7f1",
+  "title": "Grow two comparison bars from a shared baseline",
+  "source": {
+    "path": "packs/editorial.mjs#comparison-bars-grow",
+    "sourceStart": 0,
+    "sourceEnd": 2.4,
+    "notes": "Original editable Motion demonstration."
+  },
+  "layers": [
+    {
+      "id": "surface",
+      "type": "rect",
+      "x": 110,
+      "y": 44,
+      "width": 500,
+      "height": 392,
+      "fill": "#ffffff",
+      "radius": 18
+    },
+    {
+      "id": "stage",
+      "type": "group",
+      "x": 110,
+      "y": 98,
+      "children": [
+        {
+          "id": "earlier-bar",
+          "type": "rect",
+          "x": 120,
+          "y": 219,
+          "width": 95,
+          "height": 1,
+          "fill": "#516277",
+          "radius": 4,
+          "originY": 0,
+          "keyframes": {
+            "y": [
+              {
+                "t": 0,
+                "value": 219,
+                "ease": "linear"
+              },
+              {
+                "t": 0.294,
+                "value": 219,
+                "ease": "linear"
+              },
+              {
+                "t": 0.7839999999999999,
+                "value": 135.3,
+                "ease": "easeOut"
+              }
+            ],
+            "height": [
+              {
+                "t": 0,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 0.294,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 0.7839999999999999,
+                "value": 84.7,
+                "ease": "easeOut"
+              }
+            ]
+          }
+        },
+        {
+          "id": "earlier-bar-label",
+          "type": "text",
+          "text": "Earlier",
+          "x": 167,
+          "y": 232,
+          "fontSize": 17,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#182737",
+          "fontWeight": 600,
+          "textAnchor": "middle"
+        },
+        {
+          "id": "later-bar",
+          "type": "rect",
+          "x": 285,
+          "y": 219,
+          "width": 95,
+          "height": 1,
+          "fill": "#1478e9",
+          "radius": 4,
+          "originY": 0,
+          "keyframes": {
+            "y": [
+              {
+                "t": 0,
+                "value": 219,
+                "ease": "linear"
+              },
+              {
+                "t": 0.294,
+                "value": 219,
+                "ease": "linear"
+              },
+              {
+                "t": 1.078,
+                "value": 67.53999999999999,
+                "ease": "easeOut"
+              }
+            ],
+            "height": [
+              {
+                "t": 0,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 0.294,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 1.078,
+                "value": 152.46,
+                "ease": "easeOut"
+              }
+            ]
+          }
+        },
+        {
+          "id": "later-bar-label",
+          "type": "text",
+          "text": "Now",
+          "x": 332,
+          "y": 232,
+          "fontSize": 17,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#182737",
+          "fontWeight": 600,
+          "textAnchor": "middle"
+        },
+        {
+          "id": "baseline",
+          "type": "rect",
+          "x": 70,
+          "y": 220,
+          "width": 362,
+          "height": 2,
+          "fill": "#182737",
+          "radius": 0
+        },
+        {
+          "id": "benchmark",
+          "type": "rect",
+          "x": 70,
+          "y": 114,
+          "width": 362,
+          "height": 1,
+          "fill": "#ba394b",
+          "radius": 0
+        },
+        {
+          "id": "benchmark-label",
+          "type": "text",
+          "text": "Target",
+          "x": 435,
+          "y": 105,
+          "fontSize": 13,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#ba394b",
+          "fontWeight": 600
+        }
+      ],
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 500,
+        "height": 298
+      }
+    },
+    {
+      "id": "footer",
+      "type": "group",
+      "x": 110,
+      "y": 396,
+      "children": [
+        {
+          "id": "footer-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 40,
+          "fill": "#f2f6fb",
+          "radius": 12
+        },
+        {
+          "id": "editorial-caption",
+          "type": "text",
+          "text": "Two values share one scale.",
+          "x": 22,
+          "y": 9,
+          "fontSize": 15,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#516277",
+          "fontWeight": 600
+        }
+      ]
+    },
+    {
+      "id": "heading",
+      "type": "group",
+      "x": 110,
+      "y": 44,
+      "children": [
+        {
+          "id": "heading-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 54,
+          "fill": "#f2f6fb",
+          "radius": 13
+        },
+        {
+          "id": "heading-copy",
+          "type": "text",
+          "text": "Bookings per week",
+          "x": 26,
+          "y": 13,
+          "fontSize": 23,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#182737",
+          "fontWeight": 700
+        }
+      ]
+    }
+  ],
+  "timeline": {
+    "version": 1,
+    "picture": {
+      "fpsNum": 30,
+      "fpsDen": 1,
+      "frameCount": 49
+    },
+    "initialUI": null,
+    "events": [
+      {
+        "id": "motion.comparison-bars-grow.first-value-settled",
+        "kind": "first-value-settled",
+        "target": "earlier-bar",
+        "frame": 24,
+        "layerIds": [
+          "earlier-bar"
+        ]
+      },
+      {
+        "id": "motion.comparison-bars-grow.second-value-settled",
+        "kind": "second-value-settled",
+        "target": "later-bar",
+        "frame": 33,
+        "layerIds": [
+          "later-bar"
+        ]
+      }
+    ],
+    "cues": []
+  }
+}

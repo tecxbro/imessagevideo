@@ -1,0 +1,138 @@
+{
+  "landmarks": {
+    "recreate.train.request": {
+      "roi": [
+        0.6171875,
+        0.4388888888888889,
+        0.0234375,
+        0.013888888888888888
+      ],
+      "color": [
+        21,
+        136,
+        251
+      ],
+      "tolerance": 38,
+      "min_fraction": 0.57,
+      "settle_frames": 2
+    },
+    "recreate.train.drawer": {
+      "roi": [
+        0.4671875,
+        0.575,
+        0.0609375,
+        0.019444444444444445
+      ],
+      "template": "../../../../review/imv-v3/sound/recreation/assets/drawer.png",
+      "max_distance": 0.045,
+      "settle_frames": 1
+    },
+    "recreate.train.seat-selection": {
+      "roi": [
+        0.678125,
+        0.5888888888888889,
+        0.021875,
+        0.03888888888888889
+      ],
+      "color": [
+        87,
+        85,
+        198
+      ],
+      "tolerance": 32,
+      "min_fraction": 0.62,
+      "settle_frames": 2
+    },
+    "recreate.train.receipt": {
+      "roi": [
+        0.4609375,
+        0.675,
+        0.03125,
+        0.03333333333333333
+      ],
+      "template": "../../../../review/imv-v3/sound/recreation/assets/receipt.png",
+      "max_distance": 0.028,
+      "settle_frames": 2,
+      "search_s": [
+        2.45,
+        3.5
+      ]
+    }
+  },
+  "cues": [
+    {
+      "id": "send-flick",
+      "event": "recreate.train.request",
+      "bus": "effects",
+      "asset": "../../../../review/imv-v3/sound/recreation/assets/send-flick.wav",
+      "source": "Original procedural sound in recreation/synthesize.py (send-flick), using oscillators and seeded noise.",
+      "purpose": "A light outgoing flick moves attention onto the request text.",
+      "offset_ms": 6,
+      "impact_ms": 16.645833333,
+      "onset_ms": 5.75,
+      "gain_db": -13,
+      "tolerance_ms": 22
+    },
+    {
+      "id": "drawer-glide",
+      "event": "recreate.train.drawer",
+      "bus": "effects",
+      "asset": "../../../../review/imv-v3/sound/recreation/assets/drawer-glide.wav",
+      "source": "Original procedural sound in recreation/synthesize.py (drawer-glide), using oscillators and seeded noise.",
+      "purpose": "A brushed slider suggests a new working surface, with the resonant impact just ahead of the first visible handle.",
+      "offset_ms": -16,
+      "impact_ms": 60.520833333,
+      "onset_ms": 30.604166667,
+      "gain_db": -18,
+      "tolerance_ms": 22
+    },
+    {
+      "id": "seat-latch",
+      "event": "recreate.train.seat-selection",
+      "bus": "effects",
+      "asset": "../../../../review/imv-v3/sound/recreation/assets/seat-latch.wav",
+      "source": "Original procedural sound in recreation/synthesize.py (seat-latch), using oscillators and seeded noise.",
+      "purpose": "The shortest and strongest touch acknowledges the chosen departure.",
+      "offset_ms": 9,
+      "impact_ms": 8.6875,
+      "onset_ms": 0.708333333,
+      "gain_db": -10,
+      "tolerance_ms": 22
+    },
+    {
+      "id": "receipt-resolve",
+      "event": "recreate.train.receipt",
+      "bus": "effects",
+      "asset": "../../../../review/imv-v3/sound/recreation/assets/receipt-resolve.wav",
+      "source": "Original procedural sound in recreation/synthesize.py (receipt-resolve), using oscillators and seeded noise.",
+      "purpose": "A small two-tone figure confirms fulfillment before the viewer reads the time.",
+      "offset_ms": 14,
+      "impact_ms": 33.083333333,
+      "onset_ms": 27.479166667,
+      "gain_db": -14,
+      "tolerance_ms": 22
+    }
+  ],
+  "silence": [
+    {
+      "start_s": 0,
+      "end_s": 0.95,
+      "purpose": "Give the opening card and first question a single silent read."
+    },
+    {
+      "start_s": 1.13,
+      "end_s": 1.74,
+      "purpose": "Leave the outgoing request readable before the train-picker glide."
+    },
+    {
+      "start_s": 1.99,
+      "end_s": 2.26,
+      "purpose": "Leave the choices clear before the audible latch."
+    },
+    {
+      "start_s": 3.24,
+      "end_s": 4,
+      "purpose": "Hold the booked time in silence."
+    }
+  ]
+}

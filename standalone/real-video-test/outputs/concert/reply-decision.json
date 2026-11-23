@@ -1,0 +1,85 @@
+{
+  "request": "Make an iMessage video about two friends getting concert tickets.",
+  "intent": "direct",
+  "scope": "film",
+  "library": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/final-run/library",
+  "sources": [],
+  "project": null,
+  "workflow": [
+    "establish_brief",
+    "search_library_for_each_shot",
+    "show_shots_with_motion_previews_and_code",
+    "review_direction_with_user",
+    "choose_one_renderer",
+    "prove_hardest_shot",
+    "render_approved_cut"
+  ],
+  "next": "draft_shots_from_library",
+  "motion_choices": {
+    "query": "show which message I’m replying to",
+    "decision": "inspect_candidates",
+    "seed_decision": "retrieve",
+    "seed_reason": "An answer needs an explicit target in a busy conversation.",
+    "learned": [],
+    "seed": [
+      {
+        "id": "swipe-to-quote",
+        "title": "Swipe one message to quote it",
+        "moves": "Only the chosen bubble follows the drag. An arrow appears behind it, then the row returns and its quote opens above the composer.",
+        "fixed": "Other transcript rows, header and reply input position.",
+        "notice": "The next draft will reply to one specific earlier message.",
+        "fits": "An answer needs an explicit target in a busy conversation.",
+        "avoid": "A transcript-wide swipe to reveal timestamps never opens a quoted draft.",
+        "intents": [
+          "Swipe right on one bubble to create a quoted reply",
+          "Pull a single message sideways then open its reply draft",
+          "Show which earlier message the next answer refers to",
+          "Show which message I’m replying to"
+        ],
+        "editable": [
+          "heading",
+          "copy",
+          "reply",
+          "title"
+        ],
+        "editableFields": {
+          "heading": "text",
+          "copy": "text",
+          "reply": "text",
+          "title": "text"
+        },
+        "source": {
+          "kind": "authored",
+          "ref": "packs/conversation.mjs#swipe-to-quote",
+          "range": [
+            0,
+            2.4
+          ]
+        },
+        "events": [
+          {
+            "id": "motion.swipe-to-quote.reply-gesture-commit",
+            "kind": "swipe_commit",
+            "frame": 35
+          },
+          {
+            "id": "motion.swipe-to-quote.reply-draft-open",
+            "kind": "reply_compose_open",
+            "frame": 47
+          }
+        ],
+        "picture": {
+          "fpsNum": 30,
+          "fpsDen": 1,
+          "frameCount": 72
+        },
+        "defaults": {
+          "title": "Replying to this message"
+        },
+        "sha256": "37c9ee52165cf595756e29c018b1bc77641e7269b28e5fe8456f465695beca22",
+        "implementation": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/imessagevideo/skill/imessage-video/assets/seed/runtime/motion/packs/conversation.mjs",
+        "preview": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/imessagevideo/skill/imessage-video/assets/seed/previews/swipe-to-quote.mp4"
+      }
+    ]
+  }
+}

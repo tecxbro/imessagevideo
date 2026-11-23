@@ -1,0 +1,340 @@
+{
+  "width": 720,
+  "height": 480,
+  "fps": 30,
+  "duration": 2.4,
+  "background": "#dce7f1",
+  "title": "Pinch into a detail inside the photo",
+  "source": {
+    "path": "packs/media.mjs#photo-pinch-detail",
+    "sourceStart": 0,
+    "sourceEnd": 2.4,
+    "notes": "Motion-authored shot. Gesture and timing are illustrative."
+  },
+  "layers": [
+    {
+      "id": "surface",
+      "type": "rect",
+      "x": 110,
+      "y": 44,
+      "width": 500,
+      "height": 392,
+      "fill": "#ffffff",
+      "radius": 18
+    },
+    {
+      "id": "stage",
+      "type": "group",
+      "x": 110,
+      "y": 98,
+      "children": [
+        {
+          "id": "pinch-frame",
+          "type": "group",
+          "x": 65,
+          "y": 23,
+          "children": [
+            {
+              "id": "pinch-frame-image",
+              "type": "image",
+              "src": "/Users/darshan/Documents/ChatGPT/imessage-video/codex-trial/skill/imessage-motion-recreation/motion/assets/landscape-1.png",
+              "x": 0,
+              "y": 0,
+              "width": 370,
+              "height": 216,
+              "originX": 225,
+              "originY": 103,
+              "keyframes": {
+                "scaleX": [
+                  {
+                    "t": 0,
+                    "value": 1,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 0.624,
+                    "value": 1,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 1.584,
+                    "value": 1.82,
+                    "ease": "easeInOut"
+                  }
+                ],
+                "scaleY": [
+                  {
+                    "t": 0,
+                    "value": 1,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 0.624,
+                    "value": 1,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 1.584,
+                    "value": 1.82,
+                    "ease": "easeInOut"
+                  }
+                ]
+              }
+            }
+          ],
+          "clip": {
+            "x": 0,
+            "y": 0,
+            "width": 370,
+            "height": 216,
+            "radius": 14
+          }
+        },
+        {
+          "id": "pinch-left-finger",
+          "type": "rect",
+          "x": 267,
+          "y": 104,
+          "width": 24,
+          "height": 24,
+          "fill": "#ffffff",
+          "radius": 12,
+          "stroke": "#1478e9",
+          "strokeWidth": 2,
+          "keyframes": {
+            "x": [
+              {
+                "t": 0,
+                "value": 267,
+                "ease": "linear"
+              },
+              {
+                "t": 0.624,
+                "value": 267,
+                "ease": "linear"
+              },
+              {
+                "t": 1.584,
+                "value": 195,
+                "ease": "easeInOut"
+              }
+            ],
+            "y": [
+              {
+                "t": 0,
+                "value": 104,
+                "ease": "linear"
+              },
+              {
+                "t": 0.624,
+                "value": 104,
+                "ease": "linear"
+              },
+              {
+                "t": 1.584,
+                "value": 68,
+                "ease": "easeInOut"
+              }
+            ],
+            "opacity": [
+              {
+                "t": 0,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 0.432,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 0.528,
+                "value": 0.83,
+                "ease": "linear"
+              },
+              {
+                "t": 1.584,
+                "value": 0.83,
+                "ease": "linear"
+              },
+              {
+                "t": 1.7999999999999998,
+                "value": 0,
+                "ease": "linear"
+              }
+            ]
+          }
+        },
+        {
+          "id": "pinch-right-finger",
+          "type": "rect",
+          "x": 306,
+          "y": 133,
+          "width": 24,
+          "height": 24,
+          "fill": "#ffffff",
+          "radius": 12,
+          "stroke": "#1478e9",
+          "strokeWidth": 2,
+          "keyframes": {
+            "x": [
+              {
+                "t": 0,
+                "value": 306,
+                "ease": "linear"
+              },
+              {
+                "t": 0.624,
+                "value": 306,
+                "ease": "linear"
+              },
+              {
+                "t": 1.584,
+                "value": 376,
+                "ease": "easeInOut"
+              }
+            ],
+            "y": [
+              {
+                "t": 0,
+                "value": 133,
+                "ease": "linear"
+              },
+              {
+                "t": 0.624,
+                "value": 133,
+                "ease": "linear"
+              },
+              {
+                "t": 1.584,
+                "value": 169,
+                "ease": "easeInOut"
+              }
+            ],
+            "opacity": [
+              {
+                "t": 0,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 0.432,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 0.528,
+                "value": 0.83,
+                "ease": "linear"
+              },
+              {
+                "t": 1.584,
+                "value": 0.83,
+                "ease": "linear"
+              },
+              {
+                "t": 1.7999999999999998,
+                "value": 0,
+                "ease": "linear"
+              }
+            ]
+          }
+        },
+        {
+          "id": "pinch-caption",
+          "type": "text",
+          "text": "Zoom",
+          "x": 250,
+          "y": 251,
+          "fontSize": 16,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#17191d",
+          "textAnchor": "middle"
+        }
+      ],
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 500,
+        "height": 298
+      }
+    },
+    {
+      "id": "footer",
+      "type": "group",
+      "x": 110,
+      "y": 396,
+      "children": [
+        {
+          "id": "footer-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 40,
+          "fill": "#f2f6fb",
+          "radius": 12
+        }
+      ]
+    },
+    {
+      "id": "heading",
+      "type": "group",
+      "x": 110,
+      "y": 44,
+      "children": [
+        {
+          "id": "heading-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 54,
+          "fill": "#f2f6fb",
+          "radius": 13
+        },
+        {
+          "id": "heading-copy",
+          "type": "text",
+          "text": "Alpine field notes",
+          "x": 26,
+          "y": 13,
+          "fontSize": 23,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#182737",
+          "fontWeight": 700
+        }
+      ]
+    }
+  ],
+  "timeline": {
+    "version": 1,
+    "picture": {
+      "fpsNum": 30,
+      "fpsDen": 1,
+      "frameCount": 72
+    },
+    "initialUI": null,
+    "events": [
+      {
+        "id": "motion.photo-pinch-detail.pinch-start",
+        "kind": "pinch",
+        "target": "pinch-frame",
+        "frame": 19,
+        "layerIds": [
+          "pinch-frame"
+        ]
+      },
+      {
+        "id": "motion.photo-pinch-detail.pinch-end",
+        "kind": "gesture_end",
+        "target": "pinch-frame",
+        "frame": 48,
+        "layerIds": [
+          "pinch-frame"
+        ]
+      }
+    ],
+    "cues": []
+  }
+}

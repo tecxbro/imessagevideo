@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "inputs": {
+    "source": {
+      "path": "/Users/darshan/Documents/video-analysis/iv-test/unseen.mp4",
+      "sha256": "8a772799354e8c7620adec70461500a1d03f41bdd761f2f2cbe7508726c0d110",
+      "width": 960,
+      "height": 720,
+      "sample_aspect_ratio": null,
+      "display_aspect_ratio": null,
+      "effective_sample_aspect_ratio": "1:1",
+      "sample_aspect_basis": "implicit square pixels",
+      "rotation": 0,
+      "average_frame_rate": "30/1",
+      "time_base": "1/15360",
+      "frame_count": 150,
+      "missing_pts": 0,
+      "strictly_increasing_pts": true,
+      "first_pts_seconds": 0.0,
+      "last_pts_seconds": 4.966666666666667,
+      "end_seconds_exclusive": 5.0
+    },
+    "output": {
+      "path": "/Users/darshan/Documents/video-analysis/iv-test/sabotage/shifted2.mp4",
+      "sha256": "d3e99a41e590020f84c62cbfa84936e81c46068ddef49c1d4cc32bcb90466784",
+      "width": 960,
+      "height": 720,
+      "sample_aspect_ratio": null,
+      "display_aspect_ratio": null,
+      "effective_sample_aspect_ratio": "1:1",
+      "sample_aspect_basis": "implicit square pixels",
+      "rotation": 0,
+      "average_frame_rate": "30/1",
+      "time_base": "1/15360",
+      "frame_count": 150,
+      "missing_pts": 0,
+      "strictly_increasing_pts": true,
+      "first_pts_seconds": 0.0,
+      "last_pts_seconds": 4.966666666666667,
+      "end_seconds_exclusive": 5.0
+    }
+  },
+  "compared_frames": 150,
+  "paired_indices": 150,
+  "source_only_tail_frames": 0,
+  "output_only_tail_frames": 0,
+  "alignment": "native presentation order, paired by zero-based index, without resampling",
+  "max_paired_pts_error_ms": 0.0,
+  "exclusive_end_error_ms": 0.0,
+  "structure_match": true,
+  "structure_issues": [],
+  "structure_within_tolerance": true,
+  "structure_tolerance_issues": [],
+  "roi_xyxy": {
+    "doors": [
+      55,
+      345,
+      325,
+      435
+    ],
+    "chrome": [
+      0,
+      0,
+      960,
+      140
+    ],
+    "anchor-bubble": [
+      50,
+      255,
+      380,
+      345
+    ]
+  },
+  "metrics": {
+    "full": {
+      "mean_frame_mae": 3.35267912808642,
+      "max_frame_mae": 3.633067611882716,
+      "worst_frame": 29
+    },
+    "doors": {
+      "mean_frame_mae": 4.720262734339277,
+      "max_frame_mae": 12.53755829903978,
+      "worst_frame": 29
+    },
+    "chrome": {
+      "mean_frame_mae": 3.03701228505291,
+      "max_frame_mae": 3.037529761904762,
+      "worst_frame": 4
+    },
+    "anchor-bubble": {
+      "mean_frame_mae": 3.690615039281706,
+      "max_frame_mae": 3.6928731762065095,
+      "worst_frame": 1
+    }
+  },
+  "possible_frame_shift": {
+    "best_output_minus_source_frames": 0,
+    "compared_source_frames": 140,
+    "search_radius": 5,
+    "unaligned_mean_error": 2.9934585813492065,
+    "best_mean_error": 2.9934585813492065,
+    "possible_constant_offset": false
+  },
+  "thresholds": {
+    "max_mae": 5.0,
+    "max_pts_error_ms": 0.0,
+    "require_structure_match": true,
+    "reject_detected_shift": false
+  },
+  "limits_passed": false,
+  "failures": [
+    "native frame MAE is unavailable for one or more frames or exceeds --max-mae"
+  ],
+  "worst_pair_index": 29,
+  "artifacts": {
+    "all_frame_measurements": "frames.csv",
+    "comparison_image": "worst.png"
+  }
+}

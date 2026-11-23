@@ -1,0 +1,1953 @@
+{
+ "photos-under-fixed-heading": {
+  "title": "Slide the photos beneath a fixed heading",
+  "moves": "Adjacent photos translate together on one horizontally clipped rail.",
+  "fixed": "The heading, viewport, divider and supporting footer stay in place.",
+  "notice": "The next photo comes into view while the place and surrounding context remain easy to read.",
+  "events": [
+   {
+    "id": "motion.photos-under-fixed-heading.rail-start",
+    "kind": "media.scroll",
+    "frame": 20
+   },
+   {
+    "id": "motion.photos-under-fixed-heading.rail-settle",
+    "kind": "media.settle",
+    "frame": 39
+   }
+  ],
+  "fits": "Browse pictures inside a place or album surface with persistent labels. Use the separate UI adapter variant for inline conversation paging.",
+  "source": "measured-adaptation",
+  "editable": [
+   "heading",
+   "detail",
+   "photos",
+   "direction"
+  ]
+ },
+ "heading-over-fixed-photos": {
+  "title": "Slide a heading over still photos",
+  "moves": "The heading text glides within its own clipped band.",
+  "fixed": "Photo positions, their crop, the heading backdrop and bottom caption hold still.",
+  "notice": "The viewer can compare the same images while the title establishes a new emphasis.",
+  "events": [
+   {
+    "id": "motion.heading-over-fixed-photos.heading-start",
+    "kind": "title.move",
+    "frame": 20
+   },
+   {
+    "id": "motion.heading-over-fixed-photos.heading-settle",
+    "kind": "title.settle",
+    "frame": 51
+   }
+  ],
+  "fits": "Reposition an editorial label over stationary evidence or retain a fixed gallery frame.",
+  "source": "authored",
+  "editable": [
+   "heading",
+   "detail",
+   "photos",
+   "direction"
+  ]
+ },
+ "conversation-handoff": {
+  "title": "Send an outgoing text and receive a reply",
+  "moves": "Draft characters arrive in the composer, transfer into an outgoing blue bubble, and an incoming gray reply arrives after a pause.",
+  "fixed": "The phone, conversation header, composer field and reading area stay in place.",
+  "notice": "An outgoing request leads to an incoming answer. The quiet gap separates the two actors.",
+  "events": [
+   {
+    "id": "motion.conversation-handoff.send",
+    "kind": "message.send",
+    "frame": 32
+   },
+   {
+    "id": "motion.conversation-handoff.receive",
+    "kind": "message.receive",
+    "frame": 51
+   }
+  ],
+  "fits": "Show a short request and reply in the same conversation, with composer send and inbound text.",
+  "source": "authored-adaptation",
+  "editable": [
+   "heading",
+   "copy",
+   "reply",
+   "detail"
+  ]
+ },
+ "composer-type": {
+  "title": "Type a draft in place",
+  "moves": "The composer gains characters at uneven intervals as the caret advances.",
+  "fixed": "The draft field, transcript, heading, and phone viewport are stationary.",
+  "notice": "A person is building a draft before any message is sent.",
+  "events": [
+   {
+    "id": "motion.composer-type.first-character",
+    "kind": "typing",
+    "frame": 11
+   },
+   {
+    "id": "motion.composer-type.draft-complete",
+    "kind": "typing_end",
+    "frame": 60
+   }
+  ],
+  "fits": "Show human input or let the viewer read the prompt as it is typed.",
+  "source": "authored",
+  "editable": [
+   "heading",
+   "copy",
+   "reply"
+  ]
+ },
+ "draft-send-flight": {
+  "title": "Send from the composer into history",
+  "moves": "The draft box collapses toward its right edge while the outgoing balloon rises, slightly overshoots, then settles into its transcript slot.",
+  "fixed": "The conversation heading, prior reply, and composer field stay fixed. The send control disappears at the trigger.",
+  "notice": "The text the viewer just read in the field becomes a real outgoing message.",
+  "events": [
+   {
+    "id": "motion.draft-send-flight.send",
+    "kind": "message_send",
+    "frame": 14
+   },
+   {
+    "id": "motion.draft-send-flight.settle",
+    "kind": "message_settle",
+    "frame": 35
+   }
+  ],
+  "fits": "Establish the exact send moment without cutting away from the conversation.",
+  "source": "measured-adaptation",
+  "editable": [
+   "heading",
+   "copy",
+   "reply"
+  ]
+ },
+ "typing-indicator-cycle": {
+  "title": "Cycle an incoming typing indicator",
+  "moves": "Three dots lift and dim in staggered phases inside a stationary bubble.",
+  "fixed": "The dots\u2019 container, prior outgoing message, composer and heading.",
+  "notice": "The recipient is working on a reply, with no text to read yet.",
+  "events": [
+   {
+    "id": "motion.typing-indicator-cycle.thinking-visible",
+    "kind": "typing_indicator",
+    "frame": 8
+   }
+  ],
+  "fits": "A short conversational pause before the other person answers.",
+  "source": "authored",
+  "editable": [
+   "heading",
+   "copy"
+  ]
+ },
+ "reply-makes-room": {
+  "title": "Make room for a whole incoming reply",
+  "moves": "The previous rows lift together. The complete incoming reply rises a shorter distance into the bottom slot.",
+  "fixed": "The header, composer, and bottom resting line of the transcript.",
+  "notice": "The other participant has answered and the conversation advances to the latest message.",
+  "events": [
+   {
+    "id": "motion.reply-makes-room.reply-arrival",
+    "kind": "message_arrival",
+    "frame": 35
+   }
+  ],
+  "fits": "A reply arrives in an already populated conversation.",
+  "source": "authored",
+  "editable": [
+   "heading",
+   "copy",
+   "reply"
+  ]
+ },
+ "delivery-receipt-handoff": {
+  "title": "Move the delivery receipt to the latest send",
+  "moves": "The old receipt fades under the first bubble. The latest bubble rises toward its final slot as its receipt resolves.",
+  "fixed": "The first bubble, the composer and the conversation heading.",
+  "notice": "The delivery status belongs to the latest sent item.",
+  "events": [
+   {
+    "id": "motion.delivery-receipt-handoff.receipt-reassigned",
+    "kind": "delivery_status",
+    "frame": 34
+   }
+  ],
+  "fits": "Track where a confirmation label lives after a new outgoing item is acknowledged.",
+  "source": "measured-adaptation",
+  "editable": [
+   "heading",
+   "copy",
+   "reply",
+   "detail"
+  ]
+ },
+ "long-press-actions": {
+  "title": "Reveal actions around a pressed message",
+  "moves": "Context dims while the option tray opens below the held row and the reaction rail grows above it.",
+  "fixed": "The selected message stays centered on its original slot throughout the reveal.",
+  "notice": "The press selects one message and exposes possible actions.",
+  "events": [
+   {
+    "id": "motion.long-press-actions.hold-threshold",
+    "kind": "long_press",
+    "frame": 20
+   },
+   {
+    "id": "motion.long-press-actions.actions-ready",
+    "kind": "menu_open",
+    "frame": 31
+   }
+  ],
+  "fits": "Introduce options tied to a single message without implying a choice has happened.",
+  "source": "measured-adaptation",
+  "editable": [
+   "heading",
+   "copy",
+   "reply"
+  ]
+ },
+ "reaction-attach": {
+  "title": "Attach a chosen reaction to its message",
+  "moves": "The selected reaction follows a curved approach, shrinks into a corner badge and settles as the nearby text row makes room.",
+  "fixed": "Message copy, heading and composer. Earlier messages stay put.",
+  "notice": "The chosen response belongs to this one message and remains attached after the picker goes away.",
+  "events": [
+   {
+    "id": "motion.reaction-attach.reaction-choice",
+    "kind": "reaction_select",
+    "frame": 26
+   },
+   {
+    "id": "motion.reaction-attach.reaction-attached",
+    "kind": "reaction_attached",
+    "frame": 49
+   }
+  ],
+  "fits": "Show the result of choosing a reaction once the available choices are understood.",
+  "source": "authored",
+  "editable": [
+   "heading",
+   "copy",
+   "reply",
+   "action"
+  ]
+ },
+ "transcript-timestamp-peek": {
+  "title": "Peek at timestamps by dragging the transcript",
+  "moves": "Every bubble shifts left once and springs back on release, exposing small times in a stationary gutter.",
+  "fixed": "Times remain on the trailing edge. The heading, composer, and individual vertical positions stay fixed.",
+  "notice": "These are times for existing messages, revealed by a temporary drag.",
+  "events": [
+   {
+    "id": "motion.transcript-timestamp-peek.peek-begin",
+    "kind": "gesture_begin",
+    "frame": 16
+   },
+   {
+    "id": "motion.transcript-timestamp-peek.peek-release",
+    "kind": "gesture_end",
+    "frame": 47
+   }
+  ],
+  "fits": "Show when multiple parts of an existing conversation occurred.",
+  "source": "observed-pose-adaptation",
+  "editable": [
+   "heading",
+   "copy",
+   "reply",
+   "detail"
+  ]
+ },
+ "swipe-to-quote": {
+  "title": "Swipe one message to quote it",
+  "moves": "Only the chosen bubble follows the drag. An arrow appears behind it, then the row returns and its quote opens above the composer.",
+  "fixed": "Other transcript rows, header and reply input position.",
+  "notice": "The next draft will reply to one specific earlier message.",
+  "events": [
+   {
+    "id": "motion.swipe-to-quote.reply-gesture-commit",
+    "kind": "swipe_commit",
+    "frame": 35
+   },
+   {
+    "id": "motion.swipe-to-quote.reply-draft-open",
+    "kind": "reply_compose_open",
+    "frame": 47
+   }
+  ],
+  "fits": "An answer needs an explicit target in a busy conversation.",
+  "source": "authored",
+  "editable": [
+   "heading",
+   "copy",
+   "reply",
+   "title"
+  ]
+ },
+ "inline-thread-open": {
+  "title": "Expand an inline reply thread",
+  "moves": "A connector grows from the parent while two indented replies emerge in sequence. The next unrelated row moves down.",
+  "fixed": "The parent message, heading and composer.",
+  "notice": "Several messages belong under one earlier message, as a readable subthread.",
+  "events": [
+   {
+    "id": "motion.inline-thread-open.thread-expand",
+    "kind": "thread_open",
+    "frame": 23
+   },
+   {
+    "id": "motion.inline-thread-open.thread-readable",
+    "kind": "thread_ready",
+    "frame": 51
+   }
+  ],
+  "fits": "Expose a group of existing inline replies while preserving their parent context.",
+  "source": "authored",
+  "editable": [
+   "heading",
+   "copy",
+   "reply",
+   "detail"
+  ]
+ },
+ "edit-message-reflow": {
+  "title": "Edit a message at its existing position",
+  "moves": "The original bubble deepens to fit an editable second line. Nearby content reflows and the edit marker appears on commit.",
+  "fixed": "The same message retains its identity and leading row. The header and main composer do not move.",
+  "notice": "A previously sent message changes in place and keeps its row in the conversation.",
+  "events": [
+   {
+    "id": "motion.edit-message-reflow.edit-begin",
+    "kind": "edit_open",
+    "frame": 20
+   },
+   {
+    "id": "motion.edit-message-reflow.edit-commit",
+    "kind": "edit_commit",
+    "frame": 47
+   }
+  ],
+  "fits": "Correct existing text while preserving the surrounding conversation.",
+  "source": "authored",
+  "editable": [
+   "heading",
+   "copy",
+   "reply",
+   "detail"
+  ]
+ },
+ "undo-send-remove": {
+  "title": "Undo a send and retract its row",
+  "moves": "The outgoing bubble contracts toward its own tail and fades. Nearby rows close the gap, then a quiet history status appears.",
+  "fixed": "The header, composer and surviving messages\u2019 copy.",
+  "notice": "One previously sent message was retracted from the conversation.",
+  "events": [
+   {
+    "id": "motion.undo-send-remove.undo-send",
+    "kind": "unsend",
+    "frame": 26
+   },
+   {
+    "id": "motion.undo-send-remove.row-removed",
+    "kind": "message_removed",
+    "frame": 42
+   }
+  ],
+  "fits": "Show that a mistaken send was undone and what remains afterward.",
+  "source": "authored",
+  "editable": [
+   "heading",
+   "copy",
+   "reply"
+  ]
+ },
+ "history-prepend-anchor": {
+  "title": "Load older messages without losing the reading position",
+  "moves": "History appears above the visible rows. The rows stay put through insertion and then follow the next drag together.",
+  "fixed": "The currently read bubble stays at the same position during insertion. The heading and composer remain fixed throughout.",
+  "notice": "Earlier history became available while the current reading position was preserved.",
+  "events": [
+   {
+    "id": "motion.history-prepend-anchor.history-inserted",
+    "kind": "history_prepend",
+    "frame": 29
+   },
+   {
+    "id": "motion.history-prepend-anchor.history-reveal-drag",
+    "kind": "gesture_begin",
+    "frame": 39
+   }
+  ],
+  "fits": "Demonstrate pagination or a chat-history fetch while keeping the viewer oriented.",
+  "source": "authored",
+  "editable": [
+   "heading",
+   "copy",
+   "reply",
+   "detail"
+  ]
+ },
+ "jump-to-unread": {
+  "title": "Jump to the first unread message",
+  "moves": "A single controlled scroll advances past intervening rows. The unread divider comes to rest at a predictable spot and the jump control clears.",
+  "fixed": "The reading frame, composer and header stay anchored while the transcript travels.",
+  "notice": "The destination is the beginning of unread content.",
+  "events": [
+   {
+    "id": "motion.jump-to-unread.unread-jump",
+    "kind": "tap",
+    "frame": 21
+   },
+   {
+    "id": "motion.jump-to-unread.unread-destination",
+    "kind": "scroll_settle",
+    "frame": 52
+   }
+  ],
+  "fits": "Skip past older chat history and land on a marked new starting point.",
+  "source": "authored",
+  "editable": [
+   "heading",
+   "copy",
+   "reply",
+   "detail"
+  ]
+ },
+ "keyboard-focus-reflow": {
+  "title": "Focus the composer and open keyboard space",
+  "moves": "The keyboard pushes up from below, lifting the composer and the last message to keep both reachable.",
+  "fixed": "The conversation header and textarea contents. No characters are entered.",
+  "notice": "The conversation moved into text-entry mode while preserving the latest message.",
+  "events": [
+   {
+    "id": "motion.keyboard-focus-reflow.composer-focus",
+    "kind": "tap",
+    "frame": 25
+   },
+   {
+    "id": "motion.keyboard-focus-reflow.keyboard-ready",
+    "kind": "keyboard_show",
+    "frame": 44
+   }
+  ],
+  "fits": "Show how a reply starts and where the user will type next.",
+  "source": "authored",
+  "editable": [
+   "heading",
+   "copy",
+   "reply"
+  ]
+ },
+ "link-preview-upgrade": {
+  "title": "Upgrade a plain link into an inline preview",
+  "moves": "The link card extends horizontally and the source metadata slides in behind a clipping boundary.",
+  "fixed": "The URL, message row height, adjacent reply, heading and composer.",
+  "notice": "The shared link gained a richer preview alongside its original address.",
+  "events": [
+   {
+    "id": "motion.link-preview-upgrade.preview-metadata-ready",
+    "kind": "link_preview",
+    "frame": 33
+   }
+  ],
+  "fits": "Play an inline metadata fetch or introduce information contained in an already shared link.",
+  "source": "authored",
+  "editable": [
+   "heading",
+   "copy",
+   "reply",
+   "title",
+   "detail"
+  ]
+ },
+ "send-failure-retry": {
+  "title": "Signal a failed send and reveal retry",
+  "moves": "One outgoing bubble gives a short damped shake. The retry control and failure status then appear beside and below it.",
+  "fixed": "Existing conversation rows, recipient, heading and composer.",
+  "notice": "The message exists locally and delivery failed. The viewer can retry it.",
+  "events": [
+   {
+    "id": "motion.send-failure-retry.delivery-failed",
+    "kind": "delivery_error",
+    "frame": 30
+   },
+   {
+    "id": "motion.send-failure-retry.retry-ready",
+    "kind": "retry_ready",
+    "frame": 42
+   }
+  ],
+  "fits": "Demonstrate the recoverable failed-send state.",
+  "source": "authored",
+  "editable": [
+   "heading",
+   "copy",
+   "reply",
+   "action"
+  ]
+ },
+ "schedule-send-wheel": {
+  "title": "Set a future send time without sending yet",
+  "moves": "A time wheel rolls behind a fixed selection band. The selected time persists in a small schedule chip as the wheel closes.",
+  "fixed": "Selection band, draft copy and conversation history.",
+  "notice": "The message will be sent later, at the time displayed on the chip.",
+  "events": [
+   {
+    "id": "motion.schedule-send-wheel.time-wheel-start",
+    "kind": "picker_scroll",
+    "frame": 18
+   },
+   {
+    "id": "motion.schedule-send-wheel.schedule-committed",
+    "kind": "send_scheduled",
+    "frame": 49
+   }
+  ],
+  "fits": "Make the distinction between choosing a send time and executing a send visible.",
+  "source": "authored",
+  "editable": [
+   "heading",
+   "copy",
+   "reply",
+   "detail"
+  ]
+ },
+ "batch-select-messages": {
+  "title": "Select messages for one batch action",
+  "moves": "The transcript shifts to make room for a check rail. Two rows gain checks separately, then an action bar replaces the composer.",
+  "fixed": "Header, transcript order, and each message\u2019s text.",
+  "notice": "Two particular rows are selected for a later shared action.",
+  "events": [
+   {
+    "id": "motion.batch-select-messages.selection-mode",
+    "kind": "selection_open",
+    "frame": 14
+   },
+   {
+    "id": "motion.batch-select-messages.selection-first",
+    "kind": "select",
+    "frame": 31
+   },
+   {
+    "id": "motion.batch-select-messages.selection-second",
+    "kind": "select",
+    "frame": 45
+   }
+  ],
+  "fits": "Show deliberate selection across several messages before forwarding or deleting them.",
+  "source": "authored",
+  "editable": [
+   "heading",
+   "copy",
+   "reply",
+   "action"
+  ]
+ },
+ "pin-conversation-avatar": {
+  "title": "Promote a conversation into the pinned tray",
+  "moves": "The avatar follows a short arc from its row into the pinned tray. Its old row collapses and lower rows slide up.",
+  "fixed": "The inbox header, the pin lane, and other conversations\u2019 names and preview copy.",
+  "notice": "The same conversation is now reachable from the pinned area.",
+  "events": [
+   {
+    "id": "motion.pin-conversation-avatar.pin-chat",
+    "kind": "conversation_pin",
+    "frame": 26
+   },
+   {
+    "id": "motion.pin-conversation-avatar.pin-arrival",
+    "kind": "pin_settle",
+    "frame": 50
+   }
+  ],
+  "fits": "Show a conversation being promoted within the inbox.",
+  "source": "authored",
+  "editable": [
+   "heading",
+   "copy",
+   "reply",
+   "title"
+  ]
+ },
+ "camera-push-in": {
+  "title": "Push the camera toward a detail",
+  "moves": "The camera plane scales around a chosen detail, taking its neighboring cards toward the edges.",
+  "fixed": "The focal point, the cards\u2019 arrangement within the camera plane, and the surrounding frame.",
+  "notice": "The detail belongs to the same workspace established at the start.",
+  "events": [
+   {
+    "id": "motion.camera-push-in.push-start",
+    "kind": "push-start",
+    "frame": 12
+   },
+   {
+    "id": "motion.camera-push-in.detail-in-frame",
+    "kind": "detail-in-frame",
+    "frame": 49
+   }
+  ],
+  "fits": "Lead into an important control or small result that was hard to read in the overview.",
+  "source": "authored",
+  "editable": [
+   "heading",
+   "title",
+   "detail"
+  ]
+ },
+ "camera-truck-between": {
+  "title": "Pan the camera across neighboring workspaces",
+  "moves": "A horizontal camera pan moves the view between adjacent panels. A small index marks the next destination.",
+  "fixed": "Magnification, destination sizes and spacing, the viewing window, and the surrounding heading.",
+  "notice": "The second view is next to the first on the same plane.",
+  "events": [
+   {
+    "id": "motion.camera-truck-between.truck-start",
+    "kind": "truck-start",
+    "frame": 14
+   },
+   {
+    "id": "motion.camera-truck-between.next-region-framed",
+    "kind": "next-region-framed",
+    "frame": 50
+   }
+  ],
+  "fits": "Show a connection between adjacent panels or identify the next stop in an established horizontal layout.",
+  "source": "authored",
+  "editable": [
+   "heading",
+   "copy",
+   "title",
+   "detail"
+  ]
+ },
+ "depth-parallax": {
+  "title": "Shift foreground, middle and background at different rates",
+  "moves": "The foreground crosses quickly, the middle cards move a shorter distance, and the grid barely shifts.",
+  "fixed": "The drawing window and the relative arrangement of objects on each plane.",
+  "notice": "Different rates disclose depth between established planes.",
+  "events": [
+   {
+    "id": "motion.depth-parallax.depth-shift-start",
+    "kind": "depth-shift-start",
+    "frame": 8
+   },
+   {
+    "id": "motion.depth-parallax.planes-settle",
+    "kind": "planes-settle",
+    "frame": 54
+   }
+  ],
+  "fits": "Reveal spatial layers or give a lateral product view a credible sense of depth.",
+  "source": "authored",
+  "editable": [
+   "heading",
+   "title",
+   "detail"
+  ]
+ },
+ "rack-focus": {
+  "title": "Transfer focus between two stationary planes",
+  "moves": "Sharpness shifts from the near card to the far card. The near card softens in place.",
+  "fixed": "Both cards\u2019 positions and silhouettes, the frame, and the heading.",
+  "notice": "The subject in the back becomes the point of attention even though its position never changes.",
+  "events": [
+   {
+    "id": "motion.rack-focus.focus-shift-start",
+    "kind": "focus-shift-start",
+    "frame": 24
+   },
+   {
+    "id": "motion.rack-focus.far-object-sharp",
+    "kind": "far-object-sharp",
+    "frame": 43
+   }
+  ],
+  "fits": "Pass attention between subjects while preserving their positions and sense of depth.",
+  "source": "authored",
+  "editable": [
+   "heading",
+   "copy",
+   "title",
+   "detail"
+  ]
+ },
+ "typographic-tracking-contract": {
+  "title": "Draw the letters of a title into reading position",
+  "moves": "Letter spacing contracts toward the center without changing the word or type size.",
+  "fixed": "The title\u2019s center and baseline, its wording, and the axis underneath.",
+  "notice": "Dispersed characters resolve into one readable phrase.",
+  "events": [
+   {
+    "id": "motion.typographic-tracking-contract.tracking-contracts",
+    "kind": "tracking-contracts",
+    "frame": 12
+   },
+   {
+    "id": "motion.typographic-tracking-contract.title-readable",
+    "kind": "title-readable",
+    "frame": 42
+   }
+  ],
+  "fits": "Settle a short title at the end of a reveal, especially when the idea is convergence or agreement.",
+  "source": "authored",
+  "editable": [
+   "heading",
+   "title",
+   "detail"
+  ]
+ },
+ "step-indicator-travel": {
+  "title": "Move the active indicator through three fixed steps",
+  "moves": "An underline travels to the second step, holds, then travels to the third.",
+  "fixed": "All step labels, the rail, and the explanatory line.",
+  "notice": "The movement represents progression through an ordered set of stages.",
+  "events": [
+   {
+    "id": "motion.step-indicator-travel.middle-step",
+    "kind": "middle-step",
+    "frame": 26
+   },
+   {
+    "id": "motion.step-indicator-travel.final-step",
+    "kind": "final-step",
+    "frame": 53
+   }
+  ],
+  "fits": "Show a workflow reaching successive checkpoints without moving the actual controls.",
+  "source": "authored",
+  "editable": [
+   "heading",
+   "copy",
+   "title",
+   "action",
+   "detail"
+  ]
+ },
+ "metric-wheel-roll": {
+  "title": "Roll a value through a fixed readout window",
+  "moves": "Three values roll upward through a narrow clipped readout and stop at the final value.",
+  "fixed": "Width and position of the readout, its baseline, and the metric label.",
+  "notice": "One metric changes over time, with a marked starting value and a readable final value.",
+  "events": [
+   {
+    "id": "motion.metric-wheel-roll.value-turned",
+    "kind": "value-turned",
+    "frame": 24
+   },
+   {
+    "id": "motion.metric-wheel-roll.value-lands",
+    "kind": "value-lands",
+    "frame": 47
+   }
+  ],
+  "fits": "Represent an increasing count or visibly changing ordinal state in an instrument-like readout.",
+  "source": "authored",
+  "editable": [
+   "heading",
+   "copy",
+   "title",
+   "reply",
+   "detail"
+  ]
+ },
+ "comparison-bars-grow": {
+  "title": "Grow two comparison bars from a shared baseline",
+  "moves": "Both bars grow upward from the same baseline and stop at their own value.",
+  "fixed": "The baseline, the target line, and the two category labels.",
+  "notice": "The second bar clears the target line while the first falls short in the default example.",
+  "events": [
+   {
+    "id": "motion.comparison-bars-grow.first-value-settled",
+    "kind": "first-value-settled",
+    "frame": 35
+   },
+   {
+    "id": "motion.comparison-bars-grow.second-value-settled",
+    "kind": "second-value-settled",
+    "frame": 48
+   }
+  ],
+  "fits": "Compare quantitative magnitudes with a shared reference and readable final state.",
+  "source": "authored",
+  "editable": [
+   "heading",
+   "copy",
+   "title",
+   "detail",
+   "values"
+  ]
+ },
+ "trend-line-trace": {
+  "title": "Trace a trend through the points of a chart",
+  "moves": "A leading point traverses the chart and leaves the completed segments behind.",
+  "fixed": "Grid lines, axes, and the endpoints of the plotted values.",
+  "notice": "Ordering matters. The retained path makes the direction and reversals legible.",
+  "events": [
+   {
+    "id": "motion.trend-line-trace.plot-trace-start",
+    "kind": "plot-trace-start",
+    "frame": 11
+   },
+   {
+    "id": "motion.trend-line-trace.plot-final-point",
+    "kind": "plot-final-point",
+    "frame": 50
+   }
+  ],
+  "fits": "Reveal how a trend developed across a series of points.",
+  "source": "authored",
+  "editable": [
+   "heading",
+   "title",
+   "detail",
+   "values"
+  ]
+ },
+ "grid-reflow": {
+  "title": "Reflow four cards while keeping them recognizable",
+  "moves": "Each card follows an individual path into a changed grid order.",
+  "fixed": "Card copy and proportions, the board, and the heading.",
+  "notice": "The same cards survive the layout change, even as reading order shifts.",
+  "events": [
+   {
+    "id": "motion.grid-reflow.layout-reflow-start",
+    "kind": "layout-reflow-start",
+    "frame": 10
+   },
+   {
+    "id": "motion.grid-reflow.grid-reordered",
+    "kind": "grid-reordered",
+    "frame": 49
+   }
+  ],
+  "fits": "Make a changed sort or rearranged layout clear without losing track of the items.",
+  "source": "authored",
+  "editable": [
+   "heading",
+   "copy",
+   "title",
+   "action",
+   "reply",
+   "detail"
+  ]
+ },
+ "accordion-displaces-row": {
+  "title": "Expand a disclosure and make room for its details",
+  "moves": "The first row grows down, its indicator rotates, and the following row makes space below it.",
+  "fixed": "The top edge of the first row, the row titles, and the surrounding viewport.",
+  "notice": "The details belong to the opening row, and the lower row remains part of the layout.",
+  "events": [
+   {
+    "id": "motion.accordion-displaces-row.accordion-opens",
+    "kind": "accordion-opens",
+    "frame": 13
+   },
+   {
+    "id": "motion.accordion-displaces-row.detail-exposed",
+    "kind": "detail-exposed",
+    "frame": 44
+   }
+  ],
+  "fits": "Show details disclosed inside a vertically stacked list with physical reflow.",
+  "source": "authored",
+  "editable": [
+   "heading",
+   "title",
+   "detail",
+   "reply"
+  ]
+ },
+ "exploded-layer-view": {
+  "title": "Separate a compact assembly into visible layers",
+  "moves": "Three stacked planes spread diagonally, keeping a shared orientation as their edges separate.",
+  "fixed": "Each layer\u2019s own geometry, border, and label.",
+  "notice": "The assembly contains separate working surfaces that belong together.",
+  "events": [
+   {
+    "id": "motion.exploded-layer-view.assembly-separates",
+    "kind": "assembly-separates",
+    "frame": 13
+   },
+   {
+    "id": "motion.exploded-layer-view.layers-separated",
+    "kind": "layers-separated",
+    "frame": 47
+   }
+  ],
+  "fits": "Explain how a view is composed or which layer handles each responsibility.",
+  "source": "authored",
+  "editable": [
+   "heading",
+   "reply",
+   "action",
+   "title",
+   "detail"
+  ]
+ },
+ "spotlight-cross-text": {
+  "title": "Move a spotlight across fixed phrases",
+  "moves": "A bounded opening in a dim overlay travels from one phrase to the next.",
+  "fixed": "All the text, its position, type, and spacing. The overlay keeps its height.",
+  "notice": "The next phrase becomes current while earlier context stays visible in low contrast.",
+  "events": [
+   {
+    "id": "motion.spotlight-cross-text.spotlight-start",
+    "kind": "spotlight-start",
+    "frame": 17
+   },
+   {
+    "id": "motion.spotlight-cross-text.phrase-in-spotlight",
+    "kind": "phrase-in-spotlight",
+    "frame": 44
+   }
+  ],
+  "fits": "Direct the eye to different phrases in a fixed diagram or copy layout.",
+  "source": "authored",
+  "editable": [
+   "heading",
+   "copy",
+   "title",
+   "reply",
+   "detail"
+  ]
+ },
+ "signals-merge-routes": {
+  "title": "Merge two incoming routes into one outgoing result",
+  "moves": "Two signals travel along separate pathways and combine at the junction. One outgoing packet continues along the shared route.",
+  "fixed": "The branch geometry, junction, endpoints and labels.",
+  "notice": "Independent inputs are combined before the result is delivered.",
+  "events": [
+   {
+    "id": "motion.signals-merge-routes.inputs-merge",
+    "kind": "inputs-merge",
+    "frame": 38
+   },
+   {
+    "id": "motion.signals-merge-routes.result-arrives",
+    "kind": "result-arrives",
+    "frame": 57
+   }
+  ],
+  "fits": "Explain joins, aggregation, or collaboration with a clear point of convergence.",
+  "source": "authored",
+  "editable": [
+   "heading",
+   "copy",
+   "reply",
+   "title",
+   "detail"
+  ]
+ },
+ "signal-radiation": {
+  "title": "Send concentric signal waves from one point",
+  "moves": "Thin rings grow out from one source and fade at successive distances.",
+  "fixed": "The source itself, heading, and explanatory text.",
+  "notice": "A single originating action propagates outward to its surroundings.",
+  "events": [
+   {
+    "id": "motion.signal-radiation.signal-emitted",
+    "kind": "signal-emitted",
+    "frame": 11
+   },
+   {
+    "id": "motion.signal-radiation.last-wave-clears",
+    "kind": "last-wave-clears",
+    "frame": 53
+   }
+  ],
+  "fits": "Show broadcasting, discovery, or a ripple of system activity from one source.",
+  "source": "authored",
+  "editable": [
+   "heading",
+   "title",
+   "action",
+   "detail"
+  ]
+ },
+ "freeze-around-live-detail": {
+  "title": "Freeze surrounding movement while one detail keeps going",
+  "moves": "Peripheral activity stops mid-travel. One point in the center keeps moving to its destination.",
+  "fixed": "The tracks stay fixed throughout. After the stop, all peripheral points hold their exact positions.",
+  "notice": "One process remains relevant while competing activity pauses.",
+  "events": [
+   {
+    "id": "motion.freeze-around-live-detail.surroundings-freeze",
+    "kind": "surroundings-freeze",
+    "frame": 24
+   },
+   {
+    "id": "motion.freeze-around-live-detail.live-point-arrives",
+    "kind": "live-point-arrives",
+    "frame": 53
+   }
+  ],
+  "fits": "Isolate a still-running process in a dense animated wash of other activity.",
+  "source": "authored",
+  "editable": [
+   "heading",
+   "action",
+   "title",
+   "detail"
+  ]
+ },
+ "items-collapse-into-count": {
+  "title": "Convert individual items into a tally",
+  "moves": "Each item takes a short arc into a counter, shrinks away at arrival, and advances the count.",
+  "fixed": "The count surface, the label underneath it, and the overall framing.",
+  "notice": "Every count increase corresponds to one specific arriving item.",
+  "events": [
+   {
+    "id": "motion.items-collapse-into-count.item-1-counted",
+    "kind": "item-1-counted",
+    "frame": 31
+   },
+   {
+    "id": "motion.items-collapse-into-count.item-2-counted",
+    "kind": "item-2-counted",
+    "frame": 41
+   },
+   {
+    "id": "motion.items-collapse-into-count.item-3-counted",
+    "kind": "item-3-counted",
+    "frame": 50
+   }
+  ],
+  "fits": "Show completion, aggregation, or the number of processed items.",
+  "source": "authored",
+  "editable": [
+   "heading",
+   "title",
+   "copy",
+   "reply",
+   "action",
+   "detail"
+  ]
+ },
+ "registered-shape-cut": {
+  "title": "Cut between two contexts on a matched shape",
+  "moves": "An abrupt cut changes the surrounding shot in one frame. The supporting line appears after the cut.",
+  "fixed": "The matched action shape, its position and size, and the action wording.",
+  "notice": "A corresponding action connects two different contexts.",
+  "events": [
+   {
+    "id": "motion.registered-shape-cut.registered-cut",
+    "kind": "registered-cut",
+    "frame": 36
+   },
+   {
+    "id": "motion.registered-shape-cut.new-context-readable",
+    "kind": "new-context-readable",
+    "frame": 52
+   }
+  ],
+  "fits": "Jump between two contexts while keeping a strong visual point of correspondence.",
+  "source": "authored",
+  "editable": [
+   "heading",
+   "copy",
+   "title",
+   "action",
+   "detail"
+  ]
+ },
+ "objects-pass-behind": {
+  "title": "Move two objects behind a fixed foreground cover",
+  "moves": "The objects travel toward each other, disappear behind a central cover, and emerge on opposite sides.",
+  "fixed": "The central cover, both travel lanes, and the heading.",
+  "notice": "The objects continue behind the cover and keep their identities as they reappear.",
+  "events": [
+   {
+    "id": "motion.objects-pass-behind.payloads-enter-occlusion",
+    "kind": "payloads-enter-occlusion",
+    "frame": 19
+   },
+   {
+    "id": "motion.objects-pass-behind.payloads-emerge",
+    "kind": "payloads-emerge",
+    "frame": 33
+   }
+  ],
+  "fits": "Demonstrate a handoff through an occluded region or passage on the same plane.",
+  "source": "authored",
+  "editable": [
+   "heading",
+   "copy",
+   "title",
+   "action",
+   "detail"
+  ]
+ },
+ "needle-sweeps-threshold": {
+  "title": "Sweep a gauge needle to its measured reading",
+  "moves": "A single meter pointer rotates about its pivot, overshoots briefly, and settles at the desired reading.",
+  "fixed": "Gauge ticks, the threshold region, the pivot and the labels.",
+  "notice": "The shown value falls at a specific point on a bounded scale.",
+  "events": [
+   {
+    "id": "motion.needle-sweeps-threshold.needle-start",
+    "kind": "needle-start",
+    "frame": 13
+   },
+   {
+    "id": "motion.needle-sweeps-threshold.needle-settled",
+    "kind": "needle-settled",
+    "frame": 52
+   }
+  ],
+  "fits": "Show one metric crossing a threshold or resolving into a stable reading.",
+  "source": "authored",
+  "editable": [
+   "heading",
+   "copy",
+   "title",
+   "action",
+   "detail",
+   "values"
+  ]
+ },
+ "message-wall": {
+  "title": "Bring a wall of messages into view",
+  "moves": "Conversation tiles enter in a stagger while a common camera glides through the wall.",
+  "fixed": "The cells retain their columns; the layout order and each message identity stay readable.",
+  "notice": "Independent examples accumulate into breadth.",
+  "events": [
+   {
+    "id": "motion.message-wall.wall-settles",
+    "kind": "wall-settles",
+    "frame": 52
+   }
+  ],
+  "fits": "Show that a product works across distinct conversations or cases.",
+  "source": "authored-adaptation",
+  "editable": [
+   "copy",
+   "detail"
+  ]
+ },
+ "app-drawer": {
+  "title": "Raise the app drawer as one clipped sheet",
+  "moves": "The drawer carries a handle and icons upward together from offscreen.",
+  "fixed": "The phone header and underlying message remain in place.",
+  "notice": "The app choices live in a single drawer within the conversation.",
+  "events": [
+   {
+    "id": "motion.app-drawer.drawer-open",
+    "kind": "drawer-open",
+    "frame": 31
+   }
+  ],
+  "fits": "Reveal where to find a set of tools or integrations.",
+  "source": "authored-adaptation",
+  "editable": [
+   "detail"
+  ]
+ },
+ "identity-morph": {
+  "title": "Morph an identity into an app tile",
+  "moves": "The surface changes radius, size, and color while two distinct marks exchange at its center.",
+  "fixed": "The central identity anchor and background plane hold.",
+  "notice": "The viewer reads the new mark as the same product in a new form.",
+  "events": [
+   {
+    "id": "motion.identity-morph.identity-resolved",
+    "kind": "identity-resolved",
+    "frame": 44
+   }
+  ],
+  "fits": "Introduce an app icon as another expression of an existing identity.",
+  "source": "authored-adaptation",
+  "editable": [
+   "detail"
+  ]
+ },
+ "circle-to-panel": {
+  "title": "Grow a small control into a working surface",
+  "moves": "One circle widens into a panel while the corner radius changes; contents appear after the surface has room.",
+  "fixed": "The transformation remains centered on the same stage anchor.",
+  "notice": "The same surface becomes a place to act.",
+  "events": [
+   {
+    "id": "motion.circle-to-panel.panel-ready",
+    "kind": "panel-ready",
+    "frame": 51
+   }
+  ],
+  "fits": "Connect a compact affordance with the larger panel it opens.",
+  "source": "authored-adaptation",
+  "editable": [
+   "title",
+   "detail"
+  ]
+ },
+ "mini-app-expand": {
+  "title": "Expand a mini-app in the thread",
+  "moves": "An embedded card scales from its bottom anchor into reading size inside its conversation.",
+  "fixed": "The request, composer, phone silhouette, and conversation header hold.",
+  "notice": "The short request and a usable response coexist in the same surface.",
+  "events": [
+   {
+    "id": "motion.mini-app-expand.inline-card-readable",
+    "kind": "inline-card-readable",
+    "frame": 33
+   }
+  ],
+  "fits": "Show an inline app that remains in the thread while it grows.",
+  "source": "authored-adaptation",
+  "editable": [
+   "title",
+   "detail"
+  ]
+ },
+ "selection-confirm": {
+  "title": "Resolve a button press in place",
+  "moves": "One control transitions from action color to pressed styling to confirmation wording and color.",
+  "fixed": "The button position, geometry and parent card stay fixed.",
+  "notice": "The same action visibly succeeds without a route change.",
+  "events": [
+   {
+    "id": "motion.selection-confirm.press",
+    "kind": "press",
+    "frame": 36
+   },
+   {
+    "id": "motion.selection-confirm.confirmed",
+    "kind": "confirmed",
+    "frame": 42
+   }
+  ],
+  "fits": "Confirm a selected option or a completed action in the existing control.",
+  "source": "authored-adaptation",
+  "editable": [
+   "title",
+   "detail"
+  ]
+ },
+ "card-orbit": {
+  "title": "Bring a product family into a readable lineup",
+  "moves": "Independent cards arrive from separate angles with distinct rotations and settle into an ordered row.",
+  "fixed": "The destination row establishes a common baseline against a stationary field.",
+  "notice": "Distinct offerings become a set while retaining their labels.",
+  "events": [
+   {
+    "id": "motion.card-orbit.lineup-settled",
+    "kind": "lineup-settled",
+    "frame": 40
+   }
+  ],
+  "fits": "Introduce a small product family with breadth and comparable visual weight.",
+  "source": "authored-adaptation",
+  "editable": [
+   "detail"
+  ]
+ },
+ "messages-attachment-stack": {
+  "title": "Swipe the front attachment off a stack",
+  "moves": "The top card translates and rotates off the deck; the next card advances in depth and turns back toward zero.",
+  "fixed": "The attachment count, conversation label, composer, and backdrop remain fixed.",
+  "notice": "The photos are separate cards in one attachment, and the next card moves into the lead slot.",
+  "events": [
+   {
+    "id": "motion.messages-attachment-stack.swipe",
+    "kind": "media.swipe",
+    "frame": 21
+   },
+   {
+    "id": "motion.messages-attachment-stack.promoted",
+    "kind": "media.promote",
+    "frame": 56
+   }
+  ],
+  "fits": "Show one-at-a-time browsing with an authored inline stack of overlapping attachments.",
+  "source": "authored-adaptation",
+  "editable": [
+   "heading",
+   "copy",
+   "photos",
+   "swipes"
+  ]
+ },
+ "inline-card-expand": {
+  "title": "Raise a detail sheet above a dimmed conversation",
+  "moves": "A distinct grabber and sheet rise together and settle while the chat dims below.",
+  "fixed": "The header and underlying message/card stay put in the conversation.",
+  "notice": "The selected card opens another surface while the thread remains visible underneath.",
+  "events": [
+   {
+    "id": "motion.inline-card-expand.sheet-enter",
+    "kind": "panel.open",
+    "frame": 24
+   },
+   {
+    "id": "motion.inline-card-expand.sheet-settle",
+    "kind": "panel.settle",
+    "frame": 55
+   }
+  ],
+  "fits": "Expose more detail or actions in a temporary sheet while preserving conversation context.",
+  "source": "measured-adaptation",
+  "editable": [
+   "heading",
+   "copy",
+   "title",
+   "detail",
+   "action",
+   "photos"
+  ]
+ },
+ "avatar-ring-assemble": {
+  "title": "Gather portraits around centered copy",
+  "moves": "Portraits approach on separate trajectories, sharpen and settle around shrinking headline copy.",
+  "fixed": "The center of the copy remains anchored and the backdrop holds.",
+  "notice": "Independent people converge around a shared idea without shifting the idea\u2019s anchor.",
+  "events": [
+   {
+    "id": "motion.avatar-ring-assemble.converge",
+    "kind": "layout.assembly",
+    "frame": 17
+   },
+   {
+    "id": "motion.avatar-ring-assemble.settled",
+    "kind": "layout.settle",
+    "frame": 57
+   }
+  ],
+  "fits": "Present a group or set of participants around one promise.",
+  "source": "measured-adaptation",
+  "editable": [
+   "heading",
+   "title",
+   "detail",
+   "photos"
+  ]
+ },
+ "tear-perforated-ticket": {
+  "title": "Separate a ticket along its perforation",
+  "moves": "A perforated seam parts left to right as the stub tilts around the still-joined edge, then drops once detached.",
+  "fixed": "The main ticket, its copy and the backdrop stay pinned.",
+  "notice": "The smaller section belonged to the original ticket and is now independently usable.",
+  "events": [
+   {
+    "id": "motion.tear-perforated-ticket.tear-start",
+    "kind": "ticket.tear",
+    "frame": 18
+   },
+   {
+    "id": "motion.tear-perforated-ticket.stub-detaches",
+    "kind": "ticket.detach",
+    "frame": 44
+   }
+  ],
+  "fits": "Show a detachable stub or one part becoming independent after separation.",
+  "source": "authored",
+  "editable": [
+   "heading",
+   "title",
+   "detail",
+   "action"
+  ]
+ },
+ "message-pin-landing": {
+  "title": "Carry a location cue from chat to a map pin",
+  "moves": "A dot leaves the inline location cue, travels into the map, and compresses before it becomes an anchored pin.",
+  "fixed": "The question, stage map, route, and heading remain stationary throughout the travel.",
+  "notice": "The viewer connects the original question to an exact place on the map.",
+  "events": [
+   {
+    "id": "motion.message-pin-landing.location-leaves",
+    "kind": "location.transfer",
+    "frame": 21
+   },
+   {
+    "id": "motion.message-pin-landing.location-lands",
+    "kind": "location.mark",
+    "frame": 50
+   }
+  ],
+  "fits": "Turn an address or a location answer into a physical destination while preserving the related question.",
+  "source": "authored",
+  "editable": [
+   "heading",
+   "copy",
+   "title",
+   "detail"
+  ]
+ },
+ "photo-open-continuity": {
+  "title": "Thumbnail opens into a viewer",
+  "moves": "The chosen thumbnail grows and moves into a raised preview while its neighbors dim.",
+  "fixed": "The other thumbnail boxes, heading, footer, and viewport hold position.",
+  "notice": "The same selected image is now large enough to inspect.",
+  "events": [
+   {
+    "id": "motion.photo-open-continuity.thumbnail-open",
+    "kind": "tap",
+    "frame": 18
+   },
+   {
+    "id": "motion.photo-open-continuity.preview-settle",
+    "kind": "viewer_open",
+    "frame": 47
+   }
+  ],
+  "fits": "Open one attachment while preserving its identity and origin in the row.",
+  "source": "authored",
+  "editable": [
+   "photos"
+  ]
+ },
+ "photo-pinch-detail": {
+  "title": "Pinch into a detail inside the photo",
+  "moves": "The picture scales around a focal point inside a clipped viewer as the gesture markers spread.",
+  "fixed": "The image window, control below it, heading, and footer hold position.",
+  "notice": "The viewer is magnifying the picture inside an existing viewport.",
+  "events": [
+   {
+    "id": "motion.photo-pinch-detail.pinch-start",
+    "kind": "pinch",
+    "frame": 19
+   },
+   {
+    "id": "motion.photo-pinch-detail.pinch-end",
+    "kind": "gesture_end",
+    "frame": 48
+   }
+  ],
+  "fits": "Give a viewer a closer look while preserving interface context.",
+  "source": "authored",
+  "editable": [
+   "photos"
+  ]
+ },
+ "photo-crop-reframe": {
+  "title": "Reframe a photo inside a fixed crop",
+  "moves": "An oversized picture eases sideways underneath a stationary portrait crop frame.",
+  "fixed": "The crop bounds, grid lines, heading, and footer hold position.",
+  "notice": "The same image is composed around a different focal point at the same magnification.",
+  "events": [
+   {
+    "id": "motion.photo-crop-reframe.crop-drag",
+    "kind": "drag",
+    "frame": 18
+   },
+   {
+    "id": "motion.photo-crop-reframe.crop-settle",
+    "kind": "gesture_end",
+    "frame": 47
+   }
+  ],
+  "fits": "Demonstrate shifting a subject within a thumbnail crop or portrait frame.",
+  "source": "authored",
+  "editable": [
+   "photos"
+  ]
+ },
+ "photo-compare-wipe": {
+  "title": "Wipe across a registered before/after photo",
+  "moves": "A divider increases the visible fraction of the second image from the same crop origin.",
+  "fixed": "Both photo grids, the surrounding crop frame, and the outside controls hold position.",
+  "notice": "The viewer can compare the two conditions at the same coordinate.",
+  "events": [
+   {
+    "id": "motion.photo-compare-wipe.divider-drag",
+    "kind": "drag",
+    "frame": 17
+   },
+   {
+    "id": "motion.photo-compare-wipe.divider-stop",
+    "kind": "gesture_end",
+    "frame": 51
+   }
+  ],
+  "fits": "Compare two versions of the same asset. Supply equally sized and registered before and after images.",
+  "source": "authored",
+  "editable": [
+   "photos"
+  ]
+ },
+ "photo-album-deal": {
+  "title": "Deal photos from one album stack",
+  "moves": "The three already stacked thumbnails separate on staggered paths and straighten into a row.",
+  "fixed": "Heading, footer, and the album label hold position.",
+  "notice": "The individual images belong to the same combined attachment.",
+  "events": [
+   {
+    "id": "motion.photo-album-deal.album-open",
+    "kind": "tap",
+    "frame": 17
+   },
+   {
+    "id": "motion.photo-album-deal.album-dealt",
+    "kind": "layout_settle",
+    "frame": 47
+   }
+  ],
+  "fits": "Unpack a small set of photos from a single visible stack.",
+  "source": "authored",
+  "editable": [
+   "photos",
+   "title"
+  ]
+ },
+ "media-video-scrub": {
+  "title": "Scrub to specific points in a media preview",
+  "moves": "The playhead drags forward, pauses, and backtracks; the sample shown in the fixed viewer follows its position.",
+  "fixed": "The preview frame, timeline baseline, and interface chrome hold position.",
+  "notice": "Moving through time changes the viewer while the rest of the UI remains stable.",
+  "events": [
+   {
+    "id": "motion.media-video-scrub.seek-start",
+    "kind": "drag",
+    "frame": 16
+   },
+   {
+    "id": "motion.media-video-scrub.seek-stop",
+    "kind": "gesture_end",
+    "frame": 56
+   }
+  ],
+  "fits": "Show seeking instead of playback. Supply ordered stills from the same video as sample frames.",
+  "source": "authored",
+  "editable": [
+   "photos"
+  ]
+ },
+ "media-trim-range": {
+  "title": "Trim the in and out points independently",
+  "moves": "The two range handles advance inward in separate gestures around a fixed filmstrip.",
+  "fixed": "The filmstrip image positions, heading, footer, and time axis hold position.",
+  "notice": "Only the section between the handles will be kept.",
+  "events": [
+   {
+    "id": "motion.media-trim-range.trim-in-drag",
+    "kind": "drag",
+    "frame": 18
+   },
+   {
+    "id": "motion.media-trim-range.trim-out-drag",
+    "kind": "drag",
+    "frame": 38
+   },
+   {
+    "id": "motion.media-trim-range.trim-range-settle",
+    "kind": "selection_change",
+    "frame": 53
+   }
+  ],
+  "fits": "Set in and out points, with excluded time still visible for orientation.",
+  "source": "authored",
+  "editable": [
+   "photos"
+  ]
+ },
+ "attachment-peek-release": {
+  "title": "Lift an attachment briefly and return it",
+  "moves": "One attachment rises and grows a little during a hold, then settles into exactly the original grid slot.",
+  "fixed": "Neighboring thumbnails and interface chrome hold position.",
+  "notice": "The viewer is temporarily inspecting an item before letting go, with no navigation or selection committed.",
+  "events": [
+   {
+    "id": "motion.attachment-peek-release.peek-lift",
+    "kind": "long_press",
+    "frame": 17
+   },
+   {
+    "id": "motion.attachment-peek-release.peek-release",
+    "kind": "gesture_end",
+    "frame": 47
+   },
+   {
+    "id": "motion.attachment-peek-release.peek-return",
+    "kind": "layout_settle",
+    "frame": 61
+   }
+  ],
+  "fits": "Show a transient peek and return to the same spatial context.",
+  "source": "authored",
+  "editable": [
+   "photos"
+  ]
+ },
+ "card-reorder-insert": {
+  "title": "Drag a photo into a new grid position",
+  "moves": "The lifted tile follows a path over the row, its neighbors shift into the vacated space, and it docks in the new order.",
+  "fixed": "The thumbnail row bounds, heading, and footer hold position.",
+  "notice": "The dragged item is now third and the displaced items keep their relative order.",
+  "events": [
+   {
+    "id": "motion.card-reorder-insert.reorder-pickup",
+    "kind": "drag",
+    "frame": 17
+   },
+   {
+    "id": "motion.card-reorder-insert.reorder-drop",
+    "kind": "drop",
+    "frame": 58
+   }
+  ],
+  "fits": "Demonstrate a persistent order change in a set of editable media.",
+  "source": "authored",
+  "editable": [
+   "photos"
+  ]
+ },
+ "media-progressive-sharpen": {
+  "title": "Resolve a soft preview in successive regions",
+  "moves": "Successive bands sharpen over a soft version of the same photo.",
+  "fixed": "The picture geometry, window, heading, and footer hold position.",
+  "notice": "The visible asset is gaining detail rather than being replaced.",
+  "events": [
+   {
+    "id": "motion.media-progressive-sharpen.first-region-resolves",
+    "kind": "load_visible",
+    "frame": 18
+   },
+   {
+    "id": "motion.media-progressive-sharpen.full-resolution",
+    "kind": "load_complete",
+    "frame": 54
+   }
+  ],
+  "fits": "Show a deliberately staged placeholder-to-full-resolution transition.",
+  "source": "authored",
+  "editable": [
+   "photos"
+  ]
+ },
+ "media-caption-disclosure": {
+  "title": "Unfold a caption below a stationary photo",
+  "moves": "The caption window gains height, the full caption appears, and the neighboring row below is pushed down.",
+  "fixed": "The photo bounds, disclosure control, heading, and footer hold position.",
+  "notice": "The caption is part of the photo\u2019s layout and takes up real space.",
+  "events": [
+   {
+    "id": "motion.media-caption-disclosure.caption-toggle",
+    "kind": "tap",
+    "frame": 17
+   },
+   {
+    "id": "motion.media-caption-disclosure.caption-settle",
+    "kind": "layout_settle",
+    "frame": 42
+   }
+  ],
+  "fits": "Expose longer notes while keeping the photo visible and preserving a coherent layout.",
+  "source": "authored",
+  "editable": [
+   "photos",
+   "detail",
+   "action",
+   "reply"
+  ]
+ },
+ "photo-iris-reveal": {
+  "title": "Reveal a photograph through an expanding aperture",
+  "moves": "A circular mask expands from a chosen point and opens to all four corners of the frame.",
+  "fixed": "The underlying picture geometry, reveal origin, crop frame, and interface chrome hold position.",
+  "notice": "The first detail appears at the chosen point; its surroundings are revealed from the same unmoving image.",
+  "events": [
+   {
+    "id": "motion.photo-iris-reveal.iris-opens",
+    "kind": "reveal_start",
+    "frame": 17
+   },
+   {
+    "id": "motion.photo-iris-reveal.iris-clears-frame",
+    "kind": "reveal_complete",
+    "frame": 50
+   }
+  ],
+  "fits": "Reveal one image outward from an editorial focal point after a hold.",
+  "source": "authored",
+  "editable": [
+   "photos"
+  ]
+ },
+ "album-page-turn": {
+  "title": "Turn one album leaf across a visible spine",
+  "moves": "The departing right leaf compresses toward the seam; its reverse side opens over the left page.",
+  "fixed": "The album cover and center seam hold position, and content on resting pages has no free translation.",
+  "notice": "The viewer advances to the next spread by turning one physical leaf.",
+  "events": [
+   {
+    "id": "motion.album-page-turn.page-edge-lift",
+    "kind": "drag",
+    "frame": 17
+   },
+   {
+    "id": "motion.album-page-turn.page-spine-cross",
+    "kind": "gesture_change",
+    "frame": 36
+   },
+   {
+    "id": "motion.album-page-turn.page-settle",
+    "kind": "gesture_end",
+    "frame": 54
+   }
+  ],
+  "fits": "Present an album as a book; this is a flat hinge projection with shadow, without a rolling paper deformation.",
+  "source": "authored",
+  "editable": [
+   "photos"
+  ]
+ },
+ "photo-grid-density": {
+  "title": "Reflow the same photo tiles into a denser grid",
+  "moves": "Existing images shrink and converge to new rows and columns while secondary tiles appear in the now reachable cells.",
+  "fixed": "The grid region, headings, and footer hold position.",
+  "notice": "The same album now shows more thumbnails per row while preserving item identity and order.",
+  "events": [
+   {
+    "id": "motion.photo-grid-density.density-change",
+    "kind": "layout_change",
+    "frame": 17
+   },
+   {
+    "id": "motion.photo-grid-density.density-settle",
+    "kind": "layout_settle",
+    "frame": 53
+   }
+  ],
+  "fits": "Preview a grid density change, keeping the first four image identities across both states.",
+  "source": "authored",
+  "editable": [
+   "photos"
+  ]
+ },
+ "attachment-download-progress": {
+  "title": "Track transfer progress to a usable attachment",
+  "moves": "A determinate progress bar fills with two pauses; the status becomes available only at completion.",
+  "fixed": "The attachment thumbnail, filename, card geometry, and interface chrome hold position.",
+  "notice": "The item is still transferring until it reaches completion.",
+  "events": [
+   {
+    "id": "motion.attachment-download-progress.transfer-start",
+    "kind": "download_start",
+    "frame": 15
+   },
+   {
+    "id": "motion.attachment-download-progress.transfer-complete",
+    "kind": "download_complete",
+    "frame": 57
+   }
+  ],
+  "fits": "Show a measured percentage advancing toward an openable attachment.",
+  "source": "authored",
+  "editable": [
+   "photos",
+   "title"
+  ]
+ },
+ "photo-markup-stroke": {
+  "title": "Draw a markup stroke over a stationary photo",
+  "moves": "A curved annotation accumulates in drawing order with the pen tip moving along the growing stroke.",
+  "fixed": "The photograph, viewport, heading, and footer hold position.",
+  "notice": "The markup singles out a region while keeping the underlying photo visible.",
+  "events": [
+   {
+    "id": "motion.photo-markup-stroke.pen-down",
+    "kind": "stroke_start",
+    "frame": 17
+   },
+   {
+    "id": "motion.photo-markup-stroke.pen-up",
+    "kind": "stroke_end",
+    "frame": 49
+   }
+  ],
+  "fits": "Direct attention with a hand-drawn path that remains at the end of the move.",
+  "source": "authored",
+  "editable": [
+   "photos"
+  ]
+ },
+ "location-question-bridge": {
+  "title": "Hold the location question while switching from keyboard to map",
+  "moves": "The lower camera pushes toward a location control; the keyboard and composer clear, and a map occupies their former region.",
+  "fixed": "The question remains the readable anchor. It nudges with the camera push, then holds through the change of surfaces.",
+  "notice": "The map is the direct answer to the same location question, and the empty interval gives the change room to read.",
+  "events": [
+   {
+    "id": "motion.location-question-bridge.question-readable",
+    "kind": "message.readable",
+    "frame": 0
+   },
+   {
+    "id": "motion.location-question-bridge.location-control-visible",
+    "kind": "location.suggest",
+    "frame": 25
+   },
+   {
+    "id": "motion.location-question-bridge.location-control-pressed",
+    "kind": "location.select",
+    "frame": 44
+   },
+   {
+    "id": "motion.location-question-bridge.map-visible",
+    "kind": "location.show",
+    "frame": 58
+   }
+  ],
+  "fits": "Carry a specific question across composer action and visual answer, retaining the question as the bridge.",
+  "source": "measured-adaptation",
+  "editable": [
+   "heading",
+   "copy",
+   "title",
+   "detail",
+   "action"
+  ]
+ },
+ "screen-to-physical-prop": {
+  "title": "Pass attention from a phone reply to a physical prop",
+  "moves": "The phone falls away to the left and loses focus as the physical prop on the right sharpens. The camera cuts to a tighter continuation, pushes in a little farther, then holds.",
+  "fixed": "The prop stays put on the table. The reply and its conversation layout move together with the phone.",
+  "notice": "The reply names something that exists outside the phone, and the tighter shot confirms it is the same physical object.",
+  "events": [
+   {
+    "id": "motion.screen-to-physical-prop.reply-readable",
+    "kind": "edit.read",
+    "frame": 0
+   },
+   {
+    "id": "motion.screen-to-physical-prop.phone-releases-attention",
+    "kind": "camera.release",
+    "frame": 31
+   },
+   {
+    "id": "motion.screen-to-physical-prop.attention-on-prop",
+    "kind": "edit.focus",
+    "frame": 45
+   },
+   {
+    "id": "motion.screen-to-physical-prop.cut-to-prop",
+    "kind": "edit.cut",
+    "frame": 48
+   },
+   {
+    "id": "motion.screen-to-physical-prop.prop-hold-start",
+    "kind": "edit.hold",
+    "frame": 60
+   }
+  ],
+  "fits": "Use when a readable message identifies a physical object and the next beat needs the audience to recognize that object in the real scene.",
+  "source": "direction-authored-adaptation",
+  "editable": [
+   "heading",
+   "copy",
+   "reply",
+   "title",
+   "detail",
+   "action",
+   "values",
+   "photos"
+  ]
+ },
+ "metric-count": {
+  "title": "Count between totals in place",
+  "moves": "Only the numeric value steps through intermediate whole numbers, then the final value holds.",
+  "fixed": "The heading, metric label, optional unit and field stay in place.",
+  "notice": "Readable growth or reduction on one comparable measure while the label retains its meaning.",
+  "events": [
+   {
+    "id": "motion.metric-count.count-begins",
+    "kind": "metric.count.begin",
+    "frame": 10
+   },
+   {
+    "id": "motion.metric-count.final-value-held",
+    "kind": "metric.count.hold",
+    "frame": 55
+   }
+  ],
+  "fits": "Count one metric up or down between known endpoints without scrolling its digits.",
+  "source": "authored",
+  "editable": [
+   "heading",
+   "copy",
+   "detail",
+   "values"
+  ]
+ },
+ "text-scramble-resolve": {
+  "title": "Resolve shifting glyphs to one fixed title",
+  "moves": "Unsettled character slots change while their positions stay fixed, then resolve into a readable title left to right.",
+  "fixed": "The title field, heading and camera hold steady.",
+  "notice": "A title changes from unreadable to definite without moving the reading position.",
+  "events": [
+   {
+    "id": "motion.text-scramble-resolve.scramble-start",
+    "kind": "label.decode.begin",
+    "frame": 11
+   },
+   {
+    "id": "motion.text-scramble-resolve.title-readable",
+    "kind": "label.decode.readable",
+    "frame": 46
+   }
+  ],
+  "fits": "A short decode, establishment or reveal where delayed legibility is intentional.",
+  "source": "authored",
+  "editable": [
+   "heading",
+   "title",
+   "detail"
+  ]
+ },
+ "center-gutter-open": {
+  "title": "Part two images to reveal the center",
+  "moves": "Two separate picture planes slide outward in opposite directions and open a gutter for a label.",
+  "fixed": "The original frame and revealed text stay centered.",
+  "notice": "Two distinct views make room for a shared conclusion between them.",
+  "events": [
+   {
+    "id": "motion.center-gutter-open.split-begins",
+    "kind": "panel.gutter.open",
+    "frame": 16
+   },
+   {
+    "id": "motion.center-gutter-open.center-readable",
+    "kind": "panel.gutter.settle",
+    "frame": 53
+   }
+  ],
+  "fits": "The pair and the central conclusion should remain simultaneously visible.",
+  "source": "authored",
+  "editable": [
+   "heading",
+   "title",
+   "detail",
+   "photos"
+  ]
+ },
+ "hinged-swatch-fan": {
+  "title": "Fan and hold swatches around a shared pin",
+  "moves": "The outer leaves rotate in opposite directions around a common pin and stop in a standing fan.",
+  "fixed": "The center leaf, visible pivot, heading and camera are fixed.",
+  "notice": "The surfaces are variants of the same collection and share a single attachment point.",
+  "events": [
+   {
+    "id": "motion.hinged-swatch-fan.leaves-open",
+    "kind": "swatches.open",
+    "frame": 16
+   },
+   {
+    "id": "motion.hinged-swatch-fan.fan-settled",
+    "kind": "swatches.settle",
+    "frame": 47
+   }
+  ],
+  "fits": "Reveal three material or visual samples simultaneously around an anchored pivot.",
+  "source": "authored",
+  "editable": [
+   "heading",
+   "detail",
+   "photos"
+  ]
+ }
+}

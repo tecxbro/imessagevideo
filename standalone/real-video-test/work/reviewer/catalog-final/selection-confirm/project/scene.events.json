@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 72
+  },
+  "initialUI": null,
+  "events": [
+    {
+      "id": "motion.selection-confirm.press",
+      "kind": "press",
+      "target": "selection-card-action",
+      "frame": 36,
+      "layerIds": [
+        "selection-card-action"
+      ]
+    },
+    {
+      "id": "motion.selection-confirm.confirmed",
+      "kind": "confirmed",
+      "target": "selection-card-action",
+      "frame": 42,
+      "layerIds": [
+        "selection-card-action"
+      ]
+    }
+  ],
+  "cues": []
+}

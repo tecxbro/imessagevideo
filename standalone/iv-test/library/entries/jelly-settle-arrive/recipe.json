@@ -1,0 +1,93 @@
+{
+  "assets": {},
+  "avoid": [
+    "a whole-transcript lift where previous rows move (use a makes-room move instead)",
+    "a composer send flight or typing-indicator sequence",
+    "camera movement — nothing else translates"
+  ],
+  "checks": {
+    "max_mae": 5,
+    "max_pts_error_ms": 0,
+    "negative_control": {
+      "reason": "Freezing the three signature squash peaks to 1.0 removes the jelly wobble's identity: at frames 30/40/50 the bubble edge is ~20-45px from the truth, which must blow the doors ROI past max_mae.",
+      "set": {
+        "peak-squash-x": 1.0,
+        "peak-stretch-x": 1.0,
+        "second-peak-x": 1.0
+      }
+    },
+    "reason": "doors ROI covers the whole travel+wobble region (x40-370, y340-510); chrome and anchor-bubble pin the nav/divider/avatar and the unmoved 'see you there' bubble. Re-encoding the identical source frame through the same libx264 pipeline already costs MAE~2.0; the observed worst ROI frame is ~3.3 from small-font AA residue on top of that floor, so 5 leaves ~1.5x headroom while any real motion mistake shifts bubble edges tens of px and fails.",
+    "rois": {
+      "anchor-bubble": [
+        50,
+        265,
+        330,
+        75
+      ],
+      "chrome": [
+        0,
+        0,
+        960,
+        130
+      ],
+      "doors": [
+        40,
+        340,
+        330,
+        170
+      ]
+    }
+  },
+  "description": "A new incoming grey iMessage bubble ('doors at 7') pops in ~70px below its resting slot at frame 15, slides up under easing for ~11 frames while vertically stretched ~10%, then performs a volume-preserving damped spring wobble about its bottom-center pivot: scaleX peaks ~1.18 (frame 30), swings to ~0.90 (frame 40), ~1.08 (frame 50), ~0.965 (frame 60), ~1.02 (frame 70), ~0.997 (frame 80) and settles to 1.0 by frames 87-99. scaleY tracks the inverse. Bubble and label scale together as one group; header chrome, both earlier messages and the divider never move.",
+  "fits": [
+    "an incoming iMessage reply arriving into the lowest transcript slot without displacing other rows",
+    "a springy message/bubble landing that needs the elastic squash-stretch accent",
+    "left-column incoming bubble with bottom-center jelly settle"
+  ],
+  "fixed": [
+    "divider",
+    "avatar",
+    "sam",
+    "chevron-up",
+    "chevron-down",
+    "bubble-out",
+    "bubble-in1"
+  ],
+  "id": "jelly-settle-arrive",
+  "moving": [
+    "doors"
+  ],
+  "parameters": {
+    "copy": "/layers/7/children/1/text",
+    "copy-incoming": "/layers/6/children/1/text",
+    "copy-outgoing": "/layers/5/children/1/text",
+    "name": "/layers/2/text",
+    "peak-squash-x": "/layers/7/keyframes/scaleX/15/value",
+    "peak-stretch-x": "/layers/7/keyframes/scaleX/25/value",
+    "rest-y": "/layers/7/keyframes/y/71/value",
+    "second-peak-x": "/layers/7/keyframes/scaleX/35/value",
+    "slide-start-y": "/layers/7/keyframes/y/0/value"
+  },
+  "renderer": "pillow",
+  "scene": "scene.json",
+  "source": {
+    "clip_sha256": "ebbc0f0861b5f8e78dccb5f3a3346c2ca86aa905bc71cd7fa84a5be37373b8c4",
+    "comparison_clip": "evidence/reference.nut",
+    "end_frame_exclusive": 150,
+    "label": "unseen.mp4 — builder test clip, 960x720 30fps h264",
+    "observation": "Frames 0-14 static. Bubble appears fully formed at frame 15 with its bottom at y~496, slides up 73px to bottom y~421 by frames 25-26 while scaleY decays ~1.11->~1.01. From frame 27 the group (bubble + label, pivot bottom-center ~x185.5,y421) runs a damped spring: scaleX 1.18@f30, 0.90@f40, 1.08@f50, 0.965@f60, 1.02@f70, 0.997@f80, settled ~1.0 by f87-99; scaleY is the inverse. Per-frame trajectory fitted against native frames; every other layer verified static.",
+    "original_sha256": "8a772799354e8c7620adec70461500a1d03f41bdd761f2f2cbe7508726c0d110",
+    "start_frame": 15
+  },
+  "tags": [
+    "imessage",
+    "incoming bubble",
+    "jelly",
+    "squash-stretch",
+    "damped spring",
+    "slide-up",
+    "wobble",
+    "message arrive"
+  ],
+  "title": "Incoming bubble slides up, then settles with a damped jelly squash-stretch"
+}

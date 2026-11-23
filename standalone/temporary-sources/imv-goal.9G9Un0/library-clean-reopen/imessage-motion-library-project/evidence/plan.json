@@ -1,0 +1,35 @@
+{
+  "landmarks": {
+    "pickup.send": {
+      "roi": [
+        0.4895833333333333,
+        0.189873417721519,
+        0.42083333333333334,
+        0.39746835443037976
+      ],
+      "color": [
+        54,
+        124,
+        211
+      ],
+      "tolerance": 42,
+      "min_fraction": 0.013,
+      "settle_frames": 2
+    }
+  },
+  "cues": [
+    {
+      "id": "pickup.send.sound",
+      "event": "pickup.send",
+      "bus": "effects",
+      "asset": "send.wav",
+      "purpose": "Accent the decoded outgoing bubble onset.",
+      "source": "Original procedural click in sound/example.py, random seed 271.",
+      "offset_samples": 0,
+      "onset_ms": 12,
+      "impact_ms": 30,
+      "gain_db": -10,
+      "tolerance_ms": 20
+    }
+  ]
+}

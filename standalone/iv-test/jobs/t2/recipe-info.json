@@ -1,0 +1,64 @@
+{
+  "id": "photos-under-fixed-heading",
+  "title": "Slide the photos beneath a fixed heading",
+  "moves": "Adjacent photos translate together on one horizontally clipped rail.",
+  "fixed": "The heading, viewport, divider and supporting footer stay in place.",
+  "notice": "The next photo comes into view while the place and surrounding context remain easy to read.",
+  "fits": "Browse pictures inside a place or album surface with persistent labels. Use the separate UI adapter variant for inline conversation paging.",
+  "avoid": "A stack that lifts or dismisses only its front photo needs independent layers and depth.",
+  "intents": [
+    "Move the photos beneath a fixed heading",
+    "Slide pictures horizontally under a title that stays put",
+    "Keep the shop name pinned as the storefront photos glide past",
+    "Scroll images without moving the header"
+  ],
+  "editable": [
+    "heading",
+    "detail",
+    "photos",
+    "direction"
+  ],
+  "editableFields": {
+    "heading": "text",
+    "detail": "text",
+    "photos": "array of local PNG, JPEG or WebP paths, relative to the content JSON",
+    "direction": "left, right, up or down; the photo rail supports left/right only"
+  },
+  "photoCount": {
+    "min": 2,
+    "max": 12
+  },
+  "source": {
+    "kind": "measured-adaptation",
+    "ref": "projects/05-linq-complete-v1/imessage-recreations/references/05-linq/source.mp4",
+    "range": [
+      36.366667,
+      37.066667
+    ],
+    "framesInclusive": [
+      1091,
+      1111
+    ],
+    "note": "Normalized Linq rail shift sampled by the earlier motion library at a23bfb2. Reproduced at a new size with authored artwork and a held header."
+  },
+  "events": [
+    {
+      "id": "motion.photos-under-fixed-heading.rail-start",
+      "kind": "media.scroll",
+      "frame": 20
+    },
+    {
+      "id": "motion.photos-under-fixed-heading.rail-settle",
+      "kind": "media.settle",
+      "frame": 39
+    }
+  ],
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 72
+  },
+  "sha256": "adce3885b489d68f1b595c43d8dee4c5f4dbb1b02de8480ce351fe97b89a59dd",
+  "implementation": "/Users/darshan/Documents/video-analysis/imessagevideo-dl/skill/imessage-video/assets/seed/runtime/motion/packs/core.mjs",
+  "preview": "/Users/darshan/Documents/video-analysis/imessagevideo-dl/skill/imessage-video/assets/seed/previews/photos-under-fixed-heading.mp4"
+}

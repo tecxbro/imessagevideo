@@ -1,0 +1,114 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 40
+  },
+  "sampleRate": 48000,
+  "sampleCount": 64000,
+  "initialUI": {
+    "conversationId": "thread.meeting",
+    "messages": [
+      {
+        "id": "north-door",
+        "senderId": "remote",
+        "text": "I’m at the north door.",
+        "attachmentIds": [],
+        "reactions": {},
+        "edited": false,
+        "receipt": ""
+      }
+    ],
+    "composer": {
+      "text": "",
+      "focused": false,
+      "keyboardVisible": false
+    },
+    "viewport": {
+      "surface": "conversation",
+      "anchorMessageId": "north-door",
+      "scrollOffset": 0
+    },
+    "typingSenderIds": []
+  },
+  "events": [
+    {
+      "id": "open-actions",
+      "kind": "overlay",
+      "target": "north-door",
+      "frame": 8,
+      "uiState": {
+        "conversationId": "thread.meeting",
+        "messages": [
+          {
+            "id": "north-door",
+            "senderId": "remote",
+            "text": "I’m at the north door.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          }
+        ],
+        "composer": {
+          "text": "",
+          "focused": false,
+          "keyboardVisible": false
+        },
+        "viewport": {
+          "surface": "context",
+          "anchorMessageId": "north-door",
+          "scrollOffset": 0,
+          "selection": [
+            "north-door"
+          ]
+        },
+        "typingSenderIds": []
+      },
+      "layerIds": [
+        "ui.overlay",
+        "ui.inbox"
+      ],
+      "sample": 12800
+    },
+    {
+      "id": "mark-now",
+      "kind": "reaction",
+      "target": "north-door",
+      "frame": 19,
+      "uiState": {
+        "conversationId": "thread.meeting",
+        "messages": [
+          {
+            "id": "north-door",
+            "senderId": "remote",
+            "text": "I’m at the north door.",
+            "attachmentIds": [],
+            "reactions": {
+              "local": "Love"
+            },
+            "edited": false,
+            "receipt": ""
+          }
+        ],
+        "composer": {
+          "text": "",
+          "focused": false,
+          "keyboardVisible": false
+        },
+        "viewport": {
+          "surface": "conversation",
+          "anchorMessageId": "north-door",
+          "scrollOffset": 0
+        },
+        "typingSenderIds": []
+      },
+      "layerIds": [
+        "ui.message/north-door/reaction"
+      ],
+      "sample": 30400
+    }
+  ],
+  "cues": []
+}

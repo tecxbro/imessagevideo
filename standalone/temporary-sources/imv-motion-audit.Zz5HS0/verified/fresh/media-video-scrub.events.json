@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 72
+  },
+  "initialUI": null,
+  "events": [
+    {
+      "id": "motion.media-video-scrub.seek-start",
+      "kind": "drag",
+      "target": "scrub-thumb",
+      "frame": 16,
+      "layerIds": [
+        "scrub-thumb"
+      ]
+    },
+    {
+      "id": "motion.media-video-scrub.seek-stop",
+      "kind": "gesture_end",
+      "target": "scrub-thumb",
+      "frame": 56,
+      "layerIds": [
+        "scrub-thumb"
+      ]
+    }
+  ],
+  "cues": []
+}

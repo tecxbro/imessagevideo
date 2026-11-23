@@ -1,0 +1,14 @@
+# Verification work log
+
+- 2026-11-08: Inspected `/workspace` for AGENTS.md and reference artifacts. No AGENTS.md found. Five original source MP4 files are present; source 6 is still being acquired by another agent.
+- Confirmed available core tools from parent: FFmpeg, Python, Pillow, NumPy. No extra dependencies needed for the verification pipeline.
+- Design decision: compare correctly mapped source times to recreation times, preserve global and foreground metrics separately, and expose per-frame evidence. A large flat background must not conceal a wrong message or missing layer.
+- Design decision: use sampled-frame metrics without claiming whole-video pixel identity. All-frames mode can increase coverage; image metrics cannot certify editable structure or motion intent.
+- Implemented `compare.py`: explicit source/candidate time offsets or JSON segment mapping; native-size gate; optional diagnostic downscale; per-frame global and foreground-union MAE/RMSE/PSNR/luma-SSIM; CSV/JSON and HTML reference/render/difference contact rows.
+- Ran original-vs-itself end-to-end against source 1 at 0.0s and 0.1s, downscaled to 640px. Both decoded samples produced exactly zero MAE/RMSE and zero changed pixels. SSIM was numerically 1 within floating-point precision.
+- Ran synthetic validation for identity, a missing foreground object, and a displaced foreground object. All assertions passed. A missing black rectangle on white measured global MAE 12.75 but foreground MAE above 200, demonstrating why both metrics are necessary.
+- No failed command/retry occurred during implementation. Corrected duration argument handling during code review so an explicitly supplied zero duration is rejected rather than silently replaced by inferred duration.
+
+Native batch cadence followup: the RENE source declares nominal30fps but avg29.999982 because its reported duration is rounded by33microseconds. The strict average-rate timestamp guard rejected correct n/30 source-map times. A completed V21 report used n/avg diagnostic times for the same integer frames. With no comparator jobs active, added a bounded nominal-rate fallback only within1ppm and only when average/nominal still round to the same integer index. Existing average fps and report timing remain unchanged; arbitrary off-grid times remain rejected. Actual RENE nominal-vs-average pixel parity and fractional Poke controls are required before release.
+
+Final dense parity review now flags a minimum more than .01 SSIM below the first percentile in addition to existing absolute minimum/mean thresholds. The actual Linq625 legacy cache defect motivated the isolated-outlier check: an almost uniformly accurate render can hide one truncated native state. The flag is a review heuristic, not an automatic source-fidelity score; final dense outputs and their worst frames still require inspection.

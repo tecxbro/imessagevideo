@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 72
+  },
+  "initialUI": null,
+  "events": [
+    {
+      "id": "motion.spotlight-cross-text.spotlight-start",
+      "kind": "spotlight-start",
+      "target": "spotlight-edge",
+      "frame": 17,
+      "layerIds": [
+        "spotlight-edge"
+      ]
+    },
+    {
+      "id": "motion.spotlight-cross-text.phrase-in-spotlight",
+      "kind": "phrase-in-spotlight",
+      "target": "target-right",
+      "frame": 44,
+      "layerIds": [
+        "target-right"
+      ]
+    }
+  ],
+  "cues": []
+}

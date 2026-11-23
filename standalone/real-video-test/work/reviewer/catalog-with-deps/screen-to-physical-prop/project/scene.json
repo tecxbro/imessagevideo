@@ -1,0 +1,1199 @@
+{
+  "width": 720,
+  "height": 480,
+  "fps": 30,
+  "duration": 2.4,
+  "background": "#dce7f1",
+  "title": "Pass attention from a phone reply to a physical prop",
+  "source": {
+    "path": "https://github.com/tecxbro/imessagevideo/blob/db9218888e89660771b9946c5bd0e32568b57a1e/skill/imessage-motion-recreation/direction/film/movement.py",
+    "sourceStart": 5.833333333333333,
+    "sourceEnd": 7.041666666666667,
+    "notes": "The locked shot holds the readable reply, starts the 12-frame phone/focus lead at 141, cuts at 153, and completes the tin camera push at 168. The phone remains partly visible at 152. The preview ports Direction’s independent source curves. Its full left exit, tighter scale at the cut, and closed-tin hold adapt the requested brief. The source begins lifting the lid at 165."
+  },
+  "layers": [
+    {
+      "id": "surface",
+      "type": "rect",
+      "x": 110,
+      "y": 44,
+      "width": 500,
+      "height": 392,
+      "fill": "#ffffff",
+      "radius": 18
+    },
+    {
+      "id": "stage",
+      "type": "group",
+      "x": 110,
+      "y": 98,
+      "children": [
+        {
+          "id": "prop-table-camera",
+          "type": "group",
+          "x": 0,
+          "y": 0,
+          "children": [
+            {
+              "id": "table-surface",
+              "type": "rect",
+              "x": -280,
+              "y": -120,
+              "width": 1080,
+              "height": 520,
+              "fill": "#493039",
+              "radius": 0
+            },
+            {
+              "id": "tin-light",
+              "type": "circle",
+              "x": 219,
+              "y": 79,
+              "width": 260,
+              "height": 198,
+              "fill": "#a66951",
+              "blur": 31,
+              "opacity": 0.55
+            },
+            {
+              "id": "table-edge",
+              "type": "rect",
+              "x": -260,
+              "y": 249,
+              "width": 1020,
+              "height": 54,
+              "fill": "#32242a",
+              "radius": 0,
+              "originX": 515,
+              "rotation": 2.3
+            },
+            {
+              "id": "table-edge-light",
+              "type": "rect",
+              "x": -260,
+              "y": 248,
+              "width": 1020,
+              "height": 2,
+              "fill": "#694639",
+              "radius": 0,
+              "originX": 515,
+              "rotation": 2.3
+            },
+            {
+              "id": "spool-shadow",
+              "type": "circle",
+              "x": 207,
+              "y": 206,
+              "width": 65,
+              "height": 21,
+              "fill": "#23191e",
+              "blur": 3,
+              "opacity": 0.62
+            },
+            {
+              "id": "spool-top",
+              "type": "circle",
+              "x": 207,
+              "y": 199,
+              "width": 56,
+              "height": 22,
+              "fill": "#674940",
+              "stroke": "#8b5d48",
+              "strokeWidth": 2
+            },
+            {
+              "id": "spool-hole",
+              "type": "circle",
+              "x": 229,
+              "y": 206,
+              "width": 9,
+              "height": 7,
+              "fill": "#2a2027"
+            },
+            {
+              "id": "table-star-0",
+              "type": "path",
+              "x": 303,
+              "y": 103,
+              "fill": "#e3a86e",
+              "d": "M 0 -6 L 1.5 -1.8 L 6 0 L 1.5 1.8 L 0 6 L -1.5 1.8 L -6 0 L -1.5 -1.8 Z"
+            },
+            {
+              "id": "table-star-1",
+              "type": "path",
+              "x": 338,
+              "y": 79,
+              "fill": "#e3a86e",
+              "d": "M 0 -6 L 1.5 -1.8 L 6 0 L 1.5 1.8 L 0 6 L -1.5 1.8 L -6 0 L -1.5 -1.8 Z"
+            },
+            {
+              "id": "table-star-2",
+              "type": "path",
+              "x": 374,
+              "y": 85,
+              "fill": "#e3a86e",
+              "d": "M 0 -6 L 1.5 -1.8 L 6 0 L 1.5 1.8 L 0 6 L -1.5 1.8 L -6 0 L -1.5 -1.8 Z"
+            },
+            {
+              "id": "prop-tin",
+              "type": "group",
+              "x": 242,
+              "y": 125,
+              "children": [
+                {
+                  "id": "tin-contact-shadow",
+                  "type": "circle",
+                  "x": -4,
+                  "y": 60,
+                  "width": 197,
+                  "height": 61,
+                  "fill": "#161016",
+                  "blur": 8,
+                  "opacity": 0.72
+                },
+                {
+                  "id": "tin-bottom",
+                  "type": "circle",
+                  "x": 1,
+                  "y": 29,
+                  "width": 182,
+                  "height": 71,
+                  "fill": "#6d272c",
+                  "stroke": "#402029",
+                  "strokeWidth": 3
+                },
+                {
+                  "id": "tin-wall",
+                  "type": "rect",
+                  "x": 2,
+                  "y": 39,
+                  "width": 179,
+                  "height": 24,
+                  "fill": "#74262b",
+                  "radius": 1
+                },
+                {
+                  "id": "tin-lid-rim",
+                  "type": "circle",
+                  "x": 0,
+                  "y": 0,
+                  "width": 185,
+                  "height": 79,
+                  "fill": "#b74d3c",
+                  "stroke": "#ed9c74",
+                  "strokeWidth": 1.5
+                },
+                {
+                  "id": "tin-lid-field",
+                  "type": "circle",
+                  "x": 6,
+                  "y": 5,
+                  "width": 173,
+                  "height": 68,
+                  "fill": "#ad3b40",
+                  "stroke": "#822931",
+                  "strokeWidth": 2
+                },
+                {
+                  "id": "tin-lid-catchlight",
+                  "type": "path",
+                  "d": "M 19 30 Q 40 12 88 12 Q 129 11 153 21",
+                  "fill": "none",
+                  "stroke": "#f6ac83",
+                  "strokeWidth": 2,
+                  "opacity": 0.68
+                },
+                {
+                  "id": "tin-mark",
+                  "type": "text",
+                  "text": "MOON",
+                  "x": 92,
+                  "y": 29,
+                  "fontSize": 15,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#fff0d4",
+                  "textAnchor": "middle",
+                  "fontWeight": 700,
+                  "letterSpacing": 1.4
+                },
+                {
+                  "id": "tin-mark-underline",
+                  "type": "path",
+                  "d": "M 75 51 L 109 51",
+                  "fill": "none",
+                  "stroke": "#f7ba82",
+                  "strokeWidth": 1.5
+                }
+              ]
+            }
+          ],
+          "originX": 334.5,
+          "originY": 164.5,
+          "keyframes": {
+            "scaleX": [
+              {
+                "t": 0,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 1.5999999999999999,
+                "value": 1.5757333333333332,
+                "ease": "hold"
+              },
+              {
+                "t": 1.6266666666666665,
+                "value": 1.5920592592592593,
+                "ease": "linear"
+              },
+              {
+                "t": 1.6533333333333333,
+                "value": 1.6072592592592592,
+                "ease": "linear"
+              },
+              {
+                "t": 1.68,
+                "value": 1.6213333333333333,
+                "ease": "linear"
+              },
+              {
+                "t": 1.7066666666666668,
+                "value": 1.6342814814814817,
+                "ease": "linear"
+              },
+              {
+                "t": 1.7333333333333332,
+                "value": 1.6461037037037036,
+                "ease": "linear"
+              },
+              {
+                "t": 1.7599999999999998,
+                "value": 1.6568,
+                "ease": "linear"
+              },
+              {
+                "t": 1.7866666666666666,
+                "value": 1.6663703703703705,
+                "ease": "linear"
+              },
+              {
+                "t": 1.8133333333333332,
+                "value": 1.6748148148148148,
+                "ease": "linear"
+              },
+              {
+                "t": 1.84,
+                "value": 1.6821333333333335,
+                "ease": "linear"
+              },
+              {
+                "t": 1.8666666666666667,
+                "value": 1.688325925925926,
+                "ease": "linear"
+              },
+              {
+                "t": 1.893333333333333,
+                "value": 1.6933925925925926,
+                "ease": "linear"
+              },
+              {
+                "t": 1.92,
+                "value": 1.6973333333333334,
+                "ease": "linear"
+              },
+              {
+                "t": 1.9466666666666665,
+                "value": 1.7001481481481482,
+                "ease": "linear"
+              },
+              {
+                "t": 1.9733333333333332,
+                "value": 1.7018370370370368,
+                "ease": "linear"
+              },
+              {
+                "t": 2,
+                "value": 1.7024000000000001,
+                "ease": "linear"
+              }
+            ],
+            "scaleY": [
+              {
+                "t": 0,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 1.5999999999999999,
+                "value": 1.5757333333333332,
+                "ease": "hold"
+              },
+              {
+                "t": 1.6266666666666665,
+                "value": 1.5920592592592593,
+                "ease": "linear"
+              },
+              {
+                "t": 1.6533333333333333,
+                "value": 1.6072592592592592,
+                "ease": "linear"
+              },
+              {
+                "t": 1.68,
+                "value": 1.6213333333333333,
+                "ease": "linear"
+              },
+              {
+                "t": 1.7066666666666668,
+                "value": 1.6342814814814817,
+                "ease": "linear"
+              },
+              {
+                "t": 1.7333333333333332,
+                "value": 1.6461037037037036,
+                "ease": "linear"
+              },
+              {
+                "t": 1.7599999999999998,
+                "value": 1.6568,
+                "ease": "linear"
+              },
+              {
+                "t": 1.7866666666666666,
+                "value": 1.6663703703703705,
+                "ease": "linear"
+              },
+              {
+                "t": 1.8133333333333332,
+                "value": 1.6748148148148148,
+                "ease": "linear"
+              },
+              {
+                "t": 1.84,
+                "value": 1.6821333333333335,
+                "ease": "linear"
+              },
+              {
+                "t": 1.8666666666666667,
+                "value": 1.688325925925926,
+                "ease": "linear"
+              },
+              {
+                "t": 1.893333333333333,
+                "value": 1.6933925925925926,
+                "ease": "linear"
+              },
+              {
+                "t": 1.92,
+                "value": 1.6973333333333334,
+                "ease": "linear"
+              },
+              {
+                "t": 1.9466666666666665,
+                "value": 1.7001481481481482,
+                "ease": "linear"
+              },
+              {
+                "t": 1.9733333333333332,
+                "value": 1.7018370370370368,
+                "ease": "linear"
+              },
+              {
+                "t": 2,
+                "value": 1.7024000000000001,
+                "ease": "linear"
+              }
+            ],
+            "blur": [
+              {
+                "t": 1.0333333333333334,
+                "value": 5.208333333333334,
+                "ease": "linear"
+              },
+              {
+                "t": 1.0757575757575757,
+                "value": 5.136598186728396,
+                "ease": "linear"
+              },
+              {
+                "t": 1.1181818181818182,
+                "value": 4.938271604938271,
+                "ease": "linear"
+              },
+              {
+                "t": 1.1606060606060606,
+                "value": 4.638671875,
+                "ease": "linear"
+              },
+              {
+                "t": 1.2030303030303031,
+                "value": 4.263117283950618,
+                "ease": "linear"
+              },
+              {
+                "t": 1.2454545454545454,
+                "value": 3.8369261188271606,
+                "ease": "linear"
+              },
+              {
+                "t": 1.2878787878787878,
+                "value": 3.385416666666667,
+                "ease": "linear"
+              },
+              {
+                "t": 1.3303030303030303,
+                "value": 2.933907214506173,
+                "ease": "linear"
+              },
+              {
+                "t": 1.3727272727272728,
+                "value": 2.5077160493827164,
+                "ease": "linear"
+              },
+              {
+                "t": 1.415151515151515,
+                "value": 2.1321614583333335,
+                "ease": "linear"
+              },
+              {
+                "t": 1.4575757575757573,
+                "value": 1.8325617283950613,
+                "ease": "linear"
+              },
+              {
+                "t": 1.5,
+                "value": 1.6342351466049385,
+                "ease": "linear"
+              },
+              {
+                "t": 1.5999999999999999,
+                "value": 0,
+                "ease": "hold"
+              }
+            ]
+          }
+        },
+        {
+          "id": "prop-table-veil",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 298,
+          "fill": "#170e1a",
+          "radius": 0,
+          "keyframes": {
+            "opacity": [
+              {
+                "t": 1.0333333333333334,
+                "value": 0.55,
+                "ease": "linear"
+              },
+              {
+                "t": 1.0757575757575757,
+                "value": 0.5437037037037038,
+                "ease": "linear"
+              },
+              {
+                "t": 1.1181818181818182,
+                "value": 0.5262962962962964,
+                "ease": "linear"
+              },
+              {
+                "t": 1.1606060606060606,
+                "value": 0.5,
+                "ease": "linear"
+              },
+              {
+                "t": 1.2030303030303031,
+                "value": 0.4670370370370371,
+                "ease": "linear"
+              },
+              {
+                "t": 1.2454545454545454,
+                "value": 0.4296296296296297,
+                "ease": "linear"
+              },
+              {
+                "t": 1.2878787878787878,
+                "value": 0.39,
+                "ease": "linear"
+              },
+              {
+                "t": 1.3303030303030303,
+                "value": 0.3503703703703704,
+                "ease": "linear"
+              },
+              {
+                "t": 1.3727272727272728,
+                "value": 0.312962962962963,
+                "ease": "linear"
+              },
+              {
+                "t": 1.415151515151515,
+                "value": 0.28,
+                "ease": "linear"
+              },
+              {
+                "t": 1.4575757575757573,
+                "value": 0.2537037037037037,
+                "ease": "linear"
+              },
+              {
+                "t": 1.5,
+                "value": 0.23629629629629634,
+                "ease": "linear"
+              },
+              {
+                "t": 1.5999999999999999,
+                "value": 0,
+                "ease": "hold"
+              }
+            ]
+          }
+        },
+        {
+          "id": "prop-handset",
+          "type": "group",
+          "x": 35,
+          "y": 9,
+          "children": [
+            {
+              "id": "handset-body",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 219,
+              "height": 280,
+              "fill": "#20191f",
+              "radius": 19,
+              "stroke": "#986a54",
+              "strokeWidth": 2
+            },
+            {
+              "id": "editable-handset-screen",
+              "type": "group",
+              "x": 8,
+              "y": 7,
+              "children": [
+                {
+                  "id": "prop-conversation",
+                  "type": "group",
+                  "x": 0,
+                  "y": 0,
+                  "children": [
+                    {
+                      "id": "prop-conversation-matte",
+                      "type": "rect",
+                      "x": 0,
+                      "y": 0,
+                      "width": 360,
+                      "height": 480,
+                      "fill": "#ffffff",
+                      "radius": 28,
+                      "stroke": "#d8dbe0",
+                      "strokeWidth": 1
+                    },
+                    {
+                      "id": "prop-conversation-screen",
+                      "type": "group",
+                      "x": 0,
+                      "y": 0,
+                      "children": [
+                        {
+                          "id": "prop-question",
+                          "type": "group",
+                          "x": 81,
+                          "y": 111,
+                          "children": [
+                            {
+                              "id": "prop-question-body",
+                              "type": "rect",
+                              "x": 0,
+                              "y": 0,
+                              "width": 253,
+                              "height": 49,
+                              "fill": "#1688fa",
+                              "radius": 20
+                            },
+                            {
+                              "id": "prop-question-tail",
+                              "type": "path",
+                              "d": "M 237 31 Q 250 50 260 47 Q 250 43 251 29 Z",
+                              "fill": "#1688fa"
+                            },
+                            {
+                              "id": "prop-question-copy",
+                              "type": "text",
+                              "text": "Where’s the moon?",
+                              "x": 17,
+                              "y": 14,
+                              "fontSize": 20,
+                              "fontFamily": "Arial, sans-serif",
+                              "fill": "#ffffff",
+                              "lineHeight": 24
+                            }
+                          ]
+                        },
+                        {
+                          "id": "prop-reply",
+                          "type": "group",
+                          "x": 24,
+                          "y": 175,
+                          "children": [
+                            {
+                              "id": "prop-reply-body",
+                              "type": "rect",
+                              "x": 0,
+                              "y": 0,
+                              "width": 273,
+                              "height": 49,
+                              "fill": "#e9e9ed",
+                              "radius": 20
+                            },
+                            {
+                              "id": "prop-reply-tail",
+                              "type": "path",
+                              "d": "M 16 31 Q 3 50 -7 47 Q 3 43 2 29 Z",
+                              "fill": "#e9e9ed"
+                            },
+                            {
+                              "id": "prop-reply-copy",
+                              "type": "text",
+                              "text": "Red tin. Under the stars.",
+                              "x": 17,
+                              "y": 14,
+                              "fontSize": 20,
+                              "fontFamily": "Arial, sans-serif",
+                              "fill": "#17191d",
+                              "lineHeight": 24
+                            }
+                          ]
+                        },
+                        {
+                          "id": "prop-composer",
+                          "type": "group",
+                          "x": 20,
+                          "y": 408,
+                          "children": [
+                            {
+                              "id": "prop-composer-field",
+                              "type": "rect",
+                              "x": 0,
+                              "y": 0,
+                              "width": 320,
+                              "height": 48,
+                              "fill": "#ffffff",
+                              "radius": 24,
+                              "stroke": "#d8dbe0",
+                              "strokeWidth": 1
+                            },
+                            {
+                              "id": "prop-composer-input",
+                              "type": "text",
+                              "text": "Message",
+                              "x": 18,
+                              "y": 14,
+                              "fontSize": 17,
+                              "fontFamily": "Arial, sans-serif",
+                              "fill": "#777b84"
+                            },
+                            {
+                              "id": "prop-composer-send",
+                              "type": "circle",
+                              "x": 280,
+                              "y": 8,
+                              "width": 32,
+                              "height": 32,
+                              "fill": "#d8dbe0"
+                            },
+                            {
+                              "id": "prop-composer-arrow",
+                              "type": "path",
+                              "d": "M 296 33 L 296 16 M 289 23 L 296 16 L 303 23",
+                              "fill": "none",
+                              "stroke": "#ffffff",
+                              "strokeWidth": 2
+                            }
+                          ]
+                        }
+                      ],
+                      "clip": {
+                        "x": 0,
+                        "y": 0,
+                        "width": 360,
+                        "height": 480,
+                        "radius": 28
+                      }
+                    },
+                    {
+                      "id": "prop-conversation-bar",
+                      "type": "rect",
+                      "x": 1,
+                      "y": 1,
+                      "width": 358,
+                      "height": 66,
+                      "fill": "#f8f8fa",
+                      "radius": 27
+                    },
+                    {
+                      "id": "prop-conversation-bar-square",
+                      "type": "rect",
+                      "x": 1,
+                      "y": 33,
+                      "width": 358,
+                      "height": 33,
+                      "fill": "#f8f8fa",
+                      "radius": 0
+                    },
+                    {
+                      "id": "prop-conversation-back",
+                      "type": "text",
+                      "text": "‹",
+                      "x": 18,
+                      "y": 17,
+                      "fontSize": 30,
+                      "fontFamily": "Arial, sans-serif",
+                      "fill": "#1688fa"
+                    },
+                    {
+                      "id": "prop-conversation-title",
+                      "type": "text",
+                      "text": "Stage Crew",
+                      "x": 180,
+                      "y": 25,
+                      "fontSize": 17,
+                      "fontFamily": "Arial, sans-serif",
+                      "fill": "#17191d",
+                      "textAnchor": "middle",
+                      "fontWeight": 600
+                    },
+                    {
+                      "id": "prop-conversation-divider",
+                      "type": "rect",
+                      "x": 1,
+                      "y": 66,
+                      "width": 358,
+                      "height": 1,
+                      "fill": "#d8dbe0",
+                      "radius": 0
+                    }
+                  ]
+                }
+              ],
+              "scaleX": 0.562,
+              "scaleY": 0.552
+            }
+          ],
+          "originX": 109.5,
+          "originY": 140,
+          "keyframes": {
+            "x": [
+              {
+                "t": 1.0333333333333334,
+                "value": 35,
+                "ease": "linear"
+              },
+              {
+                "t": 1.0757575757575757,
+                "value": 30.33378087804808,
+                "ease": "linear"
+              },
+              {
+                "t": 1.1181818181818182,
+                "value": 19.83940934508506,
+                "ease": "linear"
+              },
+              {
+                "t": 1.1606060606060606,
+                "value": 4.795527040802973,
+                "ease": "linear"
+              },
+              {
+                "t": 1.2030303030303031,
+                "value": -14.25690435852244,
+                "ease": "linear"
+              },
+              {
+                "t": 1.2454545454545454,
+                "value": -36.980380227899104,
+                "ease": "linear"
+              },
+              {
+                "t": 1.2878787878787878,
+                "value": -63.1346221671396,
+                "ease": "linear"
+              },
+              {
+                "t": 1.3303030303030303,
+                "value": -92.53570789415113,
+                "ease": "linear"
+              },
+              {
+                "t": 1.3727272727272728,
+                "value": -125.03615440919901,
+                "ease": "linear"
+              },
+              {
+                "t": 1.415151515151515,
+                "value": -160.51379026564814,
+                "ease": "linear"
+              },
+              {
+                "t": 1.4575757575757573,
+                "value": -198.8649453229762,
+                "ease": "linear"
+              },
+              {
+                "t": 1.5,
+                "value": -240,
+                "ease": "linear"
+              }
+            ],
+            "y": [
+              {
+                "t": 1.0333333333333334,
+                "value": 9,
+                "ease": "linear"
+              },
+              {
+                "t": 1.0757575757575757,
+                "value": 9.12195809602688,
+                "ease": "linear"
+              },
+              {
+                "t": 1.1181818181818182,
+                "value": 9.396243023011506,
+                "ease": "linear"
+              },
+              {
+                "t": 1.1606060606060606,
+                "value": 9.789435711724165,
+                "ease": "linear"
+              },
+              {
+                "t": 1.2030303030303031,
+                "value": 10.287397379922139,
+                "ease": "linear"
+              },
+              {
+                "t": 1.2454545454545454,
+                "value": 10.881306877036078,
+                "ease": "linear"
+              },
+              {
+                "t": 1.2878787878787878,
+                "value": 11.564884194468576,
+                "ease": "linear"
+              },
+              {
+                "t": 1.3303030303030303,
+                "value": 12.333322268780321,
+                "ease": "linear"
+              },
+              {
+                "t": 1.3727272727272728,
+                "value": 13.182766427617983,
+                "ease": "linear"
+              },
+              {
+                "t": 1.415151515151515,
+                "value": 14.110023551106334,
+                "ease": "linear"
+              },
+              {
+                "t": 1.4575757575757573,
+                "value": 15.11238407661608,
+                "ease": "linear"
+              },
+              {
+                "t": 1.5,
+                "value": 16.187505672335924,
+                "ease": "linear"
+              }
+            ],
+            "rotation": [
+              {
+                "t": 1.0333333333333334,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 1.0757575757575757,
+                "value": -0.08780982913935297,
+                "ease": "linear"
+              },
+              {
+                "t": 1.1181818181818182,
+                "value": -0.2852949765682842,
+                "ease": "linear"
+              },
+              {
+                "t": 1.1606060606060606,
+                "value": -0.5683937124413994,
+                "ease": "linear"
+              },
+              {
+                "t": 1.2030303030303031,
+                "value": -0.9269261135439395,
+                "ease": "linear"
+              },
+              {
+                "t": 1.2454545454545454,
+                "value": -1.3545409514659756,
+                "ease": "linear"
+              },
+              {
+                "t": 1.2878787878787878,
+                "value": -1.8467166200173746,
+                "ease": "linear"
+              },
+              {
+                "t": 1.3303030303030303,
+                "value": -2.399992033521831,
+                "ease": "linear"
+              },
+              {
+                "t": 1.3727272727272728,
+                "value": -3.0115918278849474,
+                "ease": "linear"
+              },
+              {
+                "t": 1.415151515151515,
+                "value": -3.67921695679656,
+                "ease": "linear"
+              },
+              {
+                "t": 1.4575757575757573,
+                "value": -4.400916535163576,
+                "ease": "linear"
+              },
+              {
+                "t": 1.5,
+                "value": -5.175004084081864,
+                "ease": "linear"
+              }
+            ],
+            "blur": [
+              {
+                "t": 1.0333333333333334,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 1.0757575757575757,
+                "value": 0.014482523903191895,
+                "ease": "linear"
+              },
+              {
+                "t": 1.1181818181818182,
+                "value": 0.04705385898261631,
+                "ease": "linear"
+              },
+              {
+                "t": 1.1606060606060606,
+                "value": 0.09374549076724469,
+                "ease": "linear"
+              },
+              {
+                "t": 1.2030303030303031,
+                "value": 0.15287843886575392,
+                "ease": "linear"
+              },
+              {
+                "t": 1.2454545454545454,
+                "value": 0.22340519164803418,
+                "ease": "linear"
+              },
+              {
+                "t": 1.2878787878787878,
+                "value": 0.30457999809314334,
+                "ease": "linear"
+              },
+              {
+                "t": 1.3303030303030303,
+                "value": 0.39583201941766316,
+                "ease": "linear"
+              },
+              {
+                "t": 1.3727272727272728,
+                "value": 0.49670351327963547,
+                "ease": "linear"
+              },
+              {
+                "t": 1.415151515151515,
+                "value": 0.6068152966938771,
+                "ease": "linear"
+              },
+              {
+                "t": 1.4575757575757573,
+                "value": 0.7258456090981593,
+                "ease": "linear"
+              },
+              {
+                "t": 1.5,
+                "value": 0.8535162985898908,
+                "ease": "linear"
+              }
+            ],
+            "opacity": [
+              {
+                "t": 0,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 1.5999999999999999,
+                "value": 0,
+                "ease": "hold"
+              }
+            ]
+          }
+        }
+      ],
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 500,
+        "height": 298
+      }
+    },
+    {
+      "id": "footer",
+      "type": "group",
+      "x": 110,
+      "y": 396,
+      "children": [
+        {
+          "id": "footer-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 40,
+          "fill": "#f2f6fb",
+          "radius": 12
+        },
+        {
+          "id": "footer-label",
+          "type": "text",
+          "text": "Find the object named in the reply.",
+          "x": 26,
+          "y": 11,
+          "fontSize": 15,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#516277"
+        }
+      ]
+    },
+    {
+      "id": "heading",
+      "type": "group",
+      "x": 110,
+      "y": 44,
+      "children": [
+        {
+          "id": "heading-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 54,
+          "fill": "#f2f6fb",
+          "radius": 13
+        },
+        {
+          "id": "heading-copy",
+          "type": "text",
+          "text": "From the screen to the prop table",
+          "x": 26,
+          "y": 13,
+          "fontSize": 23,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#182737",
+          "fontWeight": 700
+        }
+      ]
+    }
+  ],
+  "timeline": {
+    "version": 1,
+    "picture": {
+      "fpsNum": 30,
+      "fpsDen": 1,
+      "frameCount": 72
+    },
+    "initialUI": {
+      "conversationId": "thread.prop-table",
+      "messages": [
+        {
+          "id": "message.question",
+          "senderId": "operator",
+          "text": "Where’s the moon?"
+        },
+        {
+          "id": "message.reply",
+          "senderId": "stage-crew",
+          "text": "Red tin. Under the stars."
+        }
+      ],
+      "composer": {
+        "text": "",
+        "focused": false
+      },
+      "viewport": {
+        "surface": "conversation",
+        "anchorMessageId": "message.reply"
+      }
+    },
+    "events": [
+      {
+        "id": "motion.screen-to-physical-prop.reply-readable",
+        "kind": "edit.read",
+        "target": "prop-reply",
+        "frame": 0,
+        "layerIds": [
+          "prop-reply"
+        ]
+      },
+      {
+        "id": "motion.screen-to-physical-prop.phone-releases-attention",
+        "kind": "camera.release",
+        "target": "prop-handset",
+        "frame": 31,
+        "layerIds": [
+          "prop-handset"
+        ]
+      },
+      {
+        "id": "motion.screen-to-physical-prop.attention-on-prop",
+        "kind": "edit.focus",
+        "target": "prop-tin",
+        "frame": 45,
+        "layerIds": [
+          "prop-tin"
+        ]
+      },
+      {
+        "id": "motion.screen-to-physical-prop.cut-to-prop",
+        "kind": "edit.cut",
+        "target": "prop-tin",
+        "frame": 48,
+        "layerIds": [
+          "prop-tin"
+        ],
+        "uiState": null
+      },
+      {
+        "id": "motion.screen-to-physical-prop.prop-hold-start",
+        "kind": "edit.hold",
+        "target": "prop-tin",
+        "frame": 60,
+        "layerIds": [
+          "prop-tin"
+        ]
+      }
+    ],
+    "cues": []
+  }
+}

@@ -1,0 +1,235 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 24,
+    "fpsDen": 1,
+    "frameCount": 84
+  },
+  "sampleRate": 48000,
+  "sampleCount": 168000,
+  "initialUI": {
+    "conversationId": "trail-survey",
+    "messages": [
+      {
+        "id": "request",
+        "senderId": "asha",
+        "text": "Which viewpoint should we visit first?",
+        "attachmentIds": [],
+        "reactions": {},
+        "edited": false,
+        "receipt": ""
+      }
+    ],
+    "composer": {
+      "text": "",
+      "focused": false,
+      "keyboardVisible": false
+    },
+    "viewport": {
+      "surface": "conversation",
+      "anchorMessageId": "request",
+      "scrollOffset": 0
+    },
+    "typingSenderIds": []
+  },
+  "events": [
+    {
+      "id": "trail.photos.send",
+      "kind": "send",
+      "target": "photos",
+      "frame": 12,
+      "uiState": {
+        "conversationId": "trail-survey",
+        "messages": [
+          {
+            "id": "request",
+            "senderId": "asha",
+            "text": "Which viewpoint should we visit first?",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "photos",
+            "senderId": "lee",
+            "text": "",
+            "attachmentIds": [
+              "first-view",
+              "next-view"
+            ],
+            "reactions": {},
+            "edited": false,
+            "receipt": "",
+            "page": 0
+          }
+        ],
+        "composer": {
+          "text": "",
+          "focused": false,
+          "keyboardVisible": false
+        },
+        "viewport": {
+          "surface": "conversation",
+          "anchorMessageId": "photos",
+          "scrollOffset": 0
+        },
+        "typingSenderIds": []
+      },
+      "layerIds": [
+        "ui.message/photos"
+      ],
+      "sample": 24000
+    },
+    {
+      "id": "trail.photos.page",
+      "kind": "media.page",
+      "target": "photos",
+      "frame": 32,
+      "uiState": {
+        "conversationId": "trail-survey",
+        "messages": [
+          {
+            "id": "request",
+            "senderId": "asha",
+            "text": "Which viewpoint should we visit first?",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "photos",
+            "senderId": "lee",
+            "text": "",
+            "attachmentIds": [
+              "first-view",
+              "next-view"
+            ],
+            "reactions": {},
+            "edited": false,
+            "receipt": "",
+            "page": 1
+          }
+        ],
+        "composer": {
+          "text": "",
+          "focused": false,
+          "keyboardVisible": false
+        },
+        "viewport": {
+          "surface": "conversation",
+          "anchorMessageId": "photos",
+          "scrollOffset": 0
+        },
+        "typingSenderIds": []
+      },
+      "layerIds": [
+        "ui.message/photos/media"
+      ],
+      "sample": 64000
+    },
+    {
+      "id": "trail.photos.open",
+      "kind": "overlay",
+      "target": "photos",
+      "frame": 52,
+      "uiState": {
+        "conversationId": "trail-survey",
+        "messages": [
+          {
+            "id": "request",
+            "senderId": "asha",
+            "text": "Which viewpoint should we visit first?",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "photos",
+            "senderId": "lee",
+            "text": "",
+            "attachmentIds": [
+              "first-view",
+              "next-view"
+            ],
+            "reactions": {},
+            "edited": false,
+            "receipt": "",
+            "page": 1
+          }
+        ],
+        "composer": {
+          "text": "",
+          "focused": false,
+          "keyboardVisible": false
+        },
+        "viewport": {
+          "surface": "media",
+          "anchorMessageId": "photos",
+          "scrollOffset": 0,
+          "selection": [
+            "photos"
+          ]
+        },
+        "typingSenderIds": []
+      },
+      "layerIds": [
+        "ui.overlay",
+        "ui.inbox"
+      ],
+      "sample": 104000
+    },
+    {
+      "id": "trail.photos.close",
+      "kind": "overlay",
+      "target": "photos",
+      "frame": 68,
+      "uiState": {
+        "conversationId": "trail-survey",
+        "messages": [
+          {
+            "id": "request",
+            "senderId": "asha",
+            "text": "Which viewpoint should we visit first?",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "photos",
+            "senderId": "lee",
+            "text": "",
+            "attachmentIds": [
+              "first-view",
+              "next-view"
+            ],
+            "reactions": {},
+            "edited": false,
+            "receipt": "",
+            "page": 1
+          }
+        ],
+        "composer": {
+          "text": "",
+          "focused": false,
+          "keyboardVisible": false
+        },
+        "viewport": {
+          "surface": "conversation",
+          "anchorMessageId": "photos",
+          "scrollOffset": 0
+        },
+        "typingSenderIds": []
+      },
+      "layerIds": [
+        "ui.overlay",
+        "ui.inbox"
+      ],
+      "sample": 136000
+    }
+  ],
+  "cues": []
+}

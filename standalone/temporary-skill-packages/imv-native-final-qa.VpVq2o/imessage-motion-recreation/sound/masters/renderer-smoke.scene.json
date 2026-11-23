@@ -1,0 +1,31 @@
+{
+  "width": 320,
+  "height": 180,
+  "fps": 24,
+  "background": "#202734",
+  "layers": [
+    {
+      "id": "landmark",
+      "type": "rect",
+      "x": 20,
+      "y": 55,
+      "width": 100,
+      "height": 70,
+      "fill": "#ec8657",
+      "keyframes": {
+        "x": [
+          {
+            "t": 0,
+            "value": 20,
+            "ease": "hold"
+          },
+          {
+            "t": 0.5,
+            "value": 190
+          }
+        ]
+      }
+    }
+  ],
+  "duration": 1.0
+}

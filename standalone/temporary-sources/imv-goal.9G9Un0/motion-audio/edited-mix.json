@@ -1,0 +1,42 @@
+{
+  "picture_sha256": "a6abcf8b0236c285edc285a2285679f98fc6d4438d62b1db8f86b2521ca25f0a",
+  "plan_sha256": "1462a859065138fa45b37388444ea27f0088f8d79bad2591f7e6e02ea824cba8",
+  "mix_sha256": "8222f3b09c29f269ce76bb7652ea58aad275ddd3237dc10b567f5485ba88c96b",
+  "export_sha256": "1128d2716b4fa1ece5fa5f0f233547d2c4ee6d602585214d87e3de4f0469e343",
+  "picture_time_base": "1/12288",
+  "picture_duration": "19/4",
+  "sample_rate": 48000,
+  "sample_count": 228000,
+  "pcm_peak_dbfs": -15.9,
+  "stems": {
+    "dialogue": "bf4ff23c284cfb13fb0e5a9c6af25cdef087308a60e009bf8d9989823df0fc1e",
+    "music": "bf4ff23c284cfb13fb0e5a9c6af25cdef087308a60e009bf8d9989823df0fc1e",
+    "atmosphere": "bf4ff23c284cfb13fb0e5a9c6af25cdef087308a60e009bf8d9989823df0fc1e",
+    "effects": "8222f3b09c29f269ce76bb7652ea58aad275ddd3237dc10b567f5485ba88c96b"
+  },
+  "landmarks": {
+    "pickup.send": {
+      "frame": 39,
+      "pts": "13/8",
+      "score": 0.08031631097560976,
+      "sample": 78000
+    }
+  },
+  "cues": [
+    {
+      "id": "pickup.send.sound",
+      "event": "pickup.send",
+      "bus": "effects",
+      "purpose": "Accent the decoded outgoing bubble onset.",
+      "source": "Original procedural click in sound/example.py, random seed 271.",
+      "event_frame": 39,
+      "offset_samples": 0,
+      "asset_start_sample": 76560,
+      "onset_marker_sample": 77136,
+      "impact_sample": 78000,
+      "asset_sha256": "13d5e84b3447c784491be21605de37e8d31001dda04d9b4bf0398fd4e46d1d3e",
+      "asset_end_sample": 86160,
+      "gain_db": -10.0
+    }
+  ]
+}

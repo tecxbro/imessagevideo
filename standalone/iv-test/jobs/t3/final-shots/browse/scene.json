@@ -1,0 +1,408 @@
+{
+  "width": 720,
+  "height": 480,
+  "fps": 30,
+  "duration": 2.4,
+  "background": "#dce7f1",
+  "title": "Swipe one message to quote it",
+  "source": {
+    "path": "packs/conversation.mjs#swipe-to-quote",
+    "sourceStart": 0,
+    "sourceEnd": 2.4,
+    "notes": "Original editable Motion demonstration."
+  },
+  "layers": [
+    {
+      "id": "surface",
+      "type": "rect",
+      "x": 110,
+      "y": 44,
+      "width": 500,
+      "height": 392,
+      "fill": "#ffffff",
+      "radius": 18
+    },
+    {
+      "id": "stage",
+      "type": "group",
+      "x": 110,
+      "y": 98,
+      "children": [
+        {
+          "id": "quote-earlier",
+          "type": "group",
+          "x": 210,
+          "y": 58,
+          "children": [
+            {
+              "id": "quote-earlier-body",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 254,
+              "height": 54,
+              "fill": "#1688fa",
+              "radius": 20
+            },
+            {
+              "id": "quote-earlier-tail",
+              "type": "path",
+              "d": "M 238 36 Q 251 55 261 52 Q 251 48 252 34 Z",
+              "fill": "#1688fa"
+            },
+            {
+              "id": "quote-earlier-copy",
+              "type": "text",
+              "text": "Neon Pines tickets drop at\n10 - grab us two?",
+              "x": 17,
+              "y": 7.5,
+              "fontSize": 16,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#ffffff",
+              "lineHeight": 18
+            }
+          ]
+        },
+        {
+          "id": "quote-gesture-arrow",
+          "x": 30,
+          "y": 154,
+          "d": "M 20 0 L 7 11 L 20 22 M 8 11 H 31",
+          "type": "path",
+          "fill": "none",
+          "stroke": "#1478e9",
+          "strokeWidth": 3,
+          "lineCap": "round",
+          "lineJoin": "round",
+          "keyframes": {
+            "opacity": [
+              {
+                "t": 0,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 0.696,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 1.056,
+                "value": 1,
+                "ease": "easeOut"
+              },
+              {
+                "t": 1.416,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 1.608,
+                "value": 0,
+                "ease": "easeIn"
+              }
+            ]
+          }
+        },
+        {
+          "id": "quote-message",
+          "type": "group",
+          "x": 34,
+          "y": 138,
+          "children": [
+            {
+              "id": "quote-message-body",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 262,
+              "height": 54,
+              "fill": "#e9e9ed",
+              "radius": 20
+            },
+            {
+              "id": "quote-message-tail",
+              "type": "path",
+              "d": "M 16 36 Q 3 55 -7 52 Q 3 48 2 34 Z",
+              "fill": "#e9e9ed"
+            },
+            {
+              "id": "quote-message-copy",
+              "type": "text",
+              "text": "YES. Get us in!",
+              "x": 17,
+              "y": 14,
+              "fontSize": 16,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#17191d",
+              "lineHeight": 18
+            }
+          ],
+          "keyframes": {
+            "x": [
+              {
+                "t": 0,
+                "value": 34,
+                "ease": "linear"
+              },
+              {
+                "t": 0.528,
+                "value": 34,
+                "ease": "linear"
+              },
+              {
+                "t": 1.128,
+                "value": 115,
+                "ease": "linear"
+              },
+              {
+                "t": 1.248,
+                "value": 123,
+                "ease": "easeOut"
+              },
+              {
+                "t": 1.56,
+                "value": 30,
+                "ease": "easeOut"
+              },
+              {
+                "t": 1.728,
+                "value": 34,
+                "ease": "easeOut"
+              }
+            ]
+          }
+        },
+        {
+          "id": "quote-draft-preview",
+          "type": "group",
+          "x": 23,
+          "y": 285,
+          "children": [
+            {
+              "id": "quote-draft-shape",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 454,
+              "height": 53,
+              "fill": "#e8eef5",
+              "radius": 14
+            },
+            {
+              "id": "quote-draft-rule",
+              "type": "rect",
+              "x": 11,
+              "y": 11,
+              "width": 3,
+              "height": 30,
+              "fill": "#1478e9",
+              "radius": 1
+            },
+            {
+              "id": "quote-draft-label",
+              "type": "text",
+              "text": "Replying to Maya",
+              "x": 24,
+              "y": 7,
+              "fontSize": 13,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#1478e9",
+              "fontWeight": 600
+            },
+            {
+              "id": "quote-draft-snippet",
+              "type": "group",
+              "x": 24,
+              "y": 24,
+              "children": [
+                {
+                  "id": "quote-draft-snippet-copy",
+                  "type": "text",
+                  "text": "YES. Get us in!",
+                  "x": 0,
+                  "y": 0,
+                  "fontSize": 15,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#17191d"
+                }
+              ],
+              "clip": {
+                "x": 0,
+                "y": 0,
+                "width": 412,
+                "height": 24
+              }
+            }
+          ],
+          "keyframes": {
+            "y": [
+              {
+                "t": 0,
+                "value": 285,
+                "ease": "linear"
+              },
+              {
+                "t": 1.3679999999999999,
+                "value": 285,
+                "ease": "linear"
+              },
+              {
+                "t": 1.728,
+                "value": 242,
+                "ease": "easeOut"
+              }
+            ],
+            "opacity": [
+              {
+                "t": 0,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 1.3679999999999999,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 1.6320000000000001,
+                "value": 1,
+                "ease": "easeOut"
+              }
+            ]
+          }
+        }
+      ],
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 500,
+        "height": 298
+      }
+    },
+    {
+      "id": "footer",
+      "type": "group",
+      "x": 110,
+      "y": 396,
+      "children": [
+        {
+          "id": "footer-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 40,
+          "fill": "#f2f6fb",
+          "radius": 12
+        },
+        {
+          "id": "quote-composer",
+          "type": "group",
+          "x": 23,
+          "y": 0,
+          "children": [
+            {
+              "id": "quote-composer-field",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 454,
+              "height": 48,
+              "fill": "#ffffff",
+              "radius": 24,
+              "stroke": "#d8dbe0",
+              "strokeWidth": 1
+            },
+            {
+              "id": "quote-composer-input",
+              "type": "text",
+              "text": "Message",
+              "x": 18,
+              "y": 14,
+              "fontSize": 17,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#777b84"
+            },
+            {
+              "id": "quote-composer-send",
+              "type": "circle",
+              "x": 414,
+              "y": 8,
+              "width": 32,
+              "height": 32,
+              "fill": "#d8dbe0"
+            },
+            {
+              "id": "quote-composer-arrow",
+              "type": "path",
+              "d": "M 430 33 L 430 16 M 423 23 L 430 16 L 437 23",
+              "fill": "none",
+              "stroke": "#ffffff",
+              "strokeWidth": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "heading",
+      "type": "group",
+      "x": 110,
+      "y": 44,
+      "children": [
+        {
+          "id": "heading-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 54,
+          "fill": "#f2f6fb",
+          "radius": 13
+        },
+        {
+          "id": "heading-copy",
+          "type": "text",
+          "text": "Maya",
+          "x": 26,
+          "y": 13,
+          "fontSize": 23,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#182737",
+          "fontWeight": 700
+        }
+      ]
+    }
+  ],
+  "timeline": {
+    "version": 1,
+    "picture": {
+      "fpsNum": 30,
+      "fpsDen": 1,
+      "frameCount": 72
+    },
+    "initialUI": null,
+    "events": [
+      {
+        "id": "motion.swipe-to-quote.reply-gesture-commit",
+        "kind": "swipe_commit",
+        "target": "quote-message",
+        "frame": 35,
+        "layerIds": [
+          "quote-message"
+        ]
+      },
+      {
+        "id": "motion.swipe-to-quote.reply-draft-open",
+        "kind": "reply_compose_open",
+        "target": "quote-draft-preview",
+        "frame": 47,
+        "layerIds": [
+          "quote-draft-preview"
+        ]
+      }
+    ],
+    "cues": []
+  }
+}

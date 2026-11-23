@@ -1,0 +1,40 @@
+{
+  "id": "photos-under-fixed-heading",
+  "sourceSHA256": "768fd6dff8aebaba88b7fbd84358e3b3438e24a8c750cc7e051a422a246d69a2",
+  "sceneSHA256": "c90891703751134270bcb88f5ce70d9f0393bcbd3dec9a123bcdb09a705b6edc",
+  "events": [
+    {
+      "id": "ui.photos-fixed-header.swipe",
+      "frame": 19,
+      "roleLayers": [
+        "ui.message/photos/media"
+      ]
+    }
+  ],
+  "bindings": {
+    "viewport": "ui.viewport",
+    "message": "ui.message/photos",
+    "attachment": "ui.message/photos/media",
+    "carousel": "ui.message/photos/rail",
+    "screen": "ui.screen",
+    "header": "ui.header",
+    "composer": "ui.composer",
+    "transcript": "ui.transcript",
+    "attachmentViewport": "ui.message/photos/media-window"
+  },
+  "verification": {
+    "ok": true,
+    "mode": "adapter-recipe",
+    "issues": [],
+    "evidence": "structural-only",
+    "checkedWindow": [
+      18,
+      30
+    ]
+  },
+  "window": [
+    18,
+    30
+  ],
+  "status": "compiled-messages-interaction"
+}

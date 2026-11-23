@@ -1,0 +1,93 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 40
+  },
+  "sampleRate": 48000,
+  "sampleCount": 64000,
+  "initialUI": {
+    "conversationId": "thread.meeting",
+    "messages": [
+      {
+        "id": "north-door",
+        "senderId": "remote",
+        "text": "I’m at the north door.",
+        "attachmentIds": [],
+        "reactions": {},
+        "edited": false,
+        "receipt": ""
+      },
+      {
+        "id": "in-transit",
+        "senderId": "local",
+        "text": "Meet by the bench.",
+        "attachmentIds": [],
+        "reactions": {},
+        "edited": false,
+        "receipt": ""
+      }
+    ],
+    "composer": {
+      "text": "",
+      "focused": false,
+      "keyboardVisible": false
+    },
+    "viewport": {
+      "surface": "conversation",
+      "anchorMessageId": "in-transit",
+      "scrollOffset": 0
+    },
+    "typingSenderIds": []
+  },
+  "events": [
+    {
+      "id": "typing-now",
+      "kind": "typing",
+      "target": "remote",
+      "frame": 8,
+      "uiState": {
+        "conversationId": "thread.meeting",
+        "messages": [
+          {
+            "id": "north-door",
+            "senderId": "remote",
+            "text": "I’m at the north door.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "in-transit",
+            "senderId": "local",
+            "text": "Meet by the bench.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          }
+        ],
+        "composer": {
+          "text": "",
+          "focused": false,
+          "keyboardVisible": false
+        },
+        "viewport": {
+          "surface": "conversation",
+          "anchorMessageId": "in-transit",
+          "scrollOffset": 0
+        },
+        "typingSenderIds": [
+          "remote"
+        ]
+      },
+      "layerIds": [
+        "ui.typing"
+      ],
+      "sample": 12800
+    }
+  ],
+  "cues": []
+}

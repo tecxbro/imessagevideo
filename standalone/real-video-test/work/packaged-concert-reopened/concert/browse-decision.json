@@ -1,0 +1,241 @@
+{
+  "request": "Make an iMessage video about two friends getting concert tickets.",
+  "intent": "direct",
+  "scope": "film",
+  "library": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/final-run/library",
+  "sources": [],
+  "project": null,
+  "workflow": [
+    "establish_brief",
+    "search_library_for_each_shot",
+    "show_shots_with_motion_previews_and_code",
+    "review_direction_with_user",
+    "choose_one_renderer",
+    "prove_hardest_shot",
+    "render_approved_cut"
+  ],
+  "next": "draft_shots_from_library",
+  "motion_choices": {
+    "query": "browse ticket options",
+    "decision": "inspect_candidates",
+    "seed_decision": "retrieve",
+    "seed_reason": "Browse pictures inside a place or album surface with persistent labels. Use the separate UI adapter variant for inline conversation paging.",
+    "learned": [],
+    "seed": [
+      {
+        "id": "photos-under-fixed-heading",
+        "title": "Slide the photos beneath a fixed heading",
+        "moves": "Adjacent photos translate together on one horizontally clipped rail.",
+        "fixed": "The heading, viewport, divider and supporting footer stay in place.",
+        "notice": "The next photo comes into view while the place and surrounding context remain easy to read.",
+        "fits": "Browse pictures inside a place or album surface with persistent labels. Use the separate UI adapter variant for inline conversation paging.",
+        "avoid": "A stack that lifts or dismisses only its front photo needs independent layers and depth.",
+        "intents": [
+          "Move the photos beneath a fixed heading",
+          "Slide pictures horizontally under a title that stays put",
+          "Keep the shop name pinned as the storefront photos glide past",
+          "Scroll images without moving the header",
+          "Browse ticket options on a card rail while the event name stays visible"
+        ],
+        "editable": [
+          "heading",
+          "detail",
+          "photos",
+          "direction",
+          "message"
+        ],
+        "editableFields": {
+          "heading": "text",
+          "detail": "text",
+          "photos": "array of local PNG, JPEG or WebP paths, relative to the content JSON",
+          "direction": "left or right",
+          "message": "optional stationary message beneath the photo rail"
+        },
+        "photoCount": {
+          "min": 2,
+          "max": 12
+        },
+        "source": {
+          "kind": "measured-adaptation",
+          "ref": "projects/05-linq-complete-v1/imessage-recreations/references/05-linq/source.mp4",
+          "range": [
+            36.266666666666666,
+            37.8
+          ],
+          "framesInclusive": [
+            1088,
+            1134
+          ],
+          "note": "Native Linq rail displacements after the entrance camera move, including the acceleration, deceleration and final hold. Replanted at a new size with independent imagery and a fixed heading."
+        },
+        "events": [
+          {
+            "id": "motion.photos-under-fixed-heading.rail-start",
+            "kind": "media.scroll",
+            "frame": 13
+          },
+          {
+            "id": "motion.photos-under-fixed-heading.rail-settle",
+            "kind": "media.settle",
+            "frame": 54
+          }
+        ],
+        "picture": {
+          "fpsNum": 30,
+          "fpsDen": 1,
+          "frameCount": 72
+        },
+        "sha256": "fbd12bb6f99a35a45e901d053b6f466dd94791374a42cc038f9d4ff215e7b2d3",
+        "implementation": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/imessagevideo/skill/imessage-video/assets/seed/runtime/motion/packs/core.mjs",
+        "preview": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/imessagevideo/skill/imessage-video/assets/seed/previews/photos-under-fixed-heading.mp4",
+        "selectionEvidence": {
+          "id": "photos-under-fixed-heading",
+          "score": 15.51,
+          "signals": [
+            "browse",
+            "ticket",
+            "option"
+          ],
+          "distinctive": [
+            "browse",
+            "ticket",
+            "option"
+          ],
+          "issues": []
+        }
+      },
+      {
+        "id": "tear-perforated-ticket",
+        "title": "Separate a ticket along its perforation",
+        "moves": "A perforated seam parts left to right as the stub tilts around the still-joined edge, then drops once detached.",
+        "fixed": "The main ticket, its copy and the backdrop stay pinned.",
+        "notice": "The smaller section belonged to the original ticket and is now independently usable.",
+        "fits": "Show a detachable stub or one part becoming independent after separation.",
+        "avoid": "An ordinary close action has no physical seam, and a stack reveal keeps its surfaces intact.",
+        "intents": [
+          "Tear the receipt stub off along the perforated line",
+          "Detach the bottom of a ticket while the top stays pinned"
+        ],
+        "editable": [
+          "heading",
+          "title",
+          "detail",
+          "action"
+        ],
+        "editableFields": {
+          "heading": "text",
+          "title": "text",
+          "detail": "text",
+          "action": "text"
+        },
+        "source": {
+          "kind": "authored",
+          "ref": "packs/inherited.mjs#tear-perforated-ticket",
+          "range": [
+            0,
+            2.4
+          ]
+        },
+        "events": [
+          {
+            "id": "motion.tear-perforated-ticket.tear-start",
+            "kind": "ticket.tear",
+            "frame": 18
+          },
+          {
+            "id": "motion.tear-perforated-ticket.stub-detaches",
+            "kind": "ticket.detach",
+            "frame": 44
+          }
+        ],
+        "picture": {
+          "fpsNum": 30,
+          "fpsDen": 1,
+          "frameCount": 72
+        },
+        "sha256": "cbd6bd1326bfab35fd0b630bcd8e29934d33b64536712214fc2741aeee8663e8",
+        "implementation": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/imessagevideo/skill/imessage-video/assets/seed/runtime/motion/packs/inherited.mjs",
+        "preview": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/imessagevideo/skill/imessage-video/assets/seed/previews/tear-perforated-ticket.mp4",
+        "selectionEvidence": {
+          "id": "tear-perforated-ticket",
+          "score": 3.98,
+          "signals": [
+            "ticket"
+          ],
+          "distinctive": [
+            "ticket"
+          ],
+          "issues": []
+        }
+      },
+      {
+        "id": "long-press-actions",
+        "title": "Reveal actions around a pressed message",
+        "moves": "Context dims while the option tray opens below the held row and the reaction rail grows above it.",
+        "fixed": "The selected message stays centered on its original slot throughout the reveal.",
+        "notice": "The press selects one message and exposes possible actions.",
+        "fits": "Introduce options tied to a single message without implying a choice has happened.",
+        "avoid": "A held menu should not imply a reaction was picked, content was deleted, or the full conversation changed.",
+        "intents": [
+          "Long press one message and show the reaction choices",
+          "Open the menu around a bubble without moving it",
+          "Dim the chat around one selected message"
+        ],
+        "editable": [
+          "heading",
+          "copy",
+          "reply"
+        ],
+        "editableFields": {
+          "heading": "text",
+          "copy": "text",
+          "reply": "text"
+        },
+        "source": {
+          "kind": "measured-adaptation",
+          "ref": "https://github.com/theswerd/imessage-ui/blob/1f132909792ff540501385f91d37ef20629c55b7/references/ios/motion/longpress-60fps.mp4",
+          "range": [
+            1.4166666666666667,
+            1.9166666666666667
+          ],
+          "frames": [
+            85,
+            114
+          ],
+          "note": "Recorded window covers the selected row, dimming, menu and bar entrance. The source calibration gives a 380 ms menu entrance. Preview artwork, blur treatment and control labels are adapted."
+        },
+        "events": [
+          {
+            "id": "motion.long-press-actions.hold-threshold",
+            "kind": "long_press",
+            "frame": 20
+          },
+          {
+            "id": "motion.long-press-actions.actions-ready",
+            "kind": "menu_open",
+            "frame": 31
+          }
+        ],
+        "picture": {
+          "fpsNum": 30,
+          "fpsDen": 1,
+          "frameCount": 72
+        },
+        "sha256": "baa14ceac75a4f7d067e06e4a44e8cfbda604e28bb7bc2f2ebb33076cc238572",
+        "implementation": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/imessagevideo/skill/imessage-video/assets/seed/runtime/motion/packs/conversation.mjs",
+        "preview": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/imessagevideo/skill/imessage-video/assets/seed/previews/long-press-actions.mp4",
+        "selectionEvidence": {
+          "id": "long-press-actions",
+          "score": 3.76,
+          "signals": [
+            "option"
+          ],
+          "distinctive": [
+            "option"
+          ],
+          "issues": []
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,204 @@
+{
+  "width": 720,
+  "height": 480,
+  "fps": 30,
+  "duration": 2.4,
+  "background": "#dce7f1",
+  "title": "Reframe a photo inside a fixed crop",
+  "source": {
+    "path": "packs/media.mjs#photo-crop-reframe",
+    "sourceStart": 0,
+    "sourceEnd": 2.4,
+    "notes": "Motion-authored shot. Gesture and timing are illustrative."
+  },
+  "layers": [
+    {
+      "id": "surface",
+      "type": "rect",
+      "x": 110,
+      "y": 44,
+      "width": 500,
+      "height": 392,
+      "fill": "#ffffff",
+      "radius": 18
+    },
+    {
+      "id": "stage",
+      "type": "group",
+      "x": 110,
+      "y": 98,
+      "children": [
+        {
+          "id": "crop-frame",
+          "type": "group",
+          "x": 182,
+          "y": 20,
+          "children": [
+            {
+              "id": "crop-photo",
+              "type": "image",
+              "src": "assets/4db64d5acedc3877-landscape-1.png",
+              "x": -85,
+              "y": 0,
+              "width": 363,
+              "height": 242,
+              "keyframes": {
+                "x": [
+                  {
+                    "t": 0,
+                    "value": -85,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 0.576,
+                    "value": -85,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 1.56,
+                    "value": 0,
+                    "ease": "easeInOut"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "crop-vertical-1",
+              "type": "rect",
+              "x": 45.333333333333336,
+              "y": 0,
+              "width": 1,
+              "height": 242,
+              "fill": "#ffffff",
+              "radius": 0,
+              "opacity": 0.73
+            },
+            {
+              "id": "crop-horizontal-1",
+              "type": "rect",
+              "x": 0,
+              "y": 80.66666666666667,
+              "width": 136,
+              "height": 1,
+              "fill": "#ffffff",
+              "radius": 0,
+              "opacity": 0.73
+            },
+            {
+              "id": "crop-vertical-2",
+              "type": "rect",
+              "x": 90.66666666666667,
+              "y": 0,
+              "width": 1,
+              "height": 242,
+              "fill": "#ffffff",
+              "radius": 0,
+              "opacity": 0.73
+            },
+            {
+              "id": "crop-horizontal-2",
+              "type": "rect",
+              "x": 0,
+              "y": 161.33333333333334,
+              "width": 136,
+              "height": 1,
+              "fill": "#ffffff",
+              "radius": 0,
+              "opacity": 0.73
+            }
+          ],
+          "clip": {
+            "x": 0,
+            "y": 0,
+            "width": 136,
+            "height": 242,
+            "radius": 10
+          }
+        }
+      ],
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 500,
+        "height": 298
+      }
+    },
+    {
+      "id": "footer",
+      "type": "group",
+      "x": 110,
+      "y": 396,
+      "children": [
+        {
+          "id": "footer-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 40,
+          "fill": "#f2f6fb",
+          "radius": 12
+        }
+      ]
+    },
+    {
+      "id": "heading",
+      "type": "group",
+      "x": 110,
+      "y": 44,
+      "children": [
+        {
+          "id": "heading-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 54,
+          "fill": "#f2f6fb",
+          "radius": 13
+        },
+        {
+          "id": "heading-copy",
+          "type": "text",
+          "text": "Alpine field notes",
+          "x": 26,
+          "y": 13,
+          "fontSize": 23,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#182737",
+          "fontWeight": 700
+        }
+      ]
+    }
+  ],
+  "timeline": {
+    "version": 1,
+    "picture": {
+      "fpsNum": 30,
+      "fpsDen": 1,
+      "frameCount": 72
+    },
+    "initialUI": null,
+    "events": [
+      {
+        "id": "motion.photo-crop-reframe.crop-drag",
+        "kind": "drag",
+        "target": "crop-photo",
+        "frame": 18,
+        "layerIds": [
+          "crop-photo"
+        ]
+      },
+      {
+        "id": "motion.photo-crop-reframe.crop-settle",
+        "kind": "gesture_end",
+        "target": "crop-photo",
+        "frame": 47,
+        "layerIds": [
+          "crop-photo"
+        ]
+      }
+    ],
+    "cues": []
+  }
+}

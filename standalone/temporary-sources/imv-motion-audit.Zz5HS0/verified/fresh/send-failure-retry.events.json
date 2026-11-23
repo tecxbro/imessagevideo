@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 72
+  },
+  "initialUI": null,
+  "events": [
+    {
+      "id": "motion.send-failure-retry.delivery-failed",
+      "kind": "delivery_error",
+      "target": "failed-outgoing",
+      "frame": 30,
+      "layerIds": [
+        "failed-outgoing"
+      ]
+    },
+    {
+      "id": "motion.send-failure-retry.retry-ready",
+      "kind": "retry_ready",
+      "target": "failed-retry-control",
+      "frame": 42,
+      "layerIds": [
+        "failed-retry-control"
+      ]
+    }
+  ],
+  "cues": []
+}

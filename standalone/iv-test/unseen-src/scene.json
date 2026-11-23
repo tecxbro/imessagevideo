@@ -1,0 +1,143 @@
+{
+  "width": 960,
+  "height": 720,
+  "fps": 30,
+  "duration": 5.0,
+  "background": "#ffffff",
+  "layers": [
+    {
+      "id": "navbar-back",
+      "type": "text",
+      "x": 36, "y": 40,
+      "text": "‹",
+      "fontFamily": "Helvetica,sans-serif",
+      "fontSize": 56,
+      "fontWeight": "300",
+      "fill": "#0A84FF"
+    },
+    {
+      "id": "navbar-avatar",
+      "type": "circle",
+      "x": 456, "y": 20,
+      "radius": 24,
+      "fill": "#D1D1D6"
+    },
+    {
+      "id": "navbar-name",
+      "type": "text",
+      "x": 480, "y": 76,
+      "text": "Sam",
+      "fontFamily": "Helvetica,sans-serif",
+      "fontSize": 22,
+      "fontWeight": "600",
+      "textAnchor": "middle",
+      "fill": "#000000"
+    },
+    {
+      "id": "navbar-divider",
+      "type": "rect",
+      "x": 0, "y": 126, "width": 960, "height": 2,
+      "fill": "#C6C6C8"
+    },
+    {
+      "id": "msg-out-1",
+      "type": "group",
+      "x": 560, "y": 180,
+      "children": [
+        {
+          "id": "msg-out-1-bubble",
+          "type": "rect",
+          "x": 0, "y": 0, "width": 340, "height": 60,
+          "radius": 30,
+          "fill": "#0A84FF"
+        },
+        {
+          "id": "msg-out-1-text",
+          "type": "text",
+          "x": 170, "y": 15,
+          "text": "train gets in at 6",
+          "fontFamily": "Helvetica,sans-serif",
+          "fontSize": 26,
+          "textAnchor": "middle",
+          "fill": "#ffffff"
+        }
+      ]
+    },
+    {
+      "id": "msg-in-1",
+      "type": "group",
+      "x": 60, "y": 270,
+      "children": [
+        {
+          "id": "msg-in-1-bubble",
+          "type": "rect",
+          "x": 0, "y": 0, "width": 310, "height": 60,
+          "radius": 30,
+          "fill": "#E9E9EB"
+        },
+        {
+          "id": "msg-in-1-text",
+          "type": "text",
+          "x": 155, "y": 15,
+          "text": "see you there",
+          "fontFamily": "Helvetica,sans-serif",
+          "fontSize": 26,
+          "textAnchor": "middle",
+          "fill": "#000000"
+        }
+      ]
+    },
+    {
+      "id": "msg-doors",
+      "type": "group",
+      "x": 60, "y": 360,
+      "start": 0.5,
+      "originX": 125, "originY": 60,
+      "keyframes": {
+        "y": [
+          {"t": 0.5, "value": 430},
+          {"t": 0.8666666667, "value": 360, "ease": "easeOut"}
+        ],
+        "scaleX": [
+          {"t": 0.8666666667, "value": 1.0},
+          {"t": 1.0, "value": 1.18},
+          {"t": 1.3333333333, "value": 0.90},
+          {"t": 1.6666666667, "value": 1.08},
+          {"t": 2.0, "value": 0.965},
+          {"t": 2.3333333333, "value": 1.02},
+          {"t": 2.6666666667, "value": 0.997},
+          {"t": 3.0, "value": 1.0}
+        ],
+        "scaleY": [
+          {"t": 0.8666666667, "value": 1.0},
+          {"t": 1.0, "value": 0.85},
+          {"t": 1.3333333333, "value": 1.12},
+          {"t": 1.6666666667, "value": 0.95},
+          {"t": 2.0, "value": 1.045},
+          {"t": 2.3333333333, "value": 0.985},
+          {"t": 2.6666666667, "value": 1.004},
+          {"t": 3.0, "value": 1.0}
+        ]
+      },
+      "children": [
+        {
+          "id": "msg-doors-bubble",
+          "type": "rect",
+          "x": 0, "y": 0, "width": 250, "height": 60,
+          "radius": 30,
+          "fill": "#E9E9EB"
+        },
+        {
+          "id": "msg-doors-text",
+          "type": "text",
+          "x": 125, "y": 15,
+          "text": "doors at 7",
+          "fontFamily": "Helvetica,sans-serif",
+          "fontSize": 26,
+          "textAnchor": "middle",
+          "fill": "#000000"
+        }
+      ]
+    }
+  ]
+}

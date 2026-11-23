@@ -1,0 +1,545 @@
+{
+  "width": 720,
+  "height": 480,
+  "fps": 30,
+  "duration": 2.4,
+  "background": "#dce7f1",
+  "title": "Type a draft in place",
+  "source": {
+    "path": "packs/conversation.mjs#composer-type",
+    "sourceStart": 0,
+    "sourceEnd": 2.4,
+    "notes": "Original editable Motion demonstration."
+  },
+  "layers": [
+    {
+      "id": "surface",
+      "type": "rect",
+      "x": 110,
+      "y": 44,
+      "width": 500,
+      "height": 392,
+      "fill": "#ffffff",
+      "radius": 18
+    },
+    {
+      "id": "stage",
+      "type": "group",
+      "x": 110,
+      "y": 98,
+      "children": [
+        {
+          "id": "type-prior-message",
+          "type": "group",
+          "x": 30,
+          "y": 164,
+          "children": [
+            {
+              "id": "type-prior-message-body",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 262,
+              "height": 54,
+              "fill": "#e9e9ed",
+              "radius": 20
+            },
+            {
+              "id": "type-prior-message-tail",
+              "type": "path",
+              "d": "M 16 36 Q 3 55 -7 52 Q 3 48 2 34 Z",
+              "fill": "#e9e9ed"
+            },
+            {
+              "id": "type-prior-message-copy",
+              "type": "text",
+              "text": "Here it is. Meet at the north\ngate.",
+              "x": 17,
+              "y": 7.5,
+              "fontSize": 16,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#17191d",
+              "lineHeight": 18
+            }
+          ]
+        }
+      ],
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 500,
+        "height": 298
+      }
+    },
+    {
+      "id": "footer",
+      "type": "group",
+      "x": 110,
+      "y": 396,
+      "children": [
+        {
+          "id": "footer-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 40,
+          "fill": "#f2f6fb",
+          "radius": 12
+        },
+        {
+          "id": "type-draft",
+          "type": "group",
+          "x": 23,
+          "y": 0,
+          "children": [
+            {
+              "id": "type-draft-field",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 454,
+              "height": 48,
+              "fill": "#ffffff",
+              "radius": 24,
+              "stroke": "#d8dbe0",
+              "strokeWidth": 1
+            },
+            {
+              "id": "type-draft-input",
+              "type": "text",
+              "text": "Message",
+              "x": 18,
+              "y": 14,
+              "fontSize": 17,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#777b84",
+              "keyframes": {
+                "text": [
+                  {
+                    "t": 0,
+                    "value": "Message",
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 0.3640754716981132,
+                    "value": "C",
+                    "ease": "hold"
+                  },
+                  {
+                    "t": 0.4161509433962264,
+                    "value": "Ca",
+                    "ease": "hold"
+                  },
+                  {
+                    "t": 0.4682264150943396,
+                    "value": "Can",
+                    "ease": "hold"
+                  },
+                  {
+                    "t": 0.5619622641509434,
+                    "value": "Can ",
+                    "ease": "hold"
+                  },
+                  {
+                    "t": 0.6140377358490565,
+                    "value": "Can y",
+                    "ease": "hold"
+                  },
+                  {
+                    "t": 0.6661132075471698,
+                    "value": "Can yo",
+                    "ease": "hold"
+                  },
+                  {
+                    "t": 0.7181886792452828,
+                    "value": "Can you",
+                    "ease": "hold"
+                  },
+                  {
+                    "t": 0.8119245283018868,
+                    "value": "Can you ",
+                    "ease": "hold"
+                  },
+                  {
+                    "t": 0.864,
+                    "value": "Can you s",
+                    "ease": "hold"
+                  },
+                  {
+                    "t": 0.9160754716981131,
+                    "value": "Can you se",
+                    "ease": "hold"
+                  },
+                  {
+                    "t": 0.9681509433962263,
+                    "value": "Can you sen",
+                    "ease": "hold"
+                  },
+                  {
+                    "t": 1.0202264150943394,
+                    "value": "Can you send",
+                    "ease": "hold"
+                  },
+                  {
+                    "t": 1.1139622641509432,
+                    "value": "Can you send ",
+                    "ease": "hold"
+                  },
+                  {
+                    "t": 1.1660377358490563,
+                    "value": "Can you send t",
+                    "ease": "hold"
+                  },
+                  {
+                    "t": 1.2181132075471697,
+                    "value": "Can you send th",
+                    "ease": "hold"
+                  },
+                  {
+                    "t": 1.2701886792452828,
+                    "value": "Can you send the",
+                    "ease": "hold"
+                  },
+                  {
+                    "t": 1.3639245283018866,
+                    "value": "Can you send the ",
+                    "ease": "hold"
+                  },
+                  {
+                    "t": 1.416,
+                    "value": "Can you send the t",
+                    "ease": "hold"
+                  },
+                  {
+                    "t": 1.468075471698113,
+                    "value": "Can you send the tr",
+                    "ease": "hold"
+                  },
+                  {
+                    "t": 1.5201509433962264,
+                    "value": "Can you send the tra",
+                    "ease": "hold"
+                  },
+                  {
+                    "t": 1.5722264150943392,
+                    "value": "Can you send the trai",
+                    "ease": "hold"
+                  },
+                  {
+                    "t": 1.6243018867924526,
+                    "value": "Can you send the trail",
+                    "ease": "hold"
+                  },
+                  {
+                    "t": 1.7180377358490564,
+                    "value": "Can you send the trail ",
+                    "ease": "hold"
+                  },
+                  {
+                    "t": 1.7701132075471697,
+                    "value": "Can you send the trail m",
+                    "ease": "hold"
+                  },
+                  {
+                    "t": 1.8221886792452828,
+                    "value": "Can you send the trail ma",
+                    "ease": "hold"
+                  },
+                  {
+                    "t": 1.8742641509433962,
+                    "value": "Can you send the trail map",
+                    "ease": "hold"
+                  },
+                  {
+                    "t": 1.9679999999999997,
+                    "value": "Can you send the trail map?",
+                    "ease": "hold"
+                  }
+                ],
+                "fill": [
+                  {
+                    "t": 0,
+                    "value": "#516277",
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 0.3640754716981132,
+                    "value": "#182737",
+                    "ease": "hold"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "type-draft-send",
+              "type": "circle",
+              "x": 414,
+              "y": 8,
+              "width": 32,
+              "height": 32,
+              "fill": "#d8dbe0",
+              "keyframes": {
+                "fill": [
+                  {
+                    "t": 0,
+                    "value": "#e8eef5",
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 0.3640754716981132,
+                    "value": "#1478e9",
+                    "ease": "hold"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "type-draft-arrow",
+              "type": "path",
+              "d": "M 430 33 L 430 16 M 423 23 L 430 16 L 437 23",
+              "fill": "none",
+              "stroke": "#ffffff",
+              "strokeWidth": 2
+            },
+            {
+              "id": "typing-caret",
+              "type": "rect",
+              "x": 18,
+              "y": 12,
+              "width": 2,
+              "height": 24,
+              "fill": "#1478e9",
+              "radius": 0,
+              "keyframes": {
+                "x": [
+                  {
+                    "t": 0,
+                    "value": 18,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 0.3640754716981132,
+                    "value": 29.7,
+                    "ease": "hold"
+                  },
+                  {
+                    "t": 0.4161509433962264,
+                    "value": 38.4,
+                    "ease": "hold"
+                  },
+                  {
+                    "t": 0.4682264150943396,
+                    "value": 47.099999999999994,
+                    "ease": "hold"
+                  },
+                  {
+                    "t": 0.5619622641509434,
+                    "value": 51.9,
+                    "ease": "hold"
+                  },
+                  {
+                    "t": 0.6140377358490565,
+                    "value": 60.599999999999994,
+                    "ease": "hold"
+                  },
+                  {
+                    "t": 0.6661132075471698,
+                    "value": 69.3,
+                    "ease": "hold"
+                  },
+                  {
+                    "t": 0.7181886792452828,
+                    "value": 78,
+                    "ease": "hold"
+                  },
+                  {
+                    "t": 0.8119245283018868,
+                    "value": 82.8,
+                    "ease": "hold"
+                  },
+                  {
+                    "t": 0.864,
+                    "value": 91.5,
+                    "ease": "hold"
+                  },
+                  {
+                    "t": 0.9160754716981131,
+                    "value": 100.2,
+                    "ease": "hold"
+                  },
+                  {
+                    "t": 0.9681509433962263,
+                    "value": 108.9,
+                    "ease": "hold"
+                  },
+                  {
+                    "t": 1.0202264150943394,
+                    "value": 117.60000000000001,
+                    "ease": "hold"
+                  },
+                  {
+                    "t": 1.1139622641509432,
+                    "value": 122.4,
+                    "ease": "hold"
+                  },
+                  {
+                    "t": 1.1660377358490563,
+                    "value": 131.10000000000002,
+                    "ease": "hold"
+                  },
+                  {
+                    "t": 1.2181132075471697,
+                    "value": 139.8,
+                    "ease": "hold"
+                  },
+                  {
+                    "t": 1.2701886792452828,
+                    "value": 148.5,
+                    "ease": "hold"
+                  },
+                  {
+                    "t": 1.3639245283018866,
+                    "value": 153.3,
+                    "ease": "hold"
+                  },
+                  {
+                    "t": 1.416,
+                    "value": 162,
+                    "ease": "hold"
+                  },
+                  {
+                    "t": 1.468075471698113,
+                    "value": 170.7,
+                    "ease": "hold"
+                  },
+                  {
+                    "t": 1.5201509433962264,
+                    "value": 179.39999999999998,
+                    "ease": "hold"
+                  },
+                  {
+                    "t": 1.5722264150943392,
+                    "value": 184.2,
+                    "ease": "hold"
+                  },
+                  {
+                    "t": 1.6243018867924526,
+                    "value": 189,
+                    "ease": "hold"
+                  },
+                  {
+                    "t": 1.7180377358490564,
+                    "value": 193.8,
+                    "ease": "hold"
+                  },
+                  {
+                    "t": 1.7701132075471697,
+                    "value": 208.20000000000002,
+                    "ease": "hold"
+                  },
+                  {
+                    "t": 1.8221886792452828,
+                    "value": 216.9,
+                    "ease": "hold"
+                  },
+                  {
+                    "t": 1.8742641509433962,
+                    "value": 225.6,
+                    "ease": "hold"
+                  },
+                  {
+                    "t": 1.9679999999999997,
+                    "value": 234.29999999999998,
+                    "ease": "hold"
+                  }
+                ],
+                "opacity": [
+                  {
+                    "t": 0,
+                    "value": 0,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 0.288,
+                    "value": 1,
+                    "ease": "hold"
+                  },
+                  {
+                    "t": 2.112,
+                    "value": 0,
+                    "ease": "hold"
+                  },
+                  {
+                    "t": 2.304,
+                    "value": 1,
+                    "ease": "hold"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "heading",
+      "type": "group",
+      "x": 110,
+      "y": 44,
+      "children": [
+        {
+          "id": "heading-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 54,
+          "fill": "#f2f6fb",
+          "radius": 13
+        },
+        {
+          "id": "heading-copy",
+          "type": "text",
+          "text": "Alpine field notes",
+          "x": 26,
+          "y": 13,
+          "fontSize": 23,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#182737",
+          "fontWeight": 700
+        }
+      ]
+    }
+  ],
+  "timeline": {
+    "version": 1,
+    "picture": {
+      "fpsNum": 30,
+      "fpsDen": 1,
+      "frameCount": 72
+    },
+    "initialUI": null,
+    "events": [
+      {
+        "id": "motion.composer-type.first-character",
+        "kind": "typing",
+        "target": "type-draft-input",
+        "frame": 11,
+        "layerIds": [
+          "type-draft-input"
+        ]
+      },
+      {
+        "id": "motion.composer-type.draft-complete",
+        "kind": "typing_end",
+        "target": "type-draft-input",
+        "frame": 60,
+        "layerIds": [
+          "type-draft-input"
+        ]
+      }
+    ],
+    "cues": []
+  }
+}

@@ -1,0 +1,518 @@
+{
+  "width": 720,
+  "height": 480,
+  "fps": 30,
+  "duration": 2.4,
+  "background": "#dce7f1",
+  "title": "Reveal actions around a pressed message",
+  "source": {
+    "path": "https://github.com/theswerd/imessage-ui/blob/1f132909792ff540501385f91d37ef20629c55b7/references/ios/motion/longpress-60fps.mp4",
+    "sourceStart": 1.4166666666666667,
+    "sourceEnd": 1.9166666666666667,
+    "notes": "Recorded window covers the selected row, dimming, menu and bar entrance. The source calibration gives a 380 ms menu entrance. Preview artwork, blur treatment and control labels are adapted."
+  },
+  "layers": [
+    {
+      "id": "surface",
+      "type": "rect",
+      "x": 110,
+      "y": 44,
+      "width": 500,
+      "height": 392,
+      "fill": "#ffffff",
+      "radius": 18
+    },
+    {
+      "id": "stage",
+      "type": "group",
+      "x": 110,
+      "y": 98,
+      "children": [
+        {
+          "id": "actions-context",
+          "type": "group",
+          "x": 28,
+          "y": 38,
+          "children": [
+            {
+              "id": "actions-context-body",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 262,
+              "height": 54,
+              "fill": "#e9e9ed",
+              "radius": 20
+            },
+            {
+              "id": "actions-context-tail",
+              "type": "path",
+              "d": "M 16 36 Q 3 55 -7 52 Q 3 48 2 34 Z",
+              "fill": "#e9e9ed"
+            },
+            {
+              "id": "actions-context-copy",
+              "type": "text",
+              "text": "Here it is. Meet at the north\ngate.",
+              "x": 17,
+              "y": 7.5,
+              "fontSize": 16,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#17191d",
+              "lineHeight": 18
+            }
+          ]
+        },
+        {
+          "id": "actions-context-two",
+          "type": "group",
+          "x": 28,
+          "y": 220,
+          "children": [
+            {
+              "id": "actions-context-two-body",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 262,
+              "height": 54,
+              "fill": "#e9e9ed",
+              "radius": 20
+            },
+            {
+              "id": "actions-context-two-tail",
+              "type": "path",
+              "d": "M 16 36 Q 3 55 -7 52 Q 3 48 2 34 Z",
+              "fill": "#e9e9ed"
+            },
+            {
+              "id": "actions-context-two-copy",
+              "type": "text",
+              "text": "We have time after lunch.",
+              "x": 17,
+              "y": 14,
+              "fontSize": 16,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#17191d",
+              "lineHeight": 18
+            }
+          ]
+        },
+        {
+          "id": "actions-scrim",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 298,
+          "fill": "#111826",
+          "radius": 0,
+          "keyframes": {
+            "opacity": [
+              {
+                "t": 0,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 0.648,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 0.798,
+                "value": 0.29,
+                "ease": "easeOut"
+              }
+            ]
+          }
+        },
+        {
+          "id": "actions-selected",
+          "type": "group",
+          "x": 217,
+          "y": 123,
+          "children": [
+            {
+              "id": "actions-selected-body",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 252,
+              "height": 54,
+              "fill": "#1688fa",
+              "radius": 20
+            },
+            {
+              "id": "actions-selected-tail",
+              "type": "path",
+              "d": "M 236 36 Q 249 55 259 52 Q 249 48 250 34 Z",
+              "fill": "#1688fa"
+            },
+            {
+              "id": "actions-selected-copy",
+              "type": "text",
+              "text": "Can you send the trail map?",
+              "x": 17,
+              "y": 14,
+              "fontSize": 16,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#ffffff",
+              "lineHeight": 18
+            }
+          ]
+        },
+        {
+          "id": "actions-reaction-rail",
+          "type": "group",
+          "x": 177,
+          "y": 76,
+          "children": [
+            {
+              "id": "actions-rail-surface",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 292,
+              "height": 38,
+              "fill": "#ffffff",
+              "radius": 19
+            },
+            {
+              "id": "actions-reaction-0",
+              "type": "text",
+              "text": "Love",
+              "x": 16,
+              "y": 11,
+              "fontSize": 13,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#182737",
+              "fontWeight": 600
+            },
+            {
+              "id": "actions-reaction-1",
+              "type": "text",
+              "text": "Like",
+              "x": 84,
+              "y": 11,
+              "fontSize": 13,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#182737",
+              "fontWeight": 600
+            },
+            {
+              "id": "actions-reaction-2",
+              "type": "text",
+              "text": "Laugh",
+              "x": 152,
+              "y": 11,
+              "fontSize": 13,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#182737",
+              "fontWeight": 600
+            },
+            {
+              "id": "actions-reaction-3",
+              "type": "text",
+              "text": "Emphasize",
+              "x": 220,
+              "y": 11,
+              "fontSize": 13,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#182737",
+              "fontWeight": 600
+            }
+          ],
+          "originX": 275,
+          "originY": 38,
+          "keyframes": {
+            "scaleX": [
+              {
+                "t": 0,
+                "value": 0.57,
+                "ease": "linear"
+              },
+              {
+                "t": 0.7480000000000001,
+                "value": 0.57,
+                "ease": "linear"
+              },
+              {
+                "t": 1.028,
+                "value": 1,
+                "ease": "easeOut"
+              }
+            ],
+            "scaleY": [
+              {
+                "t": 0,
+                "value": 0.57,
+                "ease": "linear"
+              },
+              {
+                "t": 0.7480000000000001,
+                "value": 0.57,
+                "ease": "linear"
+              },
+              {
+                "t": 1.028,
+                "value": 1,
+                "ease": "easeOut"
+              }
+            ],
+            "opacity": [
+              {
+                "t": 0,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 0.7480000000000001,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 0.8180000000000001,
+                "value": 1,
+                "ease": "easeOut"
+              }
+            ]
+          }
+        },
+        {
+          "id": "actions-context-menu",
+          "type": "group",
+          "x": 278,
+          "y": 176,
+          "children": [
+            {
+              "id": "actions-menu-surface",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 191,
+              "height": 109,
+              "fill": "#ffffff",
+              "radius": 16
+            },
+            {
+              "id": "actions-option-0",
+              "type": "text",
+              "text": "Copy",
+              "x": 15,
+              "y": 10,
+              "fontSize": 16,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#17191d"
+            },
+            {
+              "id": "actions-option-1",
+              "type": "text",
+              "text": "Reply",
+              "x": 15,
+              "y": 44,
+              "fontSize": 16,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#17191d"
+            },
+            {
+              "id": "actions-option-2",
+              "type": "text",
+              "text": "More",
+              "x": 15,
+              "y": 78,
+              "fontSize": 16,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#17191d"
+            }
+          ],
+          "originX": 180,
+          "originY": 0,
+          "keyframes": {
+            "scaleX": [
+              {
+                "t": 0,
+                "value": 0.8,
+                "ease": "linear"
+              },
+              {
+                "t": 0.648,
+                "value": 0.8,
+                "ease": "linear"
+              },
+              {
+                "t": 0.7780000000000001,
+                "value": 1,
+                "ease": "easeOut"
+              }
+            ],
+            "scaleY": [
+              {
+                "t": 0,
+                "value": 0.8,
+                "ease": "linear"
+              },
+              {
+                "t": 0.648,
+                "value": 0.8,
+                "ease": "linear"
+              },
+              {
+                "t": 0.7780000000000001,
+                "value": 1,
+                "ease": "easeOut"
+              }
+            ],
+            "opacity": [
+              {
+                "t": 0,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 0.648,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 0.7780000000000001,
+                "value": 1,
+                "ease": "easeOut"
+              }
+            ]
+          }
+        }
+      ],
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 500,
+        "height": 298
+      }
+    },
+    {
+      "id": "footer",
+      "type": "group",
+      "x": 110,
+      "y": 396,
+      "children": [
+        {
+          "id": "footer-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 40,
+          "fill": "#f2f6fb",
+          "radius": 12
+        },
+        {
+          "id": "actions-composer",
+          "type": "group",
+          "x": 23,
+          "y": 0,
+          "children": [
+            {
+              "id": "actions-composer-field",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 454,
+              "height": 48,
+              "fill": "#ffffff",
+              "radius": 24,
+              "stroke": "#d8dbe0",
+              "strokeWidth": 1
+            },
+            {
+              "id": "actions-composer-input",
+              "type": "text",
+              "text": "Message",
+              "x": 18,
+              "y": 14,
+              "fontSize": 17,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#777b84"
+            },
+            {
+              "id": "actions-composer-send",
+              "type": "circle",
+              "x": 414,
+              "y": 8,
+              "width": 32,
+              "height": 32,
+              "fill": "#d8dbe0"
+            },
+            {
+              "id": "actions-composer-arrow",
+              "type": "path",
+              "d": "M 430 33 L 430 16 M 423 23 L 430 16 L 437 23",
+              "fill": "none",
+              "stroke": "#ffffff",
+              "strokeWidth": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "heading",
+      "type": "group",
+      "x": 110,
+      "y": 44,
+      "children": [
+        {
+          "id": "heading-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 54,
+          "fill": "#f2f6fb",
+          "radius": 13
+        },
+        {
+          "id": "heading-copy",
+          "type": "text",
+          "text": "Alpine field notes",
+          "x": 26,
+          "y": 13,
+          "fontSize": 23,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#182737",
+          "fontWeight": 700
+        }
+      ]
+    }
+  ],
+  "timeline": {
+    "version": 1,
+    "picture": {
+      "fpsNum": 30,
+      "fpsDen": 1,
+      "frameCount": 72
+    },
+    "initialUI": null,
+    "events": [
+      {
+        "id": "motion.long-press-actions.hold-threshold",
+        "kind": "long_press",
+        "target": "actions-selected",
+        "frame": 20,
+        "layerIds": [
+          "actions-selected"
+        ]
+      },
+      {
+        "id": "motion.long-press-actions.actions-ready",
+        "kind": "menu_open",
+        "target": "actions-reaction-rail",
+        "frame": 31,
+        "layerIds": [
+          "actions-reaction-rail"
+        ]
+      }
+    ],
+    "cues": []
+  }
+}

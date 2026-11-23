@@ -1,0 +1,424 @@
+{
+  "width": 720,
+  "height": 480,
+  "fps": 30,
+  "duration": 2.4,
+  "background": "#dce7f1",
+  "title": "Set a future send time without sending yet",
+  "source": {
+    "path": "packs/conversation.mjs#schedule-send-wheel",
+    "sourceStart": 0,
+    "sourceEnd": 2.4,
+    "notes": "Original editable Motion demonstration."
+  },
+  "layers": [
+    {
+      "id": "surface",
+      "type": "rect",
+      "x": 110,
+      "y": 44,
+      "width": 500,
+      "height": 392,
+      "fill": "#ffffff",
+      "radius": 18
+    },
+    {
+      "id": "stage",
+      "type": "group",
+      "x": 110,
+      "y": 98,
+      "children": [
+        {
+          "id": "schedule-prior",
+          "type": "group",
+          "x": 29,
+          "y": 55,
+          "children": [
+            {
+              "id": "schedule-prior-body",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 262,
+              "height": 54,
+              "fill": "#e9e9ed",
+              "radius": 20
+            },
+            {
+              "id": "schedule-prior-tail",
+              "type": "path",
+              "d": "M 16 36 Q 3 55 -7 52 Q 3 48 2 34 Z",
+              "fill": "#e9e9ed"
+            },
+            {
+              "id": "schedule-prior-copy",
+              "type": "text",
+              "text": "Here it is. Meet at the north\ngate.",
+              "x": 17,
+              "y": 7.5,
+              "fontSize": 16,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#17191d",
+              "lineHeight": 18
+            }
+          ]
+        },
+        {
+          "id": "schedule-time-picker",
+          "type": "group",
+          "x": 73,
+          "y": 150,
+          "children": [
+            {
+              "id": "schedule-sheet-surface",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 354,
+              "height": 133,
+              "fill": "#f0f3f8",
+              "radius": 18
+            },
+            {
+              "id": "schedule-sheet-title",
+              "type": "text",
+              "text": "Send later",
+              "x": 177,
+              "y": 8,
+              "fontSize": 15,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#17191d",
+              "textAnchor": "middle",
+              "fontWeight": 600
+            },
+            {
+              "id": "schedule-band",
+              "type": "rect",
+              "x": 13,
+              "y": 66,
+              "width": 328,
+              "height": 31,
+              "fill": "#e3efff",
+              "radius": 9
+            },
+            {
+              "id": "schedule-wheel-window",
+              "type": "group",
+              "x": 0,
+              "y": 0,
+              "children": [
+                {
+                  "id": "schedule-wheel",
+                  "type": "group",
+                  "x": 0,
+                  "y": 0,
+                  "children": [
+                    {
+                      "id": "schedule-wheel-value-0",
+                      "type": "text",
+                      "text": "7:00 PM",
+                      "x": 178,
+                      "y": 39,
+                      "fontSize": 17,
+                      "fontFamily": "Arial, sans-serif",
+                      "fill": "#516277",
+                      "textAnchor": "middle"
+                    },
+                    {
+                      "id": "schedule-wheel-value-1",
+                      "type": "text",
+                      "text": "7:15 PM",
+                      "x": 178,
+                      "y": 70,
+                      "fontSize": 17,
+                      "fontFamily": "Arial, sans-serif",
+                      "fill": "#516277",
+                      "textAnchor": "middle"
+                    },
+                    {
+                      "id": "schedule-wheel-value-2",
+                      "type": "text",
+                      "text": "7:30 PM",
+                      "x": 178,
+                      "y": 101,
+                      "fontSize": 17,
+                      "fontFamily": "Arial, sans-serif",
+                      "fill": "#516277",
+                      "textAnchor": "middle"
+                    },
+                    {
+                      "id": "schedule-wheel-value-3",
+                      "type": "text",
+                      "text": "7:45 PM",
+                      "x": 178,
+                      "y": 132,
+                      "fontSize": 17,
+                      "fontFamily": "Arial, sans-serif",
+                      "fill": "#182737",
+                      "textAnchor": "middle"
+                    },
+                    {
+                      "id": "schedule-wheel-value-4",
+                      "type": "text",
+                      "text": "8:00 PM",
+                      "x": 178,
+                      "y": 163,
+                      "fontSize": 17,
+                      "fontFamily": "Arial, sans-serif",
+                      "fill": "#516277",
+                      "textAnchor": "middle"
+                    }
+                  ],
+                  "keyframes": {
+                    "y": [
+                      {
+                        "t": 0,
+                        "value": 0,
+                        "ease": "linear"
+                      },
+                      {
+                        "t": 0.6,
+                        "value": 0,
+                        "ease": "linear"
+                      },
+                      {
+                        "t": 1.176,
+                        "value": -65,
+                        "ease": "easeOut"
+                      },
+                      {
+                        "t": 1.296,
+                        "value": -62,
+                        "ease": "easeOut"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "clip": {
+                "x": 0,
+                "y": 34,
+                "width": 354,
+                "height": 88
+              }
+            }
+          ],
+          "keyframes": {
+            "opacity": [
+              {
+                "t": 0,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 1.6320000000000001,
+                "value": 1,
+                "ease": "linear"
+              },
+              {
+                "t": 1.9679999999999997,
+                "value": 0,
+                "ease": "easeIn"
+              }
+            ]
+          }
+        },
+        {
+          "id": "schedule-confirmed-chip",
+          "type": "group",
+          "x": 187,
+          "y": 224,
+          "children": [
+            {
+              "id": "schedule-confirmed-chip-body",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 126,
+              "height": 29,
+              "fill": "#e8eef5",
+              "radius": 14
+            },
+            {
+              "id": "schedule-confirmed-chip-text",
+              "type": "text",
+              "text": "7:45 PM",
+              "x": 63,
+              "y": 6,
+              "fontSize": 13,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#516277",
+              "textAnchor": "middle"
+            }
+          ],
+          "keyframes": {
+            "y": [
+              {
+                "t": 0,
+                "value": 224,
+                "ease": "linear"
+              },
+              {
+                "t": 1.656,
+                "value": 224,
+                "ease": "linear"
+              },
+              {
+                "t": 1.9679999999999997,
+                "value": 257,
+                "ease": "easeOut"
+              }
+            ],
+            "opacity": [
+              {
+                "t": 0,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 1.6320000000000001,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 1.896,
+                "value": 1,
+                "ease": "easeOut"
+              }
+            ]
+          }
+        }
+      ],
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 500,
+        "height": 298
+      }
+    },
+    {
+      "id": "footer",
+      "type": "group",
+      "x": 110,
+      "y": 396,
+      "children": [
+        {
+          "id": "footer-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 40,
+          "fill": "#f2f6fb",
+          "radius": 12
+        },
+        {
+          "id": "schedule-draft",
+          "type": "group",
+          "x": 23,
+          "y": 0,
+          "children": [
+            {
+              "id": "schedule-draft-field",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 454,
+              "height": 48,
+              "fill": "#ffffff",
+              "radius": 24,
+              "stroke": "#d8dbe0",
+              "strokeWidth": 1
+            },
+            {
+              "id": "schedule-draft-input",
+              "type": "text",
+              "text": "Can you send the trail map?",
+              "x": 18,
+              "y": 14,
+              "fontSize": 17,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#17191d"
+            },
+            {
+              "id": "schedule-draft-send",
+              "type": "circle",
+              "x": 414,
+              "y": 8,
+              "width": 32,
+              "height": 32,
+              "fill": "#1688fa"
+            },
+            {
+              "id": "schedule-draft-arrow",
+              "type": "path",
+              "d": "M 430 33 L 430 16 M 423 23 L 430 16 L 437 23",
+              "fill": "none",
+              "stroke": "#ffffff",
+              "strokeWidth": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "heading",
+      "type": "group",
+      "x": 110,
+      "y": 44,
+      "children": [
+        {
+          "id": "heading-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 54,
+          "fill": "#f2f6fb",
+          "radius": 13
+        },
+        {
+          "id": "heading-copy",
+          "type": "text",
+          "text": "Alpine field notes",
+          "x": 26,
+          "y": 13,
+          "fontSize": 23,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#182737",
+          "fontWeight": 700
+        }
+      ]
+    }
+  ],
+  "timeline": {
+    "version": 1,
+    "picture": {
+      "fpsNum": 30,
+      "fpsDen": 1,
+      "frameCount": 72
+    },
+    "initialUI": null,
+    "events": [
+      {
+        "id": "motion.schedule-send-wheel.time-wheel-start",
+        "kind": "picker_scroll",
+        "target": "schedule-wheel",
+        "frame": 18,
+        "layerIds": [
+          "schedule-wheel"
+        ]
+      },
+      {
+        "id": "motion.schedule-send-wheel.schedule-committed",
+        "kind": "send_scheduled",
+        "target": "schedule-confirmed-chip",
+        "frame": 49,
+        "layerIds": [
+          "schedule-confirmed-chip"
+        ]
+      }
+    ],
+    "cues": []
+  }
+}

@@ -1,0 +1,213 @@
+{
+  "schema": 1,
+  "source_name": "reference.mp4",
+  "source_sha256": "659bb5af8d67b9fa89f0709cb559e251000e04f47d68bf02c1b3c1b85c8c1562",
+  "clock": {
+    "width": 640,
+    "height": 360,
+    "sample_aspect_ratio": "1",
+    "rotation_degrees": 0,
+    "display_matrix": [
+      65536,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      1073741824
+    ],
+    "container_crop_top_bottom_left_right": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "time_base": "1/15360",
+    "declared_rate": "30",
+    "declared_average_rate": "30/1",
+    "start_pts": 0,
+    "end_pts_exclusive": 61440,
+    "end_basis": "last decoded frame duration",
+    "end_seconds": 4.0,
+    "frames": 120,
+    "cadence": "constant",
+    "pixel_format": "yuv420p",
+    "alpha_present": false,
+    "color_range": "tv",
+    "color_space": "bt709",
+    "color_primaries": null,
+    "color_transfer": null
+  },
+  "picture_decoded_frames": 120,
+  "exact_pixel_hold_spans": [
+    [
+      4,
+      17
+    ],
+    [
+      22,
+      26
+    ],
+    [
+      27,
+      29
+    ],
+    [
+      40,
+      51
+    ],
+    [
+      52,
+      55
+    ],
+    [
+      87,
+      88
+    ],
+    [
+      102,
+      104
+    ],
+    [
+      106,
+      108
+    ],
+    [
+      110,
+      112
+    ],
+    [
+      114,
+      116
+    ]
+  ],
+  "candidate_cuts_or_fast_changes": [
+    {
+      "frame": 18,
+      "thumbnail_mae": 194.3547633744856,
+      "changed_fraction": 0.9875308641975309
+    }
+  ],
+  "audio_tracks": [
+    {
+      "stream": {
+        "index": 1,
+        "codec_name": "aac",
+        "sample_rate": "48000",
+        "channels": 1,
+        "channel_layout": "mono",
+        "time_base": "1/48000",
+        "start_pts": 0,
+        "duration_ts": 192000,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "SoundHandler",
+          "vendor_id": "[0][0][0][0]"
+        }
+      },
+      "measurement_sample_rate": 48000,
+      "decoded_sample_frames": 192512,
+      "video_relative_start_seconds": "0",
+      "video_relative_end_seconds": "1504/375",
+      "peak_linear": 0.3589058816432953,
+      "onset_candidates": [
+        {
+          "approx_seconds": 0.995,
+          "nearest_picture_frame": 30,
+          "rms_rise": 0.07357457729085581,
+          "window_ms": 20.0
+        },
+        {
+          "approx_seconds": 1.865,
+          "nearest_picture_frame": 56,
+          "rms_rise": 0.07487132772803307,
+          "window_ms": 20.0
+        },
+        {
+          "approx_seconds": 2.465,
+          "nearest_picture_frame": 74,
+          "rms_rise": 0.05724039673805237,
+          "window_ms": 20.0
+        },
+        {
+          "approx_seconds": 2.965,
+          "nearest_picture_frame": 89,
+          "rms_rise": 0.06590814143419266,
+          "window_ms": 20.0
+        }
+      ]
+    }
+  ],
+  "thumbnails": [
+    0,
+    4,
+    8,
+    12,
+    16,
+    17,
+    18,
+    20,
+    24,
+    28,
+    32,
+    36,
+    41,
+    45,
+    49,
+    53,
+    57,
+    61,
+    65,
+    69,
+    73,
+    77,
+    82,
+    86,
+    90,
+    94,
+    98,
+    102,
+    106,
+    110,
+    114,
+    119
+  ],
+  "artifact_sha256": {
+    "timeline.csv": "ff951b69bcf983d78ae843fa24e458950034fcef899b175a22ac3881c6e8e8e8",
+    "audio-1.csv": "19c2fc5ae3a31710448ff102c9241583c17813b2d566170eae171fb5e167bd54",
+    "contact-00.jpg": "bdc94377286027b90894e4c2f4cf8142895c7a7e0b052e1c33829dc369aae9b5",
+    "contact-01.jpg": "cf2bc9123930e0bc5e4abb7fef0a40b5669fb8dd5374d52f0b4536c44e3efd25"
+  },
+  "analysis_parameters": {
+    "motion_preview_size": [
+      240,
+      135
+    ],
+    "change_pixel_floor": 20,
+    "cut_thumbnail_mae": 18,
+    "cut_changed_fraction": 0.35
+  }
+}

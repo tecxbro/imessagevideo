@@ -1,0 +1,29 @@
+{
+  "landmarks": {
+    "demo.message.send": {
+      "roi": [0.71875, 0.4167, 0.15, 0.16],
+      "color": [246, 189, 96],
+      "tolerance": 24,
+      "min_fraction": 0.8,
+      "settle_frames": 2
+    }
+  },
+  "cues": [
+    {
+      "id": "demo.send.click",
+      "event": "demo.message.send",
+      "bus": "effects",
+      "asset": "send.wav",
+      "purpose": "Punctuate the relocation of the card after the reading hold.",
+      "source": "Original procedural audio from sound/example.py, seed 271.",
+      "offset_samples": 120,
+      "onset_ms": 12,
+      "impact_ms": 30,
+      "gain_db": -10,
+      "tolerance_ms": 25
+    }
+  ],
+  "silence": [
+    {"start_s": 0.0, "end_s": 0.35, "purpose": "Leave room for the viewer to read the first state."}
+  ]
+}

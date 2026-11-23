@@ -1,0 +1,74 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 40
+  },
+  "sampleRate": 48000,
+  "sampleCount": 64000,
+  "initialUI": {
+    "conversationId": "thread.meeting",
+    "messages": [
+      {
+        "id": "north-door",
+        "senderId": "remote",
+        "text": "I’m at the north door.",
+        "attachmentIds": [],
+        "reactions": {},
+        "edited": false,
+        "receipt": ""
+      }
+    ],
+    "composer": {
+      "text": "",
+      "focused": false,
+      "keyboardVisible": false
+    },
+    "viewport": {
+      "surface": "conversation",
+      "anchorMessageId": "north-door",
+      "scrollOffset": 0
+    },
+    "typingSenderIds": []
+  },
+  "events": [
+    {
+      "id": "open-drawer",
+      "kind": "overlay",
+      "target": "thread.meeting",
+      "frame": 8,
+      "uiState": {
+        "conversationId": "thread.meeting",
+        "messages": [
+          {
+            "id": "north-door",
+            "senderId": "remote",
+            "text": "I’m at the north door.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          }
+        ],
+        "composer": {
+          "text": "",
+          "focused": false,
+          "keyboardVisible": false
+        },
+        "viewport": {
+          "surface": "tray",
+          "anchorMessageId": "north-door",
+          "scrollOffset": 0
+        },
+        "typingSenderIds": []
+      },
+      "layerIds": [
+        "ui.overlay",
+        "ui.inbox"
+      ],
+      "sample": 12800
+    }
+  ],
+  "cues": []
+}

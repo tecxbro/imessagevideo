@@ -1,0 +1,380 @@
+{
+  "width": 720,
+  "height": 480,
+  "fps": 30,
+  "duration": 2.4,
+  "background": "#dce7f1",
+  "title": "Separate a compact assembly into visible layers",
+  "source": {
+    "path": "packs/editorial.mjs#exploded-layer-view",
+    "sourceStart": 0,
+    "sourceEnd": 2.4,
+    "notes": "Original editable Motion demonstration."
+  },
+  "layers": [
+    {
+      "id": "surface",
+      "type": "rect",
+      "x": 110,
+      "y": 44,
+      "width": 500,
+      "height": 392,
+      "fill": "#ffffff",
+      "radius": 18
+    },
+    {
+      "id": "stage",
+      "type": "group",
+      "x": 110,
+      "y": 98,
+      "children": [
+        {
+          "id": "layer-plane-0",
+          "type": "group",
+          "x": 104,
+          "y": 93,
+          "children": [
+            {
+              "id": "layer-surface-0",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 236,
+              "height": 92,
+              "fill": "#ffffff",
+              "radius": 18,
+              "stroke": "#1478e9",
+              "strokeWidth": 2
+            },
+            {
+              "id": "layer-caption-0",
+              "type": "text",
+              "text": "Surface",
+              "x": 14,
+              "y": 35,
+              "fontSize": 17,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#182737",
+              "fontWeight": 600
+            }
+          ],
+          "keyframes": {
+            "x": [
+              {
+                "t": 0,
+                "value": 104,
+                "ease": "linear"
+              },
+              {
+                "t": 0.40800000000000003,
+                "value": 104,
+                "ease": "linear"
+              },
+              {
+                "t": 1.536,
+                "value": 45,
+                "ease": "easeInOut"
+              }
+            ],
+            "y": [
+              {
+                "t": 0,
+                "value": 93,
+                "ease": "linear"
+              },
+              {
+                "t": 0.40800000000000003,
+                "value": 93,
+                "ease": "linear"
+              },
+              {
+                "t": 1.536,
+                "value": 153,
+                "ease": "easeInOut"
+              }
+            ],
+            "rotation": [
+              {
+                "t": 0,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 0.40800000000000003,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 1.536,
+                "value": -8,
+                "ease": "easeInOut"
+              }
+            ]
+          }
+        },
+        {
+          "id": "layer-plane-1",
+          "type": "group",
+          "x": 111,
+          "y": 100,
+          "children": [
+            {
+              "id": "layer-surface-1",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 236,
+              "height": 92,
+              "fill": "#ffffff",
+              "radius": 18,
+              "stroke": "#1478e9",
+              "strokeWidth": 2
+            },
+            {
+              "id": "layer-caption-1",
+              "type": "text",
+              "text": "Tools",
+              "x": 14,
+              "y": 35,
+              "fontSize": 17,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#182737",
+              "fontWeight": 600
+            }
+          ],
+          "keyframes": {
+            "x": [
+              {
+                "t": 0,
+                "value": 111,
+                "ease": "linear"
+              },
+              {
+                "t": 0.40800000000000003,
+                "value": 111,
+                "ease": "linear"
+              },
+              {
+                "t": 1.536,
+                "value": 132,
+                "ease": "easeInOut"
+              }
+            ],
+            "y": [
+              {
+                "t": 0,
+                "value": 100,
+                "ease": "linear"
+              },
+              {
+                "t": 0.40800000000000003,
+                "value": 100,
+                "ease": "linear"
+              },
+              {
+                "t": 1.536,
+                "value": 112,
+                "ease": "easeInOut"
+              }
+            ],
+            "rotation": [
+              {
+                "t": 0,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 0.40800000000000003,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 1.536,
+                "value": -8,
+                "ease": "easeInOut"
+              }
+            ]
+          }
+        },
+        {
+          "id": "layer-plane-2",
+          "type": "group",
+          "x": 118,
+          "y": 107,
+          "children": [
+            {
+              "id": "layer-surface-2",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 236,
+              "height": 92,
+              "fill": "#1478e9",
+              "radius": 18,
+              "stroke": "#1478e9",
+              "strokeWidth": 2
+            },
+            {
+              "id": "layer-caption-2",
+              "type": "text",
+              "text": "Content",
+              "x": 14,
+              "y": 35,
+              "fontSize": 17,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#ffffff",
+              "fontWeight": 600
+            }
+          ],
+          "keyframes": {
+            "x": [
+              {
+                "t": 0,
+                "value": 118,
+                "ease": "linear"
+              },
+              {
+                "t": 0.40800000000000003,
+                "value": 118,
+                "ease": "linear"
+              },
+              {
+                "t": 1.536,
+                "value": 219,
+                "ease": "easeInOut"
+              }
+            ],
+            "y": [
+              {
+                "t": 0,
+                "value": 107,
+                "ease": "linear"
+              },
+              {
+                "t": 0.40800000000000003,
+                "value": 107,
+                "ease": "linear"
+              },
+              {
+                "t": 1.536,
+                "value": 71,
+                "ease": "easeInOut"
+              }
+            ],
+            "rotation": [
+              {
+                "t": 0,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 0.40800000000000003,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 1.536,
+                "value": -8,
+                "ease": "easeInOut"
+              }
+            ]
+          }
+        }
+      ],
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 500,
+        "height": 298
+      }
+    },
+    {
+      "id": "footer",
+      "type": "group",
+      "x": 110,
+      "y": 396,
+      "children": [
+        {
+          "id": "footer-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 40,
+          "fill": "#f2f6fb",
+          "radius": 12
+        },
+        {
+          "id": "editorial-caption",
+          "type": "text",
+          "text": "Three editable planes make one assembly.",
+          "x": 22,
+          "y": 9,
+          "fontSize": 15,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#516277",
+          "fontWeight": 600
+        }
+      ]
+    },
+    {
+      "id": "heading",
+      "type": "group",
+      "x": 110,
+      "y": 44,
+      "children": [
+        {
+          "id": "heading-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 54,
+          "fill": "#f2f6fb",
+          "radius": 13
+        },
+        {
+          "id": "heading-copy",
+          "type": "text",
+          "text": "Layer anatomy",
+          "x": 26,
+          "y": 13,
+          "fontSize": 23,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#182737",
+          "fontWeight": 700
+        }
+      ]
+    }
+  ],
+  "timeline": {
+    "version": 1,
+    "picture": {
+      "fpsNum": 30,
+      "fpsDen": 1,
+      "frameCount": 72
+    },
+    "initialUI": null,
+    "events": [
+      {
+        "id": "motion.exploded-layer-view.assembly-separates",
+        "kind": "assembly-separates",
+        "target": "layer-plane-2",
+        "frame": 13,
+        "layerIds": [
+          "layer-plane-2"
+        ]
+      },
+      {
+        "id": "motion.exploded-layer-view.layers-separated",
+        "kind": "layers-separated",
+        "target": "layer-plane-0",
+        "frame": 47,
+        "layerIds": [
+          "layer-plane-0"
+        ]
+      }
+    ],
+    "cues": []
+  }
+}

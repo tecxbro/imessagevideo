@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 72
+  },
+  "initialUI": null,
+  "events": [
+    {
+      "id": "motion.center-gutter-open.split-begins",
+      "kind": "panel.gutter.open",
+      "target": "left-panel",
+      "frame": 16,
+      "layerIds": [
+        "left-panel"
+      ]
+    },
+    {
+      "id": "motion.center-gutter-open.center-readable",
+      "kind": "panel.gutter.settle",
+      "target": "gutter-label",
+      "frame": 53,
+      "layerIds": [
+        "gutter-label"
+      ]
+    }
+  ],
+  "cues": []
+}

@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 72
+  },
+  "initialUI": null,
+  "events": [
+    {
+      "id": "motion.reaction-attach.reaction-choice",
+      "kind": "reaction_select",
+      "target": "reaction-badge",
+      "frame": 26,
+      "layerIds": [
+        "reaction-badge"
+      ]
+    },
+    {
+      "id": "motion.reaction-attach.reaction-attached",
+      "kind": "reaction_attached",
+      "target": "reaction-target",
+      "frame": 49,
+      "layerIds": [
+        "reaction-target"
+      ]
+    }
+  ],
+  "cues": []
+}

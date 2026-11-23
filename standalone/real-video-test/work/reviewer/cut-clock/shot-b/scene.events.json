@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 49
+  },
+  "initialUI": null,
+  "events": [
+    {
+      "id": "motion.comparison-bars-grow.first-value-settled",
+      "kind": "first-value-settled",
+      "target": "earlier-bar",
+      "frame": 24,
+      "layerIds": [
+        "earlier-bar"
+      ]
+    },
+    {
+      "id": "motion.comparison-bars-grow.second-value-settled",
+      "kind": "second-value-settled",
+      "target": "later-bar",
+      "frame": 33,
+      "layerIds": [
+        "later-bar"
+      ]
+    }
+  ],
+  "cues": []
+}

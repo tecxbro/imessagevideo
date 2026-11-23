@@ -1,0 +1,379 @@
+{
+  "width": 720,
+  "height": 480,
+  "fps": 30,
+  "duration": 2.4,
+  "background": "#dce7f1",
+  "title": "Freeze surrounding movement while one detail keeps going",
+  "source": {
+    "path": "packs/editorial.mjs#freeze-around-live-detail",
+    "sourceStart": 0,
+    "sourceEnd": 2.4,
+    "notes": "Original editable Motion demonstration."
+  },
+  "layers": [
+    {
+      "id": "surface",
+      "type": "rect",
+      "x": 110,
+      "y": 44,
+      "width": 500,
+      "height": 392,
+      "fill": "#ffffff",
+      "radius": 18
+    },
+    {
+      "id": "stage",
+      "type": "group",
+      "x": 110,
+      "y": 98,
+      "children": [
+        {
+          "id": "top-flow-lane",
+          "type": "rect",
+          "x": 28,
+          "y": 55,
+          "width": 442,
+          "height": 34,
+          "fill": "#e8eef5",
+          "radius": 17
+        },
+        {
+          "id": "bottom-flow-lane",
+          "type": "rect",
+          "x": 28,
+          "y": 210,
+          "width": 442,
+          "height": 34,
+          "fill": "#e8eef5",
+          "radius": 17
+        },
+        {
+          "id": "active-lane",
+          "type": "rect",
+          "x": 28,
+          "y": 122,
+          "width": 442,
+          "height": 55,
+          "fill": "#ffffff",
+          "radius": 20,
+          "stroke": "#1478e9",
+          "strokeWidth": 1
+        },
+        {
+          "id": "ambient-point-0",
+          "type": "circle",
+          "x": 48.5,
+          "y": 65.5,
+          "width": 13,
+          "height": 13,
+          "fill": "#516277",
+          "keyframes": {
+            "x": [
+              {
+                "t": 0,
+                "value": 48.5,
+                "ease": "linear"
+              },
+              {
+                "t": 0.792,
+                "value": 167.5,
+                "ease": "linear"
+              },
+              {
+                "t": 1.9679999999999997,
+                "value": 167.5,
+                "ease": "hold"
+              }
+            ]
+          }
+        },
+        {
+          "id": "ambient-point-1",
+          "type": "circle",
+          "x": 48.5,
+          "y": 220.5,
+          "width": 13,
+          "height": 13,
+          "fill": "#516277",
+          "keyframes": {
+            "x": [
+              {
+                "t": 0,
+                "value": 48.5,
+                "ease": "linear"
+              },
+              {
+                "t": 0.792,
+                "value": 167.5,
+                "ease": "linear"
+              },
+              {
+                "t": 1.9679999999999997,
+                "value": 167.5,
+                "ease": "hold"
+              }
+            ]
+          }
+        },
+        {
+          "id": "ambient-point-2",
+          "type": "circle",
+          "x": 137.5,
+          "y": 65.5,
+          "width": 13,
+          "height": 13,
+          "fill": "#516277",
+          "keyframes": {
+            "x": [
+              {
+                "t": 0,
+                "value": 137.5,
+                "ease": "linear"
+              },
+              {
+                "t": 0.792,
+                "value": 256.5,
+                "ease": "linear"
+              },
+              {
+                "t": 1.9679999999999997,
+                "value": 256.5,
+                "ease": "hold"
+              }
+            ]
+          }
+        },
+        {
+          "id": "ambient-point-3",
+          "type": "circle",
+          "x": 137.5,
+          "y": 220.5,
+          "width": 13,
+          "height": 13,
+          "fill": "#516277",
+          "keyframes": {
+            "x": [
+              {
+                "t": 0,
+                "value": 137.5,
+                "ease": "linear"
+              },
+              {
+                "t": 0.792,
+                "value": 256.5,
+                "ease": "linear"
+              },
+              {
+                "t": 1.9679999999999997,
+                "value": 256.5,
+                "ease": "hold"
+              }
+            ]
+          }
+        },
+        {
+          "id": "ambient-point-4",
+          "type": "circle",
+          "x": 226.5,
+          "y": 65.5,
+          "width": 13,
+          "height": 13,
+          "fill": "#516277",
+          "keyframes": {
+            "x": [
+              {
+                "t": 0,
+                "value": 226.5,
+                "ease": "linear"
+              },
+              {
+                "t": 0.792,
+                "value": 345.5,
+                "ease": "linear"
+              },
+              {
+                "t": 1.9679999999999997,
+                "value": 345.5,
+                "ease": "hold"
+              }
+            ]
+          }
+        },
+        {
+          "id": "ambient-point-5",
+          "type": "circle",
+          "x": 226.5,
+          "y": 220.5,
+          "width": 13,
+          "height": 13,
+          "fill": "#516277",
+          "keyframes": {
+            "x": [
+              {
+                "t": 0,
+                "value": 226.5,
+                "ease": "linear"
+              },
+              {
+                "t": 0.792,
+                "value": 345.5,
+                "ease": "linear"
+              },
+              {
+                "t": 1.9679999999999997,
+                "value": 345.5,
+                "ease": "hold"
+              }
+            ]
+          }
+        },
+        {
+          "id": "live-point",
+          "type": "circle",
+          "x": 61,
+          "y": 139,
+          "width": 20,
+          "height": 20,
+          "fill": "#1478e9",
+          "keyframes": {
+            "x": [
+              {
+                "t": 0,
+                "value": 61,
+                "ease": "linear"
+              },
+              {
+                "t": 0.792,
+                "value": 180,
+                "ease": "linear"
+              },
+              {
+                "t": 1.752,
+                "value": 419,
+                "ease": "easeOut"
+              }
+            ]
+          }
+        },
+        {
+          "id": "focus-lane-title",
+          "type": "text",
+          "text": "Priority task",
+          "x": 250,
+          "y": 179,
+          "fontSize": 19,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#182737",
+          "fontWeight": 600,
+          "textAnchor": "middle"
+        },
+        {
+          "id": "freeze-status",
+          "type": "text",
+          "text": "Background paused",
+          "x": 34,
+          "y": 25,
+          "fontSize": 16,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#516277",
+          "fontWeight": 600
+        }
+      ],
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 500,
+        "height": 298
+      }
+    },
+    {
+      "id": "footer",
+      "type": "group",
+      "x": 110,
+      "y": 396,
+      "children": [
+        {
+          "id": "footer-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 40,
+          "fill": "#f2f6fb",
+          "radius": 12
+        },
+        {
+          "id": "editorial-caption",
+          "type": "text",
+          "text": "Only the priority lane continues.",
+          "x": 22,
+          "y": 9,
+          "fontSize": 15,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#516277",
+          "fontWeight": 600
+        }
+      ]
+    },
+    {
+      "id": "heading",
+      "type": "group",
+      "x": 110,
+      "y": 44,
+      "children": [
+        {
+          "id": "heading-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 54,
+          "fill": "#f2f6fb",
+          "radius": 13
+        },
+        {
+          "id": "heading-copy",
+          "type": "text",
+          "text": "Activity feed",
+          "x": 26,
+          "y": 13,
+          "fontSize": 23,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#182737",
+          "fontWeight": 700
+        }
+      ]
+    }
+  ],
+  "timeline": {
+    "version": 1,
+    "picture": {
+      "fpsNum": 30,
+      "fpsDen": 1,
+      "frameCount": 72
+    },
+    "initialUI": null,
+    "events": [
+      {
+        "id": "motion.freeze-around-live-detail.surroundings-freeze",
+        "kind": "surroundings-freeze",
+        "target": "ambient-point-0",
+        "frame": 24,
+        "layerIds": [
+          "ambient-point-0"
+        ]
+      },
+      {
+        "id": "motion.freeze-around-live-detail.live-point-arrives",
+        "kind": "live-point-arrives",
+        "target": "live-point",
+        "frame": 53,
+        "layerIds": [
+          "live-point"
+        ]
+      }
+    ],
+    "cues": []
+  }
+}

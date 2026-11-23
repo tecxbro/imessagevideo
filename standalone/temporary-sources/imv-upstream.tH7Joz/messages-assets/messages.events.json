@@ -1,0 +1,182 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 24,
+    "fpsDen": 1,
+    "frameCount": 74
+  },
+  "sampleRate": 48000,
+  "sampleCount": 148000,
+  "initialUI": {
+    "conversationId": "archive",
+    "messages": [
+      {
+        "id": "question",
+        "senderId": "eli",
+        "text": "Can you send both archive photos?",
+        "attachmentIds": [],
+        "reactions": {},
+        "edited": false,
+        "receipt": ""
+      },
+      {
+        "id": "photos",
+        "senderId": "rana",
+        "text": "The portrait and the launch.",
+        "attachmentIds": [
+          "portrait",
+          "launch"
+        ],
+        "reactions": {},
+        "edited": false,
+        "receipt": "",
+        "page": 0
+      },
+      {
+        "id": "after",
+        "senderId": "eli",
+        "text": "I\u2019ll check both captions.",
+        "attachmentIds": [],
+        "reactions": {},
+        "edited": false,
+        "receipt": ""
+      }
+    ],
+    "composer": {
+      "text": "",
+      "focused": false,
+      "keyboardVisible": false
+    },
+    "viewport": {
+      "surface": "conversation",
+      "anchorMessageId": "after",
+      "scrollOffset": 0
+    },
+    "typingSenderIds": []
+  },
+  "events": [
+    {
+      "id": "ui.photos-fixed-header.swipe",
+      "kind": "media.page",
+      "target": "photos",
+      "frame": 19,
+      "uiState": {
+        "conversationId": "archive",
+        "messages": [
+          {
+            "id": "question",
+            "senderId": "eli",
+            "text": "Can you send both archive photos?",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "photos",
+            "senderId": "rana",
+            "text": "The portrait and the launch.",
+            "attachmentIds": [
+              "portrait",
+              "launch"
+            ],
+            "reactions": {},
+            "edited": false,
+            "receipt": "",
+            "page": 1
+          },
+          {
+            "id": "after",
+            "senderId": "eli",
+            "text": "I\u2019ll check both captions.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          }
+        ],
+        "composer": {
+          "text": "",
+          "focused": false,
+          "keyboardVisible": false
+        },
+        "viewport": {
+          "surface": "conversation",
+          "anchorMessageId": "after",
+          "scrollOffset": 0
+        },
+        "typingSenderIds": []
+      },
+      "layerIds": [
+        "ui.message/photos/media"
+      ],
+      "sample": 38000
+    },
+    {
+      "id": "ui.photos-fixed-header.return",
+      "kind": "media.page",
+      "target": "photos",
+      "frame": 44,
+      "uiState": {
+        "conversationId": "archive",
+        "messages": [
+          {
+            "id": "question",
+            "senderId": "eli",
+            "text": "Can you send both archive photos?",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          },
+          {
+            "id": "photos",
+            "senderId": "rana",
+            "text": "The portrait and the launch.",
+            "attachmentIds": [
+              "portrait",
+              "launch"
+            ],
+            "reactions": {},
+            "edited": false,
+            "receipt": "",
+            "page": 0
+          },
+          {
+            "id": "after",
+            "senderId": "eli",
+            "text": "I\u2019ll check both captions.",
+            "attachmentIds": [],
+            "reactions": {},
+            "edited": false,
+            "receipt": ""
+          }
+        ],
+        "composer": {
+          "text": "",
+          "focused": false,
+          "keyboardVisible": false
+        },
+        "viewport": {
+          "surface": "conversation",
+          "anchorMessageId": "after",
+          "scrollOffset": 0
+        },
+        "typingSenderIds": []
+      },
+      "layerIds": [
+        "ui.message/photos/media"
+      ],
+      "sample": 88000
+    }
+  ],
+  "cues": [
+    {
+      "id": "ui.photos-fixed-header.swipe-cue",
+      "eventId": "ui.photos-fixed-header.swipe",
+      "offsetSamples": 0,
+      "frame": 19,
+      "sample": 38000
+    }
+  ]
+}

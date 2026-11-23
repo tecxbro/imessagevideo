@@ -1,0 +1,166 @@
+{
+  "id": "camera-push-in",
+  "title": "Push the camera toward a detail",
+  "moves": "The camera plane scales around a chosen detail, taking its neighboring cards toward the edges.",
+  "fixed": "The focal point, the cards’ arrangement within the camera plane, and the surrounding frame.",
+  "notice": "The detail belongs to the same workspace established at the start.",
+  "fits": "Lead into an important control or small result that was hard to read in the overview.",
+  "avoid": "A push implies looking closer. Use a state change if the product itself opens or grows.",
+  "intents": [
+    "zoom into the booking detail",
+    "move the camera closer to one detail",
+    "focus in on a card without changing its layout"
+  ],
+  "editable": [
+    "heading",
+    "title",
+    "detail"
+  ],
+  "defaults": {
+    "heading": "Trip planner",
+    "title": "Reservation",
+    "detail": "The booking stays in the same workspace."
+  },
+  "source": {
+    "kind": "authored",
+    "ref": "packs/editorial.mjs#camera-push-in",
+    "range": [
+      0,
+      2.4
+    ]
+  },
+  "implementation": "packs/editorial.mjs",
+  "preview": "review/imv-v3/motion/camera-push-in.mp4",
+  "sha256": "aff9725b4ebb7dc393d60265cd6f200653dcdf8f5dd33a025fd7525d443e04be",
+  "eventMap": "review/imv-v3/motion/camera-push-in.events.json",
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 72
+  },
+  "events": [
+    {
+      "id": "motion.camera-push-in.push-start",
+      "kind": "push-start",
+      "frame": 12
+    },
+    {
+      "id": "motion.camera-push-in.detail-in-frame",
+      "kind": "detail-in-frame",
+      "frame": 49
+    }
+  ],
+  "renderers": [
+    {
+      "method": "pillow",
+      "evidence": "full-preview",
+      "frames": 72
+    },
+    {
+      "method": "html",
+      "evidence": "retimed-nine-frame-probe",
+      "distinctFrames": 9
+    },
+    {
+      "method": "gsap",
+      "evidence": "retimed-nine-frame-probe",
+      "distinctFrames": 9
+    },
+    {
+      "method": "remotion",
+      "evidence": "retimed-nine-frame-probe",
+      "distinctFrames": 9
+    },
+    {
+      "method": "motion-canvas",
+      "evidence": "retimed-nine-frame-probe",
+      "distinctFrames": 9
+    }
+  ],
+  "editableFields": {
+    "heading": "text",
+    "title": "text",
+    "detail": "text"
+  },
+  "renderCommand": "node motion/cli.mjs render --id camera-push-in --method pillow --out /tmp/camera-push-in.mp4",
+  "components": {
+    "id": "camera-push-in",
+    "implementation": "motion/packs/editorial.mjs",
+    "whenToUse": "Lead into an important control or small result that was hard to read in the overview.",
+    "avoidWhen": "A push implies looking closer. Use a state change if the product itself opens or grows.",
+    "source": {
+      "kind": "authored",
+      "ref": "packs/editorial.mjs#camera-push-in",
+      "range": [
+        0,
+        2.4
+      ]
+    },
+    "preview": {
+      "path": "review/imv-v3/motion/camera-push-in.mp4",
+      "sha256": "aff9725b4ebb7dc393d60265cd6f200653dcdf8f5dd33a025fd7525d443e04be",
+      "evidence": "published-demo"
+    },
+    "adapterPreview": null,
+    "demo": {
+      "moving": [
+        {
+          "id": "camera-plane",
+          "parent": "stage",
+          "type": "group",
+          "channels": [
+            "scaleX",
+            "scaleY"
+          ],
+          "role": "camera"
+        }
+      ],
+      "fixed": [
+        {
+          "id": "stage",
+          "parent": null,
+          "type": "group",
+          "role": "cameraViewport",
+          "scope": "local-position"
+        }
+      ],
+      "events": [
+        {
+          "id": "motion.camera-push-in.push-start",
+          "kind": "push-start",
+          "frame": 12,
+          "target": "camera-plane",
+          "layerIds": [
+            "camera-plane"
+          ]
+        },
+        {
+          "id": "motion.camera-push-in.detail-in-frame",
+          "kind": "detail-in-frame",
+          "frame": 49,
+          "target": "detail",
+          "layerIds": [
+            "detail"
+          ]
+        }
+      ],
+      "assets": []
+    },
+    "production": {
+      "mode": "primitive-only",
+      "moving": [
+        "camera"
+      ],
+      "fixed": [
+        "cameraViewport"
+      ],
+      "required": [
+        "camera",
+        "cameraViewport"
+      ],
+      "transitionKinds": [],
+      "verification": "Requires a separately authored binding and visual proof on a Messages scene.",
+      "bindings": null
+    }
+  }
+}

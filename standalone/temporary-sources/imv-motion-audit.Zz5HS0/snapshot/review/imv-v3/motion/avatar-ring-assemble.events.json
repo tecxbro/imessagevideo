@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 72
+  },
+  "initialUI": null,
+  "events": [
+    {
+      "id": "motion.avatar-ring-assemble.converge",
+      "kind": "layout.assembly",
+      "target": "anchored-copy",
+      "frame": 17,
+      "layerIds": [
+        "anchored-copy"
+      ]
+    },
+    {
+      "id": "motion.avatar-ring-assemble.settled",
+      "kind": "layout.settle",
+      "target": "portrait-5",
+      "frame": 57,
+      "layerIds": [
+        "portrait-5"
+      ]
+    }
+  ],
+  "cues": []
+}

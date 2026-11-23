@@ -1,0 +1,424 @@
+{
+  "width": 720,
+  "height": 480,
+  "fps": 30,
+  "duration": 2.4,
+  "background": "#dce7f1",
+  "title": "Expand an inline reply thread",
+  "source": {
+    "path": "packs/conversation.mjs#inline-thread-open",
+    "sourceStart": 0,
+    "sourceEnd": 2.4,
+    "notes": "Original editable Motion demonstration."
+  },
+  "layers": [
+    {
+      "id": "surface",
+      "type": "rect",
+      "x": 110,
+      "y": 44,
+      "width": 500,
+      "height": 392,
+      "fill": "#ffffff",
+      "radius": 18
+    },
+    {
+      "id": "stage",
+      "type": "group",
+      "x": 110,
+      "y": 98,
+      "children": [
+        {
+          "id": "thread-connector",
+          "type": "rect",
+          "x": 49,
+          "y": 96,
+          "width": 3,
+          "height": 2,
+          "fill": "#516277",
+          "radius": 1,
+          "keyframes": {
+            "height": [
+              {
+                "t": 0,
+                "value": 2,
+                "ease": "linear"
+              },
+              {
+                "t": 0.744,
+                "value": 2,
+                "ease": "linear"
+              },
+              {
+                "t": 1.584,
+                "value": 106,
+                "ease": "easeOut"
+              }
+            ]
+          }
+        },
+        {
+          "id": "thread-parent",
+          "type": "group",
+          "x": 30,
+          "y": 38,
+          "children": [
+            {
+              "id": "thread-parent-body",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 262,
+              "height": 54,
+              "fill": "#e9e9ed",
+              "radius": 20
+            },
+            {
+              "id": "thread-parent-tail",
+              "type": "path",
+              "d": "M 16 36 Q 3 55 -7 52 Q 3 48 2 34 Z",
+              "fill": "#e9e9ed"
+            },
+            {
+              "id": "thread-parent-copy",
+              "type": "text",
+              "text": "Can you send the trail map?",
+              "x": 17,
+              "y": 14,
+              "fontSize": 16,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#17191d",
+              "lineHeight": 18
+            }
+          ]
+        },
+        {
+          "id": "thread-unrelated",
+          "type": "group",
+          "x": 30,
+          "y": 111,
+          "children": [
+            {
+              "id": "thread-unrelated-body",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 223,
+              "height": 46,
+              "fill": "#e9e9ed",
+              "radius": 20
+            },
+            {
+              "id": "thread-unrelated-tail",
+              "type": "path",
+              "d": "M 16 28 Q 3 47 -7 44 Q 3 40 2 26 Z",
+              "fill": "#e9e9ed"
+            },
+            {
+              "id": "thread-unrelated-copy",
+              "type": "text",
+              "text": "One more thing.",
+              "x": 17,
+              "y": 14,
+              "fontSize": 16,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#17191d",
+              "lineHeight": 18
+            }
+          ],
+          "keyframes": {
+            "y": [
+              {
+                "t": 0,
+                "value": 111,
+                "ease": "linear"
+              },
+              {
+                "t": 0.744,
+                "value": 111,
+                "ease": "linear"
+              },
+              {
+                "t": 1.6488,
+                "value": 234,
+                "ease": "easeOut"
+              }
+            ]
+          }
+        },
+        {
+          "id": "thread-reply-first",
+          "type": "group",
+          "x": 80,
+          "y": 117,
+          "children": [
+            {
+              "id": "thread-reply-first-body",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 275,
+              "height": 46,
+              "fill": "#e9e9ed",
+              "radius": 20
+            },
+            {
+              "id": "thread-reply-first-tail",
+              "type": "path",
+              "d": "M 16 28 Q 3 47 -7 44 Q 3 40 2 26 Z",
+              "fill": "#e9e9ed"
+            },
+            {
+              "id": "thread-reply-first-copy",
+              "type": "text",
+              "text": "Here it is. Meet at the north\ngate.",
+              "x": 17,
+              "y": 3.5,
+              "fontSize": 16,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#17191d",
+              "lineHeight": 18
+            }
+          ],
+          "keyframes": {
+            "y": [
+              {
+                "t": 0,
+                "value": 102,
+                "ease": "linear"
+              },
+              {
+                "t": 0.9119999999999999,
+                "value": 102,
+                "ease": "linear"
+              },
+              {
+                "t": 1.392,
+                "value": 117,
+                "ease": "easeOut"
+              }
+            ],
+            "opacity": [
+              {
+                "t": 0,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 0.9359999999999999,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 1.344,
+                "value": 1,
+                "ease": "easeOut"
+              }
+            ]
+          }
+        },
+        {
+          "id": "thread-reply-second",
+          "type": "group",
+          "x": 137,
+          "y": 174,
+          "children": [
+            {
+              "id": "thread-reply-second-body",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 249,
+              "height": 46,
+              "fill": "#1688fa",
+              "radius": 20
+            },
+            {
+              "id": "thread-reply-second-tail",
+              "type": "path",
+              "d": "M 233 28 Q 246 47 256 44 Q 246 40 247 26 Z",
+              "fill": "#1688fa"
+            },
+            {
+              "id": "thread-reply-second-copy",
+              "type": "text",
+              "text": "I will leave at noon.",
+              "x": 17,
+              "y": 14,
+              "fontSize": 16,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#ffffff",
+              "lineHeight": 18
+            }
+          ],
+          "keyframes": {
+            "y": [
+              {
+                "t": 0,
+                "value": 141,
+                "ease": "linear"
+              },
+              {
+                "t": 1.248,
+                "value": 141,
+                "ease": "linear"
+              },
+              {
+                "t": 1.68,
+                "value": 174,
+                "ease": "easeOut"
+              }
+            ],
+            "opacity": [
+              {
+                "t": 0,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 1.344,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 1.656,
+                "value": 1,
+                "ease": "easeOut"
+              }
+            ]
+          }
+        }
+      ],
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 500,
+        "height": 298
+      }
+    },
+    {
+      "id": "footer",
+      "type": "group",
+      "x": 110,
+      "y": 396,
+      "children": [
+        {
+          "id": "footer-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 40,
+          "fill": "#f2f6fb",
+          "radius": 12
+        },
+        {
+          "id": "thread-composer",
+          "type": "group",
+          "x": 23,
+          "y": 0,
+          "children": [
+            {
+              "id": "thread-composer-field",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 454,
+              "height": 48,
+              "fill": "#ffffff",
+              "radius": 24,
+              "stroke": "#d8dbe0",
+              "strokeWidth": 1
+            },
+            {
+              "id": "thread-composer-input",
+              "type": "text",
+              "text": "Message",
+              "x": 18,
+              "y": 14,
+              "fontSize": 17,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#777b84"
+            },
+            {
+              "id": "thread-composer-send",
+              "type": "circle",
+              "x": 414,
+              "y": 8,
+              "width": 32,
+              "height": 32,
+              "fill": "#d8dbe0"
+            },
+            {
+              "id": "thread-composer-arrow",
+              "type": "path",
+              "d": "M 430 33 L 430 16 M 423 23 L 430 16 L 437 23",
+              "fill": "none",
+              "stroke": "#ffffff",
+              "strokeWidth": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "heading",
+      "type": "group",
+      "x": 110,
+      "y": 44,
+      "children": [
+        {
+          "id": "heading-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 54,
+          "fill": "#f2f6fb",
+          "radius": 13
+        },
+        {
+          "id": "heading-copy",
+          "type": "text",
+          "text": "Alpine field notes",
+          "x": 26,
+          "y": 13,
+          "fontSize": 23,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#182737",
+          "fontWeight": 700
+        }
+      ]
+    }
+  ],
+  "timeline": {
+    "version": 1,
+    "picture": {
+      "fpsNum": 30,
+      "fpsDen": 1,
+      "frameCount": 72
+    },
+    "initialUI": null,
+    "events": [
+      {
+        "id": "motion.inline-thread-open.thread-expand",
+        "kind": "thread_open",
+        "target": "thread-parent",
+        "frame": 23,
+        "layerIds": [
+          "thread-parent"
+        ]
+      },
+      {
+        "id": "motion.inline-thread-open.thread-readable",
+        "kind": "thread_ready",
+        "target": "thread-reply-second",
+        "frame": 51,
+        "layerIds": [
+          "thread-reply-second"
+        ]
+      }
+    ],
+    "cues": []
+  }
+}

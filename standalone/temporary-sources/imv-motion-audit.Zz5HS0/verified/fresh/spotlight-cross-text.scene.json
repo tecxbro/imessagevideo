@@ -1,0 +1,294 @@
+{
+  "width": 720,
+  "height": 480,
+  "fps": 30,
+  "duration": 2.4,
+  "background": "#dce7f1",
+  "title": "Move a spotlight across fixed phrases",
+  "source": {
+    "path": "packs/editorial.mjs#spotlight-cross-text",
+    "sourceStart": 0,
+    "sourceEnd": 2.4,
+    "notes": "Original editable Motion demonstration."
+  },
+  "layers": [
+    {
+      "id": "surface",
+      "type": "rect",
+      "x": 110,
+      "y": 44,
+      "width": 500,
+      "height": 392,
+      "fill": "#ffffff",
+      "radius": 18
+    },
+    {
+      "id": "stage",
+      "type": "group",
+      "x": 110,
+      "y": 98,
+      "children": [
+        {
+          "id": "target-left",
+          "type": "text",
+          "text": "Pick a time",
+          "x": 128,
+          "y": 122,
+          "fontSize": 25,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#182737",
+          "fontWeight": 600,
+          "textAnchor": "middle"
+        },
+        {
+          "id": "target-right",
+          "type": "text",
+          "text": "Reserve now",
+          "x": 375,
+          "y": 122,
+          "fontSize": 25,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#182737",
+          "fontWeight": 600,
+          "textAnchor": "middle"
+        },
+        {
+          "id": "context-top",
+          "type": "text",
+          "text": "Choose one action",
+          "x": 250,
+          "y": 63,
+          "fontSize": 18,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#182737",
+          "fontWeight": 600,
+          "textAnchor": "middle"
+        },
+        {
+          "id": "shade-above",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 108,
+          "fill": "#e8eef5",
+          "radius": 0,
+          "opacity": 0.88
+        },
+        {
+          "id": "shade-below",
+          "type": "rect",
+          "x": 0,
+          "y": 167,
+          "width": 500,
+          "height": 131,
+          "fill": "#e8eef5",
+          "radius": 0,
+          "opacity": 0.88
+        },
+        {
+          "id": "shade-left",
+          "type": "rect",
+          "x": 0,
+          "y": 108,
+          "width": 32,
+          "height": 59,
+          "fill": "#e8eef5",
+          "radius": 0,
+          "opacity": 0.88,
+          "keyframes": {
+            "width": [
+              {
+                "t": 0,
+                "value": 32,
+                "ease": "linear"
+              },
+              {
+                "t": 0.552,
+                "value": 32,
+                "ease": "linear"
+              },
+              {
+                "t": 1.464,
+                "value": 282,
+                "ease": "easeInOut"
+              }
+            ]
+          }
+        },
+        {
+          "id": "shade-right",
+          "type": "rect",
+          "x": 218,
+          "y": 108,
+          "width": 282,
+          "height": 59,
+          "fill": "#e8eef5",
+          "radius": 0,
+          "opacity": 0.88,
+          "keyframes": {
+            "x": [
+              {
+                "t": 0,
+                "value": 218,
+                "ease": "linear"
+              },
+              {
+                "t": 0.552,
+                "value": 218,
+                "ease": "linear"
+              },
+              {
+                "t": 1.464,
+                "value": 468,
+                "ease": "easeInOut"
+              }
+            ],
+            "width": [
+              {
+                "t": 0,
+                "value": 282,
+                "ease": "linear"
+              },
+              {
+                "t": 0.552,
+                "value": 282,
+                "ease": "linear"
+              },
+              {
+                "t": 1.464,
+                "value": 32,
+                "ease": "easeInOut"
+              }
+            ]
+          }
+        },
+        {
+          "id": "spotlight-edge",
+          "type": "rect",
+          "x": 32,
+          "y": 108,
+          "width": 186,
+          "height": 59,
+          "fill": "none",
+          "radius": 0,
+          "stroke": "#1478e9",
+          "strokeWidth": 2,
+          "keyframes": {
+            "x": [
+              {
+                "t": 0,
+                "value": 32,
+                "ease": "linear"
+              },
+              {
+                "t": 0.552,
+                "value": 32,
+                "ease": "linear"
+              },
+              {
+                "t": 1.464,
+                "value": 282,
+                "ease": "easeInOut"
+              }
+            ]
+          }
+        }
+      ],
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 500,
+        "height": 298
+      }
+    },
+    {
+      "id": "footer",
+      "type": "group",
+      "x": 110,
+      "y": 396,
+      "children": [
+        {
+          "id": "footer-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 40,
+          "fill": "#f2f6fb",
+          "radius": 12
+        },
+        {
+          "id": "editorial-caption",
+          "type": "text",
+          "text": "The words stay in place as the highlight moves.",
+          "x": 22,
+          "y": 9,
+          "fontSize": 15,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#516277",
+          "fontWeight": 600
+        }
+      ]
+    },
+    {
+      "id": "heading",
+      "type": "group",
+      "x": 110,
+      "y": 44,
+      "children": [
+        {
+          "id": "heading-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 54,
+          "fill": "#f2f6fb",
+          "radius": 13
+        },
+        {
+          "id": "heading-copy",
+          "type": "text",
+          "text": "Two ways to book",
+          "x": 26,
+          "y": 13,
+          "fontSize": 23,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#182737",
+          "fontWeight": 700
+        }
+      ]
+    }
+  ],
+  "timeline": {
+    "version": 1,
+    "picture": {
+      "fpsNum": 30,
+      "fpsDen": 1,
+      "frameCount": 72
+    },
+    "initialUI": null,
+    "events": [
+      {
+        "id": "motion.spotlight-cross-text.spotlight-start",
+        "kind": "spotlight-start",
+        "target": "spotlight-edge",
+        "frame": 17,
+        "layerIds": [
+          "spotlight-edge"
+        ]
+      },
+      {
+        "id": "motion.spotlight-cross-text.phrase-in-spotlight",
+        "kind": "phrase-in-spotlight",
+        "target": "target-right",
+        "frame": 44,
+        "layerIds": [
+          "target-right"
+        ]
+      }
+    ],
+    "cues": []
+  }
+}

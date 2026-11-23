@@ -1,0 +1,274 @@
+{
+  "width": 720,
+  "height": 480,
+  "fps": 30,
+  "duration": 2.4,
+  "background": "#dce7f1",
+  "title": "Pan the camera across neighboring workspaces",
+  "source": {
+    "path": "packs/editorial.mjs#camera-truck-between",
+    "sourceStart": 0,
+    "sourceEnd": 2.4,
+    "notes": "Original editable Motion demonstration."
+  },
+  "layers": [
+    {
+      "id": "surface",
+      "type": "rect",
+      "x": 110,
+      "y": 44,
+      "width": 500,
+      "height": 392,
+      "fill": "#ffffff",
+      "radius": 18
+    },
+    {
+      "id": "stage",
+      "type": "group",
+      "x": 110,
+      "y": 98,
+      "children": [
+        {
+          "id": "lateral-camera",
+          "type": "group",
+          "x": 0,
+          "y": 0,
+          "children": [
+            {
+              "id": "left-destination",
+              "type": "group",
+              "x": 99,
+              "y": 91,
+              "children": [
+                {
+                  "id": "left-destination-surface",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 302,
+                  "height": 109,
+                  "fill": "#ffffff",
+                  "radius": 16,
+                  "stroke": "#e8eef5",
+                  "strokeWidth": 1
+                },
+                {
+                  "id": "left-destination-label",
+                  "type": "text",
+                  "text": "Plan",
+                  "x": 16,
+                  "y": 14,
+                  "fontSize": 18,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#182737",
+                  "fontWeight": 600
+                },
+                {
+                  "id": "left-destination-detail",
+                  "type": "rect",
+                  "x": 16,
+                  "y": 45,
+                  "width": 258,
+                  "height": 5,
+                  "fill": "#e8eef5",
+                  "radius": 2
+                }
+              ]
+            },
+            {
+              "id": "right-destination",
+              "type": "group",
+              "x": 425,
+              "y": 91,
+              "children": [
+                {
+                  "id": "right-destination-surface",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 302,
+                  "height": 109,
+                  "fill": "#ffffff",
+                  "radius": 16,
+                  "stroke": "#e8eef5",
+                  "strokeWidth": 1
+                },
+                {
+                  "id": "right-destination-label",
+                  "type": "text",
+                  "text": "Check out",
+                  "x": 16,
+                  "y": 14,
+                  "fontSize": 18,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#182737",
+                  "fontWeight": 600
+                },
+                {
+                  "id": "right-destination-detail",
+                  "type": "rect",
+                  "x": 16,
+                  "y": 45,
+                  "width": 258,
+                  "height": 5,
+                  "fill": "#e8eef5",
+                  "radius": 2
+                }
+              ]
+            }
+          ],
+          "keyframes": {
+            "x": [
+              {
+                "t": 0,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 0.45599999999999996,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 1.656,
+                "value": -326,
+                "ease": "easeInOut"
+              }
+            ]
+          }
+        },
+        {
+          "id": "index-track",
+          "type": "circle",
+          "x": 260,
+          "y": 231,
+          "width": 8,
+          "height": 8,
+          "fill": "#e8eef5"
+        },
+        {
+          "id": "position-index",
+          "type": "circle",
+          "x": 232,
+          "y": 231,
+          "width": 8,
+          "height": 8,
+          "fill": "#1478e9",
+          "keyframes": {
+            "x": [
+              {
+                "t": 0,
+                "value": 232,
+                "ease": "linear"
+              },
+              {
+                "t": 0.45599999999999996,
+                "value": 232,
+                "ease": "linear"
+              },
+              {
+                "t": 1.656,
+                "value": 260,
+                "ease": "easeInOut"
+              }
+            ]
+          }
+        }
+      ],
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 500,
+        "height": 298
+      }
+    },
+    {
+      "id": "footer",
+      "type": "group",
+      "x": 110,
+      "y": 396,
+      "children": [
+        {
+          "id": "footer-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 40,
+          "fill": "#f2f6fb",
+          "radius": 12
+        },
+        {
+          "id": "editorial-caption",
+          "type": "text",
+          "text": "The next destination sits on the same surface.",
+          "x": 22,
+          "y": 9,
+          "fontSize": 15,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#516277",
+          "fontWeight": 600
+        }
+      ]
+    },
+    {
+      "id": "heading",
+      "type": "group",
+      "x": 110,
+      "y": 44,
+      "children": [
+        {
+          "id": "heading-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 54,
+          "fill": "#f2f6fb",
+          "radius": 13
+        },
+        {
+          "id": "heading-copy",
+          "type": "text",
+          "text": "One workspace",
+          "x": 26,
+          "y": 13,
+          "fontSize": 23,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#182737",
+          "fontWeight": 700
+        }
+      ]
+    }
+  ],
+  "timeline": {
+    "version": 1,
+    "picture": {
+      "fpsNum": 30,
+      "fpsDen": 1,
+      "frameCount": 72
+    },
+    "initialUI": null,
+    "events": [
+      {
+        "id": "motion.camera-truck-between.truck-start",
+        "kind": "truck-start",
+        "target": "lateral-camera",
+        "frame": 14,
+        "layerIds": [
+          "lateral-camera"
+        ]
+      },
+      {
+        "id": "motion.camera-truck-between.next-region-framed",
+        "kind": "next-region-framed",
+        "target": "right-destination",
+        "frame": 50,
+        "layerIds": [
+          "right-destination"
+        ]
+      }
+    ],
+    "cues": []
+  }
+}

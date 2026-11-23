@@ -1,0 +1,134 @@
+{
+  "request": "Change this message to 'Meet at the doors' and replace this shot's motion with the swipe from this second clip.",
+  "intent": "edit",
+  "scope": "changes",
+  "library": "/Users/darshan/Documents/video-analysis/iv-test/library",
+  "sources": [
+    {
+      "path": "/Users/darshan/Documents/video-analysis/iv-test/jobs/t3/film.mp4",
+      "role": "edit-target",
+      "identity": {
+        "status": "new",
+        "sha256": "9b2fc1fbef97b25747112ae8244dc9bb84bedf998323723f4fe888bbf88d2054",
+        "matches": []
+      },
+      "documented_motions": [],
+      "steps": [
+        "segment_source",
+        "observe_moving_and_fixed_layers",
+        "find_or_author_each_motion",
+        "replay_from_library",
+        "compare_consecutive_frames",
+        "record_verified_coverage"
+      ],
+      "intake": {
+        "source": "/Users/darshan/Documents/video-analysis/iv-test/jobs/t4/intake/9b2fc1fbef97b25747112ae8244dc9bb84bedf998323723f4fe888bbf88d2054/source.json",
+        "frames": "/Users/darshan/Documents/video-analysis/iv-test/jobs/t4/intake/9b2fc1fbef97b25747112ae8244dc9bb84bedf998323723f4fe888bbf88d2054/frames.csv",
+        "overview": "/Users/darshan/Documents/video-analysis/iv-test/jobs/t4/intake/9b2fc1fbef97b25747112ae8244dc9bb84bedf998323723f4fe888bbf88d2054/overview.jpg",
+        "rea_breakdown": null,
+        "next": "Open the source frames, inventory each moving layer and compare candidate recipes."
+      }
+    },
+    {
+      "path": "/Users/darshan/Documents/video-analysis/iv-test/donor-swipe.mp4",
+      "role": "motion-donor",
+      "identity": {
+        "status": "candidate",
+        "sha256": "befaf0d9cb98eac371dc241fa87cdd21dc3ef2cc63c11d4c5d3c97f786f3bf56",
+        "matches": [
+          {
+            "id": "05-linq",
+            "title": "Linq iMessage Apps",
+            "source": {
+              "url": "https://github.com/tecxbro/imessagevideo/blob/c49482aec7b8ed0b840f97c61a5e5b860c4077b6/projects/05-linq-complete-v1/imessage-recreations/references/05-linq/source.mp4",
+              "origin": "https://www.linkedin.com/posts/elliottpotter_your-users-never-have-to-leave-imessage-again-activity-7477784121293950976-Dlap",
+              "repository_path": "projects/05-linq-complete-v1/imessage-recreations/references/05-linq/source.mp4",
+              "sha256": "86e22e698e141c5c2a161977289be1335bb0c0a1dd98769c4c146fcd57bbf2eb"
+            },
+            "editable_project": {
+              "url": "https://github.com/tecxbro/imessagevideo/tree/c49482aec7b8ed0b840f97c61a5e5b860c4077b6/projects/05-linq-complete-v1/imessage-recreations",
+              "repository_path": "projects/05-linq-complete-v1/imessage-recreations",
+              "scene": {
+                "repository_path": "projects/05-linq-complete-v1/imessage-recreations/scenes/05-linq/scene.json",
+                "sha256": "658184bb8d05c50633f37fa0ef0bfd8a943773076f249c7e0dbf02991e6e93c6",
+                "url": "https://github.com/tecxbro/imessagevideo/blob/c49482aec7b8ed0b840f97c61a5e5b860c4077b6/projects/05-linq-complete-v1/imessage-recreations/scenes/05-linq/scene.json"
+              }
+            },
+            "reconstruction": {
+              "verification": "historical-archive",
+              "audit_url": "https://github.com/tecxbro/imessagevideo/blob/c49482aec7b8ed0b840f97c61a5e5b860c4077b6/reports/completeness-audit/README.md",
+              "source_scan_url": "https://github.com/tecxbro/imessagevideo/blob/c49482aec7b8ed0b840f97c61a5e5b860c4077b6/projects/05-linq-complete-v1/imessage-recreations/verification/timeline-scans/05-linq-v20-pc709/scan.json",
+              "master": {
+                "url": "https://github.com/tecxbro/imessagevideo/blob/c49482aec7b8ed0b840f97c61a5e5b860c4077b6/projects/05-linq-complete-v1/imessage-recreations/deliverables/05-linq/gsap.mp4",
+                "repository_path": "projects/05-linq-complete-v1/imessage-recreations/deliverables/05-linq/gsap.mp4",
+                "sha256": "309684b11463675fdce23a394f4ec2285ff267a4c7d61d492857aa0192f80268"
+              }
+            },
+            "recipe_ids": [],
+            "evidence": {
+              "kind": "visual-sequence",
+              "matched_samples": 6,
+              "input_seconds": [
+                0.0,
+                3.0
+              ],
+              "catalog_seconds": [
+                35.0,
+                38.0
+              ],
+              "audio_compared": false
+            },
+            "seed_bindings": [],
+            "coverage": "archived-reconstruction",
+            "next": "Align the input and catalog windows, compare adjacent frames, and check audio before reusing matched coverage."
+          }
+        ]
+      },
+      "documented_motions": [
+        {
+          "id": "photos-under-fixed-heading",
+          "title": "Slide the photos beneath a fixed heading",
+          "source": {
+            "kind": "measured-adaptation",
+            "ref": "projects/05-linq-complete-v1/imessage-recreations/references/05-linq/source.mp4",
+            "range": [
+              36.366667,
+              37.066667
+            ],
+            "framesInclusive": [
+              1091,
+              1111
+            ],
+            "note": "Normalized Linq rail shift sampled by the earlier motion library at a23bfb2. Reproduced at a new size with authored artwork and a held header."
+          },
+          "preview": "/Users/darshan/Documents/video-analysis/imessagevideo-dl/skill/imessage-video/assets/seed/previews/photos-under-fixed-heading.mp4",
+          "implementation": "/Users/darshan/Documents/video-analysis/imessagevideo-dl/skill/imessage-video/assets/seed/runtime/motion/packs/core.mjs"
+        }
+      ],
+      "steps": [
+        "align_candidate_to_source",
+        "compare_consecutive_frames_and_audio",
+        "reuse_matching_coverage",
+        "learn_and_replay_uncovered_motions"
+      ],
+      "intake": {
+        "source": "/Users/darshan/Documents/video-analysis/iv-test/jobs/t4/intake/befaf0d9cb98eac371dc241fa87cdd21dc3ef2cc63c11d4c5d3c97f786f3bf56/source.json",
+        "frames": "/Users/darshan/Documents/video-analysis/iv-test/jobs/t4/intake/befaf0d9cb98eac371dc241fa87cdd21dc3ef2cc63c11d4c5d3c97f786f3bf56/frames.csv",
+        "overview": "/Users/darshan/Documents/video-analysis/iv-test/jobs/t4/intake/befaf0d9cb98eac371dc241fa87cdd21dc3ef2cc63c11d4c5d3c97f786f3bf56/overview.jpg",
+        "rea_breakdown": null,
+        "next": "Open the source frames, inventory each moving layer and compare candidate recipes."
+      }
+    }
+  ],
+  "project": "/Users/darshan/Documents/video-analysis/iv-test/jobs/t3/approved.json",
+  "next": "locate_target_shots",
+  "workflow": [
+    "open_editable_target_or_recover_its_layers",
+    "identify_changed_copy_and_motion",
+    "retrieve_selected_donor_motion",
+    "patch_named_shots",
+    "render_changed_passage",
+    "check_changed_and_unchanged_regions",
+    "deliver_revised_film"
+  ]
+}

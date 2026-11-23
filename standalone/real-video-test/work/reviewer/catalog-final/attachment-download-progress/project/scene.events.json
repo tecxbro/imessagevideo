@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 72
+  },
+  "initialUI": null,
+  "events": [
+    {
+      "id": "motion.attachment-download-progress.transfer-start",
+      "kind": "download_start",
+      "target": "download-progress",
+      "frame": 15,
+      "layerIds": [
+        "download-progress"
+      ]
+    },
+    {
+      "id": "motion.attachment-download-progress.transfer-complete",
+      "kind": "download_complete",
+      "target": "download-progress",
+      "frame": 57,
+      "layerIds": [
+        "download-progress"
+      ]
+    }
+  ],
+  "cues": []
+}

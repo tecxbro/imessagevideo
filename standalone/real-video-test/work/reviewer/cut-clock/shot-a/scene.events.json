@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 49
+  },
+  "initialUI": null,
+  "events": [
+    {
+      "id": "motion.camera-truck-between.truck-start",
+      "kind": "truck-start",
+      "target": "lateral-camera",
+      "frame": 10,
+      "layerIds": [
+        "lateral-camera"
+      ]
+    },
+    {
+      "id": "motion.camera-truck-between.next-region-framed",
+      "kind": "next-region-framed",
+      "target": "right-destination",
+      "frame": 34,
+      "layerIds": [
+        "right-destination"
+      ]
+    }
+  ],
+  "cues": []
+}

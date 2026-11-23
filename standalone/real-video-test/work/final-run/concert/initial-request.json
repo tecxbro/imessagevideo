@@ -1,0 +1,20 @@
+{
+  "request": "Make an iMessage video about two friends getting concert tickets.",
+  "intent": "direct",
+  "scope": "film",
+  "library": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/final-run/library",
+  "sources": [],
+  "project": null,
+  "workflow": [
+    "establish_brief",
+    "search_library_for_each_shot",
+    "show_shots_with_motion_previews_and_code",
+    "review_direction_with_user",
+    "choose_one_renderer",
+    "prove_hardest_shot",
+    "render_approved_cut"
+  ],
+  "next": "clarify_missing_brief",
+  "question": "Do you have a reference, or should I start from the motion library? What should the viewer understand from the main action?",
+  "guidance": "Use known answers first. Ask only about a missing story decision. With a vague brief and no reference, offer the choice to supply one once; an empty answer or no reference proceeds to the director and saved library."
+}

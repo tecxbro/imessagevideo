@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 72
+  },
+  "initialUI": null,
+  "events": [
+    {
+      "id": "motion.reply-makes-room.reply-arrival",
+      "kind": "message_arrival",
+      "target": "arrival-new-reply",
+      "frame": 35,
+      "layerIds": [
+        "arrival-new-reply"
+      ]
+    }
+  ],
+  "cues": []
+}

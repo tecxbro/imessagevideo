@@ -1,0 +1,43 @@
+{
+  "request": "Learn this swipe.",
+  "intent": "learn",
+  "scope": "motion",
+  "library": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/run/library",
+  "sources": [
+    {
+      "path": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/inputs/linq-fixed-swipe.mp4",
+      "role": "reference",
+      "identity": {
+        "status": "new",
+        "sha256": "412f827f236331c934e68d987659a67aed25ac001f6079fb8a024937c9870eec",
+        "matches": []
+      },
+      "documented_motions": [],
+      "steps": [
+        "segment_source",
+        "observe_moving_and_fixed_layers",
+        "find_or_author_each_motion",
+        "replay_from_library",
+        "compare_consecutive_frames",
+        "record_verified_coverage"
+      ],
+      "intake": {
+        "source": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/linq-v1/intake/intake/412f827f236331c934e68d987659a67aed25ac001f6079fb8a024937c9870eec/source.json",
+        "frames": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/linq-v1/intake/intake/412f827f236331c934e68d987659a67aed25ac001f6079fb8a024937c9870eec/frames.csv",
+        "overview": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/linq-v1/intake/intake/412f827f236331c934e68d987659a67aed25ac001f6079fb8a024937c9870eec/overview.jpg",
+        "rea_breakdown": null,
+        "next": "Open the source frames, inventory each moving layer and compare candidate recipes."
+      }
+    }
+  ],
+  "project": null,
+  "next": "resolve_motion_coverage",
+  "workflow": [
+    "isolate_requested_intervals",
+    "check_existing_recipes",
+    "author_missing_recipes",
+    "replay_saved_code_against_reference",
+    "verify_transfer_with_changed_content",
+    "return_preview_code_and_usage"
+  ]
+}

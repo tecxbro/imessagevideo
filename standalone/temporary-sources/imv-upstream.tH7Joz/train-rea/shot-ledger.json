@@ -1,0 +1,220 @@
+{
+  "reference_sha256": "659bb5af8d67b9fa89f0709cb559e251000e04f47d68bf02c1b3c1b85c8c1562",
+  "breakdown_sha256": "a10a983c885886d0836ca3b245bdd06591bb8c31aa436f822d0d29013a688f0c",
+  "clock": {
+    "width": 640,
+    "height": 360,
+    "sample_aspect_ratio": "1",
+    "rotation_degrees": 0,
+    "display_matrix": [
+      65536,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      1073741824
+    ],
+    "container_crop_top_bottom_left_right": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "time_base": "1/15360",
+    "declared_rate": "30",
+    "declared_average_rate": "30/1",
+    "start_pts": 0,
+    "end_pts_exclusive": 61440,
+    "end_basis": "last decoded frame duration",
+    "end_seconds": 4.0,
+    "frames": 120,
+    "cadence": "constant",
+    "pixel_format": "yuv420p",
+    "alpha_present": false,
+    "color_range": "tv",
+    "color_space": "bt709",
+    "color_primaries": null,
+    "color_transfer": null
+  },
+  "renderer": {
+    "route": "hyperframes",
+    "reason": "constant measured frame grid and opaque SDR geometry"
+  },
+  "shots": [
+    {
+      "id": "shot_001",
+      "frames": [
+        0,
+        17
+      ],
+      "source_pts": [
+        0,
+        9216
+      ],
+      "suggested_method": "code_render",
+      "confidence": 0.859,
+      "reviewed": false,
+      "boundary_review": "inspect consecutive frames around the cut",
+      "transition": "start",
+      "keyframes": [
+        {
+          "t": 0.0,
+          "frame": 0,
+          "role": "first",
+          "by": "tool"
+        }
+      ],
+      "assessment": {
+        "label": "code_render",
+        "label_zh": "code / template render",
+        "confidence": 0.859,
+        "probs": {
+          "live_action": 0.0057,
+          "ai_video": 0.0057,
+          "avatar": 0.0057,
+          "cg_3d": 0.0057,
+          "code_render": 0.8593,
+          "screen_capture": 0.0911,
+          "still_motion": 0.0057,
+          "static_hold": 0.0096,
+          "anim_2d": 0.0057,
+          "stop_motion": 0.0057,
+          "film_footage": 0.0
+        },
+        "image_source": null,
+        "generator_guess": null,
+        "decided_by": "deterministic",
+        "evidence": [
+          "Picture is almost entirely still: 100% of adjacent frames are pixel-identical, first-to-last frame difference 0.00",
+          "The picture is large saturated colour fields with almost no material texture (1% fine-texture pixels; footage, AI and 3D renders keep fabric / skin / noise texture): vector / gradient graphics drawn by code",
+          "Rendered texture: 94% flat colour blocks, 95% of pixels use only 1 colours, 35% axis-aligned edges"
+        ],
+        "seen": [],
+        "measured": [
+          "Picture is almost entirely still: 100% of adjacent frames are pixel-identical, first-to-last frame difference 0.00",
+          "The picture is large saturated colour fields with almost no material texture (1% fine-texture pixels; footage, AI and 3D renders keep fabric / skin / noise texture): vector / gradient graphics drawn by code",
+          "Rendered texture: 94% flat colour blocks, 95% of pixels use only 1 colours, 35% axis-aligned edges"
+        ]
+      },
+      "observation": null,
+      "assets": [],
+      "layers": []
+    },
+    {
+      "id": "shot_002",
+      "frames": [
+        18,
+        119
+      ],
+      "source_pts": [
+        9216,
+        61440
+      ],
+      "suggested_method": "code_render",
+      "confidence": 0.711,
+      "reviewed": false,
+      "boundary_review": "inspect consecutive frames around the cut",
+      "transition": "cut",
+      "keyframes": [
+        {
+          "t": 0.6,
+          "frame": 18,
+          "role": "first",
+          "by": "tool"
+        },
+        {
+          "t": 0.933,
+          "frame": 28,
+          "role": "change",
+          "by": "tool"
+        },
+        {
+          "t": 1.133,
+          "frame": 34,
+          "role": "change",
+          "by": "tool"
+        },
+        {
+          "t": 1.8,
+          "frame": 54,
+          "role": "change",
+          "by": "tool"
+        },
+        {
+          "t": 2.133,
+          "frame": 64,
+          "role": "change",
+          "by": "tool"
+        },
+        {
+          "t": 2.433,
+          "frame": 73,
+          "role": "change",
+          "by": "tool"
+        },
+        {
+          "t": 2.5,
+          "frame": 75,
+          "role": "change",
+          "by": "tool"
+        },
+        {
+          "t": 2.9,
+          "frame": 87,
+          "role": "change",
+          "by": "tool"
+        },
+        {
+          "t": 3.067,
+          "frame": 92,
+          "role": "change",
+          "by": "tool"
+        },
+        {
+          "t": 3.967,
+          "frame": 119,
+          "role": "change",
+          "by": "tool"
+        }
+      ],
+      "assessment": {
+        "label": "code_render",
+        "label_zh": "code / template render",
+        "confidence": 0.711,
+        "probs": {
+          "live_action": 0.0066,
+          "ai_video": 0.0094,
+          "avatar": 0.0065,
+          "cg_3d": 0.1009,
+          "code_render": 0.7109,
+          "screen_capture": 0.1378,
+          "still_motion": 0.0065,
+          "static_hold": 0.0083,
+          "anim_2d": 0.0065,
+          "stop_motion": 0.0065,
+          "film_footage": 0.0
+        },
+        "image_source": null,
+        "generator_guess": null,
+        "decided_by": "deterministic",
+        "evidence": [
+          "78% of adjacent frames are exact duplicates, only local elements move (typical of template / motion-graphics animation, or a hold with local motion)",
+          "Rendered texture: 74% flat colour blocks, 95% of pixels use only 4 colours, 43% axis-aligned edges",
+          "100% of background pixels never change frame to frame while local elements move: 2D compositing / code-driven motion graphics"
+        ],
+        "seen": [],
+        "measured": [
+          "78% of adjacent frames are exact duplicates, only local elements move (typical of template / motion-graphics animation, or a hold with local motion)",
+          "Rendered texture: 74% flat colour blocks, 95% of pixels use only 4 colours, 43% axis-aligned edges",
+          "100% of background pixels never change frame to frame while local elements move: 2D compositing / code-driven motion graphics"
+        ]
+      },
+      "observation": null,
+      "assets": [],
+      "layers": []
+    }
+  ]
+}

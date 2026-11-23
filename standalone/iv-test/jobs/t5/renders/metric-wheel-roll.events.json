@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 72
+  },
+  "initialUI": null,
+  "events": [
+    {
+      "id": "motion.metric-wheel-roll.value-turned",
+      "kind": "value-turned",
+      "target": "wheel-value-1",
+      "frame": 24,
+      "layerIds": [
+        "wheel-value-1"
+      ]
+    },
+    {
+      "id": "motion.metric-wheel-roll.value-lands",
+      "kind": "value-lands",
+      "target": "wheel-value-2",
+      "frame": 47,
+      "layerIds": [
+        "wheel-value-2"
+      ]
+    }
+  ],
+  "cues": []
+}

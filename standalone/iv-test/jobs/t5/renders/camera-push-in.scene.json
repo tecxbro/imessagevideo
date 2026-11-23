@@ -1,0 +1,317 @@
+{
+  "width": 720,
+  "height": 480,
+  "fps": 30,
+  "duration": 2.4,
+  "background": "#dce7f1",
+  "title": "Push the camera toward a detail",
+  "source": {
+    "path": "packs/editorial.mjs#camera-push-in",
+    "sourceStart": 0,
+    "sourceEnd": 2.4,
+    "notes": "Original editable Motion demonstration."
+  },
+  "layers": [
+    {
+      "id": "surface",
+      "type": "rect",
+      "x": 110,
+      "y": 44,
+      "width": 500,
+      "height": 392,
+      "fill": "#ffffff",
+      "radius": 18
+    },
+    {
+      "id": "stage",
+      "type": "group",
+      "x": 110,
+      "y": 98,
+      "children": [
+        {
+          "id": "camera-plane",
+          "type": "group",
+          "x": 0,
+          "y": 0,
+          "children": [
+            {
+              "id": "workspace",
+              "type": "rect",
+              "x": 26,
+              "y": 29,
+              "width": 448,
+              "height": 242,
+              "fill": "#e8eef5",
+              "radius": 24
+            },
+            {
+              "id": "neighbor-left",
+              "type": "group",
+              "x": 42,
+              "y": 100,
+              "children": [
+                {
+                  "id": "neighbor-left-surface",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 111,
+                  "height": 80,
+                  "fill": "#ffffff",
+                  "radius": 16,
+                  "stroke": "#e8eef5",
+                  "strokeWidth": 1
+                },
+                {
+                  "id": "neighbor-left-label",
+                  "type": "text",
+                  "text": "Overview",
+                  "x": 16,
+                  "y": 14,
+                  "fontSize": 18,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#182737",
+                  "fontWeight": 600
+                },
+                {
+                  "id": "neighbor-left-detail",
+                  "type": "rect",
+                  "x": 16,
+                  "y": 45,
+                  "width": 67,
+                  "height": 5,
+                  "fill": "#e8eef5",
+                  "radius": 2
+                }
+              ]
+            },
+            {
+              "id": "detail",
+              "type": "group",
+              "x": 174,
+              "y": 100,
+              "children": [
+                {
+                  "id": "detail-surface",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 154,
+                  "height": 90,
+                  "fill": "#ffffff",
+                  "radius": 16,
+                  "stroke": "#e8eef5",
+                  "strokeWidth": 1
+                },
+                {
+                  "id": "detail-label",
+                  "type": "text",
+                  "text": "Reservation",
+                  "x": 16,
+                  "y": 14,
+                  "fontSize": 18,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#182737",
+                  "fontWeight": 600
+                },
+                {
+                  "id": "detail-detail",
+                  "type": "rect",
+                  "x": 16,
+                  "y": 45,
+                  "width": 110,
+                  "height": 5,
+                  "fill": "#e8eef5",
+                  "radius": 2
+                }
+              ]
+            },
+            {
+              "id": "neighbor-right",
+              "type": "group",
+              "x": 348,
+              "y": 100,
+              "children": [
+                {
+                  "id": "neighbor-right-surface",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 110,
+                  "height": 80,
+                  "fill": "#ffffff",
+                  "radius": 16,
+                  "stroke": "#e8eef5",
+                  "strokeWidth": 1
+                },
+                {
+                  "id": "neighbor-right-label",
+                  "type": "text",
+                  "text": "History",
+                  "x": 16,
+                  "y": 14,
+                  "fontSize": 18,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#182737",
+                  "fontWeight": 600
+                },
+                {
+                  "id": "neighbor-right-detail",
+                  "type": "rect",
+                  "x": 16,
+                  "y": 45,
+                  "width": 66,
+                  "height": 5,
+                  "fill": "#e8eef5",
+                  "radius": 2
+                }
+              ]
+            },
+            {
+              "id": "detail-focus",
+              "type": "rect",
+              "x": 187,
+              "y": 162,
+              "width": 110,
+              "height": 8,
+              "fill": "#1478e9",
+              "radius": 4
+            }
+          ],
+          "originX": 251,
+          "originY": 145,
+          "keyframes": {
+            "scaleX": [
+              {
+                "t": 0,
+                "value": 0.91,
+                "ease": "linear"
+              },
+              {
+                "t": 0.384,
+                "value": 0.91,
+                "ease": "linear"
+              },
+              {
+                "t": 1.6320000000000001,
+                "value": 1.68,
+                "ease": "easeInOut"
+              }
+            ],
+            "scaleY": [
+              {
+                "t": 0,
+                "value": 0.91,
+                "ease": "linear"
+              },
+              {
+                "t": 0.384,
+                "value": 0.91,
+                "ease": "linear"
+              },
+              {
+                "t": 1.6320000000000001,
+                "value": 1.68,
+                "ease": "easeInOut"
+              }
+            ]
+          }
+        }
+      ],
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 500,
+        "height": 298
+      }
+    },
+    {
+      "id": "footer",
+      "type": "group",
+      "x": 110,
+      "y": 396,
+      "children": [
+        {
+          "id": "footer-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 40,
+          "fill": "#f2f6fb",
+          "radius": 12
+        },
+        {
+          "id": "editorial-caption",
+          "type": "text",
+          "text": "The booking stays in the same workspace.",
+          "x": 22,
+          "y": 9,
+          "fontSize": 15,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#516277",
+          "fontWeight": 600
+        }
+      ]
+    },
+    {
+      "id": "heading",
+      "type": "group",
+      "x": 110,
+      "y": 44,
+      "children": [
+        {
+          "id": "heading-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 54,
+          "fill": "#f2f6fb",
+          "radius": 13
+        },
+        {
+          "id": "heading-copy",
+          "type": "text",
+          "text": "Trip planner",
+          "x": 26,
+          "y": 13,
+          "fontSize": 23,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#182737",
+          "fontWeight": 700
+        }
+      ]
+    }
+  ],
+  "timeline": {
+    "version": 1,
+    "picture": {
+      "fpsNum": 30,
+      "fpsDen": 1,
+      "frameCount": 72
+    },
+    "initialUI": null,
+    "events": [
+      {
+        "id": "motion.camera-push-in.push-start",
+        "kind": "push-start",
+        "target": "camera-plane",
+        "frame": 12,
+        "layerIds": [
+          "camera-plane"
+        ]
+      },
+      {
+        "id": "motion.camera-push-in.detail-in-frame",
+        "kind": "detail-in-frame",
+        "target": "detail",
+        "frame": 49,
+        "layerIds": [
+          "detail"
+        ]
+      }
+    ],
+    "cues": []
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "renderer": "pillow",
+  "command": ["python3", "-I", "renderer/render_pillow.py", "--scene", "scene.json", "--out", "film.mp4", "--frames-dir", "native"],
+  "notes": "Full 150-frame reconstruction of unseen.mp4 (960x720 30fps). Frames 0-14 static hold; the learned jelly-settle-arrive motion runs inlined on the 'doors' group from scene t=0.5s (source frame 15). No external assets — fonts resolve via fc-match (Helvetica).",
+  "source_scene": "jobs/t1/study-doors/scene.json",
+  "entry_motion": "jelly-settle-arrive"
+}

@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 72
+  },
+  "initialUI": null,
+  "events": [
+    {
+      "id": "motion.transcript-timestamp-peek.peek-begin",
+      "kind": "gesture_begin",
+      "target": "peek-bubble-column",
+      "frame": 16,
+      "layerIds": [
+        "peek-bubble-column"
+      ]
+    },
+    {
+      "id": "motion.transcript-timestamp-peek.peek-release",
+      "kind": "gesture_end",
+      "target": "peek-bubble-column",
+      "frame": 47,
+      "layerIds": [
+        "peek-bubble-column"
+      ]
+    }
+  ],
+  "cues": []
+}

@@ -1,0 +1,1038 @@
+{
+  "width": 720,
+  "height": 480,
+  "fps": 30,
+  "duration": 2.4,
+  "background": "#dce7f1",
+  "title": "Focus the composer and open keyboard space",
+  "source": {
+    "path": "packs/conversation.mjs#keyboard-focus-reflow",
+    "sourceStart": 0,
+    "sourceEnd": 2.4,
+    "notes": "Original editable Motion demonstration."
+  },
+  "layers": [
+    {
+      "id": "surface",
+      "type": "rect",
+      "x": 110,
+      "y": 44,
+      "width": 500,
+      "height": 392,
+      "fill": "#ffffff",
+      "radius": 18
+    },
+    {
+      "id": "stage",
+      "type": "group",
+      "x": 110,
+      "y": 98,
+      "children": [
+        {
+          "id": "focus-last-message",
+          "type": "group",
+          "x": 30,
+          "y": 198,
+          "children": [
+            {
+              "id": "focus-last-message-body",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 262,
+              "height": 54,
+              "fill": "#e9e9ed",
+              "radius": 20
+            },
+            {
+              "id": "focus-last-message-tail",
+              "type": "path",
+              "d": "M 16 36 Q 3 55 -7 52 Q 3 48 2 34 Z",
+              "fill": "#e9e9ed"
+            },
+            {
+              "id": "focus-last-message-copy",
+              "type": "text",
+              "text": "Here it is. Meet at the north\ngate.",
+              "x": 17,
+              "y": 7.5,
+              "fontSize": 16,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#17191d",
+              "lineHeight": 18
+            }
+          ],
+          "keyframes": {
+            "y": [
+              {
+                "t": 0,
+                "value": 198,
+                "ease": "linear"
+              },
+              {
+                "t": 0.8160000000000001,
+                "value": 198,
+                "ease": "linear"
+              },
+              {
+                "t": 1.44,
+                "value": 37,
+                "ease": "easeOut"
+              }
+            ]
+          }
+        },
+        {
+          "id": "focus-keyboard",
+          "type": "group",
+          "x": 0,
+          "y": 298,
+          "children": [
+            {
+              "id": "focus-keyboard-body",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 500,
+              "height": 152,
+              "fill": "#dfe4eb",
+              "radius": 0
+            },
+            {
+              "id": "focus-key-q",
+              "type": "group",
+              "x": 20,
+              "y": 15,
+              "children": [
+                {
+                  "id": "focus-key-q-body",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 38,
+                  "height": 33,
+                  "fill": "#ffffff",
+                  "radius": 5
+                },
+                {
+                  "id": "focus-key-q-text",
+                  "type": "text",
+                  "text": "Q",
+                  "x": 19,
+                  "y": 8,
+                  "fontSize": 14,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#17191d",
+                  "textAnchor": "middle"
+                }
+              ]
+            },
+            {
+              "id": "focus-key-w",
+              "type": "group",
+              "x": 66,
+              "y": 15,
+              "children": [
+                {
+                  "id": "focus-key-w-body",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 38,
+                  "height": 33,
+                  "fill": "#ffffff",
+                  "radius": 5
+                },
+                {
+                  "id": "focus-key-w-text",
+                  "type": "text",
+                  "text": "W",
+                  "x": 19,
+                  "y": 8,
+                  "fontSize": 14,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#17191d",
+                  "textAnchor": "middle"
+                }
+              ]
+            },
+            {
+              "id": "focus-key-e",
+              "type": "group",
+              "x": 112,
+              "y": 15,
+              "children": [
+                {
+                  "id": "focus-key-e-body",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 38,
+                  "height": 33,
+                  "fill": "#ffffff",
+                  "radius": 5
+                },
+                {
+                  "id": "focus-key-e-text",
+                  "type": "text",
+                  "text": "E",
+                  "x": 19,
+                  "y": 8,
+                  "fontSize": 14,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#17191d",
+                  "textAnchor": "middle"
+                }
+              ]
+            },
+            {
+              "id": "focus-key-r",
+              "type": "group",
+              "x": 158,
+              "y": 15,
+              "children": [
+                {
+                  "id": "focus-key-r-body",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 38,
+                  "height": 33,
+                  "fill": "#ffffff",
+                  "radius": 5
+                },
+                {
+                  "id": "focus-key-r-text",
+                  "type": "text",
+                  "text": "R",
+                  "x": 19,
+                  "y": 8,
+                  "fontSize": 14,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#17191d",
+                  "textAnchor": "middle"
+                }
+              ]
+            },
+            {
+              "id": "focus-key-t",
+              "type": "group",
+              "x": 204,
+              "y": 15,
+              "children": [
+                {
+                  "id": "focus-key-t-body",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 38,
+                  "height": 33,
+                  "fill": "#ffffff",
+                  "radius": 5
+                },
+                {
+                  "id": "focus-key-t-text",
+                  "type": "text",
+                  "text": "T",
+                  "x": 19,
+                  "y": 8,
+                  "fontSize": 14,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#17191d",
+                  "textAnchor": "middle"
+                }
+              ]
+            },
+            {
+              "id": "focus-key-y",
+              "type": "group",
+              "x": 250,
+              "y": 15,
+              "children": [
+                {
+                  "id": "focus-key-y-body",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 38,
+                  "height": 33,
+                  "fill": "#ffffff",
+                  "radius": 5
+                },
+                {
+                  "id": "focus-key-y-text",
+                  "type": "text",
+                  "text": "Y",
+                  "x": 19,
+                  "y": 8,
+                  "fontSize": 14,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#17191d",
+                  "textAnchor": "middle"
+                }
+              ]
+            },
+            {
+              "id": "focus-key-u",
+              "type": "group",
+              "x": 296,
+              "y": 15,
+              "children": [
+                {
+                  "id": "focus-key-u-body",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 38,
+                  "height": 33,
+                  "fill": "#ffffff",
+                  "radius": 5
+                },
+                {
+                  "id": "focus-key-u-text",
+                  "type": "text",
+                  "text": "U",
+                  "x": 19,
+                  "y": 8,
+                  "fontSize": 14,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#17191d",
+                  "textAnchor": "middle"
+                }
+              ]
+            },
+            {
+              "id": "focus-key-i",
+              "type": "group",
+              "x": 342,
+              "y": 15,
+              "children": [
+                {
+                  "id": "focus-key-i-body",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 38,
+                  "height": 33,
+                  "fill": "#ffffff",
+                  "radius": 5
+                },
+                {
+                  "id": "focus-key-i-text",
+                  "type": "text",
+                  "text": "I",
+                  "x": 19,
+                  "y": 8,
+                  "fontSize": 14,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#17191d",
+                  "textAnchor": "middle"
+                }
+              ]
+            },
+            {
+              "id": "focus-key-o",
+              "type": "group",
+              "x": 388,
+              "y": 15,
+              "children": [
+                {
+                  "id": "focus-key-o-body",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 38,
+                  "height": 33,
+                  "fill": "#ffffff",
+                  "radius": 5
+                },
+                {
+                  "id": "focus-key-o-text",
+                  "type": "text",
+                  "text": "O",
+                  "x": 19,
+                  "y": 8,
+                  "fontSize": 14,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#17191d",
+                  "textAnchor": "middle"
+                }
+              ]
+            },
+            {
+              "id": "focus-key-p",
+              "type": "group",
+              "x": 434,
+              "y": 15,
+              "children": [
+                {
+                  "id": "focus-key-p-body",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 38,
+                  "height": 33,
+                  "fill": "#ffffff",
+                  "radius": 5
+                },
+                {
+                  "id": "focus-key-p-text",
+                  "type": "text",
+                  "text": "P",
+                  "x": 19,
+                  "y": 8,
+                  "fontSize": 14,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#17191d",
+                  "textAnchor": "middle"
+                }
+              ]
+            },
+            {
+              "id": "focus-key-a",
+              "type": "group",
+              "x": 43,
+              "y": 53,
+              "children": [
+                {
+                  "id": "focus-key-a-body",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 38,
+                  "height": 33,
+                  "fill": "#ffffff",
+                  "radius": 5
+                },
+                {
+                  "id": "focus-key-a-text",
+                  "type": "text",
+                  "text": "A",
+                  "x": 19,
+                  "y": 8,
+                  "fontSize": 14,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#17191d",
+                  "textAnchor": "middle"
+                }
+              ]
+            },
+            {
+              "id": "focus-key-s",
+              "type": "group",
+              "x": 89,
+              "y": 53,
+              "children": [
+                {
+                  "id": "focus-key-s-body",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 38,
+                  "height": 33,
+                  "fill": "#ffffff",
+                  "radius": 5
+                },
+                {
+                  "id": "focus-key-s-text",
+                  "type": "text",
+                  "text": "S",
+                  "x": 19,
+                  "y": 8,
+                  "fontSize": 14,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#17191d",
+                  "textAnchor": "middle"
+                }
+              ]
+            },
+            {
+              "id": "focus-key-d",
+              "type": "group",
+              "x": 135,
+              "y": 53,
+              "children": [
+                {
+                  "id": "focus-key-d-body",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 38,
+                  "height": 33,
+                  "fill": "#ffffff",
+                  "radius": 5
+                },
+                {
+                  "id": "focus-key-d-text",
+                  "type": "text",
+                  "text": "D",
+                  "x": 19,
+                  "y": 8,
+                  "fontSize": 14,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#17191d",
+                  "textAnchor": "middle"
+                }
+              ]
+            },
+            {
+              "id": "focus-key-f",
+              "type": "group",
+              "x": 181,
+              "y": 53,
+              "children": [
+                {
+                  "id": "focus-key-f-body",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 38,
+                  "height": 33,
+                  "fill": "#ffffff",
+                  "radius": 5
+                },
+                {
+                  "id": "focus-key-f-text",
+                  "type": "text",
+                  "text": "F",
+                  "x": 19,
+                  "y": 8,
+                  "fontSize": 14,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#17191d",
+                  "textAnchor": "middle"
+                }
+              ]
+            },
+            {
+              "id": "focus-key-g",
+              "type": "group",
+              "x": 227,
+              "y": 53,
+              "children": [
+                {
+                  "id": "focus-key-g-body",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 38,
+                  "height": 33,
+                  "fill": "#ffffff",
+                  "radius": 5
+                },
+                {
+                  "id": "focus-key-g-text",
+                  "type": "text",
+                  "text": "G",
+                  "x": 19,
+                  "y": 8,
+                  "fontSize": 14,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#17191d",
+                  "textAnchor": "middle"
+                }
+              ]
+            },
+            {
+              "id": "focus-key-h",
+              "type": "group",
+              "x": 273,
+              "y": 53,
+              "children": [
+                {
+                  "id": "focus-key-h-body",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 38,
+                  "height": 33,
+                  "fill": "#ffffff",
+                  "radius": 5
+                },
+                {
+                  "id": "focus-key-h-text",
+                  "type": "text",
+                  "text": "H",
+                  "x": 19,
+                  "y": 8,
+                  "fontSize": 14,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#17191d",
+                  "textAnchor": "middle"
+                }
+              ]
+            },
+            {
+              "id": "focus-key-j",
+              "type": "group",
+              "x": 319,
+              "y": 53,
+              "children": [
+                {
+                  "id": "focus-key-j-body",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 38,
+                  "height": 33,
+                  "fill": "#ffffff",
+                  "radius": 5
+                },
+                {
+                  "id": "focus-key-j-text",
+                  "type": "text",
+                  "text": "J",
+                  "x": 19,
+                  "y": 8,
+                  "fontSize": 14,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#17191d",
+                  "textAnchor": "middle"
+                }
+              ]
+            },
+            {
+              "id": "focus-key-k",
+              "type": "group",
+              "x": 365,
+              "y": 53,
+              "children": [
+                {
+                  "id": "focus-key-k-body",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 38,
+                  "height": 33,
+                  "fill": "#ffffff",
+                  "radius": 5
+                },
+                {
+                  "id": "focus-key-k-text",
+                  "type": "text",
+                  "text": "K",
+                  "x": 19,
+                  "y": 8,
+                  "fontSize": 14,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#17191d",
+                  "textAnchor": "middle"
+                }
+              ]
+            },
+            {
+              "id": "focus-key-l",
+              "type": "group",
+              "x": 411,
+              "y": 53,
+              "children": [
+                {
+                  "id": "focus-key-l-body",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 38,
+                  "height": 33,
+                  "fill": "#ffffff",
+                  "radius": 5
+                },
+                {
+                  "id": "focus-key-l-text",
+                  "type": "text",
+                  "text": "L",
+                  "x": 19,
+                  "y": 8,
+                  "fontSize": 14,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#17191d",
+                  "textAnchor": "middle"
+                }
+              ]
+            },
+            {
+              "id": "focus-key-z",
+              "type": "group",
+              "x": 89,
+              "y": 91,
+              "children": [
+                {
+                  "id": "focus-key-z-body",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 38,
+                  "height": 33,
+                  "fill": "#ffffff",
+                  "radius": 5
+                },
+                {
+                  "id": "focus-key-z-text",
+                  "type": "text",
+                  "text": "Z",
+                  "x": 19,
+                  "y": 8,
+                  "fontSize": 14,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#17191d",
+                  "textAnchor": "middle"
+                }
+              ]
+            },
+            {
+              "id": "focus-key-x",
+              "type": "group",
+              "x": 135,
+              "y": 91,
+              "children": [
+                {
+                  "id": "focus-key-x-body",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 38,
+                  "height": 33,
+                  "fill": "#ffffff",
+                  "radius": 5
+                },
+                {
+                  "id": "focus-key-x-text",
+                  "type": "text",
+                  "text": "X",
+                  "x": 19,
+                  "y": 8,
+                  "fontSize": 14,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#17191d",
+                  "textAnchor": "middle"
+                }
+              ]
+            },
+            {
+              "id": "focus-key-c",
+              "type": "group",
+              "x": 181,
+              "y": 91,
+              "children": [
+                {
+                  "id": "focus-key-c-body",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 38,
+                  "height": 33,
+                  "fill": "#ffffff",
+                  "radius": 5
+                },
+                {
+                  "id": "focus-key-c-text",
+                  "type": "text",
+                  "text": "C",
+                  "x": 19,
+                  "y": 8,
+                  "fontSize": 14,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#17191d",
+                  "textAnchor": "middle"
+                }
+              ]
+            },
+            {
+              "id": "focus-key-v",
+              "type": "group",
+              "x": 227,
+              "y": 91,
+              "children": [
+                {
+                  "id": "focus-key-v-body",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 38,
+                  "height": 33,
+                  "fill": "#ffffff",
+                  "radius": 5
+                },
+                {
+                  "id": "focus-key-v-text",
+                  "type": "text",
+                  "text": "V",
+                  "x": 19,
+                  "y": 8,
+                  "fontSize": 14,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#17191d",
+                  "textAnchor": "middle"
+                }
+              ]
+            },
+            {
+              "id": "focus-key-b",
+              "type": "group",
+              "x": 273,
+              "y": 91,
+              "children": [
+                {
+                  "id": "focus-key-b-body",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 38,
+                  "height": 33,
+                  "fill": "#ffffff",
+                  "radius": 5
+                },
+                {
+                  "id": "focus-key-b-text",
+                  "type": "text",
+                  "text": "B",
+                  "x": 19,
+                  "y": 8,
+                  "fontSize": 14,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#17191d",
+                  "textAnchor": "middle"
+                }
+              ]
+            },
+            {
+              "id": "focus-key-n",
+              "type": "group",
+              "x": 319,
+              "y": 91,
+              "children": [
+                {
+                  "id": "focus-key-n-body",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 38,
+                  "height": 33,
+                  "fill": "#ffffff",
+                  "radius": 5
+                },
+                {
+                  "id": "focus-key-n-text",
+                  "type": "text",
+                  "text": "N",
+                  "x": 19,
+                  "y": 8,
+                  "fontSize": 14,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#17191d",
+                  "textAnchor": "middle"
+                }
+              ]
+            },
+            {
+              "id": "focus-key-m",
+              "type": "group",
+              "x": 365,
+              "y": 91,
+              "children": [
+                {
+                  "id": "focus-key-m-body",
+                  "type": "rect",
+                  "x": 0,
+                  "y": 0,
+                  "width": 38,
+                  "height": 33,
+                  "fill": "#ffffff",
+                  "radius": 5
+                },
+                {
+                  "id": "focus-key-m-text",
+                  "type": "text",
+                  "text": "M",
+                  "x": 19,
+                  "y": 8,
+                  "fontSize": 14,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#17191d",
+                  "textAnchor": "middle"
+                }
+              ]
+            },
+            {
+              "id": "focus-keyboard-space",
+              "type": "rect",
+              "x": 120,
+              "y": 130,
+              "width": 260,
+              "height": 19,
+              "fill": "#ffffff",
+              "radius": 7
+            }
+          ],
+          "keyframes": {
+            "y": [
+              {
+                "t": 0,
+                "value": 298,
+                "ease": "linear"
+              },
+              {
+                "t": 0.8160000000000001,
+                "value": 298,
+                "ease": "linear"
+              },
+              {
+                "t": 1.44,
+                "value": 147,
+                "ease": "easeOut"
+              }
+            ]
+          }
+        }
+      ],
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 500,
+        "height": 298
+      }
+    },
+    {
+      "id": "footer",
+      "type": "group",
+      "x": 110,
+      "y": 396,
+      "children": [
+        {
+          "id": "footer-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 40,
+          "fill": "#f2f6fb",
+          "radius": 12
+        },
+        {
+          "id": "focus-composer",
+          "type": "group",
+          "x": 23,
+          "y": 0,
+          "children": [
+            {
+              "id": "focus-composer-field",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 454,
+              "height": 48,
+              "fill": "#ffffff",
+              "radius": 24,
+              "stroke": "#d8dbe0",
+              "strokeWidth": 1
+            },
+            {
+              "id": "focus-composer-input",
+              "type": "text",
+              "text": "Message",
+              "x": 18,
+              "y": 14,
+              "fontSize": 17,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#777b84"
+            },
+            {
+              "id": "focus-composer-send",
+              "type": "circle",
+              "x": 414,
+              "y": 8,
+              "width": 32,
+              "height": 32,
+              "fill": "#d8dbe0"
+            },
+            {
+              "id": "focus-composer-arrow",
+              "type": "path",
+              "d": "M 430 33 L 430 16 M 423 23 L 430 16 L 437 23",
+              "fill": "none",
+              "stroke": "#ffffff",
+              "strokeWidth": 2
+            }
+          ]
+        }
+      ],
+      "keyframes": {
+        "y": [
+          {
+            "t": 0,
+            "value": 396,
+            "ease": "linear"
+          },
+          {
+            "t": 0.8160000000000001,
+            "value": 396,
+            "ease": "linear"
+          },
+          {
+            "t": 1.44,
+            "value": 197,
+            "ease": "easeOut"
+          }
+        ]
+      }
+    },
+    {
+      "id": "heading",
+      "type": "group",
+      "x": 110,
+      "y": 44,
+      "children": [
+        {
+          "id": "heading-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 54,
+          "fill": "#f2f6fb",
+          "radius": 13
+        },
+        {
+          "id": "heading-copy",
+          "type": "text",
+          "text": "Alpine field notes",
+          "x": 26,
+          "y": 13,
+          "fontSize": 23,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#182737",
+          "fontWeight": 700
+        }
+      ]
+    }
+  ],
+  "timeline": {
+    "version": 1,
+    "picture": {
+      "fpsNum": 30,
+      "fpsDen": 1,
+      "frameCount": 72
+    },
+    "initialUI": null,
+    "events": [
+      {
+        "id": "motion.keyboard-focus-reflow.composer-focus",
+        "kind": "tap",
+        "target": "focus-composer",
+        "frame": 25,
+        "layerIds": [
+          "focus-composer"
+        ]
+      },
+      {
+        "id": "motion.keyboard-focus-reflow.keyboard-ready",
+        "kind": "keyboard_show",
+        "target": "focus-keyboard",
+        "frame": 44,
+        "layerIds": [
+          "focus-keyboard"
+        ]
+      }
+    ],
+    "cues": []
+  }
+}

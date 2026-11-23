@@ -1,0 +1,257 @@
+{
+  "width": 720,
+  "height": 480,
+  "fps": 30,
+  "duration": 2.4,
+  "background": "#dce7f1",
+  "title": "Part two images to reveal the center",
+  "source": {
+    "path": "skill/imessage-motion-recreation/motion/packs/attention.mjs",
+    "sourceStart": 0,
+    "sourceEnd": 2.4,
+    "notes": "Authored from the editorial pack’s split-plane reveal."
+  },
+  "layers": [
+    {
+      "id": "surface",
+      "type": "rect",
+      "x": 110,
+      "y": 44,
+      "width": 500,
+      "height": 392,
+      "fill": "#ffffff",
+      "radius": 18
+    },
+    {
+      "id": "stage",
+      "type": "group",
+      "x": 110,
+      "y": 98,
+      "children": [
+        {
+          "id": "gutter-backdrop",
+          "type": "rect",
+          "x": 24,
+          "y": 36,
+          "width": 452,
+          "height": 208,
+          "fill": "#e2ecec",
+          "radius": 15
+        },
+        {
+          "id": "gutter-label",
+          "type": "text",
+          "text": "Same destination",
+          "x": 250,
+          "y": 130,
+          "fontSize": 14,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#20443e",
+          "textAnchor": "middle",
+          "fontWeight": 700,
+          "opacity": 0,
+          "keyframes": {
+            "opacity": [
+              {
+                "t": 0,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 1.032,
+                "value": 0,
+                "ease": "linear"
+              },
+              {
+                "t": 1.728,
+                "value": 1,
+                "ease": "easeOut"
+              }
+            ]
+          }
+        },
+        {
+          "id": "left-panel",
+          "type": "group",
+          "x": 24,
+          "y": 36,
+          "children": [
+            {
+              "id": "left-panel-photo",
+              "type": "image",
+              "src": "assets/4db64d5acedc3877-landscape-1.png",
+              "x": 0,
+              "y": 0,
+              "width": 226,
+              "height": 208,
+              "preserveAspectRatio": "xMidYMid slice"
+            }
+          ],
+          "clip": {
+            "x": 0,
+            "y": 0,
+            "width": 226,
+            "height": 208,
+            "radius": 13
+          },
+          "keyframes": {
+            "x": [
+              {
+                "t": 0,
+                "value": 24,
+                "ease": "linear"
+              },
+              {
+                "t": 0.504,
+                "value": 24,
+                "ease": "linear"
+              },
+              {
+                "t": 1.752,
+                "value": -54,
+                "ease": "easeInOut"
+              }
+            ]
+          }
+        },
+        {
+          "id": "right-panel",
+          "type": "group",
+          "x": 250,
+          "y": 36,
+          "children": [
+            {
+              "id": "right-panel-photo",
+              "type": "image",
+              "src": "assets/9746d1d0b9a195bd-landscape-2.png",
+              "x": 0,
+              "y": 0,
+              "width": 226,
+              "height": 208,
+              "preserveAspectRatio": "xMidYMid slice"
+            }
+          ],
+          "clip": {
+            "x": 0,
+            "y": 0,
+            "width": 226,
+            "height": 208,
+            "radius": 13
+          },
+          "keyframes": {
+            "x": [
+              {
+                "t": 0,
+                "value": 250,
+                "ease": "linear"
+              },
+              {
+                "t": 0.504,
+                "value": 250,
+                "ease": "linear"
+              },
+              {
+                "t": 1.752,
+                "value": 328,
+                "ease": "easeInOut"
+              }
+            ]
+          }
+        }
+      ],
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": 500,
+        "height": 298
+      }
+    },
+    {
+      "id": "footer",
+      "type": "group",
+      "x": 110,
+      "y": 396,
+      "children": [
+        {
+          "id": "footer-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 40,
+          "fill": "#f2f6fb",
+          "radius": 12
+        },
+        {
+          "id": "footer-label",
+          "type": "text",
+          "text": "Two views stay visible",
+          "x": 26,
+          "y": 11,
+          "fontSize": 15,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#516277"
+        }
+      ]
+    },
+    {
+      "id": "heading",
+      "type": "group",
+      "x": 110,
+      "y": 44,
+      "children": [
+        {
+          "id": "heading-background",
+          "type": "rect",
+          "x": 0,
+          "y": 0,
+          "width": 500,
+          "height": 54,
+          "fill": "#f2f6fb",
+          "radius": 13
+        },
+        {
+          "id": "heading-copy",
+          "type": "text",
+          "text": "Two routes",
+          "x": 26,
+          "y": 13,
+          "fontSize": 23,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#182737",
+          "fontWeight": 700
+        }
+      ]
+    }
+  ],
+  "timeline": {
+    "version": 1,
+    "picture": {
+      "fpsNum": 30,
+      "fpsDen": 1,
+      "frameCount": 72
+    },
+    "initialUI": null,
+    "events": [
+      {
+        "id": "motion.center-gutter-open.split-begins",
+        "kind": "panel.gutter.open",
+        "target": "left-panel",
+        "frame": 16,
+        "layerIds": [
+          "left-panel"
+        ]
+      },
+      {
+        "id": "motion.center-gutter-open.center-readable",
+        "kind": "panel.gutter.settle",
+        "target": "gutter-label",
+        "frame": 53,
+        "layerIds": [
+          "gutter-label"
+        ]
+      }
+    ],
+    "cues": []
+  }
+}

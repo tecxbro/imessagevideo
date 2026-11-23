@@ -1,0 +1,79 @@
+{
+  "format": 1,
+  "plan": {
+    "mode": "director",
+    "fps": 30,
+    "brief": "Jo and Tessa get Afterglow tickets. Show how they decide where to sit and confirm both tickets.",
+    "shots": [
+      {
+        "id": "open",
+        "frames": 108,
+        "purpose": "Establish a concrete invitation.",
+        "visual": "Jo sends a draft into the conversation.",
+        "motion": {
+          "kind": "seed",
+          "id": "draft-send-flight"
+        },
+        "copy": "Tickets for Afterglow?",
+        "copy_key": "copy",
+        "bindings": {
+          "heading": "Jo + Tessa",
+          "reply": "Presale just opened."
+        },
+        "preview": "proof-open/preview.mp4",
+        "code": "proof-open/scene.json",
+        "board": "proof-open/board.png"
+      },
+      {
+        "id": "choice",
+        "frames": 96,
+        "purpose": "Show the venue options changing while Jo’s meeting message stays visible.",
+        "visual": "Keep the title and ‘Meet at the doors’ bubble pinned. Swipe the clipped ticket strip to the left with the Linq restaurant-photo timing.",
+        "motion": {
+          "kind": "seed",
+          "id": "photos-under-fixed-heading"
+        },
+        "copy": "Meet at the doors",
+        "copy_key": "message",
+        "bindings": {
+          "heading": "Jo + Tessa",
+          "detail": "Afterglow · Friday",
+          "photos": [
+            "art/ticket-1.png",
+            "art/ticket-2.png",
+            "art/ticket-3.png",
+            "art/ticket-4.png"
+          ]
+        },
+        "preview": "proof-donor-edit/preview.mp4",
+        "code": "proof-donor-edit/scene.json",
+        "board": "proof-donor-edit/board.png"
+      },
+      {
+        "id": "payoff",
+        "frames": 108,
+        "purpose": "Confirm that both friends have a ticket.",
+        "visual": "The confirmation leaves the composer and settles below the plan.",
+        "motion": {
+          "kind": "seed",
+          "id": "draft-send-flight"
+        },
+        "copy": "Got both tickets!",
+        "copy_key": "copy",
+        "bindings": {
+          "heading": "Jo + Tessa",
+          "reply": "Floor works for me."
+        },
+        "preview": "proof-payoff/preview.mp4",
+        "code": "proof-payoff/scene.json",
+        "board": "proof-payoff/board.png"
+      }
+    ],
+    "confirmation": true
+  },
+  "project_root": ".",
+  "derived_from": {
+    "revision": "043f0656b02164cfb4592f105b34120eee935ba6799e937765d4269fd249888d",
+    "changed_shot": "choice"
+  }
+}

@@ -1,0 +1,516 @@
+{
+  "schema": 1,
+  "verdict": "FAIL",
+  "failures": [
+    {
+      "check": "whole_frame_mae",
+      "spans": [
+        [
+          134,
+          134
+        ],
+        [
+          138,
+          140
+        ],
+        [
+          157,
+          157
+        ],
+        [
+          253,
+          255
+        ],
+        [
+          355,
+          355
+        ],
+        [
+          693,
+          693
+        ]
+      ]
+    },
+    {
+      "check": "region",
+      "id": "personal-life",
+      "spans": [
+        [
+          185,
+          204
+        ],
+        [
+          206,
+          207
+        ]
+      ]
+    }
+  ],
+  "checks_sha256": "6d42f574694ad7976fda7cdd14b1c36940f48e1f4fcf0adf6dcb6779e3b8284c",
+  "reference": {
+    "name": "sidehoe.mp4",
+    "sha256": "f821bb58cbdb265a75d572616d0da723e9cfb6de31e3db5f8a17d94dc15b5327",
+    "clock": {
+      "width": 2000,
+      "height": 2000,
+      "sample_aspect_ratio": "1",
+      "rotation_degrees": 0,
+      "display_matrix": [
+        65536,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        1073741824
+      ],
+      "container_crop_top_bottom_left_right": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "time_base": "1/60000",
+      "declared_rate": "25",
+      "declared_average_rate": "25/1",
+      "start_pts": 0,
+      "end_pts_exclusive": 1867200,
+      "end_basis": "stream start + stream duration",
+      "end_seconds": 31.12,
+      "frames": 778,
+      "cadence": "constant",
+      "pixel_format": "yuv420p",
+      "alpha_present": false,
+      "color_range": null,
+      "color_space": null,
+      "color_primaries": null,
+      "color_transfer": null
+    },
+    "audio": [
+      {
+        "index": 1,
+        "codec_name": "aac",
+        "sample_rate": "44100",
+        "channels": 2,
+        "channel_layout": "stereo",
+        "time_base": "1/44100",
+        "start_pts": 0,
+        "duration_ts": 1375232,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "Twitter-vork muxer",
+          "vendor_id": "[0][0][0][0]"
+        }
+      }
+    ]
+  },
+  "candidate": {
+    "name": "sidehoe.mp4",
+    "sha256": "e15017fe0ee663ca38596ffbff067d1232a1f87ef17e494a50a894da450223cb",
+    "clock": {
+      "width": 2000,
+      "height": 2000,
+      "sample_aspect_ratio": "1",
+      "rotation_degrees": 0,
+      "display_matrix": [
+        65536,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        1073741824
+      ],
+      "container_crop_top_bottom_left_right": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "time_base": "1/60000",
+      "declared_rate": "25",
+      "declared_average_rate": "25/1",
+      "start_pts": 0,
+      "end_pts_exclusive": 1867200,
+      "end_basis": "last decoded frame duration",
+      "end_seconds": 31.12,
+      "frames": 778,
+      "cadence": "constant",
+      "pixel_format": "yuv420p",
+      "alpha_present": false,
+      "color_range": null,
+      "color_space": null,
+      "color_primaries": null,
+      "color_transfer": null
+    },
+    "audio": [
+      {
+        "index": 1,
+        "codec_name": "aac",
+        "sample_rate": "48000",
+        "channels": 2,
+        "channel_layout": "stereo",
+        "time_base": "1/48000",
+        "start_pts": 0,
+        "duration_ts": 1493760,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "SoundHandler",
+          "vendor_id": "[0][0][0][0]"
+        }
+      }
+    ]
+  },
+  "compared_frames": 778,
+  "mean_abs_rgb": 7.416862369965727,
+  "worst_frame": {
+    "frame": 139,
+    "mean_abs_rgb": 19.081802
+  },
+  "whole_frame_mae_limit": 18,
+  "pixel_floor": 30,
+  "clock_tolerance_seconds": "0",
+  "alignment": "display-order index with independent exact PTS gate",
+  "audio_rule": "present",
+  "audio_checks": {
+    "candidate_start_seconds": "0",
+    "cues": [],
+    "reference_start_seconds": "0"
+  },
+  "regions": {
+    "inbox-build": {
+      "expected_frames": 13,
+      "scanned_frames": 13,
+      "worst_mae": 13.998904488727858,
+      "worst_mae_frame": 7,
+      "worst_changed_pixels": 298210,
+      "worst_changed_pixels_frame": 6,
+      "mae_limit": 31,
+      "pixel_floor": 30,
+      "changed_pixels_limit": null,
+      "failed_spans": []
+    },
+    "inbox-scroll": {
+      "expected_frames": 28,
+      "scanned_frames": 28,
+      "worst_mae": 20.129287472898984,
+      "worst_mae_frame": 50,
+      "worst_changed_pixels": 572680,
+      "worst_changed_pixels_frame": 50,
+      "mae_limit": 24,
+      "pixel_floor": 30,
+      "changed_pixels_limit": null,
+      "failed_spans": []
+    },
+    "identity": {
+      "expected_frames": 18,
+      "scanned_frames": 18,
+      "worst_mae": 23.667541152263375,
+      "worst_mae_frame": 114,
+      "worst_changed_pixels": 142365,
+      "worst_changed_pixels_frame": 103,
+      "mae_limit": 30,
+      "pixel_floor": 30,
+      "changed_pixels_limit": null,
+      "failed_spans": []
+    },
+    "assistant-hull": {
+      "expected_frames": 28,
+      "scanned_frames": 28,
+      "worst_mae": 24.76623188405797,
+      "worst_mae_frame": 139,
+      "worst_changed_pixels": 830062,
+      "worst_changed_pixels_frame": 136,
+      "mae_limit": 32,
+      "pixel_floor": 30,
+      "changed_pixels_limit": null,
+      "failed_spans": []
+    },
+    "personal-life": {
+      "expected_frames": 51,
+      "scanned_frames": 51,
+      "worst_mae": 24.61051044634378,
+      "worst_mae_frame": 194,
+      "worst_changed_pixels": 164710,
+      "worst_changed_pixels_frame": 186,
+      "mae_limit": 20,
+      "pixel_floor": 30,
+      "changed_pixels_limit": null,
+      "failed_spans": [
+        [
+          185,
+          204
+        ],
+        [
+          206,
+          207
+        ]
+      ]
+    },
+    "avatar-assemble": {
+      "expected_frames": 16,
+      "scanned_frames": 16,
+      "worst_mae": 15.094450867052023,
+      "worst_mae_frame": 226,
+      "worst_changed_pixels": 458173,
+      "worst_changed_pixels_frame": 226,
+      "mae_limit": 36,
+      "pixel_floor": 30,
+      "changed_pixels_limit": null,
+      "failed_spans": []
+    },
+    "mosaic": {
+      "expected_frames": 23,
+      "scanned_frames": 23,
+      "worst_mae": 29.67154253154253,
+      "worst_mae_frame": 253,
+      "worst_changed_pixels": 1107200,
+      "worst_changed_pixels_frame": 255,
+      "mae_limit": 39,
+      "pixel_floor": 30,
+      "changed_pixels_limit": null,
+      "failed_spans": []
+    },
+    "profile-focus": {
+      "expected_frames": 31,
+      "scanned_frames": 31,
+      "worst_mae": 24.36999889184397,
+      "worst_mae_frame": 284,
+      "worst_changed_pixels": 526896,
+      "worst_changed_pixels_frame": 287,
+      "mae_limit": 31,
+      "pixel_floor": 30,
+      "changed_pixels_limit": null,
+      "failed_spans": []
+    },
+    "sofia-phone": {
+      "expected_frames": 23,
+      "scanned_frames": 23,
+      "worst_mae": 21.45669885620915,
+      "worst_mae_frame": 330,
+      "worst_changed_pixels": 506748,
+      "worst_changed_pixels_frame": 334,
+      "mae_limit": 34,
+      "pixel_floor": 30,
+      "changed_pixels_limit": null,
+      "failed_spans": []
+    },
+    "suggestion": {
+      "expected_frames": 17,
+      "scanned_frames": 17,
+      "worst_mae": 23.6372386844676,
+      "worst_mae_frame": 349,
+      "worst_changed_pixels": 250171,
+      "worst_changed_pixels_frame": 349,
+      "mae_limit": 27,
+      "pixel_floor": 30,
+      "changed_pixels_limit": null,
+      "failed_spans": []
+    },
+    "phone-dissolve": {
+      "expected_frames": 9,
+      "scanned_frames": 9,
+      "worst_mae": 18.659076923076924,
+      "worst_mae_frame": 355,
+      "worst_changed_pixels": 596438,
+      "worst_changed_pixels_frame": 355,
+      "mae_limit": 29,
+      "pixel_floor": 30,
+      "changed_pixels_limit": null,
+      "failed_spans": []
+    },
+    "send-approach": {
+      "expected_frames": 22,
+      "scanned_frames": 22,
+      "worst_mae": 21.221798590722255,
+      "worst_mae_frame": 399,
+      "worst_changed_pixels": 600232,
+      "worst_changed_pixels_frame": 400,
+      "mae_limit": 29,
+      "pixel_floor": 30,
+      "changed_pixels_limit": null,
+      "failed_spans": []
+    },
+    "calendar-enter": {
+      "expected_frames": 21,
+      "scanned_frames": 21,
+      "worst_mae": 23.571786163522013,
+      "worst_mae_frame": 398,
+      "worst_changed_pixels": 560763,
+      "worst_changed_pixels_frame": 400,
+      "mae_limit": 28,
+      "pixel_floor": 30,
+      "changed_pixels_limit": null,
+      "failed_spans": []
+    },
+    "calendar-marie": {
+      "expected_frames": 17,
+      "scanned_frames": 17,
+      "worst_mae": 9.396380435637337,
+      "worst_mae_frame": 434,
+      "worst_changed_pixels": 116099,
+      "worst_changed_pixels_frame": 434,
+      "mae_limit": 18,
+      "pixel_floor": 30,
+      "changed_pixels_limit": null,
+      "failed_spans": []
+    },
+    "calendar-lisa": {
+      "expected_frames": 17,
+      "scanned_frames": 17,
+      "worst_mae": 7.0671847041847045,
+      "worst_mae_frame": 452,
+      "worst_changed_pixels": 94603,
+      "worst_changed_pixels_frame": 457,
+      "mae_limit": 18,
+      "pixel_floor": 30,
+      "changed_pixels_limit": null,
+      "failed_spans": []
+    },
+    "calendar-out": {
+      "expected_frames": 16,
+      "scanned_frames": 16,
+      "worst_mae": 9.997786492374727,
+      "worst_mae_frame": 479,
+      "worst_changed_pixels": 297516,
+      "worst_changed_pixels_frame": 476,
+      "mae_limit": 30,
+      "pixel_floor": 30,
+      "changed_pixels_limit": null,
+      "failed_spans": []
+    },
+    "icons-depth": {
+      "expected_frames": 62,
+      "scanned_frames": 62,
+      "worst_mae": 17.656216346153847,
+      "worst_mae_frame": 532,
+      "worst_changed_pixels": 260330,
+      "worst_changed_pixels_frame": 532,
+      "mae_limit": 35,
+      "pixel_floor": 30,
+      "changed_pixels_limit": null,
+      "failed_spans": []
+    },
+    "phone-reentry": {
+      "expected_frames": 22,
+      "scanned_frames": 22,
+      "worst_mae": 21.79969981060606,
+      "worst_mae_frame": 634,
+      "worst_changed_pixels": 392330,
+      "worst_changed_pixels_frame": 633,
+      "mae_limit": 33,
+      "pixel_floor": 30,
+      "changed_pixels_limit": null,
+      "failed_spans": []
+    },
+    "options-appear": {
+      "expected_frames": 15,
+      "scanned_frames": 15,
+      "worst_mae": 23.937102947845805,
+      "worst_mae_frame": 644,
+      "worst_changed_pixels": 147888,
+      "worst_changed_pixels_frame": 649,
+      "mae_limit": 27,
+      "pixel_floor": 30,
+      "changed_pixels_limit": null,
+      "failed_spans": []
+    },
+    "yes-approach": {
+      "expected_frames": 31,
+      "scanned_frames": 31,
+      "worst_mae": 18.181415575877114,
+      "worst_mae_frame": 667,
+      "worst_changed_pixels": 217153,
+      "worst_changed_pixels_frame": 666,
+      "mae_limit": 25,
+      "pixel_floor": 30,
+      "changed_pixels_limit": null,
+      "failed_spans": []
+    },
+    "phone-exit": {
+      "expected_frames": 15,
+      "scanned_frames": 15,
+      "worst_mae": 20.14526950810309,
+      "worst_mae_frame": 693,
+      "worst_changed_pixels": 639791,
+      "worst_changed_pixels_frame": 693,
+      "mae_limit": 31,
+      "pixel_floor": 30,
+      "changed_pixels_limit": null,
+      "failed_spans": []
+    },
+    "end-copy": {
+      "expected_frames": 50,
+      "scanned_frames": 50,
+      "worst_mae": 22.951555330634278,
+      "worst_mae_frame": 758,
+      "worst_changed_pixels": 99626,
+      "worst_changed_pixels_frame": 758,
+      "mae_limit": 27,
+      "pixel_floor": 30,
+      "changed_pixels_limit": null,
+      "failed_spans": []
+    },
+    "end-fade": {
+      "expected_frames": 12,
+      "scanned_frames": 12,
+      "worst_mae": 7.1987940833333335,
+      "worst_mae_frame": 767,
+      "worst_changed_pixels": 92277,
+      "worst_changed_pixels_frame": 766,
+      "mae_limit": 16,
+      "pixel_floor": 30,
+      "changed_pixels_limit": null,
+      "failed_spans": []
+    }
+  },
+  "tile": null,
+  "regional_coverage": "explicit windows",
+  "decode_completed": true
+}

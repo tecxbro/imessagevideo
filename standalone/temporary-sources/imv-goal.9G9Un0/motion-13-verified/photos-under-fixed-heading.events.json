@@ -1,0 +1,107 @@
+{
+  "version": 1,
+  "picture": {
+    "fpsNum": 30,
+    "fpsDen": 1,
+    "frameCount": 40
+  },
+  "sampleRate": 48000,
+  "sampleCount": 64000,
+  "initialUI": {
+    "conversationId": "thread.meeting",
+    "messages": [
+      {
+        "id": "other-photo",
+        "senderId": "remote",
+        "text": "",
+        "attachmentIds": [
+          "first",
+          "second"
+        ],
+        "reactions": {},
+        "edited": false,
+        "receipt": "",
+        "page": 0
+      },
+      {
+        "id": "selected-photo",
+        "senderId": "remote",
+        "text": "",
+        "attachmentIds": [
+          "first",
+          "second"
+        ],
+        "reactions": {},
+        "edited": false,
+        "receipt": "",
+        "page": 0
+      }
+    ],
+    "composer": {
+      "text": "",
+      "focused": false,
+      "keyboardVisible": false
+    },
+    "viewport": {
+      "surface": "conversation",
+      "anchorMessageId": "selected-photo",
+      "scrollOffset": 0
+    },
+    "typingSenderIds": []
+  },
+  "events": [
+    {
+      "id": "page-now",
+      "kind": "media.page",
+      "target": "selected-photo",
+      "frame": 12,
+      "uiState": {
+        "conversationId": "thread.meeting",
+        "messages": [
+          {
+            "id": "other-photo",
+            "senderId": "remote",
+            "text": "",
+            "attachmentIds": [
+              "first",
+              "second"
+            ],
+            "reactions": {},
+            "edited": false,
+            "receipt": "",
+            "page": 0
+          },
+          {
+            "id": "selected-photo",
+            "senderId": "remote",
+            "text": "",
+            "attachmentIds": [
+              "first",
+              "second"
+            ],
+            "reactions": {},
+            "edited": false,
+            "receipt": "",
+            "page": 1
+          }
+        ],
+        "composer": {
+          "text": "",
+          "focused": false,
+          "keyboardVisible": false
+        },
+        "viewport": {
+          "surface": "conversation",
+          "anchorMessageId": "selected-photo",
+          "scrollOffset": 0
+        },
+        "typingSenderIds": []
+      },
+      "layerIds": [
+        "ui.message/selected-photo/media"
+      ],
+      "sample": 19200
+    }
+  ],
+  "cues": []
+}

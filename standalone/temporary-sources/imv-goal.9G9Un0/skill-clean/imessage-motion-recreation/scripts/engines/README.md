@@ -1,0 +1,73 @@
+# Measured motion rendering engines
+
+These render editable geometry from the same JSON manifest. The `smoke-*` files are neutral capability tests, **not recreations of any supplied reference**. Shared contract: `../shared/SCHEMA.md` and `../shared/scene-schema.json`.
+
+From `/workspace/imessage-recreations`:
+
+```bash
+node engines/render.mjs --method remotion --scene references/XX/scene.json --out outputs/XX-remotion.mp4
+node engines/render.mjs --method gsap --scene references/XX/scene.json --out outputs/XX-gsap.mp4
+node engines/render.mjs --method html --scene references/XX/scene.json --out outputs/XX-html.mp4
+engines/.venv/bin/python engines/render_pillow.py --scene references/XX/scene.json --out outputs/XX-pillow.mp4 --aa 2
+```
+
+A single frame: append `--frame 15` and use `.png` output. MP4 renders produce `.mp4.render.json` sidecars containing native dimensions/fps/frame count, source-time mapping and renderer. All frames are deterministic (`t = frame / fps`) and audio is deliberately excluded from this graphic reconstruction infrastructure.
+
+Keep lossless browser frames for targeted corrections with `--frames-dir outputs/XX/frames-METHOD`. A subsequent `--start-frame FIRST --end-frame LAST` replaces that inclusive range and re-encodes the complete cached sequence; the encoder rejects missing frames. The caller must enumerate every interval affected by a scene revision. PNGs are replaced atomically because unchanged states may share hardlinks. Identical deterministic SVG states are rendered once and reused without changing frame cadence; the metadata records captured range and unique capture count. Remotion still renders unique states through the actual React composition. GSAP seeks its real timeline at every frame and reuses only unchanged SVG output.
+
+Fonts are loaded once outside regenerated SVG contents; Remotion explicitly waits for font loading. Exact native-frame comparison verified that this optimization preserved the same scene pixels. Static source-font files can still be large at initial load: subset to used glyphs while preserving metrics, then compare against the original font rendering.
+
+- **Remotion:** actual React Composition/useCurrentFrame with SVG layers, rendered frame by frame by @remotion/renderer, then encoded with the same system FFmpeg settings as the other adapters.
+- **GSAP:** actual paused GSAP timeline animates state proxies; Playwright seeks each exact frame, draws native SVG, captures screenshots and FFmpeg encodes them.
+- **HTML/SVG:** standalone deterministic timeline evaluator draws SVG in Chromium; screenshot/encode loop matches GSAP.
+- **Python/Pillow:** draws geometry/text with Pillow; CairoSVG supplies SVG path rasterization, FFmpeg encodes raw RGB frames. `--aa 2` supersamples. Local virtualenv includes CairoSVG; system Pillow/numpy are inherited.
+
+Node dependencies are pinned in package-lock.json. Browser uses `/usr/bin/chromium` by default; set `CHROME_PATH` for another installed Chromium. A browser-cache path reported by Playwright can exist as a string even when its binary is absent; probe actual executable availability first.
+
+Pillow typography uses local root `fonts` assets when declared, or fontconfig (`fc-match`) otherwise. It validates sfnt/WOFF headers, converts WOFF with fontTools, and renders native geometry/text. It supports gradient masks, tracking, underline, group clipping/blur/shadows and separate group opacity. Font/edge rasterization can differ from Chromium. All browser renderers support clip/blur and font embedding. No engine should embed the source video as a substitute for a reconstruction.
+
+Native Motion Canvas is also verified: `node engines/render_motion_canvas.mjs --scene FILE --out OUT.mp4 [--frame N]`. It creates native Scene2D Node/Rect/Circle/Txt/Path/Img nodes, applies the measured frame states, renders native canvas frames and encodes them. It supports native gradients, rounded clip containers, blur/shadow, tracking, text anchors and font embedding. Native canvas text/edge rasterization differs from SVG; do not infer pixel equivalence from using the same manifest. The native Scene2D stage is initialized once and deterministic layer states are applied per frame, avoiding repeated generator replay. Figma access is assessed independently by the parent workflow. Animated `keyframes.d` are applied through the native `Path.data` signal, with explicit dirty detection and gradient-bbox refresh. The `fixtures/dynamic-path/`16-frame probe changes only path geometry and verifies three native states; actual static-path scene PNGs remain byte-identical.
+
+Latest Remotion shared-encoder smoke is `smoke-calibrated-remotion-shared-encoder.mp4` (use it for new comparisons). Other calibrated smoke files are `smoke-calibrated-{remotion,gsap,html,motion-canvas,pillow}.mp4`. They use PNG capture (Remotion/browser) or rawRGB (Pillow) and explicit Rec.709 limited-range output, avoiding implicit encoder color-range differences. `smoke-native-png-parity.json` shows that the chosen mid-animation PNG is identical in Remotion, GSAP, HTML; independent rasterizers differ. These are only infrastructure tests.
+
+For immutable render inputs: `python3 engines/snapshot_scene.py references/XX/scene.json outputs/XX/snapshot` copies local assets and records SHA256 provenance. Render the resulting scene.json only after its source agent marks the scene ready. Advanced-feature neutral tests are smoke-features-* and are not reference recreations.
+
+Native alternatives now include bounded resolved-group/static-layer caches and exact unchanged-frame reuse. Pillow integer translations reproduce its premultiplied affine rounding (verified MAE0/max0 on a native phone frame). Motion Canvas culls hidden subtrees and updates only changed signals (same native PNG parity). Native Img resources are awaited once on a valid locally intercepted HTTP origin. Pillow uses installed Noto Color Emoji for emoji absent from declared text fonts; its artwork differs from Apple emoji. Frozen native queues are in engines/native-queue.json; run with `python3 engines/run_alternative_batch.py --method pillow|motion-canvas`. Only a completed .render.json sidecar marks an output ready.
+
+Native PNG retention and partial patches (inclusive frame ranges):
+
+```sh
+node engines/render_motion_canvas.mjs --scene outputs/ID/final/scene.json --out outputs/ID/motion-canvas.mp4 --frames-dir outputs/ID/cache/motion-canvas
+engines/.venv/bin/python engines/render_pillow.py --scene outputs/ID/final/scene.json --out outputs/ID/pillow.mp4 --frames-dir outputs/ID/cache/pillow
+# After a measured scene revision, capture only known changed frames then encode the complete cache:
+node engines/render_motion_canvas.mjs --scene revised.json --out outputs/ID/motion-canvas.mp4 --frames-dir outputs/ID/cache/motion-canvas --ranges 450:800,900:920
+engines/.venv/bin/python engines/render_pillow.py --scene revised.json --out outputs/ID/pillow.mp4 --frames-dir outputs/ID/cache/pillow --ranges 450:800,900:920
+```
+
+Every PNG sequence must be complete before encoding. Writes replace a single frame atomically, preserving other hardlinks; unchanged native hold frames share an inode. MP4s are encoded to a temporary name and replaced only after success. `--encode-only true --frames-dir DIR` re-encodes an already complete cache without constructing a scene/browser. This does not verify that unrecaptured frames match a new scene: changed intervals must be established from source edits. Neutral `outputs/alternative-methods/cache-smoke` tests changed onlyframes15–16, preserved blueframes14/17 (and their sharedinode), linked redframes15/16 separately, and retained30frames in each encoded clip.
+
+Native effect corrections are checked with focused physical/compositing fixtures. Pillow blurs premultiplied RGBa so transparent RGB cannot darken a white edge. Motion Canvas establishes a composite coordinate root per authored layer so parent scale affects native blur and shadow. `effect_correction_ranges.py --scene scene.json --out spans.json` lists conservative active intervals when these fixes must be applied to an older cache. It does not inspect or replay reference frames.
+
+New native render sidecars include an `engineSha256` fingerprint. The queue requires both the frozen input path and current engine fingerprint before treating a video as complete; matching a scene filename alone cannot certify an older engine implementation. A partial corrective capture can certify the new engine only when its ranges cover all properties affected by the diagnosed change.
+
+`native_status.py` inspects expected/completed revisions, engine provenance, PNG cache coverage and live worker PIDs without opening a browser. An optional `native-engine-compatibility.json` ledger permits only explicit old-engine/new-engine/immutable-scene hash tuples with a concrete proof that the changed code cannot affect that scene. Capture sidecars retain the actual source hash used at capture; compatibility is not a rewritten provenance claim.
+
+Focused, authored neutral diagnosis scenes are kept in `fixtures/native-effects/` with expected pixel invariants. They cover transparent-image fill, scaled blur coordinates and premultiplied-alpha blur. Use these when a matching-renderer comparison disagrees with actual reference imagery; metadata or cross-renderer similarity alone cannot establish correctness.
+
+Large browser scene manifests are transported in exact active-lifecycle chunks. The original authored JSON/hash remains in metadata; `runtimeTransport` records each chunk's native frame span and byte size. Every requested frame's evaluated SVG is proven identical before capture. This avoids sending inactive tens of megabytes of glyph paths to Chromium. Checkpoints use the same pruning at their exact requested time. No approximation, path simplification, frame interpolation, or source/hash substitution is involved.
+
+For a nonconformal world transform, Motion Canvas now evaluates Gaussian blur in the component’s local coordinate space. A native custom Node draws its original editable Scene2D children into bounded local Canvas, filters that component, and transforms it onto the stage. It never screenshots SVG or replays reference frames. The local raster uses2× sampling within a16,380px/8MP surface budget; uniform transforms retain the established native filter path. `fixtures/anisotropic-blur/release-report.json` records physical direction/alpha tests and exact affected capture spans.
+
+`native-engine-corrections.json` pins actual old-engine/old-scene/new-engine tuples and required corrective frame ranges. The coordinator unions those with a measured source patch before capture, so an unrelated source revision cannot silently leave old renderer errors in retained PNGs. `native-method-paused.json` permits one native method to wait for a capability/source gate while the other advances.
+
+A partially faded component with a shadow needs the shadow and source ink composited before the fade. Motion Canvas therefore keeps the native shadow at opacity1 inside the authored outer opacity. When a nonconformal local Gaussian and shadow coexist, the editable-child local Canvas applies drop-shadow and Gaussian together before that outer fade, so the kernel is not scaled twice. `fixtures/shadow-opacity/release-report.json` includes the neutral fixture, real faded Linq259, giant Rene613 and unaffected opaque/anisotropic/dynamic-path controls. Preserve actual older capture fingerprints and use only exact scene/engine compatibility tuples or audited corrective spans; an unrelated source patch does not certify the retained renderer pixels.
+
+Native batch coordinators also recheck a source/method hold after obtaining a waited-for method lock. A newly held reference releases the slot instead of launching stale work or blocking another reference. This is an internal source-fidelity gate; it does not ask the user to approve reversible rendering. Completed capture hashes and pending scene intentions are recorded separately in `outputs/alternative-methods/pending-scene-gates.json`.
+
+Pillow also conditions extreme clipped coordinate systems before offscreen rasterization. A10000× outer camera and tiny inverse child scales must not collapse an intermediate group to1pixel. `fixtures/pillow-coordinate-conditioning/` records the physical invariants and exact53-state Mini correction. Native captureHistory retains both actual previous engine hashes and antialias factors; a partial higher-AAcapture does not relabel the unchanged historicAA1frames.
+
+Native Txt top placement uses the actual DOM inline font-box leading relative to its Txt parent, matching the SVG text-before-edge convention. It does not guess a global offset or rewrite line-height tracks. A formula based on font-box height was useful for diagnosis but fails at a fractional CSS rounding boundary; the exact measured DOM geometry preserves that case. Default/multiline/nonuniform/symbol/history controls and all-six affected frame unions are bound to hashes in `outputs/alternative-methods/motion-canvas-text-inventory/`. A separate sibling underline retains its existing metric limitation; no active underline occurs in the six current manifests. Retained native caches must receive the audited frame correction before the new engine can certify them.
+
+For transformed text, matching the font-box origin alone is insufficient. Browser SVG shapes fonts at the RMS of the full world linear matrix, then applies the inverse shaping scale during paint. Native Txt now reproduces that process with Canvas glyphs, retaining editable layout and line spacing while conditioning the paint font, advance/anchor, letter spacing and stroke. It uses the reactive authored world matrix rather than an offscreen cache’s pixel density. `rms-release-report.json` under the text inventory binds the110 pixel-exact glyph assay, actual/synthetic controls, same-process animation check, all-six scope and actual old/new capture histories. Unit-RMS text keeps the existing draw branch unchanged. Stroke/filter raster limits remain documented.
+
+Canvas `fontKerning='normal'` is scoped around native text paint, before both old and RMS-scaled width measurements, to match DOM/SVG shaping. Canvas auto can omit pairs while layout already includes them; fixing positions with source offsets would conceal the policy mismatch. The all-six audit compares actual normalized text prefixes and ink metrics at both font scales, including unitRMS. Production/private controls, bounded captures, unchanged outside-frame hashes and actual prior fingerprints are bound in `outputs/alternative-methods/motion-canvas-kerning-inventory/release-report.json`.

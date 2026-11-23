@@ -1,0 +1,209 @@
+{
+  "authorization": "Root explicitly authorized task-build intermediate/cache cleanup; all installed modules/venvs/config/logs/credentials/source archives/canonical/reference/current native caches are protected.",
+  "startedUTC": "2026-11-09T09:58:05Z",
+  "activePackageInstallsBeforeCleanup": [],
+  "freeBytesBefore": 713453568,
+  "cpio": {
+    "path": "/workspace/imessage-recreations/shared/fonts/payload/Payload~",
+    "sha256": "9a75db000449fe91278bb5d06ff03919e9f31a92205bce31ac199e2cada396ee",
+    "bytes": 322867294,
+    "physicalBytes": 322875392,
+    "hardlinks": 1,
+    "proof": "verification/packaging-audit/font-cpio-redundancy.json",
+    "protectedCompressedPayload": "/workspace/imessage-recreations/shared/fonts/package/SFProFontsPackage.pkg/Payload",
+    "protectedCompressedSHA256": "9357ceb0372357d054e66fe52844cff3c9bdb57566286eedb526b5a73a458fc4",
+    "rationale": "Byte-exact decompression derivative of protected compressed Payload; fully regenerable.",
+    "removed": true
+  },
+  "caches": [
+    {
+      "path": "/home/agent/.npm/_cacache",
+      "before": {
+        "exists": true,
+        "regularFiles": 1072,
+        "symlinks": 0,
+        "directories": 1520,
+        "logicalBytes": 369279824,
+        "allocatedBytes": 378408960,
+        "exclusiveAllocatedBytes": 378408960
+      },
+      "rationale": "Regenerable npm content-addressed package download cache",
+      "removedChildren": [
+        "/home/agent/.npm/_cacache/tmp",
+        "/home/agent/.npm/_cacache/index-v5",
+        "/home/agent/.npm/_cacache/content-v2"
+      ],
+      "after": {
+        "exists": true,
+        "regularFiles": 0,
+        "symlinks": 0,
+        "directories": 1,
+        "logicalBytes": 0,
+        "allocatedBytes": 4096,
+        "exclusiveAllocatedBytes": 4096
+      },
+      "deletedRegularFiles": 1072,
+      "logicalBytesRemoved": 369279824,
+      "allocatedBytesRemoved": 378404864
+    },
+    {
+      "path": "/home/agent/.cache/pip/http",
+      "before": {
+        "exists": false,
+        "regularFiles": 0,
+        "symlinks": 0,
+        "directories": 0,
+        "logicalBytes": 0,
+        "allocatedBytes": 0,
+        "exclusiveAllocatedBytes": 0
+      },
+      "rationale": "Regenerable pip HTTP/download or built-wheel cache",
+      "removedChildren": [],
+      "after": {
+        "exists": false,
+        "regularFiles": 0,
+        "symlinks": 0,
+        "directories": 0,
+        "logicalBytes": 0,
+        "allocatedBytes": 0,
+        "exclusiveAllocatedBytes": 0
+      },
+      "deletedRegularFiles": 0,
+      "logicalBytesRemoved": 0,
+      "allocatedBytesRemoved": 0
+    },
+    {
+      "path": "/home/agent/.cache/pip/http-v2",
+      "before": {
+        "exists": true,
+        "regularFiles": 58,
+        "symlinks": 0,
+        "directories": 128,
+        "logicalBytes": 182682337,
+        "allocatedBytes": 183341056,
+        "exclusiveAllocatedBytes": 183341056
+      },
+      "rationale": "Regenerable pip HTTP/download or built-wheel cache",
+      "removedChildren": [],
+      "after": {
+        "exists": false,
+        "regularFiles": 0,
+        "symlinks": 0,
+        "directories": 0,
+        "logicalBytes": 0,
+        "allocatedBytes": 0,
+        "exclusiveAllocatedBytes": 0
+      },
+      "deletedRegularFiles": 58,
+      "logicalBytesRemoved": 182682337,
+      "allocatedBytesRemoved": 183341056
+    },
+    {
+      "path": "/home/agent/.cache/pip/wheels",
+      "before": {
+        "exists": false,
+        "regularFiles": 0,
+        "symlinks": 0,
+        "directories": 0,
+        "logicalBytes": 0,
+        "allocatedBytes": 0,
+        "exclusiveAllocatedBytes": 0
+      },
+      "rationale": "Regenerable pip HTTP/download or built-wheel cache",
+      "removedChildren": [],
+      "after": {
+        "exists": false,
+        "regularFiles": 0,
+        "symlinks": 0,
+        "directories": 0,
+        "logicalBytes": 0,
+        "allocatedBytes": 0,
+        "exclusiveAllocatedBytes": 0
+      },
+      "deletedRegularFiles": 0,
+      "logicalBytesRemoved": 0,
+      "allocatedBytesRemoved": 0
+    }
+  ],
+  "protectedCompressedPayloadUnchanged": true,
+  "preservedPathMetadataBefore": {
+    "/home/agent/.npm/_logs": {
+      "exists": true,
+      "inode": 1310913,
+      "mode": 16832,
+      "bytes": 4096,
+      "mtime_ns": 1794158632580411326
+    },
+    "/home/agent/.npmrc": {
+      "exists": false
+    },
+    "/home/agent/.config/pip": {
+      "exists": false
+    },
+    "/home/agent/.cache/pip/selfcheck": {
+      "exists": true,
+      "inode": 1327966,
+      "mode": 16832,
+      "bytes": 4096,
+      "mtime_ns": 1794191014186007042
+    },
+    "/workspace/imessage-recreations/engines/node_modules": {
+      "exists": true,
+      "inode": 1312359,
+      "mode": 16832,
+      "bytes": 4096,
+      "mtime_ns": 1794158437743064945
+    },
+    "/workspace/imessage-recreations/engines/.venv": {
+      "exists": true,
+      "inode": 1326634,
+      "mode": 16832,
+      "bytes": 4096,
+      "mtime_ns": 1794158280581532519
+    }
+  },
+  "preservedPathMetadataAfter": {
+    "/home/agent/.npm/_logs": {
+      "exists": true,
+      "inode": 1310913,
+      "mode": 16832,
+      "bytes": 4096,
+      "mtime_ns": 1794158632580411326
+    },
+    "/home/agent/.npmrc": {
+      "exists": false
+    },
+    "/home/agent/.config/pip": {
+      "exists": false
+    },
+    "/home/agent/.cache/pip/selfcheck": {
+      "exists": true,
+      "inode": 1327966,
+      "mode": 16832,
+      "bytes": 4096,
+      "mtime_ns": 1794191014186007042
+    },
+    "/workspace/imessage-recreations/engines/node_modules": {
+      "exists": true,
+      "inode": 1312359,
+      "mode": 16832,
+      "bytes": 4096,
+      "mtime_ns": 1794158437743064945
+    },
+    "/workspace/imessage-recreations/engines/.venv": {
+      "exists": true,
+      "inode": 1326634,
+      "mode": 16832,
+      "bytes": 4096,
+      "mtime_ns": 1794158280581532519
+    }
+  },
+  "protectedPathsUnchanged": true,
+  "activePackageInstallsAfterCleanup": [],
+  "freeBytesAfter": 1598074880,
+  "observedFreeBytesDelta": 884621312,
+  "deletedRegularFiles": 1131,
+  "logicalBytesRemoved": 874829455,
+  "allocatedBytesRemoved": 884621312,
+  "notice": "Observed filesystem free-space delta can include concurrent task writes. Exact removed-file bytes/counts and allocated blocks are recorded separately. npm cache directory ownership/mode is preserved; pip selfcheck and all config/log locations are untouched."
+}

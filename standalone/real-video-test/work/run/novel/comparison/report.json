@@ -1,0 +1,153 @@
+{
+  "schema_version": 1,
+  "inputs": {
+    "source": {
+      "path": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/inputs/unseen-complete.mp4",
+      "sha256": "3d0fbab4c289b5fc1e2452d587c892bc9c17fdcf7ab9f59e2a820d504c0f9fee",
+      "width": 480,
+      "height": 270,
+      "sample_aspect_ratio": null,
+      "display_aspect_ratio": null,
+      "effective_sample_aspect_ratio": "1:1",
+      "sample_aspect_basis": "implicit square pixels",
+      "rotation": 0,
+      "average_frame_rate": "30/1",
+      "time_base": "1/15360",
+      "frame_count": 90,
+      "missing_pts": 0,
+      "strictly_increasing_pts": true,
+      "first_pts_seconds": 0.0,
+      "last_pts_seconds": 2.966666666666667,
+      "end_seconds_exclusive": 3.0
+    },
+    "output": {
+      "path": "/Users/darshan/Documents/Codex/2026-11-21/goal-test-the-imessage-video-skill/work/run/novel/master.mp4",
+      "sha256": "d2436c906bed057c0f3afab665ca4c81375264add38f786d1d77b81d95892606",
+      "width": 480,
+      "height": 270,
+      "sample_aspect_ratio": null,
+      "display_aspect_ratio": null,
+      "effective_sample_aspect_ratio": "1:1",
+      "sample_aspect_basis": "implicit square pixels",
+      "rotation": 0,
+      "average_frame_rate": "30/1",
+      "time_base": "1/15360",
+      "frame_count": 90,
+      "missing_pts": 0,
+      "strictly_increasing_pts": true,
+      "first_pts_seconds": 0.0,
+      "last_pts_seconds": 2.966666666666667,
+      "end_seconds_exclusive": 3.0
+    }
+  },
+  "compared_frames": 90,
+  "paired_indices": 90,
+  "source_only_tail_frames": 0,
+  "output_only_tail_frames": 0,
+  "alignment": "native presentation order, paired by zero-based index, without resampling",
+  "max_paired_pts_error_ms": 0.0,
+  "exclusive_end_error_ms": 0.0,
+  "structure_match": true,
+  "structure_issues": [],
+  "structure_within_tolerance": true,
+  "structure_tolerance_issues": [],
+  "roi_xyxy": {
+    "shuttle-and-tether": [
+      92,
+      69,
+      394,
+      192
+    ],
+    "swipe-midpoint": [
+      219,
+      161,
+      294,
+      192
+    ],
+    "fixed-heading": [
+      47,
+      50,
+      139,
+      70
+    ],
+    "fixed-baseline": [
+      48,
+      202,
+      431,
+      221
+    ]
+  },
+  "metrics": {
+    "full": {
+      "mean_frame_mae": 0.7686544067215364,
+      "max_frame_mae": 0.9021733539094651,
+      "worst_frame": 46
+    },
+    "shuttle-and-tether": {
+      "mean_frame_mae": 0.9733877931126624,
+      "max_frame_mae": 1.4380283206805577,
+      "worst_frame": 46
+    },
+    "swipe-midpoint": {
+      "mean_frame_mae": 0.6219864595778575,
+      "max_frame_mae": 4.196129032258065,
+      "worst_frame": 46
+    },
+    "fixed-heading": {
+      "mean_frame_mae": 5.718285024154589,
+      "max_frame_mae": 5.72554347826087,
+      "worst_frame": 1
+    },
+    "fixed-baseline": {
+      "mean_frame_mae": 0.9635930557464156,
+      "max_frame_mae": 1.0099858000091613,
+      "worst_frame": 59
+    }
+  },
+  "possible_frame_shift": {
+    "best_output_minus_source_frames": 0,
+    "compared_source_frames": 80,
+    "search_radius": 5,
+    "unaligned_mean_error": 0.5176323784722222,
+    "best_mean_error": 0.5176323784722222,
+    "possible_constant_offset": false
+  },
+  "audio": {
+    "source_stream_count": 1,
+    "output_stream_count": 1,
+    "tracks": [
+      {
+        "index": 0,
+        "channels": 1,
+        "start_error_ms": 0.0,
+        "end_error_ms": 0.0,
+        "decoded_samples": [
+          144000,
+          144000
+        ],
+        "compared_windows": 150,
+        "audible_channel_windows": 20,
+        "max_envelope_error": 0.03223788069470144,
+        "mean_spectrum_similarity": 0.9999893196630195
+      }
+    ],
+    "failures": [],
+    "clock_tolerance_ms": 20.0,
+    "max_allowed_envelope_error": 0.22,
+    "min_allowed_spectrum_similarity": 0.8,
+    "limits_passed": true
+  },
+  "thresholds": {
+    "max_mae": 6.0,
+    "max_pts_error_ms": 0.0,
+    "require_structure_match": true,
+    "reject_detected_shift": false
+  },
+  "limits_passed": true,
+  "failures": [],
+  "worst_pair_index": 1,
+  "artifacts": {
+    "all_frame_measurements": "frames.csv",
+    "comparison_image": "worst.png"
+  }
+}

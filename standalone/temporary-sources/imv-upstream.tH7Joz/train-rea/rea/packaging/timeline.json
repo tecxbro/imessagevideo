@@ -1,0 +1,183 @@
+{
+  "text": [
+    {
+      "id": "text_005",
+      "kind": "subtitle",
+      "kind_zh": "subtitle",
+      "t0": 1.0,
+      "t1": 1.6,
+      "text": "Two seats toUnionStation.",
+      "bbox": [
+        0.4203,
+        0.4583,
+        0.2688,
+        0.0417
+      ],
+      "style": {
+        "fill": "#d6fcfe",
+        "fill_name": "cyan",
+        "multicolor": true,
+        "highlight": "#4185c2",
+        "highlight_name": "blue",
+        "weight": 0.119
+      },
+      "style_zh": "cyan text, keywords highlighted in blue, line height 4.2% (about 15px)",
+      "anim_in": {
+        "kind": "cut",
+        "kind_zh": "hard in"
+      },
+      "anim_out": {
+        "kind": "cut_out",
+        "kind_zh": "hard out"
+      },
+      "mid_motion": null,
+      "follows": null,
+      "part_of_picture": false,
+      "anchor": null,
+      "persistent": null
+    },
+    {
+      "id": "text_009",
+      "kind": "subtitle",
+      "kind_zh": "subtitle",
+      "t0": 2.0,
+      "t1": 3.0,
+      "text": "19:10",
+      "bbox": [
+        0.2828,
+        0.6889,
+        0.0641,
+        0.0417
+      ],
+      "style": {
+        "fill": "#16171a",
+        "fill_name": "black",
+        "weight": 0.127
+      },
+      "style_zh": "black text, line height 4.2% (about 15px)",
+      "anim_in": {
+        "kind": "cut",
+        "kind_zh": "hard in"
+      },
+      "anim_out": {
+        "kind": "cut_out",
+        "kind_zh": "hard out"
+      },
+      "mid_motion": null,
+      "follows": null,
+      "part_of_picture": false,
+      "anchor": null,
+      "persistent": null
+    },
+    {
+      "id": "text_011",
+      "kind": "subtitle",
+      "kind_zh": "subtitle",
+      "t0": 3.0,
+      "t1": 4.0,
+      "text": "Two seats to Unlon Station.",
+      "bbox": [
+        0.4203,
+        0.4556,
+        0.2688,
+        0.0444
+      ],
+      "style": {
+        "fill": "#d6fcfe",
+        "fill_name": "cyan",
+        "multicolor": true,
+        "highlight": "#4384bf",
+        "highlight_name": "blue",
+        "weight": 0.119
+      },
+      "style_zh": "cyan text, keywords highlighted in blue, line height 4.4% (about 16px)",
+      "anim_in": {
+        "kind": "cut",
+        "kind_zh": "hard in"
+      },
+      "anim_out": null,
+      "mid_motion": null,
+      "follows": null,
+      "part_of_picture": false,
+      "anchor": null,
+      "persistent": null
+    },
+    {
+      "id": "text_012",
+      "kind": "subtitle",
+      "kind_zh": "subtitle",
+      "t0": 3.0,
+      "t1": 4.0,
+      "text": "Bookedfor18:40.",
+      "bbox": [
+        0.275,
+        0.675,
+        0.1734,
+        0.0389
+      ],
+      "style": {
+        "fill": "#1a1b20",
+        "fill_name": "black",
+        "weight": 0.136
+      },
+      "style_zh": "black text, line height 3.9% (about 14px)",
+      "anim_in": null,
+      "anim_out": null,
+      "mid_motion": null,
+      "follows": null,
+      "part_of_picture": false,
+      "anchor": null,
+      "persistent": null
+    }
+  ],
+  "stickers": [],
+  "sfx": [
+    {
+      "t": 0.964,
+      "type": "pop",
+      "description": null,
+      "source": "deterministic",
+      "confidence": "low",
+      "on": {
+        "type": "subtitle_in",
+        "what": "subtitle \"Two seats toUnio\" appears",
+        "dt": 0.036,
+        "ref": "text_005"
+      }
+    },
+    {
+      "t": 1.834,
+      "type": "pop",
+      "description": null,
+      "source": "deterministic",
+      "confidence": "low",
+      "on": {
+        "type": "subtitle_in",
+        "what": "subtitle \"19:10\" appears",
+        "dt": 0.166,
+        "ref": "text_009"
+      }
+    },
+    {
+      "t": 2.438,
+      "type": "pop",
+      "description": null,
+      "source": "deterministic",
+      "confidence": "low",
+      "on": null
+    },
+    {
+      "t": 2.937,
+      "type": "pop",
+      "description": null,
+      "source": "deterministic",
+      "confidence": "low",
+      "on": {
+        "type": "subtitle_in",
+        "what": "subtitle \"Two seats to Unl\" appears",
+        "dt": 0.063,
+        "ref": "text_011"
+      }
+    }
+  ]
+}

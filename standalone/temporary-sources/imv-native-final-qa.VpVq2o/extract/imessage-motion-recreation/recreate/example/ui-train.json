@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "conversationId": "thread.rail-planner",
+  "title": "Rail Planner",
+  "service": "Messages · Train options",
+  "participants": {"account.self": "Rider", "account.planner": "Rail Planner"},
+  "localSenderId": "account.self",
+  "display": {"width": 402, "height": 480, "textSize": 15},
+  "fps": 30,
+  "frameCount": 120,
+  "initial": {
+    "focused": false,
+    "messages": [
+      {"id": "message.offer", "senderId": "account.planner", "text": "Where are we heading?"}
+    ]
+  },
+  "events": [
+    {"id": "recreate.train.request", "kind": "send", "frame": 30, "durationFrames": 9,
+      "message": {"id": "message.request", "text": "Two seats to Union Station."}},
+    {"id": "recreate.train.drawer", "kind": "overlay", "frame": 56, "durationFrames": 10,
+      "surface": "tray", "items": ["18:40 · 2 window seats", "19:10 · 4 seats"]},
+    {"id": "recreate.train.drawer-close", "kind": "overlay", "frame": 88, "durationFrames": 1,
+      "surface": "conversation"},
+    {"id": "recreate.train.receipt", "kind": "receive", "frame": 89, "durationFrames": 8,
+      "message": {"id": "message.receipt", "senderId": "account.planner", "text": "Booked for 18:40."}}
+  ],
+  "cues": [
+    {"id": "recreate.train.request.cue", "eventId": "recreate.train.request", "offsetSamples": 0},
+    {"id": "recreate.train.drawer.cue", "eventId": "recreate.train.drawer", "offsetSamples": 0},
+    {"id": "recreate.train.receipt.cue", "eventId": "recreate.train.receipt", "offsetSamples": 0}
+  ],
+  "seatSelectionFrame": 74
+}
