@@ -1,0 +1,364 @@
+{
+  "width": 960,
+  "height": 720,
+  "background": "#fafafa",
+  "fps": 30,
+  "duration": 0.7,
+  "title": "Restaurant photo strip",
+  "source": {
+    "sourceStart": 36.36666666666667,
+    "sourceEnd": 37.06666666666667,
+    "notes": "Measured rail samples with authored adaptation"
+  },
+  "layers": [
+    {
+      "id": "linq-restaurant-photo-strip",
+      "type": "group",
+      "x": 0,
+      "y": 0,
+      "children": [
+        {
+          "id": "linq-restaurant-photo-strip-venue",
+          "type": "text",
+          "text": "Cedar Room",
+          "x": 195,
+          "y": 21,
+          "fontSize": 32,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#17191d",
+          "fontWeight": 600
+        },
+        {
+          "id": "linq-restaurant-photo-strip-details",
+          "type": "text",
+          "text": "Open now  ·  Spanish restaurant",
+          "x": 195,
+          "y": 74,
+          "fontSize": 20,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#4a5a62"
+        },
+        {
+          "id": "linq-restaurant-photo-strip-directions",
+          "type": "group",
+          "x": 195,
+          "y": 125,
+          "children": [
+            {
+              "id": "linq-restaurant-photo-strip-directions-shape",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 308,
+              "height": 47,
+              "fill": "#b34724",
+              "radius": 23.5
+            },
+            {
+              "id": "linq-restaurant-photo-strip-directions-label",
+              "type": "text",
+              "text": "Reserve",
+              "x": 154,
+              "y": 11,
+              "fontSize": 16,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#ffffff",
+              "textAnchor": "middle",
+              "fontWeight": 600
+            }
+          ]
+        },
+        {
+          "id": "linq-restaurant-photo-strip-tabs",
+          "type": "text",
+          "text": "Overview        Menu        Reviews",
+          "x": 195,
+          "y": 240,
+          "fontSize": 21,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#17191d"
+        },
+        {
+          "id": "linq-restaurant-photo-strip-divider",
+          "type": "rect",
+          "x": 195,
+          "y": 282,
+          "width": 578,
+          "height": 1,
+          "fill": "#d8dbe0",
+          "radius": 0
+        },
+        {
+          "id": "linq-restaurant-photo-strip-viewport",
+          "type": "group",
+          "x": 195,
+          "y": 303,
+          "children": [
+            {
+              "id": "linq-restaurant-photo-strip-rail-matte",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 578,
+              "height": 334,
+              "fill": "#fafafa",
+              "radius": 0
+            },
+            {
+              "id": "linq-restaurant-photo-strip-rail",
+              "type": "group",
+              "x": 0,
+              "y": 0,
+              "children": [
+                {
+                  "id": "linq-restaurant-photo-strip-facade",
+                  "type": "group",
+                  "x": -124,
+                  "y": 0,
+                  "children": [
+                    {
+                      "id": "linq-restaurant-photo-strip-facade-image",
+                      "type": "image",
+                      "src": "reuse-assets/r0.png",
+                      "width": 417,
+                      "height": 334,
+                      "preserveAspectRatio": "xMidYMid slice"
+                    }
+                  ],
+                  "clip": {
+                    "x": 0,
+                    "y": 0,
+                    "width": 417,
+                    "height": 334,
+                    "radius": 17
+                  }
+                },
+                {
+                  "id": "linq-restaurant-photo-strip-table",
+                  "type": "group",
+                  "x": 313,
+                  "y": 0,
+                  "children": [
+                    {
+                      "id": "linq-restaurant-photo-strip-table-image",
+                      "type": "image",
+                      "src": "reuse-assets/r1.png",
+                      "width": 268,
+                      "height": 334,
+                      "preserveAspectRatio": "xMidYMid slice"
+                    }
+                  ],
+                  "clip": {
+                    "x": 0,
+                    "y": 0,
+                    "width": 268,
+                    "height": 334,
+                    "radius": 17
+                  }
+                },
+                {
+                  "id": "linq-restaurant-photo-strip-bowl",
+                  "type": "group",
+                  "x": 602,
+                  "y": 0,
+                  "children": [
+                    {
+                      "id": "linq-restaurant-photo-strip-bowl-image",
+                      "type": "image",
+                      "src": "reuse-assets/r2.png",
+                      "width": 499,
+                      "height": 334,
+                      "preserveAspectRatio": "xMidYMid slice"
+                    }
+                  ],
+                  "clip": {
+                    "x": 0,
+                    "y": 0,
+                    "width": 499,
+                    "height": 334,
+                    "radius": 17
+                  }
+                },
+                {
+                  "id": "linq-restaurant-photo-strip-octopus",
+                  "type": "group",
+                  "x": 1122,
+                  "y": 0,
+                  "children": [
+                    {
+                      "id": "linq-restaurant-photo-strip-octopus-image",
+                      "type": "image",
+                      "src": "reuse-assets/r3.png",
+                      "width": 334,
+                      "height": 334,
+                      "preserveAspectRatio": "xMidYMid slice"
+                    }
+                  ],
+                  "clip": {
+                    "x": 0,
+                    "y": 0,
+                    "width": 334,
+                    "height": 334,
+                    "radius": 17
+                  }
+                },
+                {
+                  "id": "linq-restaurant-photo-strip-interior",
+                  "type": "group",
+                  "x": 1478,
+                  "y": 0,
+                  "children": [
+                    {
+                      "id": "linq-restaurant-photo-strip-interior-image",
+                      "type": "image",
+                      "src": "reuse-assets/r4.png",
+                      "width": 444,
+                      "height": 334,
+                      "preserveAspectRatio": "xMidYMid slice"
+                    }
+                  ],
+                  "clip": {
+                    "x": 0,
+                    "y": 0,
+                    "width": 444,
+                    "height": 334,
+                    "radius": 17
+                  }
+                }
+              ],
+              "keyframes": {
+                "x": [
+                  {
+                    "t": 0,
+                    "value": -19,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 0.03333333333333333,
+                    "value": -41,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 0.06666666666666667,
+                    "value": -41,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 0.1,
+                    "value": -66,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 0.13333333333333333,
+                    "value": -95,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 0.16666666666666666,
+                    "value": -129,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 0.2,
+                    "value": -168,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 0.23333333333333334,
+                    "value": -168,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 0.26666666666666666,
+                    "value": -215,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 0.3,
+                    "value": -272,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 0.3333333333333333,
+                    "value": -344,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 0.36666666666666664,
+                    "value": -438,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 0.4,
+                    "value": -438,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 0.43333333333333335,
+                    "value": -563,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 0.4666666666666667,
+                    "value": -719,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 0.5,
+                    "value": -867,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 0.5333333333333333,
+                    "value": -977,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 0.5666666666666667,
+                    "value": -977,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 0.6,
+                    "value": -1057,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 0.6333333333333333,
+                    "value": -1116,
+                    "ease": "linear"
+                  },
+                  {
+                    "t": 0.6666666666666666,
+                    "value": -1162,
+                    "ease": "linear"
+                  }
+                ]
+              }
+            }
+          ],
+          "clip": {
+            "x": 0,
+            "y": 0,
+            "width": 578,
+            "height": 334
+          }
+        },
+        {
+          "id": "linq-restaurant-photo-strip-address",
+          "type": "text",
+          "text": "9 Bleecker Street",
+          "x": 195,
+          "y": 681,
+          "fontSize": 22,
+          "fontFamily": "Arial, sans-serif",
+          "fill": "#17191d"
+        }
+      ],
+      "start": 0,
+      "end": 0.7,
+      "scaleX": 1,
+      "scaleY": 1
+    }
+  ]
+}

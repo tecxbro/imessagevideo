@@ -1,0 +1,651 @@
+{
+  "width": 640,
+  "height": 460,
+  "background": "#f7f7f5",
+  "fps": 30,
+  "duration": 2.7,
+  "title": "Shared-check list scroll",
+  "source": {
+    "sourceStart": 32.666666666666664,
+    "sourceEnd": 35.36666666666667,
+    "notes": "Source-informed authored adaptation"
+  },
+  "layers": [
+    {
+      "id": "linq-checklist-scroll",
+      "type": "group",
+      "x": 0,
+      "y": 0,
+      "children": [
+        {
+          "id": "linq-checklist-scroll-thread",
+          "type": "group",
+          "x": 90,
+          "y": 10,
+          "children": [
+            {
+              "id": "linq-checklist-scroll-thread-matte",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 460,
+              "height": 440,
+              "fill": "#ffffff",
+              "radius": 28,
+              "stroke": "#d8dbe0",
+              "strokeWidth": 1
+            },
+            {
+              "id": "linq-checklist-scroll-thread-screen",
+              "type": "group",
+              "x": 0,
+              "y": 0,
+              "children": [
+                {
+                  "id": "linq-checklist-scroll-header",
+                  "type": "text",
+                  "text": "Check’s Shared",
+                  "x": 30,
+                  "y": 62,
+                  "fontSize": 20,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#17191d",
+                  "fontWeight": 600
+                },
+                {
+                  "id": "linq-checklist-scroll-list-viewport",
+                  "type": "group",
+                  "x": 30,
+                  "y": 104,
+                  "children": [
+                    {
+                      "id": "linq-checklist-scroll-list-rail",
+                      "type": "group",
+                      "x": 0,
+                      "y": 0,
+                      "children": [
+                        {
+                          "id": "linq-checklist-scroll-row-0",
+                          "type": "group",
+                          "x": 0,
+                          "y": 0,
+                          "children": [
+                            {
+                              "id": "linq-checklist-scroll-row-avatar-0",
+                              "type": "group",
+                              "x": 0,
+                              "y": 0,
+                              "children": [
+                                {
+                                  "id": "linq-checklist-scroll-row-avatar-0-disc",
+                                  "type": "circle",
+                                  "width": 40,
+                                  "height": 40,
+                                  "fill": "#d8e2f0"
+                                },
+                                {
+                                  "id": "linq-checklist-scroll-row-avatar-0-initials",
+                                  "type": "text",
+                                  "text": "J",
+                                  "x": 20,
+                                  "y": 10.8,
+                                  "fontSize": 12.8,
+                                  "fontFamily": "Arial, sans-serif",
+                                  "fill": "#17191d",
+                                  "textAnchor": "middle",
+                                  "fontWeight": 600
+                                }
+                              ]
+                            },
+                            {
+                              "id": "linq-checklist-scroll-row-title-0",
+                              "type": "text",
+                              "text": "Jamie (you)",
+                              "x": 52,
+                              "y": 2,
+                              "fontSize": 17,
+                              "fontFamily": "Arial, sans-serif",
+                              "fill": "#17191d",
+                              "fontWeight": 600
+                            },
+                            {
+                              "id": "linq-checklist-scroll-row-detail-0",
+                              "type": "text",
+                              "text": "Chick’n Shack + Lemonade",
+                              "x": 52,
+                              "y": 27,
+                              "fontSize": 15,
+                              "fontFamily": "Arial, sans-serif",
+                              "fill": "#5d6a72"
+                            },
+                            {
+                              "id": "linq-checklist-scroll-row-badge-0",
+                              "type": "text",
+                              "text": "$16",
+                              "x": 330,
+                              "y": 10,
+                              "fontSize": 17,
+                              "fontFamily": "Arial, sans-serif",
+                              "fill": "#17191d",
+                              "textAnchor": "end",
+                              "fontWeight": 600
+                            }
+                          ]
+                        },
+                        {
+                          "id": "linq-checklist-scroll-row-1",
+                          "type": "group",
+                          "x": 0,
+                          "y": 66,
+                          "children": [
+                            {
+                              "id": "linq-checklist-scroll-row-avatar-1",
+                              "type": "group",
+                              "x": 0,
+                              "y": 0,
+                              "children": [
+                                {
+                                  "id": "linq-checklist-scroll-row-avatar-1-disc",
+                                  "type": "circle",
+                                  "width": 40,
+                                  "height": 40,
+                                  "fill": "#d8e2f0"
+                                },
+                                {
+                                  "id": "linq-checklist-scroll-row-avatar-1-initials",
+                                  "type": "text",
+                                  "text": "D",
+                                  "x": 20,
+                                  "y": 10.8,
+                                  "fontSize": 12.8,
+                                  "fontFamily": "Arial, sans-serif",
+                                  "fill": "#17191d",
+                                  "textAnchor": "middle",
+                                  "fontWeight": 600
+                                }
+                              ]
+                            },
+                            {
+                              "id": "linq-checklist-scroll-row-title-1",
+                              "type": "text",
+                              "text": "Dillion",
+                              "x": 52,
+                              "y": 2,
+                              "fontSize": 17,
+                              "fontFamily": "Arial, sans-serif",
+                              "fill": "#17191d",
+                              "fontWeight": 600
+                            },
+                            {
+                              "id": "linq-checklist-scroll-row-detail-1",
+                              "type": "text",
+                              "text": "Veggie Shack",
+                              "x": 52,
+                              "y": 27,
+                              "fontSize": 15,
+                              "fontFamily": "Arial, sans-serif",
+                              "fill": "#5d6a72"
+                            },
+                            {
+                              "id": "linq-checklist-scroll-row-badge-1",
+                              "type": "text",
+                              "text": "$12",
+                              "x": 330,
+                              "y": 10,
+                              "fontSize": 17,
+                              "fontFamily": "Arial, sans-serif",
+                              "fill": "#17191d",
+                              "textAnchor": "end",
+                              "fontWeight": 600
+                            }
+                          ]
+                        },
+                        {
+                          "id": "linq-checklist-scroll-row-2",
+                          "type": "group",
+                          "x": 0,
+                          "y": 132,
+                          "children": [
+                            {
+                              "id": "linq-checklist-scroll-row-avatar-2",
+                              "type": "group",
+                              "x": 0,
+                              "y": 0,
+                              "children": [
+                                {
+                                  "id": "linq-checklist-scroll-row-avatar-2-disc",
+                                  "type": "circle",
+                                  "width": 40,
+                                  "height": 40,
+                                  "fill": "#d8e2f0"
+                                },
+                                {
+                                  "id": "linq-checklist-scroll-row-avatar-2-initials",
+                                  "type": "text",
+                                  "text": "P",
+                                  "x": 20,
+                                  "y": 10.8,
+                                  "fontSize": 12.8,
+                                  "fontFamily": "Arial, sans-serif",
+                                  "fill": "#17191d",
+                                  "textAnchor": "middle",
+                                  "fontWeight": 600
+                                }
+                              ]
+                            },
+                            {
+                              "id": "linq-checklist-scroll-row-title-2",
+                              "type": "text",
+                              "text": "Priya",
+                              "x": 52,
+                              "y": 2,
+                              "fontSize": 17,
+                              "fontFamily": "Arial, sans-serif",
+                              "fill": "#17191d",
+                              "fontWeight": 600
+                            },
+                            {
+                              "id": "linq-checklist-scroll-row-detail-2",
+                              "type": "text",
+                              "text": "is choosing…",
+                              "x": 52,
+                              "y": 27,
+                              "fontSize": 15,
+                              "fontFamily": "Arial, sans-serif",
+                              "fill": "#5d6a72"
+                            },
+                            {
+                              "id": "linq-checklist-scroll-row-badge-2",
+                              "type": "text",
+                              "text": "",
+                              "x": 330,
+                              "y": 10,
+                              "fontSize": 17,
+                              "fontFamily": "Arial, sans-serif",
+                              "fill": "#17191d",
+                              "textAnchor": "end",
+                              "fontWeight": 600
+                            }
+                          ]
+                        },
+                        {
+                          "id": "linq-checklist-scroll-row-3",
+                          "type": "group",
+                          "x": 0,
+                          "y": 198,
+                          "children": [
+                            {
+                              "id": "linq-checklist-scroll-row-avatar-3",
+                              "type": "group",
+                              "x": 0,
+                              "y": 0,
+                              "children": [
+                                {
+                                  "id": "linq-checklist-scroll-row-avatar-3-disc",
+                                  "type": "circle",
+                                  "width": 40,
+                                  "height": 40,
+                                  "fill": "#d8e2f0"
+                                },
+                                {
+                                  "id": "linq-checklist-scroll-row-avatar-3-initials",
+                                  "type": "text",
+                                  "text": "C",
+                                  "x": 20,
+                                  "y": 10.8,
+                                  "fontSize": 12.8,
+                                  "fontFamily": "Arial, sans-serif",
+                                  "fill": "#17191d",
+                                  "textAnchor": "middle",
+                                  "fontWeight": 600
+                                }
+                              ]
+                            },
+                            {
+                              "id": "linq-checklist-scroll-row-title-3",
+                              "type": "text",
+                              "text": "Carlos",
+                              "x": 52,
+                              "y": 2,
+                              "fontSize": 17,
+                              "fontFamily": "Arial, sans-serif",
+                              "fill": "#17191d",
+                              "fontWeight": 600
+                            },
+                            {
+                              "id": "linq-checklist-scroll-row-detail-3",
+                              "type": "text",
+                              "text": "is choosing…",
+                              "x": 52,
+                              "y": 27,
+                              "fontSize": 15,
+                              "fontFamily": "Arial, sans-serif",
+                              "fill": "#5d6a72"
+                            },
+                            {
+                              "id": "linq-checklist-scroll-row-badge-3",
+                              "type": "text",
+                              "text": "",
+                              "x": 330,
+                              "y": 10,
+                              "fontSize": 17,
+                              "fontFamily": "Arial, sans-serif",
+                              "fill": "#17191d",
+                              "textAnchor": "end",
+                              "fontWeight": 600
+                            }
+                          ]
+                        },
+                        {
+                          "id": "linq-checklist-scroll-row-4",
+                          "type": "group",
+                          "x": 0,
+                          "y": 264,
+                          "children": [
+                            {
+                              "id": "linq-checklist-scroll-row-avatar-4",
+                              "type": "group",
+                              "x": 0,
+                              "y": 0,
+                              "children": [
+                                {
+                                  "id": "linq-checklist-scroll-row-avatar-4-disc",
+                                  "type": "circle",
+                                  "width": 40,
+                                  "height": 40,
+                                  "fill": "#d8e2f0"
+                                },
+                                {
+                                  "id": "linq-checklist-scroll-row-avatar-4-initials",
+                                  "type": "text",
+                                  "text": "S",
+                                  "x": 20,
+                                  "y": 10.8,
+                                  "fontSize": 12.8,
+                                  "fontFamily": "Arial, sans-serif",
+                                  "fill": "#17191d",
+                                  "textAnchor": "middle",
+                                  "fontWeight": 600
+                                }
+                              ]
+                            },
+                            {
+                              "id": "linq-checklist-scroll-row-title-4",
+                              "type": "text",
+                              "text": "Siobhan",
+                              "x": 52,
+                              "y": 2,
+                              "fontSize": 17,
+                              "fontFamily": "Arial, sans-serif",
+                              "fill": "#17191d",
+                              "fontWeight": 600
+                            },
+                            {
+                              "id": "linq-checklist-scroll-row-detail-4",
+                              "type": "text",
+                              "text": "is choosing…",
+                              "x": 52,
+                              "y": 27,
+                              "fontSize": 15,
+                              "fontFamily": "Arial, sans-serif",
+                              "fill": "#5d6a72"
+                            },
+                            {
+                              "id": "linq-checklist-scroll-row-badge-4",
+                              "type": "text",
+                              "text": "",
+                              "x": 330,
+                              "y": 10,
+                              "fontSize": 17,
+                              "fontFamily": "Arial, sans-serif",
+                              "fill": "#17191d",
+                              "textAnchor": "end",
+                              "fontWeight": 600
+                            }
+                          ]
+                        },
+                        {
+                          "id": "linq-checklist-scroll-row-5",
+                          "type": "group",
+                          "x": 0,
+                          "y": 330,
+                          "children": [
+                            {
+                              "id": "linq-checklist-scroll-row-avatar-5",
+                              "type": "group",
+                              "x": 0,
+                              "y": 0,
+                              "children": [
+                                {
+                                  "id": "linq-checklist-scroll-row-avatar-5-disc",
+                                  "type": "circle",
+                                  "width": 40,
+                                  "height": 40,
+                                  "fill": "#d8e2f0"
+                                },
+                                {
+                                  "id": "linq-checklist-scroll-row-avatar-5-initials",
+                                  "type": "text",
+                                  "text": "R",
+                                  "x": 20,
+                                  "y": 10.8,
+                                  "fontSize": 12.8,
+                                  "fontFamily": "Arial, sans-serif",
+                                  "fill": "#17191d",
+                                  "textAnchor": "middle",
+                                  "fontWeight": 600
+                                }
+                              ]
+                            },
+                            {
+                              "id": "linq-checklist-scroll-row-title-5",
+                              "type": "text",
+                              "text": "Rene",
+                              "x": 52,
+                              "y": 2,
+                              "fontSize": 17,
+                              "fontFamily": "Arial, sans-serif",
+                              "fill": "#17191d",
+                              "fontWeight": 600
+                            },
+                            {
+                              "id": "linq-checklist-scroll-row-detail-5",
+                              "type": "text",
+                              "text": "is choosing…",
+                              "x": 52,
+                              "y": 27,
+                              "fontSize": 15,
+                              "fontFamily": "Arial, sans-serif",
+                              "fill": "#5d6a72"
+                            },
+                            {
+                              "id": "linq-checklist-scroll-row-badge-5",
+                              "type": "text",
+                              "text": "",
+                              "x": 330,
+                              "y": 10,
+                              "fontSize": 17,
+                              "fontFamily": "Arial, sans-serif",
+                              "fill": "#17191d",
+                              "textAnchor": "end",
+                              "fontWeight": 600
+                            }
+                          ]
+                        }
+                      ],
+                      "keyframes": {
+                        "y": [
+                          {
+                            "t": 0.13333333333333333,
+                            "value": 0,
+                            "ease": "linear"
+                          },
+                          {
+                            "t": 0.3,
+                            "value": -26,
+                            "ease": "linear"
+                          },
+                          {
+                            "t": 0.6,
+                            "value": -97.96,
+                            "ease": "linear"
+                          },
+                          {
+                            "t": 0.9,
+                            "value": -145.36,
+                            "ease": "linear"
+                          },
+                          {
+                            "t": 1.0666666666666667,
+                            "value": -158,
+                            "ease": "linear"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "clip": {
+                    "x": 0,
+                    "y": 0,
+                    "width": 400,
+                    "height": 250
+                  }
+                },
+                {
+                  "id": "linq-checklist-scroll-footer-divider",
+                  "type": "rect",
+                  "x": 30,
+                  "y": 360,
+                  "width": 400,
+                  "height": 1,
+                  "fill": "#d8dbe0",
+                  "radius": 0
+                },
+                {
+                  "id": "linq-checklist-scroll-footer",
+                  "type": "text",
+                  "text": "Subtotal (3 orders)        $33",
+                  "x": 30,
+                  "y": 376,
+                  "fontSize": 16,
+                  "fontFamily": "Arial, sans-serif",
+                  "fill": "#17191d"
+                },
+                {
+                  "id": "linq-checklist-scroll-composer",
+                  "type": "group",
+                  "x": 27,
+                  "y": 392,
+                  "children": [
+                    {
+                      "id": "linq-checklist-scroll-composer-field",
+                      "type": "rect",
+                      "x": 0,
+                      "y": 0,
+                      "width": 406,
+                      "height": 48,
+                      "fill": "#ffffff",
+                      "radius": 24,
+                      "stroke": "#d8dbe0",
+                      "strokeWidth": 1
+                    },
+                    {
+                      "id": "linq-checklist-scroll-composer-input",
+                      "type": "text",
+                      "text": "Message",
+                      "x": 18,
+                      "y": 14,
+                      "fontSize": 17,
+                      "fontFamily": "Arial, sans-serif",
+                      "fill": "#777b84"
+                    },
+                    {
+                      "id": "linq-checklist-scroll-composer-send",
+                      "type": "circle",
+                      "x": 366,
+                      "y": 8,
+                      "width": 32,
+                      "height": 32,
+                      "fill": "#d8dbe0"
+                    },
+                    {
+                      "id": "linq-checklist-scroll-composer-arrow",
+                      "type": "path",
+                      "d": "M 382 33 L 382 16 M 375 23 L 382 16 L 389 23",
+                      "fill": "none",
+                      "stroke": "#ffffff",
+                      "strokeWidth": 2
+                    }
+                  ]
+                }
+              ],
+              "clip": {
+                "x": 0,
+                "y": 0,
+                "width": 460,
+                "height": 440,
+                "radius": 28
+              }
+            },
+            {
+              "id": "linq-checklist-scroll-thread-bar",
+              "type": "rect",
+              "x": 1,
+              "y": 1,
+              "width": 458,
+              "height": 66,
+              "fill": "#f8f8fa",
+              "radius": 27
+            },
+            {
+              "id": "linq-checklist-scroll-thread-bar-square",
+              "type": "rect",
+              "x": 1,
+              "y": 33,
+              "width": 458,
+              "height": 33,
+              "fill": "#f8f8fa",
+              "radius": 0
+            },
+            {
+              "id": "linq-checklist-scroll-thread-back",
+              "type": "text",
+              "text": "‹",
+              "x": 18,
+              "y": 17,
+              "fontSize": 30,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#1688fa"
+            },
+            {
+              "id": "linq-checklist-scroll-thread-title",
+              "type": "text",
+              "text": "Shared check",
+              "x": 230,
+              "y": 25,
+              "fontSize": 17,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#17191d",
+              "textAnchor": "middle",
+              "fontWeight": 600
+            },
+            {
+              "id": "linq-checklist-scroll-thread-divider",
+              "type": "rect",
+              "x": 1,
+              "y": 66,
+              "width": 458,
+              "height": 1,
+              "fill": "#d8dbe0",
+              "radius": 0
+            }
+          ]
+        }
+      ],
+      "start": 0,
+      "end": 2.7,
+      "scaleX": 1,
+      "scaleY": 1
+    }
+  ]
+}

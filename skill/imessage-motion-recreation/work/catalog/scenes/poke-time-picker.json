@@ -1,0 +1,388 @@
+{
+  "width": 640,
+  "height": 300,
+  "background": "#f7f7f5",
+  "fps": 30,
+  "duration": 2.6,
+  "title": "Day and time chip picker",
+  "source": {
+    "notes": "Source-informed authored adaptation"
+  },
+  "layers": [
+    {
+      "id": "poke-time-picker",
+      "type": "group",
+      "x": 0,
+      "y": 0,
+      "children": [
+        {
+          "id": "poke-time-picker-picker-card",
+          "type": "group",
+          "x": 130,
+          "y": 40,
+          "children": [
+            {
+              "id": "poke-time-picker-card",
+              "type": "rect",
+              "x": 0,
+              "y": 0,
+              "width": 380,
+              "height": 220,
+              "fill": "#f4f6f8",
+              "radius": 22
+            },
+            {
+              "id": "poke-time-picker-card-title",
+              "type": "text",
+              "text": "Pick a Time",
+              "x": 24,
+              "y": 22,
+              "fontSize": 21,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#17191d",
+              "fontWeight": 600
+            },
+            {
+              "id": "poke-time-picker-chip-viewport",
+              "type": "group",
+              "x": 24,
+              "y": 66,
+              "children": [
+                {
+                  "id": "poke-time-picker-chip-rail",
+                  "type": "group",
+                  "x": 0,
+                  "y": 0,
+                  "children": [
+                    {
+                      "id": "poke-time-picker-day-0",
+                      "type": "group",
+                      "x": 0,
+                      "y": 0,
+                      "children": [
+                        {
+                          "id": "poke-time-picker-day-label-0",
+                          "type": "text",
+                          "text": "Thursday, June 4",
+                          "x": 0,
+                          "y": 0,
+                          "fontSize": 15,
+                          "fontFamily": "Arial, sans-serif",
+                          "fill": "#5d6a72"
+                        },
+                        {
+                          "id": "poke-time-picker-chip-0-0",
+                          "type": "group",
+                          "x": 0,
+                          "y": 30,
+                          "children": [
+                            {
+                              "id": "poke-time-picker-chip-body-0-0",
+                              "type": "rect",
+                              "x": 0,
+                              "y": 0,
+                              "width": 86,
+                              "height": 34,
+                              "fill": "#ffffff",
+                              "radius": 17,
+                              "stroke": "#8a949d",
+                              "strokeWidth": 1
+                            },
+                            {
+                              "id": "poke-time-picker-chip-copy-0-0",
+                              "type": "text",
+                              "text": "6:00 PM",
+                              "x": 43,
+                              "y": 8,
+                              "fontSize": 14,
+                              "fontFamily": "Arial, sans-serif",
+                              "fill": "#1d5f9e",
+                              "textAnchor": "middle"
+                            }
+                          ]
+                        },
+                        {
+                          "id": "poke-time-picker-chip-0-1",
+                          "type": "group",
+                          "x": 96,
+                          "y": 30,
+                          "children": [
+                            {
+                              "id": "poke-time-picker-chip-body-0-1",
+                              "type": "rect",
+                              "x": 0,
+                              "y": 0,
+                              "width": 86,
+                              "height": 34,
+                              "fill": "#ffffff",
+                              "radius": 17,
+                              "stroke": "#8a949d",
+                              "strokeWidth": 1
+                            },
+                            {
+                              "id": "poke-time-picker-chip-copy-0-1",
+                              "type": "text",
+                              "text": "6:45 PM",
+                              "x": 43,
+                              "y": 8,
+                              "fontSize": 14,
+                              "fontFamily": "Arial, sans-serif",
+                              "fill": "#1d5f9e",
+                              "textAnchor": "middle"
+                            }
+                          ]
+                        },
+                        {
+                          "id": "poke-time-picker-chip-0-2",
+                          "type": "group",
+                          "x": 192,
+                          "y": 30,
+                          "children": [
+                            {
+                              "id": "poke-time-picker-chip-body-0-2",
+                              "type": "rect",
+                              "x": 0,
+                              "y": 0,
+                              "width": 86,
+                              "height": 34,
+                              "fill": "#ffffff",
+                              "radius": 17,
+                              "stroke": "#8a949d",
+                              "strokeWidth": 1
+                            },
+                            {
+                              "id": "poke-time-picker-chip-copy-0-2",
+                              "type": "text",
+                              "text": "7:30 PM",
+                              "x": 43,
+                              "y": 8,
+                              "fontSize": 14,
+                              "fontFamily": "Arial, sans-serif",
+                              "fill": "#1d5f9e",
+                              "textAnchor": "middle"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "poke-time-picker-day-1",
+                      "type": "group",
+                      "x": 205,
+                      "y": 0,
+                      "children": [
+                        {
+                          "id": "poke-time-picker-day-label-1",
+                          "type": "text",
+                          "text": "Friday, June 5",
+                          "x": 0,
+                          "y": 0,
+                          "fontSize": 15,
+                          "fontFamily": "Arial, sans-serif",
+                          "fill": "#5d6a72"
+                        },
+                        {
+                          "id": "poke-time-picker-chip-1-0",
+                          "type": "group",
+                          "x": 0,
+                          "y": 30,
+                          "children": [
+                            {
+                              "id": "poke-time-picker-chip-body-1-0",
+                              "type": "rect",
+                              "x": 0,
+                              "y": 0,
+                              "width": 86,
+                              "height": 34,
+                              "fill": "#256795",
+                              "radius": 17,
+                              "keyframes": {
+                                "fill": [
+                                  {
+                                    "t": 0.7333333333333333,
+                                    "value": "#ffffff",
+                                    "ease": "linear"
+                                  },
+                                  {
+                                    "t": 0.8666666666666667,
+                                    "value": "#256795",
+                                    "ease": "linear"
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "id": "poke-time-picker-chip-copy-1-0",
+                              "type": "text",
+                              "text": "7:30 PM",
+                              "x": 43,
+                              "y": 8,
+                              "fontSize": 14,
+                              "fontFamily": "Arial, sans-serif",
+                              "fill": "#ffffff",
+                              "textAnchor": "middle"
+                            }
+                          ]
+                        },
+                        {
+                          "id": "poke-time-picker-chip-1-1",
+                          "type": "group",
+                          "x": 96,
+                          "y": 30,
+                          "children": [
+                            {
+                              "id": "poke-time-picker-chip-body-1-1",
+                              "type": "rect",
+                              "x": 0,
+                              "y": 0,
+                              "width": 86,
+                              "height": 34,
+                              "fill": "#ffffff",
+                              "radius": 17,
+                              "stroke": "#8a949d",
+                              "strokeWidth": 1
+                            },
+                            {
+                              "id": "poke-time-picker-chip-copy-1-1",
+                              "type": "text",
+                              "text": "10:30 PM",
+                              "x": 43,
+                              "y": 8,
+                              "fontSize": 14,
+                              "fontFamily": "Arial, sans-serif",
+                              "fill": "#1d5f9e",
+                              "textAnchor": "middle"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "poke-time-picker-day-2",
+                      "type": "group",
+                      "x": 410,
+                      "y": 0,
+                      "children": [
+                        {
+                          "id": "poke-time-picker-day-label-2",
+                          "type": "text",
+                          "text": "Saturday, June 6",
+                          "x": 0,
+                          "y": 0,
+                          "fontSize": 15,
+                          "fontFamily": "Arial, sans-serif",
+                          "fill": "#5d6a72"
+                        },
+                        {
+                          "id": "poke-time-picker-chip-2-0",
+                          "type": "group",
+                          "x": 0,
+                          "y": 30,
+                          "children": [
+                            {
+                              "id": "poke-time-picker-chip-body-2-0",
+                              "type": "rect",
+                              "x": 0,
+                              "y": 0,
+                              "width": 86,
+                              "height": 34,
+                              "fill": "#ffffff",
+                              "radius": 17,
+                              "stroke": "#8a949d",
+                              "strokeWidth": 1
+                            },
+                            {
+                              "id": "poke-time-picker-chip-copy-2-0",
+                              "type": "text",
+                              "text": "8:00 PM",
+                              "x": 43,
+                              "y": 8,
+                              "fontSize": 14,
+                              "fontFamily": "Arial, sans-serif",
+                              "fill": "#1d5f9e",
+                              "textAnchor": "middle"
+                            }
+                          ]
+                        },
+                        {
+                          "id": "poke-time-picker-chip-2-1",
+                          "type": "group",
+                          "x": 96,
+                          "y": 30,
+                          "children": [
+                            {
+                              "id": "poke-time-picker-chip-body-2-1",
+                              "type": "rect",
+                              "x": 0,
+                              "y": 0,
+                              "width": 86,
+                              "height": 34,
+                              "fill": "#ffffff",
+                              "radius": 17,
+                              "stroke": "#8a949d",
+                              "strokeWidth": 1
+                            },
+                            {
+                              "id": "poke-time-picker-chip-copy-2-1",
+                              "type": "text",
+                              "text": "9:15 PM",
+                              "x": 43,
+                              "y": 8,
+                              "fontSize": 14,
+                              "fontFamily": "Arial, sans-serif",
+                              "fill": "#1d5f9e",
+                              "textAnchor": "middle"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "keyframes": {
+                    "x": [
+                      {
+                        "t": 0.26666666666666666,
+                        "value": 0,
+                        "ease": "linear"
+                      },
+                      {
+                        "t": 0.5333333333333333,
+                        "value": -96,
+                        "ease": "linear"
+                      },
+                      {
+                        "t": 1,
+                        "value": -205,
+                        "ease": "linear"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "clip": {
+                "x": 0,
+                "y": 0,
+                "width": 332,
+                "height": 80
+              }
+            },
+            {
+              "id": "poke-time-picker-note",
+              "type": "text",
+              "text": "4 events scheduled this week.",
+              "x": 24,
+              "y": 168,
+              "fontSize": 14,
+              "fontFamily": "Arial, sans-serif",
+              "fill": "#5d6a72"
+            }
+          ]
+        }
+      ],
+      "start": 0,
+      "end": 2.6,
+      "scaleX": 1,
+      "scaleY": 1
+    }
+  ]
+}
