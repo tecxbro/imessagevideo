@@ -21,6 +21,18 @@ For a new company or product, start with [RESEARCH-FIRST.md](library/RESEARCH-FI
 
 For recreation, catalogue recipes help decompose the source; never replace its motion with a starter preset. For new direction, catalogue options carry tradeoffs; never claim a new starter is source-exact.
 
+## Find a saved motion fast
+
+From this skill folder, search for what happens on screen and inspect the result's status and footage before choosing it.
+
+```bash
+node director/cli.mjs search "browse photos while the place name stays fixed"
+node director/cli.mjs show 05-linq:057
+node director/cli.mjs scene --motion linq-restaurant-photo-strip --out work/photo-strip.json
+```
+
+[Saved motion catalog](director/motion-catalog/README.md) documents the browser player, per-instance mounting, image replacement and the HTML renderer path. A measured record identifies the sampled property. A source-informed record pairs observed phases with authored geometry or timing. An evidence gap has no selectable implementation. Use `plan` and `scene --motif` for the separate authored starters.
+
 ## Final working set and failure lessons
 
 For the accepted code, keyframes, required assets and finished videos, read

@@ -1,0 +1,769 @@
+{
+  "version": 1,
+  "frameConvention": "Zero-based decoded native source frame numbers, inclusive. Preview footage is a trimmed native source selection.",
+  "entries": [
+    {
+      "id": "linq-restaurant-photo-strip",
+      "title": "Restaurant photo strip",
+      "status": "measured",
+      "description": "Browse five photos side to side while the restaurant name, action row, tabs and address stay fixed.",
+      "queries": [
+        "restaurant photo strip",
+        "restaurant photo swipe",
+        "browse photos while the place name stays fixed",
+        "bounded photo carousel",
+        "fixed title and actions",
+        "horizontal image rail",
+        "swipe through venue photos",
+        "05-linq:057"
+      ],
+      "choose": "Show the same venue from several angles while keeping the viewer oriented to one place and its next action.",
+      "avoid": "Use a different motion for sending attachments, switching between venues, or acquiring a new screen.",
+      "source": {
+        "film": "05-linq",
+        "title": "Linq iMessage Apps",
+        "sourceUrl": "https://www.linkedin.com/posts/elliottpotter_your-users-never-have-to-leave-imessage-again-activity-7477784121293950976-Dlap",
+        "caseId": "05-linq:057",
+        "sourcePath": "../../../../projects/05-linq-complete-v1/imessage-recreations/references/05-linq/source.mp4",
+        "sourceSha256": "86e22e698e141c5c2a161977289be1335bb0c0a1dd98769c4c146fcd57bbf2eb",
+        "nativeSize": [
+          960,
+          720
+        ],
+        "nativeRate": "30/1",
+        "sourceFrames": [
+          1091,
+          1111
+        ],
+        "referencePreviewFrames": [
+          1090,
+          1112
+        ],
+        "acceptedOutputFrames": [
+          1091,
+          1111
+        ],
+        "acceptedScanOutputSha256": "0b3879942d580da67b1bbcc548d14f9c78cdf84b5a00dfba3d4307ca26a912cd",
+        "acceptedMappingPath": "../analysis/05-linq/frames.csv",
+        "study": null
+      },
+      "anatomy": {
+        "moving": "One horizontal rail containing five independent images. The image positions share the same x displacement.",
+        "fixed": "Venue name, detail line, action row, tabs, divider, address, and the photo viewport. All four tested text/control patches had zero integer x/y shift.",
+        "mask": "The restaurant document owns the bounded photo viewport. The viewport clips the rail. Individual images also own their corner masks.",
+        "anchor": "Viewport top left at source (195,303). The fixed venue name sits above it, outside the viewport."
+      },
+      "phases": [
+        {
+          "name": "entry control",
+          "sourceFrames": [
+            1090,
+            1090
+          ],
+          "observation": "Mid-motion pose showing the clipped façade and a table photo. Earlier frames already show leftward travel."
+        },
+        {
+          "name": "action",
+          "sourceFrames": [
+            1091,
+            1100
+          ],
+          "observation": "Façade and table translate left. The wide overhead food image enters from the right."
+        },
+        {
+          "name": "action",
+          "sourceFrames": [
+            1101,
+            1106
+          ],
+          "observation": "The rail accelerates across the overhead photo and reaches the next plated dish."
+        },
+        {
+          "name": "action",
+          "sourceFrames": [
+            1107,
+            1111
+          ],
+          "observation": "Plated dish and interior take over. Speed decreases but remains nonzero at the boundary."
+        },
+        {
+          "name": "exit control",
+          "sourceFrames": [
+            1112,
+            1112
+          ],
+          "observation": "Rail moves about 37 px farther left. This control is part of the same observed action."
+        },
+        {
+          "name": "horizontal settle outside event",
+          "sourceFrames": [
+            1126,
+            1134
+          ],
+          "observation": "The final interior approaches x≈320 by about 1130 and remains within ~2 px through 1134. The lower document/text changes separately after the event."
+        }
+      ],
+      "edits": {
+        "safe": [
+          "Replace image files in the same five slots. Images use centered cover and stay independently editable.",
+          "Change adjacent copy/palette in an authored context. Check for overflow.",
+          "Move or uniformly scale the complete block via its parent."
+        ],
+        "changesInteraction": [
+          "Changing count, slot width, gap, viewport, travel direction, duration or sample spacing changes the observed interaction.",
+          "A reading hold on the last event frame is an editorial freeze during the swipe."
+        ]
+      },
+      "cues": {
+        "source": "Source has an audio track. No isolated source swipe or finger/contact cue is established.",
+        "options": []
+      },
+      "limits": [
+        "The 21-frame preset is a mid-swipe extract. No release/contact, actual settled hold or exit occurs within it.",
+        "Offscreen objects and finger trajectory remain unknown. Sample arrivals and pauses are visible picture behavior.",
+        "Relative rail x is measured. Rounded corners, invisible image extents and isolated/context styling are authored approximations."
+      ],
+      "previews": {
+        "source": "../../../../handoffs/motion-catalog-previews/linq-restaurant-photo-strip.source.mp4",
+        "isolated": "../../../../handoffs/motion-catalog-previews/linq-restaurant-photo-strip.mp4",
+        "context": "../../../../handoffs/motion-catalog-previews/linq-restaurant-photo-strip.context.mp4",
+        "controls": "../../../../handoffs/motion-catalog-previews/linq-restaurant-photo-strip.controls.mp4",
+        "comparison": "../../../../handoffs/motion-catalog-previews/linq-restaurant-photo-strip.comparison.mp4",
+        "frames": "../../../../handoffs/motion-catalog-previews/linq-restaurant-photo-strip.frames.jpg"
+      },
+      "implementation": {
+        "api": "mountMotion",
+        "module": "./blocks.mjs",
+        "renderEngine": "html",
+        "fps": 30,
+        "sceneCommand": "node director/cli.mjs scene --motion linq-restaurant-photo-strip --out work/linq-restaurant-photo-strip.json",
+        "renderCommand": "node scripts/engines/render.mjs --method html --scene work/linq-restaurant-photo-strip.json --out work/linq-restaurant-photo-strip.mp4",
+        "verifyCommand": "node --test director/motion-catalog/blocks.test.mjs",
+        "contexts": [
+          "isolated",
+          "restaurant",
+          "conversation"
+        ],
+        "variants": [
+          "measured",
+          "controls"
+        ]
+      },
+      "measurement": {
+        "referenceFrame": 1090,
+        "viewport": {
+          "x": 195,
+          "y": 303,
+          "width": 578,
+          "height": 334
+        },
+        "method": "Integer edge measurements across y=355–589. Threshold median background difference, match photo edges/gutters across frames and register title, tabs, action and address patches independently. Compare positional repeats and adjacent controls before fitting. Native source frames were decoded without resampling.",
+        "uncertainty": "Rail dx about ±2 px from thresholding/chroma/compression; 499 px bowl extent is a visible edge fit. The y boundary varies about 1 px, and fixed elements have zero integer x/y shift (subpixel/codec differences remain). Hidden façade extent is inferred from the retained crop. No hand or off-viewport trajectory is visible.",
+        "slots": [
+          {
+            "actor": "facade",
+            "x": -124,
+            "width": 417,
+            "asset": "../../../../projects/05-linq-complete-v1/imessage-recreations/scenes/05-linq/assets/60e41fdb89eb16ad-60e41fdb89eb16ad-60e41fdb89eb16ad-60e41fdb89eb16ad-60e41fdb89eb16ad-60e41fdb89eb16ad-60e41fdb89eb16ad-60e41fdb89eb16ad-60e41fdb89eb16ad-v10-restaurant-facade.png"
+          },
+          {
+            "actor": "table",
+            "x": 313,
+            "width": 268,
+            "asset": "../../../../projects/05-linq-complete-v1/imessage-recreations/scenes/05-linq/assets/99d7c66b63264857-99d7c66b63264857-99d7c66b63264857-99d7c66b63264857-99d7c66b63264857-99d7c66b63264857-99d7c66b63264857-99d7c66b63264857-99d7c66b63264857-v10-restaurant-table.png"
+          },
+          {
+            "actor": "bowl",
+            "x": 602,
+            "width": 499,
+            "asset": "../../../../projects/05-linq-complete-v1/imessage-recreations/scenes/05-linq/assets/37fd52d734c94ffd-37fd52d734c94ffd-37fd52d734c94ffd-37fd52d734c94ffd-37fd52d734c94ffd-37fd52d734c94ffd-37fd52d734c94ffd-37fd52d734c94ffd-37fd52d734c94ffd-v10-restaurant-bowl.png"
+          },
+          {
+            "actor": "octopus",
+            "x": 1122,
+            "width": 334,
+            "asset": "../../../../projects/05-linq-complete-v1/imessage-recreations/scenes/05-linq/assets/6b5273dc8d568c1c-6b5273dc8d568c1c-6b5273dc8d568c1c-6b5273dc8d568c1c-6b5273dc8d568c1c-6b5273dc8d568c1c-6b5273dc8d568c1c-6b5273dc8d568c1c-6b5273dc8d568c1c-v10-restaurant-octopus.png"
+          },
+          {
+            "actor": "interior",
+            "x": 1478,
+            "width": 444,
+            "asset": "../../../../projects/05-linq-complete-v1/imessage-recreations/scenes/05-linq/assets/a42f145109863467-a42f145109863467-a42f145109863467-a42f145109863467-a42f145109863467-a42f145109863467-a42f145109863467-a42f145109863467-a42f145109863467-v10-restaurant-interior.png"
+          }
+        ],
+        "railDxPx": [
+          0,
+          -19,
+          -41,
+          -41,
+          -66,
+          -95,
+          -129,
+          -168,
+          -168,
+          -215,
+          -272,
+          -344,
+          -438,
+          -438,
+          -563,
+          -719,
+          -867,
+          -977,
+          -977,
+          -1057,
+          -1116,
+          -1162,
+          -1199
+        ],
+        "slotAssetProvenance": "Existing individual source-derived component crops in Linq scene assets. No source page/movie is used as a moving layer."
+      }
+    },
+    {
+      "id": "daniel-typing-to-reply",
+      "title": "Typing indicator becomes a reply",
+      "status": "source-informed",
+      "description": "Convert waiting dots into a readable incoming reply at the same left-edge and tail anchor.",
+      "queries": [
+        "typing dots become reply",
+        "typing indicator becoming a reply",
+        "incoming bubble expands from dots",
+        "agent waiting response",
+        "daniel muse typing indicator"
+      ],
+      "choose": "Make the transition from waiting to a single readable answer legible.",
+      "avoid": "Avoid for human composer typing, multiple separate replies, or any workflow with no visible waiting state.",
+      "source": {
+        "film": "02-danieltian",
+        "title": "Daniel Tian · Photon Agent to Agent",
+        "sourceUrl": "https://x.com/danieltian/status/2108261717600063915",
+        "caseId": null,
+        "sourcePath": "../../../../projects/02-danieltian-complete-v1/imessage-recreations/references/02-danieltian/source.mp4",
+        "sourceSha256": "2c591738ac81b72d62ed51209c21820dc5a5d30e5197a732529ce833424830b2",
+        "nativeSize": [
+          1920,
+          1080
+        ],
+        "nativeRate": "30/1",
+        "sourceFrames": [
+          205,
+          237
+        ],
+        "referencePreviewFrames": [
+          204,
+          237
+        ],
+        "acceptedOutputFrames": [
+          205,
+          237
+        ],
+        "acceptedScanOutputSha256": "59740a0f1161f75dccf50d1d7f1a30e09192d7b573b17a9675fd76870858c72b",
+        "acceptedMappingPath": "../analysis/02-danieltian/frames.csv",
+        "study": null
+      },
+      "anatomy": {
+        "moving": "Incoming lozenge grows in width, dots fade away, reply resolves. The original thread has mild camera drift.",
+        "fixed": "Reply shares the incoming lane with the dots. The authored example keeps the previous outgoing turn and outer frame still.",
+        "mask": "Incoming bubble bounds own the content mask for the widening/reveal.",
+        "anchor": "Bubble left edge with its tail near the lower-left; text reveal is downstream of width growth."
+      },
+      "phases": [
+        {
+          "name": "entry",
+          "sourceFrames": [
+            205,
+            215
+          ],
+          "observation": "Blurred low-contrast state grows into a readable three-dot indicator. A faint precursor was visible at 204."
+        },
+        {
+          "name": "wait",
+          "sourceFrames": [
+            215,
+            229
+          ],
+          "observation": "Dots change emphasis within the small bubble."
+        },
+        {
+          "name": "action",
+          "sourceFrames": [
+            230,
+            233
+          ],
+          "observation": "Surface widens in the same lane as the dots yield to a left-to-right reply reveal."
+        },
+        {
+          "name": "settle and hold",
+          "sourceFrames": [
+            233,
+            237
+          ],
+          "observation": "Readable complete reply. No separate release or exit is visible."
+        }
+      ],
+      "edits": {
+        "safe": [
+          "Change reply and preceding request. Keep the response short enough for one line.",
+          "Change palette or uniformly scale the mount."
+        ],
+        "changesInteraction": [
+          "A multiline response requires new reveal and bubble geometry.",
+          "Stretching the dots hold changes perceived response latency."
+        ]
+      },
+      "cues": {
+        "source": "Source mix present. No keystroke or discrete dot sound is established.",
+        "options": [
+          {
+            "sourceFrame": 233,
+            "kind": "message_arrival",
+            "detail": "Optional quiet arrival when the reply is readable. Never sound dots individually.",
+            "provenance": "authored option; source sound unconfirmed"
+          }
+        ]
+      },
+      "limits": [
+        "Native phase anchors with authored layout, dot cadence, blur, and widths. No claim of source-pixel trajectory parity."
+      ],
+      "previews": {
+        "source": "../../../../handoffs/motion-catalog-previews/daniel-typing-to-reply.source.mp4",
+        "isolated": "../../../../handoffs/motion-catalog-previews/daniel-typing-to-reply.mp4"
+      },
+      "implementation": {
+        "api": "mountMotion",
+        "module": "./blocks.mjs",
+        "renderEngine": "html",
+        "fps": 30,
+        "sceneCommand": "node director/cli.mjs scene --motion daniel-typing-to-reply --out work/daniel-typing-to-reply.json",
+        "renderCommand": "node scripts/engines/render.mjs --method html --scene work/daniel-typing-to-reply.json --out work/daniel-typing-to-reply.mp4",
+        "verifyCommand": "node --test director/motion-catalog/blocks.test.mjs"
+      }
+    },
+    {
+      "id": "poke-choice-to-outgoing",
+      "title": "A selected option becomes an outgoing result",
+      "status": "source-informed",
+      "description": "Dim just the selected row, release it, then replace the list with a right-aligned conversation result.",
+      "queries": [
+        "selected option becomes outgoing message",
+        "choice to message",
+        "press row commits choice",
+        "selection becomes sent result",
+        "poke choice indian"
+      ],
+      "choose": "Show that one committed choice became part of the conversation and can prompt a follow-up.",
+      "avoid": "Avoid for hover, a tentative choice, multiselect, or a shape morph between the row and the message.",
+      "source": {
+        "film": "04-poke",
+        "title": "Poke Apple Messages",
+        "sourceUrl": "https://x.com/interaction/status/2062575428213285352",
+        "caseId": null,
+        "sourcePath": "../../../../projects/04-poke-complete-v1/imessage-recreations/references/04-poke/source.mp4",
+        "sourceSha256": "a3d5dd064dc4482813a332d7e3821a43d557c015c5cbb5be6ff09b29874db50f",
+        "nativeSize": [
+          1440,
+          1080
+        ],
+        "nativeRate": "30000/1001",
+        "sourceFrames": [
+          330,
+          375
+        ],
+        "referencePreviewFrames": [
+          329,
+          375
+        ],
+        "acceptedOutputFrames": [
+          330,
+          375
+        ],
+        "acceptedScanOutputSha256": "61286445805216b985028595c7e3f0f8dd01c2da44695b658a867145eef0d772",
+        "acceptedMappingPath": "../analysis/04-poke/frames.csv",
+        "study": "poke-choice_to_message"
+      },
+      "anatomy": {
+        "moving": "Selected row ink changes opacity, list pulls back. The right-aligned result uses a separate actor and settles independently.",
+        "fixed": "Physical stage is the reference frame for these planes. The authored composer stays fixed.",
+        "mask": "Conversation viewport clips the separate list and result groups.",
+        "anchor": "Selected row stays inside the left list until cut. Result lands on the right message lane."
+      },
+      "phases": [
+        {
+          "name": "entry",
+          "sourceFrames": [
+            330,
+            338
+          ],
+          "observation": "Existing list is readable before the press."
+        },
+        {
+          "name": "action",
+          "sourceFrames": [
+            339,
+            347
+          ],
+          "observation": "Selected row reaches its dimmest opacity; neighboring rows remain readable."
+        },
+        {
+          "name": "release",
+          "sourceFrames": [
+            348,
+            360
+          ],
+          "observation": "Row ink recovers as the parent list pulls back."
+        },
+        {
+          "name": "handoff",
+          "sourceFrames": [
+            361,
+            361
+          ],
+          "observation": "List ends after 360. Outgoing result and the task label appear as new actors."
+        },
+        {
+          "name": "settle",
+          "sourceFrames": [
+            361,
+            375
+          ],
+          "observation": "Result and camera settle. The next incoming response first appears around 375; no useful reading hold on that reply within this range."
+        }
+      ],
+      "edits": {
+        "safe": [
+          "Replace the six labels and the selected label within the row width.",
+          "Change surface colors or uniformly scale the result."
+        ],
+        "changesInteraction": [
+          "Moving a different row changes the selected result. Changing row count or timing changes the framing and pullback."
+        ]
+      },
+      "cues": {
+        "source": "Source mix present. Discrete cue attribution unconfirmed.",
+        "options": [
+          {
+            "sourceFrame": 339,
+            "kind": "choice_press",
+            "detail": "Accent the selected row only.",
+            "provenance": "authored option; source sound unconfirmed"
+          },
+          {
+            "sourceFrame": 361,
+            "kind": "choice_commit",
+            "detail": "Optional result/send accent at the cut.",
+            "provenance": "authored option; source sound unconfirmed"
+          }
+        ]
+      },
+      "limits": [
+        "Stage runs at 30 fps by frame index; source is 30000/1001. Local geometry, easing and camera travel are authored.",
+        "Output frame numbers follow the matched director GSAP scan. Equal frame numbers do not imply identical content."
+      ],
+      "previews": {
+        "source": "../../../../handoffs/motion-catalog-previews/poke-choice-to-outgoing.source.mp4",
+        "isolated": "../../../../handoffs/motion-catalog-previews/poke-choice-to-outgoing.mp4"
+      },
+      "implementation": {
+        "api": "mountMotion",
+        "module": "./blocks.mjs",
+        "renderEngine": "html",
+        "fps": 30,
+        "sceneCommand": "node director/cli.mjs scene --motion poke-choice-to-outgoing --out work/poke-choice-to-outgoing.json",
+        "renderCommand": "node scripts/engines/render.mjs --method html --scene work/poke-choice-to-outgoing.json --out work/poke-choice-to-outgoing.mp4",
+        "verifyCommand": "node --test director/motion-catalog/blocks.test.mjs"
+      }
+    },
+    {
+      "id": "mini-anchored-rich-card",
+      "title": "Anchored rich-card arrival",
+      "status": "source-informed",
+      "description": "Let one actionable result grow from its position in chat, hold long enough to read, then darken just that card on press.",
+      "queries": [
+        "rich card springs in",
+        "anchored rich-card arrival",
+        "card that grows from conversation",
+        "mini app result action card",
+        "message result spring"
+      ],
+      "choose": "Give one meaningful rich result a clear arrival and a readable action beat.",
+      "avoid": "Avoid for routine replies, large bounces on every message, or a full-screen app opening.",
+      "source": {
+        "film": "03-photon-mini",
+        "title": "Photon Mini Apps",
+        "sourceUrl": "https://x.com/daniel_tian1/status/2067327329161064688",
+        "caseId": null,
+        "sourcePath": "../../../../projects/03-photon-mini-complete-v1/imessage-recreations/references/03-photon-mini/source.mp4",
+        "sourceSha256": "886405a53b2ce053749c17cb37b3f4870f09db0c6079dbcf3b3ffa9dbba859c9",
+        "nativeSize": [
+          1920,
+          1080
+        ],
+        "nativeRate": "30/1",
+        "sourceFrames": [
+          546,
+          617
+        ],
+        "referencePreviewFrames": [
+          545,
+          618
+        ],
+        "acceptedOutputFrames": [
+          546,
+          617
+        ],
+        "acceptedScanOutputSha256": "323c1b4bb0f19bbc3559e7a4163de5f94878246c460d5d2894b69ee4106a57b2",
+        "acceptedMappingPath": "../analysis/03-photon-mini/frames.csv",
+        "study": "mini-rich_card_arrival"
+      },
+      "anatomy": {
+        "moving": "Card shell and art scale and fade together; original thread and parent camera also move. Press overlay operates only inside the card.",
+        "fixed": "Card origin is stable inside the message stack. In the authored version the outer frame is stationary.",
+        "mask": "Conversation viewport contains the thread. The card owns the rounded press tint.",
+        "anchor": "Lower-left attachment lane under the agent reply. The block uses a near-upper-left origin for the new card inside that lane."
+      },
+      "phases": [
+        {
+          "name": "entry",
+          "sourceFrames": [
+            546,
+            547
+          ],
+          "observation": "Tiny, low-confidence first image at the anchor."
+        },
+        {
+          "name": "action",
+          "sourceFrames": [
+            548,
+            551
+          ],
+          "observation": "Fast growth to opaque; art reads before the later press."
+        },
+        {
+          "name": "settle",
+          "sourceFrames": [
+            552,
+            566
+          ],
+          "observation": "Small scale overshoot near 555; camera and thread continue settling."
+        },
+        {
+          "name": "reading hold",
+          "sourceFrames": [
+            567,
+            604
+          ],
+          "observation": "Card remains readable as its parent drifts into the final composition."
+        },
+        {
+          "name": "press",
+          "sourceFrames": [
+            605,
+            608
+          ],
+          "observation": "Local card darkens."
+        },
+        {
+          "name": "release",
+          "sourceFrames": [
+            609,
+            614
+          ],
+          "observation": "Tint clears."
+        },
+        {
+          "name": "hold",
+          "sourceFrames": [
+            615,
+            617
+          ],
+          "observation": "Card remains before separate sheet arrival at 618."
+        }
+      ],
+      "edits": {
+        "safe": [
+          "Replace card title, subtitle, action and colors within their boxes.",
+          "Uniformly scale the whole block."
+        ],
+        "changesInteraction": [
+          "Changing the anchor, press onset, meaning of the press, or camera timing changes the continuity."
+        ]
+      },
+      "cues": {
+        "source": "Source mix present. Visible motion supplies timing; source sound attribution is unconfirmed.",
+        "options": [
+          {
+            "sourceFrame": 546,
+            "kind": "card_arrival",
+            "detail": "Optional soft arrival.",
+            "provenance": "authored option; source sound unconfirmed"
+          },
+          {
+            "sourceFrame": 605,
+            "kind": "card_press",
+            "detail": "Optional single press accent.",
+            "provenance": "authored option; source sound unconfirmed"
+          }
+        ]
+      },
+      "limits": [
+        "The layout, image placeholder, scales and parent path are authored. Source card artwork and camera curve remain visible in the linked footage."
+      ],
+      "previews": {
+        "source": "../../../../handoffs/motion-catalog-previews/mini-anchored-rich-card.source.mp4",
+        "isolated": "../../../../handoffs/motion-catalog-previews/mini-anchored-rich-card.mp4"
+      },
+      "implementation": {
+        "api": "mountMotion",
+        "module": "./blocks.mjs",
+        "renderEngine": "html",
+        "fps": 30,
+        "sceneCommand": "node director/cli.mjs scene --motion mini-anchored-rich-card --out work/mini-anchored-rich-card.json",
+        "renderCommand": "node scripts/engines/render.mjs --method html --scene work/mini-anchored-rich-card.json --out work/mini-anchored-rich-card.mp4",
+        "verifyCommand": "node --test director/motion-catalog/blocks.test.mjs"
+      }
+    },
+    {
+      "id": "linq-conversation-to-app",
+      "title": "Conversation opens a mini app",
+      "status": "source-informed",
+      "description": "Bring a clipped working panel up over a still-visible conversation so the preview becomes useful detail.",
+      "queries": [
+        "expand conversation into a mini app",
+        "chat card expands to mini app",
+        "embedded app opens in chat",
+        "conversation to working sheet",
+        "linq flight app opening"
+      ],
+      "choose": "Show a recommendation leading to an interactive document on top of the conversation.",
+      "avoid": "Avoid when the whole experience leaves the conversation, or there is no visible app to use.",
+      "source": {
+        "film": "05-linq",
+        "title": "Linq iMessage Apps",
+        "sourceUrl": "https://www.linkedin.com/posts/elliottpotter_your-users-never-have-to-leave-imessage-again-activity-7477784121293950976-Dlap",
+        "caseId": null,
+        "sourcePath": "../../../../projects/05-linq-complete-v1/imessage-recreations/references/05-linq/source.mp4",
+        "sourceSha256": "86e22e698e141c5c2a161977289be1335bb0c0a1dd98769c4c146fcd57bbf2eb",
+        "nativeSize": [
+          960,
+          720
+        ],
+        "nativeRate": "30/1",
+        "sourceFrames": [
+          351,
+          367
+        ],
+        "referencePreviewFrames": [
+          350,
+          367
+        ],
+        "acceptedOutputFrames": [
+          351,
+          367
+        ],
+        "acceptedScanOutputSha256": "0b3879942d580da67b1bbcc548d14f9c78cdf84b5a00dfba3d4307ca26a912cd",
+        "acceptedMappingPath": "../analysis/05-linq/frames.csv",
+        "study": "linq-chat-to-mini-app"
+      },
+      "anatomy": {
+        "moving": "Independent foreground document fades in, travels upward and lands; the underlying thread softens.",
+        "fixed": "Chat stays on a separate plane. Foreground panel keeps its width while revealing through an anchored portal.",
+        "mask": "Panel own top corners plus a fixed vertical portal. Chat uses its own stage and blur.",
+        "anchor": "App portal centered at x≈188..772 on the 960×720 source. The authored stage places the portal on a new conversation."
+      },
+      "phases": [
+        {
+          "name": "entry",
+          "sourceFrames": [
+            351,
+            354
+          ],
+          "observation": "Chat reply and compact preview are already readable."
+        },
+        {
+          "name": "action",
+          "sourceFrames": [
+            355,
+            358
+          ],
+          "observation": "App panel arrives from low in the portal, initially translucent."
+        },
+        {
+          "name": "settle",
+          "sourceFrames": [
+            359,
+            366
+          ],
+          "observation": "Panel resolves into a clear full-width document; background thread softens."
+        },
+        {
+          "name": "hold",
+          "sourceFrames": [
+            366,
+            367
+          ],
+          "observation": "App is readable. Later scrolling is outside this entry; no exit or visible finger release."
+        }
+      ],
+      "edits": {
+        "safe": [
+          "Change preview title, app title, detail copy and palette within their boxes.",
+          "Move/scale whole composition."
+        ],
+        "changesInteraction": [
+          "Repositioning the portal relative to chat, changing its clip, or extending into document scroll requires re-timing and new evidence."
+        ]
+      },
+      "cues": {
+        "source": "Source mix present. No actual tap/contact is visible or attributable.",
+        "options": [
+          {
+            "sourceFrame": 355,
+            "kind": "panel_open",
+            "detail": "Optional opener tied to the first foreground frame.",
+            "provenance": "authored option; source sound unconfirmed"
+          }
+        ]
+      },
+      "limits": [
+        "This shorter entrance is part of the existing 351–510 Linq chat-to-app study. Layout, geometry and easing of the playable version are authored."
+      ],
+      "previews": {
+        "source": "../../../../handoffs/motion-catalog-previews/linq-conversation-to-app.source.mp4",
+        "isolated": "../../../../handoffs/motion-catalog-previews/linq-conversation-to-app.mp4"
+      },
+      "implementation": {
+        "api": "mountMotion",
+        "module": "./blocks.mjs",
+        "renderEngine": "html",
+        "fps": 30,
+        "sceneCommand": "node director/cli.mjs scene --motion linq-conversation-to-app --out work/linq-conversation-to-app.json",
+        "renderCommand": "node scripts/engines/render.mjs --method html --scene work/linq-conversation-to-app.json --out work/linq-conversation-to-app.mp4",
+        "verifyCommand": "node --test director/motion-catalog/blocks.test.mjs"
+      }
+    },
+    {
+      "id": "keiki-native-attachment-stack",
+      "title": "Native Messages attachment stack",
+      "status": "evidence-gap",
+      "description": "Send four product photos together as one native Messages attachment stack.",
+      "queries": [
+        "four product images sent together as a native messages attachment stack",
+        "send multiple photos in one imessage",
+        "multi-image message bundle",
+        "attachment stack",
+        "native image pile",
+        "four product photos sent together"
+      ],
+      "choose": "Show how multiple selected images appear together in an actual sent message.",
+      "avoid": "Do not use a restaurant gallery swipe, floating card orbit, or web carousel for the native send.",
+      "source": null,
+      "anatomy": null,
+      "phases": [],
+      "edits": null,
+      "cues": null,
+      "limits": [
+        "Needs verified capture from imv/imessage-ui showing selection, send, native arrival and settled stack for four attachments. Source, tap path, overlap, offsets, clipping and cue timing are pending."
+      ]
+    }
+  ]
+}
