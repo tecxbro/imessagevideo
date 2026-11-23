@@ -112,6 +112,56 @@ class AdapterRegressionTests(unittest.TestCase):
         self.assertEqual(message["text"], "")
         self.assertEqual(message["attachmentIds"], ["north", "south"])
 
+    def test_contact_thread_keeps_editable_shape_and_camera_ownership(self):
+        scene_layers = layers(compile_fixture(fixture("contact-thread.json")))
+        camera = scene_layers["ui.camera"]
+        self.assertEqual([node["id"] for node in camera["children"]], ["ui.handset", "ui.screen"])
+        screen = scene_layers["ui.screen"]
+        self.assertGreater(screen["clip"]["radius"], 0)
+        avatar = scene_layers["ui.header.avatar"]
+        image = scene_layers["ui.header.avatar.image"]
+        self.assertEqual(avatar["clip"]["width"], avatar["clip"]["radius"] * 2)
+        self.assertGreater(image["width"], avatar["clip"]["width"])
+        self.assertLess(image["x"], 0)
+        self.assertNotIn("ui.message/arriving.tail", scene_layers)
+        self.assertEqual(scene_layers["ui.message/door.tail"]["scaleX"], -1)
+        self.assertEqual(scene_layers["ui.message/coming.tail"]["scaleX"], 1)
+        self.assertEqual(scene_layers["ui.message/coming.ink"]["type"], "rect")
+        self.assertEqual(scene_layers["ui.message/coming.copy.runs"]["text"], "On my way down.")
+
+    def test_contact_thread_typing_is_on_picture_clock_and_resets_on_receive(self):
+        doc = fixture("contact-thread.json")
+        doc["events"].extend([
+            {"id": "pickup.typing-again", "kind": "typing", "frame": 105, "senderId": "jamie", "active": True},
+        ])
+        scene = compile_fixture(doc)
+        scene_layers = layers(scene)
+        typing = scene_layers["ui.typing"]
+        dots = [scene_layers[f"ui.typing.dot.{index}"] for index in range(1, 4)]
+        self.assertEqual(value_at(typing, "opacity", 51, 24), 0)
+        self.assertGreater(value_at(typing, "opacity", 52, 24), 0)
+        self.assertEqual(value_at(typing, "opacity", 86, 24), 0)
+        self.assertEqual([value_at(dot, "opacity", 105, 24) for dot in dots], [.44] * 3)
+        self.assertNotEqual([value_at(dot, "opacity", 56, 24) for dot in dots], [.44] * 3)
+        for dot in dots:
+            keys = dot["keyframes"]["opacity"]
+            self.assertTrue(all(abs(key["t"] * 24 - round(key["t"] * 24)) < 1e-8 for key in keys))
+        timeline = {event["id"]: event for event in scene["timeline"]["events"]}
+        self.assertEqual(timeline["pickup.typing"]["layerIds"], ["ui.typing"])
+        self.assertEqual(timeline["pickup.reply"]["uiState"]["typingSenderIds"], [])
+
+    def test_contact_thread_asset_is_explicit_and_handset_is_optional(self):
+        doc = fixture("contact-thread.json")
+        doc["avatarAssetId"] = "missing"
+        with self.assertRaisesRegex(ValueError, "unknown avatar asset missing"):
+            compile_fixture(doc)
+        del doc["avatarAssetId"], doc["display"]["handset"], doc["canvas"]
+        scene = compile_fixture(doc)
+        scene_layers = layers(scene)
+        self.assertNotIn("ui.handset", scene_layers)
+        self.assertEqual(scene["width"], doc["display"]["width"])
+        self.assertEqual(scene_layers["ui.header.avatar.initials"]["text"], "JR")
+
 
 if __name__ == "__main__":
     unittest.main()

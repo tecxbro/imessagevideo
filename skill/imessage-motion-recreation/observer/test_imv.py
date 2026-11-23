@@ -42,6 +42,20 @@ class EntryPointTests(unittest.TestCase):
                 self.assertEqual(selected["workflow"], "specialist")
                 self.assertTrue(all((imv.ROOT / path).is_file() for path in selected["read"]))
 
+    def test_reference_role_and_motion_intent(self):
+        cases = (
+            ("Recreate this Sidehoe reference video exactly", "recreation", "fidelity-target", None),
+            ("Use Sidehoe for its visual style and make an original iMessage film", "direction", "creative-reference", None),
+            ("Turn this non-iMessage reference video into an iMessage video", "direction", "adaptation-source", None),
+            ("Show me motion options for this Sidehoe reference video", "motion", "motion-evidence", "select"),
+            ("Scrub through this motion preview", "motion", "motion-evidence", "inspect"),
+        )
+        for request, expected, role, operation in cases:
+            with self.subTest(request=request):
+                selected = imv.route(request, "reference", None)
+                self.assertEqual((selected["route"], selected["referenceRole"], selected.get("operation")),
+                                 (expected, role, operation))
+
     def test_rational_clock_and_bounds(self):
         scene = imv.read_json(imv.ROOT / "contracts" / "example.scene.json")
         fps = Fraction(30000, 1001)

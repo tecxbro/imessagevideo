@@ -1,20 +1,27 @@
 #!/usr/bin/env node
-import {copyFileSync, mkdirSync, readFileSync, statSync, writeFileSync} from 'node:fs';
+import {createHash} from 'node:crypto';
+import {copyFileSync, mkdirSync, mkdtempSync, readFileSync, statSync, writeFileSync} from 'node:fs';
 import {spawnSync} from 'node:child_process';
+import {tmpdir} from 'node:os';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {parseArgs} from 'node:util';
 import {byId, describe, entries, methods} from './catalog.mjs';
+import {describeMotionComponents} from './components.mjs';
 import {buildMotion} from './scene.mjs';
 import {composeScenes} from './sequence.mjs';
 import {buildUiMotion, uiIds} from './ui-bridge.mjs';
 
 const engines = fileURLToPath(new URL('../scripts/engines/', import.meta.url));
 const repo = fileURLToPath(new URL('../../../', import.meta.url));
+const python = process.env.MOTION_PYTHON ?? 'python3';
 const usage = `node motion/cli.mjs list
 node motion/cli.mjs select --brief "What the viewer should see"
 node motion/cli.mjs info --id MOTION
 node motion/cli.mjs preview --id MOTION [--out PREVIEW.mp4]
+node motion/cli.mjs preview --id MOTION --frame INDEX --out FRAME.png
+node motion/cli.mjs apply --id MOTION --project CONVERSATION.json --binding BINDING.json --out PROJECT_DIR
+node motion/cli.mjs extract --source REFERENCE.mp4 --plan TRACKS.json --out REVIEW_DIR
 node motion/cli.mjs scene --id MOTION --content CONTENT.json --out SCENE.json
 node motion/cli.mjs render --id MOTION --out PREVIEW.mp4 [--method pillow]
 Use --ui for a Clone iMessage UI variant. Use --ui-root to point to a separate checkout.
@@ -55,7 +62,7 @@ function render(scenePath, out, method) {
   const args = ['--scene', scenePath, '--out', out];
   let command = process.execPath;
   if (method === 'pillow') {
-    command = process.env.MOTION_PYTHON ?? 'python3';
+    command = python;
     args.unshift(path.join(engines, 'render_pillow.py'));
   } else if (method === 'motion-canvas') {
     args.unshift(path.join(engines, 'render_motion_canvas.mjs'));
@@ -71,33 +78,83 @@ async function main() {
   const [command, ...args] = process.argv.slice(2);
   if (!command || command === '--help') { console.log(usage); return; }
   const {values: flags} = parseArgs({args, options: {
-    ...Object.fromEntries(['id','ids','brief','content','out','method','fps','duration','ui-root'].map(name => [name, {type:'string'}])),
+    ...Object.fromEntries(['id','ids','brief','content','out','method','fps','duration','ui-root','frame',
+      'project','binding','source','plan','measurements'].map(name => [name, {type:'string'}])),
     ui: {type:'boolean'},
   }});
   const print = value => console.log(JSON.stringify(value, null, 2));
+  if (command === 'apply' || command === 'extract') {
+    const binding = command === 'apply';
+    const required = binding ? ['id', 'project', 'binding', 'out'] : ['source', 'plan', 'out'];
+    if (!required.every(name => flags[name])) throw Error(usage);
+    const script = fileURLToPath(new URL(binding ? './bind.py' : './extract.py', import.meta.url));
+    const args = binding
+      ? [requireEntry(flags.id).id, flags.project, '--binding', flags.binding]
+      : [flags.source, '--plan', flags.plan, ...(flags.measurements ? ['--measurements', flags.measurements] : [])];
+    const result = spawnSync(python, [script, ...args, '--out', flags.out], {stdio: 'inherit'});
+    if (result.error) throw result.error;
+    process.exitCode = result.status ?? 1;
+    return;
+  }
   if (command === 'list') { print(entries.map(describe)); return; }
-  if (command === 'info') { print(describe(requireEntry(flags.id))); return; }
+  if (command === 'info') {
+    const entry = requireEntry(flags.id);
+    print({...describe(entry), components: describeMotionComponents(entry.id)});
+    return;
+  }
   if (command === 'preview') {
     const entry = describe(requireEntry(flags.id));
-    const variant = flags.ui ? entry.ui : entry;
+    const useUI = Boolean(flags.ui || flags['ui-root']);
+    const variant = useUI ? entry.ui : entry;
     if (!variant?.preview) throw Error('No published preview for this motion and variant');
-    const source = path.resolve(repo, variant.preview);
-    if (!statSync(source, {throwIfNoEntry: false})?.isFile())
-      throw Error(`Preview is absent from this checkout. Rebuild it with: ${variant.renderCommand}`);
+    let source = path.resolve(repo, variant.preview);
+    const published = !flags['ui-root'] && statSync(source, {throwIfNoEntry: false})?.isFile() === true;
+    let generated;
+    if (!published) {
+      const directory = mkdtempSync(path.join(tmpdir(), 'imv-motion-preview-'));
+      const recipe = requireEntry(flags.id);
+      const scene = useUI ? buildUiMotion(recipe, {}, {uiRoot: flags['ui-root']}) : buildMotion(recipe);
+      generated = {
+        scene: save(path.join(directory, 'preview.scene.json'), scene),
+        events: save(path.join(directory, 'preview.events.json'), scene.timeline),
+      };
+      source = path.join(directory, 'preview.mp4');
+      render(generated.scene, source, flags.method ?? 'pillow');
+    }
+    const digest = createHash('sha256').update(readFileSync(source)).digest('hex');
+    if (published && digest !== variant.sha256) throw Error('Preview bytes differ from the published catalog hash');
+    const evidence = {sha256: digest, provenance: published ? 'published' : 'local render', ...generated};
+    if (flags.frame !== undefined) {
+      const index = Number(flags.frame);
+      if (!/^\d+$/.test(flags.frame) || !Number.isSafeInteger(index) || index >= variant.picture.frameCount)
+        throw Error(`Frame must be in 0–${variant.picture.frameCount - 1}`);
+      if (!flags.out || path.extname(flags.out) !== '.png') throw Error('Supply --out FRAME.png');
+      const out = path.resolve(flags.out);
+      mkdirSync(path.dirname(out), {recursive: true});
+      const extractor = spawnSync('ffmpeg', ['-v', 'error', '-xerror', '-nostdin', '-n', '-i', source, '-an',
+        '-vf', `select=eq(n\\,${index})`, '-frames:v', '1', '-threads', '1', '-update', '1', out],
+      {encoding: 'utf8'});
+      if (extractor.error) throw extractor.error;
+      if (extractor.status !== 0 || !statSync(out, {throwIfNoEntry: false})?.isFile())
+        throw Error(extractor.stderr?.trim() || 'Could not decode the selected frame');
+      print({id: entry.id, preview: source, ...evidence, frame: index, image: out});
+      return;
+    }
     const out = flags.out ? path.resolve(flags.out) : source;
     if (out !== source) {
       if (path.extname(out) !== '.mp4') throw Error('Preview output must end in .mp4');
       mkdirSync(path.dirname(out), {recursive: true});
       copyFileSync(source, out);
     }
-    print({id: entry.id, preview: out, sha256: variant.sha256});
+    print({id: entry.id, preview: out, ...evidence});
     return;
   }
   if (command === 'select') {
     const result = await choose(flags.brief);
     const matches = result.matches.map(id => {
-      const {title, moves, fixed, notice, preview, renderCommand} = describe(requireEntry(id));
-      return {id, title, moves, fixed, notice, preview, renderCommand};
+      const {title, fits, avoid, moves, fixed, notice, implementation, preview, renderCommand} = describe(requireEntry(id));
+      return {id, title, fits, avoid, moves, fixed, notice, implementation, preview, renderCommand,
+        components: describeMotionComponents(id).production};
     });
     print({...result, entries:matches});
     return;
@@ -123,8 +180,9 @@ async function main() {
     : ids.map(id => ({id}));
   if (beats.length > 4) throw Error('Use up to four beats per sequence');
   const useUI = Boolean(flags.ui || flags['ui-root']);
-  if (useUI && !beats.some(beat => uiIds.includes(beat?.id)))
-    throw Error(`Clone iMessage UI covers these motions: ${uiIds.join(', ')}`);
+  const unsupported = useUI ? ids.filter(id => !uiIds.includes(id)) : [];
+  if (unsupported.length)
+    throw Error(`No Messages adapter variant for ${unsupported.join(', ')}. Available variants: ${uiIds.join(', ')}`);
   const scene = composeScenes(beats.map(beat => {
     if (!beat) return null;
     const entry = requireEntry(beat.id);

@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Independently generated faults for the recreation comparison CLI."""
 import argparse
+from hashlib import sha256
 import json
 from pathlib import Path
 from struct import pack, unpack_from
@@ -65,6 +66,9 @@ def make_media(out):
     pictures[29:, 69:72, 122:125] = [12, 73, 212]
     base = out / "base.mp4"
     encode(base, pictures)
+    one_pixel = pictures.copy()
+    one_pixel[17, 89, 159, 0] += 1
+    encode(out / "one-pixel.mp4", one_pixel)
     encode(out / "dropped-and-padded.mp4", np.concatenate([pictures[:15], pictures[16:], pictures[-1:]]))
     encode(out / "extra-tail.mp4", np.concatenate([pictures, pictures[-3:]]))
     delayed = pictures.copy()
@@ -122,6 +126,7 @@ def make_checks(out):
     region = {"id": "mark", "start": 27, "end": 32, "rect": [120, 67, 7, 7], "mae": 1}
     gate_profiles = {
         "roi": {"regions": [region]},
+        "motion": {"regions": [{**region, "mae": 255, "step_mae": 0}]},
         "tile": {"tile": {"size": 12, "mae": 1}},
         "invalid_roi": {"regions": [{**region, "start": 63, "end": 64}]},
         "sync": {"audio": "present", "audio_checks": {"max_start_delta_seconds": "1/100"}},
@@ -130,7 +135,7 @@ def make_checks(out):
         (out / f"{name}.json").write_text(json.dumps(profile, indent=2) + "\n")
 
 
-def measure(out, label, candidate, code, check=None, span=None, profile=None, reference="base"):
+def measure(out, label, candidate, code, check=None, span=None, profile=None, reference="base", exact=False):
     destination = out / label
 
     def movie(name):
@@ -142,6 +147,8 @@ def measure(out, label, candidate, code, check=None, span=None, profile=None, re
     ]
     if profile:
         command.extend(["--checks", str(out / f"{profile}.json")])
+    if exact:
+        command.append("--exact")
     result = subprocess.run(command, capture_output=True, text=True)
     report_path = destination / "report.json"
     report = json.loads(report_path.read_text()) if report_path.exists() else {}
@@ -164,6 +171,79 @@ def measure(out, label, candidate, code, check=None, span=None, profile=None, re
     return record
 
 
+def review_single_pixel(out):
+    diagnostic = out / "pixel-diagnostic" / "report.json"
+    exact = out / "pixel-exact" / "report.json"
+    def read(path):
+        return json.loads(path.read_text())
+
+    def write(name, value):
+        path = out / name
+        path.write_text(json.dumps(value))
+        return path
+
+    def digest(path):
+        return sha256(path.read_bytes()).hexdigest()
+
+    source = out / "base.mp4"
+    pixel = out / "one-pixel.mp4"
+    frames = [0, COUNT - 1]
+    plan = write("plan.json", {
+        "reference_sha256": digest(source), "comparison_checks_sha256": None, "frame_count": COUNT,
+        "rgb_diagnostics": ["whole_frame_mae"],
+        "shots": [{"id": "shot", "frames": frames,
+                   "checks": {"criterion": {"frames": frames, "target": "Motion observed"}}}],
+    })
+    result_path = out / "acceptance.json"
+    results = {"shot": {"criterion": {"verdict": "pass", "frames": frames, "observation": "Timing passes",
+                                      "evidence_ids": ["frames.csv"]}}}
+    comparisons = [
+        ("one-pixel-cannot-pass-review", diagnostic, pixel, 1, "FAIL", 0),
+        ("identity-can-pass-review", out / "identity-exact" / "report.json", source, 0, "PASS", 1),
+    ]
+    records = []
+    for case, comparison, candidate, code, verdict, count in comparisons:
+        observations = write("observations.json", {"plan_sha256": digest(plan), "candidate_sha256": digest(candidate),
+                                                    "comparison_sha256": digest(comparison), "results": results})
+        result = subprocess.run([
+            sys.executable, str(CHECKER), "verify-review", str(candidate), "--plan", str(plan),
+            "--comparison", str(comparison), "--review", str(observations), "--out", str(result_path),
+        ], capture_output=True, text=True)
+        actual = read(result_path) if result.returncode != 2 else {}
+        expected_pixel = {"frame": 17, "changed_pixels": 1, "max_channel_delta": 1, "rect": [159, 89, 1, 1]}
+        located = read(exact)["pixel_equality"]["first_difference"] == expected_pixel
+        record = {
+            "case": case, "meets_expectation": located and result.returncode == code
+            and actual.get("verdict") == verdict and actual.get("passed_shots") == count,
+            "result": actual,
+        }
+        print(json.dumps(record), flush=True)
+        records.append(record)
+    comparison = out / "identity-exact" / "report.json"
+    hashes = {"plan_sha256": digest(plan), "candidate_sha256": digest(source),
+              "comparison_sha256": digest(comparison)}
+    criterion = results["shot"]["criterion"]
+    for case, ids, observed_frames, comparison_hash, expected in [
+        ("scoped-bound-evidence", ["frames.csv"], frames, hashes["comparison_sha256"], 0),
+        ("scoped-unrelated-evidence", ["../plan.json"], frames, hashes["comparison_sha256"], 1),
+        ("scoped-partial-evidence", ["frames.csv"], [0, 12], hashes["comparison_sha256"], 1),
+        ("scoped-stale-comparison", ["frames.csv"], frames, digest(diagnostic), 2),
+    ]:
+        observations = write("observations.json", {
+            **hashes, "comparison_sha256": comparison_hash,
+            "results": {"shot": {"criterion": {**criterion, "frames": observed_frames, "evidence_ids": ids}}},
+        })
+        result = subprocess.run([
+            sys.executable, str(CHECKER), "verify-review", str(source), "--plan", str(plan),
+            "--comparison", str(comparison), "--review", str(observations), "--out", str(result_path),
+            "--scoped",
+        ], capture_output=True, text=True)
+        records.append({"case": case, "meets_expectation": result.returncode == expected,
+                        "exit_code": result.returncode, "expected_exit_code": expected})
+        print(json.dumps(records[-1]), flush=True)
+    return records
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--out", type=Path, required=True)
@@ -174,12 +254,16 @@ def main():
     make_checks(out)
     evidence = [
         measure(out, "identity", "base", 0),
+        measure(out, "identity-exact", "base", 0, exact=True),
+        measure(out, "pixel-diagnostic", "one-pixel", 0),
+        measure(out, "pixel-exact", "one-pixel", 1, "pixel_equality", exact=True),
         measure(out, "b-frames-preserve-display-order", "b-frames", 0, profile="tile"),
         measure(out, "interior-frame-loss", "dropped-and-padded", 1, "whole_frame_mae", [18, 18]),
         measure(out, "extra-tail-frames", "extra-tail", 1, "extra_candidate_frames", [64, 66]),
         measure(out, "variable-pts", "off-grid", 1, "presentation_clock", [17, 17]),
         measure(out, "extended-final-hold", "extended-hold", 1, "final_hold"),
         measure(out, "late-selection-roi", "late-selection", 1, "region", [29, 30], profile="roi"),
+        measure(out, "late-selection-motion", "late-selection", 1, "region_motion", [29, 29], profile="motion"),
         measure(out, "late-selection-tile", "late-selection", 1, "local_tile_mae", [29, 30], profile="tile"),
         measure(out, "invalid-roi", "base", 2, profile="invalid_roi"),
         measure(out, "vertical-display-reflection", "mirror-v", 1, "display_geometry"),
@@ -191,6 +275,7 @@ def main():
         measure(out, "video-delayed-from-audio", "audio-picture-delayed", 1,
                 "audio_relative_start", profile="sync", reference="audio-base"),
     ]
+    evidence.extend(review_single_pixel(out))
     (out / "suite.json").write_text(json.dumps(evidence, indent=2) + "\n")
     return 0 if all(case["meets_expectation"] for case in evidence) else 1
 

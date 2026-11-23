@@ -1,12 +1,14 @@
 """Lay out an editable film screen and project frame-addressed state into it."""
+from . import contact_thread
 from .accessories import KEYBOARD_HEIGHT, context_menu, keyboard, media_viewer, tray
 from .components import (
     FOOTER, GUTTER, HEADER, INK, LAVENDER, MUTED, PAPER, PALETTES, PLUM, TextLayout,
-    bubble, clip, composer, font_path, group, header, rect, text, typing,
+    bubble, clip, composer, group, header, rect, text, typing,
 )
+from .glyphs import GlyphText
 from .inbox import INBOX_CONTROL_HEIGHT, INBOX_HEADER_HEIGHT, inbox_chrome, inbox_rows, search_rows
 from .rich import build_card, payment_approval
-from .state import copy, integer, require
+from .state import copy, identifier, integer, require
 from .tracks import Tracks
 
 
@@ -16,28 +18,50 @@ class Layout:
         require(isinstance(display, dict), "display must be an object")
         self.width = integer(display.get("width", 390), "display width", 320, 1080)
         self.height = integer(display.get("height", 720), "display height", 480, 1920)
+        skin = doc.get("skin", "film-paper")
+        self.contact = skin == contact_thread.SKIN
+        handset = display.get("handset", False) if self.contact else False
+        require(type(handset) is bool, "display.handset must be boolean")
+        margin = 2 * contact_thread.HANDSET_MARGIN if handset else 0
         canvas = doc.get("canvas", {})
         require(isinstance(canvas, dict), "canvas must be an object")
-        self.canvas_width = integer(canvas.get("width", self.width), "canvas width", 160, 2560)
-        self.canvas_height = integer(canvas.get("height", self.height), "canvas height", 160, 2560)
+        self.canvas_width = integer(canvas.get("width", self.width + margin), "canvas width", 160, 2560)
+        self.canvas_height = integer(canvas.get("height", self.height + margin), "canvas height", 160, 2560)
         self.center_x = (self.canvas_width - self.width) / 2
         self.center_y = (self.canvas_height - self.height) / 2
         self.size = integer(display.get("textSize", 16), "text size", 13, 24)
-        self.outgoing_color, self.incoming_color = PALETTES[doc.get("skin", "film-paper")]
-        self.measure = TextLayout()
+        self.outgoing_color, self.incoming_color = (contact_thread.BLUE, contact_thread.GRAY) if self.contact else PALETTES[skin]
+        self.header_height = contact_thread.HEADER if self.contact else HEADER
+        self.footer_height = contact_thread.FOOTER if self.contact else FOOTER
+        self.measure = GlyphText(doc.get("glyphAssets", {}), assets) if self.contact else TextLayout()
         self.assets = assets
         self.tracks = Tracks(fps, frames)
         self.rows = {}
         self.inbox = inbox
-        self.typing = group("ui.typing", GUTTER, 0, [], opacity=0)
+        self.typist = None
+        self.typing_start = None
+        self.typing_spans = []
+        self.typing = group("ui.typing", GUTTER, 0, contact_thread.typing() if self.contact else [], opacity=0)
         self.transcript = group("ui.transcript", 0, 0, [self.typing])
-        self.viewport = group("ui.viewport", 0, HEADER, [self.transcript],
-                              clip=clip(self.width, self.height - HEADER - FOOTER))
-        self.keyboard = group("ui.keyboard", 0, self.height, keyboard(self.width))
+        self.viewport = group("ui.viewport", 0, self.header_height, [self.transcript],
+                              clip=clip(self.width, self.height - self.header_height - self.footer_height))
+        keys = keyboard(self.width, **contact_thread.KEYBOARD_COLORS) if self.contact else keyboard(self.width)
+        self.keyboard = group("ui.keyboard", 0, self.height, keys)
         self.composer = group("ui.composer", 0, 0, [])
         self.suggestion = group("ui.suggestion", 0, self.height, [], opacity=0)
-        self.header = header(self.width, copy(doc["title"], "title", False),
-                             copy(doc.get("service", "Messages"), "service"), self.measure)
+        name = copy(doc["title"], "title", False)
+        service = copy(doc.get("service", "Messages"), "service")
+        if self.contact:
+            avatar_id = doc.get("avatarAssetId")
+            if avatar_id is not None:
+                identifier(avatar_id, "avatarAssetId")
+                require(avatar_id in assets, f"unknown avatar asset {avatar_id}")
+            self.header = contact_thread.header(self.width, name, service, self.measure, assets.get(avatar_id),
+                                                copy(display.get("statusTime", "9:41"), "status time"))
+            footer = contact_thread.footer(self.width, self.height)
+        else:
+            self.header = header(self.width, name, service, self.measure)
+            footer = rect("ui.footer", 0, self.height - FOOTER, self.width, FOOTER, PAPER)
         self.overlay = group("ui.overlay", 0, self.height, [], opacity=0)
         self.context_id = None
         self.context_frame = 0
@@ -54,12 +78,13 @@ class Layout:
             self.inbox_chrome,
         ], opacity=0)
         screen = group("ui.screen", 0, 0, [
-            rect("ui.paper", 0, 0, self.width, self.height, PAPER),
+            rect("ui.paper", 0, 0, self.width, self.height, contact_thread.PAPER if self.contact else PAPER),
             self.shade, self.viewport, self.keyboard, self.composer, self.suggestion,
-            rect("ui.footer", 0, self.height - FOOTER, self.width, FOOTER, PAPER),
+            footer,
             self.header, self.overlay, self.navigation,
-        ], clip=clip(self.width, self.height))
-        self.camera = group("ui.camera", self.center_x, self.center_y, [screen],
+        ], clip=clip(self.width, self.height, contact_thread.SCREEN_RADIUS if handset else 0))
+        camera_layers = [contact_thread.handset(self.width, self.height), screen] if handset else [screen]
+        self.camera = group("ui.camera", self.center_x, self.center_y, camera_layers,
                             originX=self.width / 2, originY=self.height / 2)
 
     def photo(self, id, asset_id, x, y, width, height):
@@ -136,8 +161,9 @@ class Layout:
         bubble_width = 0
         if copy:
             color = "#786579" if unsent else self.outgoing_color if outgoing else self.incoming_color
-            bubble_width, h, bubble_parts = bubble(id, copy, outgoing, self.width, self.measure,
-                                                   joined, self.size, color=color)
+            draw_bubble = contact_thread.bubble if self.contact else bubble
+            bubble_width, h, bubble_parts = draw_bubble(id, copy, outgoing, self.width, self.measure,
+                                                        joined, self.size, color=color)
             parts.append(group(id + "/text", 0, cursor, bubble_parts))
             cursor += h
         width = max(bubble_width, media_width, label_width)
@@ -210,11 +236,12 @@ class Layout:
     def render_state(self, state, frame, duration, action=None, target=None):
         keyboard_height = KEYBOARD_HEIGHT if state.focused and not (
             state.overlay and state.overlay["surface"] == "tray") else 0
-        composer_height, composer_parts = composer(self.width, state.draft, state.focused, self.measure)
-        composer_y = self.height - FOOTER - keyboard_height - composer_height
+        draw_composer = contact_thread.composer if self.contact else composer
+        composer_height, composer_parts = draw_composer(self.width, state.draft, state.focused, self.measure)
+        composer_y = self.height - self.footer_height - keyboard_height - composer_height
         self.tracks.revise(self.composer, composer_parts, frame)
         self.tracks.move(self.composer, frame, duration, y=composer_y)
-        self.tracks.move(self.keyboard, frame, duration, y=self.height - FOOTER - keyboard_height)
+        self.tracks.move(self.keyboard, frame, duration, y=self.height - self.footer_height - keyboard_height)
         suggestion_height = self.render_suggestion(state, composer_y, frame, duration)
         messages = list(state.messages.values())
         cursor = 11
@@ -241,14 +268,20 @@ class Layout:
                 self.tracks.move(row, frame, 0 if reflow else duration, y=cursor)
             self.tracks.move(row, frame, min(5, duration), opacity=.43 if context_id and message["id"] != context_id else 1)
             cursor += height + (4 if joined else 10)
+        if self.contact and self.typist != state.typist:
+            if self.typing_start is not None:
+                self.typing_spans.append((self.typing_start, frame))
+            self.typing_start = frame if state.typist else None
+            self.typist = state.typist
         if state.typist:
-            self.tracks.revise(self.typing, typing("ui.typing", state.people[state.typist], self.width, self.measure), frame)
+            if not self.contact:
+                self.tracks.revise(self.typing, typing("ui.typing", state.people[state.typist], self.width, self.measure), frame)
             self.tracks.move(self.typing, frame, 0, y=cursor)
             self.tracks.move(self.typing, frame, duration, opacity=1)
-            cursor += 39
+            cursor += contact_thread.TYPING_HEIGHT + 10 if self.contact else 39
         else:
             self.tracks.move(self.typing, frame, 0, opacity=0)
-        live_height = composer_y - HEADER - suggestion_height
+        live_height = composer_y - self.header_height - suggestion_height
         bottom = min(0, live_height - cursor)
         scroll_y = min(0, bottom + state.scroll)
         if action in {"send", "receive"} and frame and duration > 1 and state.scroll == 0 and scroll_y < self.tracks.value(self.transcript, "y", frame - 1):
@@ -264,7 +297,7 @@ class Layout:
             # transcript coordinates so a short history never follows the send.
             field_y = self.tracks.value(self.composer, "y", frame)
             scroll_at_frame = self.tracks.value(self.transcript, "y", frame)
-            launch_y = field_y - suggestion_height - height - 2 - HEADER - scroll_at_frame
+            launch_y = field_y - suggestion_height - height - 2 - self.header_height - scroll_at_frame
             row["y"] = max(top, launch_y)
             self.tracks.move(row, frame, duration, settle=True, y=top)
         self.render_overlay(state, bounds, scroll_y, live_height, frame, duration)
@@ -275,6 +308,12 @@ class Layout:
                            if not m["unsent"] and end + scroll_y > 0 and top + scroll_y < live_height), None)
         keyboard_visible = bool(keyboard_height and surface not in {"list", "search", "media"})
         return anchor, scroll_y - bottom, keyboard_visible
+
+    def finish(self):
+        if self.typing_start is not None:
+            self.typing_spans.append((self.typing_start, self.tracks.count))
+        if self.typing_spans:
+            contact_thread.typing_keys(self.typing["children"][-3:], self.typing_spans, self.tracks.fps)
 
     def render_suggestion(self, state, composer_y, frame, duration):
         suggestion = state.suggestion
@@ -304,9 +343,9 @@ class Layout:
         width = self.width
         follow = None
         if surface == "tray":
-            height = min(190, self.height - HEADER - FOOTER)
+            height = min(190, self.height - self.header_height - self.footer_height)
             layers = tray(width, height, overlay["items"])
-            y = self.height - FOOTER - height
+            y = self.height - self.footer_height - height
             x = 0
         elif surface == "context":
             width = min(276, self.width - GUTTER * 2)
@@ -322,13 +361,13 @@ class Layout:
             layers.append(group("ui.overlay.context.rail", 0, 0, rail,
                                 start=(self.context_frame + self.context_reveal) / self.tracks.fps))
             selected = next((b for b in bounds if b[0]["id"] == overlay["messageId"]))
-            row_y = HEADER + scroll_y + selected[1]
-            row_end = HEADER + scroll_y + selected[2]
-            lift = max(5, row_end + 7 + height - (HEADER + live_height))
-            lift = min(lift, max(0, row_y - HEADER - 6))
+            row_y = self.header_height + scroll_y + selected[1]
+            row_end = self.header_height + scroll_y + selected[2]
+            lift = max(5, row_end + 7 + height - (self.header_height + live_height))
+            lift = min(lift, max(0, row_y - self.header_height - 6))
             row = self.rows[overlay["messageId"]]
             self.tracks.move(row, frame, duration, y=selected[1] - lift)
-            y = max(HEADER + 4, min(self.height - FOOTER - height, row_end - lift + 7))
+            y = max(self.header_height + 4, min(self.height - self.footer_height - height, row_end - lift + 7))
             x = self.width - GUTTER - width if selected[0]["senderId"] == state.owner else GUTTER
             if row_end - row_y + height + 14 < live_height:
                 follow = row, selected[2] - selected[1]
@@ -346,9 +385,9 @@ class Layout:
             row, row_height = follow
             self.tracks.move(self.overlay, frame, 0, x=x)
             for f in range(frame, min(self.tracks.count, frame + max(1, duration))):
-                rowend = HEADER + row_height + self.tracks.value(row, "y", f)
+                rowend = self.header_height + row_height + self.tracks.value(row, "y", f)
                 rowend += self.tracks.value(self.transcript, "y", f)
-                self.tracks.move(self.overlay, f, 0, y=max(HEADER + 4, rowend + 7))
+                self.tracks.move(self.overlay, f, 0, y=max(self.header_height + 4, rowend + 7))
         elif duration > 1 and self.tracks.value(self.overlay, "opacity", max(0, frame - 1)) == 0:
             self.tracks.move(self.overlay, frame, 0, x=x, y=y + 10)
             self.tracks.move(self.overlay, frame + 1, max(0, duration - 1), x=x, y=y)

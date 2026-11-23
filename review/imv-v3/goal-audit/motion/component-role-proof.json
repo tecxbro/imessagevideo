@@ -1,0 +1,468 @@
+{
+  "rows": 77,
+  "adapterRecipes": 13,
+  "code": "motion/components.mjs",
+  "nativeScene": "ui.adapter.compile_conversation",
+  "evidence": "structural-only",
+  "fixtures": {
+    "meeting-contact-thread": "independent editable Messages scene per supported action",
+    "send-keyboard": "ui/examples/send-keyboard.json",
+    "contact-thread": "ui/examples/contact-thread.json",
+    "photos-fixed-header": "ui/examples/photos-fixed-header.json",
+    "tapback-scroll": "ui/examples/tapback-scroll.json"
+  },
+  "proofs": [
+    {
+      "id": "photos-under-fixed-heading",
+      "fixture": "meeting-contact-thread",
+      "eventIds": [
+        "page-now"
+      ],
+      "bindings": {
+        "viewport": "ui.viewport",
+        "message": "ui.message/selected-photo",
+        "attachment": "ui.message/selected-photo/media",
+        "carousel": "ui.message/selected-photo/rail",
+        "screen": "ui.screen",
+        "header": "ui.header",
+        "composer": "ui.composer",
+        "transcript": "ui.transcript",
+        "attachmentViewport": "ui.message/selected-photo/media-window"
+      },
+      "ok": true,
+      "mode": "adapter-recipe",
+      "issues": [],
+      "evidence": "structural-only",
+      "checkedWindow": [
+        11,
+        16
+      ]
+    },
+    {
+      "id": "conversation-handoff",
+      "fixture": "meeting-contact-thread",
+      "eventIds": [
+        "type-now",
+        "send-now",
+        "reply-now"
+      ],
+      "bindings": {
+        "viewport": "ui.viewport",
+        "composer": "ui.composer",
+        "transcript": "ui.transcript",
+        "draft": "ui.composer.draft@8",
+        "sendButton": "ui.composer.send@8",
+        "message": "ui.message/in-transit",
+        "reply": "ui.message/ready",
+        "screen": "ui.screen",
+        "header": "ui.header"
+      },
+      "ok": true,
+      "mode": "adapter-recipe",
+      "issues": [],
+      "evidence": "structural-only",
+      "checkedWindow": [
+        7,
+        29
+      ]
+    },
+    {
+      "id": "composer-type",
+      "fixture": "meeting-contact-thread",
+      "eventIds": [
+        "type-start",
+        "type-now"
+      ],
+      "bindings": {
+        "viewport": "ui.viewport",
+        "composer": "ui.composer",
+        "draft": "ui.composer.draft@8",
+        "sendButton": "ui.composer.send@8",
+        "screen": "ui.screen",
+        "header": "ui.header",
+        "transcript": "ui.transcript"
+      },
+      "ok": true,
+      "mode": "adapter-recipe",
+      "issues": [],
+      "evidence": "structural-only",
+      "checkedWindow": [
+        4,
+        12
+      ]
+    },
+    {
+      "id": "draft-send-flight",
+      "fixture": "meeting-contact-thread",
+      "eventIds": [
+        "send-now"
+      ],
+      "bindings": {
+        "viewport": "ui.viewport",
+        "composer": "ui.composer",
+        "transcript": "ui.transcript",
+        "draft": "ui.composer.draft",
+        "sendButton": "ui.composer.send",
+        "message": "ui.message/in-transit",
+        "screen": "ui.screen",
+        "header": "ui.header"
+      },
+      "ok": true,
+      "mode": "adapter-recipe",
+      "issues": [],
+      "evidence": "structural-only",
+      "checkedWindow": [
+        17,
+        22
+      ]
+    },
+    {
+      "id": "typing-indicator-cycle",
+      "fixture": "meeting-contact-thread",
+      "eventIds": [
+        "typing-now"
+      ],
+      "bindings": {
+        "viewport": "ui.viewport",
+        "transcript": "ui.transcript",
+        "typing": "ui.typing",
+        "screen": "ui.screen",
+        "header": "ui.header",
+        "composer": "ui.composer"
+      },
+      "ok": true,
+      "mode": "adapter-recipe",
+      "issues": [],
+      "evidence": "structural-only",
+      "checkedWindow": [
+        7,
+        12
+      ]
+    },
+    {
+      "id": "reply-makes-room",
+      "fixture": "meeting-contact-thread",
+      "eventIds": [
+        "reply-now"
+      ],
+      "bindings": {
+        "reply": "ui.message/ready",
+        "transcript": "ui.transcript",
+        "screen": "ui.screen",
+        "header": "ui.header",
+        "viewport": "ui.viewport",
+        "composer": "ui.composer"
+      },
+      "ok": true,
+      "mode": "adapter-recipe",
+      "issues": [],
+      "evidence": "structural-only",
+      "checkedWindow": [
+        7,
+        12
+      ]
+    },
+    {
+      "id": "delivery-receipt-handoff",
+      "fixture": "meeting-contact-thread",
+      "eventIds": [
+        "send-now",
+        "confirm-delivery"
+      ],
+      "bindings": {
+        "viewport": "ui.viewport",
+        "composer": "ui.composer",
+        "transcript": "ui.transcript",
+        "message": "ui.message/in-transit",
+        "receipt": "ui.message/in-transit/receipt",
+        "screen": "ui.screen",
+        "header": "ui.header"
+      },
+      "ok": true,
+      "mode": "adapter-recipe",
+      "issues": [],
+      "evidence": "structural-only",
+      "checkedWindow": [
+        17,
+        28
+      ]
+    },
+    {
+      "id": "long-press-actions",
+      "fixture": "meeting-contact-thread",
+      "eventIds": [
+        "open-actions"
+      ],
+      "bindings": {
+        "viewport": "ui.viewport",
+        "transcript": "ui.transcript",
+        "message": "ui.message/north-door",
+        "contextMenu": "ui.overlay",
+        "screen": "ui.screen",
+        "header": "ui.header",
+        "composer": "ui.composer"
+      },
+      "ok": true,
+      "mode": "adapter-recipe",
+      "issues": [],
+      "evidence": "structural-only",
+      "checkedWindow": [
+        7,
+        13
+      ]
+    },
+    {
+      "id": "reaction-attach",
+      "fixture": "meeting-contact-thread",
+      "eventIds": [
+        "open-actions",
+        "mark-now"
+      ],
+      "bindings": {
+        "viewport": "ui.viewport",
+        "transcript": "ui.transcript",
+        "message": "ui.message/north-door",
+        "contextMenu": "ui.overlay",
+        "reaction": "ui.message/north-door/reaction",
+        "screen": "ui.screen",
+        "header": "ui.header",
+        "composer": "ui.composer"
+      },
+      "ok": true,
+      "mode": "adapter-recipe",
+      "issues": [],
+      "evidence": "structural-only",
+      "checkedWindow": [
+        7,
+        23
+      ]
+    },
+    {
+      "id": "edit-message-reflow",
+      "fixture": "meeting-contact-thread",
+      "eventIds": [
+        "correct-text"
+      ],
+      "bindings": {
+        "viewport": "ui.viewport",
+        "transcript": "ui.transcript",
+        "message": "ui.message/in-transit",
+        "screen": "ui.screen",
+        "header": "ui.header",
+        "composer": "ui.composer"
+      },
+      "ok": true,
+      "mode": "adapter-recipe",
+      "issues": [],
+      "evidence": "structural-only",
+      "checkedWindow": [
+        7,
+        12
+      ]
+    },
+    {
+      "id": "undo-send-remove",
+      "fixture": "meeting-contact-thread",
+      "eventIds": [
+        "remove-send"
+      ],
+      "bindings": {
+        "viewport": "ui.viewport",
+        "transcript": "ui.transcript",
+        "message": "ui.message/in-transit",
+        "screen": "ui.screen",
+        "header": "ui.header",
+        "composer": "ui.composer"
+      },
+      "ok": true,
+      "mode": "adapter-recipe",
+      "issues": [],
+      "evidence": "structural-only",
+      "checkedWindow": [
+        7,
+        12
+      ]
+    },
+    {
+      "id": "keyboard-focus-reflow",
+      "fixture": "meeting-contact-thread",
+      "eventIds": [
+        "open-keyboard"
+      ],
+      "bindings": {
+        "viewport": "ui.viewport",
+        "keyboard": "ui.keyboard",
+        "composer": "ui.composer",
+        "transcript": "ui.transcript",
+        "screen": "ui.screen",
+        "header": "ui.header"
+      },
+      "ok": true,
+      "mode": "adapter-recipe",
+      "issues": [],
+      "evidence": "structural-only",
+      "checkedWindow": [
+        7,
+        12
+      ]
+    },
+    {
+      "id": "app-drawer",
+      "fixture": "meeting-contact-thread",
+      "eventIds": [
+        "open-drawer"
+      ],
+      "bindings": {
+        "viewport": "ui.viewport",
+        "transcript": "ui.transcript",
+        "appDrawer": "ui.overlay",
+        "screen": "ui.screen",
+        "header": "ui.header",
+        "composer": "ui.composer"
+      },
+      "ok": true,
+      "mode": "adapter-recipe",
+      "issues": [],
+      "evidence": "structural-only",
+      "checkedWindow": [
+        7,
+        12
+      ]
+    },
+    {
+      "id": "draft-send-flight",
+      "fixture": "send-keyboard",
+      "eventIds": [
+        "ui.send-keyboard.send"
+      ],
+      "bindings": {
+        "viewport": "ui.viewport",
+        "composer": "ui.composer",
+        "transcript": "ui.transcript",
+        "draft": "ui.composer.draft",
+        "sendButton": "ui.composer.send",
+        "message": "ui.message/outgoing",
+        "screen": "ui.screen",
+        "header": "ui.header"
+      },
+      "ok": true,
+      "mode": "adapter-recipe",
+      "issues": [],
+      "evidence": "structural-only",
+      "checkedWindow": [
+        17,
+        40
+      ]
+    },
+    {
+      "id": "draft-send-flight",
+      "fixture": "contact-thread",
+      "eventIds": [
+        "pickup.send"
+      ],
+      "bindings": {
+        "viewport": "ui.viewport",
+        "composer": "ui.composer",
+        "transcript": "ui.transcript",
+        "draft": "ui.composer.draft@14",
+        "sendButton": "ui.composer.send@14",
+        "message": "ui.message/coming",
+        "screen": "ui.screen",
+        "header": "ui.header"
+      },
+      "ok": true,
+      "mode": "adapter-recipe",
+      "issues": [],
+      "evidence": "structural-only",
+      "checkedWindow": [
+        33,
+        47
+      ]
+    },
+    {
+      "id": "typing-indicator-cycle",
+      "fixture": "contact-thread",
+      "eventIds": [
+        "pickup.typing"
+      ],
+      "bindings": {
+        "viewport": "ui.viewport",
+        "transcript": "ui.transcript",
+        "typing": "ui.typing",
+        "screen": "ui.screen",
+        "header": "ui.header",
+        "composer": "ui.composer"
+      },
+      "ok": false,
+      "mode": "adapter-recipe",
+      "issues": [
+        {
+          "code": "moves-fixed-component",
+          "role": "composer",
+          "layerId": "ui.composer",
+          "window": [
+            51,
+            59
+          ]
+        }
+      ],
+      "evidence": "structural-only",
+      "checkedWindow": [
+        51,
+        59
+      ]
+    },
+    {
+      "id": "photos-under-fixed-heading",
+      "fixture": "photos-fixed-header",
+      "eventIds": [
+        "ui.photos-fixed-header.swipe"
+      ],
+      "bindings": {
+        "viewport": "ui.viewport",
+        "message": "ui.message/photos",
+        "attachment": "ui.message/photos/media",
+        "carousel": "ui.message/photos/rail",
+        "screen": "ui.screen",
+        "header": "ui.header",
+        "composer": "ui.composer",
+        "transcript": "ui.transcript",
+        "attachmentViewport": "ui.message/photos/media-window"
+      },
+      "ok": true,
+      "mode": "adapter-recipe",
+      "issues": [],
+      "evidence": "structural-only",
+      "checkedWindow": [
+        18,
+        27
+      ]
+    },
+    {
+      "id": "reaction-attach",
+      "fixture": "tapback-scroll",
+      "eventIds": [
+        "ui.tapback-scroll.context",
+        "ui.tapback-scroll.apply"
+      ],
+      "bindings": {
+        "viewport": "ui.viewport",
+        "transcript": "ui.transcript",
+        "message": "ui.message/ready",
+        "contextMenu": "ui.overlay",
+        "reaction": "ui.message/ready/reaction",
+        "screen": "ui.screen",
+        "header": "ui.header",
+        "composer": "ui.composer"
+      },
+      "ok": true,
+      "mode": "adapter-recipe",
+      "issues": [],
+      "evidence": "structural-only",
+      "checkedWindow": [
+        13,
+        42
+      ]
+    }
+  ]
+}

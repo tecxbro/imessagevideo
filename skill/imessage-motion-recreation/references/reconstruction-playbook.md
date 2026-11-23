@@ -7,6 +7,8 @@ description: Reconstruct supplied Apple Messages launch motion graphics as edita
 
 Use actual downloaded reference video as evidence. The target is the supplied animation's composition and timing. Never describe a capability test, generic approximation, copied source video, or unmeasured render as a one-to-one recreation.
 
+For a new Recreation run from this fallback, apply the [visual review](../recreate/VISUAL-REVIEW.md) to every shot and use the [Messages adapter](../ui/WORKFLOW.md#match-a-recreation-shot) for supported states and behavior. The crop and tracing examples below document earlier projects. For new recreation renders, use independently authored or separately permitted assets and keep reference crops, extracted outlines and audio in the measurement workspace.
+
 ## Work products
 
 Maintain one directory per reference containing the original source, provenance metadata, frame inventory, measured scene manifest, extracted asset inventory, and an append-only execution log. Keep render engine source, output MP4s, comparison reports, and capability status separately. A method is available only after a real render succeeds.

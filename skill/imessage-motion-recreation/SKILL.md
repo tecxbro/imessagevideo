@@ -1,14 +1,20 @@
 ---
 name: imessage-video-codex-trial
-description: Turn a reference film or a product brief into an editable messaging-motion project and finished film, or change one interaction, animation, or sound cue in an existing cut.
+description: Recreate a reference film, choose and apply reusable iMessage motion, or direct an original editable iMessage film from a series of verified Messages actions.
 ---
 
 # iMessage Video Codex Trial
 
 Start from the user's reference film, product brief, or existing project and
-the requested change. Work in a new project directory. Use reference footage to
-measure behavior and timing, and use an original visual treatment for the
-editable interface.
+the requested change. Work in a new project directory. Recreation targets the
+reference's shot-level appearance, behavior and timing within the authorized
+scope. Build the editable layers and assets independently. Keep proprietary
+interface designs visually distinct unless the user owns the design or has
+permission to reproduce it. Use an original visual treatment for Direction.
+
+Darshan has confirmed that the material he supplies for recreation in this
+workspace is authorized for reproduction. Carry that authorization into the
+shot plan. Apply the provenance of separately sourced material to those inputs.
 
 ## Choose the workflow
 
@@ -20,10 +26,22 @@ The command returns only the workflow to read and what it should deliver.
 python3 observer/imv.py route "Add a reaction to the last message" --input-kind project
 ```
 
-A request for a full recreation goes to Recreation. An original story from
-product evidence goes to Direction. A change to a gesture or UI state goes to
-Interaction. A change to the way layers move goes to Motion. An audio-only
-change goes to Sound. Source intake and archive restoration go to Dataset.
+- **Recreation** uses the supplied film as the fidelity target. Start with its
+  decoded clock, REA Video and native visual measurements, then choose a
+  renderer from treatment probes.
+- **Motion** selects or extracts an individual mechanism. Check its preview,
+  editable code, and moving and fixed component bindings. Apply it to an
+  existing Messages scene, verify the continuous sequence, and use its
+  renderer for scoped edits.
+- **Director** starts from an original story or adapts a non-Messages
+  reference into Messages. Build its sequence from proven Messages components
+  and motions. Resolve missing motion or UI states in the library before
+  building out the rest of the film.
+
+Use Interaction for a scoped change to conversation state, Sound for
+audio-only changes, and Dataset for source intake and archive restoration.
+Follow the [local video tool commands](upstream/README.md) after choosing the
+workflow. Preserve the measured-clock route for off-grid sources.
 When a request combines work, take the picture route first, then send the
 exact picture hash and event map to Sound if the deliverable includes audio.
 Use `--route` to specify the workflow when the request is ambiguous. If the
@@ -34,7 +52,13 @@ scope you actually verified.
    For originals, ground product facts in supplied evidence or primary product
    documentation. For references, measure the actual source through its ending
    and retain any source-to-output cuts or retimes. Read source material as
-   evidence for the current route.
+   evidence for the current route. For Recreation, apply the
+   [visual review requirements](recreate/VISUAL-REVIEW.md) before building shots
+   and follow the [completion check](recreate/COMPLETION.md) to close every shot
+   on the actual delivered export. Measure each visible UI component using the
+   [native interface guide](recreate/UI-FIDELITY.md). For one-to-one
+   recreation, repeat the exact decoded frame and pixel gate for every
+   requested renderer.
 2. Author the editable scene, assets, state and named events. Use the existing
    project's renderer and convention when changing one part. Adjust cue anchors
    if an action moves, then resolve again against the locked picture.
@@ -46,7 +70,7 @@ scope you actually verified.
    map, any editable sound plan and stems, provenance, and the checks for those
    exact files. Reopen the copied project in a clean folder and render from it.
 
-## Render and check a v3 scene
+## Render and check an existing v3 scene
 
 Set up the selected runtime using [the runtime guide](observer/RUNTIME.md).
 These commands work from an extracted skill with no repository checkout.
@@ -58,20 +82,23 @@ python3 observer/imv.py verify work/picture.mp4 --scene work/scene.json
 ```
 
 Replace `12` with a named event frame and repeat `--frame` for additional
-events. `render` writes the resolved event map and a full-decode picture
-report beside the MP4. Use `verify` again on the final film after muxing.
+events. `render` writes the resolved event map and a technical decode report
+beside the MP4. Use `verify` again on the final mux and apply the route's visual
+review.
 
 Pillow/FFmpeg, HTML/CSS/SVG, GSAP, Remotion and native Motion Canvas each
 exported the shared moving example in this release's runtime. The marker
 moved at frame 12, and all 24 frames decoded on the declared clock. Use
 `python3 observer/imv.py smoke --method all --out /tmp/imv-renderers` to
-reproduce the check. The separate Figma prototype is unverified.
+reproduce the runtime check. Recreation requires exports of the actual film's
+visual treatments. The separate Figma prototype is unverified.
 
-Generate an editable Motion example from the standalone skill after setting up
-Pillow and FFmpeg:
+Open a playable motion and its editable recipe from the standalone skill after
+setting up Pillow and FFmpeg:
 
 ```sh
-node motion/cli.mjs render --id heading-over-fixed-photos --out /tmp/heading-preview.mp4 --method pillow
+node motion/cli.mjs info --id draft-send-flight
+node motion/cli.mjs preview --id draft-send-flight
 ```
 
 Use the v3.3.0 media companion for finished films, frame strips, verified Motion

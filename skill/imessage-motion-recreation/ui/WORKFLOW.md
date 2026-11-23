@@ -19,6 +19,8 @@ with its assets for search, suggestion, multi-photo paging, a viewer and a
 poll. Use the [content and state contract](CONTRACT.md) to choose event kinds.
 Choose `film-paper` for plum/lavender bubbles or `film-ink` for blue/gray.
 Both share the same authored screen geometry and state.
+Choose [`contact-thread`](CONTACT-THREAD.md) for blue and gray curved-tail bubbles,
+editable contact artwork, three-dot typing and an optional handset.
 
 For isolated interactions, start with [send with keyboard up](examples/send-keyboard.json),
 [Tapback and scroll](examples/tapback-scroll.json), or [in-thread photo swipe](examples/photos-fixed-header.json).
@@ -45,6 +47,19 @@ description dictionary and input and output directories for image path
 resolution. Editors using Node or shell can call the CLI and reuse the exact
 output scene. Edit the description and compile again to regenerate wrapping,
 extent, attachment placement and frame anchors.
+
+## Match a recreation shot
+
+Use the adapter for the supported conversation states, layer ownership and
+event anchors. The default palettes, type and geometry are starter designs.
+Set measured properties where the adapter exposes them and adapt the editable
+components or scoped layers for the rest. Keep wrap, clipping, event targets
+and state transitions linked to the edited geometry. Author handset materials,
+portraits and product-specific control artwork separately when needed. Record
+unsupported surfaces and their editable replacements. Measure each component
+from the approved source with the [native interface guide](../recreate/UI-FIDELITY.md).
+Compare the assembled shot using the
+[recreation visual review](../recreate/VISUAL-REVIEW.md) on each required export.
 
 ## Frame a shot
 

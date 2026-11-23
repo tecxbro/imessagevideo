@@ -33,6 +33,17 @@ CLUES = {
 }
 SCOPED_EDIT = re.compile(r"\b(?:add|remove|replace|retime|edit|fix|tweak|move|slow|speed up|shorten|lengthen|tighten|change|try|make(?= .{0,48} (?:softer|quieter|faster|slower|louder)\b))\b")
 FULL_FILM = re.compile(r"\b(?:create|make|build|produce|direct|deliver|design|cut|need|want)\b.{0,40}\b(?:film|video|spot|teaser|promo)\b")
+MOTION_REVIEW = re.compile(r"\b(?:scrub|seek|play|watch|inspect)\b.{0,40}\b(?:motion preview|motion sample|existing preview)\b")
+MOTION_SELECTION = re.compile(
+    r"\b(?:motion|animation|transition) (?:options|presets|recipes|examples)\b"
+    r"|\b(?:extract|isolate|reuse|pick|choose|find)\b.{0,42}\b(?:motion|animation|transition|camera move)\b"
+)
+IMESSAGE_ADAPTATION = re.compile(
+    r"\b(?:turn|adapt|convert|translate|reimagine|re-express)\b.{0,80}"
+    r"\b(?:into|as) (?:an? )?(?:original )?imessage (?:film|video)\b"
+)
+ORIGINAL_FILM = re.compile(r"\b(?:original|new) (?:imessage |product |launch )?(?:film|video)\b")
+STYLE_REFERENCE = re.compile(r"\b(?:as inspiration|for inspiration|for (?:its |the )?(?:visual )?style|as a style reference)\b")
 
 
 def read_json(path):
@@ -44,13 +55,20 @@ def route(request, input_kind, explicit):
     full_film = FULL_FILM.search(text) and not re.search(r"\b(?:quieter|louder|softer|slower|faster|only)\b", text)
     hits = {name: re.search(pattern, text) for name, pattern in CLUES.items()}
     copy = re.search(r"\b(?:rebuild|recreat\w*|reconstruct\w*|match (?:the|this))\b", text)
-    inspiration = re.search(r"\b(?:as inspiration|for inspiration|original film|new film|new product video)\b", text)
+    adaptation = IMESSAGE_ADAPTATION.search(text)
+    inspiration = ORIGINAL_FILM.search(text) or STYLE_REFERENCE.search(text)
+    motion_review = MOTION_REVIEW.search(text)
+    motion_selection = MOTION_SELECTION.search(text)
     if explicit:
         name, reason = explicit, "explicit route"
     elif hits["dataset"]:
         name, reason = "dataset", "footage intake or archive request"
+    elif adaptation:
+        name, reason = "direction", "asked to adapt a reference into a Messages film"
     elif inspiration and full_film and not copy:
         name, reason = "direction", "asked for an original film using a reference as inspiration"
+    elif motion_review or motion_selection:
+        name, reason = "motion", "asked to inspect or choose a motion"
     elif hits["recreation"] and (input_kind == "reference" or input_kind is None):
         name, reason = ("recreation", "asked to reconstruct a reference") if copy or not SCOPED_EDIT.search(text) else (None, None)
     else:
@@ -76,13 +94,24 @@ def route(request, input_kind, explicit):
     config = ROUTES[name]
     entry = config["specialist"]
     supplied = (ROOT / entry).is_file()
-    return {
+    result = {
         "route": name, "reason": reason,
         "workflow": "specialist" if supplied else "base",
         "read": [entry] if supplied else config["base"],
         "contracts": ["contracts/README.md"],
         "deliver": config["deliver"],
     }
+    if name == "motion" and motion_review:
+        result.update(operation="inspect", deliver=["existing preview", "requested decoded frame or interval"])
+    elif name == "motion" and motion_selection:
+        result.update(operation="select", deliver=["matching motions and when to use them", "playable previews and code", "required Messages components"])
+    if input_kind == "reference":
+        role = {"recreation": "fidelity-target", "motion": "motion-evidence"}
+        if name == "direction":
+            result["referenceRole"] = "adaptation-source" if adaptation else "creative-reference"
+        elif name in role:
+            result["referenceRole"] = role[name]
+    return result
 
 
 def local_video(command, path, arguments, *, decode=False, raw=False):

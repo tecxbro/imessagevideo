@@ -1,13 +1,26 @@
 ---
 name: direction
-description: Invent, direct, revise, and finish an original product or launch film from a blank brief, including editable picture, product evidence, and synchronized sound.
+description: Direct an original iMessage film by sequencing verified Messages components and motions around an observable action and outcome.
 ---
 
-# Direct an original film
+# Direct an original iMessage film
 
 Use this when the brief gives you a product and an audience. Treat the brief as
 the source of the film's world. Open `studies/` only when the user requests
 film studies. Keep finished examples out of a blind run.
+
+Start with the [Motion library](../motion/WORKFLOW.md) and
+[Messages component contract](../ui/CONTRACT.md). Write the sequence of
+observable Messages states and events on one picture clock. For each action,
+choose a playable motion, bind it to the needed components, and verify what
+changes and what holds. Resolve missing motion and component behavior before
+authoring the full cut.
+
+Build the proof in an [editable Messages project](../upstream/README.md#editable-messages-project).
+Use HyperFrames' planning and review around the already established
+conversation. Review the beat, cut and phone-width sheets on the candidate
+export. A technical pass and a readable headline do not establish that the
+viewer can see the interaction or its result.
 
 ## Decide what can happen
 
@@ -55,7 +68,8 @@ Build a playable proof passage early. Include enough of its surroundings to
 test what it means. Mark who or what should have the viewer's attention and
 where it moves next. Editable source needs to expose the timing and layers
 that carry those decisions. Consult Motion when the intended behavior is an
-existing motion and the UI adapter when the evidence uses iMessage.
+existing motion. Use the Messages adapter or the project's approved
+editable Messages components for the action.
 Determine the required interaction and what remains fixed before selecting a
 motion or renderer. Give invented motion meaningful parameters and start,
 first visible change, and settle frames. Keep the picture clock authoritative

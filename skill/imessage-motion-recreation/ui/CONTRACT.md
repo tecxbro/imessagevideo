@@ -9,13 +9,15 @@ IDs even across edits and removals.
 
 | Optional root key | Meaning |
 | --- | --- |
-| `skin` | `film-paper` (default, plum/lavender) or `film-ink` (blue/gray). |
+| `skin` | `film-paper` (default, plum/lavender), `film-ink` (blue/gray), or [`contact-thread`](CONTACT-THREAD.md). |
 | `service` | Secondary conversation heading, defaults to Messages |
 | `display` | `width` (320–1080), `height` (480–1920) and `textSize` (13–24). Defaults to 390×720 and 16 |
 | `canvas` | Output `width` and `height` (160–2560), default to the display size. The display centers on the canvas. |
 | `inbox` | Ordered list of `{id,title,preview}` for list and search. Defaults to one entry for the active conversation. |
 | `fps` | Whole frames per second, defaults to 24 |
 | `assets` | Asset ID to still PNG, JPEG or WebP path relative to the input description |
+| `avatarAssetId` | Optional `contact-thread` header portrait, named in `assets`. The same slot shows initials when omitted. |
+| `glyphAssets` | Optional `contact-thread` map of whole graphemes to local `assetId`, `advance`, and `ink` in em units. |
 | `initial` | Ordered `messages`, composer `draft` and boolean `focused` |
 | `events` | Ordered, frame-addressed conversation and camera actions |
 | `cues` | Objects with stable `id`, `eventId` and signed `offsetSamples` at 48 kHz |

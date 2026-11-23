@@ -269,8 +269,13 @@ function rank(entries, input, roles) {
     const movesActor = actor => actor === 'transcript' ? actualMovers.has(actor) : moving.has(stem(actor));
     const issues = [...special.filter(phrase => !all.includes(phrase)).map(phrase => `requires ${phrase}`),
       ...forbidden.filter(word => uses(techniques, word)).map(word => `uses ${word}`)];
+    if (/\b(?:scrub|seek|playhead)\w*\b/.test(normalized(input)) &&
+        !/\b(?:scrub|seek|playhead)\w*\b/.test(all))
+      issues.push('does not depict seeking through media');
     for (const actor of roles.fixed) {
-      if (movesActor(actor) && (actor === 'transcript' || !fixed.has(stem(actor))))
+      if (actor === 'composer' && !fixed.has(stem(actor)) && !movesActor(actor))
+        issues.push('does not include the requested fixed composer');
+      else if (movesActor(actor) && (actor === 'transcript' || !fixed.has(stem(actor))))
         issues.push(`moves the requested fixed ${actor}`);
     }
     for (const [actor, movement] of roles.moving) {
@@ -428,6 +433,9 @@ export function select(entries, request) {
   const explicit = entries.find(entry => entry.id.toLowerCase() === brief.toLowerCase());
   if (explicit) return matched(explicit, brief);
   if (!brief) return decision('missing', 'Describe what moves, what stays fixed, and what the viewer should notice.');
+  if (/\b(?:scrub|seek|play|watch|inspect)\b.{0,40}\b(?:motion preview|motion sample|existing preview)\b/i.test(brief)) {
+    return decision('inspect', 'Open the selected MP4 or use preview --id MOTION --frame INDEX --out FRAME.png.');
+  }
   const beats = brief.split(/\b(?:and\s+then|followed\s+by|after\s+that|then)\b/i).map(beat => beat.trim()).filter(Boolean);
   const attachment = beats.length ? attachmentStackChoice(entries, brief, beats) : null;
   if (attachment) return attachment;

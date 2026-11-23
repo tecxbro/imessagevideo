@@ -25,7 +25,8 @@ KEY_ROWS = (
 )
 
 
-def keyboard(width):
+def keyboard(width, *, panel=LAVENDER, divider=DIVIDER, standard=PAPER, special=PLUM,
+             label=INK, special_label=PAPER):
     """Return a QWERTY accessory in the keyboard parent's 208-unit space.
 
     Key groups carry semantic IDs such as ``ui.keyboard.key.delete``. The
@@ -34,8 +35,8 @@ def keyboard(width):
     if width < 200:
         raise ValueError("keyboard needs at least 200 units of width")
     prefix = "ui.keyboard"
-    layers = [rect(f"{prefix}.panel", 0, 0, width, KEYBOARD_HEIGHT, LAVENDER),
-              rect(f"{prefix}.divider", 0, 0, width, 1, DIVIDER)]
+    layers = [rect(f"{prefix}.panel", 0, 0, width, KEYBOARD_HEIGHT, panel),
+              rect(f"{prefix}.divider", 0, 0, width, 1, divider)]
     gap = min(6, width / 65)
     gutter = width * .03
     unit = (width - 2 * gutter - 9 * gap) / 10
@@ -44,15 +45,15 @@ def keyboard(width):
         row_width = sum(widths) + (len(widths) - 1) * gap
         x = (width - row_width) / 2
         y = 18 + row_index * 45
-        for (key, label, weight), key_width in zip(row, widths):
+        for (key, key_label, weight), key_width in zip(row, widths):
             key_id = f"{prefix}.key.{key}"
             action = key in {"shift", "delete", "return", "numbers"}
             body = rect(f"{key_id}.body", 0, 0, key_width, 38,
-                        PLUM if action else PAPER, 8)
-            size = min(16 if len(label) == 1 else 11, key_width * .68)
-            mark = text(f"{key_id}.label", label, key_width / 2, (38 - size) / 2 - 1,
+                        special if action else standard, 8)
+            size = min(16 if len(key_label) == 1 else 11, key_width * .68)
+            mark = text(f"{key_id}.label", key_label, key_width / 2, (38 - size) / 2 - 1,
                         size, textAnchor="middle", fontWeight=700,
-                        fill=PAPER if action else INK)
+                        fill=special_label if action else label)
             layers.append(group(key_id, x, y, [body, mark]))
             x += key_width + gap
     return layers

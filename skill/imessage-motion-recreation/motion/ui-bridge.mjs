@@ -57,11 +57,14 @@ const recipes = {
   },
   'composer-type': {
     note: 'The typing beat uses frame-addressed draft revisions and the adapter’s composer. Longer input wraps in the field.',
-    build({data, at}) {
+    build({data, content, at}) {
       const events = draftEvents(data.copy, at(.16), at(.82));
-      if (!events.length) return {events};
+      const initial = Object.hasOwn(content, 'reply')
+        ? {messages: [message('message.prior', REMOTE, data.reply)]}
+        : undefined;
+      if (!events.length) return {initial, events};
       Object.assign(events[0], {name: 'first-character', outputKind: 'typing'});
-      return {events, markers: [{name: 'draft-complete', from: 'first-character', kind: 'typing_end', frame: events.at(-1).frame}]};
+      return {initial, events, markers: [{name: 'draft-complete', from: 'first-character', kind: 'typing_end', frame: events.at(-1).frame}]};
     },
   },
   'draft-send-flight': {
@@ -219,7 +222,7 @@ export function buildUiMotion(entry, content = {}, {
   }
   const frameCount = Math.round(fps * duration);
   const at = fraction => Math.min(frameCount - 1, Math.ceil(fraction * frameCount - 1e-8));
-  const {initial, events, markers = [], assets} = recipe.build({data, at, fps, frameCount});
+  const {initial, events, markers = [], assets} = recipe.build({data, content, at, fps, frameCount});
   const prefix = `motion.${entry.id}.`;
   const conversation = {
     version: 1, conversationId: 'thread.motion', title: data.heading, service: data.detail,

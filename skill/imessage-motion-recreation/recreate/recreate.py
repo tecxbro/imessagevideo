@@ -10,6 +10,7 @@ from analyze import analyze, inspect, measure_landmarks, read_range
 from compare import compare
 from encode import encode_measured_clock
 from media import write_json
+from review import prepare_review, verify_review
 
 
 def parse_args():
@@ -39,6 +40,20 @@ def parse_args():
     check.add_argument("--checks", help="JSON thresholds and interaction windows")
     check.add_argument("--out", required=True)
     check.add_argument("--sheets", action="store_true", help="make comparison sheets")
+    check.add_argument("--pairs", action="store_true", help="export a browsable side-by-side pair for every aligned frame")
+    check.add_argument("--exact", action="store_true", help="fail on any changed RGB channel or presentation time")
+    check.add_argument("--crops", action="store_true", help="write native PNG evidence for named regions")
+    tasks = commands.add_parser("prepare-review", help="prepare evidence-linked visual review tasks from the decoded comparison")
+    tasks.add_argument("--plan", required=True)
+    tasks.add_argument("--comparison", required=True)
+    tasks.add_argument("--out", required=True, help="write the review task and unanswered result JSON")
+    review = commands.add_parser("verify-review", help="check that one decoded candidate passes every locked shot criterion")
+    review.add_argument("candidate")
+    review.add_argument("--plan", required=True)
+    review.add_argument("--review", required=True)
+    review.add_argument("--comparison", required=True, help="report.json from compare for this candidate")
+    review.add_argument("--scoped", action="store_true", help="report against an explicitly agreed narrower scope")
+    review.add_argument("--out", required=True, help="write the acceptance result to this JSON file")
     encode = commands.add_parser("encode-clock", help="encode an authored PNG cache with the measured frame clock")
     encode.add_argument("frames", help="directory with authored 000000.png onward")
     encode.add_argument("--measurements", required=True)
@@ -60,9 +75,21 @@ def main():
         elif args.command == "encode-clock":
             report = encode_measured_clock(args.frames, args.measurements, args.out)
             print(f"{report['matched_presentation_timestamps']} exact timestamps; end {report['matched_end_seconds']}s")
+        elif args.command == "prepare-review":
+            result = prepare_review(args.plan, args.comparison, args.out)
+            write_json(Path(args.out), result)
+            print(f"{len(result['tasks'])} review tasks  {args.out}")
+        elif args.command == "verify-review":
+            result = verify_review(args.plan, args.review, args.comparison, args.candidate, scoped=args.scoped)
+            write_json(Path(args.out), result)
+            print(f"{result['verdict']}  {result['passed_shots']}/{result['shot_count']} shots pass ({result['scope']})  {args.out}")
+            return 0 if result["verdict"] in ("PASS", "SCOPED_PASS") else 1
         else:
-            report = compare(args.reference, args.candidate, args.out, args.checks, args.sheets)
+            report = compare(args.reference, args.candidate, args.out, args.checks, args.sheets, args.pairs,
+                             exact=args.exact, crops=args.crops)
             print(f"{report['verdict']}  {report['compared_frames']} compared frames  {Path(args.out) / 'report.json'}")
+            pixels = report["pixel_equality"]
+            print(f"{pixels['identical_frames']}/{report['compared_frames']} frames identical in decoded RGB")
             if not report["regions"]:
                 print("Coverage: picture-level checks; add native interaction windows for event-level validation.")
             for failure in report["failures"]:

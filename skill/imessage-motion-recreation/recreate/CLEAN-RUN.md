@@ -28,9 +28,9 @@ python3 recreate/recreate.py inspect "$REFERENCE" --measurements "$RUN/measureme
   --frames "$PASSAGE" --out "$RUN/reference-passage"
 ```
 
-Before authoring, cover frames 0 through the final frame in an observation ledger. Record shot boundaries, the PTS time base and final end, fixed and moving layers, editable strings, interaction windows, camera and occlusion, and audio landmarks. Keep every frame in a hold. Map source and output frame indices explicitly for the hardest passage if its preview starts at frame zero. Compile the UI and Motion portions into the editable project with their pinned versions. List independent production assets and their provenance and hashes.
+Before authoring, cover frames 0 through the final frame in an observation ledger. Record shot boundaries, the PTS time base and final end, fixed and moving layers, editable strings, interaction windows, camera and occlusion, and audio landmarks. Complete the [shot measurements and acceptance criteria](VISUAL-REVIEW.md#measure-before-building-a-shot). Keep every frame in a hold. Map source and output frame indices explicitly for every probe. Compile supported UI and Motion portions into the editable project with their pinned versions. List independent production assets and their provenance and hashes.
 
-Choose one renderer. Check consecutive frames in the hardest passage, capturing the region before onset through settlement. Then render the full silent film. For any audition or final render, stage only the editable project, authored assets and renderer dependencies under a separate input tree. Run the command through `recreate/isolated-render.sh INPUT EMPTY_OUTPUT COMMAND ...`. The command sees the staged tree at `/input` and writes to `/output`. It may read a separately staged, clock-only analysis JSON and timeline CSV for a measured VFR encode. Keep the source and its extracted pictures and audio outside the input tree.
+Choose a renderer and follow the [visual probe and export criteria](VISUAL-REVIEW.md#review-decoded-probes-before-the-first-full-render). For any audition or final render, stage only the editable project, authored assets and renderer dependencies under a separate input tree. Run the command through `recreate/isolated-render.sh INPUT EMPTY_OUTPUT COMMAND ...`. The command sees the staged tree at `/input` and writes to `/output`. It may read a separately staged, clock-only analysis JSON and timeline CSV for a measured VFR encode. Keep the source and its extracted pictures and audio outside the input tree.
 
 ## Verify and hand off
 
@@ -38,12 +38,14 @@ Set `$PICTURE` and `$SCORED` to the silent and scored outputs and supply checks 
 
 ```bash
 python3 recreate/recreate.py compare "$REFERENCE" "$PICTURE" \
-  --checks "$RUN/picture-checks.json" --out "$RUN/picture-comparison" --sheets
+  --checks "$RUN/picture-checks.json" --out "$RUN/picture-comparison" --exact --crops
 sha256sum "$PICTURE" "$RUN/picture.events.json"
 python3 recreate/recreate.py compare "$REFERENCE" "$SCORED" \
-  --checks "$RUN/scored-checks.json" --out "$RUN/scored-comparison" --sheets
+  --checks "$RUN/scored-checks.json" --out "$RUN/scored-comparison" --exact --crops --pairs --sheets
 ```
 
-Give Sound the exact silent picture SHA and frame-addressed event map through Observer’s approved handoff. For each encode, `frames.csv` records paired source and output frame indices and native start and exclusive-end ticks, including the final hold. The report gives each stream’s time base and full decode verdict. Review `regions.csv` and the paired crops against the ledger. Report consequential differences by exact frame and coded pixel rectangle, with the observed difference and any remaining mismatch. Give reviewers the scored picture lock check as well as the source-to-output comparison.
+Give Sound the exact silent picture SHA and frame-addressed event map through Observer’s approved handoff. For each encode, `frames.csv` records paired source and output frame indices and native start and exclusive-end ticks, including the final hold. The report gives each stream’s time base and full decode verdict. Review `regions.csv` and the paired crops against the ledger. Include the [visual verdict for every decoded shot](VISUAL-REVIEW.md#review-the-finished-export). Give reviewers the scored picture lock check as well as the source-to-output comparison.
 
 Make one meaningful visible edit and rerender from the edited source. Keep the original evidence and edit result in different outputs. Report the exact workflow revision, runnable command, output hash and remaining differences in the build room. Share protected material and source-bearing evidence only through Observer’s approved location.
+
+Run the [completion check](COMPLETION.md#lock-and-verify-the-review) on the final intended file. A benchmark's open checks remain the repair list for a full recreation.

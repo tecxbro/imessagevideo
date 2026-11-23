@@ -68,6 +68,7 @@ def clusters(value):
         joins = (
             unicodedata.category(char) in {"Mn", "Mc", "Me"} or char == "\u200d"
             or cluster.endswith("\u200d") or 0x1F3FB <= code <= 0x1F3FF
+            or 0xE0020 <= code <= 0xE007F
             or (regional and regional_count % 2 == 1)
         )
         if cluster and not joins:

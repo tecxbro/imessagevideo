@@ -9,6 +9,7 @@ import os
 
 from PIL import Image, ImageOps
 
+from . import contact_thread
 from .components import PALETTES, font_path
 from .layout import Layout
 from .state import KINDS, Conversation, copy, identifier, integer, number, require
@@ -16,6 +17,7 @@ from .tracks import loop_layers
 
 IMAGE_FORMATS = {"PNG", "JPEG", "WEBP"}
 PROFILE = "film-paper"
+PROFILES = (*PALETTES, contact_thread.SKIN)
 MOTION = {
     "focus": 7, "draft": 4, "send": 17, "receive": 7, "typing": 5, "reaction": 5,
     "scroll": 12, "camera": 12, "edit": 6, "unsend": 6, "receipt": 4, "overlay": 8,
@@ -88,12 +90,13 @@ def validate_attachments(state, assets):
 def compile_conversation(description, *, input_dir=Path.cwd(), output_dir=Path.cwd()):
     """Return an editable scene. Asset paths resolve from the specified output directory."""
     doc = deepcopy(description)
+    input_dir, output_dir = Path(input_dir).resolve(), Path(output_dir).resolve()
     require(isinstance(doc, dict), "conversation must be an object")
     require(type(doc.get("version")) is int and doc["version"] == 1, "conversation version must be 1")
-    require(doc.get("skin", PROFILE) in PALETTES, f"unknown skin; use one of {', '.join(PALETTES)}")
+    require(doc.get("skin", PROFILE) in PROFILES, f"unknown skin; use one of {', '.join(PROFILES)}")
     fps = integer(doc.get("fps", 24), "fps", 1, 120)
     frames = integer(doc["frameCount"], "frameCount", 1, fps * 600)
-    assets = asset_paths(doc, Path(input_dir), Path(output_dir))
+    assets = asset_paths(doc, input_dir, output_dir)
     state = initial_state(doc)
     validate_attachments(state, assets)
     layout = Layout(doc, assets, inbox_entries(doc), fps, frames)
@@ -135,6 +138,7 @@ def compile_conversation(description, *, input_dir=Path.cwd(), output_dir=Path.c
     cues = doc.get("cues", [])
     verify_cues(cues, timeline, fps, frames)
     layers = [layout.camera]
+    layout.finish()
     layout.tracks.finish(layers)
     layer_ids = [layer["id"] for layer in loop_layers(layers)]
     require(len(layer_ids) == len(set(layer_ids)), "internal error: duplicate scene layer ID")
