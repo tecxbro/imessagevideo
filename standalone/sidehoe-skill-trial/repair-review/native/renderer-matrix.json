@@ -1,0 +1,143 @@
+{
+  "fixture": "codex-trial/skill/imessage-motion-recreation/ui/examples/send-keyboard.json",
+  "reference_renderer": "html",
+  "purpose": "Check the same decoded candidate review independently on all supported renderers.",
+  "frame_count": 68,
+  "reference_sha256": "efdb5af853a0e61c768d1fb8af7afa15b483651754a18dad2d7153e05d362029",
+  "comparison_settings": {
+    "regions": [
+      {
+        "id": "status-bar",
+        "start": 0,
+        "end": 67,
+        "rect": [
+          0,
+          0,
+          402,
+          60
+        ],
+        "changed_pixels": 0,
+        "pixel_floor": 1
+      },
+      {
+        "id": "conversation",
+        "start": 0,
+        "end": 67,
+        "rect": [
+          0,
+          85,
+          402,
+          340
+        ],
+        "changed_pixels": 0,
+        "pixel_floor": 1
+      },
+      {
+        "id": "composer-and-keyboard",
+        "start": 0,
+        "end": 67,
+        "rect": [
+          0,
+          425,
+          402,
+          295
+        ],
+        "changed_pixels": 0,
+        "pixel_floor": 1,
+        "step_mae": 0
+      }
+    ]
+  },
+  "renderers": {
+    "pillow": {
+      "sha256": "2dd5a92031579fbe4acb3293087a31956e33fde678de6928ffb3a9dc2a7cddcf",
+      "verdict": "FAIL",
+      "exact_clock": true,
+      "compared_frames": 68,
+      "identical_frames": 0,
+      "mean_abs_rgb": 2.991434592424586,
+      "first_difference": {
+        "frame": 0,
+        "changed_pixels": 80931,
+        "max_channel_delta": 201,
+        "rect": [
+          0,
+          16,
+          402,
+          692
+        ]
+      },
+      "worst_mae_by_region": {
+        "status-bar": 3.9900912106135986,
+        "conversation": 2.754004487367086,
+        "composer-and-keyboard": 4.140391264018889
+      }
+    },
+    "html": {
+      "sha256": "efdb5af853a0e61c768d1fb8af7afa15b483651754a18dad2d7153e05d362029",
+      "verdict": "PASS",
+      "exact_clock": true,
+      "compared_frames": 68,
+      "identical_frames": 68,
+      "mean_abs_rgb": 0.0,
+      "first_difference": null,
+      "worst_mae_by_region": {
+        "status-bar": 0.0,
+        "conversation": 0.0,
+        "composer-and-keyboard": 0.0
+      }
+    },
+    "gsap": {
+      "sha256": "efdb5af853a0e61c768d1fb8af7afa15b483651754a18dad2d7153e05d362029",
+      "verdict": "PASS",
+      "exact_clock": true,
+      "compared_frames": 68,
+      "identical_frames": 68,
+      "mean_abs_rgb": 0.0,
+      "first_difference": null,
+      "worst_mae_by_region": {
+        "status-bar": 0.0,
+        "conversation": 0.0,
+        "composer-and-keyboard": 0.0
+      }
+    },
+    "remotion": {
+      "sha256": "efdb5af853a0e61c768d1fb8af7afa15b483651754a18dad2d7153e05d362029",
+      "verdict": "PASS",
+      "exact_clock": true,
+      "compared_frames": 68,
+      "identical_frames": 68,
+      "mean_abs_rgb": 0.0,
+      "first_difference": null,
+      "worst_mae_by_region": {
+        "status-bar": 0.0,
+        "conversation": 0.0,
+        "composer-and-keyboard": 0.0
+      }
+    },
+    "motion-canvas": {
+      "sha256": "1e392a98e34620f0514f552e3f2cc5fecff2d7a7c7498ff29a6863180a393337",
+      "verdict": "FAIL",
+      "exact_clock": true,
+      "compared_frames": 68,
+      "identical_frames": 0,
+      "mean_abs_rgb": 0.27646396625261505,
+      "first_difference": {
+        "frame": 0,
+        "changed_pixels": 45766,
+        "max_channel_delta": 64,
+        "rect": [
+          0,
+          16,
+          402,
+          692
+        ]
+      },
+      "worst_mae_by_region": {
+        "status-bar": 0.1546987285793256,
+        "conversation": 0.39062042727538776,
+        "composer-and-keyboard": 0.46410602355454367
+      }
+    }
+  }
+}

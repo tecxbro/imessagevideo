@@ -1,0 +1,1143 @@
+{
+  "plan_sha256": "ee4ece5f58fd163764ce51a684dc91a2fbaab1562e687b3f0c605d014b8cace6",
+  "comparison_sha256": "11888af317b597a9c916bb124e2bacf56156b56f7c8e74cecd1021a6e2529174",
+  "candidate_sha256": "96ed05bab13460e3a1a0dc2c0e03687794fe60ef4213b6fc948e7955ae245c92",
+  "instructions": "Open the linked evidence at native size. Step consecutive frames for motion. Record only inspected results.",
+  "tasks": [
+    {
+      "shot": "02-inbox-hold",
+      "check": "inbox-battery",
+      "frames": [
+        22,
+        22
+      ],
+      "target": "Match the filled battery body, radii and terminal gap; check for an unintended inner white stroke.",
+      "region": "inbox-battery",
+      "priority": "high",
+      "failed_pixel_spans": [
+        [
+          22,
+          22
+        ]
+      ],
+      "failed_motion_spans": [],
+      "first_difference": 22,
+      "worst_frame": 22,
+      "worst_crop_mae": 78.44930820390942,
+      "worst_step": null,
+      "crop_evidence": [
+        "comparison/crops/02-first.png",
+        "comparison/crops/02-worst.png"
+      ],
+      "viewer": null
+    },
+    {
+      "shot": "02-inbox-hold",
+      "check": "inbox-wifi",
+      "frames": [
+        22,
+        22
+      ],
+      "target": "Match both concentric bands and the bottom sector, centered at the source coordinates.",
+      "region": "inbox-wifi",
+      "priority": "high",
+      "failed_pixel_spans": [
+        [
+          22,
+          22
+        ]
+      ],
+      "failed_motion_spans": [],
+      "first_difference": 22,
+      "worst_frame": 22,
+      "worst_crop_mae": 60.86467968482357,
+      "worst_step": null,
+      "crop_evidence": [
+        "comparison/crops/01-first.png",
+        "comparison/crops/01-worst.png"
+      ],
+      "viewer": null
+    },
+    {
+      "shot": "10-first-phone-entrance",
+      "check": "keyboard-home-indicator",
+      "frames": [
+        327,
+        327
+      ],
+      "target": "Match indicator width, thickness, corner shape and margin from the lower screen edge.",
+      "region": "keyboard-home-indicator",
+      "priority": "high",
+      "failed_pixel_spans": [
+        [
+          327,
+          327
+        ]
+      ],
+      "failed_motion_spans": [],
+      "first_difference": 327,
+      "worst_frame": 327,
+      "worst_crop_mae": 50.22997751254108,
+      "worst_step": null,
+      "crop_evidence": [
+        "comparison/crops/13-first.png",
+        "comparison/crops/13-worst.png"
+      ],
+      "viewer": null
+    },
+    {
+      "shot": "10-first-phone-entrance",
+      "check": "outgoing-bubble",
+      "frames": [
+        327,
+        327
+      ],
+      "target": "Match upper outgoing body and tail silhouette, cyan interior, typography, and spacing.",
+      "region": "outgoing-bubble",
+      "priority": "high",
+      "failed_pixel_spans": [
+        [
+          327,
+          327
+        ]
+      ],
+      "failed_motion_spans": [],
+      "first_difference": 327,
+      "worst_frame": 327,
+      "worst_crop_mae": 46.49047876031146,
+      "worst_step": null,
+      "crop_evidence": [
+        "comparison/crops/06-first.png",
+        "comparison/crops/06-worst.png"
+      ],
+      "viewer": null
+    },
+    {
+      "shot": "02-inbox-hold",
+      "check": "inbox-broken-heart",
+      "frames": [
+        22,
+        22
+      ],
+      "target": "Match the broken heart silhouette, scale, ink bounds, shading, red fill and transparent area.",
+      "region": "inbox-broken-heart",
+      "priority": "high",
+      "failed_pixel_spans": [
+        [
+          22,
+          22
+        ]
+      ],
+      "failed_motion_spans": [],
+      "first_difference": 22,
+      "worst_frame": 22,
+      "worst_crop_mae": 39.52165945334737,
+      "worst_step": null,
+      "crop_evidence": [
+        "comparison/crops/03-first.png",
+        "comparison/crops/03-worst.png"
+      ],
+      "viewer": null
+    },
+    {
+      "shot": "02-inbox-hold",
+      "check": "inbox-cellular",
+      "frames": [
+        22,
+        22
+      ],
+      "target": "Match four bar silhouettes, ascending heights, widths, gaps, fill and baseline.",
+      "region": "inbox-cellular",
+      "priority": "high",
+      "failed_pixel_spans": [
+        [
+          22,
+          22
+        ]
+      ],
+      "failed_motion_spans": [],
+      "first_difference": 22,
+      "worst_frame": 22,
+      "worst_crop_mae": 32.40405092592592,
+      "worst_step": null,
+      "crop_evidence": [
+        "comparison/crops/00-first.png",
+        "comparison/crops/00-worst.png"
+      ],
+      "viewer": null
+    },
+    {
+      "shot": "10-first-phone-entrance",
+      "check": "keyboard-dictation-key",
+      "frames": [
+        327,
+        327
+      ],
+      "target": "Match microphone body, U-shaped outline, stem and base, color and relative scale.",
+      "region": "keyboard-dictation-key",
+      "priority": "high",
+      "failed_pixel_spans": [
+        [
+          327,
+          327
+        ]
+      ],
+      "failed_motion_spans": [],
+      "first_difference": 327,
+      "worst_frame": 327,
+      "worst_crop_mae": 32.227800782148606,
+      "worst_step": null,
+      "crop_evidence": [
+        "comparison/crops/12-first.png",
+        "comparison/crops/12-worst.png"
+      ],
+      "viewer": null
+    },
+    {
+      "shot": "10-first-phone-entrance",
+      "check": "keyboard-letters",
+      "frames": [
+        327,
+        327
+      ],
+      "target": "Match three rows of key shapes, case, corner radii, spacing, shift, backspace, and key shadows.",
+      "region": "keyboard-letters",
+      "priority": "high",
+      "failed_pixel_spans": [
+        [
+          327,
+          327
+        ]
+      ],
+      "failed_motion_spans": [],
+      "first_difference": 327,
+      "worst_frame": 327,
+      "worst_crop_mae": 31.14532838001288,
+      "worst_step": null,
+      "crop_evidence": [
+        "comparison/crops/09-first.png",
+        "comparison/crops/09-worst.png"
+      ],
+      "viewer": null
+    },
+    {
+      "shot": "11-suggestion-and-controls",
+      "check": "suggestion-bubble",
+      "frames": [
+        341,
+        341
+      ],
+      "target": "Match outlined silhouette including the curved tail, line baselines, interior cyan and control spacing.",
+      "region": "suggestion-bubble",
+      "priority": "high",
+      "failed_pixel_spans": [
+        [
+          341,
+          341
+        ]
+      ],
+      "failed_motion_spans": [],
+      "first_difference": 341,
+      "worst_frame": 341,
+      "worst_crop_mae": 29.845628238167016,
+      "worst_step": null,
+      "crop_evidence": [
+        "comparison/crops/14-first.png",
+        "comparison/crops/14-worst.png"
+      ],
+      "viewer": null
+    },
+    {
+      "shot": "10-first-phone-entrance",
+      "check": "first-handset-motion",
+      "frames": [
+        313,
+        335
+      ],
+      "target": "Compare consecutive hull, screen and keyboard motion, first visible onset, exposure and blur falloff.",
+      "region": "first-handset-motion",
+      "priority": "high",
+      "failed_pixel_spans": [
+        [
+          313,
+          335
+        ]
+      ],
+      "failed_motion_spans": [
+        [
+          314,
+          335
+        ]
+      ],
+      "first_difference": 313,
+      "worst_frame": 330,
+      "worst_crop_mae": 19.105588218390803,
+      "worst_step": {
+        "frames": [
+          330,
+          331
+        ],
+        "rect": [
+          420,
+          0,
+          1160,
+          2000
+        ],
+        "mae": 25.248136781609194,
+        "crop": "crops/04-step.png"
+      },
+      "crop_evidence": [
+        "comparison/crops/04-first.png",
+        "comparison/crops/04-worst.png",
+        "comparison/crops/04-step.png"
+      ],
+      "viewer": null
+    },
+    {
+      "shot": "10-first-phone-entrance",
+      "check": "incoming-bubble",
+      "frames": [
+        327,
+        327
+      ],
+      "target": "Match each incoming bubble silhouette, tail, solid gray area, characters and padding.",
+      "region": "incoming-bubble",
+      "priority": "high",
+      "failed_pixel_spans": [
+        [
+          327,
+          327
+        ]
+      ],
+      "failed_motion_spans": [],
+      "first_difference": 327,
+      "worst_frame": 327,
+      "worst_crop_mae": 25.12790542790543,
+      "worst_step": null,
+      "crop_evidence": [
+        "comparison/crops/07-first.png",
+        "comparison/crops/07-worst.png"
+      ],
+      "viewer": null
+    },
+    {
+      "shot": "10-first-phone-entrance",
+      "check": "handset-top",
+      "frames": [
+        327,
+        327
+      ],
+      "target": "Match handset outer corner arcs, bevel thickness, dark island and lens, header inset and icons.",
+      "region": "handset-top",
+      "priority": "high",
+      "failed_pixel_spans": [
+        [
+          327,
+          327
+        ]
+      ],
+      "failed_motion_spans": [],
+      "first_difference": 327,
+      "worst_frame": 327,
+      "worst_crop_mae": 24.259291618329467,
+      "worst_step": null,
+      "crop_evidence": [
+        "comparison/crops/05-first.png",
+        "comparison/crops/05-worst.png"
+      ],
+      "viewer": null
+    },
+    {
+      "shot": "10-first-phone-entrance",
+      "check": "keyboard-emoji-key",
+      "frames": [
+        327,
+        327
+      ],
+      "target": "Match the circular face icon and its eyes and smile at its own bounding box.",
+      "region": "keyboard-emoji-key",
+      "priority": "high",
+      "failed_pixel_spans": [
+        [
+          327,
+          327
+        ]
+      ],
+      "failed_motion_spans": [],
+      "first_difference": 327,
+      "worst_frame": 327,
+      "worst_crop_mae": 23.844747899159664,
+      "worst_step": null,
+      "crop_evidence": [
+        "comparison/crops/11-first.png",
+        "comparison/crops/11-worst.png"
+      ],
+      "viewer": null
+    },
+    {
+      "shot": "21-yes-contact-and-withdrawal",
+      "check": "phone-exit-motion",
+      "frames": [
+        675,
+        695
+      ],
+      "target": "Match motion across contact, retreat and exit, including consecutive frames and local blur.",
+      "region": "phone-exit-motion",
+      "priority": "high",
+      "failed_pixel_spans": [
+        [
+          675,
+          695
+        ]
+      ],
+      "failed_motion_spans": [
+        [
+          676,
+          695
+        ]
+      ],
+      "first_difference": 675,
+      "worst_frame": 681,
+      "worst_crop_mae": 17.321232450980393,
+      "worst_step": {
+        "frames": [
+          692,
+          693
+        ],
+        "rect": [
+          140,
+          0,
+          1700,
+          2000
+        ],
+        "mae": 23.475443725490194,
+        "crop": "crops/18-step.png"
+      },
+      "crop_evidence": [
+        "comparison/crops/18-first.png",
+        "comparison/crops/18-worst.png",
+        "comparison/crops/18-step.png"
+      ],
+      "viewer": null
+    },
+    {
+      "shot": "10-first-phone-entrance",
+      "check": "keyboard-bottom-row",
+      "frames": [
+        327,
+        327
+      ],
+      "target": "Match the 123, space and Label key widths, gaps, type and fills.",
+      "region": "keyboard-bottom-row",
+      "priority": "high",
+      "failed_pixel_spans": [
+        [
+          327,
+          327
+        ]
+      ],
+      "failed_motion_spans": [],
+      "first_difference": 327,
+      "worst_frame": 327,
+      "worst_crop_mae": 23.30750203998368,
+      "worst_step": null,
+      "crop_evidence": [
+        "comparison/crops/10-first.png",
+        "comparison/crops/10-worst.png"
+      ],
+      "viewer": null
+    },
+    {
+      "shot": "20-follow-up-buttons-and-push",
+      "check": "follow-up-yes-emoji",
+      "frames": [
+        670,
+        670
+      ],
+      "target": "Match the Yes emoji expression, open mouth and tongue treatment independently of text placement.",
+      "region": "follow-up-yes-emoji",
+      "priority": "high",
+      "failed_pixel_spans": [
+        [
+          670,
+          670
+        ]
+      ],
+      "failed_motion_spans": [],
+      "first_difference": 670,
+      "worst_frame": 670,
+      "worst_crop_mae": 21.598377922898674,
+      "worst_step": null,
+      "crop_evidence": [
+        "comparison/crops/17-first.png",
+        "comparison/crops/17-worst.png"
+      ],
+      "viewer": null
+    },
+    {
+      "shot": "19-second-phone-entrance",
+      "check": "follow-up-handset-motion",
+      "frames": [
+        624,
+        647
+      ],
+      "target": "Match intermediate camera path and blur on hull and keyboard from onset through the settled view.",
+      "region": "follow-up-handset-motion",
+      "priority": "high",
+      "failed_pixel_spans": [
+        [
+          624,
+          647
+        ]
+      ],
+      "failed_motion_spans": [
+        [
+          625,
+          647
+        ]
+      ],
+      "first_difference": 624,
+      "worst_frame": 647,
+      "worst_crop_mae": 18.862811781609196,
+      "worst_step": {
+        "frames": [
+          631,
+          632
+        ],
+        "rect": [
+          420,
+          0,
+          1160,
+          2000
+        ],
+        "mae": 18.99261882183908,
+        "crop": "crops/15-step.png"
+      },
+      "crop_evidence": [
+        "comparison/crops/15-first.png",
+        "comparison/crops/15-worst.png",
+        "comparison/crops/15-step.png"
+      ],
+      "viewer": null
+    },
+    {
+      "shot": "20-follow-up-buttons-and-push",
+      "check": "follow-up-no-emoji",
+      "frames": [
+        670,
+        670
+      ],
+      "target": "Match the crying-face sticker art and position independently of the No label.",
+      "region": "follow-up-no-emoji",
+      "priority": "high",
+      "failed_pixel_spans": [
+        [
+          670,
+          670
+        ]
+      ],
+      "failed_motion_spans": [],
+      "first_difference": 670,
+      "worst_frame": 670,
+      "worst_crop_mae": 18.038194444444443,
+      "worst_step": null,
+      "crop_evidence": [
+        "comparison/crops/16-first.png",
+        "comparison/crops/16-worst.png"
+      ],
+      "viewer": null
+    },
+    {
+      "shot": "10-first-phone-entrance",
+      "check": "composer-controls",
+      "frames": [
+        327,
+        327
+      ],
+      "target": "Match field and circular plus button geometry and the microphone strokes.",
+      "region": "composer-controls",
+      "priority": "high",
+      "failed_pixel_spans": [
+        [
+          327,
+          327
+        ]
+      ],
+      "failed_motion_spans": [],
+      "first_difference": 327,
+      "worst_frame": 327,
+      "worst_crop_mae": 12.052875695732839,
+      "worst_step": null,
+      "crop_evidence": [
+        "comparison/crops/08-first.png",
+        "comparison/crops/08-worst.png"
+      ],
+      "viewer": null
+    },
+    {
+      "shot": "01-pinned-inbox-entrance",
+      "check": "appearance",
+      "frames": [
+        0,
+        9
+      ],
+      "target": "Give header, portrait and note separate visibility, exposure and position tracks. Verify 0\u20139 in order against the original as each becomes readable.",
+      "region": null,
+      "priority": "high",
+      "failed_pixel_spans": [],
+      "failed_motion_spans": [],
+      "first_difference": null,
+      "worst_frame": null,
+      "worst_crop_mae": null,
+      "worst_step": null,
+      "crop_evidence": [],
+      "viewer": null
+    },
+    {
+      "shot": "02-inbox-hold",
+      "check": "appearance",
+      "frames": [
+        22,
+        22
+      ],
+      "target": "Pin trio, note, and leading rows appear in their held relative positions.",
+      "region": null,
+      "priority": "high",
+      "failed_pixel_spans": [],
+      "failed_motion_spans": [],
+      "first_difference": null,
+      "worst_frame": null,
+      "worst_crop_mae": null,
+      "worst_step": null,
+      "crop_evidence": [],
+      "viewer": null
+    },
+    {
+      "shot": "03-inbox-scroll",
+      "check": "appearance",
+      "frames": [
+        42,
+        101
+      ],
+      "target": "Track two identifiable row edges through the acceleration, including intermediate frames. Fit streak direction and length from the same frames and score row alignment before blur.",
+      "region": null,
+      "priority": "high",
+      "failed_pixel_spans": [],
+      "failed_motion_spans": [],
+      "first_difference": null,
+      "worst_frame": null,
+      "worst_crop_mae": null,
+      "worst_step": null,
+      "crop_evidence": [],
+      "viewer": null
+    },
+    {
+      "shot": "04-identity",
+      "check": "appearance",
+      "frames": [
+        102,
+        133
+      ],
+      "target": "Match early and settled badge silhouettes and art separately. Measure the first visible position, color and smear of the lead glyph and check its departure.",
+      "region": null,
+      "priority": "high",
+      "failed_pixel_spans": [],
+      "failed_motion_spans": [],
+      "first_difference": null,
+      "worst_frame": null,
+      "worst_crop_mae": null,
+      "worst_step": null,
+      "crop_evidence": [],
+      "viewer": null
+    },
+    {
+      "shot": "05-glossy-handset",
+      "check": "appearance",
+      "frames": [
+        134,
+        161
+      ],
+      "target": "Compare neutral silhouette first. Measure top rim, island, corner and lower tint patches across 134\u2013140. Fit the deformation and color fringe to those regions and check the sharp held state independently.",
+      "region": null,
+      "priority": "high",
+      "failed_pixel_spans": [],
+      "failed_motion_spans": [],
+      "first_difference": null,
+      "worst_frame": null,
+      "worst_crop_mae": null,
+      "worst_step": null,
+      "crop_evidence": [],
+      "viewer": null
+    },
+    {
+      "shot": "06-personal-title",
+      "check": "appearance",
+      "frames": [
+        162,
+        212
+      ],
+      "target": "Pin visible word/glyph onset and position. Check outgoing title and incoming disks in the same composition at 209\u2013214.",
+      "region": null,
+      "priority": "high",
+      "failed_pixel_spans": [],
+      "failed_motion_spans": [],
+      "first_difference": null,
+      "worst_frame": null,
+      "worst_crop_mae": null,
+      "worst_step": null,
+      "crop_evidence": [],
+      "viewer": null
+    },
+    {
+      "shot": "07-dimensional-portrait-cluster",
+      "check": "appearance",
+      "frames": [
+        213,
+        253
+      ],
+      "target": "Log first visible frame, centroid, radius and opacity of each disk before fitting a common parent. Compare early and settled component counts.",
+      "region": null,
+      "priority": "high",
+      "failed_pixel_spans": [],
+      "failed_motion_spans": [],
+      "first_difference": null,
+      "worst_frame": null,
+      "worst_crop_mae": null,
+      "worst_step": null,
+      "crop_evidence": [],
+      "viewer": null
+    },
+    {
+      "shot": "08-cluster-wipe-and-profile-reveal",
+      "check": "appearance",
+      "frames": [
+        254,
+        281
+      ],
+      "target": "Key mask extents, order and visibility on each rapid wipe frame. Verify the outgoing remnants and the incoming portrait plus labels separately at 254\u2013264.",
+      "region": null,
+      "priority": "high",
+      "failed_pixel_spans": [],
+      "failed_motion_spans": [],
+      "first_difference": null,
+      "worst_frame": null,
+      "worst_crop_mae": null,
+      "worst_step": null,
+      "crop_evidence": [],
+      "viewer": null
+    },
+    {
+      "shot": "09-profile-push",
+      "check": "appearance",
+      "frames": [
+        282,
+        312
+      ],
+      "target": "Measure Lisa's state and chip contour separately from the push. Fit Ella's actual visible color and edge bounds in the same frames.",
+      "region": null,
+      "priority": "high",
+      "failed_pixel_spans": [],
+      "failed_motion_spans": [],
+      "first_difference": null,
+      "worst_frame": null,
+      "worst_crop_mae": null,
+      "worst_step": null,
+      "crop_evidence": [],
+      "viewer": null
+    },
+    {
+      "shot": "10-first-phone-entrance",
+      "check": "appearance",
+      "frames": [
+        313,
+        335
+      ],
+      "target": "Track top, bottom and side rim bounds separately from an interior anchor. Check the exposure and contours at the first, fastest and settled frames.",
+      "region": null,
+      "priority": "high",
+      "failed_pixel_spans": [],
+      "failed_motion_spans": [],
+      "first_difference": null,
+      "worst_frame": null,
+      "worst_crop_mae": null,
+      "worst_step": null,
+      "crop_evidence": [],
+      "viewer": null
+    },
+    {
+      "shot": "11-suggestion-and-controls",
+      "check": "appearance",
+      "frames": [
+        336,
+        359
+      ],
+      "target": "Gate on a visible bubble at f336 and absence at f335. Then fit its bounds and the control edges on the contiguous reveal before checking the detach.",
+      "region": null,
+      "priority": "high",
+      "failed_pixel_spans": [],
+      "failed_motion_spans": [],
+      "first_difference": null,
+      "worst_frame": null,
+      "worst_crop_mae": null,
+      "worst_step": null,
+      "crop_evidence": [],
+      "viewer": null
+    },
+    {
+      "shot": "12-isolated-suggestion-and-pointer",
+      "check": "appearance",
+      "frames": [
+        394,
+        394
+      ],
+      "target": "Detached bubbles flank the anchored suggestion and pointer reaches Send? from below.",
+      "region": null,
+      "priority": "high",
+      "failed_pixel_spans": [],
+      "failed_motion_spans": [],
+      "first_difference": null,
+      "worst_frame": null,
+      "worst_crop_mae": null,
+      "worst_step": null,
+      "crop_evidence": [],
+      "viewer": null
+    },
+    {
+      "shot": "13-calendar-entry",
+      "check": "appearance",
+      "frames": [
+        397,
+        429
+      ],
+      "target": "Measure the occupied lower crop and visible appointment tint on the first frame. Keep both layers live through the actual overlap. Verify the cursor separately.",
+      "region": null,
+      "priority": "high",
+      "failed_pixel_spans": [],
+      "failed_motion_spans": [],
+      "first_difference": null,
+      "worst_frame": null,
+      "worst_crop_mae": null,
+      "worst_step": null,
+      "crop_evidence": [],
+      "viewer": null
+    },
+    {
+      "shot": "14-violet-appointment-drag",
+      "check": "appearance",
+      "frames": [
+        435,
+        435
+      ],
+      "target": "Violet appointment is above cyan during the overlapping move.",
+      "region": null,
+      "priority": "high",
+      "failed_pixel_spans": [],
+      "failed_motion_spans": [],
+      "first_difference": null,
+      "worst_frame": null,
+      "worst_crop_mae": null,
+      "worst_step": null,
+      "crop_evidence": [],
+      "viewer": null
+    },
+    {
+      "shot": "15-cyan-appointment-drag",
+      "check": "appearance",
+      "frames": [
+        460,
+        460
+      ],
+      "target": "Cyan settles beneath violet without losing grid registration.",
+      "region": null,
+      "priority": "high",
+      "failed_pixel_spans": [],
+      "failed_motion_spans": [],
+      "first_difference": null,
+      "worst_frame": null,
+      "worst_crop_mae": null,
+      "worst_step": null,
+      "crop_evidence": [],
+      "viewer": null
+    },
+    {
+      "shot": "16-calendar-mosaic-and-app-entry",
+      "check": "appearance",
+      "frames": [
+        474,
+        486
+      ],
+      "target": "Record an explicit first-visible frame and z-order per tile, along with the outgoing masks. Require the ring tile's foreground reveal at 478 in the same aligned export.",
+      "region": null,
+      "priority": "high",
+      "failed_pixel_spans": [],
+      "failed_motion_spans": [],
+      "first_difference": null,
+      "worst_frame": null,
+      "worst_crop_mae": null,
+      "worst_step": null,
+      "crop_evidence": [],
+      "viewer": null
+    },
+    {
+      "shot": "17-app-orbit",
+      "check": "appearance",
+      "frames": [
+        487,
+        612
+      ],
+      "target": "Measure centers, scale, depth order and readable artwork for each tile at independent poses and the contested overlap frames.",
+      "region": null,
+      "priority": "high",
+      "failed_pixel_spans": [],
+      "failed_motion_spans": [],
+      "first_difference": null,
+      "worst_frame": null,
+      "worst_crop_mae": null,
+      "worst_step": null,
+      "crop_evidence": [],
+      "viewer": null
+    },
+    {
+      "shot": "18-app-exit",
+      "check": "appearance",
+      "frames": [
+        613,
+        623
+      ],
+      "target": "Track glow centroid and coverage from blank patches, and each tile's exit position and streak length. Check the last occupied frame as well as the blank beat.",
+      "region": null,
+      "priority": "high",
+      "failed_pixel_spans": [],
+      "failed_motion_spans": [],
+      "first_difference": null,
+      "worst_frame": null,
+      "worst_crop_mae": null,
+      "worst_step": null,
+      "crop_evidence": [],
+      "viewer": null
+    },
+    {
+      "shot": "19-second-phone-entrance",
+      "check": "appearance",
+      "frames": [
+        624,
+        647
+      ],
+      "target": "Recheck the shared shell and keyboard against this shot. Use a measured interior anchor and vertical rim contour at entry and settlement.",
+      "region": null,
+      "priority": "high",
+      "failed_pixel_spans": [],
+      "failed_motion_spans": [],
+      "first_difference": null,
+      "worst_frame": null,
+      "worst_crop_mae": null,
+      "worst_step": null,
+      "crop_evidence": [],
+      "viewer": null
+    },
+    {
+      "shot": "20-follow-up-buttons-and-push",
+      "check": "appearance",
+      "frames": [
+        648,
+        674
+      ],
+      "target": "Record the first visible and first readable frame of each button separately. Measure box and pointer in stage coordinates during the fast push instead of using contact alone as evidence.",
+      "region": null,
+      "priority": "high",
+      "failed_pixel_spans": [],
+      "failed_motion_spans": [],
+      "first_difference": null,
+      "worst_frame": null,
+      "worst_crop_mae": null,
+      "worst_step": null,
+      "crop_evidence": [],
+      "viewer": null
+    },
+    {
+      "shot": "21-yes-contact-and-withdrawal",
+      "check": "appearance",
+      "frames": [
+        675,
+        695
+      ],
+      "target": "Track hull edges and an interior anchor for 686\u2013695. Verify chip tint plus tip release relative to that geometry. Preserve the 675 contact in the repair.",
+      "region": null,
+      "priority": "high",
+      "failed_pixel_spans": [],
+      "failed_motion_spans": [],
+      "first_difference": null,
+      "worst_frame": null,
+      "worst_crop_mae": null,
+      "worst_step": null,
+      "crop_evidence": [],
+      "viewer": null
+    },
+    {
+      "shot": "22-closing-badge-entrance",
+      "check": "appearance",
+      "frames": [
+        696,
+        716
+      ],
+      "target": "Fit width and height independently on the first few frames. Review the internal mark at actual held size before reusing it.",
+      "region": null,
+      "priority": "high",
+      "failed_pixel_spans": [],
+      "failed_motion_spans": [],
+      "first_difference": null,
+      "worst_frame": null,
+      "worst_crop_mae": null,
+      "worst_step": null,
+      "crop_evidence": [],
+      "viewer": null
+    },
+    {
+      "shot": "23-closing-copy-and-wash",
+      "check": "appearance",
+      "frames": [
+        717,
+        765
+      ],
+      "target": "Lock word onset and visible ink bounds with the intended renderer. Compare the moving phrase and final set line separately.",
+      "region": null,
+      "priority": "high",
+      "failed_pixel_spans": [],
+      "failed_motion_spans": [],
+      "first_difference": null,
+      "worst_frame": null,
+      "worst_crop_mae": null,
+      "worst_step": null,
+      "crop_evidence": [],
+      "viewer": null
+    },
+    {
+      "shot": "24-closing-fade-and-black-hold",
+      "check": "appearance",
+      "frames": [
+        766,
+        777
+      ],
+      "target": "Exposure declines into the final black hold across the source frames.",
+      "region": null,
+      "priority": "high",
+      "failed_pixel_spans": [],
+      "failed_motion_spans": [],
+      "first_difference": null,
+      "worst_frame": null,
+      "worst_crop_mae": null,
+      "worst_step": null,
+      "crop_evidence": [],
+      "viewer": null
+    }
+  ],
+  "results": {
+    "02-inbox-hold": {
+      "inbox-battery": {
+        "verdict": "fail",
+        "frames": [
+          22,
+          22
+        ],
+        "observation": "The source has a filled body and separated terminal. The candidate uses an outlined shell around the fill.",
+        "evidence": "comparison/crops/02-first.png"
+      },
+      "inbox-wifi": {
+        "verdict": "fail",
+        "frames": [
+          22,
+          22
+        ],
+        "observation": "The original has two bands and a bottom sector, while the export shows one arc and a small mark at a different position.",
+        "evidence": "comparison/crops/01-first.png"
+      },
+      "inbox-broken-heart": {
+        "verdict": "fail",
+        "frames": [
+          22,
+          22
+        ],
+        "observation": "The export heart is smaller, pink, flatter and offset from the red shaded source glyph.",
+        "evidence": "comparison/crops/03-first.png"
+      },
+      "inbox-cellular": {
+        "verdict": "fail",
+        "frames": [
+          22,
+          22
+        ],
+        "observation": "The actual cellular glyph is farther left and higher, with four rounded bars of increasing height.",
+        "evidence": "comparison/crops/00-first.png"
+      }
+    },
+    "10-first-phone-entrance": {
+      "outgoing-bubble": {
+        "verdict": "fail",
+        "frames": [
+          327,
+          327
+        ],
+        "observation": "The export cyan bubble is lower, with a triangular tail and tighter type.",
+        "evidence": "comparison/crops/06-first.png"
+      },
+      "keyboard-dictation-key": {
+        "verdict": "fail",
+        "frames": [
+          327,
+          327
+        ],
+        "observation": "An unsupported font glyph draws a rectangular replacement in place of the source microphone.",
+        "evidence": "comparison/crops/12-first.png"
+      },
+      "keyboard-letters": {
+        "verdict": "fail",
+        "frames": [
+          327,
+          327
+        ],
+        "observation": "The key rows shift down. Shift and backspace use generic arrow glyphs.",
+        "evidence": "comparison/crops/09-first.png"
+      },
+      "handset-top": {
+        "verdict": "fail",
+        "frames": [
+          327,
+          327
+        ],
+        "observation": "The rim and island materials differ. The source has a dark inner slot and lens and the composition is vertically shifted.",
+        "evidence": "comparison/crops/05-first.png"
+      },
+      "keyboard-emoji-key": {
+        "verdict": "fail",
+        "frames": [
+          327,
+          327
+        ],
+        "observation": "An unsupported font glyph draws a rectangular replacement in place of the source round smiley.",
+        "evidence": "comparison/crops/11-first.png"
+      }
+    },
+    "11-suggestion-and-controls": {
+      "suggestion-bubble": {
+        "verdict": "fail",
+        "frames": [
+          341,
+          341
+        ],
+        "observation": "The tail is disconnected and angular, with different rounded corners and text placement.",
+        "evidence": "comparison/crops/14-first.png"
+      }
+    },
+    "20-follow-up-buttons-and-push": {
+      "follow-up-yes-emoji": {
+        "verdict": "fail",
+        "frames": [
+          670,
+          670
+        ],
+        "observation": "The export shows a different eye shape, mouth and brighter red tongue in a smaller face.",
+        "evidence": "comparison/crops/17-first.png"
+      }
+    }
+  }
+}

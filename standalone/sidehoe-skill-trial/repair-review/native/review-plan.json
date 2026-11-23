@@ -1,0 +1,544 @@
+{
+  "reference_sha256": "f821bb58cbdb265a75d572616d0da723e9cfb6de31e3db5f8a17d94dc15b5327",
+  "comparison_checks_sha256": "7650b36bb488ef7b4187e66d51dda7f65d1eb7294da8b7529e346c4f819305cf",
+  "frame_count": 778,
+  "rgb_diagnostics": [],
+  "shots": [
+    {
+      "id": "01-pinned-inbox-entrance",
+      "frames": [
+        0,
+        9
+      ],
+      "checks": {
+        "appearance": {
+          "frames": [
+            0,
+            9
+          ],
+          "target": "Give header, portrait and note separate visibility, exposure and position tracks. Verify 0\u20139 in order against the original as each becomes readable."
+        }
+      }
+    },
+    {
+      "id": "02-inbox-hold",
+      "frames": [
+        10,
+        41
+      ],
+      "checks": {
+        "appearance": {
+          "frames": [
+            22,
+            22
+          ],
+          "target": "Pin trio, note, and leading rows appear in their held relative positions."
+        },
+        "inbox-cellular": {
+          "frames": [
+            22,
+            22
+          ],
+          "region": "inbox-cellular",
+          "target": "Match four bar silhouettes, ascending heights, widths, gaps, fill and baseline."
+        },
+        "inbox-wifi": {
+          "frames": [
+            22,
+            22
+          ],
+          "region": "inbox-wifi",
+          "target": "Match both concentric bands and the bottom sector, centered at the source coordinates."
+        },
+        "inbox-battery": {
+          "frames": [
+            22,
+            22
+          ],
+          "region": "inbox-battery",
+          "target": "Match the filled battery body, radii and terminal gap; check for an unintended inner white stroke."
+        },
+        "inbox-broken-heart": {
+          "frames": [
+            22,
+            22
+          ],
+          "region": "inbox-broken-heart",
+          "target": "Match the broken heart silhouette, scale, ink bounds, shading, red fill and transparent area."
+        }
+      }
+    },
+    {
+      "id": "03-inbox-scroll",
+      "frames": [
+        42,
+        101
+      ],
+      "checks": {
+        "appearance": {
+          "frames": [
+            42,
+            101
+          ],
+          "target": "Track two identifiable row edges through the acceleration, including intermediate frames. Fit streak direction and length from the same frames and score row alignment before blur."
+        }
+      }
+    },
+    {
+      "id": "04-identity",
+      "frames": [
+        102,
+        133
+      ],
+      "checks": {
+        "appearance": {
+          "frames": [
+            102,
+            133
+          ],
+          "target": "Match early and settled badge silhouettes and art separately. Measure the first visible position, color and smear of the lead glyph and check its departure."
+        }
+      }
+    },
+    {
+      "id": "05-glossy-handset",
+      "frames": [
+        134,
+        161
+      ],
+      "checks": {
+        "appearance": {
+          "frames": [
+            134,
+            161
+          ],
+          "target": "Compare neutral silhouette first. Measure top rim, island, corner and lower tint patches across 134\u2013140. Fit the deformation and color fringe to those regions and check the sharp held state independently."
+        }
+      }
+    },
+    {
+      "id": "06-personal-title",
+      "frames": [
+        162,
+        212
+      ],
+      "checks": {
+        "appearance": {
+          "frames": [
+            162,
+            212
+          ],
+          "target": "Pin visible word/glyph onset and position. Check outgoing title and incoming disks in the same composition at 209\u2013214."
+        }
+      }
+    },
+    {
+      "id": "07-dimensional-portrait-cluster",
+      "frames": [
+        213,
+        253
+      ],
+      "checks": {
+        "appearance": {
+          "frames": [
+            213,
+            253
+          ],
+          "target": "Log first visible frame, centroid, radius and opacity of each disk before fitting a common parent. Compare early and settled component counts."
+        }
+      }
+    },
+    {
+      "id": "08-cluster-wipe-and-profile-reveal",
+      "frames": [
+        254,
+        281
+      ],
+      "checks": {
+        "appearance": {
+          "frames": [
+            254,
+            281
+          ],
+          "target": "Key mask extents, order and visibility on each rapid wipe frame. Verify the outgoing remnants and the incoming portrait plus labels separately at 254\u2013264."
+        }
+      }
+    },
+    {
+      "id": "09-profile-push",
+      "frames": [
+        282,
+        312
+      ],
+      "checks": {
+        "appearance": {
+          "frames": [
+            282,
+            312
+          ],
+          "target": "Measure Lisa's state and chip contour separately from the push. Fit Ella's actual visible color and edge bounds in the same frames."
+        }
+      }
+    },
+    {
+      "id": "10-first-phone-entrance",
+      "frames": [
+        313,
+        335
+      ],
+      "checks": {
+        "appearance": {
+          "frames": [
+            313,
+            335
+          ],
+          "target": "Track top, bottom and side rim bounds separately from an interior anchor. Check the exposure and contours at the first, fastest and settled frames."
+        },
+        "first-handset-motion": {
+          "frames": [
+            313,
+            335
+          ],
+          "region": "first-handset-motion",
+          "target": "Compare consecutive hull, screen and keyboard motion, first visible onset, exposure and blur falloff."
+        },
+        "handset-top": {
+          "frames": [
+            327,
+            327
+          ],
+          "region": "handset-top",
+          "target": "Match handset outer corner arcs, bevel thickness, dark island and lens, header inset and icons."
+        },
+        "outgoing-bubble": {
+          "frames": [
+            327,
+            327
+          ],
+          "region": "outgoing-bubble",
+          "target": "Match upper outgoing body and tail silhouette, cyan interior, typography, and spacing."
+        },
+        "incoming-bubble": {
+          "frames": [
+            327,
+            327
+          ],
+          "region": "incoming-bubble",
+          "target": "Match each incoming bubble silhouette, tail, solid gray area, characters and padding."
+        },
+        "composer-controls": {
+          "frames": [
+            327,
+            327
+          ],
+          "region": "composer-controls",
+          "target": "Match field and circular plus button geometry and the microphone strokes."
+        },
+        "keyboard-letters": {
+          "frames": [
+            327,
+            327
+          ],
+          "region": "keyboard-letters",
+          "target": "Match three rows of key shapes, case, corner radii, spacing, shift, backspace, and key shadows."
+        },
+        "keyboard-bottom-row": {
+          "frames": [
+            327,
+            327
+          ],
+          "region": "keyboard-bottom-row",
+          "target": "Match the 123, space and Label key widths, gaps, type and fills."
+        },
+        "keyboard-emoji-key": {
+          "frames": [
+            327,
+            327
+          ],
+          "region": "keyboard-emoji-key",
+          "target": "Match the circular face icon and its eyes and smile at its own bounding box."
+        },
+        "keyboard-dictation-key": {
+          "frames": [
+            327,
+            327
+          ],
+          "region": "keyboard-dictation-key",
+          "target": "Match microphone body, U-shaped outline, stem and base, color and relative scale."
+        },
+        "keyboard-home-indicator": {
+          "frames": [
+            327,
+            327
+          ],
+          "region": "keyboard-home-indicator",
+          "target": "Match indicator width, thickness, corner shape and margin from the lower screen edge."
+        }
+      }
+    },
+    {
+      "id": "11-suggestion-and-controls",
+      "frames": [
+        336,
+        359
+      ],
+      "checks": {
+        "appearance": {
+          "frames": [
+            336,
+            359
+          ],
+          "target": "Gate on a visible bubble at f336 and absence at f335. Then fit its bounds and the control edges on the contiguous reveal before checking the detach."
+        },
+        "suggestion-bubble": {
+          "frames": [
+            341,
+            341
+          ],
+          "region": "suggestion-bubble",
+          "target": "Match outlined silhouette including the curved tail, line baselines, interior cyan and control spacing."
+        }
+      }
+    },
+    {
+      "id": "12-isolated-suggestion-and-pointer",
+      "frames": [
+        360,
+        396
+      ],
+      "checks": {
+        "appearance": {
+          "frames": [
+            394,
+            394
+          ],
+          "target": "Detached bubbles flank the anchored suggestion and pointer reaches Send? from below."
+        }
+      }
+    },
+    {
+      "id": "13-calendar-entry",
+      "frames": [
+        397,
+        429
+      ],
+      "checks": {
+        "appearance": {
+          "frames": [
+            397,
+            429
+          ],
+          "target": "Measure the occupied lower crop and visible appointment tint on the first frame. Keep both layers live through the actual overlap. Verify the cursor separately."
+        }
+      }
+    },
+    {
+      "id": "14-violet-appointment-drag",
+      "frames": [
+        430,
+        451
+      ],
+      "checks": {
+        "appearance": {
+          "frames": [
+            435,
+            435
+          ],
+          "target": "Violet appointment is above cyan during the overlapping move."
+        }
+      }
+    },
+    {
+      "id": "15-cyan-appointment-drag",
+      "frames": [
+        452,
+        473
+      ],
+      "checks": {
+        "appearance": {
+          "frames": [
+            460,
+            460
+          ],
+          "target": "Cyan settles beneath violet without losing grid registration."
+        }
+      }
+    },
+    {
+      "id": "16-calendar-mosaic-and-app-entry",
+      "frames": [
+        474,
+        486
+      ],
+      "checks": {
+        "appearance": {
+          "frames": [
+            474,
+            486
+          ],
+          "target": "Record an explicit first-visible frame and z-order per tile, along with the outgoing masks. Require the ring tile's foreground reveal at 478 in the same aligned export."
+        }
+      }
+    },
+    {
+      "id": "17-app-orbit",
+      "frames": [
+        487,
+        612
+      ],
+      "checks": {
+        "appearance": {
+          "frames": [
+            487,
+            612
+          ],
+          "target": "Measure centers, scale, depth order and readable artwork for each tile at independent poses and the contested overlap frames."
+        }
+      }
+    },
+    {
+      "id": "18-app-exit",
+      "frames": [
+        613,
+        623
+      ],
+      "checks": {
+        "appearance": {
+          "frames": [
+            613,
+            623
+          ],
+          "target": "Track glow centroid and coverage from blank patches, and each tile's exit position and streak length. Check the last occupied frame as well as the blank beat."
+        }
+      }
+    },
+    {
+      "id": "19-second-phone-entrance",
+      "frames": [
+        624,
+        647
+      ],
+      "checks": {
+        "appearance": {
+          "frames": [
+            624,
+            647
+          ],
+          "target": "Recheck the shared shell and keyboard against this shot. Use a measured interior anchor and vertical rim contour at entry and settlement."
+        },
+        "follow-up-handset-motion": {
+          "frames": [
+            624,
+            647
+          ],
+          "region": "follow-up-handset-motion",
+          "target": "Match intermediate camera path and blur on hull and keyboard from onset through the settled view."
+        }
+      }
+    },
+    {
+      "id": "20-follow-up-buttons-and-push",
+      "frames": [
+        648,
+        674
+      ],
+      "checks": {
+        "appearance": {
+          "frames": [
+            648,
+            674
+          ],
+          "target": "Record the first visible and first readable frame of each button separately. Measure box and pointer in stage coordinates during the fast push instead of using contact alone as evidence."
+        },
+        "follow-up-no-emoji": {
+          "frames": [
+            670,
+            670
+          ],
+          "region": "follow-up-no-emoji",
+          "target": "Match the crying-face sticker art and position independently of the No label."
+        },
+        "follow-up-yes-emoji": {
+          "frames": [
+            670,
+            670
+          ],
+          "region": "follow-up-yes-emoji",
+          "target": "Match the Yes emoji expression, open mouth and tongue treatment independently of text placement."
+        }
+      }
+    },
+    {
+      "id": "21-yes-contact-and-withdrawal",
+      "frames": [
+        675,
+        695
+      ],
+      "checks": {
+        "appearance": {
+          "frames": [
+            675,
+            695
+          ],
+          "target": "Track hull edges and an interior anchor for 686\u2013695. Verify chip tint plus tip release relative to that geometry. Preserve the 675 contact in the repair."
+        },
+        "phone-exit-motion": {
+          "frames": [
+            675,
+            695
+          ],
+          "region": "phone-exit-motion",
+          "target": "Match motion across contact, retreat and exit, including consecutive frames and local blur."
+        }
+      }
+    },
+    {
+      "id": "22-closing-badge-entrance",
+      "frames": [
+        696,
+        716
+      ],
+      "checks": {
+        "appearance": {
+          "frames": [
+            696,
+            716
+          ],
+          "target": "Fit width and height independently on the first few frames. Review the internal mark at actual held size before reusing it."
+        }
+      }
+    },
+    {
+      "id": "23-closing-copy-and-wash",
+      "frames": [
+        717,
+        765
+      ],
+      "checks": {
+        "appearance": {
+          "frames": [
+            717,
+            765
+          ],
+          "target": "Lock word onset and visible ink bounds with the intended renderer. Compare the moving phrase and final set line separately."
+        }
+      }
+    },
+    {
+      "id": "24-closing-fade-and-black-hold",
+      "frames": [
+        766,
+        777
+      ],
+      "checks": {
+        "appearance": {
+          "frames": [
+            766,
+            777
+          ],
+          "target": "Exposure declines into the final black hold across the source frames."
+        }
+      }
+    }
+  ]
+}

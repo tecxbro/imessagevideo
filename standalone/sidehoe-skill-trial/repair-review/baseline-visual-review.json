@@ -1,0 +1,270 @@
+{
+  "candidate_sha256": "d93656c63b4ade9ce22e3e3c71b0b5baeab6605ad72cbddaf439ced27a083d6a",
+  "results": {
+    "01-pinned-inbox-entrance": {
+      "appearance": {
+        "verdict": "fail",
+        "frames": [
+          0,
+          0
+        ],
+        "observation": "The header is drawn on frame 0 and rides with the full inbox. A single small blur cannot produce the source's differently streaked chrome and portrait.",
+        "evidence": "../frame-audit/compare/pairs/000000.jpg"
+      }
+    },
+    "02-inbox-hold": {
+      "appearance": {
+        "verdict": "pass",
+        "frames": [
+          22,
+          22
+        ],
+        "observation": "Held layout reads at viewing scale.",
+        "evidence": "../evidence/final-pairs/02-inbox-hold.jpg"
+      }
+    },
+    "03-inbox-scroll": {
+      "appearance": {
+        "verdict": "fail",
+        "frames": [
+          56,
+          56
+        ],
+        "observation": "The source rows differ in height and position during the sweep. The scene spaces them by a fixed stride and derives streak length from a symmetric peak at f57. The exact share of layout versus blur error is untested.",
+        "evidence": "../frame-audit/compare/pairs/000056.jpg"
+      }
+    },
+    "04-identity": {
+      "appearance": {
+        "verdict": "fail",
+        "frames": [
+          106,
+          106
+        ],
+        "observation": "Center and scale improved, but f106 is rounder in the source and has a smeared pink leading glyph. The scene interpolates badge corner radius and reveals clean glyphs with constant character spacing.",
+        "evidence": "../frame-audit/compare/pairs/000106.jpg"
+      }
+    },
+    "05-glossy-handset": {
+      "appearance": {
+        "verdict": "fail",
+        "frames": [
+          135,
+          135
+        ],
+        "observation": "The replica spreads a sinusoidal ripple over the central strip and shifts entire color channels. The source bends the island and bright and dark edges unevenly. The held rim and the wash are still different.",
+        "evidence": "../frame-audit/compare/pairs/000135.jpg"
+      }
+    },
+    "06-personal-title": {
+      "appearance": {
+        "verdict": "fail",
+        "frames": [
+          162,
+          162
+        ],
+        "observation": "The original starts with “For”; more of the line is already visible in the render. It begins the first text track two frames early and uses uniform glyph spacing. The title routine excludes the incoming disks visible at 212.",
+        "evidence": "../frame-audit/compare/pairs/000162.jpg"
+      }
+    },
+    "07-dimensional-portrait-cluster": {
+      "appearance": {
+        "verdict": "fail",
+        "frames": [
+          213,
+          213
+        ],
+        "observation": "The held centers were fitted. On entry the disks use the same six-frame growth ramp and a shared parent offset and blur. At f213 the source already has distinct colored patches that are faint or absent in the candidate.",
+        "evidence": "../frame-audit/compare/pairs/000213.jpg"
+      }
+    },
+    "08-cluster-wipe-and-profile-reveal": {
+      "appearance": {
+        "verdict": "fail",
+        "frames": [
+          254,
+          254
+        ],
+        "observation": "Rectangle lists stay on after onset and a global fade washes all remnants equally. The source holds sharper isolated islands and a long lateral streak, while labels and portraits enter at different times.",
+        "evidence": "../frame-audit/compare/pairs/000254.jpg"
+      }
+    },
+    "09-profile-push": {
+      "appearance": {
+        "verdict": "fail",
+        "frames": [
+          290,
+          290
+        ],
+        "observation": "The scene switches between two Lisa sprites and fades the others using their column index. There is one arc formula for the chip. The source has a different local expression, stronger fading on Ella, and different edge coverage on the chip.",
+        "evidence": "../frame-audit/compare/pairs/000290.jpg"
+      }
+    },
+    "10-first-phone-entrance": {
+      "appearance": {
+        "verdict": "fail",
+        "frames": [
+          313,
+          313
+        ],
+        "observation": "The model applies axis-aligned directional blur to a fixed shell and keyboard plate, with an easing function for the trail. The source's bottom silhouette stays curved during entry and its interior layers register differently during the push.",
+        "evidence": "../frame-audit/compare/pairs/000313.jpg"
+      }
+    },
+    "11-suggestion-and-controls": {
+      "appearance": {
+        "verdict": "fail",
+        "frames": [
+          335,
+          335
+        ],
+        "observation": "**Confirmed onset bug.** The suggestion's event is at 336. Its tween is zero at that index, so the bubble is absent. Camera, keyboard and control curves also differ at later positions.",
+        "evidence": "../frame-audit/compare/pairs/000335.jpg"
+      }
+    },
+    "12-isolated-suggestion-and-pointer": {
+      "appearance": {
+        "verdict": "pass",
+        "frames": [
+          394,
+          394
+        ],
+        "observation": "Detached layout and target contact are visible.",
+        "evidence": "../evidence/final-pairs/12-isolated-suggestion-and-pointer.jpg"
+      }
+    },
+    "13-calendar-entry": {
+      "appearance": {
+        "verdict": "fail",
+        "frames": [
+          396,
+          396
+        ],
+        "observation": "**Confirmed onset bug.** The calendar begins below the stage and fully transparent at 397, but part of it is already visible in the original. The later red marker fit cannot fix this.",
+        "evidence": "../frame-audit/compare/pairs/000396.jpg"
+      }
+    },
+    "14-violet-appointment-drag": {
+      "appearance": {
+        "verdict": "pass",
+        "frames": [
+          435,
+          435
+        ],
+        "observation": "Violet moves while grid and marker remain independently stable.",
+        "evidence": "../evidence/final-pairs/14-violet-appointment-drag.jpg"
+      }
+    },
+    "15-cyan-appointment-drag": {
+      "appearance": {
+        "verdict": "pass",
+        "frames": [
+          460,
+          460
+        ],
+        "observation": "The two appointments occupy successive slots.",
+        "evidence": "../evidence/final-pairs/15-cyan-appointment-drag.jpg"
+      }
+    },
+    "16-calendar-mosaic-and-app-entry": {
+      "appearance": {
+        "verdict": "fail",
+        "frames": [
+          475,
+          475
+        ],
+        "observation": "The source has the ring tile in front at 478. All tiles are stamped from one entry gate and drawn by synthetic depth, so red and blue appear early and dominate. The remaining calendar blocks also differ.",
+        "evidence": "../frame-audit/compare/pairs/000475.jpg"
+      }
+    },
+    "17-app-orbit": {
+      "appearance": {
+        "verdict": "fail",
+        "frames": [
+          487,
+          487
+        ],
+        "observation": "Only red and blue override positions from measured tracks. Ring and dark use a generic sine/cosine path, and sorting uses generic depth for all four. Silhouettes for small glyphs also differ.",
+        "evidence": "../frame-audit/compare/pairs/000487.jpg"
+      }
+    },
+    "18-app-exit": {
+      "appearance": {
+        "verdict": "fail",
+        "frames": [
+          613,
+          613
+        ],
+        "observation": "The glow stays fixed in space and fades with a scalar; the ring and dark tile inherit orbit math on exit. In the original the glow and streaked group travel down together more convincingly.",
+        "evidence": "../frame-audit/compare/pairs/000613.jpg"
+      }
+    },
+    "19-second-phone-entrance": {
+      "appearance": {
+        "verdict": "fail",
+        "frames": [
+          624,
+          624
+        ],
+        "observation": "The second shot uses the same fixed shell and a keyboard origin of 543 scene units. The source has different drop exposure and settled lower-screen geometry.",
+        "evidence": "../frame-audit/compare/pairs/000624.jpg"
+      }
+    },
+    "20-follow-up-buttons-and-push": {
+      "appearance": {
+        "verdict": "fail",
+        "frames": [
+          648,
+          648
+        ],
+        "observation": "At 648 the original's No control is readable while the render's is nearly imperceptible. The chip uses a generic ease, with a different scale and opacity envelope. The approach later uses a pointer track and an independent camera with different intermediate positions.",
+        "evidence": "../frame-audit/compare/pairs/000648.jpg"
+      }
+    },
+    "21-yes-contact-and-withdrawal": {
+      "appearance": {
+        "verdict": "fail",
+        "frames": [
+          675,
+          675
+        ],
+        "observation": "Contact succeeds at 675. The modeled camera is too wide at 690, the tint eases on a separate unmeasured global curve, and the pointer remains linked to the target on retreat. The camera size mismatch is measured; the contribution of tint and attachment to the peak is unisolated.",
+        "evidence": "../frame-audit/compare/pairs/000675.jpg"
+      }
+    },
+    "22-closing-badge-entrance": {
+      "appearance": {
+        "verdict": "fail",
+        "frames": [
+          696,
+          696
+        ],
+        "observation": "The scene scales one square asset with a fixed corner shape. The source starts flattened and soft before settling. The internal illustration still differs even when the outer bounds align.",
+        "evidence": "../frame-audit/compare/pairs/000696.jpg"
+      }
+    },
+    "23-closing-copy-and-wash": {
+      "appearance": {
+        "verdict": "fail",
+        "frames": [
+          717,
+          717
+        ],
+        "observation": "The words all use the same six-frame easing and vertical offset, with two fixed weights. The source has a different timing and ink footprint. A stronger background fit improved the wash but still exposes those type differences.",
+        "evidence": "../frame-audit/compare/pairs/000717.jpg"
+      }
+    },
+    "24-closing-fade-and-black-hold": {
+      "appearance": {
+        "verdict": "pass",
+        "frames": [
+          766,
+          777
+        ],
+        "observation": "All fade pairs inspected. Last picture looks black with exact hold; native channels differ by at most one level at 777.",
+        "evidence": "../evidence/final-pairs/24-closing-fade-and-black-hold.jpg"
+      }
+    }
+  },
+  "plan_sha256": "eb2553613604423f7eb63a1e295f22d3fb2024d8818fb213edc3ee2c96af65c6"
+}

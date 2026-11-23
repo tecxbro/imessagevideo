@@ -1,0 +1,40 @@
+--- a/render.py
++++ b/render.py
+@@ -546,12 +546,13 @@
+         im=layer(410,545)
+         c=self.c["sofia"]
+         self.bubble(im,231,384,132,32,c[4],True)
+-        p=tween(f,self.at("sofia.suggestion"),340)
++        p=tween(f,self.at("sofia.suggestion")-3,340) if f>=self.at("sofia.suggestion") else 0
+         if p>0:
+             small=layer(213,74)
+             text(ImageDraw.Draw(small),8,2,c[5],9.3,MUTED,520)
+             self.bubble(small,1,13,185,50,c[6],True)
+-            composite(im,small,178+(1-p)*18,420+(1-p)*19,p,.88+.12*p)
++            landing_y = mix(378,420,tween(f,self.at("sofia.suggestion"),340))
++            composite(im,small,178+(1-p)*18,landing_y+(1-p)*19,p,.88+.12*p)
+         a=tween(f,self.at("sofia.no")-1,345)
+         b=tween(f,self.at("sofia.send-control")-1,346)
+         self.chip(im,252,485,43,24,c[7],False,.60+.40*a,a)
+@@ -632,7 +633,7 @@
+         if f>=self.at("calendar.mosaic"):
+             panel_wipe(cal,self.s["calendarWipe"],f)
+         composite(im,blur(cal,4.5*(1-tween(f,398,410))+2*tween(f,472,479)),
+-                  0,0,tween(f,397,405)*(1-tween(f,477,482)))
++                  0,0,mix(.75,1,tween(f,397,405))*(1-tween(f,477,482)))
+ 
+     def apps(self,im,f):
+         p=tween(f,478,487)*(1-tween(f,616,623))
+--- a/scene.json
++++ b/scene.json
+@@ -826,8 +826,8 @@
+     "calendarCamera": [
+       [
+         397,
+-        175,
+-        1145,
++        190,
++        802,
+         81
+       ],
+       [
