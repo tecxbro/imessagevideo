@@ -5,7 +5,7 @@ const entry = (id, title, brief, build) => ({
     kind: 'authored', ref: `packs/media.mjs#${id}`, range: [0, 2.4],
     note: 'Motion-authored shot. Gesture and timing are illustrative.',
   },
-  editable: ['photos'],
+  editable: ['heading', 'photos'],
   ...brief,
   build,
 });
@@ -192,7 +192,7 @@ export const entries = [
       'Deal the photo pile out into separate cards from the same album',
       'Spread a stack of three attached pictures into a row so I can see each one',
     ],
-    editable: ['photos', 'title'],
+    editable: ['heading', 'photos', 'title'],
   }, ctx => {
     const positions = [43, 194, 345];
     // Add topmost tile last so it stays on top as the other tiles emerge.
@@ -373,7 +373,7 @@ export const entries = [
       'Expand the caption under the photo and push the next row down',
       'Reveal the full photo notes while keeping the image fixed at the top',
     ],
-    editable: ['photos', 'detail', 'action', 'reply'],
+    editable: ['heading', 'photos', 'detail', 'action', 'reply'],
   }, ctx => {
     const w = 275;
     const x = 112;
@@ -515,7 +515,7 @@ export const entries = [
       'Show a download bar filling on the same attachment and enable opening when complete',
       'Represent attachment transfer progress as a percentage until the file is ready',
     ],
-    editable: ['photos', 'title'],
+    editable: ['heading', 'photos', 'title'],
   }, ctx => {
     add(ctx, stageCard(ctx, 'download-card', 51, 76, 398, 132),
       photoWindow(ctx, 'download-icon', 67, 93, 88, 96, 0, 9),

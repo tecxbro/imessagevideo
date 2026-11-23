@@ -2549,10 +2549,12 @@
         "Stagger several conversations into a message grid"
       ],
       "editable": [
+        "heading",
         "copy",
         "detail"
       ],
       "editableFields": {
+        "heading": "text",
         "copy": "text",
         "detail": "text"
       },
@@ -2594,9 +2596,11 @@
         "Reveal the iMessage apps in a sheet from the bottom"
       ],
       "editable": [
+        "heading",
         "detail"
       ],
       "editableFields": {
+        "heading": "text",
         "detail": "text"
       },
       "source": {
@@ -2638,9 +2642,11 @@
         "Morph the brand identity into an app tile"
       ],
       "editable": [
+        "heading",
         "detail"
       ],
       "editableFields": {
+        "heading": "text",
         "detail": "text"
       },
       "source": {
@@ -2681,10 +2687,12 @@
         "Grow the round action into a working surface"
       ],
       "editable": [
+        "heading",
         "title",
         "detail"
       ],
       "editableFields": {
+        "heading": "text",
         "title": "text",
         "detail": "text"
       },
@@ -2726,10 +2734,12 @@
         "Grow the inline app card while keeping the chat visible"
       ],
       "editable": [
+        "heading",
         "title",
         "detail"
       ],
       "editableFields": {
+        "heading": "text",
         "title": "text",
         "detail": "text"
       },
@@ -2771,10 +2781,12 @@
         "Keep the card still while the confirm button turns into confirmed"
       ],
       "editable": [
+        "heading",
         "title",
         "detail"
       ],
       "editableFields": {
+        "heading": "text",
         "title": "text",
         "detail": "text"
       },
@@ -2821,9 +2833,11 @@
         "Pull the offerings from different directions into one row"
       ],
       "editable": [
+        "heading",
         "detail"
       ],
       "editableFields": {
+        "heading": "text",
         "detail": "text"
       },
       "source": {
@@ -3150,9 +3164,11 @@
         "Show where the larger attachment came from by opening the selected tile in place"
       ],
       "editable": [
+        "heading",
         "photos"
       ],
       "editableFields": {
+        "heading": "text",
         "photos": "array of local PNG, JPEG or WebP paths, relative to the content JSON"
       },
       "source": {
@@ -3198,9 +3214,11 @@
         "Show two fingers spread apart to enlarge part of an image in place"
       ],
       "editable": [
+        "heading",
         "photos"
       ],
       "editableFields": {
+        "heading": "text",
         "photos": "array of local PNG, JPEG or WebP paths, relative to the content JSON"
       },
       "source": {
@@ -3246,9 +3264,11 @@
         "Adjust the focal point of the thumbnail without moving or scaling its frame"
       ],
       "editable": [
+        "heading",
         "photos"
       ],
       "editableFields": {
+        "heading": "text",
         "photos": "array of local PNG, JPEG or WebP paths, relative to the content JSON"
       },
       "source": {
@@ -3295,9 +3315,11 @@
         "Compare a retouch to the unedited original using a draggable divider"
       ],
       "editable": [
+        "heading",
         "photos"
       ],
       "editableFields": {
+        "heading": "text",
         "photos": "array of local PNG, JPEG or WebP paths, relative to the content JSON"
       },
       "source": {
@@ -3343,10 +3365,12 @@
         "Spread a stack of three attached pictures into a row so I can see each one"
       ],
       "editable": [
+        "heading",
         "photos",
         "title"
       ],
       "editableFields": {
+        "heading": "text",
         "photos": "array of local PNG, JPEG or WebP paths, relative to the content JSON",
         "title": "text"
       },
@@ -3393,9 +3417,11 @@
         "Seek through the clip and have the preview update when the thumb moves"
       ],
       "editable": [
+        "heading",
         "photos"
       ],
       "editableFields": {
+        "heading": "text",
         "photos": "array of local PNG, JPEG or WebP paths, relative to the content JSON"
       },
       "source": {
@@ -3441,9 +3467,11 @@
         "Set a new start point and end point around the same filmstrip"
       ],
       "editable": [
+        "heading",
         "photos"
       ],
       "editableFields": {
+        "heading": "text",
         "photos": "array of local PNG, JPEG or WebP paths, relative to the content JSON"
       },
       "source": {
@@ -3494,9 +3522,11 @@
         "Temporarily lift the attachment for a closer look while its grid neighbors stay put"
       ],
       "editable": [
+        "heading",
         "photos"
       ],
       "editableFields": {
+        "heading": "text",
         "photos": "array of local PNG, JPEG or WebP paths, relative to the content JSON"
       },
       "source": {
@@ -3547,9 +3577,11 @@
         "Show the neighboring tiles shifting out of the way of a drag-to-reorder gesture"
       ],
       "editable": [
+        "heading",
         "photos"
       ],
       "editableFields": {
+        "heading": "text",
         "photos": "array of local PNG, JPEG or WebP paths, relative to the content JSON"
       },
       "source": {
@@ -3595,9 +3627,11 @@
         "Resolve a soft photo placeholder progressively without shifting the crop"
       ],
       "editable": [
+        "heading",
         "photos"
       ],
       "editableFields": {
+        "heading": "text",
         "photos": "array of local PNG, JPEG or WebP paths, relative to the content JSON"
       },
       "source": {
@@ -3643,12 +3677,14 @@
         "Reveal the full photo notes while keeping the image fixed at the top"
       ],
       "editable": [
+        "heading",
         "photos",
         "detail",
         "action",
         "reply"
       ],
       "editableFields": {
+        "heading": "text",
         "photos": "array of local PNG, JPEG or WebP paths, relative to the content JSON",
         "detail": "text",
         "action": "text",
@@ -3697,9 +3733,11 @@
         "Start on one detail and open an iris mask out to the edges of the photo"
       ],
       "editable": [
+        "heading",
         "photos"
       ],
       "editableFields": {
+        "heading": "text",
         "photos": "array of local PNG, JPEG or WebP paths, relative to the content JSON"
       },
       "source": {
@@ -3745,9 +3783,11 @@
         "Show a book leaf turning with its outer edge closing in on the hinge"
       ],
       "editable": [
+        "heading",
         "photos"
       ],
       "editableFields": {
+        "heading": "text",
         "photos": "array of local PNG, JPEG or WebP paths, relative to the content JSON"
       },
       "source": {
@@ -3798,9 +3838,11 @@
         "Change the thumbnail density by shrinking and reflowing the same photos"
       ],
       "editable": [
+        "heading",
         "photos"
       ],
       "editableFields": {
+        "heading": "text",
         "photos": "array of local PNG, JPEG or WebP paths, relative to the content JSON"
       },
       "source": {
@@ -3846,10 +3888,12 @@
         "Represent attachment transfer progress as a percentage until the file is ready"
       ],
       "editable": [
+        "heading",
         "photos",
         "title"
       ],
       "editableFields": {
+        "heading": "text",
         "photos": "array of local PNG, JPEG or WebP paths, relative to the content JSON",
         "title": "text"
       },
@@ -3896,9 +3940,11 @@
         "Add a visible pen stroke around part of the attachment while keeping the picture fixed"
       ],
       "editable": [
+        "heading",
         "photos"
       ],
       "editableFields": {
+        "heading": "text",
         "photos": "array of local PNG, JPEG or WebP paths, relative to the content JSON"
       },
       "source": {
