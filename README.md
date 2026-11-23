@@ -51,7 +51,7 @@ Each row has a separate dated archive branch. Changed and untracked source files
 
 ## Standalone material
 
-The index branch preserves 19,197 files from 112 source locations. The raw total is 3.64 GiB; duplicate content shares Git objects. It includes editable sources, static assets, fonts, exported videos, audio, measurements, provenance, packaged skills and unique temporary authored source files.
+The index branch preserves 19,756 files from 132 source locations. The raw total is 3.70 GiB; duplicate content shares Git objects. It includes editable sources, static assets, fonts, exported videos, audio, measurements, provenance, packaged skills and unique temporary authored source files.
 
 Permanent standalone groups are `sidehoe-recreation`, `sidehoe-skill-trial`, `recreation-evidence`, `v3-prompts`, `real-video-test`, `iv-test`, and `recording-skills`. Temporary authored sources and extracted skill packages are preserved in their own folders.
 
@@ -66,3 +66,5 @@ Permanent standalone groups are `sidehoe-recreation`, `sidehoe-skill-trial`, `re
 - No local source, export, uncommitted work, or regenerable file was deleted.
 
 Archive utilities are included in `archive-tools/`. Their discovery/plan inputs were generated for this machine and date; inventory.json is the durable record.
+
+The final name-based sweep added 20 older/extracted skill copies under `standalone/additional-skill-copies`, preserving each original directory hierarchy.

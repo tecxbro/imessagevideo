@@ -1,0 +1,1374 @@
+{
+  "reference": "06-gallery",
+  "sceneSha256": "abc87b6e69314e5df3ef75a81efd216011fa1604872aec66c1eb2a39f69658b2",
+  "status": "Metric candidates only. No runtime promotion; private native/blur/rotation controls still required.",
+  "rule": "extra=(Canvas alphabetic ascent at computedFontSize*worldSY)/worldSY − localCanvas alphabetic ascent. WorldSY is authored world-space Y gain, not offscreen cache density. Abs<1e-9 numerical noise is zero.",
+  "allActiveInkNodeRuns": 383,
+  "measurements": [
+    {
+      "pairId": 0,
+      "styleId": 0,
+      "worldSY": 1,
+      "fontCSS": "29px \"SF Pro Display\"",
+      "computedFontSize": 29,
+      "localAscent": 28,
+      "effectiveFontSize": 29,
+      "effectiveAscent": 28,
+      "rawExtraLocalY": 0,
+      "extraLocalY": 0
+    },
+    {
+      "pairId": 1,
+      "styleId": 2,
+      "worldSY": 1,
+      "fontCSS": "500 124px \"SF Pro Display\"",
+      "computedFontSize": 124,
+      "localAscent": 118,
+      "effectiveFontSize": 124,
+      "effectiveAscent": 118,
+      "rawExtraLocalY": 0,
+      "extraLocalY": 0
+    },
+    {
+      "pairId": 2,
+      "styleId": 2,
+      "worldSY": 0.9888888888888889,
+      "fontCSS": "500 124px \"SF Pro Display\"",
+      "computedFontSize": 124,
+      "localAscent": 118,
+      "effectiveFontSize": 122.62222222222223,
+      "effectiveAscent": 117,
+      "rawExtraLocalY": 0.31460674157303004,
+      "extraLocalY": 0.31460674157303004
+    },
+    {
+      "pairId": 3,
+      "styleId": 2,
+      "worldSY": 1.011111111111111,
+      "fontCSS": "500 124px \"SF Pro Display\"",
+      "computedFontSize": 124,
+      "localAscent": 118,
+      "effectiveFontSize": 125.37777777777777,
+      "effectiveAscent": 119,
+      "rawExtraLocalY": -0.3076923076923066,
+      "extraLocalY": -0.3076923076923066
+    },
+    {
+      "pairId": 4,
+      "styleId": 2,
+      "worldSY": 1.0222222222222221,
+      "fontCSS": "500 124px \"SF Pro Display\"",
+      "computedFontSize": 124,
+      "localAscent": 118,
+      "effectiveFontSize": 126.75555555555555,
+      "effectiveAscent": 121,
+      "rawExtraLocalY": 0.36956521739131176,
+      "extraLocalY": 0.36956521739131176
+    },
+    {
+      "pairId": 5,
+      "styleId": 2,
+      "worldSY": 1.0444444444444398,
+      "fontCSS": "500 124px \"SF Pro Display\"",
+      "computedFontSize": 124,
+      "localAscent": 118,
+      "effectiveFontSize": 129.51111111111055,
+      "effectiveAscent": 123,
+      "rawExtraLocalY": -0.23404255319097444,
+      "extraLocalY": -0.23404255319097444
+    },
+    {
+      "pairId": 6,
+      "styleId": 2,
+      "worldSY": 1.0777777777777777,
+      "fontCSS": "500 124px \"SF Pro Display\"",
+      "computedFontSize": 124,
+      "localAscent": 118,
+      "effectiveFontSize": 133.64444444444445,
+      "effectiveAscent": 127,
+      "rawExtraLocalY": -0.16494845360824684,
+      "extraLocalY": -0.16494845360824684
+    },
+    {
+      "pairId": 7,
+      "styleId": 2,
+      "worldSY": 0.9999999999999977,
+      "fontCSS": "500 124px \"SF Pro Display\"",
+      "computedFontSize": 124,
+      "localAscent": 118,
+      "effectiveFontSize": 123.99999999999972,
+      "effectiveAscent": 118,
+      "rawExtraLocalY": 2.7000623958883807e-13,
+      "extraLocalY": 0
+    },
+    {
+      "pairId": 8,
+      "styleId": 2,
+      "worldSY": 0.9888888888888913,
+      "fontCSS": "500 124px \"SF Pro Display\"",
+      "computedFontSize": 124,
+      "localAscent": 118,
+      "effectiveFontSize": 122.62222222222252,
+      "effectiveAscent": 117,
+      "rawExtraLocalY": 0.3146067415727458,
+      "extraLocalY": 0.3146067415727458
+    },
+    {
+      "pairId": 9,
+      "styleId": 2,
+      "worldSY": 1.0333333333333334,
+      "fontCSS": "500 124px \"SF Pro Display\"",
+      "computedFontSize": 124,
+      "localAscent": 118,
+      "effectiveFontSize": 128.13333333333335,
+      "effectiveAscent": 122,
+      "rawExtraLocalY": 0.06451612903224202,
+      "extraLocalY": 0.06451612903224202
+    },
+    {
+      "pairId": 10,
+      "styleId": 2,
+      "worldSY": 1.044444444444442,
+      "fontCSS": "500 124px \"SF Pro Display\"",
+      "computedFontSize": 124,
+      "localAscent": 118,
+      "effectiveFontSize": 129.5111111111108,
+      "effectiveAscent": 123,
+      "rawExtraLocalY": -0.23404255319121603,
+      "extraLocalY": -0.23404255319121603
+    },
+    {
+      "pairId": 11,
+      "styleId": 2,
+      "worldSY": 1.0666666666666667,
+      "fontCSS": "500 124px \"SF Pro Display\"",
+      "computedFontSize": 124,
+      "localAscent": 118,
+      "effectiveFontSize": 132.26666666666665,
+      "effectiveAscent": 126,
+      "rawExtraLocalY": 0.125,
+      "extraLocalY": 0.125
+    },
+    {
+      "pairId": 12,
+      "styleId": 2,
+      "worldSY": 1.0111111111111086,
+      "fontCSS": "500 124px \"SF Pro Display\"",
+      "computedFontSize": 124,
+      "localAscent": 118,
+      "effectiveFontSize": 125.37777777777747,
+      "effectiveAscent": 119,
+      "rawExtraLocalY": -0.3076923076920224,
+      "extraLocalY": -0.3076923076920224
+    },
+    {
+      "pairId": 13,
+      "styleId": 2,
+      "worldSY": 1.055555555555551,
+      "fontCSS": "500 124px \"SF Pro Display\"",
+      "computedFontSize": 124,
+      "localAscent": 118,
+      "effectiveFontSize": 130.88888888888832,
+      "effectiveAscent": 125,
+      "rawExtraLocalY": 0.4210526315794709,
+      "extraLocalY": 0.4210526315794709
+    },
+    {
+      "pairId": 14,
+      "styleId": 2,
+      "worldSY": 0.978021978021978,
+      "fontCSS": "500 124px \"SF Pro Display\"",
+      "computedFontSize": 124,
+      "localAscent": 118,
+      "effectiveFontSize": 121.27472527472527,
+      "effectiveAscent": 115,
+      "rawExtraLocalY": -0.41573033707864226,
+      "extraLocalY": -0.41573033707864226
+    },
+    {
+      "pairId": 15,
+      "styleId": 2,
+      "worldSY": 0.989010989010989,
+      "fontCSS": "500 124px \"SF Pro Display\"",
+      "computedFontSize": 124,
+      "localAscent": 118,
+      "effectiveFontSize": 122.63736263736264,
+      "effectiveAscent": 117,
+      "rawExtraLocalY": 0.29999999999999716,
+      "extraLocalY": 0.29999999999999716
+    },
+    {
+      "pairId": 16,
+      "styleId": 2,
+      "worldSY": 0.9780219780219803,
+      "fontCSS": "500 124px \"SF Pro Display\"",
+      "computedFontSize": 124,
+      "localAscent": 118,
+      "effectiveFontSize": 121.27472527472555,
+      "effectiveAscent": 115,
+      "rawExtraLocalY": -0.4157303370789265,
+      "extraLocalY": -0.4157303370789265
+    },
+    {
+      "pairId": 17,
+      "styleId": 2,
+      "worldSY": 1.021978021978022,
+      "fontCSS": "500 124px \"SF Pro Display\"",
+      "computedFontSize": 124,
+      "localAscent": 118,
+      "effectiveFontSize": 126.72527472527472,
+      "effectiveAscent": 121,
+      "rawExtraLocalY": 0.39784946236559904,
+      "extraLocalY": 0.39784946236559904
+    },
+    {
+      "pairId": 18,
+      "styleId": 2,
+      "worldSY": 1.0439560439560394,
+      "fontCSS": "500 124px \"SF Pro Display\"",
+      "computedFontSize": 124,
+      "localAscent": 118,
+      "effectiveFontSize": 129.4505494505489,
+      "effectiveAscent": 123,
+      "rawExtraLocalY": -0.1789473684205376,
+      "extraLocalY": -0.1789473684205376
+    },
+    {
+      "pairId": 19,
+      "styleId": 2,
+      "worldSY": 1.054945054945055,
+      "fontCSS": "500 124px \"SF Pro Display\"",
+      "computedFontSize": 124,
+      "localAscent": 118,
+      "effectiveFontSize": 130.8131868131868,
+      "effectiveAscent": 125,
+      "rawExtraLocalY": 0.4895833333333286,
+      "extraLocalY": 0.4895833333333286
+    },
+    {
+      "pairId": 20,
+      "styleId": 2,
+      "worldSY": 1.0229885057471264,
+      "fontCSS": "500 124px \"SF Pro Display\"",
+      "computedFontSize": 124,
+      "localAscent": 118,
+      "effectiveFontSize": 126.85057471264368,
+      "effectiveAscent": 121,
+      "rawExtraLocalY": 0.2808988764044926,
+      "extraLocalY": 0.2808988764044926
+    },
+    {
+      "pairId": 21,
+      "styleId": 2,
+      "worldSY": 1.0344827586206897,
+      "fontCSS": "500 124px \"SF Pro Display\"",
+      "computedFontSize": 124,
+      "localAscent": 118,
+      "effectiveFontSize": 128.27586206896552,
+      "effectiveAscent": 122,
+      "rawExtraLocalY": -0.06666666666667709,
+      "extraLocalY": -0.06666666666667709
+    },
+    {
+      "pairId": 22,
+      "styleId": 2,
+      "worldSY": 1.0114942528735633,
+      "fontCSS": "500 124px \"SF Pro Display\"",
+      "computedFontSize": 124,
+      "localAscent": 118,
+      "effectiveFontSize": 125.42528735632185,
+      "effectiveAscent": 119,
+      "rawExtraLocalY": -0.35227272727273373,
+      "extraLocalY": -0.35227272727273373
+    },
+    {
+      "pairId": 23,
+      "styleId": 2,
+      "worldSY": 1.022988505747124,
+      "fontCSS": "500 124px \"SF Pro Display\"",
+      "computedFontSize": 124,
+      "localAscent": 118,
+      "effectiveFontSize": 126.85057471264338,
+      "effectiveAscent": 121,
+      "rawExtraLocalY": 0.28089887640477684,
+      "extraLocalY": 0.28089887640477684
+    },
+    {
+      "pairId": 24,
+      "styleId": 2,
+      "worldSY": 1.0459770114942528,
+      "fontCSS": "500 124px \"SF Pro Display\"",
+      "computedFontSize": 124,
+      "localAscent": 118,
+      "effectiveFontSize": 129.70114942528735,
+      "effectiveAscent": 123,
+      "rawExtraLocalY": -0.4065934065934016,
+      "extraLocalY": -0.4065934065934016
+    },
+    {
+      "pairId": 25,
+      "styleId": 2,
+      "worldSY": 1.0804597701149352,
+      "fontCSS": "500 124px \"SF Pro Display\"",
+      "computedFontSize": 124,
+      "localAscent": 118,
+      "effectiveFontSize": 133.97701149425197,
+      "effectiveAscent": 128,
+      "rawExtraLocalY": 0.4680851063837821,
+      "extraLocalY": 0.4680851063837821
+    },
+    {
+      "pairId": 26,
+      "styleId": 2,
+      "worldSY": 1.0919540229885059,
+      "fontCSS": "500 124px \"SF Pro Display\"",
+      "computedFontSize": 124,
+      "localAscent": 118,
+      "effectiveFontSize": 135.40229885057474,
+      "effectiveAscent": 129,
+      "rawExtraLocalY": 0.1368421052631419,
+      "extraLocalY": 0.1368421052631419
+    },
+    {
+      "pairId": 27,
+      "styleId": 2,
+      "worldSY": 0.9560439560439608,
+      "fontCSS": "500 124px \"SF Pro Display\"",
+      "computedFontSize": 124,
+      "localAscent": 118,
+      "effectiveFontSize": 118.54945054945114,
+      "effectiveAscent": 113,
+      "rawExtraLocalY": 0.1954022988499986,
+      "extraLocalY": 0.1954022988499986
+    },
+    {
+      "pairId": 28,
+      "styleId": 2,
+      "worldSY": 0.9560439560439561,
+      "fontCSS": "500 124px \"SF Pro Display\"",
+      "computedFontSize": 124,
+      "localAscent": 118,
+      "effectiveFontSize": 118.54945054945055,
+      "effectiveAscent": 113,
+      "rawExtraLocalY": 0.19540229885056704,
+      "extraLocalY": 0.19540229885056704
+    },
+    {
+      "pairId": 29,
+      "styleId": 2,
+      "worldSY": 0.945054945054945,
+      "fontCSS": "500 124px \"SF Pro Display\"",
+      "computedFontSize": 124,
+      "localAscent": 118,
+      "effectiveFontSize": 117.18681318681318,
+      "effectiveAscent": 112,
+      "rawExtraLocalY": 0.5116279069767415,
+      "extraLocalY": 0.5116279069767415
+    },
+    {
+      "pairId": 30,
+      "styleId": 2,
+      "worldSY": 0.9230769230769231,
+      "fontCSS": "500 124px \"SF Pro Display\"",
+      "computedFontSize": 124,
+      "localAscent": 118,
+      "effectiveFontSize": 114.46153846153847,
+      "effectiveAscent": 109,
+      "rawExtraLocalY": 0.0833333333333286,
+      "extraLocalY": 0.0833333333333286
+    },
+    {
+      "pairId": 31,
+      "styleId": 2,
+      "worldSY": 0.9010989010989058,
+      "fontCSS": "500 124px \"SF Pro Display\"",
+      "computedFontSize": 124,
+      "localAscent": 118,
+      "effectiveFontSize": 111.73626373626432,
+      "effectiveAscent": 106,
+      "rawExtraLocalY": -0.36585365853719054,
+      "extraLocalY": -0.36585365853719054
+    },
+    {
+      "pairId": 32,
+      "styleId": 2,
+      "worldSY": 0.8681318681318682,
+      "fontCSS": "500 124px \"SF Pro Display\"",
+      "computedFontSize": 124,
+      "localAscent": 118,
+      "effectiveFontSize": 107.64835164835165,
+      "effectiveAscent": 102,
+      "rawExtraLocalY": -0.5063291139240533,
+      "extraLocalY": -0.5063291139240533
+    },
+    {
+      "pairId": 33,
+      "styleId": 2,
+      "worldSY": 0.9666666666666714,
+      "fontCSS": "500 124px \"SF Pro Display\"",
+      "computedFontSize": 124,
+      "localAscent": 118,
+      "effectiveFontSize": 119.86666666666726,
+      "effectiveAscent": 114,
+      "rawExtraLocalY": -0.06896551724196343,
+      "extraLocalY": -0.06896551724196343
+    },
+    {
+      "pairId": 34,
+      "styleId": 2,
+      "worldSY": 0.9666666666666667,
+      "fontCSS": "500 124px \"SF Pro Display\"",
+      "computedFontSize": 124,
+      "localAscent": 118,
+      "effectiveFontSize": 119.86666666666667,
+      "effectiveAscent": 114,
+      "rawExtraLocalY": -0.06896551724138078,
+      "extraLocalY": -0.06896551724138078
+    },
+    {
+      "pairId": 35,
+      "styleId": 2,
+      "worldSY": 0.9555555555555556,
+      "fontCSS": "500 124px \"SF Pro Display\"",
+      "computedFontSize": 124,
+      "localAscent": 118,
+      "effectiveFontSize": 118.4888888888889,
+      "effectiveAscent": 113,
+      "rawExtraLocalY": 0.25581395348837077,
+      "extraLocalY": 0.25581395348837077
+    },
+    {
+      "pairId": 36,
+      "styleId": 2,
+      "worldSY": 0.9333333333333333,
+      "fontCSS": "500 124px \"SF Pro Display\"",
+      "computedFontSize": 124,
+      "localAscent": 118,
+      "effectiveFontSize": 115.73333333333333,
+      "effectiveAscent": 110,
+      "rawExtraLocalY": -0.1428571428571388,
+      "extraLocalY": -0.1428571428571388
+    },
+    {
+      "pairId": 37,
+      "styleId": 2,
+      "worldSY": 0.9222222222222246,
+      "fontCSS": "500 124px \"SF Pro Display\"",
+      "computedFontSize": 124,
+      "localAscent": 118,
+      "effectiveFontSize": 114.35555555555585,
+      "effectiveAscent": 109,
+      "rawExtraLocalY": 0.19277108433703916,
+      "extraLocalY": 0.19277108433703916
+    },
+    {
+      "pairId": 38,
+      "styleId": 2,
+      "worldSY": 0.8777777777777778,
+      "fontCSS": "500 124px \"SF Pro Display\"",
+      "computedFontSize": 124,
+      "localAscent": 118,
+      "effectiveFontSize": 108.84444444444445,
+      "effectiveAscent": 104,
+      "rawExtraLocalY": 0.4810126582278542,
+      "extraLocalY": 0.4810126582278542
+    },
+    {
+      "pairId": 39,
+      "styleId": 2,
+      "worldSY": 1.0114942528735658,
+      "fontCSS": "500 124px \"SF Pro Display\"",
+      "computedFontSize": 124,
+      "localAscent": 118,
+      "effectiveFontSize": 125.42528735632216,
+      "effectiveAscent": 119,
+      "rawExtraLocalY": -0.35227272727301795,
+      "extraLocalY": -0.35227272727301795
+    },
+    {
+      "pairId": 40,
+      "styleId": 2,
+      "worldSY": 0.9885057471264368,
+      "fontCSS": "500 124px \"SF Pro Display\"",
+      "computedFontSize": 124,
+      "localAscent": 118,
+      "effectiveFontSize": 122.57471264367817,
+      "effectiveAscent": 117,
+      "rawExtraLocalY": 0.3604651162790731,
+      "extraLocalY": 0.3604651162790731
+    },
+    {
+      "pairId": 41,
+      "styleId": 2,
+      "worldSY": 0.9770114942528736,
+      "fontCSS": "500 124px \"SF Pro Display\"",
+      "computedFontSize": 124,
+      "localAscent": 118,
+      "effectiveFontSize": 121.14942528735632,
+      "effectiveAscent": 115,
+      "rawExtraLocalY": -0.29411764705882604,
+      "extraLocalY": -0.29411764705882604
+    },
+    {
+      "pairId": 42,
+      "styleId": 2,
+      "worldSY": 0.9655172413793104,
+      "fontCSS": "500 124px \"SF Pro Display\"",
+      "computedFontSize": 124,
+      "localAscent": 118,
+      "effectiveFontSize": 119.72413793103449,
+      "effectiveAscent": 114,
+      "rawExtraLocalY": 0.0714285714285694,
+      "extraLocalY": 0.0714285714285694
+    },
+    {
+      "pairId": 43,
+      "styleId": 2,
+      "worldSY": 0.9425287356321888,
+      "fontCSS": "500 124px \"SF Pro Display\"",
+      "computedFontSize": 124,
+      "localAscent": 118,
+      "effectiveFontSize": 116.87356321839141,
+      "effectiveAscent": 111,
+      "rawExtraLocalY": -0.23170731707377,
+      "extraLocalY": -0.23170731707377
+    },
+    {
+      "pairId": 44,
+      "styleId": 2,
+      "worldSY": 0.896551724137931,
+      "fontCSS": "500 124px \"SF Pro Display\"",
+      "computedFontSize": 124,
+      "localAscent": 118,
+      "effectiveFontSize": 111.17241379310344,
+      "effectiveAscent": 106,
+      "rawExtraLocalY": 0.2307692307692264,
+      "extraLocalY": 0.2307692307692264
+    },
+    {
+      "pairId": 45,
+      "styleId": 4,
+      "worldSY": 0.7111111111111111,
+      "fontCSS": "500 124px \"SF Pro Display\"",
+      "computedFontSize": 124,
+      "localAscent": 118,
+      "effectiveFontSize": 88.17777777777778,
+      "effectiveAscent": 84,
+      "rawExtraLocalY": 0.125,
+      "extraLocalY": 0.125
+    },
+    {
+      "pairId": 46,
+      "styleId": 4,
+      "worldSY": 0.7222222222222222,
+      "fontCSS": "500 124px \"SF Pro Display\"",
+      "computedFontSize": 124,
+      "localAscent": 118,
+      "effectiveFontSize": 89.55555555555556,
+      "effectiveAscent": 85,
+      "rawExtraLocalY": -0.3076923076923066,
+      "extraLocalY": -0.3076923076923066
+    },
+    {
+      "pairId": 47,
+      "styleId": 4,
+      "worldSY": 0.7111111111111135,
+      "fontCSS": "500 124px \"SF Pro Display\"",
+      "computedFontSize": 124,
+      "localAscent": 118,
+      "effectiveFontSize": 88.17777777777808,
+      "effectiveAscent": 84,
+      "rawExtraLocalY": 0.1249999999996021,
+      "extraLocalY": 0.1249999999996021
+    },
+    {
+      "pairId": 48,
+      "styleId": 4,
+      "worldSY": 0.7444444444444445,
+      "fontCSS": "500 124px \"SF Pro Display\"",
+      "computedFontSize": 124,
+      "localAscent": 118,
+      "effectiveFontSize": 92.31111111111112,
+      "effectiveAscent": 88,
+      "rawExtraLocalY": 0.20895522388059362,
+      "extraLocalY": 0.20895522388059362
+    },
+    {
+      "pairId": 49,
+      "styleId": 4,
+      "worldSY": 0.7252747252747253,
+      "fontCSS": "500 124px \"SF Pro Display\"",
+      "computedFontSize": 124,
+      "localAscent": 118,
+      "effectiveFontSize": 89.93406593406593,
+      "effectiveAscent": 86,
+      "rawExtraLocalY": 0.5757575757575779,
+      "extraLocalY": 0.5757575757575779
+    },
+    {
+      "pairId": 50,
+      "styleId": 4,
+      "worldSY": 0.736263736263734,
+      "fontCSS": "500 124px \"SF Pro Display\"",
+      "computedFontSize": 124,
+      "localAscent": 118,
+      "effectiveFontSize": 91.29670329670301,
+      "effectiveAscent": 87,
+      "rawExtraLocalY": 0.1641791044779808,
+      "extraLocalY": 0.1641791044779808
+    },
+    {
+      "pairId": 51,
+      "styleId": 4,
+      "worldSY": 0.7362637362637363,
+      "fontCSS": "500 124px \"SF Pro Display\"",
+      "computedFontSize": 124,
+      "localAscent": 118,
+      "effectiveFontSize": 91.2967032967033,
+      "effectiveAscent": 87,
+      "rawExtraLocalY": 0.1641791044775971,
+      "extraLocalY": 0.1641791044775971
+    },
+    {
+      "pairId": 52,
+      "styleId": 4,
+      "worldSY": 0.7802197802197802,
+      "fontCSS": "500 124px \"SF Pro Display\"",
+      "computedFontSize": 124,
+      "localAscent": 118,
+      "effectiveFontSize": 96.74725274725274,
+      "effectiveAscent": 92,
+      "rawExtraLocalY": -0.08450704225352013,
+      "extraLocalY": -0.08450704225352013
+    },
+    {
+      "pairId": 53,
+      "styleId": 4,
+      "worldSY": 0.8021978021978022,
+      "fontCSS": "500 124px \"SF Pro Display\"",
+      "computedFontSize": 124,
+      "localAscent": 118,
+      "effectiveFontSize": 99.47252747252747,
+      "effectiveAscent": 95,
+      "rawExtraLocalY": 0.4246575342465633,
+      "extraLocalY": 0.4246575342465633
+    },
+    {
+      "pairId": 54,
+      "styleId": 4,
+      "worldSY": 0.7014925373134329,
+      "fontCSS": "500 124px \"SF Pro Display\"",
+      "computedFontSize": 124,
+      "localAscent": 118,
+      "effectiveFontSize": 86.98507462686567,
+      "effectiveAscent": 83,
+      "rawExtraLocalY": 0.31914893617020823,
+      "extraLocalY": 0.31914893617020823
+    },
+    {
+      "pairId": 55,
+      "styleId": 4,
+      "worldSY": 0.7313432835820896,
+      "fontCSS": "500 124px \"SF Pro Display\"",
+      "computedFontSize": 124,
+      "localAscent": 118,
+      "effectiveFontSize": 90.68656716417911,
+      "effectiveAscent": 86,
+      "rawExtraLocalY": -0.4081632653061291,
+      "extraLocalY": -0.4081632653061291
+    },
+    {
+      "pairId": 56,
+      "styleId": 4,
+      "worldSY": 0.8059701492537313,
+      "fontCSS": "500 124px \"SF Pro Display\"",
+      "computedFontSize": 124,
+      "localAscent": 118,
+      "effectiveFontSize": 99.94029850746269,
+      "effectiveAscent": 95,
+      "rawExtraLocalY": -0.12962962962963331,
+      "extraLocalY": -0.12962962962963331
+    },
+    {
+      "pairId": 57,
+      "styleId": 4,
+      "worldSY": 0.835820895522388,
+      "fontCSS": "500 124px \"SF Pro Display\"",
+      "computedFontSize": 124,
+      "localAscent": 118,
+      "effectiveFontSize": 103.64179104477611,
+      "effectiveAscent": 99,
+      "rawExtraLocalY": 0.4464285714285694,
+      "extraLocalY": 0.4464285714285694
+    },
+    {
+      "pairId": 58,
+      "styleId": 4,
+      "worldSY": 0.7761194029850746,
+      "fontCSS": "500 124px \"SF Pro Display\"",
+      "computedFontSize": 124,
+      "localAscent": 118,
+      "effectiveFontSize": 96.23880597014926,
+      "effectiveAscent": 92,
+      "rawExtraLocalY": 0.538461538461533,
+      "extraLocalY": 0.538461538461533
+    },
+    {
+      "pairId": 59,
+      "styleId": 4,
+      "worldSY": 0.7164179104477612,
+      "fontCSS": "500 124px \"SF Pro Display\"",
+      "computedFontSize": 124,
+      "localAscent": 118,
+      "effectiveFontSize": 88.83582089552239,
+      "effectiveAscent": 85,
+      "rawExtraLocalY": 0.6458333333333428,
+      "extraLocalY": 0.6458333333333428
+    },
+    {
+      "pairId": 60,
+      "styleId": 4,
+      "worldSY": 0.7912087912087912,
+      "fontCSS": "500 124px \"SF Pro Display\"",
+      "computedFontSize": 124,
+      "localAscent": 118,
+      "effectiveFontSize": 98.1098901098901,
+      "effectiveAscent": 93,
+      "rawExtraLocalY": -0.4583333333333286,
+      "extraLocalY": -0.4583333333333286
+    },
+    {
+      "pairId": 61,
+      "styleId": 4,
+      "worldSY": 0.7472527472527473,
+      "fontCSS": "500 124px \"SF Pro Display\"",
+      "computedFontSize": 124,
+      "localAscent": 118,
+      "effectiveFontSize": 92.65934065934066,
+      "effectiveAscent": 88,
+      "rawExtraLocalY": -0.235294117647058,
+      "extraLocalY": -0.235294117647058
+    },
+    {
+      "pairId": 62,
+      "styleId": 4,
+      "worldSY": 0.7142857142857143,
+      "fontCSS": "500 124px \"SF Pro Display\"",
+      "computedFontSize": 124,
+      "localAscent": 118,
+      "effectiveFontSize": 88.57142857142857,
+      "effectiveAscent": 84,
+      "rawExtraLocalY": -0.4000000000000057,
+      "extraLocalY": -0.4000000000000057
+    },
+    {
+      "pairId": 63,
+      "styleId": 1,
+      "worldSY": 0.8869007099095595,
+      "fontCSS": "500 126px \"SF Pro Display\"",
+      "computedFontSize": 126,
+      "localAscent": 120,
+      "effectiveFontSize": 111.74948944860449,
+      "effectiveAscent": 106,
+      "rawExtraLocalY": -0.48267543859650175,
+      "extraLocalY": -0.48267543859650175
+    },
+    {
+      "pairId": 64,
+      "styleId": 1,
+      "worldSY": 0.9645045220266459,
+      "fontCSS": "500 126px \"SF Pro Display\"",
+      "computedFontSize": 126,
+      "localAscent": 120,
+      "effectiveFontSize": 121.52756977535739,
+      "effectiveAscent": 116,
+      "rawExtraLocalY": 0.2690058479532098,
+      "extraLocalY": 0.2690058479532098
+    },
+    {
+      "pairId": 65,
+      "styleId": 1,
+      "worldSY": 0.9866770397743849,
+      "fontCSS": "500 126px \"SF Pro Display\"",
+      "computedFontSize": 126,
+      "localAscent": 120,
+      "effectiveFontSize": 124.3213070115725,
+      "effectiveAscent": 118,
+      "rawExtraLocalY": -0.4066627242262939,
+      "extraLocalY": -0.4066627242262939
+    },
+    {
+      "pairId": 66,
+      "styleId": 1,
+      "worldSY": 0.9977632986482544,
+      "fontCSS": "500 126px \"SF Pro Display\"",
+      "computedFontSize": 126,
+      "localAscent": 120,
+      "effectiveFontSize": 125.71817562968006,
+      "effectiveAscent": 120,
+      "rawExtraLocalY": 0.2690058479532098,
+      "extraLocalY": 0.2690058479532098
+    },
+    {
+      "pairId": 67,
+      "styleId": 1,
+      "worldSY": 1.008849557522124,
+      "fontCSS": "500 126px \"SF Pro Display\"",
+      "computedFontSize": 126,
+      "localAscent": 120,
+      "effectiveFontSize": 127.11504424778761,
+      "effectiveAscent": 121,
+      "rawExtraLocalY": -0.06140350877193157,
+      "extraLocalY": -0.06140350877193157
+    },
+    {
+      "pairId": 68,
+      "styleId": 3,
+      "worldSY": 1.4054054054054055,
+      "fontCSS": "500 126px \"SF Pro Display\"",
+      "computedFontSize": 126,
+      "localAscent": 120,
+      "effectiveFontSize": 177.0810810810811,
+      "effectiveAscent": 169,
+      "rawExtraLocalY": 0.25,
+      "extraLocalY": 0.25
+    },
+    {
+      "pairId": 69,
+      "styleId": 3,
+      "worldSY": 1.2252252252252251,
+      "fontCSS": "500 126px \"SF Pro Display\"",
+      "computedFontSize": 126,
+      "localAscent": 120,
+      "effectiveFontSize": 154.37837837837836,
+      "effectiveAscent": 147,
+      "rawExtraLocalY": -0.022058823529405913,
+      "extraLocalY": -0.022058823529405913
+    },
+    {
+      "pairId": 70,
+      "styleId": 3,
+      "worldSY": 1.1711711711711712,
+      "fontCSS": "500 126px \"SF Pro Display\"",
+      "computedFontSize": 126,
+      "localAscent": 120,
+      "effectiveFontSize": 147.56756756756758,
+      "effectiveAscent": 140,
+      "rawExtraLocalY": -0.461538461538467,
+      "extraLocalY": -0.461538461538467
+    },
+    {
+      "pairId": 71,
+      "styleId": 3,
+      "worldSY": 1.135135135135135,
+      "fontCSS": "500 126px \"SF Pro Display\"",
+      "computedFontSize": 126,
+      "localAscent": 120,
+      "effectiveFontSize": 143.02702702702703,
+      "effectiveAscent": 136,
+      "rawExtraLocalY": -0.1904761904761898,
+      "extraLocalY": -0.1904761904761898
+    },
+    {
+      "pairId": 72,
+      "styleId": 3,
+      "worldSY": 1.117117117117117,
+      "fontCSS": "500 126px \"SF Pro Display\"",
+      "computedFontSize": 126,
+      "localAscent": 120,
+      "effectiveFontSize": 140.75675675675674,
+      "effectiveAscent": 134,
+      "rawExtraLocalY": -0.04838709677417796,
+      "extraLocalY": -0.04838709677417796
+    },
+    {
+      "pairId": 73,
+      "styleId": 3,
+      "worldSY": 1.0990990990990992,
+      "fontCSS": "500 126px \"SF Pro Display\"",
+      "computedFontSize": 126,
+      "localAscent": 120,
+      "effectiveFontSize": 138.4864864864865,
+      "effectiveAscent": 132,
+      "rawExtraLocalY": 0.09836065573769304,
+      "extraLocalY": 0.09836065573769304
+    },
+    {
+      "pairId": 74,
+      "styleId": 3,
+      "worldSY": 1.0810810810810811,
+      "fontCSS": "500 126px \"SF Pro Display\"",
+      "computedFontSize": 126,
+      "localAscent": 120,
+      "effectiveFontSize": 136.21621621621622,
+      "effectiveAscent": 130,
+      "rawExtraLocalY": 0.25,
+      "extraLocalY": 0.25
+    },
+    {
+      "pairId": 75,
+      "styleId": 3,
+      "worldSY": 1.063063063063063,
+      "fontCSS": "500 126px \"SF Pro Display\"",
+      "computedFontSize": 126,
+      "localAscent": 120,
+      "effectiveFontSize": 133.94594594594594,
+      "effectiveAscent": 128,
+      "rawExtraLocalY": 0.40677966101694096,
+      "extraLocalY": 0.40677966101694096
+    },
+    {
+      "pairId": 76,
+      "styleId": 3,
+      "worldSY": 1.045045045045045,
+      "fontCSS": "500 126px \"SF Pro Display\"",
+      "computedFontSize": 126,
+      "localAscent": 120,
+      "effectiveFontSize": 131.67567567567568,
+      "effectiveAscent": 125,
+      "rawExtraLocalY": -0.38793103448276156,
+      "extraLocalY": -0.38793103448276156
+    },
+    {
+      "pairId": 77,
+      "styleId": 3,
+      "worldSY": 1.027027027027027,
+      "fontCSS": "500 126px \"SF Pro Display\"",
+      "computedFontSize": 126,
+      "localAscent": 120,
+      "effectiveFontSize": 129.4054054054054,
+      "effectiveAscent": 123,
+      "rawExtraLocalY": -0.23684210526315042,
+      "extraLocalY": -0.23684210526315042
+    },
+    {
+      "pairId": 78,
+      "styleId": 3,
+      "worldSY": 1.018018018018018,
+      "fontCSS": "500 126px \"SF Pro Display\"",
+      "computedFontSize": 126,
+      "localAscent": 120,
+      "effectiveFontSize": 128.2702702702703,
+      "effectiveAscent": 122,
+      "rawExtraLocalY": -0.15929203539823789,
+      "extraLocalY": -0.15929203539823789
+    },
+    {
+      "pairId": 79,
+      "styleId": 3,
+      "worldSY": 1.009009009009009,
+      "fontCSS": "500 126px \"SF Pro Display\"",
+      "computedFontSize": 126,
+      "localAscent": 120,
+      "effectiveFontSize": 127.13513513513513,
+      "effectiveAscent": 121,
+      "rawExtraLocalY": -0.0803571428571388,
+      "extraLocalY": -0.0803571428571388
+    },
+    {
+      "pairId": 80,
+      "styleId": 3,
+      "worldSY": 1,
+      "fontCSS": "500 126px \"SF Pro Display\"",
+      "computedFontSize": 126,
+      "localAscent": 120,
+      "effectiveFontSize": 126,
+      "effectiveAscent": 120,
+      "rawExtraLocalY": 0,
+      "extraLocalY": 0
+    },
+    {
+      "pairId": 81,
+      "styleId": 3,
+      "worldSY": 0.990990990990991,
+      "fontCSS": "500 126px \"SF Pro Display\"",
+      "computedFontSize": 126,
+      "localAscent": 120,
+      "effectiveFontSize": 124.86486486486486,
+      "effectiveAscent": 119,
+      "rawExtraLocalY": 0.08181818181817846,
+      "extraLocalY": 0.08181818181817846
+    },
+    {
+      "pairId": 82,
+      "styleId": 3,
+      "worldSY": 0.9819819819819819,
+      "fontCSS": "500 126px \"SF Pro Display\"",
+      "computedFontSize": 126,
+      "localAscent": 120,
+      "effectiveFontSize": 123.72972972972973,
+      "effectiveAscent": 118,
+      "rawExtraLocalY": 0.16513761467889765,
+      "extraLocalY": 0.16513761467889765
+    },
+    {
+      "pairId": 83,
+      "styleId": 3,
+      "worldSY": 0.963963963963964,
+      "fontCSS": "500 126px \"SF Pro Display\"",
+      "computedFontSize": 126,
+      "localAscent": 120,
+      "effectiveFontSize": 121.45945945945947,
+      "effectiveAscent": 116,
+      "rawExtraLocalY": 0.3364485981308434,
+      "extraLocalY": 0.3364485981308434
+    },
+    {
+      "pairId": 84,
+      "styleId": 3,
+      "worldSY": 0.963855421686747,
+      "fontCSS": "500 126px \"SF Pro Display\"",
+      "computedFontSize": 126,
+      "localAscent": 120,
+      "effectiveFontSize": 121.44578313253012,
+      "effectiveAscent": 116,
+      "rawExtraLocalY": 0.3499999999999943,
+      "extraLocalY": 0.3499999999999943
+    },
+    {
+      "pairId": 85,
+      "styleId": 3,
+      "worldSY": 0.9523809523809523,
+      "fontCSS": "500 126px \"SF Pro Display\"",
+      "computedFontSize": 126,
+      "localAscent": 120,
+      "effectiveFontSize": 120,
+      "effectiveAscent": 114,
+      "rawExtraLocalY": -0.29999999999999716,
+      "extraLocalY": -0.29999999999999716
+    },
+    {
+      "pairId": 86,
+      "styleId": 3,
+      "worldSY": 0.9518072289156626,
+      "fontCSS": "500 126px \"SF Pro Display\"",
+      "computedFontSize": 126,
+      "localAscent": 120,
+      "effectiveFontSize": 119.92771084337349,
+      "effectiveAscent": 114,
+      "rawExtraLocalY": -0.22784810126582045,
+      "extraLocalY": -0.22784810126582045
+    },
+    {
+      "pairId": 87,
+      "styleId": 3,
+      "worldSY": 0.9397590361445783,
+      "fontCSS": "500 126px \"SF Pro Display\"",
+      "computedFontSize": 126,
+      "localAscent": 120,
+      "effectiveFontSize": 118.40963855421687,
+      "effectiveAscent": 113,
+      "rawExtraLocalY": 0.2435897435897374,
+      "extraLocalY": 0.2435897435897374
+    },
+    {
+      "pairId": 88,
+      "styleId": 3,
+      "worldSY": 0.9156626506024096,
+      "fontCSS": "500 126px \"SF Pro Display\"",
+      "computedFontSize": 126,
+      "localAscent": 120,
+      "effectiveFontSize": 115.37349397590361,
+      "effectiveAscent": 110,
+      "rawExtraLocalY": 0.1315789473684248,
+      "extraLocalY": 0.1315789473684248
+    }
+  ],
+  "candidateNodes": [
+    {
+      "id": "rene-final11-text-98",
+      "frameRanges": [
+        [
+          1053,
+          1053
+        ],
+        [
+          1057,
+          1057
+        ],
+        [
+          1105,
+          1105
+        ],
+        [
+          1109,
+          1111
+        ],
+        [
+          1113,
+          1117
+        ]
+      ],
+      "frames": 11
+    },
+    {
+      "id": "rene-final11-text-99",
+      "frameRanges": [
+        [
+          1054,
+          1054
+        ],
+        [
+          1059,
+          1060
+        ],
+        [
+          1104,
+          1105
+        ],
+        [
+          1109,
+          1111
+        ],
+        [
+          1113,
+          1117
+        ]
+      ],
+      "frames": 13
+    },
+    {
+      "id": "rene-final11-text-100",
+      "frameRanges": [
+        [
+          1058,
+          1058
+        ],
+        [
+          1065,
+          1065
+        ],
+        [
+          1067,
+          1067
+        ],
+        [
+          1070,
+          1070
+        ],
+        [
+          1074,
+          1077
+        ],
+        [
+          1079,
+          1080
+        ],
+        [
+          1082,
+          1102
+        ],
+        [
+          1108,
+          1108
+        ],
+        [
+          1111,
+          1117
+        ]
+      ],
+      "frames": 39
+    },
+    {
+      "id": "rene-final11-text-101",
+      "frameRanges": [
+        [
+          1060,
+          1107
+        ],
+        [
+          1109,
+          1112
+        ],
+        [
+          1114,
+          1117
+        ]
+      ],
+      "frames": 56
+    },
+    {
+      "id": "rene-final11-text-102",
+      "frameRanges": [
+        [
+          1062,
+          1117
+        ]
+      ],
+      "frames": 56
+    },
+    {
+      "id": "rene-final11-text-103",
+      "frameRanges": [
+        [
+          1117,
+          1121
+        ],
+        [
+          1129,
+          1130
+        ],
+        [
+          1132,
+          1150
+        ]
+      ],
+      "frames": 26
+    },
+    {
+      "id": "rene-final11-text-104",
+      "frameRanges": [
+        [
+          1123,
+          1123
+        ],
+        [
+          1126,
+          1126
+        ],
+        [
+          1137,
+          1150
+        ]
+      ],
+      "frames": 16
+    },
+    {
+      "id": "rene-final11-text-105",
+      "frameRanges": [
+        [
+          1117,
+          1143
+        ],
+        [
+          1146,
+          1150
+        ]
+      ],
+      "frames": 32
+    },
+    {
+      "id": "source-measured-final-word-Just",
+      "frameRanges": [
+        [
+          1292,
+          1329
+        ]
+      ],
+      "frames": 38
+    },
+    {
+      "id": "source-measured-final-word-like",
+      "frameRanges": [
+        [
+          1294,
+          1330
+        ]
+      ],
+      "frames": 37
+    },
+    {
+      "id": "source-measured-final-word-a",
+      "frameRanges": [
+        [
+          1295,
+          1332
+        ]
+      ],
+      "frames": 38
+    },
+    {
+      "id": "source-measured-final-word-friend",
+      "frameRanges": [
+        [
+          1297,
+          1333
+        ]
+      ],
+      "frames": 37
+    },
+    {
+      "id": "source-measured-final-word-Start",
+      "frameRanges": [
+        [
+          1334,
+          1365
+        ]
+      ],
+      "frames": 32
+    },
+    {
+      "id": "source-measured-final-word-now",
+      "frameRanges": [
+        [
+          1336,
+          1366
+        ]
+      ],
+      "frames": 31
+    },
+    {
+      "id": "rene-v16-introducing-native",
+      "frameRanges": [
+        [
+          244,
+          320
+        ]
+      ],
+      "frames": 77
+    },
+    {
+      "id": "rene-v16-provider-already",
+      "frameRanges": [
+        [
+          1151,
+          1229
+        ],
+        [
+          1231,
+          1236
+        ]
+      ],
+      "frames": 85
+    },
+    {
+      "id": "rene-v16-provider-text",
+      "frameRanges": [
+        [
+          1177,
+          1236
+        ]
+      ],
+      "frames": 60
+    }
+  ],
+  "extraCandidateRanges": [
+    [
+      244,
+      320
+    ],
+    [
+      1053,
+      1054
+    ],
+    [
+      1057,
+      1236
+    ],
+    [
+      1292,
+      1366
+    ]
+  ],
+  "extraCandidateFrames": 334,
+  "previousDOMCandidateRanges": [
+    [
+      108,
+      239
+    ],
+    [
+      1050,
+      1150
+    ]
+  ]
+}

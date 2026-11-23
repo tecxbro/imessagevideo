@@ -1,0 +1,28 @@
+{
+  "method": "Figma Motion",
+  "state": "blocked_before_file_creation",
+  "diagnostic": {
+    "operation": "figma_whoami",
+    "outcome": "no_response_within_25000ms",
+    "bounded_retry_reason": "The previous parent request had stalled without a response. This one read-only diagnostic bounded the same request to avoid blocking local recreation work.",
+    "conclusion": "No authenticated identity, plan key, or file destination was established. This is not proof of an authentication failure or of disabled Motion APIs."
+  },
+  "file_created": false,
+  "motion_api_probed": false,
+  "video_exported": false,
+  "local_converter": "prepare-figma.mjs",
+  "converter_execution": "Not executed in Figma; generated scripts require a successful account/session/capability check and visual export validation.",
+  "local_smoke_preparation": {
+    "layers": 5,
+    "feature_blockers": 0,
+    "warnings": 5,
+    "syntax": "parsed",
+    "figma_execution": "not_executed"
+  },
+  "browser_fallback": {
+    "operation": "cua.getBrowser({url: https://www.figma.com})",
+    "outcome": "startup_failed",
+    "error": "the gaas-browser node_repl sandbox cannot be disabled",
+    "observed_limit": "No browser, Figma session, or file state was reached."
+  }
+}
