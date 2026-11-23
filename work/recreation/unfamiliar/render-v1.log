@@ -1,0 +1,13 @@
+node:internal/modules/run_main:104
+    triggerUncaughtException(
+    ^
+
+browser.newPage: Target page, context or browser has been closed
+Browser logs:
+
+<launching> /Users/darshan/Library/Caches/ms-playwright/chromium-1243/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --no-sandbox --user-data-dir=/var/folders/mw/7sj15dn14z5g9zdvmmhzf1280000gn/T/playwright_chromiumdev_profile-Cybkyp --remote-debugging-pipe --no-startup-window
+<launched> pid=68448
+[pid=68448][err] 2026-11-18 03:09:07.819 Google Chrome for Testing[68448:4535686] NSNotificationCenter connection interrupted
+    at /Users/darshan/Documents/ChatGPT/imv-wt/recreate/work/recreation/engines/render.mjs:64:145
+
+Node.js v23.11.0
