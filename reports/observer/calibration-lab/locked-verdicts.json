@@ -1,0 +1,164 @@
+{
+  "verdicts": {
+    "clip-01": "revision needed",
+    "clip-02": "revision needed",
+    "clip-03": "revision needed",
+    "clip-04": "revision needed",
+    "clip-05": "fixture passed",
+    "clip-06": "revision needed"
+  },
+  "evidence": {
+    "clip-01": {
+      "frame_count": 180,
+      "max_full_frame_mae": 6.64974609375,
+      "coarse_10_frame_scan": {
+        "reaction-targets": [
+          100,
+          110
+        ],
+        "attachment-gesture": [
+          100,
+          110
+        ]
+      },
+      "all_frame_zone_intervals": {
+        "reaction-targets": [
+          [
+            91,
+            113
+          ]
+        ],
+        "attachment-gesture": [
+          [
+            91,
+            113
+          ]
+        ]
+      },
+      "expected_cue_starts_samples": [
+        153602,
+        252803
+      ],
+      "actual_cue_starts_samples": [
+        153602,
+        252803
+      ],
+      "audio_match": true
+    },
+    "clip-02": {
+      "frame_count": 180,
+      "max_full_frame_mae": 0.3503873697916667,
+      "coarse_10_frame_scan": {},
+      "all_frame_zone_intervals": {
+        "phone-edge": [
+          [
+            55,
+            55
+          ]
+        ]
+      },
+      "expected_cue_starts_samples": [
+        153602,
+        252803
+      ],
+      "actual_cue_starts_samples": [
+        153602,
+        252803
+      ],
+      "audio_match": true
+    },
+    "clip-03": {
+      "frame_count": 180,
+      "max_full_frame_mae": 0.0,
+      "coarse_10_frame_scan": {},
+      "all_frame_zone_intervals": {},
+      "expected_cue_starts_samples": [
+        153602,
+        252803
+      ],
+      "actual_cue_starts_samples": [
+        153602
+      ],
+      "audio_match": false
+    },
+    "clip-04": {
+      "frame_count": 180,
+      "max_full_frame_mae": 0.6759006076388889,
+      "coarse_10_frame_scan": {
+        "reaction-targets": [
+          70,
+          80,
+          90,
+          100,
+          110,
+          120,
+          130,
+          140,
+          150,
+          160,
+          170
+        ],
+        "attachment-gesture": [
+          70,
+          80,
+          90,
+          100,
+          110
+        ]
+      },
+      "all_frame_zone_intervals": {
+        "reaction-targets": [
+          [
+            70,
+            179
+          ]
+        ],
+        "attachment-gesture": [
+          [
+            70,
+            111
+          ]
+        ]
+      },
+      "expected_cue_starts_samples": [
+        153602,
+        252803
+      ],
+      "actual_cue_starts_samples": [
+        153602,
+        252803
+      ],
+      "audio_match": true
+    },
+    "clip-05": {
+      "frame_count": 180,
+      "max_full_frame_mae": 0.0,
+      "coarse_10_frame_scan": {},
+      "all_frame_zone_intervals": {},
+      "expected_cue_starts_samples": [
+        153602,
+        252803
+      ],
+      "actual_cue_starts_samples": [
+        153602,
+        252803
+      ],
+      "audio_match": true
+    },
+    "clip-06": {
+      "frame_count": 180,
+      "max_full_frame_mae": 0.0,
+      "coarse_10_frame_scan": {},
+      "all_frame_zone_intervals": {},
+      "expected_cue_starts_samples": [
+        153602,
+        252803
+      ],
+      "actual_cue_starts_samples": [
+        158402,
+        252803
+      ],
+      "audio_match": false
+    }
+  }
+}
