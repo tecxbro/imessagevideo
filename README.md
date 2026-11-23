@@ -1,5 +1,7 @@
 # iMessage motion — complete local library
 
+[All local iMessage video skills, projects, and archived versions (November 22, 2026)](GITHUB-ARCHIVE.md)
+
 This private repository contains the skill **and all the production bytes it references**: six measured example projects, authored code, assets, original and reconstructed videos, UI-audio sources, visual motion studies, and analysis. Everything is stored in ordinary Git, including verified chunks for files too large to store as single GitHub files. **Clone, then run the one-time local assembly command below to recreate every canonical file.** No Git LFS, GitHub Release, GitHub CLI, Google Drive or Notion connection is required for normal use.
 
 Start with [the final production code and keyframes](FINAL-PRODUCTION.md), [the local video/code catalogue](catalog/index.html), [the full location guide](LOCATIONS.md), or [the skill instructions](skill/imessage-motion-recreation/SKILL.md). For a detailed account of what is taught and what remains unfinished, read [Skill contents and gaps](reports/SKILL-CONTENTS-AND-GAPS.md).
